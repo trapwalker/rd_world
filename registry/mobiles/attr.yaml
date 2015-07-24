@@ -1,2 +1,4 @@
 ﻿__cls__: Mobile
 doc    : Подвижные юниты
+
+max_speed: 100
