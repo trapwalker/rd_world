@@ -1,7 +1,7 @@
 ﻿__cls__: MachineGun
 doc    : Пулемёт Калашникова танковый
 
-ammo              : reg:///items/usable/ammo/bullets/a762
+ammo              : reg://registry/items/usable/ammo/bullets/a762
 ammo_per_second   : 11   # [shot/s] ~=650/60
 ammo_start_speed  : 834  # [m/s]
 effective_range   : 1100 # [m]

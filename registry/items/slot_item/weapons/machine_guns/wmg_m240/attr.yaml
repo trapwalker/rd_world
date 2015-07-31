@@ -1,7 +1,7 @@
 ﻿__cls__: MachineGun
 doc    : Пулемёт M240
 
-ammo              : reg:///items/usable/ammo/bullets/a762
+ammo              : reg://registry/items/usable/ammo/bullets/a762
 ammo_per_second   : 12   # [shot/s] ~=750/60
 ammo_start_speed  : 855  # [m/s]
 effective_range   : 1500 # [m]

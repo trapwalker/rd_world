@@ -1,7 +1,7 @@
 ﻿__cls__: MachineGun
 doc    : Огнемёт E-4
 
-ammo              : reg:///items/usable/ammo/bullets/a127x99
+ammo              : reg://registry/items/usable/ammo/bullets/a127x99
 ammo_per_second   : 2.27 # [liters/s] ~=0.5gal
 effective_range   : 50 # [m]
 ammo_per_second : 1

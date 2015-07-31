@@ -1,7 +1,7 @@
 ﻿__cls__: MachineGun
 doc    : Пулемёт M2 Browning
 
-ammo              : reg:///items/usable/ammo/bullets/a127x99
+ammo              : reg://registry/items/usable/ammo/bullets/a127x99
 ammo_per_second   : 10   # [shot/s] ~=635/60
 ammo_start_speed  : 855  # [m/s]
 effective_range   : 1830 # [m]
