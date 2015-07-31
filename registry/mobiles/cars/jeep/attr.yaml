@@ -15,3 +15,5 @@ slot_CC: /items/slot_item/weapons/cannons/wc_zis5
 slot_FC: /items/slot_item/weapons/machine_guns/wmg_pkt
 slot_BC: ~
 
+armorer_car_svg: static/img/cars/car_1/armorer_car.svg
+armorer_sectors_svg: static/img/cars/car_1/armorer_sectors.svg

@@ -1,7 +1,8 @@
 ﻿doc: ЗИС-5
 
+ammo: reg:///items/usable/ammo/bullets/a127x99
 ammo_per_shot: 1 
 radius: 200 
 width: 30
 dmg: 15
-time_recharge: 5 
+time_recharge: 5
