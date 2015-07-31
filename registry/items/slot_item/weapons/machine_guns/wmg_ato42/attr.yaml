@@ -3,4 +3,8 @@ doc    : Огнемёт E-4
 
 ammo              : reg:///items/usable/ammo/bullets/a127x99
 ammo_per_second   : 2.27 # [liters/s] ~=0.5gal
-effective_rabge   : 50 # [m]
+effective_range   : 50 # [m]
+ammo_per_second : 1
+radius: 150
+width: 50 
+dps: 2

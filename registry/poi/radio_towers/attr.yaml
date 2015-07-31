@@ -1,4 +1,5 @@
 ﻿__cls__: RadioTower
 doc    : Радиовышки
 
+can_instantiate: False
 range: 300

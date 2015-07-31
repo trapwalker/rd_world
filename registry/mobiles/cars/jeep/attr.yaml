@@ -1,6 +1,7 @@
 ﻿__cls__: Car
 
 max_hp: 100
+hp: 100
 r_min: 8.0
 ac_max: 18.0
 v_forward: 45.0
@@ -9,3 +10,6 @@ a_forward: 7.0
 a_backward: -5.0
 a_braking: -8.9
 observing_range: 330
+
+slot_CC: /items/slot_item/weapons/cannons/wc_zis5
+slot_FC: /items/slot_item/weapons/machine_guns/wmg_pkt

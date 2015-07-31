@@ -4,4 +4,8 @@ doc    : Пулемёт M240
 ammo              : reg:///items/usable/ammo/bullets/a762
 ammo_per_second   : 12   # [shot/s] ~=750/60
 ammo_start_speed  : 855  # [m/s]
-effective_rabge   : 1500 # [m]
+effective_range   : 1500 # [m]
+ammo_per_second : 1
+radius: 180
+width: 20 
+dps: 5

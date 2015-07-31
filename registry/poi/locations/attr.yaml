@@ -1,2 +1,4 @@
 ﻿__cls__: MapLocation
 doc    : Обитаемая локация
+
+can_instantiate: False
