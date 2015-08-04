@@ -1,0 +1,9 @@
+doc    : Полная канистра с топливом (20л)
+
+value: 20
+
+description: Полная канистра с топливом (20л). Можно залить в бак.
+inv_icon_big: static/img/items/tank20/big.png
+inv_icon_mid: static/img/items/tank20/mid.png
+inv_icon_small: static/img/items/tank20/small.png
+title: Канистра (20л)
