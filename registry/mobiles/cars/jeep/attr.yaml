@@ -1,6 +1,4 @@
-﻿__cls__: Car
-
-max_hp: 100
+﻿max_hp: 100
 hp: 100
 r_min: 8.0
 ac_max: 18.0

@@ -1,6 +1,6 @@
 doc    : Полная канистра с топливом (10л)
 
-value: 10
+value_fuel: 10
 
 description: Полная канистра с топливом (10л). Можно залить в бак.
 inv_icon_big: static/img/items/tank10/big.png

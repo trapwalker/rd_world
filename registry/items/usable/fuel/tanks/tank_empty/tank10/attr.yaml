@@ -1,6 +1,6 @@
 doc    : Пустая канистра с топливом (10л)
 
-value: 10
+value_fuel: 10
 
 description: Пустая канистра (10л). Можно заполнить на заправочной станции.
 inv_icon_big: static/img/items/tank10/big.png
