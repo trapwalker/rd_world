@@ -1,1 +1,4 @@
+__cls__ : TankFull
 doc: Полная канистра с топливом
+
+activate_type: self

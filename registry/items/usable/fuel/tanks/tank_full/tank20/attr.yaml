@@ -1,6 +1,6 @@
 doc    : Полная канистра с топливом (20л)
 
-value: 20
+value_fuel: 20
 
 description: Полная канистра с топливом (20л). Можно залить в бак.
 inv_icon_big: static/img/items/tank20/big.png
