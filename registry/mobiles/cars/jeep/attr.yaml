@@ -11,7 +11,8 @@ observing_range: 330
 
 slot_CC: reg://registry/items/slot_item/weapons/cannons/wc_zis5
 slot_FC: reg://registry/items/slot_item/weapons/machine_guns/wmg_pkt
-slot_BC: ~
+slot_BR: ~
+slot_BL: ~
 
 armorer_car_svg: static/img/cars/car_1/armorer_car.svg
 armorer_sectors_svg: static/img/cars/car_1/armorer_sectors.svg

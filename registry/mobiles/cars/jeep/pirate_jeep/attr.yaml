@@ -4,5 +4,5 @@ observing_range: 300
 
 slot_CC: reg://registry/items/slot_item/weapons/cannons/wc_zis5?radius=300
 slot_FC: reg://registry/items/slot_item/weapons/machine_guns/wmg_pkt
-slot_BC: reg://registry/items/slot_item/weapons/machine_guns/wmg_pkt
-slot_CL: ~
+slot_BR: reg://registry/items/slot_item/weapons/machine_guns/wmg_pkt
+slot_BL: ~
