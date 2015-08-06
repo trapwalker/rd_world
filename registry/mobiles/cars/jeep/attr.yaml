@@ -15,3 +15,10 @@ slot_BC: ~
 
 armorer_car_svg: static/img/cars/car_1/armorer_car.svg
 armorer_sectors_svg: static/img/cars/car_1/armorer_sectors.svg
+
+
+inventory:
+- reg://items/usable/ammo/bullets/a127x99?amount=100
+- reg://items/usable/ammo/bullets/a127x99?amount=123
+- reg://items/usable/ammo/bullets/a762?amount=142
+- reg://items/usable/ammo/bullets/a762?amount=342
