@@ -9,3 +9,4 @@ temp/*
 map
 altitude
 tilesets
+state/*
