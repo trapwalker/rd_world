@@ -4,4 +4,6 @@ title: Приор
 position: [12496200, 27133590]
 
 armorer: reg://registry/institutions/armorer/timofey
+trader: reg://registry/institutions/trader/buhman
+
 svg_link: static/img/towns/town_2/town.svg
