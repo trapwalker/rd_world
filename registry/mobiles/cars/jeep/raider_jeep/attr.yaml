@@ -1,4 +1,5 @@
-﻿v_forward: 50.0
+﻿tags: raider good
+v_forward: 50.0
 
 slot_CC: reg://registry/items/slot_item/weapons/cannons/wc_zis5?radius=300
 slot_FC: reg://registry/items/slot_item/weapons/machine_guns/wmg_pkt

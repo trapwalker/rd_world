@@ -1,4 +1,7 @@
-﻿max_hp: 100
+﻿
+tags: mid
+
+max_hp: 100
 hp: 100
 r_min: 8.0
 ac_max: 18.0
