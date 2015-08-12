@@ -1,2 +1,4 @@
 __cls__: Tank
 doc    : Канистра с топливом
+
+tags: fuel_tank
