@@ -1,4 +1,8 @@
-﻿tags: raider good
+﻿
+tags:  # здесь показан альтернативный способ записи списка тегов (можно комментировать)
+- raider # Это рейдерская фракция
+- good   # типа хороший
+
 v_forward: 50.0
 
 slot_CC: reg://registry/items/slot_item/weapons/cannons/wc_zis5?radius=300
