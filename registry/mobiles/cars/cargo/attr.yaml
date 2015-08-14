@@ -1,0 +1,27 @@
+﻿
+tags: cargo
+
+max_hp: 150
+hp: 150
+r_min: 12.0
+ac_max: 18.0
+v_forward: 35.0
+v_backward: -10.0
+a_forward: 5.0
+a_backward: -5.0
+a_braking: -8.9
+observing_range: 380
+
+slot_CC: reg://registry/items/slot_item/weapons/cannons/wc_zis5
+slot_FC: reg://registry/items/slot_item/weapons/machine_guns/wmg_pkt
+
+armorer_car_svg: static/img/cars/car_1/armorer_car.html
+armorer_sectors_svg: static/img/cars/car_1/armorer_sectors.svg
+
+inventory:
+- reg://registry/items/usable/ammo/bullets/a127x99?amount=20
+- reg://registry/items/usable/ammo/bullets/a127x99?amount=13
+- reg://registry/items/usable/ammo/bullets/a762?amount=80
+- reg://registry/items/usable/ammo/bullets/a762?amount=70
+- reg://registry/items/usable/fuel/tanks/tank_empty/tank20
+- reg://registry/items/usable/fuel/tanks/tank_full/tank20

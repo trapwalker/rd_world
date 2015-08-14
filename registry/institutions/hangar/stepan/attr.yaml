@@ -1,2 +1,6 @@
 ﻿title: Степан
 photo: "static/img/npc/1.png"
+
+car_list:
+- reg://registry/mobiles/cars/jeep
+- reg://registry/mobiles/cars/cargo
