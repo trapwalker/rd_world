@@ -2,7 +2,7 @@ doc    : Пустая канистра с топливом (20л)
 
 value_fuel: 20
 
-description: Пустая канистра (10л). Можно заполнить на заправочной станции.
+description: Пустая канистра (20л). Можно заполнить на заправочной станции.
 inv_icon_big: static/img/items/tank20/big.png
 inv_icon_mid: static/img/items/tank20/mid.png
 inv_icon_small: static/img/items/tank20/small.png
