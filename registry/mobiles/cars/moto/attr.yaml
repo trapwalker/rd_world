@@ -1,18 +1,18 @@
 ﻿
 tags: moto
 
-title: Мотоцикл
-price: 100
+title: Легкий
+price: 1000
 
-max_hp: 100
-hp: 100
-r_min: 8.0
-ac_max: 18.0
-v_forward: 45.0
-v_backward: -20.0
-a_forward: 7.0
+max_hp: 50
+hp: 50
+r_min: 2.0
+ac_max: 31.0
+v_forward: 105.0
+v_backward: -5.0
+a_forward: 9.9
 a_backward: -5.0
-a_braking: -8.9
+a_braking: -15.0
 p_observing_range: 330
 
 slot_CC: reg://registry/items/slot_item/weapons/cannons/wc_zis5
