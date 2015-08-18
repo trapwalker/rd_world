@@ -9,3 +9,5 @@ ammo_per_second : 1
 radius: 120
 width: 30 
 dps: 6
+
+title: wmg_m2

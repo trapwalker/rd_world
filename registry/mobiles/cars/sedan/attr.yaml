@@ -30,3 +30,5 @@ inventory:
 - reg://registry/items/usable/ammo/bullets/a762?amount=5
 - reg://registry/items/usable/fuel/tanks/tank_empty/tank20
 - reg://registry/items/usable/fuel/tanks/tank_full/tank20
+- reg://registry/items/slot_item/weapons/cannons/wc_zis5
+- reg://registry/items/slot_item/weapons/machine_guns/wmg_pkt

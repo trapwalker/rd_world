@@ -6,3 +6,6 @@ ammo_per_second   : 1   # [shot/s] ~=650/60
 radius: 100
 width: 60 
 dps: 3
+
+
+title: wmg_pkt
