@@ -16,13 +16,16 @@ a_braking: -8.9
 p_observing_range: 380
 
 slot_FC: ~
+slot_FC_f: FBRL
 slot_CL: ~
+slot_CL_f: L
 slot_CR: ~
+slot_CR_f: R
 slot_BR: ~
 slot_BL: ~
 
 armorer_car_svg: static/img/cars/car_3/armorer_car.html
-armorer_sectors_svg: static/img/cars/car_3/armorer_sectors.svg
+armorer_sectors_svg: static/img/cars/armorer_sectors.svg
 
 inventory:
 - reg://registry/items/usable/ammo/bullets/a127x99?amount=20

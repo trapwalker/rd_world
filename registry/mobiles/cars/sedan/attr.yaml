@@ -16,12 +16,14 @@ a_braking: -8.9
 p_observing_range: 330
 
 slot_CC: reg://registry/items/slot_item/weapons/cannons/wc_zis5
+slot_CC_f: FBLR
 slot_FC: reg://registry/items/slot_item/weapons/machine_guns/wmg_pkt
+slot_FC_f: F
 slot_BR: ~
 slot_BL: ~
 
 armorer_car_svg: static/img/cars/car_1/armorer_car.html
-armorer_sectors_svg: static/img/cars/car_1/armorer_sectors.svg
+armorer_sectors_svg: static/img/cars/armorer_sectors.svg
 
 inventory:
 - reg://registry/items/usable/ammo/bullets/a127x99?amount=1
