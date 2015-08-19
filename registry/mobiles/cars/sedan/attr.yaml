@@ -15,22 +15,20 @@ a_backward: -5.0
 a_braking: -8.9
 p_observing_range: 330
 
-slot_CC: reg://registry/items/slot_item/weapons/cannons/wc_zis5
-slot_CC_f: FBLR
-slot_FC: reg://registry/items/slot_item/weapons/machine_guns/wmg_pkt
-slot_FC_f: F
+slot_CC: ~
+slot_FC: ~
 slot_BR: ~
 slot_BL: ~
+
+slot_CC_f: FBLR
+slot_FC_f: F
 
 armorer_car_svg: static/img/cars/car_1/armorer_car.html
 armorer_sectors_svg: static/img/cars/armorer_sectors.svg
 
 inventory:
-- reg://registry/items/usable/ammo/bullets/a127x99?amount=1
-- reg://registry/items/usable/ammo/bullets/a127x99?amount=4
-- reg://registry/items/usable/ammo/bullets/a762?amount=4
-- reg://registry/items/usable/ammo/bullets/a762?amount=5
+- reg://registry/items/usable/ammo/bullets/a762?amount=100
+- reg://registry/items/usable/ammo/bullets/a762?amount=100
 - reg://registry/items/usable/fuel/tanks/tank_empty/tank20
-- reg://registry/items/usable/fuel/tanks/tank_full/tank20
-- reg://registry/items/slot_item/weapons/cannons/wc_zis5
+- reg://registry/items/slot_item/weapons/machine_guns/wmg_pkt
 - reg://registry/items/slot_item/weapons/machine_guns/wmg_pkt

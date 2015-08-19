@@ -16,13 +16,14 @@ a_braking: -8.9
 p_observing_range: 380
 
 slot_FC: ~
-slot_FC_f: FBRL
 slot_CL: ~
-slot_CL_f: L
 slot_CR: ~
-slot_CR_f: R
 slot_BR: ~
 slot_BL: ~
+
+slot_FC_f: FBRL
+slot_CL_f: L
+slot_CR_f: R
 
 armorer_car_svg: static/img/cars/car_3/armorer_car.html
 armorer_sectors_svg: static/img/cars/armorer_sectors.svg
