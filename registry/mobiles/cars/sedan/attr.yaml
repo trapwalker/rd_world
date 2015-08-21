@@ -1,0 +1,37 @@
+﻿
+tags: mid
+
+title: Седан
+price: 300
+
+max_hp: 100
+hp: 100
+r_min: 8.0
+ac_max: 18.0
+v_forward: 45.0
+v_backward: -20.0
+a_forward: 7.0
+a_backward: -5.0
+a_braking: -8.9
+p_observing_range: 330
+
+slot_CC: ~
+slot_FC: ~
+slot_BR: ~
+slot_BL: ~
+
+slot_CC_f: FBLR
+slot_FC_f: F
+
+armorer_car_svg: static/img/cars/car_1/armorer_car.html
+armorer_sectors_svg: static/img/cars/armorer_sectors.svg
+
+inventory:
+- reg://registry/items/usable/ammo/bullets/a762?amount=100
+- reg://registry/items/usable/ammo/bullets/a762?amount=100
+- reg://registry/items/usable/fuel/tanks/tank_empty/tank20
+- reg://registry/items/slot_item/weapons/machine_guns/wmg_pkt
+- reg://registry/items/slot_item/weapons/machine_guns/wmg_pkt
+- reg://registry/items/slot_item/weapons/machine_guns/wmg_pkt
+
+

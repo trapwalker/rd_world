@@ -1,1 +1,4 @@
-﻿doc    : Патроны
+﻿__cls__ : AmmoBullets
+doc    : Патроны
+
+activate_type: self

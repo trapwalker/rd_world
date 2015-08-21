@@ -1,6 +1,6 @@
 ﻿doc    : Патроны 7.62
 
-stack_size: 60
+stack_size: 100
 
 description: Патроны 7.62 для лёгких пулемётов
 inv_icon_big: static/img/items/a762/big.png

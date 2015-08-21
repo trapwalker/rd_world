@@ -9,3 +9,6 @@ ammo_per_second : 1
 radius: 180
 width: 20 
 dps: 5
+
+
+title: wmg_m240

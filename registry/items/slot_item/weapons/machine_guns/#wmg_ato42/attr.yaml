@@ -8,3 +8,5 @@ ammo_per_second : 1
 radius: 150
 width: 50 
 dps: 2
+
+title: wmg_ato42
