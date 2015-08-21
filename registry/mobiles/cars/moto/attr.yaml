@@ -16,7 +16,6 @@ a_braking: -8.9
 p_observing_range: 330
 
 slot_FC: ~
-
 slot_FC_f: F
 
 armorer_car_svg: static/img/cars/car_2/armorer_car.html

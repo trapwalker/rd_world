@@ -3,18 +3,18 @@ doc    : Пулемёт Калашникова танковый
 
 ammo              : reg://registry/items/usable/ammo/bullets/a762
 ammo_per_second   : 1   # [shot/s] ~=650/60
-radius: 400
-width: 40
+radius: 150
+width: 25
 dps: 4
 
-armorer_side_f: "static/img/items/weapons/wmg_pkt/side_f.png"
-armorer_side_b: "static/img/items/weapons/wmg_pkt/side_b.png"
-armorer_side_r: "static/img/items/weapons/wmg_pkt/side_r.png"
-armorer_side_l: "static/img/items/weapons/wmg_pkt/side_l.png"
+armorer_side_F: "static/img/items/weapons/wmg_pkt/side_f.png"
+armorer_side_B: "static/img/items/weapons/wmg_pkt/side_b.png"
+armorer_side_R: "static/img/items/weapons/wmg_pkt/side_r.png"
+armorer_side_L: "static/img/items/weapons/wmg_pkt/side_l.png"
 
-armorer_top_f: "static/img/items/weapons/wmg_pkt/top_f.png"
-armorer_top_b: "static/img/items/weapons/wmg_pkt/top_b.png"
-armorer_top_r: "static/img/items/weapons/wmg_pkt/top_r.png"
-armorer_top_l: "static/img/items/weapons/wmg_pkt/top_l.png"
+armorer_top_F: "static/img/items/weapons/wmg_pkt/top_f.png"
+armorer_top_B: "static/img/items/weapons/wmg_pkt/top_b.png"
+armorer_top_R: "static/img/items/weapons/wmg_pkt/top_r.png"
+armorer_top_L: "static/img/items/weapons/wmg_pkt/top_l.png"
 
 title: wmg_pkt
