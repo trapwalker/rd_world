@@ -1,14 +1,14 @@
 ﻿
 tags: cargo
 
-title: Грузовик
-price: 500
+title: Тяжелый
+price: 5000
 
-max_hp: 150
-hp: 150
-r_min: 12.0
+max_hp: 200
+hp: 200
+r_min: 8.0
 ac_max: 18.0
-v_forward: 35.0
+v_forward: 60.0
 v_backward: -10.0
 a_forward: 5.0
 a_backward: -5.0
