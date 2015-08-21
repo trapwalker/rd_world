@@ -7,6 +7,10 @@ radius: 150
 width: 25
 dps: 4
 
+inv_icon_big: static/img/items/weapons/wmg_pkt/big.png
+inv_icon_mid: static/img/items/weapons/wmg_pkt/mid.png
+inv_icon_small: static/img/items/weapons/wmg_pkt/small.png
+
 armorer_side_F: "static/img/items/weapons/wmg_pkt/side_f.png"
 armorer_side_B: "static/img/items/weapons/wmg_pkt/side_b.png"
 armorer_side_R: "static/img/items/weapons/wmg_pkt/side_r.png"
@@ -17,4 +21,5 @@ armorer_top_B: "static/img/items/weapons/wmg_pkt/top_b.png"
 armorer_top_R: "static/img/items/weapons/wmg_pkt/top_r.png"
 armorer_top_L: "static/img/items/weapons/wmg_pkt/top_l.png"
 
-title: wmg_pkt
+title: ПКТ
+description: Пулемёт Калашникова (танковый)
