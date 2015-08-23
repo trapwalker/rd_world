@@ -1,2 +1,9 @@
 title: Бухман
 photo: "static/img/npc/2.png"
+
+inventory_size:       4
+inventory:
+- reg://registry/items/usable/ammo/bullets/a762
+- reg://registry/items/usable/fuel/tanks/tank_empty/tank10
+- reg://registry/items/usable/fuel/tanks/tank_empty/tank20
+- reg://registry/items/slot_item/weapons/machine_guns/wmg_pkt
