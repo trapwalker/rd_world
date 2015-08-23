@@ -8,6 +8,7 @@ max_hp: 100
 hp: 100
 r_min: 5.0
 ac_max: 18.0
+max_control_speed:  100.0
 v_forward: 80.0
 v_backward: -20.0
 a_forward: 7.0
