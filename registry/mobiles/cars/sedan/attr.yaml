@@ -16,7 +16,7 @@ a_backward: -5.0
 a_braking: -8.9
 p_observing_range: 330
 
-slot_CC: ~
+slot_CC: reg://registry/items/slot_item/weapons/machine_guns/wmg_pkt?direction=B
 slot_FC: ~
 slot_BR: ~
 slot_BL: ~
