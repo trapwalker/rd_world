@@ -1,0 +1,9 @@
+﻿doc    : Предметы, активируя которые, пораждаются неподвижные мины на карте
+
+generate_obj  : reg://registry/mobiles/stationary/map_weapon/effect_mines/slow_mine_1
+
+stack_size    : 10
+base_price    : 80
+description   : Мина. Для установки необходимо активировать
+title         : Мина1
+activate_type : self
