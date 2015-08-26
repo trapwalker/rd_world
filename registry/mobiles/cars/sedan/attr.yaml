@@ -33,6 +33,10 @@ inventory:                  # При заполнении инвентаря н�
 - reg://registry/items/slot_item/weapons/machine_guns/wmg_pkt
 
 
+# Ссылка на картинку автомобиля в ангаре
+hangar_car:       "static/img/cars/car_1/hangar_car.png"
+
+
 # Ссылки на верстку автомобиля у оружейника
 armorer_car_svg: static/img/cars/car_1/armorer_car.html
 armorer_sectors_svg: static/img/cars/armorer_sectors.svg
@@ -53,3 +57,9 @@ slot_BL: ~
 
 slot_CC_f: FBLR
 slot_FC_f: F
+
+
+# Ссылки на иконки для инвентаря/ангара
+inv_icon_big: static/img/cars/car_1/inventory/big.png
+inv_icon_mid: static/img/cars/car_1/inventory/mid.png
+inv_icon_small: static/img/cars/car_1/inventory/small.png
