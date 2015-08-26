@@ -7,6 +7,8 @@ inventory:
 - reg://registry/items/usable/fuel/tanks/tank_empty/tank10
 - reg://registry/items/usable/fuel/tanks/tank_empty/tank20
 - reg://registry/items/slot_item/weapons/machine_guns/wmg_pkt
+- reg://registry/items/usable/map_weapon/mines_effect/slow_mine_1
+- reg://registry/items/usable/map_weapon/mines_effect/slow_mine_2
 
 
 

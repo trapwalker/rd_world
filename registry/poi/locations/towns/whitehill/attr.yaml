@@ -1,0 +1,9 @@
+﻿doc    : Второй город
+
+title: Вайтхилл
+position: [12463405.5, 27108911.5]
+
+
+trader: reg://registry/institutions/trader/buhman
+
+svg_link: static/img/towns/town_2/town.svg
