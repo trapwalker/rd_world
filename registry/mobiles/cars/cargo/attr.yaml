@@ -1,35 +1,31 @@
-﻿
-tags: cargo
+﻿tags: cargo
 
-title: Тяжелый
-price: 5000
+title:             Грузовик # Название атомобиля
+price:             6000     # Цена у продавца (л) (>= 0)
 
-max_hp: 200
-hp: 200
-r_min: 8.0
-ac_max: 18.0
-max_control_speed:  80.0
-v_forward: 60.0
-v_backward: -10.0
-a_forward: 5.0
-a_backward: -5.0
-a_braking: -8.9
-p_observing_range: 380
+p_visibility:      1.0      # Заметность автомобиля (0..1) при 0 автомобиль невидим
+p_observing_range: 380      # Радиус обзора автомобиля (м) (>= 0)
 
-slot_FC: ~
-slot_CL: ~
-slot_CR: ~
-slot_BR: ~
-slot_BL: ~
+max_hp:             200      # Максимальное количество прочности (> 0)
+hp:                 200      # Текущее количество прочности (> 0)
 
-slot_FC_f: FBRL
-slot_CL_f: L
-slot_CR_f: R
+r_min:              8.0     # Минимальный радиус разворота (м) (> 0)
+ac_max:             18.0    # Перегрузка с которой входит в поворот автомобиль (м/c^2) (> 0)
+a_forward:          5.0     # Ускорение при езде вперед (м/c^2)
+a_backward:         -5.0    # Ускорение при езде назад (м/c^2)
+a_braking:          -8.9   # Ускорение при торможении (м/c^2)
 
-armorer_car_svg: static/img/cars/car_3/armorer_car.html
-armorer_sectors_svg: static/img/cars/armorer_sectors.svg
+max_control_speed:  80.0   # Абсолютная максимальная скорость, скорость до которой будет размечен спидометр (м/с) (>= 0)
+v_forward:          60.0    # Максимальная скорость без штрафов местности при движении вперед (м/с) (0 .. max_control_speed)
+v_backward:         -10.0    # Максимальная скорость без штрафов местности при движении назад (м/с) (0 .. max_control_speed)
 
-inventory:
+max_fuel:           250     # Максимальное количество топлива, объем бака (л) (>= 0)
+fuel:               200      # Текущее количество топлива (0 .. max_fuel)
+p_fuel_rate:        0.5     # Расход топлива, тратится только в движении (л/с) (>= 0)
+
+
+inventory_size:       10     # Количество слотов в инвентаре (шт) (>=0)
+inventory:                  # При заполнении инвентаря необходимо учитывать его размер
 - reg://registry/items/usable/ammo/bullets/a762?amount=100
 - reg://registry/items/usable/ammo/bullets/a762?amount=100
 - reg://registry/items/usable/fuel/tanks/tank_empty/tank20
@@ -38,3 +34,26 @@ inventory:
 - reg://registry/items/slot_item/weapons/machine_guns/wmg_pkt
 - reg://registry/items/slot_item/weapons/machine_guns/wmg_pkt
 - reg://registry/items/slot_item/weapons/machine_guns/wmg_pkt
+
+
+# Ссылки на верстку автомобиля у оружейника
+armorer_car_svg: static/img/cars/car_3/armorer_car.html
+armorer_sectors_svg: static/img/cars/armorer_sectors.svg
+
+# Ниже перечислены все слоты доступные на автомобиле. В название содержится расположение слота.
+# Сейчас до 9 слотов на автомобиль: slot_(Front, Center, Back)(Left, Center, Right).
+# Все слоты закоментированы, кроме переднего центрального.
+
+slot_FC: ~
+slot_CL: ~
+slot_CR: ~
+slot_BR: ~
+slot_BL: ~
+
+# Настройка ограничений направления оружия из слота. Значением является строка в котороую включены первые буквы
+# соответствующих направлений (Front, Back, Left, Right)
+# Все слоты закоментированы, кроме переднего центрального.
+
+slot_FC_f: FBRL
+slot_CL_f: L
+slot_CR_f: R
