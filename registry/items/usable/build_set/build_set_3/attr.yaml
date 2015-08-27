@@ -1,0 +1,10 @@
+doc    : Большой ремкомплект
+
+build_points: 50
+
+description: Можно подлатать машину в пути.
+inv_icon_big: static/img/items/build_set/inv_rebuild_set_003_big.png
+inv_icon_mid: static/img/items/build_set/inv_rebuild_set_003_mid.png
+inv_icon_small: static/img/items/build_set/inv_rebuild_set_003_small.png
+title: Ремкомплект (Бол)
+base_price: 500
