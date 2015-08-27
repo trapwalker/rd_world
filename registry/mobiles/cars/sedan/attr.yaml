@@ -4,7 +4,7 @@ name_car:    ""                # Название атомобиля
 
 price:             2000     # Цена у продавца (л) (>= 0)
 
-p_visibility:      1.0      # Заметность автомобиля (0..1) при 0 автомобиль невидим
+p_visibility:      0.6      # Заметность автомобиля (0..1) при 0 автомобиль невидим
 p_observing_range: 330      # Радиус обзора автомобиля (м) (>= 0)
 
 max_hp:             100      # Максимальное количество прочности (> 0)
@@ -25,15 +25,14 @@ fuel:               60      # Текущее количество топлива
 p_fuel_rate:        0.02     # Расход топлива, тратится только в движении (л/с) (>= 0)
 
 
-inventory_size:       8     # Количество слотов в инвентаре (шт) (>=0)
+inventory_size:       12     # Количество слотов в инвентаре (шт) (>=0)
 inventory:                  # При заполнении инвентаря необходимо учитывать его размер
 
 - reg://registry/items/usable/ammo/bullets/a762?amount=100
-- reg://registry/items/usable/ammo/bullets/a762?amount=100
+- reg://registry/items/usable/ammo/bullets/a127x99?amount=20
 - reg://registry/items/usable/fuel/tanks/tank_empty/tank20
 - reg://registry/items/slot_item/weapons/machine_guns/wmg_pkt
-- reg://registry/items/slot_item/weapons/machine_guns/wmg_pkt
-- reg://registry/items/slot_item/weapons/machine_guns/wmg_pkt
+- reg://registry/items/slot_item/weapons/cannons/wc_zis5
 
 
 # Ссылка на картинку автомобиля в ангаре
