@@ -9,6 +9,9 @@ inventory:
 - reg://registry/items/slot_item/weapons/machine_guns/wmg_pkt
 - reg://registry/items/usable/map_weapon/mines_effect/slow_mine_1
 - reg://registry/items/usable/map_weapon/mines_effect/slow_mine_2
+- reg://registry/items/usable/build_set/build_set_1
+- reg://registry/items/usable/build_set/build_set_2
+- reg://registry/items/usable/build_set/build_set_3
 
 
 

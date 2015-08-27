@@ -24,7 +24,7 @@ fuel:               20      # Текущее количество топлива
 p_fuel_rate:        0.01     # Расход топлива, тратится только в движении (л/с) (>= 0)
 
 
-inventory_size:       4     # Количество слотов в инвентаре (шт) (>=0)
+inventory_size:       5     # Количество слотов в инвентаре (шт) (>=0)
 inventory:                  # При заполнении инвентаря необходимо учитывать его размер
 - reg://registry/items/usable/ammo/bullets/a762?amount=100
 - reg://registry/items/usable/ammo/bullets/a762?amount=100
