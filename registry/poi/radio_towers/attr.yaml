@@ -2,4 +2,4 @@
 doc    : Радиовышки
 
 can_instantiate: False
-range: 300
+p_observing_range: 300
