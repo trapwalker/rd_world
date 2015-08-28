@@ -1,7 +1,7 @@
 title: Бухман
 photo: "static/img/npc/2.png"
 
-inventory_size:       10
+inventory_size:       50
 inventory:
 - reg://registry/items/usable/ammo/bullets/a762
 - reg://registry/items/usable/ammo/bullets/a127x99
