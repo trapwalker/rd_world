@@ -10,3 +10,4 @@ map
 altitude
 tilesets
 state/*
+slope/*
