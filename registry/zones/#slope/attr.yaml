@@ -1,0 +1,10 @@
+﻿#__cls__: ZoneTileset
+doc    : Гористость
+abstract: false
+
+effect_names:
+- EffectSlopeCC
+
+#path=tilesets\ts_road
+
+order_key: z9

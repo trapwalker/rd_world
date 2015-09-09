@@ -1,0 +1,10 @@
+﻿__cls__: ZoneTileset
+doc    : Вода
+abstract: false
+
+effect_names:
+- EffectWaterCC
+
+path: tilesets\ts_water
+
+order_key: a4

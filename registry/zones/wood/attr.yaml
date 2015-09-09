@@ -1,0 +1,12 @@
+﻿__cls__: ZoneTileset
+doc    : Лес
+abstract: false
+
+effect_names:
+- EffectWoodCC
+- EffectWoodVisibility
+- EffectWoodObsRange
+
+path: tilesets\ts_wood
+
+order_key: a3
