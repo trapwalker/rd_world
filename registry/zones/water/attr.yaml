@@ -6,4 +6,4 @@ order_key: a4
 effect_names:
 - EffectWaterCC
 
-path: tilesets\ts_water
+path: tilesets/ts_water
