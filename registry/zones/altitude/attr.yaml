@@ -3,7 +3,7 @@ doc    : Высоты
 abstract: false
 order_key: a1
 
-path: altitude
+path: tiles/altitude
 extension: .jpg
 channel: 0
 pixel_depth: 22 # 14 + 8
