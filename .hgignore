@@ -7,7 +7,7 @@ temp/*
 *.orig
 .hgrc
 map
-altitude
+altitude/**.jpg
 tilesets
 state/*
-slope/*
+slope/**.png
