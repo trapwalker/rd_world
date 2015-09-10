@@ -1,0 +1,7 @@
+﻿__cls__: ZoneDirt
+doc    : Бездорожье
+abstract: false
+order_key: a0
+
+effect_names:
+- EffectDirtCC
