@@ -8,4 +8,4 @@ effect_names:
 - EffectWoodVisibility
 - EffectWoodObsRange
 
-path: tilesets\ts_wood
+path: tilesets/ts_wood

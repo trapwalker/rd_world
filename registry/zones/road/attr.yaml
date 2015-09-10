@@ -9,4 +9,4 @@ effect_names:
 - EffectRoadRCCDirt
 - EffectRoadRCCSlope
 
-path: tilesets\ts_road
+path: tilesets/ts_road
