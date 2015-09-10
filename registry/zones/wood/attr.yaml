@@ -1,6 +1,7 @@
-﻿__cls__: ZoneTileset
+﻿__cls__: TilesetZone
 doc    : Лес
 abstract: false
+order_key: a3
 
 effect_names:
 - EffectWoodCC
@@ -8,5 +9,3 @@ effect_names:
 - EffectWoodObsRange
 
 path: tilesets\ts_wood
-
-order_key: a3

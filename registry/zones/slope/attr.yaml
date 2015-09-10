@@ -1,0 +1,12 @@
+﻿__cls__: RasterZone
+doc    : Гористость
+abstract: false
+order_key: a2
+
+path: slope
+extension: .png
+channel: 0
+pixel_depth: 22 # 14 + 8
+
+effect_names:
+- EffectSlopeCC

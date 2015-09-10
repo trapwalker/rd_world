@@ -1,6 +1,7 @@
-﻿__cls__: ZoneTileset
+﻿__cls__: TilesetZone
 doc    : Дороги
 abstract: false
+order_key: a2
 
 effect_names:
 - EffectRoadRCCWood
@@ -9,5 +10,3 @@ effect_names:
 - EffectRoadRCCSlope
 
 path: tilesets\ts_road
-
-order_key: a2
