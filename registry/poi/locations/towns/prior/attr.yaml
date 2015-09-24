@@ -6,6 +6,7 @@ position: [12512034.49999, 27170315.5]
 # Список NPC в городе
 armorer:   reg://registry/institutions/armorer/timofey
 mechanic:  reg://registry/institutions/mechanic/ivan
+tuner:     reg://registry/institutions/tuner/petr
 trader:    reg://registry/institutions/trader/buhman
 hangar:    reg://registry/institutions/hangar/stepan
 nucoil:    reg://registry/institutions/nucoil

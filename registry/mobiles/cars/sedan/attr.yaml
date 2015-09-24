@@ -34,6 +34,7 @@ inventory:                  # При заполнении инвентаря н�
 - reg://registry/items/slot_item/weapons/machine_guns/wmg_pkt
 - reg://registry/items/slot_item/weapons/cannons/wc_zis5
 - reg://registry/items/slot_item/mechanic_item/system_1
+- reg://registry/items/slot_item/tuner_item/spoler
 
 
 # Ссылка на картинку автомобиля в ангаре
@@ -43,6 +44,9 @@ hangar_car:       "static/img/cars/car_1/hangar_car.png"
 # Ссылки на верстку автомобиля у оружейника
 armorer_car_svg: static/img/cars/car_1/armorer_car.html
 armorer_sectors_svg: static/img/cars/armorer_sectors.svg
+
+# Ссылки на верстку автомобиля у тюнера
+tuner_car_svg:        static/img/cars/car_1/tuner_car.html
 
 # Ниже перечислены все слоты доступные на автомобиле. В название содержится расположение слота.
 # Сейчас до 9 слотов на автомобиль: slot_(Front, Center, Back)(Left, Center, Right).

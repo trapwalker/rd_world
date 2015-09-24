@@ -43,6 +43,9 @@ hangar_car:       "static/img/cars/car_2/hangar_car.png"
 armorer_car_svg:       static/img/cars/car_2/armorer_car.html
 armorer_sectors_svg:   static/img/cars/armorer_sectors.svg
 
+# Ссылки на верстку автомобиля у тюнера
+tuner_car_svg:        static/img/cars/car_2/tuner_car.html
+
 # Ниже перечислены все слоты доступные на автомобиле. В название содержится расположение слота.
 # Сейчас до 9 слотов на автомобиль: slot_(Front, Center, Back)(Left, Center, Right).
 # Все слоты закоментированы, кроме переднего центрального.
