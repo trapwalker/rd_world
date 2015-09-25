@@ -73,6 +73,16 @@ slot_FC_f: FLR
 #slot_BR_f: BR
 
 
+# Настройка слотов для Тюнера
+slot_t1: ~
+slot_t2: ~
+slot_t3: ~
+
+# Настройка слотов для механика
+slot_m1: ~
+slot_m2: ~
+
+
 # Ссылки на иконки для инвентаря/ангара
 inv_icon_big: static/img/cars/car_2/inventory/big.png
 inv_icon_mid: static/img/cars/car_2/inventory/mid.png

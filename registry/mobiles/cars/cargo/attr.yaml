@@ -69,6 +69,17 @@ slot_CL_f: L
 slot_CR_f: R
 
 
+# Настройка слотов для Тюнера
+slot_t1: ~
+slot_t2: ~
+slot_t3: ~
+
+# Настройка слотов для механика
+slot_m1: ~
+slot_m2: ~
+
+
+
 # Ссылки на иконки для инвентаря/ангара
 inv_icon_big: static/img/cars/car_3/inventory/big.png
 inv_icon_mid: static/img/cars/car_3/inventory/mid.png

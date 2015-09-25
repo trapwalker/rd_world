@@ -34,7 +34,9 @@ inventory:                  # При заполнении инвентаря н�
 - reg://registry/items/slot_item/weapons/machine_guns/wmg_pkt
 - reg://registry/items/slot_item/weapons/cannons/wc_zis5
 - reg://registry/items/slot_item/mechanic_item/system_1
-- reg://registry/items/slot_item/tuner_item/spoler
+- reg://registry/items/slot_item/tuner_item/spoiler
+- reg://registry/items/slot_item/tuner_item/b_bumper
+- reg://registry/items/slot_item/tuner_item/f_bumper
 
 
 # Ссылка на картинку автомобиля в ангаре
@@ -64,6 +66,16 @@ slot_BL: ~
 
 slot_CC_f: FBLR
 slot_FC_f: F
+
+
+# Настройка слотов для Тюнера
+slot_t1: ~
+slot_t2: ~
+slot_t3: ~
+
+# Настройка слотов для механика
+slot_m1: ~
+slot_m2: ~
 
 
 # Ссылки на иконки для инвентаря/ангара
