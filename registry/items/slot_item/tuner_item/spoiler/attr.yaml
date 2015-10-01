@@ -1,0 +1,18 @@
+﻿doc     : Предметы, устанавливаемые в слоты тюнера
+
+tags    : spoiler
+
+# Картинки для представления в инвентаре
+inv_icon_big: static/img/items/weapons/mashine_guns/wmg_pkt/big.png
+inv_icon_mid: static/img/items/weapons/mashine_guns/wmg_pkt/mid.png
+inv_icon_small: static/img/items/weapons/mashine_guns/wmg_pkt/small.png
+
+title: Spoler   # Краткое название - отобразится в слоте инвентаря
+description: Супер сполер   # Полное описание - отобразится в разделе описания в инвентаре
+base_price: 100   # Цена
+
+pont_points: 100
+
+# Картинки для представления у тюнера, установленные на машине
+tuner_side: static/img/items/weapons/mashine_guns/wmg_pkt/small.png
+tuner_top: static/img/items/weapons/mashine_guns/wmg_pkt/small.png
