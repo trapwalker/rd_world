@@ -33,7 +33,6 @@ inventory:                  # При заполнении инвентаря н�
 - reg://registry/items/usable/fuel/tanks/tank_empty/tank20
 - reg://registry/items/slot_item/weapons/machine_guns/wmg_pkt
 - reg://registry/items/slot_item/weapons/cannons/wc_zis5
-- reg://registry/items/slot_item/mechanic_item/system_1
 - reg://registry/items/slot_item/tuner_item/spoiler
 - reg://registry/items/slot_item/tuner_item/b_bumper
 - reg://registry/items/slot_item/tuner_item/f_bumper
