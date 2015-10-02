@@ -3,9 +3,12 @@
 title: Прайор
 position: [12512034.49999, 27170315.5]
 
-armorer: reg://registry/institutions/armorer/timofey
-trader: reg://registry/institutions/trader/buhman
-hangar: reg://registry/institutions/hangar/stepan
-nucoil: reg://registry/institutions/nucoil
+# Список NPC в городе
+armorer:   reg://registry/institutions/armorer/timofey
+mechanic:  reg://registry/institutions/mechanic/ivan
+tuner:     reg://registry/institutions/tuner/petr
+trader:    reg://registry/institutions/trader/buhman
+hangar:    reg://registry/institutions/hangar/stepan
+nucoil:    reg://registry/institutions/nucoil
 
-svg_link: static/img/towns/town_2/town.svg
+svg_link: static/img/towns/town_1/town.svg
