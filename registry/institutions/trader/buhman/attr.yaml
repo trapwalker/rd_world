@@ -1,5 +1,6 @@
 title: Бухман
 photo: "static/img/npc/2.png"
+abstract: false
 
 inventory_size:       50
 inventory:
