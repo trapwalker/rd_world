@@ -1,4 +1,5 @@
 ﻿doc    : РТР
+abstract: false
 
 position: [12467965, 27110275]
 p_observing_range: 20000

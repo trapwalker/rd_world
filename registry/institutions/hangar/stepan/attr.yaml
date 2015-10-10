@@ -1,5 +1,6 @@
 ﻿title: Степан
 photo: "static/img/npc/1.png"
+abstract: false
 
 car_list:
 - reg://registry/mobiles/cars/sedan

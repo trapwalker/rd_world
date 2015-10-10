@@ -1,4 +1,5 @@
 ﻿doc    : ОРТ
+abstract: false
 
 position: [12513920, 27170066]
 p_observing_range: 20000
