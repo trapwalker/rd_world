@@ -34,10 +34,11 @@ inventory:                  # При заполнении инвентаря н�
 - reg://registry/items/usable/fuel/tanks/tank_empty/tank20
 - reg://registry/items/slot_item/weapons/machine_guns/wmg_pkt
 - reg://registry/items/slot_item/weapons/cannons/wc_zis5
-- reg://registry/items/slot_item/tuner_item/spoiler
-- reg://registry/items/slot_item/tuner_item/b_bumper
-- reg://registry/items/slot_item/tuner_item/f_bumper
-
+- reg://registry/items/slot_item/mechanic_item/engine/compressor/compressor_1
+- reg://registry/items/slot_item/mechanic_item/engine/sparkplug/sparkplug_1
+- reg://registry/items/slot_item/mechanic_item/engine/sparkplug/sparkplug_1
+- reg://registry/items/slot_item/mechanic_item/engine/exhaust/exhaust_1
+- reg://registry/items/slot_item/mechanic_item/engine/ignition/ignition_1
 
 # Ссылка на картинку автомобиля в ангаре
 hangar_car:            "static/img/cars/car_1/hangar_car.png"
