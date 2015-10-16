@@ -113,7 +113,21 @@ slot_m48: ~
 slot_m49: ~
 
 # Слоты системы торможения
-
+slot_m54: ~
+slot_m55: ~
+slot_m56: ~
+slot_m57: ~
+slot_m62: ~
+slot_m63: ~
+slot_m64: ~
+slot_m65: ~
+slot_m70: ~
+slot_m71: ~
+slot_m72: ~
+slot_m73: ~
+slot_m74: ~
+slot_m75: ~
+slot_m80: ~
 
 # Слоты системы охлаждения
 slot_m81: ~
