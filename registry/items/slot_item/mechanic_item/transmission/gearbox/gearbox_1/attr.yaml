@@ -1,0 +1,11 @@
+doc         : коробка передач 1
+title       : коробка передач 1
+description : коробка передач 1
+
+inv_icon_big: static/img/items/mechanic_items/engine/compressor_1/big.png
+inv_icon_mid: static/img/items/mechanic_items/engine/compressor_1/mid.png
+inv_icon_small: static/img/items/mechanic_items/engine/compressor_1/small.png
+inv_icon_supersmall: static/img/items/mechanic_items/engine/compressor_1/supersmall.png
+
+
+base_price: 10

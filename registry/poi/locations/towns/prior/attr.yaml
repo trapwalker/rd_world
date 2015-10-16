@@ -1,4 +1,5 @@
 ﻿doc    : Первый город
+abstract: false
 
 title: Прайор
 position: [12512034.49999, 27170315.5]
