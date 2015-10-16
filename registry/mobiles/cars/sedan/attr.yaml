@@ -54,7 +54,7 @@ tuner_car:             static/img/cars/car_1/tuner_car.html
 mechanic_engine:        static/img/cars/engines/engine_1/engine.html                    # двигатель
 mechanic_transmission:  static/img/cars/transmissions/transmission_1/transmission.html  # трансмиссия
 mechanic_brakes:        static/img/cars/brakes/brakes_1/brakes.html                     # тормоза
-mechanic_cooling:       static/img/cars/engines/engine_1/engine.html                    # охлаждение
+mechanic_cooling:       static/img/cars/coolings/cooling_1/cooling.html                 # охлаждение
 mechanic_suspension:    static/img/cars/suspensions/suspension_1/suspension.html        # подвеска
 
 
