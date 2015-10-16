@@ -53,6 +53,19 @@ inventory:
 - reg://registry/items/slot_item/mechanic_item/engine/exhaust/exhaust_1
 - reg://registry/items/slot_item/mechanic_item/engine/sparkplug/sparkplug_1
 
+- reg://registry/items/slot_item/mechanic_item/transmission/clutch/clutch_1
+- reg://registry/items/slot_item/mechanic_item/transmission/gearbox/gearbox_1
+- reg://registry/items/slot_item/mechanic_item/transmission/front_axle/front_axle_1
+- reg://registry/items/slot_item/mechanic_item/transmission/rear_axle/rear_axle_1
+- reg://registry/items/slot_item/mechanic_item/transmission/front_differential/front_differential_1
+- reg://registry/items/slot_item/mechanic_item/transmission/rear_differential/rear_differential_1
+- reg://registry/items/slot_item/mechanic_item/transmission/ATF/ATF_1
+- reg://registry/items/slot_item/mechanic_item/transmission/primary_shaft/primary_shaft_1
+- reg://registry/items/slot_item/mechanic_item/transmission/secondary_shaft/secondary_shaft_1
+- reg://registry/items/slot_item/mechanic_item/transmission/torque_converter/torque_converter_1
+- reg://registry/items/slot_item/mechanic_item/transmission/transfer_case/transfer_case_1
+
+
 
 price:
 - ["reg://registry/items/usable/ammo", 90, 110, "Патроны Бухман покупает дешевле, а продаёт дороже номинала на 10%"]
