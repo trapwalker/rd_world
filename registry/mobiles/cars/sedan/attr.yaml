@@ -51,7 +51,11 @@ armorer_sectors_svg:   static/img/cars/armorer_sectors.svg
 tuner_car:             static/img/cars/car_1/tuner_car.html
 
 # Ссылки на верстку автомобиля у механика
-mechanic_engine:       static/img/cars/engines/engine_1/engine.html
+mechanic_engine:        static/img/cars/engines/engine_1/engine.html                    # двигатель
+mechanic_transmission:  static/img/cars/transmissions/transmission_1/transmission.html  # трансмиссия
+mechanic_brakes:        static/img/cars/engines/engine_1/engine.html                    # тормоза
+mechanic_cooling:       static/img/cars/engines/engine_1/engine.html                    # охлаждение
+mechanic_suspension:    static/img/cars/engines/engine_1/engine.html                    # подвеска
 
 
 # Ниже перечислены все слоты доступные на автомобиле. В название содержится расположение слота.
