@@ -11,5 +11,6 @@ tuner:     reg://registry/institutions/tuner/petr
 trader:    reg://registry/institutions/trader/buhman
 hangar:    reg://registry/institutions/hangar/stepan
 nucoil:    reg://registry/institutions/nucoil
+trainer:   reg://registry/institutions/trainer/fabio
 
 svg_link: static/img/towns/town_1/town.svg
