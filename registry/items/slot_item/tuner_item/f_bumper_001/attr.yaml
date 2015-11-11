@@ -1,0 +1,21 @@
+﻿doc     : Предметы, устанавливаемые в слоты тюнера
+
+tags    : f_bumper
+
+# Картинки для представления в инвентаре
+inv_icon_big: static/img/items/weapons/mashine_guns/wmg_pkt/big.png
+inv_icon_mid: static/img/items/weapons/mashine_guns/wmg_pkt/mid.png
+inv_icon_small: static/img/items/weapons/mashine_guns/wmg_pkt/small.png
+
+title: F Bumper 001  # Краткое название - отобразится в слоте инвентаря
+description: Передний бампер   # Полное описание - отобразится в разделе описания в инвентаре
+base_price: 100   # Цена
+
+pont_points: 50
+
+# Картинки для представления у тюнера, установленные на машине
+tuner_side: static/img/items/tuner_items/f_bumper_001/side.png
+tuner_top: static/img/items/tuner_items/f_bumper_001/top.png
+
+tuner_side_pos  : 1
+tuner_top_pos   : 1

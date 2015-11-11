@@ -26,19 +26,25 @@ fuel:               60      # Текущее количество топлива
 p_fuel_rate:        0.02     # Расход топлива, тратится только в движении (л/с) (>= 0)
 
 
-inventory_size:       12     # Количество слотов в инвентаре (шт) (>=0)
+inventory_size:       20     # Количество слотов в инвентаре (шт) (>=0)
 inventory:                  # При заполнении инвентаря необходимо учитывать его размер
 
 - reg://registry/items/usable/ammo/bullets/a762?amount=100
 - reg://registry/items/usable/ammo/bullets/a127x99?amount=20
 - reg://registry/items/usable/fuel/tanks/tank_empty/tank20
-- reg://registry/items/slot_item/weapons/machine_guns/wmg_pkt
-- reg://registry/items/slot_item/weapons/cannons/wc_zis5
-- reg://registry/items/slot_item/mechanic_item/engine/compressor/compressor_1
-- reg://registry/items/slot_item/mechanic_item/engine/sparkplug/sparkplug_1
-- reg://registry/items/slot_item/mechanic_item/engine/sparkplug/sparkplug_1
-- reg://registry/items/slot_item/mechanic_item/engine/exhaust/exhaust_1
-- reg://registry/items/slot_item/mechanic_item/engine/ignition/ignition_1
+- reg://registry/items/slot_item/tuner_item/b_bumper_001
+- reg://registry/items/slot_item/tuner_item/b_fender_001
+- reg://registry/items/slot_item/tuner_item/b_fender_002
+- reg://registry/items/slot_item/tuner_item/b_glass_001
+- reg://registry/items/slot_item/tuner_item/b_glass_002
+- reg://registry/items/slot_item/tuner_item/f_bumper_001
+- reg://registry/items/slot_item/tuner_item/f_fender_001
+- reg://registry/items/slot_item/tuner_item/f_glass_001
+- reg://registry/items/slot_item/tuner_item/roof_001
+- reg://registry/items/slot_item/tuner_item/skirt_001
+
+
+
 
 # Ссылка на картинку автомобиля в ангаре
 hangar_car:            "static/img/cars/car_1/hangar_car.png"
@@ -80,6 +86,12 @@ slot_FC_f: F
 slot_t1: ~
 slot_t2: ~
 slot_t3: ~
+slot_t4: ~
+slot_t5: ~
+slot_t6: ~
+slot_t7: ~
+slot_t8: ~
+slot_t9: reg://registry/items/slot_item/tuner_item/wheels_001
 
 
 # Ссылки на иконки для инвентаря/ангара
