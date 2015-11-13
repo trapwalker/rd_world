@@ -17,20 +17,18 @@ svg_link: static/img/towns/town_1/town.svg
 
 
 buildings:
-	sto:
-		caption: СТО
-		head: reg://registry/institutions/hangar/stepan
-		instances:
-			- reg://registry/institutions/mechanic/ivan
-			- reg://registry/institutions/hangar/stepan
-	shop:
-		caption: Магазин
-		head: reg://registry/institutions/trader/buhman
-		instances:
-			- reg://registry/institutions/trader/buhman
-	adm:
-		caption: Администрация
-		head: reg://registry/institutions/adm/pappa
-		instances:
-		    - reg://registry/institutions/post/pechkin
-		    
+    sto:
+        caption: СТО
+        head: reg://registry/institutions/hangar/stepan
+        instances:
+            - reg://registry/institutions/mechanic/ivan
+            - reg://registry/institutions/hangar/stepan
+    shop:
+        caption: Магазин        
+        instances:
+            - reg://registry/institutions/trader/buhman
+    adm:
+        caption: Администрация
+        head: reg://registry/institutions/adm/pappa
+        instances:
+            - reg://registry/institutions/post/pechkin
