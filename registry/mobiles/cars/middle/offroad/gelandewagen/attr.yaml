@@ -63,14 +63,11 @@ slot_FC: ~
 # соответствующих направлений (Front, Back, Left, Right)
 # Все слоты закоментированы, кроме переднего центрального.
 
-slot_CC_f: FBLR
-slot_FC_f: F
-
-slot_CR: RF
-slot_CL: LF
-slot_BR: RB
-slot_BL: LB
-slot_FC: FRL
+slot_CR_f: RF
+slot_CL_f: LF
+slot_BR_f: RB
+slot_BL_f: LB
+slot_FC_f: FRL
 
 
 # Настройка слотов для Тюнера

@@ -4,5 +4,7 @@ abstract: false
 
 car_list:
 - reg://registry/mobiles/cars/middle/passenger
+- reg://registry/mobiles/cars/middle/offroad/defender
+- reg://registry/mobiles/cars/middle/offroad/gelandewagen
 - reg://registry/mobiles/cars/cargo
 - reg://registry/mobiles/cars/light/moto

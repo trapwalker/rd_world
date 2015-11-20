@@ -63,21 +63,16 @@ slot_FC: ~
 # соответствующих направлений (Front, Back, Left, Right)
 # Все слоты закоментированы, кроме переднего центрального.
 
-slot_CC_f: FBLR
-slot_FC_f: F
-
-slot_CR: RF
-slot_CL: LF
-slot_BR: RB
-slot_BL: LB
-slot_FC: FRL
-
+slot_CR_f: RF
+slot_CL_f: LF
+slot_BR_f: RB
+slot_BL_f: LB
+slot_FC_f: FRL
 
 # Настройка слотов для Тюнера
 slot_t1: ~
 slot_t2: ~
 slot_t3: ~
-
 
 # Ссылки на иконки для инвентаря/ангара
 inv_icon_big: static/img/cars/car_1/inventory/big.png
