@@ -14,3 +14,27 @@ nucoil:    reg://registry/institutions/nucoil
 trainer:   reg://registry/institutions/trainer/fabio
 
 svg_link: static/img/towns/town_1/town.svg
+
+buildings:
+    sto:
+        caption: СТО
+        head: reg://registry/institutions/armorer/timofey
+        instances:
+            - reg://registry/institutions/armorer/timofey
+            - reg://registry/institutions/mechanic/ivan
+            - reg://registry/institutions/tuner/petr
+    store:
+        caption: Магазин
+        head: reg://registry/institutions/trader/buhman
+        instances:
+            - reg://registry/institutions/trader/buhman
+    hangar:
+        caption: Ангар
+        head: reg://registry/institutions/hangar/stepan
+        instances:
+            - reg://registry/institutions/hangar/stepan
+    library:
+        caption: Библиотека
+        head: reg://registry/institutions/trainer/fabio
+        instances:
+            - reg://registry/institutions/trainer/fabio
