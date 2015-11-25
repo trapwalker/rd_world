@@ -2,6 +2,7 @@
 class_car:   "Средний"         # Класс автомобиля
 name_car:    ""                # Название атомобиля
 
+
 price:             2000     # Цена у продавца (л) (>= 0)
 exp_price:         10       # Кол-во очков опыта, которое получит убивший данную машину
 
@@ -29,25 +30,25 @@ p_fuel_rate:        0.02     # Расход топлива, тратится т�
 inventory_size:       12     # Количество слотов в инвентаре (шт) (>=0)
 inventory:                  # При заполнении инвентаря необходимо учитывать его размер
 - reg://registry/items/usable/ammo/bullets/a762?amount=100
-- reg://registry/items/usable/ammo/bullets/a127x99?amount=20
-- reg://registry/items/usable/fuel/tanks/tank_empty/tank20
+- reg://registry/items/usable/ammo/bullets/a762?amount=100
+- reg://registry/items/usable/ammo/bullets/a762?amount=100
+- reg://registry/items/usable/ammo/bullets/a762?amount=100
 - reg://registry/items/slot_item/weapons/machine_guns/wmg_pkt
-- reg://registry/items/slot_item/weapons/cannons/wc_zis5
-- reg://registry/items/slot_item/mechanic_item/engine/compressor/compressor_1
-- reg://registry/items/slot_item/mechanic_item/engine/sparkplug/sparkplug_1
-- reg://registry/items/slot_item/mechanic_item/engine/sparkplug/sparkplug_1
-- reg://registry/items/slot_item/mechanic_item/engine/exhaust/exhaust_1
-- reg://registry/items/slot_item/mechanic_item/engine/ignition/ignition_1
+- reg://registry/items/slot_item/weapons/machine_guns/wmg_pkt
+
 
 # Ссылка на картинку автомобиля в ангаре
 hangar_car:            "static/img/cars/car_1/hangar_car.png"
+
 
 # Ссылки на верстку автомобиля у оружейника
 armorer_car:           static/img/cars/car_1/armorer_car.html
 armorer_sectors_svg:   static/img/cars/armorer_sectors.svg
 
+
 # Ссылки на верстку автомобиля у тюнера
 tuner_car:             static/img/cars/car_1/tuner_car.html
+
 
 # Ссылки на верстку автомобиля у механика
 mechanic_engine:        static/img/cars/engines/engine_1/engine.html                    # двигатель
@@ -60,8 +61,7 @@ mechanic_suspension:    static/img/cars/suspensions/suspension_1/suspension.html
 # Ниже перечислены все слоты доступные на автомобиле. В название содержится расположение слота.
 # Сейчас до 9 слотов на автомобиль: slot_(Front, Center, Back)(Left, Center, Right).
 # Все слоты закоментированы, кроме переднего центрального.
-
-slot_CC: reg://registry/items/slot_item/weapons/machine_guns/wmg_pkt?direction=B
+slot_CC: ~
 slot_FC: ~
 slot_BR: ~
 slot_BL: ~
@@ -70,15 +70,20 @@ slot_BL: ~
 # Настройка ограничений направления оружия из слота. Значением является строка в котороую включены первые буквы
 # соответствующих направлений (Front, Back, Left, Right)
 # Все слоты закоментированы, кроме переднего центрального.
-
 slot_CC_f: FBLR
 slot_FC_f: F
 
 
 # Настройка слотов для Тюнера
-slot_t1: ~
+slot_t1: reg://registry/items/slot_item/tuner_item/wheels_001
 slot_t2: ~
 slot_t3: ~
+slot_t4: ~
+slot_t5: ~
+slot_t6: ~
+slot_t7: ~
+slot_t8: ~
+slot_t9: ~
 
 
 # Ссылки на иконки для инвентаря/ангара
