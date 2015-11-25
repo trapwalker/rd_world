@@ -28,7 +28,6 @@ p_fuel_rate:        0.02     # Расход топлива, тратится т�
 
 inventory_size:       12     # Количество слотов в инвентаре (шт) (>=0)
 inventory:                  # При заполнении инвентаря необходимо учитывать его размер
-
 - reg://registry/items/usable/ammo/bullets/a762?amount=100
 - reg://registry/items/usable/ammo/bullets/a127x99?amount=20
 - reg://registry/items/usable/fuel/tanks/tank_empty/tank20
