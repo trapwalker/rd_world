@@ -65,10 +65,6 @@ inventory:
 - reg://registry/items/slot_item/mechanic_item/transmission/torque_converter/torque_converter_1
 - reg://registry/items/slot_item/mechanic_item/transmission/transfer_case/transfer_case_1
 
-- reg://registry/items/slot_item/tuner_item/b_bumper
-- reg://registry/items/slot_item/tuner_item/f_bumper
-- reg://registry/items/slot_item/tuner_item/spoiler
-
 
 price:
 - ["reg://registry/items/usable/ammo", 90, 110, "Патроны Бухман покупает дешевле, а продаёт дороже номинала на 10%"]
