@@ -13,9 +13,13 @@ base_price: 100   # Цена
 
 pont_points: 50
 
-# Картинки для представления у тюнера, установленные на машине
-tuner_side: static/img/items/tuner_items/wheels_001/side.png
-tuner_top: ~
 
-tuner_side_pos  : 1
-tuner_top_pos   : 1
+# Картинки для представления у тюнера, установленные на машине
+images:
+    reg://registry/mobiles/cars/middle/passenger:                     # реестровая ссылка на машинку, для которой подходит данный итем
+        top:                                                          # описание вида сверху (картинка и позиция)
+            link: ~                                                   # не забыть поставить тильду, если нет этого вида
+            z_index: 1                                                # позиция: -1 или 1
+        side:                                                         # описание вида сбоку (картинка и позиция)
+            link: static/img/items/tuner_items/wheels_001/side.png    # ссылка на картику для вида сбоку
+            z_index: 1                                                # позиция: -1 или 1
