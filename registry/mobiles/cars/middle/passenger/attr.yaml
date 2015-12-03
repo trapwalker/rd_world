@@ -40,12 +40,12 @@ inventory:                  # При заполнении инвентаря н�
 - reg://registry/items/slot_item/tuner_item/f_glass_001
 - reg://registry/items/slot_item/tuner_item/roof_001
 - reg://registry/items/slot_item/tuner_item/skirt_001
-#- reg://registry/items/usable/ammo/bullets/a762?amount=100
-#- reg://registry/items/usable/ammo/bullets/a762?amount=100
-#- reg://registry/items/usable/ammo/bullets/a762?amount=100
-#- reg://registry/items/usable/ammo/bullets/a762?amount=100
-#- reg://registry/items/slot_item/weapons/machine_guns/wmg_pkt
-#- reg://registry/items/slot_item/weapons/machine_guns/wmg_pkt
+- reg://registry/items/usable/ammo/bullets/a762?amount=100
+- reg://registry/items/usable/ammo/bullets/a762?amount=100
+- reg://registry/items/usable/ammo/bullets/a762?amount=100
+- reg://registry/items/usable/ammo/bullets/a762?amount=100
+- reg://registry/items/slot_item/weapons/machine_guns/wmg_pkt
+- reg://registry/items/slot_item/weapons/machine_guns/wmg_pkt
 
 
 # Ссылка на картинку автомобиля в ангаре
