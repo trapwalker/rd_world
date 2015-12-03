@@ -17,5 +17,35 @@ pont_points: 50
 tuner_side: static/img/items/tuner_items/b_bumper_001/side.png
 tuner_top: static/img/items/tuner_items/b_bumper_001/top.png
 
+tuner_top:
+    //машинка 1:
+        link: static/img/items/tuner_items/b_bumper_001/top.png
+        z_index: reg://registry/institutions/armorer/timofey
+    //машинка 2:
+        link: static/img/items/tuner_items/b_bumper_001/top.png
+        z_index: reg://registry/institutions/armorer/timofey
+
+
+tuner_side:
+    //машинка 1:
+        link: static/img/items/tuner_items/b_bumper_001/top.png
+        z_index: reg://registry/institutions/armorer/timofey
+    //машинка 2:
+        link: static/img/items/tuner_items/b_bumper_001/top.png
+        z_index: reg://registry/institutions/armorer/timofey
+
+
+
+images:
+    reg://registry/mobiles/cars/middle/passenger
+        top:
+            link: static/img/items/tuner_items/b_bumper_001/top.png
+            z_index: 1
+        side:
+            link: static/img/items/tuner_items/b_bumper_001/top.png
+            z_index: 1
+
+
+
 tuner_side_pos  : 1
 tuner_top_pos   : 1
