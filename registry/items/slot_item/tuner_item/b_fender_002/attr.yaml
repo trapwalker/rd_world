@@ -14,8 +14,11 @@ base_price: 100   # Цена
 pont_points: 50
 
 # Картинки для представления у тюнера, установленные на машине
-tuner_side: static/img/items/tuner_items/b_fender_002/side.png
-tuner_top: static/img/items/tuner_items/b_fender_002/top.png
-
-tuner_side_pos  : 1
-tuner_top_pos   : 1
+images:
+    reg://registry/mobiles/cars/middle/passenger:                       # реестровая ссылка на машинку, для которой подходит данный итем
+        top:                                                            # описание вида сверху (картинка и позиция)
+            link: static/img/items/tuner_items/b_fender_002/top.png     # ссылка на картику для вида сверху
+            z_index: 1                                                  # позиция: -1 или 1
+        side:                                                           # описание вида сбоку (картинка и позиция)
+            link: static/img/items/tuner_items/b_fender_002/side.png    # ссылка на картику для вида сбоку
+            z_index: 1                                                  # позиция: -1 или 1
