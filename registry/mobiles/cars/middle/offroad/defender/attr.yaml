@@ -47,7 +47,7 @@ armorer_sectors_svg:   static/img/cars/armorer_sectors.svg
 
 
 # Ссылки на верстку автомобиля у тюнера
-tuner_car:             static/img/cars/car_1/tuner_car.html
+tuner_car:             static/img/cars/middle/offroad/defender/tuner_car.html
 
 
 # Ссылки на верстку автомобиля у механика
@@ -85,6 +85,6 @@ slot_t3: ~
 
 
 # Ссылки на иконки для инвентаря/ангара
-inv_icon_big: static/img/cars/car_1/inventory/big.png
-inv_icon_mid: static/img/cars/car_1/inventory/mid.png
-inv_icon_small: static/img/cars/car_1/inventory/small.png
+inv_icon_big: static/img/cars/middle/offroad/defender/inventory/big.png
+inv_icon_mid: static/img/cars/middle/offroad/defender/inventory/mid.png
+inv_icon_small: static/img/cars/middle/offroad/defender/inventory/small.png
