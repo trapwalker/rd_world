@@ -3,9 +3,9 @@
 tags    : f_fender
 
 # Картинки для представления в инвентаре
-inv_icon_big: static/img/items/tuner_items/b_fender_002/big.png
-inv_icon_mid: static/img/items/tuner_items/b_fender_002/mid.png
-inv_icon_small: static/img/items/tuner_items/b_fender_002/small.png
+inv_icon_big: static/img/items/tuner_items/f_fender_002/big.png
+inv_icon_mid: static/img/items/tuner_items/f_fender_002/mid.png
+inv_icon_small: static/img/items/tuner_items/f_fender_002/small.png
 
 title: F Fender 002  # Краткое название - отобразится в слоте инвентаря
 description: Передние крылья  # Полное описание - отобразится в разделе описания в инвентаре

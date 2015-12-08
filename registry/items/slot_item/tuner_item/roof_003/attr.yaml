@@ -3,12 +3,12 @@
 tags    : roof
 
 # Картинки для представления в инвентаре
-inv_icon_big: static/img/items/tuner_items/spot_003/big.png
-inv_icon_mid: static/img/items/tuner_items/spot_003/mid.png
-inv_icon_small: static/img/items/tuner_items/spot_003/small.png
+inv_icon_big: static/img/items/tuner_items/roof_003/big.png
+inv_icon_mid: static/img/items/tuner_items/roof_003/mid.png
+inv_icon_small: static/img/items/tuner_items/roof_003/small.png
 
-title: spot_003   # Краткое название - отобразится в слоте инвентаря
-description: spot_003   # Полное описание - отобразится в разделе описания в инвентаре
+title: roof_003   # Краткое название - отобразится в слоте инвентаря
+description: roof_003   # Полное описание - отобразится в разделе описания в инвентаре
 base_price: 100   # Цена
 
 pont_points: 50
