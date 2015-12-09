@@ -1,0 +1,25 @@
+﻿doc     : Предметы, устанавливаемые в слоты тюнера
+
+tags    : b_bumper
+
+# Картинки для представления в инвентаре
+inv_icon_big: static/img/items/tuner_items/b_bumper_003/big.png
+inv_icon_mid: static/img/items/tuner_items/b_bumper_003/mid.png
+inv_icon_small: static/img/items/tuner_items/b_bumper_003/small.png
+
+title: b_bumper_003   # Краткое название - отобразится в слоте инвентаря
+description: b_bumper_003   # Полное описание - отобразится в разделе описания в инвентаре
+base_price: 100   # Цена
+
+pont_points: 50
+
+
+# Картинки для представления у тюнера, установленные на машине
+images:
+    reg://registry/mobiles/cars/middle/offroad/gelandewagen:          # реестровая ссылка на машинку, для которой подходит данный итем
+        top:                                                          # описание вида сверху (картинка и позиция)
+            link: static/img/items/tuner_items/b_bumper_003/top_1.png                                  # не забыть поставить тильду, если нет этого вида
+            z_index: 1                                                # позиция: -1 или 1
+        side:                                                         # описание вида сбоку (картинка и позиция)
+            link: static/img/items/tuner_items/b_bumper_003/side_1.png   # ссылка на картику для вида сбоку
+            z_index: 1                                                # позиция: -1 или 1

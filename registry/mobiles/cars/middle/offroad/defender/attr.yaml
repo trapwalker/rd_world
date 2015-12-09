@@ -29,12 +29,24 @@ p_fuel_rate:        0.04     # Расход топлива, тратится т�
 
 inventory_size:       16     # Количество слотов в инвентаре (шт) (>=0)
 inventory:                  # При заполнении инвентаря необходимо учитывать его размер
-- reg://registry/items/usable/ammo/bullets/a762?amount=100
-- reg://registry/items/usable/ammo/bullets/a762?amount=100
-- reg://registry/items/usable/ammo/bullets/a762?amount=100
-- reg://registry/items/usable/ammo/bullets/a762?amount=100
-- reg://registry/items/slot_item/weapons/machine_guns/wmg_pkt
-- reg://registry/items/slot_item/weapons/machine_guns/wmg_pkt
+#- reg://registry/items/usable/ammo/bullets/a762?amount=100
+#- reg://registry/items/usable/ammo/bullets/a762?amount=100
+#- reg://registry/items/usable/ammo/bullets/a762?amount=100
+#- reg://registry/items/usable/ammo/bullets/a762?amount=100
+#- reg://registry/items/slot_item/weapons/machine_guns/wmg_pkt
+#- reg://registry/items/slot_item/weapons/machine_guns/wmg_pkt
+
+- reg://registry/items/slot_item/tuner_item/b_bumper_002
+- reg://registry/items/slot_item/tuner_item/b_fender_003
+- reg://registry/items/slot_item/tuner_item/f_bumper_002
+- reg://registry/items/slot_item/tuner_item/f_fender_002
+- reg://registry/items/slot_item/tuner_item/roof_002
+- reg://registry/items/slot_item/tuner_item/armor_002
+- reg://registry/items/slot_item/tuner_item/bale_002
+- reg://registry/items/slot_item/tuner_item/shnork_002
+- reg://registry/items/slot_item/tuner_item/step_002
+- reg://registry/items/slot_item/tuner_item/trunk_002
+- reg://registry/items/slot_item/tuner_item/win_prot_002
 
 
 # Ссылка на картинку автомобиля в ангаре
@@ -47,7 +59,7 @@ armorer_sectors_svg:   static/img/cars/armorer_sectors.svg
 
 
 # Ссылки на верстку автомобиля у тюнера
-tuner_car:             static/img/cars/car_1/tuner_car.html
+tuner_car:             static/img/cars/middle/offroad/defender/tuner_car.html
 
 
 # Ссылки на верстку автомобиля у механика
@@ -81,10 +93,19 @@ slot_FC_f: FRL
 # Настройка слотов для Тюнера
 slot_t1: ~
 slot_t2: ~
-slot_t3: ~
+slot_t4: ~
+slot_t5: ~
+slot_t7: ~
+slot_t9: ~
+slot_t11: ~
+slot_t12: ~
+slot_t13: ~
+slot_t14: ~
+slot_t15: ~
+slot_t17: ~
 
 
 # Ссылки на иконки для инвентаря/ангара
-inv_icon_big: static/img/cars/car_1/inventory/big.png
-inv_icon_mid: static/img/cars/car_1/inventory/mid.png
-inv_icon_small: static/img/cars/car_1/inventory/small.png
+inv_icon_big: static/img/cars/middle/offroad/defender/inventory/big.png
+inv_icon_mid: static/img/cars/middle/offroad/defender/inventory/mid.png
+inv_icon_small: static/img/cars/middle/offroad/defender/inventory/small.png

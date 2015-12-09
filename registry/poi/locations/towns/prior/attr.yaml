@@ -12,6 +12,7 @@ trader:    reg://registry/institutions/trader/buhman
 hangar:    reg://registry/institutions/hangar/stepan
 nucoil:    reg://registry/institutions/nucoil
 trainer:   reg://registry/institutions/trainer/fabio
+parking:   reg://registry/institutions/parking/vsevolod
 
 svg_link: static/img/towns/town_1/town.svg
 
@@ -33,6 +34,7 @@ buildings:
         head: reg://registry/institutions/hangar/stepan
         instances:
             - reg://registry/institutions/hangar/stepan
+            - reg://registry/institutions/parking/vsevolod
     library:
         caption: Библиотека
         head: reg://registry/institutions/trainer/fabio
