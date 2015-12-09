@@ -22,3 +22,11 @@ images:
         side:                                                           # описание вида сбоку (картинка и позиция)
             link: static/img/items/tuner_items/f_bumper_001/side.png    # ссылка на картику для вида сбоку
             z_index: 1                                                  # позиция: -1 или 1
+
+    reg://registry/mobiles/cars/middle/passenger_2:                     # реестровая ссылка на машинку, для которой подходит данный итем
+        top:                                                            # описание вида сверху (картинка и позиция)
+            link: static/img/items/tuner_items/f_bumper_001/top.png     # ссылка на картику для вида сверху
+            z_index: 1                                                  # позиция: -1 или 1
+        side:                                                           # описание вида сбоку (картинка и позиция)
+            link: static/img/items/tuner_items/f_bumper_001/side.png    # ссылка на картику для вида сбоку
+            z_index: 1                                                  # позиция: -1 или 1
