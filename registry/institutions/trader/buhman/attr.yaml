@@ -71,3 +71,8 @@ price:
 - ["reg://registry/items/usable/fuel?tags=full_fuel_tank", 105, ~, "Топливо покупает на 5% дороже и не продаёт"]
 - ["reg://registry/items/usable/fuel?tags=empty_fuel_tank", 90, 90, "Пустые канистры покупает и продаёт по 90% от номинала"]
 - ["reg://registry/items/slot_item/weapons/machine_guns", 80, 120, "Все пулемёты"]
+
+
+quests:
+- reg://registry/quests/delivery?cargo_count=3&deadline=2h
+- reg://registry/quests/killer/n_kills?deadline=5h&n=5
