@@ -75,4 +75,4 @@ price:
 
 quests:
 - reg://registry/quests/delivery?cargo_count=3&deadline=2h
-- reg://registry/quests/delivery?deadline=5h
+- reg://registry/quests/killer/n_kills?deadline=5h&n=5
