@@ -9,4 +9,7 @@ car_list:
 - reg://registry/mobiles/cars/middle/offroad/gelandewagen
 - reg://registry/mobiles/cars/cargo
 - reg://registry/mobiles/cars/light/moto
-- reg://registry/mobiles/cars/middle/offroad/buggy
+- reg://registry/mobiles/cars/cargo/tractors/peterbilt_369
+- reg://registry/mobiles/cars/cargo/tractors/international_9800
+- reg://registry/mobiles/cars/middle/offroad/ford_f150
+- reg://registry/mobiles/cars/light/quadbikes/commander_1000
