@@ -33,16 +33,16 @@ inventory:                   # При заполнении инвентаря н
 
 
 # Ссылка на картинку автомобиля в ангаре
-hangar_car:            "static/img/cars/cargo/tractors/peterbilt_369/side.png"
+hangar_car:            "static/img/cars/#cargo/tractors/peterbilt_369/side.png"
 
 
 # Ссылки на верстку автомобиля у оружейника
-armorer_car:           static/img/cars/cargo/tractors/peterbilt_369/armorer_car.html
+armorer_car:           static/img/cars/#cargo/tractors/peterbilt_369/armorer_car.html
 armorer_sectors_svg:   static/img/cars/armorer_sectors.svg
 
 
 # Ссылки на верстку автомобиля у тюнера
-tuner_car:             static/img/cars/cargo/tractors/peterbilt_369/tuner_car.html
+tuner_car:             static/img/cars/#cargo/tractors/peterbilt_369/tuner_car.html
 
 
 # Ссылки на верстку автомобиля у механика
@@ -89,6 +89,6 @@ slot_t17: ~
 
 
 # Ссылки на иконки для инвентаря/ангара
-inv_icon_big: static/img/cars/cargo/tractors/peterbilt_369/inventory/big.png
-inv_icon_mid: static/img/cars/cargo/tractors/peterbilt_369/inventory/mid.png
-inv_icon_small: static/img/cars/cargo/tractors/peterbilt_369/inventory/small.png
+inv_icon_big: static/img/cars/#cargo/tractors/peterbilt_369/inventory/big.png
+inv_icon_mid: static/img/cars/#cargo/tractors/peterbilt_369/inventory/mid.png
+inv_icon_small: static/img/cars/#cargo/tractors/peterbilt_369/inventory/small.png
