@@ -4,8 +4,8 @@ abstract: false
 
 inventory_size:       100
 inventory:
-- reg://registry/items/usable/ammo/bullets/a762
-- reg://registry/items/usable/ammo/bullets/a127x99
+- reg://registry/items/usable/ammo/a762
+- reg://registry/items/usable/ammo/a127x99
 - reg://registry/items/usable/fuel/tanks/tank_empty/tank10
 - reg://registry/items/usable/fuel/tanks/tank_empty/tank20
 - reg://registry/items/slot_item/weapons/machine_guns/wmg_pkt

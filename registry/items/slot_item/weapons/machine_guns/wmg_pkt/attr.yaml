@@ -1,7 +1,7 @@
 ﻿doc    : Пулемёт Калашникова танковый
 
 # Основные балансные настройки
-ammo              : reg://registry/items/usable/ammo/bullets/a762  # Подходящие патроны
+ammo              : reg://registry/items/usable/ammo/a762  # Подходящие патроны
 ammo_per_second   : 1   # [shot/s] ~=650/60   Потребление патронов в секунду
 radius: 170             # Дальность сектора стрельбы
 width: 25               # Ширина сектора стрельбы

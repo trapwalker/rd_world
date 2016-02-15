@@ -1,7 +1,7 @@
 ﻿doc: ЗИС-5
 
 # Основные балансные настройки
-ammo: reg://registry/items/usable/ammo/bullets/a127x99  # Подходящие патроны
+ammo: reg://registry/items/usable/ammo/a127x99  # Подходящие патроны
 ammo_per_shot: -1   # Потребление патронов при залпе
 radius: 200   # Дальность сектора стрельбы
 width: 30     # Ширина сектора стрельбы
