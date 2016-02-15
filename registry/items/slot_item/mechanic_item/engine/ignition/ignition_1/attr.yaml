@@ -1,10 +1,10 @@
 doc    : Зажигание 1
 
 description: Зажигание
-inv_icon_big: static/img/items/mechanic_items/engine/ignition_1/big.png
-inv_icon_mid: static/img/items/mechanic_items/engine/ignition_1/mid.png
-inv_icon_small: static/img/items/mechanic_items/engine/ignition_1/small.png
-inv_icon_supersmall: static/img/items/mechanic_items/engine/ignition_1/supersmall.png
+inv_icon_big: static/content/items/slot_item/mechanic_items/engine/ignition/ignition_1/big.png
+inv_icon_mid: static/content/items/slot_item/mechanic_items/engine/ignition/ignition_1/mid.png
+inv_icon_small: static/content/items/slot_item/mechanic_items/engine/ignition/ignition_1/small.png
+inv_icon_supersmall: static/content/items/slot_item/mechanic_items/engine/ignition/ignition_1/supersmall.png
 title: Зажигание
 
 base_price: 10
