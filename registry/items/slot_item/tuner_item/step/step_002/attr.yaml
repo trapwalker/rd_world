@@ -3,9 +3,9 @@
 tags    : step
 
 # Картинки для представления в инвентаре
-inv_icon_big: static/img/items/tuner_items/step_002/big.png
-inv_icon_mid: static/img/items/tuner_items/step_002/mid.png
-inv_icon_small: static/img/items/tuner_items/step_002/small.png
+inv_icon_big: static/content/items/slot_item/tuner_item/step/step_002/big.png
+inv_icon_mid: static/content/items/slot_item/tuner_item/step/step_002/mid.png
+inv_icon_small: static/content/items/slot_item/tuner_item/step/step_002/small.png
 
 title: step_002   # Краткое название - отобразится в слоте инвентаря
 description: step_002   # Полное описание - отобразится в разделе описания в инвентаре
@@ -18,8 +18,8 @@ pont_points: 50
 images:
     reg://registry/mobiles/cars/middle/offroad/defender:          # реестровая ссылка на машинку, для которой подходит данный итем
         top:                                                          # описание вида сверху (картинка и позиция)
-            link: static/img/items/tuner_items/step_002/top_1.png   # не забыть поставить тильду, если нет этого вида
+            link: static/content/items/slot_item/tuner_item/step/step_002/top_1.png   # не забыть поставить тильду, если нет этого вида
             z_index: 1                                                # позиция: -1 или 1
         side:                                                         # описание вида сбоку (картинка и позиция)
-            link: static/img/items/tuner_items/step_002/side_1.png   # ссылка на картику для вида сбоку
+            link: static/content/items/slot_item/tuner_item/step/step_002/side_1.png   # ссылка на картику для вида сбоку
             z_index: 1                                                # позиция: -1 или 1
