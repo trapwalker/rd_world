@@ -29,25 +29,12 @@ p_fuel_rate:        0.05     # Расход топлива, тратится т�
 
 inventory_size:       18     # Количество слотов в инвентаре (шт) (>=0)
 inventory:                  # При заполнении инвентаря необходимо учитывать его размер
-#- reg://registry/items/usable/ammo/bullets/a762?amount=100
-#- reg://registry/items/usable/ammo/bullets/a762?amount=100
-#- reg://registry/items/usable/ammo/bullets/a762?amount=100
-#- reg://registry/items/usable/ammo/bullets/a762?amount=100
-#- reg://registry/items/slot_item/weapons/machine_guns/wmg_pkt
-#- reg://registry/items/slot_item/weapons/machine_guns/wmg_pkt
-
-- reg://registry/items/slot_item/tuner_item/b_bumper_003
-- reg://registry/items/slot_item/tuner_item/b_fender_004
-- reg://registry/items/slot_item/tuner_item/f_bumper_003
-- reg://registry/items/slot_item/tuner_item/f_fender_004
-- reg://registry/items/slot_item/tuner_item/roof_003
-- reg://registry/items/slot_item/tuner_item/airint_003
-- reg://registry/items/slot_item/tuner_item/armor_003
-- reg://registry/items/slot_item/tuner_item/visor_003
-- reg://registry/items/slot_item/tuner_item/shnork_003
-- reg://registry/items/slot_item/tuner_item/step_003
-- reg://registry/items/slot_item/tuner_item/trunk_003
-- reg://registry/items/slot_item/tuner_item/win_prot_003
+- reg://registry/items/usable/ammo/bullets/a762?amount=100
+- reg://registry/items/usable/ammo/bullets/a762?amount=100
+- reg://registry/items/usable/ammo/bullets/a762?amount=100
+- reg://registry/items/usable/ammo/bullets/a762?amount=100
+- reg://registry/items/slot_item/weapons/machine_guns/wmg_pkt
+- reg://registry/items/slot_item/weapons/machine_guns/wmg_pkt
 
 
 # Ссылка на картинку автомобиля в ангаре
