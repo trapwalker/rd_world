@@ -21,5 +21,5 @@ images:
             link: static/content/items/slot_item/tuner_item/airint/airint_003/top_1.png   # не забыть поставить тильду, если нет этого вида
             z_index: 1                                                # позиция: -1 или 1
         side:                                                         # описание вида сбоку (картинка и позиция)
-            link:static/content/items/slot_item/tuner_item/airint/airint_003/side_1.png   # ссылка на картику для вида сбоку
+            link: static/content/items/slot_item/tuner_item/airint/airint_003/side_1.png   # ссылка на картику для вида сбоку
             z_index: 1                                                # позиция: -1 или 1

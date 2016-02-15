@@ -80,7 +80,7 @@ slot_FC_f: F
 
 
 # Настройка слотов для Тюнера
-slot_t1: reg://registry/items/slot_item/tuner_item/wheels_001
+slot_t1: ~
 slot_t2: ~
 slot_t3: ~
 slot_t4: ~
