@@ -3,8 +3,8 @@ doc    : Пустая канистра с топливом (10л)
 value_fuel: 10
 
 description: Пустая канистра (10л). Можно заполнить на заправочной станции.
-inv_icon_big: static/img/items/tank10/big_empty.png
-inv_icon_mid: static/img/items/tank10/mid_empty.png
-inv_icon_small: static/img/items/tank10/small_empty.png
+inv_icon_big: static/content/items/usable/tanks/tank10/big_empty.png
+inv_icon_mid: static/content/items/usable/tanks/tank10/mid_empty.png
+inv_icon_small: static/content/items/usable/tanks/tank10/small_empty.png
 title: Канистра (10л)
 base_price: 50
