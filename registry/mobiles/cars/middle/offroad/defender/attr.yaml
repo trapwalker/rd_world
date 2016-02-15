@@ -50,24 +50,24 @@ inventory:                  # При заполнении инвентаря н�
 
 
 # Ссылка на картинку автомобиля в ангаре
-hangar_car:            "static/img/cars/middle/offroad/defender/side.png"
+hangar_car:            "static/content/mobiles/cars/middle/offroad/defender/side.png"
 
 
 # Ссылки на верстку автомобиля у оружейника
-armorer_car:           static/img/cars/middle/offroad/defender/armorer_car.html
-armorer_sectors_svg:   static/img/cars/armorer_sectors.svg
+armorer_car:           static/content/mobiles/cars/middle/offroad/defender/armorer_car.html
+armorer_sectors_svg:   static/content/mobiles/cars/armorer_sectors.svg
 
 
 # Ссылки на верстку автомобиля у тюнера
-tuner_car:             static/img/cars/middle/offroad/defender/tuner_car.html
+tuner_car:             static/content/mobiles/cars/middle/offroad/defender/tuner_car.html
 
 
 # Ссылки на верстку автомобиля у механика
-mechanic_engine:        static/img/cars/engines/engine_1/engine.html                    # двигатель
-mechanic_transmission:  static/img/cars/transmissions/transmission_1/transmission.html  # трансмиссия
-mechanic_brakes:        static/img/cars/brakes/brakes_1/brakes.html                     # тормоза
-mechanic_cooling:       static/img/cars/coolings/cooling_1/cooling.html                 # охлаждение
-mechanic_suspension:    static/img/cars/suspensions/suspension_1/suspension.html        # подвеска
+mechanic_engine:        static/content/mechanic_systems/engines/engine_1/engine.html                    # двигатель
+mechanic_transmission:  static/content/mechanic_systems/transmissions/transmission_1/transmission.html  # трансмиссия
+mechanic_brakes:        static/content/mechanic_systems/brakes/brakes_1/brakes.html                     # тормоза
+mechanic_cooling:       static/content/mechanic_systems/coolings/cooling_1/cooling.html                 # охлаждение
+mechanic_suspension:    static/content/mechanic_systems/suspensions/suspension_1/suspension.html        # подвеска
 
 
 # Ниже перечислены все слоты доступные на автомобиле. В название содержится расположение слота.
@@ -106,6 +106,6 @@ slot_t17: ~
 
 
 # Ссылки на иконки для инвентаря/ангара
-inv_icon_big: static/img/cars/middle/offroad/defender/inventory/big.png
-inv_icon_mid: static/img/cars/middle/offroad/defender/inventory/mid.png
-inv_icon_small: static/img/cars/middle/offroad/defender/inventory/small.png
+inv_icon_big: static/content/mobiles/cars/middle/offroad/defender/inventory/big.png
+inv_icon_mid: static/content/mobiles/cars/middle/offroad/defender/inventory/mid.png
+inv_icon_small: static/content/mobiles/cars/middle/offroad/defender/inventory/small.png

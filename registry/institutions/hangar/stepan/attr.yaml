@@ -3,13 +3,5 @@ photo: "static/img/npc/1.png"
 abstract: false
 
 car_list:
-- reg://registry/mobiles/cars/middle/passenger
-- reg://registry/mobiles/cars/middle/passenger_2
 - reg://registry/mobiles/cars/middle/offroad/defender
 - reg://registry/mobiles/cars/middle/offroad/gelandewagen
-- reg://registry/mobiles/cars/#cargo
-- reg://registry/mobiles/cars/light/moto
-- reg://registry/mobiles/cars/#cargo/tractors/peterbilt_369
-- reg://registry/mobiles/cars/#cargo/tractors/international_9800
-- reg://registry/mobiles/cars/middle/offroad/ford_f150
-- reg://registry/mobiles/cars/light/quadbikes/commander_1000
