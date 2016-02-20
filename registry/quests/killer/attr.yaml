@@ -1,0 +1,9 @@
+﻿__cls__: QNKills
+doc    : Квесты
+
+title: Кое-кого убить
+
+typename  : заказное
+list_icon : /static/quest/icons/kill.png
+
+description: Нужно найти и убить кое-кого
