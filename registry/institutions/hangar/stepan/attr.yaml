@@ -5,3 +5,4 @@ abstract: false
 car_list:
 - reg://registry/mobiles/cars/middle/offroad/defender
 - reg://registry/mobiles/cars/middle/offroad/gelandewagen
+- reg://registry/mobiles/cars/light/quadbikes/commander_1000
