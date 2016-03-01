@@ -1,29 +1,29 @@
-﻿doc    : Пулемёт Калашникова танковый
+﻿doc         : Пулемёт Калашникова танковый
+
+title       : ПКТ                            # Краткое название - отобразится в слоте инвентаря
+description : Пулемёт Калашникова (танковый) # Полное описание - отобразится в разделе описания в инвентаре
+base_price  : 5                              # Цена
 
 # Основные балансные настройки
-ammo              : reg://registry/items/usable/ammo/a762  # Подходящие патроны
-ammo_per_second   : 1   # [shot/s] ~=650/60   Потребление патронов в секунду
-radius: 170             # Дальность сектора стрельбы
-width: 25               # Ширина сектора стрельбы
-dps: 4                  # Дамаг в секунду по вражеским целям
+ammo            : reg://registry/items/usable/ammo/a762 # Подходящие патроны
+ammo_per_second : 4                          # [shot/s] ~=650/60 Потребление патронов в секунду
+radius          : 200                        # Дальность сектора стрельбы
+width           : 35                         # Ширина сектора стрельбы
+dps             : 2                          # Дамаг в секунду по вражеским целям
 
 # Картинки для представления в инвентаре
-inv_icon_big: static/content/items/slot_item/weapons/mashine_guns/wmg_pkt/big.png
-inv_icon_mid: static/content/items/slot_item/weapons/mashine_guns/wmg_pkt/mid.png
-inv_icon_small: static/content/items/slot_item/weapons/mashine_guns/wmg_pkt/small.png
+inv_icon_big   : static/content/items/slot_item/weapons/mashine_guns/wmg_pkt/big.png
+inv_icon_mid   : static/content/items/slot_item/weapons/mashine_guns/wmg_pkt/mid.png
+inv_icon_small : static/content/items/slot_item/weapons/mashine_guns/wmg_pkt/small.png
 
 # Картинки для представления у оружейника (вид сбоку)
-armorer_side_F: "static/content/items/slot_item/weapons/mashine_guns/wmg_pkt/side_f.png" # вперёд
-armorer_side_B: "static/content/items/slot_item/weapons/mashine_guns/wmg_pkt/side_b.png" # назад
-armorer_side_R: "static/content/items/slot_item/weapons/mashine_guns/wmg_pkt/side_r.png" # вправо
-armorer_side_L: "static/content/items/slot_item/weapons/mashine_guns/wmg_pkt/side_l.png" # влево
+armorer_side_F : "static/content/items/slot_item/weapons/mashine_guns/wmg_pkt/side_f.png" # вперёд
+armorer_side_B : "static/content/items/slot_item/weapons/mashine_guns/wmg_pkt/side_b.png" # назад
+armorer_side_R : "static/content/items/slot_item/weapons/mashine_guns/wmg_pkt/side_r.png" # вправо
+armorer_side_L : "static/content/items/slot_item/weapons/mashine_guns/wmg_pkt/side_l.png" # влево
 
 # Картинки для представления у оружейника (вид сверху)
-armorer_top_F: "static/content/items/slot_item/weapons/mashine_guns/wmg_pkt/top_f.png" # вперёд
-armorer_top_B: "static/content/items/slot_item/weapons/mashine_guns/wmg_pkt/top_b.png" # назад
-armorer_top_R: "static/content/items/slot_item/weapons/mashine_guns/wmg_pkt/top_r.png" # вправо
-armorer_top_L: "static/content/items/slot_item/weapons/mashine_guns/wmg_pkt/top_l.png" # влево
-
-title: ПКТ   # Краткое название - отобразится в слоте инвентаря
-description: Пулемёт Калашникова (танковый)   # Полное описание - отобразится в разделе описания в инвентаре
-base_price: 250   # Цена
+armorer_top_F : "static/content/items/slot_item/weapons/mashine_guns/wmg_pkt/top_f.png" # вперёд
+armorer_top_B : "static/content/items/slot_item/weapons/mashine_guns/wmg_pkt/top_b.png" # назад
+armorer_top_R : "static/content/items/slot_item/weapons/mashine_guns/wmg_pkt/top_r.png" # вправо
+armorer_top_L : "static/content/items/slot_item/weapons/mashine_guns/wmg_pkt/top_l.png" # влево
