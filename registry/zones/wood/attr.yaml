@@ -5,7 +5,8 @@ order_key: a3
 
 effect_names:
 - EffectWoodCC
-- EffectWoodVisibility
+- EffectWoodVisibilityMin
+- EffectWoodVisibilityMax
 - EffectWoodObsRange
 
 path: tilesets/ts_wood
