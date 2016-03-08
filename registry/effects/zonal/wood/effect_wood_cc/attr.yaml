@@ -1,0 +1,8 @@
+﻿doc: Эффект ограничения скорости в лесу (EffectWoodCC)
+abstract: false
+
+param_name: p_cc
+m_name: m_cc_wood
+r_name: r_cc_wood
+upd_method: set_motion
+sign: -1.0
