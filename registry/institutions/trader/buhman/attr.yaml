@@ -12,6 +12,7 @@ inventory:
 - reg://registry/items/slot_item/weapons/machine_guns/mg_002
 - reg://registry/items/slot_item/weapons/machine_guns/mg_003
 - reg://registry/items/slot_item/weapons/machine_guns/mg_004
+- reg://registry/items/slot_item/weapons/machine_guns/dshkm
 - reg://registry/items/slot_item/weapons/cannons/wc_zis5
 - reg://registry/items/usable/map_weapon/mines_effect/slow_mine_1
 - reg://registry/items/usable/map_weapon/mines_effect/slow_mine_2
