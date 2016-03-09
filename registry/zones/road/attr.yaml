@@ -6,7 +6,7 @@ order_key: a2
 effect_names:
 - EffectRoadRCCWood
 - EffectRoadRCCWater
-- EffectRoadRCCDirt
+- EffectRCCDirt
 - EffectRoadRCCSlope
 
 path: tilesets/ts_road
