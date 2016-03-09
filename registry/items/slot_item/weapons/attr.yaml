@@ -2,3 +2,43 @@
 doc    : Оружие
 
 tags: armorer
+
+armorer_images:
+  small:
+    # Картинки для представления у оружейника (вид сбоку)
+    armorer_side_F: "" # вперёд
+    armorer_side_B: "" # назад
+    armorer_side_R: "" # вправо
+    armorer_side_L: "" # влево
+
+    # Картинки для представления у оружейника (вид сверху)
+    armorer_top_F: "" # вперёд
+    armorer_top_B: "" # назад
+    armorer_top_R: "" # вправо
+    armorer_top_L: "" # влево
+
+  middle:
+    # Картинки для представления у оружейника (вид сбоку)
+    armorer_side_F: "" # вперёд
+    armorer_side_B: "" # назад
+    armorer_side_R: "" # вправо
+    armorer_side_L: "" # влево
+
+    # Картинки для представления у оружейника (вид сверху)
+    armorer_top_F: "" # вперёд
+    armorer_top_B: "" # назад
+    armorer_top_R: "" # вправо
+    armorer_top_L: "" # влево
+
+  big:
+    # Картинки для представления у оружейника (вид сбоку)
+    armorer_side_F: "" # вперёд
+    armorer_side_B: "" # назад
+    armorer_side_R: "" # вправо
+    armorer_side_L: "" # влево
+
+    # Картинки для представления у оружейника (вид сверху)
+    armorer_top_F: "" # вперёд
+    armorer_top_B: "" # назад
+    armorer_top_R: "" # вправо
+    armorer_top_L: "" # влево

@@ -16,14 +16,45 @@ inv_icon_big   : static/content/items/slot_item/weapons/mashine_guns/mg_004/big.
 inv_icon_mid   : static/content/items/slot_item/weapons/mashine_guns/mg_004/mid.png
 inv_icon_small : static/content/items/slot_item/weapons/mashine_guns/mg_004/small.png
 
-# Картинки для представления у оружейника (вид сбоку)
-armorer_side_F : "static/content/items/slot_item/weapons/mashine_guns/mg_004/side_f.png" # вперёд
-armorer_side_B : "static/content/items/slot_item/weapons/mashine_guns/mg_004/side_b.png" # назад
-armorer_side_R : "static/content/items/slot_item/weapons/mashine_guns/mg_004/side_r.png" # вправо
-armorer_side_L : "static/content/items/slot_item/weapons/mashine_guns/mg_004/side_l.png" # влево
 
-# Картинки для представления у оружейника (вид сверху)
-armorer_top_F : "static/content/items/slot_item/weapons/mashine_guns/mg_004/top_f.png" # вперёд
-armorer_top_B : "static/content/items/slot_item/weapons/mashine_guns/mg_004/top_b.png" # назад
-armorer_top_R : "static/content/items/slot_item/weapons/mashine_guns/mg_004/top_r.png" # вправо
-armorer_top_L : "static/content/items/slot_item/weapons/mashine_guns/mg_004/top_l.png" # влево
+
+
+armorer_images:
+  small:
+    # Картинки для представления у оружейника (вид сбоку)
+    armorer_side_F : "static/content/items/slot_item/weapons/mashine_guns/mg_004/side_f.png" # вперёд
+    armorer_side_B : "static/content/items/slot_item/weapons/mashine_guns/mg_004/side_b.png" # назад
+    armorer_side_R : "static/content/items/slot_item/weapons/mashine_guns/mg_004/side_r.png" # вправо
+    armorer_side_L : "static/content/items/slot_item/weapons/mashine_guns/mg_004/side_l.png" # влево
+
+    # Картинки для представления у оружейника (вид сверху)
+    armorer_top_F : "static/content/items/slot_item/weapons/mashine_guns/mg_004/top_f.png" # вперёд
+    armorer_top_B : "static/content/items/slot_item/weapons/mashine_guns/mg_004/top_b.png" # назад
+    armorer_top_R : "static/content/items/slot_item/weapons/mashine_guns/mg_004/top_r.png" # вправо
+    armorer_top_L : "static/content/items/slot_item/weapons/mashine_guns/mg_004/top_l.png" # влево
+
+  middle:
+    # Картинки для представления у оружейника (вид сбоку)
+    armorer_side_F : "static/content/items/slot_item/weapons/mashine_guns/mg_004/side_f.png" # вперёд
+    armorer_side_B : "static/content/items/slot_item/weapons/mashine_guns/mg_004/side_b.png" # назад
+    armorer_side_R : "static/content/items/slot_item/weapons/mashine_guns/mg_004/side_r.png" # вправо
+    armorer_side_L : "static/content/items/slot_item/weapons/mashine_guns/mg_004/side_l.png" # влево
+
+    # Картинки для представления у оружейника (вид сверху)
+    armorer_top_F : "static/content/items/slot_item/weapons/mashine_guns/mg_004/top_f.png" # вперёд
+    armorer_top_B : "static/content/items/slot_item/weapons/mashine_guns/mg_004/top_b.png" # назад
+    armorer_top_R : "static/content/items/slot_item/weapons/mashine_guns/mg_004/top_r.png" # вправо
+    armorer_top_L : "static/content/items/slot_item/weapons/mashine_guns/mg_004/top_l.png" # влево
+
+  big:
+    # Картинки для представления у оружейника (вид сбоку)
+    armorer_side_F : "static/content/items/slot_item/weapons/mashine_guns/mg_004/side_f.png" # вперёд
+    armorer_side_B : "static/content/items/slot_item/weapons/mashine_guns/mg_004/side_b.png" # назад
+    armorer_side_R : "static/content/items/slot_item/weapons/mashine_guns/mg_004/side_r.png" # вправо
+    armorer_side_L : "static/content/items/slot_item/weapons/mashine_guns/mg_004/side_l.png" # влево
+
+    # Картинки для представления у оружейника (вид сверху)
+    armorer_top_F : "static/content/items/slot_item/weapons/mashine_guns/mg_004/top_f.png" # вперёд
+    armorer_top_B : "static/content/items/slot_item/weapons/mashine_guns/mg_004/top_b.png" # назад
+    armorer_top_R : "static/content/items/slot_item/weapons/mashine_guns/mg_004/top_r.png" # вправо
+    armorer_top_L : "static/content/items/slot_item/weapons/mashine_guns/mg_004/top_l.png" # влево
