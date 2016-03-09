@@ -1,4 +1,4 @@
 ﻿__cls__: GasStation
 doc    : Заправочные станции
 
-svg_link: "static/img/gas_station/gas_station.svg"
+svg_link: "static/img/gas_station"
