@@ -11,14 +11,14 @@ hp:                 800          # Текущее количество проч�
 inventory_size:     34           # Количество слотов в инвентаре (шт) (>=0)
 
 inventory:                       # При заполнении инвентаря необходимо учитывать его размер
-- reg://registry/items/usable/ammo/a762?amount=100
-- reg://registry/items/usable/ammo/a762?amount=100
-- reg://registry/items/usable/ammo/a762?amount=100
-- reg://registry/items/usable/ammo/a762?amount=100
-- reg://registry/items/slot_item/weapons/machine_guns/dshkm
-- reg://registry/items/slot_item/weapons/machine_guns/dshkm
-- reg://registry/items/slot_item/weapons/machine_guns/dshkm
-- reg://registry/items/slot_item/weapons/machine_guns/dshkm
+- reg://registry/items/usable/ammo/a127x99?amount=20
+- reg://registry/items/usable/ammo/a127x99?amount=20
+- reg://registry/items/usable/ammo/a127x99?amount=20
+- reg://registry/items/usable/ammo/a127x99?amount=20
+- reg://registry/items/slot_item/weapons/cannons/m242
+- reg://registry/items/slot_item/weapons/cannons/m242
+- reg://registry/items/slot_item/weapons/cannons/m242
+- reg://registry/items/slot_item/weapons/cannons/m242
 - reg://registry/items/usable/build_set/build_set_3
 - reg://registry/items/usable/build_set/build_set_3
 - reg://registry/items/usable/build_set/build_set_3

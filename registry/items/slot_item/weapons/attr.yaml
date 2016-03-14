@@ -1,7 +1,7 @@
-﻿__cls__: Weapon
-doc    : Оружие
+﻿__cls__ : Weapon
+doc     : Оружие
 
-tags: armorer
+tags    : armorer
 
 armorer_images:
   small:
