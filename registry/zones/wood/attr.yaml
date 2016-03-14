@@ -8,5 +8,6 @@ effect_names:
 - EffectWoodVisibilityMin
 - EffectWoodVisibilityMax
 - EffectWoodObsRange
+- EffectRCCDirt
 
 path: tilesets/ts_wood
