@@ -4,7 +4,7 @@ abstract: false
 order_key: a4
 
 effect_names:
-- EffectWaterCC
+- EffectRCCDirt
 
 path: tilesets/ts_water
 
