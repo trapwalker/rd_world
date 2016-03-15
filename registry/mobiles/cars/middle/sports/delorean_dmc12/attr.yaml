@@ -20,6 +20,8 @@ inventory:                       # При заполнении инвентар�
 - reg://registry/items/usable/build_set/build_set_3
 - reg://registry/items/usable/build_set/build_set_3
 - reg://registry/items/usable/build_set/build_set_3
+- reg://registry/items/usable/build_set/build_set_3
+- reg://registry/items/usable/build_set/build_set_3
 
 p_observing_range:     315       # Радиус обзора автомобиля (м) (>= 0)
 
@@ -70,9 +72,9 @@ slot_BC: ~
 # Настройка ограничений направления оружия из слота. Значением является строка в котороую включены первые буквы
 # соответствующих направлений (Front, Back, Left, Right)
 # Все слоты закоментированы, кроме переднего центрального.
-slot_FC_f: FRL_0
-slot_CC_f: FRBL_0
-slot_BC_f: RBL_0
+slot_FC_f: FRL_2
+slot_CC_f: FRBL_2
+slot_BC_f: RBL_2
 
 # Настройка слотов для Тюнера
 slot_t1: ~
