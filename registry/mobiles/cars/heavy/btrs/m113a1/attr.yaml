@@ -11,18 +11,14 @@ hp:                 800          # Текущее количество проч�
 inventory_size:     34           # Количество слотов в инвентаре (шт) (>=0)
 
 inventory:                       # При заполнении инвентаря необходимо учитывать его размер
+- reg://registry/items/usable/ammo/a762?amount=100
+- reg://registry/items/usable/ammo/a762?amount=100
 - reg://registry/items/usable/ammo/a127x99?amount=20
 - reg://registry/items/usable/ammo/a127x99?amount=20
-- reg://registry/items/usable/ammo/a127x99?amount=20
-- reg://registry/items/usable/ammo/a127x99?amount=20
+- reg://registry/items/slot_item/weapons/machine_guns/dshkm
+- reg://registry/items/slot_item/weapons/machine_guns/dshkm
 - reg://registry/items/slot_item/weapons/cannons/m242
 - reg://registry/items/slot_item/weapons/cannons/m242
-- reg://registry/items/slot_item/weapons/cannons/m242
-- reg://registry/items/slot_item/weapons/cannons/m242
-- reg://registry/items/usable/build_set/build_set_3
-- reg://registry/items/usable/build_set/build_set_3
-- reg://registry/items/usable/build_set/build_set_3
-- reg://registry/items/usable/build_set/build_set_3
 
 p_observing_range:     265       # Радиус обзора автомобиля (м) (>= 0)
 
@@ -74,10 +70,10 @@ slot_BL: ~
 # Настройка ограничений направления оружия из слота. Значением является строка в котороую включены первые буквы
 # соответствующих направлений (Front, Back, Left, Right)
 # Все слоты закоментированы, кроме переднего центрального.
-slot_FL_f: FL_0
-slot_FR_f: FR_0
-slot_BR_f: RB_0
-slot_BL_f: BL_0
+slot_FL_f: FL_4
+slot_FR_f: FR_4
+slot_BR_f: RB_4
+slot_BL_f: BL_4
 
 # Настройка слотов для Тюнера
 slot_t1: ~
