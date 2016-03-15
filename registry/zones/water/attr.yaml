@@ -7,3 +7,6 @@ effect_names:
 - EffectWaterCC
 
 path: tilesets/ts_water
+
+effects:
+- reg://registry/effects/zonal/water

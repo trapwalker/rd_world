@@ -10,3 +10,6 @@ effect_names:
 - EffectWoodObsRange
 
 path: tilesets/ts_wood
+
+effects:
+- reg://registry/effects/zonal/wood

@@ -1,4 +1,4 @@
-﻿doc: Эффект ограничения скорости в лесу (EffectWoodObsRange)
+﻿doc: Эффект ограничения зоркости в лесу (EffectWoodObsRange)
 abstract: false
 
 param_name: p_observing_range

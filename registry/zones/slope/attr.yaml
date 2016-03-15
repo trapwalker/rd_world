@@ -10,3 +10,6 @@ pixel_depth: 22 # 14 + 8
 
 effect_names:
 - EffectSlopeCC
+
+effects:
+- reg://registry/effects/zonal/slope
