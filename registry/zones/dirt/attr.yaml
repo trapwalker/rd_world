@@ -3,8 +3,5 @@ doc    : Бездорожье
 abstract: false
 order_key: a0
 
-effect_names:
-- EffectDirtCC
-
 effects:
 - reg://registry/effects/zonal/dirt
