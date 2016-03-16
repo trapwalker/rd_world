@@ -3,10 +3,7 @@ doc    : Дороги
 abstract: false
 order_key: a2
 
-effect_names:
-- EffectRoadRCCWood
-- EffectRoadRCCWater
-- EffectRCCDirt
-- EffectRoadRCCSlope
-
 path: tilesets/ts_road
+
+effects:
+- reg://registry/effects/zonal/road

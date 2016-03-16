@@ -3,7 +3,7 @@ doc    : Вода
 abstract: false
 order_key: a4
 
-effect_names:
-- EffectRCCDirt
-
 path: tilesets/ts_water
+
+effects:
+- reg://registry/effects/zonal/water

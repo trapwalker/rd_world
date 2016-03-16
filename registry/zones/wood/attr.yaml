@@ -3,11 +3,7 @@ doc    : Лес
 abstract: false
 order_key: a3
 
-effect_names:
-- EffectWoodCC
-- EffectWoodVisibilityMin
-- EffectWoodVisibilityMax
-- EffectWoodObsRange
-- EffectRCCDirt
-
 path: tilesets/ts_wood
+
+effects:
+- reg://registry/effects/zonal/wood
