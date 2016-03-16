@@ -1,0 +1,7 @@
+﻿doc: Эффект ограничения максимальной видимости в лесу (EffectWoodVisibilityMax)
+abstract: false
+
+param_name: p_visibility_max
+m_name: m_visibility_wood
+r_name: r_visibility_wood
+sign: -1.0
