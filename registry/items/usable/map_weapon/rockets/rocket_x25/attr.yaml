@@ -1,0 +1,12 @@
+﻿
+generate_obj  : reg://registry/mobiles/map_weapon/rockets/rocket_x25
+
+stack_size    : 1000
+base_price    : 20
+description   : Ракета Х25
+title         : Ракета Х25
+activate_type : self
+
+inv_icon_big: static/img/items/rockets/rocket4_big.png
+inv_icon_mid: static/img/items/rockets/rocket4_mid.png
+inv_icon_small: static/img/items/rockets/rocket4_small.png
