@@ -1,12 +1,15 @@
 ﻿doc    : Преднастройки классов
+abstract: false
 
+title: Oil Magnate
+description: Нефтяной Магнат
 
-title: Night Rider
-description: Ночной Ездок
+icon: static/content/class-icons/class_1.png
 
 money: 0
 class_skills:  #Список классовых навыков
-- reg://registry/rpg_settings/class_skill/masking_5
+- reg://registry/rpg_settings/class_skill/trading_5
 start_car: ~  # Стартовая машинка для данного класса
 start_perks:  # Список доступных стартовых перков
 - reg://registry/rpg_settings/perks/perk_passive/pp_1
+
