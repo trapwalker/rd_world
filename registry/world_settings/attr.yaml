@@ -1,6 +1,8 @@
 ﻿doc    : Настрйоки системы
 
 avatar_list:
-  - static/content/avatars/avatar_1.png
-  - static/content/avatars/avatar_2.png
-  - static/content/avatars/avatar_3.png
+  - static/content/avatars/default_1.png
+  - static/content/avatars/default_2.png
+  - static/content/avatars/default_3.png
+  - static/content/avatars/default_4.png
+  - static/content/avatars/default_5.png
