@@ -10,5 +10,3 @@ money: 0
 class_skills:  #Список классовых навыков
 - reg://registry/rpg_settings/class_skill/shooting_5
 start_car: ~  # Стартовая машинка для данного класса
-start_perks:  # Список доступных стартовых перков
-- reg://registry/rpg_settings/perks/perk_passive/pp_1
