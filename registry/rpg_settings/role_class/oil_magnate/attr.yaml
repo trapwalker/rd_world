@@ -4,7 +4,7 @@ abstract: false
 title: Oil Magnate
 description: Нефтяной Магнат
 
-icon: static/content/class-icons/class_1.png
+icon: static/content/class-icons/om.png
 
 money: 0
 class_skills:  #Список классовых навыков

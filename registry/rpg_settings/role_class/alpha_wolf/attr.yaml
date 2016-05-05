@@ -4,7 +4,7 @@ abstract: false
 title: Alpha Wolf
 description: Альфа Волк
 
-icon: static/content/class-icons/rw.png
+icon: static/content/class-icons/aw.png
 
 money: 0
 class_skills:  #Список классовых навыков

@@ -4,7 +4,7 @@ abstract: false
 title: Chosen One
 description: Избранный
 
-icon: static/content/class-icons/rw_2.png
+icon: static/content/class-icons/co.png
 
 money: 0
 class_skills:  #Список классовых навыков
