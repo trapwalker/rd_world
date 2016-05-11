@@ -2,3 +2,4 @@
 doc     : Подвижные юниты
 
 tags    : vehicle
+exp_table:  reg://registry/rpg_settings/exptable       # Ссылка на таблицу опыта
