@@ -1,15 +1,13 @@
 ﻿doc    : Преднастройки классов
-
+abstract: false
 
 title: Night Rider
-description: Ночной Ездок
+description: Ночной ездок
+console_description: 'Класс: Ночной ездок.\nКлассовый навык: Скрытность.\nКлассовый квест: Овладеть стелс-технологией.\nОписание:\nНочной ездок хладнокровен в погонях, имеет опасных врагов на хвосте и предпочитает проворачивать свои дела тихо и незаметно. Начинает игру с крафтовым артефактом “Зубочистка”. Навык скрытности прокачивается быстрее.'
+
+icon: static/content/class-icons/nr.png
 
 money: 0
 class_skills:  #Список классовых навыков
-- masking
+- reg://registry/rpg_settings/class_skill/masking_5
 start_car: ~  # Стартовая машинка для данного класса
-start_perks:  # Список доступных стартовых перков
-- reg://registry/rpg_settings/perks/perk_passive/pp_1
-
-start_free_point_perks: 0  # Стартовые очки перков
-start_free_point_skills: 0  # Стартовые очки навыков

@@ -1,15 +1,13 @@
 ﻿doc    : Преднастройки классов
-
+abstract: false
 
 title: Road Warrior
-description: Воин Дорог
+description: Воин дорог
+console_description: 'Класс: Воин дорог.\nКлассовый навык: Стрельба.\nКлассовый квест: Получить уникальный суперкар.\nОписание:\nВоин дорог не боится вооруженных конфликтов, не помнит своего прошлого, но знает, что ему нужно вернуть свою машину. Начинает игру с классовым артефактом “Куртка с одним рукавом”. Навык стрельбы прокачивается быстрее.'
+
+icon: static/content/class-icons/rw.png
 
 money: 0
 class_skills:  #Список классовых навыков
-- shooting
+- reg://registry/rpg_settings/class_skill/shooting_5
 start_car: ~  # Стартовая машинка для данного класса
-start_perks:  # Список доступных стартовых перков
-- reg://registry/rpg_settings/perks/perk_passive/pp_1
-
-start_free_point_perks: 0  # Стартовые очки перков
-start_free_point_skills: 0  # Стартовые очки навыков

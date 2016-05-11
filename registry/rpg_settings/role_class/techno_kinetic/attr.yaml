@@ -1,15 +1,13 @@
 ﻿doc    : Преднастройки классов
-
+abstract: false
 
 title: Techno Kinetic
-description: Техно-кинетик
+description: Технокинетик
+console_description: 'Класс: Технокинетик\nКлассовый навык: Механика\nКлассовый квест: Открыть собственный сервисный центр.\nОписание:\nТехнокинетик - бесноватый ученый с всепоглощающей страстью к науке. Общество моторов, реакторов, гаджетов и девайсов ему куда приятнее двуногой органики. Начинает игру с классовым артефактом “Плутоний”. Навык механики качается быстрее.'
+
+icon: static/content/class-icons/tk.png
 
 money: 0
 class_skills:  #Список классовых навыков
-- engineering
+- reg://registry/rpg_settings/class_skill/engineering_5
 start_car: ~  # Стартовая машинка для данного класса
-start_perks:  # Список доступных стартовых перков
-- reg://registry/rpg_settings/perks/perk_passive/pp_1
-
-start_free_point_perks: 0  # Стартовые очки перков
-start_free_point_skills: 0  # Стартовые очки навыков
