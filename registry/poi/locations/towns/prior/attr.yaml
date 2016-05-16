@@ -14,7 +14,7 @@ nucoil:    reg://registry/institutions/nucoil
 trainer:   reg://registry/institutions/trainer/fabio
 parking:   reg://registry/institutions/parking/vsevolod
 
-svg_link: static/img/towns/town_1
+svg_link: static/content/locations/towns/whitehill
 
 buildings:
     sto:
