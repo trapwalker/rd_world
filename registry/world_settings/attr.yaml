@@ -6,6 +6,22 @@ avatar_list: # Список аватаров, доступных при реги
   - static/content/avatars/default_3.png
   - static/content/avatars/default_4.png
   - static/content/avatars/default_5.png
+  - static/content/avatars/default_6.png
+  - static/content/avatars/default_7.png
+  - static/content/avatars/default_8.png
+  - static/content/avatars/default_9.png
+  - static/content/avatars/default_10.png
+  - static/content/avatars/default_11.png
+  - static/content/avatars/default_12.png
+  - static/content/avatars/default_13.png
+  - static/content/avatars/default_14.png
+  - static/content/avatars/default_15.png
+  - static/content/avatars/default_16.png
+  - static/content/avatars/default_17.png
+  - static/content/avatars/default_18.png
+  - static/content/avatars/default_19.png
+  - static/content/avatars/default_20.png
+
 
 role_class_order: # Порядок отображения ролевых классов при регистрации
   - reg://registry/rpg_settings/role_class/chosen_one
