@@ -5,38 +5,59 @@ title: Прайор
 position: [12512034.49999, 27170315.5]
 
 # Список NPC в городе
-armorer:   reg://registry/institutions/armorer/timofey
-mechanic:  reg://registry/institutions/mechanic/ivan
-tuner:     reg://registry/institutions/tuner/petr
-trader:    reg://registry/institutions/trader/buhman
-hangar:    reg://registry/institutions/hangar/stepan
-nucoil:    reg://registry/institutions/nucoil
-trainer:   reg://registry/institutions/trainer/fabio
-parking:   reg://registry/institutions/parking/vsevolod
+#armorer:   reg://registry/institutions/armorer/timofey
+#mechanic:  reg://registry/institutions/mechanic/ivan
+#tuner:     reg://registry/institutions/tuner/petr
+#trader:    reg://registry/institutions/trader/buhman
+#hangar:    reg://registry/institutions/hangar/stepan
+#nucoil:    reg://registry/institutions/nucoil
+#trainer:   reg://registry/institutions/trainer/fabio
+#parking:   reg://registry/institutions/parking/vsevolod
 
 svg_link: static/content/locations/towns/whitehill
 
 buildings:
-    sto:
+    dealer:
+        caption: Ангар
+        head: reg://registry/institutions/hangar/jounior_clarx
+        instances:
+            - reg://registry/institutions/hangar/jounior_clarx
+            - reg://registry/institutions/parking/james_rogers
+
+
+
+    autoservice:
         caption: СТО
         head: reg://registry/institutions/armorer/timofey
         instances:
             - reg://registry/institutions/armorer/timofey
             - reg://registry/institutions/mechanic/ivan
             - reg://registry/institutions/tuner/petr
-    store:
+
+
+    nucoil:
+        caption: Нукойл
+        head: reg://registry/institutions/armorer/timofey
+        instances:
+            - reg://registry/institutions/hangar/jounior_clarx
+    market:
         caption: Магазин
         head: reg://registry/institutions/trader/buhman
         instances:
             - reg://registry/institutions/trader/buhman
-    hangar:
-        caption: Ангар
-        head: reg://registry/institutions/hangar/stepan
-        instances:
-            - reg://registry/institutions/hangar/stepan
-            - reg://registry/institutions/parking/vsevolod
     library:
         caption: Библиотека
         head: reg://registry/institutions/trainer/fabio
         instances:
             - reg://registry/institutions/trainer/fabio
+    bar:
+        caption: Бар
+        head: reg://registry/institutions/armorer/timofey
+        instances:
+            - reg://registry/institutions/trainer/fabio
+    mayor:
+        caption: Мэр
+        head: reg://registry/institutions/armorer/timofey
+        instances:
+            - reg://registry/institutions/trainer/fabio
+

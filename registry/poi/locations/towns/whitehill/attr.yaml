@@ -5,6 +5,6 @@ title: Вайтхилл
 position: [12463405.5, 27108911.5]
 
 # Список NPC в городе
-trader: reg://registry/institutions/trader/buhman
+#trader: reg://registry/institutions/trader/buhman
 
 svg_link: static/img/towns/town_1
