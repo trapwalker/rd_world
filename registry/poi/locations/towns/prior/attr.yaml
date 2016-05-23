@@ -52,6 +52,4 @@ buildings:
             - reg://registry/institutions/girl/barbara_green
     nucoil:
         caption: Нукойл
-        head: reg://registry/institutions/armorer/timofey
-        instances:
-            - reg://registry/institutions/hangar/jounior_clarx
+        instances: []
