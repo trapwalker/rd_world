@@ -3,8 +3,8 @@ photo    : "static/content/institutions/hangar/jounior_clarx/jounior_clarx.png"
 abstract : false
 
 car_list:
-#- reg://registry/mobiles/cars/middle/sports/delorean_dmc12
-#- reg://registry/mobiles/cars/heavy/btrs/m113a1
+- reg://registry/mobiles/cars/middle/sports/delorean_dmc12
+- reg://registry/mobiles/cars/heavy/btrs/m113a1
 #- reg://registry/mobiles/cars/middle/offroad/defender
 #- reg://registry/mobiles/cars/light/quadbikes/commander_1000
 #- reg://registry/mobiles/cars/cargo/tractors/peterbilt_369
