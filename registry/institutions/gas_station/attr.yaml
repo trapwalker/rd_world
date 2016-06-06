@@ -1,0 +1,8 @@
+﻿__cls__: GasStationNPC
+doc: Заправка
+
+text: Заправка
+
+title: Gas Station
+photo: "static/content/institutions/npc_gas_station/fuel.png"
+abstract: false
