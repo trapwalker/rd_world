@@ -56,3 +56,4 @@ buildings:
         head: reg://registry/institutions/nucoil
         instances:
             - reg://registry/institutions/gas_station
+            - reg://registry/institutions/npc_help
