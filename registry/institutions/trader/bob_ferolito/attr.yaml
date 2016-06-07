@@ -14,6 +14,7 @@ inventory:
 - reg://registry/items/slot_item/weapons/machine_guns/dshkm
 #- reg://registry/items/slot_item/weapons/cannons/wc_zis5
 - reg://registry/items/slot_item/weapons/cannons/m242
+- reg://registry/items/slot_item/weapons/cannons/zu23_flak
 - reg://registry/items/usable/map_weapon/mines_effect/slow_mine_1
 - reg://registry/items/usable/map_weapon/mines_effect/slow_mine_2
 - reg://registry/items/usable/map_weapon/rockets/rocket_x101
