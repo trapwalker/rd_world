@@ -1,6 +1,6 @@
-﻿title:       "International Dimex"     # Модель атомобиля
+﻿title:       "Int. Dimex"     # Модель атомобиля
 class_car:   "Грузовой"                # Класс автомобиля
-name_car:    "International Dimex"     # Название атомобиля
+name_car:    "Int. Dimex"     # Название атомобиля
 
 price:              28           # Цена у продавца (л) (>= 0)
 
