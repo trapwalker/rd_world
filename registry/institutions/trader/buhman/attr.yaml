@@ -12,6 +12,7 @@ inventory:
 #- reg://registry/items/slot_item/weapons/machine_guns/mg_003
 #- reg://registry/items/slot_item/weapons/machine_guns/mg_004
 - reg://registry/items/slot_item/weapons/machine_guns/dshkm
+- reg://registry/items/slot_item/weapons/machine_guns/m134_minigun
 #- reg://registry/items/slot_item/weapons/cannons/wc_zis5
 - reg://registry/items/slot_item/weapons/cannons/m242
 - reg://registry/items/slot_item/weapons/cannons/zu23_flak
