@@ -4,9 +4,9 @@ abstract : false
 
 car_list:
 - reg://registry/mobiles/cars/middle/sports/delorean_dmc12
+- reg://registry/mobiles/cars/middle/offroad/defender
 - reg://registry/mobiles/cars/heavy/btrs/m113a1
 - reg://registry/mobiles/cars/middle/cars/dodge_challenger
-- reg://registry/mobiles/cars/middle/offroad/defender
 - reg://registry/mobiles/cars/middle/vans/gmc_savana
 - reg://registry/mobiles/cars/cargo/tractors/peterbilt_369
 - reg://registry/mobiles/cars/cargo/buses/international_dimex
