@@ -14,4 +14,8 @@ car_list:
 - reg://registry/mobiles/cars/cargo/buses/gmc_scenicruiser
 - reg://registry/mobiles/cars/cargo/tractors/international_9800
 - reg://registry/mobiles/cars/heavy/btrs/m1126
+- reg://registry/mobiles/cars/light/motorcycles/honda_hornet
+- reg://registry/mobiles/cars/middle/vans/chevrolet_express
+- reg://registry/mobiles/cars/middle/cars/chrysler_new_yorker
+- reg://registry/mobiles/cars/middle/offroad/gelandewagen
 #- reg://registry/mobiles/cars/light/quadbikes/commander_1000
