@@ -1,0 +1,14 @@
+﻿title    : Junior_Clarks
+photo    : "static/content/institutions/hangar/jounior_clarx/jounior_clarx.png"
+abstract : false
+
+car_list:
+- reg://registry/mobiles/cars/middle/sports/delorean_dmc12
+- reg://registry/mobiles/cars/heavy/btrs/m113a1
+- reg://registry/mobiles/cars/middle/cars/dodge_challenger
+- reg://registry/mobiles/cars/middle/offroad/defender
+- reg://registry/mobiles/cars/middle/vans/gmc_savana
+- reg://registry/mobiles/cars/cargo/tractors/peterbilt_369
+- reg://registry/mobiles/cars/cargo/buses/international_dimex
+- reg://registry/mobiles/cars/light/motorcycles/triumph_america
+#- reg://registry/mobiles/cars/light/quadbikes/commander_1000
