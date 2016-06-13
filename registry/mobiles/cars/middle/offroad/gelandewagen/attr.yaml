@@ -1,6 +1,6 @@
-﻿title:       "LR Defender 110"   # Модель атомобиля
-class_car:   "Средний"           # Класс автомобиля
-name_car:    "LR Defender 110"   # Название атомобиля
+﻿title:       "Gelandewagen"   # Модель атомобиля
+class_car:   "Средний"        # Класс автомобиля
+name_car:    "Gelandewagen"   # Название атомобиля
 
 price:              14           # Цена у продавца (л) (>= 0)
 
@@ -45,14 +45,14 @@ fuel:                  70       # Текущее количество топли
 p_fuel_rate:           0.045    # Расход топлива, тратится только в движении (л/с) (>= 0)
 
 # Ссылка на картинку автомобиля в ангаре
-hangar_car:            "static/content/mobiles/cars/middle/offroad/defender/side.png"
+hangar_car:            "static/content/mobiles/cars/middle/offroad/gelandewagen/side.png"
 
 # Ссылки на верстку автомобиля у оружейника
-armorer_car:           static/content/mobiles/cars/middle/offroad/defender/armorer_car.html
+armorer_car:           static/content/mobiles/cars/middle/offroad/gelandewagen/armorer_car.html
 armorer_sectors_svg:   static/content/mobiles/cars/armorer_sectors.svg
 
 # Ссылки на верстку автомобиля у тюнера
-tuner_car:             static/content/mobiles/cars/middle/offroad/defender/tuner_car.html
+tuner_car:             static/content/mobiles/cars/middle/offroad/gelandewagen/tuner_car.html
 
 # Ссылки на верстку автомобиля у механика
 mechanic_engine:        static/content/mechanic_systems/engines/engine_1/engine.html                    # двигатель
@@ -92,6 +92,6 @@ slot_t15: ~
 slot_t17: ~
 
 # Ссылки на иконки для инвентаря/ангара
-inv_icon_big: static/content/mobiles/cars/middle/offroad/defender/inventory/big.png
-inv_icon_mid: static/content/mobiles/cars/middle/offroad/defender/inventory/mid.png
-inv_icon_small: static/content/mobiles/cars/middle/offroad/defender/inventory/small.png
+inv_icon_big: static/content/mobiles/cars/middle/offroad/gelandewagen/inventory/big.png
+inv_icon_mid: static/content/mobiles/cars/middle/offroad/gelandewagen/inventory/mid.png
+inv_icon_small: static/content/mobiles/cars/middle/offroad/gelandewagen/inventory/small.png

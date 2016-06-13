@@ -1,0 +1,60 @@
+﻿doc             : Flak ZU-23
+
+title           : Flak ZU-23                               # Краткое название - отобразится в слоте инвентаря
+description     : Flak ZU-23                               # Полное описание - отобразится в разделе описания в инвентаре
+base_price      : 50                                       # Цена
+
+# Основные балансные настройки
+weight_class    : 4                                        # Класс тяжести 
+ammo            : reg://registry/items/usable/ammo/a127x99 # Подходящие патроны
+ammo_per_shot   : -1                                       # Потребление патронов при залпе
+radius          : 300                                      # Дальность сектора стрельбы
+width           : 68                                       # Ширина сектора стрельбы
+dmg             : 20                                       # Дамаг при залпе по вражеским целям
+time_recharge   : 11                                       # Время перезарядки орудия (с)
+
+# Картинки для представления в инвентаре
+inv_icon_big    : static/content/items/slot_item/weapons/canons/zu23_flak/inventory/big.png
+inv_icon_mid    : static/content/items/slot_item/weapons/canons/zu23_flak/inventory/mid.png
+inv_icon_small  : static/content/items/slot_item/weapons/canons/zu23_flak/inventory/small.png
+
+
+armorer_images:
+  small:
+    # Картинки для представления у оружейника (вид сбоку)
+    armorer_side_F  : "static/content/items/slot_item/weapons/canons/zu23_flak/side_f.png" # вперёд
+    armorer_side_B  : "static/content/items/slot_item/weapons/canons/zu23_flak/side_b.png" # назад
+    armorer_side_R  : "static/content/items/slot_item/weapons/canons/zu23_flak/side_r.png" # вправо
+    armorer_side_L  : "static/content/items/slot_item/weapons/canons/zu23_flak/side_l.png" # влево
+
+    # Картинки для представления у оружейника (вид сверху)
+    armorer_top_F   : "static/content/items/slot_item/weapons/canons/zu23_flak/top_f.png"  # вперёд
+    armorer_top_B   : "static/content/items/slot_item/weapons/canons/zu23_flak/top_b.png"  # назад
+    armorer_top_R   : "static/content/items/slot_item/weapons/canons/zu23_flak/top_r.png"  # вправо
+    armorer_top_L   : "static/content/items/slot_item/weapons/canons/zu23_flak/top_l.png"  # влево
+
+  middle:
+    # Картинки для представления у оружейника (вид сбоку)
+    armorer_side_F  : "static/content/items/slot_item/weapons/canons/zu23_flak/side_f.png" # вперёд
+    armorer_side_B  : "static/content/items/slot_item/weapons/canons/zu23_flak/side_b.png" # назад
+    armorer_side_R  : "static/content/items/slot_item/weapons/canons/zu23_flak/side_r.png" # вправо
+    armorer_side_L  : "static/content/items/slot_item/weapons/canons/zu23_flak/side_l.png" # влево
+
+    # Картинки для представления у оружейника (вид сверху)
+    armorer_top_F   : "static/content/items/slot_item/weapons/canons/zu23_flak/top_f.png"  # вперёд
+    armorer_top_B   : "static/content/items/slot_item/weapons/canons/zu23_flak/top_b.png"  # назад
+    armorer_top_R   : "static/content/items/slot_item/weapons/canons/zu23_flak/top_r.png"  # вправо
+    armorer_top_L   : "static/content/items/slot_item/weapons/canons/zu23_flak/top_l.png"  # влево
+
+  big:
+    # Картинки для представления у оружейника (вид сбоку)
+    armorer_side_F  : "static/content/items/slot_item/weapons/canons/zu23_flak/side_f.png" # вперёд
+    armorer_side_B  : "static/content/items/slot_item/weapons/canons/zu23_flak/side_b.png" # назад
+    armorer_side_R  : "static/content/items/slot_item/weapons/canons/zu23_flak/side_r.png" # вправо
+    armorer_side_L  : "static/content/items/slot_item/weapons/canons/zu23_flak/side_l.png" # влево
+
+    # Картинки для представления у оружейника (вид сверху)
+    armorer_top_F   : "static/content/items/slot_item/weapons/canons/zu23_flak/top_f.png"  # вперёд
+    armorer_top_B   : "static/content/items/slot_item/weapons/canons/zu23_flak/top_b.png"  # назад
+    armorer_top_R   : "static/content/items/slot_item/weapons/canons/zu23_flak/top_r.png"  # вправо
+    armorer_top_L   : "static/content/items/slot_item/weapons/canons/zu23_flak/top_l.png"  # влево
