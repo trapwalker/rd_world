@@ -1,0 +1,59 @@
+﻿doc             : M134 Minigun
+
+title           : M134 Minigun                          # Краткое название - отобразится в слоте инвентаря
+description     : M134 Minigun                          # Полное описание - отобразится в разделе описания в инвентаре
+base_price      : 25                                    # Цена
+
+# Основные балансные настройки
+weight_class    : 2                                     # Класс тяжести 
+ammo            : reg://registry/items/usable/ammo/a762 # Подходящие патроны
+ammo_per_second : 1                                     # [shot/s] ~=650/60 Потребление патронов в секунду
+radius          : 175                                   # Дальность сектора стрельбы
+width           : 90                                    # Ширина сектора стрельбы
+dps             : 5                                     # Дамаг в секунду по вражеским целям
+
+# Картинки для представления в инвентаре
+inv_icon_big    : static/content/items/slot_item/weapons/mashine_guns/m134_minigun/inventory/big.png
+inv_icon_mid    : static/content/items/slot_item/weapons/mashine_guns/m134_minigun/inventory/mid.png
+inv_icon_small  : static/content/items/slot_item/weapons/mashine_guns/m134_minigun/inventory/small.png
+
+
+armorer_images:
+  small:
+    # Картинки для представления у оружейника (вид сбоку)
+    armorer_side_F  : "static/content/items/slot_item/weapons/mashine_guns/m134_minigun/side_f.png" # вперёд
+    armorer_side_B  : "static/content/items/slot_item/weapons/mashine_guns/m134_minigun/side_b.png" # назад
+    armorer_side_R  : "static/content/items/slot_item/weapons/mashine_guns/m134_minigun/side_r.png" # вправо
+    armorer_side_L  : "static/content/items/slot_item/weapons/mashine_guns/m134_minigun/side_l.png" # влево
+
+    # Картинки для представления у оружейника (вид сверху)
+    armorer_top_F   : "static/content/items/slot_item/weapons/mashine_guns/m134_minigun/top_f.png"  # вперёд
+    armorer_top_B   : "static/content/items/slot_item/weapons/mashine_guns/m134_minigun/top_b.png"  # назад
+    armorer_top_R   : "static/content/items/slot_item/weapons/mashine_guns/m134_minigun/top_r.png"  # вправо
+    armorer_top_L   : "static/content/items/slot_item/weapons/mashine_guns/m134_minigun/top_l.png"  # влево
+
+  middle:
+    # Картинки для представления у оружейника (вид сбоку)
+    armorer_side_F  : "static/content/items/slot_item/weapons/mashine_guns/m134_minigun/side_f.png" # вперёд
+    armorer_side_B  : "static/content/items/slot_item/weapons/mashine_guns/m134_minigun/side_b.png" # назад
+    armorer_side_R  : "static/content/items/slot_item/weapons/mashine_guns/m134_minigun/side_r.png" # вправо
+    armorer_side_L  : "static/content/items/slot_item/weapons/mashine_guns/m134_minigun/side_l.png" # влево
+
+    # Картинки для представления у оружейника (вид сверху)
+    armorer_top_F   : "static/content/items/slot_item/weapons/mashine_guns/m134_minigun/top_f.png"  # вперёд
+    armorer_top_B   : "static/content/items/slot_item/weapons/mashine_guns/m134_minigun/top_b.png"  # назад
+    armorer_top_R   : "static/content/items/slot_item/weapons/mashine_guns/m134_minigun/top_r.png"  # вправо
+    armorer_top_L   : "static/content/items/slot_item/weapons/mashine_guns/m134_minigun/top_l.png"  # влево
+
+  big:
+    # Картинки для представления у оружейника (вид сбоку)
+    armorer_side_F  : "static/content/items/slot_item/weapons/mashine_guns/m134_minigun/side_f.png" # вперёд
+    armorer_side_B  : "static/content/items/slot_item/weapons/mashine_guns/m134_minigun/side_b.png" # назад
+    armorer_side_R  : "static/content/items/slot_item/weapons/mashine_guns/m134_minigun/side_r.png" # вправо
+    armorer_side_L  : "static/content/items/slot_item/weapons/mashine_guns/m134_minigun/side_l.png" # влево
+
+    # Картинки для представления у оружейника (вид сверху)
+    armorer_top_F   : "static/content/items/slot_item/weapons/mashine_guns/m134_minigun/top_f.png"  # вперёд
+    armorer_top_B   : "static/content/items/slot_item/weapons/mashine_guns/m134_minigun/top_b.png"  # назад
+    armorer_top_R   : "static/content/items/slot_item/weapons/mashine_guns/m134_minigun/top_r.png"  # вправо
+    armorer_top_L   : "static/content/items/slot_item/weapons/mashine_guns/m134_minigun/top_l.png"  # влево
