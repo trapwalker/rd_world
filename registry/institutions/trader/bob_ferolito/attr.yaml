@@ -38,6 +38,17 @@ inventory:
 - reg://registry/items/slot_item/mechanic_item/engine/sparkplug/sparkplug_1
 
 
+- reg://registry/items/slot_item/mechanic_item/brake/abs/abs_1
+- reg://registry/items/slot_item/mechanic_item/brake/booster/booster_1
+- reg://registry/items/slot_item/mechanic_item/brake/brake_fluid/brake_fluid_1
+- reg://registry/items/slot_item/mechanic_item/brake/front_brakes/front_brakes_1
+- reg://registry/items/slot_item/mechanic_item/brake/front_brake_lines/front_brake_lines_1
+- reg://registry/items/slot_item/mechanic_item/brake/front_brake_pads/front_brake_pads_1
+- reg://registry/items/slot_item/mechanic_item/brake/rear_brakes/rear_brakes_1
+- reg://registry/items/slot_item/mechanic_item/brake/rear_brake_lines/rear_brake_lines_1
+- reg://registry/items/slot_item/mechanic_item/brake/rear_brake_pads/rear_brake_pads_1
+
+
 - reg://registry/items/slot_item/tuner_item/airint/airint_003
 - reg://registry/items/slot_item/tuner_item/armor/armor_002
 - reg://registry/items/slot_item/tuner_item/armor/armor_003

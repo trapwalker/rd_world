@@ -1,10 +1,10 @@
-doc    : передние тормозные механизмы
+doc    : Передние тормозные механизмы 1
 
-description: передние тормозные механизмы 1
-inv_icon_big: static/img/items/mechanic_items/engine/sparkplug_1/big.png
-inv_icon_mid: static/img/items/mechanic_items/engine/sparkplug_1/mid.png
-inv_icon_small: static/img/items/mechanic_items/engine/sparkplug_1/small.png
-inv_icon_supersmall: static/img/items/mechanic_items/engine/sparkplug_1/supersmall.png
-title: передние тормозные механизмы 1
+description: Передние тормозные механизмы 1
+inv_icon_big: static/content/items/slot_item/mechanic_items/brake/front_brakes/front_brakes_1/big.png
+inv_icon_mid: static/content/items/slot_item/mechanic_items/brake/front_brakes/front_brakes_1/mid.png
+inv_icon_small: static/content/items/slot_item/mechanic_items/brake/front_brakes/front_brakes_1/small.png
+inv_icon_supersmall: static/content/items/slot_item/mechanic_items/brake/front_brakes/front_brakes_1/supersmall.png
+title: Передние тормозные механизмы 1
 
 base_price: 10
