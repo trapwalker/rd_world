@@ -49,6 +49,14 @@ inventory:
 - reg://registry/items/slot_item/mechanic_item/brake/rear_brake_pads/rear_brake_pads_1
 
 
+- reg://registry/items/slot_item/mechanic_item/cooling/add_radiator/add_radiator_1
+- reg://registry/items/slot_item/mechanic_item/cooling/coolant/coolant_1
+- reg://registry/items/slot_item/mechanic_item/cooling/fan/fan_1
+- reg://registry/items/slot_item/mechanic_item/cooling/pump/pump_1
+- reg://registry/items/slot_item/mechanic_item/cooling/radiator/radiator_1
+- reg://registry/items/slot_item/mechanic_item/cooling/thermostat/thermostat_1
+
+
 - reg://registry/items/slot_item/tuner_item/airint/airint_003
 - reg://registry/items/slot_item/tuner_item/armor/armor_002
 - reg://registry/items/slot_item/tuner_item/armor/armor_003
