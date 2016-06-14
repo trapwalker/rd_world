@@ -64,6 +64,7 @@ inventory:
 - reg://registry/items/slot_item/mechanic_item/suspension/rear_coil/rear_coil_1
 - reg://registry/items/slot_item/mechanic_item/suspension/rear_control_arm/rear_control_arm_1
 - reg://registry/items/slot_item/mechanic_item/suspension/rear_shock_absorber/rear_shock_absorber_1
+- reg://registry/items/slot_item/mechanic_item/suspension/wheels/wheels_1
 
 
 - reg://registry/items/slot_item/mechanic_item/transmission/ATF/ATF_1
