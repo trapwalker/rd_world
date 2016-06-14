@@ -1,11 +1,10 @@
-doc         : гидротрансформатор 1
-title       : гидротрансформатор 1
-description : гидротрансформатор 1
+doc         : Гидротрансформатор 1
+title       : Гидротрансформатор 1
+description : Гидротрансформатор 1
 
-inv_icon_big: static/img/items/mechanic_items/engine/compressor_1/big.png
-inv_icon_mid: static/img/items/mechanic_items/engine/compressor_1/mid.png
-inv_icon_small: static/img/items/mechanic_items/engine/compressor_1/small.png
-inv_icon_supersmall: static/img/items/mechanic_items/engine/compressor_1/supersmall.png
-
+inv_icon_big: static/content/items/slot_item/mechanic_items/transmission/torque_converter/torque_converter_1/big.png
+inv_icon_mid: static/content/items/slot_item/mechanic_items/transmission/torque_converter/torque_converter_1/mid.png
+inv_icon_small: static/content/items/slot_item/mechanic_items/transmission/torque_converter/torque_converter_1/small.png
+inv_icon_supersmall: static/content/items/slot_item/mechanic_items/transmission/torque_converter/torque_converter_1/supersmall.png
 
 base_price: 10
