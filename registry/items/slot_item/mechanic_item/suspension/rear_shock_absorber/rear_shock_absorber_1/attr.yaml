@@ -1,10 +1,10 @@
-doc    : задний амортизатор
+doc    : Задний амортизатор 1
 
-description: задний амортизатор 1
-inv_icon_big: static/img/items/mechanic_items/engine/compressor_1/big.png
-inv_icon_mid: static/img/items/mechanic_items/engine/compressor_1/mid.png
-inv_icon_small: static/img/items/mechanic_items/engine/compressor_1/small.png
-inv_icon_supersmall: static/img/items/mechanic_items/engine/compressor_1/supersmall.png
-title: задний амортизатор 1
+description: Задний амортизатор 1
+inv_icon_big: static/content/items/slot_item/mechanic_items/suspension/rear_shock_absorber/rear_shock_absorber_1/big.png
+inv_icon_mid: static/content/items/slot_item/mechanic_items/suspension/rear_shock_absorber/rear_shock_absorber_1/mid.png
+inv_icon_small: static/content/items/slot_item/mechanic_items/suspension/rear_shock_absorber/rear_shock_absorber_1/small.png
+inv_icon_supersmall: static/content/items/slot_item/mechanic_items/suspension/rear_shock_absorber/rear_shock_absorber_1/supersmall.png
+title: Задний амортизатор 1
 
 base_price: 10

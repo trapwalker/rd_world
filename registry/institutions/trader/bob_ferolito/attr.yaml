@@ -57,6 +57,15 @@ inventory:
 - reg://registry/items/slot_item/mechanic_item/cooling/thermostat/thermostat_1
 
 
+- reg://registry/items/slot_item/mechanic_item/suspension/front_coil/front_coil_1
+- reg://registry/items/slot_item/mechanic_item/suspension/front_control_arm/front_control_arm_1
+- reg://registry/items/slot_item/mechanic_item/suspension/front_shock_absorber/front_shock_absorber_1
+- reg://registry/items/slot_item/mechanic_item/suspension/hub/hub_1
+- reg://registry/items/slot_item/mechanic_item/suspension/rear_coil/rear_coil_1
+- reg://registry/items/slot_item/mechanic_item/suspension/rear_control_arm/rear_control_arm_1
+- reg://registry/items/slot_item/mechanic_item/suspension/rear_shock_absorber/rear_shock_absorber_1
+
+
 - reg://registry/items/slot_item/tuner_item/airint/airint_003
 - reg://registry/items/slot_item/tuner_item/armor/armor_002
 - reg://registry/items/slot_item/tuner_item/armor/armor_003
