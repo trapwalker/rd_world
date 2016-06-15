@@ -1,10 +1,10 @@
 doc    : Передний рычаг 1
 
 description: Передний рычаг 1
-inv_icon_big: static/img/items/mechanic_items/engine/compressor_1/big.png
-inv_icon_mid: static/img/items/mechanic_items/engine/compressor_1/mid.png
-inv_icon_small: static/img/items/mechanic_items/engine/compressor_1/small.png
-inv_icon_supersmall: static/img/items/mechanic_items/engine/compressor_1/supersmall.png
+inv_icon_big: static/content/items/slot_item/mechanic_items/suspension/front_control_arm/front_control_arm_1/big.png
+inv_icon_mid: static/content/items/slot_item/mechanic_items/suspension/front_control_arm/front_control_arm_1/mid.png
+inv_icon_small: static/content/items/slot_item/mechanic_items/suspension/front_control_arm/front_control_arm_1/small.png
+inv_icon_supersmall: static/content/items/slot_item/mechanic_items/suspension/front_control_arm/front_control_arm_1/supersmall.png
 title: Передний рычаг 1
 
 base_price: 10

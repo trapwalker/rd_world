@@ -1,0 +1,10 @@
+doc         : ГБЦ 1
+title       : ГБЦ 1
+description : ГБЦ 1
+
+inv_icon_big: static/content/items/slot_item/mechanic_items/engine/cylinder_head/cylinder_head_1/big.png
+inv_icon_mid: static/content/items/slot_item/mechanic_items/engine/cylinder_head/cylinder_head_1/mid.png
+inv_icon_small: static/content/items/slot_item/mechanic_items/engine/cylinder_head/cylinder_head_1/small.png
+inv_icon_supersmall: static/content/items/slot_item/mechanic_items/engine/cylinder_head/cylinder_head_1/supersmall.png
+
+base_price: 10

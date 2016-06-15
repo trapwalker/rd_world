@@ -1,0 +1,10 @@
+doc         : Масло 1
+title       : Масло 1
+description : Масло 1
+
+inv_icon_big: static/content/items/slot_item/mechanic_items/engine/engine_oil/engine_oil_1/big.png
+inv_icon_mid: static/content/items/slot_item/mechanic_items/engine/engine_oil/engine_oil_1/mid.png
+inv_icon_small: static/content/items/slot_item/mechanic_items/engine/engine_oil/engine_oil_1/small.png
+inv_icon_supersmall: static/content/items/slot_item/mechanic_items/engine/engine_oil/engine_oil_1/supersmall.png
+
+base_price: 10
