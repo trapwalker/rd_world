@@ -2,7 +2,7 @@
 abstract: false
 
 title: Прайор
-position: [12512034.49999, 27170315.5]
+position: {x: 12512034.49999, y: 27170315.5}
 
 # Список NPC в городе
 #armorer:   reg://registry/institutions/armorer/timofey
@@ -17,43 +17,49 @@ position: [12512034.49999, 27170315.5]
 svg_link: static/content/locations/towns/whitehill
 
 buildings:
-    dealer:
-        caption: Ангар
-        head: reg://registry/institutions/hangar/jounior_clarx
-        instances:
-            - reg://registry/institutions/hangar/jounior_clarx
-            - reg://registry/institutions/parking/james_rogers
-    market:
-        caption: Магазин
-        head: reg://registry/institutions/trader/bob_ferolito
-        instances:
-            - reg://registry/institutions/trader/bob_ferolito
-    autoservice:
-        caption: СТО
-        head: reg://registry/institutions/mechanic/raul_alone
-        instances:
-            - reg://registry/institutions/mechanic/raul_alone
-            - reg://registry/institutions/armorer/martin_arioso
-            - reg://registry/institutions/tuner/petr
-    library:
-        caption: Библиотека
-        head: reg://registry/institutions/trainer/blackhawk_2094
-        instances:
-            - reg://registry/institutions/trainer/blackhawk_2094
-    mayor:
-        caption: Мэр
-        head: reg://registry/institutions/mayor/manny_askorti
-        instances:
-            - reg://registry/institutions/mayor/manny_askorti
-    bar:
-        caption: Бар
-        head: reg://registry/institutions/barman/al_dufo
-        instances:
-            - reg://registry/institutions/barman/al_dufo
-            - reg://registry/institutions/girl/barbara_green
-    nucoil:
-        caption: Нукойл
-        head: reg://registry/institutions/nucoil
-        instances:
-            - reg://registry/institutions/gas_station
-            - reg://registry/institutions/npc_help
+    - name: dealer
+      caption: Ангар
+      head: reg://registry/institutions/hangar/jounior_clarx
+      instances:
+          - reg://registry/institutions/hangar/jounior_clarx
+          - reg://registry/institutions/parking/james_rogers
+
+    - name: market
+      caption: Магазин
+      head: reg://registry/institutions/trader/bob_ferolito
+      instances:
+          - reg://registry/institutions/trader/bob_ferolito
+
+    - name: autoservice
+      caption: СТО
+      head: reg://registry/institutions/mechanic/raul_alone
+      instances:
+          - reg://registry/institutions/mechanic/raul_alone
+          - reg://registry/institutions/armorer/martin_arioso
+          - reg://registry/institutions/tuner/petr
+
+    - name: library
+      caption: Библиотека
+      head: reg://registry/institutions/trainer/blackhawk_2094
+      instances:
+          - reg://registry/institutions/trainer/blackhawk_2094
+
+    - name: mayor
+      caption: Мэр
+      head: reg://registry/institutions/mayor/manny_askorti
+      instances:
+          - reg://registry/institutions/mayor/manny_askorti
+
+    - name: bar
+      caption: Бар
+      head: reg://registry/institutions/barman/al_dufo
+      instances:
+          - reg://registry/institutions/barman/al_dufo
+          - reg://registry/institutions/girl/barbara_green
+
+    - name: nucoil
+      caption: Нукойл
+      head: reg://registry/institutions/nucoil
+      instances:
+          - reg://registry/institutions/gas_station
+          - reg://registry/institutions/npc_help
