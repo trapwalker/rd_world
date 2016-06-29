@@ -1,4 +1,3 @@
-__cls__: Nucoil
 doc: Nucoil
 
 text: Nucoil
@@ -6,3 +5,5 @@ text: Nucoil
 title: Nucoil
 photo: "static/content/institutions/nucoil/nukeoil_logo.png"
 abstract: false
+type: nucoil
+
