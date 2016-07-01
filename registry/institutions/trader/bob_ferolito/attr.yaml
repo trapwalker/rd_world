@@ -80,7 +80,7 @@ inventory:
 - reg://registry/items/slot_item/mechanic_item/transmission/transfer_case/transfer_case_1
 
 
-- reg://registry/items/slot_item/tuner_item/airint/airint_003
+- reg://registry/items/slot_item/tuner_item/airint/airint_001
 - reg://registry/items/slot_item/tuner_item/armor/armor_002
 - reg://registry/items/slot_item/tuner_item/armor/armor_003
 - reg://registry/items/slot_item/tuner_item/b_bumper/b_bumper_002

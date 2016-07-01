@@ -89,6 +89,8 @@ slot_t14: ~
 slot_t15: ~
 slot_t17: ~
 
+slot_t10: ~
+
 # Ссылки на иконки для инвентаря/ангара
 inv_icon_big: static/content/mobiles/cars/middle/cars/dodge_challenger/inventory/big.png
 inv_icon_mid: static/content/mobiles/cars/middle/cars/dodge_challenger/inventory/mid.png
