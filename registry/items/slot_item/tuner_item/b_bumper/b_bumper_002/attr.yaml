@@ -3,12 +3,12 @@
 tags    : b_bumper
 
 # Картинки для представления в инвентаре
-inv_icon_big: static/content/items/slot_item/tuner_item/b_bumper/b_bumper_002/big.png
-inv_icon_mid: static/content/items/slot_item/tuner_item/b_bumper/b_bumper_002/mid.png
-inv_icon_small: static/content/items/slot_item/tuner_item/b_bumper/b_bumper_002/small.png
+inv_icon_big: static/content/items/slot_item/tuner_item/b_bumper/b_bumper_002/inventory/big.png
+inv_icon_mid: static/content/items/slot_item/tuner_item/b_bumper/b_bumper_002/inventory/mid.png
+inv_icon_small: static/content/items/slot_item/tuner_item/b_bumper/b_bumper_002/inventory/small.png
 
-title: B Bumper 002   # Краткое название - отобразится в слоте инвентаря
-description: Задний бампер   # Полное описание - отобразится в разделе описания в инвентаре
+title: Задний бампер 002   # Краткое название - отобразится в слоте инвентаря
+description: Задний бампер 002   # Полное описание - отобразится в разделе описания в инвентаре
 #base_price: 100   # Цена
 base_price: 1   # Цена
 
@@ -18,10 +18,15 @@ pont_points: 50
 images:
     reg://registry/mobiles/cars/middle/offroad/defender:                # реестровая ссылка на машинку, для которой подходит данный итем
         top:                                                            # описание вида сверху (картинка и позиция)
-            link: static/content/items/slot_item/tuner_item/b_bumper/b_bumper_002/top_1.png     # ссылка на картику для вида сверху
+            link: static/content/items/slot_item/tuner_item/b_bumper/b_bumper_002/defender/top.png     # ссылка на картику для вида сверху
             z_index: 1                                                  # позиция: -1 или 1
         side:                                                           # описание вида сбоку (картинка и позиция)
-            link: static/content/items/slot_item/tuner_item/b_bumper/b_bumper_002/side_1.png    # ссылка на картику для вида сбоку
+            link: static/content/items/slot_item/tuner_item/b_bumper/b_bumper_002/defender/side.png    # ссылка на картику для вида сбоку
             z_index: 1                                                 # позиция: -1 или 1
-
-
+    reg://registry/mobiles/cars/middle/cars/dodge_challenger:                # реестровая ссылка на машинку, для которой подходит данный итем
+        top:                                                            # описание вида сверху (картинка и позиция)
+            link: static/content/items/slot_item/tuner_item/b_bumper/b_bumper_002/challenger/top.png     # ссылка на картику для вида сверху
+            z_index: 1                                                  # позиция: -1 или 1
+        side:                                                           # описание вида сбоку (картинка и позиция)
+            link: static/content/items/slot_item/tuner_item/b_bumper/b_bumper_002/challenger/side.png    # ссылка на картику для вида сбоку
+            z_index: 1                                                 # позиция: -1 или 1
