@@ -3,12 +3,12 @@
 tags    : b_fender
 
 # Картинки для представления в инвентаре
-inv_icon_big: static/content/items/slot_item/tuner_item/b_fender/b_fender_003/big.png
-inv_icon_mid: static/content/items/slot_item/tuner_item/b_fender/b_fender_003/mid.png
-inv_icon_small: static/content/items/slot_item/tuner_item/b_fender/b_fender_003/small.png
+inv_icon_big: static/content/items/slot_item/tuner_item/b_fender/b_fender_003/inventory/big.png
+inv_icon_mid: static/content/items/slot_item/tuner_item/b_fender/b_fender_003/inventory/mid.png
+inv_icon_small: static/content/items/slot_item/tuner_item/b_fender/b_fender_003/inventory/small.png
 
-title: B Fender 003  # Краткое название - отобразится в слоте инвентаря
-description: Задние крылья  # Полное описание - отобразится в разделе описания в инвентаре
+title: Заднее крыло 003  # Краткое название - отобразится в слоте инвентаря
+description: Заднее крыло 003  # Полное описание - отобразится в разделе описания в инвентаре
 #base_price: 100   # Цена
 base_price: 1   # Цена
 
@@ -18,8 +18,15 @@ pont_points: 50
 images:
     reg://registry/mobiles/cars/middle/offroad/defender:                # реестровая ссылка на машинку, для которой подходит данный итем
         top:                                                            # описание вида сверху (картинка и позиция)
-            link: static/content/items/slot_item/tuner_item/b_fender/b_fender_003/top_1.png     # ссылка на картику для вида сверху
+            link: static/content/items/slot_item/tuner_item/b_fender/b_fender_003/defender/top.png     # ссылка на картику для вида сверху
             z_index: 1                                                  # позиция: -1 или 1
         side:                                                           # описание вида сбоку (картинка и позиция)
-            link: static/content/items/slot_item/tuner_item/b_fender/b_fender_003/side_1.png    # ссылка на картику для вида сбоку
+            link: static/content/items/slot_item/tuner_item/b_fender/b_fender_003/defender/side.png    # ссылка на картику для вида сбоку
+            z_index: 1                                                    # позиция: -1 или 1
+    reg://registry/mobiles/cars/middle/cars/challenger:                # реестровая ссылка на машинку, для которой подходит данный итем
+        top:                                                            # описание вида сверху (картинка и позиция)
+            link: static/content/items/slot_item/tuner_item/b_fender/b_fender_003/challenger/top.png     # ссылка на картику для вида сверху
+            z_index: 1                                                  # позиция: -1 или 1
+        side:                                                           # описание вида сбоку (картинка и позиция)
+            link: static/content/items/slot_item/tuner_item/b_fender/b_fender_003/challenger/side.png    # ссылка на картику для вида сбоку
             z_index: 1                                                    # позиция: -1 или 1
