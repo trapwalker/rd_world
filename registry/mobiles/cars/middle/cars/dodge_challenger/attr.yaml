@@ -77,7 +77,6 @@ slot_BL_f: LB_0
 
 # Настройка слотов для Тюнера
 slot_t1: ~
-slot_t5: ~
 slot_t7: ~
 slot_t13: ~
 slot_t14: ~
@@ -86,6 +85,7 @@ slot_t17: ~
 
 slot_t2: ~
 slot_t4: ~
+slot_t5: ~
 slot_t9: ~
 slot_t10: ~
 slot_t11: ~

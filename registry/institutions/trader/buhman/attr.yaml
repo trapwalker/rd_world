@@ -44,8 +44,9 @@ inventory:
 - reg://registry/items/slot_item/tuner_item/f_bumper/f_bumper_001
 - reg://registry/items/slot_item/tuner_item/f_bumper/f_bumper_002
 - reg://registry/items/slot_item/tuner_item/f_bumper/f_bumper_003
+- reg://registry/items/slot_item/tuner_item/f_fender/f_fender_001
 - reg://registry/items/slot_item/tuner_item/f_fender/f_fender_002
-- reg://registry/items/slot_item/tuner_item/f_fender/f_fender_004
+- reg://registry/items/slot_item/tuner_item/f_fender/f_fender_003
 - reg://registry/items/slot_item/tuner_item/roof/roof_002
 - reg://registry/items/slot_item/tuner_item/roof/roof_003
 - reg://registry/items/slot_item/tuner_item/shnork/shnork_002
