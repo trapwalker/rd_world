@@ -4,63 +4,61 @@ abstract: false
 
 inventory_size:       100
 inventory:
-- reg://registry/items/usable/ammo/a762
-- reg://registry/items/usable/ammo/a127x99
-- reg://registry/items/usable/tanks/tank_empty/tank10
-- reg://registry/items/usable/tanks/tank_empty/tank20
-#- reg://registry/items/slot_item/weapons/machine_guns/mg_002
-#- reg://registry/items/slot_item/weapons/machine_guns/mg_003
-#- reg://registry/items/slot_item/weapons/machine_guns/mg_004
-- reg://registry/items/slot_item/weapons/machine_guns/dshkm
-- reg://registry/items/slot_item/weapons/machine_guns/m134_minigun
-#- reg://registry/items/slot_item/weapons/cannons/wc_zis5
-- reg://registry/items/slot_item/weapons/cannons/m242
-- reg://registry/items/slot_item/weapons/cannons/zu23_flak
-- reg://registry/items/usable/map_weapon/mines_effect/slow_mine_1
-- reg://registry/items/usable/map_weapon/mines_effect/slow_mine_2
-- reg://registry/items/usable/map_weapon/rockets/rocket_x101
-- reg://registry/items/usable/map_weapon/rockets/rocket_x25
-- reg://registry/items/usable/build_set/build_set_1
-- reg://registry/items/usable/build_set/build_set_2
-- reg://registry/items/usable/build_set/build_set_3
+    items:
+      - reg://registry/items/usable/ammo/a762
+      - reg://registry/items/usable/ammo/a127x99
+      - reg://registry/items/usable/tanks/tank_empty/tank10
+      - reg://registry/items/usable/tanks/tank_empty/tank20
+      #- reg://registry/items/slot_item/weapons/machine_guns/mg_002
+      #- reg://registry/items/slot_item/weapons/machine_guns/mg_003
+      #- reg://registry/items/slot_item/weapons/machine_guns/mg_004
+      - reg://registry/items/slot_item/weapons/machine_guns/dshkm
+      - reg://registry/items/slot_item/weapons/machine_guns/m134_minigun
+      #- reg://registry/items/slot_item/weapons/cannons/wc_zis5
+      - reg://registry/items/slot_item/weapons/cannons/m242
+      - reg://registry/items/slot_item/weapons/cannons/zu23_flak
+      - reg://registry/items/usable/map_weapon/mines_effect/slow_mine_1
+      - reg://registry/items/usable/map_weapon/mines_effect/slow_mine_2
+      - reg://registry/items/usable/map_weapon/rockets/rocket_x101
+      - reg://registry/items/usable/map_weapon/rockets/rocket_x25
+      - reg://registry/items/usable/build_set/build_set_1
+      - reg://registry/items/usable/build_set/build_set_2
+      - reg://registry/items/usable/build_set/build_set_3
 
+      - reg://registry/items/slot_item/mechanic_item/engine/compressor/compressor_1
+      - reg://registry/items/slot_item/mechanic_item/engine/ignition/ignition_1
+      - reg://registry/items/slot_item/mechanic_item/engine/exhaust/exhaust_1
+      - reg://registry/items/slot_item/mechanic_item/engine/sparkplug/sparkplug_1
 
-- reg://registry/items/slot_item/mechanic_item/engine/compressor/compressor_1
-- reg://registry/items/slot_item/mechanic_item/engine/ignition/ignition_1
-- reg://registry/items/slot_item/mechanic_item/engine/exhaust/exhaust_1
-- reg://registry/items/slot_item/mechanic_item/engine/sparkplug/sparkplug_1
-
-
-- reg://registry/items/slot_item/tuner_item/airint/airint_003
-- reg://registry/items/slot_item/tuner_item/armor/armor_002
-- reg://registry/items/slot_item/tuner_item/armor/armor_003
-- reg://registry/items/slot_item/tuner_item/b_bumper/b_bumper_002
-- reg://registry/items/slot_item/tuner_item/b_bumper/b_bumper_003
-- reg://registry/items/slot_item/tuner_item/b_fender/b_fender_003
-- reg://registry/items/slot_item/tuner_item/b_fender/b_fender_004
-- reg://registry/items/slot_item/tuner_item/bale/bale_002
-- reg://registry/items/slot_item/tuner_item/f_bumper/f_bumper_002
-- reg://registry/items/slot_item/tuner_item/f_bumper/f_bumper_003
-- reg://registry/items/slot_item/tuner_item/f_fender/f_fender_002
-- reg://registry/items/slot_item/tuner_item/f_fender/f_fender_004
-- reg://registry/items/slot_item/tuner_item/roof/roof_002
-- reg://registry/items/slot_item/tuner_item/roof/roof_003
-- reg://registry/items/slot_item/tuner_item/shnork/shnork_002
-- reg://registry/items/slot_item/tuner_item/shnork/shnork_003
-- reg://registry/items/slot_item/tuner_item/step/step_002
-- reg://registry/items/slot_item/tuner_item/step/step_003
-- reg://registry/items/slot_item/tuner_item/trunk/trunk_002
-- reg://registry/items/slot_item/tuner_item/trunk/trunk_003
-- reg://registry/items/slot_item/tuner_item/visor/visor_003
-- reg://registry/items/slot_item/tuner_item/win_prot/win_prot_002
-- reg://registry/items/slot_item/tuner_item/win_prot/win_prot_003
+      - reg://registry/items/slot_item/tuner_item/airint/airint_003
+      - reg://registry/items/slot_item/tuner_item/armor/armor_002
+      - reg://registry/items/slot_item/tuner_item/armor/armor_003
+      - reg://registry/items/slot_item/tuner_item/b_bumper/b_bumper_002
+      - reg://registry/items/slot_item/tuner_item/b_bumper/b_bumper_003
+      - reg://registry/items/slot_item/tuner_item/b_fender/b_fender_003
+      - reg://registry/items/slot_item/tuner_item/b_fender/b_fender_004
+      - reg://registry/items/slot_item/tuner_item/bale/bale_002
+      - reg://registry/items/slot_item/tuner_item/f_bumper/f_bumper_002
+      - reg://registry/items/slot_item/tuner_item/f_bumper/f_bumper_003
+      - reg://registry/items/slot_item/tuner_item/f_fender/f_fender_002
+      - reg://registry/items/slot_item/tuner_item/f_fender/f_fender_004
+      - reg://registry/items/slot_item/tuner_item/roof/roof_002
+      - reg://registry/items/slot_item/tuner_item/roof/roof_003
+      - reg://registry/items/slot_item/tuner_item/shnork/shnork_002
+      - reg://registry/items/slot_item/tuner_item/shnork/shnork_003
+      - reg://registry/items/slot_item/tuner_item/step/step_002
+      - reg://registry/items/slot_item/tuner_item/step/step_003
+      - reg://registry/items/slot_item/tuner_item/trunk/trunk_002
+      - reg://registry/items/slot_item/tuner_item/trunk/trunk_003
+      - reg://registry/items/slot_item/tuner_item/visor/visor_003
+      - reg://registry/items/slot_item/tuner_item/win_prot/win_prot_002
+      - reg://registry/items/slot_item/tuner_item/win_prot/win_prot_003
 
 price:
 - ["reg://registry/items/usable/ammo", 90, 110, "Патроны Бухман покупает дешевле, а продаёт дороже номинала на 10%"]
 - ["reg://registry/items/usable/fuel?tags=full_fuel_tank", 105, ~, "Топливо покупает на 5% дороже и не продаёт"]
 - ["reg://registry/items/usable/fuel?tags=empty_fuel_tank", 90, 90, "Пустые канистры покупает и продаёт по 90% от номинала"]
 - ["reg://registry/items/slot_item/weapons/machine_guns", 80, 120, "Все пулемёты"]
-
 
 quests:
 - reg://registry/quests/delivery?cargo_count=3&deadline=2h
