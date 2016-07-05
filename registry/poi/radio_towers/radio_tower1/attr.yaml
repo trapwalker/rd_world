@@ -1,5 +1,5 @@
 ﻿doc    : ОРТ
 abstract: false
 
-position: [12513920, 27170066]
+position: {x: 12513920, y: 27170066}
 p_observing_range: 20000

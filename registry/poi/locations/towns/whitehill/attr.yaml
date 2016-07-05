@@ -2,7 +2,7 @@
 abstract: false
 
 title: Вайтхилл
-position: [12463405.5, 27108911.5]
+position: {x: 12463405.5, y: 27108911.5}
 
 # Список NPC в городе
 #trader: reg://registry/institutions/trader/buhman

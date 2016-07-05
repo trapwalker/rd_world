@@ -1,5 +1,5 @@
 ﻿doc    : РТР
 abstract: false
 
-position: [12496765, 27136707]
+position: {x: 12496765, y: 27136707}
 p_observing_range: 20000

@@ -1,7 +1,7 @@
 ﻿
 abstract: false
 
-position: [12496200, 27133490]
+position: {x: 12496200, y: 27133490}
 inventory_size: 5
 
 inventory:
