@@ -59,10 +59,11 @@ inventory:
       - reg://registry/items/slot_item/tuner_item/win_prot/win_prot_003
 
 price:
-- ["reg://registry/items/usable/ammo", 90, 110, "Патроны Бухман покупает дешевле, а продаёт дороже номинала на 10%"]
-- ["reg://registry/items/usable/fuel?tags=full_fuel_tank", 105, ~, "Топливо покупает на 5% дороже и не продаёт"]
-- ["reg://registry/items/usable/fuel?tags=empty_fuel_tank", 90, 90, "Пустые канистры покупает и продаёт по 90% от номинала"]
-- ["reg://registry/items/slot_item/weapons/machine_guns", 80, 120, "Все пулемёты"]
+    items:
+      - {item: "reg://registry/items/usable/ammo"                     , buy:  90, sale: 110, doc: "Патроны Бухман покупает дешевле, а продаёт дороже номинала на 10%"}
+      - {item: "reg://registry/items/usable/fuel?tags=full_fuel_tank" , buy: 105, sale:   ~, doc: "Топливо покупает на 5% дороже и не продаёт"                       }
+      - {item: "reg://registry/items/usable/fuel?tags=empty_fuel_tank", buy:  90, sale:  90, doc: "Пустые канистры покупает и продаёт по 90% от номинала"            }
+      - {item: "reg://registry/items/slot_item/weapons/machine_guns"  , buy:  80, sale: 120, doc: "Все пулемёты"                                                     }
 
 quests:
 - reg://registry/quests/delivery?cargo_count=3&deadline=2h

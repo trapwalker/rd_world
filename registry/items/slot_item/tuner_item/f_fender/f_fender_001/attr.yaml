@@ -16,7 +16,7 @@ pont_points: 50
 
 # Картинки для представления у тюнера, установленные на машине
 images:
-  - car: reg://registry/mobiles/cars/middle/offroad/defender:                 # реестровая ссылка на машинку, для которой подходит данный итем
+  - car: reg://registry/mobiles/cars/middle/offroad/defender                 # реестровая ссылка на машинку, для которой подходит данный итем
     top:                                                             # описание вида сверху (картинка и позиция)
         link: static/content/items/slot_item/tuner_item/f_fender/f_fender_001/defender/top.png    # ссылка на картику для вида сверху
         z_index: 1                                                   # позиция: -1 или 1
@@ -24,7 +24,7 @@ images:
         link: static/content/items/slot_item/tuner_item/f_fender/f_fender_001/defender/side.png   # ссылка на картику для вида сбоку
         z_index: 1                                                   # позиция: -1 или 1
 
-  - car: reg://registry/mobiles/cars/middle/cars/dodge_challenger:                 # реестровая ссылка на машинку, для которой подходит данный итем
+  - car: reg://registry/mobiles/cars/middle/cars/dodge_challenger                 # реестровая ссылка на машинку, для которой подходит данный итем
     top:                                                             # описание вида сверху (картинка и позиция)
         link: static/content/items/slot_item/tuner_item/f_fender/f_fender_001/challenger/top.png    # ссылка на картику для вида сверху
         z_index: 1                                                   # позиция: -1 или 1
