@@ -1,6 +1,7 @@
-﻿doc    : Предметы, активируя которые, пораждаются неподвижные мины на карте
+﻿__cls__ : MapWeaponMineItem
+doc    : Предметы, активируя которые, пораждаются неподвижные мины на карте
 
-generate_obj  : reg://registry/mobiles/stationary/map_weapon/effect_mines/slow_mine_1
+generate_obj  : reg:///registry/mobiles/stationary/map_weapon/effect_mines/slow_mine_1
 
 stack_size    : 10
 base_price    : 80

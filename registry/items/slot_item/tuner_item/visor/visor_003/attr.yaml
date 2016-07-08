@@ -1,4 +1,5 @@
-﻿doc     : Предметы, устанавливаемые в слоты тюнера
+﻿__cls__ : TunerItem
+doc     : Предметы, устанавливаемые в слоты тюнера
 
 tags    : visor
 
@@ -16,7 +17,7 @@ pont_points: 50
 
 # Картинки для представления у тюнера, установленные на машине
 images:
-  - car: reg://registry/mobiles/cars/middle/offroad/gelandewagen                      # реестровая ссылка на машинку, для которой подходит данный итем
+  - car: reg:///registry/mobiles/cars/middle/offroad/gelandewagen                      # реестровая ссылка на машинку, для которой подходит данный итем
     top:                                                                              # описание вида сверху (картинка и позиция)
         link: static/content/items/slot_item/tuner_item/visor/visor_003/top_1.png    # не забыть поставить тильду, если нет этого вида
         z_index: 1                                                                    # позиция: -1 или 1

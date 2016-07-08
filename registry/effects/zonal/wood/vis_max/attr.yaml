@@ -1,4 +1,5 @@
-﻿doc: Эффект ограничения максимальной видимости в лесу (EffectWoodVisibilityMax)
+﻿__cls__: Effect
+doc: Эффект ограничения максимальной видимости в лесу (EffectWoodVisibilityMax)
 abstract: false
 
 param_name: p_visibility_max

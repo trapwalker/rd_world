@@ -1,4 +1,5 @@
-﻿abstract: false
+﻿__cls__: PerkPassive
+abstract: false
 
 # Общие параметры перка
 title: Стингер                                                              # Название перка

@@ -1,4 +1,5 @@
-﻿title:       "M113A1"   # Модель атомобиля
+﻿__cls__ : Car
+title:       "M113A1"   # Модель атомобиля
 class_car:   "Тяжелый"  # Класс автомобиля
 name_car:    "M113A1"   # Название атомобиля
 
@@ -11,14 +12,14 @@ inventory_size:     34           # Количество слотов в инве
 
 inventory:                       # При заполнении инвентаря необходимо учитывать его размер
     items:
-      - reg://registry/items/usable/ammo/a762?amount=100
-      - reg://registry/items/usable/ammo/a762?amount=100
-      - reg://registry/items/usable/ammo/a127x99?amount=20
-      - reg://registry/items/usable/ammo/a127x99?amount=20
-      - reg://registry/items/slot_item/weapons/machine_guns/dshkm
-      - reg://registry/items/slot_item/weapons/machine_guns/dshkm
-      - reg://registry/items/slot_item/weapons/cannons/m242
-      - reg://registry/items/slot_item/weapons/cannons/m242
+      - reg:///registry/items/usable/ammo/a762?amount=100
+      - reg:///registry/items/usable/ammo/a762?amount=100
+      - reg:///registry/items/usable/ammo/a127x99?amount=20
+      - reg:///registry/items/usable/ammo/a127x99?amount=20
+      - reg:///registry/items/slot_item/weapons/machine_guns/dshkm
+      - reg:///registry/items/slot_item/weapons/machine_guns/dshkm
+      - reg:///registry/items/slot_item/weapons/cannons/m242
+      - reg:///registry/items/slot_item/weapons/cannons/m242
 
 p_observing_range:     345       # Радиус обзора автомобиля (м) (>= 0)
 

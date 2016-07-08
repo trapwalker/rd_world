@@ -1,4 +1,5 @@
-﻿title:       "Int. Dimex"     # Модель атомобиля
+﻿__cls__ : Car
+title:       "Int. Dimex"     # Модель атомобиля
 class_car:   "Грузовой"                # Класс автомобиля
 name_car:    "Int. Dimex"     # Название атомобиля
 
@@ -11,19 +12,19 @@ inventory_size:     70           # Количество слотов в инве
 
 inventory:                       # При заполнении инвентаря необходимо учитывать его размер
     items:
-      - reg://registry/items/usable/ammo/a762?amount=100
-      - reg://registry/items/usable/ammo/a762?amount=100
-      - reg://registry/items/usable/ammo/a127x99?amount=20
-      - reg://registry/items/usable/ammo/a127x99?amount=20
-      - reg://registry/items/slot_item/weapons/machine_guns/dshkm
-      - reg://registry/items/slot_item/weapons/machine_guns/dshkm
-      - reg://registry/items/slot_item/weapons/cannons/m242
-      - reg://registry/items/slot_item/weapons/cannons/m242
-      - reg://registry/items/usable/build_set/build_set_3
-      - reg://registry/items/usable/build_set/build_set_3
-      - reg://registry/items/usable/build_set/build_set_3
-      - reg://registry/items/usable/build_set/build_set_3
-      - reg://registry/items/usable/build_set/build_set_3
+      - reg:///registry/items/usable/ammo/a762?amount=100
+      - reg:///registry/items/usable/ammo/a762?amount=100
+      - reg:///registry/items/usable/ammo/a127x99?amount=20
+      - reg:///registry/items/usable/ammo/a127x99?amount=20
+      - reg:///registry/items/slot_item/weapons/machine_guns/dshkm
+      - reg:///registry/items/slot_item/weapons/machine_guns/dshkm
+      - reg:///registry/items/slot_item/weapons/cannons/m242
+      - reg:///registry/items/slot_item/weapons/cannons/m242
+      - reg:///registry/items/usable/build_set/build_set_3
+      - reg:///registry/items/usable/build_set/build_set_3
+      - reg:///registry/items/usable/build_set/build_set_3
+      - reg:///registry/items/usable/build_set/build_set_3
+      - reg:///registry/items/usable/build_set/build_set_3
 
 p_observing_range:     290      # Радиус обзора автомобиля (м) (>= 0)
 

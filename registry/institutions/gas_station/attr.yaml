@@ -1,4 +1,5 @@
-﻿doc: Заправка
+﻿__cls__: Institution
+doc: Заправка
 text: Заправка
 title: Gas Station
 type: npc_gas_station

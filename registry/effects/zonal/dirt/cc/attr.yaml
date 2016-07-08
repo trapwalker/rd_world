@@ -1,4 +1,5 @@
-﻿doc: Замедление в лесу (EffectDirtCC)
+﻿__cls__: Effect
+doc: Замедление в лесу (EffectDirtCC)
 abstract: false
 
 param_name: p_cc

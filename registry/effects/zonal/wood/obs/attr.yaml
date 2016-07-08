@@ -1,4 +1,5 @@
-﻿doc: Эффект ограничения зоркости в лесу (EffectWoodObsRange)
+﻿__cls__: Effect
+doc: Эффект ограничения зоркости в лесу (EffectWoodObsRange)
 abstract: false
 
 param_name: p_observing_range

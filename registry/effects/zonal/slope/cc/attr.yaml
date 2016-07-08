@@ -1,4 +1,5 @@
-﻿doc: Эффект замедления на пересеченной местности (EffectSlopeCC)
+﻿__cls__: Effect
+doc: Эффект замедления на пересеченной местности (EffectSlopeCC)
 abstract: false
 
 param_name: p_cc

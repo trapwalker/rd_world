@@ -1,4 +1,5 @@
-﻿doc    : Патроны 7.62
+﻿__cls__ : AmmoBullets
+doc    : Патроны 7.62
 
 stack_size: 100
 

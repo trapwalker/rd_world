@@ -1,4 +1,4 @@
-﻿__cls__: GasStation
+﻿__cls__: Town
 doc    : Заправочные станции
 
 svg_link: "static/img/gas_station"

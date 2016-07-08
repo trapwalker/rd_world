@@ -1,4 +1,5 @@
-﻿doc: Резист от гористости на дороге (EffectRoadRCCSlope)
+﻿__cls__: Effect
+doc: Резист от гористости на дороге (EffectRoadRCCSlope)
 abstract: false
 
 param_name: r_cc_slope

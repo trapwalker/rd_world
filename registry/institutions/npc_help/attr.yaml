@@ -1,4 +1,5 @@
-﻿doc: NucoilHelpNPC
+﻿__cls__: Institution
+doc: NucoilHelpNPC
 text: NucoilHelpNPC
 title: NucoilHelpNPC
 type: nucoil_help_npc

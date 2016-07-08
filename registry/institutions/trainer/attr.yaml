@@ -1,3 +1,4 @@
-﻿doc: Тренер
+﻿__cls__: Trainer
+doc: Тренер
 text: Вас приветствует тренер !
 type: trainer

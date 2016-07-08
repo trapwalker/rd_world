@@ -1,6 +1,7 @@
-﻿doc    : Прототипы пользовательских агентов
+﻿__cls__: Agent
+doc    : Прототипы пользовательских агентов
 
-last_town: reg://registry/poi/locations/towns/prior
-current_location: reg://registry/poi/locations/towns/prior
+last_town: reg:///registry/poi/locations/towns/prior
+current_location: reg:///registry/poi/locations/towns/prior
 position: {x: 12496376, y: 27133643}
 balance: 2000

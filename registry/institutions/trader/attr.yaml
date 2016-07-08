@@ -5,4 +5,4 @@ type: trader
 
 price:
     items:
-        - {item: "reg://registry/items", buy: 100, sale: 100, doc: "По умолчанию продаём и покупаем все по номиналу"}
+        - {item: "reg:///registry/items", buy: 100, sale: 100, doc: "По умолчанию продаём и покупаем все по номиналу"}

@@ -1,4 +1,5 @@
-﻿doc             : Flak ZU-23
+﻿__cls__ : Cannon
+doc             : Flak ZU-23
 
 title           : Flak ZU-23                               # Краткое название - отобразится в слоте инвентаря
 description     : Flak ZU-23                               # Полное описание - отобразится в разделе описания в инвентаре
@@ -6,7 +7,7 @@ base_price      : 50                                       # Цена
 
 # Основные балансные настройки
 weight_class    : 4                                        # Класс тяжести 
-ammo            : reg://registry/items/usable/ammo/a127x99 # Подходящие патроны
+ammo            : reg:///registry/items/usable/ammo/a127x99 # Подходящие патроны
 ammo_per_shot   : -1                                       # Потребление патронов при залпе
 radius          : 300                                      # Дальность сектора стрельбы
 width           : 68                                       # Ширина сектора стрельбы

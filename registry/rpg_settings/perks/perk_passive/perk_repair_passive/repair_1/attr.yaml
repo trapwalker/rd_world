@@ -1,4 +1,5 @@
-﻿abstract: false
+﻿__cls__: PerkRepairPassive
+abstract: false
 
 # Общие параметры перка
 title: Стационарный ремонт                                        # Название перка

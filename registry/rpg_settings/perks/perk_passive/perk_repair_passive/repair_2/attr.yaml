@@ -1,4 +1,5 @@
-﻿abstract: false
+﻿__cls__: PerkRepairPassive
+abstract: false
 
 # Общие параметры перка
 title: Ремонт 2                                                # Название перка
@@ -15,7 +16,7 @@ engineering_req:  20      # Необходимый уровень прокачк
 level_req:        0      # Необходимый уровень персонажа
 
 perks_req:               # Список обязательных предшествующих перков
-- reg://registry/rpg_settings/perks/perk_passive/perk_repair_passive/repair_1
+- reg:///registry/rpg_settings/perks/perk_passive/perk_repair_passive/repair_1
 
 # Бонусы перка
 repair_rate: 1.0          # Скорость отхила в секунду

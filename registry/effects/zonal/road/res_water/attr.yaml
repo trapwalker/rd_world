@@ -1,4 +1,5 @@
-﻿doc: Резист от воды на дороге (EffectRoadRCCWater)
+﻿__cls__: Effect
+doc: Резист от воды на дороге (EffectRoadRCCWater)
 abstract: false
 
 param_name: r_cc_water

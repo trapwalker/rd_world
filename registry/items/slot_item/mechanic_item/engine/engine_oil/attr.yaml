@@ -1,3 +1,4 @@
+__cls__ : MechanicItem
 doc  : Предметы, устанавливаемые в слоты двигателя - масло
 
 tags : engine_oil

@@ -1,4 +1,5 @@
-﻿doc: Эффект ограничения скорости при пустом баке (EffectEmptyFuel)
+﻿__cls__: Effect
+doc: Эффект ограничения скорости при пустом баке (EffectEmptyFuel)
 abstract: false
 
 param_name: p_cc

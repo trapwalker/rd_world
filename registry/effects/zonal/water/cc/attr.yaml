@@ -1,4 +1,5 @@
-﻿doc: Эффект замедления на воде (EffectWaterCC)
+﻿__cls__: Effect
+doc: Эффект замедления на воде (EffectWaterCC)
 abstract: false
 
 param_name: p_cc

@@ -1,4 +1,5 @@
-﻿doc: Резист от грязи на дороге (EffectRoadRCCDirt)
+﻿__cls__: Effect
+doc: Резист от грязи на дороге (EffectRoadRCCDirt)
 abstract: false
 
 param_name: r_cc_dirt

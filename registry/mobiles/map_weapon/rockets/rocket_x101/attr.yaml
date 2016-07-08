@@ -1,4 +1,5 @@
-﻿title: Rocket_x101
+﻿__cls__ : MapWeaponRocket
+title: Rocket_x101
 
 radius_damage: 100
 damage: 80

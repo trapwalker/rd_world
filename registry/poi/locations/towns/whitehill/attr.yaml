@@ -1,10 +1,11 @@
-﻿doc    : Второй город
+﻿__cls__: Town
+doc    : Второй город
 abstract: false
 
 title: Вайтхилл
 position: {x: 12463405.5, y: 27108911.5}
 
 # Список NPC в городе
-#trader: reg://registry/institutions/trader/buhman
+#trader: reg:///registry/institutions/trader/buhman
 
 svg_link: static/img/towns/town_1

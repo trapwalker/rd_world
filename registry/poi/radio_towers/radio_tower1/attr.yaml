@@ -1,4 +1,5 @@
-﻿doc    : ОРТ
+﻿__cls__: RadioTower
+doc    : ОРТ
 abstract: false
 
 position: {x: 12513920, y: 27170066}

@@ -1,4 +1,5 @@
-﻿title:             SlowMine1   # Название атомобиля
+﻿__cls__ : Mobile
+title:             SlowMine1   # Название атомобиля
 
 p_observing_range: 100      # Радиус обзора автомобиля (м) (>= 0)
 
