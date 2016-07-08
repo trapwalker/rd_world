@@ -3,7 +3,7 @@ doc    : Первый город
 abstract: false
 
 title: Прайор
-position: {x: 12512034.49999, y: 27170315.5}
+position: {x: 2517168.136311155, y: 27028861.32070253}
 
 # Список NPC в городе
 #armorer:   reg:///registry/institutions/armorer/timofey
@@ -15,7 +15,7 @@ position: {x: 12512034.49999, y: 27170315.5}
 #trainer:   reg:///registry/institutions/trainer/fabio
 #parking:   reg:///registry/institutions/parking/vsevolod
 
-svg_link: static/content/locations/towns/whitehill
+svg_link: static/content/locations/map_locations/whitehill
 
 buildings:
     - name: dealer
