@@ -1,8 +1,8 @@
-﻿doc    : Первый город
+﻿doc    : Белый Холм
 abstract: false
 
-title: Прайор
-position: [12517168.136311155, 27028861.32070253]
+title: Вайтхил
+position: [12482409, 27045819]
 
 # Список NPC в городе
 #armorer:   reg://registry/institutions/armorer/timofey
