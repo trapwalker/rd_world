@@ -3,16 +3,7 @@ abstract: false
 
 title: Вайтхил
 position: [12482409, 27045819]
-
-# Список NPC в городе
-#armorer:   reg://registry/institutions/armorer/timofey
-#mechanic:  reg://registry/institutions/mechanic/ivan
-#tuner:     reg://registry/institutions/tuner/petr
-#trader:    reg://registry/institutions/trader/buhman
-#hangar:    reg://registry/institutions/hangar/stepan
-#nucoil:    reg://registry/institutions/nucoil
-#trainer:   reg://registry/institutions/trainer/fabio
-#parking:   reg://registry/institutions/parking/vsevolod
+p_observing_range: 315
 
 svg_link: static/content/locations/map_locations/whitehill
 
