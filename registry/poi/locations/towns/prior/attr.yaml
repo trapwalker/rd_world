@@ -3,7 +3,7 @@ abstract: false
 
 title: Прайор
 position: [12517154, 27028833]
-p_observing_range: 315
+p_observing_range: 365
 
 svg_link: static/content/locations/map_locations/whitehill
 
