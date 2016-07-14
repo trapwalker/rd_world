@@ -6,7 +6,7 @@ svg_link: static/content/locations/map_locations/gas_station
 buildings:
     - name: nucoil
       caption: Нукойл
-      head: reg://registry/institutions/nucoil
+      head: reg:///registry/institutions/nucoil
       instances:
-          - reg://registry/institutions/gas_station
-          - reg://registry/institutions/npc_help
+          - reg:///registry/institutions/gas_station
+          - reg:///registry/institutions/npc_help
