@@ -2,5 +2,6 @@
 doc    : ОРТ
 abstract: false
 
-position: {x: 12513920, y: 27170066}
+position: {x: 12482000, y: 27045000}
 p_observing_range: 20000
+name: Whitehill

@@ -1,0 +1,50 @@
+﻿doc    : Вайтхил
+abstract: false
+
+title: Вайтхил
+position: [12482409, 27045819]
+p_observing_range: 315
+
+svg_link: static/content/locations/map_locations/whitehill
+
+buildings:
+    dealer:
+        caption: Автодилер
+        head: reg://registry/institutions/hangar/jounior_clarx
+        instances:
+            - reg://registry/institutions/hangar/jounior_clarx
+            - reg://registry/institutions/parking/james_rogers
+    market:
+        caption: Рынок
+        head: reg://registry/institutions/trader/bob_ferolito
+        instances:
+            - reg://registry/institutions/trader/bob_ferolito
+    autoservice:
+        caption: Сервис
+        head: reg://registry/institutions/mechanic/raul_alone
+        instances:
+            - reg://registry/institutions/mechanic/raul_alone
+            - reg://registry/institutions/armorer/martin_arioso
+            - reg://registry/institutions/tuner/petr
+    library:
+        caption: Библиотека
+        head: reg://registry/institutions/trainer/blackhawk_2094
+        instances:
+            - reg://registry/institutions/trainer/blackhawk_2094
+    mayor:
+        caption: Мэр
+        head: reg://registry/institutions/mayor/manny_askorti
+        instances:
+            - reg://registry/institutions/mayor/manny_askorti
+    bar:
+        caption: Бар
+        head: reg://registry/institutions/barman/al_dufo
+        instances:
+            - reg://registry/institutions/barman/al_dufo
+            - reg://registry/institutions/girl/barbara_green
+    nucoil:
+        caption: Нукойл
+        head: reg://registry/institutions/nucoil
+        instances:
+            - reg://registry/institutions/gas_station
+            - reg://registry/institutions/npc_help

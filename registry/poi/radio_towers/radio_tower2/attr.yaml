@@ -2,5 +2,6 @@
 doc    : РТР
 abstract: false
 
-position: {x: 12496765, y: 27136707}
+position: {x: 12517000, y: 27028000}
 p_observing_range: 20000
+name: Prior

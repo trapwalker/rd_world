@@ -1,38 +1,30 @@
 ﻿__cls__: Town
-doc    : Первый город
+doc    : Прайор
 abstract: false
 
 title: Прайор
-position: {x: 2517168.136311155, y: 27028861.32070253}
+position: {x: 12517154, y: 27028833}
+p_observing_range: 365
 
-# Список NPC в городе
-#armorer:   reg:///registry/institutions/armorer/timofey
-#mechanic:  reg:///registry/institutions/mechanic/ivan
-#tuner:     reg:///registry/institutions/tuner/petr
-#trader:    reg:///registry/institutions/trader/buhman
-#hangar:    reg:///registry/institutions/hangar/stepan
-#nucoil:    reg:///registry/institutions/nucoil
-#trainer:   reg:///registry/institutions/trainer/fabio
-#parking:   reg:///registry/institutions/parking/vsevolod
 
 svg_link: static/content/locations/map_locations/whitehill
 
 buildings:
     - name: dealer
-      caption: Ангар
+      caption: Автодилер
       head: reg:///registry/institutions/hangar/jounior_clarx
       instances:
           - reg:///registry/institutions/hangar/jounior_clarx
           - reg:///registry/institutions/parking/james_rogers
 
     - name: market
-      caption: Магазин
+      caption: Рынок
       head: reg:///registry/institutions/trader/bob_ferolito
       instances:
           - reg:///registry/institutions/trader/bob_ferolito
 
     - name: autoservice
-      caption: СТО
+      caption: Сервис
       head: reg:///registry/institutions/mechanic/raul_alone
       instances:
           - reg:///registry/institutions/mechanic/raul_alone
