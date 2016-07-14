@@ -9,18 +9,18 @@ svg_link: static/content/locations/map_locations/whitehill
 
 buildings:
     dealer:
-        caption: Ангар
+        caption: Автодилер
         head: reg://registry/institutions/hangar/jounior_clarx
         instances:
             - reg://registry/institutions/hangar/jounior_clarx
             - reg://registry/institutions/parking/james_rogers
     market:
-        caption: Магазин
+        caption: Рынок
         head: reg://registry/institutions/trader/bob_ferolito
         instances:
             - reg://registry/institutions/trader/bob_ferolito
     autoservice:
-        caption: СТО
+        caption: Сервис
         head: reg://registry/institutions/mechanic/raul_alone
         instances:
             - reg://registry/institutions/mechanic/raul_alone
