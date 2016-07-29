@@ -1,6 +1,11 @@
 ﻿__cls__: BuySkill
 doc    : Покупной навык
 
+description: Дополнительное очко навыка
+
+value: 0
+limit: 3
+
 price:
     - {count: 1, price: 100}
     - {count: 2, price: 1000}

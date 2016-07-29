@@ -2,3 +2,5 @@
 doc: Парковщик
 text: Вас приветствует парковщик !
 type: parking
+
+cost_for_day_parking: 10

@@ -2,3 +2,5 @@
 doc: Тренер
 text: Вас приветствует тренер !
 type: trainer
+
+drop_price: 10

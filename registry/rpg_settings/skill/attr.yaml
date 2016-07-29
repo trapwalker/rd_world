@@ -1,2 +1,9 @@
 ﻿__cls__: Skill
 doc    : Навыки
+
+description: Игрвой навык персонажа
+
+value: 0
+limit: 100
+mod: "reg:///registry/rpg_settings/class_skill/empty_0"
+

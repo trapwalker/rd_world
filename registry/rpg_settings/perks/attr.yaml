@@ -1,3 +1,11 @@
 ﻿__cls__: Perk
 doc    : Перки
 can_instantiate: False
+
+driving_req     : 0
+shooting_req    : 0
+masking_req     : 0
+leading_req     : 0
+trading_req     : 0
+engineering_req : 0
+level_req       : 0

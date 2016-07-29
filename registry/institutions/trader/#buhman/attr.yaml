@@ -66,6 +66,6 @@ price:
       #- {item: "reg:///registry/items/usable/fuel?tags=empty_fuel_tank", buy:  90, sale:  90, doc: "Пустые канистры покупает и продаёт по 90% от номинала"            }
       - {item: "reg:///registry/items/slot_item/weapons/machine_guns"  , buy:  80, sale: 120, doc: "Все пулемёты"                                                     }
 
-quests:
-- reg:///registry/quests/delivery?cargo_count=3&deadline=2h
-- reg:///registry/quests/killer/n_kills?deadline=5h&n=5
+# quests:
+# - reg:///registry/quests/delivery?cargo_count=3&deadline=2h
+# - reg:///registry/quests/killer/n_kills?deadline=5h&n=5

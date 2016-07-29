@@ -3,6 +3,8 @@ doc     : Оружие
 
 tags    : armorer
 
+weight_class: 0
+
 armorer_images:
   small:
     # Картинки для представления у оружейника (вид сбоку)
