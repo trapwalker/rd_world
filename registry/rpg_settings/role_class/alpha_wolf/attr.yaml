@@ -9,6 +9,11 @@ console_description: 'Класс: Альфа-волк\nКлассовый нав
 icon: static/content/class-icons/aw.png
 
 money: 0
-class_skills:  #Список классовых навыков
+class_skills:  # Список классовых навыков
 - reg:///registry/rpg_settings/class_skill/leading_5
+start_perks:  # Список стартовых перков
+- reg:///registry/rpg_settings/perks/perk_passive/chipskater_1
+- reg:///registry/rpg_settings/perks/perk_passive/overdriver_1
+- reg:///registry/rpg_settings/perks/perk_passive/patcher_1
 start_car: ~  # Стартовая машинка для данного класса
+
