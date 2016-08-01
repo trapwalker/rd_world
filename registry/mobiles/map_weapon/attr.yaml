@@ -1,3 +1,6 @@
-﻿__cls__ : Car
+﻿__cls__ : Mobile
 doc     : Подвижные юниты, но не игроки
+
+inventory:
+    items: []
 
