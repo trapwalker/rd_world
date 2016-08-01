@@ -33,5 +33,5 @@ role_class_order: # Порядок отображения ролевых кла�
   - reg:///registry/rpg_settings/role_class/alpha_wolf
 
 quick_game_car: # Список машинок для быстрой игры
-  - reg:///registry/mobiles/cars/middle/sports/delorean_dmc12
-  - reg:///registry/mobiles/cars/heavy/btrs/m113a1
+  - reg:///registry/mobiles/cars/middle/sports/delorean_dmc12/quick
+  - reg:///registry/mobiles/cars/heavy/btrs/m113a1/quick
