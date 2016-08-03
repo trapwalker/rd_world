@@ -1,7 +1,7 @@
 ﻿__cls__ : MapWeaponRocket
 doc     : Ракеты
 
-tags    : vehicle rocket
+tags    : [vehicle, rocket]
 
 
 radius_damage: 30

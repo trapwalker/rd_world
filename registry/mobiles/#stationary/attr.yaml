@@ -2,7 +2,7 @@
 doc    : Стационарные юниты
 
 
-tags: stationary_unit
+tags: [stationary_unit]
 
 #title:             Легкий   # Название атомобиля
 #price:             1000     # Цена у продавца (л) (>= 0)

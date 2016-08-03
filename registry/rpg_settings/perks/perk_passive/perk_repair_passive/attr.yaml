@@ -1,6 +1,6 @@
 ﻿__cls__: PerkRepairPassive
 doc    : Пассивные перки ремонта
-tags   : perk_repair_passive
+tags   : [perk_repair_passive]
 
 repair_rate         : 0
 repair_rate_on_stay : 0

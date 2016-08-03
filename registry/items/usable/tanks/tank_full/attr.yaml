@@ -3,4 +3,4 @@ doc: Полная канистра с топливом
 
 activate_type: self
 
-tags: full_fuel_tank
+tags: [full_fuel_tank]

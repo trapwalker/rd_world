@@ -1,6 +1,6 @@
 ﻿__cls__: PerkPassive
 doc    : Пассивные перки
-tags   : perk_passive
+tags   : [perk_passive]
 
 p_visibility_min   : 0
 p_visibility_max   : 0

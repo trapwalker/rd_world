@@ -1,7 +1,7 @@
 ﻿__cls__ : TunerItem
 doc     : Предметы, устанавливаемые в слоты тюнера
 
-tags    : shnork
+tags    : [shnork]
 
 # Картинки для представления в инвентаре
 inv_icon_big: static/content/items/slot_item/tuner_item/shnork/shnork_003/big.png

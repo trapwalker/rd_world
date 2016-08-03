@@ -1,4 +1,4 @@
 ﻿__cls__ : MechanicItem
 doc  : Предметы, устанавливаемые в слоты системы охлаждения
 
-tags : cooling
+tags : [cooling]

@@ -1,7 +1,7 @@
 ﻿__cls__ : TunerItem
 doc     : Предметы, устанавливаемые в слоты тюнера
 
-tags    : b_glass
+tags    : [b_glass]
 
 # Картинки для представления в инвентаре
 inv_icon_big: static/img/items/weapons/mashine_guns/wmg_pkt/big.png

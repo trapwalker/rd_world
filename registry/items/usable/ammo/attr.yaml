@@ -5,4 +5,4 @@ stack_size: 1000
 
 activate_type: self  # Это значит, что пули сами знают как им активироваться
 
-tags: ammo
+tags: [ammo]

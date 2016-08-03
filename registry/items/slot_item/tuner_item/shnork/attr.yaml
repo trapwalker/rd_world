@@ -1,4 +1,4 @@
 ﻿__cls__ : TunerItem
 doc     : Шнорк, шнорхель
 
-tags    : tuner
+tags    : [tuner]

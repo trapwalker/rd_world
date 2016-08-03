@@ -1,4 +1,4 @@
 ﻿__cls__ : MechanicItem
 doc  : Предметы, устанавливаемые в слоты транмиссии - раздатка
 
-tags : transfer_case
+tags : [transfer_case]

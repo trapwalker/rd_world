@@ -1,5 +1,5 @@
 ﻿__cls__ : Car
-tags: moto
+tags: [moto]
 
 title:       "Мотоцикл"   # Модель атомобиля
 class_car:   "Легкий"    # Класс автомобиля

@@ -1,4 +1,4 @@
 ﻿__cls__ : TunerItem
 doc     : Задний бампер
 
-tags    : tuner
+tags    : [tuner]

@@ -2,4 +2,4 @@
 __cls__ : TunerItem
 doc     : Заднее крыло
 
-tags    : tuner
+tags    : [tuner]

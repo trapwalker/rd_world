@@ -1,6 +1,6 @@
 ﻿__cls__: PerkCritPassive
 doc    : Пассивные перки, отвечающие за крит
-tags   : perk_crit_passive
+tags   : [perk_crit_passive]
 
 crit_rate: 0
 crit_power: 0

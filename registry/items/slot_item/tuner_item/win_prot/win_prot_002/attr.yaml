@@ -1,7 +1,7 @@
 ﻿__cls__ : TunerItem
 doc     : Предметы, устанавливаемые в слоты тюнера
 
-tags    : win_prot
+tags    : [win_prot]
 
 # Картинки для представления в инвентаре
 inv_icon_big:   static/content/items/slot_item/tuner_item/win_prot/win_prot_002/big.png

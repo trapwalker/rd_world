@@ -1,4 +1,4 @@
 ﻿__cls__ : MechanicItem
 doc  : Предметы, устанавливаемые в слоты системы торможения - передние колодки
 
-tags : front_brake_pads
+tags : [front_brake_pads]

@@ -1,7 +1,7 @@
 ﻿__cls__ : TunerItem
 doc     : Предметы, устанавливаемые в слоты тюнера
 
-tags    : f_bumper
+tags    : [f_bumper]
 
 # Картинки для представления в инвентаре
 inv_icon_big: static/content/items/slot_item/tuner_item/f_bumper/f_bumper_002/inventory/big.png

@@ -1,7 +1,7 @@
 ﻿__cls__ : Mobile
 doc     : Подвижные юниты
 
-tags    : vehicle
+tags    : [vehicle]
 exp_table:  reg:///registry/rpg_settings/exptable       # Ссылка на таблицу опыта
 
 p_observing_range     : 1000

@@ -1,4 +1,4 @@
 ﻿__cls__ : MechanicItem
 doc  : Предметы, устанавливаемые в слоты системы торможения - усилитель тормозов
 
-tags : booster
+tags : [booster]

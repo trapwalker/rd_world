@@ -1,6 +1,6 @@
 ﻿__cls__ : Car
 
-tags    : car agent
+tags    : [car, agent]
 
 inventory_size: 10
 

@@ -1,4 +1,4 @@
 ﻿__cls__ : MechanicItem
 doc  : Предметы, устанавливаемые в слоты транмиссии - первичный вал
 
-tags : primary_shaft
+tags : [primary_shaft]
