@@ -9,3 +9,5 @@ inv_icon_mid: static/content/items/usable/tanks/tank10/mid.png
 inv_icon_small: static/content/items/usable/tanks/tank10/small.png
 title: Канистра (10л)
 base_price: 60
+
+post_activate_item: reg:///registry/items/usable/tanks/tank_empty/tank10
