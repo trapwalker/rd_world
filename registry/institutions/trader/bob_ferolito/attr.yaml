@@ -5,11 +5,10 @@ abstract: false
 
 inventory_size:       100
 inventory:
-    items: []
-#      - reg:///registry/items/usable/ammo/a762
+    items:
 #      - reg:///registry/items/usable/ammo/a127x99
-#      - reg:///registry/items/usable/tanks/tank_empty/tank10
-#      - reg:///registry/items/usable/tanks/tank_empty/tank20
+      - reg:///registry/items/usable/tanks/tank_empty/tank10
+      - reg:///registry/items/usable/tanks/tank_empty/tank20
 #      #- reg:///registry/items/slot_item/weapons/machine_guns/mg_002
 #      #- reg:///registry/items/slot_item/weapons/machine_guns/mg_003
 #      #- reg:///registry/items/slot_item/weapons/machine_guns/mg_004
@@ -105,11 +104,18 @@ inventory:
 #      - reg:///registry/items/slot_item/tuner_item/win_prot/win_prot_003
 
 price:
-    items: []
-#      - {item: "reg:///registry/items/usable/ammo"                     , buy: 90 , sale: 110, doc: "Патроны Бухман покупает дешевле, а продаёт дороже номинала на 10%"}
-#      #- {item: "reg:///registry/items/usable/fuel?tags=full_fuel_tank" , buy: 105, sale: ~  , doc: "Топливо покупает на 5% дороже и не продаёт"                       }
-#      #- {item: "reg:///registry/items/usable/fuel?tags=empty_fuel_tank", buy: 90 , sale: 90 , doc: "Пустые канистры покупает и продаёт по 90% от номинала"            }
-#      - {item: "reg:///registry/items/slot_item/weapons/machine_guns"  , buy: 80 , sale: 120, doc: "Все пулемёты"                                                     }
+    items:
+      - item: reg:///registry/items/usable/tanks/tank_empty/tank10
+        buy: 105
+        sale: 100
+        doc: "Топливо покупает на 5% дороже и не продаёт"
+
+      - item: reg:///registry/items/usable/tanks/tank_empty/tank20
+        buy: 90
+        sale: 90
+        doc: "Пустые канистры покупает и продаёт по 90% от номинала"
+
+
 
 
 # quests:
