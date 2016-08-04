@@ -2,3 +2,5 @@ __cls__: Agent
 doc    : Прототипы агентов
 
 balance: 1000
+car_list: []
+perks: []

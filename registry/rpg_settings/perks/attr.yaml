@@ -9,4 +9,5 @@ leading_req     : 0
 trading_req     : 0
 engineering_req : 0
 level_req       : 0
-perks_req: []
+
+perks_req       : []
