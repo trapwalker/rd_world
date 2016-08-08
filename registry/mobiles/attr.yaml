@@ -4,6 +4,8 @@ doc     : Подвижные юниты
 tags    : [vehicle]
 exp_table:  reg:///registry/rpg_settings/exptable       # Ссылка на таблицу опыта
 
+k_way_exp : 0.01
+
 p_observing_range     : 1000
 p_vigilance           : 0
 p_visibility_min      : 1
