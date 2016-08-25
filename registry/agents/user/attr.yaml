@@ -6,4 +6,7 @@ doc    : Прототипы пользовательских агентов
 #position: {x: 40371667, y: 22592826}  # Belgorod
 balance: 2000
 
-car: reg:///registry/mobiles/cars/middle/sports/delorean_dmc12
+car: #reg:///registry/mobiles/cars/middle/sports/delorean_dmc12
+    __cls__ : Car
+    parent: reg:///registry/mobiles/cars/middle/sports/delorean_dmc12
+    
