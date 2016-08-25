@@ -1,8 +1,8 @@
-__cls__: Nucoil
+__cls__: Institution
 doc: Nucoil
-
 text: Nucoil
-
 title: Nucoil
 photo: "static/content/institutions/nucoil/nukeoil_logo.png"
 abstract: false
+type: nucoil
+

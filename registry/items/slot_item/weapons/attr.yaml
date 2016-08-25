@@ -1,7 +1,12 @@
 ﻿__cls__ : Weapon
 doc     : Оружие
 
-tags    : armorer
+tags    : [armorer]
+
+ammo_per_shot: 0
+ammo_per_second: 0
+
+weight_class: 0
 
 armorer_images:
   small:

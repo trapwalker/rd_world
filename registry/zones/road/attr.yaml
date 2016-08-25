@@ -6,4 +6,4 @@ order_key: a2
 path: tilesets/ts_road
 
 effects:
-- reg://registry/effects/zonal/road
+- reg:///registry/effects/zonal/road

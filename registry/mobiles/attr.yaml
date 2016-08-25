@@ -1,5 +1,113 @@
 ﻿__cls__ : Mobile
 doc     : Подвижные юниты
 
-tags    : vehicle
-exp_table:  reg://registry/rpg_settings/exptable       # Ссылка на таблицу опыта
+tags    : [vehicle]
+exp_table:  reg:///registry/rpg_settings/exptable       # Ссылка на таблицу опыта
+
+k_way_exp : 0.01
+
+p_observing_range     : 1000
+p_vigilance           : 0
+p_visibility_min      : 1
+p_visibility_max      : 1
+p_obs_range_rate_min  : 1
+p_obs_range_rate_max  : 1
+
+m_cc_dirt             : 0.2
+m_cc_wood             : 0.3
+m_visibility_wood     : 0.5
+m_observing_range_wood: 0.5
+m_cc_slope            : 0.2
+m_cc_water            : 0.45
+m_r_cc_wood_on_road   : 1
+m_r_cc_water_on_road  : 1
+m_r_cc_dirt_on_road   : 1
+m_r_cc_slope_on_road  : 1
+m_r_cc_dirt           : 1
+m_cc_mine             : 0.5
+m_cc_fuel_empty       : 0.9
+
+r_empty               : 0
+r_cc_dirt             : 0
+r_cc_wood             : 0
+r_visibility_wood     : 0
+r_observing_range_wood: 0
+r_cc_slope            : 0
+r_cc_water            : 0
+r_cc_mine             : 0
+r_cc_fuel_empty       : 0
+
+p_defence             : 1
+direction             : 0
+
+r_min                 :  10
+ac_max                :  14
+max_control_speed     :  28
+v_forward             :  20
+v_backward            : -10
+a_forward             :   5 
+a_backward            :  -3
+a_braking             :  -6
+
+max_fuel              : 100
+fuel                  : 100
+p_fuel_rate           : 0.5
+
+dps_rate              : 1
+damage_rate           : 1
+time_recharge_rate    : 1
+radius_rate           : 1
+
+repair_rate           : 0
+repair_rate_on_stay   : 0
+
+crit_rate             : 0.5
+crit_power            : 0.5
+
+# Флаги слотов
+slot_FL_f: FL_0
+slot_CL_f: FBL_0
+slot_BL_f: BL_0
+
+slot_FC_f: FLR_0
+slot_CC_f: FBLR_0
+slot_BC_f: BLR_0
+
+slot_FR_f: FR_0
+slot_CR_f: FBR_0
+slot_BR_f: BR_0
+
+inventory_size: 10
+
+price: 0
+
+class_car     : ""
+sub_class_car : ""
+name_car      : ""
+
+# Влияние скилов          
+driving_r_min               : 0
+driving_ac_max              : 0
+driving_max_control_speed   : 0
+driving_v_forward           : 0
+driving_v_backward          : 0
+driving_a_forward           : 0
+driving_a_backward          : 0
+driving_a_braking           : 0
+                            
+shooting_dps_rate           : 0
+shooting_damage_rate        : 0
+shooting_time_recharge_rate : 0
+shooting_radius_rate        : 0
+                            
+masking_p_visibility        : 0     
+                            
+r_empty                     : 0
+r_cc_dirt                   : 0
+r_cc_wood                   : 0
+r_visibility_wood           : 0
+r_observing_range_wood      : 0
+r_cc_slope                  : 0
+r_cc_water                  : 0
+r_cc_mine                   : 0
+r_cc_fuel_empty             : 0

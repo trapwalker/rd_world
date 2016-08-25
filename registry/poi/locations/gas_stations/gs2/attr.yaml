@@ -1,4 +1,5 @@
-﻿
+﻿__cls__: Town
+
 abstract: false
 
-position: [12519998, 27034380]
+position: {x: 12519998, y: 27034380}

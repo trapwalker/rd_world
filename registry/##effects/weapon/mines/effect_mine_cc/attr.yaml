@@ -1,0 +1,9 @@
+﻿__cls__: Effect
+doc: Эффект ограничения скорости из-за тормозной мины (EffectMineCC)
+abstract: false
+
+param_name: p_cc
+m_name: m_cc_mine
+r_name: r_cc_mine
+upd_method: set_motion
+sign: -1.0

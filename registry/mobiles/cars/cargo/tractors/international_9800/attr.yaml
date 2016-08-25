@@ -1,4 +1,5 @@
-﻿title:       "Int. 9800"         # Модель атомобиля
+﻿__cls__ : Car
+title:       "Int. 9800"         # Модель атомобиля
 class_car:   "Грузовой"          # Класс автомобиля
 name_car:    "Int. 9800"         # Название атомобиля
 
@@ -10,17 +11,18 @@ hp:                 195          # Текущее количество проч�
 inventory_size:     70           # Количество слотов в инвентаре (шт) (>=0)
 
 inventory:                       # При заполнении инвентаря необходимо учитывать его размер
-- reg://registry/items/usable/ammo/a762?amount=100
-- reg://registry/items/usable/ammo/a762?amount=100
-- reg://registry/items/usable/ammo/a762?amount=100
-- reg://registry/items/slot_item/weapons/machine_guns/dshkm
-- reg://registry/items/slot_item/weapons/machine_guns/dshkm
-- reg://registry/items/slot_item/weapons/machine_guns/dshkm
-- reg://registry/items/usable/build_set/build_set_3
-- reg://registry/items/usable/build_set/build_set_3
-- reg://registry/items/usable/build_set/build_set_3
-- reg://registry/items/usable/build_set/build_set_3
-- reg://registry/items/usable/build_set/build_set_3
+    items:
+      - reg:///registry/items/usable/ammo/a762?amount=100
+      - reg:///registry/items/usable/ammo/a762?amount=100
+      - reg:///registry/items/usable/ammo/a762?amount=100
+      - reg:///registry/items/slot_item/weapons/machine_guns/dshkm
+      - reg:///registry/items/slot_item/weapons/machine_guns/dshkm
+      - reg:///registry/items/slot_item/weapons/machine_guns/dshkm
+      - reg:///registry/items/usable/build_set/build_set_3
+      - reg:///registry/items/usable/build_set/build_set_3
+      - reg:///registry/items/usable/build_set/build_set_3
+      - reg:///registry/items/usable/build_set/build_set_3
+      - reg:///registry/items/usable/build_set/build_set_3
 
 p_observing_range:     290      # Радиус обзора автомобиля (м) (>= 0)
 

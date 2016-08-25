@@ -1,8 +1,0 @@
-﻿doc: Эффект замедления на пересеченной местности (EffectSlopeCC)
-abstract: false
-
-param_name: p_cc
-m_name: m_cc_slope
-r_name: r_cc_slope
-upd_method: set_motion
-sign: -1.0

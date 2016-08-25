@@ -1,8 +1,8 @@
-﻿__cls__: GasStationNPC
+﻿__cls__: Institution
 doc: Заправка
-
 text: Заправка
-
 title: Gas Station
+type: npc_gas_station
+
 photo: "static/content/institutions/npc_gas_station/fuel.png"
 abstract: false

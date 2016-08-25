@@ -1,4 +1,4 @@
-﻿__cls__: Mayor
+﻿__cls__: Institution
 doc: Мэр
-
-text: Вас приветствует мэр !
+text: Вас приветствует мэр!
+type: mayor

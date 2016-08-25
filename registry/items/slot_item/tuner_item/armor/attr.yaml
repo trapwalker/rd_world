@@ -1,4 +1,4 @@
 ﻿__cls__ : TunerItem
 doc     : Броня
 
-tags    : tuner
+tags    : [tuner]

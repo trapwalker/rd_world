@@ -6,4 +6,4 @@ order_key: a4
 path: tilesets/ts_water
 
 effects:
-- reg://registry/effects/zonal/water
+- reg:///registry/effects/zonal/water

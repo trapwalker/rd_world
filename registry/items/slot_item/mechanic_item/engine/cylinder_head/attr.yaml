@@ -1,3 +1,4 @@
+__cls__ : MechanicItem
 doc  : Предметы, устанавливаемые в слоты двигателя - ГБЦ
 
-tags : cylinder_head
+tags : [cylinder_head]

@@ -1,5 +1,7 @@
-﻿doc    : РТР
+﻿__cls__: RadioTower
+doc    : РТР
 abstract: false
 
-position: [12517000, 27028000]
+position: {x: 12517000, y: 27028000}
 p_observing_range: 20000
+name: Prior

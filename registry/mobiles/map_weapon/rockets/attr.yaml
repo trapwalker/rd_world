@@ -1,8 +1,12 @@
 ﻿__cls__ : MapWeaponRocket
 doc     : Ракеты
 
-tags    : vehicle rocket
+tags    : [vehicle, rocket]
 
+
+radius_damage: 30
+damage: 30
+life_time: 10
 
 r_min:              2.0     # Минимальный радиус разворота (м) (> 0)
 ac_max:             500.0    # Перегрузка с которой входит в поворот автомобиль (м/c^2) (> 0)

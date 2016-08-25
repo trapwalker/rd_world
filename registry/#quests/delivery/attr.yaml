@@ -1,0 +1,26 @@
+﻿__cls__: QNKills
+doc    : Квесты
+
+description: Доставить груз конкретному NPC.
+
+caption   : Доставить груз {Степану}
+text      : "<p>Дружище, сделай одно одолжение. Тут степану надо барахлишко отвезти:</p><ul><li>100 патронов 762</li><li>ремкомплект</li></ul>"
+text_short: Отвезти {Степану} барахлишко
+typename  : Доставка
+list_icon : /static/quest/icons/delivery.png
+level     : 3
+deadline  : 2016-04-01 17:21
+
+text_intro  : Доставить {cargo_count} {#cargo.name_rp} {recipient.name_rp} в {recipient.town.name} за {humanize(deadline)}.
+text_win    : Отличная работа. Получи {humanize(reward, 'vp')} в награду.
+text_fail   : Не думал, что ты умудришься полностью облажаться. Я тебе это припомню.
+
+
+recipient   : reg:///registry/institutions/hangar/stepan  # Prior
+deadline    : 24h
+
+cargo_count : 5
+cargo       : reg:///registry/items/usable/tanks/tank_empty/tank20
+reward      :
+- reg:///registry/items/usable/ammo/a762?amount=100
+- reg:///registry/items/usable/build_set/build_set_1?amount=2

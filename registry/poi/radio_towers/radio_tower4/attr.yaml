@@ -1,0 +1,7 @@
+﻿__cls__: RadioTower
+doc    : district_13
+abstract: false
+
+position: {x: 12468002, y: 26989281}
+p_observing_range: 20000
+name: District_13

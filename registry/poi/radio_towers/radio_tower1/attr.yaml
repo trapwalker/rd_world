@@ -1,5 +1,7 @@
-﻿doc    : ОРТ
+﻿__cls__: RadioTower
+doc    : ОРТ
 abstract: false
 
-position: [12482000, 27045000]
+position: {x: 12482000, y: 27045000}
 p_observing_range: 20000
+name: Whitehill

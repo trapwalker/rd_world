@@ -1,0 +1,9 @@
+﻿__cls__: Effect
+doc: Эффект замедления на воде (EffectWaterCC)
+abstract: false
+
+param_name: p_cc
+m_name: m_cc_water
+r_name: r_cc_water
+upd_method: set_motion
+sign: -1.0

@@ -4,4 +4,4 @@ abstract: false
 order_key: a0
 
 effects:
-- reg://registry/effects/zonal/dirt
+- reg:///registry/effects/zonal/dirt

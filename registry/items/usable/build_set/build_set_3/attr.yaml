@@ -1,3 +1,4 @@
+__cls__ : BuildSet
 doc    : Большой ремкомплект
 
 build_points: 50

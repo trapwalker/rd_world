@@ -1,4 +1,4 @@
 ﻿__cls__ : TunerItem
 doc     : Итемы защиты окон и стёкол
 
-tags    : tuner
+tags    : [tuner]

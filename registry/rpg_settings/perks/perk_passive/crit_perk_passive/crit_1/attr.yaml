@@ -1,4 +1,5 @@
-﻿abstract: false
+﻿__cls__: PerkCritPassive
+abstract: false
 
 # Общие параметры перка
 title: Да будет крит                                              # Название перка

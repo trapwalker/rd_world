@@ -1,6 +1,7 @@
-﻿doc     : Предметы, устанавливаемые в слоты тюнера
+﻿__cls__ : TunerItem
+doc     : Предметы, устанавливаемые в слоты тюнера
 
-tags    : win_prot
+tags    : [win_prot]
 
 # Картинки для представления в инвентаре
 inv_icon_big:   static/content/items/slot_item/tuner_item/win_prot/win_prot_001/big.png
@@ -15,21 +16,21 @@ pont_points: 50
 
 # Картинки для представления у тюнера, установленные на машине
 images:
-    reg://registry/mobiles/cars/middle/passenger:                                              # реестровая ссылка на машинку, для которой подходит данный итем
-        top:                                                                                   # описание вида сверху (картинка и позиция)
-            link: static/content/items/slot_item/tuner_item/win_prot/win_prot_001/top.png      # ссылка на картику для вида сверху
-            z_index: 1                                                                         # позиция: -1 или 1
-        side:                                                                                  # описание вида сбоку (картинка и позиция)
-            link: static/content/items/slot_item/tuner_item/win_prot/win_prot_001/side.png     # ссылка на картику для вида сбоку
-            z_index: 1                                                                         # позиция: -1 или 1
+  - car: reg:///registry/mobiles/cars/middle/passenger                                      # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                                                   # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/win_prot/win_prot_001/top.png      # ссылка на картику для вида сверху
+        z_index: 1                                                                         # позиция: -1 или 1
+    side:                                                                                  # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/win_prot/win_prot_001/side.png     # ссылка на картику для вида сбоку
+        z_index: 1                                                                         # позиция: -1 или 1
 
-    reg://registry/mobiles/cars/middle/passenger_2:                                            # реестровая ссылка на машинку, для которой подходит данный итем
-        top:                                                                                   # описание вида сверху (картинка и позиция)
-            link: static/content/items/slot_item/tuner_item/win_prot/win_prot_001/top.png      # ссылка на картику для вида сверху
-            z_index: 1                                                                         # позиция: -1 или 1
-        side:                                                                                  # описание вида сбоку (картинка и позиция)
-            link: static/content/items/slot_item/tuner_item/win_prot/win_prot_001/side.png     # ссылка на картику для вида сбоку
-            z_index: 1                                                                         # позиция: -1 или 1
+  - car: reg:///registry/mobiles/cars/middle/passenger_2                                    # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                                                   # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/win_prot/win_prot_001/top.png      # ссылка на картику для вида сверху
+        z_index: 1                                                                         # позиция: -1 или 1
+    side:                                                                                  # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/win_prot/win_prot_001/side.png     # ссылка на картику для вида сбоку
+        z_index: 1                                                                         # позиция: -1 или 1
 
 
 

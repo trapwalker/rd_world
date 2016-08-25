@@ -1,4 +1,5 @@
-﻿doc    : Преднастройки классов
+﻿__cls__: RoleClass
+doc    : Преднастройки классов
 abstract: false
 
 title: Night Rider
@@ -9,5 +10,5 @@ icon: static/content/class-icons/nr.png
 
 money: 0
 class_skills:  #Список классовых навыков
-- reg://registry/rpg_settings/class_skill/masking_5
+- reg:///registry/rpg_settings/class_skill/masking_5
 start_car: ~  # Стартовая машинка для данного класса

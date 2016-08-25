@@ -6,3 +6,6 @@ emblem: ""
 
 start_free_point_skills: 10  # Стартовые очки навыков
 start_free_point_perks: 3    # Стартовые очки перков
+
+class_skills: []
+start_perks: []

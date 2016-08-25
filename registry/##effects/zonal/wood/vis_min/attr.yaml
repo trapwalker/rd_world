@@ -1,0 +1,8 @@
+﻿__cls__: Effect
+doc: Эффект ограничения минимальной видимости в лесу (EffectWoodVisibilityMin)
+abstract: false
+
+param_name: p_visibility_min
+m_name: m_visibility_wood
+r_name: r_visibility_wood
+sign: -1.0
