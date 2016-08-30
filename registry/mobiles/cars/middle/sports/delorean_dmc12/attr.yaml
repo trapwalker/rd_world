@@ -24,7 +24,7 @@ inventory:                       # При заполнении инвентар�
       - reg:///registry/items/usable/build_set/build_set_3
       - reg:///registry/items/usable/build_set/build_set_3
 
-p_observing_range:     1250      #450 # Радиус обзора автомобиля (м) (>= 0)
+p_observing_range:     3250      #450 # Радиус обзора автомобиля (м) (>= 0)
 
 p_vigilance:           0         # Коэффициент зоркости (0..1)
 p_visibility_min:      0.27      # Минимальная заметность автомобиля (0..1) при 0 автомобиль невидим
@@ -67,8 +67,8 @@ mechanic_suspension:    static/content/mechanic_systems/suspensions/suspension_1
 # Сейчас до 9 слотов на автомобиль: slot_(Front, Center, Back)(Left, Center, Right).
 # Все слоты закоментированы, кроме переднего центрального.
 slot_FC: reg:///registry/items/slot_item/weapons/machine_guns/dshkm?direction=F
-slot_CC: ~
-slot_BC: ~
+slot_CC: reg:///registry/items/slot_item/weapons/machine_guns/dshkm?direction=R
+slot_BC: reg:///registry/items/slot_item/weapons/machine_guns/dshkm?direction=L
 
 # Настройка ограничений направления оружия из слота. Значением является строка в котороую включены первые буквы
 # соответствующих направлений (Front, Back, Left, Right)
