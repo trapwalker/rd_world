@@ -1,7 +1,7 @@
 ﻿__cls__ : AmmoBullets
 doc    : Патроны 12.7x99
 
-stack_size: 20
+stack_size: 2000
 
 description: Патроны 12.7x99 для тяжёлый пулемётов
 inv_icon_big:   static/content/items/usable/ammo/a127x99/big.png
