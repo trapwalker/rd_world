@@ -12,6 +12,7 @@ inventory_size:     120          # Количество слотов в инве
 
 inventory:                       # При заполнении инвентаря необходимо учитывать его размер
     items:
+      - reg:///registry/items/usable/map_weapon/rockets/rocket_x101?amount=1500
       - reg:///registry/items/usable/ammo/a127x99?amount=1500
       - reg:///registry/items/usable/ammo/a762?amount=1000
       - reg:///registry/items/usable/ammo/a762?amount=1000
