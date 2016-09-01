@@ -6,30 +6,30 @@ doc    : Прототип агента быстрой игры
 #position: {x: 40371667, y: 22592826}  # Belgorod
 balance: 2000
 
-car: #reg:///registry/mobiles/cars/middle/sports/delorean_dmc12
+car:
     __cls__ : Car
     parent: reg:///registry/mobiles/cars/middle/sports/delorean_dmc12
+    p_observing_range:     5000      #450 # Радиус обзора автомобиля (м) (>= 0)
 
     slot_FC: 
         __cls__: Cannon
         parent: reg:///registry/items/slot_item/weapons/cannons/zu23_flak
         direction: F
         radius: 413
-        dmg: 0.0001
+        dmg: 0.01
         time_recharge: 3                                       # Время перезарядки орудия (с)
 
     slot_CC: 
         __cls__: MachineGun
         parent: reg:///registry/items/slot_item/weapons/machine_guns/dshkm
         direction: R
-        dps: 0.0001
+        dps: 0.01
         radius: 250
     
     slot_BC:
         __cls__: MachineGun
         parent: reg:///registry/items/slot_item/weapons/machine_guns/dshkm
         direction: L
-        dps: 0.0001
+        dps: 0.01
         radius: 250
-        
-    
+
