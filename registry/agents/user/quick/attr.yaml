@@ -14,6 +14,12 @@ car:
     p_visibility_max:      0.99      # Максимальная заметность автомобиля (0..1) при 0 автомобиль невидим
     p_obs_range_rate_min:  0.99       # Коэффициент минимального радиуса обзора автомобиля (0..1)
     p_obs_range_rate_max:  1         # Коэффициент максимального радиуса обзора автомобиля (0..1)
+    
+    slot_FC_f: FRL_2
+    slot_CC_f: FRBL_2
+    slot_CR_f: FRB_2
+    slot_CL_f: FBL_2
+    slot_BC_f: RBL_2
 
     slot_FC: 
         __cls__: MachineGun
@@ -44,3 +50,13 @@ car:
         dps: 0.5
         radius: 100
 
+    inventory:                       # При заполнении инвентаря необходимо учитывать его размер
+        items:
+          - reg:///registry/items/usable/map_weapon/rockets/rocket_x101?amount=1500
+          - reg:///registry/items/usable/ammo/a127x99?amount=1500
+          - reg:///registry/items/usable/ammo/a762?amount=1000
+          - reg:///registry/items/usable/ammo/a762?amount=1000
+          - reg:///registry/items/usable/ammo/a762?amount=1000
+          - reg:///registry/items/usable/build_set/build_set_3?amount=5
+          - reg:///registry/items/usable/build_set/build_set_3?amount=5
+          - reg:///registry/items/usable/build_set/build_set_3?amount=5
