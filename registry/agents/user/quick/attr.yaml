@@ -29,11 +29,18 @@ car:
         radius: 413
         dmg: 10
         time_recharge: 3                                       # Время перезарядки орудия (с)
-    
-    slot_BC:
+
+    slot_CR: 
         __cls__: MachineGun
         parent: reg:///registry/items/slot_item/weapons/machine_guns/dshkm
         direction: L
         dps: 0.5
         radius: 250
+
+    slot_BC:
+        __cls__: MachineGun
+        parent: reg:///registry/items/slot_item/weapons/machine_guns/dshkm
+        direction: B
+        dps: 0.5
+        radius: 100
 

@@ -77,6 +77,8 @@ slot_BC: reg:///registry/items/slot_item/weapons/machine_guns/dshkm?direction=L
 # Все слоты закоментированы, кроме переднего центрального.
 slot_FC_f: FRL_2
 slot_CC_f: FRBL_2
+slot_CR_f: FRB_2
+slot_CL_f: FBL_2
 slot_BC_f: RBL_2
 
 # Настройка слотов для Тюнера
