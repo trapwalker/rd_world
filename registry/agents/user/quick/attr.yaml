@@ -10,6 +10,10 @@ car:
     __cls__ : Car
     parent: reg:///registry/mobiles/cars/middle/sports/delorean_dmc12
     p_observing_range:     5000      #450 # Радиус обзора автомобиля (м) (>= 0)
+    p_visibility_min:      0.95      # Минимальная заметность автомобиля (0..1) при 0 автомобиль невидим
+    p_visibility_max:      0.99      # Максимальная заметность автомобиля (0..1) при 0 автомобиль невидим
+    p_obs_range_rate_min:  0.99       # Коэффициент минимального радиуса обзора автомобиля (0..1)
+    p_obs_range_rate_max:  1         # Коэффициент максимального радиуса обзора автомобиля (0..1)
 
     slot_FC: 
         __cls__: MachineGun
