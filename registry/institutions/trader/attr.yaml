@@ -1,7 +1,11 @@
 __cls__: Trader
 doc: Торговец
+text: Вас приветствует торговец!
+type: trader
 
-text: Вас приветствует торговец !
+
+inventory_size: 10
 
 price:
-- ["reg://registry/items", 100, 100, "По умолчанию продаём и покупаем все по номиналу"]
+    items:
+        - {item: "reg:///registry/items", buy: 100, sale: 100, doc: "По умолчанию продаём и покупаем все по номиналу"}

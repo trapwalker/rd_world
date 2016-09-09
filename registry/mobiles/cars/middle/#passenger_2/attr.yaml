@@ -1,4 +1,5 @@
-﻿title:       "Легковой авт. 2"   # Модель атомобиля
+﻿__cls__ : Car
+title:       "Легковой авт. 2"   # Модель атомобиля
 class_car:   "Средний"         # Класс автомобиля
 name_car:    ""                # Название атомобиля
 
@@ -29,16 +30,17 @@ p_fuel_rate:        0.02     # Расход топлива, тратится т�
 
 inventory_size:       12     # Количество слотов в инвентаре (шт) (>=0)
 inventory:                  # При заполнении инвентаря необходимо учитывать его размер
-- reg://registry/items/slot_item/tuner_item/b_bumper_001
-- reg://registry/items/slot_item/tuner_item/b_fender_001
-- reg://registry/items/slot_item/tuner_item/b_fender_002
-- reg://registry/items/slot_item/tuner_item/b_glass_001
-- reg://registry/items/slot_item/tuner_item/win_prot_001
-- reg://registry/items/slot_item/tuner_item/f_bumper_001
-- reg://registry/items/slot_item/tuner_item/f_fender_001
-- reg://registry/items/slot_item/tuner_item/f_glass_001
-- reg://registry/items/slot_item/tuner_item/roof_001
-- reg://registry/items/slot_item/tuner_item/skirt_001
+    items:
+      - reg:///registry/items/slot_item/tuner_item/b_bumper_001
+      - reg:///registry/items/slot_item/tuner_item/b_fender_001
+      - reg:///registry/items/slot_item/tuner_item/b_fender_002
+      - reg:///registry/items/slot_item/tuner_item/b_glass_001
+      - reg:///registry/items/slot_item/tuner_item/win_prot_001
+      - reg:///registry/items/slot_item/tuner_item/f_bumper_001
+      - reg:///registry/items/slot_item/tuner_item/f_fender_001
+      - reg:///registry/items/slot_item/tuner_item/f_glass_001
+      - reg:///registry/items/slot_item/tuner_item/roof_001
+      - reg:///registry/items/slot_item/tuner_item/skirt_001
 
 
 # Ссылка на картинку автомобиля в ангаре

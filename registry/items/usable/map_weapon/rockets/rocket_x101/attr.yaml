@@ -1,7 +1,8 @@
-﻿
-generate_obj  : reg://registry/mobiles/map_weapon/rockets/rocket_x101
+﻿__cls__: MapWeaponRocketItem
 
-stack_size    : 100
+generate_obj  : reg:///registry/mobiles/map_weapon/rockets/rocket_x101
+
+stack_size    : 1000
 base_price    : 20
 description   : Ракета Х101
 title         : Ракета Х101

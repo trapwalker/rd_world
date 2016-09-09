@@ -1,6 +1,9 @@
 ﻿__cls__ : Car
 
-tags    : car agent
+tags    : [car, agent]
+
+
+#position: {x: 40371667, y: 22592826}  # Belgorod
 
 inventory_size: 10
 

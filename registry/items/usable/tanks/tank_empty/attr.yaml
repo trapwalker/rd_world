@@ -1,4 +1,4 @@
 __cls__: TankEmpty
 doc: Пустая канистра с топливом
 
-tags: empty_fuel_tank
+tags: [empty_fuel_tank]

@@ -1,0 +1,9 @@
+﻿__cls__: Effect
+doc: Замедление в лесу (EffectDirtCC)
+abstract: false
+
+param_name: p_cc
+m_name: m_cc_dirt
+r_name: r_cc_dirt
+upd_method: set_motion
+sign: -1.0

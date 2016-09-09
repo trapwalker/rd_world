@@ -1,0 +1,10 @@
+﻿__cls__: Effect
+doc: Резист от слеса на дороге (EffectRoadRCCWood)
+abstract: false
+
+param_name: r_cc_wood
+m_name: m_r_cc_wood_on_road
+r_name: r_empty
+upd_method: set_motion
+absolute: True
+sign: 1.0

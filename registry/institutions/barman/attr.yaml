@@ -1,4 +1,4 @@
-﻿__cls__: Barman
+﻿__cls__: Institution
 doc: Бармен
-
 text: Вас приветствует бармен !
+type: barman

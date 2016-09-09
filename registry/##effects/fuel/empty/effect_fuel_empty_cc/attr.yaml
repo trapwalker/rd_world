@@ -1,0 +1,9 @@
+﻿__cls__: Effect
+doc: Эффект ограничения скорости при пустом баке (EffectEmptyFuel)
+abstract: false
+
+param_name: p_cc
+m_name: m_cc_fuel_empty
+r_name: r_cc_fuel_empty
+upd_method: set_motion
+sign: -1.0

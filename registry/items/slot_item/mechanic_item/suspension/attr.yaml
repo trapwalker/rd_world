@@ -1,3 +1,4 @@
-﻿doc  : Предметы, устанавливаемые в слоты подвески
+﻿__cls__ : MechanicItem
+doc  : Предметы, устанавливаемые в слоты подвески
 
-tags : suspension
+tags : [suspension]

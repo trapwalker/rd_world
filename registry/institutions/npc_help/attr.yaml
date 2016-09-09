@@ -1,8 +1,8 @@
-﻿__cls__: NucoilHelpNPC
+﻿__cls__: Institution
 doc: NucoilHelpNPC
-
 text: NucoilHelpNPC
-
 title: NucoilHelpNPC
+type: nucoil_help_npc
+
 photo: "static/content/institutions/npc_nucoil_help/help.png"
 abstract: false

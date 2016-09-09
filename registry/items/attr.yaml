@@ -1,2 +1,7 @@
 ﻿__cls__ : Item
 doc     : Предметы
+
+activate_type: none
+base_price: 0
+
+stack_size: 1

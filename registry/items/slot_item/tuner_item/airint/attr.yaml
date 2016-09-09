@@ -1,4 +1,4 @@
 ﻿__cls__ : TunerItem
 doc     : Воздухозаборник
 
-tags    : tuner
+tags    : [tuner]

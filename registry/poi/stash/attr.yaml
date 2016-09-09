@@ -1,2 +1,8 @@
 ﻿__cls__: PoiStash
 doc    : Тайники
+
+p_observing_range: 50
+p_vigilance: 1
+
+inventory:
+    items: []

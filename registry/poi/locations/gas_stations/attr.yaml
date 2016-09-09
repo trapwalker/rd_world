@@ -1,13 +1,13 @@
-﻿__cls__: GasStation
+﻿__cls__: Town
 doc    : Заправочные станции
 p_observing_range: 220
 
 svg_link: static/content/locations/map_locations/gas_station
 
 buildings:
-    nucoil:
-        caption: Нукойл
-        head: reg://registry/institutions/nucoil
-        instances:
-            - reg://registry/institutions/gas_station
-            - reg://registry/institutions/npc_help
+    - name: nucoil
+      caption: Нукойл
+      head: reg:///registry/institutions/nucoil
+      instances:
+          - reg:///registry/institutions/gas_station
+          - reg:///registry/institutions/npc_help

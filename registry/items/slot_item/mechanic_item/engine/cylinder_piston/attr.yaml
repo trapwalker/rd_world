@@ -1,3 +1,4 @@
+__cls__ : MechanicItem
 doc  : Предметы, устанавливаемые в слоты двигателя - ЦПГ
 
-tags : cylinder_piston
+tags : [cylinder_piston]

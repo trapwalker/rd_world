@@ -1,4 +1,4 @@
 ﻿__cls__ : TunerItem
 doc     : Устанавливаемые на крышу штуковины
 
-tags    : tuner
+tags    : [tuner]

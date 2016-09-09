@@ -1,4 +1,4 @@
-﻿__cls__: Mechanic
+﻿__cls__: Institution
 doc: Механик
-
-text: Вас приветствует механик !
+text: Вас приветствует механик!
+type: mechanic

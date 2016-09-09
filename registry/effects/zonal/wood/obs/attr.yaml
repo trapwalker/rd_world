@@ -1,8 +1,0 @@
-﻿doc: Эффект ограничения зоркости в лесу (EffectWoodObsRange)
-abstract: false
-
-param_name: p_observing_range
-m_name: m_observing_range_wood
-r_name: r_observing_range_wood
-upd_method: upd_observing_range
-sign: -1.0
