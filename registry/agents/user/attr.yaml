@@ -4,4 +4,17 @@ doc    : Прототипы пользовательских агентов
 last_town: reg:///registry/poi/locations/towns/prior
 current_location: reg:///registry/poi/locations/towns/prior
 balance: 2000
-    
+
+
+buy_driving:     reg:///registry/rpg_settings/buy_skill/driving
+buy_shooting:    reg:///registry/rpg_settings/buy_skill/shooting
+buy_masking:     reg:///registry/rpg_settings/buy_skill/masking
+buy_leading:     reg:///registry/rpg_settings/buy_skill/leading
+buy_trading:     reg:///registry/rpg_settings/buy_skill/trading
+buy_engineering: reg:///registry/rpg_settings/buy_skill/engineering
+driving:         reg:///registry/rpg_settings/skill/driving
+shooting:        reg:///registry/rpg_settings/skill/shooting
+masking:         reg:///registry/rpg_settings/skill/masking
+leading:         reg:///registry/rpg_settings/skill/leading
+trading:         reg:///registry/rpg_settings/skill/trading
+engineering:     reg:///registry/rpg_settings/skill/engineering
