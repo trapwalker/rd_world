@@ -1,5 +1,6 @@
 __cls__ : TankFull
 doc    : Полная канистра с топливом (10л)
+abstract: false
 
 value_fuel: 10
 
