@@ -1,0 +1,12 @@
+__cls__ : BuildSet
+doc    : Малый ремкомплект
+
+build_points: 10
+
+description: Можно подлатать машину в пути.
+inv_icon_big:   static/content/items/usable/build_set/build_set_small/big.png
+inv_icon_mid:   static/content/items/usable/build_set/build_set_small/mid.png
+inv_icon_small: static/content/items/usable/build_set/build_set_small/small.png
+title: Ремкомплект (Мал)
+base_price: 150
+

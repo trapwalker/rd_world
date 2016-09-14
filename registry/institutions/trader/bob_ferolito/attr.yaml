@@ -11,6 +11,10 @@ inventory:
       - reg:///registry/items/usable/tanks/tank_empty/tank_10l
       - reg:///registry/items/usable/tanks/tank_empty/tank_20l
 
+      - reg:///registry/items/usable/build_set/build_set_small
+      - reg:///registry/items/usable/build_set/build_set_mid
+      - reg:///registry/items/usable/build_set/build_set_big
+
       - reg:///registry/items/slot_item/weapons/machine_guns/dshkm
       - reg:///registry/items/slot_item/weapons/machine_guns/dshkm_twin
       - reg:///registry/items/slot_item/weapons/machine_guns/m134_minigun
@@ -23,9 +27,6 @@ inventory:
 #      - reg:///registry/items/usable/map_weapon/mines_effect/slow_mine_2
 #      - reg:///registry/items/usable/map_weapon/rockets/rocket_x101
 #      - reg:///registry/items/usable/map_weapon/rockets/rocket_x25
-#      - reg:///registry/items/usable/build_set/build_set_1
-#      - reg:///registry/items/usable/build_set/build_set_2
-#      - reg:///registry/items/usable/build_set/build_set_3
 #
 #      - reg:///registry/items/slot_item/mechanic_item/engine/air_filter/air_filter_1
 #      - reg:///registry/items/slot_item/mechanic_item/engine/camshaft/camshaft_1
