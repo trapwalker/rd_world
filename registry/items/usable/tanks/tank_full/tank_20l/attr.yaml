@@ -1,0 +1,13 @@
+__cls__ : TankFull
+doc    : Полная канистра с топливом (20л)
+
+value_fuel: 20
+
+description: Полная канистра с топливом (20л). Можно залить в бак.
+inv_icon_big: static/content/items/usable/tanks/tank_full/tank_20l/big.png
+inv_icon_mid: static/content/items/usable/tanks/tank_full/tank_20l/mid.png
+inv_icon_small: static/content/items/usable/tanks/tank_full/tank_20l/small.png
+title: Канистра (20л)
+base_price: 105
+
+post_activate_item: reg:///registry/items/usable/tanks/tank_empty/tank_20l

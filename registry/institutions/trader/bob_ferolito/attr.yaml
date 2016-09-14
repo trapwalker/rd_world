@@ -8,8 +8,8 @@ inventory:
     items:
 #      - reg:///registry/items/usable/ammo/a127x99
 
-      - reg:///registry/items/usable/tanks/tank_empty/tank10
-      - reg:///registry/items/usable/tanks/tank_empty/tank20
+      - reg:///registry/items/usable/tanks/tank_empty/tank_10l
+      - reg:///registry/items/usable/tanks/tank_empty/tank_20l
 
       - reg:///registry/items/slot_item/weapons/machine_guns/dshkm
       - reg:///registry/items/slot_item/weapons/machine_guns/dshkm_twin
