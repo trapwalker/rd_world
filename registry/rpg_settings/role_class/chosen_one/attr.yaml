@@ -11,4 +11,11 @@ icon: static/content/class-icons/co.png
 money: 0
 class_skills:  #Список классовых навыков
 - reg:///registry/rpg_settings/class_skill/driving_5
+start_perks:  # Список стартовых перков
+- reg:///registry/rpg_settings/perks/perk_passive/surfer_1
+- reg:///registry/rpg_settings/perks/perk_passive/stinger_1
+- reg:///registry/rpg_settings/perks/perk_passive/fixer_1
+- reg:///registry/rpg_settings/perks/perk_passive/chipskater_1
+- reg:///registry/rpg_settings/perks/perk_passive/overdriver_1
+- reg:///registry/rpg_settings/perks/perk_passive/patcher_1
 start_car: ~  # Стартовая машинка для данного класса
