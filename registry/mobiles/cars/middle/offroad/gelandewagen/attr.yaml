@@ -8,9 +8,8 @@ price:              14           # Цена у продавца (л) (>= 0)
 max_hp:             135          # Максимальное количество прочности (> 0)
 hp:                 135          # Текущее количество прочности (> 0)
 
-inventory_size:     16           # Количество слотов в инвентаре (шт) (>=0)
-
 inventory:                       # При заполнении инвентаря необходимо учитывать его размер
+    size: 16
     items:
       - reg:///registry/items/usable/ammo/a762?amount=100
       - reg:///registry/items/usable/ammo/a762?amount=100
