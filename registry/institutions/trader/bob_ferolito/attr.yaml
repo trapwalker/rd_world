@@ -25,3 +25,19 @@ price_list:
     price_min: 0.9
     price_max: 1.1
     influence: 0.001
+
+  - item: reg:///registry/items/usable/ammo/a762
+    chance: 0.9
+    count_min: 500
+    count_max: 5000
+    price_min: 0.8
+    price_max: 1.2
+    influence: 0.0001
+
+  - item: reg:///registry/items/usable/ammo/a127x99
+    chance: 1.0
+    count_min: 0
+    count_max: 0
+    price_min: 0.8
+    price_max: 1.2
+    influence: 0.0001

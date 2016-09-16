@@ -1,7 +1,9 @@
 ﻿__cls__ : AmmoBullets
 doc    : Патроны 7.62
+abstract: false
 
-stack_size: 10000
+stack_size: 100
+amount: 100
 
 description: Патроны 7.62 для лёгких пулемётов
 inv_icon_big:   static/content/items/usable/ammo/a762/big.png
