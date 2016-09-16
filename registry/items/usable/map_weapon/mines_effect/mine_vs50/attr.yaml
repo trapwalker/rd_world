@@ -1,0 +1,14 @@
+﻿__cls__ : MapWeaponMineItem
+doc    : Предметы, активируя которые, пораждаются неподвижные мины на карте
+
+generate_obj  : reg:///registry/mobiles/stationary/map_weapon/mines_effect/mine_vs50
+
+stack_size    : 10
+base_price    : 120
+description   : Мина. Для установки необходимо активировать
+title         : Мина VS50
+activate_type : self
+
+inv_icon_big: static/content/items/usable/map_weapon/mines_effect/mine_vs50/big.png
+inv_icon_mid: static/content/items/usable/map_weapon/mines_effect/mine_vs50/mid.png
+inv_icon_small: static/content/items/usable/map_weapon/mines_effect/mine_vs50/small.png

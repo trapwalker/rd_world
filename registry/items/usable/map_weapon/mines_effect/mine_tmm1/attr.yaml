@@ -1,0 +1,14 @@
+﻿__cls__ : MapWeaponMineItem
+doc    : Предметы, активируя которые, пораждаются неподвижные мины на карте
+
+generate_obj  : reg:///registry/mobiles/stationary/map_weapon/mines_effect/mine_tmm1
+
+stack_size    : 10
+base_price    : 100
+description   : Мина. Для установки необходимо активировать
+title         : Мина TMM1
+activate_type : self
+
+inv_icon_big: static/content/items/usable/map_weapon/mines_effect/mine_tmm1/big.png
+inv_icon_mid: static/content/items/usable/map_weapon/mines_effect/mine_tmm1/mid.png
+inv_icon_small: static/content/items/usable/map_weapon/mines_effect/mine_tmm1/small.png

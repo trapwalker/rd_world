@@ -1,0 +1,9 @@
+﻿__cls__ : Mobile
+title:             mine_tmm1   # Название атомобиля
+
+p_observing_range: 50          # Радиус обзора автомобиля (м) (>= 0)
+
+max_hp:            20          # Максимальное количество прочности (> 0)
+hp:                20          # Текущее количество прочности (> 0)
+
+effects: reg:///registry/effects/weapon/mines/effect_mine_cc

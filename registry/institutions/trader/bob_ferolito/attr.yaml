@@ -23,11 +23,14 @@ inventory:
       - reg:///registry/items/slot_item/weapons/cannons/m242
       - reg:///registry/items/slot_item/weapons/cannons/zu23_flak
 
-#      - reg:///registry/items/usable/map_weapon/mines_effect/slow_mine_1
-#      - reg:///registry/items/usable/map_weapon/mines_effect/slow_mine_2
-#      - reg:///registry/items/usable/map_weapon/rockets/rocket_x101
-#      - reg:///registry/items/usable/map_weapon/rockets/rocket_x25
-#
+      - reg:///registry/items/usable/map_weapon/mines_effect/mine_tc6
+      - reg:///registry/items/usable/map_weapon/mines_effect/mine_tmm1
+      - reg:///registry/items/usable/map_weapon/mines_effect/mine_vs50
+
+      - reg:///registry/items/usable/map_weapon/rockets/javelin
+      - reg:///registry/items/usable/map_weapon/rockets/kornet
+      - reg:///registry/items/usable/map_weapon/rockets/sa16_igla
+
 #      - reg:///registry/items/slot_item/mechanic_item/engine/air_filter/air_filter_1
 #      - reg:///registry/items/slot_item/mechanic_item/engine/camshaft/camshaft_1
 #      - reg:///registry/items/slot_item/mechanic_item/engine/compressor/compressor_1

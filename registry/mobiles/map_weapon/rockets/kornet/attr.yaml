@@ -1,5 +1,6 @@
 ﻿__cls__ : MapWeaponRocket
-title: Rocket_x25
+title: Kornet
 
 radius_damage: 50
-damage: 50
+p_vigilance: 1
+damage: 80
