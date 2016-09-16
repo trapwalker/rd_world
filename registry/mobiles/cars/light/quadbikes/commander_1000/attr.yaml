@@ -34,7 +34,7 @@ inventory_size:     5        # Количество слотов в инвент
 inventory:                   # При заполнении инвентаря необходимо учитывать его размер
     items:
       - reg:///registry/items/usable/ammo/a762?amount=100
-      - reg:///registry/items/slot_item/weapons/machine_guns/wmg_pkt
+      - reg:///registry/items/slot_item/weapons/machine_guns/dshkm
 
 # Ссылка на картинку автомобиля в ангаре
 hangar_car:            "static/content/mobiles/cars/light/quadbikes/commander_1000/side.png"

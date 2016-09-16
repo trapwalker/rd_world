@@ -17,10 +17,10 @@ inventory:                       # При заполнении инвентар�
       - reg:///registry/items/usable/ammo/a762?amount=100
       - reg:///registry/items/usable/ammo/a762?amount=100
       - reg:///registry/items/usable/ammo/a762?amount=100
-      - reg:///registry/items/usable/build_set/build_set_3?amount=5
-      - reg:///registry/items/usable/build_set/build_set_3?amount=5
-      - reg:///registry/items/usable/build_set/build_set_3?amount=5
-      - reg:///registry/items/usable/map_weapon/rockets/rocket_x101?amount=10
+      - reg:///registry/items/usable/build_set/build_set_big?amount=5
+      - reg:///registry/items/usable/build_set/build_set_big?amount=5
+      - reg:///registry/items/usable/build_set/build_set_big?amount=5
+      - reg:///registry/items/usable/map_weapon/rockets/kornet?amount=10
 
 p_observing_range:     1250      #450 # Радиус обзора автомобиля (м) (>= 0)
 

@@ -35,7 +35,7 @@ inventory:                   # При заполнении инвентаря н
     items:
       - reg:///registry/items/usable/ammo/a762?amount=100
       - reg:///registry/items/slot_item/weapons/machine_guns/dshkm
-      - reg:///registry/items/usable/build_set/build_set_3
+      - reg:///registry/items/usable/build_set/build_set_big
 
 # Ссылка на картинку автомобиля в ангаре
 hangar_car:            "static/content/mobiles/cars/light/motorcycles/triumph_america/side.png"

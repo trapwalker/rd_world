@@ -18,11 +18,11 @@ inventory:                       # При заполнении инвентар�
       - reg:///registry/items/slot_item/weapons/machine_guns/dshkm
       - reg:///registry/items/slot_item/weapons/machine_guns/dshkm
       - reg:///registry/items/slot_item/weapons/machine_guns/dshkm
-      - reg:///registry/items/usable/build_set/build_set_3
-      - reg:///registry/items/usable/build_set/build_set_3
-      - reg:///registry/items/usable/build_set/build_set_3
-      - reg:///registry/items/usable/build_set/build_set_3
-      - reg:///registry/items/usable/build_set/build_set_3
+      - reg:///registry/items/usable/build_set/build_set_big
+      - reg:///registry/items/usable/build_set/build_set_big
+      - reg:///registry/items/usable/build_set/build_set_big
+      - reg:///registry/items/usable/build_set/build_set_big
+      - reg:///registry/items/usable/build_set/build_set_big
 
 p_observing_range:     315      # Радиус обзора автомобиля (м) (>= 0)
 

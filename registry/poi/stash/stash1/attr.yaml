@@ -7,6 +7,6 @@ inventory_size: 5
 
 inventory:
     items:
-      - reg:///registry/items/usable/tanks/tank_full/tank20
-      - reg:///registry/items/usable/tanks/tank_full/tank20
-      - reg:///registry/items/usable/tanks/tank_full/tank20
+      - reg:///registry/items/usable/tanks/tank_full/tank_20l
+      - reg:///registry/items/usable/tanks/tank_full/tank_20l
+      - reg:///registry/items/usable/tanks/tank_full/tank_20l
