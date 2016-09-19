@@ -34,7 +34,7 @@ inventory:                  # При заполнении инвентаря н�
       - reg:///registry/items/usable/ammo/a762?amount=100
       - reg:///registry/items/usable/ammo/a762?amount=100
       - reg:///registry/items/usable/tanks/tank_empty/tank10
-      - reg:///registry/items/slot_item/weapons/machine_guns/wmg_pkt
+      - reg:///registry/items/slot_item/weapons/machine_guns/dshkm
 
 # Ссылка на картинку автомобиля в ангаре
 hangar_car:            "static/img/cars/car_2/hangar_car.png"
