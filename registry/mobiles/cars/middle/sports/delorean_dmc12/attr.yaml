@@ -13,10 +13,10 @@ inventory_size:     120          # Количество слотов в инве
 inventory:                       # При заполнении инвентаря необходимо учитывать его размер
     items:
       - reg:///registry/items/usable/map_weapon/rockets/kornet?amount=1500
-      - reg:///registry/items/usable/ammo/a127x99?amount=1500
-      - reg:///registry/items/usable/ammo/a762?amount=1000
-      - reg:///registry/items/usable/ammo/a762?amount=1000
-      - reg:///registry/items/usable/ammo/a762?amount=1000
+      - reg:///registry/items/usable/ammo/30bb?amount=1500
+      - reg:///registry/items/usable/ammo/762x51bb?amount=1000
+      - reg:///registry/items/usable/ammo/762x51bb?amount=1000
+      - reg:///registry/items/usable/ammo/762x51bb?amount=1000
       - reg:///registry/items/slot_item/weapons/machine_guns/dshkm
       - reg:///registry/items/slot_item/weapons/machine_guns/dshkm
       - reg:///registry/items/slot_item/weapons/machine_guns/dshkm

@@ -22,5 +22,5 @@ deadline    : 24h
 cargo_count : 5
 cargo       : reg:///registry/items/usable/tanks/tank_empty/tank20
 reward      :
-- reg:///registry/items/usable/ammo/a762?amount=100
-- reg:///registry/items/usable/build_set/build_set_1?amount=2
+- reg:///registry/items/usable/ammo/762x51bb?amount=100
+- reg:///registry/items/usable/build_set/build_set_big?amount=2

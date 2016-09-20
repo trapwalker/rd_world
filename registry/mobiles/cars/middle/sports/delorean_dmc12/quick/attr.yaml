@@ -12,11 +12,11 @@ inventory_size:     12           # Количество слотов в инве
 
 inventory:                       # При заполнении инвентаря необходимо учитывать его размер
     items:
-      - reg:///registry/items/usable/ammo/a762?amount=100
-      - reg:///registry/items/usable/ammo/a762?amount=100
-      - reg:///registry/items/usable/ammo/a762?amount=100
-      - reg:///registry/items/usable/ammo/a762?amount=100
-      - reg:///registry/items/usable/ammo/a762?amount=100
+      - reg:///registry/items/usable/ammo/762x51bb?amount=100
+      - reg:///registry/items/usable/ammo/762x51bb?amount=100
+      - reg:///registry/items/usable/ammo/762x51bb?amount=100
+      - reg:///registry/items/usable/ammo/762x51bb?amount=100
+      - reg:///registry/items/usable/ammo/762x51bb?amount=100
       - reg:///registry/items/usable/build_set/build_set_big?amount=5
       - reg:///registry/items/usable/build_set/build_set_big?amount=5
       - reg:///registry/items/usable/build_set/build_set_big?amount=5
