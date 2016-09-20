@@ -116,22 +116,22 @@ inventory:
 #      - reg:///registry/items/slot_item/tuner_item/visor/visor_003
 #      - reg:///registry/items/slot_item/tuner_item/win_prot/win_prot_002
 #      - reg:///registry/items/slot_item/tuner_item/win_prot/win_prot_003
-
-price:
-    items:
-      - item: reg:///registry/items/usable/tanks/tank_empty/tank10
-        buy: 105
-        sale: 100
-        doc: "Топливо покупает на 5% дороже и не продаёт"
-
-      - item: reg:///registry/items/usable/tanks/tank_empty/tank20
-        buy: 90
-        sale: 90
-        doc: "Пустые канистры покупает и продаёт по 90% от номинала"
-
-
-
-
+#
+#price:
+#    items:
+#      - item: reg:///registry/items/usable/tanks/tank_empty/tank10
+#        buy: 105
+#        sale: 100
+#        doc: "Топливо покупает на 5% дороже и не продаёт"
+#
+#      - item: reg:///registry/items/usable/tanks/tank_empty/tank20
+#        buy: 90
+#        sale: 90
+#        doc: "Пустые канистры покупает и продаёт по 90% от номинала"
+#
+#
+#
+#
 # quests:
 #   - reg:///registry/quests/delivery?cargo_count=3&deadline=2h
 #   - reg:///registry/quests/killer/n_kills?deadline=5h&n=5
