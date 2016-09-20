@@ -14,11 +14,12 @@ inventory:                       # При заполнении инвентар�
       - reg:///registry/items/usable/ammo/a127x99
       - reg:///registry/items/usable/ammo/a762
       - reg:///registry/items/usable/ammo/a762
-      - reg:///registry/items/usable/ammo/a762
       - reg:///registry/items/slot_item/weapons/machine_guns/dshkm
       - reg:///registry/items/usable/build_set/build_set_3
       - reg:///registry/items/usable/tanks/tank_empty/tank10
       - reg:///registry/items/usable/tanks/tank_empty/tank10
+      - reg:///registry/items/usable/tanks/tank_full/tank20
+      - reg:///registry/items/usable/tanks/tank_full/tank10
 
 p_observing_range:     3250      #450 # Радиус обзора автомобиля (м) (>= 0)
 

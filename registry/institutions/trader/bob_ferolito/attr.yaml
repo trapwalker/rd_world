@@ -5,39 +5,73 @@ abstract: true
 
 
 trading: 20
-refresh_time: 30
+refresh_time: 600
 
-ignore_list: []
+
+ignore_list:
+  - reg:///registry/items/slot_item/weapons
 
 price_list:
-  - item: reg:///registry/items/usable/tanks/tank_empty/tank10
+  - item: reg:///registry/items/slot_item/weapons
+    chance: 0.0
+    count_min: 0
+    count_max: 0
+    price_min: 3.0
+    price_max: 3.0
+    influence: 0.0
+
+  - item: reg:///registry/items/slot_item/weapons/machine_guns/dshkm
+    chance: 0.0
+    count_min: 0
+    count_max: 5
+    price_min: 10.0
+    price_max: 10.0
+    influence: 0.01
+
+  - item: reg:///registry/items/usable/tanks
     chance: 0.5
     count_min: 1
     count_max: 10
-    price_min: 0.9
-    price_max: 1.1
-    influence: 0.001
+    price_min: 4.0
+    price_max: 6.0
+    influence: 0.1
+
+  - item: reg:///registry/items/usable/tanks/tank_empty/tank10
+    chance: 0.0
+    count_min: 0
+    count_max: 0
+    price_min: 0.5
+    price_max: 1.9
+    influence: 0.1
 
   - item: reg:///registry/items/usable/tanks/tank_empty/tank20
-    chance: 0.5
+    chance: 0.0
     count_min: 1
     count_max: 10
     price_min: 0.9
     price_max: 1.1
-    influence: 0.001
+    influence: 0.1
 
   - item: reg:///registry/items/usable/ammo/a762
-    chance: 0.9
+    chance: 1.0
     count_min: 500
     count_max: 5000
-    price_min: 0.8
-    price_max: 1.2
-    influence: 0.0001
+    price_min: 0.5
+    price_max: 1.5
+    influence: 0.1
 
   - item: reg:///registry/items/usable/ammo/a127x99
     chance: 1.0
     count_min: 0
     count_max: 0
-    price_min: 0.8
-    price_max: 1.2
-    influence: 0.0001
+    price_min: 2.0
+    price_max: 4.0
+    influence: 0.1
+
+  - item: reg:///registry/items
+    chance: 0.0
+    count_min: 0
+    count_max: 0
+    price_min: 1.0
+    price_max: 1.0
+    influence: 0.0
