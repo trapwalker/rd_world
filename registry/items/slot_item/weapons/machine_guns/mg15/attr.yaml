@@ -7,7 +7,7 @@ base_price      : 45                                     # Цена
 
 # Основные балансные настройки
 weight_class    : 2                                      # Класс тяжести
-ammo            : reg:///registry/items/usable/ammo/a762 # Подходящие патроны
+ammo            : reg:///registry/items/usable/ammo/762x51bb # Подходящие патроны
 ammo_per_second : 1                                      # [shot/s] ~=650/60 Потребление патронов в секунду
 radius          : 175                                    # Дальность сектора стрельбы
 width           : 90                                     # Ширина сектора стрельбы

@@ -1,0 +1,12 @@
+﻿__cls__ : AmmoBullets
+doc     : Снаряды 23 мм/ОФ
+
+title       : Снаряды 23 мм/ОФ
+description : Осколочно-фугасные снаряды для ЗУ-23 (23 мм)
+
+stack_size : 5
+base_price : 100
+
+inv_icon_big   : static/content/items/usable/ammo/23ofzt/big.png
+inv_icon_mid   : static/content/items/usable/ammo/23ofzt/mid.png
+inv_icon_small : static/content/items/usable/ammo/23ofzt/small.png
