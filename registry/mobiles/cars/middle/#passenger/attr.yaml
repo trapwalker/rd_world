@@ -27,26 +27,9 @@ max_fuel:           70     # Максимальное количество то�
 fuel:               60      # Текущее количество топлива (0 .. max_fuel)
 p_fuel_rate:        0.02     # Расход топлива, тратится только в движении (л/с) (>= 0)
 
-
-inventory_size:       12     # Количество слотов в инвентаре (шт) (>=0)
 inventory:                  # При заполнении инвентаря необходимо учитывать его размер
-    items:
-      - reg:///registry/items/slot_item/tuner_item/b_bumper_001
-      - reg:///registry/items/slot_item/tuner_item/b_fender_001
-      - reg:///registry/items/slot_item/tuner_item/b_fender_002
-      - reg:///registry/items/slot_item/tuner_item/b_glass_001
-      - reg:///registry/items/slot_item/tuner_item/win_prot_001
-      - reg:///registry/items/slot_item/tuner_item/f_bumper_001
-      - reg:///registry/items/slot_item/tuner_item/f_fender_001
-      - reg:///registry/items/slot_item/tuner_item/f_glass_001
-      - reg:///registry/items/slot_item/tuner_item/roof_001
-      - reg:///registry/items/slot_item/tuner_item/skirt_001
-      #- reg:///registry/items/usable/ammo/bullets/762x51bb?amount=100
-      #- reg:///registry/items/usable/ammo/bullets/762x51bb?amount=100
-      #- reg:///registry/items/usable/ammo/bullets/762x51bb?amount=100
-      #- reg:///registry/items/usable/ammo/bullets/762x51bb?amount=100
-      #- reg:///registry/items/slot_item/weapons/machine_guns/dshkm
-      #- reg:///registry/items/slot_item/weapons/machine_guns/dshkm
+    size: 12
+    items: []
 
 # Ссылка на картинку автомобиля в ангаре
 hangar_car:            "static/img/cars/car_1/car_side.png"

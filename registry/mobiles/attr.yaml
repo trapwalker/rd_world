@@ -77,8 +77,6 @@ slot_FR_f: FR_0
 slot_CR_f: FBR_0
 slot_BR_f: BR_0
 
-inventory_size: 10
-
 price: 0
 
 class_car     : ""
