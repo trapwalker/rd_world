@@ -43,6 +43,9 @@ inventory:
       - reg:///registry/items/slot_item/tuner_item/shnork/shnork_001
       - reg:///registry/items/slot_item/tuner_item/shnork/shnork_002
       - reg:///registry/items/slot_item/tuner_item/shnork/shnork_003
+      - reg:///registry/items/slot_item/tuner_item/step/step_001
+      - reg:///registry/items/slot_item/tuner_item/step/step_002
+      - reg:///registry/items/slot_item/tuner_item/step/step_003
 
 #      - reg:///registry/items/slot_item/mechanic_item/engine/air_filter/air_filter_1
 #      - reg:///registry/items/slot_item/mechanic_item/engine/camshaft/camshaft_1
@@ -112,8 +115,6 @@ inventory:
 #      - reg:///registry/items/slot_item/tuner_item/f_fender/f_fender_003
 #      - reg:///registry/items/slot_item/tuner_item/roof/roof_001
 #      - reg:///registry/items/slot_item/tuner_item/roof/roof_002
-#      - reg:///registry/items/slot_item/tuner_item/step/step_002
-#      - reg:///registry/items/slot_item/tuner_item/step/step_003
 #      - reg:///registry/items/slot_item/tuner_item/trunk/trunk_002
 #      - reg:///registry/items/slot_item/tuner_item/trunk/trunk_003
 #      - reg:///registry/items/slot_item/tuner_item/visor/visor_003
