@@ -3,10 +3,8 @@ title: Bob_Ferolito
 photo: "static/content/institutions/trader/bob_ferolito/bob_ferolito.png"
 abstract: true
 
-
 trading: 20
 refresh_time: 600
-
 
 ignore_list:
   - reg:///registry/items/slot_item/weapons
@@ -36,7 +34,7 @@ price_list:
     price_max: 6.0
     influence: 0.1
 
-  - item: reg:///registry/items/usable/tanks/tank_empty/tank10
+  - item: reg:///registry/items/usable/tanks/tank_empty/tank_10l
     chance: 0.0
     count_min: 0
     count_max: 0
@@ -44,7 +42,7 @@ price_list:
     price_max: 1.9
     influence: 0.1
 
-  - item: reg:///registry/items/usable/tanks/tank_empty/tank20
+  - item: reg:///registry/items/usable/tanks/tank_empty/tank_20l
     chance: 0.0
     count_min: 1
     count_max: 10
@@ -52,20 +50,28 @@ price_list:
     price_max: 1.1
     influence: 0.1
 
-  - item: reg:///registry/items/usable/ammo/a762
-    chance: 1.0
-    count_min: 500
-    count_max: 5000
+  - item: reg:///registry/items/usable/ammo/762x51bb
+    chance: 0.8
+    count_min: 0
+    count_max: 0
     price_min: 0.5
     price_max: 1.5
     influence: 0.1
 
-  - item: reg:///registry/items/usable/ammo/a127x99
-    chance: 1.0
+  - item: reg:///registry/items/usable/ammo/127x108bb
+    chance: 0.8
     count_min: 0
     count_max: 0
-    price_min: 2.0
-    price_max: 4.0
+    price_min: 0.5
+    price_max: 1.5
+    influence: 0.1
+
+  - item: reg:///registry/items/usable/ammo/23bzt
+    chance: 0.8
+    count_min: 0
+    count_max: 0
+    price_min: 0.5
+    price_max: 1.5
     influence: 0.1
 
   - item: reg:///registry/items
