@@ -8,19 +8,9 @@ price:              18           # Цена у продавца (л) (>= 0)
 max_hp:             100          # Максимальное количество прочности (> 0)
 hp:                 100          # Текущее количество прочности (> 0)
 
-inventory_size:     12           # Количество слотов в инвентаре (шт) (>=0)
-
 inventory:                       # При заполнении инвентаря необходимо учитывать его размер
-    items:
-      - reg:///registry/items/usable/ammo/762x51bb?amount=100
-      - reg:///registry/items/usable/ammo/762x51bb?amount=100
-      - reg:///registry/items/usable/ammo/762x51bb?amount=100
-      - reg:///registry/items/usable/ammo/762x51bb?amount=100
-      - reg:///registry/items/usable/ammo/762x51bb?amount=100
-      - reg:///registry/items/usable/build_set/build_set_big?amount=5
-      - reg:///registry/items/usable/build_set/build_set_big?amount=5
-      - reg:///registry/items/usable/build_set/build_set_big?amount=5
-      - reg:///registry/items/usable/map_weapon/rockets/kornet?amount=10
+    size: 12
+    items: []
 
 p_observing_range:     1250      #450 # Радиус обзора автомобиля (м) (>= 0)
 

@@ -1,5 +1,6 @@
 ﻿__cls__ : AmmoBullets
 doc     : Снаряды 30 мм/ОФ
+abstract: false
 
 title       : Снаряды 30 мм/ОФ
 description : Осколочно-фугасные снаряды для "Bushmaster" (30 мм)

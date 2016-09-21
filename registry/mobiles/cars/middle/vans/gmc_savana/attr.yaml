@@ -8,21 +8,10 @@ price:              21          # Цена у продавца (л) (>= 0)
 max_hp:             145         # Максимальное количество прочности (> 0)
 hp:                 145         # Текущее количество прочности (> 0)
 
-inventory_size:     20          # Количество слотов в инвентаре (шт) (>=0)
 
 inventory:                      # При заполнении инвентаря необходимо учитывать его размер
-    items:
-      - reg:///registry/items/usable/ammo/762x51bb?amount=100
-      - reg:///registry/items/usable/ammo/762x51bb?amount=100
-      - reg:///registry/items/usable/ammo/762x51bb?amount=100
-      - reg:///registry/items/slot_item/weapons/machine_guns/dshkm
-      - reg:///registry/items/slot_item/weapons/machine_guns/dshkm
-      - reg:///registry/items/slot_item/weapons/machine_guns/dshkm
-      - reg:///registry/items/usable/build_set/build_set_big
-      - reg:///registry/items/usable/build_set/build_set_big
-      - reg:///registry/items/usable/build_set/build_set_big
-      - reg:///registry/items/usable/build_set/build_set_big
-      - reg:///registry/items/usable/build_set/build_set_big
+    size: 20
+    items: []      
 
 p_observing_range:     315     # Радиус обзора автомобиля (м) (>= 0)
 

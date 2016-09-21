@@ -30,12 +30,9 @@ max_fuel:           15       # Максимальное количество т�
 fuel:               15       # Текущее количество топлива (0 .. max_fuel)
 p_fuel_rate:        0.0175   # Расход топлива, тратится только в движении (л/с) (>= 0)
 
-inventory_size:     5        # Количество слотов в инвентаре (шт) (>=0)
 inventory:                   # При заполнении инвентаря необходимо учитывать его размер
-    items:
-      - reg:///registry/items/usable/ammo/762x51bb?amount=100
-      - reg:///registry/items/slot_item/weapons/machine_guns/dshkm
-      - reg:///registry/items/usable/build_set/build_set_big
+    size: 5
+    items: []
 
 # Ссылка на картинку автомобиля в ангаре
 hangar_car:            "static/content/mobiles/cars/light/motorcycles/triumph_america/side.png"
