@@ -1,0 +1,10 @@
+﻿__cls__: MapWeaponEffectMine
+title:             mine_tc6    # Название атомобиля
+
+p_observing_range: 100         # Радиус обзора автомобиля (м) (>= 0)
+
+max_hp:            5           # Максимальное количество прочности (> 0)
+hp:                5           # Текущее количество прочности (> 0)
+
+effects:
+    - reg:///registry/effects/weapon/mines/effect_mine_cc

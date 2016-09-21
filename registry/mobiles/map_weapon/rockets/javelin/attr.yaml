@@ -1,0 +1,5 @@
+﻿__cls__ : MapWeaponRocket
+title: Javelin
+
+radius_damage: 50
+damage: 50

@@ -7,7 +7,7 @@ base_price      : 50                                       # Цена
 
 # Основные балансные настройки
 weight_class    : 4                                        # Класс тяжести 
-ammo            : reg:///registry/items/usable/ammo/a127x99 # Подходящие патроны
+ammo            : reg:///registry/items/usable/ammo/23bzt  # Подходящие патроны
 ammo_per_shot   : -1                                       # Потребление патронов при залпе
 radius          : 300                                      # Дальность сектора стрельбы
 width           : 68                                       # Ширина сектора стрельбы

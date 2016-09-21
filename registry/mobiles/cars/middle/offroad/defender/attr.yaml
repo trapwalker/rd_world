@@ -8,18 +8,9 @@ price:              14           # Цена у продавца (л) (>= 0)
 max_hp:             135          # Максимальное количество прочности (> 0)
 hp:                 135          # Текущее количество прочности (> 0)
 
-
 inventory:                       # При заполнении инвентаря необходимо учитывать его размер
     size: 16
-    items:
-      - reg:///registry/items/usable/ammo/a762
-      - reg:///registry/items/usable/ammo/a762
-      - reg:///registry/items/usable/ammo/a762
-      - reg:///registry/items/usable/build_set/build_set_3
-      - reg:///registry/items/usable/build_set/build_set_3
-      - reg:///registry/items/usable/build_set/build_set_3
-      - reg:///registry/items/usable/build_set/build_set_3
-      - reg:///registry/items/usable/build_set/build_set_3
+    items: []
 
 p_observing_range:     1250     #315 # Радиус обзора автомобиля (м) (>= 0)
 

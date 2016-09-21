@@ -1,0 +1,12 @@
+﻿__cls__ : AmmoBullets
+doc     : Патроны 7.62х51 мм/ББ
+
+title       : Патроны 7.62х51 мм/ББ
+description : Бронебойные патроны для пулеметов "Миниган" и других, подобного калибра (7.62x51 мм)
+
+stack_size : 100
+base_price : 100
+
+inv_icon_big   : static/content/items/usable/ammo/762x51bb/big.png
+inv_icon_mid   : static/content/items/usable/ammo/762x51bb/mid.png
+inv_icon_small : static/content/items/usable/ammo/762x51bb/small.png

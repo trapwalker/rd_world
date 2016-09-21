@@ -1,26 +1,34 @@
-﻿__cls__ : TunerItem
-doc     : Предметы, устанавливаемые в слоты тюнера
+﻿__cls__  : TunerItem
+doc      : Предметы, устанавливаемые в слоты тюнера
+abstract : false
 
 tags    : [shnork]
 
+title       : Shnork 002   # Краткое название - отобразится в слоте инвентаря
+description : Shnork 002   # Полное описание - отобразится в разделе описания в инвентаре
+base_price  : 10           # Цена
+
+pont_points : 50
+
 # Картинки для представления в инвентаре
-inv_icon_big: static/content/items/slot_item/tuner_item/shnork/shnork_002/big.png
-inv_icon_mid: static/content/items/slot_item/tuner_item/shnork/shnork_002/mid.png
-inv_icon_small: static/content/items/slot_item/tuner_item/shnork/shnork_002/small.png
-
-title: shnork_002   # Краткое название - отобразится в слоте инвентаря
-description: shnork_002   # Полное описание - отобразится в разделе описания в инвентаре
-base_price: 100   # Цена
-
-pont_points: 50
-
+inv_icon_big: static/content/items/slot_item/tuner_item/shnork/shnork_002/inventory/big.png
+inv_icon_mid: static/content/items/slot_item/tuner_item/shnork/shnork_002/inventory/mid.png
+inv_icon_small: static/content/items/slot_item/tuner_item/shnork/shnork_002/inventory/small.png
 
 # Картинки для представления у тюнера, установленные на машине
 images:
-  - car: reg:///registry/mobiles/cars/middle/offroad/defender  # реестровая ссылка на машинку, для которой подходит данный итем
-    top:                                                          # описание вида сверху (картинка и позиция)
-        link: ~                                                   # не забыть поставить тильду, если нет этого вида
-        z_index: 1                                                # позиция: -1 или 1
-    side:                                                         # описание вида сбоку (картинка и позиция)
-        link: static/content/items/slot_item/tuner_item/shnork/shnork_002/side_1.png   # ссылка на картику для вида сбоку
-        z_index: 1                                                # позиция: -1 или 1
+  - car: reg:///registry/mobiles/cars/middle/offroad/defender        # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                             # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/shnork/shnork_002/defender/top.png    # ссылка на картику для вида сверху
+        z_index: 1                                                   # позиция: -1 или 1
+    side:                                                            # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/shnork/shnork_002/defender/side.png   # ссылка на картику для вида сбоку
+        z_index: 1                                                   # позиция: -1 или 1
+
+  - car: reg:///registry/mobiles/cars/middle/cars/dodge_challenger   # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                             # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/shnork/shnork_002/challenger/top.png  # ссылка на картику для вида сверху
+        z_index: 1                                                   # позиция: -1 или 1
+    side:                                                            # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/shnork/shnork_002/challenger/side.png # ссылка на картику для вида сбоку
+        z_index: 1                                                   # позиция: -1 или 1

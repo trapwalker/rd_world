@@ -1,0 +1,10 @@
+﻿__cls__: MapWeaponEffectMine
+title:             mine_vs50   # Название атомобиля
+
+p_observing_range: 25          # Радиус обзора автомобиля (м) (>= 0)
+
+max_hp:            80          # Максимальное количество прочности (> 0)
+hp:                80          # Текущее количество прочности (> 0)
+
+effects: 
+    - reg:///registry/effects/weapon/mines/effect_mine_cc

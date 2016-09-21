@@ -32,10 +32,7 @@ p_fuel_rate:        0.0175   # Расход топлива, тратится т�
 
 inventory:                   # При заполнении инвентаря необходимо учитывать его размер
     size: 5
-    items:
-      - reg:///registry/items/usable/ammo/a762?amount=100
-      - reg:///registry/items/slot_item/weapons/machine_guns/dshkm
-      - reg:///registry/items/usable/build_set/build_set_3
+    items: []
 
 # Ссылка на картинку автомобиля в ангаре
 hangar_car:            "static/content/mobiles/cars/light/motorcycles/honda_hornet/side.png"

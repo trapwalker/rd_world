@@ -11,18 +11,7 @@ hp:                 145         # Текущее количество прочн
 
 inventory:                      # При заполнении инвентаря необходимо учитывать его размер
     size: 20
-    items:
-      - reg:///registry/items/usable/ammo/a762?amount=100
-      - reg:///registry/items/usable/ammo/a762?amount=100
-      - reg:///registry/items/usable/ammo/a762?amount=100
-      - reg:///registry/items/slot_item/weapons/machine_guns/dshkm
-      - reg:///registry/items/slot_item/weapons/machine_guns/dshkm
-      - reg:///registry/items/slot_item/weapons/machine_guns/dshkm
-      - reg:///registry/items/usable/build_set/build_set_3
-      - reg:///registry/items/usable/build_set/build_set_3
-      - reg:///registry/items/usable/build_set/build_set_3
-      - reg:///registry/items/usable/build_set/build_set_3
-      - reg:///registry/items/usable/build_set/build_set_3
+    items: []  
 
 p_observing_range:     315     # Радиус обзора автомобиля (м) (>= 0)
 
