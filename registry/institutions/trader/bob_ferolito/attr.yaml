@@ -3,20 +3,20 @@ title: Bob_Ferolito
 photo: "static/content/institutions/trader/bob_ferolito/bob_ferolito.png"
 abstract: true
 
-trading: 20
-refresh_time: 600
+trading: 20 # навык торговли
+refresh_time: 600 # время в сек между завозами
 
-ignore_list:
+ignore_list: # то что не будет покупать
   - reg:///registry/items/slot_item/weapons
 
-price_list:
+price_list: # правила завоза
   - item: reg:///registry/items/slot_item/weapons
-    chance: 0.0
-    count_min: 0
-    count_max: 0
-    price_min: 3.0
+    chance: 0.0    # вероятность в завозе 1 - max
+    count_min: 0   # пределы количества в завозе
+    count_max: 0   # если 0 - бесконечность
+    price_min: 3.0 # коэф колебаний цены (границы)
     price_max: 3.0
-    influence: 0.0
+    influence: 0.0 # коэф изменения цены при покупке/продаже
 
   - item: reg:///registry/items/slot_item/weapons/machine_guns/dshkm
     chance: 0.0
