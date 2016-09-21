@@ -8,17 +8,9 @@ price:              25           # Цена у продавца (л) (>= 0)
 max_hp:             800          # Максимальное количество прочности (> 0)
 hp:                 800          # Текущее количество прочности (> 0)
 
-inventory_size:     34           # Количество слотов в инвентаре (шт) (>=0)
-
 inventory:                       # При заполнении инвентаря необходимо учитывать его размер
-    items:
-      - reg:///registry/items/usable/ammo/762x51bb?amount=100
-      - reg:///registry/items/usable/ammo/762x51bb?amount=100
-      - reg:///registry/items/usable/ammo/762x51bb?amount=100
-      - reg:///registry/items/usable/ammo/30bb?amount=20
-      - reg:///registry/items/usable/ammo/30bb?amount=20
-      - reg:///registry/items/usable/build_set/build_set_big?amount=5
-      - reg:///registry/items/usable/build_set/build_set_big?amount=5
+    size: 34
+    items: []
 
 p_observing_range:     1250      #345 # Радиус обзора автомобиля (м) (>= 0)
 

@@ -2,4 +2,5 @@
 doc    : Ремонтные комплекты
 
 stack_size: 5
+amount: 5
 activate_type: self
