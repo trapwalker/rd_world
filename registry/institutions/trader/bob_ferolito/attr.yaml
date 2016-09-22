@@ -9,6 +9,14 @@ refresh_time: 600 # время в сек между завозами
 ignore_list: # то что не будет покупать
   - reg:///registry/items/slot_item/weapons
 
+items:
+  - reg:///registry/items/usable/tanks/tank_empty/tank_10l
+  - reg:///registry/items/usable/tanks/tank_empty/tank_20l
+  - reg:///registry/items/usable/ammo/762x51bb
+  - reg:///registry/items/usable/ammo/127x108bb
+  - reg:///registry/items/usable/ammo/23bzt
+  - reg:///registry/items/slot_item/weapons/machine_guns/dshkm
+
 price_list: # правила завоза
   - item: reg:///registry/items/slot_item/weapons
     chance: 0.0    # вероятность в завозе 1 - max
@@ -27,27 +35,11 @@ price_list: # правила завоза
     influence: 0.01
 
   - item: reg:///registry/items/usable/tanks
-    chance: 0.5
+    chance: 1.0
     count_min: 1
     count_max: 10
     price_min: 4.0
     price_max: 6.0
-    influence: 0.1
-
-  - item: reg:///registry/items/usable/tanks/tank_empty/tank_10l
-    chance: 0.0
-    count_min: 0
-    count_max: 0
-    price_min: 0.5
-    price_max: 1.9
-    influence: 0.1
-
-  - item: reg:///registry/items/usable/tanks/tank_empty/tank_20l
-    chance: 0.0
-    count_min: 1
-    count_max: 10
-    price_min: 0.9
-    price_max: 1.1
     influence: 0.1
 
   - item: reg:///registry/items/usable/ammo/762x51bb
