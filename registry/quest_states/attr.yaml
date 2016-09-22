@@ -1,0 +1,11 @@
+﻿
+__cls__ : QuestState
+doc     : Шаблоны состоянияний квестов
+
+status  : active  # active/end
+result  : ~       # win/fail
+
+#name    :
+#enter_state_message :
+#exit_state_message  :
+
