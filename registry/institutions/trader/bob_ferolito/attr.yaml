@@ -6,8 +6,7 @@ abstract: true
 trading: 20 # навык торговли
 refresh_time: 600 # время в сек между завозами
 
-ignore_list: # то что не будет покупать
-  - reg:///registry/items/slot_item/weapons
+ignore_list: [] # то что не будет покупать
 
 items:
   - reg:///registry/items/usable/tanks/tank_empty/tank_10l
@@ -16,23 +15,27 @@ items:
   - reg:///registry/items/usable/ammo/127x108bb
   - reg:///registry/items/usable/ammo/23bzt
   - reg:///registry/items/slot_item/weapons/machine_guns/dshkm
+  - reg:///registry/items/slot_item/tuner_item/trunk/trunk_001
+  - reg:///registry/items/slot_item/tuner_item/trunk/trunk_002
+  - reg:///registry/items/slot_item/tuner_item/win_prot/win_prot_001
+  - reg:///registry/items/slot_item/tuner_item/win_prot/win_prot_002
 
 price_list: # правила завоза
-  - item: reg:///registry/items/slot_item/weapons
-    chance: 0.0    # вероятность в завозе 1 - max
-    count_min: 0   # пределы количества в завозе
-    count_max: 0   # если 0 - бесконечность
-    price_min: 3.0 # коэф колебаний цены (границы)
-    price_max: 3.0
-    influence: 0.0 # коэф изменения цены при покупке/продаже
-
-  - item: reg:///registry/items/slot_item/weapons/machine_guns/dshkm
-    chance: 0.0
-    count_min: 0
-    count_max: 5
-    price_min: 10.0
-    price_max: 10.0
-    influence: 0.01
+#  - item: reg:///registry/items/slot_item/weapons
+#    chance: 0.0    # вероятность в завозе 1 - max
+#    count_min: 0   # пределы количества в завозе
+#    count_max: 0   # если 0 - бесконечность
+#    price_min: 3.0 # коэф колебаний цены (границы)
+#    price_max: 3.0
+#    influence: 0.0 # коэф изменения цены при покупке/продаже
+#
+#  - item: reg:///registry/items/slot_item/weapons/machine_guns/dshkm
+#    chance: 0.0
+#    count_min: 0
+#    count_max: 5
+#    price_min: 10.0
+#    price_max: 10.0
+#    influence: 0.01
 
   - item: reg:///registry/items/usable/tanks
     chance: 1.0
@@ -67,7 +70,7 @@ price_list: # правила завоза
     influence: 0.1
 
   - item: reg:///registry/items
-    chance: 0.0
+    chance: 1.0
     count_min: 0
     count_max: 0
     price_min: 1.0
