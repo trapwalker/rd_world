@@ -1,14 +1,17 @@
-﻿__cls__ : MapWeaponMineItem
-doc    : Предметы, активируя которые, пораждаются неподвижные мины на карте
+﻿__cls__  : MapWeaponMineItem
+doc      : Мина TC6
+abstract : false
 
-generate_obj  : reg:///registry/mobiles/stationary/map_weapon/mines_effect/mine_tc6
+title       : Мина TC6
+description : Для установки необходимо активировать.
 
-stack_size    : 10
-base_price    : 80
-description   : Мина. Для установки необходимо активировать
-title         : Мина TC6
+base_price : 80
+stack_size : 10
+
 activate_type : self
 
-inv_icon_big: static/content/items/usable/map_weapon/mines_effect/mine_tc6/big.png
-inv_icon_mid: static/content/items/usable/map_weapon/mines_effect/mine_tc6/mid.png
-inv_icon_small: static/content/items/usable/map_weapon/mines_effect/mine_tc6/small.png
+inv_icon_big   : static/content/items/usable/map_weapon/mines_effect/mine_tc6/big.png
+inv_icon_mid   : static/content/items/usable/map_weapon/mines_effect/mine_tc6/mid.png
+inv_icon_small : static/content/items/usable/map_weapon/mines_effect/mine_tc6/small.png
+
+generate_obj : reg:///registry/mobiles/stationary/map_weapon/mines_effect/mine_tc6
