@@ -1,5 +1,6 @@
-﻿__cls__ : Cannon
-doc             : M242 Bushmaster
+﻿__cls__  : Cannon
+doc      : M242 Bushmaster
+abstract : false
 
 title           : M242                                  # Краткое название - отобразится в слоте инвентаря
 description     : M242 Bushmaster                       # Полное описание - отобразится в разделе описания в инвентаре

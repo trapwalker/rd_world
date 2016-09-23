@@ -1,5 +1,6 @@
-﻿__cls__ : Cannon
-doc             : Flak ZU-23
+﻿__cls__  : Cannon
+doc      : Flak ZU-23
+abstract : false
 
 title           : Flak ZU-23                               # Краткое название - отобразится в слоте инвентаря
 description     : Flak ZU-23                               # Полное описание - отобразится в разделе описания в инвентаре

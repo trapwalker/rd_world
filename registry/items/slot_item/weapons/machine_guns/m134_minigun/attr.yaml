@@ -1,5 +1,6 @@
-﻿__cls__: MachineGun
-doc             : M134 Minigun
+﻿__cls__  : MachineGun
+doc      : M134 Minigun
+abstract : false
 
 title           : M134 Minigun                          # Краткое название - отобразится в слоте инвентаря
 description     : M134 Minigun                          # Полное описание - отобразится в разделе описания в инвентаре
