@@ -1,0 +1,27 @@
+﻿__cls__: Quest
+doc    : Примеры квестов
+
+first_state: begin
+current_state: ~
+
+caption: Смертельное проклятье
+text: Каждое {kills_count} убийство влечет смерть самого игрока.
+
+    text_short = StringField(tags='client', caption=u'Короткий текст квеста', doc=u'Может строиться и меняться по шаблону')
+    typename = StringField(tags='client', caption=u'Тип квеста', doc=u'Может быть произвольным')
+    list_icon = StringField(tags='client', caption=u'Пиктограмма для списков', doc=u'Мальенькая картинка для отображения в списках')  # todo: use UrlField
+    level = IntField(tags='client', caption=u'Уровень квеста', doc=u'Обычно число, но подлежит обсуждению')  # todo: обсудить
+    starttime = DateTimeField(tags='client', caption=u'Начало выполнения', doc=u'Время старта квеста')
+    deadline = DateTimeField(tags='client', caption=u'Срок выполнения этапа', doc=u'datetime до провала текущего этапа. Может меняться')
+
+    hirer = UniReferenceField(tags='client', caption=u'Заказчик', doc=u'NPC-заказчик квеста')
+    town = UniReferenceField(tags='client', caption=u'Город выдачи', doc=u'Город выдачи квеста')
+    agent = UniReferenceField(tags='client', caption=u'Агент', doc=u'Исполнитель квеста')
+
+
+states: []
+
+
+### специфические параметры ###
+
+kills_count: 13
