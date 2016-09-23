@@ -3,7 +3,7 @@ doc     : Снаряды 30 мм/ББ
 abstract: false
 
 title       : Снаряды 30 мм/ББ
-description : Бронебойные снаряды для "Bushmaster" (30 мм)
+description : Бронебойные снаряды для "Bushmaster" (30 мм).
 
 stack_size : 5
 base_price : 100

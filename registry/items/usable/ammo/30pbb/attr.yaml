@@ -3,7 +3,7 @@ doc     : Снаряды 30 мм/ПББ
 abstract: false
 
 title       : Снаряды 30 мм/ПББ
-description : Полубронебойные снаряды для "Bushmaster" (30 мм)
+description : Полубронебойные снаряды для "Bushmaster" (30 мм).
 
 stack_size : 5
 base_price : 100

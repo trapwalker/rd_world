@@ -1,14 +1,15 @@
-__cls__: TankEmpty
-doc    : Пустая канистра с топливом (10л)
-abstract: false
+__cls__  : TankEmpty
+doc      : Пустая канистра (10л)
+abstract : false
 
-value_fuel: 10
+title       : Пустая канистра (10л)
+description : Можно заполнить на заправочной станции.
 
-description: Пустая канистра (10л). Можно заполнить на заправочной станции.
-inv_icon_big: static/content/items/usable/tanks/tank_empty/tank_10l/big.png
-inv_icon_mid: static/content/items/usable/tanks/tank_empty/tank_10l/mid.png
-inv_icon_small: static/content/items/usable/tanks/tank_empty/tank_10l/small.png
-title: Канистра (10л)
-base_price: 50
+base_price : 50
+value_fuel : 10
 
-full_tank: reg:///registry/items/usable/tanks/tank_full/tank_10l
+inv_icon_big   : static/content/items/usable/tanks/tank_empty/tank_10l/big.png
+inv_icon_mid   : static/content/items/usable/tanks/tank_empty/tank_10l/mid.png
+inv_icon_small : static/content/items/usable/tanks/tank_empty/tank_10l/small.png
+
+full_tank : reg:///registry/items/usable/tanks/tank_full/tank_10l
