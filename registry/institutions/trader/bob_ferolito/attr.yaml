@@ -38,8 +38,8 @@ items:
   - reg:///registry/items/usable/tanks/tank_empty/tank_20l
 
   # Оружие
-  - reg:///registry/items/slot_item/weapons/canons/m242
-  - reg:///registry/items/slot_item/weapons/canons/zu23_flak
+  - reg:///registry/items/slot_item/weapons/cannons/m242
+  - reg:///registry/items/slot_item/weapons/cannons/zu23_flak
   - reg:///registry/items/slot_item/weapons/machine_guns/dshkm
   - reg:///registry/items/slot_item/weapons/machine_guns/dshkm_twin
   - reg:///registry/items/slot_item/weapons/machine_guns/m134_minigun
