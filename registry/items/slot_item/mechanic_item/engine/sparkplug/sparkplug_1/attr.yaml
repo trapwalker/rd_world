@@ -1,5 +1,6 @@
 __cls__ : MechanicItem
 doc    : Свеча 1
+abstract : false
 
 description: Свеча 1
 inv_icon_big: static/content/items/slot_item/mechanic_items/engine/sparkplug/sparkplug_1/big.png

@@ -1,5 +1,7 @@
 __cls__ : MechanicItem
 doc         : Масло 1
+abstract : false
+
 title       : Масло 1
 description : Масло 1
 

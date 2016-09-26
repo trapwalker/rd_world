@@ -1,5 +1,7 @@
-__cls__ : MechanicItem
-doc         : ГБЦ 1
+__cls__  : MechanicItem
+doc      : ГБЦ 1
+abstract : false
+
 title       : ГБЦ 1
 description : ГБЦ 1
 

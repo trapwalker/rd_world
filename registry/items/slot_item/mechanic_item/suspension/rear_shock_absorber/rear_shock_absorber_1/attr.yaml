@@ -1,5 +1,6 @@
 __cls__ : MechanicItem
 doc    : Задний амортизатор 1
+abstract : false
 
 description: Задний амортизатор 1
 inv_icon_big: static/content/items/slot_item/mechanic_items/suspension/rear_shock_absorber/rear_shock_absorber_1/big.png

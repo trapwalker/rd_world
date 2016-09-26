@@ -1,5 +1,6 @@
 __cls__ : MechanicItem
 doc    : Воздушный фильтр 1
+abstract : false
 
 description: Воздушный фильтр 1
 inv_icon_big: static/content/items/slot_item/mechanic_items/engine/air_filter/air_filter_1/big.png

@@ -1,4 +1,6 @@
-__cls__ : MechanicItem
+__cls__  : MechanicItem
+doc      : Помпа 1
+abstract : false
 
 description: Помпа 1
 inv_icon_big: static/content/items/slot_item/mechanic_items/cooling/pump/pump_1/big.png
