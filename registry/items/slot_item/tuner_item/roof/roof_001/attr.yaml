@@ -1,5 +1,6 @@
 ﻿__cls__ : TunerItem
 doc     : Предметы, устанавливаемые в слоты тюнера
+abstract : false
 
 tags    : [roof]
 
