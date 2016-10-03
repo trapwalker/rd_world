@@ -3,5 +3,5 @@ __cls__ : QuestState
 doc     : Стандартное состояние удачного окончания квеста
 
 result  : win
-name    : win
+id      : win
 enter_state_message : Задание {quest.title} выполнено успешно.

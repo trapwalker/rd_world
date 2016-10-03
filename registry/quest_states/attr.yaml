@@ -5,7 +5,7 @@ doc     : Шаблоны состоянияний квестов
 status  : active  # active/end
 result  : ~       # win/fail
 
-#name    :
+#id     :
 #enter_state_message :
 #exit_state_message  :
 

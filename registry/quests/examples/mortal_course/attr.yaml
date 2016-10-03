@@ -7,19 +7,48 @@ current_state: ~
 caption: Смертельное проклятье
 text: Каждое {kills_count} убийство влечет смерть самого игрока.
 
-    text_short = StringField(tags='client', caption=u'Короткий текст квеста', doc=u'Может строиться и меняться по шаблону')
-    typename = StringField(tags='client', caption=u'Тип квеста', doc=u'Может быть произвольным')
-    list_icon = StringField(tags='client', caption=u'Пиктограмма для списков', doc=u'Мальенькая картинка для отображения в списках')  # todo: use UrlField
-    level = IntField(tags='client', caption=u'Уровень квеста', doc=u'Обычно число, но подлежит обсуждению')  # todo: обсудить
-    starttime = DateTimeField(tags='client', caption=u'Начало выполнения', doc=u'Время старта квеста')
-    deadline = DateTimeField(tags='client', caption=u'Срок выполнения этапа', doc=u'datetime до провала текущего этапа. Может меняться')
+#    text_short = StringField(tags='client', caption=u'Короткий текст квеста', doc=u'Может строиться и меняться по шаблону')
+#    typename = StringField(tags='client', caption=u'Тип квеста', doc=u'Может быть произвольным')
+#    list_icon = StringField(tags='client', caption=u'Пиктограмма для списков', doc=u'Мальенькая картинка для отображения в списках')  # todo: use UrlField
+#    level = IntField(tags='client', caption=u'Уровень квеста', doc=u'Обычно число, но подлежит обсуждению')  # todo: обсудить
+#    starttime = DateTimeField(tags='client', caption=u'Начало выполнения', doc=u'Время старта квеста')
+#    deadline = DateTimeField(tags='client', caption=u'Срок выполнения этапа', doc=u'datetime до провала текущего этапа. Может меняться')
 
-    hirer = UniReferenceField(tags='client', caption=u'Заказчик', doc=u'NPC-заказчик квеста')
-    town = UniReferenceField(tags='client', caption=u'Город выдачи', doc=u'Город выдачи квеста')
-    agent = UniReferenceField(tags='client', caption=u'Агент', doc=u'Исполнитель квеста')
+#    hirer = UniReferenceField(tags='client', caption=u'Заказчик', doc=u'NPC-заказчик квеста')
+#    town = UniReferenceField(tags='client', caption=u'Город выдачи', doc=u'Город выдачи квеста')
+#    agent = UniReferenceField(tags='client', caption=u'Агент', doc=u'Исполнитель квеста')
 
 
-states: []
+states:
+    - id: begin
+      parent: reg:///registry/quest_states
+      abstract: false
+
+      status: active
+      on_enter: |
+        log("The enter to `begin` state")
+
+      on_exit: |
+        log("The exit from `begin` state")
+
+      on_event: |
+        log("The `begin` state event: {!r}".format(event))
+        go('final')
+
+    - id: final
+      parent: reg:///registry/quest_states/final
+      abstract: false
+
+      status: end
+      result: win
+      on_enter: |
+        log("The enter to `final` state")
+
+      on_exit: |
+        log("The exit from `final` state")
+
+      on_event: |
+        log("The `final` state event: {!r}".format(event))
 
 
 ### специфические параметры ###

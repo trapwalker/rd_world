@@ -5,7 +5,7 @@ doc     : Абстрактное финальное состояние с нео
 status  : end
 result  : ~
 
-#name    :
+#id     :
 #enter_state_message :
 #exit_state_message  :
 
