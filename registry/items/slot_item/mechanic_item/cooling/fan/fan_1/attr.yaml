@@ -1,4 +1,6 @@
-__cls__ : MechanicItem
+__cls__  : MechanicItem
+doc      : Вентилятор 1
+abstract : false
 
 description: Вентилятор 1
 inv_icon_big: static/content/items/slot_item/mechanic_items/cooling/fan/fan_1/big.png

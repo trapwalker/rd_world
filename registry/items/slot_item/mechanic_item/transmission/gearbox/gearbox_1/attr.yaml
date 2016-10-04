@@ -1,5 +1,7 @@
 __cls__ : MechanicItem
 doc         : Коробка передач 1
+abstract : false
+
 title       : Коробка передач 1
 description : Коробка передач 1
 

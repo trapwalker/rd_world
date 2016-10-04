@@ -1,5 +1,6 @@
 __cls__ : MechanicItem
 doc    : Передний амортизатор 1
+abstract : false
 
 description: Передний амортизатор 1
 inv_icon_big: static/content/items/slot_item/mechanic_items/suspension/front_shock_absorber/front_shock_absorber_1/big.png

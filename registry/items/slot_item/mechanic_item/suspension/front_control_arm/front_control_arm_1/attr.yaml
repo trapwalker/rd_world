@@ -1,5 +1,6 @@
 __cls__ : MechanicItem
 doc    : Передний рычаг 1
+abstract : false
 
 description: Передний рычаг 1
 inv_icon_big: static/content/items/slot_item/mechanic_items/suspension/front_control_arm/front_control_arm_1/big.png

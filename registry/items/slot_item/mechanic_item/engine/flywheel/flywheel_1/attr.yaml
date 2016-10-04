@@ -1,5 +1,7 @@
 __cls__ : MechanicItem
 doc         : Маховик 1
+abstract : false
+
 title       : Маховик 1
 description : Маховик 1
 

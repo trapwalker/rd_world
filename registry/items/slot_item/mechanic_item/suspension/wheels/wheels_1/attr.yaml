@@ -1,5 +1,6 @@
 __cls__ : MechanicItem
 doc    : Колесо 1
+abstract : false
 
 description: Колесо 1
 inv_icon_big: static/content/items/slot_item/mechanic_items/suspension/wheels/wheels_1/big.png

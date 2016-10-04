@@ -1,5 +1,6 @@
 __cls__ : MechanicItem
 doc    : Передние колодки 1
+abstract : false
 
 description: Передние колодки 1
 inv_icon_big: static/content/items/slot_item/mechanic_items/brake/front_brake_pads/front_brake_pads_1/big.png

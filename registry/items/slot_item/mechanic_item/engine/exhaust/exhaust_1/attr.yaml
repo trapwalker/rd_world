@@ -1,5 +1,6 @@
 __cls__ : MechanicItem
 doc    : Выпуск 1
+abstract : false
 
 description: Выпуск 1
 inv_icon_big: static/content/items/slot_item/mechanic_items/engine/exhaust/exhaust_1/big.png

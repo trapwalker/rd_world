@@ -1,5 +1,6 @@
 __cls__ : MechanicItem
 doc    : Дополнительный радистор 1
+abstract : false
 
 description: Дополнительный радиатор 1
 inv_icon_big: static/content/items/slot_item/mechanic_items/cooling/add_radiator/add_radiator_1/big.png

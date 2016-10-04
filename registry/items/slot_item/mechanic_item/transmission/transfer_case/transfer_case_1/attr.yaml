@@ -1,5 +1,7 @@
 __cls__ : MechanicItem
 doc         : Раздатка 1
+abstract : false
+
 title       : Раздатка 1
 description : Раздатка 1
 
