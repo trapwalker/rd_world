@@ -1,5 +1,6 @@
 __cls__ : MechanicItem
 doc    : Передние тормозные механизмы 1
+abstract : false
 
 description: Передние тормозные механизмы 1
 inv_icon_big: static/content/items/slot_item/mechanic_items/brake/front_brakes/front_brakes_1/big.png

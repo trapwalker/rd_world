@@ -1,5 +1,6 @@
 __cls__ : MechanicItem
 doc    : Ступица 1
+abstract : false
 
 description: Ступица 1
 inv_icon_big: static/content/items/slot_item/mechanic_items/suspension/hub/hub_1/big.png

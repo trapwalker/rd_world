@@ -1,5 +1,6 @@
 __cls__ : MechanicItem
 doc    : Задний рычаг 1
+abstract : false
 
 description: Задний рычаг 1
 inv_icon_big: static/content/items/slot_item/mechanic_items/suspension/rear_control_arm/rear_control_arm_1/big.png

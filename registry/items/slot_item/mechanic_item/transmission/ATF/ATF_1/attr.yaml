@@ -1,5 +1,7 @@
 __cls__ : MechanicItem
 doc         : Трансмиссионное масло 1
+abstract : false
+
 title       : Трансмиссионное масло 1
 description : Трансмиссионное масло 1
 

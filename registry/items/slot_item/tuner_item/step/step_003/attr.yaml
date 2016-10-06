@@ -11,9 +11,9 @@ base_price  : 10         # Цена
 pont_points : 50
 
 # Картинки для представления в инвентаре
-inv_icon_big: static/content/items/slot_item/tuner_item/step/step_003/inventory/big.png
-inv_icon_mid: static/content/items/slot_item/tuner_item/step/step_003/inventory/mid.png
-inv_icon_small: static/content/items/slot_item/tuner_item/step/step_003/inventory/small.png
+inv_icon_big   : static/content/items/slot_item/tuner_item/step/step_003/inventory/big.png
+inv_icon_mid   : static/content/items/slot_item/tuner_item/step/step_003/inventory/mid.png
+inv_icon_small : static/content/items/slot_item/tuner_item/step/step_003/inventory/small.png
 
 # Картинки для представления у тюнера, установленные на машине
 images:

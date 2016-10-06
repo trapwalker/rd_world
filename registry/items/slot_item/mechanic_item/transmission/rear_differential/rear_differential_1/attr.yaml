@@ -1,5 +1,7 @@
 __cls__ : MechanicItem
 doc         : Дифференциал зад 1
+abstract : false
+
 title       : Дифференциал зад 1
 description : Дифференциал зад 1
 

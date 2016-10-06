@@ -3,7 +3,7 @@ doc     : Снаряды 23 мм/ОФ
 abstract: false
 
 title       : Снаряды 23 мм/ОФ
-description : Осколочно-фугасные снаряды для ЗУ-23 (23 мм)
+description : Осколочно-фугасные снаряды для ЗУ-23 (23 мм).
 
 stack_size : 5
 base_price : 100

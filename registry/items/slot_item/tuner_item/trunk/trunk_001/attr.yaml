@@ -4,31 +4,31 @@ abstract : false
 
 tags     : [trunk]
 
-title       : Trunk 002   # Краткое название - отобразится в слоте инвентаря
-description : Trunk 002   # Полное описание - отобразится в разделе описания в инвентаре
+title       : Trunk 001   # Краткое название - отобразится в слоте инвентаря
+description : Trunk 001   # Полное описание - отобразится в разделе описания в инвентаре
 base_price  : 10          # Цена
 
 pont_points : 50
 
 # Картинки для представления в инвентаре
-inv_icon_big   : static/content/items/slot_item/tuner_item/trunk/trunk_002/inventory/big.png
-inv_icon_mid   : static/content/items/slot_item/tuner_item/trunk/trunk_002/inventory/mid.png
-inv_icon_small : static/content/items/slot_item/tuner_item/trunk/trunk_002/inventory/small.png
+inv_icon_big   : static/content/items/slot_item/tuner_item/trunk/trunk_001/inventory/big.png
+inv_icon_mid   : static/content/items/slot_item/tuner_item/trunk/trunk_001/inventory/mid.png
+inv_icon_small : static/content/items/slot_item/tuner_item/trunk/trunk_001/inventory/small.png
 
 # Картинки для представления у тюнера, установленные на машине
 images:
   - car: reg:///registry/mobiles/cars/middle/offroad/defender        # реестровая ссылка на машинку, для которой подходит данный итем
     top:                                                             # описание вида сверху (картинка и позиция)
-        link: static/content/items/slot_item/tuner_item/trunk/trunk_002/defender/top.png    # ссылка на картику для вида сверху
+        link: static/content/items/slot_item/tuner_item/trunk/trunk_001/defender/top.png    # ссылка на картику для вида сверху
         z_index: 1                                                   # позиция: -1 или 1
     side:                                                            # описание вида сбоку (картинка и позиция)
-        link: static/content/items/slot_item/tuner_item/trunk/trunk_002/defender/side.png   # ссылка на картику для вида сбоку
+        link: static/content/items/slot_item/tuner_item/trunk/trunk_001/defender/side.png   # ссылка на картику для вида сбоку
         z_index: 1                                                   # позиция: -1 или 1
 
   - car: reg:///registry/mobiles/cars/middle/cars/dodge_challenger   # реестровая ссылка на машинку, для которой подходит данный итем
     top:                                                             # описание вида сверху (картинка и позиция)
-        link: static/content/items/slot_item/tuner_item/trunk/trunk_002/challenger/top.png  # ссылка на картику для вида сверху
+        link: static/content/items/slot_item/tuner_item/trunk/trunk_001/challenger/top.png  # ссылка на картику для вида сверху
         z_index: 1                                                   # позиция: -1 или 1
     side:                                                            # описание вида сбоку (картинка и позиция)
-        link: static/content/items/slot_item/tuner_item/trunk/trunk_002/challenger/side.png # ссылка на картику для вида сбоку
+        link: static/content/items/slot_item/tuner_item/trunk/trunk_001/challenger/side.png # ссылка на картику для вида сбоку
         z_index: 1                                                   # позиция: -1 или 1

@@ -1,5 +1,6 @@
 __cls__ : MechanicItem
 doc    : Тормозная жидкость 1
+abstract : false
 
 description: Тормозная жидкость 1
 inv_icon_big: static/content/items/slot_item/mechanic_items/brake/brake_fluid/brake_fluid_1/big.png

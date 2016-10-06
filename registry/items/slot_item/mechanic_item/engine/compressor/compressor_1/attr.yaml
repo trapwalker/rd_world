@@ -1,5 +1,6 @@
 __cls__ : MechanicItem
 doc    : Компрессор 1
+abstract : false
 
 description: Компрессор 1
 inv_icon_big: static/content/items/slot_item/mechanic_items/engine/compressor/compressor_1/big.png

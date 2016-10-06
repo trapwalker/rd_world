@@ -1,5 +1,7 @@
 __cls__ : MechanicItem
 doc         : Впуск 1
+abstract : false
+
 title       : Впуск 1
 description : Впуск 1
 

@@ -1,5 +1,6 @@
 __cls__ : MechanicItem
 doc    : Задние тормозные механизмы
+abstract : false
 
 description: Задние тормозные механизмы 1
 inv_icon_big: static/content/items/slot_item/mechanic_items/brake/rear_brakes/rear_brakes_1/big.png

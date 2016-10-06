@@ -1,5 +1,7 @@
 __cls__ : MechanicItem
 doc         : Полуоси зад 1
+abstract : false
+
 title       : Полуоси зад 1
 description : Полуоси зад 1
 

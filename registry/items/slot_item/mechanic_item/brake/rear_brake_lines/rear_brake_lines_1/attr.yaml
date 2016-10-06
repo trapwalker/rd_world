@@ -1,5 +1,6 @@
 __cls__ : MechanicItem
 doc    : Задние тормозные шланги 1
+abstract : false
 
 description: Задние тормозные шланги 1
 inv_icon_big: static/content/items/slot_item/mechanic_items/brake/rear_brake_lines/rear_brake_lines_1/big.png

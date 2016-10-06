@@ -1,5 +1,7 @@
 __cls__ : MechanicItem
 doc         : Вторичный вал 1
+abstract : false
+
 title       : Вторичный вал 1
 description : Вторичный вал 1
 

@@ -1,13 +1,16 @@
-﻿__cls__: MapWeaponRocketItem
+﻿__cls__  : MapWeaponRocketItem
+abstract : false
 
-generate_obj  : reg:///registry/mobiles/map_weapon/rockets/sa16_igla
+title       : Ракета SA16 Igla
+description : Ракета SA16 Igla
 
-stack_size    : 1000
-base_price    : 20
-description   : Ракета SA16 Igla
-title         : Ракета SA16 Igla
+base_price : 200
+stack_size : 10
+
 activate_type : self
 
-inv_icon_big: static/content/items/usable/map_weapon/rockets/sa16_igla/big.png
-inv_icon_mid: static/content/items/usable/map_weapon/rockets/sa16_igla/mid.png
-inv_icon_small: static/content/items/usable/map_weapon/rockets/sa16_igla/small.png
+inv_icon_big   : static/content/items/usable/map_weapon/rockets/sa16_igla/big.png
+inv_icon_mid   : static/content/items/usable/map_weapon/rockets/sa16_igla/mid.png
+inv_icon_small : static/content/items/usable/map_weapon/rockets/sa16_igla/small.png
+
+generate_obj : reg:///registry/mobiles/map_weapon/rockets/sa16_igla
