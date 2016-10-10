@@ -63,3 +63,31 @@ buildings:
       instances:
           - reg:///registry/institutions/gas_station
           - reg:///registry/institutions/npc_help
+
+
+
+static_image_list:
+    - /static/content/locations/map_locations/whitehill/autoservice.png
+    - /static/content/locations/map_locations/whitehill/autoservice_bg.png
+    - /static/content/locations/map_locations/whitehill/autoservice_hover.png
+    - /static/content/locations/map_locations/whitehill/bar.png
+    - /static/content/locations/map_locations/whitehill/bar_bg.png
+    - /static/content/locations/map_locations/whitehill/bar_hover.png
+    - /static/content/locations/map_locations/whitehill/city_logo.png
+    - /static/content/locations/map_locations/whitehill/city_logo_hover.png
+    - /static/content/locations/map_locations/whitehill/dealer.png
+    - /static/content/locations/map_locations/whitehill/dealer_bg.png
+    - /static/content/locations/map_locations/whitehill/dealer_hover.png
+    - /static/content/locations/map_locations/whitehill/ground+circle.png
+    - /static/content/locations/map_locations/whitehill/library.png
+    - /static/content/locations/map_locations/whitehill/library_bg.png
+    - /static/content/locations/map_locations/whitehill/library_hover.png
+    - /static/content/locations/map_locations/whitehill/market.png
+    - /static/content/locations/map_locations/whitehill/market_bg.png
+    - /static/content/locations/map_locations/whitehill/market_hover.png
+    - /static/content/locations/map_locations/whitehill/mayor.png
+    - /static/content/locations/map_locations/whitehill/mayor_bg.png
+    - /static/content/locations/map_locations/whitehill/mayor_hover.png
+    - /static/content/locations/map_locations/whitehill/nukeoil.png
+    - /static/content/locations/map_locations/whitehill/nukeoil_bg.png
+    - /static/content/locations/map_locations/whitehill/nukeoil_hover.png
