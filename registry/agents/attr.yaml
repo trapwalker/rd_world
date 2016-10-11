@@ -4,3 +4,7 @@ doc    : Прототипы агентов
 balance: 1000
 car_list: []
 perks: []
+
+quests_unstarted: []
+quests_active:    []
+quests_ended:     []
