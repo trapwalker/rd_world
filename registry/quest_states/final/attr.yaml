@@ -1,0 +1,11 @@
+﻿
+__cls__ : QuestState
+doc     : Абстрактное финальное состояние с неопределенным результатом
+
+status  : end
+result  : ~
+
+#id     :
+#enter_state_message :
+#exit_state_message  :
+
