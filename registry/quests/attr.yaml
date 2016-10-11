@@ -1,3 +1,12 @@
 ﻿__cls__: Quest
 doc    : Квесты
 
+on_generate: |
+    log("GENERATE: try - {quest}")
+
+    for q in agent and agent.quests or []:
+        if q.status != 'end' and q.parent == quest.parent:
+            raise Cancel("QUEST CANCEL: You already have that quest: {q}")
+
+    quest.gen_sign = 123
+    log("GENERATE: done - {quest}")

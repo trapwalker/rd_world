@@ -18,7 +18,6 @@ text: Каждое {kills_count} убийство влечет смерть са
 #    town = UniReferenceField(tags='client', caption=u'Город выдачи', doc=u'Город выдачи квеста')
 #    agent = UniReferenceField(tags='client', caption=u'Агент', doc=u'Исполнитель квеста')
 
-
 states:
     - id: begin
       parent: reg:///registry/quest_states
@@ -26,14 +25,20 @@ states:
 
       status: active
       on_enter: |
-        log("The enter to `begin` state")
+        log("STATE({state.id}) ENTER ЖОПА {quest.caption}")
 
       on_exit: |
-        log("The exit from `begin` state")
+        log("STATE({state.id}) EXIT")
 
       on_event: |
-        log("The `begin` state event: {!r}".format(event))
-        go('final')
+        quest.current_count += 1
+        log("STATE({state.id}) EVENT({event!r}): now {quest.current_count!r} kills")
+        if quest.current_count >= quest.kills_count:
+            log("  Well done! go to final")
+            go('final')
+        else:
+            log("  That's not enough to finish. Need to {quest.kills_count}")
+
 
     - id: final
       parent: reg:///registry/quest_states/final
@@ -42,15 +47,16 @@ states:
       status: end
       result: win
       on_enter: |
-        log("The enter to `final` state")
+        log("STATE({state.id}) ENTER")
 
       on_exit: |
-        log("The exit from `final` state")
+        log("STATE({state.id}) EXIT !!!")
 
       on_event: |
-        log("The `final` state event: {!r}".format(event))
+        log("STATE({state.id}) EVENT({event!r}) !!!")
 
 
 ### специфические параметры ###
 
-kills_count: 13
+kills_count: 5
+current_count: 0
