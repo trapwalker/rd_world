@@ -183,3 +183,8 @@ price_list: # правила завоза
     price_min: 1.0
     price_max: 1.0
     influence: 0.0
+
+
+quests:
+  - parent: reg:///registry/quests/examples/n_active
+    active_count_max: 3

@@ -4,4 +4,4 @@ doc     : Стандартное состояние провала квеста
 
 result  : fail
 id      : fail
-enter_state_message : Задание {quest.title} провалено.
+enter_state_message : Задание {quest.caption} провалено.

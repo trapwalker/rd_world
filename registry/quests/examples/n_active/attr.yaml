@@ -4,8 +4,12 @@ doc    : Примеры квестов
 first_state: begin
 current_state: ~
 
-caption: Смертельное проклятье
-text: Каждое {kills_count} убийство влечет смерть самого игрока.
+caption: Особый квест №{quest.active_count} из {quest.active_count_max}
+text: |
+    Многоразовый квест, но не более {quest.active_count_max} активных в одни руки.
+    Квест выдается заходе в город если:
+        - его нет среди "выданных, но не взятых"
+        - если таких квестов активно не более {quest.active_count_max}
 
 #    text_short = StringField(tags='client', caption=u'Короткий текст квеста', doc=u'Может строиться и меняться по шаблону')
 #    typename = StringField(tags='client', caption=u'Тип квеста', doc=u'Может быть произвольным')
@@ -18,17 +22,28 @@ text: Каждое {kills_count} убийство влечет смерть са
 #    town = UniReferenceField(tags='client', caption=u'Город выдачи', doc=u'Город выдачи квеста')
 #    agent = UniReferenceField(tags='client', caption=u'Агент', doc=u'Исполнитель квеста')
 
+on_generate: |
+    log("GENERATE: try - {quest}")
+
+    active_count = 0
+    # todo: реализовать метод same_as для проверки похожести квестов
+    for q in agent and agent.quests or []:
+        if q.parent == quest.parent:
+            if q.status is None:
+                raise Cancel("QUEST CANCEL: You already have that unstarted quest: {q}")
+
+            if q.status == 'active':
+                active_count += 1
+                if active_count > quest.active_count_max:
+                    raise Cancel("QUEST CANCEL: You already have more {quest.active_count_max} copies of that quest.")
+
+    quest.active_count = active_count + 1
+    log("GENERATE: done - {quest}")
+
+
 states:
     - id: begin
-      parent: reg:///registry/quest_states
-      abstract: false
-
-      status: active
-      on_enter: |
-        log("STATE({state.id}) ENTER ЖОПА {quest.caption}")
-
-      on_exit: |
-        log("STATE({state.id}) EXIT")
+      parent: reg:///registry/quest_states/test/begin
 
       on_event: |
         quest.current_count += 1
@@ -41,25 +56,10 @@ states:
 
 
     - id: final
-      parent: reg:///registry/quest_states/final
-      abstract: false
-
-      status: end
-      result: win
-      on_enter: |
-        log("STATE({state.id}) ENTER")
-
-      on_exit: |
-        log("STATE({state.id}) EXIT !!!")
-
-      on_event: |
-        log("STATE({state.id}) EVENT({event!r}) !!!")
+      parent: reg:///registry/quest_states/final/win
 
 
 ### специфические параметры ###
 
-kills_count: ~
-current_count: 0
-kills_count_min: 2
-kills_count_max: 10
-
+active_count_max: 5
+active_count: 0
