@@ -3,5 +3,5 @@ title: Manny_Ascorti
 photo: "static/content/institutions/mayor/manny_askorti/manny_askorti.png"
 abstract: false
 
-quests: 
-    - reg:///registry/quests/examples/mortal_course
+quests: []
+#    - reg:///registry/quests/examples/mortal_course

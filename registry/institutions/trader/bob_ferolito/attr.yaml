@@ -187,4 +187,4 @@ price_list: # правила завоза
 
 quests:
   - parent: reg:///registry/quests/examples/n_active
-    active_count_max: 3
+    #active_count_max: 3
