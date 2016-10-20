@@ -25,6 +25,9 @@ text: |
 on_generate: |
     log("GENERATE: try - {quest}")
 
+    active_count_max = getattr(quest, 'active_count_max', 5)  # todo: FIX it
+    quest.active_count_max = active_count_max
+
     active_count = 0
     # todo: реализовать метод same_as для проверки похожести квестов
     for q in agent and agent.quests or []:
@@ -55,5 +58,5 @@ states:
 
 ### специфические параметры ###
 
-active_count_max: 5
-active_count: 0
+#active_count_max: 5  # todo: Проблема в том, что дингамические поля не наследуются. Нужно это победить с переходом на mongoengine
+#active_count: 0
