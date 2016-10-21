@@ -25,9 +25,6 @@ text: |
 on_generate: |
     log("GENERATE: try - {quest}")
 
-    active_count_max = getattr(quest, 'active_count_max', 5)  # todo: FIX it
-    quest.active_count_max = active_count_max
-
     active_count = 0
     # todo: реализовать метод same_as для проверки похожести квестов
     for q in agent and agent.quests or []:
@@ -37,10 +34,11 @@ on_generate: |
 
             if q.status == 'active':
                 active_count += 1
-                if active_count > quest.active_count_max:
+                if active_count > 3:
                     raise Cancel("QUEST CANCEL: You already have more <<quest.active_count_max>> copies of that quest.")
 
     quest.active_count = active_count + 1
+    quest.enter_count = 0
     log("GENERATE: done - {quest}")
 
 
@@ -49,7 +47,12 @@ states:
       parent: reg:///registry/quest_states/test/begin
 
       on_event: |
-          log("  That's not enough to finish.")
+          #log("  That's not enough to finish.")
+          if event.on_enter_npc == on_enter_npc:
+              quest.enter_count += 1
+              log("on_enter_npc # {}".format(quest.enter_count))
+              if quest.enter_count > 3:
+                  go('final')
 
 
     - id: final
