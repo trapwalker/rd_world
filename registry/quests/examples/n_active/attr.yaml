@@ -25,7 +25,6 @@ text: |
 on_generate: |
     log("GENERATE: try - {quest}")
 
-    active_count = 0
     # todo: реализовать метод same_as для проверки похожести квестов
     for q in agent and agent.quests or []:
         if q.parent == quest.parent:
@@ -33,12 +32,8 @@ on_generate: |
                 raise Cancel("QUEST CANCEL: You already have that unstarted quest: {q}")
 
             if q.status == 'active':
-                active_count += 1
-                if active_count > 3:
-                    raise Cancel("QUEST CANCEL: You already have more <<quest.active_count_max>> copies of that quest.")
+                raise Cancel("QUEST CANCEL: You already have more <<quest.active_count_max>> copies of that quest.")
 
-    quest.active_count = active_count + 1
-    quest.enter_count = 0
     log("GENERATE: done - {quest}")
 
 
@@ -46,9 +41,12 @@ states:
     - id: begin
       parent: reg:///registry/quest_states/test/begin
 
+      on_enter: |
+          quest.enter_count = 0
+
       on_event: |
-          #log("  That's not enough to finish.")
-          if event.on_enter_npc == on_enter_npc:
+          log("QUEST event: {event}")
+          if isinstance(event, OnEnterNPC):
               quest.enter_count += 1
               log("on_enter_npc # {}".format(quest.enter_count))
               if quest.enter_count > 3:
@@ -58,6 +56,8 @@ states:
     - id: final
       parent: reg:///registry/quest_states/final/win
 
+      on_enter: |
+          agent.set_balance(time=event.time, delta=2000)
 
 ### специфические параметры ###
 
