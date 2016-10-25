@@ -1,0 +1,71 @@
+﻿__cls__: Quest
+doc    : Примеры квестов
+
+first_state: begin
+current_state: ~
+
+caption: Убийство
+text: |
+    Убейте кого-нибудь один раз.
+
+#    text_short = StringField(tags='client', caption=u'Короткий текст квеста', doc=u'Может строиться и меняться по шаблону')
+#    typename = StringField(tags='client', caption=u'Тип квеста', doc=u'Может быть произвольным')
+#    list_icon = StringField(tags='client', caption=u'Пиктограмма для списков', doc=u'Мальенькая картинка для отображения в списках')  # todo: use UrlField
+#    level = IntField(tags='client', caption=u'Уровень квеста', doc=u'Обычно число, но подлежит обсуждению')  # todo: обсудить
+#    starttime = DateTimeField(tags='client', caption=u'Начало выполнения', doc=u'Время старта квеста')
+#    deadline = DateTimeField(tags='client', caption=u'Срок выполнения этапа', doc=u'datetime до провала текущего этапа. Может меняться')
+
+#    hirer = UniReferenceField(tags='client', caption=u'Заказчик', doc=u'NPC-заказчик квеста')
+#    town = UniReferenceField(tags='client', caption=u'Город выдачи', doc=u'Город выдачи квеста')
+#    agent = UniReferenceField(tags='client', caption=u'Агент', doc=u'Исполнитель квеста')
+
+on_generate: |
+    log("GENERATE: try - {quest}")
+
+    # todo: реализовать метод same_as для проверки похожести квестов
+    for q in agent and agent.quests or []:
+        if q.parent == quest.parent:
+            if q.status is None:
+                raise Cancel("QUEST CANCEL: You already have that unstarted quest: {q}")
+
+            if q.status == 'active':
+                raise Cancel("QUEST CANCEL: You already have more <<quest.active_count_max>> copies of that quest.")
+
+    log("GENERATE: done - {quest}")
+
+
+states:
+    - id: begin
+      parent: reg:///registry/quest_states/test/begin
+
+      on_event: |
+          log("QUEST event: {event}")
+          if isinstance(event, OnKill):
+              go('reward')
+              
+
+    - id: reward
+      parent: reg:///registry/quest_states/test/begin
+
+      on_enter: |
+          log('Please, go to NPC ant take your money, dude')
+      
+      on_event: |
+          if isinstance(event, OnEnterNPC):
+              quest.enter_count += 1
+              log("on_enter_npc # {}".format(quest.enter_count))
+              if quest.enter_count > 3:
+                  go('final')
+
+
+    - id: final
+      parent: reg:///registry/quest_states/final/win
+
+      on_enter: |
+          log('Возьми свою награду и проваливай')
+          agent.set_balance(time=event.time, delta=2000)
+
+### специфические параметры ###
+
+#active_count_max: 5  # todo: Проблема в том, что дингамические поля не наследуются. Нужно это победить с переходом на mongoengine
+#active_count: 0
