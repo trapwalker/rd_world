@@ -39,7 +39,7 @@ states:
     - id: begin
       parent: reg:///registry/quest_states/test/begin
       on_enter: |
-        agent.add_note(
+        quest.wanted_note = agent.add_note(
             quest_uid=quest.uid,
             note_class=NPCWantedNote, 
             time=event.time, 
@@ -80,6 +80,7 @@ states:
 
       on_enter: |
           log('Возьми свою награду и проваливай')
+          agent.del_note(uid=quest.wanted_note, time=event.time)
 
 ### специфические параметры ###
 
