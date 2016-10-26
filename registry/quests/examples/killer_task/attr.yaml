@@ -33,6 +33,12 @@ on_generate: |
 
     log("GENERATE: done - {quest}")
     quest.count_to_kill = 2
+    agent.add_note(
+        note_class=NPCWantedNote, 
+        time=event.time, 
+        npc=quest.hirer, 
+        page_caption='Задание на убийство',
+    )
 
 
 states:
@@ -46,6 +52,8 @@ states:
                   quest.victims.append(event.agent)
                   if len(quest.victims) >= quest.count_to_kill:
                       go('reward')
+                  else:
+                      go('begin')
 
 
     - id: reward
