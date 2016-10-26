@@ -10,3 +10,6 @@ on_generate: |
 
     quest.gen_sign = 123
     log("GENERATE: done - {quest}")
+
+
+reward_items: []
