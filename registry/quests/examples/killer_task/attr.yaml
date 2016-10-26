@@ -33,17 +33,23 @@ on_generate: |
 
     log("GENERATE: done - {quest}")
     quest.count_to_kill = 2
-    agent.add_note(
-        note_class=NPCWantedNote, 
-        time=event.time, 
-        npc=quest.hirer, 
-        page_caption='Задание на убийство',
-    )
 
 
 states:
     - id: begin
       parent: reg:///registry/quest_states/test/begin
+      on_enter: |
+        agent.add_note(
+            note_class=NPCWantedNote, 
+            time=event.time, 
+            npc=quest.hirer, 
+            page_caption='Задание на убийство',
+        )
+        go('killing')
+              
+
+    - id: killing
+      parent: reg:///registry/quest_states/test
 
       on_event: |
           log("QUEST event: {event}")
@@ -53,7 +59,7 @@ states:
                   if len(quest.victims) >= quest.count_to_kill:
                       go('reward')
                   else:
-                      go('begin')
+                      go('killing')
 
 
     - id: reward
