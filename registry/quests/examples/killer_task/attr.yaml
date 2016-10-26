@@ -1,4 +1,4 @@
-﻿__cls__: Quest
+﻿__cls__: KillerQuest
 doc    : Примеры квестов
 
 first_state: begin
@@ -32,17 +32,36 @@ on_generate: |
                 raise Cancel("QUEST CANCEL: You already have more <<quest.active_count_max>> copies of that quest.")
 
     log("GENERATE: done - {quest}")
+    quest.count_to_kill = 2
 
 
 states:
     - id: begin
       parent: reg:///registry/quest_states/test/begin
+      on_enter: |
+        agent.add_note(
+            quest_uid=quest.uid,
+            note_class=NPCWantedNote, 
+            time=event.time, 
+            npc=quest.hirer, 
+            page_caption='Задание на убийство',
+        )
+        go('killing')
+              
+
+    - id: killing
+      parent: reg:///registry/quest_states/test
 
       on_event: |
           log("QUEST event: {event}")
           if isinstance(event, OnKill):
-              go('reward')
-              
+              if True or event.agent not in quest.victims:  # todo: параметр опциональной проверки уникальности
+                  quest.victims.append(event.agent)
+                  if len(quest.victims) >= quest.count_to_kill:
+                      go('reward')
+                  else:
+                      go('killing')
+
 
     - id: reward
       parent: reg:///registry/quest_states/test/begin

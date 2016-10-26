@@ -189,4 +189,5 @@ quests:
   - parent: reg:///registry/quests/examples/n_active
 
   - parent: reg:///registry/quests/examples/killer_task
+    __cls__: KillerQuest
 
