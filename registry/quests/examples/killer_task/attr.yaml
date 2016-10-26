@@ -52,10 +52,8 @@ states:
       
       on_event: |
           if isinstance(event, OnEnterNPC):
-              quest.enter_count += 1
-              log("on_enter_npc # {}".format(quest.enter_count))
-              if quest.enter_count > 3:
-                  go('final')
+              agent.set_balance(time=event.time, delta=2000)
+              go('final')
 
 
     - id: final
@@ -63,7 +61,6 @@ states:
 
       on_enter: |
           log('Возьми свою награду и проваливай')
-          agent.set_balance(time=event.time, delta=2000)
 
 ### специфические параметры ###
 
