@@ -1,11 +1,11 @@
 ﻿__cls__  : MapWeaponMineItem
-doc      : Мина TC6
+doc      : Мина TS/6,1
 abstract : false
 
-title       : Мина TC6
-description : Для установки необходимо активировать.
+title       : Мина TS/6,1
+description : Противотанковая мина. Производилась в Италии. Широко применялась душманами во время советско-афганской войны 1979-89 годов.
 
-base_price : 80
+base_price : 150
 stack_size : 10
 
 activate_type : self
