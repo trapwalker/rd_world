@@ -1,13 +1,13 @@
 __cls__ : MechanicItem
-doc         : Первичный вал 1
+doc      : Первичный вал
 abstract : false
 
-title       : Первичный вал 1
-description : Первичный вал 1
+title       : Первичный вал
+description : Коленчатый вал двигателя напрямую соединяется через первичный вал со вторичным валом коробки передач и присоединённым к нему карданным валом.
+
+base_price: 100
 
 inv_icon_big: static/content/items/slot_item/mechanic_items/transmission/primary_shaft/primary_shaft_1/big.png
 inv_icon_mid: static/content/items/slot_item/mechanic_items/transmission/primary_shaft/primary_shaft_1/mid.png
 inv_icon_small: static/content/items/slot_item/mechanic_items/transmission/primary_shaft/primary_shaft_1/small.png
 inv_icon_supersmall: static/content/items/slot_item/mechanic_items/transmission/primary_shaft/primary_shaft_1/supersmall.png
-
-base_price: 10

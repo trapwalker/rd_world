@@ -1,13 +1,13 @@
 __cls__ : MechanicItem
-doc         : Коробка передач 1
+doc      : Коробка передач
 abstract : false
 
-title       : Коробка передач 1
-description : Коробка передач 1
+title       : Коробка передач
+description : Агрегат различных промышленных механизмов и трансмиссий механических транспортных средств, предназначенный для изменения частоты и крутящего момента на ведущих колесах в более широких пределах, чем это может обеспечить двигатель транспортного средства.
+
+base_price: 100
 
 inv_icon_big: static/content/items/slot_item/mechanic_items/transmission/gearbox/gearbox_1/big.png
 inv_icon_mid: static/content/items/slot_item/mechanic_items/transmission/gearbox/gearbox_1/mid.png
 inv_icon_small: static/content/items/slot_item/mechanic_items/transmission/gearbox/gearbox_1/small.png
 inv_icon_supersmall: static/content/items/slot_item/mechanic_items/transmission/gearbox/gearbox_1/supersmall.png
-
-base_price: 10

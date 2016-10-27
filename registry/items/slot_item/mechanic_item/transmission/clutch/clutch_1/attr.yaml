@@ -1,13 +1,13 @@
 __cls__ : MechanicItem
-doc         : Сцепление 1
+doc      : Сцепление
 abstract : false
 
-title       : Сцепление 1
-description : Сцепление 1
+title       : Сцепление
+description : Предназначено для передачи крутящего момента, плавного переключения передач, гашения крутильных колебаний, кратковременного отсоединения трансмиссии от маховика двигателя.
+
+base_price: 100
 
 inv_icon_big: static/content/items/slot_item/mechanic_items/transmission/clutch/clutch_1/big.png
 inv_icon_mid: static/content/items/slot_item/mechanic_items/transmission/clutch/clutch_1/mid.png
 inv_icon_small: static/content/items/slot_item/mechanic_items/transmission/clutch/clutch_1/small.png
 inv_icon_supersmall: static/content/items/slot_item/mechanic_items/transmission/clutch/clutch_1/supersmall.png
-
-base_price: 10

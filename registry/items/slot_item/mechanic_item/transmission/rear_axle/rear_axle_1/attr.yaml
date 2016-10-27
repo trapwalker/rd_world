@@ -1,13 +1,13 @@
 __cls__ : MechanicItem
-doc         : Полуоси зад 1
+doc      : Полуоси (зад)
 abstract : false
 
-title       : Полуоси зад 1
-description : Полуоси зад 1
+title       : Полуоси (зад)
+description : Деталь машины, предназначенная для передачи вращающего момента и восприятия действующих сил со стороны расположенных на нём деталей и опор.
+
+base_price: 100
 
 inv_icon_big: static/content/items/slot_item/mechanic_items/transmission/rear_axle/rear_axle_1/big.png
 inv_icon_mid: static/content/items/slot_item/mechanic_items/transmission/rear_axle/rear_axle_1/mid.png
 inv_icon_small: static/content/items/slot_item/mechanic_items/transmission/rear_axle/rear_axle_1/small.png
 inv_icon_supersmall: static/content/items/slot_item/mechanic_items/transmission/rear_axle/rear_axle_1/supersmall.png
-
-base_price: 10

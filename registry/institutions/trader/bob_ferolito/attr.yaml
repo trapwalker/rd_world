@@ -77,7 +77,7 @@ items:
   - reg:///registry/items/slot_item/mechanic_item/transmission/secondary_shaft/secondary_shaft_1
   - reg:///registry/items/slot_item/mechanic_item/transmission/torque_converter/torque_converter_1
   - reg:///registry/items/slot_item/mechanic_item/transmission/transfer_case/transfer_case_1
-  
+
   # Подвеска
   - reg:///registry/items/slot_item/mechanic_item/suspension/front_coil/front_coil_1
   - reg:///registry/items/slot_item/mechanic_item/suspension/front_control_arm/front_control_arm_1
