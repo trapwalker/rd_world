@@ -203,15 +203,15 @@ quests:
       - reg:///registry/institutions/mayor/manny_askorti
     delivery_set_list:
       -
-        - item: - reg:///registry/items/slot_item/mechanic_item/cooling/add_radiator/add_radiator_1
+        - item: reg:///registry/items/slot_item/mechanic_item/cooling/add_radiator/add_radiator_1
           count: 1
-        - item: - reg:///registry/items/slot_item/tuner_item/airint/airint_001
+        - item: reg:///registry/items/slot_item/tuner_item/airint/airint_001
           count: 1
       -
-        - item: reg:///registry/items/usable/build_set/build_set_big?amount=5
+        - item: reg:///registry/items/usable/build_set/build_set_big
           count: 10
       -
         - item: reg:///registry/items/usable/tanks/tank_empty/tank_10l
           count: 2
-        - item:  reg:///registry/items/usable/tanks/tank_empty/tank_20l
+        - item: reg:///registry/items/usable/tanks/tank_empty/tank_20l
           count: 1

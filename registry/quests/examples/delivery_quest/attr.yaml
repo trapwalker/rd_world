@@ -4,9 +4,9 @@ doc    : Примеры квестов
 first_state: begin
 current_state: ~
 
-caption: Доставьте набор итемов
+caption: Доставьте предметы
 text: |
-    Убейте кого-нибудь один раз.
+    Доставьте предметы.
 
 #    text_short = StringField(tags='client', caption=u'Короткий текст квеста', doc=u'Может строиться и меняться по шаблону')
 #    typename = StringField(tags='client', caption=u'Тип квеста', doc=u'Может быть произвольным')
@@ -30,30 +30,31 @@ on_generate: |
             if q.status == 'active':
                 raise Cancel("QUEST CANCEL: You already have more <<quest.active_count_max>> copies of that quest.")
 
+    if (len(quest.recipient_list) == 0) or (len(quest.delivery_set_list) == 0):
+        raise Cancel("QUEST CANCEL: Empty recipient_list or empty delivery_set_list.")
+
+    quest.recipient = quest.recipient_list[random.randint(0, len(quest.recipient_list) - 1)]
+    quest.delivery_set = quest.delivery_set_list[random.randint(0, len(quest.delivery_set_list) - 1)]
+
     log("GENERATE: done - {quest}")
-
-    recipient = quest.recipient_list[random.randint(0, len(quest.recipient_list))]
-    delivery_set = quest.delivery_set_list[random.randint(0, len(quest.delivery_set_list))]
-
 
 
 states:
     - id: begin
       parent: reg:///registry/quest_states/test/begin
       on_enter: |
-        quest.wanted_note = agent.add_note(
-            quest_uid=quest.uid,
-            note_class=NPCWantedNote, 
-            time=event.time, 
-            npc=quest.hirer, 
-            page_caption='Задание на убийство',
-        )
-        go('killing')
-              
+          # todo: все процедуры с итемами
+          quest.delivery_note = agent.add_note(
+              quest_uid=quest.uid,
+              note_class=NPCDeliveryNote,
+              time=event.time,
+              npc=quest.recipient,
+              page_caption='Доставка',
+          )
+          go('delivery')
 
-    - id: killing
+    - id: delivery
       parent: reg:///registry/quest_states/test
-
       on_event: |
           log("QUEST event: {event}")
           if isinstance(event, OnKill):
@@ -63,7 +64,6 @@ states:
                       go('reward')
                   else:
                       go('killing')
-
 
     - id: reward
       parent: reg:///registry/quest_states/test/begin
@@ -82,7 +82,7 @@ states:
 
       on_enter: |
           log('Возьми свою награду и проваливай')
-          agent.del_note(uid=quest.wanted_note, time=event.time)
+          agent.del_note(uid=quest.delivery_note, time=event.time)
 
 ### специфические параметры ###
 
