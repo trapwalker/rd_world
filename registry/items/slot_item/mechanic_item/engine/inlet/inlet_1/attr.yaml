@@ -1,13 +1,13 @@
 __cls__ : MechanicItem
-doc         : Впуск 1
+doc         : Впускной коллектор
 abstract : false
 
-title       : Впуск 1
-description : Впуск 1
+title       : Впускной коллектор
+description : Обеспечивает равномерное распределение воздуха или рабочей смеси между цилиндрами.
+
+base_price: 100
 
 inv_icon_big: static/content/items/slot_item/mechanic_items/engine/inlet/inlet_1/big.png
 inv_icon_mid: static/content/items/slot_item/mechanic_items/engine/inlet/inlet_1/mid.png
 inv_icon_small: static/content/items/slot_item/mechanic_items/engine/inlet/inlet_1/small.png
 inv_icon_supersmall: static/content/items/slot_item/mechanic_items/engine/inlet/inlet_1/supersmall.png
-
-base_price: 10

@@ -1,12 +1,13 @@
 __cls__ : MechanicItem
-doc    : Воздушный фильтр 1
+doc    : Воздушный фильтр
 abstract : false
 
-description: Воздушный фильтр 1
+title: Воздушный фильтр
+description: Элемент воздухоочистителя, который служит для фильтрования воздуха, подаваемого системами вентиляции и кондиционирования.
+
+base_price: 100
+
 inv_icon_big: static/content/items/slot_item/mechanic_items/engine/air_filter/air_filter_1/big.png
 inv_icon_mid: static/content/items/slot_item/mechanic_items/engine/air_filter/air_filter_1/mid.png
 inv_icon_small: static/content/items/slot_item/mechanic_items/engine/air_filter/air_filter_1/small.png
 inv_icon_supersmall: static/content/items/slot_item/mechanic_items/engine/air_filter/air_filter_1/supersmall.png
-title: Воздушный фильтр 1
-
-base_price: 10
