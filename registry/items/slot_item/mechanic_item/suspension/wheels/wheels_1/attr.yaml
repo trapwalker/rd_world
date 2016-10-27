@@ -1,12 +1,13 @@
 __cls__ : MechanicItem
-doc    : Колесо 1
+doc    : Колесо
 abstract : false
 
-description: Колесо 1
+title: Колесо
+description: Неотъемлемая часть автомобиля. Совместно с шиной представляет собой движитель колёсного транспортного средства.
+
+base_price: 100
+
 inv_icon_big: static/content/items/slot_item/mechanic_items/suspension/wheels/wheels_1/big.png
 inv_icon_mid: static/content/items/slot_item/mechanic_items/suspension/wheels/wheels_1/mid.png
 inv_icon_small: static/content/items/slot_item/mechanic_items/suspension/wheels/wheels_1/small.png
 inv_icon_supersmall: static/content/items/slot_item/mechanic_items/suspension/wheels/wheels_1/supersmall.png
-title: Колесо 1
-
-base_price: 10

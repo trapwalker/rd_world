@@ -1,12 +1,13 @@
 __cls__ : MechanicItem
-doc    : Задний амортизатор 1
+doc    : Амортизатор (зад)
 abstract : false
 
-description: Задний амортизатор 1
+title: Амортизатор (зад)
+description: Устройство для гашения колебаний и поглощения толчков и ударов подвижных элементов, а также корпуса самого транспортного средства, посредством превращения механической энергии движения в тепловую.
+
+base_price: 100
+
 inv_icon_big: static/content/items/slot_item/mechanic_items/suspension/rear_shock_absorber/rear_shock_absorber_1/big.png
 inv_icon_mid: static/content/items/slot_item/mechanic_items/suspension/rear_shock_absorber/rear_shock_absorber_1/mid.png
 inv_icon_small: static/content/items/slot_item/mechanic_items/suspension/rear_shock_absorber/rear_shock_absorber_1/small.png
 inv_icon_supersmall: static/content/items/slot_item/mechanic_items/suspension/rear_shock_absorber/rear_shock_absorber_1/supersmall.png
-title: Задний амортизатор 1
-
-base_price: 10

@@ -1,12 +1,13 @@
 __cls__ : MechanicItem
-doc    : Передние пружины 1
+doc    : Пружины (перед)
 abstract : false
 
-description: Передние пружины 1
+title: Пружины (перед)
+description: Упругая часть подвески автомобиля, которая обеспечивает кузову нужную высоту, ограждает автомобиль от неровностей дороги, улучшает комфорт и грузоподъемность машины.
+
+base_price: 100
+
 inv_icon_big: static/content/items/slot_item/mechanic_items/suspension/front_coil/front_coil_1/big.png
 inv_icon_mid: static/content/items/slot_item/mechanic_items/suspension/front_coil/front_coil_1/mid.png
 inv_icon_small: static/content/items/slot_item/mechanic_items/suspension/front_coil/front_coil_1/small.png
 inv_icon_supersmall: static/content/items/slot_item/mechanic_items/suspension/front_coil/front_coil_1/supersmall.png
-title: Передние пружины 1
-
-base_price: 10
