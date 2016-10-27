@@ -1,12 +1,13 @@
 __cls__ : MechanicItem
-doc    : Передние колодки 1
+doc    : Тормозные колодки (перед)
 abstract : false
 
-description: Передние колодки 1
+title: Тормозные колодки (перед)
+description: Создают тормозное ускорение, за счёт взаимодействия с поверхностью катания колеса или тормозного диска и преобразования силы нажатия в тормозной момент.
+
+base_price: 100
+
 inv_icon_big: static/content/items/slot_item/mechanic_items/brake/front_brake_pads/front_brake_pads_1/big.png
 inv_icon_mid: static/content/items/slot_item/mechanic_items/brake/front_brake_pads/front_brake_pads_1/mid.png
 inv_icon_small: static/content/items/slot_item/mechanic_items/brake/front_brake_pads/front_brake_pads_1/small.png
 inv_icon_supersmall: static/content/items/slot_item/mechanic_items/brake/front_brake_pads/front_brake_pads_1/supersmall.png
-title: Передние колодки 1
-
-base_price: 10

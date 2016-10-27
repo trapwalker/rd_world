@@ -1,12 +1,13 @@
 __cls__ : MechanicItem
-doc    : АБС 1
+doc    : Антиблокировочная система
 abstract : false
 
-description: АБС 1
+title: Антиблокировочная система
+description: Система, предотвращающая блокировку колёс транспортного средства при торможении.
+
+base_price: 100
+
 inv_icon_big: static/content/items/slot_item/mechanic_items/brake/abs/abs_1/big.png
 inv_icon_mid: static/content/items/slot_item/mechanic_items/brake/abs/abs_1/mid.png
 inv_icon_small: static/content/items/slot_item/mechanic_items/brake/abs/abs_1/small.png
 inv_icon_supersmall: static/content/items/slot_item/mechanic_items/brake/abs/abs_1/supersmall.png
-title: АБС 1
-
-base_price: 10
