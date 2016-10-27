@@ -3,9 +3,9 @@ doc      : Пустая канистра (20л)
 abstract : false
 
 title       : Пустая канистра (20л)
-description : Можно заполнить на заправочной станции.
+description : Наполняется чем-нибудь на 20 литров. Например топливом на заправочной станции.
 
-base_price : 95
+base_price : 100
 value_fuel : 20
 
 inv_icon_big   : static/content/items/usable/tanks/tank_empty/tank_20l/big.png

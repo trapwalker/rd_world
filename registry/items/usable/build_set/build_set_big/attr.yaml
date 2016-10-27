@@ -1,12 +1,12 @@
 __cls__  : BuildSet
-doc      : Ремкомплект (Большой)
+doc      : Ремкомплект (большой)
 abstract : false
 
-title       : Ремкомплект (Большой)
-description : Можно подлатать машину в пути.
+title       : Ремкомплект (большой)
+description : Восстановит машину из плачевного состояния.
 
-base_price   : 500
-build_points : 50
+base_price   : 600
+build_points : 75
 
 inv_icon_big   : static/content/items/usable/build_set/build_set_big/big.png
 inv_icon_mid   : static/content/items/usable/build_set/build_set_big/mid.png

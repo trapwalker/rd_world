@@ -41,13 +41,15 @@ items:
   - reg:///registry/items/usable/map_weapon/mines_effect/mine_tc6
 
   # Ремкомплекты
-  - reg:///registry/items/usable/build_set/build_set_big
-  - reg:///registry/items/usable/build_set/build_set_mid
   - reg:///registry/items/usable/build_set/build_set_small
+  - reg:///registry/items/usable/build_set/build_set_mid
+  - reg:///registry/items/usable/build_set/build_set_big
 
   # Ёмкости
   - reg:///registry/items/usable/tanks/tank_empty/tank_10l
+  - reg:///registry/items/usable/tanks/tank_full/tank_10l
   - reg:///registry/items/usable/tanks/tank_empty/tank_20l
+  - reg:///registry/items/usable/tanks/tank_full/tank_20l
 
   # Для механика
   - reg:///registry/items/slot_item/mechanic_item/engine/air_filter/air_filter_1

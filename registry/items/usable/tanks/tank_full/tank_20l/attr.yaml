@@ -3,9 +3,9 @@ doc      : Полная канистра (20л)
 abstract : false
 
 title       : Полная канистра (20л)
-description : Можно залить в бак.
+description : Хранит в себе 20 литров какой-то жидкости. Возможно топливо.
 
-base_price : 100
+base_price : 120
 value_fuel : 20
 
 inv_icon_big   : static/content/items/usable/tanks/tank_full/tank_20l/big.png
