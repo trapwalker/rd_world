@@ -20,8 +20,6 @@ text: |
 #    agent = UniReferenceField(tags='client', caption=u'Агент', doc=u'Исполнитель квеста')
 
 on_generate: |
-    log("GENERATE: try - {quest}")
-
     # todo: реализовать метод same_as для проверки похожести квестов
     for q in agent and agent.quests or []:
         if q.parent == quest.parent:
@@ -31,7 +29,6 @@ on_generate: |
             if q.status == 'active':
                 raise Cancel("QUEST CANCEL: You already have more <<quest.active_count_max>> copies of that quest.")
 
-    log("GENERATE: done - {quest}")
     quest.count_to_kill = 2
 
 

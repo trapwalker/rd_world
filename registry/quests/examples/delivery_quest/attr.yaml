@@ -20,8 +20,6 @@ text: |
 #    agent = UniReferenceField(tags='client', caption=u'Агент', doc=u'Исполнитель квеста')
 
 on_generate: |
-    log("GENERATE: try - {quest}")
-
     # todo: реализовать метод same_as для проверки похожести квестов
     for q in agent and agent.quests or []:
         if q.parent == quest.parent:
@@ -35,8 +33,6 @@ on_generate: |
 
     quest.recipient = quest.recipient_list[random.randint(0, len(quest.recipient_list) - 1)]
     quest.delivery_set = quest.delivery_set_list[random.randint(0, len(quest.delivery_set_list) - 1)]
-
-    log("GENERATE: done - {quest}")
 
 
 states:
