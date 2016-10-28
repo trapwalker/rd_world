@@ -218,6 +218,9 @@ quests:
 
   - parent: reg:///registry/quests/examples/delivery_quest
     __cls__: DeliveryQuest
+    karma_coef: 0.5
+    money_coef: 0.5
+    total_delivery_money_coef: 0.5
     recipient_list:
       - reg:///registry/institutions/hangar/jounior_clarx
       - reg:///registry/institutions/mechanic/raul_alone
@@ -232,3 +235,8 @@ quests:
       -
         - reg:///registry/items/usable/tanks/tank_empty/tank_10l
         - reg:///registry/items/usable/tanks/tank_empty/tank_20l
+    reward_items_list:
+      -
+        - reg:///registry/items/slot_item/tuner_item/airint/airint_001
+      -
+        - reg:///registry/items/usable/build_set/build_set_big?amount=8
