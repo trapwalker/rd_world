@@ -34,13 +34,17 @@ on_generate: |
     quest.recipient = quest.recipient_list[random.randint(0, len(quest.recipient_list) - 1)]
     quest.delivery_set = quest.delivery_set_list[random.randint(0, len(quest.delivery_set_list) - 1)]
 
+on_start: |
+    if not quest.give_items(items=quest.delivery_set, event=event):
+        quest.npc_replica(npc=quest.hirer, replica=u"Не хватает места в инвентаре.", event=event)
+        log("DELIVERY QUEST: User have not enough empty slot")
+        raise Cancel("QUEST CANCEL: User have not enough empty slot")
 
 states:
     - id: begin
       parent: reg:///registry/quest_states/test/begin
       on_enter: |
-          # todo: все процедуры с итемами
-          quest.delivery_note = agent.add_note(
+          quest.delivery_note_uid = agent.add_note(
               quest_uid=quest.uid,
               note_class=NPCDeliveryNote,
               time=event.time,
@@ -53,34 +57,14 @@ states:
       parent: reg:///registry/quest_states/test
       on_event: |
           log("QUEST event: {event}")
-          if isinstance(event, OnKill):
-              if True or event.agent not in quest.victims:  # todo: параметр опциональной проверки уникальности
-                  quest.victims.append(event.agent)
-                  if len(quest.victims) >= quest.count_to_kill:
-                      go('reward')
-                  else:
-                      go('killing')
-
-    - id: reward
-      parent: reg:///registry/quest_states/test/begin
-
-      on_enter: |
-          log('Please, go to NPC ant take your money, dude')
-      
-      on_event: |
-          if isinstance(event, OnEnterNPC):
-              agent.set_balance(time=event.time, delta=2000)
-              go('final')
-
+          if isinstance(event, OnNote):
+              if (event.note_uid == quest.delivery_note_uid) and (event.result == True) and quest.take_items(items=quest.delivery_set, event=event):
+                  go('final')
 
     - id: final
       parent: reg:///registry/quest_states/final/win
 
       on_enter: |
-          log('Возьми свою награду и проваливай')
-          agent.del_note(uid=quest.delivery_note, time=event.time)
-
-### специфические параметры ###
-
-#active_count_max: 5  # todo: Проблема в том, что дингамические поля не наследуются. Нужно это победить с переходом на mongoengine
-#active_count: 0
+          # todo: reward
+          agent.set_balance(time=event.time, delta=2000)
+          agent.del_note(uid=quest.delivery_note_uid, time=event.time)
