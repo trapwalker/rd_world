@@ -1,6 +1,11 @@
 ﻿__cls__: Quest
 doc    : Квесты
 
+karma_coef: 0.0
+money_coef: 0.0
+total_reward_money: 0.0
+level: 1
+
 on_generate: |
     for q in agent and agent.quests or []:
         if q.status != 'end' and q.parent == quest.parent:
