@@ -1,31 +1,31 @@
-﻿__cls__ : TunerItem
-doc     : Предметы, устанавливаемые в слоты тюнера
+﻿__cls__  : TunerItem
+doc      : Броня
 abstract : false
 
-tags    : [armor]
+tags     : [armor]
+
+title       : Броня                # Краткое название - отобразится в слоте инвентаря
+# Полное описание - отобразится в разделе описания в инвентаре
+description : С ней автомобиль выглядит серьезнее и устрашающе. В теории может улучшить защищенность автомобиля.
+
+base_price  : 1000                 # Цена
+pont_points : 50                   # Очки крутости
 
 # Картинки для представления в инвентаре
-inv_icon_big: static/content/items/slot_item/tuner_item/armor/armor_001/inventory/big.png
-inv_icon_mid: static/content/items/slot_item/tuner_item/armor/armor_001/inventory/mid.png
-inv_icon_small: static/content/items/slot_item/tuner_item/armor/armor_001/inventory/small.png
-
-title: Броня 001   # Краткое название - отобразится в слоте инвентаря
-description: Броня 001   # Полное описание - отобразится в разделе описания в инвентаре
-base_price: 100   # Цена
-
-pont_points: 50
-
+inv_icon_big   : static/content/items/slot_item/tuner_item/armor/armor_001/inventory/big.png
+inv_icon_mid   : static/content/items/slot_item/tuner_item/armor/armor_001/inventory/mid.png
+inv_icon_small : static/content/items/slot_item/tuner_item/armor/armor_001/inventory/small.png
 
 # Картинки для представления у тюнера, установленные на машине
 images:
   - car: reg:///registry/mobiles/cars/middle/offroad/defender      # реестровая ссылка на машинку, для которой подходит данный итем
-    top: ~                                                        # описание вида сверху (картинка и позиция)
-    side:                                                         # описание вида сбоку (картинка и позиция)
+    top: ~                                                         # описание вида сверху (картинка и позиция)
+    side:                                                          # описание вида сбоку (картинка и позиция)
         link: static/content/items/slot_item/tuner_item/armor/armor_001/defender/side.png   # ссылка на картику для вида сбоку
-        z_index: 1                                                # позиция: -1 или 1
+        z_index: 1                                                 # позиция: -1 или 1
     
   - car: reg:///registry/mobiles/cars/middle/cars/dodge_challenger # реестровая ссылка на машинку, для которой подходит данный итем
-    top: ~                                                        # описание вида сверху (картинка и позиция)
-    side:                                                         # описание вида сбоку (картинка и позиция)
-        link: static/content/items/slot_item/tuner_item/armor/armor_001/challenger/side.png   # ссылка на картику для вида сбоку
-        z_index: 1                                                # позиция: -1 или 1
+    top: ~                                                         # описание вида сверху (картинка и позиция)
+    side:                                                          # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/armor/armor_001/challenger/side.png # ссылка на картику для вида сбоку
+        z_index: 1                                                 # позиция: -1 или 1
