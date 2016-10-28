@@ -1,19 +1,20 @@
 ﻿__cls__  : TunerItem
-doc      : Предметы, устанавливаемые в слоты тюнера
+doc      : Шноркель (сложный)
 abstract : false
 
-tags    : [shnork]
+tags     : [shnork]
 
-title       : Shnork 002   # Краткое название - отобразится в слоте инвентаря
-description : Shnork 002   # Полное описание - отобразится в разделе описания в инвентаре
-base_price  : 10           # Цена
+title       : Шноркель (сложный)   # Краткое название - отобразится в слоте инвентаря
+# Полное описание - отобразится в разделе описания в инвентаре
+description : Сложная конструкция делает из автомобиля подводную лодку. И это круто!
 
-pont_points : 50
+base_price  : 2000                 # Цена
+pont_points : 100                  # Очки крутости
 
 # Картинки для представления в инвентаре
-inv_icon_big: static/content/items/slot_item/tuner_item/shnork/shnork_002/inventory/big.png
-inv_icon_mid: static/content/items/slot_item/tuner_item/shnork/shnork_002/inventory/mid.png
-inv_icon_small: static/content/items/slot_item/tuner_item/shnork/shnork_002/inventory/small.png
+inv_icon_big   : static/content/items/slot_item/tuner_item/shnork/shnork_002/inventory/big.png
+inv_icon_mid   : static/content/items/slot_item/tuner_item/shnork/shnork_002/inventory/mid.png
+inv_icon_small : static/content/items/slot_item/tuner_item/shnork/shnork_002/inventory/small.png
 
 # Картинки для представления у тюнера, установленные на машине
 images:
