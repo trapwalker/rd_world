@@ -39,7 +39,19 @@ on_generate: |
     cost_delivery_items = 0
     for item in quest.delivery_set:
         cost_delivery_items += item.base_price * item.amount / item.stack_size
-    quest.total_reward_money = quest.total_delivery_money_coef * cost_delivery_items + 0.0  # todo: рассчитать копытные
+
+    if quest.recipient.hometown is None:
+        raise Cancel("QUEST CANCEL: {} hometown is None.".format(quest.recipient.hometown))
+    if quest.hirer.hometown is None:
+        raise Cancel("QUEST CANCEL: {} hometown is None.".format(quest.hirer.hometown))
+
+    distance = quest.hirer.hometown.distance_to(quest.recipient.hometown)
+    distance_cost = round(distance / 100.)  # todo: уточнить стоимость 1px пути
+
+    if distance_cost == 0:
+        log('Delivery Quest: Warning!!! Distance from hirer<{}> to recipient<{}> = {}. Change recipient'.format(quest.hirer, quest.recipient, distance))
+
+    quest.total_reward_money = quest.total_delivery_money_coef * cost_delivery_items + distance_cost
     quest.generate_reward()  # Устанавливаем награду за квест (карму, деньги и итемы)
 
 on_start: |
