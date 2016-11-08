@@ -1,0 +1,130 @@
+﻿__cls__: TeachingQuest
+doc    : Квест обучения
+
+first_state: hangar
+current_state: ~
+
+teaching_delivery_quest:
+    parent: reg:///registry/quests/examples/delivery_quest/teaching
+    __cls__: DeliveryQuest
+    hirer: reg:///registry/institutions/mayor/manny_askorti
+    karma_coef: 0.5
+    money_coef: 0.5
+    total_delivery_money_coef: 0.5
+    recipient_list:
+      - reg:///registry/institutions/barman/al_dufo
+    delivery_set_list:
+      -
+        - reg:///registry/items/usable/build_set/build_set_big?amount=10
+    reward_items_list:
+      -
+        - reg:///registry/items/usable/build_set/build_set_big?amount=8
+
+
+caption: Обучение
+text: |
+    Обучитесь.
+
+on_generate: |
+    # todo: реализовать метод same_as для проверки похожести квестов
+    for q in agent and agent.quests or []:
+        if q.parent == quest.parent:
+            raise Cancel("QUEST CANCEL: You already have that unstarted quest: {q}")
+
+on_start: |
+    pass
+
+states:
+    - id: hangar
+      parent: reg:///registry/quest_states/test/begin
+      on_enter: |
+          quest.current_note_uid = agent.add_note(
+              quest_uid=quest.uid,
+              note_class=HangarTeachingNote,
+              time=event.time,
+          )
+      on_event: |
+          if isinstance(event, OnBuyCar):
+              agent.del_note(uid=quest.current_note_uid, time=event.time)
+              go('armorer')
+
+    - id: nukoil
+      parent: reg:///registry/quest_states/test/begin
+      on_enter: |
+          quest.current_note_uid = agent.add_note(
+              quest_uid=quest.uid,
+              note_class=NukoilTeachingNote,
+              time=event.time,
+          )
+      on_event: |
+          if isinstance(event, OnGasStationFuel):
+              agent.del_note(uid=quest.current_note_uid, time=event.time)
+              go('trader')
+
+    - id: trader
+      parent: reg:///registry/quest_states/test/begin
+      on_enter: |
+          quest.current_note_uid = agent.add_note(
+              quest_uid=quest.uid,
+              note_class=TraderTeachingNote,
+              time=event.time,
+          )
+      on_event: |
+          if isinstance(event, OnTraderTransaction):
+              agent.del_note(uid=quest.current_note_uid, time=event.time)
+              go('armorer')
+
+    - id: armorer
+      parent: reg:///registry/quest_states/test/begin
+      on_enter: |
+          quest.current_note_uid = agent.add_note(
+              quest_uid=quest.uid,
+              note_class=ArmorerTeachingNote,
+              time=event.time,
+          )
+      on_event: |
+          if isinstance(event, OnArmorerTransaction):
+              agent.del_note(uid=quest.current_note_uid, time=event.time)
+              # сгенерировать квест у мера и запомнить его uid
+              qq = quest.teaching_delivery_quest.instantiate(abstract=False)
+              qq.agent = agent
+              if qq.generate(event=event):
+                  agent.add_quest(quest=qq, time=event.time)
+                  quest.current_quest_delivery_uid = qq.uid
+                  go('mayor')
+              else:
+                  log('Teaching Quest not generate!')
+
+    - id: mayor
+      parent: reg:///registry/quest_states/test/begin
+      on_enter: |
+          quest.current_note_uid = agent.add_note(
+              quest_uid=quest.uid,
+              note_class=GetQuestTeachingNote,
+              time=event.time,
+              target_quest_uid=quest.current_quest_delivery_uid,
+          )
+      on_event: |
+          if isinstance(event, OnQuestChange):
+              qq = agent.get_quest(uid=quest.current_quest_delivery_uid)
+              if qq.status == 'active':
+                  agent.del_note(uid=quest.current_note_uid, time=event.time)
+                  go('journal')
+
+    - id: journal
+      parent: reg:///registry/quest_states/test/begin
+      on_enter: |
+          quest.current_note_uid = agent.add_note(
+              quest_uid=quest.uid,
+              note_class=JournalTeachingNote,
+              time=event.time,
+          )
+      on_event: |
+          if isinstance(event, OnNote):
+              if event.note_uid == quest.current_note_uid:
+                  agent.del_note(uid=quest.current_note_uid, time=event.time)
+                  go('final')
+
+
+    - id: final
+      parent: reg:///registry/quest_states/final/win
