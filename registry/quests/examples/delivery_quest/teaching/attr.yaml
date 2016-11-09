@@ -18,6 +18,3 @@ text: |
 #    hirer = UniReferenceField(tags='client', caption=u'Заказчик', doc=u'NPC-заказчик квеста')
 #    town = UniReferenceField(tags='client', caption=u'Город выдачи', doc=u'Город выдачи квеста')
 #    agent = UniReferenceField(tags='client', caption=u'Агент', doc=u'Исполнитель квеста')
-
-on_start: |
-    pass

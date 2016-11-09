@@ -46,7 +46,7 @@ states:
       on_event: |
           if isinstance(event, OnBuyCar):
               agent.del_note(uid=quest.current_note_uid, time=event.time)
-              go('armorer')
+              go('nukoil')
 
     - id: nukoil
       parent: reg:///registry/quest_states/test/begin
@@ -123,8 +123,40 @@ states:
           if isinstance(event, OnNote):
               if event.note_uid == quest.current_note_uid:
                   agent.del_note(uid=quest.current_note_uid, time=event.time)
-                  go('final')
+                  go('mayor_quest_final')
 
+    - id: mayor_quest_final
+      parent: reg:///registry/quest_states/test/begin
+      on_enter: |
+          qq = agent.get_quest(uid=quest.current_quest_delivery_uid)
+          quest.current_note_uid = agent.add_note(
+              quest_uid=quest.uid,
+              note_class=FinishQuestTeachingNote,
+              time=event.time,
+              target_quest_uid=quest.current_quest_delivery_uid,
+              target_note_uid=qq.delivery_note_uid,
+          )
+      on_event: |
+          # todo: если квест доставки был сдан раньше, то решить что делать!
+          log('eeeend!!!!!!!!')
+          qq = agent.get_quest(uid=quest.current_quest_delivery_uid)
+          if isinstance(event, OnNote):
+              if event.note_uid == qq.delivery_note_uid:
+                  agent.del_note(uid=quest.current_note_uid, time=event.time)
+                  go('trainer')
+
+    - id: trainer
+      parent: reg:///registry/quest_states/test/begin
+      on_enter: |
+          quest.current_note_uid = agent.add_note(
+              quest_uid=quest.uid,
+              note_class=TrainerTeachingNote,
+              time=event.time,
+          )
+      on_event: |
+          if isinstance(event, OnRPGSetTransaction):
+              agent.del_note(uid=quest.current_note_uid, time=event.time)
+              go('final')
 
     - id: final
       parent: reg:///registry/quest_states/final/win
