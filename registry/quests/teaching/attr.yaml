@@ -13,6 +13,8 @@ teaching_delivery_quest:
     total_delivery_money_coef: 0.5
     recipient_list:
       - reg:///registry/institutions/barman/al_dufo
+      - reg:///registry/institutions/trader/bob_ferolito
+      - reg:///registry/institutions/trainer/blackhawk_2094
     delivery_set_list:
       -
         - reg:///registry/items/usable/build_set/build_set_big?amount=10
@@ -94,7 +96,8 @@ states:
                   quest.current_quest_delivery_uid = qq.uid
                   go('mayor')
               else:
-                  log('Teaching Quest not generate!')
+                  log('!!!!!!!!!!!!! Teaching Delivery Quest not generate !!!!!!!!!!!!')
+                  go('final')
 
     - id: mayor
       parent: reg:///registry/quest_states/test/begin
@@ -131,12 +134,25 @@ states:
       on_enter: |
           qq = agent.get_quest(uid=quest.current_quest_delivery_uid)
           if qq.status == 'active':
+
+              if qq.recipient.uri == 'reg:///registry/institutions/barman/al_dufo':
+                  target_build_name = 'bar'
+                  target_build_coord = '958,240'
+              elif qq.recipient.uri == 'reg:///registry/institutions/trader/bob_ferolito':
+                  target_build_name = 'market'
+                  target_build_coord = '958,372'
+              elif qq.recipient.uri == 'reg:///registry/institutions/trainer/blackhawk_2094':
+                  target_build_name = 'library'
+                  target_build_coord = '958,414'
+
               quest.current_note_uid = agent.add_note(
                   quest_uid=quest.uid,
                   note_class=FinishQuestTeachingNote,
                   time=event.time,
                   target_quest_uid=quest.current_quest_delivery_uid,
                   target_note_uid=qq.delivery_note_uid,
+                  target_build_name=target_build_name,
+                  target_build_coord=target_build_coord,
               )
           else:
               go('trainer')
