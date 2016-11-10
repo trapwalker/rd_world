@@ -16,10 +16,7 @@ teaching_delivery_quest:
     delivery_set_list:
       -
         - reg:///registry/items/usable/build_set/build_set_big?amount=10
-    reward_items_list:
-      -
-        - reg:///registry/items/usable/build_set/build_set_big?amount=8
-
+    reward_items_list: []  # todo: Нельзя ставить, так как придётся делать ещё одно состояние, которое не учит ничему!
 
 caption: Обучение
 text: |
@@ -29,7 +26,11 @@ on_generate: |
     # todo: реализовать метод same_as для проверки похожести квестов
     for q in agent and agent.quests or []:
         if q.parent == quest.parent:
-            raise Cancel("QUEST CANCEL: You already have that unstarted quest: {q}")
+            # todo: изменить это, сейчас квест перегенерируется у мера, если пройден
+            if q.status is None:
+                raise Cancel("QUEST CANCEL: You already have that unstarted quest: {q}")
+            if q.status == 'active':
+                raise Cancel("QUEST CANCEL: You already have more <<quest.active_count_max>> copies of that quest.")
 
 on_start: |
     pass
@@ -129,13 +130,16 @@ states:
       parent: reg:///registry/quest_states/test/begin
       on_enter: |
           qq = agent.get_quest(uid=quest.current_quest_delivery_uid)
-          quest.current_note_uid = agent.add_note(
-              quest_uid=quest.uid,
-              note_class=FinishQuestTeachingNote,
-              time=event.time,
-              target_quest_uid=quest.current_quest_delivery_uid,
-              target_note_uid=qq.delivery_note_uid,
-          )
+          if qq.status == 'active':
+              quest.current_note_uid = agent.add_note(
+                  quest_uid=quest.uid,
+                  note_class=FinishQuestTeachingNote,
+                  time=event.time,
+                  target_quest_uid=quest.current_quest_delivery_uid,
+                  target_note_uid=qq.delivery_note_uid,
+              )
+          else:
+              go('trainer')
       on_event: |
           # todo: если квест доставки был сдан раньше, то решить что делать!
           log('eeeend!!!!!!!!')
