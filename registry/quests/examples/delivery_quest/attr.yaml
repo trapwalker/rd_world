@@ -33,8 +33,8 @@ on_generate: |
     if not quest.delivery_set_list:
         raise Cancel("QUEST CANCEL: Empty empty delivery_set_list.")
 
-    quest.recipient = quest.recipient_list[random.randint(0, len(quest.recipient_list) - 1)]
-    quest.delivery_set = quest.delivery_set_list[random.randint(0, len(quest.delivery_set_list) - 1)]
+    quest.recipient = random.choice(quest.recipient_list)
+    quest.delivery_set = random.choice(quest.delivery_set_list)
 
     cost_delivery_items = 0
     for item in quest.delivery_set:
