@@ -3,6 +3,8 @@ title    : Junior_Clarks
 photo    : "static/content/institutions/hangar/jounior_clarx/jounior_clarx.png"
 abstract : false
 
+hometown: reg:///registry/poi/locations/towns/prior
+
 car_list:
   - reg:///registry/mobiles/cars/middle/sports/delorean_dmc12
   - reg:///registry/mobiles/cars/middle/offroad/defender

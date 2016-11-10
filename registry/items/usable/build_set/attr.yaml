@@ -1,6 +1,6 @@
 ﻿__cls__ : BuildSet
 doc    : Ремонтные комплекты
 
-stack_size: 5
+stack_size: 10
 amount: 5
 activate_type: self

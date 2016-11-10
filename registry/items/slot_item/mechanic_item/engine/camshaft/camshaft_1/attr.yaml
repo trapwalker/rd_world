@@ -1,12 +1,13 @@
 __cls__ : MechanicItem
-doc    : Распредвал 1
+doc    : Распределительный вал
 abstract : false
 
-description: Распредвал 1
+title: Распределительный вал
+description: Вал двигателя внутреннего сгорания, управляющий открытием и закрытием клапанов двигателя.
+
+base_price: 100
+
 inv_icon_big: static/content/items/slot_item/mechanic_items/engine/camshaft/camshaft_1/big.png
 inv_icon_mid: static/content/items/slot_item/mechanic_items/engine/camshaft/camshaft_1/mid.png
 inv_icon_small: static/content/items/slot_item/mechanic_items/engine/camshaft/camshaft_1/small.png
 inv_icon_supersmall: static/content/items/slot_item/mechanic_items/engine/camshaft/camshaft_1/supersmall.png
-title: Распредвал 1
-
-base_price: 10

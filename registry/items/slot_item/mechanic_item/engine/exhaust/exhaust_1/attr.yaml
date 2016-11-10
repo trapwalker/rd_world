@@ -1,12 +1,13 @@
 __cls__ : MechanicItem
-doc    : Выпуск 1
+doc    : Выпускной коллектор
 abstract : false
 
-description: Выпуск 1
+title: Выпускной коллектор
+description: Выпускной коллектор предназначен для сбора выхлопных газов с нескольких цилиндров в одну трубу.
+
+base_price: 100
+
 inv_icon_big: static/content/items/slot_item/mechanic_items/engine/exhaust/exhaust_1/big.png
 inv_icon_mid: static/content/items/slot_item/mechanic_items/engine/exhaust/exhaust_1/mid.png
 inv_icon_small: static/content/items/slot_item/mechanic_items/engine/exhaust/exhaust_1/small.png
 inv_icon_supersmall: static/content/items/slot_item/mechanic_items/engine/exhaust/exhaust_1/supersmall.png
-title: Выпуск 1
-
-base_price: 10

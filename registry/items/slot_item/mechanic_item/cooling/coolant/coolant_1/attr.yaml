@@ -1,12 +1,13 @@
 __cls__ : MechanicItem
-doc    : Охлаждающая жидкость 1
+doc    : Охлаждающая жидкость
 abstract : false
 
-description: Охлаждающая жидкость 1
+title: Охлаждающая жидкость
+description: Состоит из воды, антифриза, специальных присадок, предохраняющих систему охлаждения двигателя внутреннего сгорания от коррозионных процессов и саму жидкость от термохимического разрушения, и смазывающих материалов для насоса системы охлаждения.
+
+base_price: 100
+
 inv_icon_big: static/content/items/slot_item/mechanic_items/cooling/coolant/coolant_1/big.png
 inv_icon_mid: static/content/items/slot_item/mechanic_items/cooling/coolant/coolant_1/mid.png
 inv_icon_small: static/content/items/slot_item/mechanic_items/cooling/coolant/coolant_1/small.png
 inv_icon_supersmall: static/content/items/slot_item/mechanic_items/cooling/coolant/coolant_1/supersmall.png
-title: Охлаждающая жидкость 1
-
-base_price: 10

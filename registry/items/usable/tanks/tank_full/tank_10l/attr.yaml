@@ -3,9 +3,9 @@ doc      : Полная канистра (10л)
 abstract : false
 
 title       : Полная канистра (10л)
-description : Можно залить в бак.
+description : Хранит в себе 10 литров какой-то жидкости. Возможно топливо.
 
-base_price : 50
+base_price : 60
 value_fuel : 10
 
 inv_icon_big   : static/content/items/usable/tanks/tank_full/tank_10l/big.png

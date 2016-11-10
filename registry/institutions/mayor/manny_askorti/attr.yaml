@@ -2,3 +2,9 @@
 title: Manny_Ascorti
 photo: "static/content/institutions/mayor/manny_askorti/manny_askorti.png"
 abstract: false
+
+hometown: reg:///registry/poi/locations/towns/prior
+
+quests:
+    - parent: reg:///registry/quests/teaching
+      __cls__: TeachingQuest

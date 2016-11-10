@@ -1,13 +1,13 @@
 __cls__ : MechanicItem
-doc         : Дифференциал перед 1
+doc      : Дифференциал (перед)
 abstract : false
 
-title       : Дифференциал перед 1
-description : Дифференциал перед 1
+title       : Дифференциал (перед)
+description : Механизм в составе трансмиссий машин по передаче мощности посредством вращения с одновременным делением единого потока мощности на два дифференциально связанных или суммированием двух независимых потоков мощности в один.
+
+base_price: 10
 
 inv_icon_big: static/content/items/slot_item/mechanic_items/transmission/front_differential/front_differential_1/big.png
 inv_icon_mid: static/content/items/slot_item/mechanic_items/transmission/front_differential/front_differential_1/mid.png
 inv_icon_small: static/content/items/slot_item/mechanic_items/transmission/front_differential/front_differential_1/small.png
 inv_icon_supersmall: static/content/items/slot_item/mechanic_items/transmission/front_differential/front_differential_1/supersmall.png
-
-base_price: 10

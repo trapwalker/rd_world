@@ -1,12 +1,13 @@
 __cls__  : MechanicItem
-doc      : Помпа 1
+doc      : Помпа
 abstract : false
 
-description: Помпа 1
+title: Помпа
+description: Гидравлическая машина, преобразующая механическую энергию приводного двигателя в энергию потока жидкости, служащую для перемещения жидкости.
+
+base_price: 100
+
 inv_icon_big: static/content/items/slot_item/mechanic_items/cooling/pump/pump_1/big.png
 inv_icon_mid: static/content/items/slot_item/mechanic_items/cooling/pump/pump_1/mid.png
 inv_icon_small: static/content/items/slot_item/mechanic_items/cooling/pump/pump_1/small.png
 inv_icon_supersmall: static/content/items/slot_item/mechanic_items/cooling/pump/pump_1/supersmall.png
-title: Помпа 1
-
-base_price: 10

@@ -1,19 +1,20 @@
 ﻿__cls__  : TunerItem
-doc      : Предметы, устанавливаемые в слоты тюнера
+doc      : Подножки
 abstract : false
 
 tags     : [step]
 
-title       : Step 002   # Краткое название - отобразится в слоте инвентаря
-description : Step 002   # Полное описание - отобразится в разделе описания в инвентаре
-base_price  : 10         # Цена
+title       : Подножки   # Краткое название - отобразится в слоте инвентаря
+# Полное описание - отобразится в разделе описания в инвентаре
+description : Закрывают ржавеющее днище кузова и позволяют счищать грязь с сапогов.
 
-pont_points : 50
+base_price  : 1000       # Цена
+pont_points : 50         # Очки крутости
 
 # Картинки для представления в инвентаре
-inv_icon_big: static/content/items/slot_item/tuner_item/step/step_002/inventory/big.png
-inv_icon_mid: static/content/items/slot_item/tuner_item/step/step_002/inventory/mid.png
-inv_icon_small: static/content/items/slot_item/tuner_item/step/step_002/inventory/small.png
+inv_icon_big   : static/content/items/slot_item/tuner_item/step/step_002/inventory/big.png
+inv_icon_mid   : static/content/items/slot_item/tuner_item/step/step_002/inventory/mid.png
+inv_icon_small : static/content/items/slot_item/tuner_item/step/step_002/inventory/small.png
 
 # Картинки для представления у тюнера, установленные на машине
 images:

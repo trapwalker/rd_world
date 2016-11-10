@@ -1,8 +1,8 @@
 ﻿__cls__  : MapWeaponRocketItem
 abstract : false
 
-title       : Ракета Kornet
-description : Ракета Kornet
+title       : ПТРК "Корнет"
+description : Противотанковый ракетный комплекс разработан на базе комплекса танкового управляемого вооружения «Рефлекс». Предназначен для поражения танков и других бронированных целей.
 
 base_price : 200
 stack_size : 10

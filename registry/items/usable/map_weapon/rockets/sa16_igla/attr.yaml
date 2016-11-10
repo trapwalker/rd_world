@@ -1,10 +1,10 @@
 ﻿__cls__  : MapWeaponRocketItem
 abstract : false
 
-title       : Ракета SA16 Igla
-description : Ракета SA16 Igla
+title       : ПЗРК "Игла"
+description : Советский переносной зенитный ракетный комплекс, предназначенный для поражения низколетящих воздушных целей на встречных и догонных курсах в условиях воздействия ложных тепловых помех.
 
-base_price : 200
+base_price : 100
 stack_size : 10
 
 activate_type : self

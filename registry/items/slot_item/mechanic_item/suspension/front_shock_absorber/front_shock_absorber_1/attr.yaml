@@ -1,12 +1,13 @@
 __cls__ : MechanicItem
-doc    : Передний амортизатор 1
+doc    : Амортизатор (перед)
 abstract : false
 
-description: Передний амортизатор 1
+title: Амортизатор (перед)
+description: Устройство для гашения колебаний и поглощения толчков и ударов подвижных элементов, а также корпуса самого транспортного средства, посредством превращения механической энергии движения в тепловую.
+
+base_price: 100
+
 inv_icon_big: static/content/items/slot_item/mechanic_items/suspension/front_shock_absorber/front_shock_absorber_1/big.png
 inv_icon_mid: static/content/items/slot_item/mechanic_items/suspension/front_shock_absorber/front_shock_absorber_1/mid.png
 inv_icon_small: static/content/items/slot_item/mechanic_items/suspension/front_shock_absorber/front_shock_absorber_1/small.png
 inv_icon_supersmall: static/content/items/slot_item/mechanic_items/suspension/front_shock_absorber/front_shock_absorber_1/supersmall.png
-title: Передний амортизатор 1
-
-base_price: 10

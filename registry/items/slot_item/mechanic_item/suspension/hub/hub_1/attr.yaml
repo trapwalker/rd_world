@@ -1,12 +1,13 @@
 __cls__ : MechanicItem
-doc    : Ступица 1
+doc    : Ступица
 abstract : false
 
-description: Ступица 1
+title: Ступица
+description: Центральная часть детали с отверстием (маховика, шкива, зубчатого колеса и т. д.) для насадки на вал или ось.
+
+base_price: 100
+
 inv_icon_big: static/content/items/slot_item/mechanic_items/suspension/hub/hub_1/big.png
 inv_icon_mid: static/content/items/slot_item/mechanic_items/suspension/hub/hub_1/mid.png
 inv_icon_small: static/content/items/slot_item/mechanic_items/suspension/hub/hub_1/small.png
 inv_icon_supersmall: static/content/items/slot_item/mechanic_items/suspension/hub/hub_1/supersmall.png
-title: Ступица 1
-
-base_price: 10

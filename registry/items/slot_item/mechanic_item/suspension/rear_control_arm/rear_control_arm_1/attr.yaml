@@ -1,12 +1,13 @@
 __cls__ : MechanicItem
-doc    : Задний рычаг 1
+doc    : Рычаг (зад)
 abstract : false
 
-description: Задний рычаг 1
+title: Рычаг (зад)
+description: Служит для обеспечения ограниченного движения в вертикальной плоскости колеса, которое он удерживает на месте, не позволяя ему откатиться в сторону.
+
+base_price: 100
+
 inv_icon_big: static/content/items/slot_item/mechanic_items/suspension/rear_control_arm/rear_control_arm_1/big.png
 inv_icon_mid: static/content/items/slot_item/mechanic_items/suspension/rear_control_arm/rear_control_arm_1/mid.png
 inv_icon_small: static/content/items/slot_item/mechanic_items/suspension/rear_control_arm/rear_control_arm_1/small.png
 inv_icon_supersmall: static/content/items/slot_item/mechanic_items/suspension/rear_control_arm/rear_control_arm_1/supersmall.png
-title: Задний рычаг 1
-
-base_price: 10
