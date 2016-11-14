@@ -69,7 +69,7 @@ states:
               note_class=NPCDeliveryNote,
               time=event.time,
               npc=quest.recipient,
-              page_caption='Доставка',
+              page_caption=quest.caption,
           )
           go('delivery')
 
