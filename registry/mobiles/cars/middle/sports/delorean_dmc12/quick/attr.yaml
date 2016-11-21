@@ -14,13 +14,12 @@ inventory:                       # При заполнении инвентар�
        - reg:///registry/items/usable/ammo/762x51bb?amount=100
        - reg:///registry/items/usable/ammo/762x51bb?amount=100
        - reg:///registry/items/usable/ammo/762x51bb?amount=100
-       - reg:///registry/items/usable/ammo/762x51bb?amount=100
-       - reg:///registry/items/usable/ammo/762x51bb?amount=100
-       - reg:///registry/items/usable/ammo/762x51bb?amount=100
+       - reg:///registry/items/usable/ammo/30bb?amount=10
+       - reg:///registry/items/usable/ammo/30bb?amount=10
+       - reg:///registry/items/usable/ammo/30bb?amount=10
        - reg:///registry/items/usable/build_set/build_set_big?amount=10
        - reg:///registry/items/usable/tanks/tank_full/tank_10l/quick?amount=1
        - reg:///registry/items/usable/tanks/tank_full/tank_10l/quick?amount=1
-
 
 # Quick Consumer Panel
 quick_panel:
@@ -71,7 +70,7 @@ mechanic_suspension:    static/content/mechanic_systems/suspensions/suspension_1
 # Ниже перечислены все слоты доступные на автомобиле. В название содержится расположение слота.
 # Сейчас до 9 слотов на автомобиль: slot_(Front, Center, Back)(Left, Center, Right).
 # Все слоты закоментированы, кроме переднего центрального.
-slot_FC: reg:///registry/items/slot_item/weapons/machine_guns/m134_minigun?direction=F
+slot_FC: reg:///registry/items/slot_item/weapons/cannons/m242?direction=F
 slot_CC: reg:///registry/items/slot_item/weapons/machine_guns/m134_minigun?direction=R
 slot_BC: reg:///registry/items/slot_item/weapons/machine_guns/m134_minigun?direction=L
 
