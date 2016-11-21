@@ -4,4 +4,4 @@ abstract: false
 
 position: {x: 12517000, y: 27028000}
 p_observing_range: 20000
-name: Prior
+radio_point_name: Prior
