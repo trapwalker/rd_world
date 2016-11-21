@@ -1,0 +1,7 @@
+﻿__cls__: RadioTower
+doc    : QuickGameRadioTower
+abstract: false
+
+p_observing_range: 20000
+radio_point_name: QuickGameRadioPoint
+parent: reg:///registry/poi/radio_towers

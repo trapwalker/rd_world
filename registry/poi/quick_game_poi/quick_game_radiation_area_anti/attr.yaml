@@ -1,0 +1,9 @@
+﻿__cls__: RadiationArea
+doc    : Зона Радиации Бытрой игры
+abstract: false
+
+can_instantiate: False
+p_observing_range: 1000
+p_vigilance: 1
+radiation_dps : -5
+parent: reg:///registry/poi/radiation_area
