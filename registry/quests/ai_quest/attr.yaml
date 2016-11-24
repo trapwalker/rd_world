@@ -1,7 +1,7 @@
-﻿__cls__: Quest
+﻿__cls__: AIQuickQuest
 doc    : Квест обучения
 
-first_state: start
+first_state: patrol
 current_state: ~
 
 caption: AI Quest
@@ -10,23 +10,41 @@ text: Ai Quest
 on_generate: |
     # todo: реализовать метод same_as для проверки похожести квестов
     for q in agent and agent.quests or []:
-        if q.parent == quest.parent:
-            raise Cancel("QUEST CANCEL: You already have that quest: {q}")
+        if q.status is None:
+            raise Cancel("QUEST CANCEL: You already have that unstarted quest: {q}")
+        if q.status == 'active':
+            raise Cancel("QUEST CANCEL: You already have more <<quest.active_count_max>> copies of that quest.")
 
 on_start: |
-    pass
+    quest.current_rounte_index = 0
+    quest.fire_enable = False
 
 states:
-    - id: start
+    - id: patrol
       parent: reg:///registry/quest_states/test/begin
       on_enter: |
-          set_timer(name='test1', delay=10)
+          quest.current_rounte_index = quest._next_route_point(quest.current_rounte_index)
+          if agent._agent_model and agent._agent_model.car:
+              agent._agent_model.car.set_motion(time=event.time, cc=0.3, target_point=quest.route[quest.current_rounte_index].as_point())
+
+          set_timer(name='patrol', delay=3)
 
       on_event: |
           if isinstance(event, OnTimer):
-              if event.name == 'test1':
-                  log('OnTimer {} for {}'.format(quest, agent._agent_model.user.name))
-                  set_timer(name='test1', delay=10)
+              if event.name == 'patrol':
+                  if agent._agent_model and agent._agent_model.car:
+                      distance = quest.route[quest.current_rounte_index].as_point().distance(agent._agent_model.car.position(time=event.time))
+                      if distance < 200:
+                          go('patrol')
+                      else:
+                          set_timer(name='patrol', delay=3)
+                                            
+                      if not quest.fire_enable:
+                          quest.fire_enable = True
+                          agent._agent_model.car.fire_auto_enable(enable=True, time=event.time)
+
+          if isinstance(event, OnDie):
+              go('final')
 
     - id: final
       parent: reg:///registry/quest_states/final/win

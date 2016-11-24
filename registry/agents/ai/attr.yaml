@@ -4,11 +4,13 @@ doc    : Прототипы пользовательских агентов
 
 ai_quest:
     parent: reg:///registry/quests/ai_quest
-    __cls__: Quest
+    __cls__: AIQuickQuest
     hirer: ~
     karma_coef: 0.0
     money_coef: 0.0
     total_delivery_money_coef: 0.0
-
-
-
+    route:
+      - {x: 12468502, y: 26989681}
+      - {x: 12468002, y: 26989681}
+      - {x: 12468002, y: 26989000}
+      - {x: 12468502, y: 26989000}
