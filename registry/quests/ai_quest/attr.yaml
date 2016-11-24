@@ -1,0 +1,32 @@
+﻿__cls__: Quest
+doc    : Квест обучения
+
+first_state: start
+current_state: ~
+
+caption: AI Quest
+text: Ai Quest
+
+on_generate: |
+    # todo: реализовать метод same_as для проверки похожести квестов
+    for q in agent and agent.quests or []:
+        if q.parent == quest.parent:
+            raise Cancel("QUEST CANCEL: You already have that quest: {q}")
+
+on_start: |
+    pass
+
+states:
+    - id: start
+      parent: reg:///registry/quest_states/test/begin
+      on_enter: |
+          set_timer(name='test1', delay=10)
+
+      on_event: |
+          if isinstance(event, OnTimer):
+              if event.name == 'test1':
+                  log('OnTimer {} for {}'.format(quest, agent._agent_model.user.name))
+                  set_timer(name='test1', delay=10)
+
+    - id: final
+      parent: reg:///registry/quest_states/final/win
