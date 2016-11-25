@@ -16,35 +16,73 @@ on_generate: |
             raise Cancel("QUEST CANCEL: You already have more <<quest.active_count_max>> copies of that quest.")
 
 on_start: |
-    quest.current_rounte_index = 0
-    quest.fire_enable = False
+    quest.route_index = 0
+    quest.patrol_target = None
+    quest.attacke_target = None
 
 states:
     - id: patrol
       parent: reg:///registry/quest_states/test/begin
       on_enter: |
-          quest.current_rounte_index = quest._next_route_point(quest.current_rounte_index)
-          if agent._agent_model and agent._agent_model.car:
-              agent._agent_model.car.set_motion(time=event.time, cc=0.3, target_point=quest.route[quest.current_rounte_index].as_point())
-
+          quest.patrol_target = quest.get_next_route_point()
+          agent._agent_model.car.set_motion(time=event.time, cc=0.3, target_point=quest.patrol_target)
           set_timer(name='patrol', delay=3)
 
       on_event: |
           if isinstance(event, OnTimer):
               if event.name == 'patrol':
-                  if agent._agent_model and agent._agent_model.car:
-                      distance = quest.route[quest.current_rounte_index].as_point().distance(agent._agent_model.car.position(time=event.time))
-                      if distance < 200:
-                          go('patrol')
-                      else:
-                          set_timer(name='patrol', delay=3)
-                                            
-                      if not quest.fire_enable:
-                          quest.fire_enable = True
-                          agent._agent_model.car.fire_auto_enable(enable=True, time=event.time)
+                  distance = quest.patrol_target.distance(agent._agent_model.car.position(time=event.time))
+                  if distance < 200:
+                      go('patrol')
+                  else:
+                      set_timer(name='patrol', delay=3)
 
           if isinstance(event, OnDie):
               go('final')
+
+          if isinstance(event, OnAISee):
+              if agent._agent_model.is_target(target=event.obj):
+                  quest.attacke_target = event.obj
+                  go('attacke')
+
+    - id: attacke
+      parent: reg:///registry/quest_states/test/begin
+      on_enter: |
+          agent._agent_model.car.set_motion(time=event.time, cc=0.3, target_point=quest.attacke_target.position(time=event.time))
+          set_timer(name='attacke', delay=3)
+
+      on_event: |
+          if isinstance(event, OnTimer):
+              if event.name == 'attacke':
+                  car = agent._agent_model.car
+
+                  # Преследование
+                  target_pos = quest.attacke_target.position(time=event.time)
+                  target_pos = target_pos.random_gauss(target_pos, 50)
+                  car.set_motion(time=event.time, cc=0.3, target_point=target_pos)
+
+                  # Залповая стрельба
+                  for sector in car.fire_sectors:
+                      if sector.is_discharge() and sector._test_target_in_sector(target=quest.attacke_target, time=event.time):
+                          car.fire_discharge(side=sector.side, time=event.time)
+
+                  set_timer(name='attacke', delay=3)
+
+          if isinstance(event, OnDie):
+              go('final')
+
+          if isinstance(event, OnAIOut):
+              if event.obj is quest.attacke_target:
+                  quest.attacke_target = None
+                  vo_list = agent._agent_model.get_all_visible_objects()
+                  for vo in vo_list:
+                      if agent._agent_model.is_target(target=vo):
+                          quest.attacke_target = vo
+                          break
+                  if quest.attacke_target:
+                      go('attacke')
+                  else:
+                      go('patrol')
 
     - id: final
       parent: reg:///registry/quest_states/final/win
