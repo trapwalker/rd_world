@@ -32,5 +32,13 @@ role_class_order: # Порядок отображения ролевых кла�
   - reg:///registry/rpg_settings/role_class/oil_magnate
   - reg:///registry/rpg_settings/role_class/alpha_wolf
 
-quick_game_car: # Список машинок для быстрой игры
+quick_game_cars: # Список машинок для быстрой игры
   - reg:///registry/mobiles/cars/middle/sports/delorean_dmc12/quick
+
+# Боты
+quick_game_bot_count: 5 # Количество ботов в быстрой игре
+quick_game_bot_cars: # Список машинок на которых ездят боты в быстрой игре
+  - reg:///registry/mobiles/cars/middle/sports/delorean_dmc12/quick_bot
+quick_game_bot_agents: # Список агентов для ботов быстрой игры
+  - reg:///registry/agents/user/ai
+
