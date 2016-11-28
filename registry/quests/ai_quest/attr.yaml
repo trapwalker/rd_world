@@ -22,6 +22,20 @@ on_start: |
     # log('start_quest!')
 
 states:
+    - id: before_respawn
+      parent: reg:///registry/quest_states/test/begin
+      on_enter: |
+          set_timer(name='before_respawn', delay=10)
+      on_event: |
+          if isinstance(event, OnAppendCar) or (agent._agent_model.car and isinstance(event, OnTimer) and event.name == 'before_respawn'):
+              # log('on_event new car for {}'.format(agent.login))
+              quest.route_index = 0
+              quest.patrol_target = None
+              quest.attacke_target = None
+              go('patrol')
+          else:
+              set_timer(name='before_respawn', delay=10)
+
     - id: patrol
       parent: reg:///registry/quest_states/test/begin
       on_enter: |
@@ -100,20 +114,6 @@ states:
                       go('attacke')
                   else:
                       go('patrol')
-
-    - id: before_respawn
-      parent: reg:///registry/quest_states/test/begin
-      on_enter: |
-          set_timer(name='before_respawn', delay=10)
-      on_event: |
-          if isinstance(event, OnAppendCar) or (agent._agent_model.car and isinstance(event, OnTimer) and event.name == 'before_respawn'):
-              # log('on_event new car for {}'.format(agent.login))
-              quest.route_index = 0
-              quest.patrol_target = None
-              quest.attacke_target = None
-              go('patrol')
-          else:
-              set_timer(name='before_respawn', delay=10)
 
     - id: final  # Недостижимое состояние
       parent: reg:///registry/quest_states/final/win
