@@ -24,18 +24,28 @@ states:
     - id: patrol
       parent: reg:///registry/quest_states/test/begin
       on_enter: |
-          quest.patrol_target = quest.get_next_route_point()
-          agent._agent_model.car.set_motion(time=event.time, cc=0.3 + random.random() * 0.3, target_point=quest.patrol_target)
-          set_timer(name='patrol', delay=3)
+          car = agent._agent_model.car
+          if car:
+              quest.patrol_target = quest.get_next_route_point()
+              agent._agent_model.car.set_motion(time=event.time, cc=0.3 + random.random() * 0.3, target_point=quest.patrol_target)
+              set_timer(name='patrol', delay=3)
+          else:
+              log('Car for agent {} not found'.format(agent.login))
+              go('final')
 
       on_event: |
           if isinstance(event, OnTimer):
               if event.name == 'patrol':
-                  distance = quest.patrol_target.distance(agent._agent_model.car.position(time=event.time))
-                  if distance < 200:
-                      go('patrol')
+                  car = agent._agent_model.car
+                  if car:
+                      distance = quest.patrol_target.distance(agent._agent_model.car.position(time=event.time))
+                      if distance < 200:
+                          go('patrol')
+                      else:
+                          set_timer(name='patrol', delay=3)
                   else:
-                      set_timer(name='patrol', delay=3)
+                      log('Car for agent {} not found'.format(agent.login))
+                      go('final')
 
           if isinstance(event, OnDie):
               go('final')
@@ -48,25 +58,33 @@ states:
     - id: attacke
       parent: reg:///registry/quest_states/test/begin
       on_enter: |
-          agent._agent_model.car.set_motion(time=event.time, cc=0.3 + random.random() * 0.3, target_point=quest.attacke_target.position(time=event.time))
-          set_timer(name='attacke', delay=3)
+          car = agent._agent_model.car
+          if car:
+              agent._agent_model.car.set_motion(time=event.time, cc=0.3 + random.random() * 0.3, target_point=quest.attacke_target.position(time=event.time))
+              set_timer(name='attacke', delay=3)
+          else:
+              log('Car for agent {} not found'.format(agent.login))
+              go('final')
 
       on_event: |
           if isinstance(event, OnTimer):
               if event.name == 'attacke':
                   car = agent._agent_model.car
+                  if car:
+                      # Преследование
+                      target_pos = quest.attacke_target.position(time=event.time)
+                      target_pos = target_pos.random_gauss(target_pos, 50)
+                      car.set_motion(time=event.time, cc=0.3 + random.random() * 0.3, target_point=target_pos)
 
-                  # Преследование
-                  target_pos = quest.attacke_target.position(time=event.time)
-                  target_pos = target_pos.random_gauss(target_pos, 50)
-                  car.set_motion(time=event.time, cc=0.3 + random.random() * 0.3, target_point=target_pos)
+                      # Залповая стрельба
+                      for sector in car.fire_sectors:
+                          if sector.is_discharge() and sector._test_target_in_sector(target=quest.attacke_target, time=event.time):
+                              car.fire_discharge(side=sector.side, time=event.time)
 
-                  # Залповая стрельба
-                  for sector in car.fire_sectors:
-                      if sector.is_discharge() and sector._test_target_in_sector(target=quest.attacke_target, time=event.time):
-                          car.fire_discharge(side=sector.side, time=event.time)
-
-                  set_timer(name='attacke', delay=3)
+                      set_timer(name='attacke', delay=3)
+                  else:
+                      log('Car for agent {} not found'.format(agent.login))
+                      go('final')
 
           if isinstance(event, OnDie):
               go('final')

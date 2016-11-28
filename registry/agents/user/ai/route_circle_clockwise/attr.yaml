@@ -8,7 +8,6 @@ ai_quest:
     hirer: ~
     karma_coef: 0.0
     money_coef: 0.0
-    total_delivery_money_coef: 0.0
     route:
       - {x: 12468000, y: 26989000} # center
       - {x: 12467000, y: 26988000} # 10
