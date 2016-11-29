@@ -3,6 +3,7 @@ doc     : Оружие
 
 tags    : [armorer]
 
+power_penetration: 41  # Мощность оружия (пробитие)
 ammo_per_shot: 0
 ammo_per_second: 0
 

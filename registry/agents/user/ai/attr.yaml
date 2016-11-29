@@ -1,0 +1,11 @@
+﻿__cls__: AIQuickAgent
+doc    : Прототипы пользовательских агентов
+
+
+ai_quest:
+    parent: reg:///registry/quests/ai_quest
+    __cls__: AIQuickQuest
+    hirer: ~
+    karma_coef: 0.0
+    money_coef: 0.0
+    route: []
