@@ -24,4 +24,5 @@ start_perks:  # Список стартовых перков
 - reg:///registry/rpg_settings/perks/perk_passive/chipskater_1
 - reg:///registry/rpg_settings/perks/perk_passive/overdriver_1
 - reg:///registry/rpg_settings/perks/perk_passive/patcher_1
+- reg:///registry/rpg_settings/perks/perk_passive/visor_1
 start_car: ~  # Стартовая машинка для данного класса

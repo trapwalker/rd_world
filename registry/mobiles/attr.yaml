@@ -12,6 +12,8 @@ p_visibility_min      : 1
 p_visibility_max      : 1
 p_obs_range_rate_min  : 1
 p_obs_range_rate_max  : 1
+p_radiation_armor     : 0   # 0-100
+p_armor               : 0
 
 m_cc_dirt             : 0.2
 m_cc_wood             : 0.3

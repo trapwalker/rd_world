@@ -4,4 +4,4 @@ abstract: false
 
 position: {x: 12467965, y: 27110275}
 p_observing_range: 20000
-name: FarRadioPoint
+radio_point_name: FarRadioPoint
