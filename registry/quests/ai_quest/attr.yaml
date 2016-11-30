@@ -86,7 +86,7 @@ states:
               if car:
                   # Преследование
                   target_pos = quest.attacke_target.position(time=event.time)
-                  target_pos = target_pos.random_gauss(target_pos, 50)
+                  target_pos = target_pos.random_point(target_pos, 50)
                   car.set_motion(time=event.time, cc=0.3 + random.random() * 0.3, target_point=target_pos)
 
                   # Залповая стрельба
