@@ -29,10 +29,14 @@ states:
               note_class=CruiseSpeedTeachingMapNote,
               time=event.time,
           )
+          if agent._agent_model:
+              agent._agent_model.armory_shield_on(event)
       on_event: |
           if isinstance(event, OnNote) and (event.note_uid == quest.current_note_uid):
               agent.del_note(uid=quest.current_note_uid, time=event.time)
               go('cruise_zone')
+          if isinstance(event, OnMakeDmg) and agent._agent_model:
+              agent._agent_model.armory_shield_off(event)
 
     - id: cruise_zone
       parent: reg:///registry/quest_states/test/begin
@@ -42,10 +46,14 @@ states:
               note_class=CruiseZoneTeachingMapNote,
               time=event.time,
           )
+          if agent._agent_model:
+              agent._agent_model.armory_shield_on(event)
       on_event: |
           if isinstance(event, OnNote) and (event.note_uid == quest.current_note_uid):
               agent.del_note(uid=quest.current_note_uid, time=event.time)
               go('cruise_speed_control')
+          if isinstance(event, OnMakeDmg) and agent._agent_model:
+              agent._agent_model.armory_shield_off(event)
 
     - id: cruise_speed_control
       parent: reg:///registry/quest_states/test/begin
@@ -55,10 +63,14 @@ states:
               note_class=CruiseSpeedControlTeachingMapNote,
               time=event.time,
           )
+          if agent._agent_model:
+              agent._agent_model.armory_shield_on(event)
       on_event: |
           if isinstance(event, OnNote) and (event.note_uid == quest.current_note_uid):
               agent.del_note(uid=quest.current_note_uid, time=event.time)
               go('cruise_speed_btn')
+          if isinstance(event, OnMakeDmg) and agent._agent_model:
+              agent._agent_model.armory_shield_off(event)
 
     - id: cruise_speed_btn
       parent: reg:///registry/quest_states/test/begin
@@ -68,10 +80,14 @@ states:
               note_class=CruiseSpeedBtnTeachingMapNote,
               time=event.time,
           )
+          if agent._agent_model:
+              agent._agent_model.armory_shield_on(event)
       on_event: |
           if isinstance(event, OnNote) and (event.note_uid == quest.current_note_uid):
               agent.del_note(uid=quest.current_note_uid, time=event.time)
               go('driving_control')
+          if isinstance(event, OnMakeDmg) and agent._agent_model:
+              agent._agent_model.armory_shield_off(event)
 
     - id: driving_control
       parent: reg:///registry/quest_states/test/begin
@@ -83,6 +99,8 @@ states:
           )
           # Таймер по которому мы будем порверять поехал ли игрок
           set_timer(name='wait_motion', delay=2)
+          if agent._agent_model:
+              agent._agent_model.armory_shield_on(event)
       on_event: |
           if isinstance(event, OnTimer):
               if event.name == 'wait_motion':
@@ -98,6 +116,8 @@ states:
                       agent._agent_model.car.set_motion(time=event.time, cc=0.0)
                   agent.del_note(uid=quest.current_note_uid, time=event.time)
                   go('cruise_radial')
+          if isinstance(event, OnMakeDmg) and agent._agent_model:
+              agent._agent_model.armory_shield_off(event)
 
     - id: cruise_radial
       parent: reg:///registry/quest_states/test/begin
@@ -107,10 +127,14 @@ states:
               note_class=CruiseRadialTeachingMapNote,
               time=event.time,
           )
+          if agent._agent_model:
+              agent._agent_model.armory_shield_on(event)
       on_event: |
           if isinstance(event, OnNote) and (event.note_uid == quest.current_note_uid):
               agent.del_note(uid=quest.current_note_uid, time=event.time)
               go('zoom_slider')
+          if isinstance(event, OnMakeDmg) and agent._agent_model:
+              agent._agent_model.armory_shield_off(event)
 
     - id: zoom_slider
       parent: reg:///registry/quest_states/test/begin
@@ -120,10 +144,14 @@ states:
               note_class=ZoomSliderTeachingMapNote,
               time=event.time,
           )
+          if agent._agent_model:
+              agent._agent_model.armory_shield_on(event)
       on_event: |
           if isinstance(event, OnNote) and (event.note_uid == quest.current_note_uid):
               agent.del_note(uid=quest.current_note_uid, time=event.time)
               go('discharge_shooting')
+          if isinstance(event, OnMakeDmg) and agent._agent_model:
+              agent._agent_model.armory_shield_off(event)
 
     - id: discharge_shooting
       parent: reg:///registry/quest_states/test/begin
@@ -133,10 +161,14 @@ states:
               note_class=DischargeShootingTeachingMapNote,
               time=event.time,
           )
+          if agent._agent_model:
+              agent._agent_model.armory_shield_on(event)
       on_event: |
           if isinstance(event, OnNote) and (event.note_uid == quest.current_note_uid):
               agent.del_note(uid=quest.current_note_uid, time=event.time)
               go('auto_shooting')
+          if isinstance(event, OnMakeDmg) and agent._agent_model:
+              agent._agent_model.armory_shield_off(event)
 
     - id: auto_shooting
       parent: reg:///registry/quest_states/test/begin
@@ -146,10 +178,15 @@ states:
               note_class=AutoShootingTeachingMapNote,
               time=event.time,
           )
+          if agent._agent_model:
+              agent._agent_model.armory_shield_on(event)
       on_event: |
           if isinstance(event, OnNote) and (event.note_uid == quest.current_note_uid):
               agent.del_note(uid=quest.current_note_uid, time=event.time)
               go('try_kill')
+          if isinstance(event, OnMakeDmg) and agent._agent_model:
+              agent._agent_model.armory_shield_off(event)
+
     - id: try_kill
       parent: reg:///registry/quest_states/test/begin
       on_enter: |
@@ -158,9 +195,17 @@ states:
               note_class=TryKillTeachingMapNote,
               time=event.time,
           )
+          if agent._agent_model:
+              agent._agent_model.armory_shield_off(event)
+          set_timer(name='shield_off', delay=2)
       on_event: |
           if isinstance(event, OnMakeDmg):
               agent.del_note(uid=quest.current_note_uid, time=event.time)
               go('final')
+          # Нужно выключать щит, если он перешёл в это состояние без машинки
+          set_timer(name='shield_off', delay=2)
+          if isinstance(event, OnTimer) and event.name == 'shield_off' and agent._agent_model:
+              agent._agent_model.armory_shield_off(event)
+
     - id: final
       parent: reg:///registry/quest_states/final/win
