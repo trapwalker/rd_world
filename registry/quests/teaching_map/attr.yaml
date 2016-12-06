@@ -55,7 +55,10 @@ states:
       on_event: |
           if isinstance(event, OnNote) and (event.note_uid == quest.current_note_uid):
               agent.del_note(uid=quest.current_note_uid, time=event.time)
-              go('cruise_speed_control')
+              if event.result:
+                  go('cruise_speed_control')
+              else:
+                  go('cruise_speed')
           if isinstance(event, OnMakeDmg) and agent._agent_model:
               agent._agent_model.armory_shield_off(event)
 
@@ -74,7 +77,10 @@ states:
       on_event: |
           if isinstance(event, OnNote) and (event.note_uid == quest.current_note_uid):
               agent.del_note(uid=quest.current_note_uid, time=event.time)
-              go('cruise_speed_btn')
+              if event.result:
+                  go('cruise_speed_btn')
+              else:
+                  go('cruise_zone')
           if isinstance(event, OnMakeDmg) and agent._agent_model:
               agent._agent_model.armory_shield_off(event)
 
@@ -93,7 +99,10 @@ states:
       on_event: |
           if isinstance(event, OnNote) and (event.note_uid == quest.current_note_uid):
               agent.del_note(uid=quest.current_note_uid, time=event.time)
-              go('driving_control')
+              if event.result:
+                  go('driving_control')
+              else:
+                  go('cruise_speed_control')
           if isinstance(event, OnMakeDmg) and agent._agent_model:
               agent._agent_model.armory_shield_off(event)
 
@@ -123,6 +132,9 @@ states:
               if event.name == 'end_motion':
                   agent.del_note(uid=quest.current_note_uid, time=event.time)
                   go('cruise_radial')
+          if isinstance(event, OnNote) and (event.note_uid == quest.current_note_uid) and not event.result:
+              agent.del_note(uid=quest.current_note_uid, time=event.time)
+              go('cruise_speed_btn')
           if isinstance(event, OnMakeDmg) and agent._agent_model:
               agent._agent_model.armory_shield_off(event)
 
@@ -141,7 +153,10 @@ states:
       on_event: |
           if isinstance(event, OnNote) and (event.note_uid == quest.current_note_uid):
               agent.del_note(uid=quest.current_note_uid, time=event.time)
-              go('zoom_slider')
+              if event.result:
+                  go('zoom_slider')
+              else:
+                  go('driving_control')
           if isinstance(event, OnMakeDmg) and agent._agent_model:
               agent._agent_model.armory_shield_off(event)
 
@@ -160,7 +175,11 @@ states:
       on_event: |
           if isinstance(event, OnNote) and (event.note_uid == quest.current_note_uid):
               agent.del_note(uid=quest.current_note_uid, time=event.time)
-              go('discharge_shooting')
+              if event.result:
+                  go('discharge_shooting')
+              else:
+                  go('cruise_radial')
+
           if isinstance(event, OnMakeDmg) and agent._agent_model:
               agent._agent_model.armory_shield_off(event)
 
@@ -179,7 +198,10 @@ states:
       on_event: |
           if isinstance(event, OnNote) and (event.note_uid == quest.current_note_uid):
               agent.del_note(uid=quest.current_note_uid, time=event.time)
-              go('auto_shooting')
+              if event.result:
+                  go('auto_shooting')
+              else:
+                  go('zoom_slider')
           if isinstance(event, OnMakeDmg) and agent._agent_model:
               agent._agent_model.armory_shield_off(event)
 
@@ -199,7 +221,11 @@ states:
       on_event: |
           if isinstance(event, OnNote) and (event.note_uid == quest.current_note_uid):
               agent.del_note(uid=quest.current_note_uid, time=event.time)
-              go('try_kill')
+              if event.result:
+                  go('try_kill')
+              else:
+                  go('discharge_shooting')
+
           if isinstance(event, OnMakeDmg) and agent._agent_model:
               agent._agent_model.armory_shield_off(event)
 
@@ -225,6 +251,9 @@ states:
               set_timer(name='shield_off', delay=2)
               if agent._agent_model:
                   agent._agent_model.armory_shield_off(event)
+          if isinstance(event, OnNote) and (event.note_uid == quest.current_note_uid) and not event.result:
+              agent.del_note(uid=quest.current_note_uid, time=event.time)
+              go('auto_shooting')
 
     - id: final
       parent: reg:///registry/quest_states/final/win
