@@ -40,6 +40,9 @@ states:
           if isinstance(event, OnMakeDmg) and agent._agent_model:
               agent._agent_model.armory_shield_off(event)
 
+          if isinstance(event, OnDie) and agent._agent_model:
+              agent._agent_model.init_example_car_teaching(time=event.time)
+
     - id: cruise_zone
       parent: reg:///registry/quest_states/test/begin
       on_enter: |
@@ -61,6 +64,9 @@ states:
                   go('cruise_speed')
           if isinstance(event, OnMakeDmg) and agent._agent_model:
               agent._agent_model.armory_shield_off(event)
+
+          if isinstance(event, OnDie) and agent._agent_model:
+              agent._agent_model.init_example_car_teaching(time=event.time)
 
     - id: cruise_speed_control
       parent: reg:///registry/quest_states/test/begin
@@ -84,6 +90,9 @@ states:
           if isinstance(event, OnMakeDmg) and agent._agent_model:
               agent._agent_model.armory_shield_off(event)
 
+          if isinstance(event, OnDie) and agent._agent_model:
+              agent._agent_model.init_example_car_teaching(time=event.time)
+
     - id: cruise_speed_btn
       parent: reg:///registry/quest_states/test/begin
       on_enter: |
@@ -105,6 +114,9 @@ states:
                   go('cruise_speed_control')
           if isinstance(event, OnMakeDmg) and agent._agent_model:
               agent._agent_model.armory_shield_off(event)
+
+          if isinstance(event, OnDie) and agent._agent_model:
+              agent._agent_model.init_example_car_teaching(time=event.time)
 
     - id: driving_control
       parent: reg:///registry/quest_states/test/begin
@@ -138,6 +150,9 @@ states:
           if isinstance(event, OnMakeDmg) and agent._agent_model:
               agent._agent_model.armory_shield_off(event)
 
+          if isinstance(event, OnDie) and agent._agent_model:
+              agent._agent_model.init_example_car_teaching(time=event.time)
+
     - id: cruise_radial
       parent: reg:///registry/quest_states/test/begin
       on_enter: |
@@ -159,6 +174,9 @@ states:
                   go('driving_control')
           if isinstance(event, OnMakeDmg) and agent._agent_model:
               agent._agent_model.armory_shield_off(event)
+
+          if isinstance(event, OnDie) and agent._agent_model:
+              agent._agent_model.init_example_car_teaching(time=event.time)
 
     - id: zoom_slider
       parent: reg:///registry/quest_states/test/begin
@@ -183,6 +201,9 @@ states:
           if isinstance(event, OnMakeDmg) and agent._agent_model:
               agent._agent_model.armory_shield_off(event)
 
+          if isinstance(event, OnDie) and agent._agent_model:
+              agent._agent_model.init_example_car_teaching(time=event.time)
+
     - id: discharge_shooting
       parent: reg:///registry/quest_states/test/begin
       on_enter: |
@@ -204,6 +225,9 @@ states:
                   go('zoom_slider')
           if isinstance(event, OnMakeDmg) and agent._agent_model:
               agent._agent_model.armory_shield_off(event)
+
+          if isinstance(event, OnDie) and agent._agent_model:
+              agent._agent_model.init_example_car_teaching(time=event.time)
 
     - id: auto_shooting
       parent: reg:///registry/quest_states/test/begin
@@ -229,6 +253,9 @@ states:
           if isinstance(event, OnMakeDmg) and agent._agent_model:
               agent._agent_model.armory_shield_off(event)
 
+          if isinstance(event, OnDie) and agent._agent_model:
+              agent._agent_model.init_example_car_teaching(time=event.time)
+
     - id: try_kill
       parent: reg:///registry/quest_states/test/begin
       on_enter: |
@@ -245,17 +272,54 @@ states:
               agent.del_note(uid=quest.current_note_uid, time=event.time)
               if agent._agent_model:
                   agent._agent_model.armory_shield_off(event)
-              go('final')
+              go('try_game')
           # Нужно выключать щит, если он перешёл в состояние без машинки или появился в нём с новой машинкой
-          if isinstance(event, OnTimer) and event.name == 'shield_off':
+          if isinstance(event, OnTimer) and event.name == 'shield_off' and agent._agent_model:
+              agent._agent_model.armory_shield_off(event)
+          if isinstance(event, OnAppendCar):
               set_timer(name='shield_off', delay=2)
-              if agent._agent_model:
-                  agent._agent_model.armory_shield_off(event)
+
           if isinstance(event, OnNote) and (event.note_uid == quest.current_note_uid) and not event.result:
               agent.del_note(uid=quest.current_note_uid, time=event.time)
               go('auto_shooting')
+
+          if isinstance(event, OnDie) and agent._agent_model:
+              agent._agent_model.init_example_car_teaching(time=event.time)
+
+    - id: try_game
+      parent: reg:///registry/quest_states/test/begin
+      on_enter: |
+          quest.current_note_uid = agent.add_note(
+              quest_uid=quest.uid,
+              note_class=TryGameTeachingMapNote,
+              time=event.time,
+          )
+          if agent._agent_model and agent._agent_model.car:  # Принудительная остановка (пока читает окно, чтобы не уехал)
+                      agent._agent_model.car.set_motion(time=event.time, cc=0.0)
+          set_timer(name='shield_off_game', delay=2)
+      on_event: |
+          # Нужно выключать щит, если он перешёл в состояние без машинки или появился в нём с новой машинкой
+          if isinstance(event, OnTimer) and event.name == 'shield_off_game' and agent._agent_model:
+              agent._agent_model.armory_shield_off(event)
+          if isinstance(event, OnAppendCar):
+              set_timer(name='shield_off', delay=2)
+
+          # Если игрок умер, то отправить ему новую ноту.
+          if isinstance(event, OnDie):
+              agent.del_note(uid=quest.current_note_uid, time=event.time)
+              go('try_game')
+
+          # Обработка результатов Ноты игрока при завершении основной части обучения
+          if isinstance(event, OnNote) and (event.note_uid == quest.current_note_uid):
+              if event.result:  # Если игрок в ноте выбирает "Завершить обучение"
+                 # go('final')
+                 log('Go FINAL !!!')
+              else:  # Если игрок в ноте выбирает "продолжить", то выдать ему машинку, если нужно!
+                 if agent._agent_model:
+                    agent._agent_model.init_example_car_teaching(time=event.time)
 
     - id: final
       parent: reg:///registry/quest_states/final/win
       on_enter: |
           log('Teaching Map Quest Done for {}'.format(agent))
+          # todo: Отправить специальный мессадж, который перенапрвит игрока на основной игровой сервер
