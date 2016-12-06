@@ -31,6 +31,8 @@ states:
           )
           if agent._agent_model:
               agent._agent_model.armory_shield_on(event)
+          if agent._agent_model and agent._agent_model.car:  # Принудительная остановка (пока читает окно, чтобы не уехал)
+                      agent._agent_model.car.set_motion(time=event.time, cc=0.0)
       on_event: |
           if isinstance(event, OnNote) and (event.note_uid == quest.current_note_uid):
               agent.del_note(uid=quest.current_note_uid, time=event.time)
@@ -48,6 +50,8 @@ states:
           )
           if agent._agent_model:
               agent._agent_model.armory_shield_on(event)
+          if agent._agent_model and agent._agent_model.car:  # Принудительная остановка (пока читает окно, чтобы не уехал)
+                      agent._agent_model.car.set_motion(time=event.time, cc=0.0)
       on_event: |
           if isinstance(event, OnNote) and (event.note_uid == quest.current_note_uid):
               agent.del_note(uid=quest.current_note_uid, time=event.time)
@@ -65,6 +69,8 @@ states:
           )
           if agent._agent_model:
               agent._agent_model.armory_shield_on(event)
+          if agent._agent_model and agent._agent_model.car:  # Принудительная остановка (пока читает окно, чтобы не уехал)
+                      agent._agent_model.car.set_motion(time=event.time, cc=0.0)
       on_event: |
           if isinstance(event, OnNote) and (event.note_uid == quest.current_note_uid):
               agent.del_note(uid=quest.current_note_uid, time=event.time)
@@ -82,6 +88,8 @@ states:
           )
           if agent._agent_model:
               agent._agent_model.armory_shield_on(event)
+          if agent._agent_model and agent._agent_model.car:  # Принудительная остановка (пока читает окно, чтобы не уехал)
+                      agent._agent_model.car.set_motion(time=event.time, cc=0.0)
       on_event: |
           if isinstance(event, OnNote) and (event.note_uid == quest.current_note_uid):
               agent.del_note(uid=quest.current_note_uid, time=event.time)
@@ -101,6 +109,8 @@ states:
           set_timer(name='wait_motion', delay=2)
           if agent._agent_model:
               agent._agent_model.armory_shield_on(event)
+          if agent._agent_model and agent._agent_model.car:  # Принудительная остановка (пока читает окно, чтобы не уехал)
+                      agent._agent_model.car.set_motion(time=event.time, cc=0.0)
       on_event: |
           if isinstance(event, OnTimer):
               if event.name == 'wait_motion':
@@ -111,9 +121,6 @@ states:
                       # Продолжаем ждать пока игрок поедет
                       set_timer(name='wait_motion', delay=2)
               if event.name == 'end_motion':
-                  # Принудительно остановиьт игрока
-                  if agent._agent_model and agent._agent_model.car:
-                      agent._agent_model.car.set_motion(time=event.time, cc=0.0)
                   agent.del_note(uid=quest.current_note_uid, time=event.time)
                   go('cruise_radial')
           if isinstance(event, OnMakeDmg) and agent._agent_model:
@@ -129,6 +136,8 @@ states:
           )
           if agent._agent_model:
               agent._agent_model.armory_shield_on(event)
+          if agent._agent_model and agent._agent_model.car:  # Принудительная остановка (пока читает окно, чтобы не уехал)
+                      agent._agent_model.car.set_motion(time=event.time, cc=0.0)
       on_event: |
           if isinstance(event, OnNote) and (event.note_uid == quest.current_note_uid):
               agent.del_note(uid=quest.current_note_uid, time=event.time)
@@ -146,6 +155,8 @@ states:
           )
           if agent._agent_model:
               agent._agent_model.armory_shield_on(event)
+          if agent._agent_model and agent._agent_model.car:  # Принудительная остановка (пока читает окно, чтобы не уехал)
+                      agent._agent_model.car.set_motion(time=event.time, cc=0.0)
       on_event: |
           if isinstance(event, OnNote) and (event.note_uid == quest.current_note_uid):
               agent.del_note(uid=quest.current_note_uid, time=event.time)
@@ -163,6 +174,8 @@ states:
           )
           if agent._agent_model:
               agent._agent_model.armory_shield_on(event)
+          if agent._agent_model and agent._agent_model.car:  # Принудительная остановка (пока читает окно, чтобы не уехал)
+                      agent._agent_model.car.set_motion(time=event.time, cc=0.0)
       on_event: |
           if isinstance(event, OnNote) and (event.note_uid == quest.current_note_uid):
               agent.del_note(uid=quest.current_note_uid, time=event.time)
@@ -180,6 +193,9 @@ states:
           )
           if agent._agent_model:
               agent._agent_model.armory_shield_on(event)
+
+          if agent._agent_model and agent._agent_model.car:  # Принудительная остановка (пока читает окно, чтобы не уехал)
+                      agent._agent_model.car.set_motion(time=event.time, cc=0.0)
       on_event: |
           if isinstance(event, OnNote) and (event.note_uid == quest.current_note_uid):
               agent.del_note(uid=quest.current_note_uid, time=event.time)
@@ -195,17 +211,22 @@ states:
               note_class=TryKillTeachingMapNote,
               time=event.time,
           )
-          if agent._agent_model:
-              agent._agent_model.armory_shield_off(event)
-          set_timer(name='shield_off', delay=2)
+          if agent._agent_model and agent._agent_model.car:  # Принудительная остановка (пока читает окно, чтобы не уехал)
+                      agent._agent_model.car.set_motion(time=event.time, cc=0.0)
+          set_timer(name='shield_off', delay=5)
       on_event: |
           if isinstance(event, OnMakeDmg):
               agent.del_note(uid=quest.current_note_uid, time=event.time)
+              if agent._agent_model:
+                  agent._agent_model.armory_shield_off(event)
               go('final')
-          # Нужно выключать щит, если он перешёл в это состояние без машинки
-          set_timer(name='shield_off', delay=2)
-          if isinstance(event, OnTimer) and event.name == 'shield_off' and agent._agent_model:
-              agent._agent_model.armory_shield_off(event)
+          # Нужно выключать щит, если он перешёл в состояние без машинки или появился в нём с новой машинкой
+          if isinstance(event, OnTimer) and event.name == 'shield_off':
+              set_timer(name='shield_off', delay=2)
+              if agent._agent_model:
+                  agent._agent_model.armory_shield_off(event)
 
     - id: final
       parent: reg:///registry/quest_states/final/win
+      on_enter: |
+          log('Teaching Map Quest Done for {}'.format(agent))
