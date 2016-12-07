@@ -180,3 +180,9 @@ states:
 
     - id: final
       parent: reg:///registry/quest_states/final/win
+      on_enter: |
+          if agent._agent_model:
+              agent._agent_model.set_teaching_state("done")
+          else:
+              log('Error!!! Agent model not found: {}'.format(agent))
+          log('Teaching Quest Done for {}'.format(agent))

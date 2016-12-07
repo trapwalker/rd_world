@@ -312,8 +312,8 @@ states:
           # Обработка результатов Ноты игрока при завершении основной части обучения
           if isinstance(event, OnNote) and (event.note_uid == quest.current_note_uid):
               if event.result:  # Если игрок в ноте выбирает "Завершить обучение"
-                 # go('final')
-                 log('Go FINAL !!!')
+                 agent.del_note(uid=quest.current_note_uid, time=event.time)
+                 go('final')
               else:  # Если игрок в ноте выбирает "продолжить", то выдать ему машинку, если нужно!
                  if agent._agent_model:
                     agent._agent_model.init_example_car_teaching(time=event.time)
@@ -321,5 +321,8 @@ states:
     - id: final
       parent: reg:///registry/quest_states/final/win
       on_enter: |
+          if agent._agent_model:
+              agent._agent_model.set_teaching_state("city")
+          else:
+              log('Error!!! Agent model not found: {}'.format(agent))
           log('Teaching Map Quest Done for {}'.format(agent))
-          # todo: Отправить специальный мессадж, который перенапрвит игрока на основной игровой сервер
