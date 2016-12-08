@@ -5,6 +5,9 @@ balance: 1000
 car_list: []
 perks: []
 
+teaching_flag: False
+quick_flag: False
+
 quests_unstarted: []
 quests_active:    []
 quests_ended:     []
