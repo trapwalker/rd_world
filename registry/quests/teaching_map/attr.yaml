@@ -269,9 +269,11 @@ states:
           set_timer(name='shield_off', delay=5)
       on_event: |
           if isinstance(event, OnMakeDmg):
-              agent.del_note(uid=quest.current_note_uid, time=event.time)
               if agent._agent_model:
                   agent._agent_model.armory_shield_off(event)
+              set_timer(name='make_dmg_delay', delay=3)  # Дать возможность игроку насладиться стрельбой
+          if isinstance(event, OnTimer) and event.name == 'make_dmg_delay':
+              agent.del_note(uid=quest.current_note_uid, time=event.time)
               go('try_game')
           # Нужно выключать щит, если он перешёл в состояние без машинки или появился в нём с новой машинкой
           if isinstance(event, OnTimer) and event.name == 'shield_off' and agent._agent_model:
