@@ -18,18 +18,26 @@ inv_icon_small : static/content/items/slot_item/tuner_item/win_prot/win_prot_001
 
 # Картинки для представления у тюнера, установленные на машине
 images:
-  - car: reg:///registry/mobiles/cars/middle/offroad/defender        # реестровая ссылка на машинку, для которой подходит данный итем
-    top:                                                             # описание вида сверху (картинка и позиция)
+  - car: reg:///registry/mobiles/cars/middle/offroad/defender            # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                                 # описание вида сверху (картинка и позиция)
         link: static/content/items/slot_item/tuner_item/win_prot/win_prot_001/defender/top.png    # ссылка на картику для вида сверху
-        z_index: 1                                                   # позиция: -1 или 1
-    side:                                                            # описание вида сбоку (картинка и позиция)
+        z_index: 1                                                       # позиция: -1 или 1
+    side:                                                                # описание вида сбоку (картинка и позиция)
         link: static/content/items/slot_item/tuner_item/win_prot/win_prot_001/defender/side.png   # ссылка на картику для вида сбоку
-        z_index: 1                                                   # позиция: -1 или 1
+        z_index: 1                                                       # позиция: -1 или 1
 
-  - car: reg:///registry/mobiles/cars/middle/cars/dodge_challenger   # реестровая ссылка на машинку, для которой подходит данный итем
-    top:                                                             # описание вида сверху (картинка и позиция)
+  - car: reg:///registry/mobiles/cars/middle/cars/dodge_challenger       # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                                 # описание вида сверху (картинка и позиция)
         link: static/content/items/slot_item/tuner_item/win_prot/win_prot_001/challenger/top.png  # ссылка на картику для вида сверху
-        z_index: 1                                                   # позиция: -1 или 1
-    side:                                                            # описание вида сбоку (картинка и позиция)
+        z_index: 1                                                       # позиция: -1 или 1
+    side:                                                                # описание вида сбоку (картинка и позиция)
         link: static/content/items/slot_item/tuner_item/win_prot/win_prot_001/challenger/side.png # ссылка на картику для вида сбоку
-        z_index: 1                                                   # позиция: -1 или 1
+        z_index: 1                                                       # позиция: -1 или 1
+
+  - car: reg:///registry/mobiles/cars/middle/cars/dodge_challenger/quick # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                                 # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/win_prot/win_prot_001/challenger/top.png  # ссылка на картику для вида сверху
+        z_index: 1                                                       # позиция: -1 или 1
+    side:                                                                # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/win_prot/win_prot_001/challenger/side.png # ссылка на картику для вида сбоку
+        z_index: 1                                                       # позиция: -1 или 1
