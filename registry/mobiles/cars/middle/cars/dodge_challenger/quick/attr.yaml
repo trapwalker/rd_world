@@ -16,7 +16,10 @@ inventory:                       # При заполнении инвентар�
        - reg:///registry/items/usable/ammo/30bb?amount=10
        - reg:///registry/items/usable/ammo/30bb?amount=10
        - reg:///registry/items/usable/ammo/30bb?amount=10
+       - reg:///registry/items/usable/ammo/30bb?amount=10
        - reg:///registry/items/usable/build_set/build_set_big?amount=10
+       - reg:///registry/items/usable/tanks/tank_full/tank_10l/quick?amount=1
+       - reg:///registry/items/usable/tanks/tank_full/tank_10l/quick?amount=1
        - reg:///registry/items/usable/tanks/tank_full/tank_10l/quick?amount=1
        - reg:///registry/items/usable/tanks/tank_full/tank_10l/quick?amount=1
 
@@ -46,7 +49,7 @@ v_forward:          25           # Максимальная скорость б�
 v_backward:         -12.5        # Максимальная скорость без штрафов местности при движении назад (м/с) (0 .. max_control_speed)
 
 max_fuel:           50           # Максимальное количество топлива, объем бака (л) (>= 0)
-fuel:               10           # Текущее количество топлива (0 .. max_fuel)
+fuel:               50           # Текущее количество топлива (0 .. max_fuel)
 p_fuel_rate:        0.035        # Расход топлива, тратится только в движении (л/с) (>= 0)
 
 # Ссылка на картинку автомобиля в ангаре
