@@ -83,19 +83,19 @@ slot_BC_f: BLR_2
 
 # Настройка слотов для Тюнера
 slot_t1: ~
-slot_t13: ~
-slot_t14: ~
+slot_t13: reg:///registry/items/slot_item/tuner_item/shnork/shnork_001
+slot_t14: reg:///registry/items/slot_item/tuner_item/step/step_001
 slot_t15: ~
-slot_t17: ~
+slot_t17: reg:///registry/items/slot_item/tuner_item/win_prot/win_prot_002
 
-slot_t2: ~
-slot_t4: ~
+slot_t2: reg:///registry/items/slot_item/tuner_item/b_fender/b_fender_003
+slot_t4: reg:///registry/items/slot_item/tuner_item/f_bumper/f_bumper_001
 slot_t5: ~
 slot_t7: ~
-slot_t9: ~
+slot_t9: reg:///registry/items/slot_item/tuner_item/b_bumper/b_bumper_001
 slot_t10: ~
 slot_t11: ~
-slot_t12: ~
+slot_t12: reg:///registry/items/slot_item/tuner_item/bale/bale_002
 
 # Ссылки на иконки для инвентаря/ангара
 inv_icon_big: static/content/mobiles/cars/middle/offroad/defender/inventory/big.png

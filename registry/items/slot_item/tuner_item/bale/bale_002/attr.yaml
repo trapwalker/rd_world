@@ -18,18 +18,26 @@ inv_icon_small : static/content/items/slot_item/tuner_item/bale/bale_002/invento
 
 # Картинки для представления у тюнера, установленные на машине
 images:
-  - car: reg:///registry/mobiles/cars/middle/offroad/defender      # реестровая ссылка на машинку, для которой подходит данный итем
-    top:                                                           # описание вида сверху (картинка и позиция); не забыть поставить тильду, если нет этого вид
+  - car: reg:///registry/mobiles/cars/middle/offroad/defender       # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                            # описание вида сверху (картинка и позиция); не забыть поставить тильду, если нет этого вид
         link: static/content/items/slot_item/tuner_item/bale/bale_002/defender/top.png    # не забыть поставить тильду, если нет этого вида
-        z_index: 1                                                 # позиция: -1 или 1
-    side:                                                          # описание вида сбоку (картинка и позиция)
+        z_index: 1                                                  # позиция: -1 или 1
+    side:                                                           # описание вида сбоку (картинка и позиция)
         link: static/content/items/slot_item/tuner_item/bale/bale_002/defender/side.png   # ссылка на картику для вида сбоку
-        z_index: 1                                                 # позиция: -1 или 1
+        z_index: 1                                                  # позиция: -1 или 1
 
-  - car: reg:///registry/mobiles/cars/middle/cars/dodge_challenger # реестровая ссылка на машинку, для которой подходит данный итем
-    top:                                                           # описание вида сверху (картинка и позиция)
+  - car: reg:///registry/mobiles/cars/middle/offroad/defender/quick # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                            # описание вида сверху (картинка и позиция); не забыть поставить тильду, если нет этого вид
+        link: static/content/items/slot_item/tuner_item/bale/bale_002/defender/top.png    # не забыть поставить тильду, если нет этого вида
+        z_index: 1                                                  # позиция: -1 или 1
+    side:                                                           # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/bale/bale_002/defender/side.png   # ссылка на картику для вида сбоку
+        z_index: 1                                                  # позиция: -1 или 1
+
+  - car: reg:///registry/mobiles/cars/middle/cars/dodge_challenger  # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                            # описание вида сверху (картинка и позиция)
         link: static/content/items/slot_item/tuner_item/bale/bale_002/challenger/top.png  # не забыть поставить тильду, если нет этого вида
-        z_index: 1                                                 # позиция: -1 или 1
-    side:                                                          # описание вида сбоку (картинка и позиция)
+        z_index: 1                                                  # позиция: -1 или 1
+    side:                                                           # описание вида сбоку (картинка и позиция)
         link: static/content/items/slot_item/tuner_item/bale/bale_002/challenger/side.png # ссылка на картику для вида сбоку
-        z_index: 1                                                 # позиция: -1 или 1
+        z_index: 1                                                  # позиция: -1 или 1
