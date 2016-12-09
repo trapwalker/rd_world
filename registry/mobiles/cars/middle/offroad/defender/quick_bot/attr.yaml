@@ -12,7 +12,9 @@ inventory:                       # При заполнении инвентар�
     size: 16
     items:
        - reg:///registry/items/usable/ammo/762x51bb?amount=100
-       - reg:///registry/items/usable/ammo/30bb?amount=10
+       - reg:///registry/items/usable/ammo/23bzt?amount=10
+       - reg:///registry/items/usable/build_set/build_set_big?amount=1
+       - reg:///registry/items/usable/tanks/tank_full/tank_10l/quick?amount=1
 
 # Quick Consumer Panel
 quick_panel:
@@ -21,7 +23,7 @@ quick_panel:
   qb_3: ~
   qb_4: ~
 
-p_observing_range:     1250     #315 # Радиус обзора автомобиля (м) (>= 0)
+p_observing_range:     1150     #315 # Радиус обзора автомобиля (м) (>= 0)
 
 p_vigilance:           0        # Коэффициент зоркости (0..1)
 p_visibility_min:      0.38     # Минимальная заметность автомобиля (0..1) при 0 автомобиль невидим
@@ -40,7 +42,7 @@ v_forward:             33       # Максимальная скорость бе
 v_backward:            -20      # Максимальная скорость без штрафов местности при движении назад (м/с) (0 .. max_control_speed)
 
 max_fuel:              70       # Максимальное количество топлива, объем бака (л) (>= 0)
-fuel:                  10       # Текущее количество топлива (0 .. max_fuel)
+fuel:                  70       # Текущее количество топлива (0 .. max_fuel)
 p_fuel_rate:           0        # Расход топлива, тратится только в движении (л/с) (>= 0)
 
 # Ссылка на картинку автомобиля в ангаре
@@ -62,10 +64,10 @@ mechanic_suspension:    static/content/mechanic_systems/suspensions/suspension_1
 
 # Ниже перечислены все слоты доступные на автомобиле. В название содержится расположение слота.
 # Сейчас до 9 слотов на автомобиль: slot_(Front, Center, Back)(Left, Center, Right).
-slot_FC: reg:///registry/items/slot_item/weapons/cannons/m242?direction=F&ammo_per_shot=0
-slot_CL: reg:///registry/items/slot_item/weapons/machine_guns/m134_minigun?direction=L&ammo_per_second=0
-slot_CR: reg:///registry/items/slot_item/weapons/machine_guns/m134_minigun?direction=R&ammo_per_second=0
-slot_BC: ~
+slot_FC: reg:///registry/items/slot_item/weapons/cannons/zu23_flak?direction=F&ammo_per_shot=0
+slot_CL: reg:///registry/items/slot_item/weapons/machine_guns/dshkm?direction=L&ammo_per_second=0
+slot_CR: reg:///registry/items/slot_item/weapons/machine_guns/dshkm?direction=R&ammo_per_second=0
+slot_BC: reg:///registry/items/slot_item/weapons/machine_guns/dshkm?direction=B&ammo_per_second=0
 
 # Настройка ограничений направления оружия из слота. Значением является строка в котороую включены первые буквы
 # соответствующих направлений (Front, Back, Left, Right)
@@ -99,3 +101,9 @@ start_shield_time: 30
 
 crit_rate: 0
 crit_power: 0
+
+# Резисты эффектов зон
+r_cc_dirt:                0.80    # Резист к модификатору CC на бездорожье
+r_cc_wood:                0.80    # Резист к модификатору CC в лесу
+r_cc_slope:               0.80    # Резист к модификатору CC в горах
+r_cc_water:               0.80    # Резист к модификатору CC в воде
