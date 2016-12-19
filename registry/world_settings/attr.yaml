@@ -50,3 +50,8 @@ quick_game_bot_agents: # Список агентов для ботов быст�
   - reg:///registry/agents/user/ai/route_square
   - reg:///registry/agents/user/ai/route_circle_clockwise
   - reg:///registry/agents/user/ai/route_square_clockwise
+
+quick_game_bots_nick:
+  - Alex_059
+  - first_commander
+  - CyberMonster
