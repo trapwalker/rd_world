@@ -3,5 +3,5 @@ doc    : QuickGameRadioTower
 abstract: false
 
 p_observing_range: 20000
-radio_point_name: QuickGameRadioPoint
+radio_point_name: Radio_on_seven_hills
 parent: reg:///registry/poi/radio_towers
