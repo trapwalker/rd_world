@@ -3,7 +3,11 @@ abstract: false
 
 # Общие параметры перка
 title: Патчер                                                               # Название перка
+title__en: Patcher
+title__ru: Патчер
 description: Восстановление 2% прочности транспорта каждую минуту           # Описание перка
+description__en: Recover 2% transport strength every minute
+description__ru: Восстановление 2% прочности транспорта каждую минуту
 
 # Условия доступности перка
 driving_req:      0      # Необходимый уровень прокачки Вождения

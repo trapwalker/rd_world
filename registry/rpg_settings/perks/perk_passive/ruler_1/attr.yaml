@@ -3,7 +3,11 @@ abstract: false
 
 # Общие параметры перка
 title: Рулер                                                                             # Название перка
+title__en: Ruler
+title__ru: Рулер
 description: В пати персонажа может вступить больше на 1 игрока                          # Описание перка
+description__en: In party character can enter more by 1 player
+description__ru: В пати персонажа может вступить больше на 1 игрока
 
 # Условия доступности перка
 driving_req:      0      # Необходимый уровень прокачки Вождения
