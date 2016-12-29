@@ -3,7 +3,11 @@ abstract: false
 
 # Общие параметры перка
 title: Сталкер                                                                           # Название перка
+title__en: Stalker
+title__ru: Сталкер
 description: Уменьшение заметности персонажа на 2%                                       # Описание перка
+description__en: Decreasing visibility character by 2%
+description__ru: Уменьшение заметности персонажа на 2%
 
 # Условия доступности перка
 driving_req:      0      # Необходимый уровень прокачки Вождения

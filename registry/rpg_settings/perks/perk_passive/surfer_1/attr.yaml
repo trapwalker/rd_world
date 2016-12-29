@@ -3,7 +3,11 @@ abstract: false
 
 # Общие параметры перка
 title: Сёрфер                                                               # Название перка
+title__en: Surfer
+title__ru: Сёрфер
 description: Вхождение в повороты на скорости улучшены на 2%                # Описание перка
+description__en: Cornering at speed improved by 2% (Driving >= 10)
+description__ru: Вхождение в повороты на скорости улучшены на 2%
 
 # Условия доступности перка
 driving_req:      10     # Необходимый уровень прокачки Вождения

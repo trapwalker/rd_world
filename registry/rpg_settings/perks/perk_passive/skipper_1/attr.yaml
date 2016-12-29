@@ -3,7 +3,11 @@ abstract: false
 
 # Общие параметры перка
 title: Шкипер                                                                                # Название перка
+title_en: Skipper
+title_ru: Шкипер
 description: Доступ к коммандным квестам 2-го уровня, не взирая на отношения с квестодателем # Описание перка
+description__en: Access to group quests of 2 level regardless of the relationship with the quest giver (Leadership >= 10)
+description__ru: Доступ к коммандным квестам 2-го уровня, не взирая на отношения с квестодателем
 
 # Условия доступности перка
 driving_req:      0      # Необходимый уровень прокачки Вождения

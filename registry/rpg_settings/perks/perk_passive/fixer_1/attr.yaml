@@ -3,7 +3,11 @@ abstract: false
 
 # Общие параметры перка
 title: Фиксер                                                               # Название перка
+title__en: Fixer
+title__ru: Фиксер
 description: Снижение износа транспорта на 2%                               # Описание перка
+description__en: Reduce vechile wear by 2% (Mechanic >= 10)
+description__ru: Снижение износа транспорта на 2%
 
 # Условия доступности перка
 driving_req:      10     # Необходимый уровень прокачки Вождения

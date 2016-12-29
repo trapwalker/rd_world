@@ -3,7 +3,11 @@ abstract: false
 
 # Общие параметры перка
 title: Чипскейтер                                                           # Название перка
+title__en: Chipskater
+title__ru: Чипскейтер
 description: Снижение расхода топлива на 2%                                 # Описание перка
+description__en: Fuel savings of 2%
+description__ru: Снижение расхода топлива на 2%
 
 # Условия доступности перка
 driving_req:      0      # Необходимый уровень прокачки Вождения

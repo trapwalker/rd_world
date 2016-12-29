@@ -3,7 +3,11 @@ abstract: false
 
 # Общие параметры перка
 title: Спреер                                                               # Название перка
+title__en: Sprayer
+title__ru: Спреер
 description: +2% к повреждениям автоматическим оружием                      # Описание перка
+description__en: +2% damage with automatic weapons (Shooting >= 10)
+description__ru: +2% к повреждениям автоматическим оружием
 
 # Условия доступности перка
 driving_req:      0      # Необходимый уровень прокачки Вождения
