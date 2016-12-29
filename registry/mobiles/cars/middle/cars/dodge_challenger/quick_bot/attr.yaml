@@ -66,8 +66,8 @@ mechanic_suspension:    static/content/mechanic_systems/suspensions/suspension_1
 # Сейчас до 9 слотов на автомобиль: slot_(Front, Center, Back)(Left, Center, Right).
 # Все слоты закоментированы, кроме переднего центрального.
 slot_FC: reg:///registry/items/slot_item/weapons/cannons/m242?direction=F&ammo_per_shot=0
-slot_BR: reg:///registry/items/slot_item/weapons/machine_guns/dshkm_twin?direction=R&ammo_per_second=0
-slot_BL: reg:///registry/items/slot_item/weapons/machine_guns/dshkm_twin?direction=L&ammo_per_second=0
+slot_BR: reg:///registry/items/slot_item/weapons/machine_guns/mg15?direction=R&ammo_per_second=0
+slot_BL: reg:///registry/items/slot_item/weapons/machine_guns/mg15?direction=L&ammo_per_second=0
 
 # Настройка ограничений направления оружия из слота. Значением является строка в котороую включены первые буквы
 # соответствующих направлений (Front, Back, Left, Right)
@@ -79,15 +79,15 @@ slot_BL_f: LB_2
 # Настройка слотов для Тюнера
 slot_t1: ~
 slot_t13: ~
-slot_t14: reg:///registry/items/slot_item/tuner_item/step/step_002
+slot_t14: ~   # reg:///registry/items/slot_item/tuner_item/step/step_002
 slot_t15: ~
-slot_t17: reg:///registry/items/slot_item/tuner_item/win_prot/win_prot_001
+slot_t17: ~   # reg:///registry/items/slot_item/tuner_item/win_prot/win_prot_001
 
 slot_t2: ~
-slot_t4: reg:///registry/items/slot_item/tuner_item/f_bumper/f_bumper_002
+slot_t4: ~   # reg:///registry/items/slot_item/tuner_item/f_bumper/f_bumper_002
 slot_t5: ~
 slot_t7: ~
-slot_t9: reg:///registry/items/slot_item/tuner_item/b_bumper/b_bumper_002
+slot_t9: ~   # reg:///registry/items/slot_item/tuner_item/b_bumper/b_bumper_002
 slot_t10: ~
 slot_t11: ~
 slot_t12: ~
