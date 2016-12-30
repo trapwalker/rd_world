@@ -14,12 +14,12 @@ console_description: >
     \nВоин дорог не боится вооруженных конфликтов, не помнит своего прошлого, но знает, что ему нужно вернуть свою машину.
     Начинает игру с классовым артефактом “Куртка с одним рукавом”. Навык стрельбы прокачивается быстрее.
 console_description__en: >
-    Класс: Воин дорог.
-    \nКлассовый навык: Стрельба.
-    \nКлассовый квест: Получить уникальный суперкар.
-    \nОписание:
-    \nВоин дорог не боится вооруженных конфликтов, не помнит своего прошлого, но знает, что ему нужно вернуть свою машину.
-    Начинает игру с классовым артефактом “Куртка с одним рукавом”. Навык стрельбы прокачивается быстрее.
+    Class: Road Warrior
+    \nClass skill: Shoot
+    \nClass quest: Establish a settlement.
+    \nDescription:
+    \nThe Road Warrior is not afraid of armed conflicts, has no recollection of his past, but knows that he has to get his vehicle back.
+    He starts the game with One-Sleeved Jacket class artifact. The shooting skill is developed faster.
 console_description__ru: >
     Класс: Воин дорог.
     \nКлассовый навык: Стрельба.
