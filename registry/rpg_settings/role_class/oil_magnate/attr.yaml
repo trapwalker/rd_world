@@ -16,14 +16,14 @@ console_description: >
     Начинает игру с бонусом к стартовой сумме нукойнов и с классовым артефактом “Трость”.
     Навык торговли качается быстрее.
 console_description__en: >
-    Класс: Нефтяной магнат
-    \nКлассовый навык: Торговля
-    \nКлассовый квест: Открыть собственный магазин.
-    \nОписание:
-    \nНефтяной магнат давно понял, что топливо правит миром, и что оно не пахнет.
-    Аристократическая стать и деловая хватка однажды позволят ему войти в элиту.
-    Начинает игру с бонусом к стартовой сумме нукойнов и с классовым артефактом “Трость”.
-    Навык торговли качается быстрее.
+    Class: Oil Magnate
+    \nClass skill: Barter
+    \nClass quest: Open a shop.
+    \nDescription:
+    \nThe Oil Magnate has long understood that fuel rules the world and doesn’t smell.
+    His noble build and  business acumen will help him join the elites one day.
+    He starts the game with a bonus to the initial noocoin total and a Walking Stick class artifact
+    The trade skill is developed faster.
 console_description__ru: >
     Класс: Нефтяной магнат
     \nКлассовый навык: Торговля
