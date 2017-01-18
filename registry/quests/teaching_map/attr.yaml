@@ -271,13 +271,17 @@ states:
           if isinstance(event, OnMakeDmg):
               if agent._agent_model:
                   agent._agent_model.armory_shield_off(event)
-              set_timer(name='make_dmg_delay', delay=3)  # Дать возможность игроку насладиться стрельбой
-          if isinstance(event, OnTimer) and event.name == 'make_dmg_delay':
-              agent.del_note(uid=quest.current_note_uid, time=event.time)
+
+              # Если это не игрок из быстрой игры то дать ему пострелять какоето время, иначе закончить квест
               if agent.quick_flag:
+                  agent.del_note(uid=quest.current_note_uid, time=event.time)
                   go('final')
               else:
-                  go('try_game')
+                  set_timer(name='make_dmg_delay', delay=3)  # Дать возможность игроку насладиться стрельбой
+
+          if isinstance(event, OnTimer) and event.name == 'make_dmg_delay':
+              agent.del_note(uid=quest.current_note_uid, time=event.time)
+              go('try_game')
 
           # Нужно выключать щит, если он перешёл в состояние без машинки или появился в нём с новой машинкой
           if isinstance(event, OnTimer) and event.name == 'shield_off' and agent._agent_model:
