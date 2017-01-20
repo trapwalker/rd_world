@@ -175,4 +175,4 @@ quick_panel:
 
 
 # Длительность стартового щита (секунды)
-start_shield_time: 10
+start_shield_time: 30
