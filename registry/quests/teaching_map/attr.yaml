@@ -333,6 +333,8 @@ states:
       on_enter: |
           if agent._agent_model:
               agent._agent_model.set_teaching_state("city")
+              if agent.quick_flag:  # Обнулить время появления в игре, чтобы игроки с квестами обучения не получали преимущество
+                  agent._agent_model.time_quick_game_start = event.time
           else:
               log('Error!!! Agent model not found: {}'.format(agent))
           log('Teaching Map Quest Done for {}'.format(agent))
