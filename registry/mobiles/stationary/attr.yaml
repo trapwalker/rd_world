@@ -1,6 +1,8 @@
 ﻿__cls__ : Mobile
 doc    : Стационарные юниты
 
+inventory:
+    items: []
 
 tags: [stationary_unit]
 

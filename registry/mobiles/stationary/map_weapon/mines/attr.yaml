@@ -1,0 +1,10 @@
+﻿__cls__: MapWeaponBangMine
+doc    : Мины эффектов
+
+
+radius_damage: 50
+damage: 30
+life_time: 10
+p_vigilance : 1.0
+p_visibility_min : 0.0
+p_visibility_max : 0.0
