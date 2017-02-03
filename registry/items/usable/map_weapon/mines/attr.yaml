@@ -1,4 +1,2 @@
-﻿__cls__: MapWeaponRocketItem
+﻿__cls__: MapWeaponMineItem
 doc    : Предметы, активируя которые, пораждаются неподвижные мины на карте
-
-p_armor: 100
