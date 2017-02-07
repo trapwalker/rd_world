@@ -21,7 +21,7 @@ inv_icon_mid    : static/content/items/slot_item/weapons/mashine_guns/dshkm_twin
 inv_icon_small  : static/content/items/slot_item/weapons/mashine_guns/dshkm_twin/inventory/small.png
 
 
-animation_tracer_rate: 2
+animation_tracer_rate: 1
 weapon_animation:
  - ECanvasPointsTracerDbl1
  - ECanvasPointsTracerDbl2
