@@ -1,2 +1,7 @@
 ﻿__cls__: MachineGun
 doc    : Пулемёты
+
+animation_tracer_rate : 3
+
+weapon_animation:
+  - ECanvasPointsTracerSimple

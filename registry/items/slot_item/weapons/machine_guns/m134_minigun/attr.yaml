@@ -20,6 +20,10 @@ inv_icon_big    : static/content/items/slot_item/weapons/mashine_guns/m134_minig
 inv_icon_mid    : static/content/items/slot_item/weapons/mashine_guns/m134_minigun/inventory/mid.png
 inv_icon_small  : static/content/items/slot_item/weapons/mashine_guns/m134_minigun/inventory/small.png
 
+animation_tracer_rate : 4
+weapon_animation:
+  - ECanvasPointsTracerAnimation_1
+  - ECanvasPointsTracerAnimation_2
 
 armorer_images:
   small:

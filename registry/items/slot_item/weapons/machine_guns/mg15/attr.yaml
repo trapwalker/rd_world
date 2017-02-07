@@ -21,6 +21,10 @@ inv_icon_mid    : static/content/items/slot_item/weapons/mashine_guns/mg15/inven
 inv_icon_small  : static/content/items/slot_item/weapons/mashine_guns/mg15/inventory/small.png
 
 
+animation_tracer_rate: 2.5
+weapon_animation:
+  - ECanvasPointsTracerPNG_MG_15
+
 armorer_images:
   small:
     # Картинки для представления у оружейника (вид сбоку)
