@@ -5,16 +5,18 @@ name_car:    "Dodge (Bot)"       # Название атомобиля
 
 price:              10           # Цена у продавца (л) (>= 0)
 
-max_hp:             120          # Максимальное количество прочности (> 0)
-hp:                 120          # Текущее количество прочности (> 0)
+max_hp:             110          # Максимальное количество прочности (> 0)
+hp:                 110          # Текущее количество прочности (> 0)
 
 inventory:                       # При заполнении инвентаря необходимо учитывать его размер
     size: 14
     items:
        - reg:///registry/items/usable/ammo/762x51bb?amount=100
        - reg:///registry/items/usable/ammo/30bb?amount=10
-       - reg:///registry/items/usable/build_set/build_set_big?amount=1
+       - reg:///registry/items/usable/ammo/30bb?amount=10
+       - reg:///registry/items/usable/build_set/build_set_big?amount=2
        - reg:///registry/items/usable/tanks/tank_full/tank_10l/quick?amount=1
+       - reg:///registry/items/usable/map_weapon/mines/mine_ttt?amount=3
 
 # Quick Consumer Panel
 quick_panel:
@@ -72,7 +74,7 @@ slot_BL: reg:///registry/items/slot_item/weapons/machine_guns/mg15?direction=L&a
 # Настройка ограничений направления оружия из слота. Значением является строка в котороую включены первые буквы
 # соответствующих направлений (Front, Back, Left, Right)
 # Все слоты закоментированы, кроме переднего центрального.
-slot_FC_f: FRL_2
+slot_FC_f: FRL_4
 slot_BR_f: RB_2
 slot_BL_f: LB_2
 

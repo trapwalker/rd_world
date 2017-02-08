@@ -5,16 +5,16 @@ name_car  : "DMC (Bot)"             # Название атомобиля
 
 price     : 10                      # Цена у продавца (л) (>= 0)
 
-max_hp    : 100                     # Максимальное количество прочности (> 0)
-hp        : 100                     # Текущее количество прочности (> 0)
+max_hp    : 75                      # Максимальное количество прочности (> 0)
+hp        : 75                      # Текущее количество прочности (> 0)
 
 inventory:                          # При заполнении инвентаря необходимо учитывать его размер
     size: 12
     items:
        - reg:///registry/items/usable/ammo/762x51bb?amount=100
        - reg:///registry/items/usable/ammo/762x51bb?amount=100
-       - reg:///registry/items/usable/build_set/build_set_big?amount=1
-       - reg:///registry/items/usable/tanks/tank_full/tank_10l/quick?amount=1
+       - reg:///registry/items/usable/build_set/build_set_mid?amount=3
+       - reg:///registry/items/usable/map_weapon/mines/mine_ttt?amount=5
 
 # Quick Consumer Panel
 quick_panel:
@@ -31,19 +31,19 @@ p_visibility_max:      0.52      # Максимальная заметность
 p_obs_range_rate_min:  0.5       # Коэффициент минимального радиуса обзора автомобиля (0..1)
 p_obs_range_rate_max:  1         # Коэффициент максимального радиуса обзора автомобиля (0..1)
 
-r_min:                 5            # Минимальный радиус разворота (м) (> 0)
-ac_max:                31           # Перегрузка с которой входит в поворот автомобиль (м/c^2) (> 0)
-a_forward:             12.5         # Ускорение при езде вперед (м/c^2)
-a_backward:            -7           # Ускорение при езде назад (м/c^2)
-a_braking:             -13          # Ускорение при торможении (м/c^2)
+r_min:                 5         # Минимальный радиус разворота (м) (> 0)
+ac_max:                28.5      # Перегрузка с которой входит в поворот автомобиль (м/c^2) (> 0)
+a_forward:             12.5      # Ускорение при езде вперед (м/c^2)
+a_backward:            -7        # Ускорение при езде назад (м/c^2)
+a_braking:             -13       # Ускорение при торможении (м/c^2)
 
-max_control_speed:     66.6667      # Абсолютная максимальная скорость, скорость до которой будет размечен спидометр (м/с) (>= 0)
-v_forward:             50           # Максимальная скорость без штрафов местности при движении вперед (м/с) (0 .. max_control_speed)
-v_backward:            -25          # Максимальная скорость без штрафов местности при движении назад (м/с) (0 .. max_control_speed)
+max_control_speed:     66.6667   # Абсолютная максимальная скорость, скорость до которой будет размечен спидометр (м/с) (>= 0)
+v_forward:             50        # Максимальная скорость без штрафов местности при движении вперед (м/с) (0 .. max_control_speed)
+v_backward:            -25       # Максимальная скорость без штрафов местности при движении назад (м/с) (0 .. max_control_speed)
 
-max_fuel:              45           # Максимальное количество топлива, объем бака (л) (>= 0)
-fuel:                  45           # Текущее количество топлива (0 .. max_fuel)
-p_fuel_rate:           0            # Расход топлива, тратится только в движении (л/с) (>= 0)
+max_fuel:              45        # Максимальное количество топлива, объем бака (л) (>= 0)
+fuel:                  45        # Текущее количество топлива (0 .. max_fuel)
+p_fuel_rate:           0         # Расход топлива, тратится только в движении (л/с) (>= 0)
 
 # Ссылка на картинку автомобиля в ангаре
 hangar_car:            "static/content/mobiles/cars/middle/sports/delorean_dmc12/side.png"
@@ -56,17 +56,17 @@ armorer_sectors_svg:   static/content/mobiles/cars/armorer_sectors.svg
 tuner_car:             static/content/mobiles/cars/middle/sports/delorean_dmc12/tuner_car.html
 
 # Ссылки на верстку автомобиля у механика
-mechanic_engine:        static/content/mechanic_systems/engines/engine_1/engine.html                    # двигатель
-mechanic_transmission:  static/content/mechanic_systems/transmissions/transmission_1/transmission.html  # трансмиссия
-mechanic_brakes:        static/content/mechanic_systems/brakes/brakes_1/brakes.html                     # тормоза
-mechanic_cooling:       static/content/mechanic_systems/coolings/cooling_1/cooling.html                 # охлаждение
-mechanic_suspension:    static/content/mechanic_systems/suspensions/suspension_1/suspension.html        # подвеска
+mechanic_engine:       static/content/mechanic_systems/engines/engine_1/engine.html                    # двигатель
+mechanic_transmission: static/content/mechanic_systems/transmissions/transmission_1/transmission.html  # трансмиссия
+mechanic_brakes:       static/content/mechanic_systems/brakes/brakes_1/brakes.html                     # тормоза
+mechanic_cooling:      static/content/mechanic_systems/coolings/cooling_1/cooling.html                 # охлаждение
+mechanic_suspension:   static/content/mechanic_systems/suspensions/suspension_1/suspension.html        # подвеска
 
 # Ниже перечислены все слоты доступные на автомобиле. В название содержится расположение слота.
 # Сейчас до 9 слотов на автомобиль: slot_(Front, Center, Back)(Left, Center, Right).
-slot_FC: reg:///registry/items/slot_item/weapons/machine_guns/m134_minigun?direction=F&ammo_per_second=0
-slot_CC: reg:///registry/items/slot_item/weapons/machine_guns/m134_minigun?direction=R&ammo_per_second=0
-slot_BC: reg:///registry/items/slot_item/weapons/machine_guns/m134_minigun?direction=L&ammo_per_second=0
+slot_FC: reg:///registry/items/slot_item/weapons/machine_guns/mg15?direction=F&ammo_per_second=0
+slot_CC: reg:///registry/items/slot_item/weapons/machine_guns/dshkm_twin?direction=R&ammo_per_second=0
+slot_BC: reg:///registry/items/slot_item/weapons/machine_guns/dshkm_twin?direction=L&ammo_per_second=0
 
 # Настройка ограничений направления оружия из слота. Значением является строка в котороую включены первые буквы
 # соответствующих направлений (Front, Back, Left, Right)
