@@ -4,3 +4,5 @@ doc    : Ремонтные комплекты
 stack_size: 10
 amount: 5
 activate_type: self
+activate_time: 2.0
+activate_disable_comment: 'Полная остановка автомобиля'

@@ -2,5 +2,6 @@ __cls__ : TankFull
 doc: Полная канистра с топливом
 
 activate_type: self
+activate_time: 2.0
 
 tags: [full_fuel_tank]
