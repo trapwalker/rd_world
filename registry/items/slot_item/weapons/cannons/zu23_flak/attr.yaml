@@ -1,27 +1,29 @@
-﻿__cls__  : Cannon
-doc      : Зенитка ЗУ-23-2
-abstract : false
+﻿__cls__         : Cannon
+doc             : Зенитка ЗУ-23-2
+abstract        : false
 
 title           : Зенитка ЗУ-23-2                          # Краткое название - отобразится в слоте инвентаря
 # Полное описание - отобразится в разделе описания в инвентаре
 description     : Советская 23-мм спаренная зенитная установка, индекс по ГРАУ СССР 2А13. Принята на вооружение 22 марта 1960 года.
-base_price      : 5000                                     # Цена
 
 # Основные балансные настройки
-weight_class    : 4                                        # Класс тяжести 
-ammo            : reg:///registry/items/usable/ammo/23bzt  # Подходящие патроны
-ammo_per_shot   : -2                                       # Потребление патронов при залпе
+base_price      : 5000                                     # Цена
+weight_class    : 4                                        # Класс тяжести
+ammo            : reg:///registry/items/usable/ammo/30bb   # Подходящие патроны
+
+dmg             : 10                                       # Дамаг при залпе по вражеским целям
+area_dmg        : 5                                        # Дамаг по невидимым целям
+time_recharge   : 4                                        # Время перезарядки орудия (с)
+
 radius          : 330                                      # Дальность сектора стрельбы
 width           : 75                                       # Ширина сектора стрельбы
-dmg             : 10                                       # Дамаг при залпе по вражеским целям
-area_dmg        : 10                                       # Дамаг по невидимым целям
-time_recharge   : 4                                        # Время перезарядки орудия (с)
+
+ammo_per_shot   : -2                                       # Потребление патронов при залпе
 
 # Картинки для представления в инвентаре
 inv_icon_big    : static/content/items/slot_item/weapons/cannons/zu23_flak/inventory/big.png
 inv_icon_mid    : static/content/items/slot_item/weapons/cannons/zu23_flak/inventory/mid.png
 inv_icon_small  : static/content/items/slot_item/weapons/cannons/zu23_flak/inventory/small.png
-
 
 armorer_images:
   small:
