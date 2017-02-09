@@ -111,3 +111,11 @@ r_cc_slope                  : 0
 r_cc_water                  : 0
 r_cc_mine                   : 0
 r_cc_fuel_empty             : 0
+
+
+
+# Резисты и модификаторы для PowerUp Эффектов быстрой игры
+r_observing_range_qg_pu : 0
+m_observing_range_qg_pu : 0.5
+r_visibility_qg_pu : 0
+m_visibility_qg_pu : 0.5

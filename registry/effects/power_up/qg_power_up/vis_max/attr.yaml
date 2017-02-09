@@ -1,0 +1,8 @@
+﻿__cls__: Effect
+doc: Эффект уменьшения максимальной заметности при использовании PowerUp
+abstract: false
+
+param_name: p_visibility_max
+m_name: m_visibility_qg_pu
+r_name: r_visibility_qg_pu
+sign: -1.0

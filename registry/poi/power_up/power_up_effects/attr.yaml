@@ -1,0 +1,7 @@
+﻿__cls__: MapPowerUpEffects
+doc    : Объекты Power Up на карте
+
+model_class_name: QuickGamePowerUpEffect
+
+effect_time: 0
+effects: []

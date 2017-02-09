@@ -1,0 +1,6 @@
+﻿__cls__: MapPowerUpShield
+doc    : Объекты Power Up на карте
+
+model_class_name: QuickGamePowerUpShield
+
+duration_time: 5

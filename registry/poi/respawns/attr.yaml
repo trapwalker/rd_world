@@ -1,0 +1,9 @@
+﻿__cls__: MapRespawn
+doc    : Респавн
+
+p_observing_range: 1
+p_vigilance: 1
+
+respawn_time: 1000
+respawn_radius: 1
+respawn_objects: []

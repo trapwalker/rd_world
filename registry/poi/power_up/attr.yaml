@@ -1,0 +1,9 @@
+﻿__cls__: MapPowerUp
+doc    : Объекты Power Up на карте
+
+model_class_name: ""
+life_time : 60
+
+p_observing_range: 30
+p_vigilance: 1
+

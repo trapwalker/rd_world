@@ -1,0 +1,9 @@
+﻿__cls__: Effect
+doc: Эффект увеличения дальности видимости в 2 раза при использовании PowerUp
+abstract: false
+
+param_name: p_observing_range
+m_name: m_observing_range_qg_pu
+r_name: r_observing_range_qg_pu
+upd_method: upd_observing_range
+sign: 1.0
