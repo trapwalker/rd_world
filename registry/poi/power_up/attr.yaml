@@ -1,6 +1,7 @@
 ﻿__cls__: MapPowerUp
 doc    : Объекты Power Up на карте
 
+icon_name: ""
 model_class_name: ""
 life_time : 60
 

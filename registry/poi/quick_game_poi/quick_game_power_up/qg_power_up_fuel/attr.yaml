@@ -2,3 +2,4 @@
 doc    : Объекты Power Up на карте
 
 model_class_name: QuickGamePowerUpFullFuel
+icon_name: "icon-power-up-fuel"
