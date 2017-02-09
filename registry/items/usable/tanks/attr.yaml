@@ -2,3 +2,4 @@ __cls__: Tank
 doc    : Канистра с топливом
 
 tags: [fuel_tank]
+activate_disable_comment: 'Полная остановка автомобиля'

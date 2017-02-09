@@ -1,25 +1,34 @@
-﻿__cls__  : MachineGun
-doc      : Пулемёт M134 «Миниган»
-abstract : false
+﻿__cls__         : MachineGun
+doc             : Пулемёт M134 «Миниган»
+abstract        : false
+
 
 title           : Пулемёт M134 «Миниган»                     # Краткое название - отобразится в слоте инвентаря
 # Полное описание - отобразится в разделе описания в инвентаре
 description     : Многоствольный скорострельный пулемёт, построенный по схеме Гатлинга. Впервые был применён во время Вьетнамской войны.
-base_price      : 3000                                       # Цена
 
 # Основные балансные настройки
+base_price      : 3000                                       # Цена
 weight_class    : 2                                          # Класс тяжести
 ammo            : reg:///registry/items/usable/ammo/762x51bb # Подходящие патроны
-ammo_per_second : 4                                          # [shot/s] ~=650/60 Потребление патронов в секунду
+
+dps             : 4                                          # Дамаг в секунду по вражеским целям
+
 radius          : 100                                        # Дальность сектора стрельбы
 width           : 90                                         # Ширина сектора стрельбы
-dps             : 4                                          # Дамаг в секунду по вражеским целям
+
+ammo_per_second : 4                                          # [shot/s] ~=650/60 Потребление патронов в секунду
+
+animation_tracer_rate : 4
+
+weapon_animation:
+  - ECanvasPointsTracerAnimation_1
+  - ECanvasPointsTracerAnimation_2
 
 # Картинки для представления в инвентаре
 inv_icon_big    : static/content/items/slot_item/weapons/mashine_guns/m134_minigun/inventory/big.png
 inv_icon_mid    : static/content/items/slot_item/weapons/mashine_guns/m134_minigun/inventory/mid.png
 inv_icon_small  : static/content/items/slot_item/weapons/mashine_guns/m134_minigun/inventory/small.png
-
 
 armorer_images:
   small:

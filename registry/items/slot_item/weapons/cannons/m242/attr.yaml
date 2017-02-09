@@ -1,27 +1,29 @@
-﻿__cls__  : Cannon
-doc      : Пушка Mark 44
-abstract : false
+﻿__cls__         : Cannon
+doc             : Пушка Mark 44
+abstract        : false
 
 title           : Пушка Mark 44                            # Краткое название - отобразится в слоте инвентаря
 # Полное описание - отобразится в разделе описания в инвентаре
 description     : 30-мм автоматическая пушка. Разработана на основе 25-мм пушки M242 Bushmaster и совместима по комплектующим, обладая большей огневой мощью.
-base_price      : 3500                                     # Цена
 
 # Основные балансные настройки
-weight_class    : 4                                        # Класс тяжести 
+base_price      : 3500                                     # Цена
+weight_class    : 4                                        # Класс тяжести
 ammo            : reg:///registry/items/usable/ammo/30bb   # Подходящие патроны
-ammo_per_shot   : -1                                       # Потребление патронов при залпе
+
+dmg             : 6                                        # Дамаг при залпе по вражеским целям
+area_dmg        : 3                                        # Дамаг по невидимым целям
+time_recharge   : 10                                       # Время перезарядки орудия (с)
+
 radius          : 400                                      # Дальность сектора стрельбы
 width           : 65                                       # Ширина сектора стрельбы
-dmg             : 6                                        # Дамаг при залпе по вражеским целям
-area_dmg        : 6                                        # Дамаг по невидимым целям
-time_recharge   : 10                                       # Время перезарядки орудия (с)
+
+ammo_per_shot   : -1                                       # Потребление патронов при залпе
 
 # Картинки для представления в инвентаре
 inv_icon_big    : static/content/items/slot_item/weapons/cannons/m242/inventory/big.png
 inv_icon_mid    : static/content/items/slot_item/weapons/cannons/m242/inventory/mid.png
 inv_icon_small  : static/content/items/slot_item/weapons/cannons/m242/inventory/small.png
-
 
 armorer_images:
   small:
