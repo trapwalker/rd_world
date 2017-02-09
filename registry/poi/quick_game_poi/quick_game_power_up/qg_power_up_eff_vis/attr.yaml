@@ -3,6 +3,8 @@ doc    : Респавны быстрой игры
 
 parent: reg:///registry/poi/power_up/power_up_effects
 
+icon_name: "icon-power-up-vis"
+
 effect_time: 60
 effects:
   - reg:///registry/effects/power_up/qg_power_up/vis_min
