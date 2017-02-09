@@ -1,17 +1,16 @@
-﻿__cls__  : MapWeaponMineItem
-abstract : false
+﻿__cls__        : MapWeaponMineItem
+abstract       : false
 
-title       : Мина TS/6,1
-description : Противотанковая мина. Производилась в Италии. Широко применялась душманами во время советско-афганской войны 1979-89 годов.
+title          : Мина TS/6,1
+description    : Противотанковая мина. Производилась в Италии. Широко применялась душманами во время советско-афганской войны 1979-89 годов.
 
-base_price : 150
-stack_size : 10
+base_price     : 150
+stack_size     : 10
 
-activate_type : self
-activate_time : 10.0
-
+activate_type  : self
+activate_time  : 2.0
 inv_icon_big   : static/content/items/usable/map_weapon/mines_effect/mine_tc6/big.png
 inv_icon_mid   : static/content/items/usable/map_weapon/mines_effect/mine_tc6/mid.png
 inv_icon_small : static/content/items/usable/map_weapon/mines_effect/mine_tc6/small.png
 
-generate_obj : reg:///registry/mobiles/stationary/map_weapon/mines/mine_ttt
+generate_obj   : reg:///registry/mobiles/stationary/map_weapon/mines/mine_ttt

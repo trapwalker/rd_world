@@ -1,30 +1,34 @@
-﻿__cls__  : MachineGun
-doc      : Пулемёт ДА-2
-abstract : false
+﻿__cls__         : MachineGun
+doc             : Пулемёт ДА-2
+abstract        : false
+
 
 title           : Пулемёт ДА-2                               # Краткое название - отобразится в слоте инвентаря
 # Полное описание - отобразится в разделе описания в инвентаре
 description     : Пулемёт, разработанный В.А. Дегтярёвым, для установки на самолёты. ДА-2 устанавливался на самолёты Р-5, У-2, ТБ-3.
-base_price      : 2000                                       # Цена
 
 # Основные балансные настройки
+base_price      : 2000                                       # Цена
 weight_class    : 2                                          # Класс тяжести
 ammo            : reg:///registry/items/usable/ammo/762x51bb # Подходящие патроны
-ammo_per_second : 2                                          # [shot/s] ~=650/60 Потребление патронов в секунду
+
+dps             : 2                                          # Дамаг в секунду по вражеским целям
+
 radius          : 150                                        # Дальность сектора стрельбы
 width           : 100                                        # Ширина сектора стрельбы
-dps             : 2                                          # Дамаг в секунду по вражеским целям
+
+ammo_per_second : 2                                          # [shot/s] ~=650/60 Потребление патронов в секунду
+
+animation_tracer_rate : 1
+
+weapon_animation:
+ - ECanvasPointsTracerDbl1
+ - ECanvasPointsTracerDbl2
 
 # Картинки для представления в инвентаре
 inv_icon_big    : static/content/items/slot_item/weapons/mashine_guns/dshkm_twin/inventory/big.png
 inv_icon_mid    : static/content/items/slot_item/weapons/mashine_guns/dshkm_twin/inventory/mid.png
 inv_icon_small  : static/content/items/slot_item/weapons/mashine_guns/dshkm_twin/inventory/small.png
-
-
-animation_tracer_rate: 1
-weapon_animation:
- - ECanvasPointsTracerDbl1
- - ECanvasPointsTracerDbl2
 
 armorer_images:
   small:

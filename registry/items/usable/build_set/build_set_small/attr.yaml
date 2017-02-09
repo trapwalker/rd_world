@@ -1,12 +1,12 @@
-__cls__  : BuildSet
-doc      : Ремкомплект (малый)
-abstract : false
+__cls__        : BuildSet
+doc            : Ремкомплект (малый)
+abstract       : false
 
-title       : Ремкомплект (малый)
-description : Слегка подлатает машину в пути.
+title          : Ремкомплект (малый)
+description    : Слегка подлатает машину в пути.
 
-base_price   : 100
-build_points : 25
+base_price     : 100
+build_points   : 35
 
 inv_icon_big   : static/content/items/usable/build_set/build_set_small/big.png
 inv_icon_mid   : static/content/items/usable/build_set/build_set_small/mid.png

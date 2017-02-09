@@ -1,12 +1,12 @@
-__cls__  : BuildSet
-doc      : Ремкомплект (средний)
-abstract : false
+__cls__        : BuildSet
+doc            : Ремкомплект (средний)
+abstract       : false
 
-title       : Ремкомплект (средний)
-description : Залатает серьезную пробоину в машине.
+title          : Ремкомплект (средний)
+description    : Залатает серьезную пробоину в машине.
 
-base_price   : 250
-build_points : 50
+base_price     : 250
+build_points   : 70
 
 inv_icon_big   : static/content/items/usable/build_set/build_set_mid/big.png
 inv_icon_mid   : static/content/items/usable/build_set/build_set_mid/mid.png

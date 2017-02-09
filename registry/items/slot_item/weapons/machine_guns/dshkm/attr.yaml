@@ -1,28 +1,30 @@
-﻿__cls__  : MachineGun
-doc      : Пулемёт ДП
-abstract : false
-tags    : [teaching]
+﻿__cls__         : MachineGun
+doc             : Пулемёт ДП
+abstract        : false
+tags            : [teaching]
 
 title           : Пулемёт ДП                                 # Краткое название - отобразится в слоте инвентаря
 # Полное описание - отобразится в разделе описания в инвентаре
 description     : Ручной пулемёт, разработанный В.А. Дегтярёвым. ДП стал одним из первых образцов стрелкового оружия, созданных в СССР.
-base_price      : 1000                                       # Цена
 
 # Основные балансные настройки
+base_price      : 1000                                       # Цена
 weight_class    : 2                                          # Класс тяжести
 ammo            : reg:///registry/items/usable/ammo/762x51bb # Подходящие патроны
-ammo_per_second : 1                                          # [shot/s] ~=650/60 Потребление патронов в секунду
+
+dps             : 1                                          # Дамаг в секунду по вражеским целям
+
 radius          : 150                                        # Дальность сектора стрельбы
 width           : 90                                         # Ширина сектора стрельбы
-dps             : 1                                          # Дамаг в секунду по вражеским целям
+
+ammo_per_second : 1                                          # [shot/s] ~=650/60 Потребление патронов в секунду
+
+animation_tracer_rate : 1
 
 # Картинки для представления в инвентаре
 inv_icon_big    : static/content/items/slot_item/weapons/mashine_guns/dshkm/inventory/big.png
 inv_icon_mid    : static/content/items/slot_item/weapons/mashine_guns/dshkm/inventory/mid.png
 inv_icon_small  : static/content/items/slot_item/weapons/mashine_guns/dshkm/inventory/small.png
-
-
-animation_tracer_rate: 1
 
 armorer_images:
   small:
