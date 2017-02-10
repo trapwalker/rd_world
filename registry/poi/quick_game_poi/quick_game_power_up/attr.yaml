@@ -2,3 +2,4 @@
 doc    : Респавны быстрой игры
 
 parent: reg:///registry/poi/power_up
+activate_comment: '_'
