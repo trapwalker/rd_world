@@ -64,3 +64,6 @@ armorer_images:
     armorer_top_B   : "static/content/items/slot_item/weapons/cannons/zu23_flak/top_b.png"  # назад
     armorer_top_R   : "static/content/items/slot_item/weapons/cannons/zu23_flak/top_r.png"  # вправо
     armorer_top_L   : "static/content/items/slot_item/weapons/cannons/zu23_flak/top_l.png"  # влево
+
+weapon_animation:
+  - ECanvasDischargeFirePNG_3_dbl
