@@ -5,6 +5,6 @@ icon_name: ""
 model_class_name: ""
 life_time : 60
 
-p_observing_range: 30
+p_observing_range: 50
 p_vigilance: 1
 

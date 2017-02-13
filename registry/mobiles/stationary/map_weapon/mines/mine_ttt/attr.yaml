@@ -1,12 +1,12 @@
 ﻿__cls__           : MapWeaponBangMine
 title             : mine_ttt   # Название мины
 
-p_observing_range : 20         # Радиус срабатывания мины
+p_observing_range : 40         # Радиус срабатывания мины
 
 max_hp            : 1000       # Максимальное количество прочности (> 0)
 hp                : 1000       # Текущее количество прочности (> 0)
 
-radius_damage     : 60
+radius_damage     : 80
 damage            : 35
 
-life_time         : 120
+life_time         : 180

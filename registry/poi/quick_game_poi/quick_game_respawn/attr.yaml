@@ -3,8 +3,8 @@ doc    : Респавны быстрой игры
 
 parent: reg:///registry/poi/respawns
 
-respawn_time: 65
-respawn_radius: 400
+respawn_time: 10
+respawn_radius: 1750
 
 respawn_objects:
   - reg:///registry/poi/quick_game_poi/quick_game_power_up/qg_power_up_heal
@@ -12,3 +12,4 @@ respawn_objects:
   - reg:///registry/poi/quick_game_poi/quick_game_power_up/qg_power_up_eff_obs
   - reg:///registry/poi/quick_game_poi/quick_game_power_up/qg_power_up_eff_vis
   - reg:///registry/poi/quick_game_poi/quick_game_power_up/qg_power_up_shield
+  - reg:///registry/poi/quick_game_poi/quick_game_power_up/qg_power_up_add_ammo
