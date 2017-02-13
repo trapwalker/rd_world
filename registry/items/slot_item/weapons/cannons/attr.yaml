@@ -1,2 +1,5 @@
 ﻿__cls__ : Cannon
 doc     : Залповое оружие
+
+weapon_animation:
+  - ECanvasDischargeFirePNG_2

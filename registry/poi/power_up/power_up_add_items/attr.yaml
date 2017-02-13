@@ -1,0 +1,6 @@
+﻿__cls__: MapPowerUpAddItems
+doc    : Объекты Power Up на карте
+
+model_class_name: QuickGamePowerUpAddItems
+
+items: []

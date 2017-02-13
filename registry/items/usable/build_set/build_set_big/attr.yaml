@@ -8,7 +8,7 @@ description    : Восстановит машину из плачевного �
 base_price     : 600
 build_points   : 105
 
-activate_time  : 3.0
+activate_time  : 1.5
 
 inv_icon_big   : static/content/items/usable/build_set/build_set_big/big.png
 inv_icon_mid   : static/content/items/usable/build_set/build_set_big/mid.png

@@ -8,7 +8,7 @@ description    : Слегка подлатает машину в пути.
 base_price     : 100
 build_points   : 35
 
-activate_time  : 1.0
+activate_time  : 0.5
 
 inv_icon_big   : static/content/items/usable/build_set/build_set_small/big.png
 inv_icon_mid   : static/content/items/usable/build_set/build_set_small/mid.png
