@@ -40,7 +40,7 @@ quick_game_cars: # Список машинок для быстрой игры
   - reg:///registry/mobiles/cars/light/motorcycles/honda_hornet/quick
 
 # Боты
-quick_game_bot_count: 20 # Количество ботов в быстрой игре
+quick_game_bot_count: 0 # Количество ботов в быстрой игре
 quick_game_bot_cars: # Список машинок на которых ездят боты в быстрой игре
   - reg:///registry/mobiles/cars/middle/offroad/defender/quick_bot
   - reg:///registry/mobiles/cars/middle/cars/dodge_challenger/quick_bot

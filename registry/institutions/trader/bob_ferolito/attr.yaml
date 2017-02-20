@@ -11,14 +11,14 @@ hometown: reg:///registry/poi/locations/towns/prior
 
 items:
   # Автоматическое вооружение
-  - reg:///registry/items/slot_item/weapons/machine_guns/dshkm
-  - reg:///registry/items/slot_item/weapons/machine_guns/dshkm_twin
-  - reg:///registry/items/slot_item/weapons/machine_guns/mg15
-  - reg:///registry/items/slot_item/weapons/machine_guns/m134_minigun
+  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/dshkm
+  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/dshkm_twin
+  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/mg15
+  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/m134_minigun
 
   # Залповое вооружение
-  - reg:///registry/items/slot_item/weapons/cannons/m242
-  - reg:///registry/items/slot_item/weapons/cannons/zu23_flak
+  - reg:///registry/items/slot_item/armorer_item/weapons/cannons/m242
+  - reg:///registry/items/slot_item/armorer_item/weapons/cannons/zu23_flak
 
   # Боеприпасы для вооружения
   - reg:///registry/items/usable/ammo/762x51bb
