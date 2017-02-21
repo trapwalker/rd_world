@@ -14,3 +14,6 @@ inv_icon_mid   : static/content/items/usable/map_weapon/rockets/kornet/mid.png
 inv_icon_small : static/content/items/usable/map_weapon/rockets/kornet/small.png
 
 generate_obj : reg:///registry/mobiles/map_weapon/rockets/kornet
+
+starter_obj_list:
+  - reg:///registry/items/slot_item/armorer_item/rocket_launcher/m242

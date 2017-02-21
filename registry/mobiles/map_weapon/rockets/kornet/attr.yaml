@@ -2,5 +2,12 @@
 title: Kornet
 
 radius_damage: 50
-p_vigilance: 1
 damage: 80
+
+
+p_observing_range:  30
+
+max_hp:             10
+hp:                 10
+
+icon_name: "icon-rocket"
