@@ -11,9 +11,9 @@ base_price      : 3500                                     # Цена
 weight_class    : 2                                        # Класс тяжести
 
 # Картинки для представления в инвентаре
-inv_icon_big    : static/content/items/slot_item/weapons/cannons/m242/inventory/big.png
-inv_icon_mid    : static/content/items/slot_item/weapons/cannons/m242/inventory/mid.png
-inv_icon_small  : static/content/items/slot_item/weapons/cannons/m242/inventory/small.png
+inv_icon_big    : static/content/items/slot_item/armorer_items/rocket_launchers/m242/inventory/big.png
+inv_icon_mid    : static/content/items/slot_item/armorer_items/rocket_launchers/m242/inventory/mid.png
+inv_icon_small  : static/content/items/slot_item/armorer_items/rocket_launchers/m242/inventory/small.png
 
 armorer_images:
   small:
