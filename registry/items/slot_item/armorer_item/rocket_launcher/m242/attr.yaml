@@ -1,14 +1,14 @@
 ﻿__cls__         : RocketLauncher
-doc             : Ракетница
+doc             : ПРПУ 3К217
 abstract        : false
 
-title           : Ракетница Mark 44         # Краткое название - отобразится в слоте инвентаря
+title           : ПРПУ 3К217         # Краткое название - отобразится в слоте инвентаря
 # Полное описание - отобразится в разделе описания в инвентаре
-description     : Ракетница Mark 44
+description     : Портативная ракетная пусковая установка 3К217
 
 # Основные балансные настройки
-base_price      : 3500                                     # Цена
-weight_class    : 2                                        # Класс тяжести
+base_price      : 5000                                     # Цена
+weight_class    : 4                                        # Класс тяжести
 
 # Картинки для представления в инвентаре
 inv_icon_big    : static/content/items/slot_item/armorer_items/rocket_launchers/m242/inventory/big.png

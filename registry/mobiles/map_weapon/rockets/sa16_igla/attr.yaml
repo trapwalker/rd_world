@@ -1,5 +1,5 @@
-﻿__cls__ : MapWeaponRocket
-title: SA16 Igla
+﻿__cls__       : MapWeaponRocket
+title         : SA16 Igla
 
-radius_damage: 50
-damage: 80
+radius_damage : 50
+damage        : 40
