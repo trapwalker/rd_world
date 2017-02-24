@@ -14,4 +14,4 @@ inv_icon_big   : static/content/items/usable/map_weapon/mines_effect/mine_tmm1/b
 inv_icon_mid   : static/content/items/usable/map_weapon/mines_effect/mine_tmm1/mid.png
 inv_icon_small : static/content/items/usable/map_weapon/mines_effect/mine_tmm1/small.png
 
-generate_obj : reg:///registry/mobiles/stationary/map_weapon/mines_effect/mine_tmm1
+generate_obj : reg:///registry/mobiles/map_weapon/stationary/mines_effect/mine_tmm1

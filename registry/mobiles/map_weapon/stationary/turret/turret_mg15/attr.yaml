@@ -1,0 +1,16 @@
+﻿__cls__ : MapWeaponTurret
+doc     : Турель (Пулемёт MG 15)
+
+inventory:
+    size: 1
+    items:
+       - reg:///registry/items/usable/ammo/762x51bb?amount=100
+
+p_observing_range : 200
+max_hp          : 100
+hp              : 100
+
+slot_FC         : reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/mg15?direction=F&ammo_per_second=0&width=90
+slot_CL         : reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/mg15?direction=L&ammo_per_second=0&width=90
+slot_CR         : reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/mg15?direction=R&ammo_per_second=0&width=90
+slot_BC         : reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/mg15?direction=B&ammo_per_second=0&width=90
