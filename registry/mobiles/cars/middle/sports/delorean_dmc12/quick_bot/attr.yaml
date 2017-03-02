@@ -13,8 +13,8 @@ inventory:                          # При заполнении инвента
     items:
        - reg:///registry/items/usable/ammo/762x51bb?amount=100
        - reg:///registry/items/usable/ammo/762x51bb?amount=100
+       - reg:///registry/items/usable/map_weapon/turret/turret_mg15/quick?amount=5
        - reg:///registry/items/usable/build_set/build_set_mid?amount=3
-       - reg:///registry/items/usable/map_weapon/mines/mine_ttt?amount=5
 
 # Quick Consumer Panel
 quick_panel:
@@ -64,9 +64,9 @@ mechanic_suspension:   static/content/mechanic_systems/suspensions/suspension_1/
 
 # Ниже перечислены все слоты доступные на автомобиле. В название содержится расположение слота.
 # Сейчас до 9 слотов на автомобиль: slot_(Front, Center, Back)(Left, Center, Right).
-slot_FC: reg:///registry/items/slot_item/weapons/machine_guns/mg15?direction=F&ammo_per_second=0
-slot_CC: reg:///registry/items/slot_item/weapons/machine_guns/dshkm_twin?direction=R&ammo_per_second=0
-slot_BC: reg:///registry/items/slot_item/weapons/machine_guns/dshkm_twin?direction=L&ammo_per_second=0
+slot_FC: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/mg15?direction=F&ammo_per_second=0
+slot_CC: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/dshkm_twin?direction=R&ammo_per_second=0
+slot_BC: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/dshkm_twin?direction=L&ammo_per_second=0
 
 # Настройка ограничений направления оружия из слота. Значением является строка в котороую включены первые буквы
 # соответствующих направлений (Front, Back, Left, Right)

@@ -1,6 +1,10 @@
-﻿__cls__ : MapWeaponRocket
-title: Kornet
+﻿__cls__       : MapWeaponRocket
+title         : Kornet
 
-radius_damage: 50
-p_vigilance: 1
-damage: 80
+radius_damage : 50
+damage        : 75
+
+max_hp        : 17
+hp            : 17
+
+icon_name     : "icon-rocket"

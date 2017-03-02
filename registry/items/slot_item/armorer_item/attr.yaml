@@ -1,11 +1,7 @@
-﻿__cls__ : Weapon
-doc     : Оружие
+﻿__cls__ : ArmorerItem
+doc     : Предметы, устанавливаемые в слоты оружейника
 
 tags    : [armorer]
-
-power_penetration: 41  # Мощность оружия (пробитие)
-ammo_per_shot: 0
-ammo_per_second: 0
 
 weight_class: 0
 

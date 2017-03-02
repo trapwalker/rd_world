@@ -1,0 +1,6 @@
+﻿__cls__  : MapWeaponTurretItem
+doc      : Предметы, активируя которые, пораждаются неподвижные турели на карте
+
+activate_type : self
+activate_time : 2.0
+activate_disable_comment: 'Полная остановка автомобиля'

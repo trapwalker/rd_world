@@ -13,7 +13,7 @@ car: #reg:///registry/mobiles/cars/middle/sports/delorean_dmc12
 
     slot_FC: 
         __cls__: Cannon
-        parent: reg:///registry/items/slot_item/weapons/cannons/zu23_flak
+        parent: reg:///registry/items/slot_item/armorer_item/weapons/cannons/zu23_flak
         direction: F
         radius: 413
         dmg: 0.01
@@ -21,14 +21,14 @@ car: #reg:///registry/mobiles/cars/middle/sports/delorean_dmc12
 
     slot_CC: 
         __cls__: MachineGun
-        parent: reg:///registry/items/slot_item/weapons/machine_guns/dshkm
+        parent: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/dshkm
         direction: R
         dps: 0.01
         radius: 250
     
     slot_BC:
         __cls__: MachineGun
-        parent: reg:///registry/items/slot_item/weapons/machine_guns/dshkm
+        parent: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/dshkm
         direction: L
         dps: 0.01
         radius: 250
