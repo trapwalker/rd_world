@@ -16,8 +16,7 @@ inventory:                       # При заполнении инвентар�
        - reg:///registry/items/usable/ammo/30bb?amount=10
        - reg:///registry/items/usable/ammo/30bb?amount=10
        - reg:///registry/items/usable/ammo/30bb?amount=5
-       - reg:///registry/items/usable/map_weapon/rockets/sa16_igla/quick?amount=1
-       - reg:///registry/items/usable/map_weapon/mines/mine_ttt/quick?amount=2
+       - reg:///registry/items/usable/map_weapon/rockets/sa16_igla/quick?amount=2
        - reg:///registry/items/usable/build_set/build_set_big?amount=1
        - reg:///registry/items/usable/tanks/tank_full/tank_10l/quick?amount=1
 

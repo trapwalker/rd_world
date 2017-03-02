@@ -13,8 +13,7 @@ inventory:                          # При заполнении инвента
     items:
        - reg:///registry/items/usable/ammo/762x51bb?amount=100
        - reg:///registry/items/usable/ammo/762x51bb?amount=100
-       - reg:///registry/items/usable/map_weapon/rockets/sa16_igla/quick?amount=2
-       - reg:///registry/items/usable/map_weapon/mines/mine_ttt/quick?amount=5
+       - reg:///registry/items/usable/map_weapon/turret/turret_mg15/quick?amount=5
        - reg:///registry/items/usable/build_set/build_set_mid?amount=3
 
 # Quick Consumer Panel
