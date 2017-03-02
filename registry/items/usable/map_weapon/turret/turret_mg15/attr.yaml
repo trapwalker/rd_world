@@ -5,7 +5,7 @@ title          : Турель (Пулемёт MG 15)
 description    : Стационарная турель на базе пулемёта MG 15
 
 base_price     : 150
-stack_size     : 3
+stack_size     : 10
 
 activate_type  : self
 activate_time  : 1.0
