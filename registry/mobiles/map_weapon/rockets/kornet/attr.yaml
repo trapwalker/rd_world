@@ -4,7 +4,7 @@ title         : Kornet
 radius_damage : 50
 damage        : 75
 
-max_hp        : 10
-hp            : 10
+max_hp        : 17
+hp            : 17
 
 icon_name     : "icon-rocket"
