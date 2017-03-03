@@ -4,7 +4,7 @@ doc    : Респавны быстрой игры
 parent: reg:///registry/poi/power_up/power_up_effects
 
 icon_name: "icon-power-up-vis"
-activate_comment: 'Снижение заметности автомобиля'
+activate_comment: 'Маскировка 60 секунд'
 
 effect_time: 60
 effects:
