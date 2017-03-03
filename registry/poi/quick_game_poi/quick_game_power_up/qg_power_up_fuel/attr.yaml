@@ -3,4 +3,4 @@ doc    : Объекты Power Up на карте
 
 model_class_name: QuickGamePowerUpFullFuel
 icon_name: "icon-power-up-fuel"
-activate_comment: 'Восстановление запаса топлива автомобиля'
+activate_comment: 'Канистра с топливом'
