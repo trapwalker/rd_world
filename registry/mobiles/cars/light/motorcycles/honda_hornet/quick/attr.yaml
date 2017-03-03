@@ -9,21 +9,22 @@ max_hp:             40           # Максимальное количество
 hp:                 40           # Текущее количество прочности (> 0)
 
 inventory:                       # При заполнении инвентаря необходимо учитывать его размер
-    size: 6
+    size: 7
     items:
        - reg:///registry/items/usable/ammo/762x51bb?amount=100
        - reg:///registry/items/usable/ammo/762x51bb?amount=100
        - reg:///registry/items/usable/ammo/762x51bb?amount=100
-       - reg:///registry/items/usable/map_weapon/mines/mine_ttt/quick?amount=10
-       - reg:///registry/items/usable/map_weapon/mines/mine_ttt/quick?amount=10
+       - reg:///registry/items/usable/map_weapon/mines/mine_ttt/quick?amount=5
+       - reg:///registry/items/usable/map_weapon/turret/turret_mg15/quick?amount=1
+       - reg:///registry/items/usable/map_weapon/rockets/sa16_igla/quick?amount=1
        - reg:///registry/items/usable/build_set/build_set_small?amount=10
 
 # Quick Consumer Panel
 quick_panel:
-  qb_1: reg:///registry/items/usable/build_set/build_set_small
-  qb_2: ~
-  qb_3: reg:///registry/items/usable/map_weapon/mines/mine_ttt/quick
-  qb_4: ~
+  qb_1: reg:///registry/items/usable/map_weapon/mines/mine_ttt/quick
+  qb_2: reg:///registry/items/usable/map_weapon/turret/turret_mg15/quick
+  qb_3: reg:///registry/items/usable/map_weapon/rockets/sa16_igla/quick
+  qb_4: reg:///registry/items/usable/build_set/build_set_small
 
 p_observing_range:     1450    # Радиус обзора автомобиля (м) (>= 0)
 
