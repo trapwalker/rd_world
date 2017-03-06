@@ -13,6 +13,7 @@ activate_time : 1.0
 inv_icon_big   : static/content/items/usable/map_weapon/rockets/kornet/big.png
 inv_icon_mid   : static/content/items/usable/map_weapon/rockets/kornet/mid.png
 inv_icon_small : static/content/items/usable/map_weapon/rockets/kornet/small.png
+inv_icon_xsmall : static/content/items/usable/map_weapon/rockets/kornet/xsmall.png
 
 generate_obj : reg:///registry/mobiles/map_weapon/rockets/kornet
 
