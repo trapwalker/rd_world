@@ -30,6 +30,12 @@ inv_icon_big    : static/content/items/slot_item/weapons/mashine_guns/m134_minig
 inv_icon_mid    : static/content/items/slot_item/weapons/mashine_guns/m134_minigun/inventory/mid.png
 inv_icon_small  : static/content/items/slot_item/weapons/mashine_guns/m134_minigun/inventory/small.png
 
+weapon_audio:
+  - auto_31
+  - auto_32
+  - auto_33
+  - auto_34
+
 armorer_images:
   small:
     # Картинки для представления у оружейника (вид сбоку)
