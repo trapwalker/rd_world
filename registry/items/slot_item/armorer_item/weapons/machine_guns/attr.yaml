@@ -5,3 +5,9 @@ animation_tracer_rate : 3
 
 weapon_animation:
   - ECanvasPointsTracerSimple
+
+weapon_audio:
+  - auto_test_1
+  - auto_test_2
+  - auto_test_3
+  - auto_test_4
