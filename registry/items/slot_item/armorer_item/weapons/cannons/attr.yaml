@@ -3,3 +3,7 @@ doc     : Залповое оружие
 
 weapon_animation:
   - ECanvasDischargeFirePNG_2
+
+weapon_audio:
+  - shot_01
+  - shot_02
