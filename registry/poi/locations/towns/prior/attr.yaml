@@ -41,11 +41,11 @@ buildings:
 #        - reg:///registry/institutions/trainer/blackhawk_2094
 #
   - name: mayor
-    caption: Мэр
-    title: Главная Шахта
-    head: reg:///registry/institutions/mayor/manny_askorti
+    caption: Мэрия
+    title: Мэрия
+    head: reg:///registry/institutions/mayor/prior_manny_askorti
     instances:
-        - reg:///registry/institutions/mayor/manny_askorti
+        - reg:///registry/institutions/mayor/prior_manny_askorti
 #
 #  - name: bar
 #    caption: Бар
@@ -78,7 +78,7 @@ static_image_list:
     - /static/content/locations/map_locations/prior/parking.png
     - /static/content/locations/map_locations/prior/parking_bg.png
     - /static/content/locations/map_locations/prior/parking_hover.png
-    - /static/content/locations/map_locations/prior/ground.png
+    - /static/content/locations/map_locations/prior/ground+circle.png
     - /static/content/locations/map_locations/prior/motel.png
     - /static/content/locations/map_locations/prior/motel_bg.png
     - /static/content/locations/map_locations/prior/motel_hover.png
