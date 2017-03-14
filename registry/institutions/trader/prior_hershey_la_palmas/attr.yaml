@@ -1,0 +1,243 @@
+__cls__: Trader
+title: Hershey_La_Palmas
+photo: "static/content/institutions/trader/prior_hershey_la_palmas.png"
+abstract: true
+
+trading: 20 # навык торговли
+refresh_time: 600 # время в сек между завозами
+
+ignore_list: [] # то что не будет покупать
+hometown: reg:///registry/poi/locations/towns/prior
+
+items:
+  # Автоматическое вооружение
+  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/dshkm
+  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/dshkm_twin
+  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/mg15
+  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/m134_minigun
+
+  # Залповое вооружение
+  - reg:///registry/items/slot_item/armorer_item/weapons/cannons/m242
+  - reg:///registry/items/slot_item/armorer_item/weapons/cannons/zu23_flak
+
+  # Боеприпасы для вооружения
+  - reg:///registry/items/usable/ammo/762x51bb
+  #- reg:///registry/items/usable/ammo/762x51tr
+  - reg:///registry/items/usable/ammo/23bzt
+  #- reg:///registry/items/usable/ammo/23ofzt
+  - reg:///registry/items/usable/ammo/30bb
+  #- reg:///registry/items/usable/ammo/30ofzt
+  #- reg:///registry/items/usable/ammo/30pbb
+  #- reg:///registry/items/usable/ammo/127x108bb
+  #- reg:///registry/items/usable/ammo/127x108oz
+
+  # Ракеты
+  - reg:///registry/items/usable/map_weapon/rockets/sa16_igla
+  - reg:///registry/items/usable/map_weapon/rockets/kornet
+  - reg:///registry/items/usable/map_weapon/rockets/javelin
+
+  # Мины
+  - reg:///registry/items/usable/map_weapon/mines_effect/mine_vs50
+  - reg:///registry/items/usable/map_weapon/mines_effect/mine_tmm1
+  - reg:///registry/items/usable/map_weapon/mines_effect/mine_tc6
+
+  # Ремкомплекты
+  - reg:///registry/items/usable/build_set/build_set_small
+  - reg:///registry/items/usable/build_set/build_set_mid
+  - reg:///registry/items/usable/build_set/build_set_big
+
+  # Ёмкости
+  - reg:///registry/items/usable/tanks/tank_empty/tank_10l
+  - reg:///registry/items/usable/tanks/tank_full/tank_10l
+  - reg:///registry/items/usable/tanks/tank_empty/tank_20l
+  - reg:///registry/items/usable/tanks/tank_full/tank_20l
+
+  # ДЛЯ МЕХАНИКА
+  # Двигатель
+  - reg:///registry/items/slot_item/mechanic_item/engine/air_filter/air_filter_1
+  - reg:///registry/items/slot_item/mechanic_item/engine/camshaft/camshaft_1
+  - reg:///registry/items/slot_item/mechanic_item/engine/compressor/compressor_1
+  - reg:///registry/items/slot_item/mechanic_item/engine/cylinder_head/cylinder_head_1
+  - reg:///registry/items/slot_item/mechanic_item/engine/cylinder_piston/cylinder_piston_1
+  - reg:///registry/items/slot_item/mechanic_item/engine/engine_oil/engine_oil_1
+  - reg:///registry/items/slot_item/mechanic_item/engine/exhaust/exhaust_1
+  - reg:///registry/items/slot_item/mechanic_item/engine/flywheel/flywheel_1
+  - reg:///registry/items/slot_item/mechanic_item/engine/ignition/ignition_1
+  - reg:///registry/items/slot_item/mechanic_item/engine/inlet/inlet_1
+  - reg:///registry/items/slot_item/mechanic_item/engine/sparkplug/sparkplug_1
+
+  # Трансмиссия
+  - reg:///registry/items/slot_item/mechanic_item/transmission/ATF/ATF_1
+  - reg:///registry/items/slot_item/mechanic_item/transmission/clutch/clutch_1
+  - reg:///registry/items/slot_item/mechanic_item/transmission/front_axle/front_axle_1
+  - reg:///registry/items/slot_item/mechanic_item/transmission/front_differential/front_differential_1
+  - reg:///registry/items/slot_item/mechanic_item/transmission/gearbox/gearbox_1
+  - reg:///registry/items/slot_item/mechanic_item/transmission/primary_shaft/primary_shaft_1
+  - reg:///registry/items/slot_item/mechanic_item/transmission/rear_axle/rear_axle_1
+  - reg:///registry/items/slot_item/mechanic_item/transmission/rear_differential/rear_differential_1
+  - reg:///registry/items/slot_item/mechanic_item/transmission/secondary_shaft/secondary_shaft_1
+  - reg:///registry/items/slot_item/mechanic_item/transmission/torque_converter/torque_converter_1
+  - reg:///registry/items/slot_item/mechanic_item/transmission/transfer_case/transfer_case_1
+
+  # Подвеска
+  - reg:///registry/items/slot_item/mechanic_item/suspension/front_coil/front_coil_1
+  - reg:///registry/items/slot_item/mechanic_item/suspension/front_control_arm/front_control_arm_1
+  - reg:///registry/items/slot_item/mechanic_item/suspension/front_shock_absorber/front_shock_absorber_1
+  - reg:///registry/items/slot_item/mechanic_item/suspension/hub/hub_1
+  - reg:///registry/items/slot_item/mechanic_item/suspension/rear_coil/rear_coil_1
+  - reg:///registry/items/slot_item/mechanic_item/suspension/rear_control_arm/rear_control_arm_1
+  - reg:///registry/items/slot_item/mechanic_item/suspension/rear_shock_absorber/rear_shock_absorber_1
+  - reg:///registry/items/slot_item/mechanic_item/suspension/wheels/wheels_1
+
+  # Тормозная система
+  - reg:///registry/items/slot_item/mechanic_item/brake/abs/abs_1
+  - reg:///registry/items/slot_item/mechanic_item/brake/booster/booster_1
+  - reg:///registry/items/slot_item/mechanic_item/brake/brake_fluid/brake_fluid_1
+  - reg:///registry/items/slot_item/mechanic_item/brake/front_brakes/front_brakes_1
+  - reg:///registry/items/slot_item/mechanic_item/brake/front_brake_lines/front_brake_lines_1
+  - reg:///registry/items/slot_item/mechanic_item/brake/front_brake_pads/front_brake_pads_1
+  - reg:///registry/items/slot_item/mechanic_item/brake/rear_brakes/rear_brakes_1
+  - reg:///registry/items/slot_item/mechanic_item/brake/rear_brake_lines/rear_brake_lines_1
+  - reg:///registry/items/slot_item/mechanic_item/brake/rear_brake_pads/rear_brake_pads_1
+
+  # Охлаждение
+  - reg:///registry/items/slot_item/mechanic_item/cooling/add_radiator/add_radiator_1
+  - reg:///registry/items/slot_item/mechanic_item/cooling/coolant/coolant_1
+  - reg:///registry/items/slot_item/mechanic_item/cooling/fan/fan_1
+  - reg:///registry/items/slot_item/mechanic_item/cooling/pump/pump_1
+  - reg:///registry/items/slot_item/mechanic_item/cooling/radiator/radiator_1
+  - reg:///registry/items/slot_item/mechanic_item/cooling/thermostat/thermostat_1
+
+  # ДЛЯ СТИЛИСТА
+  - reg:///registry/items/slot_item/tuner_item/airint/airint_001
+  - reg:///registry/items/slot_item/tuner_item/armor/armor_001
+  - reg:///registry/items/slot_item/tuner_item/b_bumper/b_bumper_001
+  - reg:///registry/items/slot_item/tuner_item/b_bumper/b_bumper_002
+  - reg:///registry/items/slot_item/tuner_item/b_bumper/b_bumper_003
+  - reg:///registry/items/slot_item/tuner_item/b_fender/b_fender_001
+  - reg:///registry/items/slot_item/tuner_item/b_fender/b_fender_002
+  - reg:///registry/items/slot_item/tuner_item/b_fender/b_fender_003
+  - reg:///registry/items/slot_item/tuner_item/bale/bale_001
+  - reg:///registry/items/slot_item/tuner_item/bale/bale_002
+  - reg:///registry/items/slot_item/tuner_item/f_bumper/f_bumper_001
+  - reg:///registry/items/slot_item/tuner_item/f_bumper/f_bumper_002
+  - reg:///registry/items/slot_item/tuner_item/f_bumper/f_bumper_003
+  - reg:///registry/items/slot_item/tuner_item/f_fender/f_fender_001
+  - reg:///registry/items/slot_item/tuner_item/f_fender/f_fender_002
+  - reg:///registry/items/slot_item/tuner_item/f_fender/f_fender_003
+  - reg:///registry/items/slot_item/tuner_item/glass/glass_001
+  - reg:///registry/items/slot_item/tuner_item/roof/roof_002
+  - reg:///registry/items/slot_item/tuner_item/roof/roof_001
+  - reg:///registry/items/slot_item/tuner_item/shnork/shnork_001
+  - reg:///registry/items/slot_item/tuner_item/shnork/shnork_002
+  - reg:///registry/items/slot_item/tuner_item/shnork/shnork_003
+  - reg:///registry/items/slot_item/tuner_item/step/step_002
+  - reg:///registry/items/slot_item/tuner_item/step/step_003
+  - reg:///registry/items/slot_item/tuner_item/step/step_001
+  - reg:///registry/items/slot_item/tuner_item/trunk/trunk_002
+  - reg:///registry/items/slot_item/tuner_item/trunk/trunk_001
+  - reg:///registry/items/slot_item/tuner_item/win_prot/win_prot_001
+  - reg:///registry/items/slot_item/tuner_item/win_prot/win_prot_002
+
+price_list: # правила завоза
+#  - item: reg:///registry/items/slot_item/weapons
+#    chance: 0.0    # вероятность в завозе 1 - max
+#    count_min: 0   # пределы количества в завозе
+#    count_max: 0   # если 0 - бесконечность
+#    price_min: 3.0 # коэф колебаний цены (границы)
+#    price_max: 3.0
+#    influence: 0.0 # коэф изменения цены при покупке/продаже
+
+#  - item: reg:///registry/items/slot_item/weapons/machine_guns/dshkm
+#    chance: 0.0
+#    count_min: 0
+#    count_max: 5
+#    price_min: 10.0
+#    price_max: 10.0
+#    influence: 0.01
+
+#  - item: reg:///registry/items/usable/tanks
+#    chance: 1.0
+#    count_min: 1
+#    count_max: 10
+#    price_min: 4.0
+#    price_max: 6.0
+#    influence: 0.1
+
+#  - item: reg:///registry/items/usable/ammo/762x51bb
+#    chance: 0.8
+#   count_min: 0
+#   count_max: 0
+#    price_min: 0.5
+#    price_max: 1.5
+#    influence: 0.1
+
+#  - item: reg:///registry/items/usable/ammo/127x108bb
+#    chance: 0.8
+#    count_min: 0
+#    count_max: 0
+#    price_min: 0.5
+#    price_max: 1.5
+#    influence: 0.1
+
+#  - item: reg:///registry/items/usable/ammo/23bzt
+#    chance: 0.8
+#    count_min: 0
+#    count_max: 0
+#    price_min: 0.5
+#    price_max: 1.5
+#    influence: 0.1
+
+  - item: reg:///registry/items
+    chance: 1.0
+    count_min: 0
+    count_max: 0
+    price_min: 1.0
+    price_max: 1.0
+    influence: 0.0
+
+
+quests:
+
+  - parent: reg:///registry/quests/examples/killer_task
+    __cls__: KillerQuest
+    price_victim: 100
+    count_to_kill_range:
+      min: 1
+      max: 3
+    karma_victims: 20
+    karma_coef: 0.5
+    money_coef: 0.5
+    unique_victims: false
+    reward_items_list:
+      -
+        - reg:///registry/items/slot_item/tuner_item/airint/airint_001
+      -
+        - reg:///registry/items/usable/tanks/tank_empty/tank_10l
+        - reg:///registry/items/usable/tanks/tank_empty/tank_20l
+
+
+  - parent: reg:///registry/quests/examples/delivery_quest
+    __cls__: DeliveryQuest
+    karma_coef: 0.5
+    money_coef: 0.5
+    total_delivery_money_coef: 0.5
+    recipient_list:
+      - reg:///registry/institutions/hangar/jounior_clarx
+      - reg:///registry/institutions/mechanic/raul_alone
+      - reg:///registry/institutions/mayor/manny_askorti
+    delivery_set_list:
+      -
+        - reg:///registry/items/usable/build_set/build_set_big?amount=5
+        - reg:///registry/items/usable/build_set/build_set_big?amount=7
+        - reg:///registry/items/usable/build_set/build_set_big?amount=10
+      -
+        - reg:///registry/items/slot_item/tuner_item/airint/airint_001
+      -
+        - reg:///registry/items/usable/tanks/tank_empty/tank_10l
+        - reg:///registry/items/usable/tanks/tank_empty/tank_20l
+    reward_items_list:
+      -
+        - reg:///registry/items/slot_item/tuner_item/airint/airint_001
+      -
+        - reg:///registry/items/usable/build_set/build_set_big?amount=8

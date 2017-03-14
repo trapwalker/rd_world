@@ -9,6 +9,20 @@ p_observing_range: 365
 svg_link: static/content/locations/map_locations/prior
 
 buildings:
+  - name: market
+    caption: Магазин
+    title: Магазин
+    head: reg:///registry/institutions/trader/prior_hershey_la_palmas
+    instances:
+        - reg:///registry/institutions/trader/prior_hershey_la_palmas
+
+  - name: mayor
+    caption: Мэрия
+    title: Мэрия
+    head: reg:///registry/institutions/mayor/prior_donnie_alma
+    instances:
+        - reg:///registry/institutions/mayor/prior_donnie_alma
+#
 #  - name: dealer
 #    caption: Автодилер
 #    title: Хайрок Карс
@@ -16,13 +30,6 @@ buildings:
 #    instances:
 #        - reg:///registry/institutions/hangar/jounior_clarx
 #        - reg:///registry/institutions/parking/james_rogers
-#
-#  - name: market
-#    caption: Рынок
-#    title: Складской капер
-#    head: reg:///registry/institutions/trader/bob_ferolito
-#    instances:
-#        - reg:///registry/institutions/trader/bob_ferolito
 #
 #  - name: autoservice
 #    caption: Сервис
@@ -39,13 +46,6 @@ buildings:
 #    head: reg:///registry/institutions/trainer/blackhawk_2094
 #    instances:
 #        - reg:///registry/institutions/trainer/blackhawk_2094
-#
-  - name: mayor
-    caption: Мэрия
-    title: Мэрия
-    head: reg:///registry/institutions/mayor/prior_manny_askorti
-    instances:
-        - reg:///registry/institutions/mayor/prior_manny_askorti
 #
 #  - name: bar
 #    caption: Бар
