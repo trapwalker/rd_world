@@ -23,6 +23,15 @@ buildings:
     instances:
         - reg:///registry/institutions/barman/prior_jimmy_dee
 
+  - name: motel
+    caption: Мотель
+    title: Мотель
+    head: reg:///registry/institutions/manager/prior_rita_rain
+    instances:
+        - reg:///registry/institutions/girl/prior_amanda_fun
+        - reg:///registry/institutions/girl/prior_boozie_suzie
+        - reg:///registry/institutions/girl/prior_trella_tamale
+
   - name: mayor
     caption: Мэрия
     title: Мэрия
@@ -46,21 +55,13 @@ buildings:
     instances:
         - reg:///registry/institutions/hangar/prior_clarence_jackson
         - reg:///registry/institutions/parking/prior_adonis_bracamonte
-#
-#  - name: library
-#    caption: Библиотека
-#    title: Матрикс Плэйграунд
-#    head: reg:///registry/institutions/trainer/blackhawk_2094
-#    instances:
-#        - reg:///registry/institutions/trainer/blackhawk_2094
-#
-#  - name: nucoil
-#    caption: Нукойл
-#    title: Нукойл
-#    head: reg:///registry/institutions/nucoil
-#    instances:
-#        - reg:///registry/institutions/gas_station
-#        - reg:///registry/institutions/npc_help
+
+  - name: radio
+    caption: Радиовышка
+    title: Радиовышка
+    head: reg:///registry/institutions/radio_dj/prior_billy_bob_phoenix
+    instances:
+        - reg:///registry/institutions/radio_dj/prior_billy_bob_phoenix
 
 static_image_list:
     - /static/content/locations/map_locations/prior/service.png

@@ -1,0 +1,6 @@
+﻿__cls__  : Institution
+title    : Boozie_Suzie
+photo    : "static/content/institutions/girl/prior_boozie_suzie.png"
+abstract : false
+
+hometown : reg:///registry/poi/locations/towns/prior

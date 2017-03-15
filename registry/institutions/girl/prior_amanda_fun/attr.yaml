@@ -1,0 +1,6 @@
+﻿__cls__  : Institution
+title    : Amanda_Fun
+photo    : "static/content/institutions/girl/prior_amanda_fun.png"
+abstract : false
+
+hometown : reg:///registry/poi/locations/towns/prior
