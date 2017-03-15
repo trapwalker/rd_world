@@ -30,6 +30,15 @@ buildings:
     instances:
         - reg:///registry/institutions/mayor/prior_donnie_alma
 
+  - name: service
+    caption: Автосервис
+    title: Автосервис
+    head: reg:///registry/institutions/armorer/prior_jeff_saigon
+    instances:
+        - reg:///registry/institutions/armorer/prior_jeff_saigon
+        - reg:///registry/institutions/mechanic/prior_al_taslima
+        - reg:///registry/institutions/tuner/prior_michael_brazen
+
   - name: parking
     caption: Паркинг
     title: Паркинг
@@ -37,15 +46,6 @@ buildings:
     instances:
         - reg:///registry/institutions/hangar/prior_clarence_jackson
         - reg:///registry/institutions/parking/prior_adonis_bracamonte
-#
-#  - name: autoservice
-#    caption: Сервис
-#    title: Элон Авто Рипейр
-#    head: reg:///registry/institutions/mechanic/raul_alone
-#    instances:
-#        - reg:///registry/institutions/mechanic/raul_alone
-#        - reg:///registry/institutions/armorer/martin_arioso
-#        - reg:///registry/institutions/tuner/petr
 #
 #  - name: library
 #    caption: Библиотека
