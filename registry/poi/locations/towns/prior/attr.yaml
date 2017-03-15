@@ -33,7 +33,7 @@ buildings:
   - name: service
     caption: Автосервис
     title: Автосервис
-    head: reg:///registry/institutions/armorer/prior_jeff_saigon
+    head: reg:///registry/institutions/manager/prior_cliff_taslima
     instances:
         - reg:///registry/institutions/armorer/prior_jeff_saigon
         - reg:///registry/institutions/mechanic/prior_al_taslima
