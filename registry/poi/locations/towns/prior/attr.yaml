@@ -16,20 +16,27 @@ buildings:
     instances:
         - reg:///registry/institutions/trader/prior_hershey_la_palmas
 
+  - name: bar
+    caption: Бар
+    title: Бар
+    head: reg:///registry/institutions/barman/prior_jimmy_dee
+    instances:
+        - reg:///registry/institutions/barman/prior_jimmy_dee
+
   - name: mayor
     caption: Мэрия
     title: Мэрия
     head: reg:///registry/institutions/mayor/prior_donnie_alma
     instances:
         - reg:///registry/institutions/mayor/prior_donnie_alma
-#
-#  - name: dealer
-#    caption: Автодилер
-#    title: Хайрок Карс
-#    head: reg:///registry/institutions/hangar/jounior_clarx
-#    instances:
-#        - reg:///registry/institutions/hangar/jounior_clarx
-#        - reg:///registry/institutions/parking/james_rogers
+
+  - name: parking
+    caption: Паркинг
+    title: Паркинг
+    head: reg:///registry/institutions/hangar/prior_clarence_jackson
+    instances:
+        - reg:///registry/institutions/hangar/prior_clarence_jackson
+        - reg:///registry/institutions/parking/prior_adonis_bracamonte
 #
 #  - name: autoservice
 #    caption: Сервис
@@ -46,14 +53,6 @@ buildings:
 #    head: reg:///registry/institutions/trainer/blackhawk_2094
 #    instances:
 #        - reg:///registry/institutions/trainer/blackhawk_2094
-#
-#  - name: bar
-#    caption: Бар
-#    title: Ласт Дроп Бар
-#    head: reg:///registry/institutions/barman/al_dufo
-#    instances:
-#        - reg:///registry/institutions/barman/al_dufo
-#        - reg:///registry/institutions/girl/barbara_green
 #
 #  - name: nucoil
 #    caption: Нукойл
