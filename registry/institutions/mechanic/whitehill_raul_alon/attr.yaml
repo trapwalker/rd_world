@@ -1,0 +1,6 @@
+﻿__cls__  : Institution
+title    : Raul_Alon
+photo    : "static/content/institutions/mechanic/whitehill_raul_alon.png"
+abstract : false
+
+hometown : reg:///registry/poi/locations/towns/whitehill

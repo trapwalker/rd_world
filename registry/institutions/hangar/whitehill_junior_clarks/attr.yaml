@@ -1,9 +1,9 @@
-﻿__cls__: Hangar
+﻿__cls__  : Hangar
 title    : Junior_Clarks
-photo    : "static/content/institutions/hangar/jounior_clarx/jounior_clarx.png"
+photo    : "static/content/institutions/hangar/whitehill_junior_clarks.png"
 abstract : false
 
-hometown: reg:///registry/poi/locations/towns/prior
+hometown : reg:///registry/poi/locations/towns/whitehill
 
 car_list:
   - reg:///registry/mobiles/cars/middle/sports/delorean_dmc12

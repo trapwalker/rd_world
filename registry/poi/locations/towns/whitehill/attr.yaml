@@ -1,60 +1,14 @@
 ﻿__cls__: Town
-doc    : Вайтхил
+doc    : Уайтхилл
 abstract: false
 
-title: Вайтхил
+title: Уайтхилл
 position: {x: 12482409, y: 27045819}
 p_observing_range: 315
 
 svg_link: static/content/locations/map_locations/whitehill
 
 buildings:
-  - name: dealer
-    caption: Автодилер
-    title: Хайрок Карс
-    head: reg:///registry/institutions/hangar/jounior_clarx
-    instances:
-        - reg:///registry/institutions/hangar/jounior_clarx
-        - reg:///registry/institutions/parking/james_rogers
-    
-  - name: market
-    caption: Рынок
-    title: Складской капер
-    head: reg:///registry/institutions/trader/bob_ferolito
-    instances:
-        - reg:///registry/institutions/trader/bob_ferolito
-
-  - name: autoservice
-    caption: Сервис
-    title: Элон Авто Рипейр
-    head: reg:///registry/institutions/mechanic/raul_alone
-    instances:
-        - reg:///registry/institutions/mechanic/raul_alone
-        - reg:///registry/institutions/armorer/martin_arioso
-        - reg:///registry/institutions/tuner/petr
-
-  - name: library
-    caption: Библиотека
-    title: Матрикс Плэйграунд
-    head: reg:///registry/institutions/trainer/blackhawk_2094
-    instances:
-        - reg:///registry/institutions/trainer/blackhawk_2094
-
-  - name: mayor
-    caption: Мэр
-    title: Главная Шахта
-    head: reg:///registry/institutions/mayor/manny_askorti
-    instances:
-        - reg:///registry/institutions/mayor/manny_askorti
-
-  - name: bar
-    caption: Бар
-    title: Ласт Дроп Бар
-    head: reg:///registry/institutions/barman/al_dufo
-    instances:
-        - reg:///registry/institutions/barman/al_dufo
-        - reg:///registry/institutions/girl/barbara_green
-
   - name: nucoil
     caption: Нукойл
     title: Нукойл
@@ -62,6 +16,51 @@ buildings:
     instances:
         - reg:///registry/institutions/gas_station
         - reg:///registry/institutions/npc_help
+
+  - name: mayor
+    caption: Мэрия
+    title: Главная Шахта
+    head: reg:///registry/institutions/mayor/whitehill_manny_askorti
+    instances:
+        - reg:///registry/institutions/mayor/whitehill_manny_askorti
+
+  - name: bar
+    caption: Бар
+    title: Ласт Дроп Бар
+    head: reg:///registry/institutions/barman/whitehill_al_dufo
+    instances:
+        - reg:///registry/institutions/barman/whitehill_al_dufo
+        - reg:///registry/institutions/girl/whitehill_barbara_green
+
+  - name: dealer
+    caption: Автодилер
+    title: Хайрок Карс
+    head: reg:///registry/institutions/hangar/whitehill_junior_clarks
+    instances:
+        - reg:///registry/institutions/hangar/whitehill_junior_clarks
+        - reg:///registry/institutions/parking/whitehill_james_rogers
+
+  - name: autoservice
+    caption: Автосервис
+    title: Элон Авто Рипейр
+    head: reg:///registry/institutions/mechanic/whitehill_raul_alon
+    instances:
+        - reg:///registry/institutions/mechanic/whitehill_raul_alon
+        - reg:///registry/institutions/armorer/whitehill_martin_arioso
+
+  - name: market
+    caption: Магазин
+    title: Складской капер
+    head: reg:///registry/institutions/trader/whitehill_bob_ferolito
+    instances:
+        - reg:///registry/institutions/trader/whitehill_bob_ferolito
+
+  - name: library
+    caption: Библиотека
+    title: Матрикс Плэйграунд
+    head: reg:///registry/institutions/trainer/whitehill_blackhawk_2094
+    instances:
+        - reg:///registry/institutions/trainer/whitehill_blackhawk_2094
 
 static_image_list:
     - /static/content/locations/map_locations/whitehill/autoservice.png

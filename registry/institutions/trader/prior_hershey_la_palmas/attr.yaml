@@ -1,13 +1,13 @@
-__cls__: Trader
-title: Hershey_La_Palmas
-photo: "static/content/institutions/trader/prior_hershey_la_palmas.png"
-abstract: true
+__cls__  : Trader
+title    : Hershey_La_Palmas
+photo    : "static/content/institutions/trader/prior_hershey_la_palmas.png"
+abstract : true
 
-trading: 20 # навык торговли
-refresh_time: 600 # время в сек между завозами
+trading      : 20 # навык торговли
+refresh_time : 600 # время в сек между завозами
 
-ignore_list: [] # то что не будет покупать
-hometown: reg:///registry/poi/locations/towns/prior
+ignore_list : [] # то что не будет покупать
+hometown    : reg:///registry/poi/locations/towns/prior
 
 items:
   # Автоматическое вооружение
@@ -223,9 +223,9 @@ quests:
     money_coef: 0.5
     total_delivery_money_coef: 0.5
     recipient_list:
-      - reg:///registry/institutions/hangar/jounior_clarx
-      - reg:///registry/institutions/mechanic/raul_alone
-      - reg:///registry/institutions/mayor/manny_askorti
+      - reg:///registry/institutions/hangar/prior_clarence_jackson
+      - reg:///registry/institutions/mechanic/prior_al_taslima
+      - reg:///registry/institutions/mayor/prior_donnie_alma
     delivery_set_list:
       -
         - reg:///registry/items/usable/build_set/build_set_big?amount=5
