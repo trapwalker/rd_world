@@ -1,2 +1,5 @@
 ﻿__cls__: ItemUsable
 doc    : Применимые предметы
+
+activate_success_audio: "zoom_01"
+post_activate_item: ~
