@@ -30,10 +30,10 @@ inv_icon_mid    : static/content/items/slot_item/weapons/mashine_guns/mg15/inven
 inv_icon_small  : static/content/items/slot_item/weapons/mashine_guns/mg15/inventory/small.png
 
 weapon_audio:
-  - auto_31
-  - auto_32
-  - auto_33
-  - auto_34
+  - auto_r_21
+  - auto_r_22
+  - auto_r_23
+  - auto_r_24
 
 armorer_images:
   small:

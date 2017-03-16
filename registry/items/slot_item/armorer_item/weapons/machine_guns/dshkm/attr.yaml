@@ -27,10 +27,10 @@ inv_icon_mid    : static/content/items/slot_item/weapons/mashine_guns/dshkm/inve
 inv_icon_small  : static/content/items/slot_item/weapons/mashine_guns/dshkm/inventory/small.png
 
 weapon_audio:
-  - auto_11
-  - auto_12
-  - auto_13
-  - auto_14
+  - auto_r_11
+  - auto_r_12
+  - auto_r_13
+  - auto_r_14
 
 armorer_images:
   small:
