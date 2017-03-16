@@ -1,8 +1,8 @@
 ﻿__cls__: Town
-doc    : Прайор
+doc    : Прайр
 abstract: false
 
-title: Прайор
+title: Прайр
 position: {x: 12517154, y: 27028833}
 p_observing_range: 365
 
