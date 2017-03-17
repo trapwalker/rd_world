@@ -1,4 +1,4 @@
-﻿__cls__: Institution
-doc: стилист
-text: Вас приветствует тюнер!
-type: tuner
+﻿__cls__ : Institution
+doc     : Стилист
+text    : Вас приветствует стилист!
+type    : tuner

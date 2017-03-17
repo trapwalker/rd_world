@@ -1,0 +1,6 @@
+﻿__cls__  : Institution
+title    : Trella_Tamale
+photo    : "static/content/institutions/girl/prior_trella_tamale.png"
+abstract : false
+
+hometown : reg:///registry/poi/locations/towns/prior

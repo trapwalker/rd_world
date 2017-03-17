@@ -7,14 +7,14 @@ current_state: ~
 teaching_delivery_quest:
     parent: reg:///registry/quests/examples/delivery_quest/teaching
     __cls__: DeliveryQuest
-    hirer: reg:///registry/institutions/mayor/manny_askorti
+    hirer: reg:///registry/institutions/mayor/whitehill_manny_askorti
     karma_coef: 0.5
     money_coef: 0.5
     total_delivery_money_coef: 0.5
     recipient_list:
-      - reg:///registry/institutions/barman/al_dufo
-      - reg:///registry/institutions/trader/bob_ferolito
-      - reg:///registry/institutions/trainer/blackhawk_2094
+      - reg:///registry/institutions/barman/whitehill_al_dufo
+      - reg:///registry/institutions/trader/whitehill_bob_ferolito
+      - reg:///registry/institutions/trainer/whitehill_blackhawk_2094
     delivery_set_list:
       -
         - reg:///registry/items/usable/build_set/build_set_big?amount=10

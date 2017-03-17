@@ -1,0 +1,6 @@
+﻿__cls__  : Institution
+title    : Jeff_Saigon
+photo    : "static/content/institutions/armorer/prior_jeff_saigon.png"
+abstract : false
+
+hometown : reg:///registry/poi/locations/towns/prior
