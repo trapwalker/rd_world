@@ -174,5 +174,11 @@ quick_panel:
   qb_4: ~
 
 
+# audio_engine
+audio_engine:
+  audio_name: "engine_05"
+  min_rate: 0.5
+  max_rate: 3
+
 # Длительность стартового щита (секунды)
 start_shield_time: 30
