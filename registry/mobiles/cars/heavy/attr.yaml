@@ -1,2 +1,9 @@
 ﻿__cls__ : Car
 doc     : Тяжелый класс транспортных средств
+
+
+# audio_engine
+audio_engine:
+  audio_name: "engine_heavy_001"
+  min_rate: 0.7
+  max_rate: 2.0

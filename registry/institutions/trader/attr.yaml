@@ -1,4 +1,4 @@
-__cls__: Trader
-doc: Торговец
-text: Вас приветствует торговец!
-type: trader
+__cls__ : Trader
+doc     : Торговец
+text    : Вас приветствует торговец!
+type    : trader

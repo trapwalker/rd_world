@@ -29,6 +29,12 @@ inv_icon_big    : static/content/items/slot_item/weapons/mashine_guns/mg15/inven
 inv_icon_mid    : static/content/items/slot_item/weapons/mashine_guns/mg15/inventory/mid.png
 inv_icon_small  : static/content/items/slot_item/weapons/mashine_guns/mg15/inventory/small.png
 
+weapon_audio:
+  - auto_r_21
+  - auto_r_22
+  - auto_r_23
+  - auto_r_24
+
 armorer_images:
   small:
     # Картинки для представления у оружейника (вид сбоку)

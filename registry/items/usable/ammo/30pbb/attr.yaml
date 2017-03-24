@@ -11,3 +11,4 @@ base_price : 100
 inv_icon_big   : static/content/items/usable/ammo/30pbb/big.png
 inv_icon_mid   : static/content/items/usable/ammo/30pbb/mid.png
 inv_icon_small : static/content/items/usable/ammo/30pbb/small.png
+inv_icon_xsmall : static/content/items/usable/ammo/30pbb/xsmall.png

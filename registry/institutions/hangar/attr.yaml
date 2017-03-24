@@ -1,6 +1,6 @@
-﻿__cls__: Hangar
-doc: Продавец машин
-text: Вас приветствует продавец машин!
-type: hangar
+﻿__cls__  : Hangar
+doc      : Продавец машин
+text     : Вас приветствует продавец машин!
+type     : hangar
 
-car_list: []
+car_list : []

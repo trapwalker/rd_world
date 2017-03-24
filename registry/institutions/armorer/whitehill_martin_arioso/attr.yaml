@@ -1,0 +1,6 @@
+﻿__cls__  : Institution
+title    : Martin_Arioso
+photo    : "static/content/institutions/armorer/whitehill_martin_arioso.png"
+abstract : false
+
+hometown : reg:///registry/poi/locations/towns/whitehill

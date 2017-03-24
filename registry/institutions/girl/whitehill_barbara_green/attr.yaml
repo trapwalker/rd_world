@@ -1,0 +1,6 @@
+﻿__cls__  : Institution
+title    : Barbara_Green
+photo    : "static/content/institutions/girl/whitehill_barbara_green.png"
+abstract : false
+
+hometown : reg:///registry/poi/locations/towns/whitehill

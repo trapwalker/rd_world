@@ -1,0 +1,6 @@
+﻿__cls__  : Institution
+title    : Al_Taslima
+photo    : "static/content/institutions/mechanic/prior_al_taslima.png"
+abstract : false
+
+hometown : reg:///registry/poi/locations/towns/prior

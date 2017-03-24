@@ -12,5 +12,6 @@ activate_type : self
 inv_icon_big   : static/content/items/usable/map_weapon/rockets/javelin/big.png
 inv_icon_mid   : static/content/items/usable/map_weapon/rockets/javelin/mid.png
 inv_icon_small : static/content/items/usable/map_weapon/rockets/javelin/small.png
+inv_icon_xsmall : static/content/items/usable/map_weapon/rockets/javelin/xsmall.png
 
 generate_obj : reg:///registry/mobiles/map_weapon/rockets/javelin

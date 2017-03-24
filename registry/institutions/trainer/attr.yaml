@@ -1,6 +1,6 @@
-﻿__cls__: Trainer
-doc: Тренер
-text: Вас приветствует тренер !
-type: trainer
+﻿__cls__    : Trainer
+doc        : Админ
+text       : Вас приветствует админ!
+type       : trainer
 
-drop_price: 10
+drop_price : 10

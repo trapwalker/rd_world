@@ -1,0 +1,8 @@
+﻿__cls__  : Parking
+title    : James_Rogers
+photo    : "static/content/institutions/parking/whitehill_james_rogers.png"
+abstract : false
+
+hometown : reg:///registry/poi/locations/towns/whitehill
+
+text     : Вы можете оставить тут свой автомобиль. Я присмотрю за ним за небольшую плату.

@@ -11,3 +11,4 @@ base_price : 100
 inv_icon_big   : static/content/items/usable/ammo/127x108bb/big.png
 inv_icon_mid   : static/content/items/usable/ammo/127x108bb/mid.png
 inv_icon_small : static/content/items/usable/ammo/127x108bb/small.png
+inv_icon_xsmall : static/content/items/usable/ammo/127x108bb/xsmall.png
