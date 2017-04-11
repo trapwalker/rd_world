@@ -1,4 +1,4 @@
-﻿__cls__: Agent
+﻿__cls__: AgentProfile
 doc    : Прототипы пользовательских агентов
 
 last_town: reg:///registry/poi/locations/towns/prior
