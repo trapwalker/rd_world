@@ -1,4 +1,5 @@
 ﻿__cls__ : AmmoBullets
+_cls : AmmoBullets
 doc     : Снаряды 30 мм/ББ
 abstract: false
 

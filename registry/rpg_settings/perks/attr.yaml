@@ -1,4 +1,5 @@
 ﻿__cls__: Perk
+_cls: Perk
 doc    : Перки
 can_instantiate: False
 

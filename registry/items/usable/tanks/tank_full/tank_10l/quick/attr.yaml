@@ -1,4 +1,5 @@
 __cls__  : TankFull
+_cls  : TankFull
 title    : Полная канистра (10л)
 
 post_activate_item : ~

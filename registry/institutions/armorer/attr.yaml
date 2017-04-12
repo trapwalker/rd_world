@@ -1,4 +1,5 @@
 ﻿__cls__ : Institution
+_cls : Institution
 doc     : Оружейник
 text    : Вас приветствует оружейник!
 type    : armorer

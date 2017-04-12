@@ -1,4 +1,5 @@
 ﻿__cls__: RasterZone
+_cls: RasterZone
 doc    : Гористость
 abstract: false
 order_key: a2

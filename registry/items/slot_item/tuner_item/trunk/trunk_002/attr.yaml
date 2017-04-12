@@ -1,4 +1,5 @@
 ﻿__cls__  : TunerItem
+_cls  : TunerItem
 doc      : Багажник
 abstract : false
 

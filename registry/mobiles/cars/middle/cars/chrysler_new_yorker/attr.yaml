@@ -1,4 +1,5 @@
 ﻿__cls__ : Car
+_cls : Car
 title:       "Chrysler New Yorker"  # Модель атомобиля
 class_car:   "Средний"              # Класс автомобиля
 name_car:    "Chrysler New Yorker"  # Название атомобиля

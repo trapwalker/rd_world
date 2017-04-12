@@ -1,4 +1,5 @@
 ﻿__cls__        : MapWeaponMineItemQuick
+_cls        : MapWeaponMineItemQuick
 
 activate_time  : 0.0
 

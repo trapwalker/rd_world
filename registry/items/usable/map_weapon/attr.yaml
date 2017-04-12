@@ -1,2 +1,3 @@
 ﻿__cls__ : MapWeaponItem
+_cls : MapWeaponItem
 doc    : Предметы, активируя которые, пораждаются юниты на карте

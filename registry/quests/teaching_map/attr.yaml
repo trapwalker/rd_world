@@ -1,4 +1,5 @@
 ﻿__cls__: TeachingMapQuest
+_cls: TeachingMapQuest
 doc    : Квест обучения на карте
 
 first_state: cruise_speed

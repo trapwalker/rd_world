@@ -1,4 +1,5 @@
 ﻿__cls__: RadiationArea
+_cls: RadiationArea
 doc    : Зона Радиации
 
 can_instantiate: False

@@ -1,4 +1,5 @@
 ﻿__cls__ : Institution
+_cls : Institution
 doc     : Глава здания
 text    : Вас приветствует глава здания!
 type    : manager

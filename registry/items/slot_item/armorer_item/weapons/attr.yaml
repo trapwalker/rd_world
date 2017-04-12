@@ -1,4 +1,5 @@
 ﻿__cls__ : Weapon
+_cls : Weapon
 doc     : Оружие
 
 weapon_audio: []
