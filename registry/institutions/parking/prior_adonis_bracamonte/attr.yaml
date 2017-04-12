@@ -1,4 +1,5 @@
 ﻿__cls__  : Parking
+_cls  : Parking
 title    : Adonis_Bracamonte
 photo    : "static/content/institutions/parking/prior_adonis_bracamonte.png"
 abstract : false

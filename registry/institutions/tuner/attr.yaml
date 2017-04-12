@@ -1,4 +1,5 @@
 ﻿__cls__ : Institution
+_cls : Institution
 doc     : Стилист
 text    : Вас приветствует стилист!
 type    : tuner

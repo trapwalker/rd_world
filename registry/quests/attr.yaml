@@ -1,4 +1,5 @@
 ﻿__cls__: Quest
+_cls: Quest
 doc    : Квесты
 
 karma_coef: 0.0

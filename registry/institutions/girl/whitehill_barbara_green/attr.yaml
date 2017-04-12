@@ -1,4 +1,5 @@
 ﻿__cls__  : Institution
+_cls  : Institution
 title    : Barbara_Green
 photo    : "static/content/institutions/girl/whitehill_barbara_green.png"
 abstract : false

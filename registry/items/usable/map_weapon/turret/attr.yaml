@@ -1,4 +1,5 @@
 ﻿__cls__  : MapWeaponTurretItem
+_cls  : MapWeaponTurretItem
 doc      : Предметы, активируя которые, пораждаются неподвижные турели на карте
 
 activate_type : self

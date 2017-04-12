@@ -1,4 +1,5 @@
 ﻿__cls__: ItemUsable
+_cls: ItemUsable
 doc    : Применимые предметы
 
 activate_success_audio: "zoom_01"

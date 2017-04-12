@@ -1,4 +1,5 @@
 ﻿__cls__        : MapWeaponMineItem
+_cls        : MapWeaponMineItem
 abstract       : false
 
 title          : Мина TS/6,1

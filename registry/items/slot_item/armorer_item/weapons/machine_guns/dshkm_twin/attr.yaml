@@ -1,4 +1,5 @@
 ﻿__cls__         : MachineGun
+_cls         : MachineGun
 doc             : Пулемёт ДА-2
 abstract        : false
 

@@ -1,4 +1,5 @@
 ﻿__cls__ : Car
+_cls : Car
 title:       "Triumph America"   # Модель атомобиля
 class_car:   "Легкий"            # Класс автомобиля
 name_car:    "Triumph America"   # Название атомобиля

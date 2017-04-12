@@ -1,4 +1,5 @@
 ﻿__cls__  : Hangar
+_cls  : Hangar
 title    : Clarence_Jackson
 photo    : "static/content/institutions/hangar/prior_clarence_jackson.png"
 abstract : false

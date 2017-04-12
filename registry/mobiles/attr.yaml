@@ -1,4 +1,5 @@
 ﻿__cls__ : Mobile
+_cls : Mobile
 doc     : Подвижные юниты
 
 tags    : [vehicle]

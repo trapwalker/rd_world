@@ -1,4 +1,5 @@
 ﻿__cls__  : Institution
+_cls  : Institution
 title    : Raul_Alon
 photo    : "static/content/institutions/mechanic/whitehill_raul_alon.png"
 abstract : false

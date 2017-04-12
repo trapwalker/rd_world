@@ -1,4 +1,5 @@
 ﻿__cls__  : Hangar
+_cls  : Hangar
 doc      : Продавец машин
 text     : Вас приветствует продавец машин!
 type     : hangar

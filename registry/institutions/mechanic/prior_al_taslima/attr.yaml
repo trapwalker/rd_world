@@ -1,4 +1,5 @@
 ﻿__cls__  : Institution
+_cls  : Institution
 title    : Al_Taslima
 photo    : "static/content/institutions/mechanic/prior_al_taslima.png"
 abstract : false

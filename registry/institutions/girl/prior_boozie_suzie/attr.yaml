@@ -1,4 +1,5 @@
 ﻿__cls__  : Institution
+_cls  : Institution
 title    : Boozie_Suzie
 photo    : "static/content/institutions/girl/prior_boozie_suzie.png"
 abstract : false

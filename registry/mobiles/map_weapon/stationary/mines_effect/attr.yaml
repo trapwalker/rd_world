@@ -1,4 +1,5 @@
 ﻿__cls__: MapWeaponEffectMine
+_cls: MapWeaponEffectMine
 doc    : Мины эффектов
 
 tags: [mine effect_mine]

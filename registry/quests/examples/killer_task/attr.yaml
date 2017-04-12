@@ -1,4 +1,5 @@
 ﻿__cls__: KillerQuest
+_cls: KillerQuest
 doc    : Примеры квестов
 
 first_state: begin

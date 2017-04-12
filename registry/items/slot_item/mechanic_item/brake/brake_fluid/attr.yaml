@@ -1,4 +1,5 @@
 ﻿__cls__ : MechanicItem
+_cls : MechanicItem
 doc  : Предметы, устанавливаемые в слоты системы торможения - тормозная жидкость
 
 tags : [brake_fluid]

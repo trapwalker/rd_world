@@ -1,4 +1,5 @@
 ﻿__cls__: Agent
+_cls: Agent
 doc    : Прототип агента-координатора
 
 #last_town: reg:///registry/poi/locations/towns/prior
@@ -8,11 +9,13 @@ balance: 2000
 
 car: #reg:///registry/mobiles/cars/middle/sports/delorean_dmc12
     __cls__ : Car
+    _cls : Car
     parent: reg:///registry/mobiles/cars/middle/sports/delorean_dmc12
     p_observing_range:     10250      #450 # Радиус обзора автомобиля (м) (>= 0)
 
     slot_FC: 
         __cls__: Cannon
+        _cls: Cannon
         parent: reg:///registry/items/slot_item/armorer_item/weapons/cannons/zu23_flak
         direction: F
         radius: 413
@@ -21,6 +24,7 @@ car: #reg:///registry/mobiles/cars/middle/sports/delorean_dmc12
 
     slot_CC: 
         __cls__: MachineGun
+        _cls: MachineGun
         parent: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/dshkm
         direction: R
         dps: 0.01
@@ -28,6 +32,7 @@ car: #reg:///registry/mobiles/cars/middle/sports/delorean_dmc12
     
     slot_BC:
         __cls__: MachineGun
+        _cls: MachineGun
         parent: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/dshkm
         direction: L
         dps: 0.01

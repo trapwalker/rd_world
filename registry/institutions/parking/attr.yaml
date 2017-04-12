@@ -1,4 +1,5 @@
 ﻿__cls__ : Parking
+_cls : Parking
 doc     : Парковщик
 text    : Вас приветствует парковщик!
 type    : parking

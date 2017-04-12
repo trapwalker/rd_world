@@ -1,4 +1,5 @@
 __cls__ : MechanicItem
+_cls : MechanicItem
 doc    : Тормозная жидкость
 abstract : false
 
