@@ -1,4 +1,5 @@
 ﻿__cls__: PoiStash
+_cls: PoiStash
 doc    : Тайники
 
 p_observing_range: 50

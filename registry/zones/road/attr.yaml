@@ -1,4 +1,5 @@
 ﻿__cls__: TilesetZone
+_cls: TilesetZone
 doc    : Дороги
 abstract: false
 order_key: a2

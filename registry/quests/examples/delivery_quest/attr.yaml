@@ -1,4 +1,5 @@
 ﻿__cls__: DeliveryQuest
+_cls: DeliveryQuest
 doc    : Примеры квестов
 
 first_state: begin

@@ -1,4 +1,5 @@
 ﻿__cls__ : Institution
+_cls : Institution
 doc     : Р-джей
 text    : Вас приветствует р-джей!
 type    : radio_dj

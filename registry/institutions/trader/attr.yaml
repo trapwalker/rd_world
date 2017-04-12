@@ -1,4 +1,5 @@
 __cls__ : Trader
+_cls : Trader
 doc     : Торговец
 text    : Вас приветствует торговец!
 type    : trader

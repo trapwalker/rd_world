@@ -1,4 +1,5 @@
 __cls__: AgentProfile
+_cls: AgentProfile
 doc    : Прототипы агентов
 
 balance: 1000

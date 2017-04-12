@@ -1,4 +1,5 @@
 ﻿__cls__: PerkCritPassive
+_cls: PerkCritPassive
 doc    : Пассивные перки, отвечающие за крит
 tags   : [perk_crit_passive]
 

@@ -1,4 +1,5 @@
 ﻿__cls__ : Car
+_cls : Car
 title:       "International 9800"   # Модель атомобиля
 class_car:   "Грузовой"         # Класс автомобиля
 name_car:    "International 9800"                # Название атомобиля

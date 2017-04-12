@@ -1,4 +1,5 @@
 ﻿__cls__ : Car
+_cls : Car
 title:       "Hornet (Bot)"      # Модель атомобиля
 class_car:   "Легкий"            # Класс автомобиля
 name_car:    "Hornet (Bot)"      # Название атомобиля

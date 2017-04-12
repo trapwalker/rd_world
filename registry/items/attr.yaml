@@ -1,4 +1,5 @@
 ﻿__cls__ : Item
+_cls : Item
 doc     : Предметы
 
 activate_type: none

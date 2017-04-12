@@ -1,4 +1,5 @@
 ﻿__cls__: Effect
+_cls: Effect
 doc: Эффект ограничения скорости в лесу (EffectWoodCC)
 abstract: false
 

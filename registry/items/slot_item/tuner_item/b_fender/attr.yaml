@@ -1,5 +1,7 @@
 ﻿__cls__ : TunerItem
+_cls : TunerItem
 __cls__ : TunerItem
+_cls : TunerItem
 doc     : Заднее крыло
 
 tags    : [tuner]

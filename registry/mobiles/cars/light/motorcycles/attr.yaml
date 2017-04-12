@@ -1,4 +1,5 @@
 ﻿__cls__ : Car
+_cls : Car
 doc    : Легкий класс (мотоциклы)
 
 sub_class_car: motorcycles

@@ -1,4 +1,5 @@
 ﻿__cls__        : MapWeaponTurretItem
+_cls        : MapWeaponTurretItem
 abstract       : false
 
 title          : Турель (Пулемёт MG 15)

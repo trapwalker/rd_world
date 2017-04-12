@@ -1,4 +1,5 @@
 ﻿__cls__: AltitudeZone
+_cls: AltitudeZone
 doc    : Высоты
 abstract: false
 order_key: a1

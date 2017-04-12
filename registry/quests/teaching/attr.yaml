@@ -1,4 +1,5 @@
 ﻿__cls__: TeachingQuest
+_cls: TeachingQuest
 doc    : Квест обучения
 
 first_state: hangar
@@ -7,6 +8,7 @@ current_state: ~
 teaching_delivery_quest:
     parent: reg:///registry/quests/examples/delivery_quest/teaching
     __cls__: DeliveryQuest
+    _cls: DeliveryQuest
     hirer: reg:///registry/institutions/mayor/whitehill_manny_askorti
     karma_coef: 0.5
     money_coef: 0.5

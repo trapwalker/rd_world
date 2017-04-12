@@ -1,4 +1,5 @@
 ﻿__cls__ : Institution
+_cls : Institution
 doc     : Компаньонка
 text    : Вас приветствует компаньонка!
 type    : girl

@@ -1,4 +1,5 @@
 ﻿__cls__           : MapWeaponBangMine
+_cls           : MapWeaponBangMine
 title             : mine_ttt   # Название мины
 
 p_observing_range : 40         # Радиус срабатывания мины

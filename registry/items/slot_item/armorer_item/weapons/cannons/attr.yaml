@@ -1,4 +1,5 @@
 ﻿__cls__ : Cannon
+_cls : Cannon
 doc     : Залповое оружие
 
 weapon_animation:

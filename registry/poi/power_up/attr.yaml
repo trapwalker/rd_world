@@ -1,4 +1,5 @@
 ﻿__cls__: MapPowerUp
+_cls: MapPowerUp
 doc    : Объекты Power Up на карте
 
 icon_name: ""

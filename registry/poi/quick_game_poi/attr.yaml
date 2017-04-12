@@ -1,4 +1,5 @@
 ﻿__cls__: POI
+_cls: POI
 doc    : Объекты на карте быстрой игры
 
 p_visibility_min: 1

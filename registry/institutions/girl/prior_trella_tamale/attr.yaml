@@ -1,4 +1,5 @@
 ﻿__cls__  : Institution
+_cls  : Institution
 title    : Trella_Tamale
 photo    : "static/content/institutions/girl/prior_trella_tamale.png"
 abstract : false

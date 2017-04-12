@@ -1,4 +1,5 @@
 ﻿__cls__  : MapWeaponMineItem
+_cls  : MapWeaponMineItem
 doc      : Мина ТММ-1
 abstract : false
 

@@ -1,5 +1,6 @@
 ﻿
 __cls__ : QuestState
+_cls : QuestState
 doc     : Стандартное состояние удачного окончания квеста
 
 result  : win
