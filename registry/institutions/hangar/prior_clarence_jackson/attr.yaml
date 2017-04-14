@@ -1,5 +1,6 @@
 ﻿__cls__  : Hangar
-_cls  : Hangar
+_cls     : Hangar
+
 title    : Clarence_Jackson
 photo    : "static/content/institutions/hangar/prior_clarence_jackson.png"
 abstract : false
@@ -7,19 +8,54 @@ abstract : false
 hometown : reg:///registry/poi/locations/towns/prior
 
 car_list:
-  - reg:///registry/mobiles/cars/middle/sports/delorean_dmc12
-  - reg:///registry/mobiles/cars/middle/offroad/defender
-  - reg:///registry/mobiles/cars/middle/cars/dodge_challenger
-#  - reg:///registry/mobiles/cars/heavy/btrs/m113a1
-#  - reg:///registry/mobiles/cars/middle/vans/gmc_savana
-#  - reg:///registry/mobiles/cars/cargo/tractors/peterbilt_369
+
+  # CARGO
+
+  # buses
+
+  - reg:///registry/mobiles/cars/cargo/buses/gmc_scenicruiser
 #  - reg:///registry/mobiles/cars/cargo/buses/international_dimex
-#  - reg:///registry/mobiles/cars/light/motorcycles/triumph_america
-#  - reg:///registry/mobiles/cars/cargo/buses/gmc_scenicruiser
-#  - reg:///registry/mobiles/cars/cargo/tractors/international_9800
-#  - reg:///registry/mobiles/cars/heavy/btrs/m1126
-#  - reg:///registry/mobiles/cars/light/motorcycles/honda_hornet
-#  - reg:///registry/mobiles/cars/middle/vans/chevrolet_express
-#  - reg:///registry/mobiles/cars/middle/cars/chrysler_new_yorker
-#  - reg:///registry/mobiles/cars/middle/offroad/gelandewagen
+
+  # tractors
+
+  - reg:///registry/mobiles/cars/cargo/tractors/international_9800
+  - reg:///registry/mobiles/cars/cargo/tractors/peterbilt_369
+
+  # HEAVY
+
+  # btrs
+
+  - reg:///registry/mobiles/cars/heavy/btrs/m113a1
+  - reg:///registry/mobiles/cars/heavy/btrs/m1126
+
+  # LIGHT
+
+  # motorcycles
+
+  - reg:///registry/mobiles/cars/light/motorcycles/honda_hornet
+  - reg:///registry/mobiles/cars/light/motorcycles/triumph_america
+
+  # quadbikes
+
 #  - reg:///registry/mobiles/cars/light/quadbikes/commander_1000
+
+  # MIDDLE
+
+  # cars
+
+  - reg:///registry/mobiles/cars/middle/cars/chrysler_new_yorker
+  - reg:///registry/mobiles/cars/middle/cars/dodge_challenger
+
+  # offroad
+
+  - reg:///registry/mobiles/cars/middle/offroad/defender
+  - reg:///registry/mobiles/cars/middle/offroad/gelandewagen
+
+  # sports
+
+  - reg:///registry/mobiles/cars/middle/sports/delorean_dmc12
+
+  # vans
+
+  - reg:///registry/mobiles/cars/middle/vans/chevrolet_express
+  - reg:///registry/mobiles/cars/middle/vans/gmc_savana
