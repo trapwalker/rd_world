@@ -1,4 +1,5 @@
 ﻿__cls__: MapRespawn
+_cls: MapRespawn
 doc    : Респавны быстрой игры
 
 position: {x: 12484108, y: 27010266}

@@ -1,4 +1,5 @@
 __cls__  : TankFull
+_cls  : TankFull
 doc      : Полная канистра (20л)
 abstract : false
 

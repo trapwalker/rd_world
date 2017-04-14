@@ -1,4 +1,5 @@
 ﻿__cls__ : MechanicItem
+_cls : MechanicItem
 doc  : Предметы, устанавливаемые в слоты системы торможения - передние тормозные механизмы
 
 tags : [front_brakes]

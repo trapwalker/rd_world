@@ -1,4 +1,5 @@
 ﻿__cls__: Skill
+_cls: Skill
 doc    : Навык скрытности
 
 description: |

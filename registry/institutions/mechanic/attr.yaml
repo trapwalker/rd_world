@@ -1,4 +1,5 @@
 ﻿__cls__ : Institution
+_cls : Institution
 doc     : Механик
 text    : Вас приветствует механик!
 type    : mechanic

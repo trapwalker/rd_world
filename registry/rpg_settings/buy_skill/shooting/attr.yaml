@@ -1,4 +1,5 @@
 ﻿__cls__: BuySkill
+_cls: BuySkill
 doc    : Навык стрельбы
 
 description: |

@@ -1,4 +1,5 @@
 ﻿__cls__: MapRespawn
+_cls: MapRespawn
 doc    : Респавны быстрой игры
 
 parent: reg:///registry/poi/respawns

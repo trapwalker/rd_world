@@ -1,4 +1,5 @@
 ﻿__cls__ : Car
+_cls : Car
 title:       "Commander 1000"   # Модель атомобиля
 class_car:   "Легкий"           # Класс автомобиля
 name_car:    "Commander 1000"   # Название атомобиля

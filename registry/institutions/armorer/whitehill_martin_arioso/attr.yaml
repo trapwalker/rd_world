@@ -1,4 +1,5 @@
 ﻿__cls__  : Institution
+_cls  : Institution
 title    : Martin_Arioso
 photo    : "static/content/institutions/armorer/whitehill_martin_arioso.png"
 abstract : false

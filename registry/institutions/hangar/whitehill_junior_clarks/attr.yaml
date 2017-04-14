@@ -1,4 +1,5 @@
 ﻿__cls__  : Hangar
+_cls  : Hangar
 title    : Junior_Clarks
 photo    : "static/content/institutions/hangar/whitehill_junior_clarks.png"
 abstract : false

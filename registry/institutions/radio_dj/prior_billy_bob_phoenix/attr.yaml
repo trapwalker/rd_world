@@ -1,4 +1,5 @@
 ﻿__cls__  : Institution
+_cls  : Institution
 title    : Billy_Bob_Phoenix
 photo    : "static/content/institutions/radio_dj/prior_billy_bob_phoenix.png"
 abstract : false

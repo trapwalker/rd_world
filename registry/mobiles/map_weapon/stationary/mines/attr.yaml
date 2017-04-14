@@ -1,4 +1,5 @@
 ﻿__cls__          : MapWeaponBangMine
+_cls          : MapWeaponBangMine
 doc              : Мины эффектов
 
 radius_damage    : 60

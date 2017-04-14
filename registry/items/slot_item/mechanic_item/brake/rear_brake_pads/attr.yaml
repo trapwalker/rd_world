@@ -1,4 +1,5 @@
 ﻿__cls__ : MechanicItem
+_cls : MechanicItem
 doc  : Предметы, устанавливаемые в слоты системы торможения - задние колодки
 
 tags : [rear_brake_pads]

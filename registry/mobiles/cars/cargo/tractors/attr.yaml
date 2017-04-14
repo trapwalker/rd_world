@@ -1,4 +1,5 @@
 ﻿__cls__ : Car
+_cls : Car
 doc     : Грузовой класс (тягачи)
 
 sub_class_car: tractors

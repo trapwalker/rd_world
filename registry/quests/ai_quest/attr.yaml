@@ -1,4 +1,5 @@
 ﻿__cls__: AIQuickQuest
+_cls: AIQuickQuest
 doc    : Квест обучения
 
 first_state: before_respawn

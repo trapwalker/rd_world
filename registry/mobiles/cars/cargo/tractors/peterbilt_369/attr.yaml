@@ -1,4 +1,5 @@
 ﻿__cls__ : Car
+_cls : Car
 title:       "Peterbilt 369"     # Модель атомобиля
 class_car:   "Грузовой"          # Класс автомобиля
 name_car:    "Peterbilt 369"     # Название атомобиля

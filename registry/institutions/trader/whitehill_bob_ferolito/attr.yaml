@@ -1,4 +1,5 @@
 __cls__  : Trader
+_cls  : Trader
 title    : Bob_Ferolito
 photo    : "static/content/institutions/trader/whitehill_bob_ferolito.png"
 abstract : true
@@ -201,6 +202,7 @@ quests:
 
   - parent: reg:///registry/quests/examples/killer_task
     __cls__: KillerQuest
+    _cls: KillerQuest
     price_victim: 100
     count_to_kill_range:
       min: 1
@@ -219,6 +221,7 @@ quests:
 
   - parent: reg:///registry/quests/examples/delivery_quest
     __cls__: DeliveryQuest
+    _cls: DeliveryQuest
     karma_coef: 0.5
     money_coef: 0.5
     total_delivery_money_coef: 0.5

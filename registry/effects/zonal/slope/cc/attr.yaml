@@ -1,4 +1,5 @@
 ﻿__cls__: Effect
+_cls: Effect
 doc: Эффект замедления на пересеченной местности (EffectSlopeCC)
 abstract: false
 
