@@ -40,16 +40,16 @@ weapon_audio:
 armorer_images:
   small:
     # Картинки для представления у оружейника (вид сбоку)
-    armorer_side_F  : "static/content/items/slot_item/weapons/mashine_guns/dshkm_twin/side_f.png" # вперёд
-    armorer_side_B  : "static/content/items/slot_item/weapons/mashine_guns/dshkm_twin/side_b.png" # назад
-    armorer_side_R  : "static/content/items/slot_item/weapons/mashine_guns/dshkm_twin/side_r.png" # вправо
-    armorer_side_L  : "static/content/items/slot_item/weapons/mashine_guns/dshkm_twin/side_l.png" # влево
+    armorer_side_F  : "static/content/items/slot_item/weapons/mashine_guns/dshkm_twin/small/side_f.png" # вперёд
+    armorer_side_B  : "static/content/items/slot_item/weapons/mashine_guns/dshkm_twin/small/side_b.png" # назад
+    armorer_side_R  : "static/content/items/slot_item/weapons/mashine_guns/dshkm_twin/small/side_r.png" # вправо
+    armorer_side_L  : "static/content/items/slot_item/weapons/mashine_guns/dshkm_twin/small/side_l.png" # влево
 
     # Картинки для представления у оружейника (вид сверху)
-    armorer_top_F   : "static/content/items/slot_item/weapons/mashine_guns/dshkm_twin/top_f.png"  # вперёд
-    armorer_top_B   : "static/content/items/slot_item/weapons/mashine_guns/dshkm_twin/top_b.png"  # назад
-    armorer_top_R   : "static/content/items/slot_item/weapons/mashine_guns/dshkm_twin/top_r.png"  # вправо
-    armorer_top_L   : "static/content/items/slot_item/weapons/mashine_guns/dshkm_twin/top_l.png"  # влево
+    armorer_top_F   : "static/content/items/slot_item/weapons/mashine_guns/dshkm_twin/small/top_f.png"  # вперёд
+    armorer_top_B   : "static/content/items/slot_item/weapons/mashine_guns/dshkm_twin/small/top_b.png"  # назад
+    armorer_top_R   : "static/content/items/slot_item/weapons/mashine_guns/dshkm_twin/small/top_r.png"  # вправо
+    armorer_top_L   : "static/content/items/slot_item/weapons/mashine_guns/dshkm_twin/small/top_l.png"  # влево
 
   middle:
     # Картинки для представления у оружейника (вид сбоку)
