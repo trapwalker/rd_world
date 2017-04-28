@@ -50,7 +50,7 @@ fuel:                  15      # Текущее количество топли�
 p_fuel_rate:           0.0175  # Расход топлива, тратится только в движении (л/с) (>= 0)
 
 # Ссылка на картинку автомобиля в ангаре
-hangar_car:            "static/content/mobiles/cars/light/motorcycles/honda_hornet/side.png"
+hangar_car:            "static/content/mobiles/cars/quick_game/hornet.png"
 
 # Ссылки на верстку автомобиля у оружейника
 armorer_car:           static/content/mobiles/cars/light/motorcycles/honda_hornet/armorer_car.html

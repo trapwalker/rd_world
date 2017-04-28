@@ -58,7 +58,7 @@ fuel:                  70       # Текущее количество топли
 p_fuel_rate:           0.045    # Расход топлива, тратится только в движении (л/с) (>= 0)
 
 # Ссылка на картинку автомобиля в ангаре
-hangar_car:            "static/content/mobiles/cars/middle/offroad/defender/side.png"
+hangar_car:            "static/content/mobiles/cars/quick_game/defender.png"
 
 # Ссылки на верстку автомобиля у оружейника
 armorer_car:           static/content/mobiles/cars/middle/offroad/defender/armorer_car.html
