@@ -57,7 +57,7 @@ fuel:               175          # Текущее количество топл�
 p_fuel_rate:        0.060        # Расход топлива, тратится только в движении (л/с) (>= 0)
 
 # Ссылка на картинку автомобиля в ангаре
-hangar_car:            "static/content/mobiles/cars/heavy/btrs/m113a1/side.png"
+hangar_car:            "static/content/mobiles/cars/quick_game/m113.png"
 
 # Ссылки на верстку автомобиля у оружейника
 armorer_car:           static/content/mobiles/cars/heavy/btrs/m113a1/armorer_car.html
