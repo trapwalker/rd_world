@@ -42,6 +42,12 @@ quick_game_cars: # Список машинок для быстрой игры
 
 # Боты
 quick_game_bot_count: 20 # Количество ботов в быстрой игре
+
+quick_game_start_pos: {x: 12484108, y: 27010266}  # Центр быстрой игры
+quick_game_play_radius: 2000  # Радиус быстрой игры
+quick_game_respawn_bots_pos: {x: 12484108, y: 27010266}  # Центр респа игроков и ботов
+quick_game_respawn_bots_radius: 750  # Радиус респа игроков и ботов
+
 quick_game_bot_cars: # Список машинок на которых ездят боты в быстрой игре
   - reg:///registry/mobiles/cars/light/motorcycles/honda_hornet/quick_bot
   - reg:///registry/mobiles/cars/middle/sports/delorean_dmc12/quick_bot
