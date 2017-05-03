@@ -66,7 +66,7 @@ mechanic_transmission: static/content/mechanic_systems/transmissions/transmissio
 mechanic_brakes:       static/content/mechanic_systems/brakes/brakes_1/brakes.html                     # тормоза
 mechanic_cooling:      static/content/mechanic_systems/coolings/cooling_1/cooling.html                 # охлаждение
 mechanic_suspension:   static/content/mechanic_systems/suspensions/suspension_1/suspension.html        # подвеска
-цы
+
 # Ниже перечислены все слоты доступные на автомобиле. В название содержится расположение слота.
 # Сейчас до 9 слотов на автомобиль: slot_(Front, Center, Back)(Left, Center, Right).
 slot_FC: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/mg15/quick?direction=F
