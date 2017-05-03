@@ -69,9 +69,9 @@ mechanic_suspension:   static/content/mechanic_systems/suspensions/suspension_1/
 
 # Ниже перечислены все слоты доступные на автомобиле. В название содержится расположение слота.
 # Сейчас до 9 слотов на автомобиль: slot_(Front, Center, Back)(Left, Center, Right).
-slot_FC: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/mg15?direction=F
-slot_CC: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/dshkm_twin?direction=R
-slot_BC: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/dshkm_twin?direction=L
+slot_FC: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/mg15/quick??direction=F
+slot_CC: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/browning_m2/quick?direction=R
+slot_BC: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/browning_m2/quick?direction=L
 
 # Настройка ограничений направления оружия из слота. Значением является строка в котороую включены первые буквы
 # соответствующих направлений (Front, Back, Left, Right)
