@@ -6,5 +6,5 @@ abstract: false
 can_instantiate: False
 p_observing_range: 1200
 p_vigilance: 1
-radiation_dps : -5
+radiation_dps : -2
 parent: reg:///registry/poi/radiation_area

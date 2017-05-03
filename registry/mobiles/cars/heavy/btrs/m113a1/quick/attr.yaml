@@ -10,7 +10,7 @@ max_hp:             300          # Максимальное количество
 hp:                 300          # Текущее количество прочности (> 0)
 
 inventory:                       # При заполнении инвентаря необходимо учитывать его размер
-    size: 34
+    size: 22
     items:
        - reg:///registry/items/usable/ammo/30bb?amount=10
        - reg:///registry/items/usable/ammo/30bb?amount=10
@@ -22,7 +22,6 @@ inventory:                       # При заполнении инвентар�
        - reg:///registry/items/usable/map_weapon/mines/mine_ttt/quick?amount=1
        - reg:///registry/items/usable/map_weapon/turret/turret_mg15/quick?amount=1
        - reg:///registry/items/usable/build_set/build_set_big?amount=1
-       - reg:///registry/items/usable/tanks/tank_full/tank_10l/quick?amount=1
        - reg:///registry/items/usable/tanks/tank_full/tank_10l/quick?amount=1
        - reg:///registry/items/usable/tanks/tank_full/tank_10l/quick?amount=1
        - reg:///registry/items/usable/tanks/tank_full/tank_10l/quick?amount=1
@@ -49,12 +48,12 @@ a_backward:         -2.5         # Ускорение при езде назад
 a_braking:          -7           # Ускорение при торможении (м/c^2)
 
 max_control_speed:  50.0000      # Абсолютная максимальная скорость, скорость до которой будет размечен спидометр (м/с) (>= 0)
-v_forward:          20           # Максимальная скорость без штрафов местности при движении вперед (м/с) (0 .. max_control_speed)
+v_forward:          21           # Максимальная скорость без штрафов местности при движении вперед (м/с) (0 .. max_control_speed)
 v_backward:         -11          # Максимальная скорость без штрафов местности при движении назад (м/с) (0 .. max_control_speed)
 
 max_fuel:           175          # Максимальное количество топлива, объем бака (л) (>= 0)
 fuel:               175          # Текущее количество топлива (0 .. max_fuel)
-p_fuel_rate:        0.060        # Расход топлива, тратится только в движении (л/с) (>= 0)
+p_fuel_rate:        0.408        # Расход топлива, тратится только в движении (л/с) (>= 0)
 
 # Ссылка на картинку автомобиля в ангаре
 hangar_car:            "static/content/mobiles/cars/quick_game/m113.png"
@@ -76,10 +75,10 @@ mechanic_suspension:    static/content/mechanic_systems/suspensions/suspension_1
 # Ниже перечислены все слоты доступные на автомобиле. В название содержится расположение слота.
 # Сейчас до 9 слотов на автомобиль: slot_(Front, Center, Back)(Left, Center, Right).
 # Все слоты закоментированы, кроме переднего центрального.
-slot_FL: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/dshkm_twin?direction=L
-slot_FR: reg:///registry/items/slot_item/armorer_item/weapons/cannons/zu23_flak?direction=F
+slot_FL: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/browning_m2/quick?direction=L
+slot_FR: reg:///registry/items/slot_item/armorer_item/weapons/cannons/zu23_flak/quick?direction=F
 slot_BR: reg:///registry/items/slot_item/armorer_item/rocket_launcher/m242?direction=F
-slot_BL: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/dshkm_twin?direction=R
+slot_BL: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/browning_m2/quick?direction=R
 
 # Настройка ограничений направления оружия из слота. Значением является строка в котороую включены первые буквы
 # соответствующих направлений (Front, Back, Left, Right)
