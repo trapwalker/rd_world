@@ -77,6 +77,7 @@ states:
           if car:
               agent._agent_model.car.set_motion(time=event.time, cc=0.3 + random.random() * 0.3, target_point=quest.attacke_target.position(time=event.time))
               set_timer(name='attacke', delay=3)
+              set_timer(name='need_heal', delay=5)
           else:
               log('Car for agent {} not found'.format(agent.login))
               go('before_respawn')
@@ -115,6 +116,16 @@ states:
                       go('attacke')
                   else:
                       go('patrol')
+
+          if isinstance(event, OnTimer) and event.name == 'need_heal':
+              car = agent._agent_model.car
+              if car:
+                  if car.hp(time=event.time) < 20:
+                      quest.use_heal(time=event.time)
+                  set_timer(name='need_heal', delay=5)
+              else:
+                  log('Car for agent {} not found'.format(agent.login))
+                  go('before_respawn')
 
     - id: final  # Недостижимое состояние
       parent: reg:///registry/quest_states/final/win
