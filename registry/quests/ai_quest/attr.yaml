@@ -34,7 +34,7 @@ states:
               quest.patrol_target = None
               quest.attacke_target = None
               go('patrol')
-          else:
+          elif isinstance(event, OnTimer) and event.name == 'before_respawn':
               set_timer(name='before_respawn', delay=10)
 
     - id: patrol
