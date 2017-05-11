@@ -1,0 +1,8 @@
+﻿__cls__  : Institution
+_cls     : Institution
+
+title    : Lynnie_JJ
+photo    : "static/content/institutions/girl/paloma_lynnie_jj.png"
+abstract : false
+
+hometown : reg:///registry/poi/locations/towns/paloma

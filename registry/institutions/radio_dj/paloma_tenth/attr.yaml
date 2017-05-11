@@ -1,0 +1,8 @@
+﻿__cls__  : Institution
+_cls     : Institution
+
+title    : Tenth
+photo    : "static/content/institutions/radio_dj/paloma_tenth.png"
+abstract : false
+
+hometown : reg:///registry/poi/locations/towns/paloma

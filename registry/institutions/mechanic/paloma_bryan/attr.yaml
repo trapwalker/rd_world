@@ -1,0 +1,8 @@
+﻿__cls__  : Institution
+_cls     : Institution
+
+title    : Bryan
+photo    : "static/content/institutions/mechanic/paloma_bryan.png"
+abstract : false
+
+hometown : reg:///registry/poi/locations/towns/paloma

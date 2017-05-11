@@ -1,0 +1,93 @@
+﻿__cls__ : Town
+_cls    : Town
+
+doc      : Палома
+abstract : false
+
+title             : Палома
+position          : {x: 12505620, y: 27055259}
+p_observing_range : 365
+
+svg_link : static/content/locations/map_locations/paloma
+
+buildings:
+  - name: market
+    caption: Магазин
+    title: Магазин
+    head: reg:///registry/institutions/trader/paloma_shaun_fisher
+    instances:
+        - reg:///registry/institutions/trader/paloma_shaun_fisher
+
+  - name: library
+    caption: Библиотека
+    title: Библиотека
+    head: reg:///registry/institutions/trainer/paloma_luke_utz
+    instances:
+        - reg:///registry/institutions/trainer/paloma_luke_utz
+
+  - name: nukeoil
+    caption: Нукойл
+    title: Нукойл
+    head: reg:///registry/institutions/nucoil
+    instances:
+        - reg:///registry/institutions/gas_station
+        - reg:///registry/institutions/npc_help
+
+  - name: parking
+    caption: Паркинг
+    title: Паркинг
+    head: reg:///registry/institutions/hangar/paloma_george_martell
+    instances:
+        - reg:///registry/institutions/hangar/paloma_george_martell
+        - reg:///registry/institutions/parking/paloma_billy_pilot
+
+  - name: service
+    caption: Автосервис
+    title: Автосервис
+    head: reg:///registry/institutions/manager/paloma_myles_echenique
+    instances:
+        - reg:///registry/institutions/armorer/paloma_eric_davis
+        - reg:///registry/institutions/mechanic/paloma_bryan
+        - reg:///registry/institutions/tuner/paloma_nice_n_smooth
+
+  - name: bar
+    caption: Бар
+    title: Бар
+    head: reg:///registry/institutions/barman/paloma_fransie_nolan
+    instances:
+        - reg:///registry/institutions/barman/paloma_fransie_nolan
+        - reg:///registry/institutions/girl/paloma_jett_doll
+        - reg:///registry/institutions/girl/paloma_lynnie_jj
+
+  - name: radio
+    caption: Радиовышка
+    title: Радиовышка
+    head: reg:///registry/institutions/radio_dj/paloma_tenth
+    instances:
+        - reg:///registry/institutions/radio_dj/paloma_tenth
+
+static_image_list:
+    - /static/content/locations/map_locations/paloma/bar.png
+    - /static/content/locations/map_locations/paloma/bar_bg.png
+    - /static/content/locations/map_locations/paloma/bar_hover.png
+    - /static/content/locations/map_locations/paloma/city_logo.png
+    - /static/content/locations/map_locations/paloma/city_logo_hover.png
+    - /static/content/locations/map_locations/paloma/ground+circle.png
+    - /static/content/locations/map_locations/paloma/library.png
+    - /static/content/locations/map_locations/paloma/library_bg.png
+    - /static/content/locations/map_locations/paloma/library_hover.png
+    - /static/content/locations/map_locations/paloma/market.png
+    - /static/content/locations/map_locations/paloma/market_bg.png
+    - /static/content/locations/map_locations/paloma/market_hover.png
+    - /static/content/locations/map_locations/paloma/nukeoil.png
+    - /static/content/locations/map_locations/paloma/nukeoil_bg.png
+    - /static/content/locations/map_locations/paloma/nukeoil_hover.png
+    - /static/content/locations/map_locations/paloma/parking.png
+    - /static/content/locations/map_locations/paloma/parking_bg.png
+    - /static/content/locations/map_locations/paloma/parking_hover.png
+    - /static/content/locations/map_locations/paloma/radio.png
+    - /static/content/locations/map_locations/paloma/radio_bg.png
+    - /static/content/locations/map_locations/paloma/radio_hover.png
+    - /static/content/locations/map_locations/paloma/service.png
+    - /static/content/locations/map_locations/paloma/service_bg.png
+    - /static/content/locations/map_locations/paloma/service_hover.png
