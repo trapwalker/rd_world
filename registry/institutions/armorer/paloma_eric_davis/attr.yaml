@@ -1,0 +1,8 @@
+﻿__cls__  : Institution
+_cls     : Institution
+
+title    : Eric_Davis
+photo    : "static/content/institutions/armorer/paloma_eric_davis.png"
+abstract : false
+
+hometown : reg:///registry/poi/locations/towns/paloma

@@ -1,0 +1,8 @@
+﻿__cls__  : Trainer
+_cls     : Trainer
+
+title    : Luke_Utz
+photo    : "static/content/institutions/trainer/paloma_luke_utz.png"
+abstract : false
+
+hometown : reg:///registry/poi/locations/towns/paloma

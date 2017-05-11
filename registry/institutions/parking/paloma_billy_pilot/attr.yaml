@@ -1,0 +1,10 @@
+﻿__cls__  : Parking
+_cls     : Parking
+
+title    : Billy_Pilot
+photo    : "static/content/institutions/parking/paloma_billy_pilot.png"
+abstract : false
+
+hometown : reg:///registry/poi/locations/towns/paloma
+
+text: Вы можете оставить тут свой автомобиль. Я присмотрю за ним за небольшую плату.
