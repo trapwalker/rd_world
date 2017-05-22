@@ -199,7 +199,7 @@ price_list: # правила завоза
 
 
 quests:
-  - parent: reg:///registry/quests/examples/delivery_quest/delivery_quest_simple
+  - parent: reg:///registry/quests/delivery_quest/delivery_quest_simple
     __cls__: DeliveryQuestSimple
     _cls: DeliveryQuestSimple
     reward_relation_hirer: 5.0
