@@ -1,6 +1,6 @@
-﻿__cls__: DistTable
-_cls: DistTable
-doc    : Таблица расстояний между городами
+﻿__cls__ : DistTable
+_cls    : DistTable
+doc     : Таблица расстояний между городами
 
 table:
   - town1: reg:///registry/poi/locations/towns/prior
@@ -14,10 +14,10 @@ table:
     distance: 8400
   - town1: reg:///registry/poi/locations/towns/prior
     town2: reg:///registry/poi/locations/towns/paloma
-    distance: 8400
+    distance: 25200
   - town1: reg:///registry/poi/locations/towns/prior
     town2: reg:///registry/poi/locations/towns/whitehill
-    distance: 8400
+    distance: 75600
   - town1: reg:///registry/poi/locations/towns/paloma
     town2: reg:///registry/poi/locations/towns/whitehill
-    distance: 8400
+    distance: 50400

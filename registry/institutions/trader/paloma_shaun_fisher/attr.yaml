@@ -197,3 +197,27 @@ price_list: # правила завоза
     price_min: 1.0
     price_max: 1.0
     influence: 0.0
+
+
+quests:
+  - parent: reg:///registry/quests/delivery_quest/delivery_quest_simple
+    __cls__: DeliveryQuestSimple
+    _cls   : DeliveryQuestSimple
+    reward_relation_hirer: 5.0     # Награда в отношение за выполнение
+    karma_coef: 0.0                # Часть кармы от общей награды
+    money_coef: 1.0                # Часть нуокйнов от общей награды
+    total_delivery_money_coef: 0.5 # Множитель общей стоимости награды за квест от стоимости доставляемого товара
+    recipient_list:                # Список возможных получателей доставки
+      - reg:///registry/institutions/trader/prior_hershey_la_palmas
+      - reg:///registry/institutions/mayor/prior_donnie_alma
+      - reg:///registry/institutions/trader/whitehill_bob_ferolito
+      - reg:///registry/institutions/mayor/whitehill_manny_askorti
+    delivery_set_list:             # Список возможных комплектов для доставки
+      -
+        - reg:///registry/items/usable/build_set/build_set_big?amount=5
+        - reg:///registry/items/usable/build_set/build_set_big?amount=7
+        - reg:///registry/items/usable/build_set/build_set_big?amount=10
+        - reg:///registry/items/slot_item/tuner_item/airint/airint_001
+        - reg:///registry/items/usable/tanks/tank_empty/tank_10l
+        - reg:///registry/items/usable/tanks/tank_empty/tank_20l
+    reward_items_list: []          # Список возможных комплектов для награды

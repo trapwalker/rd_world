@@ -201,13 +201,15 @@ price_list: # правила завоза
 quests:
   - parent: reg:///registry/quests/delivery_quest/delivery_quest_simple
     __cls__: DeliveryQuestSimple
-    _cls: DeliveryQuestSimple
+    _cls   : DeliveryQuestSimple
     reward_relation_hirer: 5.0     # Награда в отношение за выполнение
     karma_coef: 0.0                # Часть кармы от общей награды
     money_coef: 1.0                # Часть нуокйнов от общей награды
     total_delivery_money_coef: 0.5 # Множитель общей стоимости награды за квест от стоимости доставляемого товара
     recipient_list:                # Список возможных получателей доставки
-      - reg:///registry/institutions/barman/prior_jimmy_dee
+      - reg:///registry/institutions/trader/whitehill_bob_ferolito
+      - reg:///registry/institutions/mayor/whitehill_manny_askorti
+      - reg:///registry/institutions/trader/paloma_shaun_fisher
     delivery_set_list:             # Список возможных комплектов для доставки
       -
         - reg:///registry/items/usable/build_set/build_set_big?amount=5
