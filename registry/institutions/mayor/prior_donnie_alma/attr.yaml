@@ -21,10 +21,14 @@ quests:
       - reg:///registry/institutions/trader/paloma_shaun_fisher
     delivery_set_list:             # Список возможных комплектов для доставки
       -
-        - reg:///registry/items/usable/build_set/build_set_big?amount=5
-        - reg:///registry/items/usable/build_set/build_set_big?amount=7
+        - reg:///registry/items/usable/ammo/762x51bb?amount=100
+        - reg:///registry/items/usable/ammo/23bzt?amount=10
+        - reg:///registry/items/usable/ammo/30bb?amount=10
+        - reg:///registry/items/usable/build_set/build_set_small?amount=10
+        - reg:///registry/items/usable/build_set/build_set_mid?amount=10
         - reg:///registry/items/usable/build_set/build_set_big?amount=10
-        - reg:///registry/items/slot_item/tuner_item/airint/airint_001
         - reg:///registry/items/usable/tanks/tank_empty/tank_10l
+        - reg:///registry/items/usable/tanks/tank_full/tank_10l
         - reg:///registry/items/usable/tanks/tank_empty/tank_20l
+        - reg:///registry/items/usable/tanks/tank_full/tank_20l
     reward_items_list: []          # Список возможных комплектов для награды
