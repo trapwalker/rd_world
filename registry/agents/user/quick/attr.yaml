@@ -5,3 +5,15 @@ doc    : Прототип агента быстрой игры
 last_town: reg:///registry/poi/locations/towns/prior
 current_location: ~
 balance: 2000
+
+quick_flag: True
+teaching_flag: False
+_exp: 1005
+
+shooting:    {value: 20, parent: "reg:///registry/rpg_settings/skill/shooting"}
+driving:     {value: 20, parent: "reg:///registry/rpg_settings/skill/driving"}
+shooting:    {value: 20, parent: "reg:///registry/rpg_settings/skill/shooting"}
+masking:     {value: 20, parent: "reg:///registry/rpg_settings/skill/masking"}
+leading:     {value: 20, parent: "reg:///registry/rpg_settings/skill/leading"}
+trading:     {value: 20, parent: "reg:///registry/rpg_settings/skill/trading"}
+engineering: {value: 20, parent: "reg:///registry/rpg_settings/skill/engineering"}
