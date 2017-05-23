@@ -16,10 +16,17 @@ items:
   - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/dshkm_twin
   - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/mg15
   - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/m134_minigun
+  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/browning_m2
+  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/gau19
+  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/m249
+  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/oc_14
 
   # Залповое вооружение
   - reg:///registry/items/slot_item/armorer_item/weapons/cannons/m242
   - reg:///registry/items/slot_item/armorer_item/weapons/cannons/zu23_flak
+  - reg:///registry/items/slot_item/armorer_item/weapons/cannons/2a42
+  - reg:///registry/items/slot_item/armorer_item/weapons/cannons/flak_18
+  - reg:///registry/items/slot_item/armorer_item/weapons/cannons/mk103
 
   # Боеприпасы для вооружения
   - reg:///registry/items/usable/ammo/762x51bb
