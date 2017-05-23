@@ -34,7 +34,7 @@ states:
               quest.patrol_target = None
               quest.attacke_target = None
               go('patrol')
-          else:
+          elif isinstance(event, OnTimer) and event.name == 'before_respawn':
               set_timer(name='before_respawn', delay=10)
 
     - id: patrol
@@ -53,6 +53,10 @@ states:
           if isinstance(event, OnTimer) and event.name == 'patrol':
               car = agent._agent_model.car
               if car:
+                # Хил по необходимости
+                  if car.hp(time=event.time) < 20:
+                      quest.use_heal(time=event.time)
+
                   distance = quest.patrol_target.distance(agent._agent_model.car.position(time=event.time))
                   if distance < 200:
                       go('patrol')
@@ -94,6 +98,10 @@ states:
                   for sector in car.fire_sectors:
                       if sector.is_discharge() and sector._test_target_in_sector(target=quest.attacke_target, time=event.time):
                           car.fire_discharge(side=sector.side, time=event.time)
+
+                  # Хил по необходимости
+                  if car.hp(time=event.time) < 20:
+                      quest.use_heal(time=event.time)
 
                   set_timer(name='attacke', delay=3)
               else:

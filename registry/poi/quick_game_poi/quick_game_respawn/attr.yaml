@@ -5,7 +5,7 @@ doc    : Респавны быстрой игры
 parent: reg:///registry/poi/respawns
 
 respawn_time: 10
-respawn_radius: 1750
+respawn_radius: 2250
 
 respawn_objects:
   - reg:///registry/poi/quick_game_poi/quick_game_power_up/qg_power_up_heal

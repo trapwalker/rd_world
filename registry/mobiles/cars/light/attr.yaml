@@ -1,7 +1,8 @@
-﻿__cls__ : Car
-_cls : Car
-doc    : Легкий класс транспортных средств
+﻿__cls__     : Car
+_cls        : Car
+doc         : Легкий класс транспортных средств
 
+image_scale : big   # Масштаб машинки для отрисовки обвеса: small, middle, big
 
 # audio_engine
 audio_engine:

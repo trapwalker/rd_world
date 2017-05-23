@@ -1,0 +1,8 @@
+﻿__cls__  : Institution
+_cls     : Institution
+
+title    : Myles_Echenique
+photo    : "static/content/institutions/manager/paloma_myles_echenique.png"
+abstract : false
+
+hometown : reg:///registry/poi/locations/towns/paloma
