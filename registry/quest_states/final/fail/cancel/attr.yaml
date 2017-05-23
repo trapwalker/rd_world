@@ -1,0 +1,7 @@
+﻿__cls__ : QuestState
+_cls : QuestState
+doc     : Стандартное состояние провала квеста (отмена пользователем)
+
+result  : fail
+id      : cancel_fail
+enter_state_message : Задание {quest.caption} отменено пользователем.

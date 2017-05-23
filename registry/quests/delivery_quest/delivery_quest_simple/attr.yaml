@@ -46,7 +46,7 @@ on_generate: |
     distance = quest.init_distance()
     quest.init_deadline(distance)
 
-    distance_cost = round(distance / 100.)  # todo: уточнить стоимость 1px пути
+    distance_cost = round(distance / 100)  # todo: уточнить стоимость 1px пути
 
     if distance_cost == 0:
         log('Delivery Quest: Warning!!! Distance from hirer<{}> to recipient<{}> = {}. Change recipient'.format(quest.hirer, quest.recipient, distance))
@@ -86,23 +86,20 @@ states:
               if (event.note_uid == quest.delivery_note_uid) and (event.result == True) and quest.take_items(items=quest.delivery_set, event=event):
                   agent.del_note(uid=quest.delivery_note_uid, time=event.time)
                   go('reward')
-          if isinstance(event, OnTimer) and event.name == 'deadline':
+          if isinstance(event, OnTimer) and (event.name == 'deadline'):
               agent.del_note(uid=quest.delivery_note_uid, time=event.time)
-              go("deadline_fail")
+              go("fail")
+          if isinstance(event, OnCancel):
+              if quest.can_take_items(items=quest.delivery_set, event=event) and (agent.balance >= (quest.reward_money / 2)):
+                  agent.del_note(uid=quest.delivery_note_uid, time=event.time)
+                  quest.take_items(items=quest.delivery_set, event=event)
+                  agent.set_balance(time=event.time, delta=-(quest.reward_money / 2))
+                  go("cancel_fail")
+              else:
+                 quest.npc_replica(npc=quest.hirer, replica=u"Для отказа от квеста верните итемы и заплатите штраф {}nc.".format(quest.reward_money / 2), event=event)
 
-    - id: deadline_fail
-      parent: reg:///registry/quest_states/test
-      on_enter: |
-          agent.set_relationship(time=event.time, npc=quest.recipient, dvalue=-quest.level * 2)  # изменение отношения c нпц
-          agent.set_relationship(time=event.time, npc=quest.hirer, dvalue=-quest.level * 2)  # изменение отношения c нпц
-          quest.agent.set_karma(time=event.time, dvalue=-quest.reward_karma)  # todo: изменение кармы
-          go('fail')
-
-    # todo: если будет ещё один квест с точно таким же состоянием, но отличающимся нпц, то вынести стейт отдельно и
-    # просто его наследовать, при этом в on_generate прописывать поле reward_npc
     - id: reward
       parent: reg:///registry/quest_states/test
-
       on_enter: |
           quest.agent.set_balance(time=event.time, delta=quest.reward_money)
           quest.agent.set_karma(time=event.time, dvalue=quest.reward_karma)
@@ -128,8 +125,15 @@ states:
                   else:
                       quest.npc_replica(npc=quest.hirer, replica=u"Не хватает места в инвентаре.", event=event)
 
+    - id: cancel_fail
+      parent: reg:///registry/quest_states/final/fail/cancel
+
     - id: win
       parent: reg:///registry/quest_states/final/win
 
     - id: fail
       parent: reg:///registry/quest_states/final/fail
+      on_enter: |
+          agent.set_relationship(time=event.time, npc=quest.recipient, dvalue=-quest.level * 2)  # изменение отношения c нпц
+          agent.set_relationship(time=event.time, npc=quest.hirer, dvalue=-quest.level * 2)  # изменение отношения c нпц
+          quest.agent.set_karma(time=event.time, dvalue=-quest.reward_karma)  # todo: изменение кармы
