@@ -60,6 +60,7 @@ on_start: |
         quest.npc_replica(npc=quest.hirer, replica=u"Не хватает места в инвентаре.", event=event)
         log("DELIVERY QUEST: User have not enough empty slots")
         raise Cancel("QUEST CANCEL: User have not enough empty slot")
+    quest.starttime = event.time
 
 states:
     - id: begin
