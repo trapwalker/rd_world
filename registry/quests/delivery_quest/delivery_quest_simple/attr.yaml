@@ -1,10 +1,7 @@
 ﻿__cls__: DeliveryQuestSimple
 _cls: DeliveryQuestSimple
 
-caption: Доставка груза (simple)
-text: |
-    Доставьте груз.
-
+caption: Доставка груза
 #    text_short = StringField(tags='client', caption=u'Короткий текст квеста', doc=u'Может строиться и меняться по шаблону')
 #    typename = StringField(tags='client', caption=u'Тип квеста', doc=u'Может быть произвольным')
 #    list_icon = StringField(tags='client', caption=u'Пиктограмма для списков', doc=u'Мальенькая картинка для отображения в списках')  # todo: use UrlField
@@ -53,6 +50,7 @@ on_generate: |
 
     quest.total_reward_money = quest.total_delivery_money_coef * cost_delivery_items + distance_cost
     quest.generate_reward()  # Устанавливаем награду за квест (карму, деньги и итемы)
+    quest.init_text() # Инициализируем строку описания квеста
 
 on_start: |
     if not quest.give_items(items=quest.delivery_set, event=event):
