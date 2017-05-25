@@ -1,11 +1,11 @@
 ﻿__cls__ : Item
-_cls : Item
+_cls    : Item
 doc     : Предметы
 
-activate_type: none
-base_price: 0
+base_price : 0
+amount     : 1
+stack_size : 1
 
-stack_size: 1
-amount: 1
-activate_time: 0.0
-activate_disable_comment: '_'
+activate_type            : none
+activate_time            : 0.0
+activate_disable_comment : '_'

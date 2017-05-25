@@ -1,0 +1,16 @@
+﻿__cls__ : Item
+_cls    : Item
+doc     : Консервы злаковые
+
+abstract : false
+
+title       : Консервы злаковые
+description : Несколько злаковых консерв.
+
+base_price : 100
+stack_size : 1
+
+inv_icon_big    : static/content/items/stuff/canned_cereal/canned_cereal_002/big.png
+inv_icon_mid    : static/content/items/stuff/canned_cereal/canned_cereal_002/mid.png
+inv_icon_small  : static/content/items/stuff/canned_cereal/canned_cereal_002/mid.png
+inv_icon_xsmall : static/content/items/stuff/canned_cereal/canned_cereal_002/mid.png
