@@ -6,6 +6,7 @@ first_state: begin
 current_state: ~
 
 distance_table: reg:///registry/rpg_settings/disttable
+list_icon: static/img/quests/icons/delivery.png
 
 caption: Доставка груза
 #    text_short = StringField(tags='client', caption=u'Короткий текст квеста', doc=u'Может строиться и меняться по шаблону')

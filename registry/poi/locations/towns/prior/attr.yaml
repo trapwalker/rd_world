@@ -5,7 +5,8 @@ abstract: false
 
 title: Прайр
 position: {x: 12517154, y: 27028833}
-p_observing_range: 365
+p_observing_range: 500
+p_enter_range: 365
 
 svg_link: static/content/locations/map_locations/prior
 

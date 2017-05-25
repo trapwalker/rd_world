@@ -4,4 +4,5 @@ doc    : Обитаемая локация
 
 can_instantiate: False
 p_observing_range: 50
+p_enter_range: 50
 p_vigilance: 1
