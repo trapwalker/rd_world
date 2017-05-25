@@ -221,14 +221,24 @@ quests:
       - reg:///registry/institutions/mayor/whitehill_manny_askorti
     delivery_set_list:             # Список возможных комплектов для доставки
       -
-        - reg:///registry/items/usable/ammo/762x51bb?amount=100
-        - reg:///registry/items/usable/ammo/23bzt?amount=10
-        - reg:///registry/items/usable/ammo/30bb?amount=10
-        - reg:///registry/items/usable/build_set/build_set_small?amount=10
-        - reg:///registry/items/usable/build_set/build_set_mid?amount=10
-        - reg:///registry/items/usable/build_set/build_set_big?amount=10
-        - reg:///registry/items/usable/tanks/tank_empty/tank_10l
-        - reg:///registry/items/usable/tanks/tank_full/tank_10l
-        - reg:///registry/items/usable/tanks/tank_empty/tank_20l
-        - reg:///registry/items/usable/tanks/tank_full/tank_20l
+        - reg:///registry/items/stuff/alcohol/alcohol_001
+        - reg:///registry/items/stuff/alcohol/alcohol_002
+        - reg:///registry/items/stuff/canned_cereal/canned_cereal_001
+        - reg:///registry/items/stuff/canned_cereal/canned_cereal_002
+        - reg:///registry/items/stuff/canned_fruit/canned_fruit_001
+        - reg:///registry/items/stuff/canned_fruit/canned_fruit_002
+        - reg:///registry/items/stuff/canned_meat/canned_meat_001
+        - reg:///registry/items/stuff/canned_meat/canned_meat_002
+        - reg:///registry/items/stuff/drugs/drugs_001
+        - reg:///registry/items/stuff/drugs/drugs_002
+        - reg:///registry/items/stuff/medical_supplies/medical supplies_001
+        - reg:///registry/items/stuff/medical_supplies/medical supplies_002
+        - reg:///registry/items/stuff/rice/rice_001
+        - reg:///registry/items/stuff/rice/rice_002
+        - reg:///registry/items/stuff/scrap_metal/scrap_metal_001
+        - reg:///registry/items/stuff/warm_clothes/warm_clothes_001
+        - reg:///registry/items/stuff/warm_clothes/warm_clothes_002
+        - reg:///registry/items/stuff/warm_clothes/warm_clothes_003
+        - reg:///registry/items/stuff/water/water_001
+        - reg:///registry/items/stuff/water/water_002
     reward_items_list: []          # Список возможных комплектов для награды
