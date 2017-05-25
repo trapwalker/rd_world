@@ -31,8 +31,8 @@ quests:
         - reg:///registry/items/stuff/canned_meat/canned_meat_002
         - reg:///registry/items/stuff/drugs/drugs_001
         - reg:///registry/items/stuff/drugs/drugs_002
-        - reg:///registry/items/stuff/medical_supplies/medical supplies_001
-        - reg:///registry/items/stuff/medical_supplies/medical supplies_002
+        - reg:///registry/items/stuff/medical_supplies/medical_supplies_001
+        - reg:///registry/items/stuff/medical_supplies/medical_supplies_002
         - reg:///registry/items/stuff/rice/rice_001
         - reg:///registry/items/stuff/rice/rice_002
         - reg:///registry/items/stuff/scrap_metal/scrap_metal_001
