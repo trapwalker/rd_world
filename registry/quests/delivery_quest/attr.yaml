@@ -5,10 +5,10 @@ doc    : Примеры квестов
 first_state: begin
 current_state: ~
 
-caption: Доставка груза
-text: |
-    Доставьте груз.
+distance_table: reg:///registry/rpg_settings/disttable
+list_icon: static/img/quests/icons/delivery.png
 
+caption: Доставка груза
 #    text_short = StringField(tags='client', caption=u'Короткий текст квеста', doc=u'Может строиться и меняться по шаблону')
 #    typename = StringField(tags='client', caption=u'Тип квеста', doc=u'Может быть произвольным')
 #    list_icon = StringField(tags='client', caption=u'Пиктограмма для списков', doc=u'Мальенькая картинка для отображения в списках')  # todo: use UrlField
@@ -54,12 +54,14 @@ on_generate: |
 
     quest.total_reward_money = quest.total_delivery_money_coef * cost_delivery_items + distance_cost
     quest.generate_reward()  # Устанавливаем награду за квест (карму, деньги и итемы)
+    quest.init_text() # Инициализируем строку описания квеста
 
 on_start: |
     if not quest.give_items(items=quest.delivery_set, event=event):
         quest.npc_replica(npc=quest.hirer, replica=u"Не хватает места в инвентаре.", event=event)
         log("DELIVERY QUEST: User have not enough empty slots")
         raise Cancel("QUEST CANCEL: User have not enough empty slot")
+    quest.starttime = event.time
 
 states:
     - id: begin
@@ -76,6 +78,7 @@ states:
 
     - id: delivery
       parent: reg:///registry/quest_states/test
+
       on_event: |
           if isinstance(event, OnNote):
               if (event.note_uid == quest.delivery_note_uid) and (event.result == True) and quest.take_items(items=quest.delivery_set, event=event):
@@ -111,7 +114,6 @@ states:
                       go('final')
                   else:
                       quest.npc_replica(npc=quest.hirer, replica=u"Не хватает места в инвентаре.", event=event)
-
 
     - id: final
       parent: reg:///registry/quest_states/final/win

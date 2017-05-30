@@ -6,7 +6,7 @@ first_state: hangar
 current_state: ~
 
 teaching_delivery_quest:
-    parent: reg:///registry/quests/examples/delivery_quest/teaching
+    parent: reg:///registry/quests/delivery_quest/teaching
     __cls__: DeliveryQuest
     _cls: DeliveryQuest
     hirer: reg:///registry/institutions/mayor/whitehill_manny_askorti

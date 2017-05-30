@@ -41,7 +41,7 @@ quick_game_cars: # Список машинок для быстрой игры
   - reg:///registry/mobiles/cars/heavy/btrs/m113a1/quick
 
 # Боты
-quick_game_bot_count: 20 # Количество ботов в быстрой игре
+quick_game_bot_count: 10 # Количество ботов в быстрой игре
 
 quick_game_start_pos: {x: 12479076, y: 27010844}  # Центр быстрой игры
 quick_game_play_radius: 3500  # Радиус быстрой игры

@@ -6,7 +6,8 @@ abstract : false
 
 title             : Палома
 position          : {x: 12505620, y: 27055259}
-p_observing_range : 365
+p_observing_range : 500
+p_enter_range: 365
 
 svg_link : static/content/locations/map_locations/paloma
 

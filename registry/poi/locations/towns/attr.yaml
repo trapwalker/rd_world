@@ -4,3 +4,6 @@ doc    : Маленькие города
 
 buildings: []
 static_image_list: []
+
+delay_attack: 2
+aggro_time: 60

@@ -5,7 +5,8 @@ abstract: false
 
 title: Уайтхилл
 position: {x: 12482409, y: 27045819}
-p_observing_range: 315
+p_observing_range: 500
+p_enter_range: 315
 
 svg_link: static/content/locations/map_locations/whitehill
 

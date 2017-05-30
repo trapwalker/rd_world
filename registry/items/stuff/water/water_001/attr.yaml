@@ -1,0 +1,16 @@
+﻿__cls__ : Item
+_cls    : Item
+doc     : Бутылки с водой
+
+abstract : false
+
+title       : Бутылки с водой
+description : Несколько небольших бутылок с водой.
+
+base_price : 100
+stack_size : 1
+
+inv_icon_big    : static/content/items/stuff/water/water_001/big.png
+inv_icon_mid    : static/content/items/stuff/water/water_001/mid.png
+inv_icon_small  : static/content/items/stuff/water/water_001/mid.png
+inv_icon_xsmall : static/content/items/stuff/water/water_001/mid.png

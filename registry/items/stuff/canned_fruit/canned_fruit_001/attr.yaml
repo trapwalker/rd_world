@@ -1,0 +1,16 @@
+﻿__cls__ : Item
+_cls    : Item
+doc     : Консерва фруктовая
+
+abstract : false
+
+title       : Консерва фруктовая
+description : Одна фруктовая консерва.
+
+base_price : 100
+stack_size : 1
+
+inv_icon_big    : static/content/items/stuff/canned_fruit/canned_fruit_001/big.png
+inv_icon_mid    : static/content/items/stuff/canned_fruit/canned_fruit_001/mid.png
+inv_icon_small  : static/content/items/stuff/canned_fruit/canned_fruit_001/mid.png
+inv_icon_xsmall : static/content/items/stuff/canned_fruit/canned_fruit_001/mid.png

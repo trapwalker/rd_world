@@ -1,5 +1,4 @@
-﻿
-__cls__ : QuestState
+﻿__cls__ : QuestState
 _cls : QuestState
 doc     : Стандартное состояние провала квеста
 

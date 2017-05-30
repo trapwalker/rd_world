@@ -16,10 +16,17 @@ items:
   - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/dshkm_twin
   - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/mg15
   - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/m134_minigun
+  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/browning_m2
+  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/gau19
+  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/m249
+  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/oc_14
 
   # Залповое вооружение
   - reg:///registry/items/slot_item/armorer_item/weapons/cannons/m242
   - reg:///registry/items/slot_item/armorer_item/weapons/cannons/zu23_flak
+  - reg:///registry/items/slot_item/armorer_item/weapons/cannons/2a42
+  - reg:///registry/items/slot_item/armorer_item/weapons/cannons/flak_18
+  - reg:///registry/items/slot_item/armorer_item/weapons/cannons/mk103
 
   # Боеприпасы для вооружения
   - reg:///registry/items/usable/ammo/762x51bb
@@ -199,48 +206,37 @@ price_list: # правила завоза
 
 
 quests:
-
-  - parent: reg:///registry/quests/examples/killer_task
-    __cls__: KillerQuest
-    _cls: KillerQuest
-    price_victim: 100
-    count_to_kill_range:
-      min: 1
-      max: 3
-    karma_victims: 20
-    karma_coef: 0.5
-    money_coef: 0.5
-    unique_victims: false
-    reward_items_list:
+  - parent: reg:///registry/quests/delivery_quest/delivery_quest_simple
+    __cls__: DeliveryQuestSimple
+    _cls   : DeliveryQuestSimple
+    reward_relation_hirer: 5.0     # Награда в отношение за выполнение
+    karma_coef: 0.0                # Часть кармы от общей награды
+    money_coef: 1.0                # Часть нуокйнов от общей награды
+    total_delivery_money_coef: 0.5 # Множитель общей стоимости награды за квест от стоимости доставляемого товара
+    recipient_list:                # Список возможных получателей доставки
+      - reg:///registry/institutions/trader/whitehill_bob_ferolito
+      - reg:///registry/institutions/mayor/whitehill_manny_askorti
+      - reg:///registry/institutions/trader/paloma_shaun_fisher
+    delivery_set_list:             # Список возможных комплектов для доставки
       -
-        - reg:///registry/items/slot_item/tuner_item/airint/airint_001
-      -
-        - reg:///registry/items/usable/tanks/tank_empty/tank_10l
-        - reg:///registry/items/usable/tanks/tank_empty/tank_20l
-
-
-  - parent: reg:///registry/quests/examples/delivery_quest
-    __cls__: DeliveryQuest
-    _cls: DeliveryQuest
-    karma_coef: 0.5
-    money_coef: 0.5
-    total_delivery_money_coef: 0.5
-    recipient_list:
-      - reg:///registry/institutions/hangar/prior_clarence_jackson
-      - reg:///registry/institutions/mechanic/prior_al_taslima
-      - reg:///registry/institutions/mayor/prior_donnie_alma
-    delivery_set_list:
-      -
-        - reg:///registry/items/usable/build_set/build_set_big?amount=5
-        - reg:///registry/items/usable/build_set/build_set_big?amount=7
-        - reg:///registry/items/usable/build_set/build_set_big?amount=10
-      -
-        - reg:///registry/items/slot_item/tuner_item/airint/airint_001
-      -
-        - reg:///registry/items/usable/tanks/tank_empty/tank_10l
-        - reg:///registry/items/usable/tanks/tank_empty/tank_20l
-    reward_items_list:
-      -
-        - reg:///registry/items/slot_item/tuner_item/airint/airint_001
-      -
-        - reg:///registry/items/usable/build_set/build_set_big?amount=8
+        - reg:///registry/items/stuff/alcohol/alcohol_001
+        - reg:///registry/items/stuff/alcohol/alcohol_002
+        - reg:///registry/items/stuff/canned_cereal/canned_cereal_001
+        - reg:///registry/items/stuff/canned_cereal/canned_cereal_002
+        - reg:///registry/items/stuff/canned_fruit/canned_fruit_001
+        - reg:///registry/items/stuff/canned_fruit/canned_fruit_002
+        - reg:///registry/items/stuff/canned_meat/canned_meat_001
+        - reg:///registry/items/stuff/canned_meat/canned_meat_002
+        - reg:///registry/items/stuff/drugs/drugs_001
+        - reg:///registry/items/stuff/drugs/drugs_002
+        - reg:///registry/items/stuff/medical_supplies/medical_supplies_001
+        - reg:///registry/items/stuff/medical_supplies/medical_supplies_002
+        - reg:///registry/items/stuff/rice/rice_001
+        - reg:///registry/items/stuff/rice/rice_002
+        - reg:///registry/items/stuff/scrap_metal/scrap_metal_001
+        - reg:///registry/items/stuff/warm_clothes/warm_clothes_001
+        - reg:///registry/items/stuff/warm_clothes/warm_clothes_002
+        - reg:///registry/items/stuff/warm_clothes/warm_clothes_003
+        - reg:///registry/items/stuff/water/water_001
+        - reg:///registry/items/stuff/water/water_002
+    reward_items_list: []          # Список возможных комплектов для награды
