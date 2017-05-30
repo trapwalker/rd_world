@@ -4,6 +4,9 @@ doc    : Заправочные станции
 p_observing_range: 400
 p_enter_range: 220
 
+delay_attack: 2
+aggro_time: 60
+
 svg_link: static/content/locations/map_locations/gas_station
 
 buildings:
