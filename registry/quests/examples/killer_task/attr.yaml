@@ -124,7 +124,7 @@ states:
               if (event.note_uid == quest.reward_note_uid) and (event.result == True):
                   if quest.give_items(items=quest.reward_items, event=event):
                       agent.del_note(uid=quest.reward_note_uid, time=event.time)
-                      go('final')
+                      go('win')
                   else:
                       quest.npc_replica(npc=quest.hirer, replica=u"Не хватает места в инвентаре.", event=event)
 
