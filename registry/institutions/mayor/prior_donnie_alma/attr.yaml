@@ -43,7 +43,7 @@ quests:
         - reg:///registry/items/stuff/water/water_002
     reward_items_list: []          # Список возможных комплектов для награды
 
-  - parent: reg:///registry/quests/examples/killer_task
+  - parent: reg:///registry/quests/killer_task
     __cls__: KillerQuest
     _cls   : KillerQuest
     karma_coef: 0.3                # Часть кармы от общей награды
