@@ -1,0 +1,16 @@
+﻿__cls__ : Item
+_cls    : Item
+doc     : Алкоголь (довоенный)
+
+abstract : false
+
+title       : Алкоголь (довоенный)
+description : Ящик с бутылками довоенного алкоголя.
+
+base_price : 150
+stack_size : 1
+
+inv_icon_big    : static/content/items/stuff/alcohol/alcohol_001/big.png
+inv_icon_mid    : static/content/items/stuff/alcohol/alcohol_001/mid.png
+inv_icon_small  : static/content/items/stuff/alcohol/alcohol_001/mid.png
+inv_icon_xsmall : static/content/items/stuff/alcohol/alcohol_001/mid.png

@@ -1,0 +1,16 @@
+﻿__cls__ : PassengerItem
+_cls    : PassengerItem
+doc     : Пассажир (девушка)
+
+abstract : false
+
+title       : Пассажир (девушка)
+description : Пассажир (девушка)
+
+base_price : 0
+stack_size : 1
+
+inv_icon_big    : static/content/items/passengers/female_1/big.png
+inv_icon_mid    : static/content/items/passengers/female_1/mid.png
+inv_icon_small  : static/content/items/passengers/female_1/mid.png
+inv_icon_xsmall : static/content/items/passengers/female_1/mid.png
