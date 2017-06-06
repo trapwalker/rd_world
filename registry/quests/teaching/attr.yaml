@@ -7,20 +7,20 @@ current_state: ~
 
 teaching_delivery_quest:
     parent: reg:///registry/quests/delivery_quest/teaching
-    __cls__: DeliveryQuest
-    _cls: DeliveryQuest
-    hirer: reg:///registry/institutions/mayor/whitehill_manny_askorti
-    karma_coef: 0.5
-    money_coef: 0.5
-    total_delivery_money_coef: 0.5
-    recipient_list:
-      - reg:///registry/institutions/barman/whitehill_al_dufo
-      - reg:///registry/institutions/trader/whitehill_bob_ferolito
-      - reg:///registry/institutions/trainer/whitehill_blackhawk_2094
-    delivery_set_list:
-      -
-        - reg:///registry/items/usable/build_set/build_set_big?amount=10
-    reward_items_list: []  # todo: Нельзя ставить, так как придётся делать ещё одно состояние, которое не учит ничему!
+#    __cls__: DeliveryQuest
+#    _cls: DeliveryQuest
+#    hirer: reg:///registry/institutions/mayor/whitehill_manny_askorti
+#    karma_coef: 0.5
+#    money_coef: 0.5
+#    total_delivery_money_coef: 0.5
+#    recipient_list:
+#      - reg:///registry/institutions/barman/whitehill_al_dufo
+#      - reg:///registry/institutions/trader/whitehill_bob_ferolito
+#      - reg:///registry/institutions/trainer/whitehill_blackhawk_2094
+#    delivery_set_list:
+#      -
+#        - reg:///registry/items/usable/build_set/build_set_big?amount=10
+#    reward_items_list: []  # todo: Нельзя ставить, так как придётся делать ещё одно состояние, которое не учит ничему!
 
 caption: Обучение
 text: |
