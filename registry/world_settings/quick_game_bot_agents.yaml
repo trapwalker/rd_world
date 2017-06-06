@@ -1,0 +1,8 @@
+﻿
+quick_game_bot_agents: # Список агентов для ботов быстрой игры
+  - reg:///registry/agents/user/ai
+  #- reg:///registry/agents/user/ai/forest_patrol
+  #- reg:///registry/agents/user/ai/route_circle
+  #- reg:///registry/agents/user/ai/route_square
+  #- reg:///registry/agents/user/ai/route_circle_clockwise
+  #- reg:///registry/agents/user/ai/route_square_clockwise
