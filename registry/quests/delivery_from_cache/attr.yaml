@@ -6,6 +6,7 @@ first_state: begin
 current_state: ~
 
 list_icon: static/img/quests/icons/delivery.png
+map_icon: static/img/quests/map_icons/delivery_cache.png
 
 caption: Доставка тайника
 #    text_short = StringField(tags='client', caption=u'Короткий текст квеста', doc=u'Может строиться и меняться по шаблону')
