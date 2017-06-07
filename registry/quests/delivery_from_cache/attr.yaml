@@ -31,6 +31,8 @@ on_generate: |
 
     if not quest.delivery_set_list:
         raise Cancel("QUEST DeliveryFromCache CANCEL: Empty empty delivery_set_list.")
+    if quest.hirer.hometown is None:
+        raise Cancel("QUEST DeliveryFromCache CANCEL: {} hometown is None.".format(quest.hirer.hometown))
 
     quest.init_level()
     quest.init_delivery_set()
@@ -39,9 +41,6 @@ on_generate: |
     for item in quest.delivery_set:
         cost_delivery_items += item.base_price * item.amount / item.stack_size
 
-    if quest.hirer.hometown is None:
-        raise Cancel("QUEST DeliveryFromCache CANCEL: {} hometown is None.".format(quest.hirer.hometown))
-
     quest.init_target_point()
     distance = quest.init_distance()
     quest.init_deadline(distance)
@@ -49,7 +48,7 @@ on_generate: |
     distance_cost = round(distance / 100)  # todo: уточнить стоимость 1px пути
 
     if distance_cost == 0:
-        log('DeliveryFromCache Quest: Warning!!! Distance from hirer<{}> to point<{}> = {}. Change recipient'.format(quest.hirer, quest.cache_point, distance))
+        log('DeliveryFromCache Quest: Warning!!! Distance from hirer<{}> to point<{}> = {}'.format(quest.hirer, quest.cache_point, distance))
 
     quest.total_reward_money = quest.total_delivery_money_coef * cost_delivery_items + distance_cost
     quest.generate_reward()  # Устанавливаем награду за квест (карму, деньги и итемы)

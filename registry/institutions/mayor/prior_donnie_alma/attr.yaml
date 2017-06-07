@@ -124,3 +124,42 @@ quests:
           x: 12516854
           y: 27028533
         radius: 100
+
+  - parent: reg:///registry/quests/map_activate_item
+    __cls__: MapActivateItem
+    _cls   : MapActivateItem
+
+    activate_price: 100            # Награда за активацию предмета
+    activate_radius: 50            # Радиус активации итема
+
+    reward_relation_hirer: 5.0     # Награда в отношение за выполнение
+    karma_coef: 0.0                # Часть кармы от общей награды
+    money_coef: 1.0                # Часть нуокйнов от общей награды
+    reward_items_list: []          # Список возможных комплектов для награды
+
+    activate_points_generator:
+      - position:
+          x: 12516154
+          y: 27028233
+        radius: 500
+      - position:
+          x: 12518154
+          y: 27028233
+        radius: 500
+      - position:
+          x: 12517154
+          y: 27027233
+        radius: 500
+      - position:
+          x: 12517154
+          y: 27029233
+        radius: 500
+
+    activate_items_generator:
+      - reg:///registry/items/usable/map_weapon/turret/turret_mg15/quick?amount=1
+
+
+
+
+
+
