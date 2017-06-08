@@ -1,13 +1,13 @@
 ﻿__cls__ : Item
 _cls    : Item
-doc     : Медикаменты №1
+doc     : Медикаменты
 
 abstract : false
 
-title       : Медикаменты №1
-description : Обеззараживающие, перевязочные, антибиотики, иммуностимуляторы, обезболивающие, простые инструменты и всё, у чего не кончился срок годности.
+title       : Медикаменты
+description : Обеззараживающие, обезболивающие, перевязочные, антибиотики, иммуностимуляторы, мединструменты и все, у чего не кончился срок годности.
 
-base_price : 150
+base_price : 500
 stack_size : 1
 
 inv_icon_big    : static/content/items/stuff/medical_supplies/medical_supplies_001/big.png

@@ -1,13 +1,13 @@
 ﻿__cls__ : Item
 _cls    : Item
-doc     : Теплая одежда №3
+doc     : Теплая одежда
 
 abstract : false
 
-title       : Теплая одежда №3
+title       : Теплая одежда
 description : Большая куча разной теплой одежды и обуви.
 
-base_price : 150
+base_price : 300
 stack_size : 1
 
 inv_icon_big    : static/content/items/stuff/warm_clothes/warm_clothes_003/big.png

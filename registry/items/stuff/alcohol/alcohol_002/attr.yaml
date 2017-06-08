@@ -1,13 +1,13 @@
 ﻿__cls__ : Item
 _cls    : Item
-doc     : Алкоголь
+doc     : Самогон
 
 abstract : false
 
-title       : Алкоголь
-description : Ящик с бутылками различного алкоголя.
+title       : Самогон
+description : Самодельный алкоголь.
 
-base_price : 100
+base_price : 250
 stack_size : 1
 
 inv_icon_big    : static/content/items/stuff/alcohol/alcohol_002/big.png
