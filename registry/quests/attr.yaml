@@ -9,7 +9,7 @@ level: 1
 history: []
 
 on_generate: |
-    for q in agent and agent.quests or []:
+    for q in agent and agent.profile.quests or []:
         if q.status != 'end' and q.parent == quest.parent:
             raise Cancel("QUEST CANCEL: You already have that quest: {q}")
 
