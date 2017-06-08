@@ -1,13 +1,13 @@
 ﻿__cls__ : Item
 _cls    : Item
-doc     : Консервы мясные (ящик)
+doc     : Мясные консервы
 
 abstract : false
 
-title       : Консервы мясные (ящик)
+title       : Мясные консервы
 description : Ящик с мясными консервами.
 
-base_price : 150
+base_price : 500
 stack_size : 1
 
 inv_icon_big    : static/content/items/stuff/canned_meat/canned_meat_001/big.png
