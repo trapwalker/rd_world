@@ -1,0 +1,17 @@
+﻿__cls__ : ModifierQuestItem
+_cls    : ModifierQuestItem
+doc     : ModifierQuestItem
+
+group_id: ""
+deadline: 0
+
+amount: 1
+stack_size: 1
+activate_type: ~
+
+driving: 0
+shooting: 0
+masking: 0
+leading: 0
+trading: 0
+engineering: 0
