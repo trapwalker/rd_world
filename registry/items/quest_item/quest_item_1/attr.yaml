@@ -3,6 +3,7 @@ _cls    : QuestItem
 doc     : Пассажир (девушка)
 
 group_id: "quest_item_1"
+deadline: 60
 
 abstract : false
 

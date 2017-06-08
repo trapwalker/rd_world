@@ -15,5 +15,4 @@ quests_ended:     []
 
 
 quest_inventory:
-  items:
-    - reg:///registry/items/quest_item/quest_item_1
+  items: []

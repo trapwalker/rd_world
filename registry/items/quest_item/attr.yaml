@@ -3,6 +3,7 @@ _cls    : QuestItem
 doc     : QuestItem
 
 group_id: ""
+deadline: 0
 
 amount: 1
 stack_size: 1
