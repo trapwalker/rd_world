@@ -1,0 +1,9 @@
+﻿__cls__ : QuestItem
+_cls    : QuestItem
+doc     : QuestItem
+
+group_id: ""
+
+amount: 1
+stack_size: 1
+activate_type: ~

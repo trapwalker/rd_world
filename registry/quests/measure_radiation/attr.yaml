@@ -54,6 +54,9 @@ states:
           set_timer(name='test_measuring_quest', delay=5)
           quest.init_notes(event=event)
 
+          q_item = event.server.reg['items/quest_item/quest_item_1'].instantiate()
+          agent.quest_inventory.add_item(agent=agent, item=q_item, event=event)
+
       on_event: |
           if isinstance(event, OnCancel):
               penalty_money = quest.reward_money / 2.
