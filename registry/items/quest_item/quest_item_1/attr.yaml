@@ -19,3 +19,12 @@ inv_icon_small  : static/content/items/passengers/female_1/mid.png
 inv_icon_xsmall : static/content/items/passengers/female_1/mid.png
 
 
+driving:  5
+shooting: -5
+masking: 3
+leading: 0
+trading: 0
+engineering: 0
+
+
+p_visibility_max: 15
