@@ -26,3 +26,16 @@ quests:
         - reg:///registry/items/stuff/canned_meat/canned_meat_001
         - reg:///registry/items/stuff/water/water_002
     reward_items_list: []          # Список возможных комплектов для награды
+
+  - parent: reg:///registry/quests/killer_task
+    __cls__: KillerQuest
+    _cls   : KillerQuest
+    reward_relation_hirer: 5.0     # Награда в отношение за выполнение
+    karma_coef: 0.3                # Часть кармы от общей награды
+    money_coef: 0.7                # Часть нуокйнов от общей награды
+    reward_items_list: []          # Список возможных комплектов для награды
+    unique_victims: True           # Уникальные жертвы
+    price_victim: 1000             # Цена одной жертвы на первом уровне квеста
+    count_to_kill_range:           # Диапазон количества целей
+      min: 1
+      max: 5
