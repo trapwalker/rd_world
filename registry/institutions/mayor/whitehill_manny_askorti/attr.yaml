@@ -39,3 +39,18 @@ quests:
     count_to_kill_range:           # Диапазон количества целей
       min: 1
       max: 5
+
+  - parent: reg:///registry/quests/delivery_quest/delivery_passenger_quest
+    __cls__: DeliveryPassengerQuest
+    _cls   : DeliveryPassengerQuest
+    person_delivery_cost: 1000     # Стоимость доставки отдельного пассажира
+    reward_relation_hirer: 5.0     # Награда в отношение за выполнение
+    karma_coef: 0.0                # Часть кармы от общей награды
+    money_coef: 1.0                # Часть нуокйнов от общей награды
+    destination_list:              # Список возможных пунктов назначения
+      - reg:///registry/poi/locations/towns/prior
+      - reg:///registry/poi/locations/towns/paloma
+    delivery_set_list:
+      -
+        - reg:///registry/items/passengers/female
+        - reg:///registry/items/passengers/male
