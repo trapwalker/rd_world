@@ -5,6 +5,9 @@ doc     : QuestItem
 group_id: ""
 deadline: 0
 
+effect_description: ""
+effect_title: ""
+
 amount: 1
 stack_size: 1
 activate_type: ~
