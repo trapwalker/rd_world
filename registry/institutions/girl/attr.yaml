@@ -1,5 +1,8 @@
-﻿__cls__ : Institution
-_cls : Institution
+﻿__cls__ : Girl
+_cls : Girl
+
 doc     : Компаньонка
 text    : Вас приветствует компаньонка!
 type    : girl
+
+service_list: []

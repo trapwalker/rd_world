@@ -1,7 +1,38 @@
-﻿__cls__  : Institution
-_cls  : Institution
+﻿__cls__ : Girl
+_cls : Girl
+
 title    : Boozie_Suzie
 photo    : "static/content/institutions/girl/prior_boozie_suzie.png"
 abstract : false
 
 hometown : reg:///registry/poi/locations/towns/prior
+
+service_list:
+  - title      : Хендмейд
+    price      : 70
+    image      : static/content/locations/institutions/girl/bar_handmade.png
+    bonus_list :
+      - item: reg:///registry/items/quest_item/quest_item_1
+        chance: 0.2
+      - item: reg:///registry/items/quest_item/quest_item_2
+        chance: 0.2
+      - item: reg:///registry/items/quest_item/quest_item_3
+        chance: 0.2
+      - item: reg:///registry/items/quest_item/quest_item_4
+        chance: 0.2
+      - item: reg:///registry/items/quest_item/quest_item_4
+        chance: 0.2
+  - title      : Интерлюдия
+    price      : 80
+    image      : static/content/locations/institutions/girl/bar_interlude.png
+    bonus_list :
+      - item: reg:///registry/items/quest_item/quest_item_1
+        chance: 0.2
+      - item: reg:///registry/items/quest_item/quest_item_2
+        chance: 0.2
+      - item: reg:///registry/items/quest_item/quest_item_3
+        chance: 0.2
+      - item: reg:///registry/items/quest_item/quest_item_4
+        chance: 0.2
+      - item: reg:///registry/items/quest_item/quest_item_4
+        chance: 0.2
