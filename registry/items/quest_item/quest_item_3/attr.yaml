@@ -3,15 +3,15 @@ _cls    : QuestItem
 doc     : Пассажир (девушка)
 
 group_id: "quest_item_1"
-deadline: 240
+deadline: 300
 
-effect_title: "Бинокль"
-effect_description: "повышает обзор"
+effect_title: "Супер руль"
+effect_description: "Супер руль"
 
 abstract : false
 
-title       : Обзор50
-description : Обзор50
+title       : Супер руль
+description : Супер руль
 
 base_price : 0
 stack_size : 1
@@ -23,4 +23,4 @@ inv_icon_xsmall : static/content/items/passengers/male_1/mid.png
 
 
 
-p_visibility_max: 50
+driving: 20

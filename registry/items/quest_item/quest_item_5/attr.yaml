@@ -3,15 +3,15 @@ _cls    : QuestItem
 doc     : Пассажир (девушка)
 
 group_id: "quest_item_1"
-deadline: 240
+deadline: 1800
 
-effect_title: "Бинокль"
-effect_description: "повышает обзор"
+effect_title: "Глазные линзы"
+effect_description: "Глазные линзы"
 
 abstract : false
 
-title       : Обзор50
-description : Обзор50
+title       : Глазные линзы
+description : Глазные линзы
 
 base_price : 0
 stack_size : 1
@@ -23,4 +23,7 @@ inv_icon_xsmall : static/content/items/passengers/male_1/mid.png
 
 
 
-p_visibility_max: 50
+driving:  2
+shooting: 15
+
+p_observing_range: 30

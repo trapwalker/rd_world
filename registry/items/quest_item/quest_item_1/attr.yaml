@@ -3,7 +3,7 @@ _cls    : QuestItem
 doc     : Пассажир (девушка)
 
 group_id: "quest_item_1"
-deadline: 60
+deadline: 180
 
 effect_title: "Труба"
 effect_description: "Улучшает вождение, ухудшает стрельбу, повышает обзор"
