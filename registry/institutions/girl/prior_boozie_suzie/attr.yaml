@@ -20,7 +20,7 @@ service_list:
         chance: 0.2
       - item: reg:///registry/items/quest_item/quest_item_4
         chance: 0.2
-      - item: reg:///registry/items/quest_item/quest_item_4
+      - item: reg:///registry/items/quest_item/quest_item_5
         chance: 0.2
   - title      : Интерлюдия
     price      : 80
@@ -34,5 +34,5 @@ service_list:
         chance: 0.2
       - item: reg:///registry/items/quest_item/quest_item_4
         chance: 0.2
-      - item: reg:///registry/items/quest_item/quest_item_4
+      - item: reg:///registry/items/quest_item/quest_item_5
         chance: 0.2
