@@ -64,28 +64,52 @@ quests:
     money_coef: 1.0                # Часть нуокйнов от общей награды
     reward_items_list: []          # Список возможных комплектов для награды
 
-    measuring_price: 100           # Стоимость одного замера радиации
+    measuring_price: 350           # Стоимость одного замера радиации
     measuring_radius: 50           # Максимальный радиус измерения
     measure_points_generator:      # Список областей генерации пунктов замеров
       - position:
-          x: 12516154
-          y: 27028233
+          x: 12531997
+          y: 27031177
         radius: 500
       - position:
-          x: 12518154
-          y: 27028233
+          x: 12534992
+          y: 27033137
         radius: 500
       - position:
-          x: 12517154
-          y: 27027233
+          x: 12535969
+          y: 27033872
         radius: 500
       - position:
-          x: 12517154
-          y: 27029233
+          x: 12543127
+          y: 27031722
+        radius: 500
+      - position:
+          x: 12545957
+          y: 27037056
+        radius: 500
+      - position:
+          x: 12541920
+          y: 27034356
+        radius: 500
+      - position:
+          x: 12536233
+          y: 27038052
+        radius: 500
+      - position:
+          x: 12540711
+          y: 27048177
+        radius: 500
+      - position:
+          x: 12536163
+          y: 27046876
+        radius: 500
+      - position:
+          x: 12540731
+          y: 27056717
         radius: 500
     measure_count_range:           # Диапазон количетсва измерений
-      min: 2
-      max: 8
+      min: 3
+      max: 7
 
   - parent: reg:///registry/quests/delivery_from_cache
     __cls__: DeliveryFromCache
