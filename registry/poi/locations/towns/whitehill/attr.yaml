@@ -1,12 +1,12 @@
-﻿__cls__: Town
-_cls: Town
-doc    : Уайтхилл
-abstract: false
+﻿__cls__  : Town
+_cls     : Town
+doc      : Уайтхилл
+abstract : false
 
-title: Уайтхилл
-position: {x: 12482409, y: 27045819}
-p_observing_range: 500
-p_enter_range: 315
+title             : Уайтхилл
+position          : {x: 12482409, y: 27045819}
+p_observing_range : 500
+p_enter_range     : 315
 
 svg_link: static/content/locations/map_locations/whitehill
 
