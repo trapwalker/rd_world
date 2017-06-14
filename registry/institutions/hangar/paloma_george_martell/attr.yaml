@@ -9,25 +9,6 @@ hometown : reg:///registry/poi/locations/towns/paloma
 
 car_list:
 
-  # CARGO
-
-  # buses
-
-  - reg:///registry/mobiles/cars/cargo/buses/gmc_scenicruiser
-#  - reg:///registry/mobiles/cars/cargo/buses/international_dimex
-
-  # tractors
-
-  - reg:///registry/mobiles/cars/cargo/tractors/international_9800
-  - reg:///registry/mobiles/cars/cargo/tractors/peterbilt_369
-
-  # HEAVY
-
-  # btrs
-
-  - reg:///registry/mobiles/cars/heavy/btrs/m113a1
-  - reg:///registry/mobiles/cars/heavy/btrs/m1126
-
   # LIGHT
 
   # motorcycles
@@ -59,3 +40,22 @@ car_list:
 
   - reg:///registry/mobiles/cars/middle/vans/chevrolet_express
   - reg:///registry/mobiles/cars/middle/vans/gmc_savana
+
+  # HEAVY
+
+  # btrs
+
+  - reg:///registry/mobiles/cars/heavy/btrs/m113a1
+  - reg:///registry/mobiles/cars/heavy/btrs/m1126
+
+  # CARGO
+
+  # buses
+
+  - reg:///registry/mobiles/cars/cargo/buses/gmc_scenicruiser
+#  - reg:///registry/mobiles/cars/cargo/buses/international_dimex
+
+  # tractors
+
+  - reg:///registry/mobiles/cars/cargo/tractors/international_9800
+  - reg:///registry/mobiles/cars/cargo/tractors/peterbilt_369

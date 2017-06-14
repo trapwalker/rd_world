@@ -1,6 +1,8 @@
 ﻿__cls__: DeliveryPassengerQuest
 _cls: DeliveryPassengerQuest
 
+list_icon: static/img/quests/icons/transfer.png
+
 caption: Доставка пассжаира
 total_delivery_money_coef: 1 # Множитель общей стоимости награды за квест от стоимости доставляемого товара
 #    text_short = StringField(tags='client', caption=u'Короткий текст квеста', doc=u'Может строиться и меняться по шаблону')

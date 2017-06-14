@@ -1,6 +1,5 @@
-﻿__cls__: Town
-_cls: Town
+﻿__cls__  : Town
+_cls     : Town
+abstract : false
 
-abstract: false
-
-position: {x: 12473283, y: 27043191}
+position : {x: 12538825, y: 27043825}  # Заправка возле Прайра

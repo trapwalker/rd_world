@@ -1,13 +1,12 @@
-﻿__cls__ : Town
-_cls    : Town
-
+﻿__cls__  : Town
+_cls     : Town
 doc      : Палома
 abstract : false
 
 title             : Палома
-position          : {x: 12505620, y: 27055259}
+position          : {x: 12507663, y: 27053100}
 p_observing_range : 500
-p_enter_range: 365
+p_enter_range     : 365
 
 svg_link : static/content/locations/map_locations/paloma
 

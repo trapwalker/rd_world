@@ -7,6 +7,7 @@ money_coef: 0.0
 total_reward_money: 0.0
 level: 1
 history: []
+map_icon: static/img/quests/map_icons/r_map_active.png
 
 on_generate: |
     for q in agent and agent.quests or []:

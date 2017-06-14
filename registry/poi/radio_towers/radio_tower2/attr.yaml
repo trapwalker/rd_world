@@ -1,8 +1,8 @@
-﻿__cls__: RadioTower
-_cls: RadioTower
-doc    : РТР
-abstract: false
+﻿__cls__  : RadioTower
+_cls     : RadioTower
+doc      : Уайтхилл
+abstract : false
 
-position: {x: 12517000, y: 27028000}
-p_observing_range: 20000
-radio_point_name: Prior
+position          : {x: 12482409, y: 27045819}
+p_observing_range : 20000
+radio_point_name  : Уайтхилл

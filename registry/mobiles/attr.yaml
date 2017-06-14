@@ -16,32 +16,32 @@ p_obs_range_rate_max  : 1
 p_radiation_armor     : 0   # 0-100
 p_armor               : 0
 
-m_cc_dirt             : 0.2
-m_cc_wood             : 0.3
-m_visibility_wood     : 0.5
-m_observing_range_wood: 0.5
-m_cc_slope            : 0.2
-m_cc_water            : 0.45
-m_r_cc_wood_on_road   : 1
-m_r_cc_water_on_road  : 1
-m_r_cc_dirt_on_road   : 1
-m_r_cc_slope_on_road  : 1
-m_r_cc_dirt           : 1
-m_cc_mine             : 0.5
-m_cc_fuel_empty       : 0.9
+m_cc_dirt              : 0.2
+m_cc_wood              : 0.3
+m_visibility_wood      : 0.5
+m_observing_range_wood : 0.5
+m_cc_slope             : 0.2
+m_cc_water             : 0.45
+m_r_cc_wood_on_road    : 1
+m_r_cc_water_on_road   : 1
+m_r_cc_dirt_on_road    : 1
+m_r_cc_slope_on_road   : 1
+m_r_cc_dirt            : 1
+m_cc_mine              : 0.5
+m_cc_fuel_empty        : 0.9
 
-r_empty               : 0
-r_cc_dirt             : 0
-r_cc_wood             : 0
-r_visibility_wood     : 0
-r_observing_range_wood: 0
-r_cc_slope            : 0
-r_cc_water            : 0
-r_cc_mine             : 0
-r_cc_fuel_empty       : 0
+r_empty                : 0
+r_cc_dirt              : 0
+r_cc_wood              : 0
+r_visibility_wood      : 0
+r_observing_range_wood : 0
+r_cc_slope             : 0
+r_cc_water             : 0
+r_cc_mine              : 0
+r_cc_fuel_empty        : 0
 
-p_defence             : 1
-direction             : 0
+p_defence              : 1
+direction              : 0
 
 r_min                 :  10
 ac_max                :  14
