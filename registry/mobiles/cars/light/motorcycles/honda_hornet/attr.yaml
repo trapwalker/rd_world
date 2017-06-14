@@ -1,10 +1,10 @@
 ﻿__cls__ : Car
 _cls : Car
-title:       "Honda Hornet"   # Модель атомобиля
+title:       "Honda Hornet"      # Модель атомобиля
 class_car:   "Легкий"            # Класс автомобиля
-name_car:    "Honda Hornet"   # Название атомобиля
+name_car:    "Honda Hornet"      # Название атомобиля
 
-price:              7        # Цена у продавца (л) (>= 0)
+price:              10000        # Цена у продавца (л) (>= 0)
 
 p_observing_range:  390      # Радиус обзора автомобиля (м) (>= 0)
 
