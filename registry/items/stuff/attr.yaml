@@ -1,3 +1,5 @@
 ﻿__cls__ : Item
 _cls    : Item
 doc     : Неприменимые предметы (грузы)
+
+tags: ['cargo']
