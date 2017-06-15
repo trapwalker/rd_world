@@ -7,3 +7,8 @@ group_id: "insurance"
 
 title       : Базовая
 description : Базовая Страховка
+
+base_price: 0
+
+icon_nukeoil: static/content/locations/institutions/nucoil/base_nukeoil.png
+icon_right_panel:  static/content/locations/institutions/nucoil/base_small.png
