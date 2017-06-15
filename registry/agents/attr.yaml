@@ -15,4 +15,5 @@ quests_ended:     []
 
 
 quest_inventory:
-  items: []
+  items:
+    - reg:///registry/items/quest_item/insurance/premium

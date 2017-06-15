@@ -5,3 +5,7 @@ doc    : Прототип агента быстрой игры
 last_town: reg:///registry/poi/locations/towns/prior
 current_location: ~
 balance: 2000
+
+quest_inventory:
+  items:
+    - reg:///registry/items/quest_item/insurance/quick
