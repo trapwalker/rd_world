@@ -1,8 +1,8 @@
-﻿__cls__: RadioTower
-_cls: RadioTower
-doc    : ОРТ
-abstract: false
+﻿__cls__  : RadioTower
+_cls     : RadioTower
+doc      : Прайр
+abstract : false
 
-position: {x: 12482000, y: 27045000}
-p_observing_range: 20000
-radio_point_name: Whitehill
+position          : {x: 12539432, y: 27043853}
+p_observing_range : 20000
+radio_point_name  : Прайр

@@ -54,3 +54,58 @@ quests:
       -
         - reg:///registry/items/passengers/female
         - reg:///registry/items/passengers/male
+
+  - parent: reg:///registry/quests/measure_radiation
+    __cls__: MeasureRadiation
+    _cls   : MeasureRadiation
+    reward_relation_hirer: 5.0     # Награда в отношение за выполнение
+    karma_coef: 0.0                # Часть кармы от общей награды
+    money_coef: 1.0                # Часть нуокйнов от общей награды
+    reward_items_list: []          # Список возможных комплектов для награды
+
+    measuring_price: 350           # Стоимость одного замера радиации
+    measuring_radius: 50           # Максимальный радиус измерения
+    measure_points_generator:      # Список областей генерации пунктов замеров
+      - position:
+          x: 12469464
+          y: 27040886
+        radius: 500
+      - position:
+          x: 12470672
+          y: 27034864
+        radius: 500
+      - position:
+          x: 12470697
+          y: 27052358
+        radius: 500
+      - position:
+          x: 12471339
+          y: 27057487
+        radius: 500
+      - position:
+          x: 12471908
+          y: 27044794
+        radius: 500
+      - position:
+          x: 12473283
+          y: 27043171
+        radius: 500
+      - position:
+          x: 12474300
+          y: 27038068
+        radius: 500
+      - position:
+          x: 12476274
+          y: 27027275
+        radius: 500
+      - position:
+          x: 12481776
+          y: 27025510
+        radius: 500
+      - position:
+          x: 12479081
+          y: 27032051
+        radius: 500
+    measure_count_range:           # Диапазон количетсва измерений
+      min: 3
+      max: 7
