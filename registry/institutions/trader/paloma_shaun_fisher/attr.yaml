@@ -6,7 +6,7 @@ photo    : "static/content/institutions/trader/paloma_shaun_fisher.png"
 abstract : true
 
 trading      : 20 # навык торговли
-refresh_time : 600 # время в сек между завозами
+#refresh_time : 600 # время в сек между завозами в секундах (0 или None - никогда)
 
 ignore_list : [] # то что не будет покупать
 hometown    : reg:///registry/poi/locations/towns/paloma
