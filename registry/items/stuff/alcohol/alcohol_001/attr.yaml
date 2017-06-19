@@ -1,13 +1,13 @@
 ﻿__cls__ : Item
 _cls    : Item
-doc     : Алкоголь (довоенный)
+doc     : Довоенный виски
 
 abstract : false
 
-title       : Алкоголь (довоенный)
-description : Ящик с бутылками довоенного алкоголя.
+title       : Довоенный виски
+description : Ящик довоенного виски с промышленной маркировкой для состоятельной аудитории. Такого уже не сделают.
 
-base_price : 150
+base_price : 1000
 stack_size : 1
 
 inv_icon_big    : static/content/items/stuff/alcohol/alcohol_001/big.png

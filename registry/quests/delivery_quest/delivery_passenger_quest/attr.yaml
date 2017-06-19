@@ -1,5 +1,7 @@
-﻿__cls__: DeliveryPassengerQuest
+__cls__: DeliveryPassengerQuest
 _cls: DeliveryPassengerQuest
+
+list_icon: static/img/quests/icons/transfer.png
 
 caption: Доставка пассжаира
 total_delivery_money_coef: 1 # Множитель общей стоимости награды за квест от стоимости доставляемого товара

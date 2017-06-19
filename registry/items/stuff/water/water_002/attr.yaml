@@ -1,13 +1,13 @@
 ﻿__cls__ : Item
 _cls    : Item
-doc     : Канистры с водой
+doc     : Питьевая вода
 
 abstract : false
 
-title       : Канистры с водой
+title       : Питьевая вода
 description : Несколько больших канистр с водой.
 
-base_price : 150
+base_price : 200
 stack_size : 1
 
 inv_icon_big    : static/content/items/stuff/water/water_002/big.png

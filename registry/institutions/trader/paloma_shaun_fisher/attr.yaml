@@ -12,6 +12,16 @@ ignore_list : [] # то что не будет покупать
 hometown    : reg:///registry/poi/locations/towns/paloma
 
 items:
+  # Грузы
+  - reg:///registry/items/stuff/alcohol/alcohol_001
+  - reg:///registry/items/stuff/alcohol/alcohol_002
+  - reg:///registry/items/stuff/canned_cereal/canned_cereal_001
+  - reg:///registry/items/stuff/canned_meat/canned_meat_001
+  - reg:///registry/items/stuff/medical_supplies/medical_supplies_001
+  - reg:///registry/items/stuff/scrap_metal/scrap_metal_001
+  - reg:///registry/items/stuff/warm_clothes/warm_clothes_003
+  - reg:///registry/items/stuff/water/water_002
+
   # Автоматическое вооружение
   - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/dshkm
   - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/dshkm_twin
@@ -21,6 +31,9 @@ items:
   - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/gau19
   - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/m249
   - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/oc_14
+  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/mg_08
+  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/mk_108
+  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/mk_108_twin
 
   # Залповое вооружение
   - reg:///registry/items/slot_item/armorer_item/weapons/cannons/m242
@@ -149,61 +162,77 @@ items:
   - reg:///registry/items/slot_item/tuner_item/win_prot/win_prot_002
 
 price_list: # правила завоза
-#  - item: reg:///registry/items/slot_item/weapons
-#    chance: 0.0    # вероятность в завозе 1 - max
-#    count_min: 0   # пределы количества в завозе
-#    count_max: 0   # если 0 - бесконечность
-#    price_min: 3.0 # коэф колебаний цены (границы)
-#    price_max: 3.0
-#    influence: 0.0 # коэф изменения цены при покупке/продаже
+  - item: reg:///registry/items/stuff/alcohol/alcohol_001
+    chance: 0.75     # вероятность в завозе 1 - max
+    count_min: 75    # пределы количества в завозе
+    count_max: 225   # если 0 - бесконечность
+    price_min: 0.75  # коэф колебаний цены (границы)
+    price_max: 1.05
+    influence: 0.001 # коэф изменения цены при покупке/продаже
 
-#  - item: reg:///registry/items/slot_item/weapons/machine_guns/dshkm
-#    chance: 0.0
-#    count_min: 0
-#    count_max: 5
-#    price_min: 10.0
-#    price_max: 10.0
-#    influence: 0.01
+  - item: reg:///registry/items/stuff/alcohol/alcohol_002
+    chance: 0.75
+    count_min: 75
+    count_max: 225
+    price_min: 0.75
+    price_max: 1.05
+    influence: 0.001
 
-#  - item: reg:///registry/items/usable/tanks
-#    chance: 1.0
-#    count_min: 1
-#    count_max: 10
-#    price_min: 4.0
-#    price_max: 6.0
-#    influence: 0.1
+  - item: reg:///registry/items/stuff/canned_cereal/canned_cereal_001
+    chance: 1.00
+    count_min: 100
+    count_max: 300
+    price_min: 0.50
+    price_max: 0.70
+    influence: 0.001
 
-#  - item: reg:///registry/items/usable/ammo/762x51bb
-#    chance: 0.8
-#   count_min: 0
-#   count_max: 0
-#    price_min: 0.5
-#    price_max: 1.5
-#    influence: 0.1
+  - item: reg:///registry/items/stuff/canned_meat/canned_meat_001
+    chance: 0.75
+    count_min: 75
+    count_max: 225
+    price_min: 0.75
+    price_max: 1.05
+    influence: 0.001
 
-#  - item: reg:///registry/items/usable/ammo/127x108bb
-#    chance: 0.8
-#    count_min: 0
-#    count_max: 0
-#    price_min: 0.5
-#    price_max: 1.5
-#    influence: 0.1
+  - item: reg:///registry/items/stuff/medical_supplies/medical_supplies_001
+    chance: 0.50
+    count_min: 50
+    count_max: 150
+    price_min: 1.10
+    price_max: 1.50
+    influence: 0.001
 
-#  - item: reg:///registry/items/usable/ammo/23bzt
-#    chance: 0.8
-#    count_min: 0
-#    count_max: 0
-#    price_min: 0.5
-#    price_max: 1.5
-#    influence: 0.1
+  - item: reg:///registry/items/stuff/scrap_metal/scrap_metal_001
+    chance: 0.75
+    count_min: 75
+    count_max: 225
+    price_min: 0.75
+    price_max: 1.05
+    influence: 0.001
+
+  - item: reg:///registry/items/stuff/warm_clothes/warm_clothes_003
+    chance: 0.75
+    count_min: 75
+    count_max: 225
+    price_min: 0.75
+    price_max: 1.05
+    influence: 0.001
+
+  - item: reg:///registry/items/stuff/water/water_002
+    chance: 0.75
+    count_min: 75
+    count_max: 225
+    price_min: 0.75
+    price_max: 1.05
+    influence: 0.001
 
   - item: reg:///registry/items
-    chance: 1.0
+    chance: 1.00
     count_min: 0
     count_max: 0
-    price_min: 1.0
-    price_max: 1.0
-    influence: 0.0
+    price_min: 1.00
+    price_max: 1.00
+    influence: 0.00
 
 
 quests:
@@ -223,22 +252,24 @@ quests:
       -
         - reg:///registry/items/stuff/alcohol/alcohol_001
         - reg:///registry/items/stuff/alcohol/alcohol_002
-        - reg:///registry/items/stuff/canned_cereal/canned_cereal_001
-        - reg:///registry/items/stuff/canned_cereal/canned_cereal_002
-        - reg:///registry/items/stuff/canned_fruit/canned_fruit_001
-        - reg:///registry/items/stuff/canned_fruit/canned_fruit_002
         - reg:///registry/items/stuff/canned_meat/canned_meat_001
-        - reg:///registry/items/stuff/canned_meat/canned_meat_002
-        - reg:///registry/items/stuff/drugs/drugs_001
-        - reg:///registry/items/stuff/drugs/drugs_002
         - reg:///registry/items/stuff/medical_supplies/medical_supplies_001
-        - reg:///registry/items/stuff/medical_supplies/medical_supplies_002
-        - reg:///registry/items/stuff/rice/rice_001
-        - reg:///registry/items/stuff/rice/rice_002
         - reg:///registry/items/stuff/scrap_metal/scrap_metal_001
-        - reg:///registry/items/stuff/warm_clothes/warm_clothes_001
-        - reg:///registry/items/stuff/warm_clothes/warm_clothes_002
         - reg:///registry/items/stuff/warm_clothes/warm_clothes_003
-        - reg:///registry/items/stuff/water/water_001
         - reg:///registry/items/stuff/water/water_002
     reward_items_list: []          # Список возможных комплектов для награды
+
+  - parent: reg:///registry/quests/delivery_quest/delivery_passenger_quest
+    __cls__: DeliveryPassengerQuest
+    _cls   : DeliveryPassengerQuest
+    person_delivery_cost: 1000     # Стоимость доставки отдельного пассажира
+    reward_relation_hirer: 5.0     # Награда в отношение за выполнение
+    karma_coef: 0.0                # Часть кармы от общей награды
+    money_coef: 1.0                # Часть нуокйнов от общей награды
+    destination_list:              # Список возможных пунктов назначения
+      - reg:///registry/poi/locations/towns/prior
+      - reg:///registry/poi/locations/towns/whitehill
+    delivery_set_list:
+      -
+        - reg:///registry/items/passengers/female
+        - reg:///registry/items/passengers/male

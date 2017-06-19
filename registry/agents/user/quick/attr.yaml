@@ -1,4 +1,4 @@
-﻿__cls__: AgentProfile
+__cls__: AgentProfile
 _cls: AgentProfile
 doc    : Прототип агента быстрой игры
 
@@ -6,9 +6,12 @@ last_town: reg:///registry/poi/locations/towns/prior
 current_location: ~
 balance: 2000
 
-quick_flag: True
-teaching_flag: False
 _exp: 1005
+
+quest_inventory:
+  items:
+    - reg:///registry/items/quest_item/insurance/quick
+
 
 shooting:    {value: 20, parent: "reg:///registry/rpg_settings/skill/shooting"}
 driving:     {value: 20, parent: "reg:///registry/rpg_settings/skill/driving"}

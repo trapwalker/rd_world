@@ -1,0 +1,26 @@
+﻿__cls__ : QuestItem
+_cls    : QuestItem
+doc     : Пассажир (девушка)
+
+group_id: "quest_item_1"
+deadline: 300
+
+effect_title: "Супер руль"
+effect_description: "Супер руль"
+
+abstract : false
+
+title       : Супер руль
+description : Супер руль
+
+base_price : 0
+stack_size : 1
+
+inv_icon_big    : static/content/items/passengers/male_1/big.png
+inv_icon_mid    : static/content/items/passengers/male_1/mid.png
+inv_icon_small  : static/content/items/passengers/male_1/mid.png
+inv_icon_xsmall : static/content/items/passengers/male_1/mid.png
+
+
+
+driving: 20

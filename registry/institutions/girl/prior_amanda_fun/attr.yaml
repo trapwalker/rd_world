@@ -1,7 +1,38 @@
-﻿__cls__  : Institution
-_cls  : Institution
+﻿__cls__ : Girl
+_cls : Girl
+
 title    : Amanda_Fun
 photo    : "static/content/institutions/girl/prior_amanda_fun.png"
 abstract : false
 
 hometown : reg:///registry/poi/locations/towns/prior
+
+service_list:
+  - title      : Приватный танец
+    price      : 50
+    image      : static/content/locations/institutions/girl/bar_poledance.png
+    bonus_list :
+      - item: reg:///registry/items/quest_item/quest_item_1
+        chance: 0.2
+      - item: reg:///registry/items/quest_item/quest_item_2
+        chance: 0.2
+      - item: reg:///registry/items/quest_item/quest_item_3
+        chance: 0.2
+      - item: reg:///registry/items/quest_item/quest_item_4
+        chance: 0.2
+      - item: reg:///registry/items/quest_item/quest_item_5
+        chance: 0.2
+  - title      : Массаж
+    price      : 60
+    image      : static/content/locations/institutions/girl/bar_massage.png
+    bonus_list :
+      - item: reg:///registry/items/quest_item/quest_item_1
+        chance: 0.2
+      - item: reg:///registry/items/quest_item/quest_item_2
+        chance: 0.2
+      - item: reg:///registry/items/quest_item/quest_item_3
+        chance: 0.2
+      - item: reg:///registry/items/quest_item/quest_item_4
+        chance: 0.2
+      - item: reg:///registry/items/quest_item/quest_item_5
+        chance: 0.2

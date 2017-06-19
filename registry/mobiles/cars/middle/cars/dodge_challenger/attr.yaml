@@ -1,10 +1,10 @@
 ﻿__cls__ : Car
 _cls : Car
-title:       "Dodge Challenger"  # Модель атомобиля
-class_car:   "Средний"           # Класс автомобиля
-name_car:    "Dodge Challenger"  # Название атомобиля
+title:       "Dodge Challenger"     # Модель атомобиля
+class_car:   "Средний"              # Класс автомобиля
+name_car:    "Dodge Challenger"     # Название атомобиля
 
-price:              2011           # Цена у продавца (л) (>= 0)
+price:              12500           # Цена у продавца (л) (>= 0)
 
 max_hp:             120          # Максимальное количество прочности (> 0)
 hp:                 120          # Текущее количество прочности (> 0)
@@ -56,15 +56,15 @@ mechanic_suspension:    static/content/mechanic_systems/suspensions/suspension_1
 # Сейчас до 9 слотов на автомобиль: slot_(Front, Center, Back)(Left, Center, Right).
 # Все слоты закоментированы, кроме переднего центрального.
 slot_FC: ~
-slot_BR: ~
-slot_BL: ~
+slot_CC: ~
+slot_BC: ~
 
 # Настройка ограничений направления оружия из слота. Значением является строка в котороую включены первые буквы
 # соответствующих направлений (Front, Back, Left, Right)
 # Все слоты закоментированы, кроме переднего центрального.
-slot_FC_f: FRL_0
-slot_BR_f: RB_0
-slot_BL_f: LB_0
+slot_FC_f: FRL_4
+slot_CC_f: FRBL_2
+slot_BC_f: RBL_2
 
 # Настройка слотов для Тюнера
 slot_t1: ~

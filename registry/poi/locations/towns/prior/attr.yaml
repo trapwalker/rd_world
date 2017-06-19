@@ -1,12 +1,12 @@
-﻿__cls__: Town
-_cls: Town
-doc    : Прайр
-abstract: false
+﻿__cls__  : Town
+_cls     : Town
+doc      : Прайр
+abstract : false
 
-title: Прайр
-position: {x: 12517154, y: 27028833}
-p_observing_range: 500
-p_enter_range: 365
+title             : Прайр
+position          : {x: 12539432, y: 27043853}
+p_observing_range : 500
+p_enter_range     : 365
 
 svg_link: static/content/locations/map_locations/prior
 

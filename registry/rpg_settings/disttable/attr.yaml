@@ -5,19 +5,19 @@ doc     : Таблица расстояний между городами
 table:
   - town1: reg:///registry/poi/locations/towns/prior
     town2: reg:///registry/poi/locations/towns/prior
-    distance: 8400
+    distance: 12600
   - town1: reg:///registry/poi/locations/towns/paloma
     town2: reg:///registry/poi/locations/towns/paloma
-    distance: 8400
+    distance: 12600
   - town1: reg:///registry/poi/locations/towns/whitehill
     town2: reg:///registry/poi/locations/towns/whitehill
-    distance: 8400
+    distance: 12600
   - town1: reg:///registry/poi/locations/towns/prior
     town2: reg:///registry/poi/locations/towns/paloma
-    distance: 25200
+    distance: 37800
   - town1: reg:///registry/poi/locations/towns/prior
     town2: reg:///registry/poi/locations/towns/whitehill
-    distance: 75600
+    distance: 63000
   - town1: reg:///registry/poi/locations/towns/paloma
     town2: reg:///registry/poi/locations/towns/whitehill
     distance: 50400
