@@ -1,7 +1,7 @@
-﻿__cls__ : AmmoBullets
-_cls : AmmoBullets
-doc     : Патроны 12.7x108 мм/ББ
-abstract: false
+﻿__cls__  : AmmoBullets
+_cls     : AmmoBullets
+doc      : Патроны 12.7x108 мм/ББ
+abstract : false
 
 title       : Патроны 12.7x108 мм/ББ
 description : Бронебойные патроны для крупнокалиберных пулемётов (12.7x108 мм).
@@ -9,7 +9,7 @@ description : Бронебойные патроны для крупнокали�
 stack_size : 50
 base_price : 100
 
-inv_icon_big   : static/content/items/usable/ammo/127x108bb/big.png
-inv_icon_mid   : static/content/items/usable/ammo/127x108bb/mid.png
-inv_icon_small : static/content/items/usable/ammo/127x108bb/small.png
+inv_icon_big    : static/content/items/usable/ammo/127x108bb/big.png
+inv_icon_mid    : static/content/items/usable/ammo/127x108bb/mid.png
+inv_icon_small  : static/content/items/usable/ammo/127x108bb/small.png
 inv_icon_xsmall : static/content/items/usable/ammo/127x108bb/xsmall.png
