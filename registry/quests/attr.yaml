@@ -12,7 +12,7 @@ map_icon: static/img/quests/map_icons/r_map_active.png
 on_generate: |
     for q in agent and agent.profile.quests or []:
         if q.status != 'end' and q.parent == quest.parent:
-            raise Cancel("QUEST CANCEL: You already have that quest: {q}")
+            raise Cancel("QUEST CANCEL: You already have that quest: {q!r}")
 
     quest.gen_sign = 123
 

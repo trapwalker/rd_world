@@ -25,7 +25,7 @@ on_generate: |
     for q in agent and agent.profile.quests or []:
         if q.parent == quest.parent:
             if q.status is None:
-                raise Cancel("QUEST CANCEL: You already have that unstarted quest: {q}")
+                raise Cancel("QUEST CANCEL: You already have that unstarted quest: {q!r}")
             if q.status == 'active':
                 raise Cancel("QUEST CANCEL: You already have more <<quest.active_count_max>> copies of that quest.")
 
