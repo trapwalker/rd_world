@@ -226,6 +226,30 @@ price_list: # правила завоза
     price_max: 1.05
     influence: 0.001
 
+  - item: reg:///registry/items/slot_item/armorer_item
+    chance: 1.00
+    count_min: 0
+    count_max: 0
+    price_min: 1.00
+    price_max: 1.00
+    influence: 0.00
+
+  - item: reg:///registry/items/slot_item/tuner_item
+    chance: 1.00
+    count_min: 0
+    count_max: 0
+    price_min: 1.00
+    price_max: 1.00
+    influence: 0.00
+
+  - item: reg:///registry/items/slot_item/mechanic_item
+    chance: 1.00
+    count_min: 0
+    count_max: 0
+    price_min: 1.00
+    price_max: 1.00
+    influence: 0.00
+
   - item: reg:///registry/items
     chance: 1.00
     count_min: 0
