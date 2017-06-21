@@ -10,7 +10,7 @@ description     : Советская 23-мм спаренная зенитная
 # Основные балансные настройки
 base_price      : 5000                                     # Цена
 weight_class    : 4                                        # Класс тяжести
-ammo            : reg:///registry/items/usable/ammo/30bb   # Подходящие патроны
+ammo            : reg:///registry/items/usable/ammo/23bzt  # Подходящие патроны
 
 dmg             : 10                                       # Дамаг при залпе по вражеским целям
 area_dmg        : 5                                        # Дамаг по невидимым целям
