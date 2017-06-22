@@ -1,10 +1,10 @@
 ﻿__cls__  : AmmoBullets
 _cls     : AmmoBullets
-doc      : Снаряды 30 мм/ББ
+doc      : Снаряды 30мм/ББ
 abstract : false
 
-title       : Снаряды 30 мм/ББ
-description : Бронебойные снаряды для пушек Mark 44 и других, подобного калибра (30 мм).
+title       : Снаряды<br>30мм/ББ
+description : Бронебойные снаряды калибра 30 мм для артиллерийских систем.
 
 stack_size : 10
 base_price : 60

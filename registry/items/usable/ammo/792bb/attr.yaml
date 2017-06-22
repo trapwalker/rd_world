@@ -1,0 +1,15 @@
+﻿__cls__  : AmmoBullets
+_cls     : AmmoBullets
+doc      : Патроны 7.92мм/ББ
+abstract : false
+
+title       : Патроны<br>7.92мм/ББ
+description : Бронебойные патроны калибра 7.92 мм для пулемётов.
+
+stack_size : 100
+base_price : 160
+
+inv_icon_big    : static/content/items/usable/ammo/792bb/big.png
+inv_icon_mid    : static/content/items/usable/ammo/792bb/mid.png
+inv_icon_small  : static/content/items/usable/ammo/792bb/small.png
+inv_icon_xsmall : static/content/items/usable/ammo/792bb/xsmall.png
