@@ -1,5 +1,5 @@
-﻿__cls__: MapActivateItem
-_cls: MapActivateItem
+﻿__cls__: MapActivateItemQuest
+_cls: MapActivateItemQuest
 
 caption: Активация предметов
 first_state: begin
@@ -44,7 +44,7 @@ on_generate: |
     distance_cost = round(distance / 100)  # todo: уточнить стоимость 1px пути
 
     if distance_cost == 0:
-        log('MapActivateItem Quest: Warning!!! Distance from hirer<{}> to point<{}> = {}'.format(quest.hirer, quest.cache_point, distance))
+        log('MapActivateItemQuest Quest: Warning!!! Distance from hirer<{}> to point<{}> = {}'.format(quest.hirer, quest.cache_point, distance))
 
     quest.total_reward_money = cost_delivery_items + distance_cost
     quest.generate_reward()  # Устанавливаем награду за квест (карму, деньги и итемы)

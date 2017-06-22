@@ -70,7 +70,8 @@ states:
               quest_uid=quest.uid,
               note_class=MapMarkerNote,
               time=event.time,
-              marker=quest.cache_point
+              position=quest.cache_point.position,
+              radius=quest.cache_point.radius
           )
           if quest.deadline:
               set_timer(name='deadline_delivery_cache_quest', delay=quest.deadline)

@@ -150,8 +150,8 @@ quests:
         radius: 100
 
   - parent: reg:///registry/quests/map_activate_item
-    __cls__: MapActivateItem
-    _cls   : MapActivateItem
+    __cls__: MapActivateItemQuest
+    _cls   : MapActivateItemQuest
 
     activate_price: 100            # Награда за активацию предмета
     activate_radius: 50            # Радиус активации итема
