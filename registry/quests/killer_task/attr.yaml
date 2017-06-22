@@ -79,7 +79,7 @@ states:
 
       on_event: |
           if isinstance(event, OnKill):
-              if event.agent.profile.karma <= quest.max_karma_victims and event.agent.profile.get_lvl() >= quest.min_level_victims and (not quest.unique_victims or event.agent not in quest.victims):  # todo: исправить проверку вхождения агента в список жертв (объект ищется в строках)
+              if event.agent.profile.karma <= quest.max_karma_victims and event.agent.profile.get_lvl() >= quest.min_level_victims and (not quest.unique_victims or not quest.in_victims(event.agent)):
                   quest.append_victim(event.agent, event)  # todo: Исправить добавление агента 
                   quest.log(text=u'{} убит.'.format(event.agent.login), event=event, position=quest.hirer.hometown.position)
                   if len(quest.victims) >= quest.count_to_kill:
