@@ -6,7 +6,7 @@ last_town: reg:///registry/poi/locations/towns/prior
 current_location: ~
 balance: 2000
 
-_exp: 1005
+value_exp: 1005
 
 quest_inventory:
   items:
