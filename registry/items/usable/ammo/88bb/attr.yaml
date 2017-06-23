@@ -1,0 +1,15 @@
+﻿__cls__  : AmmoBullets
+_cls     : AmmoBullets
+doc      : Снаряды 88мм/ББ
+abstract : false
+
+title       : Снаряды<br>88мм/ББ
+description : Бронебойные снаряды калибра 88 мм для артиллерийских систем.
+
+stack_size : 10
+base_price : 175
+
+inv_icon_big    : static/content/items/usable/ammo/88bb/big.png
+inv_icon_mid    : static/content/items/usable/ammo/88bb/mid.png
+inv_icon_small  : static/content/items/usable/ammo/88bb/small.png
+inv_icon_xsmall : static/content/items/usable/ammo/88bb/xsmall.png

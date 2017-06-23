@@ -1,0 +1,15 @@
+﻿__cls__  : AmmoBullets
+_cls     : AmmoBullets
+doc      : Патроны 5.56мм/ББ
+abstract : false
+
+title       : Патроны<br>5.56мм/ББ
+description : Бронебойные патроны калибра 5.56 мм для пулемётов.
+
+stack_size : 100
+base_price : 110
+
+inv_icon_big    : static/content/items/usable/ammo/556bb/big.png
+inv_icon_mid    : static/content/items/usable/ammo/556bb/mid.png
+inv_icon_small  : static/content/items/usable/ammo/556bb/small.png
+inv_icon_xsmall : static/content/items/usable/ammo/556bb/xsmall.png
