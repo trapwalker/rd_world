@@ -104,7 +104,7 @@ states:
       on_enter: |
           # создать лут с временем жизни до окончания дедлайна и с нужными итемами
           quest.create_poi_container(event)
-          quest.log(text=u'Найден тайник.', event=event, position=quest.cache_point)
+          quest.log(text=u'Найден тайник.', event=event, position=quest.cache_point.position)
 
           # создать ноту на доставку
           quest.delivery_note_uid = agent.profile.add_note(
