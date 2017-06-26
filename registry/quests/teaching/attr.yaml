@@ -52,6 +52,7 @@ states:
       on_event: |
           if isinstance(event, OnBuyCar):
               agent.profile.del_note(uid=quest.current_note_uid, time=event.time)
+              quest.car_set_fuel(event)
               go('nukoil')
 
     - id: nukoil
@@ -137,13 +138,13 @@ states:
           qq = agent.profile.get_quest(uid=quest.current_quest_delivery_uid)
           if qq.status == 'active':
 
-              if qq.recipient.uri == 'reg:///registry/institutions/barman/al_dufo':
+              if qq.recipient.uri == 'reg:///registry/institutions/barman/whitehill_al_dufo':
                   target_build_name = 'bar'
                   target_build_coord = '958,240'
-              elif qq.recipient.uri == 'reg:///registry/institutions/trader/bob_ferolito':
+              elif qq.recipient.uri == 'reg:///registry/institutions/trader/whitehill_bob_ferolito':
                   target_build_name = 'market'
                   target_build_coord = '958,372'
-              elif qq.recipient.uri == 'reg:///registry/institutions/trainer/blackhawk_2094':
+              elif qq.recipient.uri == 'reg:///registry/institutions/trainer/whitehill_blackhawk_2094':
                   target_build_name = 'library'
                   target_build_coord = '958,414'
 
@@ -160,7 +161,6 @@ states:
               go('trainer')
       on_event: |
           # todo: если квест доставки был сдан раньше, то решить что делать!
-          log('eeeend!!!!!!!!')
           qq = agent.profile.get_quest(uid=quest.current_quest_delivery_uid)
           if isinstance(event, OnNote):
               if event.note_uid == qq.delivery_note_uid:
