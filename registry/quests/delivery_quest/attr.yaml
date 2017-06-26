@@ -50,7 +50,8 @@ on_generate: |
     distance_cost = round(distance / 100.)  # todo: уточнить стоимость 1px пути
 
     if distance_cost == 0:
-        log('Delivery Quest: Warning!!! Distance from hirer<{}> to recipient<{}> = {}. Change recipient'.format(quest.hirer, quest.recipient, distance))
+        # log('Delivery Quest: Warning!!! Distance from hirer<{}> to recipient<{}> = {}. Change recipient'.format(quest.hirer, quest.recipient, distance))
+        log('Delivery Quest: Warning!!! Distance from hirer<> to recipient<> = {}. Change recipient'.format(distance))
 
     quest.total_reward_money = quest.total_delivery_money_coef * cost_delivery_items + distance_cost
     quest.generate_reward()  # Устанавливаем награду за квест (карму, деньги и итемы)

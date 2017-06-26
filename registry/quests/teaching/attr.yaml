@@ -37,7 +37,8 @@ on_generate: |
                 raise Cancel("QUEST CANCEL: You already have more <<quest.active_count_max>> copies of that quest.")
 
 on_start: |
-    pass
+    if agent.profile._agent_model:
+        agent.profile._agent_model.set_teaching_state("city_start")
 
 states:
     - id: hangar
@@ -51,6 +52,7 @@ states:
       on_event: |
           if isinstance(event, OnBuyCar):
               agent.profile.del_note(uid=quest.current_note_uid, time=event.time)
+              quest.car_set_fuel(event)
               go('nukoil')
 
     - id: nukoil
@@ -159,7 +161,6 @@ states:
               go('trainer')
       on_event: |
           # todo: если квест доставки был сдан раньше, то решить что делать!
-          log('eeeend!!!!!!!!')
           qq = agent.profile.get_quest(uid=quest.current_quest_delivery_uid)
           if isinstance(event, OnNote):
               if event.note_uid == qq.delivery_note_uid:
