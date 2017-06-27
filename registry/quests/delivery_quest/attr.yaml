@@ -34,6 +34,7 @@ on_generate: |
     if not quest.delivery_set_list:
         raise Cancel("QUEST CANCEL: Empty empty delivery_set_list.")
 
+    # log('DeliveryQuest recipient_list len = {}'.format(len(quest.recipient_list)))
     quest.recipient = random.choice(quest.recipient_list)
     quest.delivery_set = random.choice(quest.delivery_set_list)
 
@@ -50,8 +51,7 @@ on_generate: |
     distance_cost = round(distance / 100.)  # todo: уточнить стоимость 1px пути
 
     if distance_cost == 0:
-        # log('Delivery Quest: Warning!!! Distance from hirer<{}> to recipient<{}> = {}. Change recipient'.format(quest.hirer, quest.recipient, distance))
-        log('Delivery Quest: Warning!!! Distance from hirer<> to recipient<> = {}. Change recipient'.format(distance))
+        log('Delivery Quest: Warning!!! Distance from hirer<{!r}> to recipient<{!r}> = {}. Change recipient'.format(quest.hirer, quest.recipient, distance))
 
     quest.total_reward_money = quest.total_delivery_money_coef * cost_delivery_items + distance_cost
     quest.generate_reward()  # Устанавливаем награду за квест (карму, деньги и итемы)
