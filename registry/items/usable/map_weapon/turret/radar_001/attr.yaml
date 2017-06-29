@@ -1,0 +1,19 @@
+﻿__cls__  : MapWeaponTurretItem
+_cls     : MapWeaponTurretItem
+abstract : false
+
+title       : Радар 001
+description : Наблюдательный радар 001
+
+base_price : 50
+stack_size : 10
+
+activate_type : self
+activate_time : 1.0
+
+inv_icon_big    : static/content/items/usable/map_weapon/turret/turret_001/big.png
+inv_icon_mid    : static/content/items/usable/map_weapon/turret/turret_001/mid.png
+inv_icon_small  : static/content/items/usable/map_weapon/turret/turret_001/small.png
+inv_icon_xsmall : static/content/items/usable/map_weapon/turret/turret_001/xsmall.png
+
+generate_obj : reg:///registry/mobiles/map_weapon/stationary/turret/radar_001
