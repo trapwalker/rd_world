@@ -54,7 +54,6 @@ on_start: |
         quest.npc_replica(npc=quest.hirer, replica=u"NPC не достаточно хорошо к Вам относится.", event=event)
         log("DeliveryFromCache QUEST: User have not enough relation")
         raise Cancel("QUEST DeliveryFromCache CANCEL: User have not enough relation")
-    quest.starttime = event.time
     quest.log(text=u'Начат квест по доставке вещей из тайника.', event=event, position=quest.hirer.hometown.position)
 
 states:

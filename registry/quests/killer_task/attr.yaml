@@ -53,7 +53,6 @@ on_start: |
         quest.npc_replica(npc=quest.hirer, replica=u"NPC не достаточно хорошо к Вам относится.", event=event)
         log("KillerQuest: User have not enough relation")
         raise Cancel("KillerQuest: User have not enough relation")
-    quest.starttime = event.time
     # Создание ноты для квеста
     quest.wanted_note_uid = agent.profile.add_note(
         quest_uid=quest.uid,

@@ -36,7 +36,6 @@ on_generate: |
     quest.init_text() # Инициализируем строку описания квеста
 
 on_start: |
-    quest.starttime = event.time
     quest.log(text=u'Начат квест по замеру уровня радиации.', event=event, position=quest.hirer.hometown.position)
 
 states:
