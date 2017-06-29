@@ -1,0 +1,16 @@
+﻿__cls__ : MapWeaponTurret
+_cls    : MapWeaponTurret
+doc     : Радар 001
+
+inventory :
+    size  : 1
+    items : []
+
+p_observing_range : 300
+max_hp            : 500
+hp                : 500
+
+slot_FC : ~
+slot_CL : ~
+slot_CR : ~
+slot_BC : ~
