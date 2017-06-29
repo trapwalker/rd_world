@@ -9,12 +9,8 @@ caption: AI Quest
 text: Ai Quest
 
 on_generate: |
-    # todo: реализовать метод same_as для проверки похожести квестов
-    for q in agent and agent.profile.quests or []:
-        if q.status is None:
-            raise Cancel("QUEST CANCEL: You already have that unstarted quest: {q!r}")
-        if q.status == 'active':
-            raise Cancel("QUEST CANCEL: You already have more <<quest.active_count_max>> copies of that quest.")
+    if not quest.can_generate(event):
+        raise Cancel("QUEST CANCEL: reason: generate rules")
 
 on_start: |
     quest.route_index = 0

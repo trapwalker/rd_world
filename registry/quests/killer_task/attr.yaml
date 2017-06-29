@@ -34,14 +34,9 @@ text: |
 #    agent = UniReferenceField(tags='client', caption=u'Агент', doc=u'Исполнитель квеста')
 
 on_generate: |
-    # todo: реализовать метод same_as для проверки похожести квестов
-    for q in agent and agent.profile.quests or []:
-        if q.parent == quest.parent:
-            if q.status is None:
-                raise Cancel("QUEST CANCEL: You already have that unstarted quest: {q!r}")
+    if not quest.can_generate(event):
+        raise Cancel("QUEST CANCEL: reason: generate rules")
 
-            if q.status == 'active':
-                raise Cancel("QUEST CANCEL: You already have more <<quest.active_count_max>> copies of that quest.")
     # Установить уровень квеста, условия выполнения (определение жертв) и дедлайн
     quest.init_level()
     quest.init_targets_info()

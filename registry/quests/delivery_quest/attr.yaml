@@ -21,13 +21,8 @@ caption: Доставка груза
 #    agent = UniReferenceField(tags='client', caption=u'Агент', doc=u'Исполнитель квеста')
 
 on_generate: |
-    # todo: реализовать метод same_as для проверки похожести квестов
-    for q in agent and agent.profile.quests or []:
-        if q.parent == quest.parent:
-            if q.status is None:
-                raise Cancel("QUEST CANCEL: You already have that unstarted quest: {q!r}")
-            if q.status == 'active':
-                raise Cancel("QUEST CANCEL: You already have more <<quest.active_count_max>> copies of that quest.")
+    if not quest.can_generate(event):
+        raise Cancel("QUEST CANCEL: reason: generate rules")
 
     if not quest.recipient_list:
         raise Cancel("QUEST CANCEL: Empty recipient_list.")
