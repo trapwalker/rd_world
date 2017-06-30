@@ -1,0 +1,8 @@
+﻿
+role_class_order: # Порядок отображения ролевых классов при регистрации
+  - reg:///registry/rpg_settings/role_class/chosen_one
+  - reg:///registry/rpg_settings/role_class/road_warrior
+  - reg:///registry/rpg_settings/role_class/night_rider
+  - reg:///registry/rpg_settings/role_class/techno_kinetic
+  - reg:///registry/rpg_settings/role_class/oil_magnate
+  - reg:///registry/rpg_settings/role_class/alpha_wolf

@@ -14,18 +14,8 @@ caption: Доставка груза
 #    agent = UniReferenceField(tags='client', caption=u'Агент', doc=u'Исполнитель квеста')
 
 on_generate: |
-    # todo: реализовать метод same_as для проверки похожести квестов
-    for q in agent and agent.quests or []:
-        if q.parent == quest.parent:
-            if q.status is None:
-                raise Cancel("QUEST CANCEL: You already have that unstarted quest: {q}")
-            if q.status == 'active':
-                raise Cancel("QUEST CANCEL: You already have more <<quest.active_count_max>> copies of that quest.")
-
-    if not quest.recipient_list:
-        raise Cancel("QUEST CANCEL: Empty recipient_list.")
-    if not quest.delivery_set_list:
-        raise Cancel("QUEST CANCEL: Empty empty delivery_set_list.")
+    if not quest.can_generate(event):
+        raise Cancel("QUEST CANCEL: reason: generate rules")
 
     quest.init_level()
     quest.recipient = random.choice(quest.recipient_list)
@@ -50,7 +40,7 @@ on_generate: |
 
     quest.total_reward_money = quest.total_delivery_money_coef * cost_delivery_items + distance_cost
     quest.generate_reward()  # Устанавливаем награду за квест (карму, деньги и итемы)
-    quest.init_text() # Инициализируем строку описания квеста
+    quest.init_text(distance) # Инициализируем строку описания квеста
 
 on_start: |
     if quest.get_available_lvl() < quest.level:
@@ -61,7 +51,6 @@ on_start: |
         quest.npc_replica(npc=quest.hirer, replica=u"Не хватает места в инвентаре.", event=event)
         log("DELIVERY QUEST: User have not enough empty slots")
         raise Cancel("QUEST CANCEL: User have not enough empty slot")
-    quest.starttime = event.time
 
     quest.log(text=u'Начат квест по доставке.', event=event, position=quest.hirer.hometown.position)
     temp_log_str = u'От {} получены следующие предметы: {}.'.format(
@@ -74,7 +63,7 @@ states:
     - id: begin
       parent: reg:///registry/quest_states/test/begin
       on_enter: |
-          quest.delivery_note_uid = agent.add_note(
+          quest.delivery_note_uid = agent.profile.add_note(
               quest_uid=quest.uid,
               note_class=NPCDeliveryNote,
               time=event.time,
@@ -95,16 +84,16 @@ states:
                       ', '.join([item.title for item in quest.delivery_set])
                   )
                   quest.log(text=temp_log_str, event=event, position=quest.recipient.hometown.position)
-                  agent.del_note(uid=quest.delivery_note_uid, time=event.time)
+                  agent.profile.del_note(uid=quest.delivery_note_uid, time=event.time)
                   go('reward')
           if isinstance(event, OnTimer) and (event.name == 'deadline'):
-              agent.del_note(uid=quest.delivery_note_uid, time=event.time)
+              agent.profile.del_note(uid=quest.delivery_note_uid, time=event.time)
               go("fail")
           if isinstance(event, OnCancel):
-              if quest.can_take_items(items=quest.delivery_set, event=event) and (agent.balance >= (quest.reward_money / 2)):
-                  agent.del_note(uid=quest.delivery_note_uid, time=event.time)
+              if quest.can_take_items(items=quest.delivery_set, event=event) and (agent.profile.balance >= (quest.reward_money / 2)):
+                  agent.profile.del_note(uid=quest.delivery_note_uid, time=event.time)
                   quest.take_items(items=quest.delivery_set, event=event)
-                  agent.set_balance(time=event.time, delta=-(quest.reward_money / 2))
+                  agent.profile.set_balance(time=event.time, delta=-(quest.reward_money / 2))
 
                   temp_log_str = u'{} забрал следующие предметы: {}.'.format(
                       quest.hirer.title,
@@ -120,12 +109,12 @@ states:
     - id: reward
       parent: reg:///registry/quest_states/test
       on_enter: |
-          quest.agent.set_balance(time=event.time, delta=quest.reward_money)
+          quest.agent.profile.set_balance(time=event.time, delta=quest.reward_money)
           quest.log(text=u'Получено вознаграждение в размере {}nc.'.format(quest.reward_money), event=event, position=quest.recipient.hometown.position)
-          quest.agent.set_karma(time=event.time, dvalue=quest.reward_karma)
-          agent.set_relationship(time=event.time, npc=quest.hirer, dvalue=quest.reward_relation_hirer)  # изменение отношения к нпц
+          quest.agent.profile.set_karma(time=event.time, dvalue=quest.reward_karma)
+          agent.profile.set_relationship(time=event.time, npc=quest.hirer, dvalue=quest.reward_relation_hirer)  # изменение отношения к нпц
           if len(quest.reward_items) > 0:
-              quest.reward_note_uid = agent.add_note(
+              quest.reward_note_uid = agent.profile.add_note(
                   quest_uid=quest.uid,
                   note_class=NPCRewardItemsNote,
                   time=event.time,
@@ -140,7 +129,7 @@ states:
           if isinstance(event, OnNote):
               if (event.note_uid == quest.reward_note_uid) and (event.result == True):
                   if quest.give_items(items=quest.reward_items, event=event):
-                      agent.del_note(uid=quest.reward_note_uid, time=event.time)
+                      agent.profile.del_note(uid=quest.reward_note_uid, time=event.time)
                       go('win')
                   else:
                       quest.npc_replica(npc=quest.hirer, replica=u"Не хватает места в инвентаре.", event=event)
@@ -158,7 +147,7 @@ states:
     - id: fail
       parent: reg:///registry/quest_states/final/fail
       on_enter: |
-          agent.set_relationship(time=event.time, npc=quest.recipient, dvalue=-quest.level * 2)  # изменение отношения c нпц
-          agent.set_relationship(time=event.time, npc=quest.hirer, dvalue=-quest.level * 2)  # изменение отношения c нпц
-          quest.agent.set_karma(time=event.time, dvalue=-quest.reward_karma)  # todo: изменение кармы
+          agent.profile.set_relationship(time=event.time, npc=quest.recipient, dvalue=-quest.level * 2)  # изменение отношения c нпц
+          agent.profile.set_relationship(time=event.time, npc=quest.hirer, dvalue=-quest.level * 2)  # изменение отношения c нпц
+          quest.agent.profile.set_karma(time=event.time, dvalue=-quest.reward_karma)  # todo: изменение кармы
           quest.log(text=u'Квест провален.', event=event)

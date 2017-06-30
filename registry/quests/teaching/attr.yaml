@@ -7,94 +7,90 @@ current_state: ~
 
 teaching_delivery_quest:
     parent: reg:///registry/quests/delivery_quest/teaching
-    __cls__: DeliveryQuest
-    _cls: DeliveryQuest
-    hirer: reg:///registry/institutions/mayor/whitehill_manny_askorti
-    karma_coef: 0.5
-    money_coef: 0.5
-    total_delivery_money_coef: 0.5
-    recipient_list:
-      - reg:///registry/institutions/barman/whitehill_al_dufo
-      - reg:///registry/institutions/trader/whitehill_bob_ferolito
-      - reg:///registry/institutions/trainer/whitehill_blackhawk_2094
-    delivery_set_list:
-      -
-        - reg:///registry/items/usable/build_set/build_set_big?amount=10
-    reward_items_list: []  # todo: Нельзя ставить, так как придётся делать ещё одно состояние, которое не учит ничему!
+    generation_group: 'teaching_delivery'
+#    __cls__: DeliveryQuest
+#    _cls: DeliveryQuest
+#    hirer: reg:///registry/institutions/mayor/whitehill_manny_askorti
+#    karma_coef: 0.5
+#    money_coef: 0.5
+#    total_delivery_money_coef: 0.5
+#    recipient_list:
+#      - reg:///registry/institutions/barman/whitehill_al_dufo
+#      - reg:///registry/institutions/trader/whitehill_bob_ferolito
+#      - reg:///registry/institutions/trainer/whitehill_blackhawk_2094
+#    delivery_set_list:
+#      -
+#        - reg:///registry/items/usable/build_set/build_set_big?amount=10
+#    reward_items_list: []  # todo: Нельзя ставить, так как придётся делать ещё одно состояние, которое не учит ничему!
 
 caption: Обучение
 text: |
     Обучитесь.
 
 on_generate: |
-    # todo: реализовать метод same_as для проверки похожести квестов
-    for q in agent and agent.quests or []:
-        if q.parent == quest.parent:
-            # todo: изменить это, сейчас квест перегенерируется у мера, если пройден
-            if q.status is None:
-                raise Cancel("QUEST CANCEL: You already have that unstarted quest: {q}")
-            if q.status == 'active':
-                raise Cancel("QUEST CANCEL: You already have more <<quest.active_count_max>> copies of that quest.")
+    if not quest.can_generate(event):
+        raise Cancel("QUEST CANCEL: reason: generate rules")
 
 on_start: |
-    pass
+    if agent.profile._agent_model:
+        agent.profile._agent_model.set_teaching_state("city_start")
 
 states:
     - id: hangar
       parent: reg:///registry/quest_states/test/begin
       on_enter: |
-          quest.current_note_uid = agent.add_note(
+          quest.current_note_uid = agent.profile.add_note(
               quest_uid=quest.uid,
               note_class=HangarTeachingNote,
               time=event.time,
           )
       on_event: |
           if isinstance(event, OnBuyCar):
-              agent.del_note(uid=quest.current_note_uid, time=event.time)
+              agent.profile.del_note(uid=quest.current_note_uid, time=event.time)
+              quest.car_set_fuel(event)
               go('nukoil')
 
     - id: nukoil
       parent: reg:///registry/quest_states/test/begin
       on_enter: |
-          quest.current_note_uid = agent.add_note(
+          quest.current_note_uid = agent.profile.add_note(
               quest_uid=quest.uid,
               note_class=NukoilTeachingNote,
               time=event.time,
           )
       on_event: |
           if isinstance(event, OnGasStationFuel):
-              agent.del_note(uid=quest.current_note_uid, time=event.time)
+              agent.profile.del_note(uid=quest.current_note_uid, time=event.time)
               go('trader')
 
     - id: trader
       parent: reg:///registry/quest_states/test/begin
       on_enter: |
-          quest.current_note_uid = agent.add_note(
+          quest.current_note_uid = agent.profile.add_note(
               quest_uid=quest.uid,
               note_class=TraderTeachingNote,
               time=event.time,
           )
       on_event: |
           if isinstance(event, OnTraderTransaction):
-              agent.del_note(uid=quest.current_note_uid, time=event.time)
+              agent.profile.del_note(uid=quest.current_note_uid, time=event.time)
               go('armorer')
 
     - id: armorer
       parent: reg:///registry/quest_states/test/begin
       on_enter: |
-          quest.current_note_uid = agent.add_note(
+          quest.current_note_uid = agent.profile.add_note(
               quest_uid=quest.uid,
               note_class=ArmorerTeachingNote,
               time=event.time,
           )
       on_event: |
           if isinstance(event, OnArmorerTransaction):
-              agent.del_note(uid=quest.current_note_uid, time=event.time)
+              agent.profile.del_note(uid=quest.current_note_uid, time=event.time)
               # сгенерировать квест у мера и запомнить его uid
               qq = quest.teaching_delivery_quest.instantiate(abstract=False)
-              qq.agent = agent
-              if qq.generate(event=event):
-                  agent.add_quest(quest=qq, time=event.time)
+              if qq.generate(event=event, agent=agent):
+                  agent.profile.add_quest(quest=qq, time=event.time)
                   quest.current_quest_delivery_uid = qq.uid
                   go('mayor')
               else:
@@ -104,7 +100,7 @@ states:
     - id: mayor
       parent: reg:///registry/quest_states/test/begin
       on_enter: |
-          quest.current_note_uid = agent.add_note(
+          quest.current_note_uid = agent.profile.add_note(
               quest_uid=quest.uid,
               note_class=GetQuestTeachingNote,
               time=event.time,
@@ -112,15 +108,15 @@ states:
           )
       on_event: |
           if isinstance(event, OnQuestChange):
-              qq = agent.get_quest(uid=quest.current_quest_delivery_uid)
+              qq = agent.profile.get_quest(uid=quest.current_quest_delivery_uid)
               if qq.status == 'active':
-                  agent.del_note(uid=quest.current_note_uid, time=event.time)
+                  agent.profile.del_note(uid=quest.current_note_uid, time=event.time)
                   go('journal')
 
     - id: journal
       parent: reg:///registry/quest_states/test/begin
       on_enter: |
-          quest.current_note_uid = agent.add_note(
+          quest.current_note_uid = agent.profile.add_note(
               quest_uid=quest.uid,
               note_class=JournalTeachingNote,
               time=event.time,
@@ -128,26 +124,26 @@ states:
       on_event: |
           if isinstance(event, OnNote):
               if event.note_uid == quest.current_note_uid:
-                  agent.del_note(uid=quest.current_note_uid, time=event.time)
+                  agent.profile.del_note(uid=quest.current_note_uid, time=event.time)
                   go('mayor_quest_final')
 
     - id: mayor_quest_final
       parent: reg:///registry/quest_states/test/begin
       on_enter: |
-          qq = agent.get_quest(uid=quest.current_quest_delivery_uid)
+          qq = agent.profile.get_quest(uid=quest.current_quest_delivery_uid)
           if qq.status == 'active':
 
-              if qq.recipient.uri == 'reg:///registry/institutions/barman/al_dufo':
+              if qq.recipient.uri == 'reg:///registry/institutions/barman/whitehill_al_dufo':
                   target_build_name = 'bar'
                   target_build_coord = '958,240'
-              elif qq.recipient.uri == 'reg:///registry/institutions/trader/bob_ferolito':
+              elif qq.recipient.uri == 'reg:///registry/institutions/trader/whitehill_bob_ferolito':
                   target_build_name = 'market'
                   target_build_coord = '958,372'
-              elif qq.recipient.uri == 'reg:///registry/institutions/trainer/blackhawk_2094':
+              elif qq.recipient.uri == 'reg:///registry/institutions/trainer/whitehill_blackhawk_2094':
                   target_build_name = 'library'
                   target_build_coord = '958,414'
 
-              quest.current_note_uid = agent.add_note(
+              quest.current_note_uid = agent.profile.add_note(
                   quest_uid=quest.uid,
                   note_class=FinishQuestTeachingNote,
                   time=event.time,
@@ -160,31 +156,48 @@ states:
               go('trainer')
       on_event: |
           # todo: если квест доставки был сдан раньше, то решить что делать!
-          log('eeeend!!!!!!!!')
-          qq = agent.get_quest(uid=quest.current_quest_delivery_uid)
+          qq = agent.profile.get_quest(uid=quest.current_quest_delivery_uid)
           if isinstance(event, OnNote):
               if event.note_uid == qq.delivery_note_uid:
-                  agent.del_note(uid=quest.current_note_uid, time=event.time)
+                  agent.profile.del_note(uid=quest.current_note_uid, time=event.time)
+                  agent.profile.set_exp(time=event.time, dvalue=100)
+                  agent.profile.set_balance(time=event.time, delta=150)
                   go('trainer')
 
     - id: trainer
       parent: reg:///registry/quest_states/test/begin
       on_enter: |
-          quest.current_note_uid = agent.add_note(
+          quest.current_note_uid = agent.profile.add_note(
               quest_uid=quest.uid,
               note_class=TrainerTeachingNote,
               time=event.time,
           )
       on_event: |
           if isinstance(event, OnRPGSetTransaction):
-              agent.del_note(uid=quest.current_note_uid, time=event.time)
+              agent.profile.del_note(uid=quest.current_note_uid, time=event.time)
+              go('go_exit')
+
+    - id: go_exit
+      parent: reg:///registry/quest_states/test/begin
+      on_enter: |
+          quest.current_note_uid = agent.profile.add_note(
+              quest_uid=quest.uid,
+              note_class=ExitBtnTeachingNote,
+              time=event.time,
+          )
+
+      on_event: |
+          if isinstance(event, OnExitFromLocation) or isinstance(event, OnTimer) and event.name == 'exit_btn':
+              agent.profile.del_note(uid=quest.current_note_uid, time=event.time)
               go('final')
+          if isinstance(event, OnNote) and event.note_uid == quest.current_note_uid:
+              set_timer(name='exit_btn', delay=30)
 
     - id: final
       parent: reg:///registry/quest_states/final/win
       on_enter: |
-          if agent._agent_model:
-              agent._agent_model.set_teaching_state("done")
+          if agent.profile._agent_model:
+              agent.profile._agent_model.set_teaching_state("done")
           else:
               log('Error!!! Agent model not found: {}'.format(agent))
           log('Teaching Quest Done for {}'.format(agent))

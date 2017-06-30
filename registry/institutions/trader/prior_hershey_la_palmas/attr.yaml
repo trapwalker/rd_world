@@ -5,7 +5,7 @@ photo    : "static/content/institutions/trader/prior_hershey_la_palmas.png"
 abstract : true
 
 trading      : 20 # навык торговли
-refresh_time : 600 # время в сек между завозами
+#refresh_time : 600 # время в сек между завозами в секундах (0 или None - никогда)
 
 ignore_list : [] # то что не будет покупать
 hometown    : reg:///registry/poi/locations/towns/prior
@@ -222,6 +222,30 @@ price_list: # правила завоза
     price_min: 0.50
     price_max: 0.70
     influence: 0.001
+
+  - item: reg:///registry/items/slot_item/armorer_item
+    chance: 1.00
+    count_min: 0
+    count_max: 0
+    price_min: 1.00
+    price_max: 1.00
+    influence: 0.00
+
+  - item: reg:///registry/items/slot_item/tuner_item
+    chance: 1.00
+    count_min: 0
+    count_max: 0
+    price_min: 1.00
+    price_max: 1.00
+    influence: 0.00
+
+  - item: reg:///registry/items/slot_item/mechanic_item
+    chance: 1.00
+    count_min: 0
+    count_max: 0
+    price_min: 1.00
+    price_max: 1.00
+    influence: 0.00
 
   - item: reg:///registry/items
     chance: 1.00

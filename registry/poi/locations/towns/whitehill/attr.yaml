@@ -11,7 +11,7 @@ p_enter_range     : 315
 svg_link: static/content/locations/map_locations/whitehill
 
 buildings:
-  - name: nucoil
+  - name: nukeoil
     caption: Нукойл
     title: Нукойл
     head: reg:///registry/institutions/nucoil
@@ -42,7 +42,7 @@ buildings:
         - reg:///registry/institutions/hangar/whitehill_junior_clarks
         - reg:///registry/institutions/parking/whitehill_james_rogers
 
-  - name: autoservice
+  - name: service
     caption: Автосервис
     title: Элон Авто Рипейр
     head: reg:///registry/institutions/mechanic/whitehill_raul_alon

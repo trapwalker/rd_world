@@ -25,21 +25,6 @@ avatar_list: # Список аватаров, доступных при реги
   - static/content/avatars/default_20.png
 
 
-role_class_order: # Порядок отображения ролевых классов при регистрации
-  - reg:///registry/rpg_settings/role_class/chosen_one
-  - reg:///registry/rpg_settings/role_class/road_warrior
-  - reg:///registry/rpg_settings/role_class/night_rider
-  - reg:///registry/rpg_settings/role_class/techno_kinetic
-  - reg:///registry/rpg_settings/role_class/oil_magnate
-  - reg:///registry/rpg_settings/role_class/alpha_wolf
-
-quick_game_cars: # Список машинок для быстрой игры
-  - reg:///registry/mobiles/cars/light/motorcycles/honda_hornet/quick
-  - reg:///registry/mobiles/cars/middle/sports/delorean_dmc12/quick
-  - reg:///registry/mobiles/cars/middle/cars/dodge_challenger/quick
-  - reg:///registry/mobiles/cars/middle/offroad/defender/quick
-  - reg:///registry/mobiles/cars/heavy/btrs/m113a1/quick
-
 # Боты
 quick_game_bot_count: 10 # Количество ботов в быстрой игре
 
@@ -47,21 +32,6 @@ quick_game_start_pos: {x: 12479076, y: 27010844}  # Центр быстрой и
 quick_game_play_radius: 3500  # Радиус быстрой игры
 quick_game_respawn_bots_pos: {x: 12479076, y: 27010844}  # Центр респа игроков и ботов
 quick_game_respawn_bots_radius: 1250  # Радиус респа игроков и ботов
-
-quick_game_bot_cars: # Список машинок на которых ездят боты в быстрой игре
-  - reg:///registry/mobiles/cars/light/motorcycles/honda_hornet/quick_bot
-  - reg:///registry/mobiles/cars/middle/sports/delorean_dmc12/quick_bot
-  - reg:///registry/mobiles/cars/middle/cars/dodge_challenger/quick_bot
-  - reg:///registry/mobiles/cars/middle/offroad/defender/quick_bot
-  - reg:///registry/mobiles/cars/heavy/btrs/m113a1/quick_bot
-
-quick_game_bot_agents: # Список агентов для ботов быстрой игры
-  - reg:///registry/agents/user/ai
-  #- reg:///registry/agents/user/ai/forest_patrol
-  #- reg:///registry/agents/user/ai/route_circle
-  #- reg:///registry/agents/user/ai/route_square
-  #- reg:///registry/agents/user/ai/route_circle_clockwise
-  #- reg:///registry/agents/user/ai/route_square_clockwise
 
 quick_game_bots_nick:
   - Alex_059

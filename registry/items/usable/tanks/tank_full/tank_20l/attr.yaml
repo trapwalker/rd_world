@@ -14,4 +14,5 @@ inv_icon_mid   : static/content/items/usable/tanks/tank_full/tank_20l/mid.png
 inv_icon_small : static/content/items/usable/tanks/tank_full/tank_20l/small.png
 inv_icon_xsmall : static/content/items/usable/tanks/tank_full/tank_20l/xsmall.png
 
-post_activate_item : reg:///registry/items/usable/tanks/tank_empty/tank_20l
+post_activate_items :
+  - reg:///registry/items/usable/tanks/tank_empty/tank_20l

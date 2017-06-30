@@ -1,5 +1,5 @@
-__cls__: Agent
-_cls: Agent
+__cls__: AgentProfile
+_cls: AgentProfile
 doc    : Прототипы агентов
 
 balance: 1000
@@ -8,6 +8,7 @@ perks: []
 
 teaching_flag: False
 quick_flag: False
+in_location_flag: True
 
 quests_unstarted: []
 quests_active:    []

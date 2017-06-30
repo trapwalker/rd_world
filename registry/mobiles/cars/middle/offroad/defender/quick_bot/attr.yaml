@@ -1,8 +1,8 @@
 ﻿__cls__ : Car
 _cls : Car
-title:       "Defender (Bot)"    # Модель атомобиля
+title:       "Defender (Бот)"    # Модель атомобиля
 class_car:   "Средний"           # Класс автомобиля
-name_car:    "Defender (Bot)"    # Название атомобиля
+name_car:    "Defender (Бот)"    # Название атомобиля
 
 price:              10           # Цена у продавца (л) (>= 0)
 

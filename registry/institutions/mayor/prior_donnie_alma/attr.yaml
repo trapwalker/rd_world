@@ -111,73 +111,59 @@ quests:
       min: 3
       max: 7
 
-  - parent: reg:///registry/quests/delivery_from_cache
-    __cls__: DeliveryFromCache
-    _cls   : DeliveryFromCache
-    design_speed: 3.0              # Скорость в px/с с которой должен двигаться игрок чтобы успеть (если = 0, то время не ограничено)
-    cache_radius: 50               # Радиус, в котором можно обнаружить тайник
-    reward_relation_hirer: 5.0     # Награда в отношение за выполнение
-    karma_coef: 0.0                # Часть кармы от общей награды
-    money_coef: 1.0                # Часть нуокйнов от общей награды
-    total_delivery_money_coef: 0.5 # Множитель общей стоимости награды за квест от стоимости доставляемого товара
-    delivery_set_list:             # Список возможных комплектов для доставки
-      -
-        - reg:///registry/items/stuff/alcohol/alcohol_001
-        - reg:///registry/items/stuff/alcohol/alcohol_002
-        - reg:///registry/items/stuff/canned_cereal/canned_cereal_001
-        - reg:///registry/items/stuff/canned_cereal/canned_cereal_002
-        - reg:///registry/items/stuff/canned_fruit/canned_fruit_001
-        - reg:///registry/items/stuff/canned_fruit/canned_fruit_002
-        - reg:///registry/items/stuff/canned_meat/canned_meat_001
-        - reg:///registry/items/stuff/canned_meat/canned_meat_002
-        - reg:///registry/items/stuff/drugs/drugs_001
-        - reg:///registry/items/stuff/drugs/drugs_002
-        - reg:///registry/items/stuff/medical_supplies/medical_supplies_001
-        - reg:///registry/items/stuff/medical_supplies/medical_supplies_002
-        - reg:///registry/items/stuff/rice/rice_001
-        - reg:///registry/items/stuff/rice/rice_002
-        - reg:///registry/items/stuff/scrap_metal/scrap_metal_001
-        - reg:///registry/items/stuff/warm_clothes/warm_clothes_001
-        - reg:///registry/items/stuff/warm_clothes/warm_clothes_002
-        - reg:///registry/items/stuff/warm_clothes/warm_clothes_003
-        - reg:///registry/items/stuff/water/water_001
-        - reg:///registry/items/stuff/water/water_002
-    reward_items_list: []          # Список возможных комплектов для награды
-    cache_points_generator:      # Список областей генерации пунктов замеров
-      - position:
-          x: 12516854
-          y: 27028533
-        radius: 100
-
   - parent: reg:///registry/quests/map_activate_item
-    __cls__: MapActivateItem
-    _cls   : MapActivateItem
+    __cls__: MapActivateItemQuest
+    _cls   : MapActivateItemQuest
 
-    activate_price: 100            # Награда за активацию предмета
-    activate_radius: 50            # Радиус активации итема
+    activate_price: 500            # Награда за активацию предмета
+    activate_radius: 100           # Радиус активации итема
 
     reward_relation_hirer: 5.0     # Награда в отношение за выполнение
-    karma_coef: 0.0                # Часть кармы от общей награды
-    money_coef: 1.0                # Часть нуокйнов от общей награды
+    karma_coef: 0.25               # Часть кармы от общей награды
+    money_coef: 0.75               # Часть нуокйнов от общей награды
     reward_items_list: []          # Список возможных комплектов для награды
 
     activate_points_generator:
       - position:
-          x: 12516154
-          y: 27028233
+          x: 12531997
+          y: 27031177
         radius: 500
       - position:
-          x: 12518154
-          y: 27028233
+          x: 12534992
+          y: 27033137
         radius: 500
       - position:
-          x: 12517154
-          y: 27027233
+          x: 12535969
+          y: 27033872
         radius: 500
       - position:
-          x: 12517154
-          y: 27029233
+          x: 12543127
+          y: 27031722
+        radius: 500
+      - position:
+          x: 12545957
+          y: 27037056
+        radius: 500
+      - position:
+          x: 12541920
+          y: 27034356
+        radius: 500
+      - position:
+          x: 12536233
+          y: 27038052
+        radius: 500
+      - position:
+          x: 12540711
+          y: 27048177
+        radius: 500
+      - position:
+          x: 12536163
+          y: 27046876
+        radius: 500
+      - position:
+          x: 12540731
+          y: 27056717
         radius: 500
 
     activate_items_generator:
-      - reg:///registry/items/usable/map_weapon/turret/turret_mg15/quick?amount=1
+      - reg:///registry/items/usable/map_weapon/turret/radar_001?amount=1
