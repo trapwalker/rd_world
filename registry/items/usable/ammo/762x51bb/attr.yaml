@@ -13,5 +13,3 @@ inv_icon_big    : static/content/items/usable/ammo/762x51bb/big.png
 inv_icon_mid    : static/content/items/usable/ammo/762x51bb/mid.png
 inv_icon_small  : static/content/items/usable/ammo/762x51bb/small.png
 inv_icon_xsmall : static/content/items/usable/ammo/762x51bb/xsmall.png
-
-tags : [teaching]
