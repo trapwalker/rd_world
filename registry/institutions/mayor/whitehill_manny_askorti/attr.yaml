@@ -186,15 +186,10 @@ quests:
             - reg:///registry/items/stuff/alcohol/alcohol_001
             - reg:///registry/items/stuff/alcohol/alcohol_001
             - reg:///registry/items/stuff/alcohol/alcohol_001
-
-        - parent: reg:///registry/items/usable/package
-          __cls__: Package
-          _cls   : Package
-          base_price : 10          # тут надо указать стоимость посылки для корректного расчета награды
-          post_activate_items:
-            - reg:///registry/items/stuff/water/water_002
-            - reg:///registry/items/stuff/water/water_002
-            - reg:///registry/items/stuff/water/water_002
+            - reg:///registry/items/stuff/alcohol/alcohol_001
+            - reg:///registry/items/stuff/alcohol/alcohol_001
+            - reg:///registry/items/stuff/alcohol/alcohol_001
+            - reg:///registry/items/stuff/alcohol/alcohol_001
 
     loot_set_list:                 # Список хлама
       -

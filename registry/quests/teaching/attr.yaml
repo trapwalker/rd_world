@@ -175,6 +175,21 @@ states:
       on_event: |
           if isinstance(event, OnRPGSetTransaction):
               agent.profile.del_note(uid=quest.current_note_uid, time=event.time)
+              go('go_exit')
+
+    - id: go_exit
+      parent: reg:///registry/quest_states/test/begin
+      on_enter: |
+          quest.current_note_uid = agent.profile.add_note(
+              quest_uid=quest.uid,
+              note_class=ExitBtnTeachingNote,
+              time=event.time,
+          )
+          set_timer(name='exit_btn', delay=30)
+
+      on_event: |
+          if isinstance(event, OnExitFromLocation) or isinstance(event, OnTimer) and event.name == 'exit_btn':
+              agent.profile.del_note(uid=quest.current_note_uid, time=event.time)
               go('final')
 
     - id: final

@@ -13,4 +13,4 @@ inv_icon_mid   :  static/content/items/usable/package/mid.png
 inv_icon_small :  static/content/items/usable/package/small.png
 inv_icon_xsmall : static/content/items/usable/package/supersmall.png
 
-activate_disable_comment: 'Не хватает места в багажнике'
+activate_disable_comment: 'Достаточно места в инвентаре'
