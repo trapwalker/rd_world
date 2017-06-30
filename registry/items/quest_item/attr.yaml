@@ -12,7 +12,6 @@ amount: 1
 stack_size: 1
 activate_type: ~
 
-
 driving:     0  # Модификатор навыка вождения
 shooting:    0  # Модификатор навыка стрельбы
 masking:     0  # Модификатор навыка маскировки

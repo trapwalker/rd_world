@@ -1,14 +1,14 @@
-﻿__cls__: DeliveryFromCache
-_cls: DeliveryFromCache
+﻿__cls__: SearchCourier
+_cls: SearchCourier
 doc    : Примеры квестов
 
 first_state: begin
 current_state: ~
 
-list_icon: static/img/quests/icons/cache.png
-map_icon: static/img/quests/map_icons/cache.png
+list_icon: static/img/quests/icons/courier.png
+map_icon: static/img/quests/map_icons/courier.png
 
-caption: Найти посылку
+caption: Найти курьера
 #    text_short = StringField(tags='client', caption=u'Короткий текст квеста', doc=u'Может строиться и меняться по шаблону')
 #    typename = StringField(tags='client', caption=u'Тип квеста', doc=u'Может быть произвольным')
 #    list_icon = StringField(tags='client', caption=u'Пиктограмма для списков', doc=u'Мальенькая картинка для отображения в списках')  # todo: use UrlField
@@ -24,10 +24,10 @@ on_generate: |
     if not quest.can_generate(event):
         raise Cancel("QUEST CANCEL: reason: generate rules")
 
-    if not quest.delivery_set_list:
-        raise Cancel("QUEST DeliveryFromCache CANCEL: Empty empty delivery_set_list.")
     if quest.hirer.hometown is None:
-        raise Cancel("QUEST DeliveryFromCache CANCEL: {} hometown is None.".format(quest.hirer.hometown))
+        raise Cancel("QUEST SearchCourier CANCEL: {} hometown is None.".format(quest.hirer.hometown))
+    if not quest.courier_car_list:
+        raise Cancel("QUEST SearchCourier CANCEL: Empty courier_car_list.")
 
     quest.init_level()
     quest.init_delivery_set()
@@ -35,7 +35,7 @@ on_generate: |
 
     distance = quest.init_distance()
     if distance == 0:
-        log('DeliveryFromCache Quest: Warning!!! Distance from hirer<{}> to point<{}> = {}'.format(quest.hirer, quest.cache_point, distance))
+        log('SearchCourier Quest: Warning!!! Distance from hirer<{}> to point<{}> = {}'.format(quest.hirer, quest.cache_point, distance))
     quest.init_deadline(distance)
 
     quest.generate_reward()  # Устанавливаем награду за квест (карму, деньги и итемы)
@@ -44,9 +44,9 @@ on_generate: |
 on_start: |
     if quest.get_available_lvl() < quest.level:
         quest.npc_replica(npc=quest.hirer, replica=u"NPC не достаточно хорошо к Вам относится.", event=event)
-        log("DeliveryFromCache QUEST: User have not enough relation")
-        raise Cancel("QUEST DeliveryFromCache CANCEL: User have not enough relation")
-    quest.log(text=u'Начат квест по поиску посылки.', event=event, position=quest.hirer.hometown.position)
+        log("SearchCourier QUEST: User have not enough relation")
+        raise Cancel("QUEST SearchCourier CANCEL: User have not enough relation")
+    quest.log(text=u'Начат квест по поиску пропавшего курьера.', event=event, position=quest.hirer.hometown.position)
 
 states:
     - id: begin
@@ -84,13 +84,13 @@ states:
       parent: reg:///registry/quest_states/test/begin
       on_enter: |
           # создать лут с временем жизни до окончания дедлайна и с нужными итемами
+          quest.log(text=u'Найдена машина курьера.', event=event, position=quest.cache_point.position)
           quest.create_poi_container(event)
-          quest.log(text=u'Найдена посылка.', event=event, position=quest.cache_point.position)
 
           # создать ноту на доставку
           quest.delivery_note_uid = agent.profile.add_note(
               quest_uid=quest.uid,
-              note_class=NPCDeliveryNoteUID,
+              note_class=NPCDeliveryNoteCourier,
               time=event.time,
               npc=quest.hirer,
               page_caption=quest.caption,
@@ -98,14 +98,14 @@ states:
 
       on_event: |
           if isinstance(event, OnCancel):
-              quest.npc_replica(npc=quest.hirer, replica=u"Вы нашли посылку и не можете отказаться.", event=event)
+              quest.npc_replica(npc=quest.hirer, replica=u"Вы нашли машину курьера и не можете отказаться.", event=event)
 
           if isinstance(event, OnTimer) and event.name == 'deadline_delivery_cache_quest':
               agent.profile.del_note(uid=quest.delivery_note_uid, time=event.time)
               go("fail")
 
           if isinstance(event, OnNote):
-              if (event.note_uid == quest.delivery_note_uid) and (event.result == True) and quest.take_items_uid(items=quest.delivery_set, event=event):
+              if (event.note_uid == quest.delivery_note_uid) and (event.result == True) and quest.take_medallion(event=event):
                   agent.profile.del_note(uid=quest.delivery_note_uid, time=event.time)
                   go('reward')
 
