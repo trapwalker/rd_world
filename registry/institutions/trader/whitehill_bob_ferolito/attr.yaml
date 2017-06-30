@@ -247,6 +247,30 @@ price_list: # правила завоза
     price_max: 1.00
     influence: 0.00
 
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/dshkm
+    chance: 1.00
+    count_min: 0
+    count_max: 0
+    price_min: 1.00
+    price_max: 1.00
+    influence: 0.00
+
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/dshkm_twin
+    chance: 1.00
+    count_min: 0
+    count_max: 0
+    price_min: 1.00
+    price_max: 1.00
+    influence: 0.00
+
+  - item: reg:///registry/items/usable/ammo/127x108bb
+    chance: 1.00
+    count_min: 0
+    count_max: 0
+    price_min: 1.00
+    price_max: 1.00
+    influence: 0.00
+
   - item: reg:///registry/items
     chance: 1.00
     count_min: 0
