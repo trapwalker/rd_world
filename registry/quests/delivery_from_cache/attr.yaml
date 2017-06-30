@@ -8,7 +8,7 @@ current_state: ~
 list_icon: static/img/quests/icons/delivery.png
 map_icon: static/img/quests/map_icons/delivery_cache.png
 
-caption: Доставка тайника
+caption: Найти посылку
 #    text_short = StringField(tags='client', caption=u'Короткий текст квеста', doc=u'Может строиться и меняться по шаблону')
 #    typename = StringField(tags='client', caption=u'Тип квеста', doc=u'Может быть произвольным')
 #    list_icon = StringField(tags='client', caption=u'Пиктограмма для списков', doc=u'Мальенькая картинка для отображения в списках')  # todo: use UrlField
@@ -98,7 +98,7 @@ states:
       on_enter: |
           # создать лут с временем жизни до окончания дедлайна и с нужными итемами
           quest.create_poi_container(event)
-          quest.log(text=u'Найден тайник.', event=event, position=quest.cache_point.position)
+          quest.log(text=u'Найдена посылка.', event=event, position=quest.cache_point.position)
 
           # создать ноту на доставку
           quest.delivery_note_uid = agent.profile.add_note(
@@ -111,7 +111,7 @@ states:
 
       on_event: |
           if isinstance(event, OnCancel):
-              quest.npc_replica(npc=quest.hirer, replica=u"Вы побывали в тайнике и не можете отказаться.", event=event)
+              quest.npc_replica(npc=quest.hirer, replica=u"Вы нашли посылку и не можете отказаться.", event=event)
 
           if isinstance(event, OnTimer) and event.name == 'deadline_delivery_cache_quest':
               agent.profile.del_note(uid=quest.delivery_note_uid, time=event.time)
