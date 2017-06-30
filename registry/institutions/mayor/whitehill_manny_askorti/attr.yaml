@@ -172,10 +172,6 @@ quests:
     _cls   : DeliveryFromCache
     design_speed: 3.0              # Скорость в px/с с которой должен двигаться игрок чтобы успеть (если = 0, то время не ограничено)
     cache_radius: 50               # Радиус, в котором можно обнаружить тайник
-    reward_relation_hirer: 5.0     # Награда в отношение за выполнение
-    karma_coef: 0.0                # Часть кармы от общей награды
-    money_coef: 1.0                # Часть нуокйнов от общей награды
-    total_delivery_money_coef: 0.5 # Множитель общей стоимости награды за квест от стоимости доставляемого товара
     delivery_set_list:             # Список посылок
       -
         - parent: reg:///registry/items/usable/package
@@ -190,15 +186,44 @@ quests:
             - reg:///registry/items/stuff/alcohol/alcohol_001
             - reg:///registry/items/stuff/alcohol/alcohol_001
             - reg:///registry/items/stuff/alcohol/alcohol_001
-
     loot_set_list:                 # Список хлама
       -
         - reg:///registry/items/stuff/alcohol/alcohol_001
         - reg:///registry/items/stuff/canned_cereal/canned_cereal_001
         - reg:///registry/items/stuff/canned_meat/canned_meat_001
         - reg:///registry/items/stuff/water/water_002
+    cache_points_generator:        # Список областей генерации тайников
+      - position:
+          x: 12516854
+          y: 27028533
+        radius: 100
 
-    reward_items_list: []          # Список возможных комплектов для награды
+  - parent: reg:///registry/quests/search_courier
+    __cls__: SearchCourier
+    _cls   : SearchCourier
+    design_speed: 3.0              # Скорость в px/с с которой должен двигаться игрок чтобы успеть (если = 0, то время не ограничено)
+    cache_radius: 50               # Радиус, в котором можно обнаружить тайник
+    loot_set_list:                 # Список хлама
+      -
+        - reg:///registry/items/stuff/alcohol/alcohol_001
+        - reg:///registry/items/stuff/canned_cereal/canned_cereal_001
+        - reg:///registry/items/stuff/canned_meat/canned_meat_001
+        - reg:///registry/items/stuff/water/water_002
+    courier_car_list:              # Список машин на которых может оказаться курьер
+      - reg:///registry/mobiles/cars/light/motorcycles/honda_hornet
+      - reg:///registry/mobiles/cars/light/motorcycles/triumph_america
+
+    courier_medallion:
+      parent: reg:///registry/items/quest_item
+      __cls__: QuestItem
+      _cls   : QuestItem
+      title       : Платиновая фишка
+      description : Предмет погибшего курьера. Необходимо доставить Manny_Ascorti.
+      inv_icon_big    : static/content/items/quest_item/courier_medalion/big.png
+      inv_icon_mid    : static/content/items/quest_item/courier_medalion/mid.png
+      inv_icon_small  : static/content/items/quest_item/courier_medalion/mid.png
+      inv_icon_xsmall : static/content/items/quest_item/courier_medalion/mid.png
+
     cache_points_generator:        # Список областей генерации тайников
       - position:
           x: 12516854
