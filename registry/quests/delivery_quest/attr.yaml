@@ -50,7 +50,7 @@ on_generate: |
 
     quest.total_reward_money = quest.total_delivery_money_coef * cost_delivery_items + distance_cost
     quest.generate_reward()  # Устанавливаем награду за квест (карму, деньги и итемы)
-    quest.init_text() # Инициализируем строку описания квеста
+    quest.init_text(distance) # Инициализируем строку описания квеста
 
 on_start: |
     if not quest.give_items(items=quest.delivery_set, event=event):
