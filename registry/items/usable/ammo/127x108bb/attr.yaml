@@ -2,6 +2,7 @@
 _cls     : AmmoBullets
 doc      : Патроны 12.7мм/ББ
 abstract : false
+tags     : [teaching]
 
 title       : Патроны<br>12.7мм/ББ
 description : Бронебойные патроны калибра 12.7 мм для пулемётов.
