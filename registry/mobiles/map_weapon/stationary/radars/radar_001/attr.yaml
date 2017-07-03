@@ -1,5 +1,5 @@
-﻿__cls__ : MapWeaponTurret
-_cls    : MapWeaponTurret
+﻿__cls__ : MapRadar
+_cls    : MapRadar
 doc     : Радар 001
 
 inventory :
@@ -7,8 +7,6 @@ inventory :
     items : []
 
 p_observing_range : 300
-max_hp            : 500
-hp                : 500
 
 slot_FC : ~
 slot_CL : ~
