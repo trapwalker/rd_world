@@ -1,0 +1,231 @@
+﻿__cls__  : Institution
+_cls     : Institution
+title    : Bob_McDowell
+photo    : "static/content/institutions/mine_manager/mine_whitehill_bob_mcdowell.png"
+abstract : false
+
+hometown : reg:///registry/poi/locations/towns/mine_whitehill
+
+
+quests:
+  - parent: reg:///registry/quests/delivery_quest/delivery_quest_simple
+    __cls__: DeliveryQuestSimple
+    _cls   : DeliveryQuestSimple
+    reward_relation_hirer: 5.0     # Награда в отношение за выполнение
+    karma_coef: 0.0                # Часть кармы от общей награды
+    money_coef: 1.0                # Часть нуокйнов от общей награды
+    total_delivery_money_coef: 0.5 # Множитель общей стоимости награды за квест от стоимости доставляемого товара
+    recipient_list:                # Список возможных получателей доставки
+      - reg:///registry/institutions/trader/prior_hershey_la_palmas
+      - reg:///registry/institutions/mayor/prior_donnie_alma
+      - reg:///registry/institutions/trader/paloma_shaun_fisher
+    delivery_set_list:             # Список возможных комплектов для доставки
+      -
+        - reg:///registry/items/stuff/alcohol/alcohol_001
+        - reg:///registry/items/stuff/canned_cereal/canned_cereal_001
+        - reg:///registry/items/stuff/canned_meat/canned_meat_001
+        - reg:///registry/items/stuff/water/water_002
+    reward_items_list: []          # Список возможных комплектов для награды
+
+  - parent: reg:///registry/quests/killer_task
+    __cls__: KillerQuest
+    _cls   : KillerQuest
+    reward_relation_hirer: 5.0     # Награда в отношение за выполнение
+    karma_coef: 0.3                # Часть кармы от общей награды
+    money_coef: 0.7                # Часть нуокйнов от общей награды
+    reward_items_list: []          # Список возможных комплектов для награды
+    unique_victims: True           # Уникальные жертвы
+    price_victim: 1000             # Цена одной жертвы на первом уровне квеста
+    count_to_kill_range:           # Диапазон количества целей
+      min: 1
+      max: 5
+
+  - parent: reg:///registry/quests/delivery_quest/delivery_passenger_quest
+    __cls__: DeliveryPassengerQuest
+    _cls   : DeliveryPassengerQuest
+    person_delivery_cost: 1000     # Стоимость доставки отдельного пассажира
+    reward_relation_hirer: 5.0     # Награда в отношение за выполнение
+    karma_coef: 0.0                # Часть кармы от общей награды
+    money_coef: 1.0                # Часть нуокйнов от общей награды
+    destination_list:              # Список возможных пунктов назначения
+      - reg:///registry/poi/locations/towns/prior
+      - reg:///registry/poi/locations/towns/paloma
+    delivery_set_list:
+      -
+        - reg:///registry/items/passengers/female
+        - reg:///registry/items/passengers/male
+
+  - parent: reg:///registry/quests/measure_radiation
+    __cls__: MeasureRadiation
+    _cls   : MeasureRadiation
+    reward_relation_hirer: 5.0     # Награда в отношение за выполнение
+    karma_coef: 0.0                # Часть кармы от общей награды
+    money_coef: 1.0                # Часть нуокйнов от общей награды
+    reward_items_list: []          # Список возможных комплектов для награды
+
+    measuring_price: 350           # Стоимость одного замера радиации
+    measuring_radius: 50           # Максимальный радиус измерения
+    measure_points_generator:      # Список областей генерации пунктов замеров
+      - position:
+          x: 12469464
+          y: 27040886
+        radius: 500
+      - position:
+          x: 12470672
+          y: 27034864
+        radius: 500
+      - position:
+          x: 12470697
+          y: 27052358
+        radius: 500
+      - position:
+          x: 12471339
+          y: 27057487
+        radius: 500
+      - position:
+          x: 12471908
+          y: 27044794
+        radius: 500
+      - position:
+          x: 12473283
+          y: 27043171
+        radius: 500
+      - position:
+          x: 12474300
+          y: 27038068
+        radius: 500
+      - position:
+          x: 12476274
+          y: 27027275
+        radius: 500
+      - position:
+          x: 12481776
+          y: 27025510
+        radius: 500
+      - position:
+          x: 12479081
+          y: 27032051
+        radius: 500
+    measure_count_range:           # Диапазон количетсва измерений
+      min: 3
+      max: 7
+
+  - parent: reg:///registry/quests/map_activate_item
+    __cls__: MapActivateItemQuest
+    _cls   : MapActivateItemQuest
+
+    activate_price: 500            # Награда за активацию предмета
+    activate_radius: 100           # Радиус активации итема
+
+    reward_relation_hirer: 5.0     # Награда в отношение за выполнение
+    karma_coef: 0.25               # Часть кармы от общей награды
+    money_coef: 0.75               # Часть нуокйнов от общей награды
+    reward_items_list: []          # Список возможных комплектов для награды
+
+    activate_points_generator:
+      - position:
+          x: 12469464
+          y: 27040886
+        radius: 500
+      - position:
+          x: 12470672
+          y: 27034864
+        radius: 500
+      - position:
+          x: 12470697
+          y: 27052358
+        radius: 500
+      - position:
+          x: 12471339
+          y: 27057487
+        radius: 500
+      - position:
+          x: 12471908
+          y: 27044794
+        radius: 500
+      - position:
+          x: 12473283
+          y: 27043171
+        radius: 500
+      - position:
+          x: 12474300
+          y: 27038068
+        radius: 500
+      - position:
+          x: 12476274
+          y: 27027275
+        radius: 500
+      - position:
+          x: 12481776
+          y: 27025510
+        radius: 500
+      - position:
+          x: 12479081
+          y: 27032051
+        radius: 500
+
+    activate_items_generator:
+      - reg:///registry/items/usable/map_weapon/turret/radar_001?amount=1
+
+  - parent: reg:///registry/quests/delivery_from_cache
+    __cls__: DeliveryFromCache
+    _cls   : DeliveryFromCache
+    design_speed: 3.0              # Скорость в px/с с которой должен двигаться игрок чтобы успеть (если = 0, то время не ограничено)
+    cache_radius: 50               # Радиус, в котором можно обнаружить тайник
+    delivery_set_list:             # Список посылок
+      -
+        - parent: reg:///registry/items/usable/package
+          __cls__: Package
+          _cls   : Package
+          base_price : 10          # тут надо указать стоимость посылки для корректного расчета награды
+          post_activate_items:
+            - reg:///registry/items/stuff/alcohol/alcohol_001
+            - reg:///registry/items/stuff/alcohol/alcohol_001
+            - reg:///registry/items/stuff/alcohol/alcohol_001
+            - reg:///registry/items/stuff/alcohol/alcohol_001
+            - reg:///registry/items/stuff/alcohol/alcohol_001
+            - reg:///registry/items/stuff/alcohol/alcohol_001
+            - reg:///registry/items/stuff/alcohol/alcohol_001
+    loot_set_list:                 # Список хлама
+      -
+        - reg:///registry/items/stuff/alcohol/alcohol_001
+        - reg:///registry/items/stuff/canned_cereal/canned_cereal_001
+        - reg:///registry/items/stuff/canned_meat/canned_meat_001
+        - reg:///registry/items/stuff/water/water_002
+    cache_points_generator:        # Список областей генерации тайников
+      - position:
+          x: 12516854
+          y: 27028533
+        radius: 100
+
+  - parent: reg:///registry/quests/search_courier
+    __cls__: SearchCourier
+    _cls   : SearchCourier
+    design_speed: 3.0              # Скорость в px/с с которой должен двигаться игрок чтобы успеть (если = 0, то время не ограничено)
+    cache_radius: 50               # Радиус, в котором можно обнаружить тайник
+    loot_set_list:                 # Список хлама
+      -
+        - reg:///registry/items/stuff/alcohol/alcohol_001
+        - reg:///registry/items/stuff/canned_cereal/canned_cereal_001
+        - reg:///registry/items/stuff/canned_meat/canned_meat_001
+        - reg:///registry/items/stuff/water/water_002
+    courier_car_list:              # Список машин на которых может оказаться курьер
+      - reg:///registry/mobiles/cars/light/motorcycles/honda_hornet
+      - reg:///registry/mobiles/cars/light/motorcycles/triumph_america
+
+    courier_medallion:
+      parent: reg:///registry/items/quest_item
+      __cls__: QuestItem
+      _cls   : QuestItem
+      title       : Платиновая фишка
+      description : Предмет погибшего курьера. Необходимо доставить Bob_McDowell.
+      inv_icon_big    : static/content/items/quest_item/courier_medalion/big.png
+      inv_icon_mid    : static/content/items/quest_item/courier_medalion/mid.png
+      inv_icon_small  : static/content/items/quest_item/courier_medalion/mid.png
+      inv_icon_xsmall : static/content/items/quest_item/courier_medalion/mid.png
+
+    cache_points_generator:        # Список областей генерации тайников
+      - position:
+          x: 12516854
+          y: 27028533
+        radius: 100
