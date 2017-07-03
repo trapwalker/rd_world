@@ -1,10 +1,10 @@
 ﻿__cls__: MapActivateRadarsQuest
 _cls: MapActivateRadarsQuest
 
-caption: Активация предметов
+caption: Установка радаров
 first_state: begin
-list_icon: static/img/quests/icons/rad_ico.png
-map_icon: static/img/quests/map_icons/rad_ico.png
+list_icon: static/img/quests/icons/radar.png
+map_icon: static/img/quests/map_icons/radar.png
 
 #    text_short = StringField(tags='client', caption=u'Короткий текст квеста', doc=u'Может строиться и меняться по шаблону')
 #    typename = StringField(tags='client', caption=u'Тип квеста', doc=u'Может быть произвольным')
@@ -41,7 +41,7 @@ on_start: |
         quest.npc_replica(npc=quest.hirer, replica=u"Не хватает места в инвентаре.", event=event)
         log("DELIVERY QUEST: User have not enough empty slots")
         raise Cancel("QUEST CANCEL: User have not enough empty slot")
-    quest.log(text=u'Начат квест по активации предметов.', event=event, position=quest.hirer.hometown.position)
+    quest.log(text=u'Начат квест по установке радаров.', event=event, position=quest.hirer.hometown.position)
 
 states:
     - id: begin
@@ -70,10 +70,21 @@ states:
     - id: reward
       parent: reg:///registry/quest_states/test
       on_enter: |
-          agent.profile.set_relationship(time=event.time, npc=quest.hirer, dvalue=quest.reward_relation_hirer)
-          agent.profile.set_balance(time=event.time, delta=quest.reward_money)
-          agent.profile.set_karma(time=event.time, dvalue=quest.reward_karma)
-          go('win')
+           quest.dc.reward_note_uid = agent.profile.add_note(
+              quest_uid=quest.uid,
+              note_class=MapActivationRadarsNoteFinish,
+              time=event.time,
+              npc=quest.hirer,
+              page_caption=u'Установка<br>радаров',
+              btn1_caption=u'<br>Отчитаться',
+           )
+      on_event: |
+          if isinstance(event, OnNote) and event.note_uid == quest.dc.reward_note_uid and event.result == True:
+              agent.profile.set_relationship(time=event.time, npc=quest.hirer, dvalue=quest.reward_relation_hirer)
+              agent.profile.set_balance(time=event.time, delta=quest.reward_money)
+              agent.profile.set_karma(time=event.time, dvalue=quest.reward_karma)
+              agent.profile.del_note(uid=quest.dc.reward_note_uid, time=event.time)
+              go('win')
 
     - id: cancel_fail
       parent: reg:///registry/quest_states/final/fail/cancel
