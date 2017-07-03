@@ -70,6 +70,7 @@ states:
     - id: reward
       parent: reg:///registry/quest_states/test
       on_enter: |
+           quest.log(text=u'Все радары установлены. Вернитесь за наградой.', event=event, position=quest.hirer.hometown.position)
            quest.dc.reward_note_uid = agent.profile.add_note(
               quest_uid=quest.uid,
               note_class=MapActivationRadarsNoteFinish,
