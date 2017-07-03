@@ -40,7 +40,7 @@ on_generate: |
     distance_cost = round(distance / 100)  # todo: уточнить стоимость 1px пути
 
     if distance_cost == 0:
-        log('MapActivateItemQuest Quest: Warning!!! Distance from hirer<{}> to point<{}> = {}'.format(quest.hirer, quest.cache_point, distance))
+        log('MapActivateItemQuest Quest: Warning!!! ')
 
     quest.total_reward_money = cost_delivery_items + distance_cost
     quest.generate_reward()  # Устанавливаем награду за квест (карму, деньги и итемы)
@@ -83,7 +83,7 @@ states:
       parent: reg:///registry/quest_states/test
       on_enter: |
           agent.profile.set_relationship(time=event.time, npc=quest.hirer, dvalue=quest.reward_relation_hirer)
-          quest.reward_note_uid = agent.profile.add_note(
+          quest.dc.reward_note_uid = agent.profile.add_note(
               quest_uid=quest.uid,
               note_class=MapActivationNoteFinish,
               time=event.time,
@@ -93,7 +93,7 @@ states:
           )
       on_event: |
           if isinstance(event, OnNote):
-              if (event.note_uid == quest.reward_note_uid) and (event.result == True):
+              if (event.note_uid == quest.dc.reward_note_uid) and (event.result == True):
                   agent.profile.set_balance(time=event.time, delta=quest.reward_money)
                   agent.profile.del_note(uid=quest.reward_note_uid, time=event.time)
                   go('win')

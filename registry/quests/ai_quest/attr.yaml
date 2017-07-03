@@ -14,8 +14,8 @@ on_generate: |
 
 on_start: |
     quest.route_index = 0
-    quest.patrol_target = None
-    quest.attacke_target = None
+    quest.dc.patrol_target = None
+    quest.dc.attacke_target = None
     # log('start_quest!')
 
 states:
@@ -27,8 +27,8 @@ states:
           if isinstance(event, OnAppendCar) or (agent.profile._agent_model.car and isinstance(event, OnTimer) and event.name == 'before_respawn'):
               # log('on_event new car for {}'.format(agent.login))
               quest.route_index = 0
-              quest.patrol_target = None
-              quest.attacke_target = None
+              quest.dc.patrol_target = None
+              quest.dc.attacke_target = None
               go('patrol')
           elif isinstance(event, OnTimer) and event.name == 'before_respawn':
               set_timer(name='before_respawn', delay=10)
@@ -38,8 +38,8 @@ states:
       on_enter: |
           car = agent.profile._agent_model.car
           if car:
-              quest.patrol_target = quest.get_next_route_point()
-              agent.profile._agent_model.car.set_motion(time=event.time, cc=0.3 + random.random() * 0.3, target_point=quest.patrol_target)
+              quest.dc.patrol_target = quest.get_next_route_point()
+              agent.profile._agent_model.car.set_motion(time=event.time, cc=0.3 + random.random() * 0.3, target_point=quest.dc.patrol_target)
               set_timer(name='patrol', delay=3)
           else:
               log('Car for agent {} not found'.format(agent.login))
@@ -53,7 +53,7 @@ states:
                   if car.hp(time=event.time) < 20:
                       quest.use_heal(time=event.time)
 
-                  distance = quest.patrol_target.distance(agent.profile._agent_model.car.position(time=event.time))
+                  distance = quest.dc.patrol_target.distance(agent.profile._agent_model.car.position(time=event.time))
                   if distance < 200:
                       go('patrol')
                   else:
@@ -67,7 +67,7 @@ states:
 
           if isinstance(event, OnAISee):
               if agent.profile._agent_model.is_target(target=event.obj):
-                  quest.attacke_target = event.obj
+                  quest.dc.attacke_target = event.obj
                   go('attacke')
 
     - id: attacke
@@ -75,7 +75,7 @@ states:
       on_enter: |
           car = agent.profile._agent_model.car
           if car:
-              agent.profile._agent_model.car.set_motion(time=event.time, cc=0.3 + random.random() * 0.3, target_point=quest.attacke_target.position(time=event.time))
+              agent.profile._agent_model.car.set_motion(time=event.time, cc=0.3 + random.random() * 0.3, target_point=quest.dc.attacke_target.position(time=event.time))
               set_timer(name='attacke', delay=3)
           else:
               log('Car for agent {} not found'.format(agent.login))
@@ -86,13 +86,13 @@ states:
               car = agent.profile._agent_model.car
               if car:
                   # Преследование
-                  target_pos = quest.attacke_target.position(time=event.time)
+                  target_pos = quest.dc.attacke_target.position(time=event.time)
                   target_pos = target_pos.random_point(target_pos, 50)
                   car.set_motion(time=event.time, cc=0.3 + random.random() * 0.3, target_point=target_pos)
 
                   # Залповая стрельба
                   for sector in car.fire_sectors:
-                      if sector.is_discharge() and sector._test_target_in_sector(target=quest.attacke_target, time=event.time):
+                      if sector.is_discharge() and sector._test_target_in_sector(target=quest.dc.attacke_target, time=event.time):
                           car.fire_discharge(side=sector.side, time=event.time)
 
                   # Хил по необходимости
@@ -108,14 +108,14 @@ states:
               go('before_respawn')
 
           if isinstance(event, OnAIOut):
-              if event.obj is quest.attacke_target:
-                  quest.attacke_target = None
+              if event.obj is quest.dc.attacke_target:
+                  quest.dc.attacke_target = None
                   vo_list = agent.profile._agent_model.get_all_visible_objects()
                   for vo in vo_list:
                       if agent.profile._agent_model.is_target(target=vo):
-                          quest.attacke_target = vo
+                          quest.dc.attacke_target = vo
                           break
-                  if quest.attacke_target:
+                  if quest.dc.attacke_target:
                       go('attacke')
                   else:
                       go('patrol')

@@ -111,17 +111,15 @@ quests:
       min: 3
       max: 7
 
-  - parent: reg:///registry/quests/map_activate_item
-    __cls__: MapActivateItemQuest
-    _cls   : MapActivateItemQuest
 
-    activate_price: 500            # Награда за активацию предмета
+  - parent: reg:///registry/quests/map_activate_item/map_activate_radars
+    __cls__: MapActivateRadarsQuest
+    _cls   : MapActivateRadarsQuest
+
+    activate_price: 100            # Награда за активацию предмета
     activate_radius: 100           # Радиус активации итема
 
     reward_relation_hirer: 5.0     # Награда в отношение за выполнение
-    karma_coef: 0.25               # Часть кармы от общей награды
-    money_coef: 0.75               # Часть нуокйнов от общей награды
-    reward_items_list: []          # Список возможных комплектов для награды
 
     activate_points_generator:
       - position:
@@ -166,4 +164,4 @@ quests:
         radius: 500
 
     activate_items_generator:
-      - reg:///registry/items/usable/map_weapon/turret/radar_001?amount=1
+      - reg:///registry/items/usable/map_weapon/radars/radar_001

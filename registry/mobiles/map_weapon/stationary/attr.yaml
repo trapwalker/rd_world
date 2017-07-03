@@ -1,5 +1,5 @@
-﻿__cls__ : Mobile
-_cls : Mobile
+﻿__cls__ : ExtraMobile
+_cls : ExtraMobile
 doc     : Стационарные юниты
 
 tags: [stationary_unit]
