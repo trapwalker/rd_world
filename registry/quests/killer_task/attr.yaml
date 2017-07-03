@@ -54,7 +54,7 @@ on_start: |
         log("KillerQuest: User have not enough relation")
         raise Cancel("KillerQuest: User have not enough relation")
     # Создание ноты для квеста
-    quest.wanted_note_uid = agent.profile.add_note(
+    quest.dc.wanted_note_uid = agent.profile.add_note(
         quest_uid=quest.uid,
         note_class=NPCWantedNote,
         time=event.time,
@@ -82,13 +82,13 @@ states:
                       go('note_kill_reward')
 
           if isinstance(event, OnTimer) and event.name == 'deadline_killer_quest':
-              agent.profile.del_note(uid=quest.wanted_note_uid, time=event.time)
+              agent.profile.del_note(uid=quest.dc.wanted_note_uid, time=event.time)
               go("deadline_fail")
 
           if isinstance(event, OnCancel):
               penalty_money = quest.reward_money / 2.
               if agent.profile.balance >= penalty_money:
-                  agent.profile.del_note(uid=quest.wanted_note_uid, time=event.time)
+                  agent.profile.del_note(uid=quest.dc.wanted_note_uid, time=event.time)
                   agent.profile.set_balance(time=event.time, delta=-penalty_money)
                   quest.log(text=u'Уплачен штраф в размере {}nc.'.format(penalty_money), event=event, position=quest.hirer.hometown.position)
                   go("cancel_fail")
@@ -101,8 +101,8 @@ states:
       
       on_event: |
           if isinstance(event, OnNote):
-              if (quest.wanted_note_uid == event.note_uid) and (event.result == True):
-                  agent.profile.del_note(uid=quest.wanted_note_uid, time=event.time)
+              if (quest.dc.wanted_note_uid == event.note_uid) and (event.result == True):
+                  agent.profile.del_note(uid=quest.dc.wanted_note_uid, time=event.time)
                   go('reward')
 
     # todo: если будет ещё один квест с точно таким же состоянием, но отличающимся нпц, то вынести стейт отдельно и
@@ -116,7 +116,7 @@ states:
           quest.log(text=u'Получено вознаграждение в размере {:.0f}nc. и {:.0f} кармы'.format(quest.reward_money, quest.reward_karma), event=event, position=quest.hirer.hometown.position)
           agent.profile.set_relationship(time=event.time, npc=quest.hirer, dvalue=quest.reward_relation_hirer)  # изменение отношения к нпц
           if len(quest.reward_items) > 0:
-              quest.reward_note_uid = agent.profile.add_note(
+              quest.dc.reward_note_uid = agent.profile.add_note(
                   quest_uid=quest.uid,
                   note_class=NPCRewardItemsNote,
                   time=event.time,
@@ -129,9 +129,9 @@ states:
 
       on_event: |
           if isinstance(event, OnNote):
-              if (event.note_uid == quest.reward_note_uid) and (event.result == True):
+              if (event.note_uid == quest.dc.reward_note_uid) and (event.result == True):
                   if quest.give_items(items=quest.reward_items, event=event):
-                      agent.profile.del_note(uid=quest.reward_note_uid, time=event.time)
+                      agent.profile.del_note(uid=quest.dc.reward_note_uid, time=event.time)
                       go('win')
                   else:
                       quest.npc_replica(npc=quest.hirer, replica=u"Не хватает места в инвентаре.", event=event)
