@@ -1,5 +1,5 @@
 ﻿__cls__ : Girl
-_cls : Girl
+_cls    : Girl
 
 title    : Amanda_Fun
 photo    : "static/content/institutions/girl/prior_amanda_fun.png"
@@ -9,7 +9,7 @@ hometown : reg:///registry/poi/locations/towns/prior
 
 service_list:
   - title      : Приватный танец
-    price      : 50
+    price      : 20
     image      : static/content/locations/institutions/girl/bar_poledance.png
     bonus_list :
       - item: reg:///registry/items/quest_item/quest_item_1
@@ -23,8 +23,64 @@ service_list:
       - item: reg:///registry/items/quest_item/quest_item_5
         chance: 0.2
   - title      : Массаж
-    price      : 60
+    price      : 30
     image      : static/content/locations/institutions/girl/bar_massage.png
+    bonus_list :
+      - item: reg:///registry/items/quest_item/quest_item_1
+        chance: 0.2
+      - item: reg:///registry/items/quest_item/quest_item_2
+        chance: 0.2
+      - item: reg:///registry/items/quest_item/quest_item_3
+        chance: 0.2
+      - item: reg:///registry/items/quest_item/quest_item_4
+        chance: 0.2
+      - item: reg:///registry/items/quest_item/quest_item_5
+        chance: 0.2
+  - title      : Хендмейд
+    price      : 50
+    image      : static/content/locations/institutions/girl/bar_handmade.png
+    bonus_list :
+      - item: reg:///registry/items/quest_item/quest_item_1
+        chance: 0.2
+      - item: reg:///registry/items/quest_item/quest_item_2
+        chance: 0.2
+      - item: reg:///registry/items/quest_item/quest_item_3
+        chance: 0.2
+      - item: reg:///registry/items/quest_item/quest_item_4
+        chance: 0.2
+      - item: reg:///registry/items/quest_item/quest_item_5
+        chance: 0.2
+  - title      : Интерлюдия
+    price      : 100
+    image      : static/content/locations/institutions/girl/bar_interlude.png
+    bonus_list :
+      - item: reg:///registry/items/quest_item/quest_item_1
+        chance: 0.2
+      - item: reg:///registry/items/quest_item/quest_item_2
+        chance: 0.2
+      - item: reg:///registry/items/quest_item/quest_item_3
+        chance: 0.2
+      - item: reg:///registry/items/quest_item/quest_item_4
+        chance: 0.2
+      - item: reg:///registry/items/quest_item/quest_item_5
+        chance: 0.2
+  - title      : Интерсекция
+    price      : 200
+    image      : static/content/locations/institutions/girl/bar_intersection.png
+    bonus_list :
+      - item: reg:///registry/items/quest_item/quest_item_1
+        chance: 0.2
+      - item: reg:///registry/items/quest_item/quest_item_2
+        chance: 0.2
+      - item: reg:///registry/items/quest_item/quest_item_3
+        chance: 0.2
+      - item: reg:///registry/items/quest_item/quest_item_4
+        chance: 0.2
+      - item: reg:///registry/items/quest_item/quest_item_5
+        chance: 0.2
+  - title      : Позвать подружку
+    price      : 400
+    image      : static/content/locations/institutions/girl/bar_bi.png
     bonus_list :
       - item: reg:///registry/items/quest_item/quest_item_1
         chance: 0.2

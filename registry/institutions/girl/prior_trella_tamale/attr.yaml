@@ -1,5 +1,5 @@
 ﻿__cls__ : Girl
-_cls : Girl
+_cls    : Girl
 
 title    : Trella_Tamale
 photo    : "static/content/institutions/girl/prior_trella_tamale.png"
@@ -8,9 +8,9 @@ abstract : false
 hometown : reg:///registry/poi/locations/towns/prior
 
 service_list:
-  - title      : Интерсекция
-    price      : 90
-    image      : static/content/locations/institutions/girl/bar_intersection.png
+  - title      : Приватный танец
+    price      : 50
+    image      : static/content/locations/institutions/girl/bar_poledance.png
     bonus_list :
       - item: reg:///registry/items/quest_item/quest_item_1
         chance: 0.2
@@ -22,9 +22,51 @@ service_list:
         chance: 0.2
       - item: reg:///registry/items/quest_item/quest_item_5
         chance: 0.2
-  - title      : Позвать подружку
+  - title      : Массаж
     price      : 100
-    image      : static/content/locations/institutions/girl/bar_bi.png
+    image      : static/content/locations/institutions/girl/bar_massage.png
+    bonus_list :
+      - item: reg:///registry/items/quest_item/quest_item_1
+        chance: 0.2
+      - item: reg:///registry/items/quest_item/quest_item_2
+        chance: 0.2
+      - item: reg:///registry/items/quest_item/quest_item_3
+        chance: 0.2
+      - item: reg:///registry/items/quest_item/quest_item_4
+        chance: 0.2
+      - item: reg:///registry/items/quest_item/quest_item_5
+        chance: 0.2
+  - title      : Хендмейд
+    price      : 200
+    image      : static/content/locations/institutions/girl/bar_handmade.png
+    bonus_list :
+      - item: reg:///registry/items/quest_item/quest_item_1
+        chance: 0.2
+      - item: reg:///registry/items/quest_item/quest_item_2
+        chance: 0.2
+      - item: reg:///registry/items/quest_item/quest_item_3
+        chance: 0.2
+      - item: reg:///registry/items/quest_item/quest_item_4
+        chance: 0.2
+      - item: reg:///registry/items/quest_item/quest_item_5
+        chance: 0.2
+  - title      : Интерлюдия
+    price      : 500
+    image      : static/content/locations/institutions/girl/bar_interlude.png
+    bonus_list :
+      - item: reg:///registry/items/quest_item/quest_item_1
+        chance: 0.2
+      - item: reg:///registry/items/quest_item/quest_item_2
+        chance: 0.2
+      - item: reg:///registry/items/quest_item/quest_item_3
+        chance: 0.2
+      - item: reg:///registry/items/quest_item/quest_item_4
+        chance: 0.2
+      - item: reg:///registry/items/quest_item/quest_item_5
+        chance: 0.2
+  - title      : Интерсекция
+    price      : 1000
+    image      : static/content/locations/institutions/girl/bar_intersection.png
     bonus_list :
       - item: reg:///registry/items/quest_item/quest_item_1
         chance: 0.2
