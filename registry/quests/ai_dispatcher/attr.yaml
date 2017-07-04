@@ -3,7 +3,15 @@ _cls: AIDispatcherQuest
 doc    : Квест диспетчера AI
 
 first_state: work
-refresh_time: 30
+refresh_time: 10
+
+
+quests:
+  - parent: reg:///registry/quests/ai_event_quests/traffic
+    generation_group: 'traffic_1'
+    __cls__: AITrafficQuest
+    _cls: AITrafficQuest
+
 
 on_generate: |
     if not quest.can_generate(event):
@@ -16,8 +24,9 @@ states:
     - id: work
       parent: reg:///registry/quest_states/test/begin
       on_enter: |
-          set_timer(name='refresh_time', delay=quest.refresh_time)
+          set_timer(name='refresh', delay=5)
       on_event: |
-          if isinstance(event, OnTimer) and (event.name == 'refresh_time'):
-              # todo:                             
-              set_timer(name='refresh_time', delay=quest.refresh_time)
+          log('Quest AI Dispatcher Work {}'.format(event.time))
+          if isinstance(event, OnTimer) and (event.name == 'refresh'):
+              quest.refresh(event=event)
+              set_timer(name='refresh', delay=quest.refresh_time)

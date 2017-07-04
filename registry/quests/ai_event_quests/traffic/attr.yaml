@@ -1,0 +1,38 @@
+__cls__: AITrafficQuest
+_cls: AITrafficQuest
+doc    : Квесты
+
+
+first_state: begin
+test_end_time: 15
+generation_max_count: 3
+
+on_generate: |
+    pass
+
+on_start: |
+    quest.deploy_bots(event=event)
+    log('on_start {!r}'.format(quest))
+
+states:
+    - id: begin
+      parent: reg:///registry/quest_states/test/begin
+      on_enter: |
+          set_timer(name='test_end', delay=quest.test_end_time)
+      on_event: |
+          if isinstance(event, OnTimer) and (event.name == 'test_end'):
+              status = quest.get_traffic_status(event)
+              if status == 'win':
+                  quest.displace_bots(event)
+                  go('win')
+              elif status == 'fail':
+                  quest.displace_bots(event)
+                  go('fail')
+              else:
+                  set_timer(name='test_end', delay=quest.test_end_time)
+
+    - id: win
+      parent: reg:///registry/quest_states/final/win
+
+    - id: fail
+      parent: reg:///registry/quest_states/final/fail
