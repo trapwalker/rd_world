@@ -7,5 +7,6 @@ quest_inventory:
   items:
     - reg:///registry/items/quest_item/insurance/quick
 
-ai_quest: ~
+ai_quest:
+  parent: reg:///registry/quests/ai_action_quest/traffic
 
