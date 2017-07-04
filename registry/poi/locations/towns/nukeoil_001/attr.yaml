@@ -1,0 +1,26 @@
+﻿__cls__  : Town
+_cls     : Town
+doc      : Nukeoil_001   # Заправка возле Прайра
+abstract : false
+
+title             : Nukeoil_001
+position          : {x: 12538825, y: 27043825}
+p_observing_range : 250
+p_enter_range     : 150
+
+svg_link: static/content/locations/map_locations/nukeoil_001
+
+buildings:
+  - name: nukeoil
+    caption: Нукойл
+    title: Нукойл
+    head: reg:///registry/institutions/nucoil
+    instances:
+        - reg:///registry/institutions/gas_station
+        - reg:///registry/institutions/npc_help
+
+static_image_list:
+    - /static/content/locations/map_locations/nukeoil_001/ground+circle.png
+    - /static/content/locations/map_locations/nukeoil_001/nukeoil.png
+    - /static/content/locations/map_locations/nukeoil_001/nukeoil_bg.png
+    - /static/content/locations/map_locations/nukeoil_001/nukeoil_hover.png
