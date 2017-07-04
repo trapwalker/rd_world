@@ -1,0 +1,5 @@
+﻿__cls__ : Institution
+_cls    : Institution
+doc     : Начальник шахты
+text    : Вас приветствует начальник шахты!
+type    : mine_manager
