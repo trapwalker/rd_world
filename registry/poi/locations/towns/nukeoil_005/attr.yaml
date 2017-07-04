@@ -1,10 +1,10 @@
 ﻿__cls__  : Town
 _cls     : Town
-doc      : Nukeoil_001
+doc      : Nukeoil_005
 abstract : false
 
-title             : Nukeoil_001
-position          : {x: 12538825, y: 27043825}   # Заправка возле Прайра
+title             : Nukeoil_005
+position          : {x: 12524915, y: 27034550}   # Заправка северо-западнее Прайра
 p_observing_range : 250
 p_enter_range     : 150
 
