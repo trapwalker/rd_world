@@ -2,33 +2,42 @@
 quests:
   - parent: reg:///registry/quests/ai_event_quests/traffic
     generation_group: 'traffic_1'
-    _cls: AITrafficQuest
     routes:
       - parent: reg:///registry/routes/whitehill_paloma_simple
-        _cls: Route
 
 
   - parent: reg:///registry/quests/ai_event_quests/traffic
     generation_group: 'traffic_2'
-    _cls: AITrafficQuest
     routes:
       - parent: reg:///registry/routes/whitehill_paloma_simple_2
-        _cls: Route
 
 
   - parent: reg:///registry/quests/ai_event_quests/traffic
     generation_group: 'traffic_2'
-    _cls: AITrafficQuest
     routes:
       - parent: reg:///registry/routes/whitehill_paloma_simple_2
-        _cls: Route
         reverse: True
 
 
   - parent: reg:///registry/quests/ai_event_quests/traffic
     generation_group: 'traffic_2'
-    _cls: AITrafficQuest
     routes:
       - parent: reg:///registry/routes/whitehill_paloma_simple_2
-        _cls: Route
+        reverse: True
+
+  - parent: reg:///registry/quests/ai_event_quests/traffic
+    generation_group: 'whitehill_mine'
+    generation_max_count: 1
+    routes:
+      - reg:///registry/routes/whitehill_mine_1
+      - reg:///registry/routes/whitehill_mine_2
+
+
+  - parent: reg:///registry/quests/ai_event_quests/traffic
+    generation_group: 'whitehill_mine_reverse'
+    generation_max_count: 1
+    routes:
+      - parent: reg:///registry/routes/whitehill_mine_1
+        reverse: True
+      - parent: reg:///registry/routes/whitehill_mine_2
         reverse: True
