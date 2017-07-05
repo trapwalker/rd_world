@@ -74,6 +74,9 @@ states:
           if isinstance(event, OnDie):
               go('fail')
 
+          if isinstance(event, OnGetDmg):
+              quest.towns_aggro(event=event)
+
     - id: win
       parent: reg:///registry/quest_states/final/win
 

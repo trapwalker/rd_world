@@ -4,26 +4,36 @@ quests:
     generation_group: 'traffic_1'
     routes:
       - parent: reg:///registry/routes/whitehill_paloma_simple
+    towns_protect:
+      - reg:///registry/poi/locations/towns/whitehill
+      - reg:///registry/poi/locations/towns/paloma
 
 
   - parent: reg:///registry/quests/ai_event_quests/traffic
     generation_group: 'traffic_2'
     routes:
       - parent: reg:///registry/routes/whitehill_paloma_simple_2
-
+    towns_protect:
+      - reg:///registry/poi/locations/towns/whitehill
+      - reg:///registry/poi/locations/towns/paloma
 
   - parent: reg:///registry/quests/ai_event_quests/traffic
     generation_group: 'traffic_2'
     routes:
       - parent: reg:///registry/routes/whitehill_paloma_simple_2
         reverse: True
-
+    towns_protect:
+      - reg:///registry/poi/locations/towns/whitehill
+      - reg:///registry/poi/locations/towns/paloma
 
   - parent: reg:///registry/quests/ai_event_quests/traffic
     generation_group: 'traffic_2'
     routes:
       - parent: reg:///registry/routes/whitehill_paloma_simple_2
         reverse: True
+    towns_protect:
+      - reg:///registry/poi/locations/towns/whitehill
+      - reg:///registry/poi/locations/towns/paloma
 
   - parent: reg:///registry/quests/ai_event_quests/traffic
     generation_group: 'whitehill_mine'
@@ -31,6 +41,9 @@ quests:
     routes:
       - reg:///registry/routes/whitehill_mine_1
       - reg:///registry/routes/whitehill_mine_2
+    towns_protect:
+      - reg:///registry/poi/locations/towns/whitehill
+      - reg:///registry/poi/locations/towns/mine_whitehill
 
 
   - parent: reg:///registry/quests/ai_event_quests/traffic
@@ -41,3 +54,6 @@ quests:
         reverse: True
       - parent: reg:///registry/routes/whitehill_mine_2
         reverse: True
+    towns_protect:
+      - reg:///registry/poi/locations/towns/whitehill
+      - reg:///registry/poi/locations/towns/mine_whitehill
