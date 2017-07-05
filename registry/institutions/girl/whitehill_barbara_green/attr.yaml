@@ -12,91 +12,91 @@ service_list:
     price      : 5
     image      : static/content/locations/institutions/girl/bar_massage.png
     bonus_list :
-      - item: reg:///registry/items/quest_item/girl/item_010
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_010", title: "На память: Barbara_Green"}
         chance: 0.143
-      - item: reg:///registry/items/quest_item/girl/item_011
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_011", title: "На память: Barbara_Green"}
         chance: 0.143
-      - item: reg:///registry/items/quest_item/girl/item_014
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_014", title: "На память: Barbara_Green"}
         chance: 0.143
-      - item: reg:///registry/items/quest_item/girl/item_015
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_015", title: "На память: Barbara_Green"}
         chance: 0.143
-      - item: reg:///registry/items/quest_item/girl/item_016
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_016", title: "На память: Barbara_Green"}
         chance: 0.143
-      - item: reg:///registry/items/quest_item/girl/item_017
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_017", title: "На память: Barbara_Green"}
         chance: 0.143
-      - item: reg:///registry/items/quest_item/girl/item_018
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_018", title: "На память: Barbara_Green"}
         chance: 0.143
   - title      : Хендмейд
     price      : 20
     image      : static/content/locations/institutions/girl/bar_handmade.png
     bonus_list :
-      - item: reg:///registry/items/quest_item/girl/item_012
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_012", title: "На память: Barbara_Green"}
         chance: 0.2
-      - item: reg:///registry/items/quest_item/girl/item_013
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_013", title: "На память: Barbara_Green"}
         chance: 0.2
-      - item: reg:///registry/items/quest_item/girl/item_015
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_015", title: "На память: Barbara_Green"}
         chance: 0.2
-      - item: reg:///registry/items/quest_item/girl/item_016
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_016", title: "На память: Barbara_Green"}
         chance: 0.2
-      - item: reg:///registry/items/quest_item/girl/item_017
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_017", title: "На память: Barbara_Green"}
         chance: 0.2
   - title      : Интерлюдия
     price      : 40
     image      : static/content/locations/institutions/girl/bar_interlude.png
     bonus_list :
-      - item: reg:///registry/items/quest_item/girl/item_012
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_012", title: "На память: Barbara_Green"}
         chance: 0.125
-      - item: reg:///registry/items/quest_item/girl/item_013
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_013", title: "На память: Barbara_Green"}
         chance: 0.125
-      - item: reg:///registry/items/quest_item/girl/item_014
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_014", title: "На память: Barbara_Green"}
         chance: 0.125
-      - item: reg:///registry/items/quest_item/girl/item_019
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_019", title: "На память: Barbara_Green"}
         chance: 0.125
-      - item: reg:///registry/items/quest_item/girl/item_020
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_020", title: "На память: Barbara_Green"}
         chance: 0.125
-      - item: reg:///registry/items/quest_item/girl/item_021
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_021", title: "На память: Barbara_Green"}
         chance: 0.125
-      - item: reg:///registry/items/quest_item/girl/item_022
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_022", title: "На память: Barbara_Green"}
         chance: 0.125
-      - item: reg:///registry/items/quest_item/girl/item_023
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_023", title: "На память: Barbara_Green"}
         chance: 0.125
   - title      : Интерсекция
     price      : 50
     image      : static/content/locations/institutions/girl/bar_intersection.png
     bonus_list :
-      - item: reg:///registry/items/quest_item/girl/item_001
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_001", title: "На память: Barbara_Green"}
         chance: 0.056
-      - item: reg:///registry/items/quest_item/girl/item_002
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_002", title: "На память: Barbara_Green"}
         chance: 0.056
-      - item: reg:///registry/items/quest_item/girl/item_003
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_003", title: "На память: Barbara_Green"}
         chance: 0.056
-      - item: reg:///registry/items/quest_item/girl/item_004
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_004", title: "На память: Barbara_Green"}
         chance: 0.056
-      - item: reg:///registry/items/quest_item/girl/item_005
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_005", title: "На память: Barbara_Green"}
         chance: 0.056
-      - item: reg:///registry/items/quest_item/girl/item_006
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_006", title: "На память: Barbara_Green"}
         chance: 0.056
-      - item: reg:///registry/items/quest_item/girl/item_007
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_007", title: "На память: Barbara_Green"}
         chance: 0.056
-      - item: reg:///registry/items/quest_item/girl/item_008
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_008", title: "На память: Barbara_Green"}
         chance: 0.056
-      - item: reg:///registry/items/quest_item/girl/item_009
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_009", title: "На память: Barbara_Green"}
         chance: 0.056
-      - item: reg:///registry/items/quest_item/girl/item_020
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_020", title: "На память: Barbara_Green"}
         chance: 0.056
-      - item: reg:///registry/items/quest_item/girl/item_021
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_021", title: "На память: Barbara_Green"}
         chance: 0.056
-      - item: reg:///registry/items/quest_item/girl/item_022
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_022", title: "На память: Barbara_Green"}
         chance: 0.056
-      - item: reg:///registry/items/quest_item/girl/item_023
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_023", title: "На память: Barbara_Green"}
         chance: 0.056
-      - item: reg:///registry/items/quest_item/girl/item_024
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_024", title: "На память: Barbara_Green"}
         chance: 0.056
-      - item: reg:///registry/items/quest_item/girl/item_025
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_025", title: "На память: Barbara_Green"}
         chance: 0.056
-      - item: reg:///registry/items/quest_item/girl/item_026
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_026", title: "На память: Barbara_Green"}
         chance: 0.056
-      - item: reg:///registry/items/quest_item/girl/item_027
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_027", title: "На память: Barbara_Green"}
         chance: 0.056
-      - item: reg:///registry/items/quest_item/girl/item_028
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_028", title: "На память: Barbara_Green"}
         chance: 0.056
