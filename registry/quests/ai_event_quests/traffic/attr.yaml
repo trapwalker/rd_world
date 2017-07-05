@@ -2,6 +2,12 @@ __cls__: AITrafficQuest
 _cls: AITrafficQuest
 doc    : Квесты
 
+cars:
+  - reg:///registry/mobiles/cars/light/motorcycles/honda_hornet/quick_bot
+  - reg:///registry/mobiles/cars/middle/sports/delorean_dmc12/quick_bot
+  - reg:///registry/mobiles/cars/middle/cars/dodge_challenger/quick_bot
+  - reg:///registry/mobiles/cars/middle/offroad/defender/quick_bot
+  - reg:///registry/mobiles/cars/heavy/btrs/m113a1/quick_bot
 
 first_state: begin
 test_end_time: 15

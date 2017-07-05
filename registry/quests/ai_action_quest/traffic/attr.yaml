@@ -1,6 +1,6 @@
-﻿__cls__: AIActionTraffic
-_cls: AIActionTraffic
-doc    : Квест AIActionTraffic
+﻿__cls__: AIActionTrafficQuest
+_cls: AIActionTrafficQuest
+doc    : Квест AIActionTrafficQuest
 
 first_state: wait_car
 current_state: ~

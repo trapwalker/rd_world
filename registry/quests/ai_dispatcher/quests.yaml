@@ -7,6 +7,7 @@ quests:
       - parent: reg:///registry/routes/whitehill_paloma_simple
         _cls: Route
 
+
   - parent: reg:///registry/quests/ai_event_quests/traffic
     generation_group: 'traffic_2'
     _cls: AITrafficQuest
