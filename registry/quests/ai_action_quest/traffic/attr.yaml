@@ -55,9 +55,9 @@ states:
           if isinstance(event, OnTimer) and event.name == 'patrol':
               car = agent.profile._agent_model.car
               if car:
-                  # Хил по необходимости
                   set_timer(name='patrol', delay=3)
 
+                  # Хил по необходимости
                   if car.hp(time=event.time) < 20:
                       quest.use_heal(time=event.time)
 
