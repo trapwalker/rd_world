@@ -1,0 +1,24 @@
+﻿__cls__  : QuestItem
+_cls     : QuestItem
+doc      : Item_023
+abstract : false
+
+title       : На память
+description : "Бонус: 1 очко в навыки Торговля, Механика и Скрытность."
+group_id    : ""
+
+base_price : 0
+stack_size : 1
+
+effect_title       : Бонус
+effect_description : 1 очко в навыки Торговля, Механика и Скрытность
+
+trading     : 1
+engineering : 1
+masking     : 1
+deadline    : 43200
+
+inv_icon_big    : static/content/items/quest_item/girl/item_023/big.png
+inv_icon_mid    : static/content/items/quest_item/girl/item_023/mid.png
+inv_icon_small  : static/content/items/quest_item/girl/item_023/mid.png
+inv_icon_xsmall : static/content/items/quest_item/girl/item_023/mid.png

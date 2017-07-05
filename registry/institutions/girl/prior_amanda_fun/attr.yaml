@@ -12,83 +12,135 @@ service_list:
     price      : 20
     image      : static/content/locations/institutions/girl/bar_poledance.png
     bonus_list :
-      - item: reg:///registry/items/quest_item/quest_item_1
-        chance: 0.2
-      - item: reg:///registry/items/quest_item/quest_item_2
-        chance: 0.2
-      - item: reg:///registry/items/quest_item/quest_item_3
-        chance: 0.2
-      - item: reg:///registry/items/quest_item/quest_item_4
-        chance: 0.2
-      - item: reg:///registry/items/quest_item/quest_item_5
-        chance: 0.2
+      - item: reg:///registry/items/quest_item/girl/item_010
+        chance: 0.125
+      - item: reg:///registry/items/quest_item/girl/item_011
+        chance: 0.125
+      - item: reg:///registry/items/quest_item/girl/item_014
+        chance: 0.125
+      - item: reg:///registry/items/quest_item/girl/item_015
+        chance: 0.125
+      - item: reg:///registry/items/quest_item/girl/item_016
+        chance: 0.125
+      - item: reg:///registry/items/quest_item/girl/item_017
+        chance: 0.125
+      - item: reg:///registry/items/quest_item/girl/item_018
+        chance: 0.125
+      - item: reg:///registry/items/quest_item/girl/item_019
+        chance: 0.125
   - title      : Массаж
     price      : 30
     image      : static/content/locations/institutions/girl/bar_massage.png
     bonus_list :
-      - item: reg:///registry/items/quest_item/quest_item_1
-        chance: 0.2
-      - item: reg:///registry/items/quest_item/quest_item_2
-        chance: 0.2
-      - item: reg:///registry/items/quest_item/quest_item_3
-        chance: 0.2
-      - item: reg:///registry/items/quest_item/quest_item_4
-        chance: 0.2
-      - item: reg:///registry/items/quest_item/quest_item_5
-        chance: 0.2
+      - item: reg:///registry/items/quest_item/girl/item_010
+        chance: 0.143
+      - item: reg:///registry/items/quest_item/girl/item_011
+        chance: 0.143
+      - item: reg:///registry/items/quest_item/girl/item_014
+        chance: 0.143
+      - item: reg:///registry/items/quest_item/girl/item_015
+        chance: 0.143
+      - item: reg:///registry/items/quest_item/girl/item_016
+        chance: 0.143
+      - item: reg:///registry/items/quest_item/girl/item_017
+        chance: 0.143
+      - item: reg:///registry/items/quest_item/girl/item_018
+        chance: 0.143
   - title      : Хендмейд
     price      : 50
     image      : static/content/locations/institutions/girl/bar_handmade.png
     bonus_list :
-      - item: reg:///registry/items/quest_item/quest_item_1
+      - item: reg:///registry/items/quest_item/girl/item_012
         chance: 0.2
-      - item: reg:///registry/items/quest_item/quest_item_2
+      - item: reg:///registry/items/quest_item/girl/item_013
         chance: 0.2
-      - item: reg:///registry/items/quest_item/quest_item_3
+      - item: reg:///registry/items/quest_item/girl/item_015
         chance: 0.2
-      - item: reg:///registry/items/quest_item/quest_item_4
+      - item: reg:///registry/items/quest_item/girl/item_016
         chance: 0.2
-      - item: reg:///registry/items/quest_item/quest_item_5
+      - item: reg:///registry/items/quest_item/girl/item_017
         chance: 0.2
   - title      : Интерлюдия
     price      : 100
     image      : static/content/locations/institutions/girl/bar_interlude.png
     bonus_list :
-      - item: reg:///registry/items/quest_item/quest_item_1
-        chance: 0.2
-      - item: reg:///registry/items/quest_item/quest_item_2
-        chance: 0.2
-      - item: reg:///registry/items/quest_item/quest_item_3
-        chance: 0.2
-      - item: reg:///registry/items/quest_item/quest_item_4
-        chance: 0.2
-      - item: reg:///registry/items/quest_item/quest_item_5
-        chance: 0.2
+      - item: reg:///registry/items/quest_item/girl/item_012
+        chance: 0.125
+      - item: reg:///registry/items/quest_item/girl/item_013
+        chance: 0.125
+      - item: reg:///registry/items/quest_item/girl/item_014
+        chance: 0.125
+      - item: reg:///registry/items/quest_item/girl/item_019
+        chance: 0.125
+      - item: reg:///registry/items/quest_item/girl/item_020
+        chance: 0.125
+      - item: reg:///registry/items/quest_item/girl/item_021
+        chance: 0.125
+      - item: reg:///registry/items/quest_item/girl/item_022
+        chance: 0.125
+      - item: reg:///registry/items/quest_item/girl/item_023
+        chance: 0.125
   - title      : Интерсекция
     price      : 200
     image      : static/content/locations/institutions/girl/bar_intersection.png
     bonus_list :
-      - item: reg:///registry/items/quest_item/quest_item_1
-        chance: 0.2
-      - item: reg:///registry/items/quest_item/quest_item_2
-        chance: 0.2
-      - item: reg:///registry/items/quest_item/quest_item_3
-        chance: 0.2
-      - item: reg:///registry/items/quest_item/quest_item_4
-        chance: 0.2
-      - item: reg:///registry/items/quest_item/quest_item_5
-        chance: 0.2
+      - item: reg:///registry/items/quest_item/girl/item_001
+        chance: 0.056
+      - item: reg:///registry/items/quest_item/girl/item_002
+        chance: 0.056
+      - item: reg:///registry/items/quest_item/girl/item_003
+        chance: 0.056
+      - item: reg:///registry/items/quest_item/girl/item_004
+        chance: 0.056
+      - item: reg:///registry/items/quest_item/girl/item_005
+        chance: 0.056
+      - item: reg:///registry/items/quest_item/girl/item_006
+        chance: 0.056
+      - item: reg:///registry/items/quest_item/girl/item_007
+        chance: 0.056
+      - item: reg:///registry/items/quest_item/girl/item_008
+        chance: 0.056
+      - item: reg:///registry/items/quest_item/girl/item_009
+        chance: 0.056
+      - item: reg:///registry/items/quest_item/girl/item_020
+        chance: 0.056
+      - item: reg:///registry/items/quest_item/girl/item_021
+        chance: 0.056
+      - item: reg:///registry/items/quest_item/girl/item_022
+        chance: 0.056
+      - item: reg:///registry/items/quest_item/girl/item_023
+        chance: 0.056
+      - item: reg:///registry/items/quest_item/girl/item_024
+        chance: 0.056
+      - item: reg:///registry/items/quest_item/girl/item_025
+        chance: 0.056
+      - item: reg:///registry/items/quest_item/girl/item_026
+        chance: 0.056
+      - item: reg:///registry/items/quest_item/girl/item_027
+        chance: 0.056
+      - item: reg:///registry/items/quest_item/girl/item_028
+        chance: 0.056
   - title      : Позвать подружку
     price      : 400
     image      : static/content/locations/institutions/girl/bar_bi.png
     bonus_list :
-      - item: reg:///registry/items/quest_item/quest_item_1
-        chance: 0.2
-      - item: reg:///registry/items/quest_item/quest_item_2
-        chance: 0.2
-      - item: reg:///registry/items/quest_item/quest_item_3
-        chance: 0.2
-      - item: reg:///registry/items/quest_item/quest_item_4
-        chance: 0.2
-      - item: reg:///registry/items/quest_item/quest_item_5
-        chance: 0.2
+      - item: reg:///registry/items/quest_item/girl/item_024
+        chance: 0.1
+      - item: reg:///registry/items/quest_item/girl/item_025
+        chance: 0.1
+      - item: reg:///registry/items/quest_item/girl/item_026
+        chance: 0.1
+      - item: reg:///registry/items/quest_item/girl/item_027
+        chance: 0.1
+      - item: reg:///registry/items/quest_item/girl/item_028
+        chance: 0.1
+      - item: reg:///registry/items/quest_item/girl/item_029
+        chance: 0.1
+      - item: reg:///registry/items/quest_item/girl/item_030
+        chance: 0.1
+      - item: reg:///registry/items/quest_item/girl/item_031
+        chance: 0.1
+      - item: reg:///registry/items/quest_item/girl/item_032
+        chance: 0.1
+      - item: reg:///registry/items/quest_item/girl/item_033
+        chance: 0.1
