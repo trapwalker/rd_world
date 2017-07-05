@@ -9,6 +9,11 @@ cars:
   - reg:///registry/mobiles/cars/middle/offroad/defender/quick_bot
   - reg:///registry/mobiles/cars/heavy/btrs/m113a1/quick_bot
 
+max_loot_count: 1
+loot_rec_list:
+  - item: reg:///registry/items/stuff/alcohol/alcohol_001
+    chance: 1.0
+
 first_state: begin
 test_end_time: 15
 generation_max_count: 3
