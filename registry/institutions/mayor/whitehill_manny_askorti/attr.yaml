@@ -183,6 +183,7 @@ quests:
             - reg:///registry/items/stuff/alcohol/alcohol_001
             - reg:///registry/items/stuff/alcohol/alcohol_001
             - reg:///registry/items/stuff/alcohol/alcohol_001
+
     loot_set_list:                 # Список хлама
       -
         - reg:///registry/items/stuff/alcohol/alcohol_001
