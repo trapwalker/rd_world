@@ -4,7 +4,9 @@ _cls: MeasureRadiation
 caption: Измерение радиации
 first_state: begin
 list_icon: static/img/quests/icons/rad_ico.png
-map_icon: static/img/quests/map_icons/rad_ico.png
+
+map_icon_full: static/img/quests/map_icons/radiation_full.png
+map_icon_circle: static/img/quests/map_icons/radiation_circle.png
 
 #    text_short = StringField(tags='client', caption=u'Короткий текст квеста', doc=u'Может строиться и меняться по шаблону')
 #    typename = StringField(tags='client', caption=u'Тип квеста', doc=u'Может быть произвольным')

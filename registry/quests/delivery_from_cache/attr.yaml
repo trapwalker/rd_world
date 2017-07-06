@@ -6,7 +6,9 @@ first_state: begin
 current_state: ~
 
 list_icon: static/img/quests/icons/cache.png
-map_icon: static/img/quests/map_icons/cache.png
+
+map_icon_full: static/img/quests/map_icons/cache_full.png
+map_icon_circle: static/img/quests/map_icons/cache_circle.png
 
 caption: Найти посылку
 
