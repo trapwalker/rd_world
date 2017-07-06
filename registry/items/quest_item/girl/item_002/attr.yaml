@@ -1,0 +1,22 @@
+﻿__cls__  : QuestItem
+_cls     : QuestItem
+doc      : Item_002
+abstract : false
+
+title       : На память
+description : "Бонус: 5 очков в навык Скрытность."
+group_id    : ""
+
+base_price : 0
+stack_size : 1
+
+effect_title       : Бонус
+effect_description : 5 очков в навык Скрытность
+
+masking  : 5
+deadline : 43200
+
+inv_icon_big    : static/content/items/quest_item/girl/item_002/big.png
+inv_icon_mid    : static/content/items/quest_item/girl/item_002/mid.png
+inv_icon_small  : static/content/items/quest_item/girl/item_002/mid.png
+inv_icon_xsmall : static/content/items/quest_item/girl/item_002/mid.png

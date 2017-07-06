@@ -1,0 +1,23 @@
+﻿__cls__  : QuestItem
+_cls     : QuestItem
+doc      : Item_020
+abstract : false
+
+title       : На память
+description : "Бонус: 2 очка в навык Механика и 3 очка в навык Торговля."
+group_id    : ""
+
+base_price : 0
+stack_size : 1
+
+effect_title       : Бонус
+effect_description : 2 очка в навык Механика и 3 очка в навык Торговля
+
+engineering : 2
+trading     : 3
+deadline    : 43200
+
+inv_icon_big    : static/content/items/quest_item/girl/item_020/big.png
+inv_icon_mid    : static/content/items/quest_item/girl/item_020/mid.png
+inv_icon_small  : static/content/items/quest_item/girl/item_020/mid.png
+inv_icon_xsmall : static/content/items/quest_item/girl/item_020/mid.png
