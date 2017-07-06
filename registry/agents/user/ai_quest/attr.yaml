@@ -9,3 +9,9 @@ quest_inventory:
 
 ai_quest: ~
 
+driving:         {parent: "reg:///registry/rpg_settings/skill/driving",     value: 20}
+shooting:        {parent: "reg:///registry/rpg_settings/skill/shooting",    value: 8}
+masking:         {parent: "reg:///registry/rpg_settings/skill/masking",     value: 8}
+leading:         {parent: "reg:///registry/rpg_settings/skill/leading",     value: 0}
+trading:         {parent: "reg:///registry/rpg_settings/skill/trading",     value: 10}
+engineering:     {parent: "reg:///registry/rpg_settings/skill/engineering", value: 0}
