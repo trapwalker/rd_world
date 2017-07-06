@@ -63,49 +63,49 @@ quests:
     money_coef: 1.0                # Часть нуокйнов от общей награды
     reward_items_list: []          # Список возможных комплектов для награды
 
-    measuring_price: 350           # Стоимость одного замера радиации
-    measuring_radius: 50           # Максимальный радиус измерения
+    measuring_price: 75            # Стоимость одного замера радиации
+    measuring_radius: 100          # Максимальный радиус измерения
     measure_points_generator:      # Список областей генерации пунктов замеров
       - position:
           x: 12469464
           y: 27040886
-        radius: 500
+        radius: 2000
       - position:
           x: 12470672
           y: 27034864
-        radius: 500
+        radius: 2000
       - position:
           x: 12470697
           y: 27052358
-        radius: 500
+        radius: 2000
       - position:
           x: 12471339
           y: 27057487
-        radius: 500
+        radius: 2000
       - position:
           x: 12471908
           y: 27044794
-        radius: 500
+        radius: 2000
       - position:
           x: 12473283
           y: 27043171
-        radius: 500
+        radius: 2000
       - position:
           x: 12474300
           y: 27038068
-        radius: 500
+        radius: 2000
       - position:
           x: 12476274
           y: 27027275
-        radius: 500
+        radius: 2000
       - position:
           x: 12481776
           y: 27025510
-        radius: 500
+        radius: 2000
       - position:
           x: 12479081
           y: 27032051
-        radius: 500
+        radius: 2000
     measure_count_range:           # Диапазон количетсва измерений
       min: 3
       max: 7
@@ -115,7 +115,7 @@ quests:
     _cls   : MapActivateRadarsQuest
 
     activate_price: 100            # Награда за активацию предмета
-    activate_radius: 100           # Радиус активации итема
+    activate_radius: 50            # Радиус активации итема
 
     reward_relation_hirer: 5.0     # Награда в отношение за выполнение
 
@@ -123,77 +123,46 @@ quests:
       - position:
           x: 12469464
           y: 27040886
-        radius: 500
+        radius: 1000
       - position:
           x: 12470672
           y: 27034864
-        radius: 500
+        radius: 1000
       - position:
           x: 12470697
           y: 27052358
-        radius: 500
+        radius: 1000
       - position:
           x: 12471339
           y: 27057487
-        radius: 500
+        radius: 1000
       - position:
           x: 12471908
           y: 27044794
-        radius: 500
+        radius: 1000
       - position:
           x: 12473283
           y: 27043171
-        radius: 500
+        radius: 1000
       - position:
           x: 12474300
           y: 27038068
-        radius: 500
+        radius: 1000
       - position:
           x: 12476274
           y: 27027275
-        radius: 500
+        radius: 1000
       - position:
           x: 12481776
           y: 27025510
-        radius: 500
+        radius: 1000
       - position:
           x: 12479081
           y: 27032051
-        radius: 500
+        radius: 1000
 
     activate_items_generator:
       - reg:///registry/items/usable/map_weapon/radars/radar_001
-
-  - parent: reg:///registry/quests/delivery_from_cache
-    __cls__: DeliveryFromCache
-    _cls   : DeliveryFromCache
-    design_speed: 3.0              # Скорость в px/с с которой должен двигаться игрок чтобы успеть (если = 0, то время не ограничено)
-    cache_radius: 50               # Радиус, в котором можно обнаружить тайник
-    delivery_set_list:             # Список посылок
-      -
-        - parent: reg:///registry/items/usable/package
-          __cls__: Package
-          _cls   : Package
-          base_price : 10          # тут надо указать стоимость посылки для корректного расчета награды
-          post_activate_items:
-            - reg:///registry/items/stuff/alcohol/alcohol_001
-            - reg:///registry/items/stuff/alcohol/alcohol_001
-            - reg:///registry/items/stuff/alcohol/alcohol_001
-            - reg:///registry/items/stuff/alcohol/alcohol_001
-            - reg:///registry/items/stuff/alcohol/alcohol_001
-            - reg:///registry/items/stuff/alcohol/alcohol_001
-            - reg:///registry/items/stuff/alcohol/alcohol_001
-    loot_set_list:                 # Список хлама
-      -
-        - reg:///registry/items/stuff/alcohol/alcohol_001
-        - reg:///registry/items/stuff/canned_cereal/canned_cereal_001
-        - reg:///registry/items/stuff/canned_meat/canned_meat_001
-        - reg:///registry/items/stuff/water/water_002
-    cache_points_generator:        # Список областей генерации тайников
-      - position:
-          x: 12516854
-          y: 27028533
-        radius: 100
 
   - parent: reg:///registry/quests/search_courier
     __cls__: SearchCourier
@@ -203,12 +172,28 @@ quests:
     loot_set_list:                 # Список хлама
       -
         - reg:///registry/items/stuff/alcohol/alcohol_001
+        - reg:///registry/items/stuff/alcohol/alcohol_002
         - reg:///registry/items/stuff/canned_cereal/canned_cereal_001
         - reg:///registry/items/stuff/canned_meat/canned_meat_001
+        - reg:///registry/items/stuff/medical_supplies/medical_supplies_001
+        - reg:///registry/items/stuff/scrap_metal/scrap_metal_001
+        - reg:///registry/items/stuff/warm_clothes/warm_clothes_003
         - reg:///registry/items/stuff/water/water_002
+        - reg:///registry/items/usable/ammo/556bb
+        - reg:///registry/items/usable/ammo/762x51bb
+        - reg:///registry/items/usable/ammo/792bb
+        - reg:///registry/items/usable/ammo/127x108bb
+        - reg:///registry/items/usable/ammo/23bzt
+        - reg:///registry/items/usable/ammo/30bb
+        - reg:///registry/items/usable/ammo/88bb
     courier_car_list:              # Список машин на которых может оказаться курьер
       - reg:///registry/mobiles/cars/light/motorcycles/honda_hornet
       - reg:///registry/mobiles/cars/light/motorcycles/triumph_america
+      - reg:///registry/mobiles/cars/middle/sports/delorean_dmc12
+      - reg:///registry/mobiles/cars/middle/cars/chrysler_new_yorker
+      - reg:///registry/mobiles/cars/middle/cars/dodge_challenger
+      - reg:///registry/mobiles/cars/middle/offroad/defender
+      - reg:///registry/mobiles/cars/middle/offroad/gelandewagen
 
     courier_medallion:
       parent: reg:///registry/items/quest_item
@@ -223,6 +208,145 @@ quests:
 
     cache_points_generator:        # Список областей генерации тайников
       - position:
-          x: 12516854
-          y: 27028533
-        radius: 100
+          x: 12469508
+          y: 27038459
+        radius: 2000
+      - position:
+          x: 12469212
+          y: 27025185
+        radius: 2000
+      - position:
+          x: 12480138
+          y: 27023369
+        radius: 2000
+      - position:
+          x: 12491041
+          y: 27024870
+        radius: 2000
+      - position:
+          x: 12495167
+          y: 27037982
+        radius: 2000
+      - position:
+          x: 12489845
+          y: 27046767
+        radius: 2000
+      - position:
+          x: 12471699
+          y: 27049734
+        radius: 2000
+      - position:
+          x: 12471213
+          y: 27057894
+        radius: 2000
+      - position:
+          x: 12483645
+          y: 27054783
+        radius: 2000
+      - position:
+          x: 12462118
+          y: 27063885
+        radius: 2000
+
+  - parent: reg:///registry/quests/delivery_from_cache
+    __cls__: DeliveryFromCache
+    _cls   : DeliveryFromCache
+    design_speed: 3.0              # Скорость в px/с с которой должен двигаться игрок чтобы успеть (если = 0, то время не ограничено)
+    cache_radius: 50               # Радиус, в котором можно обнаружить тайник
+    delivery_set_list:             # Список посылок
+      -
+        - parent: reg:///registry/items/usable/package
+          __cls__: Package
+          _cls   : Package
+          base_price : 600         # тут надо указать стоимость посылки для корректного расчета награды
+          post_activate_items:
+            - reg:///registry/items/slot_item/mechanic_item/cooling/add_radiator/add_radiator_1
+            - reg:///registry/items/slot_item/mechanic_item/cooling/coolant/coolant_1
+            - reg:///registry/items/slot_item/mechanic_item/cooling/fan/fan_1
+            - reg:///registry/items/slot_item/mechanic_item/cooling/pump/pump_1
+            - reg:///registry/items/slot_item/mechanic_item/cooling/radiator/radiator_1
+            - reg:///registry/items/slot_item/mechanic_item/cooling/thermostat/thermostat_1
+        - parent: reg:///registry/items/usable/package
+          __cls__: Package
+          _cls   : Package
+          base_price : 2000        # тут надо указать стоимость посылки для корректного расчета награды
+          post_activate_items:
+            - reg:///registry/items/slot_item/tuner_item/b_bumper/b_bumper_001
+            - reg:///registry/items/slot_item/tuner_item/f_bumper/f_bumper_001
+        - parent: reg:///registry/items/usable/package
+          __cls__: Package
+          _cls   : Package
+          base_price : 1000        # тут надо указать стоимость посылки для корректного расчета награды
+          post_activate_items:
+            - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/oc_14
+        - parent: reg:///registry/items/usable/package
+          __cls__: Package
+          _cls   : Package
+          base_price : 3500        # тут надо указать стоимость посылки для корректного расчета награды
+          post_activate_items:
+            - reg:///registry/items/slot_item/armorer_item/weapons/cannons/m242
+        - parent: reg:///registry/items/usable/package
+          __cls__: Package
+          _cls   : Package
+          base_price : 150         # тут надо указать стоимость посылки для корректного расчета награды
+          post_activate_items:
+            - reg:///registry/items/usable/map_weapon/rockets/sa16_igla
+            - reg:///registry/items/usable/map_weapon/mines_effect/mine_vs50
+    loot_set_list:                 # Список хлама
+      -
+        - reg:///registry/items/stuff/alcohol/alcohol_001
+        - reg:///registry/items/stuff/alcohol/alcohol_002
+        - reg:///registry/items/stuff/canned_cereal/canned_cereal_001
+        - reg:///registry/items/stuff/canned_meat/canned_meat_001
+        - reg:///registry/items/stuff/medical_supplies/medical_supplies_001
+        - reg:///registry/items/stuff/scrap_metal/scrap_metal_001
+        - reg:///registry/items/stuff/warm_clothes/warm_clothes_003
+        - reg:///registry/items/stuff/water/water_002
+        - reg:///registry/items/usable/ammo/556bb
+        - reg:///registry/items/usable/ammo/762x51bb
+        - reg:///registry/items/usable/ammo/792bb
+        - reg:///registry/items/usable/ammo/127x108bb
+        - reg:///registry/items/usable/ammo/23bzt
+        - reg:///registry/items/usable/ammo/30bb
+        - reg:///registry/items/usable/ammo/88bb
+    cache_points_generator:        # Список областей генерации тайников
+      - position:
+          x: 12477080
+          y: 27025977
+        radius: 500
+      - position:
+          x: 12473441
+          y: 27033549
+        radius: 500
+      - position:
+          x: 12479682
+          y: 27024303
+        radius: 500
+      - position:
+          x: 12483306
+          y: 27020656
+        radius: 500
+      - position:
+          x: 12481318
+          y: 27035365
+        radius: 500
+      - position:
+          x: 12469445
+          y: 27040890
+        radius: 500
+      - position:
+          x: 12470628
+          y: 27052416
+        radius: 500
+      - position:
+          x: 12465955
+          y: 27046835
+        radius: 500
+      - position:
+          x: 12492517
+          y: 27044281
+        radius: 500
+      - position:
+          x: 12483270
+          y: 27050240
+        radius: 500
