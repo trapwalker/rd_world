@@ -164,6 +164,7 @@ quests:
     activate_items_generator:
       - reg:///registry/items/usable/map_weapon/radars/radar_001
 
+
   - parent: reg:///registry/quests/search_courier
     __cls__: SearchCourier
     _cls   : SearchCourier

@@ -1,0 +1,17 @@
+__cls__: AIAgentProfile
+_cls: AIAgentProfile
+doc    : Прототипы квестовых агентов
+
+
+quest_inventory:
+  items:
+    - reg:///registry/items/quest_item/insurance/quick
+
+ai_quest: ~
+
+driving:         {parent: "reg:///registry/rpg_settings/skill/driving",     value: 15}
+shooting:        {parent: "reg:///registry/rpg_settings/skill/shooting",    value: 3}
+masking:         {parent: "reg:///registry/rpg_settings/skill/masking",     value: 3}
+leading:         {parent: "reg:///registry/rpg_settings/skill/leading",     value: 0}
+trading:         {parent: "reg:///registry/rpg_settings/skill/trading",     value: 5}
+engineering:     {parent: "reg:///registry/rpg_settings/skill/engineering", value: 0}
