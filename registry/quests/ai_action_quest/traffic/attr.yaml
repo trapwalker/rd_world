@@ -1,0 +1,84 @@
+﻿__cls__: AIActionTrafficQuest
+_cls: AIActionTrafficQuest
+doc    : Квест AIActionTrafficQuest
+
+first_state: wait_car
+current_state: ~
+
+caption: AI Quest
+text: Ai Quest
+
+on_generate: |
+    pass
+
+on_start: |
+    quest.dc.attacke_target = None
+    if not quest.route:
+        log('Error!!! AIActionTraffic without route')
+    # log('start_quest!')
+
+states:
+    - id: wait_car
+      parent: reg:///registry/quest_states/test/begin
+      on_enter: |
+          if agent.profile._agent_model.car:
+              go('patrol')
+          else:
+              set_timer(name='wait_car', delay=10)
+      on_event: |
+          if isinstance(event, OnAppendCar) and agent.profile._agent_model.car:
+              go('patrol')
+          if isinstance(event, OnTimer) and event.name == 'wait_car':
+              if agent.profile._agent_model.car:
+                  go('patrol')
+              else:
+                  go('fail')
+
+    - id: patrol
+      parent: reg:///registry/quest_states/test/begin
+      on_enter: |
+          car = agent.profile._agent_model.car
+          if car:
+              car_pos = car.position(event.time)
+              target_pos = quest.route.nearest_point(car_pos)
+              car.set_motion(time=event.time, cc=quest.get_max_cc(), target_point=target_pos)
+              set_timer(name='patrol', delay=5)
+          else:
+              log('Car for agent {} not found'.format(agent.login))
+              go('fail')
+
+      on_event: |
+          if isinstance(event, OnTimer) and event.name == 'patrol':
+              car = agent.profile._agent_model.car
+              if car:
+                  agent_model = agent.profile._agent_model
+                  set_timer(name='patrol', delay=3)
+                  # Хил по необходимости
+                  if car.hp(time=event.time) < 20:
+                      quest.use_heal(time=event.time)
+                  car_pos = car.position(event.time)
+                  if quest.route.need_next_point(car_pos):
+                     target_pos = quest.route.next_point()
+                     if target_pos:
+                        car.set_motion(time=event.time, cc=quest.get_max_cc(), target_point=target_pos)
+                     else:  # Если нет следующей точки, значит мы закончили маршрут и квест завершён
+                        go('win')
+
+                  # Залповая стрельба по всем своим целям
+                  quest.discharge_shoot_command(event=event)
+
+              else:
+                  log('Car for agent {} not found'.format(agent.login))
+                  go('fail')
+
+          if isinstance(event, OnDie):
+              go('fail')
+
+          if isinstance(event, OnGetDmg):
+              quest.towns_aggro(event=event)
+
+    - id: win
+      parent: reg:///registry/quest_states/final/win
+
+    - id: fail
+      parent: reg:///registry/quest_states/final/fail

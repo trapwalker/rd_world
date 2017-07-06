@@ -1,0 +1,74 @@
+__cls__: AITrafficQuest
+_cls: AITrafficQuest
+doc    : Квесты
+
+cars:
+  - reg:///registry/mobiles/cars/middle/vans/chevrolet_express/bot
+  - reg:///registry/mobiles/cars/middle/vans/gmc_savana/bot
+
+max_loot_count: 5
+loot_rec_list:
+  - item: reg:///registry/items/stuff/alcohol/alcohol_001
+    chance: 0.5
+  - item: reg:///registry/items/stuff/alcohol/alcohol_002
+    chance: 0.5
+  - item: reg:///registry/items/stuff/canned_cereal/canned_cereal_001
+    chance: 0.5
+  - item: reg:///registry/items/stuff/canned_cereal/canned_cereal_002
+    chance: 0.5
+  - item: reg:///registry/items/stuff/canned_fruit/canned_fruit_001
+    chance: 0.5
+  - item: reg:///registry/items/stuff/canned_fruit/canned_fruit_002
+    chance: 0.5
+  - item: reg:///registry/items/stuff/canned_meat/canned_meat_001
+    chance: 0.5
+  - item: reg:///registry/items/stuff/canned_meat/canned_meat_002
+    chance: 0.5
+  - item: reg:///registry/items/stuff/medical_supplies/medical_supplies_001
+    chance: 0.5
+  - item: reg:///registry/items/stuff/medical_supplies/medical_supplies_002
+    chance: 0.5
+  - item: reg:///registry/items/stuff/warm_clothes/warm_clothes_001
+    chance: 0.5
+  - item: reg:///registry/items/stuff/warm_clothes/warm_clothes_002
+    chance: 0.5
+  - item: reg:///registry/items/stuff/warm_clothes/warm_clothes_003
+    chance: 0.5
+  - item: reg:///registry/items/stuff/water/water_001
+    chance: 0.5
+  - item: reg:///registry/items/stuff/water/water_002
+    chance: 0.5
+
+first_state: begin
+test_end_time: 15
+generation_max_count: 3
+
+on_generate: |
+    pass
+
+on_start: |
+    quest.deploy_bots(event=event)
+    log('on_start {!r}'.format(quest))
+
+states:
+    - id: begin
+      parent: reg:///registry/quest_states/test/begin
+      on_enter: |
+          set_timer(name='test_end', delay=quest.test_end_time)
+      on_event: |
+          if isinstance(event, OnTimer) and (event.name == 'test_end'):
+              status = quest.get_traffic_status(event)
+              if status == 'win':
+                  quest.displace_bots(event)
+                  go('win')
+              elif status == 'fail':
+                  quest.displace_bots(event)
+                  go('fail')
+              else:
+                  set_timer(name='test_end', delay=quest.test_end_time)
+
+    - id: win
+      parent: reg:///registry/quest_states/final/win
+
+    - id: fail
+      parent: reg:///registry/quest_states/final/fail
