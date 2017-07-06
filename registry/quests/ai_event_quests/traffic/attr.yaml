@@ -48,7 +48,7 @@ on_generate: |
 
 on_start: |
     quest.deploy_bots(event=event)
-    log('on_start {!r}'.format(quest))
+    # log('on_start {!r}'.format(quest))
 
 states:
     - id: begin
