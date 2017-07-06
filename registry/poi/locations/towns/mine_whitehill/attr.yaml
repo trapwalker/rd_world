@@ -4,7 +4,7 @@ doc      : Роули Майн   # Шахта возле города Вайтх
 abstract : false
 
 title             : Роули Майн
-position          : {x: 12481566, y: 27044466}
+position          : {x: 12480200, y: 27046056}
 p_observing_range : 250
 p_enter_range     : 150
 
