@@ -56,9 +56,7 @@ items:
   - reg:///registry/items/usable/map_weapon/rockets/javelin
 
   # Мины
-  - reg:///registry/items/usable/map_weapon/mines_effect/mine_vs50
-  - reg:///registry/items/usable/map_weapon/mines_effect/mine_tmm1
-  - reg:///registry/items/usable/map_weapon/mines_effect/mine_tc6
+  - reg:///registry/items/usable/map_weapon/mines/mine_ttt
 
   # Ремкомплекты
   - reg:///registry/items/usable/build_set/build_set_small
