@@ -16,9 +16,9 @@ loot_rec_list:
     chance: 0.5
   - item: reg:///registry/items/stuff/canned_cereal/canned_cereal_002
     chance: 0.5
-  - item: reg:///registry/items/stuff/canned_cereal/canned_fruit_001
+  - item: reg:///registry/items/stuff/canned_fruit/canned_fruit_001
     chance: 0.5
-  - item: reg:///registry/items/stuff/canned_cereal/canned_fruit_002
+  - item: reg:///registry/items/stuff/canned_fruit/canned_fruit_002
     chance: 0.5
   - item: reg:///registry/items/stuff/canned_meat/canned_meat_001
     chance: 0.5
@@ -32,7 +32,7 @@ loot_rec_list:
     chance: 0.5
   - item: reg:///registry/items/stuff/warm_clothes/warm_clothes_002
     chance: 0.5
-  - item: reg:///registry/items/stuff/warm_clothes/warm_clothes_003item:
+  - item: reg:///registry/items/stuff/warm_clothes/warm_clothes_003
     chance: 0.5
   - item: reg:///registry/items/stuff/water/water_001
     chance: 0.5

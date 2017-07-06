@@ -1,6 +1,8 @@
 quests:
   - parent: reg:///registry/quests/ai_event_quests/traffic
     generation_group: 'traffic_wh_pl'
+    generation_max_count: 2
+    chance_of_generation: 0.1
     routes:
       - parent: reg:///registry/routes/whitehill_paloma
     towns_protect:
@@ -9,6 +11,8 @@ quests:
 
   - parent: reg:///registry/quests/ai_event_quests/traffic
     generation_group: 'traffic_pl_wh'
+    generation_max_count: 2
+    chance_of_generation: 0.1
     routes:
       - parent: reg:///registry/routes/whitehill_paloma
         reverse: True
@@ -20,6 +24,8 @@ quests:
 
   - parent: reg:///registry/quests/ai_event_quests/traffic
     generation_group: 'traffic_wh_pr'
+    generation_max_count: 2
+    chance_of_generation: 0.1
     routes:
       - parent: reg:///registry/routes/whitehill_prior_north
       - parent: reg:///registry/routes/whitehill_prior_south
@@ -29,6 +35,8 @@ quests:
 
   - parent: reg:///registry/quests/ai_event_quests/traffic
     generation_group: 'traffic_pr_wh'
+    generation_max_count: 2
+    chance_of_generation: 0.1
     routes:
       - parent: reg:///registry/routes/whitehill_prior_north
         reverse: True
@@ -42,6 +50,8 @@ quests:
 
   - parent: reg:///registry/quests/ai_event_quests/traffic
     generation_group: 'traffic_pl_pr'
+    generation_max_count: 2
+    chance_of_generation: 0.1
     routes:
       - parent: reg:///registry/routes/paloma_prior
     towns_protect:
@@ -50,6 +60,7 @@ quests:
 
   - parent: reg:///registry/quests/ai_event_quests/traffic
     generation_group: 'traffic_pr_pl'
+    chance_of_generation: 0.1
     routes:
       - parent: reg:///registry/routes/paloma_prior
         reverse: True
