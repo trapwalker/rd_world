@@ -3,16 +3,41 @@ _cls: AITrafficQuest
 doc    : Квесты
 
 cars:
-  - reg:///registry/mobiles/cars/light/motorcycles/honda_hornet/quick_bot
-  - reg:///registry/mobiles/cars/middle/sports/delorean_dmc12/quick_bot
-  - reg:///registry/mobiles/cars/middle/cars/dodge_challenger/quick_bot
-  - reg:///registry/mobiles/cars/middle/offroad/defender/quick_bot
-  - reg:///registry/mobiles/cars/heavy/btrs/m113a1/quick_bot
+  - reg:///registry/mobiles/cars/middle/vans/chevrolet_express/bot
+  - reg:///registry/mobiles/cars/middle/vans/gmc_savana/bot
 
-max_loot_count: 1
+max_loot_count: 5
 loot_rec_list:
   - item: reg:///registry/items/stuff/alcohol/alcohol_001
-    chance: 1.0
+    chance: 0.5
+  - item: reg:///registry/items/stuff/alcohol/alcohol_002
+    chance: 0.5
+  - item: reg:///registry/items/stuff/canned_cereal/canned_cereal_001
+    chance: 0.5
+  - item: reg:///registry/items/stuff/canned_cereal/canned_cereal_002
+    chance: 0.5
+  - item: reg:///registry/items/stuff/canned_cereal/canned_fruit_001
+    chance: 0.5
+  - item: reg:///registry/items/stuff/canned_cereal/canned_fruit_002
+    chance: 0.5
+  - item: reg:///registry/items/stuff/canned_meat/canned_meat_001
+    chance: 0.5
+  - item: reg:///registry/items/stuff/canned_meat/canned_meat_002
+    chance: 0.5
+  - item: reg:///registry/items/stuff/medical_supplies/medical_supplies_001
+    chance: 0.5
+  - item: reg:///registry/items/stuff/medical_supplies/medical_supplies_002
+    chance: 0.5
+  - item: reg:///registry/items/stuff/warm_clothes/warm_clothes_001
+    chance: 0.5
+  - item: reg:///registry/items/stuff/warm_clothes/warm_clothes_002
+    chance: 0.5
+  - item: reg:///registry/items/stuff/warm_clothes/warm_clothes_003item:
+    chance: 0.5
+  - item: reg:///registry/items/stuff/water/water_001
+    chance: 0.5
+  - item: reg:///registry/items/stuff/water/water_002
+    chance: 0.5
 
 first_state: begin
 test_end_time: 15
