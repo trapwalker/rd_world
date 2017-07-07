@@ -1,0 +1,111 @@
+﻿__cls__: MapActivateRadarsQuest
+_cls: MapActivateRadarsQuest
+
+caption: Установка радаров
+first_state: begin
+list_icon: static/img/quests/icons/radar.png
+
+
+map_icon_full: static/img/quests/map_icons/radar_full.png
+map_icon_circle: static/img/quests/map_icons/radar_circle.png
+
+#    text_short = StringField(tags='client', caption=u'Короткий текст квеста', doc=u'Может строиться и меняться по шаблону')
+#    typename = StringField(tags='client', caption=u'Тип квеста', doc=u'Может быть произвольным')
+#    list_icon = StringField(tags='client', caption=u'Пиктограмма для списков', doc=u'Мальенькая картинка для отображения в списках')  # todo: use UrlField
+#    level = IntField(tags='client', caption=u'Уровень квеста', doc=u'Обычно число, но подлежит обсуждению')  # todo: обсудить
+#    starttime = DateTimeField(tags='client', caption=u'Начало выполнения', doc=u'Время старта квеста')
+#    deadline = DateTimeField(tags='client', caption=u'Срок выполнения этапа', doc=u'datetime до провала текущего этапа. Может меняться')
+
+#    hirer = UniReferenceField(tags='client', caption=u'Заказчик', doc=u'NPC-заказчик квеста')
+#    town = UniReferenceField(tags='client', caption=u'Город выдачи', doc=u'Город выдачи квеста')
+#    agent = UniReferenceField(tags='client', caption=u'Агент', doc=u'Исполнитель квеста')
+
+on_generate: |
+    if not quest.can_generate(event):
+        raise Cancel("QUEST CANCEL: reason: generate rules")
+
+    if not quest.activate_points_generator:
+        raise Cancel("QUEST ActivateRadiation CANCEL: Empty generator list.")
+    if not quest.activate_items_generator:
+        raise Cancel("QUEST DeliveryFromCache CANCEL: Empty empty delivery_set_list.")
+    if quest.hirer.hometown is None:
+        raise Cancel("QUEST MeasureRadiation CANCEL: {} hometown is None.".format(quest.hirer.hometown))
+
+    quest.init_level()
+    quest.init_activate_points()
+    quest.init_activate_items()
+    quest.init_deadline()
+
+    quest.generate_reward()  # Устанавливаем награду за квест (карму, деньги и итемы)
+    quest.init_text() # Инициализируем строку описания квеста
+
+on_start: |
+    if not quest.give_items(items=quest.activate_items, event=event):
+        quest.npc_replica(npc=quest.hirer, replica=u"Не хватает места в инвентаре.", event=event)
+        log("DELIVERY QUEST: User have not enough empty slots")
+        raise Cancel("QUEST CANCEL: User have not enough empty slot")
+    quest.log(text=u'Начат квест по установке радаров.', event=event, position=quest.hirer.hometown.position)
+
+states:
+    - id: begin
+      parent: reg:///registry/quest_states/test/begin
+      on_enter: |
+          # Создание таймера deadline
+          if quest.deadline:
+              set_timer(name='deadline_activate_quest', delay=quest.deadline)
+          quest.init_notes(event=event)
+
+      on_event: |
+          if isinstance(event, OnCancel):
+              if quest.can_take_items(items=quest.activate_items, event=event):
+                  quest.take_items(items=quest.activate_items, event=event)
+                  quest.log(text=u'Зонды возвращены.', event=event, position=quest.hirer.hometown.position)
+                  go("cancel_fail")
+              else:
+                  quest.npc_replica(npc=quest.hirer, replica=u"Для отказа от квеста отдайте зонды в количестве: {}шт.".format(len(quest.activate_items)), event=event)
+          if isinstance(event, OnTimer) and event.name == 'deadline_activate_quest':
+              go("fail")
+          if isinstance(event, OnActivateItem) and quest.check_item(item=event.item_example):
+              quest.check_notes(event=event)
+              if len(quest.activate_notes) == 0:
+                  go("reward")
+
+    - id: reward
+      parent: reg:///registry/quest_states/test
+      on_enter: |
+           quest.log(text=u'Все радары установлены. Вернитесь за наградой.', event=event, position=quest.hirer.hometown.position)
+           quest.dc.reward_note_uid = agent.profile.add_note(
+              quest_uid=quest.uid,
+              note_class=MapActivationRadarsNoteFinish,
+              time=event.time,
+              npc=quest.hirer,
+              page_caption=u'Установка<br>радаров',
+              btn1_caption=u'<br>Отчитаться',
+           )
+      on_event: |
+          if isinstance(event, OnNote) and event.note_uid == quest.dc.reward_note_uid and event.result == True:
+              agent.profile.set_relationship(time=event.time, npc=quest.hirer, dvalue=quest.reward_relation_hirer)
+              agent.profile.set_balance(time=event.time, delta=quest.reward_money)
+              agent.profile.set_karma(time=event.time, dvalue=quest.reward_karma)
+              agent.profile.del_note(uid=quest.dc.reward_note_uid, time=event.time)
+              go('win')
+
+    - id: cancel_fail
+      parent: reg:///registry/quest_states/final/fail/cancel
+      on_enter: |
+          agent.profile.set_relationship(time=event.time, npc=quest.hirer, dvalue=-5)  # изменение отношения c нпц
+          quest.delete_notes(event=event)
+          quest.log(text=u'Квест провален.', event=event)
+
+    - id: win
+      parent: reg:///registry/quest_states/final/win
+      on_enter: |
+          quest.delete_notes(event=event)
+          quest.log(text=u'Квест выполнен.', event=event)
+
+    - id: fail
+      parent: reg:///registry/quest_states/final/fail
+      on_enter: |
+          quest.delete_notes(event=event)
+          agent.profile.set_relationship(time=event.time, npc=quest.hirer, dvalue=-20)  # изменение отношения c нпц
+          quest.log(text=u'Квест провален.', event=event)

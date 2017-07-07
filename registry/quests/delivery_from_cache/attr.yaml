@@ -5,29 +5,16 @@ doc    : Примеры квестов
 first_state: begin
 current_state: ~
 
-list_icon: static/img/quests/icons/delivery.png
-map_icon: static/img/quests/map_icons/delivery_cache.png
+list_icon: static/img/quests/icons/cache.png
 
-caption: Доставка тайника
-#    text_short = StringField(tags='client', caption=u'Короткий текст квеста', doc=u'Может строиться и меняться по шаблону')
-#    typename = StringField(tags='client', caption=u'Тип квеста', doc=u'Может быть произвольным')
-#    list_icon = StringField(tags='client', caption=u'Пиктограмма для списков', doc=u'Мальенькая картинка для отображения в списках')  # todo: use UrlField
-#    level = IntField(tags='client', caption=u'Уровень квеста', doc=u'Обычно число, но подлежит обсуждению')  # todo: обсудить
-#    starttime = DateTimeField(tags='client', caption=u'Начало выполнения', doc=u'Время старта квеста')
-#    deadline = DateTimeField(tags='client', caption=u'Срок выполнения этапа', doc=u'datetime до провала текущего этапа. Может меняться')
+map_icon_full: static/img/quests/map_icons/cache_full.png
+map_icon_circle: static/img/quests/map_icons/cache_circle.png
 
-#    hirer = UniReferenceField(tags='client', caption=u'Заказчик', doc=u'NPC-заказчик квеста')
-#    town = UniReferenceField(tags='client', caption=u'Город выдачи', doc=u'Город выдачи квеста')
-#    agent = UniReferenceField(tags='client', caption=u'Агент', doc=u'Исполнитель квеста')
+caption: Найти посылку
 
 on_generate: |
-    # todo: реализовать метод same_as для проверки похожести квестов
-    for q in agent and agent.quests or []:
-        if q.parent == quest.parent:
-            if q.status is None:
-                raise Cancel("QUEST DeliveryFromCache CANCEL: You already have that unstarted quest: {q}")
-            if q.status == 'active':
-                raise Cancel("QUEST DeliveryFromCache CANCEL: You already have more <<quest.active_count_max>> copies of that quest.")
+    if not quest.can_generate(event):
+        raise Cancel("QUEST CANCEL: reason: generate rules")
 
     if not quest.delivery_set_list:
         raise Cancel("QUEST DeliveryFromCache CANCEL: Empty empty delivery_set_list.")
@@ -36,21 +23,13 @@ on_generate: |
 
     quest.init_level()
     quest.init_delivery_set()
-
-    cost_delivery_items = 0
-    for item in quest.delivery_set:
-        cost_delivery_items += item.base_price * item.amount / item.stack_size
-
     quest.init_target_point()
+
     distance = quest.init_distance()
+    if distance == 0:
+        log('DeliveryFromCache Quest: Warning!!! Distance from hirer<{}> to point<{}> = {}'.format(quest.hirer, quest.cache_point, distance))
     quest.init_deadline(distance)
 
-    distance_cost = round(distance / 100)  # todo: уточнить стоимость 1px пути
-
-    if distance_cost == 0:
-        log('DeliveryFromCache Quest: Warning!!! Distance from hirer<{}> to point<{}> = {}'.format(quest.hirer, quest.cache_point, distance))
-
-    quest.total_reward_money = quest.total_delivery_money_coef * cost_delivery_items + distance_cost
     quest.generate_reward()  # Устанавливаем награду за квест (карму, деньги и итемы)
     quest.init_text() # Инициализируем строку описания квеста
 
@@ -59,18 +38,18 @@ on_start: |
         quest.npc_replica(npc=quest.hirer, replica=u"NPC не достаточно хорошо к Вам относится.", event=event)
         log("DeliveryFromCache QUEST: User have not enough relation")
         raise Cancel("QUEST DeliveryFromCache CANCEL: User have not enough relation")
-    quest.starttime = event.time
-    quest.log(text=u'Начат квест по доставке вещей из тайника.', event=event, position=quest.hirer.hometown.position)
+    quest.log(text=u'Начат квест по поиску посылки.', event=event, position=quest.hirer.hometown.position)
 
 states:
     - id: begin
       parent: reg:///registry/quest_states/test/begin
       on_enter: |
-          quest.cache_map_note_uid = agent.add_note(
+          quest.dc.cache_map_note_uid = agent.profile.add_note(
               quest_uid=quest.uid,
               note_class=MapMarkerNote,
               time=event.time,
-              marker=quest.cache_point
+              position=quest.cache_point.position,
+              radius=quest.cache_point.radius
           )
           if quest.deadline:
               set_timer(name='deadline_delivery_cache_quest', delay=quest.deadline)
@@ -78,22 +57,17 @@ states:
 
       on_event: |
           if isinstance(event, OnCancel):
-              penalty_money = quest.reward_money / 2.
-              if agent.balance >= penalty_money:
-                  agent.del_note(uid=quest.cache_map_note_uid, time=event.time)
-                  agent.set_balance(time=event.time, delta=-penalty_money)
-                  quest.log(text=u'Уплачен штраф в размере {}nc.'.format(penalty_money), event=event, position=quest.hirer.hometown.position)
-                  go("cancel_fail")
-              else:
-                 quest.npc_replica(npc=quest.hirer, replica=u"Для отказа от квеста заплатите штраф {}nc.".format(penalty_money), event=event)
-
+              agent.profile.del_note(uid=quest.dc.cache_map_note_uid, time=event.time)
+              agent.profile.set_relationship(time=event.time, npc=quest.hirer, dvalue=-quest.reward_relation_hirer)
+              quest.log(text=u'Испорчены отношения с {}.'.format(quest.hirer.title), event=event, position=quest.hirer.hometown.position)
+              go("cancel_fail")
           if isinstance(event, OnTimer):
               if event.name == 'deadline_delivery_cache_quest':
-                  agent.del_note(uid=quest.cache_map_note_uid, time=event.time)
+                  agent.profile.del_note(uid=quest.dc.cache_map_note_uid, time=event.time)
                   go("fail")
               if event.name == 'test_delivery_cache_quest':
-                  if agent._agent_model and agent._agent_model.car and quest.cache_point.is_near(agent._agent_model.car.position(time=event.time)):
-                      agent.del_note(uid=quest.cache_map_note_uid, time=event.time)
+                  if agent.profile._agent_model and agent.profile._agent_model.car and quest.cache_point.is_near(agent.profile._agent_model.car.position(time=event.time)):
+                      agent.profile.del_note(uid=quest.dc.cache_map_note_uid, time=event.time)
                       go("cache")
                   else:
                       set_timer(name='test_delivery_cache_quest', delay=5)
@@ -103,12 +77,12 @@ states:
       on_enter: |
           # создать лут с временем жизни до окончания дедлайна и с нужными итемами
           quest.create_poi_container(event)
-          quest.log(text=u'Найден тайник.', event=event, position=quest.cache_point)
+          quest.log(text=u'Найдена посылка.', event=event, position=quest.cache_point.position)
 
           # создать ноту на доставку
-          quest.delivery_note_uid = agent.add_note(
+          quest.dc.delivery_note_uid = agent.profile.add_note(
               quest_uid=quest.uid,
-              note_class=NPCDeliveryNote,
+              note_class=NPCDeliveryNotePackage,
               time=event.time,
               npc=quest.hirer,
               page_caption=quest.caption,
@@ -116,54 +90,24 @@ states:
 
       on_event: |
           if isinstance(event, OnCancel):
-              penalty_money = quest.reward_money / 2.
-              if agent.balance >= penalty_money:
-                  agent.del_note(uid=quest.delivery_note_uid, time=event.time)
-                  agent.set_balance(time=event.time, delta=-penalty_money)
-                  quest.log(text=u'Уплачен штраф в размере {}nc.'.format(penalty_money), event=event, position=quest.hirer.hometown.position)
-                  go("cancel_fail")
-              else:
-                 quest.npc_replica(npc=quest.hirer, replica=u"Для отказа от квеста заплатите штраф {}nc.".format(penalty_money), event=event)
+              quest.npc_replica(npc=quest.hirer, replica=u"Вы нашли посылку и не можете отказаться.", event=event)
 
           if isinstance(event, OnTimer) and event.name == 'deadline_delivery_cache_quest':
-              agent.del_note(uid=quest.delivery_note_uid, time=event.time)
+              agent.profile.del_note(uid=quest.dc.delivery_note_uid, time=event.time)
               go("fail")
 
           if isinstance(event, OnNote):
-              if (event.note_uid == quest.delivery_note_uid) and (event.result == True) and quest.take_items(items=quest.delivery_set, event=event):
-                  agent.del_note(uid=quest.delivery_note_uid, time=event.time)
+              if ((event.note_uid == quest.dc.delivery_note_uid) and (event.result == True) and
+                  quest.take_items_package(event=event)):
+                  agent.profile.del_note(uid=quest.dc.delivery_note_uid, time=event.time)
                   go('reward')
 
-
-    # todo: если будет ещё один квест с точно таким же состоянием, но отличающимся нпц, то вынести стейт отдельно и
-    # просто его наследовать, при этом в on_generate прописывать поле reward_npc
     - id: reward
       parent: reg:///registry/quest_states/test
-
       on_enter: |
-          agent.set_balance(time=event.time, delta=quest.reward_money)
-          agent.set_karma(time=event.time, dvalue=quest.reward_karma)
-          agent.set_relationship(time=event.time, npc=quest.hirer, dvalue=quest.reward_relation_hirer)
-          if len(quest.reward_items) > 0:
-              quest.reward_note_uid = agent.add_note(
-                  quest_uid=quest.uid,
-                  note_class=NPCRewardItemsNote,
-                  time=event.time,
-                  npc=quest.hirer,
-                  page_caption=u'Награда',
-                  btn1_caption=u'<br>Забрать',
-              )
-          else:
-              go('win')
-
-      on_event: |
-          if isinstance(event, OnNote):
-              if (event.note_uid == quest.reward_note_uid) and (event.result == True):
-                  if quest.give_items(items=quest.reward_items, event=event):
-                      agent.del_note(uid=quest.reward_note_uid, time=event.time)
-                      go('win')
-                  else:
-                      quest.npc_replica(npc=quest.hirer, replica=u"Не хватает места в инвентаре.", event=event)
+          agent.profile.set_karma(time=event.time, dvalue=quest.reward_karma)
+          agent.profile.set_relationship(time=event.time, npc=quest.hirer, dvalue=quest.reward_relation_hirer)
+          go('win')
 
     - id: cancel_fail
       parent: reg:///registry/quest_states/final/fail/cancel
@@ -178,6 +122,6 @@ states:
     - id: fail
       parent: reg:///registry/quest_states/final/fail
       on_enter: |
-          agent.set_relationship(time=event.time, npc=quest.hirer, dvalue=-quest.level * 2)  # изменение отношения c нпц
-          quest.agent.set_karma(time=event.time, dvalue=-quest.reward_karma)  # todo: изменение кармы
+          agent.profile.set_relationship(time=event.time, npc=quest.hirer, dvalue=-20)  # изменение отношения c нпц
+          quest.agent.profile.set_karma(time=event.time, dvalue=-10)  # изменение кармы
           quest.log(text=u'Квест провален.', event=event)

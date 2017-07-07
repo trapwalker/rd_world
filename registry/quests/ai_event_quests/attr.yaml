@@ -1,0 +1,5 @@
+__cls__: AIEventQuest
+_cls: AIEventQuest
+doc    : Квесты
+
+delay_time : 30

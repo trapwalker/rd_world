@@ -1,0 +1,14 @@
+﻿__cls__ : InsurancePremium
+_cls    : InsurancePremium
+doc     : InsurancePremium
+
+group_id: "insurance"
+
+
+title       : Премиум
+description : Премиум Страховка
+
+base_price: 1000
+
+icon_nukeoil: static/content/locations/institutions/nucoil/premium_nukeoil.png
+icon_right_panel:  static/content/locations/institutions/nucoil/premium_small.png

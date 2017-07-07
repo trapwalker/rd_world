@@ -1,23 +1,35 @@
 ﻿__cls__ : DistTable
 _cls    : DistTable
-doc     : Таблица расстояний между городами
+doc     : Таблица расстояний между городами #840 = 1 мин
 
 table:
   - town1: reg:///registry/poi/locations/towns/prior
     town2: reg:///registry/poi/locations/towns/prior
-    distance: 12600
+    distance: 12600   # 15 мин
   - town1: reg:///registry/poi/locations/towns/paloma
     town2: reg:///registry/poi/locations/towns/paloma
-    distance: 12600
+    distance: 12600   # 15 мин
   - town1: reg:///registry/poi/locations/towns/whitehill
     town2: reg:///registry/poi/locations/towns/whitehill
-    distance: 12600
+    distance: 12600   # 15 мин
+  - town1: reg:///registry/poi/locations/towns/mine_whitehill
+    town2: reg:///registry/poi/locations/towns/mine_whitehill
+    distance: 12600   # 15 мин
   - town1: reg:///registry/poi/locations/towns/prior
     town2: reg:///registry/poi/locations/towns/paloma
-    distance: 37800
+    distance: 50400   # 60 мин
   - town1: reg:///registry/poi/locations/towns/prior
     town2: reg:///registry/poi/locations/towns/whitehill
-    distance: 63000
+    distance: 75600   # 90 мин
   - town1: reg:///registry/poi/locations/towns/paloma
     town2: reg:///registry/poi/locations/towns/whitehill
-    distance: 50400
+    distance: 63000   # 75 мин
+  - town1: reg:///registry/poi/locations/towns/whitehill
+    town2: reg:///registry/poi/locations/towns/mine_whitehill
+    distance: 12600   # 15 мин
+  - town1: reg:///registry/poi/locations/towns/paloma
+    town2: reg:///registry/poi/locations/towns/mine_whitehill
+    distance: 63000   # 75 мин
+  - town1: reg:///registry/poi/locations/towns/prior
+    town2: reg:///registry/poi/locations/towns/mine_whitehill
+    distance: 75600   # 90 мин

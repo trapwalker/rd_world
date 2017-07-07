@@ -1,0 +1,22 @@
+﻿__cls__ : Insurance
+_cls    : Insurance
+doc     : Insurance
+
+group_id: "insurance"
+
+inv_icon_big    : static/content/items/insurance/big.png
+inv_icon_mid    : static/content/items/insurance/mid.png
+inv_icon_small  : static/content/items/insurance/small.png
+
+
+towns:  # Города, в которых возможен респаун
+  - reg:///registry/poi/locations/towns/paloma
+  - reg:///registry/poi/locations/towns/prior
+  - reg:///registry/poi/locations/towns/whitehill
+
+title       : Абстрактная
+description : Страховка (Абстрактная)
+
+
+icon_nukeoil: ''
+icon_right_panel: ''

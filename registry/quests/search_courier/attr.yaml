@@ -1,0 +1,126 @@
+﻿__cls__: SearchCourier
+_cls: SearchCourier
+doc    : Примеры квестов
+
+first_state: begin
+current_state: ~
+
+list_icon: static/img/quests/icons/courier.png
+
+map_icon_full: static/img/quests/map_icons/courier_full.png
+map_icon_circle: static/img/quests/map_icons/courier_circle.png
+
+caption: Найти курьера
+
+on_generate: |
+    if not quest.can_generate(event):
+        raise Cancel("QUEST CANCEL: reason: generate rules")
+
+    if quest.hirer.hometown is None:
+        raise Cancel("QUEST SearchCourier CANCEL: {} hometown is None.".format(quest.hirer.hometown))
+    if not quest.courier_car_list:
+        raise Cancel("QUEST SearchCourier CANCEL: Empty courier_car_list.")
+
+    quest.init_level()
+    quest.init_delivery_set()
+    quest.init_target_point()
+
+    distance = quest.init_distance()
+    if distance == 0:
+        log('SearchCourier Quest: Warning!!! Distance from hirer<{}> to point<{}> = {}'.format(quest.hirer, quest.cache_point, distance))
+    quest.init_deadline(distance)
+
+    quest.generate_reward()  # Устанавливаем награду за квест (карму, деньги и итемы)
+    quest.init_text() # Инициализируем строку описания квеста
+
+on_start: |
+    if quest.get_available_lvl() < quest.level:
+        quest.npc_replica(npc=quest.hirer, replica=u"NPC не достаточно хорошо к Вам относится.", event=event)
+        log("SearchCourier QUEST: User have not enough relation")
+        raise Cancel("QUEST SearchCourier CANCEL: User have not enough relation")
+    quest.log(text=u'Начат квест по поиску пропавшего курьера.', event=event, position=quest.hirer.hometown.position)
+
+states:
+    - id: begin
+      parent: reg:///registry/quest_states/test/begin
+      on_enter: |
+          quest.dc.cache_map_note_uid = agent.profile.add_note(
+              quest_uid=quest.uid,
+              note_class=MapMarkerNote,
+              time=event.time,
+              position=quest.cache_point.position,
+              radius=quest.cache_point.radius
+          )
+          if quest.deadline:
+              set_timer(name='deadline_delivery_cache_quest', delay=quest.deadline)
+          set_timer(name='test_delivery_cache_quest', delay=5)
+
+      on_event: |
+          if isinstance(event, OnCancel):
+              agent.profile.del_note(uid=quest.dc.cache_map_note_uid, time=event.time)
+              agent.profile.set_relationship(time=event.time, npc=quest.hirer, dvalue=-quest.reward_relation_hirer)
+              quest.log(text=u'Испорчены отношения с {}.'.format(quest.hirer.title), event=event, position=quest.hirer.hometown.position)
+              go("cancel_fail")
+          if isinstance(event, OnTimer):
+              if event.name == 'deadline_delivery_cache_quest':
+                  agent.profile.del_note(uid=quest.dc.cache_map_note_uid, time=event.time)
+                  go("fail")
+              if event.name == 'test_delivery_cache_quest':
+                  if agent.profile._agent_model and agent.profile._agent_model.car and quest.cache_point.is_near(agent.profile._agent_model.car.position(time=event.time)):
+                      agent.profile.del_note(uid=quest.dc.cache_map_note_uid, time=event.time)
+                      go("cache")
+                  else:
+                      set_timer(name='test_delivery_cache_quest', delay=5)
+
+    - id: cache
+      parent: reg:///registry/quest_states/test/begin
+      on_enter: |
+          # создать лут с временем жизни до окончания дедлайна и с нужными итемами
+          quest.log(text=u'Найдена машина курьера.', event=event, position=quest.cache_point.position)
+          quest.create_poi_container(event)
+
+          # создать ноту на доставку
+          quest.dc.delivery_note_uid = agent.profile.add_note(
+              quest_uid=quest.uid,
+              note_class=NPCDeliveryNoteCourier,
+              time=event.time,
+              npc=quest.hirer,
+              page_caption=quest.caption,
+          )
+
+      on_event: |
+          if isinstance(event, OnCancel):
+              quest.npc_replica(npc=quest.hirer, replica=u"Вы нашли машину курьера и не можете отказаться.", event=event)
+
+          if isinstance(event, OnTimer) and event.name == 'deadline_delivery_cache_quest':
+              agent.profile.del_note(uid=quest.dc.delivery_note_uid, time=event.time)
+              go("fail")
+
+          if isinstance(event, OnNote):
+              if (event.note_uid == quest.dc.delivery_note_uid) and (event.result == True) and quest.take_medallion(event=event):
+                  agent.profile.del_note(uid=quest.dc.delivery_note_uid, time=event.time)
+                  go('reward')
+
+    - id: reward
+      parent: reg:///registry/quest_states/test
+      on_enter: |
+          agent.profile.set_karma(time=event.time, dvalue=quest.reward_karma)
+          agent.profile.set_relationship(time=event.time, npc=quest.hirer, dvalue=quest.reward_relation_hirer)
+          go('win')
+
+    - id: cancel_fail
+      parent: reg:///registry/quest_states/final/fail/cancel
+      on_enter: |
+          quest.log(text=u'Квест провален.', event=event)
+
+    - id: win
+      parent: reg:///registry/quest_states/final/win
+      on_enter: |
+          quest.log(text=u'Квест выполнен.', event=event)
+
+    - id: fail
+      parent: reg:///registry/quest_states/final/fail
+      on_enter: |
+          agent.profile.set_relationship(time=event.time, npc=quest.hirer, dvalue=-20)  # изменение отношения c нпц
+          quest.agent.profile.set_karma(time=event.time, dvalue=-10)  # изменение кармы
+          quest.log(text=u'Квест провален.', event=event)

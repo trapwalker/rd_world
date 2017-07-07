@@ -1,0 +1,14 @@
+﻿__cls__ : InsuranceShareholder
+_cls    : InsuranceShareholder
+doc     : InsuranceShareholder
+
+group_id: "insurance"
+
+
+title       : Акционерная
+description : Акционерная Страховка
+
+base_price: 15000
+
+icon_nukeoil: static/content/locations/institutions/nucoil/shareholder_nukeoil.png
+icon_right_panel:  static/content/locations/institutions/nucoil/shareholder_small.png

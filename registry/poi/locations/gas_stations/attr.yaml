@@ -10,7 +10,7 @@ aggro_time: 60
 svg_link: static/content/locations/map_locations/gas_station
 
 buildings:
-    - name: nucoil
+    - name: nukeoil
       caption: Нукойл
       head: reg:///registry/institutions/nucoil
       instances:

@@ -1,0 +1,25 @@
+__cls__: AIDispatcherQuest
+_cls: AIDispatcherQuest
+doc    : Квест диспетчера AI
+
+first_state: work
+refresh_time: 30
+
+
+on_generate: |
+    if not quest.can_generate(event):
+        raise Cancel("QUEST CANCEL: reason: generate rules")
+
+on_start: |
+    pass
+
+states:
+    - id: work
+      parent: reg:///registry/quest_states/test/begin
+      on_enter: |
+          set_timer(name='refresh', delay=5)
+      on_event: |
+          # log('Quest AI Dispatcher Work {}'.format(event.time))
+          if isinstance(event, OnTimer) and (event.name == 'refresh'):
+              quest.refresh(event=event)
+              set_timer(name='refresh', delay=quest.refresh_time)

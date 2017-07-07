@@ -9,333 +9,327 @@ caption: Обучение на карте
 text: Обучитесь на карте.
 
 on_generate: |
-    # todo: реализовать метод same_as для проверки похожести квестов
-    for q in agent and agent.quests or []:
-        if q.parent == quest.parent:
-            # todo: изменить это, сейчас квест перегенерируется у мера, если пройден
-            if q.status is None:
-                raise Cancel("QUEST CANCEL: You already have that unstarted quest: {q}")
-            if q.status == 'active':
-                raise Cancel("QUEST CANCEL: You already have more <<quest.active_count_max>> copies of that quest.")
+    if not quest.can_generate(event):
+        raise Cancel("QUEST CANCEL: reason: generate rules")
 
 on_start: |
-    quest.current_note_uid = None
+    quest.dc.current_note_uid = None
 
 states:
     - id: cruise_speed
       parent: reg:///registry/quest_states/test/begin
       on_enter: |
-          quest.current_note_uid = agent.add_note(
+          quest.dc.current_note_uid = agent.profile.add_note(
               quest_uid=quest.uid,
               note_class=CruiseSpeedTeachingMapNote,
               time=event.time,
           )
-          if agent._agent_model:
-              agent._agent_model.armory_shield_on(event)
-          if agent._agent_model and agent._agent_model.car:  # Принудительная остановка (пока читает окно, чтобы не уехал)
-                      agent._agent_model.car.set_motion(time=event.time, cc=0.0)
+          if agent.profile._agent_model:
+              agent.profile._agent_model.armory_shield_on(event)
+          if agent.profile._agent_model and agent.profile._agent_model.car:  # Принудительная остановка (пока читает окно, чтобы не уехал)
+                      agent.profile._agent_model.car.set_motion(time=event.time, cc=0.0)
       on_event: |
-          if isinstance(event, OnNote) and (event.note_uid == quest.current_note_uid):
-              agent.del_note(uid=quest.current_note_uid, time=event.time)
+          if isinstance(event, OnNote) and (event.note_uid == quest.dc.current_note_uid):
+              agent.profile.del_note(uid=quest.dc.current_note_uid, time=event.time)
               go('cruise_zone')
-          if isinstance(event, OnMakeDmg) and agent._agent_model:
-              agent._agent_model.armory_shield_off(event)
+          if isinstance(event, OnMakeDmg) and agent.profile._agent_model:
+              agent.profile._agent_model.armory_shield_off(event)
 
-          if isinstance(event, OnDie) and agent._agent_model:
-              agent._agent_model.init_example_car_teaching(time=event.time)
+          if isinstance(event, OnDie) and agent.profile._agent_model:
+              agent.profile._agent_model.init_example_car_teaching(time=event.time)
 
     - id: cruise_zone
       parent: reg:///registry/quest_states/test/begin
       on_enter: |
-          quest.current_note_uid = agent.add_note(
+          quest.dc.current_note_uid = agent.profile.add_note(
               quest_uid=quest.uid,
               note_class=CruiseZoneTeachingMapNote,
               time=event.time,
           )
-          if agent._agent_model:
-              agent._agent_model.armory_shield_on(event)
-          if agent._agent_model and agent._agent_model.car:  # Принудительная остановка (пока читает окно, чтобы не уехал)
-                      agent._agent_model.car.set_motion(time=event.time, cc=0.0)
+          if agent.profile._agent_model:
+              agent.profile._agent_model.armory_shield_on(event)
+          if agent.profile._agent_model and agent.profile._agent_model.car:  # Принудительная остановка (пока читает окно, чтобы не уехал)
+                      agent.profile._agent_model.car.set_motion(time=event.time, cc=0.0)
       on_event: |
-          if isinstance(event, OnNote) and (event.note_uid == quest.current_note_uid):
-              agent.del_note(uid=quest.current_note_uid, time=event.time)
+          if isinstance(event, OnNote) and (event.note_uid == quest.dc.current_note_uid):
+              agent.profile.del_note(uid=quest.dc.current_note_uid, time=event.time)
               if event.result:
                   go('cruise_speed_control')
               else:
                   go('cruise_speed')
-          if isinstance(event, OnMakeDmg) and agent._agent_model:
-              agent._agent_model.armory_shield_off(event)
+          if isinstance(event, OnMakeDmg) and agent.profile._agent_model:
+              agent.profile._agent_model.armory_shield_off(event)
 
-          if isinstance(event, OnDie) and agent._agent_model:
-              agent._agent_model.init_example_car_teaching(time=event.time)
+          if isinstance(event, OnDie) and agent.profile._agent_model:
+              agent.profile._agent_model.init_example_car_teaching(time=event.time)
 
     - id: cruise_speed_control
       parent: reg:///registry/quest_states/test/begin
       on_enter: |
-          quest.current_note_uid = agent.add_note(
+          quest.dc.current_note_uid = agent.profile.add_note(
               quest_uid=quest.uid,
               note_class=CruiseSpeedControlTeachingMapNote,
               time=event.time,
           )
-          if agent._agent_model:
-              agent._agent_model.armory_shield_on(event)
-          if agent._agent_model and agent._agent_model.car:  # Принудительная остановка (пока читает окно, чтобы не уехал)
-                      agent._agent_model.car.set_motion(time=event.time, cc=0.0)
+          if agent.profile._agent_model:
+              agent.profile._agent_model.armory_shield_on(event)
+          if agent.profile._agent_model and agent.profile._agent_model.car:  # Принудительная остановка (пока читает окно, чтобы не уехал)
+                      agent.profile._agent_model.car.set_motion(time=event.time, cc=0.0)
       on_event: |
-          if isinstance(event, OnNote) and (event.note_uid == quest.current_note_uid):
-              agent.del_note(uid=quest.current_note_uid, time=event.time)
+          if isinstance(event, OnNote) and (event.note_uid == quest.dc.current_note_uid):
+              agent.profile.del_note(uid=quest.dc.current_note_uid, time=event.time)
               if event.result:
                   go('cruise_speed_btn')
               else:
                   go('cruise_zone')
-          if isinstance(event, OnMakeDmg) and agent._agent_model:
-              agent._agent_model.armory_shield_off(event)
+          if isinstance(event, OnMakeDmg) and agent.profile._agent_model:
+              agent.profile._agent_model.armory_shield_off(event)
 
-          if isinstance(event, OnDie) and agent._agent_model:
-              agent._agent_model.init_example_car_teaching(time=event.time)
+          if isinstance(event, OnDie) and agent.profile._agent_model:
+              agent.profile._agent_model.init_example_car_teaching(time=event.time)
 
     - id: cruise_speed_btn
       parent: reg:///registry/quest_states/test/begin
       on_enter: |
-          quest.current_note_uid = agent.add_note(
+          quest.dc.current_note_uid = agent.profile.add_note(
               quest_uid=quest.uid,
               note_class=CruiseSpeedBtnTeachingMapNote,
               time=event.time,
           )
-          if agent._agent_model:
-              agent._agent_model.armory_shield_on(event)
-          if agent._agent_model and agent._agent_model.car:  # Принудительная остановка (пока читает окно, чтобы не уехал)
-                      agent._agent_model.car.set_motion(time=event.time, cc=0.0)
+          if agent.profile._agent_model:
+              agent.profile._agent_model.armory_shield_on(event)
+          if agent.profile._agent_model and agent.profile._agent_model.car:  # Принудительная остановка (пока читает окно, чтобы не уехал)
+                      agent.profile._agent_model.car.set_motion(time=event.time, cc=0.0)
       on_event: |
-          if isinstance(event, OnNote) and (event.note_uid == quest.current_note_uid):
-              agent.del_note(uid=quest.current_note_uid, time=event.time)
+          if isinstance(event, OnNote) and (event.note_uid == quest.dc.current_note_uid):
+              agent.profile.del_note(uid=quest.dc.current_note_uid, time=event.time)
               if event.result:
                   go('driving_control')
               else:
                   go('cruise_speed_control')
-          if isinstance(event, OnMakeDmg) and agent._agent_model:
-              agent._agent_model.armory_shield_off(event)
+          if isinstance(event, OnMakeDmg) and agent.profile._agent_model:
+              agent.profile._agent_model.armory_shield_off(event)
 
-          if isinstance(event, OnDie) and agent._agent_model:
-              agent._agent_model.init_example_car_teaching(time=event.time)
+          if isinstance(event, OnDie) and agent.profile._agent_model:
+              agent.profile._agent_model.init_example_car_teaching(time=event.time)
 
     - id: driving_control
       parent: reg:///registry/quest_states/test/begin
       on_enter: |
-          quest.current_note_uid = agent.add_note(
+          quest.dc.current_note_uid = agent.profile.add_note(
               quest_uid=quest.uid,
               note_class=DrivingControlTeachingMapNote,
               time=event.time,
           )
           # Таймер по которому мы будем порверять поехал ли игрок
           set_timer(name='wait_motion', delay=2)
-          if agent._agent_model:
-              agent._agent_model.armory_shield_on(event)
-          if agent._agent_model and agent._agent_model.car:  # Принудительная остановка (пока читает окно, чтобы не уехал)
-                      agent._agent_model.car.set_motion(time=event.time, cc=0.0)
+          if agent.profile._agent_model:
+              agent.profile._agent_model.armory_shield_on(event)
+          if agent.profile._agent_model and agent.profile._agent_model.car:  # Принудительная остановка (пока читает окно, чтобы не уехал)
+                      agent.profile._agent_model.car.set_motion(time=event.time, cc=0.0)
       on_event: |
           if isinstance(event, OnTimer):
               if event.name == 'wait_motion':
-                  if agent._agent_model and agent._agent_model.car and agent._agent_model.car.v(time=event.time) != 0.0:
+                  if agent.profile._agent_model and agent.profile._agent_model.car and agent.profile._agent_model.car.v(time=event.time) != 0.0:
                       # Дать игроку время покататься
                       set_timer(name='end_motion', delay=10)
                   else:
                       # Продолжаем ждать пока игрок поедет
                       set_timer(name='wait_motion', delay=2)
               if event.name == 'end_motion':
-                  agent.del_note(uid=quest.current_note_uid, time=event.time)
+                  agent.profile.del_note(uid=quest.dc.current_note_uid, time=event.time)
                   go('cruise_radial')
-          if isinstance(event, OnNote) and (event.note_uid == quest.current_note_uid) and not event.result:
-              agent.del_note(uid=quest.current_note_uid, time=event.time)
+          if isinstance(event, OnNote) and (event.note_uid == quest.dc.current_note_uid) and not event.result:
+              agent.profile.del_note(uid=quest.dc.current_note_uid, time=event.time)
               go('cruise_speed_btn')
-          if isinstance(event, OnMakeDmg) and agent._agent_model:
-              agent._agent_model.armory_shield_off(event)
+          if isinstance(event, OnMakeDmg) and agent.profile._agent_model:
+              agent.profile._agent_model.armory_shield_off(event)
 
-          if isinstance(event, OnDie) and agent._agent_model:
-              agent._agent_model.init_example_car_teaching(time=event.time)
+          if isinstance(event, OnDie) and agent.profile._agent_model:
+              agent.profile._agent_model.init_example_car_teaching(time=event.time)
 
     - id: cruise_radial
       parent: reg:///registry/quest_states/test/begin
       on_enter: |
-          quest.current_note_uid = agent.add_note(
+          quest.dc.current_note_uid = agent.profile.add_note(
               quest_uid=quest.uid,
               note_class=CruiseRadialTeachingMapNote,
               time=event.time,
           )
-          if agent._agent_model:
-              agent._agent_model.armory_shield_on(event)
-          if agent._agent_model and agent._agent_model.car:  # Принудительная остановка (пока читает окно, чтобы не уехал)
-                      agent._agent_model.car.set_motion(time=event.time, cc=0.0)
+          if agent.profile._agent_model:
+              agent.profile._agent_model.armory_shield_on(event)
+          if agent.profile._agent_model and agent.profile._agent_model.car:  # Принудительная остановка (пока читает окно, чтобы не уехал)
+                      agent.profile._agent_model.car.set_motion(time=event.time, cc=0.0)
       on_event: |
-          if isinstance(event, OnNote) and (event.note_uid == quest.current_note_uid):
-              agent.del_note(uid=quest.current_note_uid, time=event.time)
+          if isinstance(event, OnNote) and (event.note_uid == quest.dc.current_note_uid):
+              agent.profile.del_note(uid=quest.dc.current_note_uid, time=event.time)
               if event.result:
                   go('zoom_slider')
               else:
                   go('driving_control')
-          if isinstance(event, OnMakeDmg) and agent._agent_model:
-              agent._agent_model.armory_shield_off(event)
+          if isinstance(event, OnMakeDmg) and agent.profile._agent_model:
+              agent.profile._agent_model.armory_shield_off(event)
 
-          if isinstance(event, OnDie) and agent._agent_model:
-              agent._agent_model.init_example_car_teaching(time=event.time)
+          if isinstance(event, OnDie) and agent.profile._agent_model:
+              agent.profile._agent_model.init_example_car_teaching(time=event.time)
 
     - id: zoom_slider
       parent: reg:///registry/quest_states/test/begin
       on_enter: |
-          quest.current_note_uid = agent.add_note(
+          quest.dc.current_note_uid = agent.profile.add_note(
               quest_uid=quest.uid,
               note_class=ZoomSliderTeachingMapNote,
               time=event.time,
           )
-          if agent._agent_model:
-              agent._agent_model.armory_shield_on(event)
-          if agent._agent_model and agent._agent_model.car:  # Принудительная остановка (пока читает окно, чтобы не уехал)
-                      agent._agent_model.car.set_motion(time=event.time, cc=0.0)
+          if agent.profile._agent_model:
+              agent.profile._agent_model.armory_shield_on(event)
+          if agent.profile._agent_model and agent.profile._agent_model.car:  # Принудительная остановка (пока читает окно, чтобы не уехал)
+                      agent.profile._agent_model.car.set_motion(time=event.time, cc=0.0)
       on_event: |
-          if isinstance(event, OnNote) and (event.note_uid == quest.current_note_uid):
-              agent.del_note(uid=quest.current_note_uid, time=event.time)
+          if isinstance(event, OnNote) and (event.note_uid == quest.dc.current_note_uid):
+              agent.profile.del_note(uid=quest.dc.current_note_uid, time=event.time)
               if event.result:
                   go('discharge_shooting')
               else:
                   go('cruise_radial')
 
-          if isinstance(event, OnMakeDmg) and agent._agent_model:
-              agent._agent_model.armory_shield_off(event)
+          if isinstance(event, OnMakeDmg) and agent.profile._agent_model:
+              agent.profile._agent_model.armory_shield_off(event)
 
-          if isinstance(event, OnDie) and agent._agent_model:
-              agent._agent_model.init_example_car_teaching(time=event.time)
+          if isinstance(event, OnDie) and agent.profile._agent_model:
+              agent.profile._agent_model.init_example_car_teaching(time=event.time)
 
     - id: discharge_shooting
       parent: reg:///registry/quest_states/test/begin
       on_enter: |
-          quest.current_note_uid = agent.add_note(
+          quest.dc.current_note_uid = agent.profile.add_note(
               quest_uid=quest.uid,
               note_class=DischargeShootingTeachingMapNote,
               time=event.time,
           )
-          if agent._agent_model:
-              agent._agent_model.armory_shield_on(event)
-          if agent._agent_model and agent._agent_model.car:  # Принудительная остановка (пока читает окно, чтобы не уехал)
-                      agent._agent_model.car.set_motion(time=event.time, cc=0.0)
+          if agent.profile._agent_model:
+              agent.profile._agent_model.armory_shield_on(event)
+          if agent.profile._agent_model and agent.profile._agent_model.car:  # Принудительная остановка (пока читает окно, чтобы не уехал)
+                      agent.profile._agent_model.car.set_motion(time=event.time, cc=0.0)
       on_event: |
-          if isinstance(event, OnNote) and (event.note_uid == quest.current_note_uid):
-              agent.del_note(uid=quest.current_note_uid, time=event.time)
+          if isinstance(event, OnNote) and (event.note_uid == quest.dc.current_note_uid):
+              agent.profile.del_note(uid=quest.dc.current_note_uid, time=event.time)
               if event.result:
                   go('auto_shooting')
               else:
                   go('zoom_slider')
-          if isinstance(event, OnMakeDmg) and agent._agent_model:
-              agent._agent_model.armory_shield_off(event)
+          if isinstance(event, OnMakeDmg) and agent.profile._agent_model:
+              agent.profile._agent_model.armory_shield_off(event)
 
-          if isinstance(event, OnDie) and agent._agent_model:
-              agent._agent_model.init_example_car_teaching(time=event.time)
+          if isinstance(event, OnDie) and agent.profile._agent_model:
+              agent.profile._agent_model.init_example_car_teaching(time=event.time)
 
     - id: auto_shooting
       parent: reg:///registry/quest_states/test/begin
       on_enter: |
-          quest.current_note_uid = agent.add_note(
+          quest.dc.current_note_uid = agent.profile.add_note(
               quest_uid=quest.uid,
               note_class=AutoShootingTeachingMapNote,
               time=event.time,
           )
-          if agent._agent_model:
-              agent._agent_model.armory_shield_on(event)
+          if agent.profile._agent_model:
+              agent.profile._agent_model.armory_shield_on(event)
 
-          if agent._agent_model and agent._agent_model.car:  # Принудительная остановка (пока читает окно, чтобы не уехал)
-                      agent._agent_model.car.set_motion(time=event.time, cc=0.0)
+          if agent.profile._agent_model and agent.profile._agent_model.car:  # Принудительная остановка (пока читает окно, чтобы не уехал)
+                      agent.profile._agent_model.car.set_motion(time=event.time, cc=0.0)
       on_event: |
-          if isinstance(event, OnNote) and (event.note_uid == quest.current_note_uid):
-              agent.del_note(uid=quest.current_note_uid, time=event.time)
+          if isinstance(event, OnNote) and (event.note_uid == quest.dc.current_note_uid):
+              agent.profile.del_note(uid=quest.dc.current_note_uid, time=event.time)
               if event.result:
                   go('try_kill')
               else:
                   go('discharge_shooting')
 
-          if isinstance(event, OnMakeDmg) and agent._agent_model:
-              agent._agent_model.armory_shield_off(event)
+          if isinstance(event, OnMakeDmg) and agent.profile._agent_model:
+              agent.profile._agent_model.armory_shield_off(event)
 
-          if isinstance(event, OnDie) and agent._agent_model:
-              agent._agent_model.init_example_car_teaching(time=event.time)
+          if isinstance(event, OnDie) and agent.profile._agent_model:
+              agent.profile._agent_model.init_example_car_teaching(time=event.time)
 
     - id: try_kill
       parent: reg:///registry/quest_states/test/begin
       on_enter: |
-          quest.current_note_uid = agent.add_note(
+          quest.dc.current_note_uid = agent.profile.add_note(
               quest_uid=quest.uid,
               note_class=TryKillTeachingMapNote,
               time=event.time,
           )
-          if agent._agent_model and agent._agent_model.car:  # Принудительная остановка (пока читает окно, чтобы не уехал)
-                      agent._agent_model.car.set_motion(time=event.time, cc=0.0)
+          if agent.profile._agent_model and agent.profile._agent_model.car:  # Принудительная остановка (пока читает окно, чтобы не уехал)
+                      agent.profile._agent_model.car.set_motion(time=event.time, cc=0.0)
           set_timer(name='shield_off', delay=5)
       on_event: |
           if isinstance(event, OnMakeDmg):
-              if agent._agent_model:
-                  agent._agent_model.armory_shield_off(event)
+              if agent.profile._agent_model:
+                  agent.profile._agent_model.armory_shield_off(event)
 
               # Если это не игрок из быстрой игры то дать ему пострелять какоето время, иначе закончить квест
               if agent.quick_flag:
-                  agent.del_note(uid=quest.current_note_uid, time=event.time)
+                  agent.profile.del_note(uid=quest.dc.current_note_uid, time=event.time)
                   go('final')
               else:
                   set_timer(name='make_dmg_delay', delay=3)  # Дать возможность игроку насладиться стрельбой
 
           if isinstance(event, OnTimer) and event.name == 'make_dmg_delay':
-              agent.del_note(uid=quest.current_note_uid, time=event.time)
+              agent.profile.del_note(uid=quest.dc.current_note_uid, time=event.time)
               go('try_game')
 
           # Нужно выключать щит, если он перешёл в состояние без машинки или появился в нём с новой машинкой
-          if isinstance(event, OnTimer) and event.name == 'shield_off' and agent._agent_model:
-              agent._agent_model.armory_shield_off(event)
+          if isinstance(event, OnTimer) and event.name == 'shield_off' and agent.profile._agent_model:
+              agent.profile._agent_model.armory_shield_off(event)
           if isinstance(event, OnAppendCar):
               set_timer(name='shield_off', delay=2)
 
-          if isinstance(event, OnNote) and (event.note_uid == quest.current_note_uid) and not event.result:
-              agent.del_note(uid=quest.current_note_uid, time=event.time)
+          if isinstance(event, OnNote) and (event.note_uid == quest.dc.current_note_uid) and not event.result:
+              agent.profile.del_note(uid=quest.dc.current_note_uid, time=event.time)
               go('auto_shooting')
 
-          if isinstance(event, OnDie) and agent._agent_model:
-              agent._agent_model.init_example_car_teaching(time=event.time)
+          if isinstance(event, OnDie) and agent.profile._agent_model:
+              agent.profile._agent_model.init_example_car_teaching(time=event.time)
 
     - id: try_game
       parent: reg:///registry/quest_states/test/begin
       on_enter: |
-          quest.current_note_uid = agent.add_note(
+          quest.dc.current_note_uid = agent.profile.add_note(
               quest_uid=quest.uid,
               note_class=TryGameTeachingMapNote,
               time=event.time,
           )
-          if agent._agent_model and agent._agent_model.car:  # Принудительная остановка (пока читает окно, чтобы не уехал)
-                      agent._agent_model.car.set_motion(time=event.time, cc=0.0)
+          if agent.profile._agent_model and agent.profile._agent_model.car:  # Принудительная остановка (пока читает окно, чтобы не уехал)
+                      agent.profile._agent_model.car.set_motion(time=event.time, cc=0.0)
           set_timer(name='shield_off_game', delay=2)
       on_event: |
           # Нужно выключать щит, если он перешёл в состояние без машинки или появился в нём с новой машинкой
-          if isinstance(event, OnTimer) and event.name == 'shield_off_game' and agent._agent_model:
-              agent._agent_model.armory_shield_off(event)
+          if isinstance(event, OnTimer) and event.name == 'shield_off_game' and agent.profile._agent_model:
+              agent.profile._agent_model.armory_shield_off(event)
           if isinstance(event, OnAppendCar):
               set_timer(name='shield_off', delay=2)
 
           # Если игрок умер, то отправить ему новую ноту.
           if isinstance(event, OnDie):
-              agent.del_note(uid=quest.current_note_uid, time=event.time)
+              agent.profile.del_note(uid=quest.dc.current_note_uid, time=event.time)
               go('try_game')
 
           # Обработка результатов Ноты игрока при завершении основной части обучения
-          if isinstance(event, OnNote) and (event.note_uid == quest.current_note_uid):
+          if isinstance(event, OnNote) and (event.note_uid == quest.dc.current_note_uid):
               if event.result:  # Если игрок в ноте выбирает "Завершить обучение"
-                 agent.del_note(uid=quest.current_note_uid, time=event.time)
+                 agent.profile.del_note(uid=quest.dc.current_note_uid, time=event.time)
                  go('final')
               else:  # Если игрок в ноте выбирает "продолжить", то выдать ему машинку, если нужно!
-                 if agent._agent_model:
-                    agent._agent_model.init_example_car_teaching(time=event.time)
+                 if agent.profile._agent_model:
+                    agent.profile._agent_model.init_example_car_teaching(time=event.time)
 
     - id: final
       parent: reg:///registry/quest_states/final/win
       on_enter: |
-          if agent._agent_model:
-              agent._agent_model.set_teaching_state("city")
+          if agent.profile._agent_model:
+              agent.profile._agent_model.set_teaching_state("city")
               if agent.quick_flag:  # Обнулить время появления в игре, чтобы игроки с квестами обучения не получали преимущество
-                  agent._agent_model.time_quick_game_start = event.time
+                  agent.profile._agent_model.time_quick_game_start = event.time
           else:
               log('Error!!! Agent model not found: {}'.format(agent))
           log('Teaching Map Quest Done for {}'.format(agent))

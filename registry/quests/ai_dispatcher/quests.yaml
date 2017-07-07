@@ -1,0 +1,266 @@
+quests:
+  - parent: reg:///registry/quests/ai_event_quests/traffic
+    generation_group: 'traffic_wh_pl'
+    generation_max_count: 2
+    chance_of_generation: 0.05
+    delay_time: 900
+    routes:
+      - parent: reg:///registry/routes/whitehill_paloma
+    towns_protect:
+      - reg:///registry/poi/locations/towns/whitehill
+      - reg:///registry/poi/locations/towns/paloma
+  - parent: reg:///registry/quests/ai_event_quests/traffic
+    generation_group: 'traffic_pl_wh'
+    generation_max_count: 2
+    chance_of_generation: 0.05
+    delay_time: 900
+    routes:
+      - parent: reg:///registry/routes/whitehill_paloma
+        reverse: True
+    towns_protect:
+      - reg:///registry/poi/locations/towns/whitehill
+      - reg:///registry/poi/locations/towns/paloma
+
+
+  - parent: reg:///registry/quests/ai_event_quests/traffic
+    generation_group: 'traffic_wh_pr'
+    generation_max_count: 2
+    chance_of_generation: 0.05
+    delay_time: 1500
+    routes:
+      - parent: reg:///registry/routes/whitehill_prior_north
+      - parent: reg:///registry/routes/whitehill_prior_south
+    towns_protect:
+      - reg:///registry/poi/locations/towns/whitehill
+      - reg:///registry/poi/locations/towns/prior
+  - parent: reg:///registry/quests/ai_event_quests/traffic
+    generation_group: 'traffic_pr_wh'
+    generation_max_count: 2
+    chance_of_generation: 0.05
+    delay_time: 1500
+    routes:
+      - parent: reg:///registry/routes/whitehill_prior_north
+        reverse: True
+      - parent: reg:///registry/routes/whitehill_prior_south
+        reverse: True
+    towns_protect:
+      - reg:///registry/poi/locations/towns/whitehill
+      - reg:///registry/poi/locations/towns/prior
+
+
+  - parent: reg:///registry/quests/ai_event_quests/traffic
+    generation_group: 'traffic_pl_pr'
+    generation_max_count: 2
+    chance_of_generation: 0.05
+    delay_time: 900
+    routes:
+      - parent: reg:///registry/routes/paloma_prior
+    towns_protect:
+      - reg:///registry/poi/locations/towns/prior
+      - reg:///registry/poi/locations/towns/paloma
+  - parent: reg:///registry/quests/ai_event_quests/traffic
+    generation_group: 'traffic_pr_pl'
+    chance_of_generation: 0.05
+    delay_time: 900
+    routes:
+      - parent: reg:///registry/routes/paloma_prior
+        reverse: True
+    towns_protect:
+      - reg:///registry/poi/locations/towns/prior
+      - reg:///registry/poi/locations/towns/paloma
+
+
+  - parent: reg:///registry/quests/ai_event_quests/traffic
+    generation_group: 'traffic_wh_gs_north'
+    chance_of_generation: 0.1
+    delay_time: 300
+    routes:
+      - parent: reg:///registry/routes/towns_gs/whitehill_gs_north
+    towns_protect:
+      - reg:///registry/poi/locations/towns/whitehill
+    max_loot_count: 2
+    loot_rec_list:
+      - item: reg:///registry/items/usable/tanks/tank_empty/tank_10l
+        chance: 0.5
+      - item: reg:///registry/items/usable/tanks/tank_empty/tank_20l
+        chance: 0.5
+  - parent: reg:///registry/quests/ai_event_quests/traffic
+    generation_group: 'traffic_wh_gs_north'
+    chance_of_generation: 0.1
+    delay_time: 300
+    routes:
+      - parent: reg:///registry/routes/towns_gs/whitehill_gs_north
+        reverse: True
+    towns_protect:
+      - reg:///registry/poi/locations/towns/whitehill
+    max_loot_count: 2
+    loot_rec_list:
+      - item: reg:///registry/items/usable/tanks/tank_full/tank_10l
+        chance: 0.5
+      - item: reg:///registry/items/usable/tanks/tank_full/tank_20l
+        chance: 0.5
+
+
+  - parent: reg:///registry/quests/ai_event_quests/traffic
+    generation_group: 'traffic_pl_gs_east'
+    chance_of_generation: 0.1
+    delay_time: 300
+    routes:
+      - parent: reg:///registry/routes/towns_gs/paloma_gs_east
+    towns_protect:
+      - reg:///registry/poi/locations/towns/paloma
+    max_loot_count: 2
+    loot_rec_list:
+      - item: reg:///registry/items/usable/tanks/tank_empty/tank_10l
+        chance: 0.5
+      - item: reg:///registry/items/usable/tanks/tank_empty/tank_20l
+        chance: 0.5
+  - parent: reg:///registry/quests/ai_event_quests/traffic
+    generation_group: 'traffic_pl_gs_east'
+    chance_of_generation: 0.1
+    delay_time: 300
+    routes:
+      - parent: reg:///registry/routes/towns_gs/paloma_gs_east
+        reverse: True
+    towns_protect:
+      - reg:///registry/poi/locations/towns/paloma
+    max_loot_count: 2
+    loot_rec_list:
+      - item: reg:///registry/items/usable/tanks/tank_full/tank_10l
+        chance: 0.5
+      - item: reg:///registry/items/usable/tanks/tank_full/tank_20l
+        chance: 0.5
+
+
+  - parent: reg:///registry/quests/ai_event_quests/traffic
+    generation_group: 'traffic_pl_gs_west'
+    chance_of_generation: 0.1
+    delay_time: 300
+    routes:
+      - parent: reg:///registry/routes/towns_gs/paloma_gs_west
+    towns_protect:
+      - reg:///registry/poi/locations/towns/paloma
+    max_loot_count: 2
+    loot_rec_list:
+      - item: reg:///registry/items/usable/tanks/tank_empty/tank_10l
+        chance: 0.5
+      - item: reg:///registry/items/usable/tanks/tank_empty/tank_20l
+        chance: 0.5
+  - parent: reg:///registry/quests/ai_event_quests/traffic
+    generation_group: 'traffic_pl_gs_west'
+    chance_of_generation: 0.1
+    delay_time: 300
+    routes:
+      - parent: reg:///registry/routes/towns_gs/paloma_gs_west
+        reverse: True
+    towns_protect:
+      - reg:///registry/poi/locations/towns/paloma
+    max_loot_count: 2
+    loot_rec_list:
+      - item: reg:///registry/items/usable/tanks/tank_full/tank_10l
+        chance: 0.5
+      - item: reg:///registry/items/usable/tanks/tank_full/tank_20l
+        chance: 0.5
+
+
+  - parent: reg:///registry/quests/ai_event_quests/traffic
+    generation_group: 'traffic_pr_gs_north'
+    chance_of_generation: 0.1
+    delay_time: 300
+    routes:
+      - parent: reg:///registry/routes/towns_gs/prior_gs_north
+    towns_protect:
+      - reg:///registry/poi/locations/towns/prior
+    max_loot_count: 2
+    loot_rec_list:
+      - item: reg:///registry/items/usable/tanks/tank_empty/tank_10l
+        chance: 0.5
+      - item: reg:///registry/items/usable/tanks/tank_empty/tank_20l
+        chance: 0.5
+  - parent: reg:///registry/quests/ai_event_quests/traffic
+    generation_group: 'traffic_pr_gs_north'
+    chance_of_generation: 0.1
+    delay_time: 300
+    routes:
+      - parent: reg:///registry/routes/towns_gs/prior_gs_north
+        reverse: True
+    towns_protect:
+      - reg:///registry/poi/locations/towns/prior
+    max_loot_count: 2
+    loot_rec_list:
+      - item: reg:///registry/items/usable/tanks/tank_full/tank_10l
+        chance: 0.5
+      - item: reg:///registry/items/usable/tanks/tank_full/tank_20l
+        chance: 0.5
+
+
+  - parent: reg:///registry/quests/ai_event_quests/traffic
+    generation_group: 'traffic_pr_gs_west'
+    chance_of_generation: 0.1
+    delay_time: 300
+    routes:
+      - parent: reg:///registry/routes/towns_gs/prior_gs_west
+    towns_protect:
+      - reg:///registry/poi/locations/towns/prior
+    max_loot_count: 2
+    loot_rec_list:
+      - item: reg:///registry/items/usable/tanks/tank_empty/tank_10l
+        chance: 0.5
+      - item: reg:///registry/items/usable/tanks/tank_empty/tank_20l
+        chance: 0.5
+  - parent: reg:///registry/quests/ai_event_quests/traffic
+    generation_group: 'traffic_pr_gs_west'
+    chance_of_generation: 0.1
+    delay_time: 300
+    routes:
+      - parent: reg:///registry/routes/towns_gs/prior_gs_west
+        reverse: True
+    towns_protect:
+      - reg:///registry/poi/locations/towns/prior
+    max_loot_count: 2
+    loot_rec_list:
+      - item: reg:///registry/items/usable/tanks/tank_full/tank_10l
+        chance: 0.5
+      - item: reg:///registry/items/usable/tanks/tank_full/tank_20l
+        chance: 0.5
+
+
+  - parent: reg:///registry/quests/ai_event_quests/traffic
+    generation_group: 'traffic_wh_mn'
+    chance_of_generation: 0.1
+    delay_time: 300
+    routes:
+      - parent: reg:///registry/routes/whitehill_mine_1
+    towns_protect:
+      - reg:///registry/poi/locations/towns/whitehill
+    max_loot_count: 8
+    loot_rec_list:
+      - item: reg:///registry/items/stuff/canned_cereal/canned_cereal_001
+        chance: 0.5
+      - item: reg:///registry/items/stuff/canned_cereal/canned_cereal_002
+        chance: 0.5
+      - item: reg:///registry/items/stuff/canned_fruit/canned_fruit_001
+        chance: 0.5
+      - item: reg:///registry/items/stuff/canned_fruit/canned_fruit_002
+        chance: 0.5
+      - item: reg:///registry/items/stuff/canned_meat/canned_meat_001
+        chance: 0.5
+      - item: reg:///registry/items/stuff/canned_meat/canned_meat_002
+        chance: 0.5
+      - item: reg:///registry/items/stuff/water/water_001
+        chance: 0.5
+      - item: reg:///registry/items/stuff/water/water_002
+        chance: 0.5
+  - parent: reg:///registry/quests/ai_event_quests/traffic
+    generation_group: 'traffic_mn_wh'
+    chance_of_generation: 0.1
+    delay_time: 300
+    routes:
+      - parent: reg:///registry/routes/whitehill_mine_1
+        reverse: True
+    towns_protect:
+      - reg:///registry/poi/locations/towns/whitehill
+    max_loot_count: 8
+    loot_rec_list:
+      - item: reg:///registry/items/stuff/scrap_metal/scrap_metal_001
+        chance: 0.5

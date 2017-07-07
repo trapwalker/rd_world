@@ -1,15 +1,15 @@
-﻿__cls__ : AmmoBullets
-_cls : AmmoBullets
-doc     : Снаряды 23 мм/БЗ
-abstract: false
+﻿__cls__  : AmmoBullets
+_cls     : AmmoBullets
+doc      : Снаряды 23мм/БЗТ
+abstract : false
 
-title       : Снаряды 23 мм/БЗ
-description : Бронебойно-зажигательные снаряды для зениткок ЗУ-23-2 и других, подобного калибра (23 мм).
+title       : Снаряды<br>23мм/БЗТ
+description : Бронебойные зажигательные трассирующие снаряды калибра 23 мм для артиллерийских систем.
 
 stack_size : 10
-base_price : 50
+base_price : 45
 
-inv_icon_big   : static/content/items/usable/ammo/23bzt/big.png
-inv_icon_mid   : static/content/items/usable/ammo/23bzt/mid.png
-inv_icon_small : static/content/items/usable/ammo/23bzt/small.png
+inv_icon_big    : static/content/items/usable/ammo/23bzt/big.png
+inv_icon_mid    : static/content/items/usable/ammo/23bzt/mid.png
+inv_icon_small  : static/content/items/usable/ammo/23bzt/small.png
 inv_icon_xsmall : static/content/items/usable/ammo/23bzt/xsmall.png

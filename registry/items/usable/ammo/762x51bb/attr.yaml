@@ -1,16 +1,15 @@
-﻿__cls__ : AmmoBullets
-_cls : AmmoBullets
-doc     : Патроны 7.62х51 мм/ББ
-abstract: false
-tags: [teaching]
+﻿__cls__  : AmmoBullets
+_cls     : AmmoBullets
+doc      : Патроны 7.62мм/ББ
+abstract : false
 
-title       : Патроны 7.62х51 мм/ББ
-description : Бронебойные патроны для пулемётов ДП, ДА-2, MG 15, M134 «Миниган» и других, подобного калибра (7.62x51 мм).
+title       : Патроны<br>7.62мм/ББ
+description : Бронебойные патроны калибра 7.62 мм для пулемётов.
 
 stack_size : 100
-base_price : 100
+base_price : 150
 
-inv_icon_big   : static/content/items/usable/ammo/762x51bb/big.png
-inv_icon_mid   : static/content/items/usable/ammo/762x51bb/mid.png
-inv_icon_small : static/content/items/usable/ammo/762x51bb/small.png
+inv_icon_big    : static/content/items/usable/ammo/762x51bb/big.png
+inv_icon_mid    : static/content/items/usable/ammo/762x51bb/mid.png
+inv_icon_small  : static/content/items/usable/ammo/762x51bb/small.png
 inv_icon_xsmall : static/content/items/usable/ammo/762x51bb/xsmall.png

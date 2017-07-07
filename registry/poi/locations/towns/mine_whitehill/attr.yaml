@@ -1,0 +1,25 @@
+﻿__cls__  : Town
+_cls     : Town
+doc      : Роули Майн   # Шахта возле города Вайтхилл
+abstract : false
+
+title             : Роули Майн
+position          : {x: 12480200, y: 27046056}
+p_observing_range : 250
+p_enter_range     : 150
+
+svg_link: static/content/locations/map_locations/mine_whitehill
+
+buildings:
+  - name: mine
+    caption: Шахта
+    title: Шахта
+    head: reg:///registry/institutions/mine_manager/mine_whitehill_bob_mcdowell
+    instances:
+        - reg:///registry/institutions/mine_manager/mine_whitehill_bob_mcdowell
+
+static_image_list:
+    - /static/content/locations/map_locations/mine_whitehill/ground+circle.png
+    - /static/content/locations/map_locations/mine_whitehill/mine.png
+    - /static/content/locations/map_locations/mine_whitehill/mine_bg.png
+    - /static/content/locations/map_locations/mine_whitehill/mine_hover.png

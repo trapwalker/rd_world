@@ -34,14 +34,9 @@ text: |
 #    agent = UniReferenceField(tags='client', caption=u'Агент', doc=u'Исполнитель квеста')
 
 on_generate: |
-    # todo: реализовать метод same_as для проверки похожести квестов
-    for q in agent and agent.quests or []:
-        if q.parent == quest.parent:
-            if q.status is None:
-                raise Cancel("QUEST CANCEL: You already have that unstarted quest: {q}")
+    if not quest.can_generate(event):
+        raise Cancel("QUEST CANCEL: reason: generate rules")
 
-            if q.status == 'active':
-                raise Cancel("QUEST CANCEL: You already have more <<quest.active_count_max>> copies of that quest.")
     # Установить уровень квеста, условия выполнения (определение жертв) и дедлайн
     quest.init_level()
     quest.init_targets_info()
@@ -58,9 +53,8 @@ on_start: |
         quest.npc_replica(npc=quest.hirer, replica=u"NPC не достаточно хорошо к Вам относится.", event=event)
         log("KillerQuest: User have not enough relation")
         raise Cancel("KillerQuest: User have not enough relation")
-    quest.starttime = event.time
     # Создание ноты для квеста
-    quest.wanted_note_uid = agent.add_note(
+    quest.dc.wanted_note_uid = agent.profile.add_note(
         quest_uid=quest.uid,
         note_class=NPCWantedNote,
         time=event.time,
@@ -79,21 +73,23 @@ states:
 
       on_event: |
           if isinstance(event, OnKill):
-              if event.agent.karma <= quest.max_karma_victims and event.agent.get_lvl() >= quest.min_level_victims and (not quest.unique_victims or event.agent not in quest.victims):
-                  quest.append_victim(event.agent, event)
+              if ((event.agent.profile.karma <= quest.max_karma_victims) and
+                  (event.agent.profile.get_real_lvl() >= quest.min_level_victims) and
+                  (not quest.unique_victims or not quest.in_victims(event.agent))):
+                  quest.append_victim(event.agent, event)  # todo: Исправить добавление агента 
                   quest.log(text=u'{} убит.'.format(event.agent.login), event=event, position=quest.hirer.hometown.position)
                   if len(quest.victims) >= quest.count_to_kill:
                       go('note_kill_reward')
 
           if isinstance(event, OnTimer) and event.name == 'deadline_killer_quest':
-              agent.del_note(uid=quest.wanted_note_uid, time=event.time)
+              agent.profile.del_note(uid=quest.dc.wanted_note_uid, time=event.time)
               go("deadline_fail")
 
           if isinstance(event, OnCancel):
               penalty_money = quest.reward_money / 2.
-              if agent.balance >= penalty_money:
-                  agent.del_note(uid=quest.wanted_note_uid, time=event.time)
-                  agent.set_balance(time=event.time, delta=-penalty_money)
+              if agent.profile.balance >= penalty_money:
+                  agent.profile.del_note(uid=quest.dc.wanted_note_uid, time=event.time)
+                  agent.profile.set_balance(time=event.time, delta=-penalty_money)
                   quest.log(text=u'Уплачен штраф в размере {}nc.'.format(penalty_money), event=event, position=quest.hirer.hometown.position)
                   go("cancel_fail")
               else:
@@ -105,8 +101,8 @@ states:
       
       on_event: |
           if isinstance(event, OnNote):
-              if (quest.wanted_note_uid == event.note_uid) and (event.result == True):
-                  agent.del_note(uid=quest.wanted_note_uid, time=event.time)
+              if (quest.dc.wanted_note_uid == event.note_uid) and (event.result == True):
+                  agent.profile.del_note(uid=quest.dc.wanted_note_uid, time=event.time)
                   go('reward')
 
     # todo: если будет ещё один квест с точно таким же состоянием, но отличающимся нпц, то вынести стейт отдельно и
@@ -115,12 +111,12 @@ states:
       parent: reg:///registry/quest_states/test
 
       on_enter: |
-          quest.agent.set_balance(time=event.time, delta=quest.reward_money)
-          quest.agent.set_karma(time=event.time, dvalue=quest.reward_karma)
+          quest.agent.profile.set_balance(time=event.time, delta=quest.reward_money)
+          quest.agent.profile.set_karma(time=event.time, dvalue=quest.reward_karma)
           quest.log(text=u'Получено вознаграждение в размере {:.0f}nc. и {:.0f} кармы'.format(quest.reward_money, quest.reward_karma), event=event, position=quest.hirer.hometown.position)
-          agent.set_relationship(time=event.time, npc=quest.hirer, dvalue=quest.reward_relation_hirer)  # изменение отношения к нпц
+          agent.profile.set_relationship(time=event.time, npc=quest.hirer, dvalue=quest.reward_relation_hirer)  # изменение отношения к нпц
           if len(quest.reward_items) > 0:
-              quest.reward_note_uid = agent.add_note(
+              quest.dc.reward_note_uid = agent.profile.add_note(
                   quest_uid=quest.uid,
                   note_class=NPCRewardItemsNote,
                   time=event.time,
@@ -133,9 +129,9 @@ states:
 
       on_event: |
           if isinstance(event, OnNote):
-              if (event.note_uid == quest.reward_note_uid) and (event.result == True):
+              if (event.note_uid == quest.dc.reward_note_uid) and (event.result == True):
                   if quest.give_items(items=quest.reward_items, event=event):
-                      agent.del_note(uid=quest.reward_note_uid, time=event.time)
+                      agent.profile.del_note(uid=quest.dc.reward_note_uid, time=event.time)
                       go('win')
                   else:
                       quest.npc_replica(npc=quest.hirer, replica=u"Не хватает места в инвентаре.", event=event)
@@ -148,7 +144,7 @@ states:
     - id: deadline_fail
       parent: reg:///registry/quest_states/final/fail
       on_enter: |
-          agent.set_relationship(time=event.time, npc=quest.hirer, dvalue=-quest.level * 2)  # изменение отношения c нпц
+          agent.profile.set_relationship(time=event.time, npc=quest.hirer, dvalue=-quest.level * 2)  # изменение отношения c нпц
           quest.log(text=u'Квест провален: время вышло.', event=event)
 
     - id: win

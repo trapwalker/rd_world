@@ -1,8 +1,146 @@
 ﻿__cls__ : Girl
-_cls : Girl
+_cls    : Girl
 
 title    : Jett_Doll
 photo    : "static/content/institutions/girl/paloma_jett_doll.png"
 abstract : false
 
 hometown : reg:///registry/poi/locations/towns/paloma
+
+service_list:
+  - title      : Приватный танец
+    price      : 50
+    image      : static/content/locations/institutions/girl/bar_poledance.png
+    bonus_list :
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_010", title: "На память: Jett_Doll"}
+        chance: 0.125
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_011", title: "На память: Jett_Doll"}
+        chance: 0.125
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_014", title: "На память: Jett_Doll"}
+        chance: 0.125
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_015", title: "На память: Jett_Doll"}
+        chance: 0.125
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_016", title: "На память: Jett_Doll"}
+        chance: 0.125
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_017", title: "На память: Jett_Doll"}
+        chance: 0.125
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_018", title: "На память: Jett_Doll"}
+        chance: 0.125
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_019", title: "На память: Jett_Doll"}
+        chance: 0.125
+  - title      : Массаж
+    price      : 100
+    image      : static/content/locations/institutions/girl/bar_massage.png
+    bonus_list :
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_010", title: "На память: Jett_Doll"}
+        chance: 0.143
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_011", title: "На память: Jett_Doll"}
+        chance: 0.143
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_014", title: "На память: Jett_Doll"}
+        chance: 0.143
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_015", title: "На память: Jett_Doll"}
+        chance: 0.143
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_016", title: "На память: Jett_Doll"}
+        chance: 0.143
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_017", title: "На память: Jett_Doll"}
+        chance: 0.143
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_018", title: "На память: Jett_Doll"}
+        chance: 0.143
+  - title      : Хендмейд
+    price      : 150
+    image      : static/content/locations/institutions/girl/bar_handmade.png
+    bonus_list :
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_012", title: "На память: Jett_Doll"}
+        chance: 0.2
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_013", title: "На память: Jett_Doll"}
+        chance: 0.2
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_015", title: "На память: Jett_Doll"}
+        chance: 0.2
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_016", title: "На память: Jett_Doll"}
+        chance: 0.2
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_017", title: "На память: Jett_Doll"}
+        chance: 0.2
+  - title      : Интерлюдия
+    price      : 250
+    image      : static/content/locations/institutions/girl/bar_interlude.png
+    bonus_list :
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_012", title: "На память: Jett_Doll"}
+        chance: 0.125
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_013", title: "На память: Jett_Doll"}
+        chance: 0.125
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_014", title: "На память: Jett_Doll"}
+        chance: 0.125
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_019", title: "На память: Jett_Doll"}
+        chance: 0.125
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_020", title: "На память: Jett_Doll"}
+        chance: 0.125
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_021", title: "На память: Jett_Doll"}
+        chance: 0.125
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_022", title: "На память: Jett_Doll"}
+        chance: 0.125
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_023", title: "На память: Jett_Doll"}
+        chance: 0.125
+  - title      : Интерсекция
+    price      : 400
+    image      : static/content/locations/institutions/girl/bar_intersection.png
+    bonus_list :
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_001", title: "На память: Jett_Doll"}
+        chance: 0.056
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_002", title: "На память: Jett_Doll"}
+        chance: 0.056
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_003", title: "На память: Jett_Doll"}
+        chance: 0.056
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_004", title: "На память: Jett_Doll"}
+        chance: 0.056
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_005", title: "На память: Jett_Doll"}
+        chance: 0.056
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_006", title: "На память: Jett_Doll"}
+        chance: 0.056
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_007", title: "На память: Jett_Doll"}
+        chance: 0.056
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_008", title: "На память: Jett_Doll"}
+        chance: 0.056
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_009", title: "На память: Jett_Doll"}
+        chance: 0.056
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_020", title: "На память: Jett_Doll"}
+        chance: 0.056
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_021", title: "На память: Jett_Doll"}
+        chance: 0.056
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_022", title: "На память: Jett_Doll"}
+        chance: 0.056
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_023", title: "На память: Jett_Doll"}
+        chance: 0.056
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_024", title: "На память: Jett_Doll"}
+        chance: 0.056
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_025", title: "На память: Jett_Doll"}
+        chance: 0.056
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_026", title: "На память: Jett_Doll"}
+        chance: 0.056
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_027", title: "На память: Jett_Doll"}
+        chance: 0.056
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_028", title: "На память: Jett_Doll"}
+        chance: 0.056
+  - title      : Позвать подружку
+    price      : 1000
+    image      : static/content/locations/institutions/girl/bar_bi.png
+    bonus_list :
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_024", title: "На память: Jett_Doll"}
+        chance: 0.1
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_025", title: "На память: Jett_Doll"}
+        chance: 0.1
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_026", title: "На память: Jett_Doll"}
+        chance: 0.1
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_027", title: "На память: Jett_Doll"}
+        chance: 0.1
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_028", title: "На память: Jett_Doll"}
+        chance: 0.1
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_029", title: "На память: Jett_Doll"}
+        chance: 0.1
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_030", title: "На память: Jett_Doll"}
+        chance: 0.1
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_031", title: "На память: Jett_Doll"}
+        chance: 0.1
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_032", title: "На память: Jett_Doll"}
+        chance: 0.1
+      - item: {parent: "reg:///registry/items/quest_item/girl/item_033", title: "На память: Jett_Doll"}
+        chance: 0.1

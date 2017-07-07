@@ -1,7 +1,7 @@
 ﻿__cls__: Perk
 _cls: Perk
 doc    : Перки
-can_instantiate: False
+#can_instantiate: False
 
 driving_req     : 0
 shooting_req    : 0

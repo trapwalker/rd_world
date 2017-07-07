@@ -1,10 +1,10 @@
-﻿__cls__: MapActivateItem
-_cls: MapActivateItem
+﻿__cls__: MapActivateItemQuest
+_cls: MapActivateItemQuest
 
 caption: Активация предметов
 first_state: begin
 list_icon: static/img/quests/icons/rad_ico.png
-map_icon: static/img/quests/map_icons/rad_ico.png
+
 
 #    text_short = StringField(tags='client', caption=u'Короткий текст квеста', doc=u'Может строиться и меняться по шаблону')
 #    typename = StringField(tags='client', caption=u'Тип квеста', doc=u'Может быть произвольным')
@@ -18,13 +18,8 @@ map_icon: static/img/quests/map_icons/rad_ico.png
 #    agent = UniReferenceField(tags='client', caption=u'Агент', doc=u'Исполнитель квеста')
 
 on_generate: |
-    # todo: реализовать метод same_as для проверки похожести квестов
-    for q in agent and agent.quests or []:
-        if q.parent == quest.parent:
-            if q.status is None:
-                raise Cancel("QUEST MeasureRadiation CANCEL: You already have that unstarted quest: {q}")
-            if q.status == 'active':
-                raise Cancel("QUEST MeasureRadiation CANCEL: You already have more <<quest.active_count_max>> copies of that quest.")
+    if not quest.can_generate(event):
+        raise Cancel("QUEST CANCEL: reason: generate rules")
 
     if not quest.activate_points_generator:
         raise Cancel("QUEST ActivateRadiation CANCEL: Empty generator list.")
@@ -33,6 +28,7 @@ on_generate: |
     if quest.hirer.hometown is None:
         raise Cancel("QUEST MeasureRadiation CANCEL: {} hometown is None.".format(quest.hirer.hometown))
 
+    quest.init_level()
     quest.init_activate_points()
     quest.init_activate_items()
     distance = quest.init_distance()
@@ -44,7 +40,7 @@ on_generate: |
     distance_cost = round(distance / 100)  # todo: уточнить стоимость 1px пути
 
     if distance_cost == 0:
-        log('MapActivateItem Quest: Warning!!! Distance from hirer<{}> to point<{}> = {}'.format(quest.hirer, quest.cache_point, distance))
+        log('MapActivateItemQuest Quest: Warning!!! ')
 
     quest.total_reward_money = cost_delivery_items + distance_cost
     quest.generate_reward()  # Устанавливаем награду за квест (карму, деньги и итемы)
@@ -55,7 +51,6 @@ on_start: |
         quest.npc_replica(npc=quest.hirer, replica=u"Не хватает места в инвентаре.", event=event)
         log("DELIVERY QUEST: User have not enough empty slots")
         raise Cancel("QUEST CANCEL: User have not enough empty slot")
-    quest.starttime = event.time
     quest.log(text=u'Начат квест по активации предметов.', event=event, position=quest.hirer.hometown.position)
 
 states:
@@ -70,8 +65,8 @@ states:
       on_event: |
           if isinstance(event, OnCancel):
               penalty_money = quest.reward_money / 2.
-              if agent.balance >= penalty_money:
-                  agent.set_balance(time=event.time, delta=-penalty_money)
+              if agent.profile.balance >= penalty_money:
+                  agent.profile.set_balance(time=event.time, delta=-penalty_money)
                   quest.log(text=u'Уплачен штраф в размере {}nc.'.format(penalty_money), event=event, position=quest.hirer.hometown.position)
                   go("cancel_fail")
               else:
@@ -87,8 +82,8 @@ states:
     - id: reward
       parent: reg:///registry/quest_states/test
       on_enter: |
-          agent.set_relationship(time=event.time, npc=quest.hirer, dvalue=quest.reward_relation_hirer)
-          quest.reward_note_uid = agent.add_note(
+          agent.profile.set_relationship(time=event.time, npc=quest.hirer, dvalue=quest.reward_relation_hirer)
+          quest.dc.reward_note_uid = agent.profile.add_note(
               quest_uid=quest.uid,
               note_class=MapActivationNoteFinish,
               time=event.time,
@@ -98,9 +93,9 @@ states:
           )
       on_event: |
           if isinstance(event, OnNote):
-              if (event.note_uid == quest.reward_note_uid) and (event.result == True):
-                  agent.set_balance(time=event.time, delta=quest.reward_money)
-                  agent.del_note(uid=quest.reward_note_uid, time=event.time)
+              if (event.note_uid == quest.dc.reward_note_uid) and (event.result == True):
+                  agent.profile.set_balance(time=event.time, delta=quest.reward_money)
+                  agent.profile.del_note(uid=quest.reward_note_uid, time=event.time)
                   go('win')
 
     - id: cancel_fail
@@ -119,6 +114,6 @@ states:
       parent: reg:///registry/quest_states/final/fail
       on_enter: |
           quest.delete_notes(event=event)
-          agent.set_relationship(time=event.time, npc=quest.hirer, dvalue=-quest.level * 2)  # изменение отношения c нпц
-          quest.agent.set_karma(time=event.time, dvalue=-quest.reward_karma)  # todo: изменение кармы
+          agent.profile.set_relationship(time=event.time, npc=quest.hirer, dvalue=-quest.level * 2)  # изменение отношения c нпц
+          quest.agent.profile.set_karma(time=event.time, dvalue=-quest.reward_karma)  # todo: изменение кармы
           quest.log(text=u'Квест провален.', event=event)

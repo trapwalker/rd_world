@@ -3,6 +3,7 @@ _cls : Weapon
 doc     : Оружие
 
 weapon_audio: []
+weapon_animation: []
 
 power_penetration: 41  # Мощность оружия (пробитие)
 ammo_per_shot: 0

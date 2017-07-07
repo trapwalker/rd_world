@@ -1,0 +1,23 @@
+﻿__cls__  : QuestItem
+_cls     : QuestItem
+doc      : Item_008
+abstract : false
+
+title       : На память
+description : "Бонус: 2 очка в навык Механика и 2 очка в навык Скрытность."
+group_id    : ""
+
+base_price : 0
+stack_size : 1
+
+effect_title       : Бонус
+effect_description : 2 очка в навык Механика и 2 очка в навык Скрытность
+
+engineering : 2
+masking     : 2
+deadline    : 43200
+
+inv_icon_big    : static/content/items/quest_item/girl/item_008/big.png
+inv_icon_mid    : static/content/items/quest_item/girl/item_008/mid.png
+inv_icon_small  : static/content/items/quest_item/girl/item_008/mid.png
+inv_icon_xsmall : static/content/items/quest_item/girl/item_008/mid.png
