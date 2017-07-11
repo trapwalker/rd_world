@@ -1,0 +1,8 @@
+﻿__cls__  : Institution
+_cls     : Institution
+
+title    : Lenny_Nachreiner
+photo    : "static/content/institutions/mechanic/bonita_vista_lenny_nachreiner.png"
+abstract : false
+
+hometown : reg:///registry/poi/locations/towns/bonita_vista
