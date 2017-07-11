@@ -12,6 +12,9 @@ table:
   - town1: reg:///registry/poi/locations/towns/whitehill
     town2: reg:///registry/poi/locations/towns/whitehill
     distance: 12600   # 15 мин
+  - town1: reg:///registry/poi/locations/towns/bonita_vista
+    town2: reg:///registry/poi/locations/towns/bonita_vista
+    distance: 12600   # 15 мин
   - town1: reg:///registry/poi/locations/towns/mine_whitehill
     town2: reg:///registry/poi/locations/towns/mine_whitehill
     distance: 12600   # 15 мин
@@ -31,5 +34,17 @@ table:
     town2: reg:///registry/poi/locations/towns/mine_whitehill
     distance: 63000   # 75 мин
   - town1: reg:///registry/poi/locations/towns/prior
+    town2: reg:///registry/poi/locations/towns/mine_whitehill
+    distance: 75600   # 90 мин
+  - town1: reg:///registry/poi/locations/towns/bonita_vista
+    town2: reg:///registry/poi/locations/towns/paloma
+    distance: 50400   # 60 мин
+  - town1: reg:///registry/poi/locations/towns/bonita_vista
+    town2: reg:///registry/poi/locations/towns/prior
+    distance: 63000   # 75 мин
+  - town1: reg:///registry/poi/locations/towns/bonita_vista
+    town2: reg:///registry/poi/locations/towns/whitehill
+    distance: 75600   # 90 мин
+  - town1: reg:///registry/poi/locations/towns/bonita_vista
     town2: reg:///registry/poi/locations/towns/mine_whitehill
     distance: 75600   # 90 мин

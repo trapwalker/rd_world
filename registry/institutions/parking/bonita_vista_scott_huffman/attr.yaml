@@ -1,0 +1,10 @@
+﻿__cls__  : Parking
+_cls     : Parking
+
+title    : Scott_Huffman
+photo    : "static/content/institutions/parking/bonita_vista_scott_huffman.png"
+abstract : false
+
+hometown : reg:///registry/poi/locations/towns/bonita_vista
+
+text: Вы можете оставить тут свой автомобиль. Я присмотрю за ним за небольшую плату.
