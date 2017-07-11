@@ -268,7 +268,7 @@ states:
                   agent.profile._agent_model.armory_shield_off(event)
 
               # Если это не игрок из быстрой игры то дать ему пострелять какоето время, иначе закончить квест
-              if agent.quick_flag:
+              if not agent.teaching_flag:
                   agent.profile.del_note(uid=quest.dc.current_note_uid, time=event.time)
                   go('final')
               else:
@@ -328,7 +328,7 @@ states:
       on_enter: |
           if agent.profile._agent_model:
               agent.profile._agent_model.set_teaching_state("city")
-              if agent.quick_flag:  # Обнулить время появления в игре, чтобы игроки с квестами обучения не получали преимущество
+              if not agent.teaching_flag:  # Обнулить время появления в игре, чтобы игроки с квестами обучения не получали преимущество
                   agent.profile._agent_model.time_quick_game_start = event.time
           else:
               log('Error!!! Agent model not found: {}'.format(agent))
