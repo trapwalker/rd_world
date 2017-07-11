@@ -88,13 +88,18 @@ states:
           if isinstance(event, OnArmorerTransaction):
               agent.profile.del_note(uid=quest.dc.current_note_uid, time=event.time)
               # сгенерировать квест у мера и запомнить его uid
-              qq = quest.teaching_delivery_quest.instantiate(abstract=False)
-              if qq.generate(event=event, agent=agent):
-                  agent.profile.add_quest(quest=qq, time=event.time)
-                  quest.dc.current_quest_delivery_uid = qq.uid
-                  go('mayor')
+              qq = quest.teaching_delivery_quest
+              if qq.can_instantiate(event=event, agent=agent, hirer=qq.hirer):
+                  qq = quest.teaching_delivery_quest.instantiate(abstract=False)
+                  if qq.generate(event=event, agent=agent):
+                      agent.profile.add_quest(quest=qq, time=event.time)
+                      quest.dc.current_quest_delivery_uid = qq.uid
+                      go('mayor')
+                  else:
+                      log('!!!!!!!!!!!!! Teaching Delivery Quest not generate !!!!!!!!!!!!')
+                      go('final')
               else:
-                  log('!!!!!!!!!!!!! Teaching Delivery Quest not generate !!!!!!!!!!!!')
+                  log('!!!!!!!!!!!!! Teaching Delivery Quest not instantiate !!!!!!!!!!!!')
                   go('final')
 
     - id: mayor

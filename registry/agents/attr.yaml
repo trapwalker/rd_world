@@ -6,7 +6,6 @@ balance: 1000
 car_list: []
 perks: []
 
-teaching_flag: False
 quick_flag: False
 in_location_flag: True
 
