@@ -71,6 +71,74 @@ quests:
 
 
   - parent: reg:///registry/quests/ai_event_quests/traffic
+    generation_group: 'traffic_wh_bv'
+    generation_max_count: 2
+    chance_of_generation: 0.05
+    delay_time: 900
+    routes:
+      - parent: reg:///registry/routes/whitehill_bonita_vista
+    towns_protect:
+      - reg:///registry/poi/locations/towns/whitehill
+      - reg:///registry/poi/locations/towns/bonita_vista
+  - parent: reg:///registry/quests/ai_event_quests/traffic
+    generation_group: 'traffic_bv_wh'
+    generation_max_count: 2
+    chance_of_generation: 0.05
+    delay_time: 900
+    routes:
+      - parent: reg:///registry/routes/whitehill_bonita_vista
+        reverse: True
+    towns_protect:
+      - reg:///registry/poi/locations/towns/whitehill
+      - reg:///registry/poi/locations/towns/bonita_vista
+
+
+  - parent: reg:///registry/quests/ai_event_quests/traffic
+    generation_group: 'traffic_bv_pr'
+    generation_max_count: 2
+    chance_of_generation: 0.05
+    delay_time: 900
+    routes:
+      - parent: reg:///registry/routes/prior_bonita_vista_simple
+    towns_protect:
+      - reg:///registry/poi/locations/towns/bonita_vista
+      - reg:///registry/poi/locations/towns/prior
+  - parent: reg:///registry/quests/ai_event_quests/traffic
+    generation_group: 'traffic_pr_bv'
+    generation_max_count: 2
+    chance_of_generation: 0.05
+    delay_time: 900
+    routes:
+      - parent: reg:///registry/routes/prior_bonita_vista_simple
+        reverse: True
+    towns_protect:
+      - reg:///registry/poi/locations/towns/bonita_vista
+      - reg:///registry/poi/locations/towns/prior
+
+
+  - parent: reg:///registry/quests/ai_event_quests/traffic
+    generation_group: 'traffic_pl_bv'
+    generation_max_count: 2
+    chance_of_generation: 0.05
+    delay_time: 900
+    routes:
+      - parent: reg:///registry/routes/paloma_bonita_vista_simple
+    towns_protect:
+      - reg:///registry/poi/locations/towns/bonita_vista
+      - reg:///registry/poi/locations/towns/paloma
+  - parent: reg:///registry/quests/ai_event_quests/traffic
+    generation_group: 'traffic_bv_pl'
+    chance_of_generation: 0.05
+    delay_time: 900
+    routes:
+      - parent: reg:///registry/routes/paloma_bonita_vista_simple
+        reverse: True
+    towns_protect:
+      - reg:///registry/poi/locations/towns/bonita_vista
+      - reg:///registry/poi/locations/towns/paloma
+
+
+  - parent: reg:///registry/quests/ai_event_quests/traffic
     generation_group: 'traffic_wh_gs_north'
     chance_of_generation: 0.1
     delay_time: 300
@@ -217,6 +285,37 @@ quests:
         reverse: True
     towns_protect:
       - reg:///registry/poi/locations/towns/prior
+    max_loot_count: 2
+    loot_rec_list:
+      - item: reg:///registry/items/usable/tanks/tank_full/tank_10l
+        chance: 0.5
+      - item: reg:///registry/items/usable/tanks/tank_full/tank_20l
+        chance: 0.5
+
+
+  - parent: reg:///registry/quests/ai_event_quests/traffic
+    generation_group: 'traffic_bv_gs_east'
+    chance_of_generation: 0.1
+    delay_time: 300
+    routes:
+      - parent: reg:///registry/routes/towns_gs/bonita_vista_gs_east
+    towns_protect:
+      - reg:///registry/poi/locations/towns/bonita_vista
+    max_loot_count: 2
+    loot_rec_list:
+      - item: reg:///registry/items/usable/tanks/tank_empty/tank_10l
+        chance: 0.5
+      - item: reg:///registry/items/usable/tanks/tank_empty/tank_20l
+        chance: 0.5
+  - parent: reg:///registry/quests/ai_event_quests/traffic
+    generation_group: 'traffic_bv_gs_east'
+    chance_of_generation: 0.1
+    delay_time: 300
+    routes:
+      - parent: reg:///registry/routes/towns_gs/bonita_vista_gs_east
+        reverse: True
+    towns_protect:
+      - reg:///registry/poi/locations/towns/bonita_vista
     max_loot_count: 2
     loot_rec_list:
       - item: reg:///registry/items/usable/tanks/tank_full/tank_10l
