@@ -1,5 +1,4 @@
-﻿__cls__: MeasureRadiation
-_cls: MeasureRadiation
+﻿_cls: registry.quests.measure_radiation.MeasureRadiation
 
 caption: Измерение радиации
 first_state: begin
@@ -18,27 +17,6 @@ map_icon_circle: static/img/quests/map_icons/radiation_circle.png
 #    hirer = UniReferenceField(tags='client', caption=u'Заказчик', doc=u'NPC-заказчик квеста')
 #    town = UniReferenceField(tags='client', caption=u'Город выдачи', doc=u'Город выдачи квеста')
 #    agent = UniReferenceField(tags='client', caption=u'Агент', doc=u'Исполнитель квеста')
-
-on_generate: |
-    if not quest.can_generate(event):
-        raise Cancel("QUEST CANCEL: reason: generate rules")
-
-    if quest.hirer.hometown is None:
-        raise Cancel("QUEST MeasureRadiation CANCEL: {} hometown is None.".format(quest.hirer.hometown))
-
-    if not quest.measure_points_generator:
-        raise Cancel("QUEST MeasureRadiation CANCEL: Empty generator list.")
-    quest.init_measure_points()
-
-    quest.init_level()
-    quest.init_deadline()
-
-    quest.total_reward_money = quest.measuring_price * quest.measure_count
-    quest.generate_reward()  # Устанавливаем награду за квест (карму, деньги и итемы)
-    quest.init_text() # Инициализируем строку описания квеста
-
-on_start: |
-    quest.log(text=u'Начат квест по замеру уровня радиации.', event=event, position=quest.hirer.hometown.position)
 
 states:
     - id: begin
