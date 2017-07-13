@@ -1,0 +1,7 @@
+﻿_cls     : RadioTower
+doc      : Paloma
+abstract : false
+
+position          : {x: 12507663, y: 27053100}
+p_observing_range : 20000
+radio_point_name  : Paloma

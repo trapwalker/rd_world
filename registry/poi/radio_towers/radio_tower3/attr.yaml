@@ -1,8 +1,0 @@
-﻿__cls__  : RadioTower
-_cls     : RadioTower
-doc      : Палома
-abstract : false
-
-position          : {x: 12507663, y: 27053100}
-p_observing_range : 20000
-radio_point_name  : Палома
