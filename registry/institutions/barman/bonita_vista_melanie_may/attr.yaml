@@ -48,28 +48,29 @@ quests:
       inv_icon_small  : static/content/items/quest_item/courier_medalion/mid.png
       inv_icon_xsmall : static/content/items/quest_item/courier_medalion/mid.png
     cache_points_generator:        # Список областей генерации тайников
-      - {position: [12526236, 27046498], radius: 2000}
-      - {position: [12532663, 27037884], radius: 2000}
-      - {position: [12533728, 27030718], radius: 2000}
-      - {position: [12540653, 27036295], radius: 2000}
-      - {position: [12544008, 27052446], radius: 2000}
-      - {position: [12540036, 27057249], radius: 2000}
-      - {position: [12548109, 27037899], radius: 2000}
-      - {position: [12525965, 27037933], radius: 2000}
-      - {position: [12534265, 27060604], radius: 2000}
-      - {position: [12550959, 27048068], radius: 2000}
+      - {position: [12526236, 27046498], radius: 1000}
+      - {position: [12532663, 27037884], radius: 1000}
+      - {position: [12533728, 27030718], radius: 1000}
+      - {position: [12540653, 27036295], radius: 1000}
+      - {position: [12544008, 27052446], radius: 1000}
+      - {position: [12540036, 27057249], radius: 1000}
+      - {position: [12548109, 27037899], radius: 1000}
+      - {position: [12525965, 27037933], radius: 1000}
+      - {position: [12534265, 27060604], radius: 1000}
+      - {position: [12550959, 27048068], radius: 1000}
 
 
   - parent: reg:///registry/quests/delivery_quest/delivery_passenger_quest   # ДОСТАВКА ПАССАЖИРА
-    _cls   : DeliveryPassengerQuest
-    person_delivery_cost: 1000     # Стоимость доставки отдельного пассажира
+    _cls: DeliveryPassengerQuest
     reward_relation_hirer: 5.0     # Награда в отношение за выполнение
     karma_coef: 0.0                # Часть кармы от общей награды
     money_coef: 1.0                # Часть нуокйнов от общей награды
-    destination_list:              # Список возможных пунктов назначения
-      - reg:///registry/poi/locations/towns/prior
-      - reg:///registry/poi/locations/towns/whitehill
+    person_delivery_cost: 200      # Стоимость доставки отдельного пассажира
     delivery_set_list:
       -
         - reg:///registry/items/passengers/female
         - reg:///registry/items/passengers/male
+    destination_list:              # Список возможных пунктов назначения
+      - reg:///registry/poi/locations/towns/prior
+      - reg:///registry/poi/locations/towns/whitehill
+      - reg:///registry/poi/locations/towns/paloma
