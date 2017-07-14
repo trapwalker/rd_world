@@ -1,5 +1,9 @@
-﻿__cls__ : Institution
-_cls : Institution
+﻿_cls : SlotWorker
+
 doc     : Оружейник
 text    : Вас приветствует оружейник!
 type    : armorer
+
+clear_cost  : 0.025  # Стоимость освобождения слота
+setup_cost  : 0.05   # Стоимость установки в слот
+margin_slot : 0.2    # Маржа с которой работает NPC

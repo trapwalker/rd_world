@@ -1,5 +1,5 @@
-﻿__cls__  : Institution
-_cls  : Institution
+﻿_cls : SlotWorker
+
 title    : Jeff_Saigon
 photo    : "static/content/institutions/armorer/prior_jeff_saigon.png"
 abstract : false

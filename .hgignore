@@ -11,3 +11,4 @@ altitude/**.jpg
 tilesets
 state/*
 slope/**.png
+*.pyc
