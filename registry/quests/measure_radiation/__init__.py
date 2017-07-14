@@ -4,10 +4,15 @@ import logging
 log = logging.getLogger(__name__)
 
 from sublayers_server.model.registry_me.classes import notes
-from sublayers_server.model.registry_me.classes.quests import Quest, MarkerMapObject, QuestRange, Cancel, QuestState_
 from sublayers_server.model.registry_me.tree import IntField, FloatField, ListField, EmbeddedDocumentField, UUIDField
+from sublayers_server.model.quest_events import OnCancel, OnTimer, OnNote
+from sublayers_server.model.registry_me.classes.quests import (
+    Quest, MarkerMapObject, QuestRange, Cancel, QuestState_,
+    FailByCancelState, FailState, WinState,
+)
 
 import random
+from functools import partial
 
 
 class MeasureRadiation(Quest):
@@ -65,8 +70,87 @@ class MeasureRadiation(Quest):
         self.log(text=u'Начат квест по замеру уровня радиации.', event=event, position=self.hirer.hometown.position)
 
 
+    ####################################################################################################################
     ## Перечень состояний ##############################################################################################
-    #class (QuestState_):
+    class begin(QuestState_):
+        def on_enter_(self, quest, event):
+            # Создание таймера deadline
+            if quest.deadline:
+                quest.set_timer(event=event, name='deadline_measuring_quest', delay=quest.deadline)
+
+            quest.set_timer(event=event, name='test_measuring_quest', delay=5)
+            quest.init_notes(event=event)
+            q_item = event.server.reg.get('/registry/items/quest_item/quest_item_1').instantiate()
+            quest.agent.profile.quest_inventory.add_item(agent=quest.agent, item=q_item, event=event)
+            # todo: Разобраться почему quest_inventory.add_item требует в аргументах агента
+
+        def on_event_(self, quest, event):
+            agent = quest.agent
+            go = partial(quest.go, event=event)
+            set_timer = partial(quest.set_timer, event=event)
+
+            if isinstance(event, OnCancel):
+                penalty_money = quest.reward_money / 2.
+                if agent.profile.balance >= penalty_money:
+                    agent.profile.set_balance(time=event.time, delta=-penalty_money)
+                    quest.log(text=u'Уплачен штраф в размере {}nc.'.format(penalty_money), event=event, position=quest.hirer.hometown.position)
+                    go("cancel_fail")
+                else:
+                   quest.npc_replica(npc=quest.hirer, replica=u"Для отказа от квеста заплатите штраф {}nc.".format(penalty_money), event=event)
+
+            if isinstance(event, OnTimer):
+                if event.name == 'deadline_measuring_quest':
+                    go("fail")
+                if event.name == 'test_measuring_quest':
+                    quest.check_notes(event=event)
+                    if len(quest.measure_notes) == 0:
+                        go("reward")
+                    else:
+                        set_timer(name='test_measuring_quest', delay=5)
+    ####################################################################################################################
+    class reward(QuestState_):
+        def on_enter_(self, quest, event):
+            agent = quest.agent
+
+            quest.log(text=u'Измерения завершены. Вернитесь за наградой.', event=event, position=quest.hirer.hometown.position)
+            agent.profile.set_relationship(time=event.time, npc=quest.hirer, dvalue=quest.reward_relation_hirer)
+            quest.dc.reward_note_uid = agent.profile.add_note(
+                quest_uid=quest.uid,
+                note_class=notes.QuestRadiationNPCFinish,
+                time=event.time,
+                npc=quest.hirer,
+                page_caption=u'Измерение<br>радиации',
+                btn1_caption=u'<br>Отчитаться',
+            )
+
+        def on_event_(self, quest, event):
+            agent = quest.agent
+            go = partial(quest.go, event=event)
+
+            if isinstance(event, OnNote):
+                # review: event.result == True
+                if (event.note_uid == quest.dc.reward_note_uid) and (event.result == True):
+                    agent.profile.set_balance(time=event.time, delta=quest.reward_money)
+                    agent.profile.del_note(uid=quest.dc.reward_note_uid, time=event.time)
+                    go('win')
+    ####################################################################################################################
+    class cancel_fail(FailByCancelState):
+        def on_enter_(self, quest, event):
+            quest.delete_notes(event=event)
+            quest.log(text=u'Квест провален.', event=event)
+    ####################################################################################################################
+    class win(WinState):
+        def on_enter_(self, quest, event):
+            quest.delete_notes(event=event)
+            quest.log(text=u'Квест выполнен.', event=event)
+    ####################################################################################################################
+    class fail(FailState):
+        def on_enter_(self, quest, event):
+            quest.delete_notes(event=event)
+            quest.agent.profile.set_relationship(time=event.time, npc=quest.hirer, dvalue=-quest.level * 2)  # изменение отношения c нпц
+            quest.agent.profile.set_karma(time=event.time, dvalue=-quest.reward_karma)  # todo: изменение кармы
+            quest.log(text=u'Квест провален.', event=event)
+    ####################################################################################################################
     ####################################################################################################################
     def init_measure_points(self):
         self.measure_count = self.measure_count_range.get_random_int()
