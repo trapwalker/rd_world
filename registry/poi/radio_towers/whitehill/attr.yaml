@@ -1,0 +1,7 @@
+﻿_cls     : RadioTower
+doc      : Whitehill
+abstract : false
+
+position          : {x: 12482409, y: 27045819}
+p_observing_range : 20000
+radio_point_name  : Whitehill

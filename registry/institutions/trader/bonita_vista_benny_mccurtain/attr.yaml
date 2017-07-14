@@ -257,16 +257,14 @@ price_list: # правила завоза
 
 quests:
   - parent: reg:///registry/quests/delivery_from_cache   # ПОИСК ПОСЫЛКИ
-    __cls__: DeliveryFromCache
-    _cls   : DeliveryFromCache
+    _cls: DeliveryFromCache
     design_speed: 3.0              # Скорость в px/с с которой должен двигаться игрок чтобы успеть (если = 0, то время не ограничено)
     cache_radius: 50               # Радиус, в котором можно обнаружить тайник
     delivery_set_list:             # Список посылок
       -
         - parent: reg:///registry/items/usable/package
-          __cls__: Package
-          _cls   : Package
-          base_price : 600         # тут надо указать стоимость посылки для корректного расчета награды
+          _cls: Package
+          base_price: 600          # тут надо указать стоимость посылки для корректного расчета награды
           post_activate_items:
             - reg:///registry/items/slot_item/mechanic_item/cooling/add_radiator/add_radiator_1
             - reg:///registry/items/slot_item/mechanic_item/cooling/coolant/coolant_1
@@ -275,28 +273,24 @@ quests:
             - reg:///registry/items/slot_item/mechanic_item/cooling/radiator/radiator_1
             - reg:///registry/items/slot_item/mechanic_item/cooling/thermostat/thermostat_1
         - parent: reg:///registry/items/usable/package
-          __cls__: Package
-          _cls   : Package
-          base_price : 2000        # тут надо указать стоимость посылки для корректного расчета награды
+          _cls: Package
+          base_price: 2000         # тут надо указать стоимость посылки для корректного расчета награды
           post_activate_items:
             - reg:///registry/items/slot_item/tuner_item/b_bumper/b_bumper_001
             - reg:///registry/items/slot_item/tuner_item/f_bumper/f_bumper_001
         - parent: reg:///registry/items/usable/package
-          __cls__: Package
-          _cls   : Package
-          base_price : 1000        # тут надо указать стоимость посылки для корректного расчета награды
+          _cls: Package
+          base_price: 1000         # тут надо указать стоимость посылки для корректного расчета награды
           post_activate_items:
             - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/oc_14
         - parent: reg:///registry/items/usable/package
-          __cls__: Package
-          _cls   : Package
-          base_price : 3500        # тут надо указать стоимость посылки для корректного расчета награды
+          _cls: Package
+          base_price: 3500         # тут надо указать стоимость посылки для корректного расчета награды
           post_activate_items:
             - reg:///registry/items/slot_item/armorer_item/weapons/cannons/m242
         - parent: reg:///registry/items/usable/package
-          __cls__: Package
-          _cls   : Package
-          base_price : 150         # тут надо указать стоимость посылки для корректного расчета награды
+          _cls: Package
+          base_price: 150          # тут надо указать стоимость посылки для корректного расчета награды
           post_activate_items:
             - reg:///registry/items/usable/map_weapon/rockets/sa16_igla
             - reg:///registry/items/usable/map_weapon/mines_effect/mine_vs50
@@ -318,60 +312,24 @@ quests:
         - reg:///registry/items/usable/ammo/30bb
         - reg:///registry/items/usable/ammo/88bb
     cache_points_generator:        # Список областей генерации тайников
-      - position:
-          x: 12495851
-          y: 27058167
-        radius: 500
-      - position:
-          x: 12496638
-          y: 27046631
-        radius: 500
-      - position:
-          x: 12506784
-          y: 27044410
-        radius: 500
-      - position:
-          x: 12504149
-          y: 27047785
-        radius: 500
-      - position:
-          x: 12504153
-          y: 27048205
-        radius: 500
-      - position:
-          x: 12501119
-          y: 27051925
-        radius: 500
-      - position:
-          x: 12523986
-          y: 27056980
-        radius: 500
-      - position:
-          x: 12524465
-          y: 27045626
-        radius: 500
-      - position:
-          x: 12515634
-          y: 27048769
-        radius: 500
-      - position:
-          x: 12497334
-          y: 27049801
-        radius: 500
+      - {position: [12495851, 27058167], radius: 500}
+      - {position: [12496638, 27046631], radius: 500}
+      - {position: [12506784, 27044410], radius: 500}
+      - {position: [12504149, 27047785], radius: 500}
+      - {position: [12504153, 27048205], radius: 500}
+      - {position: [12501119, 27051925], radius: 500}
+      - {position: [12523986, 27056980], radius: 500}
+      - {position: [12524465, 27045626], radius: 500}
+      - {position: [12515634, 27048769], radius: 500}
+      - {position: [12497334, 27049801], radius: 500}
 
 
   - parent: reg:///registry/quests/delivery_quest/delivery_quest_simple   # ДОСТАВКА ГРУЗА
-    __cls__: DeliveryQuestSimple
-    _cls   : DeliveryQuestSimple
+    _cls: DeliveryQuestSimple
     reward_relation_hirer: 5.0     # Награда в отношение за выполнение
     karma_coef: 0.0                # Часть кармы от общей награды
     money_coef: 1.0                # Часть нуокйнов от общей награды
     total_delivery_money_coef: 0.5 # Множитель общей стоимости награды за квест от стоимости доставляемого товара
-    recipient_list:                # Список возможных получателей доставки
-      - reg:///registry/institutions/trader/prior_hershey_la_palmas
-      - reg:///registry/institutions/mayor/prior_donnie_alma
-      - reg:///registry/institutions/trader/whitehill_bob_ferolito
-      - reg:///registry/institutions/mayor/whitehill_manny_askorti
     delivery_set_list:             # Список возможных комплектов для доставки
       -
         - reg:///registry/items/stuff/alcohol/alcohol_001
@@ -382,3 +340,9 @@ quests:
         - reg:///registry/items/stuff/warm_clothes/warm_clothes_003
         - reg:///registry/items/stuff/water/water_002
     reward_items_list: []          # Список возможных комплектов для награды
+    recipient_list:                # Список возможных получателей доставки
+      - reg:///registry/institutions/mayor/prior_donnie_alma
+      - reg:///registry/institutions/trader/prior_hershey_la_palmas
+      - reg:///registry/institutions/mayor/whitehill_manny_askorti
+      - reg:///registry/institutions/trader/whitehill_bob_ferolito
+      - reg:///registry/institutions/trader/paloma_shaun_fisher
