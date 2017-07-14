@@ -7,8 +7,8 @@ from sublayers_server.model.registry_me.classes import notes
 from sublayers_server.model.registry_me.tree import IntField, FloatField, ListField, EmbeddedDocumentField, UUIDField
 from sublayers_server.model.quest_events import OnCancel, OnTimer, OnNote
 from sublayers_server.model.registry_me.classes.quests import (
-    Quest, MarkerMapObject, QuestRange, Cancel, QuestState_,
-    FailByCancelState, FailState, WinState,
+    Quest, MarkerMapObject, QuestRange, Cancel,
+    QuestState_, FailByCancelState, FailState, WinState,
 )
 
 import random
