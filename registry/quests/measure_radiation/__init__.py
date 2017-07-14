@@ -4,7 +4,7 @@ import logging
 log = logging.getLogger(__name__)
 
 from sublayers_server.model.registry_me.classes import notes
-from sublayers_server.model.registry_me.classes.quests import Quest, MarkerMapObject, QuestRange, Cancel
+from sublayers_server.model.registry_me.classes.quests import Quest, MarkerMapObject, QuestRange, Cancel, QuestState_
 from sublayers_server.model.registry_me.tree import IntField, FloatField, ListField, EmbeddedDocumentField, UUIDField
 
 import random
@@ -64,6 +64,9 @@ class MeasureRadiation(Quest):
     def on_start_(self, event, **kw):
         self.log(text=u'Начат квест по замеру уровня радиации.', event=event, position=self.hirer.hometown.position)
 
+
+    ## Перечень состояний ##############################################################################################
+    #class (QuestState_):
     ####################################################################################################################
     def init_measure_points(self):
         self.measure_count = self.measure_count_range.get_random_int()
