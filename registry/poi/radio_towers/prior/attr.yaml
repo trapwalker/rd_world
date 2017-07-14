@@ -1,0 +1,7 @@
+﻿_cls     : RadioTower
+doc      : Prior
+abstract : false
+
+position          : {x: 12539432, y: 27043853}
+p_observing_range : 20000
+radio_point_name  : Prior

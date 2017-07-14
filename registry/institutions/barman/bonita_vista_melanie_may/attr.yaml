@@ -10,8 +10,7 @@ hometown : reg:///registry/poi/locations/towns/bonita_vista
 
 quests:
   - parent: reg:///registry/quests/search_courier   # ПОИСК КУРЬЕРА
-    __cls__: SearchCourier
-    _cls   : SearchCourier
+    _cls: SearchCourier
     design_speed: 3.0              # Скорость в px/с с которой должен двигаться игрок чтобы успеть (если = 0, то время не ограничено)
     cache_radius: 50               # Радиус, в котором можно обнаружить тайник
     loot_set_list:                 # Список хлама
@@ -39,63 +38,29 @@ quests:
       - reg:///registry/mobiles/cars/middle/cars/dodge_challenger
       - reg:///registry/mobiles/cars/middle/offroad/defender
       - reg:///registry/mobiles/cars/middle/offroad/gelandewagen
-
     courier_medallion:
       parent: reg:///registry/items/quest_item
-      __cls__: QuestItem
-      _cls   : QuestItem
-      title       : Платиновая фишка
-      description : Предмет погибшего курьера. Необходимо доставить Melanie_May.
+      _cls: QuestItem
+      title: Платиновая фишка
+      description: Предмет погибшего курьера. Необходимо доставить Melanie_May.
       inv_icon_big    : static/content/items/quest_item/courier_medalion/big.png
       inv_icon_mid    : static/content/items/quest_item/courier_medalion/mid.png
       inv_icon_small  : static/content/items/quest_item/courier_medalion/mid.png
       inv_icon_xsmall : static/content/items/quest_item/courier_medalion/mid.png
-
     cache_points_generator:        # Список областей генерации тайников
-      - position:
-          x: 12526236
-          y: 27046498
-        radius: 2000
-      - position:
-          x: 12532663
-          y: 27037884
-        radius: 2000
-      - position:
-          x: 12533728
-          y: 27030718
-        radius: 2000
-      - position:
-          x: 12540653
-          y: 27036295
-        radius: 2000
-      - position:
-          x: 12544008
-          y: 27052446
-        radius: 2000
-      - position:
-          x: 12540036
-          y: 27057249
-        radius: 2000
-      - position:
-          x: 12548109
-          y: 27037899
-        radius: 2000
-      - position:
-          x: 12525965
-          y: 27037933
-        radius: 2000
-      - position:
-          x: 12534265
-          y: 27060604
-        radius: 2000
-      - position:
-          x: 12550959
-          y: 27048068
-        radius: 2000
+      - {position: [12526236, 27046498], radius: 2000}
+      - {position: [12532663, 27037884], radius: 2000}
+      - {position: [12533728, 27030718], radius: 2000}
+      - {position: [12540653, 27036295], radius: 2000}
+      - {position: [12544008, 27052446], radius: 2000}
+      - {position: [12540036, 27057249], radius: 2000}
+      - {position: [12548109, 27037899], radius: 2000}
+      - {position: [12525965, 27037933], radius: 2000}
+      - {position: [12534265, 27060604], radius: 2000}
+      - {position: [12550959, 27048068], radius: 2000}
 
 
   - parent: reg:///registry/quests/delivery_quest/delivery_passenger_quest   # ДОСТАВКА ПАССАЖИРА
-    __cls__: DeliveryPassengerQuest
     _cls   : DeliveryPassengerQuest
     person_delivery_cost: 1000     # Стоимость доставки отдельного пассажира
     reward_relation_hirer: 5.0     # Награда в отношение за выполнение

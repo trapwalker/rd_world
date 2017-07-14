@@ -6,3 +6,5 @@ text     : Вас приветствует продавец машин!
 type     : hangar
 
 car_list : []
+margin   : 0.2 # Маржа с которой торгует NPC
+trading  : 0   # Навык торговли NPC

@@ -1,5 +1,4 @@
-﻿__cls__  : Institution
-_cls     : Institution
+﻿_cls     : Institution
 title    : Donnie_Alma
 photo    : "static/content/institutions/mayor/prior_donnie_alma.png"
 abstract : false
@@ -9,114 +8,47 @@ hometown : reg:///registry/poi/locations/towns/prior
 
 quests:
   - parent: reg:///registry/quests/measure_radiation   # ЗАМЕР РАДИАЦИИ
-    __cls__: MeasureRadiation
-    _cls   : MeasureRadiation
+    _cls: MeasureRadiation
     reward_relation_hirer: 5.0     # Награда в отношение за выполнение
     karma_coef: 0.0                # Часть кармы от общей награды
     money_coef: 1.0                # Часть нуокйнов от общей награды
     reward_items_list: []          # Список возможных комплектов для награды
-
-    measuring_price: 75           # Стоимость одного замера радиации
+    measuring_price: 17            # Стоимость одного замера радиации
     measuring_radius: 100          # Максимальный радиус измерения
-    measure_points_generator:      # Список областей генерации пунктов замеров
-      - position:
-          x: 12531997
-          y: 27031177
-        radius: 2000
-      - position:
-          x: 12534992
-          y: 27033137
-        radius: 2000
-      - position:
-          x: 12535969
-          y: 27033872
-        radius: 2000
-      - position:
-          x: 12543127
-          y: 27031722
-        radius: 2000
-      - position:
-          x: 12545957
-          y: 27037056
-        radius: 2000
-      - position:
-          x: 12541920
-          y: 27034356
-        radius: 2000
-      - position:
-          x: 12536233
-          y: 27038052
-        radius: 2000
-      - position:
-          x: 12540711
-          y: 27048177
-        radius: 2000
-      - position:
-          x: 12536163
-          y: 27046876
-        radius: 2000
-      - position:
-          x: 12540731
-          y: 27056717
-        radius: 2000
     measure_count_range:           # Диапазон количетсва измерений
       min: 3
-      max: 7
+      max: 6
+    measure_points_generator:      # Список областей генерации пунктов замеров
+      - {position: [12531997, 27031177], radius: 400}
+      - {position: [12534992, 27033137], radius: 400}
+      - {position: [12535969, 27033872], radius: 400}
+      - {position: [12543127, 27031722], radius: 400}
+      - {position: [12545957, 27037056], radius: 400}
+      - {position: [12541920, 27034356], radius: 400}
+      - {position: [12536233, 27038052], radius: 400}
+      - {position: [12540711, 27048177], radius: 400}
+      - {position: [12536163, 27046876], radius: 400}
+      - {position: [12540731, 27056717], radius: 400}
 
 
   - parent: reg:///registry/quests/map_activate_item/map_activate_radars   # УСТАНОВКА РАДАРА
-    __cls__: MapActivateRadarsQuest
-    _cls   : MapActivateRadarsQuest
-
-    activate_price: 100            # Награда за активацию предмета
-    activate_radius: 50            # Радиус активации итема
-
+    _cls: MapActivateRadarsQuest
     reward_relation_hirer: 5.0     # Награда в отношение за выполнение
-
-    activate_points_generator:
-      - position:
-          x: 12531997
-          y: 27031177
-        radius: 1000
-      - position:
-          x: 12534992
-          y: 27033137
-        radius: 1000
-      - position:
-          x: 12535969
-          y: 27033872
-        radius: 1000
-      - position:
-          x: 12543127
-          y: 27031722
-        radius: 1000
-      - position:
-          x: 12545957
-          y: 27037056
-        radius: 1000
-      - position:
-          x: 12541920
-          y: 27034356
-        radius: 1000
-      - position:
-          x: 12536233
-          y: 27038052
-        radius: 1000
-      - position:
-          x: 12540711
-          y: 27048177
-        radius: 1000
-      - position:
-          x: 12536163
-          y: 27046876
-        radius: 1000
-      - position:
-          x: 12540731
-          y: 27056717
-        radius: 1000
-
+    activate_price: 17             # Награда за активацию предмета
+    activate_radius: 50            # Радиус активации итема
     activate_items_generator:
       - reg:///registry/items/usable/map_weapon/radars/radar_001
+    activate_points_generator:
+      - {position: [12531997, 27031177], radius: 200}
+      - {position: [12534992, 27033137], radius: 200}
+      - {position: [12535969, 27033872], radius: 200}
+      - {position: [12543127, 27031722], radius: 200}
+      - {position: [12545957, 27037056], radius: 200}
+      - {position: [12541920, 27034356], radius: 200}
+      - {position: [12536233, 27038052], radius: 200}
+      - {position: [12540711, 27048177], radius: 200}
+      - {position: [12536163, 27046876], radius: 200}
+      - {position: [12540731, 27056717], radius: 200}
 
 
   - parent: reg:///registry/quests/delivery_from_cache   # ПОИСК ПОСЫЛКИ

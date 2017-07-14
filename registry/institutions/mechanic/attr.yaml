@@ -1,5 +1,9 @@
-﻿__cls__ : Institution
-_cls : Institution
+﻿__cls__ : Mechanic
+_cls : Mechanic
 doc     : Механик
 text    : Вас приветствует механик!
 type    : mechanic
+
+margin  : 0.2      # Маржа за ремонт
+trading : 0        # Навык торговли NPC
+repair_cost : 0.5  # Коэффициент стоимости ремонта от стоимости машины
