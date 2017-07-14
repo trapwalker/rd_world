@@ -1,5 +1,5 @@
-﻿__cls__  : Institution
-_cls     : Institution
+﻿__cls__ : Mechanic
+_cls : Mechanic
 
 title    : Lenny_Nachreiner
 photo    : "static/content/institutions/mechanic/bonita_vista_lenny_nachreiner.png"

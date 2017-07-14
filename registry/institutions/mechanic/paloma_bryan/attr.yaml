@@ -1,5 +1,5 @@
-﻿__cls__  : Institution
-_cls     : Institution
+﻿__cls__ : Mechanic
+_cls : Mechanic
 
 title    : Bryan
 photo    : "static/content/institutions/mechanic/paloma_bryan.png"
