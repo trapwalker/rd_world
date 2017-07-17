@@ -79,9 +79,9 @@ quests:
             - reg:///registry/items/slot_item/tuner_item/f_bumper/f_bumper_001
         - parent: reg:///registry/items/usable/package
           _cls: Package
-          base_price: 1000         # тут надо указать стоимость посылки для корректного расчета награды
+          base_price: 250         # тут надо указать стоимость посылки для корректного расчета награды
           post_activate_items:
-            - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/oc_14
+            - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/00_oc_14
         - parent: reg:///registry/items/usable/package
           _cls: Package
           base_price: 3500         # тут надо указать стоимость посылки для корректного расчета награды
