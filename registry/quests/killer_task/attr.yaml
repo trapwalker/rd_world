@@ -13,7 +13,7 @@ max_karma_victims_by_lvl: 10  # Сколько кармы от стартово�
 deadline_koeff_by_lvl: 0.1  # На сколько больше времени будет выдаваться на каждую жертву в зависимости от уровня квеста
 price_victim_koeff_by_lvl: 0.1  # На сколько больше будет суммарная награда в зависимости от уровня квеста
 reward_relation_hirer: 2  # Награда в отношения с НПС, выдавшим квест
-
+reward_exp: 0  # Награда за 1 убийство
 
 first_state: begin
 current_state: ~
@@ -78,6 +78,7 @@ states:
                   (not quest.unique_victims or not quest.in_victims(event.agent))):
                   quest.append_victim(event.agent, event)  # todo: Исправить добавление агента 
                   quest.log(text=u'{} убит.'.format(event.agent.login), event=event, position=quest.hirer.hometown.position)
+                  quest.agent.profile.set_exp(time=event.time, dvalue=quest.reward_exp)
                   if len(quest.victims) >= quest.count_to_kill:
                       go('note_kill_reward')
 

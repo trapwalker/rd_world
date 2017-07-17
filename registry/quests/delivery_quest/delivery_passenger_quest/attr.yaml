@@ -90,6 +90,7 @@ states:
           quest.agent.profile.set_balance(time=event.time, delta=quest.reward_money)
           quest.log(text=u'Получено вознаграждение в размере {}nc.'.format(quest.reward_money), event=event, position=quest.destination.position)
           quest.agent.profile.set_karma(time=event.time, dvalue=quest.reward_karma)
+          quest.agent.profile.set_exp(time=event.time, dvalue=quest.reward_exp)
           agent.profile.set_relationship(time=event.time, npc=quest.hirer, dvalue=quest.reward_relation_hirer)  # изменение отношения к нпц
           if len(quest.reward_items) > 0:
               quest.dc.reward_note_uid = agent.profile.add_note(

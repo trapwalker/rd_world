@@ -1,0 +1,85 @@
+﻿__cls__ : Car
+_cls : Car
+title:       "Econoline"         # Модель атомобиля
+class_car:   "Средний"           # Класс автомобиля
+name_car:    "Econoline"         # Название атомобиля
+
+price:              2150         # Цена у продавца (л) (>= 0)
+needed_driving:     5            # Требование к прокачке уровня вождения
+
+max_hp:             135          # Максимальное количество прочности (> 0)
+hp:                 135          # Текущее количество прочности (> 0)
+
+inventory:                       # При заполнении инвентаря необходимо учитывать его размер
+    size: 16
+    items: []
+
+p_observing_range:     1150     # Радиус обзора автомобиля (м) (>= 0)
+
+p_vigilance:           0        # Коэффициент зоркости (0..1)
+p_visibility_min:      0.38     # Минимальная заметность автомобиля (0..1) при 0 автомобиль невидим
+p_visibility_max:      0.63     # Максимальная заметность автомобиля (0..1) при 0 автомобиль невидим
+p_obs_range_rate_min:  0.5      # Коэффициент минимального радиуса обзора автомобиля (0..1)
+p_obs_range_rate_max:  1        # Коэффициент максимального радиуса обзора автомобиля (0..1)
+
+r_min:                 7        # Минимальный радиус разворота (м) (> 0)
+ac_max:                22       # Перегрузка с которой входит в поворот автомобиль (м/c^2) (> 0)
+a_forward:             9        # Ускорение при езде вперед (м/c^2)
+a_backward:            -4.5     # Ускорение при езде назад (м/c^2)
+a_braking:             -10.5    # Ускорение при торможении (м/c^2)
+
+max_control_speed:     55.5556  # Абсолютная максимальная скорость, скорость до которой будет размечен спидометр (м/с) (>= 0)
+v_forward:             33       # Максимальная скорость без штрафов местности при движении вперед (м/с) (0 .. max_control_speed)
+v_backward:            -20      # Максимальная скорость без штрафов местности при движении назад (м/с) (0 .. max_control_speed)
+
+max_fuel:              70       # Максимальное количество топлива, объем бака (л) (>= 0)
+fuel:                  70       # Текущее количество топлива (0 .. max_fuel)
+p_fuel_rate:           0.0204   # Расход топлива, тратится только в движении (л/с) (>= 0)
+
+# Ссылка на картинку автомобиля в ангаре
+hangar_car:            "static/content/mobiles/cars/middle/offroad/ford_econoline/side.png"
+
+# Ссылки на верстку автомобиля у оружейника
+armorer_car:           static/content/mobiles/cars/middle/offroad/ford_econoline/armorer_car.html
+armorer_sectors_svg:   static/content/mobiles/cars/armorer_sectors.svg
+
+# Ссылки на верстку автомобиля у тюнера
+tuner_car:             static/content/mobiles/cars/middle/offroad/ford_econoline/tuner_car.html
+
+# Ссылки на верстку автомобиля у механика
+mechanic_engine:        static/content/mechanic_systems/engines/engine_1/engine.html                    # двигатель
+mechanic_transmission:  static/content/mechanic_systems/transmissions/transmission_1/transmission.html  # трансмиссия
+mechanic_brakes:        static/content/mechanic_systems/brakes/brakes_1/brakes.html                     # тормоза
+mechanic_cooling:       static/content/mechanic_systems/coolings/cooling_1/cooling.html                 # охлаждение
+mechanic_suspension:    static/content/mechanic_systems/suspensions/suspension_1/suspension.html        # подвеска
+
+# Ниже перечислены все слоты доступные на автомобиле. В название содержится расположение слота.
+# Сейчас до 9 слотов на автомобиль: slot_(Front, Center, Back)(Left, Center, Right).
+# Все слоты закоментированы, кроме переднего центрального.
+slot_CC: ~
+
+# Настройка ограничений направления оружия из слота. Значением является строка в котороую включены первые буквы
+# соответствующих направлений (Front, Back, Left, Right)
+# Все слоты закоментированы, кроме переднего центрального.
+slot_CC_f: FBLR_2
+
+# Настройка слотов для Тюнера
+slot_t1: ~
+slot_t13: ~
+slot_t14: ~
+slot_t15: ~
+slot_t17: ~
+
+slot_t2: ~
+slot_t4: ~
+slot_t5: ~
+slot_t7: ~
+slot_t9: ~
+slot_t10: ~
+slot_t11: ~
+slot_t12: ~
+
+# Ссылки на иконки для инвентаря/ангара
+inv_icon_big: static/content/mobiles/cars/middle/offroad/ford_econoline/inventory/big.png
+inv_icon_mid: static/content/mobiles/cars/middle/offroad/ford_econoline/inventory/mid.png
+inv_icon_small: static/content/mobiles/cars/middle/offroad/ford_econoline/inventory/small.png

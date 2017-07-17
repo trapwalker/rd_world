@@ -5,6 +5,7 @@ caption: Установка радаров
 first_state: begin
 list_icon: static/img/quests/icons/radar.png
 
+reward_exp: 0  # Награда за 1 установленный итем
 
 map_icon_full: static/img/quests/map_icons/radar_full.png
 map_icon_circle: static/img/quests/map_icons/radar_circle.png
@@ -27,9 +28,9 @@ on_generate: |
     if not quest.activate_points_generator:
         raise Cancel("QUEST ActivateRadiation CANCEL: Empty generator list.")
     if not quest.activate_items_generator:
-        raise Cancel("QUEST DeliveryFromCache CANCEL: Empty empty delivery_set_list.")
+        raise Cancel("QUEST ActivateRadiation CANCEL: Empty empty delivery_set_list.")
     if quest.hirer.hometown is None:
-        raise Cancel("QUEST MeasureRadiation CANCEL: {} hometown is None.".format(quest.hirer.hometown))
+        raise Cancel("QUEST ActivateRadiation CANCEL: {} hometown is None.".format(quest.hirer.hometown))
 
     quest.init_level()
     quest.init_activate_points()

@@ -105,6 +105,7 @@ states:
     - id: reward
       parent: reg:///registry/quest_states/test
       on_enter: |
+          agent.profile.set_exp(time=event.time, dvalue=quest.reward_exp)
           agent.profile.set_karma(time=event.time, dvalue=quest.reward_karma)
           agent.profile.set_relationship(time=event.time, npc=quest.hirer, dvalue=quest.reward_relation_hirer)
           go('win')
