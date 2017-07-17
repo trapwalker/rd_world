@@ -5,7 +5,7 @@ photo    : "static/content/institutions/trader/prior_hershey_la_palmas.png"
 abstract : true
 
 trading      : 20 # навык торговли
-#refresh_time : 600 # время в сек между завозами в секундах (0 или None - никогда)
+refresh_time : 16920 # 4,7 часов
 
 ignore_list : [] # то что не будет покупать
 hometown    : reg:///registry/poi/locations/towns/prior

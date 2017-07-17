@@ -47,7 +47,6 @@ class MeasureRadiation(Quest):
     )
     ####################################################################################################################
     def on_generate_(self, event, **kw):
-        raise Cancel("QUEST CANCEL: BECAUSE!")  # todo: fix this
         # TODO: Clean deprecated root handler and add super call then
         if not self.can_generate(event):
             raise Cancel("QUEST CANCEL: reason: generate rules")
