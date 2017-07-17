@@ -13,6 +13,7 @@ quests:
     _cls: SearchCourier
     design_speed: 3.0              # Скорость в px/с с которой должен двигаться игрок чтобы успеть (если = 0, то время не ограничено)
     cache_radius: 50               # Радиус, в котором можно обнаружить тайник
+    reward_exp: 100                # Опыт
     loot_set_list:                 # Список хлама
       -
         - reg:///registry/items/stuff/alcohol/alcohol_001
@@ -66,6 +67,7 @@ quests:
     karma_coef: 0.0                # Часть кармы от общей награды
     money_coef: 1.0                # Часть нуокйнов от общей награды
     person_delivery_cost: 200      # Стоимость доставки отдельного пассажира
+    reward_exp: 200                # Опыт
     delivery_set_list:
       -
         - reg:///registry/items/passengers/female

@@ -22,11 +22,11 @@ on_generate: |
         raise Cancel("QUEST CANCEL: reason: generate rules")
 
     if not quest.activate_points_generator:
-        raise Cancel("QUEST ActivateRadiation CANCEL: Empty generator list.")
+        raise Cancel("QUEST ActivateItems CANCEL: Empty generator list.")
     if not quest.activate_items_generator:
-        raise Cancel("QUEST DeliveryFromCache CANCEL: Empty empty delivery_set_list.")
+        raise Cancel("QUEST ActivateItems CANCEL: Empty empty delivery_set_list.")
     if quest.hirer.hometown is None:
-        raise Cancel("QUEST MeasureRadiation CANCEL: {} hometown is None.".format(quest.hirer.hometown))
+        raise Cancel("QUEST ActivateItems CANCEL: {} hometown is None.".format(quest.hirer.hometown))
 
     quest.init_level()
     quest.init_activate_points()

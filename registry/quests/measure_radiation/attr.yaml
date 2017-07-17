@@ -7,6 +7,8 @@ list_icon: static/img/quests/icons/rad_ico.png
 map_icon_full: static/img/quests/map_icons/radiation_full.png
 map_icon_circle: static/img/quests/map_icons/radiation_circle.png
 
+reward_exp: 0  # Награда за 1 замер
+
 #    text_short = StringField(tags='client', caption=u'Короткий текст квеста', doc=u'Может строиться и меняться по шаблону')
 #    typename = StringField(tags='client', caption=u'Тип квеста', doc=u'Может быть произвольным')
 #    list_icon = StringField(tags='client', caption=u'Пиктограмма для списков', doc=u'Мальенькая картинка для отображения в списках')  # todo: use UrlField

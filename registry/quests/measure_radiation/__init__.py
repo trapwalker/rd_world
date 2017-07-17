@@ -166,11 +166,12 @@ class MeasureRadiation(Quest):
 
     def init_text(self):
         self.text_short = u"Обследуйте {:.0f} точек.".format(self.measure_count)
-        self.text = u"Замерьте уровень радиации в {:.0f} точек{}. Награда: {:.0f}nc и {:.0f} кармы.".format(
+        self.text = u"Замерьте уровень радиации в {:.0f} точек{}. Награда: {:.0f}nc, {:.0f} кармы и {:.0f} ед. опыта".format(
             self.measure_count,
             u"" if not self.deadline else u" за {}".format(self.deadline_to_str()),
             self.reward_money,
             self.reward_karma,
+            self.reward_exp * self.measure_count,
         )
 
     def init_notes(self, event):
@@ -195,6 +196,7 @@ class MeasureRadiation(Quest):
                 position = self.agent.profile._agent_model.car.position(time=event.time)
                 if note.is_near(position=position):
                     self.log(text=u'Произведено измерение.', event=event, position=position)
+                    self.agent.profile.set_exp(time=event.time, dvalue=self.reward_exp)
                     self.measure_notes.remove(note_uid)
                     self.agent.profile.del_note(uid=note_uid, time=event.time)
 
