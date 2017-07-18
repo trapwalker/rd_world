@@ -231,10 +231,10 @@ class MapActivateItemQuest(Quest):
             quest.log(text=u'Квест провален.', event=event)
 
     ####################################################################################################################
-    # class win(WinState):  # info берём от родителя
-    #     def on_enter_(self, quest, event):
-    #         quest.delete_notes(event=event)
-    #         quest.log(text=u'Квест выполнен.', event=event)
+    class win(WinState):
+        def on_enter_(self, quest, event):
+            quest.delete_notes(event=event)
+            quest.log(text=u'Квест выполнен.', event=event)
 
     ####################################################################################################################
     class fail(FailState):
