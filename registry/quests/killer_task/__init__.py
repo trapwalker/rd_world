@@ -56,6 +56,11 @@ class KillerQuest(Quest):
         )
         return d
 
+    def as_unstarted_quest_dict(self):
+        d = super(KillerQuest, self).as_unstarted_quest_dict()
+        d.update(count_to_kill=self.count_to_kill,)
+        return d
+
     def get_available_lvl(self):
         # Уровень квеста зависит от отношений, но не выше уровня игрока
         relation = self.agent.profile.get_relationship(npc=self.hirer)
