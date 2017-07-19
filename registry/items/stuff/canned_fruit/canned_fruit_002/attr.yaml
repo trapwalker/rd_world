@@ -7,7 +7,7 @@ abstract : false
 title       : Консервы фруктовые
 description : Несколько фруктовых консерв.
 
-base_price : 150
+base_price : 38
 stack_size : 1
 
 inv_icon_big    : static/content/items/stuff/canned_fruit/canned_fruit_002/big.png

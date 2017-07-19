@@ -7,7 +7,7 @@ abstract : false
 title       : Питьевая вода
 description : Несколько больших канистр с водой.
 
-base_price : 200
+base_price : 50
 stack_size : 1
 
 inv_icon_big    : static/content/items/stuff/water/water_002/big.png

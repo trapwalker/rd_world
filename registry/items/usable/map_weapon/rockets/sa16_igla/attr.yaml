@@ -7,6 +7,7 @@ description : Советский переносной зенитный раке�
 
 base_price : 100
 stack_size : 10
+amount     : 10
 
 activate_type : self
 activate_time : 2.0

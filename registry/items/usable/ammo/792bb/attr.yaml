@@ -7,6 +7,7 @@ title       : Патроны<br>7.92мм/ББ
 description : Бронебойные патроны калибра 7.92 мм для пулемётов.
 
 stack_size : 100
+amount     : 100
 base_price : 160
 
 inv_icon_big    : static/content/items/usable/ammo/792bb/big.png

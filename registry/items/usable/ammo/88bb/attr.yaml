@@ -7,6 +7,7 @@ title       : Снаряды<br>88мм/ББ
 description : Бронебойные снаряды калибра 88 мм для артиллерийских систем.
 
 stack_size : 10
+amount     : 10
 base_price : 175
 
 inv_icon_big    : static/content/items/usable/ammo/88bb/big.png

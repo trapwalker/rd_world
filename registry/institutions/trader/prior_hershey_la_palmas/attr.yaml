@@ -269,36 +269,30 @@ quests:
       -
         - parent: reg:///registry/items/usable/package
           _cls: Package
-          base_price: 600          # тут надо указать стоимость посылки для корректного расчета награды
+          base_price: 50          # тут надо указать стоимость посылки для корректного расчета награды
+          post_activate_items:
+            - reg:///registry/items/usable/map_weapon/mines_effect/mine_vs50
+        - parent: reg:///registry/items/usable/package
+          _cls: Package
+          base_price: 100          # тут надо указать стоимость посылки для корректного расчета награды
           post_activate_items:
             - reg:///registry/items/slot_item/mechanic_item/cooling/add_radiator/add_radiator_1
-            - reg:///registry/items/slot_item/mechanic_item/cooling/coolant/coolant_1
-            - reg:///registry/items/slot_item/mechanic_item/cooling/fan/fan_1
-            - reg:///registry/items/slot_item/mechanic_item/cooling/pump/pump_1
-            - reg:///registry/items/slot_item/mechanic_item/cooling/radiator/radiator_1
-            - reg:///registry/items/slot_item/mechanic_item/cooling/thermostat/thermostat_1
         - parent: reg:///registry/items/usable/package
           _cls: Package
-          base_price: 2000         # тут надо указать стоимость посылки для корректного расчета награды
-          post_activate_items:
-            - reg:///registry/items/slot_item/tuner_item/b_bumper/b_bumper_001
-            - reg:///registry/items/slot_item/tuner_item/f_bumper/f_bumper_001
-        - parent: reg:///registry/items/usable/package
-          _cls   : Package
-          base_price: 250          # тут надо указать стоимость посылки для корректного расчета награды
-          post_activate_items:
-            - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/00_oc_14
-        - parent: reg:///registry/items/usable/package
-          _cls: Package
-          base_price: 3500         # тут надо указать стоимость посылки для корректного расчета награды
-          post_activate_items:
-            - reg:///registry/items/slot_item/armorer_item/weapons/cannons/m242
-        - parent: reg:///registry/items/usable/package
-          _cls: Package
-          base_price: 150          # тут надо указать стоимость посылки для корректного расчета награды
+          base_price: 100         # тут надо указать стоимость посылки для корректного расчета награды
           post_activate_items:
             - reg:///registry/items/usable/map_weapon/rockets/sa16_igla
-            - reg:///registry/items/usable/map_weapon/mines_effect/mine_vs50
+        - parent: reg:///registry/items/usable/package
+          _cls: Package
+          base_price: 200          # тут надо указать стоимость посылки для корректного расчета награды
+          post_activate_items:
+            - reg:///registry/items/slot_item/mechanic_item/cooling/fan/fan_1
+            - reg:///registry/items/slot_item/mechanic_item/cooling/pump/pump_1
+        - parent: reg:///registry/items/usable/package
+          _cls: Package
+          base_price: 250         # тут надо указать стоимость посылки для корректного расчета награды
+          post_activate_items:
+            - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/00_oc_14
     loot_set_list:                 # Список хлама
       -
         - reg:///registry/items/stuff/alcohol/alcohol_001
