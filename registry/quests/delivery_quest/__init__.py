@@ -4,7 +4,7 @@ import logging
 log = logging.getLogger(__name__)
 
 from sublayers_server.model.registry_me.classes import notes
-from sublayers_server.model.registry_me.tree import FloatField, RegistryLinkField, ListField, EmbeddedNodeField
+from sublayers_server.model.registry_me.tree import FloatField, RegistryLinkField, ListField, EmbeddedNodeField, StringField
 from sublayers_server.model.quest_events import OnNote
 from sublayers_server.model.registry_me.classes.quests import (
     Cancel, QuestState_, WinState,
@@ -21,7 +21,7 @@ class DeliveryQuest(Quest):
     recipient_list = ListField(
         root_default=list,
         caption=u"Список возможных получателей доставки",
-        field=RegistryLinkField(document_type='sublayers_server.model.registry_me.classes.poi.Institution'),
+        field=StringField(),
     )
     recipient = RegistryLinkField(
         caption=u'Получатель доставки',
