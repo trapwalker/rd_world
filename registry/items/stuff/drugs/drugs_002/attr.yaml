@@ -7,7 +7,7 @@ abstract : false
 title       : Каннабис
 description : Упаковка конопли.
 
-base_price : 100
+base_price : 25
 stack_size : 1
 
 inv_icon_big    : static/content/items/stuff/drugs/drugs_002/big.png

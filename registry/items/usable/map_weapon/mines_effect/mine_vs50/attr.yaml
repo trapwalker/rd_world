@@ -8,6 +8,7 @@ description : Противопехотная мина, фугасная, наж�
 
 base_price : 50
 stack_size : 10
+amount     : 10
 
 activate_type : self
 

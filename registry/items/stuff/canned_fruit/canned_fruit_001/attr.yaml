@@ -7,7 +7,7 @@ abstract : false
 title       : Консерва фруктовая
 description : Одна фруктовая консерва.
 
-base_price : 100
+base_price : 25
 stack_size : 1
 
 inv_icon_big    : static/content/items/stuff/canned_fruit/canned_fruit_001/big.png

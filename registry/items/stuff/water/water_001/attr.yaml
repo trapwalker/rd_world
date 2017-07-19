@@ -7,7 +7,7 @@ abstract : false
 title       : Бутылки с водой
 description : Несколько небольших бутылок с водой.
 
-base_price : 100
+base_price : 25
 stack_size : 1
 
 inv_icon_big    : static/content/items/stuff/water/water_001/big.png

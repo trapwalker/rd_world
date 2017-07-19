@@ -7,7 +7,7 @@ abstract : false
 title       : Медикаменты №2
 description : Обеззараживающие, перевязочные, антибиотики, иммуностимуляторы, обезболивающие, простые инструменты и всё, у чего не кончился срок годности.
 
-base_price : 100
+base_price : 25
 stack_size : 1
 
 inv_icon_big    : static/content/items/stuff/medical_supplies/medical_supplies_002/big.png

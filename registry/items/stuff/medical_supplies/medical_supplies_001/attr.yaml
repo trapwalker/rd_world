@@ -7,7 +7,7 @@ abstract : false
 title       : Медикаменты
 description : Обеззараживающие, обезболивающие, перевязочные, антибиотики, иммуностимуляторы, мединструменты и все, у чего не кончился срок годности.
 
-base_price : 500
+base_price : 125
 stack_size : 1
 
 inv_icon_big    : static/content/items/stuff/medical_supplies/medical_supplies_001/big.png
