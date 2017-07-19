@@ -52,7 +52,6 @@ quests:
       - {position: [12536163, 27046876], radius: 200}
       - {position: [12540731, 27056717], radius: 200}
 
-
   - parent: reg:///registry/quests/delivery_from_cache   # ПОИСК ПОСЫЛКИ
     _cls: DeliveryFromCache
     design_speed: 3.0              # Скорость в px/с с которой должен двигаться игрок чтобы успеть (если = 0, то время не ограничено)

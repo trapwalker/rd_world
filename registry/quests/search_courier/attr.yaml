@@ -13,10 +13,9 @@ map_icon_circle: static/img/quests/map_icons/courier_circle.png
 caption: Найти курьера
 
 courier_car_list:              # Список машин на которых может оказаться курьер
-  - reg:///registry/mobiles/cars/light/motorcycles/honda_hornet
-  - reg:///registry/mobiles/cars/light/motorcycles/triumph_america
-  - reg:///registry/mobiles/cars/middle/sports/delorean_dmc12
-  - reg:///registry/mobiles/cars/middle/cars/chrysler_new_yorker
-  - reg:///registry/mobiles/cars/middle/cars/dodge_challenger
-  - reg:///registry/mobiles/cars/middle/offroad/defender
-  - reg:///registry/mobiles/cars/middle/offroad/gelandewagen
+  - reg:///registry/mobiles/cars/middle/cars/vw_beetle
+  - reg:///registry/mobiles/cars/middle/cars/vw_golf
+  - reg:///registry/mobiles/cars/middle/offroad/ford_econoline
+  - reg:///registry/mobiles/cars/middle/offroad/ford_f_150
+  - reg:///registry/mobiles/cars/middle/vans/barkas_b1000kb
+  - reg:///registry/mobiles/cars/middle/vans/citroen_hy
