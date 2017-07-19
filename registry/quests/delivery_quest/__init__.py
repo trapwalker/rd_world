@@ -93,9 +93,9 @@ class DeliveryQuest(Quest):
         distance = self.hirer.hometown.distance_to(self.recipient.hometown)
         distance_cost = round(distance / 100.)  # todo: уточнить стоимость 1px пути
 
-        if distance_cost == 0:
-            log.warning('Delivery Quest: Warning!!! Distance from hirer<{!r}> to recipient<{!r}> = {}. Change recipient'.format(
-                self.hirer, self.recipient, distance))
+        # if distance_cost == 0:  # Пока этот тип квестов используется только для обучения
+        #     log.warning('Delivery Quest: Warning!!! Distance from hirer<{!r}> to recipient<{!r}> = {}. Change recipient'.format(
+        #         self.hirer, self.recipient, distance))
 
         self.total_reward_money = self.total_delivery_money_coef * cost_delivery_items + distance_cost
         self.generate_reward()  # Устанавливаем награду за квест (карму, деньги и итемы)
