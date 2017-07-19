@@ -39,7 +39,7 @@ class DeliveryQuestSimple(DeliveryQuest):
 
     def init_delivery_set(self):
         self.delivery_set = []
-        for i in range(self.level):
+        for i in range(self.level + 3):
             # Выбор только по первому элементу списка (т.к. в простой реализации квеста естьтолько список итемов а не пресеты)
             choice = random.choice(self.delivery_set_list[0])
             item = choice.instantiate(amount=choice.amount)
