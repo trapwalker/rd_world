@@ -1,5 +1,6 @@
 __cls__  : Trader
-_cls  : Trader
+_cls     : Trader
+
 title    : Hershey_La_Palmas
 photo    : "static/content/institutions/trader/prior_hershey_la_palmas.png"
 abstract : true
