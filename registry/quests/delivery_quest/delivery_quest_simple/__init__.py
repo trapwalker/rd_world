@@ -80,7 +80,7 @@ class DeliveryQuestSimple(DeliveryQuest):
         distance = self.init_distance()
         self.init_deadline(distance)
 
-        distance_cost = round(distance / 100)  # todo: уточнить стоимость 1px пути
+        distance_cost = round(distance / 1000)  # todo: уточнить стоимость 1px пути
 
         if distance_cost == 0:
             log.warning('DeliverySimple Quest: Warning!!! Distance from hirer<{!r}> to recipient<{!r}> = {}. Change recipient'.format(
