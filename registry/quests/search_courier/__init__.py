@@ -26,10 +26,6 @@ class SearchCourier(DeliveryFromCache):
             document_type='sublayers_server.model.registry_me.classes.mobiles.Car',
         ),
     )
-    courier_car = EmbeddedNodeField(
-        document_type='sublayers_server.model.registry_me.classes.mobiles.Car',
-        caption=u"Машина курьера",
-    )
 
     courier_medallion = EmbeddedNodeField(
         document_type='sublayers_server.model.registry_me.classes.quest_item.QuestItem',
@@ -39,19 +35,18 @@ class SearchCourier(DeliveryFromCache):
 
     def init_delivery_set(self):
         self.delivery_set = []
-
         # Тут гененрация ненужных вещей
         loot_set = []
+        randomise_loot_list = self.loot_set_list[0]
         for i in range(random.choice([3, 4])):  # 3-4 предмета
             # Выбор только по первому элементу списка (т.к. в простой реализации квеста есть только 1 список итемов, а не пресеты)
-            choice = random.choice(self.loot_set_list[0])
+            choice = random.choice(randomise_loot_list)
             item = choice.instantiate(amount=choice.amount)
             loot_set.append(item)
         self.loot_set = loot_set
 
         # Выбор машинки курьера
-        choice = random.choice(self.courier_car_list)
-        self.courier_car = choice.instantiate()
+        self.dc.courier_car = random.choice(self.courier_car_list)
 
     def init_text(self):
         self.text_short = u"Найти пропавшего курьера."
@@ -86,10 +81,10 @@ class SearchCourier(DeliveryFromCache):
             position=self.cache_point.position.as_point(),
             life_time=life_time,
             items=items,
-            sub_class_car=self.courier_car.sub_class_car,
+            sub_class_car=self.dc.courier_car.sub_class_car,
             car_direction=0,
             donor_v=0,
-            donor_example=self.courier_car,
+            donor_example=self.dc.courier_car,
             agent_viewer=None,
         ).post()
 
@@ -104,10 +99,10 @@ class SearchCourier(DeliveryFromCache):
     def on_generate_(self, event, **kw):
         if not self.can_generate(event):
             raise Cancel("QUEST CANCEL: reason: generate rules")
-
         if self.hirer.hometown is None:
             raise Cancel("QUEST SearchCourier CANCEL: {} hometown is None.".format(self.hirer.hometown))
-        if not self.courier_car_list:
+
+        if not self.courier_car_list:  # первый раз почему-то долгая операция. Дальше быстрее.
             raise Cancel("QUEST SearchCourier CANCEL: Empty courier_car_list.")
 
         self.init_level()
@@ -116,9 +111,7 @@ class SearchCourier(DeliveryFromCache):
 
         distance = self.init_distance()
         if distance == 0:
-            pass
-            # todo: настроить логирование в квестах
-            # log('SearchCourier Quest: Warning!!! Distance from hirer<{}> to point<{}> = {}'.format(self.hirer, self.cache_point, distance))
+            log.warning('SearchCourier Quest: Warning!!! Distance from hirer<{}> to point<{}> = {}'.format(self.hirer, self.cache_point, distance))
         self.init_deadline(distance=distance)
 
         self.generate_reward()  # Устанавливаем награду за квест (карму, деньги и итемы)
