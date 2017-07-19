@@ -7,7 +7,7 @@ abstract : false
 title       : Злаковые консервы
 description : Ящик со злаковыми консервами.
 
-base_price : 200
+base_price : 50
 stack_size : 1
 
 inv_icon_big    : static/content/items/stuff/canned_cereal/canned_cereal_001/big.png

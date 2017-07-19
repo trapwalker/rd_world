@@ -7,7 +7,7 @@ abstract : false
 title       : Теплая одежда №1
 description : Небольшой тюк разной теплой одежды.
 
-base_price : 50
+base_price : 13
 stack_size : 1
 
 inv_icon_big    : static/content/items/stuff/warm_clothes/warm_clothes_001/big.png

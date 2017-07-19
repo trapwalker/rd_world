@@ -7,7 +7,7 @@ abstract : false
 title       : Довоенный виски
 description : Ящик довоенного виски с промышленной маркировкой для состоятельной аудитории. Такого уже не сделают.
 
-base_price : 1000
+base_price : 250
 stack_size : 1
 
 inv_icon_big    : static/content/items/stuff/alcohol/alcohol_001/big.png

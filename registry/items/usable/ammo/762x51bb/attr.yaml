@@ -2,11 +2,13 @@
 _cls     : AmmoBullets
 doc      : Патроны 7.62мм/ББ
 abstract : false
+tags     : [teaching]
 
 title       : Патроны<br>7.62мм/ББ
 description : Бронебойные патроны калибра 7.62 мм для пулемётов.
 
 stack_size : 100
+amount     : 100
 base_price : 150
 
 inv_icon_big    : static/content/items/usable/ammo/762x51bb/big.png

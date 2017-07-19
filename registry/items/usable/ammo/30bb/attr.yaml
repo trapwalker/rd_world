@@ -7,6 +7,7 @@ title       : Снаряды<br>30мм/ББ
 description : Бронебойные снаряды калибра 30 мм для артиллерийских систем.
 
 stack_size : 10
+amount     : 10
 base_price : 60
 
 inv_icon_big    : static/content/items/usable/ammo/30bb/big.png

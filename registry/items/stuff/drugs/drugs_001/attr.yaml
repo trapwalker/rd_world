@@ -7,7 +7,7 @@ abstract : false
 title       : Кокаин
 description : Несколько упаковок кокаина.
 
-base_price : 150
+base_price : 38
 stack_size : 1
 
 inv_icon_big    : static/content/items/stuff/drugs/drugs_001/big.png

@@ -7,7 +7,7 @@ abstract : false
 title       : Самогон
 description : Самодельный алкоголь.
 
-base_price : 250
+base_price : 63
 stack_size : 1
 
 inv_icon_big    : static/content/items/stuff/alcohol/alcohol_002/big.png

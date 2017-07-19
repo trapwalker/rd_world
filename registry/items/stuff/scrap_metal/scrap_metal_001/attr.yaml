@@ -7,7 +7,7 @@ abstract : false
 title       : Металлолом
 description : Всякий хлам.
 
-base_price : 100
+base_price : 25
 stack_size : 1
 
 inv_icon_big    : static/content/items/stuff/scrap_metal/scrap_metal_001/big.png

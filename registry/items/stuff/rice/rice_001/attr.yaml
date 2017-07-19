@@ -7,7 +7,7 @@ abstract : false
 title       : Рис (мешок)
 description : Большой мешок риса.
 
-base_price : 100
+base_price : 25
 stack_size : 1
 
 inv_icon_big    : static/content/items/stuff/rice/rice_001/big.png

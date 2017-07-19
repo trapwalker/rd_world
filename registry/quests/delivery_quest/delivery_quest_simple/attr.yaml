@@ -23,7 +23,7 @@ on_generate: |
     distance = quest.init_distance()
     quest.init_deadline(distance)
 
-    distance_cost = round(distance / 100)  # todo: уточнить стоимость 1px пути
+    distance_cost = round(distance / 1000)  # todo: уточнить стоимость 1px пути
 
     if distance_cost == 0:
         log('Delivery Quest: Warning!!! Distance from hirer<{!r}> to recipient<{!r}> = {}. Change recipient'.format(quest.hirer, quest.recipient, distance))

@@ -7,7 +7,7 @@ abstract : false
 title       : Теплая одежда №2
 description : Ящик разной теплой одежды.
 
-base_price : 100
+base_price : 25
 stack_size : 1
 
 inv_icon_big    : static/content/items/stuff/warm_clothes/warm_clothes_002/big.png

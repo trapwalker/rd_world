@@ -7,7 +7,7 @@ abstract : false
 title       : Мясные консервы
 description : Ящик с мясными консервами.
 
-base_price : 500
+base_price : 125
 stack_size : 1
 
 inv_icon_big    : static/content/items/stuff/canned_meat/canned_meat_001/big.png
