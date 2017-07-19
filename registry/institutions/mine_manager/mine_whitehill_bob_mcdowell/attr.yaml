@@ -145,14 +145,6 @@ quests:
         - reg:///registry/items/usable/ammo/23bzt
         - reg:///registry/items/usable/ammo/30bb
         - reg:///registry/items/usable/ammo/88bb
-    courier_car_list:              # Список машин на которых может оказаться курьер
-      - reg:///registry/mobiles/cars/light/motorcycles/honda_hornet
-      - reg:///registry/mobiles/cars/light/motorcycles/triumph_america
-      - reg:///registry/mobiles/cars/middle/sports/delorean_dmc12
-      - reg:///registry/mobiles/cars/middle/cars/chrysler_new_yorker
-      - reg:///registry/mobiles/cars/middle/cars/dodge_challenger
-      - reg:///registry/mobiles/cars/middle/offroad/defender
-      - reg:///registry/mobiles/cars/middle/offroad/gelandewagen
     courier_medallion:
       parent: reg:///registry/items/quest_item
       _cls: QuestItem
