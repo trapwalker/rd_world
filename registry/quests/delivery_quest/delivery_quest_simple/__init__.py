@@ -16,6 +16,8 @@ import random
 
 from sublayers_world.registry.quests.delivery_quest import DeliveryQuest
 
+from sublayers_common.ctx_timer import T
+
 
 class DeliveryQuestSimple(DeliveryQuest):
     def get_available_lvl(self):
@@ -59,9 +61,11 @@ class DeliveryQuestSimple(DeliveryQuest):
     def on_generate_(self, event, **kw):
         if not self.can_generate(event):
             raise Cancel("QUEST CANCEL: reason: generate rules")
-
         self.init_level()
-        self.recipient = random.choice(self.recipient_list)
+        # with T('0000'):  # todo: Самая долгая здесь операция
+        r = random.choice(self.recipient_list)
+
+        self.recipient = r
         self.init_delivery_set()
 
         cost_delivery_items = 0
