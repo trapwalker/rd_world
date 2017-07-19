@@ -36,19 +36,23 @@ items:
   - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/00_rpk
   - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/00_fg_42
   - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/00_mg_08
+  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/01_negev_ng7
+  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/01_m249_saw
+  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/01_mg_15
+  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/01_mg_81
 #  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/dshkm
 #  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/dshkm_twin
-#  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/mg15
 #  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/m134_minigun
 #  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/browning_m2
 #  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/gau19
-#  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/m249
 #  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/mk_108
 #  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/mk_108_twin
 
   # Залповое вооружение
   - reg:///registry/items/slot_item/armorer_item/weapons/cannons/medium/00_oerlikon
   - reg:///registry/items/slot_item/armorer_item/weapons/cannons/medium/00_hs_404
+  - reg:///registry/items/slot_item/armorer_item/weapons/cannons/medium/01_lvakan_m_40
+  - reg:///registry/items/slot_item/armorer_item/weapons/cannons/medium/01_bofors_m_45
 #  - reg:///registry/items/slot_item/armorer_item/weapons/cannons/m242
 #  - reg:///registry/items/slot_item/armorer_item/weapons/cannons/zu23_flak
 #  - reg:///registry/items/slot_item/armorer_item/weapons/cannons/2a42

@@ -31,13 +31,6 @@ quests:
         - reg:///registry/items/usable/ammo/23bzt
         - reg:///registry/items/usable/ammo/30bb
         - reg:///registry/items/usable/ammo/88bb
-    courier_car_list:              # Список машин на которых может оказаться курьер
-      - reg:///registry/mobiles/cars/middle/cars/vw_beetle
-      - reg:///registry/mobiles/cars/middle/cars/vw_golf
-      - reg:///registry/mobiles/cars/middle/offroad/ford_econoline
-      - reg:///registry/mobiles/cars/middle/offroad/ford_f_150
-      - reg:///registry/mobiles/cars/middle/vans/barkas_b1000kb
-      - reg:///registry/mobiles/cars/middle/vans/citroen_hy
     courier_medallion:
       parent: reg:///registry/items/quest_item
       _cls: QuestItem
