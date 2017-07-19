@@ -38,7 +38,7 @@ class SearchCourier(DeliveryFromCache):
         # Тут гененрация ненужных вещей
         loot_set = []
         randomise_loot_list = self.loot_set_list[0]
-        for i in range(random.choice([3, 4])):  # 3-4 предмета
+        for i in range(random.choice([1, 2])):  # 1-2 предмета
             # Выбор только по первому элементу списка (т.к. в простой реализации квеста есть только 1 список итемов, а не пресеты)
             choice = random.choice(randomise_loot_list)
             item = choice.instantiate(amount=choice.amount)

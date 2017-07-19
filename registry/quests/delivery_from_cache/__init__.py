@@ -66,7 +66,7 @@ class DeliveryFromCache(DeliveryQuestSimple):
 
         # Тут гененрация ненужных вещей
         self.loot_set = []
-        for i in range(random.choice([3, 4])): # 3-4 предмета
+        for i in range(random.choice([1, 2])):  # 1-2 предмета
             choice = random.choice(self.loot_set_list[0])
             item = choice.instantiate(amount=choice.amount)
             self.loot_set.append(item)
