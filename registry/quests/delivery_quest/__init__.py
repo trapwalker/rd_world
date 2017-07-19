@@ -166,7 +166,7 @@ class DeliveryQuest(Quest):
                         quest.npc_replica(npc=quest.hirer, replica=u"Не хватает места в инвентаре.", event=event)
 
     ####################################################################################################################
-    class win(WinState):
+    class final(WinState):
         def on_enter_(self, quest, event):
             quest.log(text=u'Квест выполнен.', event=event)
 
