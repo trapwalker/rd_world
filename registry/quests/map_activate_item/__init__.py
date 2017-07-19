@@ -157,7 +157,7 @@ class MapActivateItemQuest(Quest):
         distance_cost = round(distance / 100)  # todo: уточнить стоимость 1px пути
 
         if distance_cost == 0:
-            log('MapActivateItemQuest Quest: Warning!!! ')
+            log.warning('MapActivateItemQuest Quest: Warning!!! ')
 
         self.total_reward_money = cost_delivery_items + distance_cost
         self.generate_reward()  # Устанавливаем награду за квест (карму, деньги и итемы)

@@ -16,7 +16,7 @@ from sublayers_server.model.poi_loot_objects import CreatePOILootEvent, QuestPri
 from sublayers_server.model.inventory import ItemState
 from sublayers_server.model.vectors import Point
 
-from sublayers_server.model.registry_me.classes.quests1 import DeliveryQuestSimple
+from sublayers_world.registry.quests.delivery_quest.delivery_quest_simple import DeliveryQuestSimple
 
 
 class DeliveryFromCache(DeliveryQuestSimple):
