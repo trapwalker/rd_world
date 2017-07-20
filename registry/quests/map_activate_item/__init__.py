@@ -20,13 +20,13 @@ class MapActivateItemQuest(Quest):
     activate_radius = FloatField(caption=u'Максимальный радиус активации', tags={'client'})
 
     activate_points_generator = ListField(
-        default=[],
+        root_default=list,
         caption=u"Список областей генерации пунктов замеров",
         field=EmbeddedDocumentField(document_type=MarkerMapObject),
         reinst=True,
     )
     activate_points = ListField(
-        default=[],
+        root_default=list,
         caption=u"Список областей генерации пунктов замеров",
         field=EmbeddedDocumentField(document_type=MarkerMapObject),
         reinst=True,

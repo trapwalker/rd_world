@@ -4,7 +4,7 @@ import logging
 log = logging.getLogger(__name__)
 
 from sublayers_server.model.registry_me.classes import notes
-from sublayers_server.model.registry_me.tree import FloatField, RegistryLinkField, ListField, EmbeddedNodeField
+from sublayers_server.model.registry_me.tree import FloatField, RegistryLinkField, ListField, EmbeddedNodeField, StringField
 from sublayers_server.model.quest_events import OnNote
 from sublayers_server.model.registry_me.classes.quests import (
     Cancel, QuestState_, WinState,
@@ -21,7 +21,7 @@ class DeliveryQuest(Quest):
     recipient_list = ListField(
         root_default=list,
         caption=u"Список возможных получателей доставки",
-        field=RegistryLinkField(document_type='sublayers_server.model.registry_me.classes.poi.Institution'),
+        field=StringField(),
     )
     recipient = RegistryLinkField(
         caption=u'Получатель доставки',
@@ -78,7 +78,14 @@ class DeliveryQuest(Quest):
             raise Cancel("QUEST CANCEL: Empty empty delivery_set_list.")
 
         # log('DeliveryQuest recipient_list len = {}'.format(len(self.recipient_list)))
-        self.recipient = random.choice(self.recipient_list)
+        # todo: Здесь строки! нужно иметь это ввиду
+        uri = random.choice(self.recipient_list)
+        try:
+            r = event.server.reg.get(uri)
+        except:
+            raise Cancel("QUEST CANCEL: uri<{}>  not resolve.".format(uri))
+        self.recipient = r
+
         self.delivery_set = random.choice(self.delivery_set_list)
 
         cost_delivery_items = 0

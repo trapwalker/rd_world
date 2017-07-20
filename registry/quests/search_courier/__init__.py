@@ -4,7 +4,7 @@ import logging
 log = logging.getLogger(__name__)
 
 from sublayers_server.model.registry_me.classes import notes
-from sublayers_server.model.registry_me.tree import RegistryLinkField, ListField, EmbeddedNodeField
+from sublayers_server.model.registry_me.tree import RegistryLinkField, ListField, EmbeddedNodeField, StringField
 from sublayers_server.model.quest_events import OnCancel, OnTimer, OnNote
 from sublayers_server.model.registry_me.classes.quests import (
     Cancel,   QuestState_, FailByCancelState, FailState, WinState,
@@ -18,13 +18,13 @@ from sublayers_server.model.inventory import ItemState
 
 from sublayers_world.registry.quests.delivery_from_cache import DeliveryFromCache
 
+from sublayers_common.ctx_timer import T
+
 
 class SearchCourier(DeliveryFromCache):
     courier_car_list = ListField(
         caption=u"Список возможных машин курьера",
-        field=RegistryLinkField(
-            document_type='sublayers_server.model.registry_me.classes.mobiles.Car',
-        ),
+        field=StringField(),
     )
 
     courier_medallion = EmbeddedNodeField(
@@ -33,7 +33,7 @@ class SearchCourier(DeliveryFromCache):
         tags={'client'},
     )
 
-    def init_delivery_set(self):
+    def init_delivery_set(self, event):
         self.delivery_set = []
         # Тут гененрация ненужных вещей
         loot_set = []
@@ -46,7 +46,11 @@ class SearchCourier(DeliveryFromCache):
         self.loot_set = loot_set
 
         # Выбор машинки курьера
-        self.dc.courier_car = random.choice(self.courier_car_list)
+        uri = random.choice(self.courier_car_list)
+        try:
+            self.dc.courier_car = event.server.reg.get(uri)
+        except:
+            raise Cancel("QUEST CANCEL: uri<{}>  not resolve.".format(uri))
 
     def init_text(self):
         self.text_short = u"Найти пропавшего курьера."
@@ -102,11 +106,12 @@ class SearchCourier(DeliveryFromCache):
         if self.hirer.hometown is None:
             raise Cancel("QUEST SearchCourier CANCEL: {} hometown is None.".format(self.hirer.hometown))
 
+
         if not self.courier_car_list:  # первый раз почему-то долгая операция. Дальше быстрее.
             raise Cancel("QUEST SearchCourier CANCEL: Empty courier_car_list.")
 
         self.init_level()
-        self.init_delivery_set()
+        self.init_delivery_set(event=event)
         self.init_target_point()
 
         distance = self.init_distance()
