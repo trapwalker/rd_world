@@ -8,62 +8,49 @@ abstract : false
 hometown : reg:///registry/poi/locations/towns/prior
 
 car_list:
-
+  # 00 LVL
   # LIGHT
-
   # motorcycles
-
   - reg:///registry/mobiles/cars/light/motorcycles/honda_cy_50
   - reg:///registry/mobiles/cars/light/motorcycles/jawa_cz_355
-#  - reg:///registry/mobiles/cars/light/motorcycles/honda_hornet
-#  - reg:///registry/mobiles/cars/light/motorcycles/triumph_america
-
-  # quadbikes
-
-#  - reg:///registry/mobiles/cars/light/quadbikes/commander_1000
-
   # MIDDLE
-
   # cars
-
   - reg:///registry/mobiles/cars/middle/cars/vw_beetle
   - reg:///registry/mobiles/cars/middle/cars/vw_golf
-#  - reg:///registry/mobiles/cars/middle/cars/chrysler_new_yorker
-#  - reg:///registry/mobiles/cars/middle/cars/dodge_challenger
-
-  # sports
-
-#  - reg:///registry/mobiles/cars/middle/sports/delorean_dmc12
-
   # offroad
-
   - reg:///registry/mobiles/cars/middle/offroad/ford_econoline
   - reg:///registry/mobiles/cars/middle/offroad/ford_f_150
-#  - reg:///registry/mobiles/cars/middle/offroad/defender
-#  - reg:///registry/mobiles/cars/middle/offroad/gelandewagen
-
   # vans
-
   - reg:///registry/mobiles/cars/middle/vans/barkas_b1000kb
   - reg:///registry/mobiles/cars/middle/vans/citroen_hy
-#  - reg:///registry/mobiles/cars/middle/vans/chevrolet_express
-#  - reg:///registry/mobiles/cars/middle/vans/gmc_savana
 
+  # 99 LVL
+  # LIGHT
+  # motorcycles
+  - reg:///registry/mobiles/cars/light/motorcycles/honda_hornet
+  - reg:///registry/mobiles/cars/light/motorcycles/triumph_america
+  # quadbikes
+#  - reg:///registry/mobiles/cars/light/quadbikes/commander_1000
+  # MIDDLE
+  # cars
+  - reg:///registry/mobiles/cars/middle/cars/chrysler_new_yorker
+  - reg:///registry/mobiles/cars/middle/cars/dodge_challenger
+  # sports
+  - reg:///registry/mobiles/cars/middle/sports/delorean_dmc12
+  # offroad
+  - reg:///registry/mobiles/cars/middle/offroad/defender
+  - reg:///registry/mobiles/cars/middle/offroad/gelandewagen
+  # vans
+  - reg:///registry/mobiles/cars/middle/vans/chevrolet_express
+  - reg:///registry/mobiles/cars/middle/vans/gmc_savana
   # CARGO
-
   # buses
-
-#  - reg:///registry/mobiles/cars/cargo/buses/gmc_scenicruiser
+  - reg:///registry/mobiles/cars/cargo/buses/gmc_scenicruiser
 #  - reg:///registry/mobiles/cars/cargo/buses/international_dimex
-
   # tractors
-
-#  - reg:///registry/mobiles/cars/cargo/tractors/international_9800
-#  - reg:///registry/mobiles/cars/cargo/tractors/peterbilt_369
-
+  - reg:///registry/mobiles/cars/cargo/tractors/international_9800
+  - reg:///registry/mobiles/cars/cargo/tractors/peterbilt_369
   # HEAVY
-
   # btrs
-
-#  - reg:///registry/mobiles/cars/heavy/btrs/m113a1
-#  - reg:///registry/mobiles/cars/heavy/btrs/m1126
+  - reg:///registry/mobiles/cars/heavy/btrs/m113a1
+  - reg:///registry/mobiles/cars/heavy/btrs/m1126
