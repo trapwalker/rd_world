@@ -59,17 +59,20 @@ class DeliveryFromCache(DeliveryQuestSimple):
 
     def init_delivery_set(self):
         # Тут гененрация посылок
-        self.delivery_set = []
+        delivery_set = []
         choice = random.choice(self.delivery_set_list[0])
         item = choice.instantiate(amount=choice.amount)
-        self.delivery_set.append(item)
+        delivery_set.append(item)
+        self.delivery_set = delivery_set
 
         # Тут гененрация ненужных вещей
-        self.loot_set = []
+        loot_set = []
+        randomize_loot = self.loot_set_list[0]
         for i in range(random.choice([1, 2])):  # 1-2 предмета
-            choice = random.choice(self.loot_set_list[0])
+            choice = random.choice(randomize_loot)
             item = choice.instantiate(amount=choice.amount)
-            self.loot_set.append(item)
+            loot_set.append(item)
+        self.loot_set = loot_set
 
     def init_target_point(self):
         base_point = random.choice(self.cache_points_generator)
@@ -165,8 +168,8 @@ class DeliveryFromCache(DeliveryQuestSimple):
         self.init_target_point()
 
         distance = self.init_distance()
-        # if distance == 0:
-        #     log('DeliveryFromCache Quest: Warning!!! Distance from hirer<{}> to point<{}> = {}'.format(self.hirer, self.cache_point, distance))
+        if distance == 0:
+            log.warning('DeliveryFromCache Quest: Warning!!! Distance from hirer<{}> to point<{}> = {}'.format(self.hirer, self.cache_point, distance))
         self.init_deadline(distance)
 
         self.generate_reward()  # Устанавливаем награду за квест (карму, деньги и итемы)

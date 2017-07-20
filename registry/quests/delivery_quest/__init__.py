@@ -78,7 +78,14 @@ class DeliveryQuest(Quest):
             raise Cancel("QUEST CANCEL: Empty empty delivery_set_list.")
 
         # log('DeliveryQuest recipient_list len = {}'.format(len(self.recipient_list)))
-        self.recipient = random.choice(self.recipient_list)
+        # todo: Здесь строки! нужно иметь это ввиду
+        uri = random.choice(self.recipient_list)
+        try:
+            r = event.server.reg.get(uri)
+        except:
+            raise Cancel("QUEST CANCEL: uri<{}>  not resolve.".format(uri))
+        self.recipient = r
+
         self.delivery_set = random.choice(self.delivery_set_list)
 
         cost_delivery_items = 0
