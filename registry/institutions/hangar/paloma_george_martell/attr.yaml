@@ -24,6 +24,22 @@ car_list:
   - reg:///registry/mobiles/cars/middle/vans/barkas_b1000kb
   - reg:///registry/mobiles/cars/middle/vans/citroen_hy
 
+  # 01 LVL
+  # LIGHT
+  # motorcycles
+  - reg:///registry/mobiles/cars/light/motorcycles/01_honda_sl90
+  # quadbikes
+  - reg:///registry/mobiles/cars/light/quadbikes/01_polaris_sportsman_90
+  # MIDDLE
+  # cars
+  - reg:///registry/mobiles/cars/middle/cars/01_mazda_luce_1500
+  - reg:///registry/mobiles/cars/middle/cars/01_fiat_croma
+  # offroad
+  - reg:///registry/mobiles/cars/middle/offroad/01_datsun_truck_521
+  # CARGO
+  # buses
+  - reg:///registry/mobiles/cars/cargo/buses/01_bedford_vas
+
   # 99 LVL
   # LIGHT
   # motorcycles
