@@ -21,7 +21,7 @@ class DeliveryPassengerQuest(DeliveryQuestSimple):
     person_delivery_cost = IntField(caption=u'Стоимость достваки одного пассажира', tags={'client'})
 
     destination_list = ListField(
-        default=list,
+        root_default=list,
         caption=u"Список пунктов назначения доставки",
         field=StringField(),
     )
