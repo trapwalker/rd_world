@@ -19,14 +19,14 @@ class MeasureRadiation(Quest):
     measuring_price = IntField(caption=u'Стоимость одного замера радиации', tags={'client'})
     measuring_radius = FloatField(caption=u'Максимальный радиус измерения', tags={'client'})
     measure_points_generator = ListField(
-        default=[],
+        root_default=list,
         caption=u"Список областей генерации пунктов замеров",
         field=EmbeddedDocumentField(document_type=MarkerMapObject, reinst=True),
         reinst=True
     )
     measure_points = ListField(
         tags={'client'},
-        default=[],
+        root_default=list,
         caption=u"Список выбранных пунктов для замеров",
         field=EmbeddedDocumentField(
             document_type='sublayers_server.model.registry_me.classes.quests2.MarkerMapObject'
@@ -40,7 +40,7 @@ class MeasureRadiation(Quest):
     )
     measure_count = IntField(caption=u'Количество замеров', tags={'client'})
     measure_notes = ListField(
-        default=[],
+        root_default=list,
         caption=u"Список активных нотов маркеров на карте",
         field=UUIDField(),
         reinst=True,
