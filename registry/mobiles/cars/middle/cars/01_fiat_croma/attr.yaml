@@ -1,50 +1,50 @@
 ﻿__cls__ : Car
 _cls : Car
-title:       "Challenger"           # Модель атомобиля
+title:       "Croma"                # Модель атомобиля
 class_car:   "Средний"              # Класс автомобиля
-name_car:    "Challenger"           # Название атомобиля
+name_car:    "Croma"                # Название атомобиля
 
-price:              62500           # Цена у продавца (л) (>= 0)
-needed_driving:     55              # Требование к прокачке уровня вождения
+price:              3600            # Цена у продавца (л) (>= 0)
+needed_driving:     0               # Требование к прокачке уровня вождения
 
-max_hp:             120          # Максимальное количество прочности (> 0)
-hp:                 120          # Текущее количество прочности (> 0)
+max_hp:             124          # Максимальное количество прочности (> 0)
+hp:                 124          # Текущее количество прочности (> 0)
 
 inventory:                       # При заполнении инвентаря необходимо учитывать его размер
-    size: 14
+    size: 11
     items: []
 
-p_observing_range:     1250      # Радиус обзора автомобиля (м) (>= 0)
+p_observing_range:     1309      # Радиус обзора автомобиля (м) (>= 0)
 
 p_vigilance:           0         # Коэффициент зоркости (0..1)
-p_visibility_min:      0.32      # Минимальная заметность автомобиля (0..1) при 0 автомобиль невидим
-p_visibility_max:      0.57      # Максимальная заметность автомобиля (0..1) при 0 автомобиль невидим
+p_visibility_min:      0.296     # Минимальная заметность автомобиля (0..1) при 0 автомобиль невидим
+p_visibility_max:      0.546     # Максимальная заметность автомобиля (0..1) при 0 автомобиль невидим
 p_obs_range_rate_min:  0.5       # Коэффициент минимального радиуса обзора автомобиля (0..1)
 p_obs_range_rate_max:  1         # Коэффициент максимального радиуса обзора автомобиля (0..1)
 
-r_min:              6            # Минимальный радиус разворота (м) (> 0)
-ac_max:             22.5         # Перегрузка с которой входит в поворот автомобиль (м/c^2) (> 0)
-a_forward:          10           # Ускорение при езде вперед (м/c^2)
-a_backward:         -5           # Ускорение при езде назад (м/c^2)
-a_braking:          -11          # Ускорение при торможении (м/c^2)
+r_min:              5.6          # Минимальный радиус разворота (м) (> 0)
+ac_max:             21.3         # Перегрузка с которой входит в поворот автомобиль (м/c^2) (> 0)
+a_forward:          9.2          # Ускорение при езде вперед (м/c^2)
+a_backward:         -4.6         # Ускорение при езде назад (м/c^2)
+a_braking:          -10.6        # Ускорение при торможении (м/c^2)
 
 max_control_speed:  55.5556      # Абсолютная максимальная скорость, скорость до которой будет размечен спидометр (м/с) (>= 0)
-v_forward:          25           # Максимальная скорость без штрафов местности при движении вперед (м/с) (0 .. max_control_speed)
-v_backward:         -12.5        # Максимальная скорость без штрафов местности при движении назад (м/с) (0 .. max_control_speed)
+v_forward:          37.5         # Максимальная скорость без штрафов местности при движении вперед (м/с) (0 .. max_control_speed)
+v_backward:         -19.5        # Максимальная скорость без штрафов местности при движении назад (м/с) (0 .. max_control_speed)
 
-max_fuel:           50           # Максимальное количество топлива, объем бака (л) (>= 0)
-fuel:               50           # Текущее количество топлива (0 .. max_fuel)
-p_fuel_rate:        0.0146       # Расход топлива, тратится только в движении (л/с) (>= 0)
+max_fuel:           42           # Максимальное количество топлива, объем бака (л) (>= 0)
+fuel:               42           # Текущее количество топлива (0 .. max_fuel)
+p_fuel_rate:        0.0033       # Расход топлива, тратится только в движении (л/с) (>= 0)
 
 # Ссылка на картинку автомобиля в ангаре
-hangar_car:            "static/content/mobiles/cars/middle/cars/dodge_challenger/side.png"
+hangar_car:            "static/content/mobiles/cars/middle/cars/01_fiat_croma/side.png"
 
 # Ссылки на верстку автомобиля у оружейника
-armorer_car:           static/content/mobiles/cars/middle/cars/dodge_challenger/armorer_car.html
+armorer_car:           static/content/mobiles/cars/middle/cars/01_fiat_croma/armorer_car.html
 armorer_sectors_svg:   static/content/mobiles/cars/armorer_sectors.svg
 
 # Ссылки на верстку автомобиля у тюнера
-tuner_car:             static/content/mobiles/cars/middle/cars/dodge_challenger/tuner_car.html
+tuner_car:             static/content/mobiles/cars/middle/cars/01_fiat_croma/tuner_car.html
 
 # Ссылки на верстку автомобиля у механика
 mechanic_engine:        static/content/mechanic_systems/engines/engine_1/engine.html                    # двигатель
@@ -56,16 +56,12 @@ mechanic_suspension:    static/content/mechanic_systems/suspensions/suspension_1
 # Ниже перечислены все слоты доступные на автомобиле. В название содержится расположение слота.
 # Сейчас до 9 слотов на автомобиль: slot_(Front, Center, Back)(Left, Center, Right).
 # Все слоты закоментированы, кроме переднего центрального.
-slot_FC: ~
 slot_CC: ~
-slot_BC: ~
 
 # Настройка ограничений направления оружия из слота. Значением является строка в котороую включены первые буквы
 # соответствующих направлений (Front, Back, Left, Right)
 # Все слоты закоментированы, кроме переднего центрального.
-slot_FC_f: FRL_4
-slot_CC_f: FRBL_2
-slot_BC_f: RBL_2
+slot_CC_f: FBLR_2
 
 # Настройка слотов для Тюнера
 slot_t1: ~
@@ -84,6 +80,6 @@ slot_t11: ~
 slot_t12: ~
 
 # Ссылки на иконки для инвентаря/ангара
-inv_icon_big: static/content/mobiles/cars/middle/cars/dodge_challenger/inventory/big.png
-inv_icon_mid: static/content/mobiles/cars/middle/cars/dodge_challenger/inventory/mid.png
-inv_icon_small: static/content/mobiles/cars/middle/cars/dodge_challenger/inventory/small.png
+inv_icon_big: static/content/mobiles/cars/middle/cars/01_fiat_croma/inventory/big.png
+inv_icon_mid: static/content/mobiles/cars/middle/cars/01_fiat_croma/inventory/mid.png
+inv_icon_small: static/content/mobiles/cars/middle/cars/01_fiat_croma/inventory/small.png
