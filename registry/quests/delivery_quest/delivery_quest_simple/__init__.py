@@ -62,14 +62,14 @@ class DeliveryQuestSimple(DeliveryQuest):
         if not self.can_generate(event):
             raise Cancel("QUEST CANCEL: reason: generate rules")
         self.init_level()
-        with T('0000'):  # todo: Самая долгая здесь операция
-            uri = random.choice(self.recipient_list)
-            try:
-                r = event.server.reg.get(uri)
-            except:
-                raise Cancel("QUEST CANCEL: uri<{}>  not resolve.".format(uri))
-
+        # todo: Здесь строки! нужно иметь это ввиду
+        uri = random.choice(self.recipient_list)
+        try:
+            r = event.server.reg.get(uri)
+        except:
+            raise Cancel("QUEST CANCEL: uri<{}>  not resolve.".format(uri))
         self.recipient = r
+
         self.init_delivery_set()
 
         cost_delivery_items = 0

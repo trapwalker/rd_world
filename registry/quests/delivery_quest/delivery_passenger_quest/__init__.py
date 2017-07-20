@@ -4,7 +4,7 @@ import logging
 log = logging.getLogger(__name__)
 
 from sublayers_server.model.registry_me.classes import notes
-from sublayers_server.model.registry_me.tree import IntField, RegistryLinkField, ListField
+from sublayers_server.model.registry_me.tree import IntField, RegistryLinkField, ListField, StringField
 from sublayers_server.model.quest_events import OnCancel, OnTimer, OnNote, OnEnterToLocation
 from sublayers_server.model.registry_me.classes.quests import (
     Cancel, QuestState_, FailByCancelState, FailState, WinState,
@@ -21,9 +21,9 @@ class DeliveryPassengerQuest(DeliveryQuestSimple):
     person_delivery_cost = IntField(caption=u'Стоимость достваки одного пассажира', tags={'client'})
 
     destination_list = ListField(
-        default=[],
+        default=list,
         caption=u"Список пунктов назначения доставки",
-        field=RegistryLinkField(document_type='sublayers_server.model.registry_me.classes.poi.Town', )
+        field=StringField(),
     )
     destination = RegistryLinkField(
         caption=u'Пункт назначения', document_type='sublayers_server.model.registry_me.classes.poi.Town')
@@ -95,7 +95,15 @@ class DeliveryPassengerQuest(DeliveryQuestSimple):
             raise Cancel("QUEST CANCEL: Empty destination_list.")
 
         self.init_level()
-        self.destination = random.choice(self.destination_list)
+
+        # todo: Здесь строки! нужно иметь это ввиду  self.destination = random.choice(self.destination_list)
+        uri = random.choice(self.destination_list)
+        try:
+            d = event.server.reg.get(uri)
+        except:
+            raise Cancel("QUEST CANCEL: uri<{}>  not resolve.".format(uri))
+        self.destination = d
+
         self.init_delivery_set()
         cost_delivery_items = len(self.delivery_set) * self.person_delivery_cost
 
