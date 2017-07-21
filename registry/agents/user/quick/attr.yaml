@@ -4,7 +4,7 @@ doc    : Прототип агента быстрой игры
 
 last_town: reg:///registry/poi/locations/towns/prior
 current_location: ~
-balance: 2500
+balance: 0
 
 value_exp: 1005
 
