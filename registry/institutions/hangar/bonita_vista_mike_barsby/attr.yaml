@@ -40,13 +40,26 @@ car_list:
   # buses
   - reg:///registry/mobiles/cars/cargo/buses/01_bedford_vas
 
+  # 02 LVL
+  # LIGHT
+  # buggies
+  - reg:///registry/mobiles/cars/light/buggies/02_brp_commander_1000
+  # MIDDLE
+  # cars
+  - reg:///registry/mobiles/cars/middle/cars/02_toyota_corolla
+  - reg:///registry/mobiles/cars/middle/cars/02_chevrolet_monte_carlo
+  # sports
+  - reg:///registry/mobiles/cars/middle/sports/02_alfa_romeo_75
+  # offroad
+  - reg:///registry/mobiles/cars/middle/offroad/02_ford_bronco
+  # vans
+  - reg:///registry/mobiles/cars/middle/vans/02_volkswagen_t1_samba
+
   # 99 LVL
   # LIGHT
   # motorcycles
   - reg:///registry/mobiles/cars/light/motorcycles/honda_hornet
   - reg:///registry/mobiles/cars/light/motorcycles/triumph_america
-  # quadbikes
-#  - reg:///registry/mobiles/cars/light/quadbikes/commander_1000
   # MIDDLE
   # cars
   - reg:///registry/mobiles/cars/middle/cars/chrysler_new_yorker
