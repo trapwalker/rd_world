@@ -25,5 +25,3 @@ inv_icon_xsmall : static/content/items/passengers/male_1/mid.png
 
 driving:  2
 shooting: 15
-
-p_observing_range: 30
