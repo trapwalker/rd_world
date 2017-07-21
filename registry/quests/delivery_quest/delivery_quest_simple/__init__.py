@@ -218,7 +218,7 @@ class DeliveryQuestSimple(DeliveryQuest):
                                            dvalue=-quest.level * 2)  # изменение отношения c нпц
             agent_profile.set_relationship(time=event.time, npc=quest.hirer,
                                            dvalue=-quest.level * 2)  # изменение отношения c нпц
-            agent_profile.profile.set_karma(time=event.time, dvalue=-quest.reward_karma)  # todo: изменение кармы
+            agent_profile.set_karma(time=event.time, dvalue=-quest.reward_karma)  # todo: изменение кармы
             quest.log(text=u'Квест провален.', event=event)
 
 
