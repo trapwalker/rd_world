@@ -40,9 +40,10 @@ items:
   - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/01_m249_saw
   - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/01_mg_15
   - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/01_mg_81
+  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/02_mg_42
+  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/02_m134_minigun
 #  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/dshkm
 #  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/dshkm_twin
-#  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/m134_minigun
 #  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/browning_m2
 #  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/gau19
 #  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/mk_108
