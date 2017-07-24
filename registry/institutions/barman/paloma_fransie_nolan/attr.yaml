@@ -41,16 +41,21 @@ quests:
       inv_icon_small  : static/content/items/quest_item/courier_medalion/mid.png
       inv_icon_xsmall : static/content/items/quest_item/courier_medalion/mid.png
     cache_points_generator:        # Список областей генерации тайников
-      - {position: [12526236, 27046498], radius: 1000}
-      - {position: [12532663, 27037884], radius: 1000}
-      - {position: [12533728, 27030718], radius: 1000}
-      - {position: [12540653, 27036295], radius: 1000}
-      - {position: [12544008, 27052446], radius: 1000}
-      - {position: [12540036, 27057249], radius: 1000}
-      - {position: [12548109, 27037899], radius: 1000}
-      - {position: [12525965, 27037933], radius: 1000}
-      - {position: [12534265, 27060604], radius: 1000}
-      - {position: [12550959, 27048068], radius: 1000}
+      - {position: [12505610, 27051432], radius: 1024}
+      - {position: [12506647, 27051470], radius: 1024}
+      - {position: [12507713, 27051451], radius: 1024}
+      - {position: [12508749, 27051451], radius: 1024}
+      - {position: [12509729, 27051508], radius: 1024}
+      - {position: [12509690, 27052545], radius: 1024}
+      - {position: [12509700, 27053544], radius: 1024}
+      - {position: [12508721, 27053592], radius: 1024}
+      - {position: [12505533, 27053544], radius: 1024}
+      - {position: [12505591, 27052334], radius: 1024}
+      - {position: [12503599, 27051247], radius: 1024}
+      - {position: [12503642, 27052903], radius: 1024}
+      - {position: [12503628, 27054645], radius: 1024}
+      - {position: [12511203, 27052243], radius: 1024}
+      - {position: [12507675, 27053129], radius: 10240}
 
 
   - parent: reg:///registry/quests/delivery_quest/delivery_passenger_quest   # ДОСТАВКА ПАССАЖИРА

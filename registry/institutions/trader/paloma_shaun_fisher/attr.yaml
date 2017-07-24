@@ -316,16 +316,21 @@ quests:
         - reg:///registry/items/usable/ammo/30bb
         - reg:///registry/items/usable/ammo/88bb
     cache_points_generator:        # Список областей генерации тайников
-      - {position: [12495851, 27058167], radius: 500}
-      - {position: [12496638, 27046631], radius: 500}
-      - {position: [12506784, 27044410], radius: 500}
-      - {position: [12504149, 27047785], radius: 500}
-      - {position: [12504153, 27048205], radius: 500}
-      - {position: [12501119, 27051925], radius: 500}
-      - {position: [12523986, 27056980], radius: 500}
-      - {position: [12524465, 27045626], radius: 500}
-      - {position: [12515634, 27048769], radius: 500}
-      - {position: [12497334, 27049801], radius: 500}
+      - {position: [12505610, 27051432], radius: 1024}
+      - {position: [12506647, 27051470], radius: 1024}
+      - {position: [12507713, 27051451], radius: 1024}
+      - {position: [12508749, 27051451], radius: 1024}
+      - {position: [12509729, 27051508], radius: 1024}
+      - {position: [12509690, 27052545], radius: 1024}
+      - {position: [12509700, 27053544], radius: 1024}
+      - {position: [12508721, 27053592], radius: 1024}
+      - {position: [12505533, 27053544], radius: 1024}
+      - {position: [12505591, 27052334], radius: 1024}
+      - {position: [12503599, 27051247], radius: 1024}
+      - {position: [12503642, 27052903], radius: 1024}
+      - {position: [12503628, 27054645], radius: 1024}
+      - {position: [12511203, 27052243], radius: 1024}
+      - {position: [12507675, 27053129], radius: 10240}
 
 
   - parent: reg:///registry/quests/delivery_quest/delivery_quest_simple   # ДОСТАВКА ГРУЗА

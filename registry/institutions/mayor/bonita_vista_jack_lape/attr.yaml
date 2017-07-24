@@ -20,73 +20,15 @@ quests:
       min: 10
       max: 20
     measure_points_generator:      # Список областей генерации пунктов замеров
-      - {position: [12495394, 27035025], radius: 400}
-      - {position: [12494655, 27035043], radius: 400}
-      - {position: [12494001, 27035048], radius: 400}
-      - {position: [12495241, 27033324], radius: 400}
-      - {position: [12495230, 27032461], radius: 400}
-      - {position: [12495242, 27031684], radius: 400}
-      - {position: [12495369, 27030892], radius: 400}
-      - {position: [12495906, 27028668], radius: 400}
-      - {position: [12496976, 27026342], radius: 400}
-      - {position: [12496974, 27025818], radius: 400}
-      - {position: [12496973, 27025311], radius: 400}
-      - {position: [12496448, 27025319], radius: 400}
-      - {position: [12495898, 27025329], radius: 400}
-      - {position: [12496971, 27024767], radius: 400}
-      - {position: [12496969, 27024256], radius: 400}
-      - {position: [12497470, 27025304], radius: 400}
-      - {position: [12497951, 27025296], radius: 400}
-      - {position: [12497953, 27024768], radius: 400}
-      - {position: [12497955, 27024254], radius: 400}
-      - {position: [12498688, 27025283], radius: 400}
-      - {position: [12499456, 27025269], radius: 400}
-      - {position: [12500224, 27025255], radius: 400}
-      - {position: [12501108, 27025240], radius: 400}
-      - {position: [12501108, 27024641], radius: 400}
-      - {position: [12501115, 27024127], radius: 400}
-      - {position: [12501887, 27025223], radius: 400}
-      - {position: [12501888, 27024401], radius: 400}
-      - {position: [12502654, 27024398], radius: 400}
-      - {position: [12502657, 27025206], radius: 400}
-      - {position: [12503349, 27025189], radius: 400}
-      - {position: [12503341, 27024639], radius: 400}
-      - {position: [12503338, 27024127], radius: 400}
-      - {position: [12504063, 27025172], radius: 400}
-      - {position: [12504822, 27025159], radius: 400}
-      - {position: [12504980, 27024640], radius: 400}
-      - {position: [12504990, 27024128], radius: 400}
-      - {position: [12505728, 27024335], radius: 400}
-      - {position: [12505728, 27025144], radius: 400}
-      - {position: [12506573, 27025129], radius: 400}
-      - {position: [12506572, 27024512], radius: 400}
-      - {position: [12506534, 27024001], radius: 400}
-      - {position: [12506596, 27025812], radius: 400}
-      - {position: [12505792, 27025865], radius: 400}
-      - {position: [12505088, 27025713], radius: 400}
-      - {position: [12503450, 27025754], radius: 400}
-      - {position: [12504371, 27025951], radius: 400}
-      - {position: [12507392, 27025664], radius: 400}
-      - {position: [12509864, 27025379], radius: 400}
-      - {position: [12510266, 27025135], radius: 400}
-      - {position: [12510678, 27025415], radius: 400}
-      - {position: [12511078, 27025128], radius: 400}
-      - {position: [12511479, 27025449], radius: 400}
-      - {position: [12511881, 27025121], radius: 400}
-      - {position: [12512290, 27025486], radius: 400}
-      - {position: [12512674, 27025115], radius: 400}
-      - {position: [12513107, 27025522], radius: 400}
-      - {position: [12513523, 27025111], radius: 400}
-      - {position: [12513976, 27025559], radius: 400}
-      - {position: [12514358, 27025105], radius: 400}
-      - {position: [12514767, 27025593], radius: 400}
-      - {position: [12515150, 27025099], radius: 400}
-      - {position: [12515559, 27025719], radius: 400}
-      - {position: [12516344, 27025948], radius: 400}
-      - {position: [12516315, 27025408], radius: 400}
-      - {position: [12518041, 27026445], radius: 400}
-      - {position: [12519583, 27026892], radius: 400}
-      - {position: [12519788, 27031156], radius: 150}
+      - {position: [12506879, 27029227], radius: 1024}
+      - {position: [12507416, 27029260], radius: 1024}
+      - {position: [12507915, 27029260], radius: 1024}
+      - {position: [12507877, 27029764], radius: 1024}
+      - {position: [12506888, 27029759], radius: 1024}
+      - {position: [12506888, 27030273], radius: 1024}
+      - {position: [12507368, 27030297], radius: 1024}
+      - {position: [12507915, 27030254], radius: 1024}
+      - {position: [12507349, 27030061], radius: 10240}
 
 
   - parent: reg:///registry/quests/map_activate_item/map_activate_radars   # УСТАНОВКА РАДАРА
@@ -98,73 +40,23 @@ quests:
     activate_items_generator:
       - reg:///registry/items/usable/map_weapon/radars/radar_001
     activate_points_generator:
-      - {position: [12495394, 27035025], radius: 200}
-      - {position: [12494655, 27035043], radius: 200}
-      - {position: [12494001, 27035048], radius: 200}
-      - {position: [12495241, 27033324], radius: 200}
-      - {position: [12495230, 27032461], radius: 200}
-      - {position: [12495242, 27031684], radius: 200}
-      - {position: [12495369, 27030892], radius: 200}
-      - {position: [12495906, 27028668], radius: 200}
-      - {position: [12496976, 27026342], radius: 200}
-      - {position: [12496974, 27025818], radius: 200}
-      - {position: [12496973, 27025311], radius: 200}
-      - {position: [12496448, 27025319], radius: 200}
-      - {position: [12495898, 27025329], radius: 200}
-      - {position: [12496971, 27024767], radius: 200}
-      - {position: [12496969, 27024256], radius: 200}
-      - {position: [12497470, 27025304], radius: 200}
-      - {position: [12497951, 27025296], radius: 200}
-      - {position: [12497953, 27024768], radius: 200}
-      - {position: [12497955, 27024254], radius: 200}
-      - {position: [12498688, 27025283], radius: 200}
-      - {position: [12499456, 27025269], radius: 200}
-      - {position: [12500224, 27025255], radius: 200}
-      - {position: [12501108, 27025240], radius: 200}
-      - {position: [12501108, 27024641], radius: 200}
-      - {position: [12501115, 27024127], radius: 200}
-      - {position: [12501887, 27025223], radius: 200}
-      - {position: [12501888, 27024401], radius: 200}
-      - {position: [12502654, 27024398], radius: 200}
-      - {position: [12502657, 27025206], radius: 200}
-      - {position: [12503349, 27025189], radius: 200}
-      - {position: [12503341, 27024639], radius: 200}
-      - {position: [12503338, 27024127], radius: 200}
-      - {position: [12504063, 27025172], radius: 200}
-      - {position: [12504822, 27025159], radius: 200}
-      - {position: [12504980, 27024640], radius: 200}
-      - {position: [12504990, 27024128], radius: 200}
-      - {position: [12505728, 27024335], radius: 200}
-      - {position: [12505728, 27025144], radius: 200}
-      - {position: [12506573, 27025129], radius: 200}
-      - {position: [12506572, 27024512], radius: 200}
-      - {position: [12506534, 27024001], radius: 200}
-      - {position: [12506596, 27025812], radius: 200}
-      - {position: [12505792, 27025865], radius: 200}
-      - {position: [12505088, 27025713], radius: 200}
-      - {position: [12503450, 27025754], radius: 200}
-      - {position: [12504371, 27025951], radius: 200}
-      - {position: [12507392, 27025664], radius: 200}
-      - {position: [12509864, 27025379], radius: 200}
-      - {position: [12510266, 27025135], radius: 200}
-      - {position: [12510678, 27025415], radius: 200}
-      - {position: [12511078, 27025128], radius: 200}
-      - {position: [12511479, 27025449], radius: 200}
-      - {position: [12511881, 27025121], radius: 200}
-      - {position: [12512290, 27025486], radius: 200}
-      - {position: [12512674, 27025115], radius: 200}
-      - {position: [12513107, 27025522], radius: 200}
-      - {position: [12513523, 27025111], radius: 200}
-      - {position: [12513976, 27025559], radius: 200}
-      - {position: [12514358, 27025105], radius: 200}
-      - {position: [12514767, 27025593], radius: 200}
-      - {position: [12515150, 27025099], radius: 200}
-      - {position: [12515559, 27025719], radius: 200}
-      - {position: [12516344, 27025948], radius: 200}
-      - {position: [12516315, 27025408], radius: 200}
-      - {position: [12518041, 27026445], radius: 200}
-      - {position: [12519583, 27026892], radius: 200}
-      - {position: [12519788, 27031156], radius: 150}
+      - {position: [12505539, 27028380], radius: 256}
+      - {position: [12505718, 27028623], radius: 256}
+      - {position: [12505949, 27028962], radius: 256}
+      - {position: [12506160, 27029340], radius: 256}
+      - {position: [12506429, 27029756], radius: 256}
+      - {position: [12506653, 27030069], radius: 256}
+      - {position: [12506672, 27030696], radius: 256}
+      - {position: [12506685, 27031202], radius: 256}
+      - {position: [12506672, 27031620], radius: 256}
+      - {position: [12508588, 27029882], radius: 256}
+      - {position: [12508631, 27029011], radius: 256}
+      - {position: [12507551, 27028882], radius: 256}
+      - {position: [12506924, 27030086], radius: 256}
+      - {position: [12507099, 27030469], radius: 256}
+      - {position: [12507055, 27029621], radius: 256}
+      - {position: [12507366, 27030083], radius: 10240}
+
 
   - parent: reg:///registry/quests/delivery_from_cache   # ПОИСК ПОСЫЛКИ
     _cls: DeliveryFromCache
@@ -217,16 +109,19 @@ quests:
         - reg:///registry/items/usable/ammo/30bb
         - reg:///registry/items/usable/ammo/88bb
     cache_points_generator:        # Список областей генерации тайников
-      - {position: [12495851, 27058167], radius: 500}
-      - {position: [12496638, 27046631], radius: 500}
-      - {position: [12506784, 27044410], radius: 500}
-      - {position: [12504149, 27047785], radius: 500}
-      - {position: [12504153, 27048205], radius: 500}
-      - {position: [12501119, 27051925], radius: 500}
-      - {position: [12523986, 27056980], radius: 500}
-      - {position: [12524465, 27045626], radius: 500}
-      - {position: [12515634, 27048769], radius: 500}
-      - {position: [12497334, 27049801], radius: 500}
+      - {position: [12502937, 27027549], radius: 1024}
+      - {position: [12498937, 27027453], radius: 1024}
+      - {position: [12511065, 27027677], radius: 1024}
+      - {position: [12515289, 27027101], radius: 1024}
+      - {position: [12514873, 27031165], radius: 1024}
+      - {position: [12510809, 27031261], radius: 1024}
+      - {position: [12506841, 27031421], radius: 1024}
+      - {position: [12502841, 27031293], radius: 1024}
+      - {position: [12500953, 27036957], radius: 1024}
+      - {position: [12507516, 27036952], radius: 1024}
+      - {position: [12515427, 27036576], radius: 1024}
+      - {position: [12521586, 27032758], radius: 1024}
+      - {position: [12507394, 27030142], radius: 10240}
 
 
   - parent: reg:///registry/quests/search_courier   # ПОИСК КУРЬЕРА
@@ -261,16 +156,19 @@ quests:
       inv_icon_small  : static/content/items/quest_item/courier_medalion/mid.png
       inv_icon_xsmall : static/content/items/quest_item/courier_medalion/mid.png
     cache_points_generator:        # Список областей генерации тайников
-      - {position: [12526236, 27046498], radius: 1000}
-      - {position: [12532663, 27037884], radius: 1000}
-      - {position: [12533728, 27030718], radius: 1000}
-      - {position: [12540653, 27036295], radius: 1000}
-      - {position: [12544008, 27052446], radius: 1000}
-      - {position: [12540036, 27057249], radius: 1000}
-      - {position: [12548109, 27037899], radius: 1000}
-      - {position: [12525965, 27037933], radius: 1000}
-      - {position: [12534265, 27060604], radius: 1000}
-      - {position: [12550959, 27048068], radius: 1000}
+      - {position: [12502937, 27027549], radius: 1024}
+      - {position: [12498937, 27027453], radius: 1024}
+      - {position: [12511065, 27027677], radius: 1024}
+      - {position: [12515289, 27027101], radius: 1024}
+      - {position: [12514873, 27031165], radius: 1024}
+      - {position: [12510809, 27031261], radius: 1024}
+      - {position: [12506841, 27031421], radius: 1024}
+      - {position: [12502841, 27031293], radius: 1024}
+      - {position: [12500953, 27036957], radius: 1024}
+      - {position: [12507516, 27036952], radius: 1024}
+      - {position: [12515427, 27036576], radius: 1024}
+      - {position: [12521586, 27032758], radius: 1024}
+      - {position: [12507394, 27030142], radius: 10240}
 
 
   - parent: reg:///registry/quests/delivery_quest/delivery_quest_simple   # ДОСТАВКА ГРУЗА
