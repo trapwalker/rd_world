@@ -1,0 +1,24 @@
+﻿__cls__: PerkPartyPassive
+_cls: PerkPartyPassive
+abstract: false
+
+# Общие параметры перка
+title: Шкипер                                                                                # Название перка
+title__en: Skipper
+title__ru: Шкипер
+description: Увеличение опыта, получаемого в пати на 2% # Описание перка
+description__en: Increase the experience gained in the party by 2%
+description__ru: Увеличение опыта, получаемого в пати на 2%
+
+# Условия доступности перка
+driving_req:      0      # Необходимый уровень прокачки Вождения
+shooting_req:     0      # Необходимый уровень прокачки Стрельбы
+masking_req:      0      # Необходимый уровень прокачки Маскировки
+leading_req:      10     # Необходимый уровень прокачки Лидерства
+trading_req:      0      # Необходимый уровень прокачки Торговли
+engineering_req:  0      # Необходимый уровень прокачки Инженеринга
+
+level_req:        0      # Необходимый уровень персонажа
+
+# Бонусы перка
+party_exp_modifier:     0.02

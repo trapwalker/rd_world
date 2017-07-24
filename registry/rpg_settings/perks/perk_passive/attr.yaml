@@ -17,7 +17,7 @@ a_backward         : 0
 a_braking          : 0
 max_fuel           : 0
 p_fuel_rate        : 0
-
+p_armor            : 0
 dps_rate           : 0
 damage_rate        : 0
 time_recharge_rate : 0
