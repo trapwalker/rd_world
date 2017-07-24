@@ -39,10 +39,10 @@ money: 0
 class_skills:  # Список классовых навыков
 - reg:///registry/rpg_settings/class_skill/leading_5
 start_perks:  # Список стартовых перков
-- reg:///registry/rpg_settings/perks/perk_passive/ruler_1
-- reg:///registry/rpg_settings/perks/perk_passive/skipper_1
-- reg:///registry/rpg_settings/perks/perk_passive/chipskater_1
-- reg:///registry/rpg_settings/perks/perk_passive/overdriver_1
-- reg:///registry/rpg_settings/perks/perk_passive/patcher_1
-- reg:///registry/rpg_settings/perks/perk_passive/visor_1
+- reg:///registry/rpg_settings/perks/perk_passive/ruler/ruler_1
+- reg:///registry/rpg_settings/perks/perk_passive/skipper/skipper_1
+- reg:///registry/rpg_settings/perks/perk_passive/chipskater/chipskater_1
+- reg:///registry/rpg_settings/perks/perk_passive/overdriver/overdriver_1
+- reg:///registry/rpg_settings/perks/perk_passive/patcher/patcher_1
+- reg:///registry/rpg_settings/perks/perk_passive/visor/visor_1
 start_car: ~  # Стартовая машинка для данного класса

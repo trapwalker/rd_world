@@ -1,0 +1,24 @@
+﻿__cls__: PerkPassive
+_cls: PerkPassive
+abstract: false
+
+# Общие параметры перка
+title: Ниндзя                                                                            # Название перка
+title__en: Ninja
+title__ru: Ниндзя
+description: Заметность персонажа для других игроков от набранной скорости снижена на 2% # Описание перка
+description__en: Visibility of character for other players because acceleration speed has been reduced by 2% (Hiding >= 10)
+description__ru: Заметность персонажа для других игроков от набранной скорости снижена на 2%
+
+# Условия доступности перка
+driving_req:      0      # Необходимый уровень прокачки Вождения
+shooting_req:     0      # Необходимый уровень прокачки Стрельбы
+masking_req:      10     # Необходимый уровень прокачки Маскировки
+leading_req:      0      # Необходимый уровень прокачки Лидерства
+trading_req:      0      # Необходимый уровень прокачки Торговли
+engineering_req:  0      # Необходимый уровень прокачки Инженеринга
+
+level_req:        0      # Необходимый уровень персонажа
+
+# Бонусы перка
+p_visibility_max:    -0.02      # Максимальная заметность автомобиля
