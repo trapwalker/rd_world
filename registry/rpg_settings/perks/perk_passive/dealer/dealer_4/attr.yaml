@@ -17,6 +17,6 @@ engineering_req:  0      # Необходимый уровень прокачк�
 level_req:        0      # Необходимый уровень персонажа
 
 perks_req:               # Список обязательных предшествующих перков
-- reg:///registry/rpg_settings/perks/perk_passive/dealer_3
+- reg:///registry/rpg_settings/perks/perk_passive/dealer/dealer_3
 
 # Бонусы перка
