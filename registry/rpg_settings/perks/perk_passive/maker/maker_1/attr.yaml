@@ -1,5 +1,5 @@
-﻿__cls__: PerkPassive
-_cls: PerkPassive
+﻿__cls__: PerkActivateItemsPassive
+_cls: PerkActivateItemsPassive
 abstract: false
 
 # Общие параметры перка
@@ -22,3 +22,4 @@ level_req:        0      # Необходимый уровень персона�
 
 # Бонусы перка
 
+repair_build_rate: 0.02

@@ -1,5 +1,5 @@
-﻿__cls__: PerkPassive
-_cls: PerkPassive
+﻿__cls__: PerkActivateItemsPassive
+_cls: PerkActivateItemsPassive
 abstract: false
 
 # Общие параметры перка
@@ -20,3 +20,4 @@ perks_req:               # Список обязательных предшес�
 - reg:///registry/rpg_settings/perks/perk_passive/maker/maker_2
 
 # Бонусы перка
+repair_build_rate: 0.08
