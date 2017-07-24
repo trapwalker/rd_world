@@ -4,7 +4,7 @@ doc    : Квесты
 
 cars:
   - reg:///registry/mobiles/cars/middle/vans/chevrolet_express/bot
-  - reg:///registry/mobiles/cars/middle/vans/gmc_savana/bot
+  - reg:///registry/mobiles/cars/middle/vans/03_gmc_savana/bot
 
 max_loot_count: 5
 loot_rec_list:
