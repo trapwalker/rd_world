@@ -27,7 +27,9 @@ items:
   - reg:///registry/items/usable/ammo/762x51bb
   - reg:///registry/items/usable/ammo/792bb
 #  - reg:///registry/items/usable/ammo/127x108bb
-  - reg:///registry/items/usable/ammo/23bzt
+  - reg:///registry/items/usable/ammo/40mm
+  - reg:///registry/items/usable/ammo/20mm
+#  - reg:///registry/items/usable/ammo/23bzt
 #  - reg:///registry/items/usable/ammo/30bb
 #  - reg:///registry/items/usable/ammo/88bb
 
@@ -54,6 +56,7 @@ items:
   - reg:///registry/items/slot_item/armorer_item/weapons/cannons/medium/00_hs_404
   - reg:///registry/items/slot_item/armorer_item/weapons/cannons/medium/01_lvakan_m_40
   - reg:///registry/items/slot_item/armorer_item/weapons/cannons/medium/01_bofors_m_45
+  - reg:///registry/items/slot_item/armorer_item/weapons/cannons/light/02_rg_6
 #  - reg:///registry/items/slot_item/armorer_item/weapons/cannons/m242
 #  - reg:///registry/items/slot_item/armorer_item/weapons/cannons/zu23_flak
 #  - reg:///registry/items/slot_item/armorer_item/weapons/cannons/2a42

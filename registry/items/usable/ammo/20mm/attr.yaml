@@ -1,0 +1,16 @@
+﻿__cls__  : AmmoBullets
+_cls     : AmmoBullets
+doc      : Снаряды 20мм/ББ
+abstract : false
+
+title       : Снаряды<br>20мм/ББ
+description : '???'
+
+stack_size : 10
+amount     : 10
+base_price : 40
+
+inv_icon_big    : static/content/items/usable/ammo/20mm/big.png
+inv_icon_mid    : static/content/items/usable/ammo/20mm/mid.png
+inv_icon_small  : static/content/items/usable/ammo/20mm/small.png
+inv_icon_xsmall : static/content/items/usable/ammo/20mm/xsmall.png
