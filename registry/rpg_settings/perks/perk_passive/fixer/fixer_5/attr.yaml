@@ -20,4 +20,4 @@ perks_req:               # Список обязательных предшес�
 - reg:///registry/rpg_settings/perks/perk_passive/fixer/fixer_4
 
 # Бонусы перка
-
+p_armor: 0.15
