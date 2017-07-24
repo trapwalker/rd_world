@@ -55,14 +55,26 @@ car_list:
   # vans
   - reg:///registry/mobiles/cars/middle/vans/02_volkswagen_t1_samba
 
+  # 03 LVL
+  # LIGHT
+  # motorcycles
+  - reg:///registry/mobiles/cars/light/motorcycles/03_triumph_bonneville_america
+  - reg:///registry/mobiles/cars/light/motorcycles/03_cad_19
+  # MIDDLE
+  # cars
+  - reg:///registry/mobiles/cars/middle/cars/03_honda_accord
+  - reg:///registry/mobiles/cars/middle/cars/03_chrysler_new_yorker
+  # offroad
+  - reg:///registry/mobiles/cars/middle/offroad/03_willys_mb
+  # vans
+  - reg:///registry/mobiles/cars/middle/vans/03_gmc_savana
+
   # 99 LVL
   # LIGHT
   # motorcycles
   - reg:///registry/mobiles/cars/light/motorcycles/honda_hornet
-  - reg:///registry/mobiles/cars/light/motorcycles/triumph_america
   # MIDDLE
   # cars
-  - reg:///registry/mobiles/cars/middle/cars/chrysler_new_yorker
   - reg:///registry/mobiles/cars/middle/cars/dodge_challenger
   # sports
   - reg:///registry/mobiles/cars/middle/sports/delorean_dmc12
@@ -71,7 +83,6 @@ car_list:
   - reg:///registry/mobiles/cars/middle/offroad/gelandewagen
   # vans
   - reg:///registry/mobiles/cars/middle/vans/chevrolet_express
-  - reg:///registry/mobiles/cars/middle/vans/gmc_savana
   # CARGO
   # buses
   - reg:///registry/mobiles/cars/cargo/buses/gmc_scenicruiser
