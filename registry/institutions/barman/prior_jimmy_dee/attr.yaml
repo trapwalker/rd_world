@@ -11,7 +11,7 @@ hometown : reg:///registry/poi/locations/towns/prior
 quests:
   - parent: reg:///registry/quests/search_courier   # ПОИСК КУРЬЕРА
     _cls: SearchCourier
-    design_speed: 3.0              # Скорость в px/с с которой должен двигаться игрок чтобы успеть (если = 0, то время не ограничено)
+    design_speed: 0.3              # Скорость в px/с с которой должен двигаться игрок чтобы успеть (если = 0, то время не ограничено)
     cache_radius: 50               # Радиус, в котором можно обнаружить тайник
     reward_exp: 100                # Опыт
     loot_set_list:                 # Список хлама
