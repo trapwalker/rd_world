@@ -23,7 +23,7 @@ items:
   - reg:///registry/items/stuff/water/water_002
 
   # Боеприпасы для вооружения
-#  - reg:///registry/items/usable/ammo/556bb
+  - reg:///registry/items/usable/ammo/556bb
   - reg:///registry/items/usable/ammo/762x51bb
   - reg:///registry/items/usable/ammo/792bb
 #  - reg:///registry/items/usable/ammo/127x108bb
@@ -42,6 +42,8 @@ items:
   - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/01_m249_saw
   - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/01_mg_15
   - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/01_mg_81
+  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/02_stoner_63
+  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/02_lsat
   - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/02_mg_42
   - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/02_m134_minigun
 #  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/dshkm
@@ -57,6 +59,7 @@ items:
   - reg:///registry/items/slot_item/armorer_item/weapons/cannons/medium/01_lvakan_m_40
   - reg:///registry/items/slot_item/armorer_item/weapons/cannons/medium/01_bofors_m_45
   - reg:///registry/items/slot_item/armorer_item/weapons/cannons/light/02_rg_6
+  - reg:///registry/items/slot_item/armorer_item/weapons/cannons/medium/02_mauser_mg_213
 #  - reg:///registry/items/slot_item/armorer_item/weapons/cannons/m242
 #  - reg:///registry/items/slot_item/armorer_item/weapons/cannons/zu23_flak
 #  - reg:///registry/items/slot_item/armorer_item/weapons/cannons/2a42
