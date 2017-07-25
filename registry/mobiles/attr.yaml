@@ -102,8 +102,7 @@ shooting_dps_rate           : 0
 shooting_damage_rate        : 0
 shooting_time_recharge_rate : 0
 shooting_radius_rate        : 0
-                            
-masking_p_visibility        : 0     
+
                             
 r_empty                     : 0
 r_cc_dirt                   : 0
