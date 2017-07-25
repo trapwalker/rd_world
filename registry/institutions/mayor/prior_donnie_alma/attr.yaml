@@ -28,7 +28,7 @@ quests:
       - {position: [12538232, 27044516], radius: 1024}
       - {position: [12539236, 27044466], radius: 1024}
       - {position: [12540436, 27044462], radius: 1024}
-      - {position: [12539412, 27043885], radius: 10240}
+      - {position: [12539412, 27043885], radius: 5120}
 
 
   - parent: reg:///registry/quests/map_activate_item/map_activate_radars   # УСТАНОВКА РАДАРА
@@ -59,7 +59,7 @@ quests:
       - {position: [12529948, 27045920], radius: 256}
       - {position: [12541324, 27045387], radius: 256}
       - {position: [12543297, 27046006], radius: 256}
-      - {position: [12539433, 27043960], radius: 10240}
+      - {position: [12539433, 27043960], radius: 5120}
 
 
   - parent: reg:///registry/quests/delivery_from_cache   # ПОИСК ПОСЫЛКИ
