@@ -26,10 +26,10 @@ items:
   - reg:///registry/items/usable/ammo/556bb
   - reg:///registry/items/usable/ammo/762x51bb
   - reg:///registry/items/usable/ammo/792bb
-#  - reg:///registry/items/usable/ammo/127x108bb
+  - reg:///registry/items/usable/ammo/127x108bb
   - reg:///registry/items/usable/ammo/40mm
   - reg:///registry/items/usable/ammo/20mm
-#  - reg:///registry/items/usable/ammo/23bzt
+  - reg:///registry/items/usable/ammo/23bzt
 #  - reg:///registry/items/usable/ammo/30bb
 #  - reg:///registry/items/usable/ammo/88bb
 
@@ -46,9 +46,10 @@ items:
   - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/02_lsat
   - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/02_mg_42
   - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/02_m134_minigun
+  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/03_vickers_50
+  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/03_browning_m2
 #  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/dshkm
 #  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/dshkm_twin
-#  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/browning_m2
 #  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/gau19
 #  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/mk_108
 #  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/mk_108_twin
@@ -60,7 +61,7 @@ items:
   - reg:///registry/items/slot_item/armorer_item/weapons/cannons/medium/01_bofors_m_45
   - reg:///registry/items/slot_item/armorer_item/weapons/cannons/light/02_rg_6
   - reg:///registry/items/slot_item/armorer_item/weapons/cannons/medium/02_mauser_mg_213
-#  - reg:///registry/items/slot_item/armorer_item/weapons/cannons/m242
+  - reg:///registry/items/slot_item/armorer_item/weapons/cannons/medium/03_m242_bushmaster
 #  - reg:///registry/items/slot_item/armorer_item/weapons/cannons/zu23_flak
 #  - reg:///registry/items/slot_item/armorer_item/weapons/cannons/2a42
 #  - reg:///registry/items/slot_item/armorer_item/weapons/cannons/flak_18
