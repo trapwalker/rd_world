@@ -69,6 +69,16 @@ car_list:
   # vans
   - reg:///registry/mobiles/cars/middle/vans/03_gmc_savana
 
+  # 04 LVL
+  # MIDDLE
+  # cars
+  - reg:///registry/mobiles/cars/middle/cars/04_bmw_320i_e21
+  # sports
+  - reg:///registry/mobiles/cars/middle/sports/04_delorean_dmc_12
+  # CARGO
+  # buses
+  - reg:///registry/mobiles/cars/cargo/buses/04_gmc_pd_4501_scenicruiser
+
   # 99 LVL
   # LIGHT
   # motorcycles
@@ -76,8 +86,6 @@ car_list:
   # MIDDLE
   # cars
   - reg:///registry/mobiles/cars/middle/cars/dodge_challenger
-  # sports
-  - reg:///registry/mobiles/cars/middle/sports/delorean_dmc12
   # offroad
   - reg:///registry/mobiles/cars/middle/offroad/defender
   - reg:///registry/mobiles/cars/middle/offroad/gelandewagen
@@ -85,7 +93,6 @@ car_list:
   - reg:///registry/mobiles/cars/middle/vans/chevrolet_express
   # CARGO
   # buses
-  - reg:///registry/mobiles/cars/cargo/buses/gmc_scenicruiser
 #  - reg:///registry/mobiles/cars/cargo/buses/international_dimex
   # tractors
   - reg:///registry/mobiles/cars/cargo/tractors/international_9800
