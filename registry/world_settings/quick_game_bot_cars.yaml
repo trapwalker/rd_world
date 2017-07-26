@@ -1,7 +1,7 @@
 ﻿
 quick_game_bot_cars: # Список машинок на которых ездят боты в быстрой игре
   - reg:///registry/mobiles/cars/light/motorcycles/honda_hornet/quick_bot
-  - reg:///registry/mobiles/cars/middle/sports/delorean_dmc12/quick_bot
+  - reg:///registry/mobiles/cars/middle/sports/04_delorean_dmc_12/quick_bot
   - reg:///registry/mobiles/cars/middle/cars/dodge_challenger/quick_bot
   - reg:///registry/mobiles/cars/middle/offroad/defender/quick_bot
   - reg:///registry/mobiles/cars/heavy/btrs/m113a1/quick_bot
