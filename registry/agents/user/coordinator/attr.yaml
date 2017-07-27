@@ -25,7 +25,7 @@ car: #reg:///registry/mobiles/cars/middle/sports/04_delorean_dmc_12
     slot_CC: 
         __cls__: MachineGun
         _cls: MachineGun
-        parent: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/dshkm
+        parent: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/04_dshkm
         direction: R
         dps: 0.01
         radius: 250
@@ -33,7 +33,7 @@ car: #reg:///registry/mobiles/cars/middle/sports/04_delorean_dmc_12
     slot_BC:
         __cls__: MachineGun
         _cls: MachineGun
-        parent: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/dshkm
+        parent: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/04_dshkm
         direction: L
         dps: 0.01
         radius: 250
