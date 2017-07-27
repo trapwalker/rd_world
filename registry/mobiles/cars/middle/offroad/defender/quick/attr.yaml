@@ -78,7 +78,7 @@ mechanic_suspension:    static/content/mechanic_systems/suspensions/suspension_1
 slot_FC: reg:///registry/items/slot_item/armorer_item/weapons/cannons/zu23_flak/quick?direction=F
 slot_CL: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/03_browning_m2/quick?direction=L
 slot_CR: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/03_browning_m2/quick?direction=R
-slot_BC: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/gau19/quick?direction=B
+slot_BC: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/04_gau_19/quick?direction=B
 
 # Настройка ограничений направления оружия из слота. Значением является строка в котороую включены первые буквы
 # соответствующих направлений (Front, Back, Left, Right)

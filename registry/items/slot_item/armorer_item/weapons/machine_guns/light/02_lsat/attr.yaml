@@ -19,7 +19,7 @@ width           : 69                                         # Ширина се
 
 ammo_per_second : 3                                          # [shot/s] ~=650/60 Потребление патронов в секунду
 
-animation_tracer_rate : 1
+animation_tracer_rate : 3
 
 # Картинки для представления в инвентаре
 inv_icon_big    : static/content/items/slot_item/weapons/mashine_guns/light/02_lsat/inventory/big.png

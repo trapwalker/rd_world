@@ -11,7 +11,7 @@ p_observing_range : 150
 max_hp          : 135
 hp              : 135
 
-slot_FC         : reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/dshkm?direction=F&ammo_per_second=0&width=90
-slot_CL         : reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/dshkm?direction=L&ammo_per_second=0&width=90
-slot_CR         : reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/dshkm?direction=R&ammo_per_second=0&width=90
-slot_BC         : reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/dshkm?direction=B&ammo_per_second=0&width=90
+slot_FC         : reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/04_dshkm?direction=F&ammo_per_second=0&width=90
+slot_CL         : reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/04_dshkm?direction=L&ammo_per_second=0&width=90
+slot_CR         : reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/04_dshkm?direction=R&ammo_per_second=0&width=90
+slot_BC         : reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/04_dshkm?direction=B&ammo_per_second=0&width=90

@@ -19,7 +19,7 @@ width           : 60                                         # Ширина се
 
 ammo_per_second : 2                                          # [shot/s] ~=650/60 Потребление патронов в секунду
 
-animation_tracer_rate : 1
+animation_tracer_rate : 2
 
 # Картинки для представления в инвентаре
 inv_icon_big    : static/content/items/slot_item/weapons/mashine_guns/light/01_negev_ng7/inventory/big.png

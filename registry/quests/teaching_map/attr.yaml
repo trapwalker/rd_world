@@ -133,7 +133,7 @@ states:
               if event.name == 'wait_motion':
                   if agent.profile._agent_model and agent.profile._agent_model.car and agent.profile._agent_model.car.v(time=event.time) != 0.0:
                       # Дать игроку время покататься
-                      set_timer(name='end_motion', delay=10)
+                      set_timer(name='end_motion', delay=3)
                   else:
                       # Продолжаем ждать пока игрок поедет
                       set_timer(name='wait_motion', delay=2)
