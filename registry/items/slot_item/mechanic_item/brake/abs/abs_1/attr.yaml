@@ -6,7 +6,14 @@ abstract : false
 title: Антиблокировочная система
 description: Система, предотвращающая блокировку колёс транспортного средства при торможении.
 
-base_price: 100
+base_price: 200
+
+# Плюсы
+r_min: -0.02
+ac_max: 0.02
+
+# Минусы
+a_braking: -0.02
 
 inv_icon_big: static/content/items/slot_item/mechanic_items/brake/abs/abs_1/big.png
 inv_icon_mid: static/content/items/slot_item/mechanic_items/brake/abs/abs_1/mid.png
