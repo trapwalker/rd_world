@@ -140,13 +140,13 @@ states:
 
               if qq.recipient.uri == 'reg:///registry/institutions/barman/whitehill_al_dufo':
                   target_build_name = 'bar'
-                  target_build_coord = '958,240'
+                  target_build_coord = '980,283'
               elif qq.recipient.uri == 'reg:///registry/institutions/trader/whitehill_bob_ferolito':
                   target_build_name = 'market'
-                  target_build_coord = '958,372'
+                  target_build_coord = '1010,414'
               elif qq.recipient.uri == 'reg:///registry/institutions/trainer/whitehill_blackhawk_2094':
                   target_build_name = 'library'
-                  target_build_coord = '958,414'
+                  target_build_coord = '924,459'
 
               quest.dc.current_note_uid = agent.profile.add_note(
                   quest_uid=quest.uid,
