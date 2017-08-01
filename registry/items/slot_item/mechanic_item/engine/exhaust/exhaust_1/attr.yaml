@@ -6,7 +6,14 @@ abstract : false
 title: Выпускной коллектор
 description: Выпускной коллектор предназначен для сбора выхлопных газов с нескольких цилиндров в одну трубу.
 
-base_price: 100
+base_price: 200
+
+# Плюсы
+p_fuel_rate: -0.02
+
+# Минусы
+p_visibility_min: 0.02
+p_visibility_max: 0.02
 
 inv_icon_big: static/content/items/slot_item/mechanic_items/engine/exhaust/exhaust_1/big.png
 inv_icon_mid: static/content/items/slot_item/mechanic_items/engine/exhaust/exhaust_1/mid.png

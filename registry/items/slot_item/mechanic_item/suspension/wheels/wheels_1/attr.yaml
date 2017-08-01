@@ -6,7 +6,13 @@ abstract : false
 title: Колесо
 description: Неотъемлемая часть автомобиля. Совместно с шиной представляет собой движитель колёсного транспортного средства.
 
-base_price: 100
+base_price: 200
+
+# Плюсы
+v_forward: 0.01
+
+# Минусы
+a_forward: -0.01
 
 inv_icon_big: static/content/items/slot_item/mechanic_items/suspension/wheels/wheels_1/big.png
 inv_icon_mid: static/content/items/slot_item/mechanic_items/suspension/wheels/wheels_1/mid.png
