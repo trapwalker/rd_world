@@ -7,6 +7,12 @@ title: Chosen One
 description: Избранный
 description__en: Chosen One
 description__ru: Избранный
+
+description_char_window: |
+    Класс: Избранный.
+    <br>Классовый навык: Вождение.
+    <br>Классовый квест: Основать собственное поселение.
+
 console_description: >
     Класс: Избранный.
     \nКлассовый навык: Вождение.

@@ -7,6 +7,12 @@ title: Oil Magnate
 description: Нефтяной магнат
 description__en: Oil Magnate
 description__ru: Нефтяной магнат
+
+description_char_window: |
+    Класс: Нефтяной магнат
+    <br>Классовый навык: Торговля
+    <br>Классовый квест: Открыть собственный магазин.
+
 console_description: >
     Класс: Нефтяной магнат
     \nКлассовый навык: Торговля
