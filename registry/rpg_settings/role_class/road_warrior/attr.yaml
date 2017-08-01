@@ -7,6 +7,12 @@ title: Road Warrior
 description: Воин дорог
 description__en: Road Warrior
 description__ru: Воин дорог
+
+description_char_window: |
+    Класс: Воин дорог.
+    <br>Классовый навык: Стрельба.
+    <br>Классовый квест: Получить уникальный суперкар.
+
 console_description: >
     Класс: Воин дорог.
     \nКлассовый навык: Стрельба.

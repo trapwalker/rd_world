@@ -7,6 +7,12 @@ title: Techno Kinetic
 description: Технокинетик
 description__en: Techno Kinetic
 description__ru: Технокинетик
+
+description_char_window: |
+    Класс: Технокинетик
+    <br>Классовый навык: Механика
+    <br>Классовый квест: Открыть собственный сервисный центр.
+
 console_description: >
     Класс: Технокинетик
     \nКлассовый навык: Механика
