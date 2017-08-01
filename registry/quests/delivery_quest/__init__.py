@@ -21,7 +21,7 @@ class DeliveryQuest(Quest):
     recipient_list = ListField(
         root_default=list,
         caption=u"Список возможных получателей доставки",
-        field=RegistryLinkField(),
+        field=StringField(),
     )
     recipient = RegistryLinkField(
         caption=u'Получатель доставки',
@@ -79,11 +79,11 @@ class DeliveryQuest(Quest):
 
         # log('DeliveryQuest recipient_list len = {}'.format(len(self.recipient_list)))
         # todo: Здесь строки! нужно иметь это ввиду
-        r = random.choice(self.recipient_list)
-        #try:
-        #    r = event.server.reg.get(r)
-        #except:
-        #    raise Cancel("QUEST CANCEL: uri<{}>  not resolve.".format(uri))
+        uri = random.choice(self.recipient_list)
+        try:
+            r = event.server.reg.get(uri)
+        except:
+            raise Cancel("QUEST CANCEL: uri<{}>  not resolve.".format(uri))
         self.recipient = r
 
         self.delivery_set = random.choice(self.delivery_set_list)
