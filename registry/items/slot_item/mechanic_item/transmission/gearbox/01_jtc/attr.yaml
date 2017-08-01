@@ -1,0 +1,20 @@
+_cls     : MechanicItem
+doc      : Коробка передач JTC-M02F02
+abstract : false
+
+title       : Коробка передач JTC-M02F02
+description : 'Агрегат различных промышленных механизмов и трансмиссий механических транспортных средств, предназначенный для изменения частоты и крутящего момента на ведущих колесах в более широких пределах, чем это может обеспечить двигатель транспортного средства.'
+
+base_price: 400
+
+# Плюсы
+r_min: -0.02
+ac_max: 0.02
+
+# Минусы
+p_fuel_rate: 0.02
+
+inv_icon_big: static/content/items/slot_item/mechanic_items/transmission/gearbox/01_jtc/big.png
+inv_icon_mid: static/content/items/slot_item/mechanic_items/transmission/gearbox/01_jtc/mid.png
+inv_icon_small: static/content/items/slot_item/mechanic_items/transmission/gearbox/01_jtc/small.png
+inv_icon_supersmall: static/content/items/slot_item/mechanic_items/transmission/gearbox/01_jtc/supersmall.png

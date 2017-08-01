@@ -1,0 +1,20 @@
+_cls     : MechanicItem
+doc      : Выпускной коллектор ASO-F02H02
+abstract : false
+
+title: Выпускной коллектор ASO-F02H02
+description: 'Выпускной коллектор предназначен для сбора выхлопных газов с нескольких цилиндров в одну трубу.'
+
+base_price: 400
+
+# Плюсы
+p_fuel_rate: -0.02
+
+# Минусы
+p_visibility_min: 0.02
+p_visibility_max: 0.02
+
+inv_icon_big: static/content/items/slot_item/mechanic_items/engine/exhaust/01_aso/big.png
+inv_icon_mid: static/content/items/slot_item/mechanic_items/engine/exhaust/01_aso/mid.png
+inv_icon_small: static/content/items/slot_item/mechanic_items/engine/exhaust/01_aso/small.png
+inv_icon_supersmall: static/content/items/slot_item/mechanic_items/engine/exhaust/01_aso/supersmall.png

@@ -1,0 +1,19 @@
+_cls     : MechanicItem
+doc      : Впускной коллектор ASI-F02A02
+abstract : false
+
+title       : Впускной коллектор ASI-F02A02
+description : 'Обеспечивает равномерное распределение воздуха или рабочей смеси между цилиндрами.'
+
+base_price: 400
+
+# Плюсы
+p_fuel_rate: -0.02
+
+# Минусы
+a_forward: -0.02
+
+inv_icon_big: static/content/items/slot_item/mechanic_items/engine/inlet/01_asi/big.png
+inv_icon_mid: static/content/items/slot_item/mechanic_items/engine/inlet/01_asi/mid.png
+inv_icon_small: static/content/items/slot_item/mechanic_items/engine/inlet/01_asi/small.png
+inv_icon_supersmall: static/content/items/slot_item/mechanic_items/engine/inlet/01_asi/supersmall.png
