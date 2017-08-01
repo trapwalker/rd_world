@@ -1,8 +1,7 @@
-﻿__cls__ : MechanicItem
-_cls : MechanicItem
-doc     : Предметы, устанавливаемые в слоты механика
+﻿_cls : MechanicItem
+doc  : Предметы, устанавливаемые в слоты механика
 
-tags    : [mechanic]
+tags : [mechanic]
 
 # Скрытность
 p_visibility_min: 0
@@ -23,6 +22,12 @@ a_braking: 0
 
 # Расход топлива
 p_fuel_rate: 0
+
+# Проходимость
+r_cc_dirt: 0
+r_cc_wood: 0
+r_cc_slope: 0
+r_cc_water: 0
 
 # ???
 p_observing_range: 0

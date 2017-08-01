@@ -1,0 +1,19 @@
+_cls     : MechanicItem
+doc      : Колесо GT-S01A01
+abstract : false
+
+title: Колесо GT-S01A01
+description: 'Неотъемлемая часть автомобиля. Совместно с шиной представляет собой движитель колёсного транспортного средства.'
+
+base_price: 200
+
+# Плюсы
+v_forward: 0.01
+
+# Минусы
+a_forward: -0.01
+
+inv_icon_big: static/content/items/slot_item/mechanic_items/suspension/wheels/00_gt/big.png
+inv_icon_mid: static/content/items/slot_item/mechanic_items/suspension/wheels/00_gt/mid.png
+inv_icon_small: static/content/items/slot_item/mechanic_items/suspension/wheels/00_gt/small.png
+inv_icon_supersmall: static/content/items/slot_item/mechanic_items/suspension/wheels/00_gt/supersmall.png
