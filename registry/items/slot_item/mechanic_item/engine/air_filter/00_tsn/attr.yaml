@@ -1,0 +1,19 @@
+_cls     : MechanicItem
+doc      : Воздушный фильтр TSN-A01F01
+abstract : false
+
+title: Воздушный фильтр TSN-A01F01
+description: 'Элемент воздухоочистителя, который служит для фильтрования воздуха, подаваемого системами вентиляции и кондиционирования.'
+
+base_price: 200
+
+# Плюсы
+a_forward: 0.01
+
+# Минусы
+p_fuel_rate: 0.01
+
+inv_icon_big: static/content/items/slot_item/mechanic_items/engine/air_filter/00_tsn/big.png
+inv_icon_mid: static/content/items/slot_item/mechanic_items/engine/air_filter/00_tsn/mid.png
+inv_icon_small: static/content/items/slot_item/mechanic_items/engine/air_filter/00_tsn/small.png
+inv_icon_supersmall: static/content/items/slot_item/mechanic_items/engine/air_filter/00_tsn/supersmall.png
