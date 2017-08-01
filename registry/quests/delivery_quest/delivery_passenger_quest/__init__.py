@@ -23,7 +23,7 @@ class DeliveryPassengerQuest(DeliveryQuestSimple):
     destination_list = ListField(
         root_default=list,
         caption=u"Список пунктов назначения доставки",
-        field=StringField(),
+        field=RegistryLinkField(),
     )
     destination = RegistryLinkField(
         caption=u'Пункт назначения', document_type='sublayers_server.model.registry_me.classes.poi.Town')
@@ -97,11 +97,11 @@ class DeliveryPassengerQuest(DeliveryQuestSimple):
         self.init_level()
 
         # todo: Здесь строки! нужно иметь это ввиду  self.destination = random.choice(self.destination_list)
-        uri = random.choice(self.destination_list)
-        try:
-            d = event.server.reg.get(uri)
-        except:
-            raise Cancel("QUEST CANCEL: uri<{}>  not resolve.".format(uri))
+        d = random.choice(self.destination_list)
+        #try:
+        #    d = event.server.reg.get(d)
+        #except:
+        #    raise Cancel("QUEST CANCEL: uri<{}>  not resolve.".format(uri))
         self.destination = d
 
         self.init_delivery_set()
