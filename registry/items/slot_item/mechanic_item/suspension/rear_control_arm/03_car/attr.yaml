@@ -1,0 +1,20 @@
+_cls     : MechanicItem
+doc      : Рычаг (зад) CAR-M01S01
+abstract : false
+
+title: Рычаг (зад) CAR-M01S01
+description: 'Служит для обеспечения ограниченного движения в вертикальной плоскости колеса, которое он удерживает на месте, не позволяя ему откатиться в сторону.'
+
+base_price: 200
+
+# Плюсы
+r_min: -0.01
+ac_max: 0.01
+
+# Минусы
+v_forward: -0.01
+
+inv_icon_big: static/content/items/slot_item/mechanic_items/suspension/rear_control_arm/03_car/big.png
+inv_icon_mid: static/content/items/slot_item/mechanic_items/suspension/rear_control_arm/03_car/mid.png
+inv_icon_small: static/content/items/slot_item/mechanic_items/suspension/rear_control_arm/03_car/small.png
+inv_icon_supersmall: static/content/items/slot_item/mechanic_items/suspension/rear_control_arm/03_car/supersmall.png

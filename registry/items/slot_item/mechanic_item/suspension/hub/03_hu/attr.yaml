@@ -1,0 +1,19 @@
+_cls     : MechanicItem
+doc      : Ступица HU-S01B01
+abstract : false
+
+title: Ступица HU-S01B01
+description: 'Центральная часть детали с отверстием (маховика, шкива, зубчатого колеса и т. д.) для насадки на вал или ось.'
+
+base_price: 200
+
+# Плюсы
+v_forward: 0.01
+
+# Минусы
+a_braking: -0.01
+
+inv_icon_big: static/content/items/slot_item/mechanic_items/suspension/hub/03_hu/big.png
+inv_icon_mid: static/content/items/slot_item/mechanic_items/suspension/hub/03_hu/mid.png
+inv_icon_small: static/content/items/slot_item/mechanic_items/suspension/hub/03_hu/small.png
+inv_icon_supersmall: static/content/items/slot_item/mechanic_items/suspension/hub/03_hu/supersmall.png
