@@ -1,0 +1,22 @@
+_cls     : MechanicItem
+doc      : Вторичный вал SS-Z02S02
+abstract : false
+
+title       : Вторичный вал SS-Z02S02
+description : 'Коленчатый вал двигателя напрямую соединяется через первичный вал со вторичным валом коробки передач и присоединённым к нему карданным валом.'
+
+base_price: 400
+
+# Плюсы
+r_cc_dirt: 0.02
+r_cc_wood: 0.02
+r_cc_slope: 0.02
+r_cc_water: 0.02
+
+# Минусы
+v_forward: -0.02
+
+inv_icon_big: static/content/items/slot_item/mechanic_items/transmission/secondary_shaft/03_ss/big.png
+inv_icon_mid: static/content/items/slot_item/mechanic_items/transmission/secondary_shaft/03_ss/mid.png
+inv_icon_small: static/content/items/slot_item/mechanic_items/transmission/secondary_shaft/03_ss/small.png
+inv_icon_supersmall: static/content/items/slot_item/mechanic_items/transmission/secondary_shaft/03_ss/supersmall.png

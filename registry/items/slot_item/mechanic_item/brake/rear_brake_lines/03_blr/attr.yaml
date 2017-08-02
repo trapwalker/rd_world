@@ -1,0 +1,22 @@
+_cls     : MechanicItem
+doc      : Тормозные шланги (зад) BLR-B01Z01
+abstract : false
+
+title: Тормозные шланги (зад) BLR-B01Z01
+description: 'Основная функция – передача давления, которое возникло внутри системы, на цилиндры. Цилиндры воздействуют на тормозные колодки.'
+
+base_price: 200
+
+# Плюсы
+a_braking: 0.01
+
+# Минусы
+r_cc_dirt: -0.01
+r_cc_wood: -0.01
+r_cc_slope: -0.01
+r_cc_water: -0.01
+
+inv_icon_big: static/content/items/slot_item/mechanic_items/brake/rear_brake_lines/03_blr/big.png
+inv_icon_mid: static/content/items/slot_item/mechanic_items/brake/rear_brake_lines/03_blr/mid.png
+inv_icon_small: static/content/items/slot_item/mechanic_items/brake/rear_brake_lines/03_blr/small.png
+inv_icon_supersmall: static/content/items/slot_item/mechanic_items/brake/rear_brake_lines/03_blr/supersmall.png
