@@ -1,0 +1,23 @@
+_cls     : MechanicItem
+doc      : Первичный вал PS-Z02H02
+abstract : false
+
+title       : Первичный вал PS-Z02H02
+description : 'Коленчатый вал двигателя напрямую соединяется через первичный вал со вторичным валом коробки передач и присоединённым к нему карданным валом.'
+
+base_price: 400
+
+# Плюсы
+r_cc_dirt: 0.02
+r_cc_wood: 0.02
+r_cc_slope: 0.02
+r_cc_water: 0.02
+
+# Минусы
+p_visibility_min: 0.02
+p_visibility_max: 0.02
+
+inv_icon_big: static/content/items/slot_item/mechanic_items/transmission/primary_shaft/02_ps/big.png
+inv_icon_mid: static/content/items/slot_item/mechanic_items/transmission/primary_shaft/02_ps/mid.png
+inv_icon_small: static/content/items/slot_item/mechanic_items/transmission/primary_shaft/02_ps/small.png
+inv_icon_supersmall: static/content/items/slot_item/mechanic_items/transmission/primary_shaft/02_ps/supersmall.png

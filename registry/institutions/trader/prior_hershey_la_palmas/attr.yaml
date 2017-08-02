@@ -107,6 +107,14 @@ items:
   - reg:///registry/items/slot_item/mechanic_item/brake/abs/01_sf
   - reg:///registry/items/slot_item/mechanic_item/cooling/fan/01_eg
 
+  # 02 LVL
+  - reg:///registry/items/slot_item/mechanic_item/brake/front_brake_pads/02_bpf
+  - reg:///registry/items/slot_item/mechanic_item/brake/rear_brake_pads/02_bpr
+  - reg:///registry/items/slot_item/mechanic_item/engine/sparkplug/02_sp
+  - reg:///registry/items/slot_item/mechanic_item/transmission/primary_shaft/02_ps
+  - reg:///registry/items/slot_item/mechanic_item/transmission/front_differential/02_df
+  - reg:///registry/items/slot_item/mechanic_item/transmission/rear_differential/02_dr
+
   # Двигатель
 #  - reg:///registry/items/slot_item/mechanic_item/engine/camshaft/camshaft_1
 #  - reg:///registry/items/slot_item/mechanic_item/engine/compressor/compressor_1
@@ -115,16 +123,12 @@ items:
 #  - reg:///registry/items/slot_item/mechanic_item/engine/engine_oil/engine_oil_1
 #  - reg:///registry/items/slot_item/mechanic_item/engine/flywheel/flywheel_1
 #  - reg:///registry/items/slot_item/mechanic_item/engine/ignition/ignition_1
-#  - reg:///registry/items/slot_item/mechanic_item/engine/sparkplug/sparkplug_1
 
   # Трансмиссия
 #  - reg:///registry/items/slot_item/mechanic_item/transmission/ATF/ATF_1
 #  - reg:///registry/items/slot_item/mechanic_item/transmission/clutch/clutch_1
 #  - reg:///registry/items/slot_item/mechanic_item/transmission/front_axle/front_axle_1
-#  - reg:///registry/items/slot_item/mechanic_item/transmission/front_differential/front_differential_1
-#  - reg:///registry/items/slot_item/mechanic_item/transmission/primary_shaft/primary_shaft_1
 #  - reg:///registry/items/slot_item/mechanic_item/transmission/rear_axle/rear_axle_1
-#  - reg:///registry/items/slot_item/mechanic_item/transmission/rear_differential/rear_differential_1
 #  - reg:///registry/items/slot_item/mechanic_item/transmission/secondary_shaft/secondary_shaft_1
 #  - reg:///registry/items/slot_item/mechanic_item/transmission/torque_converter/torque_converter_1
 
@@ -138,10 +142,8 @@ items:
 #  - reg:///registry/items/slot_item/mechanic_item/brake/brake_fluid/brake_fluid_1
 #  - reg:///registry/items/slot_item/mechanic_item/brake/front_brakes/front_brakes_1
 #  - reg:///registry/items/slot_item/mechanic_item/brake/front_brake_lines/front_brake_lines_1
-#  - reg:///registry/items/slot_item/mechanic_item/brake/front_brake_pads/front_brake_pads_1
 #  - reg:///registry/items/slot_item/mechanic_item/brake/rear_brakes/rear_brakes_1
 #  - reg:///registry/items/slot_item/mechanic_item/brake/rear_brake_lines/rear_brake_lines_1
-#  - reg:///registry/items/slot_item/mechanic_item/brake/rear_brake_pads/rear_brake_pads_1
 
   # Охлаждение
 #  - reg:///registry/items/slot_item/mechanic_item/cooling/add_radiator/add_radiator_1
@@ -151,35 +153,35 @@ items:
 #  - reg:///registry/items/slot_item/mechanic_item/cooling/thermostat/thermostat_1
 
   # ДЛЯ СТИЛИСТА
-  - reg:///registry/items/slot_item/tuner_item/airint/airint_001
-  - reg:///registry/items/slot_item/tuner_item/armor/armor_001
-  - reg:///registry/items/slot_item/tuner_item/b_bumper/b_bumper_001
-  - reg:///registry/items/slot_item/tuner_item/b_bumper/b_bumper_002
-  - reg:///registry/items/slot_item/tuner_item/b_bumper/b_bumper_003
-  - reg:///registry/items/slot_item/tuner_item/b_fender/b_fender_001
-  - reg:///registry/items/slot_item/tuner_item/b_fender/b_fender_002
-  - reg:///registry/items/slot_item/tuner_item/b_fender/b_fender_003
-  - reg:///registry/items/slot_item/tuner_item/bale/bale_001
-  - reg:///registry/items/slot_item/tuner_item/bale/bale_002
-  - reg:///registry/items/slot_item/tuner_item/f_bumper/f_bumper_001
-  - reg:///registry/items/slot_item/tuner_item/f_bumper/f_bumper_002
-  - reg:///registry/items/slot_item/tuner_item/f_bumper/f_bumper_003
-  - reg:///registry/items/slot_item/tuner_item/f_fender/f_fender_001
-  - reg:///registry/items/slot_item/tuner_item/f_fender/f_fender_002
-  - reg:///registry/items/slot_item/tuner_item/f_fender/f_fender_003
-  - reg:///registry/items/slot_item/tuner_item/glass/glass_001
-  - reg:///registry/items/slot_item/tuner_item/roof/roof_002
-  - reg:///registry/items/slot_item/tuner_item/roof/roof_001
-  - reg:///registry/items/slot_item/tuner_item/shnork/shnork_001
-  - reg:///registry/items/slot_item/tuner_item/shnork/shnork_002
-  - reg:///registry/items/slot_item/tuner_item/shnork/shnork_003
-  - reg:///registry/items/slot_item/tuner_item/step/step_002
-  - reg:///registry/items/slot_item/tuner_item/step/step_003
-  - reg:///registry/items/slot_item/tuner_item/step/step_001
-  - reg:///registry/items/slot_item/tuner_item/trunk/trunk_002
-  - reg:///registry/items/slot_item/tuner_item/trunk/trunk_001
-  - reg:///registry/items/slot_item/tuner_item/win_prot/win_prot_001
-  - reg:///registry/items/slot_item/tuner_item/win_prot/win_prot_002
+#  - reg:///registry/items/slot_item/tuner_item/airint/airint_001
+#  - reg:///registry/items/slot_item/tuner_item/armor/armor_001
+#  - reg:///registry/items/slot_item/tuner_item/b_bumper/b_bumper_001
+#  - reg:///registry/items/slot_item/tuner_item/b_bumper/b_bumper_002
+#  - reg:///registry/items/slot_item/tuner_item/b_bumper/b_bumper_003
+#  - reg:///registry/items/slot_item/tuner_item/b_fender/b_fender_001
+#  - reg:///registry/items/slot_item/tuner_item/b_fender/b_fender_002
+#  - reg:///registry/items/slot_item/tuner_item/b_fender/b_fender_003
+#  - reg:///registry/items/slot_item/tuner_item/bale/bale_001
+#  - reg:///registry/items/slot_item/tuner_item/bale/bale_002
+#  - reg:///registry/items/slot_item/tuner_item/f_bumper/f_bumper_001
+#  - reg:///registry/items/slot_item/tuner_item/f_bumper/f_bumper_002
+#  - reg:///registry/items/slot_item/tuner_item/f_bumper/f_bumper_003
+#  - reg:///registry/items/slot_item/tuner_item/f_fender/f_fender_001
+#  - reg:///registry/items/slot_item/tuner_item/f_fender/f_fender_002
+#  - reg:///registry/items/slot_item/tuner_item/f_fender/f_fender_003
+#  - reg:///registry/items/slot_item/tuner_item/glass/glass_001
+#  - reg:///registry/items/slot_item/tuner_item/roof/roof_002
+#  - reg:///registry/items/slot_item/tuner_item/roof/roof_001
+#  - reg:///registry/items/slot_item/tuner_item/shnork/shnork_001
+#  - reg:///registry/items/slot_item/tuner_item/shnork/shnork_002
+#  - reg:///registry/items/slot_item/tuner_item/shnork/shnork_003
+#  - reg:///registry/items/slot_item/tuner_item/step/step_002
+#  - reg:///registry/items/slot_item/tuner_item/step/step_003
+#  - reg:///registry/items/slot_item/tuner_item/step/step_001
+#  - reg:///registry/items/slot_item/tuner_item/trunk/trunk_002
+#  - reg:///registry/items/slot_item/tuner_item/trunk/trunk_001
+#  - reg:///registry/items/slot_item/tuner_item/win_prot/win_prot_001
+#  - reg:///registry/items/slot_item/tuner_item/win_prot/win_prot_002
 
 price_list: # правила завоза
   - item: reg:///registry/items/stuff/alcohol/alcohol_001

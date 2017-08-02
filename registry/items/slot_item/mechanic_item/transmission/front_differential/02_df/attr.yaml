@@ -1,0 +1,22 @@
+_cls     : MechanicItem
+doc      : Дифференциал (перед) DF-Z02M02
+abstract : false
+
+title       : Дифференциал (перед) DF-Z02M02
+description : 'Механизм в составе трансмиссий машин по передаче мощности посредством вращения с одновременным делением единого потока мощности на два дифференциально связанных или суммированием двух независимых потоков мощности в один.'
+
+base_price: 400
+
+# Плюсы
+r_cc_dirt: 0.02
+r_cc_wood: 0.02
+r_cc_slope: 0.02
+r_cc_water: 0.02
+
+# Минусы
+r_min: 0.02
+
+inv_icon_big: static/content/items/slot_item/mechanic_items/transmission/front_differential/02_df/big.png
+inv_icon_mid: static/content/items/slot_item/mechanic_items/transmission/front_differential/02_df/mid.png
+inv_icon_small: static/content/items/slot_item/mechanic_items/transmission/front_differential/02_df/small.png
+inv_icon_supersmall: static/content/items/slot_item/mechanic_items/transmission/front_differential/02_df/supersmall.png

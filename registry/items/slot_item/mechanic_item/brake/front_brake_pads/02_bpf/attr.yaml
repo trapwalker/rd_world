@@ -1,0 +1,20 @@
+_cls     : MechanicItem
+doc      : Торм. колодки (перед) BPF-B01H01
+abstract : false
+
+title: Торм. колодки (перед) BPF-B01H01
+description: 'Создают тормозное ускорение, за счёт взаимодействия с поверхностью катания колеса или тормозного диска и преобразования силы нажатия в тормозной момент.'
+
+base_price: 200
+
+# Плюсы
+a_braking: 0.01
+
+# Минусы
+p_visibility_min: 0.01
+p_visibility_max: 0.01
+
+inv_icon_big: static/content/items/slot_item/mechanic_items/brake/front_brake_pads/02_bpf/big.png
+inv_icon_mid: static/content/items/slot_item/mechanic_items/brake/front_brake_pads/02_bpf/mid.png
+inv_icon_small: static/content/items/slot_item/mechanic_items/brake/front_brake_pads/02_bpf/small.png
+inv_icon_supersmall: static/content/items/slot_item/mechanic_items/brake/front_brake_pads/02_bpf/supersmall.png

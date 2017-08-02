@@ -1,0 +1,22 @@
+_cls     : MechanicItem
+doc      : Дифференциал (зад) DR-Z02F02
+abstract : false
+
+title       : Дифференциал (зад) DR-Z02F02
+description : 'Механизм в составе трансмиссий машин по передаче мощности посредством вращения с одновременным делением единого потока мощности на два дифференциально связанных или суммированием двух независимых потоков мощности в один.'
+
+base_price: 400
+
+# Плюсы
+r_cc_dirt: 0.02
+r_cc_wood: 0.02
+r_cc_slope: 0.02
+r_cc_water: 0.02
+
+# Минусы
+p_fuel_rate: 0.02
+
+inv_icon_big: static/content/items/slot_item/mechanic_items/transmission/rear_differential/02_dr/big.png
+inv_icon_mid: static/content/items/slot_item/mechanic_items/transmission/rear_differential/02_dr/mid.png
+inv_icon_small: static/content/items/slot_item/mechanic_items/transmission/rear_differential/02_dr/small.png
+inv_icon_supersmall: static/content/items/slot_item/mechanic_items/transmission/rear_differential/02_dr/supersmall.png

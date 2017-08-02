@@ -1,0 +1,17 @@
+_cls     : MechanicItem
+doc      : Свеча зажигания SP-H01
+abstract : false
+
+title: Свеча зажигания SP-H01
+description: 'Устройство для воспламенения топливо-воздушной смеси в самых разнообразных тепловых двигателях.'
+
+base_price: 200
+
+# Плюсы
+p_visibility_min: -0.01
+p_visibility_max: -0.01
+
+inv_icon_big: static/content/items/slot_item/mechanic_items/engine/sparkplug/02_sp/big.png
+inv_icon_mid: static/content/items/slot_item/mechanic_items/engine/sparkplug/02_sp/mid.png
+inv_icon_small: static/content/items/slot_item/mechanic_items/engine/sparkplug/02_sp/small.png
+inv_icon_supersmall: static/content/items/slot_item/mechanic_items/engine/sparkplug/02_sp/supersmall.png
