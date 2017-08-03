@@ -263,6 +263,7 @@ states:
           if agent.profile._agent_model and agent.profile._agent_model.car:  # Принудительная остановка (пока читает окно, чтобы не уехал)
                       agent.profile._agent_model.car.set_motion(time=event.time, cc=0.0)
           set_timer(name='shield_off', delay=5)
+          set_timer(name='kill_timeout', delay=30)
       on_event: |
           if isinstance(event, OnMakeDmg):
               if agent.profile._agent_model:
@@ -275,9 +276,17 @@ states:
               else:
                   set_timer(name='make_dmg_delay', delay=3)  # Дать возможность игроку насладиться стрельбой
 
-          if isinstance(event, OnTimer) and event.name == 'make_dmg_delay':
-              agent.profile.del_note(uid=quest.dc.current_note_uid, time=event.time)
-              go('try_game')
+          if isinstance(event, OnTimer):
+              if (event.name == 'make_dmg_delay'):
+                  agent.profile.del_note(uid=quest.dc.current_note_uid, time=event.time)
+                  go('try_game')
+              if (event.name == 'kill_timeout'):
+                  if not agent.teaching_flag:
+                      agent.profile.del_note(uid=quest.dc.current_note_uid, time=event.time)
+                      go('final')
+                  else:
+                      agent.profile.del_note(uid=quest.dc.current_note_uid, time=event.time)
+                      go('try_game')
 
           # Нужно выключать щит, если он перешёл в состояние без машинки или появился в нём с новой машинкой
           if isinstance(event, OnTimer) and event.name == 'shield_off' and agent.profile._agent_model:
