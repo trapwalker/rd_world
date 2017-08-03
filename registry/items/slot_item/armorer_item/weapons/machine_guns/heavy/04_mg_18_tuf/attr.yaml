@@ -1,5 +1,4 @@
-﻿__cls__         : MachineGun
-_cls            : MachineGun
+﻿_cls            : MachineGun
 doc             : Пулемет MG 18 TuF
 abstract        : false
 
@@ -14,7 +13,7 @@ ammo            : reg:///registry/items/usable/ammo/13mm      # Подходящ
 
 dps             : 4                                           # Дамаг в секунду по вражеским целям
 
-radius          : 200                                         # Дальность сектора стрельбы
+radius          : 400                                         # Дальность сектора стрельбы
 width           : 54                                          # Ширина сектора стрельбы
 
 ammo_per_second : 1                                           # [shot/s] ~=650/60 Потребление патронов в секунду
