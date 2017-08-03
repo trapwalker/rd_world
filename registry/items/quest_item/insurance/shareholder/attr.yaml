@@ -8,6 +8,7 @@ group_id: "insurance"
 title       : Акционерная
 description : Акционерная Страховка
 
+deadline: 2592000  # 30 суток
 base_price: 15000
 
 icon_nukeoil: static/content/locations/institutions/nucoil/shareholder_nukeoil.png
