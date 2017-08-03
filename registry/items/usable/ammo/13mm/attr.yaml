@@ -1,0 +1,16 @@
+﻿__cls__  : AmmoBullets
+_cls     : AmmoBullets
+doc      : Патроны 13мм/ББ
+abstract : false
+
+title       : Патроны<br>13мм/ББ
+description : '???'
+
+stack_size : 100
+amount     : 100
+base_price : 265
+
+inv_icon_big    : static/content/items/usable/ammo/13mm/big.png
+inv_icon_mid    : static/content/items/usable/ammo/13mm/mid.png
+inv_icon_small  : static/content/items/usable/ammo/13mm/small.png
+inv_icon_xsmall : static/content/items/usable/ammo/13mm/xsmall.png
