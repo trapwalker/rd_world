@@ -13,12 +13,12 @@ quests:
     karma_coef: 0.0                # Часть кармы от общей награды
     money_coef: 1.0                # Часть нуокйнов от общей награды
     reward_items_list: []          # Список возможных комплектов для награды
-    reward_exp: 5                  # Награда за 1 замер
-    measuring_price: 5             # Стоимость одного замера радиации
+    reward_exp: 17                 # Награда за 1 замер
+    measuring_price: 17            # Стоимость одного замера радиации
     measuring_radius: 100          # Максимальный радиус измерения
     measure_count_range:           # Диапазон количетсва измерений
-      min: 10
-      max: 20
+      min: 3
+      max: 6
     measure_points_generator:      # Список областей генерации пунктов замеров
       - {position: [12506879, 27029227], radius: 1024}
       - {position: [12507416, 27029260], radius: 1024}
