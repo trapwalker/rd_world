@@ -170,13 +170,15 @@ class AITrafficQuest(AIEventQuest):
         action_quest.dc.current_cc = 1.0
         if self.get_power_ratio(targets=targets, time=time) > 1.0:
             # todo: Выбрать цель для атаки  (Учесть расстояние, хп цели, свою скорость)
-            action_quest.dc.target_car = targets[0]
+            if not action_quest.dc.target_car or action_quest.dc.target_car not in targets:
+                action_quest.dc.target_car = random.choice(targets)
         else:
             # Убегать
             action_quest.dc.target_car = None
 
 
 ####################################################################################################################
+
     def on_generate_(self, event, **kw):
         pass
 
