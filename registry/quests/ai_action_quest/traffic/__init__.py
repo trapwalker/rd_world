@@ -9,6 +9,8 @@ from sublayers_server.model.registry_me.classes.quests import (
 from sublayers_server.model.registry_me.tree import (RegistryLinkField, ListField, EmbeddedDocumentField)
 
 from sublayers_world.registry.quests.ai_action_quest import AIActionQuest
+from sublayers_server.model.vectors import Point
+
 from functools import partial
 
 
@@ -59,13 +61,13 @@ class AIActionTrafficQuest(AIActionQuest):
     def get_target_point(self, car, event):
         target_car = self.dc.target_car
         if target_car and not target_car.limbo:
-            return target_car.position(event.time)
+            return Point.random_gauss(target_car.position(event.time), 20)
         # взять из роута
         car_pos = car.position(event.time)
         if self.route.need_next_point(car_pos):
             return self.route.next_point()
         else:
-            return self.route.nearest_point(car_pos)
+            return self.route.get_current_point()
 
     ####################################################################################################################
     def on_generate_(self, event, **kw):
