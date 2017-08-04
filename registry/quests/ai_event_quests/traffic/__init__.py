@@ -3,7 +3,7 @@
 import logging
 log = logging.getLogger(__name__)
 
-from sublayers_server.model.registry_me.classes.ai_event_quests import AIEventQuest
+from sublayers_world.registry.quests.ai_event_quests import AIEventQuest
 from sublayers_server.model.registry_me.tree import (IntField, ListField, RegistryLinkField, EmbeddedNodeField)
 from sublayers_server.model.registry_me.classes.quests import (
     QuestState_, FailState, WinState,
