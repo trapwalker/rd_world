@@ -15,12 +15,6 @@ from functools import partial
 
 
 class AIActionTrafficQuest(AIActionQuest):
-    route = EmbeddedDocumentField(
-        document_type='sublayers_server.model.registry_me.classes.routes.Route',
-        caption=u"Маршрут квеста (Устанавливается квестом-событием)",
-        reinst=True,
-    )
-
     towns_protect = ListField(
         root_default=list,
         caption=u"Список городов покровителей (Устанавливается квестом-событием)",
@@ -58,16 +52,12 @@ class AIActionTrafficQuest(AIActionQuest):
             self.dc.last_cc = cc
             self.dc.last_target_point = target_point
 
-    def get_target_point(self, car, event):
+    def get_target_point(self, event):
         target_car = self.dc.target_car
         if target_car and not target_car.limbo:
             return Point.random_gauss(target_car.position(event.time), 20)
-        # взять из роута
-        car_pos = car.position(event.time)
-        if self.route.need_next_point(car_pos):
-            return self.route.next_point()
-        else:
-            return self.route.get_current_point()
+        # взять из роута квеста эвента
+        return self.dc.current_target_point
 
     ####################################################################################################################
     def on_generate_(self, event, **kw):
@@ -76,11 +66,10 @@ class AIActionTrafficQuest(AIActionQuest):
     ####################################################################################################################
     def on_start_(self, event, **kw):
         self.dc.target_car = None  # Переопределяется квестом-событием
+        self.dc.current_target_point = self.get_target_point(event)  # Переопределяется квестом-событием
         self.dc.current_cc = 0.5  # Переопределяется квестом-событием
         self.dc.last_cc = 0.0
         self.dc.last_target_point = None
-        if not self.route:
-            log('Error!!! AIActionTraffic without route')
     
     ####################################################################################################################
     ## Перечень состояний ##############################################################################################
@@ -111,8 +100,7 @@ class AIActionTrafficQuest(AIActionQuest):
             agent = quest.agent
             car = agent.profile._agent_model.car
             if car:
-                car_pos = car.position(event.time)
-                target_pos = quest.route.nearest_point(car_pos)
+                target_pos = quest.get_target_point(event=event)
                 if target_pos:
                     quest.set_motion(car=car, cc=quest.dc.current_cc, target_point=target_pos, event=event)
                     quest.set_timer(event=event, name='patrol', delay=5)
@@ -133,7 +121,7 @@ class AIActionTrafficQuest(AIActionQuest):
                     if car.hp(time=event.time) < 20:
                         quest.use_heal(time=event.time)
 
-                    target_pos = quest.get_target_point(car=car, event=event)
+                    target_pos = quest.get_target_point(event=event)
                     if target_pos:
                         quest.set_motion(car=car, cc=quest.dc.current_cc, target_point=target_pos, event=event)
                     else:

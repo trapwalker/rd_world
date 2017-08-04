@@ -64,6 +64,7 @@ class AITrafficQuest(AIEventQuest):
 
         car_proto = random.choice(self.cars).instantiate()
         route = random.choice(self.routes).instantiate()
+        self.dc.route = route
         example_profile = event.server.reg.get('/registry/agents/user/ai_quest')
         action_quest = event.server.reg.get('/registry/quests/ai_action_quest/traffic')
 
@@ -81,7 +82,8 @@ class AITrafficQuest(AIEventQuest):
             user=None, time=event.time, server=event.server
         )
         self.dc._main_agent.event_quest = self
-        action_quest = action_quest.instantiate(abstract=False, hirer=None, route=route, towns_protect=self.towns_protect)
+        action_quest = action_quest.instantiate(abstract=False, hirer=None, towns_protect=self.towns_protect)
+        action_quest.dc.current_target_point = self.dc.route.get_start_point().as_point()
         self.dc._main_agent.create_ai_quest(time=event.time, action_quest=action_quest)
         car_example = car_proto.instantiate(
             position=Point.random_gauss(route.get_start_point().as_point(), 30),
@@ -98,7 +100,7 @@ class AITrafficQuest(AIEventQuest):
         if main_agent:
             main_agent.displace(time=event.time)
             self.dc._main_agent = None
-            # log.debug('Quest {!r} displace bots: {!r}'.format(self, main_agent))
+            log.debug('Quest {!r} displace bots: {!r}'.format(self, main_agent))
 
     def get_traffic_status(self, event):
         main_agent = getattr(self.dc, '_main_agent', None)
@@ -179,13 +181,22 @@ class AITrafficQuest(AIEventQuest):
 
 ####################################################################################################################
 
+    def set_target_point(self, time):
+        car = self.dc._main_agent.car
+        if not car or car.limbo:
+            # self.dc._main_agent.action_quest.dc.current_target_point = None
+            return
+        car_pos = self.dc._main_agent.car.position(time)
+        if self.dc.route.need_next_point(car_pos):
+            self.dc._main_agent.action_quest.dc.current_target_point = self.dc.route.next_point()
+
     def on_generate_(self, event, **kw):
         pass
 
     ####################################################################################################################
     def on_start_(self, event, **kw):
-        self.deploy_bots(event=event)
         self.dc.target_uid_list = []
+        self.deploy_bots(event=event)
 
     ####################################################################################################################
     ## Перечень состояний ##############################################################################################
@@ -207,6 +218,7 @@ class AITrafficQuest(AIEventQuest):
                 else:
                     quest.set_timer(event=event, name='test_end', delay=quest.test_end_time)
                     quest.set_actions(time=event.time)
+                    quest.set_target_point(time=event.time)
 
     ####################################################################################################################
     class win(WinState):pass
