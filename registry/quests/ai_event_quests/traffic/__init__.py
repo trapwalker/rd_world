@@ -10,10 +10,14 @@ from sublayers_server.model.registry_me.classes.quests import (
 )
 from sublayers_server.model.quest_events import OnTimer
 from sublayers_server.model.vectors import Point
+from sublayers_server.model.base import Observer
+
+from sublayers_server.model.registry_me.randomize_examples import RandomizeExamples
 
 from functools import partial
 import random
 from math import pi
+import traceback
 
 
 class AITrafficQuest(AIEventQuest):
@@ -62,13 +66,13 @@ class AITrafficQuest(AIEventQuest):
         if not self.routes or not self.cars:
             return
 
-        car_proto = random.choice(self.cars).instantiate()
         route = random.choice(self.routes).instantiate()
         self.dc.route = route
-        example_profile = event.server.reg.get('/registry/agents/user/ai_quest')
         action_quest = event.server.reg.get('/registry/quests/ai_action_quest/traffic')
 
-        example_profile = self.instantiate_agent(event, example_profile)
+        level = random.randint(0, 3)
+
+        example_profile = RandomizeExamples.get_random_agent(level=level, time=event.time, karma_min=-30, karma_max=60)
 
         # todo: сделать несколько видов профилей ботов, чтобы там были прокачаны скилы и перки
         example_agent = AgentExample(
@@ -83,12 +87,18 @@ class AITrafficQuest(AIEventQuest):
         )
         self.dc._main_agent.event_quest = self
         action_quest = action_quest.instantiate(abstract=False, hirer=None, towns_protect=self.towns_protect)
-        action_quest.dc.current_target_point = self.dc.route.get_start_point().as_point()
+
+        car_pos = Point.random_gauss(route.get_start_point().as_point(), 30)
+        action_quest.dc.current_target_point = self.dc.route.nearest_point(car_pos)
         self.dc._main_agent.create_ai_quest(time=event.time, action_quest=action_quest)
-        car_example = car_proto.instantiate(
-            position=Point.random_gauss(route.get_start_point().as_point(), 30),
-            direction=random.random() * 2 * pi,
-        )
+
+        car_example = RandomizeExamples.get_random_car_level(
+            level=level,
+            car_params=dict(
+                position=car_pos,
+                direction=random.random() * 2 * pi,
+            ))
+
         self.init_bot_inventory(car_example=car_example)
         self.dc._main_agent.generate_car(time=event.time, car_example=car_example)
 
@@ -122,9 +132,12 @@ class AITrafficQuest(AIEventQuest):
             return
         if abs(agent.example.profile.karma_norm - self_karma) > 0.3:
             # Добавить во враги
-            damager_uid = obj.uid
-            if damager_uid not in self.dc.target_uid_list:
-                self.dc.target_uid_list.append(damager_uid)
+            if not isinstance(obj, Observer):
+                log.debug('on_see_object: obj not observer: %s', obj)
+                log.debug(''.join(traceback.format_stack()))
+                return
+            if obj.uid not in self.dc.target_uid_list:
+                self.dc.target_uid_list.append(obj.uid)
 
     def get_visible_targets(self):
         r = []
@@ -174,12 +187,10 @@ class AITrafficQuest(AIEventQuest):
             # todo: Выбрать цель для атаки  (Учесть расстояние, хп цели, свою скорость)
             if not action_quest.dc.target_car or action_quest.dc.target_car not in targets:
                 action_quest.dc.target_car = random.choice(targets)
+                # log.info('NEW Target: %s  for: %s', '', self.dc._main_agent.print_login())
         else:
             # Убегать
             action_quest.dc.target_car = None
-
-
-####################################################################################################################
 
     def set_target_point(self, time):
         car = self.dc._main_agent.car
@@ -189,6 +200,8 @@ class AITrafficQuest(AIEventQuest):
         car_pos = self.dc._main_agent.car.position(time)
         if self.dc.route.need_next_point(car_pos):
             self.dc._main_agent.action_quest.dc.current_target_point = self.dc.route.next_point()
+
+####################################################################################################################
 
     def on_generate_(self, event, **kw):
         pass
