@@ -1,0 +1,54 @@
+﻿
+randomize_cars_by_lvl:
+  - level: 0
+    cars:
+      - reg:///registry/mobiles/cars/light/motorcycles/honda_cy_50
+      - reg:///registry/mobiles/cars/light/motorcycles/jawa_cz_355
+      - reg:///registry/mobiles/cars/middle/cars/vw_beetle
+      - reg:///registry/mobiles/cars/middle/cars/vw_golf
+      - reg:///registry/mobiles/cars/middle/offroad/ford_econoline
+      - reg:///registry/mobiles/cars/middle/offroad/ford_f_150
+      - reg:///registry/mobiles/cars/middle/vans/barkas_b1000kb
+      - reg:///registry/mobiles/cars/middle/vans/citroen_hy
+    weapons:
+      - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/00_oc_14
+      - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/00_rpk
+      - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/00_fg_42
+      - reg:///registry/items/slot_item/armorer_item/weapons/cannons/medium/00_oerlikon
+      - reg:///registry/items/slot_item/armorer_item/weapons/cannons/medium/00_hs_404
+
+  - level: 1
+    cars:
+      - reg:///registry/mobiles/cars/light/motorcycles/01_honda_sl90
+      - reg:///registry/mobiles/cars/light/quadbikes/01_polaris_sportsman_90
+      - reg:///registry/mobiles/cars/middle/cars/01_mazda_luce_1500
+      - reg:///registry/mobiles/cars/middle/cars/01_fiat_croma
+      - reg:///registry/mobiles/cars/middle/offroad/01_datsun_truck_521
+      - reg:///registry/mobiles/cars/cargo/buses/01_bedford_vas
+    weapons:
+      - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/00_mg_08
+      - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/01_negev_ng7
+      - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/01_m249_saw
+      - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/01_mg_15
+      - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/01_mg_81
+      - reg:///registry/items/slot_item/armorer_item/weapons/cannons/medium/00_hs_404
+      - reg:///registry/items/slot_item/armorer_item/weapons/cannons/medium/01_lvakan_m_40
+      - reg:///registry/items/slot_item/armorer_item/weapons/cannons/medium/01_bofors_m_45
+
+  - level: 2
+    cars:
+      - reg:///registry/mobiles/cars/light/buggies/02_brp_commander_1000
+      - reg:///registry/mobiles/cars/middle/cars/02_toyota_corolla
+      - reg:///registry/mobiles/cars/middle/cars/02_chevrolet_monte_carlo
+      - reg:///registry/mobiles/cars/middle/sports/02_alfa_romeo_75
+      - reg:///registry/mobiles/cars/middle/offroad/02_ford_bronco
+      - reg:///registry/mobiles/cars/middle/vans/02_volkswagen_t1_samba
+    weapons:
+      - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/01_mg_15
+      - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/01_mg_81
+      - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/02_stoner_63
+      - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/02_lsat
+      - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/02_mg_42
+      - reg:///registry/items/slot_item/armorer_item/weapons/cannons/light/02_rg_6
+      - reg:///registry/items/slot_item/armorer_item/weapons/cannons/medium/02_mauser_mg_213
+      - reg:///registry/items/slot_item/armorer_item/weapons/cannons/medium/03_vya_23
