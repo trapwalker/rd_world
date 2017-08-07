@@ -38,26 +38,6 @@ class AITrafficQuest(AIEventQuest):
         ),
     )
 
-    def instantiate_agent(self, event, agent_proto):
-        example_profile = agent_proto.instantiate(
-            name='',
-            role_class=random.choice(event.server.reg.get('/registry/world_settings').role_class_order or ['/registry/rpg_settings/role_class/chosen_one']),
-        )
-
-        example_profile.set_karma(time=event.time, value=random.randint(-30, 60))
-
-        example_profile.driving.value = max(example_profile.driving.value + random.randint(-5, 5), 0)
-        example_profile.shooting.value = max(example_profile.shooting.value + random.randint(-5, 5), 0)
-        example_profile.masking.value = max(example_profile.masking.value + random.randint(-5, 5), 0)
-        example_profile.leading.value = max(example_profile.leading.value + random.randint(-5, 5), 0)
-        example_profile.trading.value = max(example_profile.trading.value + random.randint(-5, 5), 0)
-        example_profile.engineering.value = max(example_profile.engineering.value + random.randint(-5, 5), 0)
-
-        points = example_profile.driving.value + example_profile.shooting.value + example_profile.masking.value + example_profile.leading.value + example_profile.trading.value + example_profile.engineering.value
-        exp = example_profile.exp_table.get_need_exp_by_points(points - example_profile.role_class.start_free_point_perks)
-        example_profile.set_exp(time=event.time, value=exp)
-        return example_profile
-
     def deploy_bots(self, event):
         # Метод деплоя агентов на карту. Вызывается на on_start квеста
         from sublayers_server.model.ai_dispatcher import AIAgent
@@ -151,13 +131,15 @@ class AITrafficQuest(AIEventQuest):
     def get_total_hp(self, cars, time):
         hp = 0
         for car in cars:
-            hp += car.hp(time)
+            if not car.limbo:
+                hp += car.hp(time)
         return hp
 
     def get_total_dps(self, cars):
         dps = 0
         for car in cars:
-            dps += car.get_total_dps()
+            if not car.limbo:
+                dps += car.get_total_dps()
         return dps
 
     def get_power_ratio(self, targets, time):
@@ -201,7 +183,7 @@ class AITrafficQuest(AIEventQuest):
         if self.dc.route.need_next_point(car_pos):
             self.dc._main_agent.action_quest.dc.current_target_point = self.dc.route.next_point()
 
-####################################################################################################################
+    ####################################################################################################################
 
     def on_generate_(self, event, **kw):
         pass
@@ -232,7 +214,6 @@ class AITrafficQuest(AIEventQuest):
                     quest.set_timer(event=event, name='test_end', delay=quest.test_end_time)
                     quest.set_actions(time=event.time)
                     quest.set_target_point(time=event.time)
-
     ####################################################################################################################
     class win(WinState):pass
     ####################################################################################################################

@@ -8,6 +8,8 @@ from sublayers_server.model.registry_me.classes.quests import QuestRange
 from sublayers_server.model.registry_me.tree import EmbeddedDocumentField
 from sublayers_server.model.vectors import Point
 
+from sublayers_server.model.registry_me.randomize_examples import RandomizeExamples
+
 from functools import partial
 import random
 from math import pi
@@ -25,79 +27,82 @@ class AIGangQuest(AITrafficQuest):
             return
 
         action_quest = event.server.reg.get('/registry/quests/ai_action_quest/traffic')
-        example_profile_proto = event.server.reg.get('/registry/agents/user/ai_quest')
-        route = random.choice(self.routes).instantiate()
+        route = random.choice(self.routes).instantiate(route_accuracy=200)
+        self.dc.route = route
+        level = random.randint(0, 3)
 
         for i in range(0, self.dc.count_members):
-            car_proto = random.choice(self.cars).instantiate()
-
-            example_profile = self.instantiate_agent(event, example_profile_proto)
+            example_profile = RandomizeExamples.get_random_agent(level=level, time=event.time, karma_min=-30, karma_max=60)
             example_agent = AgentExample(login='', user_id='', profile=example_profile)
+            model_agent = AIAgent(example=example_agent, user=None, time=event.time, server=event.server)
 
-            agent = AIAgent(
-                example=example_agent,
-                user=None, time=event.time, server=event.server
-            )
-            agent.event_quest = self
-            action_quest = action_quest.instantiate(abstract=False, hirer=None, route=route, towns_protect=self.towns_protect)
+            model_agent.event_quest = self
 
-            agent.create_ai_quest(time=event.time, action_quest=action_quest)
-            car_example = car_proto.instantiate(
-                position=Point.random_gauss(route.get_start_point().as_point(), 30),
-                direction=random.random() * 2 * pi,
+            car_pos = Point.random_gauss(route.get_start_point().as_point(), 30)
+            action_quest = action_quest.instantiate(abstract=False, hirer=None, towns_protect=self.towns_protect)
+            action_quest.dc.current_target_point = self.dc.route.nearest_point(car_pos)
+            model_agent.create_ai_quest(time=event.time, action_quest=action_quest)
+            car_example = RandomizeExamples.get_random_car_level(
+                level=level,
+                car_params=dict(
+                    position=car_pos,
+                    direction=random.random() * 2 * pi,
+                )
             )
             self.init_bot_inventory(car_example=car_example)
-            agent.generate_car(time=event.time, car_example=car_example)
+            model_agent.generate_car(time=event.time, car_example=car_example)
 
-            self.dc.members.append(agent)
-
-        # log.debug('Quest {!r} deploy_bots: {!r}'.format(self, self.dc._main_agent))
+            self.dc.members.append(model_agent)
 
     def displace_bots(self, event):
         # Метод удаления с карты агентов-ботов. Вызывается на при завершении квеста
-        main_agent = getattr(self.dc, '_main_agent', None)
         for agent in self.dc.members:
             agent.displace(time=event.time)
-            log.debug('Quest {!r} displace bots: {!r}'.format(self, main_agent))
         self.dc.members = []
 
     def get_traffic_status(self, event):
-        main_agent = getattr(self.dc, '_main_agent', None)
-        if main_agent and main_agent.car is None:
-            return 'fail'
-        if main_agent and main_agent.action_quest and main_agent.action_quest.status == 'end':
-            # спросить у квеста, пройден ли он и если да, то вернуть 'win'
-            return main_agent.action_quest.result
+        for agent in self.dc.members:
+            if agent and (agent.action_quest.status == 'active'):
+                return None
+        return 'fail'
 
     def on_see_object(self, event):  # Вызывается когда только для OnAISee
-        self_karma = self.dc._main_agent.example.profile.karma_norm
-        if self_karma > 0.3:  # Не добавляет, если карма хорошая
-            return
         obj = getattr(event, 'obj', None)
         if obj is None:
+            return 
+        if not getattr(obj, 'main_agent', None):
             return
-        agent = getattr(obj, 'main_agent', None)
-        if not agent:
+
+        # Добавить во враги
+        obj_uid = obj.uid
+
+        if obj_uid in [agent.car.uid for agent in self.dc.members if agent.car and not agent.car.limbo]:
             return
-        if abs(agent.example.profile.karma_norm - self_karma) > 0.3:
-            # Добавить во враги
-            damager_uid = obj.uid
-            if damager_uid not in self.dc.target_uid_list:
-                self.dc.target_uid_list.append(damager_uid)
+
+        if obj_uid not in self.dc.target_uid_list:
+            self.dc.target_uid_list.append(obj_uid)
+
+    def set_main_cc(self):
+        min_v = min([agent.car._param_aggregate['v_forward'] for agent in self.dc.members if agent.car and not agent.car.limbo])
+        for agent in self.dc.members:
+            if agent.car and not agent.car.limbo:
+                agent.action_quest.current_cc = agent.car.get_cc_by_speed(speed=min_v)
 
     def get_visible_targets(self):
         r = []
-        agent_vo = self.dc._main_agent.get_all_visible_objects()
-        for target_uid in self.dc.target_uid_list:
-            for vo in agent_vo:
-                if target_uid == vo.uid:
-                    r.append(vo)
+        for agent in self.dc.members:
+            agent_vo = agent.get_all_visible_objects()
+            for target_uid in self.dc.target_uid_list:
+                for vo in agent_vo:
+                    if (target_uid == vo.uid) and (vo not in r):
+                        r.append(vo)
         return r
 
     def get_power_ratio(self, targets, time):
-        team_hp = self.get_total_hp(cars=[self.dc._main_agent.car], time=time)
+        team_car_list = [agent.car for agent in self.dc.members]
+        team_hp = self.get_total_hp(cars=team_car_list, time=time)
         enemy_hp = self.get_total_hp(cars=targets, time=time)
-        team_dps = self.get_total_dps(cars=[self.dc._main_agent.car])
+        team_dps = self.get_total_dps(cars=team_car_list)
         enemy_dps = self.get_total_dps(cars=targets)
         if enemy_dps == 0:
             return 10
@@ -106,30 +111,44 @@ class AIGangQuest(AITrafficQuest):
         return (team_hp / enemy_dps) / (enemy_hp / team_dps)
 
     def set_actions(self, time):  # Настройка поведеньческих квестов
+        # Корректируем скорость группы (вдруг самый медленный сдох)
+        self.set_main_cc()
+
+        # Определяем есть ли цель
         targets = self.get_visible_targets()
-        action_quest = self.dc._main_agent.action_quest
-        if not action_quest or not self.dc._main_agent.car or self.dc._main_agent.car.limbo:
-            return
-        # Нет видимых целей, значит ехать по маршруту
-        if not targets:
-            action_quest.dc.target_car = None
-            action_quest.dc.current_cc = 0.5
-            return
-        # Определение run или attacke
-        action_quest.dc.current_cc = 1.0
         if self.get_power_ratio(targets=targets, time=time) > 1.0:
-            # todo: Выбрать цель для атаки  (Учесть расстояние, хп цели, свою скорость)
-            if not action_quest.dc.target_car or action_quest.dc.target_car not in targets:
-                action_quest.dc.target_car = random.choice(targets)
+            if not self.dc.target or self.dc.target not in targets:
+                if targets:
+                    self.dc.target = random.choice(targets)
+                else:
+                    self.dc.target = None
+
+        for agent in self.dc.members:
+            action_quest = agent.action_quest
+            if not action_quest or not agent.car or agent.car.limbo:
+                continue
+            action_quest.dc.target_car = self.dc.target
+
+    def set_target_point(self, time):
+        next_point = True
+        route = self.dc.route
+        for agent in self.dc.members:
+            if agent.car and not agent.car.limbo and not route.need_next_point(agent.car.position(time)):
+                next_point = False
+                break
+
+        if next_point:
+            new_target = route.next_point()
         else:
-            # Убегать
-            action_quest.dc.target_car = None
+            new_target = route.get_current_point()
 
+        for agent in self.dc.members:
+            if agent.car and not agent.car.limbo:
+                agent.action_quest.dc.current_target_point = Point.random_gauss(new_target, 100)
 
-####################################################################################################################
     ####################################################################################################################
     def on_start_(self, event, **kw):
         self.dc.count_members = self.count_members.get_random_int()
         self.dc.members = []
-        super(AIGangQuest, self).__init__(event=event, **kw)
-
+        self.dc.target = None
+        super(AIGangQuest, self).on_start_(event=event, **kw)

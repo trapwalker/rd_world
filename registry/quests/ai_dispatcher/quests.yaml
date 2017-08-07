@@ -363,3 +363,12 @@ quests:
     loot_rec_list:
       - item: reg:///registry/items/stuff/scrap_metal/scrap_metal_001
         chance: 0.5
+
+  - parent: reg:///registry/quests/ai_event_quests/traffic/gang
+    generation_group: 'traffic_wh_pl_gang'
+    generation_max_count: 1
+    chance_of_generation: 1
+    delay_time: 900
+    count_members: { max: 5, min: 3 }
+    routes:
+      - parent: reg:///registry/routes/whitehill_paloma
