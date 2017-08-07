@@ -367,8 +367,10 @@ quests:
   - parent: reg:///registry/quests/ai_event_quests/traffic/gang
     generation_group: 'traffic_wh_pl_gang'
     generation_max_count: 1
-    chance_of_generation: 1
-    delay_time: 900
-    count_members: { max: 5, min: 3 }
+    chance_of_generation: 0.05
+    delay_time: 7200
+    count_members: { max: 25, min: 15 }
     routes:
-      - parent: reg:///registry/routes/whitehill_paloma
+      - parent: reg:///registry/routes/big_road
+      - parent: reg:///registry/routes/big_road
+        reverse: True

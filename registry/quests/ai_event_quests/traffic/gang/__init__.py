@@ -69,7 +69,7 @@ class AIGangQuest(AITrafficQuest):
     def on_see_object(self, event):  # Вызывается когда только для OnAISee
         obj = getattr(event, 'obj', None)
         if obj is None:
-            return 
+            return
         if not getattr(obj, 'main_agent', None):
             return
 
@@ -99,7 +99,7 @@ class AIGangQuest(AITrafficQuest):
         return r
 
     def get_power_ratio(self, targets, time):
-        team_car_list = [agent.car for agent in self.dc.members]
+        team_car_list = [agent.car for agent in self.dc.members if agent.car and not agent.car.limbo]
         team_hp = self.get_total_hp(cars=team_car_list, time=time)
         enemy_hp = self.get_total_hp(cars=targets, time=time)
         team_dps = self.get_total_dps(cars=team_car_list)
@@ -144,7 +144,10 @@ class AIGangQuest(AITrafficQuest):
 
         for agent in self.dc.members:
             if agent.car and not agent.car.limbo:
-                agent.action_quest.dc.current_target_point = Point.random_gauss(new_target, 100)
+                if new_target:
+                    agent.action_quest.dc.current_target_point = Point.random_gauss(new_target, 100)
+                else:
+                    agent.action_quest.dc.current_target_point = None
 
     ####################################################################################################################
     def on_start_(self, event, **kw):
