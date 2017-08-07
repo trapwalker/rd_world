@@ -24,7 +24,7 @@ from sublayers_common.ctx_timer import T
 class SearchCourier(DeliveryFromCache):
     courier_car_list = ListField(
         caption=u"Список возможных машин курьера",
-        field=StringField(),
+        field=RegistryLinkField(),
     )
 
     courier_medallion = EmbeddedNodeField(
@@ -46,11 +46,12 @@ class SearchCourier(DeliveryFromCache):
         self.loot_set = loot_set
 
         # Выбор машинки курьера
-        uri = random.choice(self.courier_car_list)
-        try:
-            self.dc.courier_car = event.server.reg.get(uri)
-        except:
-            raise Cancel("QUEST CANCEL: uri<{}>  not resolve.".format(uri))
+        car = random.choice(self.courier_car_list)
+        #try:
+        #    car = event.server.reg.get(uri)
+        #except:
+        #    raise Cancel("QUEST CANCEL: uri<{}>  not resolve.".format(uri))
+        self.dc.courier_car = car
 
     def init_text(self):
         self.text_short = u"Найти пропавшего курьера."
