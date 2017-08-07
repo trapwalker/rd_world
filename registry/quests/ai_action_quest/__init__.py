@@ -29,5 +29,7 @@ class AIActionQuest(Quest):
     def is_target(self, target):
         agent_model = self.agent and self.agent.profile._agent_model
         if agent_model:
-            return target.uid in agent_model.target_uid_list
+            return target.uid in agent_model.event_quest.dc.target_uid_list
         return False
+
+

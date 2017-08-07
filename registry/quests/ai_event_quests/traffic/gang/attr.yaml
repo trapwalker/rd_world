@@ -1,0 +1,4 @@
+_cls: AIGangQuest
+doc    : Квесты
+
+count_members: {min: 3, max: 3}
