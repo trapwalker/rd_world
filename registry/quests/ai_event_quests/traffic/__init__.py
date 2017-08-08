@@ -4,7 +4,9 @@ import logging
 log = logging.getLogger(__name__)
 
 from sublayers_world.registry.quests.ai_event_quests import AIEventQuest
-from sublayers_server.model.registry_me.tree import (IntField, ListField, RegistryLinkField, EmbeddedNodeField)
+from sublayers_server.model.registry_me.classes.quests import QuestRange
+from sublayers_server.model.registry_me.tree import (IntField, ListField, RegistryLinkField, EmbeddedNodeField,
+                                                     EmbeddedDocumentField)
 from sublayers_server.model.registry_me.classes.quests import (
     QuestState_, FailState, WinState,
 )
@@ -22,6 +24,8 @@ import traceback
 
 class AITrafficQuest(AIEventQuest):
     test_end_time = IntField(caption=u'Интервал проверки достижения цели')
+    bots_karma = EmbeddedDocumentField(document_type=QuestRange, caption=u"Границы кармы")
+    bots_level = EmbeddedDocumentField(document_type=QuestRange, caption=u"Уровни мобов")
     routes = ListField(
         root_default=list,
         caption=u"Список маршрутов",
@@ -43,18 +47,16 @@ class AITrafficQuest(AIEventQuest):
         from sublayers_server.model.ai_dispatcher import AIAgent
         from sublayers_server.model.registry_me.classes.agents import Agent as AgentExample
 
-        if not self.routes or not self.cars:
+        if not self.routes:
             return
 
         route = random.choice(self.routes).instantiate()
         self.dc.route = route
         action_quest = event.server.reg.get('/registry/quests/ai_action_quest/traffic')
 
-        level = random.randint(0, 3)
+        level = random.randint(self.bots_level.min, self.bots_level.max)
+        example_profile = RandomizeExamples.get_random_agent(level=level, time=event.time, karma_min=self.bots_karma.min, karma_max=self.bots_karma.max)
 
-        example_profile = RandomizeExamples.get_random_agent(level=level, time=event.time, karma_min=-30, karma_max=60)
-
-        # todo: сделать несколько видов профилей ботов, чтобы там были прокачаны скилы и перки
         example_agent = AgentExample(
             login='',
             user_id='',
@@ -90,7 +92,7 @@ class AITrafficQuest(AIEventQuest):
         if main_agent:
             main_agent.displace(time=event.time)
             self.dc._main_agent = None
-            log.debug('Quest {!r} displace bots: {!r}'.format(self, main_agent))
+            # log.debug('Quest {!r} displace bots: {!r}'.format(self, main_agent))
 
     def get_traffic_status(self, event):
         main_agent = getattr(self.dc, '_main_agent', None)
@@ -101,16 +103,13 @@ class AITrafficQuest(AIEventQuest):
             return main_agent.action_quest.result
 
     def on_see_object(self, event):  # Вызывается когда только для OnAISee
-        self_karma = self.dc._main_agent.example.profile.karma_norm
-        if self_karma > 0.3:  # Не добавляет, если карма хорошая
-            return
         obj = getattr(event, 'obj', None)
         if obj is None:
             return
         agent = getattr(obj, 'main_agent', None)
         if not agent:
             return
-        if abs(agent.example.profile.karma_norm - self_karma) > 0.3:
+        if self.can_attack_by_karma(self.dc._main_agent.example.profile.karma_norm, agent.example.profile.karma_norm):
             # Добавить во враги
             if not isinstance(obj, Observer):
                 log.debug('on_see_object: obj not observer: %s', obj)

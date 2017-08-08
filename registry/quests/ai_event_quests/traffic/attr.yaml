@@ -2,9 +2,8 @@ __cls__: AITrafficQuest
 _cls: AITrafficQuest
 doc    : Квесты
 
-cars:
-  - reg:///registry/mobiles/cars/middle/vans/chevrolet_express/bot
-  - reg:///registry/mobiles/cars/middle/vans/03_gmc_savana/bot
+bots_karma: {min: -10, max: 10}
+bots_level: {min: 0, max: 2}
 
 max_loot_count: 5
 loot_rec_list:

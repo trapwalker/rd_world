@@ -23,16 +23,16 @@ class AIGangQuest(AITrafficQuest):
         from sublayers_server.model.ai_dispatcher import AIAgent
         from sublayers_server.model.registry_me.classes.agents import Agent as AgentExample
 
-        if not self.routes or not self.cars:
+        if not self.routes:
             return
 
         action_quest = event.server.reg.get('/registry/quests/ai_action_quest/traffic')
         route = random.choice(self.routes).instantiate(route_accuracy=200)
         self.dc.route = route
-        level = random.randint(0, 3)
+        level = random.randint(self.bots_level.min, self.bots_level.max)
 
         for i in range(0, self.dc.count_members):
-            example_profile = RandomizeExamples.get_random_agent(level=level, time=event.time, karma_min=-30, karma_max=60)
+            example_profile = RandomizeExamples.get_random_agent(level=level, time=event.time, karma_min=self.bots_karma.min, karma_max=self.bots_karma.max)
             example_agent = AgentExample(login='', user_id='', profile=example_profile)
             model_agent = AIAgent(example=example_agent, user=None, time=event.time, server=event.server)
 
