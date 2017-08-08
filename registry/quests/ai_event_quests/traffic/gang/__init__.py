@@ -7,6 +7,7 @@ from sublayers_world.registry.quests.ai_event_quests.traffic import AITrafficQue
 from sublayers_server.model.registry_me.classes.quests import QuestRange
 from sublayers_server.model.registry_me.tree import EmbeddedDocumentField
 from sublayers_server.model.vectors import Point
+from sublayers_common.ctx_timer import T, Timer
 
 from sublayers_server.model.registry_me.randomize_examples import RandomizeExamples
 
@@ -23,36 +24,74 @@ class AIGangQuest(AITrafficQuest):
         from sublayers_server.model.ai_dispatcher import AIAgent
         from sublayers_server.model.registry_me.classes.agents import Agent as AgentExample
 
-        if not self.routes or not self.cars:
+        if not self.routes:
             return
 
         action_quest = event.server.reg.get('/registry/quests/ai_action_quest/traffic')
         route = random.choice(self.routes).instantiate(route_accuracy=200)
         self.dc.route = route
-        level = random.randint(0, 3)
+        level = random.randint(self.bots_level.min, self.bots_level.max)
 
-        for i in range(0, self.dc.count_members):
-            example_profile = RandomizeExamples.get_random_agent(level=level, time=event.time, karma_min=-30, karma_max=60)
-            example_agent = AgentExample(login='', user_id='', profile=example_profile)
-            model_agent = AIAgent(example=example_agent, user=None, time=event.time, server=event.server)
+        timer_summ_agent = 0
+        timer_summ_car = 0
+        timer_summ_quest = 0
 
-            model_agent.event_quest = self
+        timer_summ_agent_ex_profile = 0
+        timer_summ_agent_ex_agent = 0
+        timer_summ_agent_model = 0
 
-            car_pos = Point.random_gauss(route.get_start_point().as_point(), 30)
-            action_quest = action_quest.instantiate(abstract=False, hirer=None, towns_protect=self.towns_protect)
-            action_quest.dc.current_target_point = self.dc.route.nearest_point(car_pos)
-            model_agent.create_ai_quest(time=event.time, action_quest=action_quest)
-            car_example = RandomizeExamples.get_random_car_level(
-                level=level,
-                car_params=dict(
-                    position=car_pos,
-                    direction=random.random() * 2 * pi,
-                )
-            )
-            self.init_bot_inventory(car_example=car_example)
-            model_agent.generate_car(time=event.time, car_example=car_example)
+        timer_summ_car_ex = 0
+        timer_summ_car_inv = 0
 
-            self.dc.members.append(model_agent)
+        with Timer(name='Deploy') as deploy_timer:
+            for i in range(0, self.dc.count_members):
+                with Timer(name='Agent') as deploy_agent_timer:
+                    with Timer(name='Agent_ex_pr') as deploy_summ_agent_ex_profile_timer:
+                        example_profile = RandomizeExamples.get_random_agent(level=level, time=event.time, karma_min=self.bots_karma.min, karma_max=self.bots_karma.max)
+                    timer_summ_agent_ex_profile += deploy_summ_agent_ex_profile_timer.duration
+
+                    with Timer(name='Agent_ex_agent') as deploy_timer_summ_agent_ex_agent:
+                        example_agent = AgentExample(login='', user_id='', profile=example_profile)
+                    timer_summ_agent_ex_agent += deploy_timer_summ_agent_ex_agent.duration
+
+                    with Timer(name='Agent_ex_agent') as deploy_timer_summ_agent_model:
+                        model_agent = AIAgent(example=example_agent, user=None, time=event.time, server=event.server)
+                    timer_summ_agent_model += deploy_timer_summ_agent_model.duration
+                timer_summ_agent += deploy_agent_timer.duration
+
+                model_agent.event_quest = self
+
+                with Timer(name='Quest') as deploy_quest_timer:
+                    car_pos = Point.random_gauss(route.get_start_point().as_point(), 30)
+                    action_quest = action_quest.instantiate(abstract=False, hirer=None, towns_protect=self.towns_protect)
+                    action_quest.dc.current_target_point = self.dc.route.nearest_point(car_pos)
+                    model_agent.create_ai_quest(time=event.time, action_quest=action_quest)
+                timer_summ_quest += deploy_quest_timer.duration
+
+                with Timer(name='Car') as deploy_car_timer:
+                    with Timer(name='Car') as deploy_timer_summ_car_ex:
+                        car_example = RandomizeExamples.get_random_car_level(
+                            level=level,
+                            car_params=dict(
+                                position=car_pos,
+                                direction=random.random() * 2 * pi,
+                            )
+                        )
+                    timer_summ_car_ex += deploy_timer_summ_car_ex.duration
+
+                    with Timer(name='Car') as deploy_timer_summ_car_inv:
+                        self.init_bot_inventory(car_example=car_example)
+                    timer_summ_car_inv += deploy_timer_summ_car_inv.duration
+
+                    model_agent.generate_car(time=event.time, car_example=car_example)
+                timer_summ_car += deploy_car_timer.duration
+
+                self.dc.members.append(model_agent)
+        log.debug("Deploy Gang: {} members =>>> {:.4f}s".format(self.dc.count_members, deploy_timer.duration))
+        log.debug("Agents: {:.4f}s     Quests: {:.4f}s     Cars: {:.4f}s".format(timer_summ_agent, timer_summ_quest, timer_summ_car))
+
+        log.debug("Agents: Profile {:.4f}s     Example: {:.4f}s     Model: {:.4f}s".format(timer_summ_agent_ex_profile, timer_summ_agent_ex_agent, timer_summ_agent_model))
+        log.debug("Cars: Example {:.4f}s     Inventory: {:.4f}s".format(timer_summ_car_ex, timer_summ_car_inv))
 
     def displace_bots(self, event):
         # Метод удаления с карты агентов-ботов. Вызывается на при завершении квеста
