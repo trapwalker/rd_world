@@ -1,8 +1,8 @@
 ﻿_cls     : Town
-doc      : Лос Джетас   # База злых мобов
+doc      : Лос Хэтас   # База злых мобов
 abstract : false
 
-title             : Лос Джетас
+title             : Лос Хэтас
 position          : {x: 12472562, y: 27043861}
 p_observing_range : 250
 p_enter_range     : 150
@@ -13,9 +13,8 @@ buildings:
   - name: base
     caption: База
     title: База
-    head: reg:///registry/institutions/mine_manager/mine_whitehill_bob_mcdowell
-    instances:
-        - reg:///registry/institutions/mine_manager/mine_whitehill_bob_mcdowell
+    head: reg:///registry/institutions/boss/los_jetas_angel_morales
+    instances: []
 
 static_image_list:
     - /static/content/locations/map_locations/los_jetas/ground+circle.png

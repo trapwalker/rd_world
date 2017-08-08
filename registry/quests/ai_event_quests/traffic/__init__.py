@@ -30,7 +30,7 @@ class AITrafficQuest(AIEventQuest):
         root_default=list,
         caption=u"Список маршрутов",
         field=EmbeddedNodeField(
-            document_type='sublayers_server.model.registry_me.classes.routes.Route',
+            document_type='sublayers_server.model.registry_me.classes.routes.AbstractRoute',
         ),
     )
 
