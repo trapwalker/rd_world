@@ -84,3 +84,27 @@ class AIEventQuest(Quest):
             if q is self or q.parent != target_parent or q.generation_group != target_group:
                 quests_ended.append(q)
         self.agent.profile.quests_ended = quests_ended
+
+    @staticmethod
+    def can_attack_by_karma(karma_attacker, karma_target):
+        if karma_attacker < -1 or karma_attacker > 1:
+            karma_attacker = min(max(karma_attacker / 100., -1), 1)
+        if karma_target < -1 or karma_target > 1:
+            karma_target = min(max(karma_target / 100., -1), 1)
+
+        assert -1 <= karma_attacker <= 1  and -1 <= karma_target <= 1
+
+        if karma_attacker <= -0.75:  # Очень плохие всегда всех атакуют
+            return True
+
+        if karma_attacker <= -0.1:  # Просто плохие атакуют по разнице в карме 0.3
+            return abs(karma_attacker - karma_target) > 0.3
+
+        if karma_attacker <= 0.1:  # Нейстралы атакуют по разнице в карме, но не трогают Очень хороших
+            return karma_target <= 0.75 and abs(karma_attacker - karma_target) > 0.3
+
+        if karma_attacker <= 0.75:  # Хорошие атакуют по разнице в карме плохих и нейтралов. Хорошие не трогают хороших
+            return karma_target <= 0.1 and abs(karma_attacker - karma_target) > 0.3
+
+        return False  # Хорошие никого не атакуют
+
