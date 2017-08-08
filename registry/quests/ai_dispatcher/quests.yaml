@@ -363,3 +363,15 @@ quests:
     loot_rec_list:
       - item: reg:///registry/items/stuff/scrap_metal/scrap_metal_001
         chance: 0.5
+
+  - parent: reg:///registry/quests/ai_event_quests/traffic/gang
+    generation_group: 'traffic_wh_pl_gang'
+    generation_max_count: 1
+    chance_of_generation: 1
+    delay_time: 7200
+    bots_karma: {min: -90, max: -30}
+    count_members: { max: 25, min: 25 }
+    routes:
+      - parent: reg:///registry/routes/big_road
+      - parent: reg:///registry/routes/big_road
+        reverse: True

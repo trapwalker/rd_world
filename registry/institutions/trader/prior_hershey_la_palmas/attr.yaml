@@ -22,6 +22,17 @@ items:
   - reg:///registry/items/stuff/warm_clothes/warm_clothes_003
   - reg:///registry/items/stuff/water/water_002
 
+  # Ёмкости
+  - reg:///registry/items/usable/tanks/tank_empty/tank_10l
+  - reg:///registry/items/usable/tanks/tank_empty/tank_20l
+#  - reg:///registry/items/usable/tanks/tank_full/tank_10l
+#  - reg:///registry/items/usable/tanks/tank_full/tank_20l
+
+  # Ремкомплекты
+  - reg:///registry/items/usable/build_set/build_set_small
+  - reg:///registry/items/usable/build_set/build_set_mid
+  - reg:///registry/items/usable/build_set/build_set_big
+
   # Боеприпасы для вооружения
   - reg:///registry/items/usable/ammo/556bb
   - reg:///registry/items/usable/ammo/762x51bb
@@ -78,22 +89,11 @@ items:
 
   # Ракеты
   - reg:///registry/items/usable/map_weapon/rockets/sa16_igla
-  - reg:///registry/items/usable/map_weapon/rockets/kornet
-  - reg:///registry/items/usable/map_weapon/rockets/javelin
+#  - reg:///registry/items/usable/map_weapon/rockets/kornet
+#  - reg:///registry/items/usable/map_weapon/rockets/javelin
 
   # Мины
   - reg:///registry/items/usable/map_weapon/mines/mine_ttt
-
-  # Ремкомплекты
-  - reg:///registry/items/usable/build_set/build_set_small
-  - reg:///registry/items/usable/build_set/build_set_mid
-  - reg:///registry/items/usable/build_set/build_set_big
-
-  # Ёмкости
-  - reg:///registry/items/usable/tanks/tank_empty/tank_10l
-  - reg:///registry/items/usable/tanks/tank_full/tank_10l
-  - reg:///registry/items/usable/tanks/tank_empty/tank_20l
-  - reg:///registry/items/usable/tanks/tank_full/tank_20l
 
   # ДЛЯ МЕХАНИКА
   # 00 LVL
@@ -189,13 +189,21 @@ items:
 #  - reg:///registry/items/slot_item/tuner_item/win_prot/win_prot_002
 
 price_list: # правила завоза
+  - item: reg:///registry/items
+    chance: 1.00      # вероятность в завозе 1 - max
+    count_min: 0      # пределы количества в завозе
+    count_max: 0      # если 0 - бесконечность
+    price_min: 1.00   # коэф колебаний цены (границы)
+    price_max: 1.00
+    influence: 0.00   # коэф изменения цены при покупке/продаже
+
   - item: reg:///registry/items/stuff/alcohol/alcohol_001
-    chance: 1.00     # вероятность в завозе 1 - max
-    count_min: 100   # пределы количества в завозе
-    count_max: 300   # если 0 - бесконечность
-    price_min: 0.50  # коэф колебаний цены (границы)
+    chance: 1.00      # вероятность в завозе 1 - max
+    count_min: 100    # пределы количества в завозе
+    count_max: 300    # если 0 - бесконечность
+    price_min: 0.50   # коэф колебаний цены (границы)
     price_max: 0.70
-    influence: 0.001 # коэф изменения цены при покупке/продаже
+    influence: 0.001  # коэф изменения цены при покупке/продаже
 
   - item: reg:///registry/items/stuff/alcohol/alcohol_002
     chance: 0.50
@@ -253,37 +261,61 @@ price_list: # правила завоза
     price_max: 0.70
     influence: 0.001
 
-  - item: reg:///registry/items/slot_item/armorer_item
-    chance: 1.00
-    count_min: 0
-    count_max: 0
-    price_min: 1.00
-    price_max: 1.00
-    influence: 0.00
+  - item: reg:///registry/items/usable/tanks
+    chance: 0.95      # вероятность в завозе 1 - max
+    count_min: 175    # пределы количества в завозе
+    count_max: 375    # если 0 - бесконечность
+    price_min: 0.95   # коэф колебаний цены (границы)
+    price_max: 1.15
+    influence: 0.001 # коэф изменения цены при покупке/продаже
 
-  - item: reg:///registry/items/slot_item/tuner_item
-    chance: 1.00
-    count_min: 0
-    count_max: 0
-    price_min: 1.00
-    price_max: 1.00
-    influence: 0.00
+  - item: reg:///registry/items/usable/build_set
+    chance: 0.90      # вероятность в завозе 1 - max
+    count_min: 250    # пределы количества в завозе
+    count_max: 450    # если 0 - бесконечность
+    price_min: 1.05   # коэф колебаний цены (границы)
+    price_max: 1.25
+    influence: 0.001  # коэф изменения цены при покупке/продаже
+
+  - item: reg:///registry/items/usable/ammo
+    chance: 0.95      # вероятность в завозе 1 - max
+    count_min: 100000 # пределы количества в завозе
+    count_max: 300000 # если 0 - бесконечность
+    price_min: 0.95   # коэф колебаний цены (границы)
+    price_max: 1.15
+    influence: 0.001  # коэф изменения цены при покупке/продаже
+
+  - item: reg:///registry/items/slot_item/armorer_item
+    chance: 0.95      # вероятность в завозе 1 - max
+    count_min: 175    # пределы количества в завозе
+    count_max: 375    # если 0 - бесконечность
+    price_min: 0.95   # коэф колебаний цены (границы)
+    price_max: 1.15
+    influence: 0.001  # коэф изменения цены при покупке/продаже
+
+  - item: reg:///registry/items/usable/map_weapon
+    chance: 0.90      # вероятность в завозе 1 - max
+    count_min: 100    # пределы количества в завозе
+    count_max: 300    # если 0 - бесконечность
+    price_min: 1.05   # коэф колебаний цены (границы)
+    price_max: 1.25
+    influence: 0.001  # коэф изменения цены при покупке/продаже
 
   - item: reg:///registry/items/slot_item/mechanic_item
-    chance: 1.00
-    count_min: 0
-    count_max: 0
-    price_min: 1.00
-    price_max: 1.00
-    influence: 0.00
+    chance: 0.95      # вероятность в завозе 1 - max
+    count_min: 100    # пределы количества в завозе
+    count_max: 300    # если 0 - бесконечность
+    price_min: 0.95   # коэф колебаний цены (границы)
+    price_max: 1.15
+    influence: 0.001  # коэф изменения цены при покупке/продаже
 
-  - item: reg:///registry/items
-    chance: 1.00
-    count_min: 0
-    count_max: 0
-    price_min: 1.00
-    price_max: 1.00
-    influence: 0.00
+  - item: reg:///registry/items/slot_item/tuner_item
+    chance: 0.95      # вероятность в завозе 1 - max
+    count_min: 100    # пределы количества в завозе
+    count_max: 300    # если 0 - бесконечность
+    price_min: 0.95   # коэф колебаний цены (границы)
+    price_max: 1.15
+    influence: 0.001  # коэф изменения цены при покупке/продаже
 
 
 quests:
