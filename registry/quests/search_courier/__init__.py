@@ -47,11 +47,12 @@ class SearchCourier(DeliveryFromCache):
 
         # Выбор машинки курьера
         car = random.choice(self.courier_car_list)
+        self.dc.courier_car_uri = car.uri
         #try:
-        #    car = event.server.reg.get(uri)
+        #    car = event.server.reg.get(car)
         #except:
         #    raise Cancel("QUEST CANCEL: uri<{}>  not resolve.".format(uri))
-        self.dc.courier_car = car
+
 
     def init_text(self):
         self.text_short = u"Найти пропавшего курьера."
@@ -78,6 +79,9 @@ class SearchCourier(DeliveryFromCache):
         self.agent.profile.quest_inventory.add_item(agent=self.agent, item=medallion, event=event)
         self.log(text=u'Получена платиновая фишка. Вернитесь в город для завершения квеста.', event=event, position=self.cache_point.position)
 
+        # info: Сделано для того, чтобы работали старые квесты, когда в dc хранился courier_car
+        courier_car = getattr(self.dc, 'courier_car', None) or event.server.reg.get(self.dc.courier_car_uri)
+
         CreatePOICorpseEvent(
             server=event.server,
             time=event.time,
@@ -86,10 +90,10 @@ class SearchCourier(DeliveryFromCache):
             position=self.cache_point.position.as_point(),
             life_time=life_time,
             items=items,
-            sub_class_car=self.dc.courier_car.sub_class_car,
+            sub_class_car=courier_car.sub_class_car,
             car_direction=0,
             donor_v=0,
-            donor_example=self.dc.courier_car,
+            donor_example=courier_car,
             agent_viewer=None,
         ).post()
 
