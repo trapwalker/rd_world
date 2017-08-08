@@ -375,3 +375,61 @@ quests:
       - parent: reg:///registry/routes/big_road
       - parent: reg:///registry/routes/big_road
         reverse: True
+
+  - parent: reg:///registry/quests/ai_event_quests/traffic/gang/multi_gang
+    generation_group: "los_jetas"
+    generation_max_count: 6
+    chance_of_generation: 0.1
+    delay_time: 180
+    bots_karma: {min: -90, max: -50}
+    bots_level: {min: 0, max: 1}
+    count_members: { max: 2, min: 4 }
+    routes:
+      - _cls: CompositeRoute
+        routes:
+          - parent: reg:///registry/routes/los_jetas/los_jetas_mine
+            _cls: Route
+          - _cls: AreaRandomRoute
+            center: {x: 12480199, y: 27045813}
+            dispersion: 200
+            route_deadline: 300
+          - parent: reg:///registry/routes/los_jetas/los_jetas_mine
+            _cls: Route
+            reverse: True
+      - _cls: CompositeRoute
+        routes:
+          - parent: reg:///registry/routes/los_jetas/los_jetas_big_road
+            _cls: Route
+          - _cls: AreaRandomRoute
+            center: {x: 12471388, y: 27057572}
+            dispersion: 300
+            route_deadline: 600
+          - parent: reg:///registry/routes/los_jetas/los_jetas_big_road
+            _cls: Route
+            reverse: True
+      - _cls: CompositeRoute
+        routes:
+          - parent: reg:///registry/routes/los_jetas/los_jetas_north_nukeoil
+            _cls: Route
+          - _cls: AreaRandomRoute
+            center: {x: 12480566, y: 27026520}
+            dispersion: 300
+            route_deadline: 600
+          - parent: reg:///registry/routes/los_jetas/los_jetas_north_nukeoil
+            _cls: Route
+            reverse: True
+      - _cls: CompositeRoute
+        routes:
+          - parent: reg:///registry/routes/los_jetas/los_jetas_north_west_area
+            _cls: Route
+          - _cls: AreaRandomRoute
+            center: {x: 12472557, y: 27038882}
+            dispersion: 300
+            route_deadline: 600
+          - parent: reg:///registry/routes/los_jetas/los_jetas_north_west_area
+            _cls: Route
+            reverse: True
+      - _cls: AreaRandomRoute
+        center: {x: 12472652, y: 27043975}
+        dispersion: 2000
+        route_deadline: 0

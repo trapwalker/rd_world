@@ -64,7 +64,7 @@ class AIGangQuest(AITrafficQuest):
                 with Timer(name='Quest') as deploy_quest_timer:
                     car_pos = Point.random_gauss(route.get_start_point().as_point(), 30)
                     action_quest = action_quest.instantiate(abstract=False, hirer=None, towns_protect=self.towns_protect)
-                    action_quest.dc.current_target_point = self.dc.route.nearest_point(car_pos)
+                    action_quest.dc.current_target_point = route.nearest_point(car_pos)
                     model_agent.create_ai_quest(time=event.time, action_quest=action_quest)
                 timer_summ_quest += deploy_quest_timer.duration
 
@@ -97,6 +97,7 @@ class AIGangQuest(AITrafficQuest):
         # Метод удаления с карты агентов-ботов. Вызывается на при завершении квеста
         for agent in self.dc.members:
             agent.displace(time=event.time)
+        # log.debug('Quest {!r} displace bots: {!r}'.format(self, len(self.dc.members)))
         self.dc.members = []
 
     def get_traffic_status(self, event):
