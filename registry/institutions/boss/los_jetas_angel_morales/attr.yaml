@@ -1,0 +1,22 @@
+﻿__cls__  : Institution
+_cls     : Institution
+title    : Angel_Morales
+photo    : "static/content/institutions/boss/los_jetas_angel_morales.png"
+abstract : false
+
+hometown : reg:///registry/poi/locations/towns/los_jetas
+
+
+quests:
+  - parent: reg:///registry/quests/killer_task   # ОХОТА ЗА ГОЛОВАМИ
+    _cls: KillerQuest
+    reward_relation_hirer: 5.0     # Награда в отношение за выполнение
+    karma_coef: 0.3                # Часть кармы от общей награды
+    money_coef: 0.7                # Часть нуокйнов от общей награды
+    price_victim: 125              # Цена одной жертвы на первом уровне квеста
+    reward_exp: 125                # Награда за 1 убийство
+    reward_items_list: []          # Список возможных комплектов для награды
+    unique_victims: True           # Уникальные жертвы
+    count_to_kill_range:           # Диапазон количества целей
+      min: 2
+      max: 4
