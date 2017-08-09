@@ -35,11 +35,8 @@ class AIActionTrafficQuest(AIActionQuest):
             if sector.is_discharge():
                 for target_uid in target_uid_list:
                     target = event.server.objects.get(target_uid, None)
-                    if event_quest.is_observer(target):
-                        if target and sector._test_target_in_sector(target=target, time=event.time):
-                            car.fire_discharge(side=sector.side, time=event.time)
-                    else:
-                        log.warning('discharge_shoot_command:: Target: %s not Observer', target)
+                    if target and event_quest.is_observer(target) and sector._test_target_in_sector(target=target, time=event.time):
+                        car.fire_discharge(side=sector.side, time=event.time)
 
     def towns_aggro(self, event):
         agent = getattr(event, 'obj', None) and event.obj.main_agent

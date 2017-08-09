@@ -106,7 +106,7 @@ class AITrafficQuest(AIEventQuest):
 
     def is_observer(self, obj):
         if not isinstance(obj, Observer):
-            log.debug('on_see_object: obj not observer: %s', obj)
+            log.debug('is_observer: obj not observer: %s', obj)
             log.debug(''.join(traceback.format_stack()))
             return False
         return True
