@@ -76,6 +76,7 @@ class AIGangQuest(AITrafficQuest):
                             car_params=dict(
                                 position=car_pos,
                                 direction=random.random() * 2 * pi,
+                                base_exp_price=self.bots_car_exp.get_random_int(),
                             )
                         )
                     timer_summ_car_ex += deploy_timer_summ_car_ex.duration
