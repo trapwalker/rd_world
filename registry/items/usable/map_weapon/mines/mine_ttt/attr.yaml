@@ -5,7 +5,7 @@ abstract       : false
 title          : Мина TS/6,1
 description    : Противотанковая мина. Производилась в Италии. Широко применялась душманами во время советско-афганской войны 1979-89 годов.
 
-base_price     : 150
+base_price     : 550
 stack_size     : 10
 
 activate_type  : self
