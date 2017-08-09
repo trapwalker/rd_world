@@ -30,6 +30,7 @@ class AIGangQuest(AITrafficQuest):
         action_quest = event.server.reg.get('/registry/quests/ai_action_quest/traffic')
         route = random.choice(self.routes).instantiate(route_accuracy=200)
         self.dc.route = route
+        start_point_route = route.nearest_point(route.get_start_point().as_point())
         level = random.randint(self.bots_level.min, self.bots_level.max)
 
         timer_summ_agent = 0
@@ -62,9 +63,9 @@ class AIGangQuest(AITrafficQuest):
                 model_agent.event_quest = self
 
                 with Timer(name='Quest') as deploy_quest_timer:
-                    car_pos = Point.random_gauss(route.get_start_point().as_point(), 30)
+                    car_pos = Point.random_gauss(start_point_route, 30)
                     action_quest = action_quest.instantiate(abstract=False, hirer=None, towns_protect=self.towns_protect)
-                    action_quest.dc.current_target_point = route.nearest_point(car_pos)
+                    action_quest.dc.current_target_point = start_point_route
                     model_agent.create_ai_quest(time=event.time, action_quest=action_quest)
                 timer_summ_quest += deploy_quest_timer.duration
 
@@ -112,7 +113,8 @@ class AIGangQuest(AITrafficQuest):
             return
         if not getattr(obj, 'main_agent', None):
             return
-
+        if not self.is_observer(obj):
+            return
         # Добавить во враги
         obj_uid = obj.uid
 

@@ -102,6 +102,13 @@ class AITrafficQuest(AIEventQuest):
             # спросить у квеста, пройден ли он и если да, то вернуть 'win'
             return main_agent.action_quest.result
 
+    def is_observer(self, obj):
+        if not isinstance(obj, Observer):
+            log.debug('on_see_object: obj not observer: %s', obj)
+            log.debug(''.join(traceback.format_stack()))
+            return False
+        return True
+
     def on_see_object(self, event):  # Вызывается когда только для OnAISee
         obj = getattr(event, 'obj', None)
         if obj is None:
@@ -109,12 +116,10 @@ class AITrafficQuest(AIEventQuest):
         agent = getattr(obj, 'main_agent', None)
         if not agent:
             return
+        if not self.is_observer(obj):
+            return
         if self.can_attack_by_karma(self.dc._main_agent.example.profile.karma_norm, agent.example.profile.karma_norm):
             # Добавить во враги
-            if not isinstance(obj, Observer):
-                log.debug('on_see_object: obj not observer: %s', obj)
-                log.debug(''.join(traceback.format_stack()))
-                return
             if obj.uid not in self.dc.target_uid_list:
                 self.dc.target_uid_list.append(obj.uid)
 

@@ -14,6 +14,8 @@ class AIMultiGangQuest(AIGangQuest):
         main_agent = getattr(obj, 'main_agent', None)
         if not main_agent:
             return
+        if not self.is_observer(obj):
+            return
         event_quest = getattr(main_agent, 'event_quest', None)
 
         if event_quest and event_quest.generation_group == self.dc.members[0].event_quest.generation_group:
