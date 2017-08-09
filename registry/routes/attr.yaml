@@ -1,7 +1,2 @@
-﻿__cls__ : Route
-_cls : Route
-doc     : Routes
-
-
-points:
-  - {x: 12484108, y: 27010266}
+﻿_cls : AbstractRoute
+doc     : AbstractRoute

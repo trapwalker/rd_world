@@ -26,11 +26,12 @@ class AITrafficQuest(AIEventQuest):
     test_end_time = IntField(caption=u'Интервал проверки достижения цели')
     bots_karma = EmbeddedDocumentField(document_type=QuestRange, caption=u"Границы кармы")
     bots_level = EmbeddedDocumentField(document_type=QuestRange, caption=u"Уровни мобов")
+    bots_car_exp = EmbeddedDocumentField(document_type=QuestRange, caption=u"Exp за каждую машинку")
     routes = ListField(
         root_default=list,
         caption=u"Список маршрутов",
         field=EmbeddedNodeField(
-            document_type='sublayers_server.model.registry_me.classes.routes.Route',
+            document_type='sublayers_server.model.registry_me.classes.routes.AbstractRoute',
         ),
     )
 
@@ -79,6 +80,7 @@ class AITrafficQuest(AIEventQuest):
             car_params=dict(
                 position=car_pos,
                 direction=random.random() * 2 * pi,
+                base_exp_price=self.bots_car_exp.get_random_int(),
             ))
 
         self.init_bot_inventory(car_example=car_example)
@@ -102,6 +104,13 @@ class AITrafficQuest(AIEventQuest):
             # спросить у квеста, пройден ли он и если да, то вернуть 'win'
             return main_agent.action_quest.result
 
+    def is_observer(self, obj):
+        if not isinstance(obj, Observer):
+            log.debug('is_observer: obj not observer: %s', obj)
+            log.debug(''.join(traceback.format_stack()))
+            return False
+        return True
+
     def on_see_object(self, event):  # Вызывается когда только для OnAISee
         obj = getattr(event, 'obj', None)
         if obj is None:
@@ -109,12 +118,10 @@ class AITrafficQuest(AIEventQuest):
         agent = getattr(obj, 'main_agent', None)
         if not agent:
             return
+        if not self.is_observer(obj):
+            return
         if self.can_attack_by_karma(self.dc._main_agent.example.profile.karma_norm, agent.example.profile.karma_norm):
             # Добавить во враги
-            if not isinstance(obj, Observer):
-                log.debug('on_see_object: obj not observer: %s', obj)
-                log.debug(''.join(traceback.format_stack()))
-                return
             if obj.uid not in self.dc.target_uid_list:
                 self.dc.target_uid_list.append(obj.uid)
 

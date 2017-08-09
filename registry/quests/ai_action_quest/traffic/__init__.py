@@ -29,12 +29,13 @@ class AIActionTrafficQuest(AIActionQuest):
         car = agent_model.car if agent_model else None
         if not car:
             return
-        target_uid_list = agent_model.event_quest.dc.target_uid_list
+        event_quest = agent_model.event_quest
+        target_uid_list = event_quest.dc.target_uid_list
         for sector in car.fire_sectors:
             if sector.is_discharge():
                 for target_uid in target_uid_list:
                     target = event.server.objects.get(target_uid, None)
-                    if target and sector._test_target_in_sector(target=target, time=event.time):
+                    if target and event_quest.is_observer(target) and sector._test_target_in_sector(target=target, time=event.time):
                         car.fire_discharge(side=sector.side, time=event.time)
 
     def towns_aggro(self, event):
