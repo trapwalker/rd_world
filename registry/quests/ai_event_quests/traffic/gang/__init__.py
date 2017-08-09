@@ -7,10 +7,10 @@ from sublayers_world.registry.quests.ai_event_quests.traffic import AITrafficQue
 from sublayers_server.model.registry_me.classes.quests import QuestRange
 from sublayers_server.model.registry_me.tree import EmbeddedDocumentField
 from sublayers_server.model.vectors import Point
-from sublayers_common.ctx_timer import T, Timer
 
 from sublayers_server.model.registry_me.randomize_examples import RandomizeExamples
 
+from ctx_timer import Timer, T
 from functools import partial
 import random
 from math import pi

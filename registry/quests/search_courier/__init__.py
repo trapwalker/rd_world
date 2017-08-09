@@ -3,28 +3,26 @@
 import logging
 log = logging.getLogger(__name__)
 
-from sublayers_server.model.registry_me.classes import notes
-from sublayers_server.model.registry_me.tree import RegistryLinkField, ListField, EmbeddedNodeField, StringField
 from sublayers_server.model.quest_events import OnCancel, OnTimer, OnNote
+from sublayers_server.model.poi_loot_objects import CreatePOICorpseEvent
+from sublayers_server.model.inventory import ItemState
+from sublayers_server.model.registry_me.tree import RegistryLinkField, ListField, EmbeddedNodeField, StringField
+from sublayers_server.model.registry_me.classes import notes
 from sublayers_server.model.registry_me.classes.quests import (
     Cancel,   QuestState_, FailByCancelState, FailState, WinState,
 )
 
-import random
-from functools import partial
-
-from sublayers_server.model.poi_loot_objects import CreatePOICorpseEvent
-from sublayers_server.model.inventory import ItemState
-
 from sublayers_world.registry.quests.delivery_from_cache import DeliveryFromCache
 
-from sublayers_common.ctx_timer import T
+import random
+from functools import partial
+from ctx_timer import T
 
 
 class SearchCourier(DeliveryFromCache):
     courier_car_list = ListField(
         caption=u"Список возможных машин курьера",
-        field=StringField(),
+        field=RegistryLinkField(),
     )
 
     courier_medallion = EmbeddedNodeField(
@@ -46,11 +44,13 @@ class SearchCourier(DeliveryFromCache):
         self.loot_set = loot_set
 
         # Выбор машинки курьера
-        try:
-            self.dc.courier_car_uri = random.choice(self.courier_car_list)
-            event.server.reg.get(self.dc.courier_car_uri)
-        except:
-            raise Cancel("QUEST CANCEL: uri<{}>  not resolve.".format(self.dc.courier_car_uri))
+        car = random.choice(self.courier_car_list)
+        self.dc.courier_car_uri = car.uri
+        #try:
+        #    car = event.server.reg.get(car)
+        #except:
+        #    raise Cancel("QUEST CANCEL: uri<{}>  not resolve.".format(uri))
+
 
     def init_text(self):
         self.text_short = u"Найти пропавшего курьера."
