@@ -16,7 +16,7 @@ import random
 
 from sublayers_world.registry.quests.delivery_quest import DeliveryQuest
 
-from sublayers_common.ctx_timer import T
+from ctx_timer import T
 
 
 class DeliveryQuestSimple(DeliveryQuest):
