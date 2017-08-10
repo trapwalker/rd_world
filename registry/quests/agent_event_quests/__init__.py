@@ -76,8 +76,8 @@ class AgentEventQuest(Quest):
         def on_event_(self, quest, event):
             go = partial(quest.go, event=event)
             if isinstance(event, OnTimer) and event.name == 'event_end_test':
+                quest.set_timer(event=event, name='event_end_test', delay=5)
                 event_quest = quest.get_event_quest(event=event)
-                # todo: как-то проверить: сбросили квест после рестарта или караван реально доехал
                 if event_quest is None:
                     go("win")
                 elif event_quest.status == 'win':
@@ -96,7 +96,7 @@ class AgentEventQuest(Quest):
             pass
 
     ####################################################################################################################
-    class reward(FailByCancelState):
+    class reward(WinState):
         def on_enter_(self, quest, event):
             pass
 
