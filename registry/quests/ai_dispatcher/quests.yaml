@@ -332,24 +332,20 @@ quests:
       - parent: reg:///registry/routes/whitehill_mine_1
     towns_protect:
       - reg:///registry/poi/locations/towns/whitehill
-    max_loot_count: 8
+    max_loot_count: 4
     loot_rec_list:
+      - item: reg:///registry/items/stuff/alcohol/alcohol_002
+        chance: 0.35
       - item: reg:///registry/items/stuff/canned_cereal/canned_cereal_001
-        chance: 0.5
-      - item: reg:///registry/items/stuff/canned_cereal/canned_cereal_002
-        chance: 0.5
-      - item: reg:///registry/items/stuff/canned_fruit/canned_fruit_001
-        chance: 0.5
-      - item: reg:///registry/items/stuff/canned_fruit/canned_fruit_002
-        chance: 0.5
+        chance: 0.50
       - item: reg:///registry/items/stuff/canned_meat/canned_meat_001
-        chance: 0.5
-      - item: reg:///registry/items/stuff/canned_meat/canned_meat_002
-        chance: 0.5
-      - item: reg:///registry/items/stuff/water/water_001
-        chance: 0.5
+        chance: 0.10
+      - item: reg:///registry/items/stuff/medical_supplies/medical_supplies_001
+        chance: 0.10
+      - item: reg:///registry/items/stuff/warm_clothes/warm_clothes_003
+        chance: 0.25
       - item: reg:///registry/items/stuff/water/water_002
-        chance: 0.5
+        chance: 0.50
   - parent: reg:///registry/quests/ai_event_quests/traffic
     generation_group: 'traffic_mn_wh'
     chance_of_generation: 0.1
@@ -362,7 +358,7 @@ quests:
     max_loot_count: 8
     loot_rec_list:
       - item: reg:///registry/items/stuff/scrap_metal/scrap_metal_001
-        chance: 0.5
+        chance: 0.75
 
   - parent: reg:///registry/quests/ai_event_quests/traffic/gang
     generation_group: 'traffic_wh_pl_gang'

@@ -4,40 +4,56 @@ doc    : Квесты
 
 bots_karma: {min: -10, max: 10}
 bots_level: {min: 0, max: 2}
-bots_car_exp: {min: 10, max: 20}
+bots_car_exp: {min: 2, max: 4}
 
-max_loot_count: 5
+max_loot_count: 3
 loot_rec_list:
   - item: reg:///registry/items/stuff/alcohol/alcohol_001
-    chance: 0.5
+    chance: 0.05
   - item: reg:///registry/items/stuff/alcohol/alcohol_002
-    chance: 0.5
+    chance: 0.35
   - item: reg:///registry/items/stuff/canned_cereal/canned_cereal_001
-    chance: 0.5
-  - item: reg:///registry/items/stuff/canned_cereal/canned_cereal_002
-    chance: 0.5
-  - item: reg:///registry/items/stuff/canned_fruit/canned_fruit_001
-    chance: 0.5
-  - item: reg:///registry/items/stuff/canned_fruit/canned_fruit_002
-    chance: 0.5
+    chance: 0.50
   - item: reg:///registry/items/stuff/canned_meat/canned_meat_001
-    chance: 0.5
-  - item: reg:///registry/items/stuff/canned_meat/canned_meat_002
-    chance: 0.5
+    chance: 0.10
   - item: reg:///registry/items/stuff/medical_supplies/medical_supplies_001
-    chance: 0.5
-  - item: reg:///registry/items/stuff/medical_supplies/medical_supplies_002
-    chance: 0.5
-  - item: reg:///registry/items/stuff/warm_clothes/warm_clothes_001
-    chance: 0.5
-  - item: reg:///registry/items/stuff/warm_clothes/warm_clothes_002
-    chance: 0.5
+    chance: 0.10
+  - item: reg:///registry/items/stuff/scrap_metal/scrap_metal_001
+    chance: 0.75
   - item: reg:///registry/items/stuff/warm_clothes/warm_clothes_003
-    chance: 0.5
-  - item: reg:///registry/items/stuff/water/water_001
-    chance: 0.5
+    chance: 0.25
   - item: reg:///registry/items/stuff/water/water_002
-    chance: 0.5
+    chance: 0.50
+  - item: reg:///registry/items/usable/tanks/tank_empty/tank_10l
+    chance: 0.50
+  - item: reg:///registry/items/usable/tanks/tank_empty/tank_20l
+    chance: 0.15
+  - item: reg:///registry/items/usable/tanks/tank_full/tank_10l
+    chance: 0.40
+  - item: reg:///registry/items/usable/tanks/tank_full/tank_20l
+    chance: 0.10
+  - item: reg:///registry/items/usable/build_set/build_set_small
+    chance: 0.15
+  - item: reg:///registry/items/usable/build_set/build_set_mid
+    chance: 0.05
+  - item: reg:///registry/items/usable/ammo/556bb
+    chance: 0.15
+  - item: reg:///registry/items/usable/ammo/762x51bb
+    chance: 0.10
+  - item: reg:///registry/items/usable/ammo/792bb
+    chance: 0.10
+  - item: reg:///registry/items/usable/ammo/127x108bb
+    chance: 0.05
+  - item: reg:///registry/items/usable/ammo/13mm
+    chance: 0.05
+  - item: reg:///registry/items/usable/ammo/40mm
+    chance: 0.80
+  - item: reg:///registry/items/usable/ammo/20mm
+    chance: 0.60
+  - item: reg:///registry/items/usable/ammo/23bzt
+    chance: 0.55
+  - item: reg:///registry/items/usable/ammo/25mm
+    chance: 0.50
 
 first_state: begin
 test_end_time: 5
