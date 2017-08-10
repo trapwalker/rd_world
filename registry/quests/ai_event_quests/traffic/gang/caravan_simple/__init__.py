@@ -42,11 +42,10 @@ class AICaravanQuest(AIGangQuest):
         def on_event_(self, quest, event):
             if isinstance(event, OnTimer) and event.name == 'start_caravan':
                 go = partial(quest.go, event=event)
-                go('begin')
+                go('run')
 
-    class begin(QuestState_):
+    class run(QuestState_):
         def on_enter_(self, quest, event):
-            log.debug('AICaravanQuest::begin::on_enter_')
             quest.agent.profile._agent_model.on_event_quest(time=event.time, quest=quest)
             quest.set_timer(event=event, name='test_end', delay=quest.test_end_time)
             quest.deploy_bots(event=event)
