@@ -51,10 +51,11 @@ class AgentEventQuest(Quest):
         return self.get_potential_event_quest(event=event, agent=agent) is not None
 
     def can_generate(self, event):
-        event_quest = self.get_potential_event_quest(event=event, agent=self.agent.example)
+        event_quest = self.get_potential_event_quest(event=event, agent=self.agent)
         if not event_quest:
             return False
         self.event_quest_uid = str(event_quest.uid)
+        return True
 
     ####################################################################################################################
     def on_generate_(self, event, **kw):

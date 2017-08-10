@@ -28,15 +28,16 @@ class AICaravanQuest(AIGangQuest):
     ####################################################################################################################
     def on_start_(self, event, **kw):
         super(AICaravanQuest, self).on_start_(event=event, **kw)
-        log.debug('AICaravanQuest::begin::on_start_')
-        self.dc.start_caravan_time = event.time + self.caravan_wait_time.get_random_int() * 60
-        self.agent.profile._agent_model.on_event_quest(time=event.time, quest=self)
+        self.dc.start_caravan_deadline = self.caravan_wait_time.get_random_int() * 60
+        self.dc.start_caravan_time = event.time + self.dc.start_caravan_deadline
 
     ####################################################################################################################
     ## Перечень состояний ##############################################################################################
     class pre_begin(QuestState_):
         def on_enter_(self, quest, event):
-            quest.set_timer(event=event, name='start_caravan', delay=quest.test_end_time)
+            quest.agent.profile._agent_model.on_event_quest(time=event.time, quest=quest)
+            log.debug('Caravan started in: %ss', quest.dc.start_caravan_deadline)
+            quest.set_timer(event=event, name='start_caravan', delay=quest.dc.start_caravan_deadline)
 
         def on_event_(self, quest, event):
             if isinstance(event, OnTimer) and event.name == 'start_caravan':
@@ -46,7 +47,7 @@ class AICaravanQuest(AIGangQuest):
     class begin(QuestState_):
         def on_enter_(self, quest, event):
             log.debug('AICaravanQuest::begin::on_enter_')
-            quest.agent.profile._agent_model.on_event_quest(time=event.time, quest=self)
+            quest.agent.profile._agent_model.on_event_quest(time=event.time, quest=quest)
             quest.set_timer(event=event, name='test_end', delay=quest.test_end_time)
             quest.deploy_bots(event=event)
 

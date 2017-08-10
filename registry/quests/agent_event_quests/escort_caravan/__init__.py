@@ -2,75 +2,42 @@
 import logging
 log = logging.getLogger(__name__)
 
-from sublayers_server.model.registry_me.classes import notes
-from sublayers_server.model.quest_events import OnCancel, OnTimer, OnNote, OnKill
-from sublayers_server.model.registry_me.classes.quests import (
-    Cancel, QuestState_, FailByCancelState, FailState, WinState,
-)
-from sublayers_server.model.registry_me.tree import (IntField, FloatField, ListField, EmbeddedDocumentField,
-                                                     BooleanField, Subdoc, StringField, UUIDField)
-from sublayers_server.model.registry_me.classes.quests import Quest, QuestRange
-from sublayers_server.model.utils import getKarmaName
-
-from functools import partial
-import random
+from sublayers_world.registry.quests.agent_event_quests import AgentEventQuest
+from sublayers_world.registry.quests.ai_event_quests.traffic.gang.caravan_simple import AICaravanQuest
 
 
-class EscortCaravan(Quest):
-    event_quest_uid = StringField(caption=u'UID квеста-события из диспетчера задач. Как только по этому UID не будет найден квест - переход в состояние победы')
-    needed_tags = ListField(field=StringField(), caption=u"Теги для определения квеста-события")
-
-    def as_unstarted_quest_dict(self):
-        d = super(EscortCaravan, self).as_unstarted_quest_dict()
-        d.update(shelf_life_time=self.shelf_life_time)
-        return d
-
-    def get_caravan_quest(self, event):
-        if self.event_quest_uid:
-            # Поискать из списка. Если не найден, то квест считается выполненым
-            return event.server.ai_dispatcher.get_quest_by_uid(uid=self.event_quest_uid)
-
-        # Попробовать найти караван по needed_tags тегам
-        caravans = event.server.ai_dispatcher.get_quest_by_tags(set(self.needed_tags))
-        for c in caravans:
-            if c.current_state == "pre_begin":
-                log.debug('Find quest by tag: %s', c)
-                return c
+class EscortCaravan(AgentEventQuest):
+    def get_potential_event_quest(self, event, agent):
+        event_quests = event.server.ai_dispatcher.get_quest_by_tags(set(self.needed_tags))
+        npc_view_quests = agent.profile.npc_view_quests
+        for event_quest in event_quests:
+            flag = False
+            for agent_quest in npc_view_quests:
+                if isinstance(agent_quest, AgentEventQuest) and (
+                                agent_quest.event_quest_uid == str(event_quest.uid) or  # Если квест на такой караван уже есть у агента
+                                event_quest.dc.start_caravan_time <= event.time):  # или Если караван уже уехал
+                    flag = True
+                    break
+            if not flag:
+                return event_quest
+        log.debug('EscortCaravan :: get_potential_event_quest :: None')
+        return None
 
     def can_generate(self, event):
-        caravan_quest = self.get_caravan_quest(event=event)
+        if not super(EscortCaravan, self).can_generate(event=event):
+            return False
+        event_quest = self.get_event_quest(event=event)
 
-    ####################################################################################################################
+        # if event_quest and isinstance(event_quest, AICaravanQuest) and event.time < event_quest.dc.start_caravan_time:
+        # todo: вернуть isinstance(event_quest, AICaravanQuest)
+        if event_quest and event_quest.__class__.__name__ == "AICaravanQuest" and event.time < event_quest.dc.start_caravan_time:
+            self.shelf_life_time = event_quest.dc.start_caravan_time - event.time
+            log.debug('shelf_life_time is %s', self.shelf_life_time)
+        else:
+            return False
+        return True
+
+
     def on_generate_(self, event, **kw):
-        if not self.can_generate(event):
-            raise Cancel("QUEST CANCEL: reason: Active caravan not found")
+        super(EscortCaravan, self).on_generate_(event=event, **kw)
 
-    ####################################################################################################################
-    def on_start_(self, event, **kw):
-        pass
-    
-    ####################################################################################################################
-    ## Перечень состояний ##############################################################################################
-    class begin(QuestState_):
-        def on_enter_(self, quest, event):
-            quest.set_timer(event=event, name='caravan_end_test', delay=5)
-    
-        def on_event_(self, quest, event):
-            go = partial(quest.go, event=event)
-            if isinstance(event, OnTimer) and event.name == 'caravan_end_test':
-                caravan_quest = quest.get_caravan_quest(event=event)
-                # todo: как-то проверить: сбросили квест после рестарта или караван реально доехал
-                if caravan_quest is None:
-                    go("win")
-
-    ####################################################################################################################
-    class cancel_fail(FailByCancelState):
-        def on_enter_(self, quest, event):
-            quest.log(text=u'Квест провален: отказ от выполнения.', event=event)
-
-    ####################################################################################################################
-    class win(WinState):
-        def on_enter_(self, quest, event):
-           quest.log(text=u'Квест выполнен.', event=event)
-
-    ####################################################################################################################
