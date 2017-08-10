@@ -23,7 +23,6 @@ class EscortCaravan(AgentEventQuest):
                     break
             if not flag:
                 return event_quest
-        log.debug('EscortCaravan :: get_potential_event_quest :: None')
         return None
 
     def can_generate(self, event):
@@ -33,7 +32,6 @@ class EscortCaravan(AgentEventQuest):
 
         if event_quest and isinstance(event_quest, AICaravanQuest) and event.time < event_quest.dc.start_caravan_time:
             self.shelf_life_time = event_quest.dc.start_caravan_time - event.time
-            log.debug('shelf_life_time is %s', self.shelf_life_time)
         else:
             return False
         return True
@@ -46,8 +44,13 @@ class EscortCaravan(AgentEventQuest):
         return event_quest.dc.route.get_current_point()
 
     def calc_participation(self, car_pos, caravan_pos):
-        if car_pos.distance(caravan_pos) <= 3000:
-            self.dc.count_participation += 1.0
+        try:
+            if car_pos.distance(caravan_pos) <= 3000:
+                self.dc.count_participation += 1.0
+        except:
+            log.error('!!!!!!!!!!!!!!!!==============   car_pos=%s,   caravan_pos=%s', car_pos, caravan_pos)
+            pass
+
 
     ####################################################################################################################
     def on_start_(self, event, **kw):
@@ -74,7 +77,7 @@ class EscortCaravan(AgentEventQuest):
                     caravan_point = quest.get_current_caravan_position(event_quest=event_quest)
                     if caravan_point:
                         quest.dc.check_participation += 1.0
-                        if quest.agent.profile._agent_model and quest.agent.profile._agent_model.car:
+                        if quest.agent.profile._agent_model and quest.agent.profile._agent_model.car and not quest.agent.profile._agent_model.car.limbo:
                             quest.calc_participation(car_pos=quest.agent.profile._agent_model.car.position(event.time), caravan_pos=caravan_point)
 
 
@@ -83,5 +86,5 @@ class EscortCaravan(AgentEventQuest):
             if quest.dc.check_participation == 0:
                 quest.dc.check_participation = 1.0
             p = int(100 * quest.dc.count_participation / quest.dc.check_participation)
-            quest.log(u'Участие в караване: {}'.format(p), event=event)
+            quest.log(u'Участие в караване: {}%'.format(p), event=event)
             super(EscortCaravan.win, self).on_enter_(quest=quest, event=event)
