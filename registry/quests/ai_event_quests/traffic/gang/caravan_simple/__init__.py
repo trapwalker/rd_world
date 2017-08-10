@@ -20,14 +20,17 @@ class AICaravanQuest(AIGangQuest):
     def set_actions(self, time):  # Настройка поведенческих квестов
         self.set_main_cc()  # Корректируем скорость группы (вдруг самый медленный сдох)
 
+
     ####################################################################################################################
     def on_generate_(self, event, **kw):
-        pass
+        super(AICaravanQuest, self).on_generate_(event=event, **kw)
 
     ####################################################################################################################
     def on_start_(self, event, **kw):
         super(AICaravanQuest, self).on_start_(event=event, **kw)
+        log.debug('AICaravanQuest::begin::on_start_')
         self.dc.start_caravan_time = event.time + self.caravan_wait_time.get_random_int() * 60
+        self.agent.profile._agent_model.on_event_quest(time=event.time, quest=self)
 
     ####################################################################################################################
     ## Перечень состояний ##############################################################################################
@@ -42,8 +45,10 @@ class AICaravanQuest(AIGangQuest):
 
     class begin(QuestState_):
         def on_enter_(self, quest, event):
+            log.debug('AICaravanQuest::begin::on_enter_')
+            quest.agent.profile._agent_model.on_event_quest(time=event.time, quest=self)
             quest.set_timer(event=event, name='test_end', delay=quest.test_end_time)
-            self.deploy_bots(event=event)
+            quest.deploy_bots(event=event)
 
         def on_event_(self, quest, event):
             go = partial(quest.go, event=event)

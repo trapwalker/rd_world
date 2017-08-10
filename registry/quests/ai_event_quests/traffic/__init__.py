@@ -197,12 +197,12 @@ class AITrafficQuest(AIEventQuest):
     ####################################################################################################################
     def on_start_(self, event, **kw):
         self.dc.target_uid_list = []
-        self.deploy_bots(event=event)
 
     ####################################################################################################################
     ## Перечень состояний ##############################################################################################
     class begin(QuestState_):
         def on_enter_(self, quest, event):
+            quest.deploy_bots(event=event)
             quest.set_timer(event=event, name='test_end', delay=quest.test_end_time)
 
         def on_event_(self, quest, event):

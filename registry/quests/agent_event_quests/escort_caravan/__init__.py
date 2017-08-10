@@ -17,23 +17,25 @@ import random
 
 
 class EscortCaravan(Quest):
-    caravan_quest_uid = StringField(caption=u'UID квеста-события из диспетчера задач. Как только по этому UID не будет найден квест - переход в состояние победы')
-
-    def as_client_dict(self):
-        d = super(EscortCaravan, self).as_client_dict()
-        # d.update()
-        return d
+    event_quest_uid = StringField(caption=u'UID квеста-события из диспетчера задач. Как только по этому UID не будет найден квест - переход в состояние победы')
+    needed_tags = ListField(field=StringField(), caption=u"Теги для определения квеста-события")
 
     def as_unstarted_quest_dict(self):
         d = super(EscortCaravan, self).as_unstarted_quest_dict()
-        # d.update(count_to_kill=self.count_to_kill,)
+        d.update(shelf_life_time=self.shelf_life_time)
         return d
 
     def get_caravan_quest(self, event):
-        if self.caravan_quest_uid:
+        if self.event_quest_uid:
             # Поискать из списка. Если не найден, то квест считается выполненым
-            return event.server.ai_dispatcher.get_quest_by_uid(uid=self.caravan_quest_uid)
-        # Попробовать найти караван, отправляющийся из города А в город Б
+            return event.server.ai_dispatcher.get_quest_by_uid(uid=self.event_quest_uid)
+
+        # Попробовать найти караван по needed_tags тегам
+        caravans = event.server.ai_dispatcher.get_quest_by_tags(set(self.needed_tags))
+        for c in caravans:
+            if c.current_state == "pre_begin":
+                log.debug('Find quest by tag: %s', c)
+                return c
 
     def can_generate(self, event):
         caravan_quest = self.get_caravan_quest(event=event)
