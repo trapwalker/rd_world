@@ -6,7 +6,7 @@ from sublayers_server.model.quest_events import OnTimer, OnAIOut, OnAISee, OnApp
 from sublayers_server.model.registry_me.classes.quests import (
     QuestState_, FailState, WinState,
 )
-from sublayers_server.model.registry_me.tree import (RegistryLinkField, ListField, EmbeddedDocumentField)
+from sublayers_server.model.registry_me.tree import (RegistryLinkField, ListField, IntField)
 
 from sublayers_world.registry.quests.ai_action_quest import AIActionQuest
 from sublayers_server.model.vectors import Point
@@ -15,6 +15,8 @@ from functools import partial
 
 
 class AIActionTrafficQuest(AIActionQuest):
+    min_wait_car_time = IntField(root_default=10, caption='Минимальное время ожидания появления машинки')
+
     towns_protect = ListField(
         root_default=list,
         caption=u"Список городов покровителей (Устанавливается квестом-событием)",
@@ -81,7 +83,7 @@ class AIActionTrafficQuest(AIActionQuest):
             if agent.profile._agent_model.car:
                 go('patrol')
             else:
-                quest.set_timer(event=event, name='wait_car', delay=10)
+                quest.set_timer(event=event, name='wait_car', delay=quest.min_wait_car_time)
     
         def on_event_(self, quest, event):
             go = partial(quest.go, event=event)
