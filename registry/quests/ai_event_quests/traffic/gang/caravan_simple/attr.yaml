@@ -1,0 +1,4 @@
+_cls: AICaravanQuest
+doc    : Квесты
+
+first_state: pre_begin
