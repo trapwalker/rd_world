@@ -28,9 +28,7 @@ class EscortCaravan(AgentEventQuest):
             return False
         event_quest = self.get_event_quest(event=event)
 
-        # if event_quest and isinstance(event_quest, AICaravanQuest) and event.time < event_quest.dc.start_caravan_time:
-        # todo: вернуть isinstance(event_quest, AICaravanQuest)
-        if event_quest and event_quest.__class__.__name__ == "AICaravanQuest" and event.time < event_quest.dc.start_caravan_time:
+        if event_quest and isinstance(event_quest, AICaravanQuest) and event.time < event_quest.dc.start_caravan_time:
             self.shelf_life_time = event_quest.dc.start_caravan_time - event.time
             log.debug('shelf_life_time is %s', self.shelf_life_time)
         else:
