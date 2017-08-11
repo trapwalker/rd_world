@@ -4,8 +4,8 @@ log = logging.getLogger(__name__)
 
 
 from sublayers_world.registry.quests.agent_event_quests import AgentEventQuest
-from sublayers_server.model.registry_me.classes.notes import NPCWantedBossNote
-from sublayers_server.model.quest_events import OnKill, OnNote
+from sublayers_server.model.registry_me.classes.notes import NPCWantedBossNote, MapMarkerNote
+from sublayers_server.model.quest_events import OnKill, OnNote, OnTimer, OnQuestSee, OnQuestOut
 from sublayers_server.model.registry_me.classes.quests import QuestState_, FailByCancelState, WinState
 
 from functools import partial
@@ -55,6 +55,8 @@ class KillBossQuest(AgentEventQuest):
 
     def on_start_(self, event, **kw):
         # Создание ноты для квеста
+        self.dc.track_note_uid = None
+        self.dc.see_target = False
         self.dc.wanted_note_uid = self.agent.profile.add_note(
             quest_uid=self.uid,
             note_class=NPCWantedBossNote,
@@ -62,51 +64,79 @@ class KillBossQuest(AgentEventQuest):
             npc=self.hirer,
             page_caption='Найти и уничтожить',
         )
-        self.log(text=u'Начат квест - Найти и уничтожить.'.format(), event=event, position=self.hirer.hometown.position)
+        self.log(text=u'Начат квест - Найти и уничтожить.'.format(), event=event)
 
     ####################################################################################################################
     class begin(AgentEventQuest.begin):
+        def on_enter_(self, quest, event):
+            super(KillBossQuest.begin, self).on_enter_(quest=quest, event=event)
+            quest.set_timer(event=event, name='last_track', delay=10)
+
         def on_event_(self, quest, event):
             super(KillBossQuest.begin, self).on_event_(quest=quest, event=event)
             go = partial(quest.go, event=event)
-            if isinstance(event, OnKill):
-                event_quest = quest.get_event_quest(event=event)
-                if event.agent is event_quest.dc._main_agent.example:
-                    quest.dc.is_kill = True
-                    quest.log(text=u'{} убит.'.format(quest.dc.boss_name), event=event,
-                              position=quest.agent.profile._agent_model.car.position(time=event.time))
-                    go('note_kill_reward')
+
+            event_quest = quest.get_event_quest(event=event)
+            if not event_quest:
+                return
+
+            if isinstance(event, OnKill) and (event.agent is event_quest.dc._main_agent.example):
+                quest.dc.is_kill = True
+                quest.log(text=u'{} убит.'.format(quest.dc.boss_name), event=event)
+                go('note_kill_reward')
+
+            if isinstance(event, OnQuestSee) and (event.obj is event_quest.dc._main_agent.car):
+                quest.agent.profile.del_note(uid=quest.dc.track_note_uid, time=event.time)
+                quest.dc.see_target = True
+
+            if isinstance(event, OnQuestOut) and (event.obj is event_quest.dc._main_agent.car):
+                quest.dc.see_target = False
+
+            if isinstance(event, OnTimer) and (event.name == 'last_track'):
+                quest.agent.profile.del_note(uid=quest.dc.track_note_uid, time=event.time)
+                if not quest.dc.see_target and event_quest.dc._main_agent.car:
+                    quest.dc.track_note_uid = quest.agent.profile.add_note(
+                        quest_uid=quest.uid,
+                        note_class=MapMarkerNote,
+                        time=event.time,
+                        position=event_quest.dc._main_agent.car.position(time=event.time),
+                        radius=10,
+                    )
+                quest.set_timer(event=event, name='last_track', delay=10)
 
     ####################################################################################################################
     class note_kill_reward(QuestState_):
         def on_event_(self, quest, event):
             go = partial(quest.go, event=event)
-            agent = quest.agent
-            if isinstance(event, OnNote):
-                if (quest.dc.wanted_note_uid == event.note_uid) and (event.result == True):
-                    agent.profile.del_note(uid=quest.dc.wanted_note_uid, time=event.time)
-                    go('reward')
-
-    ####################################################################################################################
-    class cancel_fail(FailByCancelState):
-        def on_enter_(self, quest, event):
-            quest.agent.profile.del_note(uid=quest.dc.wanted_note_uid, time=event.time)
-
-    ####################################################################################################################
-    class fail(FailByCancelState):
-        def on_enter_(self, quest, event):
-            quest.agent.profile.del_note(uid=quest.dc.wanted_note_uid, time=event.time)
+            if isinstance(event, OnNote) and (quest.dc.wanted_note_uid == event.note_uid) and (event.result == True):
+                go('reward')
 
     ####################################################################################################################
     class reward(WinState):
         def on_enter_(self, quest, event):
             go = partial(quest.go, event=event)
-            quest.agent.profile.del_note(uid=quest.dc.wanted_note_uid, time=event.time)
             quest.agent.profile.set_balance(time=event.time, delta=quest.dc.boss_reward)
             go('win')
 
     ####################################################################################################################
+    class cancel_fail(FailByCancelState):
+        def on_enter_(self, quest, event):
+            quest.agent.profile.del_note(uid=quest.dc.wanted_note_uid, time=event.time)
+            quest.agent.profile.del_note(uid=quest.dc.track_note_uid, time=event.time)
+
+    ####################################################################################################################
+    class fail(FailByCancelState):
+        def on_enter_(self, quest, event):
+            if not quest.dc.is_kill:
+                quest.log(text=u'Убит не Вами.'.format(quest.dc.boss_name), event=event)
+            quest.agent.profile.del_note(uid=quest.dc.wanted_note_uid, time=event.time)
+            quest.agent.profile.del_note(uid=quest.dc.track_note_uid, time=event.time)
+
+    ####################################################################################################################
     class win(WinState):
         def on_enter_(self, quest, event):
-           quest.agent.profile.del_note(uid=quest.dc.wanted_note_uid, time=event.time)
+            if not quest.dc.is_kill:
+                quest.log(text=u'Убит не Вами.'.format(quest.dc.boss_name), event=event)
+            quest.agent.profile.del_note(uid=quest.dc.wanted_note_uid, time=event.time)
+            quest.agent.profile.del_note(uid=quest.dc.track_note_uid, time=event.time)
 

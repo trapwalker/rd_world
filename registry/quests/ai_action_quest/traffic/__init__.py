@@ -2,7 +2,7 @@
 import logging
 log = logging.getLogger(__name__)
 
-from sublayers_server.model.quest_events import OnTimer, OnAIOut, OnAISee, OnAppendCar, OnDie, OnGetDmg
+from sublayers_server.model.quest_events import OnTimer, OnQuestOut, OnQuestSee, OnAppendCar, OnDie, OnGetDmg
 from sublayers_server.model.registry_me.classes.quests import (
     QuestState_, FailState, WinState,
 )
@@ -142,7 +142,7 @@ class AIActionTrafficQuest(AIActionQuest):
             if isinstance(event, OnGetDmg):
                 quest.towns_aggro(event=event)
 
-            if isinstance(event, OnAISee) and agent.profile._agent_model.event_quest:
+            if isinstance(event, OnQuestSee) and agent.profile._agent_model.event_quest:
                 agent.profile._agent_model.event_quest.on_see_object(event=event)
 
     ####################################################################################################################
