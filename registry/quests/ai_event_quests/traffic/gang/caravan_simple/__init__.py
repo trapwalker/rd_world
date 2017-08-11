@@ -4,7 +4,7 @@ import logging
 log = logging.getLogger(__name__)
 
 from sublayers_world.registry.quests.ai_event_quests.traffic.gang import AIGangQuest
-from sublayers_server.model.registry_me.tree import EmbeddedDocumentField
+from sublayers_server.model.registry_me.tree import EmbeddedDocumentField, IntField
 from sublayers_server.model.registry_me.classes.quests import QuestState_, QuestRange
 from sublayers_server.model.registry_me.randomize_examples import RandomizeExamples
 from sublayers_server.model.vectors import Point
@@ -19,6 +19,7 @@ from math import pi
 
 class AICaravanQuest(AIGangQuest):
     caravan_wait_time = EmbeddedDocumentField(document_type=QuestRange, caption=u"Границы задержки перед стартом каравана (минуты)")
+    party_capacity = IntField(root_default=10, caption=u"Вместительность пати каравана с учётом НПЦ")
 
     def on_see_object(self, event):  # Вызывается когда только для OnAISee
         return
@@ -41,12 +42,21 @@ class AICaravanQuest(AIGangQuest):
         return False
 
     def include_to_party(self, model_agent, event):
-        log.debug('AICaravanQuest:: Try Include to party: %s', model_agent)
+        # log.debug('AICaravanQuest:: Try Include to party: %s    %s    %s', model_agent, self.dc.agents_on_party, self.party_capacity)
+        if self.dc.agents_on_party >= self.party_capacity:
+            return False
         if self.dc.party is not None:
+            self.dc.agents_on_party += 1
             self.dc.party.invite(sender=self.dc.party.owner, recipient=model_agent, time=event.time + 0.02)
             self.dc.party.include(agent=model_agent, time=event.time + 0.1)
+            return True
         else:
             log.warning('AICaravanQuest::include_to_party:: Party not found!')
+
+    def exclude_from_party(self, model_agent, event):
+        self.dc.agents_on_party -= 1
+        self.dc.agents_on_party = max(self.dc.agents_on_party, 0)
+        # log.debug('AICaravanQuest::exclude_from_party: %s ', self.dc.agents_on_party)
 
     def deploy_agents(self, event):
         # Метод деплоя агентов на карту. Вызывается на on_start квеста
@@ -67,11 +77,10 @@ class AICaravanQuest(AIGangQuest):
             start_point_route = route.nearest_point(route.get_start_point().as_point())
             level = random.randint(self.bots_level.min, self.bots_level.max)
             self.dc.party = None
+            additional_agent_params = dict(party_capacity_count=self.party_capacity)
 
             for i in range(0, self.dc.count_members):
                 with deploy_agent_timer:
-                    additional_agent_params = dict(party_capacity_count=20)  # todo: возможно вынести в настройки самого квеста
-
                     example_profile = RandomizeExamples.get_random_agent(
                         level=level, time=event.time, karma_min=self.bots_karma.min, karma_max=self.bots_karma.max,
                         agent_params=additional_agent_params)
@@ -103,6 +112,7 @@ class AICaravanQuest(AIGangQuest):
                     self.include_to_party(model_agent=model_agent, event=event)
                 else:
                     self.dc.party = Party(time=event.time, owner=model_agent, name='caravan', description='Caravan', exp_share=True)
+                    self.dc.agents_on_party = 1
                     log.debug('AICaravanQuest:: Create Party %s   owner=%s', self.dc.party, model_agent)
 
         log.debug("Deploy Caravan: {} members =>>> {:.4f}s".format(self.dc.count_members, deploy_timer.duration))
@@ -133,8 +143,11 @@ class AICaravanQuest(AIGangQuest):
     ####################################################################################################################
     def on_start_(self, event, **kw):
         super(AICaravanQuest, self).on_start_(event=event, **kw)
-        self.dc.start_caravan_deadline = self.caravan_wait_time.get_random_int() * 30 #  todo: change to 60
+        self.dc.start_caravan_deadline = self.caravan_wait_time.get_random_int() * 60
+        self.dc.agents_on_party = 0  # Текущее количество агентов в пати
         self.dc.start_caravan_time = event.time + self.dc.start_caravan_deadline
+        if self.party_capacity < self.dc.count_members:  # Если вместимость пати меньше, чем планируемый размер каравана
+            self.dc.count_members = self.party_capacity  # info: Защита от дурака
         self.deploy_agents(event=event)
 
     ####################################################################################################################
@@ -150,8 +163,7 @@ class AICaravanQuest(AIGangQuest):
                 all_in_party = quest.test_party()
                 if not all_in_party:
                     log.warning('=====!!!!!======!!!!!=====  Not All members in Party  ====!!!===')
-                go = partial(quest.go, event=event)
-                go('run')
+                quest.go(new_state='run', event=event)
 
     class run(QuestState_):
         def on_enter_(self, quest, event):
