@@ -165,7 +165,7 @@ class AICaravanQuest(AIGangQuest):
             else:
                 self.dc.party = Party(time=event.time, owner=model_agent, name='caravan', description='Caravan', exp_share=True)
                 self.dc.agents_on_party = 1
-                log.debug('AICaravanQuest:: Create Party %s   owner=%s', self.dc.party, model_agent)
+                # log.debug('AICaravanQuest:: Create Party %s   owner=%s', self.dc.party, model_agent)
 
         for i in range(0, self.dc.count_guardians):
             model_agent = self.deploy_one_agent(event=event, level=level, additional_agent_params=additional_agent_params)
@@ -222,7 +222,7 @@ class AICaravanQuest(AIGangQuest):
     class pre_begin(QuestState_):
         def on_enter_(self, quest, event):
             quest.agent.profile._agent_model.on_event_quest(time=event.time, quest=quest)
-            log.debug('Caravan started in: %ss', quest.dc.start_caravan_deadline)
+            # log.debug('Caravan started in: %ss', quest.dc.start_caravan_deadline)
             quest.set_timer(event=event, name='start_caravan', delay=quest.dc.start_caravan_deadline)
 
         def on_event_(self, quest, event):
