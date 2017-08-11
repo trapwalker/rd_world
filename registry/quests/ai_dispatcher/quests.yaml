@@ -747,8 +747,53 @@ quests:
     chance_of_generation: 1
     delay_time: 1
     bots_karma: {min: -90, max: -30}
-    tags: ['mob_boss']
+    tags: ['mob_boss', 'whitehill']
     routes:
       - _cls: AreaRandomRoute
         center: {x: 12480199, y: 27045813}
         dispersion: 300
+    cars:
+      - reg:///registry/mobiles/cars/middle/cars/vw_beetle
+      - reg:///registry/mobiles/cars/middle/cars/vw_golf
+
+  - parent: reg:///registry/quests/ai_event_quests/traffic/boss
+    generation_group: 'mob_boss'
+    chance_of_generation: 1
+    delay_time: 1
+    bots_karma: {min: -90, max: -30}
+    tags: ['mob_boss', 'prior']
+    routes:
+      - _cls: AreaRandomRoute
+        center: {x: 12537432, y: 27043853}
+        dispersion: 300
+    cars:
+      - reg:///registry/mobiles/cars/middle/cars/vw_beetle
+      - reg:///registry/mobiles/cars/middle/cars/vw_golf
+
+#  - parent: reg:///registry/quests/ai_event_quests/traffic/boss
+#    generation_group: 'mob_boss'
+#    chance_of_generation: 1
+#    delay_time: 1
+#    bots_karma: {min: -90, max: -30}
+#    tags: ['mob_boss', 'paloma']
+#    routes:
+#      - _cls: AreaRandomRoute
+#        center: {x: 12509663, y: 27053100}
+#        dispersion: 300
+#    cars:
+#      - reg:///registry/mobiles/cars/middle/cars/vw_beetle
+#      - reg:///registry/mobiles/cars/middle/cars/vw_golf
+
+  - parent: reg:///registry/quests/ai_event_quests/traffic/boss
+    generation_group: 'mob_boss'
+    chance_of_generation: 1
+    delay_time: 1
+    bots_karma: {min: -90, max: -30}
+    tags: ['mob_boss', 'bonita_vista']
+    routes:
+      - _cls: AreaRandomRoute
+        center: {x: 12509391, y: 27030055}
+        dispersion: 300
+    cars:
+      - reg:///registry/mobiles/cars/middle/cars/vw_beetle
+      - reg:///registry/mobiles/cars/middle/cars/vw_golf
