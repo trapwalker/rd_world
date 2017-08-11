@@ -56,7 +56,9 @@ class AICaravanQuest(AIGangQuest):
         if not self.routes:
             return
 
-        deploy_timer = Timer()
+        deploy_timer = Timer(name='AICaravanQuest::deploy_bots')
+        deploy_agent_timer = Timer(name='AICaravanQuest::deploy_bots::GenerateAgent')
+        deploy_car_timer = Timer(name='AICaravanQuest::deploy_bots::GenerateCar')
 
         with deploy_timer:
             action_quest = event.server.reg.get('/registry/quests/ai_action_quest/traffic')
@@ -67,32 +69,34 @@ class AICaravanQuest(AIGangQuest):
             self.dc.party = None
 
             for i in range(0, self.dc.count_members):
-                additional_agent_params = dict(party_capacity_count=20)  # todo: возможно вынести в настройки самого квеста
+                with deploy_agent_timer:
+                    additional_agent_params = dict(party_capacity_count=20)  # todo: возможно вынести в настройки самого квеста
 
-                example_profile = RandomizeExamples.get_random_agent(
-                    level=level, time=event.time, karma_min=self.bots_karma.min, karma_max=self.bots_karma.max,
-                    agent_params=additional_agent_params)
-                example_agent = AgentExample(login='', user_id='', profile=example_profile)
-                model_agent = AIAgent(example=example_agent, user=None, time=event.time, server=event.server)
-                model_agent.event_quest = self
+                    example_profile = RandomizeExamples.get_random_agent(
+                        level=level, time=event.time, karma_min=self.bots_karma.min, karma_max=self.bots_karma.max,
+                        agent_params=additional_agent_params)
+                    example_agent = AgentExample(login='', user_id='', profile=example_profile)
+                    model_agent = AIAgent(example=example_agent, user=None, time=event.time, server=event.server)
+                    model_agent.event_quest = self
 
                 car_pos = Point.random_gauss(start_point_route, 30)
                 action_quest = action_quest.instantiate(abstract=False, hirer=None, towns_protect=self.towns_protect,
                                                         min_wait_car_time=int(self.dc.start_caravan_deadline * 1.5))  # Чтобы квест не сфейлился сразу
                 action_quest.dc.current_target_point = start_point_route
                 model_agent.create_ai_quest(time=event.time, action_quest=action_quest)
-
-                car_example = RandomizeExamples.get_random_car_level(
-                    level=level,
-                    car_params=dict(
-                        position=car_pos,
-                        direction=random.random() * 2 * pi,
-                        base_exp_price=self.bots_car_exp.get_random_int(),
+                with deploy_car_timer:
+                    car_example = RandomizeExamples.get_random_car_level(
+                        level=level,
+                        car_params=dict(
+                            position=car_pos,
+                            direction=random.random() * 2 * pi,
+                            base_exp_price=self.bots_car_exp.get_random_int(),
+                        )
                     )
-                )
 
-                example_profile.car = car_example
-                self.init_bot_inventory(car_example=car_example)
+                    example_profile.car = car_example
+                    self.init_bot_inventory(car_example=car_example)
+
                 self.dc.members.append(model_agent)
 
                 if self.dc.party is not None:
@@ -102,6 +106,8 @@ class AICaravanQuest(AIGangQuest):
                     log.debug('AICaravanQuest:: Create Party %s   owner=%s', self.dc.party, model_agent)
 
         log.debug("Deploy Caravan: {} members =>>> {:.4f}s".format(self.dc.count_members, deploy_timer.duration))
+        log.debug(deploy_agent_timer)
+        log.debug(deploy_car_timer)
 
     def deploy_bots(self, event):
         # Метод деплоя агентов на карту. Вызывается на on_start квеста
