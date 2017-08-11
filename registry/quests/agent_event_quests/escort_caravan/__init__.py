@@ -64,21 +64,29 @@ class EscortCaravan(AgentEventQuest):
             super(EscortCaravan.begin, self).on_enter_(quest=quest, event=event)
             quest.set_timer(event=event, name='participation', delay=30)
             quest.log(u'Ожидание каравана.', event=event)
+            event_quest = quest.get_event_quest(event=event)
+            if event_quest and quest.agent.profile._agent_model:
+                event_quest.include_to_party(model_agent=quest.agent.profile._agent_model, event=event)
 
         def on_event_(self, quest, event):
             super(EscortCaravan.begin, self).on_event_(quest=quest, event=event)
             if isinstance(event, OnTimer) and event.name == 'participation':
                 quest.set_timer(event=event, name='participation', delay=30)
                 event_quest = quest.get_event_quest(event=event)
-                if event_quest.current_state == 'run':  # Если караван в пути
-                    if not quest.dc.caravan_started:
-                        quest.dc.caravan_started = True
-                        quest.log(u'Караван выехал.', event=event)
-                    caravan_point = quest.get_current_caravan_position(event_quest=event_quest)
-                    if caravan_point:
-                        quest.dc.check_participation += 1.0
-                        if quest.agent.profile._agent_model and quest.agent.profile._agent_model.car and not quest.agent.profile._agent_model.car.limbo:
-                            quest.calc_participation(car_pos=quest.agent.profile._agent_model.car.position(event.time), caravan_pos=caravan_point)
+                if event_quest:
+                    agent_model = quest.agent.profile._agent_model
+                    if event_quest.current_state == 'run':  # Если караван в пути
+                        if not quest.dc.caravan_started:
+                            quest.dc.caravan_started = True
+                            quest.log(u'Караван выехал.', event=event)
+                        caravan_point = quest.get_current_caravan_position(event_quest=event_quest)
+                        if caravan_point:
+                            quest.dc.check_participation += 1.0
+                            if agent_model and agent_model.car and not agent_model.car.limbo:
+                                quest.calc_participation(car_pos=agent_model.car.position(event.time), caravan_pos=caravan_point)
+                    if agent_model.party is not event_quest.dc.party:
+                        # todo: Отказ от квеста (будто у нпц отказался)
+                        quest.go(new_state='cancel_fail', event=event)
 
 
     class win(AgentEventQuest.win):
