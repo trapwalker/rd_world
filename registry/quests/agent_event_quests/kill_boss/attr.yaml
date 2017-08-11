@@ -1,0 +1,9 @@
+﻿_cls: KillBossQuest
+
+caption: Найти и уничтожить
+list_icon: static/img/quests/icons/players_kill.png
+first_state: begin
+
+
+
+

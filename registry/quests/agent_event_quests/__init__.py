@@ -2,18 +2,13 @@
 import logging
 log = logging.getLogger(__name__)
 
-from sublayers_server.model.registry_me.classes import notes
-from sublayers_server.model.quest_events import OnCancel, OnTimer, OnNote, OnKill
-from sublayers_server.model.registry_me.classes.quests import (
-    Cancel, QuestState_, FailByCancelState, FailState, WinState,
-)
-from sublayers_server.model.registry_me.tree import (IntField, FloatField, ListField, EmbeddedDocumentField,
-                                                     BooleanField, Subdoc, StringField, UUIDField)
-from sublayers_server.model.registry_me.classes.quests import Quest, QuestRange
-from sublayers_server.model.utils import getKarmaName
+from sublayers_server.model.quest_events import OnTimer
+from sublayers_server.model.registry_me.classes.quests import Cancel, QuestState_, FailByCancelState, WinState
+from sublayers_server.model.registry_me.tree import (ListField, StringField)
+from sublayers_server.model.registry_me.classes.quests import Quest
+from sublayers_server.model.quest_events import OnCancel
 
 from functools import partial
-import random
 
 
 class AgentEventQuest(Quest):
@@ -57,15 +52,14 @@ class AgentEventQuest(Quest):
         self.event_quest_uid = str(event_quest.uid)
         return True
 
+    def check_unstarted(self, event):
+        return (super(AgentEventQuest, self).check_unstarted(event=event) or
+                (self.get_event_quest(event=event) is None))
+
     ####################################################################################################################
     def on_generate_(self, event, **kw):
         if not self.can_generate(event):
             raise Cancel("QUEST CANCEL: reason: Active Event Quest not found")
-
-    ####################################################################################################################
-    def on_start_(self, event, **kw):
-        pass
-
 
     ####################################################################################################################
     ## Перечень состояний ##############################################################################################
@@ -84,6 +78,8 @@ class AgentEventQuest(Quest):
                     go('reward')
                 elif event_quest.status == 'fail':
                     go('fail')
+            if isinstance(event, OnCancel):
+                go('cancel_fail')
 
     ####################################################################################################################
     class cancel_fail(FailByCancelState):
@@ -104,5 +100,3 @@ class AgentEventQuest(Quest):
     class win(WinState):
         def on_enter_(self, quest, event):
            pass
-
-    ####################################################################################################################

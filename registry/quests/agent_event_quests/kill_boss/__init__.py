@@ -1,0 +1,112 @@
+# -*- coding: utf-8 -*-
+import logging
+log = logging.getLogger(__name__)
+
+
+from sublayers_world.registry.quests.agent_event_quests import AgentEventQuest
+from sublayers_server.model.registry_me.classes.notes import NPCWantedBossNote
+from sublayers_server.model.quest_events import OnKill, OnNote
+from sublayers_server.model.registry_me.classes.quests import QuestState_, FailByCancelState, WinState
+
+from functools import partial
+
+
+class KillBossQuest(AgentEventQuest):
+
+    def as_client_dict(self):
+        d = super(KillBossQuest, self).as_client_dict()
+        d.update(
+            is_kill=self.dc.is_kill,
+            boss_name = self.dc.boss_name,
+            boss_avatar = self.dc.boss_avatar,
+            boss_reward = self.dc.boss_reward
+        )
+        return d
+
+    def get_event_quest(self, event):
+        event_quest = super(KillBossQuest, self).get_event_quest(event=event)
+        self.dc.is_kill = False
+        if event_quest:
+            self.dc.boss_name = event_quest.dc._main_agent.print_login()
+            self.dc.boss_avatar = event_quest.dc._main_agent.avatar_link
+            self.dc.boss_reward = event_quest.dc.kill_reward_money
+        else:
+            self.dc.boss_name = ''
+            self.dc.boss_avatar = ''
+            self.dc.boss_reward = 0
+        return event_quest
+
+    def init_level(self):
+        self.level = 1
+
+    def init_text(self, event):
+        self.text_short = u"Убейте игрока."
+        event_quest = self.get_event_quest(event=event)
+        if event_quest:
+            self.text = u"Убейте игрока с ником {}. Награда: {:.0f}nc.".format(
+                event_quest.dc._main_agent.print_login(),
+                event_quest.dc.kill_reward_money
+            )
+
+    def on_generate_(self, event, **kw):
+        super(KillBossQuest, self).on_generate_(event=event, **kw)
+        self.init_level()
+        self.init_text(event=event)
+
+    def on_start_(self, event, **kw):
+        # Создание ноты для квеста
+        self.dc.wanted_note_uid = self.agent.profile.add_note(
+            quest_uid=self.uid,
+            note_class=NPCWantedBossNote,
+            time=event.time,
+            npc=self.hirer,
+            page_caption='Найти и уничтожить',
+        )
+        self.log(text=u'Начат квест - Найти и уничтожить.'.format(), event=event, position=self.hirer.hometown.position)
+
+    ####################################################################################################################
+    class begin(AgentEventQuest.begin):
+        def on_event_(self, quest, event):
+            super(KillBossQuest.begin, self).on_event_(quest=quest, event=event)
+            go = partial(quest.go, event=event)
+            if isinstance(event, OnKill):
+                event_quest = quest.get_event_quest(event=event)
+                if event.agent is event_quest.dc._main_agent.example:
+                    quest.dc.is_kill = True
+                    quest.log(text=u'{} убит.'.format(quest.dc.boss_name), event=event,
+                              position=quest.agent.profile._agent_model.car.position(time=event.time))
+                    go('note_kill_reward')
+
+    ####################################################################################################################
+    class note_kill_reward(QuestState_):
+        def on_event_(self, quest, event):
+            go = partial(quest.go, event=event)
+            agent = quest.agent
+            if isinstance(event, OnNote):
+                if (quest.dc.wanted_note_uid == event.note_uid) and (event.result == True):
+                    agent.profile.del_note(uid=quest.dc.wanted_note_uid, time=event.time)
+                    go('reward')
+
+    ####################################################################################################################
+    class cancel_fail(FailByCancelState):
+        def on_enter_(self, quest, event):
+            quest.agent.profile.del_note(uid=quest.dc.wanted_note_uid, time=event.time)
+
+    ####################################################################################################################
+    class fail(FailByCancelState):
+        def on_enter_(self, quest, event):
+            quest.agent.profile.del_note(uid=quest.dc.wanted_note_uid, time=event.time)
+
+    ####################################################################################################################
+    class reward(WinState):
+        def on_enter_(self, quest, event):
+            go = partial(quest.go, event=event)
+            quest.agent.profile.del_note(uid=quest.dc.wanted_note_uid, time=event.time)
+            quest.agent.profile.set_balance(time=event.time, delta=quest.dc.boss_reward)
+            go('win')
+
+    ####################################################################################################################
+    class win(WinState):
+        def on_enter_(self, quest, event):
+           quest.agent.profile.del_note(uid=quest.dc.wanted_note_uid, time=event.time)
+

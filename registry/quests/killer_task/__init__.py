@@ -147,7 +147,7 @@ class KillerQuest(Quest):
             page_caption='Задание на убийство',
         )
         self.log(text=u'Начат квест на убийство. Целей {}.'.format(self.count_to_kill), event=event,
-              position=self.hirer.hometown.position)
+                 position=self.hirer.hometown.position)
     
     ####################################################################################################################
     ## Перечень состояний ##############################################################################################
