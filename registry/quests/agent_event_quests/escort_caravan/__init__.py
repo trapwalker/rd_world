@@ -4,7 +4,7 @@ log = logging.getLogger(__name__)
 
 from sublayers_world.registry.quests.agent_event_quests import AgentEventQuest
 from sublayers_world.registry.quests.ai_event_quests.traffic.gang.caravan_simple import AICaravanQuest
-from sublayers_server.model.quest_events import OnCancel, OnTimer
+from sublayers_server.model.quest_events import OnTimer, OnPartyExclude
 
 from functools import partial
 
@@ -84,11 +84,12 @@ class EscortCaravan(AgentEventQuest):
                             quest.dc.check_participation += 1.0
                             if agent_model and agent_model.car and not agent_model.car.limbo:
                                 quest.calc_participation(car_pos=agent_model.car.position(event.time), caravan_pos=caravan_point)
-                    if agent_model.party is not event_quest.dc.party:
-                        # todo: Отказ от квеста (будто у нпц отказался)
-                        quest.go(new_state='cancel_fail', event=event)
 
+            if isinstance(event, OnPartyExclude) and event.agent and event.agent is quest.agent.profile._agent_model:
+                # Отказ от квеста (будто у нпц отказался)
+                quest.go(new_state='cancel_fail', event=event)
 
+    ####################################################################################################################
     class win(AgentEventQuest.win):
         def on_enter_(self, quest, event):
             if quest.dc.check_participation == 0:
@@ -96,3 +97,9 @@ class EscortCaravan(AgentEventQuest):
             p = int(100 * quest.dc.count_participation / quest.dc.check_participation)
             quest.log(u'Участие в караване: {}%'.format(p), event=event)
             super(EscortCaravan.win, self).on_enter_(quest=quest, event=event)
+
+    ####################################################################################################################
+    class cancel_fail(AgentEventQuest.cancel_fail):
+        def on_enter_(self, quest, event):
+            super(EscortCaravan.cancel_fail, self).on_enter_(quest=quest, event=event)
+            quest.log(u'Отказ от участия в караване.', event=event)
