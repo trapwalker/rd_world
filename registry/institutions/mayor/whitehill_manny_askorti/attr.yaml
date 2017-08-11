@@ -238,5 +238,5 @@ quests:
 
   - parent: reg:///registry/quests/agent_event_quests/kill_boss
     _cls: KillBossQuest
-    needed_tags: ['mob_boss']
+    needed_tags: ['mob_boss', 'whitehill']
     generation_max_count: 3

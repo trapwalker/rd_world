@@ -76,6 +76,7 @@ class AITrafficQuest(AIEventQuest):
         self.dc._main_agent.create_ai_quest(time=event.time, action_quest=action_quest)
 
         car_example = RandomizeExamples.get_random_car_level(
+            cars=self.cars,
             level=level,
             car_params=dict(
                 position=car_pos,
