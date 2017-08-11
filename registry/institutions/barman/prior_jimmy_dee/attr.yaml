@@ -74,3 +74,8 @@ quests:
       - reg:///registry/poi/locations/towns/whitehill
       - reg:///registry/poi/locations/towns/paloma
       - reg:///registry/poi/locations/towns/bonita_vista
+
+
+  - parent: reg:///registry/quests/agent_event_quests/escort_caravan
+    needed_tags: ["caravan_prior_whitehill"]
+
