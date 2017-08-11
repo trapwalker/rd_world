@@ -190,7 +190,6 @@ class AITrafficQuest(AIEventQuest):
             self.dc._main_agent.action_quest.dc.current_target_point = self.dc.route.next_point()
 
     ####################################################################################################################
-
     def on_generate_(self, event, **kw):
         pass
 
@@ -207,7 +206,6 @@ class AITrafficQuest(AIEventQuest):
 
         def on_event_(self, quest, event):
             go = partial(quest.go, event=event)
-            agent = quest.agent
             if isinstance(event, OnTimer) and (event.name == 'test_end'):
                 status = quest.get_traffic_status(event)
                 if status == 'win':
@@ -221,7 +219,7 @@ class AITrafficQuest(AIEventQuest):
                     quest.set_actions(time=event.time)
                     quest.set_target_point(time=event.time)
     ####################################################################################################################
-    class win(WinState):pass
+    class win(WinState): pass
     ####################################################################################################################
-    class fail(FailState):pass
+    class fail(FailState): pass
     ####################################################################################################################
