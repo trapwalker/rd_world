@@ -40,13 +40,9 @@ class EscortCaravan(AgentEventQuest):
     def on_generate_(self, event, **kw):
         super(EscortCaravan, self).on_generate_(event=event, **kw)
 
-    def get_current_caravan_position(self, event_quest):
-        # todo: взять средневзвешенную точку каравана, а пока взята текущая точка маршрута
-        return event_quest.dc.route.get_current_point()
-
     def calc_participation(self, car_pos, caravan_pos):
         try:
-            if car_pos.distance(caravan_pos) <= 3000:
+            if car_pos.distance(caravan_pos) <= self.dc.radius_participation:
                 self.dc.count_participation += 1.0
         except:
             log.error('!!!!!!!!!!!!!!!!==============   car_pos=%s,   caravan_pos=%s', car_pos, caravan_pos)
@@ -64,6 +60,7 @@ class EscortCaravan(AgentEventQuest):
             if not res:
                 self.npc_replica(npc=self.hirer, replica=u"Караван сформирован.", event=event)
                 raise Cancel("QUEST CANCEL: Caravan Party is full.")
+            self.dc.radius_participation = event_quest.radius_participation
 
     ####################################################################################################################
     class begin(AgentEventQuest.begin):
@@ -84,7 +81,7 @@ class EscortCaravan(AgentEventQuest):
                         if not quest.dc.caravan_started:
                             quest.dc.caravan_started = True
                             quest.log(u'Караван выехал.', event=event)
-                        caravan_point = quest.get_current_caravan_position(event_quest=event_quest)
+                        caravan_point = event_quest.average_caravan_position(time=event.time)
                         if caravan_point:
                             quest.dc.check_participation += 1.0
                             if agent_model and agent_model.car and not agent_model.car.limbo:
@@ -102,9 +99,16 @@ class EscortCaravan(AgentEventQuest):
         def on_enter_(self, quest, event):
             if quest.dc.check_participation == 0:
                 quest.dc.check_participation = 1.0
-            p = int(100 * quest.dc.count_participation / quest.dc.check_participation)
-            quest.log(u'Участие в караване: {}%'.format(p), event=event)
+
+            participation = quest.dc.count_participation / quest.dc.check_participation
+            quest.log(u'Участие в караване: {}%'.format(int(100 * participation)), event=event)
             super(EscortCaravan.win, self).on_enter_(quest=quest, event=event)
+
+            agent_profile = quest.agent.profile
+            agent_profile.set_exp(time=event.time, dvalue=int(quest.reward_exp * participation))
+            agent_profile.set_karma(time=event.time, dvalue=quest.reward_karma * participation)
+            agent_profile.set_relationship(time=event.time, npc=quest.hirer, dvalue=int(quest.reward_relation_hirer * participation))
+            agent_profile.set_balance(time=event.time, delta=int(quest.reward_money * participation))
 
     ####################################################################################################################
     class cancel_fail(AgentEventQuest.cancel_fail):
@@ -117,3 +121,5 @@ class EscortCaravan(AgentEventQuest):
                 event_quest.exclude_from_party(model_agent=quest.agent.profile._agent_model, event=event)
 
             quest.log(u'Отказ от участия в караване.', event=event)
+            quest.agent.profile.set_relationship(time=event.time, npc=quest.hirer, dvalue=-5)  # изменение отношения c нпц
+            quest.agent.profile.set_karma(time=event.time, dvalue=-5)  # изменение кармы

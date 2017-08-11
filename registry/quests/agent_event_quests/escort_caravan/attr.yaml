@@ -1,7 +1,7 @@
 ﻿_cls: EscortCaravan
 doc    : Примеры квестов
 
-list_icon: static/img/quests/icons/players_kill.png
+list_icon: static/img/quests/icons/caravan_guard.png
 
 first_state: begin
 current_state: ~
