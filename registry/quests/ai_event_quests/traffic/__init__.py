@@ -76,6 +76,7 @@ class AITrafficQuest(AIEventQuest):
         self.dc._main_agent.create_ai_quest(time=event.time, action_quest=action_quest)
 
         car_example = RandomizeExamples.get_random_car_level(
+            cars=self.cars,
             level=level,
             car_params=dict(
                 position=car_pos,
@@ -190,24 +191,22 @@ class AITrafficQuest(AIEventQuest):
             self.dc._main_agent.action_quest.dc.current_target_point = self.dc.route.next_point()
 
     ####################################################################################################################
-
     def on_generate_(self, event, **kw):
         pass
 
     ####################################################################################################################
     def on_start_(self, event, **kw):
         self.dc.target_uid_list = []
-        self.deploy_bots(event=event)
 
     ####################################################################################################################
     ## Перечень состояний ##############################################################################################
     class begin(QuestState_):
         def on_enter_(self, quest, event):
+            quest.deploy_bots(event=event)
             quest.set_timer(event=event, name='test_end', delay=quest.test_end_time)
 
         def on_event_(self, quest, event):
             go = partial(quest.go, event=event)
-            agent = quest.agent
             if isinstance(event, OnTimer) and (event.name == 'test_end'):
                 status = quest.get_traffic_status(event)
                 if status == 'win':
@@ -221,7 +220,7 @@ class AITrafficQuest(AIEventQuest):
                     quest.set_actions(time=event.time)
                     quest.set_target_point(time=event.time)
     ####################################################################################################################
-    class win(WinState):pass
+    class win(WinState): pass
     ####################################################################################################################
-    class fail(FailState):pass
+    class fail(FailState): pass
     ####################################################################################################################

@@ -1,0 +1,13 @@
+﻿_cls: EscortCaravan
+doc    : Примеры квестов
+
+list_icon: static/img/quests/icons/caravan_guard.png
+
+first_state: begin
+current_state: ~
+
+caption: Сопровождение каравана
+
+text_short: Сопроводите караван
+text: Сопроводите караван
+

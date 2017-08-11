@@ -1,0 +1,5 @@
+_cls: AIBossQuest
+doc    : Квесты
+
+generation_max_count: 1
+action_radius: 2000

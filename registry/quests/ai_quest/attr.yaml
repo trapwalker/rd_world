@@ -65,7 +65,7 @@ states:
           if isinstance(event, OnDie):
               go('before_respawn')
 
-          if isinstance(event, OnAISee):
+          if isinstance(event, OnQuestSee):
               if agent.profile._agent_model.is_target(target=event.obj):
                   quest.dc.attacke_target = event.obj
                   go('attacke')
@@ -107,7 +107,7 @@ states:
           if isinstance(event, OnDie):
               go('before_respawn')
 
-          if isinstance(event, OnAIOut):
+          if isinstance(event, OnQuestOut):
               if event.obj is quest.dc.attacke_target:
                   quest.dc.attacke_target = None
                   vo_list = agent.profile._agent_model.get_all_visible_objects()

@@ -2,7 +2,7 @@
 _cls: KillerQuest
 doc    : Примеры квестов
 
-list_icon: static/img/quests/icons/players_kill.png
+list_icon: static/img/quests/icons/wanted.png
 
 # Настройки параметров квеста
 # Квест на убийство игроков, имеющих минимальный уровень (равный уровню квеста),
