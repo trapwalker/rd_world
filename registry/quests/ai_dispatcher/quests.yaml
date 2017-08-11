@@ -433,3 +433,14 @@ quests:
         center: {x: 12472652, y: 27043975}
         dispersion: 2000
         route_deadline: 0
+
+  - parent: reg:///registry/quests/ai_event_quests/traffic/boss
+    generation_group: 'mob_boss'
+    chance_of_generation: 1
+    delay_time: 1
+    bots_karma: {min: -90, max: -30}
+    tags: ['mob_boss']
+    routes:
+      - _cls: AreaRandomRoute
+        center: {x: 12480199, y: 27045813}
+        dispersion: 300
