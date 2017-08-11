@@ -797,3 +797,64 @@ quests:
     cars:
       - reg:///registry/mobiles/cars/middle/cars/vw_beetle
       - reg:///registry/mobiles/cars/middle/cars/vw_golf
+
+
+  #### Caravans #####
+  - parent: reg:///registry/quests/ai_event_quests/traffic/gang/caravan_simple
+    _cls: AICaravanQuest
+    generation_group: "caravan_whitehill"
+    tags: ["caravan_whitehill_paloma"]
+    routes:
+      - reg:///registry/routes/whitehill_paloma
+
+  - parent: reg:///registry/quests/ai_event_quests/traffic/gang/caravan_simple
+    _cls: AICaravanQuest
+    generation_group: "caravan_whitehill"
+    tags: ["caravan_whitehill_prior"]
+    routes:
+      - reg:///registry/routes/whitehill_prior_south
+      - reg:///registry/routes/whitehill_prior_north
+
+  - parent: reg:///registry/quests/ai_event_quests/traffic/gang/caravan_simple
+    _cls: AICaravanQuest
+    generation_group: "caravan_whitehill"
+    tags: ["caravan_whitehill_bonita_vista"]
+    routes:
+      - reg:///registry/routes/whitehill_bonita_vista
+
+
+
+  - parent: reg:///registry/quests/ai_event_quests/traffic/gang/caravan_simple
+    _cls: AICaravanQuest
+    generation_group: "caravan_paloma"
+    tags: ["caravan_paloma_whitehill"]
+    routes:
+      - parent: reg:///registry/routes/whitehill_paloma
+        reverse: True
+
+  - parent: reg:///registry/quests/ai_event_quests/traffic/gang/caravan_simple
+    _cls: AICaravanQuest
+    generation_group: "caravan_paloma"
+    tags: ["caravan_paloma_prior"]
+    routes:
+      - reg:///registry/routes/paloma_prior
+
+
+  - parent: reg:///registry/quests/ai_event_quests/traffic/gang/caravan_simple
+    _cls: AICaravanQuest
+    generation_group: "caravan_prior"
+    tags: ["caravan_prior_whitehill"]
+    routes:
+      - parent: reg:///registry/routes/whitehill_prior_south
+        reverse: True
+      - parent: reg:///registry/routes/whitehill_prior_north
+        reverse: True
+
+
+  - parent: reg:///registry/quests/ai_event_quests/traffic/gang/caravan_simple
+    _cls: AICaravanQuest
+    generation_group: "caravan_bonita"
+    tags: ["caravan_bonita_vista_whitehill"]
+    routes:
+      - parent: reg:///registry/routes/whitehill_bonita_vista
+        reverse: True

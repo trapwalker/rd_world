@@ -66,9 +66,9 @@ class AIGangQuest(AITrafficQuest):
                     model_agent.generate_car(time=event.time, car_example=car_example)
 
                 self.dc.members.append(model_agent)
-        log.debug("Deploy Gang: {} members =>>> {:.4f}s".format(self.dc.count_members, deploy_timer.duration))
-        log.debug(deploy_agent_timer)
-        log.debug(deploy_car_timer)
+        # log.debug("Deploy Gang: {} members =>>> {:.4f}s".format(self.dc.count_members, deploy_timer.duration))
+        # log.debug(deploy_agent_timer)
+        # log.debug(deploy_car_timer)
 
     def displace_bots(self, event):
         # Метод удаления с карты агентов-ботов. Вызывается на при завершении квеста
