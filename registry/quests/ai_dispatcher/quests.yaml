@@ -146,12 +146,34 @@ quests:
       - parent: reg:///registry/routes/towns_gs/whitehill_gs_north
     towns_protect:
       - reg:///registry/poi/locations/towns/whitehill
-    max_loot_count: 2
+    max_loot_count: 3
     loot_rec_list:
       - item: reg:///registry/items/usable/tanks/tank_empty/tank_10l
-        chance: 0.5
+        chance: 0.95
       - item: reg:///registry/items/usable/tanks/tank_empty/tank_20l
-        chance: 0.5
+        chance: 0.95
+      - item: reg:///registry/items/usable/build_set/build_set_small
+        chance: 0.15
+      - item: reg:///registry/items/usable/build_set/build_set_mid
+        chance: 0.05
+      - item: reg:///registry/items/usable/ammo/556bb
+        chance: 0.15
+      - item: reg:///registry/items/usable/ammo/762x51bb
+        chance: 0.10
+      - item: reg:///registry/items/usable/ammo/792bb
+        chance: 0.10
+      - item: reg:///registry/items/usable/ammo/127x108bb
+        chance: 0.05
+      - item: reg:///registry/items/usable/ammo/13mm
+        chance: 0.05
+      - item: reg:///registry/items/usable/ammo/40mm
+        chance: 0.80
+      - item: reg:///registry/items/usable/ammo/20mm
+        chance: 0.60
+      - item: reg:///registry/items/usable/ammo/23bzt
+        chance: 0.55
+      - item: reg:///registry/items/usable/ammo/25mm
+        chance: 0.50
   - parent: reg:///registry/quests/ai_event_quests/traffic
     generation_group: 'traffic_wh_gs_north'
     chance_of_generation: 0.1
@@ -161,12 +183,34 @@ quests:
         reverse: True
     towns_protect:
       - reg:///registry/poi/locations/towns/whitehill
-    max_loot_count: 2
+    max_loot_count: 3
     loot_rec_list:
       - item: reg:///registry/items/usable/tanks/tank_full/tank_10l
-        chance: 0.5
+        chance: 0.95
       - item: reg:///registry/items/usable/tanks/tank_full/tank_20l
-        chance: 0.5
+        chance: 0.95
+      - item: reg:///registry/items/usable/build_set/build_set_small
+        chance: 0.15
+      - item: reg:///registry/items/usable/build_set/build_set_mid
+        chance: 0.05
+      - item: reg:///registry/items/usable/ammo/556bb
+        chance: 0.15
+      - item: reg:///registry/items/usable/ammo/762x51bb
+        chance: 0.10
+      - item: reg:///registry/items/usable/ammo/792bb
+        chance: 0.10
+      - item: reg:///registry/items/usable/ammo/127x108bb
+        chance: 0.05
+      - item: reg:///registry/items/usable/ammo/13mm
+        chance: 0.05
+      - item: reg:///registry/items/usable/ammo/40mm
+        chance: 0.80
+      - item: reg:///registry/items/usable/ammo/20mm
+        chance: 0.60
+      - item: reg:///registry/items/usable/ammo/23bzt
+        chance: 0.55
+      - item: reg:///registry/items/usable/ammo/25mm
+        chance: 0.50
 
 
   - parent: reg:///registry/quests/ai_event_quests/traffic
@@ -177,12 +221,34 @@ quests:
       - parent: reg:///registry/routes/towns_gs/paloma_gs_east
     towns_protect:
       - reg:///registry/poi/locations/towns/paloma
-    max_loot_count: 2
+    max_loot_count: 3
     loot_rec_list:
       - item: reg:///registry/items/usable/tanks/tank_empty/tank_10l
-        chance: 0.5
+        chance: 0.95
       - item: reg:///registry/items/usable/tanks/tank_empty/tank_20l
-        chance: 0.5
+        chance: 0.95
+      - item: reg:///registry/items/usable/build_set/build_set_small
+        chance: 0.15
+      - item: reg:///registry/items/usable/build_set/build_set_mid
+        chance: 0.05
+      - item: reg:///registry/items/usable/ammo/556bb
+        chance: 0.15
+      - item: reg:///registry/items/usable/ammo/762x51bb
+        chance: 0.10
+      - item: reg:///registry/items/usable/ammo/792bb
+        chance: 0.10
+      - item: reg:///registry/items/usable/ammo/127x108bb
+        chance: 0.05
+      - item: reg:///registry/items/usable/ammo/13mm
+        chance: 0.05
+      - item: reg:///registry/items/usable/ammo/40mm
+        chance: 0.80
+      - item: reg:///registry/items/usable/ammo/20mm
+        chance: 0.60
+      - item: reg:///registry/items/usable/ammo/23bzt
+        chance: 0.55
+      - item: reg:///registry/items/usable/ammo/25mm
+        chance: 0.50
   - parent: reg:///registry/quests/ai_event_quests/traffic
     generation_group: 'traffic_pl_gs_east'
     chance_of_generation: 0.1
@@ -192,12 +258,34 @@ quests:
         reverse: True
     towns_protect:
       - reg:///registry/poi/locations/towns/paloma
-    max_loot_count: 2
+    max_loot_count: 3
     loot_rec_list:
       - item: reg:///registry/items/usable/tanks/tank_full/tank_10l
-        chance: 0.5
+        chance: 0.95
       - item: reg:///registry/items/usable/tanks/tank_full/tank_20l
-        chance: 0.5
+        chance: 0.95
+      - item: reg:///registry/items/usable/build_set/build_set_small
+        chance: 0.15
+      - item: reg:///registry/items/usable/build_set/build_set_mid
+        chance: 0.05
+      - item: reg:///registry/items/usable/ammo/556bb
+        chance: 0.15
+      - item: reg:///registry/items/usable/ammo/762x51bb
+        chance: 0.10
+      - item: reg:///registry/items/usable/ammo/792bb
+        chance: 0.10
+      - item: reg:///registry/items/usable/ammo/127x108bb
+        chance: 0.05
+      - item: reg:///registry/items/usable/ammo/13mm
+        chance: 0.05
+      - item: reg:///registry/items/usable/ammo/40mm
+        chance: 0.80
+      - item: reg:///registry/items/usable/ammo/20mm
+        chance: 0.60
+      - item: reg:///registry/items/usable/ammo/23bzt
+        chance: 0.55
+      - item: reg:///registry/items/usable/ammo/25mm
+        chance: 0.50
 
 
   - parent: reg:///registry/quests/ai_event_quests/traffic
@@ -208,12 +296,34 @@ quests:
       - parent: reg:///registry/routes/towns_gs/paloma_gs_west
     towns_protect:
       - reg:///registry/poi/locations/towns/paloma
-    max_loot_count: 2
+    max_loot_count: 3
     loot_rec_list:
       - item: reg:///registry/items/usable/tanks/tank_empty/tank_10l
-        chance: 0.5
+        chance: 0.95
       - item: reg:///registry/items/usable/tanks/tank_empty/tank_20l
-        chance: 0.5
+        chance: 0.95
+      - item: reg:///registry/items/usable/build_set/build_set_small
+        chance: 0.15
+      - item: reg:///registry/items/usable/build_set/build_set_mid
+        chance: 0.05
+      - item: reg:///registry/items/usable/ammo/556bb
+        chance: 0.15
+      - item: reg:///registry/items/usable/ammo/762x51bb
+        chance: 0.10
+      - item: reg:///registry/items/usable/ammo/792bb
+        chance: 0.10
+      - item: reg:///registry/items/usable/ammo/127x108bb
+        chance: 0.05
+      - item: reg:///registry/items/usable/ammo/13mm
+        chance: 0.05
+      - item: reg:///registry/items/usable/ammo/40mm
+        chance: 0.80
+      - item: reg:///registry/items/usable/ammo/20mm
+        chance: 0.60
+      - item: reg:///registry/items/usable/ammo/23bzt
+        chance: 0.55
+      - item: reg:///registry/items/usable/ammo/25mm
+        chance: 0.50
   - parent: reg:///registry/quests/ai_event_quests/traffic
     generation_group: 'traffic_pl_gs_west'
     chance_of_generation: 0.1
@@ -223,12 +333,34 @@ quests:
         reverse: True
     towns_protect:
       - reg:///registry/poi/locations/towns/paloma
-    max_loot_count: 2
+    max_loot_count: 3
     loot_rec_list:
       - item: reg:///registry/items/usable/tanks/tank_full/tank_10l
-        chance: 0.5
+        chance: 0.95
       - item: reg:///registry/items/usable/tanks/tank_full/tank_20l
-        chance: 0.5
+        chance: 0.95
+      - item: reg:///registry/items/usable/build_set/build_set_small
+        chance: 0.15
+      - item: reg:///registry/items/usable/build_set/build_set_mid
+        chance: 0.05
+      - item: reg:///registry/items/usable/ammo/556bb
+        chance: 0.15
+      - item: reg:///registry/items/usable/ammo/762x51bb
+        chance: 0.10
+      - item: reg:///registry/items/usable/ammo/792bb
+        chance: 0.10
+      - item: reg:///registry/items/usable/ammo/127x108bb
+        chance: 0.05
+      - item: reg:///registry/items/usable/ammo/13mm
+        chance: 0.05
+      - item: reg:///registry/items/usable/ammo/40mm
+        chance: 0.80
+      - item: reg:///registry/items/usable/ammo/20mm
+        chance: 0.60
+      - item: reg:///registry/items/usable/ammo/23bzt
+        chance: 0.55
+      - item: reg:///registry/items/usable/ammo/25mm
+        chance: 0.50
 
 
   - parent: reg:///registry/quests/ai_event_quests/traffic
@@ -239,12 +371,34 @@ quests:
       - parent: reg:///registry/routes/towns_gs/prior_gs_north
     towns_protect:
       - reg:///registry/poi/locations/towns/prior
-    max_loot_count: 2
+    max_loot_count: 3
     loot_rec_list:
       - item: reg:///registry/items/usable/tanks/tank_empty/tank_10l
-        chance: 0.5
+        chance: 0.95
       - item: reg:///registry/items/usable/tanks/tank_empty/tank_20l
-        chance: 0.5
+        chance: 0.95
+      - item: reg:///registry/items/usable/build_set/build_set_small
+        chance: 0.15
+      - item: reg:///registry/items/usable/build_set/build_set_mid
+        chance: 0.05
+      - item: reg:///registry/items/usable/ammo/556bb
+        chance: 0.15
+      - item: reg:///registry/items/usable/ammo/762x51bb
+        chance: 0.10
+      - item: reg:///registry/items/usable/ammo/792bb
+        chance: 0.10
+      - item: reg:///registry/items/usable/ammo/127x108bb
+        chance: 0.05
+      - item: reg:///registry/items/usable/ammo/13mm
+        chance: 0.05
+      - item: reg:///registry/items/usable/ammo/40mm
+        chance: 0.80
+      - item: reg:///registry/items/usable/ammo/20mm
+        chance: 0.60
+      - item: reg:///registry/items/usable/ammo/23bzt
+        chance: 0.55
+      - item: reg:///registry/items/usable/ammo/25mm
+        chance: 0.50
   - parent: reg:///registry/quests/ai_event_quests/traffic
     generation_group: 'traffic_pr_gs_north'
     chance_of_generation: 0.1
@@ -254,12 +408,34 @@ quests:
         reverse: True
     towns_protect:
       - reg:///registry/poi/locations/towns/prior
-    max_loot_count: 2
+    max_loot_count: 3
     loot_rec_list:
       - item: reg:///registry/items/usable/tanks/tank_full/tank_10l
-        chance: 0.5
+        chance: 0.95
       - item: reg:///registry/items/usable/tanks/tank_full/tank_20l
-        chance: 0.5
+        chance: 0.95
+      - item: reg:///registry/items/usable/build_set/build_set_small
+        chance: 0.15
+      - item: reg:///registry/items/usable/build_set/build_set_mid
+        chance: 0.05
+      - item: reg:///registry/items/usable/ammo/556bb
+        chance: 0.15
+      - item: reg:///registry/items/usable/ammo/762x51bb
+        chance: 0.10
+      - item: reg:///registry/items/usable/ammo/792bb
+        chance: 0.10
+      - item: reg:///registry/items/usable/ammo/127x108bb
+        chance: 0.05
+      - item: reg:///registry/items/usable/ammo/13mm
+        chance: 0.05
+      - item: reg:///registry/items/usable/ammo/40mm
+        chance: 0.80
+      - item: reg:///registry/items/usable/ammo/20mm
+        chance: 0.60
+      - item: reg:///registry/items/usable/ammo/23bzt
+        chance: 0.55
+      - item: reg:///registry/items/usable/ammo/25mm
+        chance: 0.50
 
 
   - parent: reg:///registry/quests/ai_event_quests/traffic
@@ -270,12 +446,34 @@ quests:
       - parent: reg:///registry/routes/towns_gs/prior_gs_west
     towns_protect:
       - reg:///registry/poi/locations/towns/prior
-    max_loot_count: 2
+    max_loot_count: 3
     loot_rec_list:
       - item: reg:///registry/items/usable/tanks/tank_empty/tank_10l
-        chance: 0.5
+        chance: 0.95
       - item: reg:///registry/items/usable/tanks/tank_empty/tank_20l
-        chance: 0.5
+        chance: 0.95
+      - item: reg:///registry/items/usable/build_set/build_set_small
+        chance: 0.15
+      - item: reg:///registry/items/usable/build_set/build_set_mid
+        chance: 0.05
+      - item: reg:///registry/items/usable/ammo/556bb
+        chance: 0.15
+      - item: reg:///registry/items/usable/ammo/762x51bb
+        chance: 0.10
+      - item: reg:///registry/items/usable/ammo/792bb
+        chance: 0.10
+      - item: reg:///registry/items/usable/ammo/127x108bb
+        chance: 0.05
+      - item: reg:///registry/items/usable/ammo/13mm
+        chance: 0.05
+      - item: reg:///registry/items/usable/ammo/40mm
+        chance: 0.80
+      - item: reg:///registry/items/usable/ammo/20mm
+        chance: 0.60
+      - item: reg:///registry/items/usable/ammo/23bzt
+        chance: 0.55
+      - item: reg:///registry/items/usable/ammo/25mm
+        chance: 0.50
   - parent: reg:///registry/quests/ai_event_quests/traffic
     generation_group: 'traffic_pr_gs_west'
     chance_of_generation: 0.1
@@ -285,12 +483,34 @@ quests:
         reverse: True
     towns_protect:
       - reg:///registry/poi/locations/towns/prior
-    max_loot_count: 2
+    max_loot_count: 3
     loot_rec_list:
       - item: reg:///registry/items/usable/tanks/tank_full/tank_10l
-        chance: 0.5
+        chance: 0.95
       - item: reg:///registry/items/usable/tanks/tank_full/tank_20l
-        chance: 0.5
+        chance: 0.95
+      - item: reg:///registry/items/usable/build_set/build_set_small
+        chance: 0.15
+      - item: reg:///registry/items/usable/build_set/build_set_mid
+        chance: 0.05
+      - item: reg:///registry/items/usable/ammo/556bb
+        chance: 0.15
+      - item: reg:///registry/items/usable/ammo/762x51bb
+        chance: 0.10
+      - item: reg:///registry/items/usable/ammo/792bb
+        chance: 0.10
+      - item: reg:///registry/items/usable/ammo/127x108bb
+        chance: 0.05
+      - item: reg:///registry/items/usable/ammo/13mm
+        chance: 0.05
+      - item: reg:///registry/items/usable/ammo/40mm
+        chance: 0.80
+      - item: reg:///registry/items/usable/ammo/20mm
+        chance: 0.60
+      - item: reg:///registry/items/usable/ammo/23bzt
+        chance: 0.55
+      - item: reg:///registry/items/usable/ammo/25mm
+        chance: 0.50
 
 
   - parent: reg:///registry/quests/ai_event_quests/traffic
@@ -301,12 +521,34 @@ quests:
       - parent: reg:///registry/routes/towns_gs/bonita_vista_gs_east
     towns_protect:
       - reg:///registry/poi/locations/towns/bonita_vista
-    max_loot_count: 2
+    max_loot_count: 3
     loot_rec_list:
       - item: reg:///registry/items/usable/tanks/tank_empty/tank_10l
-        chance: 0.5
+        chance: 0.95
       - item: reg:///registry/items/usable/tanks/tank_empty/tank_20l
-        chance: 0.5
+        chance: 0.95
+      - item: reg:///registry/items/usable/build_set/build_set_small
+        chance: 0.15
+      - item: reg:///registry/items/usable/build_set/build_set_mid
+        chance: 0.05
+      - item: reg:///registry/items/usable/ammo/556bb
+        chance: 0.15
+      - item: reg:///registry/items/usable/ammo/762x51bb
+        chance: 0.10
+      - item: reg:///registry/items/usable/ammo/792bb
+        chance: 0.10
+      - item: reg:///registry/items/usable/ammo/127x108bb
+        chance: 0.05
+      - item: reg:///registry/items/usable/ammo/13mm
+        chance: 0.05
+      - item: reg:///registry/items/usable/ammo/40mm
+        chance: 0.80
+      - item: reg:///registry/items/usable/ammo/20mm
+        chance: 0.60
+      - item: reg:///registry/items/usable/ammo/23bzt
+        chance: 0.55
+      - item: reg:///registry/items/usable/ammo/25mm
+        chance: 0.50
   - parent: reg:///registry/quests/ai_event_quests/traffic
     generation_group: 'traffic_bv_gs_east'
     chance_of_generation: 0.1
@@ -316,12 +558,34 @@ quests:
         reverse: True
     towns_protect:
       - reg:///registry/poi/locations/towns/bonita_vista
-    max_loot_count: 2
+    max_loot_count: 3
     loot_rec_list:
       - item: reg:///registry/items/usable/tanks/tank_full/tank_10l
-        chance: 0.5
+        chance: 0.95
       - item: reg:///registry/items/usable/tanks/tank_full/tank_20l
-        chance: 0.5
+        chance: 0.95
+      - item: reg:///registry/items/usable/build_set/build_set_small
+        chance: 0.15
+      - item: reg:///registry/items/usable/build_set/build_set_mid
+        chance: 0.05
+      - item: reg:///registry/items/usable/ammo/556bb
+        chance: 0.15
+      - item: reg:///registry/items/usable/ammo/762x51bb
+        chance: 0.10
+      - item: reg:///registry/items/usable/ammo/792bb
+        chance: 0.10
+      - item: reg:///registry/items/usable/ammo/127x108bb
+        chance: 0.05
+      - item: reg:///registry/items/usable/ammo/13mm
+        chance: 0.05
+      - item: reg:///registry/items/usable/ammo/40mm
+        chance: 0.80
+      - item: reg:///registry/items/usable/ammo/20mm
+        chance: 0.60
+      - item: reg:///registry/items/usable/ammo/23bzt
+        chance: 0.55
+      - item: reg:///registry/items/usable/ammo/25mm
+        chance: 0.50
 
 
   - parent: reg:///registry/quests/ai_event_quests/traffic
@@ -332,24 +596,20 @@ quests:
       - parent: reg:///registry/routes/whitehill_mine_1
     towns_protect:
       - reg:///registry/poi/locations/towns/whitehill
-    max_loot_count: 8
+    max_loot_count: 4
     loot_rec_list:
+      - item: reg:///registry/items/stuff/alcohol/alcohol_002
+        chance: 0.35
       - item: reg:///registry/items/stuff/canned_cereal/canned_cereal_001
-        chance: 0.5
-      - item: reg:///registry/items/stuff/canned_cereal/canned_cereal_002
-        chance: 0.5
-      - item: reg:///registry/items/stuff/canned_fruit/canned_fruit_001
-        chance: 0.5
-      - item: reg:///registry/items/stuff/canned_fruit/canned_fruit_002
-        chance: 0.5
+        chance: 0.50
       - item: reg:///registry/items/stuff/canned_meat/canned_meat_001
-        chance: 0.5
-      - item: reg:///registry/items/stuff/canned_meat/canned_meat_002
-        chance: 0.5
-      - item: reg:///registry/items/stuff/water/water_001
-        chance: 0.5
+        chance: 0.10
+      - item: reg:///registry/items/stuff/medical_supplies/medical_supplies_001
+        chance: 0.10
+      - item: reg:///registry/items/stuff/warm_clothes/warm_clothes_003
+        chance: 0.25
       - item: reg:///registry/items/stuff/water/water_002
-        chance: 0.5
+        chance: 0.50
   - parent: reg:///registry/quests/ai_event_quests/traffic
     generation_group: 'traffic_mn_wh'
     chance_of_generation: 0.1
@@ -362,7 +622,7 @@ quests:
     max_loot_count: 8
     loot_rec_list:
       - item: reg:///registry/items/stuff/scrap_metal/scrap_metal_001
-        chance: 0.5
+        chance: 0.75
 
   - parent: reg:///registry/quests/ai_event_quests/traffic/gang
     generation_group: 'traffic_wh_pl_gang'
@@ -375,6 +635,30 @@ quests:
       - parent: reg:///registry/routes/big_road
       - parent: reg:///registry/routes/big_road
         reverse: True
+    max_loot_count: 4
+    loot_rec_list:
+      - item: reg:///registry/items/usable/build_set/build_set_small
+        chance: 0.15
+      - item: reg:///registry/items/usable/build_set/build_set_mid
+        chance: 0.05
+      - item: reg:///registry/items/usable/ammo/556bb
+        chance: 0.15
+      - item: reg:///registry/items/usable/ammo/762x51bb
+        chance: 0.10
+      - item: reg:///registry/items/usable/ammo/792bb
+        chance: 0.10
+      - item: reg:///registry/items/usable/ammo/127x108bb
+        chance: 0.05
+      - item: reg:///registry/items/usable/ammo/13mm
+        chance: 0.05
+      - item: reg:///registry/items/usable/ammo/40mm
+        chance: 0.80
+      - item: reg:///registry/items/usable/ammo/20mm
+        chance: 0.60
+      - item: reg:///registry/items/usable/ammo/23bzt
+        chance: 0.55
+      - item: reg:///registry/items/usable/ammo/25mm
+        chance: 0.50
 
   - parent: reg:///registry/quests/ai_event_quests/traffic/gang/multi_gang
     generation_group: "los_jetas"
@@ -384,6 +668,30 @@ quests:
     bots_karma: {min: -90, max: -50}
     bots_level: {min: 0, max: 1}
     count_members: { max: 2, min: 4 }
+    max_loot_count: 4
+    loot_rec_list:
+      - item: reg:///registry/items/usable/build_set/build_set_small
+        chance: 0.15
+      - item: reg:///registry/items/usable/build_set/build_set_mid
+        chance: 0.05
+      - item: reg:///registry/items/usable/ammo/556bb
+        chance: 0.15
+      - item: reg:///registry/items/usable/ammo/762x51bb
+        chance: 0.10
+      - item: reg:///registry/items/usable/ammo/792bb
+        chance: 0.10
+      - item: reg:///registry/items/usable/ammo/127x108bb
+        chance: 0.05
+      - item: reg:///registry/items/usable/ammo/13mm
+        chance: 0.05
+      - item: reg:///registry/items/usable/ammo/40mm
+        chance: 0.80
+      - item: reg:///registry/items/usable/ammo/20mm
+        chance: 0.60
+      - item: reg:///registry/items/usable/ammo/23bzt
+        chance: 0.55
+      - item: reg:///registry/items/usable/ammo/25mm
+        chance: 0.50
     routes:
       - _cls: CompositeRoute
         routes:
