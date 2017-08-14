@@ -885,7 +885,7 @@ quests:
       - parent: reg:///registry/routes/paloma_prior
         reverse: True
     town_destination: reg:///registry/poi/locations/towns/paloma
-    schedule: [900, 8100, 15300, 22500, 29700, 36900, 44100, 51300, 58500, 65700, 72900, 80100, 87300]
+    schedule: [3600, 10800, 18000, 25200, 32400, 39600, 46800, 54000, 61200, 68400, 75600, 82800, 90000]
 
   - parent: reg:///registry/quests/ai_event_quests/traffic/gang/caravan_simple
     _cls: AICaravanQuest
@@ -894,7 +894,7 @@ quests:
     routes:
       - parent: reg:///registry/routes/prior_bonita_vista_simple
     town_destination: reg:///registry/poi/locations/towns/bonita_vista
-    schedule: [900, 8100, 15300, 22500, 29700, 36900, 44100, 51300, 58500, 65700, 72900, 80100, 87300]
+    schedule: [3600, 10800, 18000, 25200, 32400, 39600, 46800, 54000, 61200, 68400, 75600, 82800, 90000]
 
 
   ### Bonita Vista ###
@@ -916,7 +916,7 @@ quests:
       - parent: reg:///registry/routes/prior_bonita_vista_simple
         reverse: True
     town_destination: reg:///registry/poi/locations/towns/prior
-    schedule: [2700, 9900, 17100, 24300, 31500, 38700, 45900, 53100, 60300, 67500, 74700, 81900, 89100]
+    schedule: [5400, 12600, 19800, 27000, 34200, 41400, 48600, 55800, 63000, 70200, 77400, 84600, 91800]
 
   - parent: reg:///registry/quests/ai_event_quests/traffic/gang/caravan_simple
     _cls: AICaravanQuest
@@ -926,4 +926,4 @@ quests:
       - parent: reg:///registry/routes/paloma_bonita_vista_simple
         reverse: True
     town_destination: reg:///registry/poi/locations/towns/paloma
-    schedule: [2700, 9900, 17100, 24300, 31500, 38700, 45900, 53100, 60300, 67500, 74700, 81900, 89100]
+    schedule: [5400, 12600, 19800, 27000, 34200, 41400, 48600, 55800, 63000, 70200, 77400, 84600, 91800]
