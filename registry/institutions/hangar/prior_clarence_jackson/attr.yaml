@@ -1,5 +1,4 @@
-﻿__cls__  : Hangar
-_cls     : Hangar
+﻿_cls     : Hangar
 
 title    : Clarence_Jackson
 photo    : "static/content/institutions/hangar/prior_clarence_jackson.png"
@@ -86,6 +85,16 @@ car_list:
   # buses
   - reg:///registry/mobiles/cars/cargo/buses/04_gmc_pd_4501_scenicruiser
 
+  # 05 LVL
+  # HEAVY
+  # btrs
+  - reg:///registry/mobiles/cars/heavy/btrs/05_m113a1
+
+  # 06 LVL
+  # HEAVY
+  # btrs
+  - reg:///registry/mobiles/cars/heavy/btrs/06_m1126
+
   # 99 LVL
   # LIGHT
   # motorcycles
@@ -104,7 +113,3 @@ car_list:
   # tractors
 #  - reg:///registry/mobiles/cars/cargo/tractors/international_9800
 #  - reg:///registry/mobiles/cars/cargo/tractors/peterbilt_369
-  # HEAVY
-  # btrs
-#  - reg:///registry/mobiles/cars/heavy/btrs/m113a1
-#  - reg:///registry/mobiles/cars/heavy/btrs/m1126
