@@ -52,6 +52,9 @@ class AgentEventQuest(Quest):
         self.event_quest_uid = str(event_quest.uid)
         return True
 
+    def can_cancel(self, event):
+        return True
+
     def check_unstarted(self, event):
         return (super(AgentEventQuest, self).check_unstarted(event=event) or
                 (self.get_event_quest(event=event) is None))
@@ -78,7 +81,7 @@ class AgentEventQuest(Quest):
                     go('reward')
                 elif event_quest.status == 'fail':
                     go('fail')
-            if isinstance(event, OnCancel):
+            if isinstance(event, OnCancel) and quest.can_cancel():
                 go('cancel_fail')
 
     ####################################################################################################################
