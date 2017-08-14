@@ -78,4 +78,13 @@ quests:
 
   - parent: reg:///registry/quests/agent_event_quests/escort_caravan
     needed_tags: ["caravan_prior_whitehill"]
-
+    reward_money: 300              # Награда
+    reward_karma: 1                # Награда
+  - parent: reg:///registry/quests/agent_event_quests/escort_caravan
+    needed_tags: ["caravan_prior_paloma"]
+    reward_money: 300              # Награда
+    reward_karma: 1                # Награда
+  - parent: reg:///registry/quests/agent_event_quests/escort_caravan
+    needed_tags: ["caravan_prior_bonita_vista"]
+    reward_money: 300              # Награда
+    reward_karma: 1                # Награда

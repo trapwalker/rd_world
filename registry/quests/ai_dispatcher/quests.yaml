@@ -804,6 +804,7 @@ quests:
 
 
   #### Caravans #####
+  ### Whitehill ###
   - parent: reg:///registry/quests/ai_event_quests/traffic/gang/caravan_simple
     _cls: AICaravanQuest
     generation_group: "caravan_whitehill"
@@ -833,7 +834,7 @@ quests:
     schedule: [0, 7200, 14400, 21600, 28800, 36000, 43200, 50400, 57600, 64800, 72000, 79200, 86400]
 
 
-
+  ### Paloma ###
   - parent: reg:///registry/quests/ai_event_quests/traffic/gang/caravan_simple
     _cls: AICaravanQuest
     generation_group: "caravan_paloma"
@@ -853,7 +854,17 @@ quests:
     town_destination: reg:///registry/poi/locations/towns/prior
     schedule: [1800, 9000, 16200, 23400, 30600, 37800, 45000, 52200, 59400, 66600, 73800, 81000, 88200]
 
+  - parent: reg:///registry/quests/ai_event_quests/traffic/gang/caravan_simple
+    _cls: AICaravanQuest
+    generation_group: "caravan_paloma"
+    tags: ["caravan_paloma_bonita_vista"]
+    routes:
+      - reg:///registry/routes/paloma_bonita_vista_simple
+    town_destination: reg:///registry/poi/locations/towns/bonita_vista
+    schedule: [1800, 9000, 16200, 23400, 30600, 37800, 45000, 52200, 59400, 66600, 73800, 81000, 88200]
 
+
+  ### Prior ###
   - parent: reg:///registry/quests/ai_event_quests/traffic/gang/caravan_simple
     _cls: AICaravanQuest
     generation_group: "caravan_prior"
@@ -868,10 +879,51 @@ quests:
 
   - parent: reg:///registry/quests/ai_event_quests/traffic/gang/caravan_simple
     _cls: AICaravanQuest
-    generation_group: "caravan_bonita"
+    generation_group: "caravan_prior"
+    tags: ["caravan_prior_paloma"]
+    routes:
+      - parent: reg:///registry/routes/paloma_prior
+        reverse: True
+    town_destination: reg:///registry/poi/locations/towns/paloma
+    schedule: [900, 8100, 15300, 22500, 29700, 36900, 44100, 51300, 58500, 65700, 72900, 80100, 87300]
+
+  - parent: reg:///registry/quests/ai_event_quests/traffic/gang/caravan_simple
+    _cls: AICaravanQuest
+    generation_group: "caravan_prior"
+    tags: ["caravan_prior_bonita_vista"]
+    routes:
+      - parent: reg:///registry/routes/prior_bonita_vista_simple
+    town_destination: reg:///registry/poi/locations/towns/bonita_vista
+    schedule: [900, 8100, 15300, 22500, 29700, 36900, 44100, 51300, 58500, 65700, 72900, 80100, 87300]
+
+
+  ### Bonita Vista ###
+  - parent: reg:///registry/quests/ai_event_quests/traffic/gang/caravan_simple
+    _cls: AICaravanQuest
+    generation_group: "caravan_bonita_vista"
     tags: ["caravan_bonita_vista_whitehill"]
     routes:
       - parent: reg:///registry/routes/whitehill_bonita_vista
         reverse: True
     town_destination: reg:///registry/poi/locations/towns/whitehill
+    schedule: [2700, 9900, 17100, 24300, 31500, 38700, 45900, 53100, 60300, 67500, 74700, 81900, 89100]
+
+  - parent: reg:///registry/quests/ai_event_quests/traffic/gang/caravan_simple
+    _cls: AICaravanQuest
+    generation_group: "caravan_bonita_vista"
+    tags: ["caravan_bonita_vista_prior"]
+    routes:
+      - parent: reg:///registry/routes/prior_bonita_vista_simple
+        reverse: True
+    town_destination: reg:///registry/poi/locations/towns/prior
+    schedule: [2700, 9900, 17100, 24300, 31500, 38700, 45900, 53100, 60300, 67500, 74700, 81900, 89100]
+
+  - parent: reg:///registry/quests/ai_event_quests/traffic/gang/caravan_simple
+    _cls: AICaravanQuest
+    generation_group: "caravan_bonita_vista"
+    tags: ["caravan_bonita_vista_paloma"]
+    routes:
+      - parent: reg:///registry/routes/paloma_bonita_vista_simple
+        reverse: True
+    town_destination: reg:///registry/poi/locations/towns/paloma
     schedule: [2700, 9900, 17100, 24300, 31500, 38700, 45900, 53100, 60300, 67500, 74700, 81900, 89100]
