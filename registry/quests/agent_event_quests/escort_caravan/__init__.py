@@ -11,6 +11,11 @@ from functools import partial
 
 
 class EscortCaravan(AgentEventQuest):
+    def as_unstarted_quest_dict(self):
+        d = super(EscortCaravan, self).as_unstarted_quest_dict()
+        d.update(start_quest_time=self.dc.start_caravan_time)
+        return d
+
     def init_text(self, event, event_quest):
         town = event_quest.town_destination
         town_str = town and town.title or 'N'
@@ -42,6 +47,7 @@ class EscortCaravan(AgentEventQuest):
 
         if event_quest and isinstance(event_quest, AICaravanQuest) and event.time < event_quest.dc.start_caravan_time:
             self.shelf_life_time = event_quest.dc.start_caravan_time - event.time
+            self.dc.start_caravan_time = event_quest.dc.start_caravan_time
         else:
             return False
         return True

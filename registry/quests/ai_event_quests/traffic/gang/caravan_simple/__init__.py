@@ -18,9 +18,11 @@ from functools import partial
 import random
 from math import pi
 
+from datetime import datetime, timedelta
+
 
 class AICaravanQuest(AIGangQuest):
-    caravan_wait_time = EmbeddedDocumentField(document_type=QuestRange, caption=u"Границы задержки перед стартом каравана (минуты)")
+    caravan_wait_time = IntField(root_default=30, caption=u"Задержка перед стартом каравана")
     party_capacity = IntField(root_default=10, caption=u"Вместительность пати каравана с учётом НПЦ")
     radius_participation = IntField(root_default=1000, caption=u"Двойной радиус действия гвардов и одинарный участия игроков")
     town_destination = RegistryLinkField(caption=u'Город назначения каравана')
@@ -31,6 +33,35 @@ class AICaravanQuest(AIGangQuest):
         caption=u'Список машинок',
         field=RegistryLinkField(document_type='sublayers_server.model.registry_me.classes.mobiles.Car'),
     )
+
+    schedule = ListField(root_default=list, caption=u'Расписание запуска караванов', field=IntField())
+
+
+    def tags_str(self):
+        return '; '.join(list(self.tag_set))
+
+    def get_nearest_time(self, time, schedule, distance):
+        curent_time = datetime.fromtimestamp(time)
+        day_zero = curent_time.replace(hour=0, minute=0, second=0, microsecond=0)  # Начало суток
+        day_zero_seconds = (day_zero - datetime.fromtimestamp(0)).total_seconds()
+        day_seconds = (curent_time - day_zero).total_seconds()  # Сколько сейчас прошло секунд с начала суток
+        new_time_start = None
+        for sh in schedule:
+            if 0 < sh - day_seconds < distance:
+                time_candidate = day_zero_seconds + sh
+                if not new_time_start or new_time_start > time_candidate:
+                    new_time_start = time_candidate
+        return new_time_start
+
+    def can_instantiate(self, event, agent, hirer=None):
+        # Проверка по расписанию. Если мы за caravan_wait_time до ближайшего времени, то Создать квест
+        time_start_candidate = self.get_nearest_time(time=event.time, schedule=self.schedule, distance=self.caravan_wait_time)
+        if not time_start_candidate:  # Если нет подходящего времени
+            return False
+
+        if agent.profile._agent_model.tempd.get(('AICaravanQuest', self.tags_str(), time_start_candidate), None):
+            return False
+        return super(AICaravanQuest, self).can_instantiate(event=event, agent=agent, hirer=hirer)
 
     def on_see_object(self, event):  # Вызывается когда только для OnAISee
         return
@@ -199,19 +230,22 @@ class AICaravanQuest(AIGangQuest):
                 party.on_exclude(agent=agent, time=event.time)
         else:
             log.warning('AICaravanQuest::displace_bots:: Party not found!')
-
+        self.agent.profile._agent_model.tempd[('AICaravanQuest', self.tags_str(), self.dc.start_caravan_time)] = None
         super(AICaravanQuest, self).displace_bots(event=event)
 
     ####################################################################################################################
     def on_generate_(self, event, **kw):
+        self.dc.start_caravan_time = self.get_nearest_time(time=event.time, schedule=self.schedule, distance=self.caravan_wait_time)
+        self.agent.profile._agent_model.tempd[('AICaravanQuest', self.tags_str(), self.dc.start_caravan_time)] = True
+        # log.debug('AICaravanQuest::on_generate_::formed: tags=%s  time=%s', self.tags_str(), self.dc.start_caravan_time)
         super(AICaravanQuest, self).on_generate_(event=event, **kw)
+
 
     ####################################################################################################################
     def on_start_(self, event, **kw):
         super(AICaravanQuest, self).on_start_(event=event, **kw)
-        self.dc.start_caravan_deadline = self.caravan_wait_time.get_random_int() * 60
+        self.dc.start_caravan_deadline = self.dc.start_caravan_time - event.time
         self.dc.agents_on_party = 0  # Текущее количество агентов в пати
-        self.dc.start_caravan_time = event.time + self.dc.start_caravan_deadline
         self.dc.count_guardians = self.count_guardians.get_random_int()
         if self.party_capacity < self.dc.count_members + self.dc.count_guardians:  # Если вместимость пати меньше, чем планируемый размер каравана
             self.party_capacity = self.dc.count_members + self.dc.count_guardians  # info: Защита от дурака

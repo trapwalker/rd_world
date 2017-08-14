@@ -6,13 +6,13 @@ first_state: pre_begin
 count_guardians: {min: 0, max: 0}
 
 # info # Вынесено для упрощения! потом настроить более детально
-generation_max_count: 1
-chance_of_generation: 0.1
+generation_max_count: 3
+chance_of_generation: 1
 party_capacity: 15
 bots_karma: {min: 40, max: 60}
 delay_time: 3600
 count_members: { min: 2, max: 4}
-caravan_wait_time: {min: 5, max: 20}
+caravan_wait_time: 300
 count_guardians: {min: 2, max: 4}
 
 cars_guardians:
