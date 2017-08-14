@@ -117,7 +117,7 @@ class AICaravanQuest(AIGangQuest):
         model_agent.event_quest = self
         return model_agent
 
-    def deploy_one_car(self, event, cars, level, start_point_route, action_quest_proto, model_agent):
+    def deploy_one_car(self, event, cars, level, loot_rec_list, start_point_route, action_quest_proto, model_agent):
         car_pos = Point.random_gauss(start_point_route, 30)
         action_quest = action_quest_proto.instantiate(abstract=False, hirer=None, towns_protect=self.towns_protect,
                                                 min_wait_car_time=int(self.dc.start_caravan_deadline * 1.5))  # Чтобы квест не сфейлился сразу
@@ -135,7 +135,7 @@ class AICaravanQuest(AIGangQuest):
         )
 
         model_agent.example.profile.car = car_example
-        self.init_bot_inventory(car_example=car_example)
+        self.init_bot_inventory(car_example=car_example, loot_rec_list=loot_rec_list)
 
     def deploy_traders(self, event):
         # Метод деплоя агентов на карту. Вызывается на on_start квеста
@@ -152,7 +152,7 @@ class AICaravanQuest(AIGangQuest):
 
         for i in range(0, self.dc.count_members):
             model_agent = self.deploy_one_agent(event=event, level=level, additional_agent_params=additional_agent_params)
-            self.deploy_one_car(event=event, level=level,
+            self.deploy_one_car(event=event, level=level, loot_rec_list=self.loot_rec_list,
                                 start_point_route=start_point_route,
                                 cars=self.cars,
                                 action_quest_proto=proto_action_quest, model_agent=model_agent)
@@ -169,7 +169,7 @@ class AICaravanQuest(AIGangQuest):
 
         for i in range(0, self.dc.count_guardians):
             model_agent = self.deploy_one_agent(event=event, level=level, additional_agent_params=additional_agent_params)
-            self.deploy_one_car(event=event, level=level,
+            self.deploy_one_car(event=event, level=level, loot_rec_list=None,
                                 start_point_route=start_point_route,
                                 cars=self.cars_guardians,
                                 action_quest_proto=proto_action_quest, model_agent=model_agent)
