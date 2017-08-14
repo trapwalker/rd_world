@@ -52,7 +52,7 @@ class MapActivateItemQuest(Quest):
     )
 
     activate_notes = ListField(
-        default=[],
+        root_default=list,
         caption=u"Список активных нотов маркеров на карте",
         field=UUIDField(),
         reinst=True,
