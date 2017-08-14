@@ -19,7 +19,7 @@ class KillBossQuest(AgentEventQuest):
             is_kill=self.dc.is_kill,
             boss_name = self.dc.boss_name,
             boss_avatar = self.dc.boss_avatar,
-            boss_reward = self.dc.boss_reward
+            boss_reward = self.reward_money
         )
         return d
 
@@ -29,12 +29,21 @@ class KillBossQuest(AgentEventQuest):
         if event_quest:
             self.dc.boss_name = event_quest.dc._main_agent.print_login()
             self.dc.boss_avatar = event_quest.dc._main_agent.avatar_link
-            self.dc.boss_reward = event_quest.dc.kill_reward_money
         else:
             self.dc.boss_name = ''
             self.dc.boss_avatar = ''
-            self.dc.boss_reward = 0
         return event_quest
+
+    def can_cancel(self, event):
+        money_penalty = round(self.reward_money / 2)
+        agent = self.agent.profile
+        if agent.balance >= money_penalty:
+            agent.set_balance(time=event.time, delta=-money_penalty)
+            self.log(text=u'Уплачен штраф в размере {}nc.'.format(money_penalty), event=event)
+            return True
+        else:
+            self.npc_replica(npc=self.hirer, replica=u"Для отказа от квеста заплатите штраф {}nc.".format(money_penalty), event=event)
+            return False
 
     def init_level(self):
         self.level = 1
@@ -115,7 +124,8 @@ class KillBossQuest(AgentEventQuest):
     class reward(WinState):
         def on_enter_(self, quest, event):
             go = partial(quest.go, event=event)
-            quest.agent.profile.set_balance(time=event.time, delta=quest.dc.boss_reward)
+            quest.agent.profile.set_balance(time=event.time, delta=quest.reward_money)
+            quest.agent.profile.set_karma(time=event.time, dvalue=quest.reward_karma)
             go('win')
 
     ####################################################################################################################

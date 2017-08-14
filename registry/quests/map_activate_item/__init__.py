@@ -154,7 +154,7 @@ class MapActivateItemQuest(Quest):
         cost_delivery_items = 0
         for item in self.activate_items:
             cost_delivery_items += item.base_price * item.amount / item.stack_size
-        distance_cost = round(distance / 100)  # todo: уточнить стоимость 1px пути
+        distance_cost = self.get_distance_cost(distance=distance)
 
         if distance_cost == 0:
             log.warning('MapActivateItemQuest Quest: Warning!!! ')

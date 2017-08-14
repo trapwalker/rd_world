@@ -50,13 +50,6 @@ class DeliveryQuestSimple(DeliveryQuest):
         town2 = self.recipient.hometown
         return self.distance_table.get_distance(town1=town1, town2=town2)
 
-    def init_deadline(self, distance):
-        # Время выделенное на квест в секундах
-        all_time = distance / 14
-
-        # Время выделенное на квест кратно 5 минутам
-        self.deadline = (all_time / 300) * 300 + (300 if (all_time % 300) > 0 else 0)
-
     ####################################################################################################################
     def on_generate_(self, event, **kw):
         if not self.can_generate(event):
@@ -84,8 +77,7 @@ class DeliveryQuestSimple(DeliveryQuest):
         distance = self.init_distance()
         self.init_deadline(distance)
 
-        distance_cost = round(distance / 1000)  # todo: уточнить стоимость 1px пути
-
+        distance_cost = self.get_distance_cost(distance=distance)
         if distance_cost == 0:
             log.warning('DeliverySimple Quest: Warning!!! Distance from hirer<{!r}> to recipient<{!r}> = {}. Change recipient'.format(
                 self.hirer, self.recipient, distance))

@@ -2,6 +2,9 @@
 
 caption: Найти и уничтожить
 
+reward_money: 400
+reward_karma: 1
+
 list_icon: static/img/quests/icons/players_kill.png
 
 map_icon_full: static/img/quests/map_icons/boss_full.png

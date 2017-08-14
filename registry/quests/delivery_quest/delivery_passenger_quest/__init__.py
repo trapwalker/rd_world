@@ -111,7 +111,7 @@ class DeliveryPassengerQuest(DeliveryQuestSimple):
             raise Cancel("QUEST CANCEL: {} hometown is None.".format(self.hirer.hometown))
         distance = self.init_distance()
         self.init_deadline(distance)
-        distance_cost = round(distance / 100)  # todo: уточнить стоимость 1px пути
+        distance_cost = self.get_distance_cost(distance=distance)
         if distance_cost == 0:
             log.wiarning('DeliveryPassenger Quest: Warning!!! Distance from hirer<{}> to recipient<{}> = {}. Change recipient'.format(
                 self.hirer, self.recipient, distance))

@@ -29,7 +29,7 @@ class DeliveryQuest(Quest):
         document_type='sublayers_server.model.registry_me.classes.poi.Institution',
     )
     total_delivery_money_coef = FloatField(root_default=0,
-        caption=u'Множитель общей стоимости награды за квест от стоимости доставляемого товара')
+                                           caption=u'Множитель общей стоимости награды за квест от стоимости доставляемого товара')
     delivery_set_list = ListField(
         root_default=list,
         caption=u"Список возможных комплектов для доставки",
@@ -50,6 +50,15 @@ class DeliveryQuest(Quest):
         ),
     )
 
+    def init_deadline(self, distance):
+        # Время выделенное на квест в секундах
+        if self.design_speed:
+            all_time = int(distance / self.design_speed)
+            # Время выделенное на квест кратно 5 минутам
+            self.deadline = (all_time / 300) * 300 + (300 if (all_time % 300) > 0 else 0)
+        else:
+            self.deadline = 0
+
     def init_text(self, distance=None):
         if distance == 0:
             self.text_short = u"Доставьте груз в соседнее здание."
@@ -67,6 +76,7 @@ class DeliveryQuest(Quest):
             self.reward_money,
             self.reward_exp,
         )
+
     ####################################################################################################################
     def on_generate_(self, event, **kw):
         if not self.can_generate(event):
@@ -98,7 +108,7 @@ class DeliveryQuest(Quest):
             raise Cancel("QUEST CANCEL: {} hometown is None.".format(self.hirer.hometown))
 
         distance = self.hirer.hometown.distance_to(self.recipient.hometown)
-        distance_cost = round(distance / 100.)  # todo: уточнить стоимость 1px пути
+        distance_cost = self.get_distance_cost(distance=distance)
 
         # if distance_cost == 0:  # Пока этот тип квестов используется только для обучения
         #     log.warning('Delivery Quest: Warning!!! Distance from hirer<{!r}> to recipient<{!r}> = {}. Change recipient'.format(
@@ -129,6 +139,7 @@ class DeliveryQuest(Quest):
             )
             go('delivery')
 
+    ####################################################################################################################
     class delivery(QuestState_):
         def on_event_(self, quest, event):
             agent = quest.agent
