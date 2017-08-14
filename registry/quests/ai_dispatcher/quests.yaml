@@ -754,6 +754,8 @@ quests:
         dispersion: 300
     cars:
       - reg:///registry/mobiles/cars/heavy/armored/04_m3a1_scout_car
+      - reg:///registry/mobiles/cars/heavy/btrs/05_m113a1
+      - reg:///registry/mobiles/cars/heavy/btrs/06_m1126
 
   - parent: reg:///registry/quests/ai_event_quests/traffic/boss
     generation_group: 'mob_boss'
@@ -767,6 +769,8 @@ quests:
         dispersion: 300
     cars:
       - reg:///registry/mobiles/cars/heavy/armored/04_m3a1_scout_car
+      - reg:///registry/mobiles/cars/heavy/btrs/05_m113a1
+      - reg:///registry/mobiles/cars/heavy/btrs/06_m1126
 
 #  - parent: reg:///registry/quests/ai_event_quests/traffic/boss
 #    generation_group: 'mob_boss'
@@ -780,6 +784,8 @@ quests:
 #        dispersion: 300
 #    cars:
 #      - reg:///registry/mobiles/cars/heavy/armored/04_m3a1_scout_car
+#      - reg:///registry/mobiles/cars/heavy/btrs/05_m113a1
+#      - reg:///registry/mobiles/cars/heavy/btrs/06_m1126
 
   - parent: reg:///registry/quests/ai_event_quests/traffic/boss
     generation_group: 'mob_boss'
@@ -793,6 +799,8 @@ quests:
         dispersion: 300
     cars:
       - reg:///registry/mobiles/cars/heavy/armored/04_m3a1_scout_car
+      - reg:///registry/mobiles/cars/heavy/btrs/05_m113a1
+      - reg:///registry/mobiles/cars/heavy/btrs/06_m1126
 
 
   #### Caravans #####
