@@ -4,4 +4,4 @@ quick_game_bot_cars: # Список машинок на которых ездя�
   - reg:///registry/mobiles/cars/middle/sports/04_delorean_dmc_12/quick_bot
   - reg:///registry/mobiles/cars/middle/cars/dodge_challenger/quick_bot
   - reg:///registry/mobiles/cars/middle/offroad/defender/quick_bot
-  - reg:///registry/mobiles/cars/heavy/btrs/m113a1/quick_bot
+  - reg:///registry/mobiles/cars/heavy/btrs/05_m113a1/quick_bot

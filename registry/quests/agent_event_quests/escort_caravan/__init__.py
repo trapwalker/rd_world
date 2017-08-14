@@ -11,6 +11,20 @@ from functools import partial
 
 
 class EscortCaravan(AgentEventQuest):
+    def as_unstarted_quest_dict(self):
+        d = super(EscortCaravan, self).as_unstarted_quest_dict()
+        d.update(start_quest_time=self.dc.start_caravan_time)
+        return d
+
+    def init_text(self, event, event_quest):
+        town = event_quest.town_destination
+        town_str = town and town.title or 'N'
+        self.text_short = u"Сопроводите караван.".format()
+        self.text = u"Сопроводите караван в город {}. Награда: {:.0f}nc.".format(
+            town_str,
+            self.reward_money
+        )
+
     def get_potential_event_quest(self, event, agent):
         event_quests = event.server.ai_dispatcher.get_quest_by_tags(set(self.needed_tags))
         npc_view_quests = agent.profile.npc_view_quests
@@ -33,12 +47,16 @@ class EscortCaravan(AgentEventQuest):
 
         if event_quest and isinstance(event_quest, AICaravanQuest) and event.time < event_quest.dc.start_caravan_time:
             self.shelf_life_time = event_quest.dc.start_caravan_time - event.time
+            self.dc.start_caravan_time = event_quest.dc.start_caravan_time
         else:
             return False
         return True
 
     def on_generate_(self, event, **kw):
         super(EscortCaravan, self).on_generate_(event=event, **kw)
+        event_quest = self.get_event_quest(event=event)
+        if event_quest:
+            self.init_text(event=event, event_quest=event_quest)
 
     def calc_participation(self, car_pos, caravan_pos):
         try:

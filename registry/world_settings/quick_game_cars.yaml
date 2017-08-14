@@ -4,4 +4,4 @@ quick_game_cars: # Список машинок для быстрой игры
   - reg:///registry/mobiles/cars/middle/sports/04_delorean_dmc_12/quick
   - reg:///registry/mobiles/cars/middle/cars/dodge_challenger/quick
   - reg:///registry/mobiles/cars/middle/offroad/defender/quick
-  - reg:///registry/mobiles/cars/heavy/btrs/m113a1/quick
+  - reg:///registry/mobiles/cars/heavy/btrs/05_m113a1/quick

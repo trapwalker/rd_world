@@ -18,11 +18,14 @@ from functools import partial
 import random
 from math import pi
 
+from datetime import datetime, timedelta
+
 
 class AICaravanQuest(AIGangQuest):
-    caravan_wait_time = EmbeddedDocumentField(document_type=QuestRange, caption=u"Границы задержки перед стартом каравана (минуты)")
+    caravan_wait_time = IntField(root_default=30, caption=u"Задержка перед стартом каравана")
     party_capacity = IntField(root_default=10, caption=u"Вместительность пати каравана с учётом НПЦ")
     radius_participation = IntField(root_default=1000, caption=u"Двойной радиус действия гвардов и одинарный участия игроков")
+    town_destination = RegistryLinkField(caption=u'Город назначения каравана')
 
     count_guardians = EmbeddedDocumentField(document_type=QuestRange, caption=u"Количество защитников")
     cars_guardians = ListField(
@@ -30,6 +33,35 @@ class AICaravanQuest(AIGangQuest):
         caption=u'Список машинок',
         field=RegistryLinkField(document_type='sublayers_server.model.registry_me.classes.mobiles.Car'),
     )
+
+    schedule = ListField(root_default=list, caption=u'Расписание запуска караванов', field=IntField())
+
+
+    def tags_str(self):
+        return '; '.join(list(self.tag_set))
+
+    def get_nearest_time(self, time, schedule, distance):
+        curent_time = datetime.fromtimestamp(time)
+        day_zero = curent_time.replace(hour=0, minute=0, second=0, microsecond=0)  # Начало суток
+        day_zero_seconds = (day_zero - datetime.fromtimestamp(0)).total_seconds()
+        day_seconds = (curent_time - day_zero).total_seconds()  # Сколько сейчас прошло секунд с начала суток
+        new_time_start = None
+        for sh in schedule:
+            if 0 < sh - day_seconds < distance:
+                time_candidate = day_zero_seconds + sh
+                if not new_time_start or new_time_start > time_candidate:
+                    new_time_start = time_candidate
+        return new_time_start
+
+    def can_instantiate(self, event, agent, hirer=None):
+        # Проверка по расписанию. Если мы за caravan_wait_time до ближайшего времени, то Создать квест
+        time_start_candidate = self.get_nearest_time(time=event.time, schedule=self.schedule, distance=self.caravan_wait_time)
+        if not time_start_candidate:  # Если нет подходящего времени
+            return False
+
+        if agent.profile._agent_model.tempd.get(('AICaravanQuest', self.tags_str(), time_start_candidate), None):
+            return False
+        return super(AICaravanQuest, self).can_instantiate(event=event, agent=agent, hirer=hirer)
 
     def on_see_object(self, event):  # Вызывается когда только для OnAISee
         return
@@ -117,7 +149,7 @@ class AICaravanQuest(AIGangQuest):
         model_agent.event_quest = self
         return model_agent
 
-    def deploy_one_car(self, event, cars, level, start_point_route, action_quest_proto, model_agent):
+    def deploy_one_car(self, event, cars, level, loot_rec_list, start_point_route, action_quest_proto, model_agent):
         car_pos = Point.random_gauss(start_point_route, 30)
         action_quest = action_quest_proto.instantiate(abstract=False, hirer=None, towns_protect=self.towns_protect,
                                                 min_wait_car_time=int(self.dc.start_caravan_deadline * 1.5))  # Чтобы квест не сфейлился сразу
@@ -135,7 +167,7 @@ class AICaravanQuest(AIGangQuest):
         )
 
         model_agent.example.profile.car = car_example
-        self.init_bot_inventory(car_example=car_example)
+        self.init_bot_inventory(car_example=car_example, loot_rec_list=loot_rec_list)
 
     def deploy_traders(self, event):
         # Метод деплоя агентов на карту. Вызывается на on_start квеста
@@ -152,7 +184,7 @@ class AICaravanQuest(AIGangQuest):
 
         for i in range(0, self.dc.count_members):
             model_agent = self.deploy_one_agent(event=event, level=level, additional_agent_params=additional_agent_params)
-            self.deploy_one_car(event=event, level=level,
+            self.deploy_one_car(event=event, level=level, loot_rec_list=self.loot_rec_list,
                                 start_point_route=start_point_route,
                                 cars=self.cars,
                                 action_quest_proto=proto_action_quest, model_agent=model_agent)
@@ -163,13 +195,15 @@ class AICaravanQuest(AIGangQuest):
             if self.dc.party is not None:
                 self.include_to_party(model_agent=model_agent, event=event)
             else:
-                self.dc.party = Party(time=event.time, owner=model_agent, name='caravan', description='Caravan', exp_share=True)
+                p_mame = model_agent.print_login().split('_')[0]
+                description = "{}'s caravan to {}".format(p_mame, 'ttttt')
+                self.dc.party = Party(time=event.time, owner=model_agent, name=p_mame, description=description, exp_share=True)
                 self.dc.agents_on_party = 1
                 # log.debug('AICaravanQuest:: Create Party %s   owner=%s', self.dc.party, model_agent)
 
         for i in range(0, self.dc.count_guardians):
             model_agent = self.deploy_one_agent(event=event, level=level, additional_agent_params=additional_agent_params)
-            self.deploy_one_car(event=event, level=level,
+            self.deploy_one_car(event=event, level=level, loot_rec_list=None,
                                 start_point_route=start_point_route,
                                 cars=self.cars_guardians,
                                 action_quest_proto=proto_action_quest, model_agent=model_agent)
@@ -196,19 +230,22 @@ class AICaravanQuest(AIGangQuest):
                 party.on_exclude(agent=agent, time=event.time)
         else:
             log.warning('AICaravanQuest::displace_bots:: Party not found!')
-
+        self.agent.profile._agent_model.tempd[('AICaravanQuest', self.tags_str(), self.dc.start_caravan_time)] = None
         super(AICaravanQuest, self).displace_bots(event=event)
 
     ####################################################################################################################
     def on_generate_(self, event, **kw):
+        self.dc.start_caravan_time = self.get_nearest_time(time=event.time, schedule=self.schedule, distance=self.caravan_wait_time)
+        self.agent.profile._agent_model.tempd[('AICaravanQuest', self.tags_str(), self.dc.start_caravan_time)] = True
+        # log.debug('AICaravanQuest::on_generate_::formed: tags=%s  time=%s', self.tags_str(), self.dc.start_caravan_time)
         super(AICaravanQuest, self).on_generate_(event=event, **kw)
+
 
     ####################################################################################################################
     def on_start_(self, event, **kw):
         super(AICaravanQuest, self).on_start_(event=event, **kw)
-        self.dc.start_caravan_deadline = self.caravan_wait_time.get_random_int() * 60
+        self.dc.start_caravan_deadline = self.dc.start_caravan_time - event.time
         self.dc.agents_on_party = 0  # Текущее количество агентов в пати
-        self.dc.start_caravan_time = event.time + self.dc.start_caravan_deadline
         self.dc.count_guardians = self.count_guardians.get_random_int()
         if self.party_capacity < self.dc.count_members + self.dc.count_guardians:  # Если вместимость пати меньше, чем планируемый размер каравана
             self.party_capacity = self.dc.count_members + self.dc.count_guardians  # info: Защита от дурака

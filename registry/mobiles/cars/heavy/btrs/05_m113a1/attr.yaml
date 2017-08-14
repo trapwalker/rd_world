@@ -1,50 +1,49 @@
-﻿__cls__ : Car
-_cls : Car
+﻿_cls : Car
 title:       "M113A1"            # Модель атомобиля
 class_car:   "Тяжелый"           # Класс автомобиля
 name_car:    "M113A1"            # Название атомобиля
 
-price:              137500       # Цена у продавца (л) (>= 0)
-needed_driving:     85           # Требование к прокачке уровня вождения
+price:              50000        # Цена у продавца (л) (>= 0)
+needed_driving:     35           # Требование к прокачке уровня вождения
 
-max_hp:             800          # Максимальное количество прочности (> 0)
-hp:                 800          # Текущее количество прочности (> 0)
+max_hp:             750          # Максимальное количество прочности (> 0)
+hp:                 750          # Текущее количество прочности (> 0)
 
 inventory:                       # При заполнении инвентаря необходимо учитывать его размер
-    size: 34
+    size: 36
     items: []
 
-p_observing_range:     1050      # Радиус обзора автомобиля (м) (>= 0)
+p_observing_range:     1230      # Радиус обзора автомобиля (м) (>= 0)
 
 p_vigilance:           0         # Коэффициент зоркости (0..1)
-p_visibility_min:      0.53      # Минимальная заметность автомобиля (0..1) при 0 автомобиль невидим
-p_visibility_max:      0.78      # Максимальная заметность автомобиля (0..1) при 0 автомобиль невидим
+p_visibility_min:      0.47      # Минимальная заметность автомобиля (0..1) при 0 автомобиль невидим
+p_visibility_max:      0.72      # Максимальная заметность автомобиля (0..1) при 0 автомобиль невидим
 p_obs_range_rate_min:  0.5       # Коэффициент минимального радиуса обзора автомобиля (0..1)
 p_obs_range_rate_max:  1         # Коэффициент максимального радиуса обзора автомобиля (0..1)
 
-r_min:              9            # Минимальный радиус разворота (м) (> 0)
-ac_max:             17           # Перегрузка с которой входит в поворот автомобиль (м/c^2) (> 0)
-a_forward:          7            # Ускорение при езде вперед (м/c^2)
-a_backward:         -6           # Ускорение при езде назад (м/c^2)
-a_braking:          -7           # Ускорение при торможении (м/c^2)
+r_min:              6            # Минимальный радиус разворота (м) (> 0)
+ac_max:             15           # Перегрузка с которой входит в поворот автомобиль (м/c^2) (> 0)
+a_forward:          5            # Ускорение при езде вперед (м/c^2)
+a_backward:         -4           # Ускорение при езде назад (м/c^2)
+a_braking:          -5           # Ускорение при торможении (м/c^2)
 
-max_control_speed:  50.0000      # Абсолютная максимальная скорость, скорость до которой будет размечен спидометр (м/с) (>= 0)
-v_forward:          20           # Максимальная скорость без штрафов местности при движении вперед (м/с) (0 .. max_control_speed)
-v_backward:         -11          # Максимальная скорость без штрафов местности при движении назад (м/с) (0 .. max_control_speed)
+max_control_speed:  50           # Абсолютная максимальная скорость, скорость до которой будет размечен спидометр (м/с) (>= 0)
+v_forward:          22.2222      # Максимальная скорость без штрафов местности при движении вперед (м/с) (0 .. max_control_speed)
+v_backward:         -9           # Максимальная скорость без штрафов местности при движении назад (м/с) (0 .. max_control_speed)
 
-max_fuel:           175          # Максимальное количество топлива, объем бака (л) (>= 0)
-fuel:               175          # Текущее количество топлива (0 .. max_fuel)
-p_fuel_rate:        0.051        # Расход топлива, тратится только в движении (л/с) (>= 0)
+max_fuel:           100          # Максимальное количество топлива, объем бака (л) (>= 0)
+fuel:               100          # Текущее количество топлива (0 .. max_fuel)
+p_fuel_rate:        0.0050       # Расход топлива, тратится только в движении (л/с) (>= 0)
 
 # Ссылка на картинку автомобиля в ангаре
-hangar_car:            "static/content/mobiles/cars/heavy/btrs/m113a1/side.png"
+hangar_car:            "static/content/mobiles/cars/heavy/btrs/05_m113a1/side.png"
 
 # Ссылки на верстку автомобиля у оружейника
-armorer_car:           static/content/mobiles/cars/heavy/btrs/m113a1/armorer_car.html
+armorer_car:           static/content/mobiles/cars/heavy/btrs/05_m113a1/armorer_car.html
 armorer_sectors_svg:   static/content/mobiles/cars/armorer_sectors.svg
 
 # Ссылки на верстку автомобиля у тюнера
-tuner_car:             static/content/mobiles/cars/heavy/btrs/m113a1/tuner_car.html
+tuner_car:             static/content/mobiles/cars/heavy/btrs/05_m113a1/tuner_car.html
 
 # Ссылки на верстку автомобиля у механика
 mechanic_engine:        static/content/mechanic_systems/engines/engine_1/engine.html                    # двигатель
@@ -64,10 +63,10 @@ slot_BL: ~
 # Настройка ограничений направления оружия из слота. Значением является строка в котороую включены первые буквы
 # соответствующих направлений (Front, Back, Left, Right)
 # Все слоты закоментированы, кроме переднего центрального.
-slot_FL_f: FL_4
-slot_FR_f: FR_4
-slot_BR_f: RB_4
-slot_BL_f: BL_4
+slot_FL_f: FL_3
+slot_FR_f: FR_3
+slot_BR_f: RB_3
+slot_BL_f: BL_3
 
 # Настройка слотов для Тюнера
 slot_t1: ~
@@ -84,6 +83,6 @@ slot_t15: ~
 slot_t17: ~
 
 # Ссылки на иконки для инвентаря/ангара
-inv_icon_big: static/content/mobiles/cars/heavy/btrs/m113a1/inventory/big.png
-inv_icon_mid: static/content/mobiles/cars/heavy/btrs/m113a1/inventory/mid.png
-inv_icon_small: static/content/mobiles/cars/heavy/btrs/m113a1/inventory/small.png
+inv_icon_big: static/content/mobiles/cars/heavy/btrs/05_m113a1/inventory/big.png
+inv_icon_mid: static/content/mobiles/cars/heavy/btrs/05_m113a1/inventory/mid.png
+inv_icon_small: static/content/mobiles/cars/heavy/btrs/05_m113a1/inventory/small.png
