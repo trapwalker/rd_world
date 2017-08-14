@@ -23,6 +23,7 @@ class AICaravanQuest(AIGangQuest):
     caravan_wait_time = EmbeddedDocumentField(document_type=QuestRange, caption=u"Границы задержки перед стартом каравана (минуты)")
     party_capacity = IntField(root_default=10, caption=u"Вместительность пати каравана с учётом НПЦ")
     radius_participation = IntField(root_default=1000, caption=u"Двойной радиус действия гвардов и одинарный участия игроков")
+    town_destination = RegistryLinkField(caption=u'Город назначения каравана')
 
     count_guardians = EmbeddedDocumentField(document_type=QuestRange, caption=u"Количество защитников")
     cars_guardians = ListField(
@@ -163,7 +164,9 @@ class AICaravanQuest(AIGangQuest):
             if self.dc.party is not None:
                 self.include_to_party(model_agent=model_agent, event=event)
             else:
-                self.dc.party = Party(time=event.time, owner=model_agent, name='caravan', description='Caravan', exp_share=True)
+                p_mame = model_agent.print_login().split('_')[0]
+                description = "{}'s caravan to {}".format(p_mame, 'ttttt')
+                self.dc.party = Party(time=event.time, owner=model_agent, name=p_mame, description=description, exp_share=True)
                 self.dc.agents_on_party = 1
                 # log.debug('AICaravanQuest:: Create Party %s   owner=%s', self.dc.party, model_agent)
 

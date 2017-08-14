@@ -806,6 +806,7 @@ quests:
     tags: ["caravan_whitehill_paloma"]
     routes:
       - reg:///registry/routes/whitehill_paloma
+    town_destination: reg:///registry/poi/locations/towns/paloma
 
   - parent: reg:///registry/quests/ai_event_quests/traffic/gang/caravan_simple
     _cls: AICaravanQuest
@@ -814,6 +815,7 @@ quests:
     routes:
       - reg:///registry/routes/whitehill_prior_south
       - reg:///registry/routes/whitehill_prior_north
+    town_destination: reg:///registry/poi/locations/towns/prior
 
   - parent: reg:///registry/quests/ai_event_quests/traffic/gang/caravan_simple
     _cls: AICaravanQuest
@@ -821,6 +823,7 @@ quests:
     tags: ["caravan_whitehill_bonita_vista"]
     routes:
       - reg:///registry/routes/whitehill_bonita_vista
+    town_destination: reg:///registry/poi/locations/towns/bonita_vista
 
 
 
@@ -831,6 +834,7 @@ quests:
     routes:
       - parent: reg:///registry/routes/whitehill_paloma
         reverse: True
+    town_destination: reg:///registry/poi/locations/towns/whitehill
 
   - parent: reg:///registry/quests/ai_event_quests/traffic/gang/caravan_simple
     _cls: AICaravanQuest
@@ -838,6 +842,7 @@ quests:
     tags: ["caravan_paloma_prior"]
     routes:
       - reg:///registry/routes/paloma_prior
+    town_destination: reg:///registry/poi/locations/towns/prior
 
 
   - parent: reg:///registry/quests/ai_event_quests/traffic/gang/caravan_simple
@@ -849,6 +854,7 @@ quests:
         reverse: True
       - parent: reg:///registry/routes/whitehill_prior_north
         reverse: True
+    town_destination: reg:///registry/poi/locations/towns/whitehill
 
 
   - parent: reg:///registry/quests/ai_event_quests/traffic/gang/caravan_simple
@@ -858,3 +864,4 @@ quests:
     routes:
       - parent: reg:///registry/routes/whitehill_bonita_vista
         reverse: True
+    town_destination: reg:///registry/poi/locations/towns/whitehill
