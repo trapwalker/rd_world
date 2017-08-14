@@ -753,8 +753,9 @@ quests:
         center: {x: 12480199, y: 27045813}
         dispersion: 300
     cars:
-      - reg:///registry/mobiles/cars/middle/cars/vw_beetle
-      - reg:///registry/mobiles/cars/middle/cars/vw_golf
+      - reg:///registry/mobiles/cars/heavy/armored/04_m3a1_scout_car
+      - reg:///registry/mobiles/cars/heavy/btrs/05_m113a1
+      - reg:///registry/mobiles/cars/heavy/btrs/06_m1126
 
   - parent: reg:///registry/quests/ai_event_quests/traffic/boss
     generation_group: 'mob_boss'
@@ -767,8 +768,9 @@ quests:
         center: {x: 12537432, y: 27043853}
         dispersion: 300
     cars:
-      - reg:///registry/mobiles/cars/middle/cars/vw_beetle
-      - reg:///registry/mobiles/cars/middle/cars/vw_golf
+      - reg:///registry/mobiles/cars/heavy/armored/04_m3a1_scout_car
+      - reg:///registry/mobiles/cars/heavy/btrs/05_m113a1
+      - reg:///registry/mobiles/cars/heavy/btrs/06_m1126
 
 #  - parent: reg:///registry/quests/ai_event_quests/traffic/boss
 #    generation_group: 'mob_boss'
@@ -781,8 +783,9 @@ quests:
 #        center: {x: 12509663, y: 27053100}
 #        dispersion: 300
 #    cars:
-#      - reg:///registry/mobiles/cars/middle/cars/vw_beetle
-#      - reg:///registry/mobiles/cars/middle/cars/vw_golf
+#      - reg:///registry/mobiles/cars/heavy/armored/04_m3a1_scout_car
+#      - reg:///registry/mobiles/cars/heavy/btrs/05_m113a1
+#      - reg:///registry/mobiles/cars/heavy/btrs/06_m1126
 
   - parent: reg:///registry/quests/ai_event_quests/traffic/boss
     generation_group: 'mob_boss'
@@ -795,8 +798,9 @@ quests:
         center: {x: 12509391, y: 27030055}
         dispersion: 300
     cars:
-      - reg:///registry/mobiles/cars/middle/cars/vw_beetle
-      - reg:///registry/mobiles/cars/middle/cars/vw_golf
+      - reg:///registry/mobiles/cars/heavy/armored/04_m3a1_scout_car
+      - reg:///registry/mobiles/cars/heavy/btrs/05_m113a1
+      - reg:///registry/mobiles/cars/heavy/btrs/06_m1126
 
 
   #### Caravans #####

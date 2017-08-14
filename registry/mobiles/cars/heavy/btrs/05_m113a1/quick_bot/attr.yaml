@@ -1,5 +1,4 @@
-﻿__cls__ : Car
-_cls : Car
+﻿_cls : Car
 title:       "M113 (Бот)"        # Модель атомобиля
 class_car:   "Тяжелый"           # Класс автомобиля
 name_car:    "M113 (Бот)"        # Название атомобиля
@@ -55,11 +54,11 @@ p_fuel_rate:        0            # Расход топлива, тратится
 hangar_car:            "static/content/mobiles/cars/quick_game/m113.png"
 
 # Ссылки на верстку автомобиля у оружейника
-armorer_car:           static/content/mobiles/cars/heavy/btrs/m113a1/armorer_car.html
+armorer_car:           static/content/mobiles/cars/heavy/btrs/05_m113a1/armorer_car.html
 armorer_sectors_svg:   static/content/mobiles/cars/armorer_sectors.svg
 
 # Ссылки на верстку автомобиля у тюнера
-tuner_car:             static/content/mobiles/cars/heavy/btrs/m113a1/tuner_car.html
+tuner_car:             static/content/mobiles/cars/heavy/btrs/05_m113a1/tuner_car.html
 
 # Ссылки на верстку автомобиля у механика
 mechanic_engine:        static/content/mechanic_systems/engines/engine_1/engine.html                    # двигатель
@@ -99,9 +98,9 @@ slot_t15: ~
 slot_t17: ~
 
 # Ссылки на иконки для инвентаря/ангара
-inv_icon_big: static/content/mobiles/cars/heavy/btrs/m113a1/inventory/big.png
-inv_icon_mid: static/content/mobiles/cars/heavy/btrs/m113a1/inventory/mid.png
-inv_icon_small: static/content/mobiles/cars/heavy/btrs/m113a1/inventory/small.png
+inv_icon_big: static/content/mobiles/cars/heavy/btrs/05_m113a1/inventory/big.png
+inv_icon_mid: static/content/mobiles/cars/heavy/btrs/05_m113a1/inventory/mid.png
+inv_icon_small: static/content/mobiles/cars/heavy/btrs/05_m113a1/inventory/small.png
 
 start_shield_time: 30
 
