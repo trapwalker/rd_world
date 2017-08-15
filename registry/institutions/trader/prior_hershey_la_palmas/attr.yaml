@@ -158,13 +158,17 @@ items:
 #  - reg:///registry/items/slot_item/mechanic_item/cooling/thermostat/thermostat_1
 
   # ДЛЯ СТИЛИСТА
+  - reg:///registry/items/slot_item/tuner_item/shnork/00_shnork_001
+  - reg:///registry/items/slot_item/tuner_item/shnork/00_shnork_002
+  - reg:///registry/items/slot_item/tuner_item/shnork/00_shnork_003
+  - reg:///registry/items/slot_item/tuner_item/b_fender/00_b_fender_002
+  - reg:///registry/items/slot_item/tuner_item/f_fender/00_f_fender_002
+  - reg:///registry/items/slot_item/tuner_item/armor/00_armor_001
 #  - reg:///registry/items/slot_item/tuner_item/airint/airint_001
-#  - reg:///registry/items/slot_item/tuner_item/armor/armor_001
 #  - reg:///registry/items/slot_item/tuner_item/b_bumper/b_bumper_001
 #  - reg:///registry/items/slot_item/tuner_item/b_bumper/b_bumper_002
 #  - reg:///registry/items/slot_item/tuner_item/b_bumper/b_bumper_003
 #  - reg:///registry/items/slot_item/tuner_item/b_fender/b_fender_001
-#  - reg:///registry/items/slot_item/tuner_item/b_fender/b_fender_002
 #  - reg:///registry/items/slot_item/tuner_item/b_fender/b_fender_003
 #  - reg:///registry/items/slot_item/tuner_item/bale/bale_001
 #  - reg:///registry/items/slot_item/tuner_item/bale/bale_002
@@ -172,14 +176,10 @@ items:
 #  - reg:///registry/items/slot_item/tuner_item/f_bumper/f_bumper_002
 #  - reg:///registry/items/slot_item/tuner_item/f_bumper/f_bumper_003
 #  - reg:///registry/items/slot_item/tuner_item/f_fender/f_fender_001
-#  - reg:///registry/items/slot_item/tuner_item/f_fender/f_fender_002
 #  - reg:///registry/items/slot_item/tuner_item/f_fender/f_fender_003
 #  - reg:///registry/items/slot_item/tuner_item/glass/glass_001
 #  - reg:///registry/items/slot_item/tuner_item/roof/roof_002
 #  - reg:///registry/items/slot_item/tuner_item/roof/roof_001
-#  - reg:///registry/items/slot_item/tuner_item/shnork/shnork_001
-#  - reg:///registry/items/slot_item/tuner_item/shnork/shnork_002
-#  - reg:///registry/items/slot_item/tuner_item/shnork/shnork_003
 #  - reg:///registry/items/slot_item/tuner_item/step/step_002
 #  - reg:///registry/items/slot_item/tuner_item/step/step_003
 #  - reg:///registry/items/slot_item/tuner_item/step/step_001
