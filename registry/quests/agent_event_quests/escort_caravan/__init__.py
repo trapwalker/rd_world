@@ -13,7 +13,7 @@ from functools import partial
 class EscortCaravan(AgentEventQuest):
     def as_unstarted_quest_dict(self):
         d = super(EscortCaravan, self).as_unstarted_quest_dict()
-        d.update(start_quest_time=self.dc.start_caravan_time)
+        d.update(start_quest_time=getattr(self.dc, 'start_caravan_time', None))
         return d
 
     def init_text(self, event, event_quest):
