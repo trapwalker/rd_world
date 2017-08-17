@@ -60,6 +60,15 @@ class ClassQuest(Quest):
                     note_class=notes.FirstOutNote,
                     time=event.time
                 )
+
+                role_class = quest.agent.profile.role_class
+                if role_class.title == "Chosen One":  quest.caption = u'Основать поселение'
+                elif role_class.title == "Alpha Wolf":  quest.caption = u'Создать клан'
+                elif role_class.title == "Night Rider":  quest.caption = u'Получить стелс-технологию'
+                elif role_class.title == "Oil Magnate":  quest.caption = u'Открыть магазин'
+                elif role_class.title == "Road Warrior":  quest.caption = u'Получить суперкар'
+                elif role_class.title == "Techno Kinetic":  quest.caption = u'Открыть сервисный центр'
+
                 quest.init_text()
                 quest.log(text=u'Получено новое задание.', event=event)
                 go("visit_trainer")
