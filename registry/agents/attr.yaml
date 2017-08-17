@@ -13,7 +13,6 @@ quests_unstarted: []
 quests_active:    []
 quests_ended:     []
 
-
 quest_inventory:
   items:
     - reg:///registry/items/quest_item/insurance/premium

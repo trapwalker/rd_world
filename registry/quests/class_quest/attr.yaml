@@ -1,0 +1,8 @@
+__cls__: ClassQuest
+_cls: ClassQuest
+
+first_state: first_out
+
+list_icon: static/img/quests/icons/rpg_dice.png
+
+caption: Классовый квест
