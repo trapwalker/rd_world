@@ -68,7 +68,7 @@ images:
 
   - car: reg:///registry/mobiles/cars/middle/vans/barkas_b1000kb     # реестровая ссылка на машинку, для которой подходит данный итем
     top:                                                             # описание вида сверху (картинка и позиция)
-        link: static/content/items/slot_item/tuner_item/armor/00_armor_001/00_barkas_b1000kb/top.png  # ссылка на картику для вида сверху
+        link: static/content/items/slot_item/tuner_item/empty.png    # ссылка на картику для вида сверху
         z_index: 1                                                   # позиция: -1 или 1
     side:                                                            # описание вида сбоку (картинка и позиция)
         link: static/content/items/slot_item/tuner_item/armor/00_armor_001/00_barkas_b1000kb/side.png # ссылка на картику для вида сбоку
@@ -76,7 +76,7 @@ images:
 
   - car: reg:///registry/mobiles/cars/middle/vans/citroen_hy         # реестровая ссылка на машинку, для которой подходит данный итем
     top:                                                             # описание вида сверху (картинка и позиция)
-        link: static/content/items/slot_item/tuner_item/armor/00_armor_001/00_citroen_hy/top.png  # ссылка на картику для вида сверху
+        link: static/content/items/slot_item/tuner_item/empty.png    # ссылка на картику для вида сверху
         z_index: 1                                                   # позиция: -1 или 1
     side:                                                            # описание вида сбоку (картинка и позиция)
         link: static/content/items/slot_item/tuner_item/armor/00_armor_001/00_citroen_hy/side.png # ссылка на картику для вида сбоку
