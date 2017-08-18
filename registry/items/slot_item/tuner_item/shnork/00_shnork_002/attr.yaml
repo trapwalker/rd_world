@@ -18,6 +18,9 @@ inv_icon_small : static/content/items/slot_item/tuner_item/shnork/00_shnork_002/
 
 # Картинки для представления у тюнера, установленные на машине
 images:
+
+   # LVL 00
+
   - car: reg:///registry/mobiles/cars/light/motorcycles/honda_cy_50      # реестровая ссылка на машинку, для которой подходит данный итем
     top:                                                                 # описание вида сверху (картинка и позиция)
         link: static/content/items/slot_item/tuner_item/shnork/00_shnork_002/00_honda_cy_50/top.png    # ссылка на картику для вида сверху
@@ -82,6 +85,58 @@ images:
         link: static/content/items/slot_item/tuner_item/shnork/00_shnork_002/00_citroen_hy/side.png # ссылка на картику для вида сбоку
         z_index: 1                                                   # позиция: -1 или 1
 
+   # LVL 01
+
+  - car: reg:///registry/mobiles/cars/light/motorcycles/01_honda_sl90        # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                                     # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_002/01_honda_sl90/top.png    # ссылка на картику для вида сверху
+        z_index: 1                                                           # позиция: -1 или 1
+    side:                                                                    # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_002/01_honda_sl90/side.png   # ссылка на картику для вида сбоку
+        z_index: 1                                                           # позиция: -1 или 1
+
+  - car: reg:///registry/mobiles/cars/middle/cars/01_mazda_luce_1500        # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                                    # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_002/01_mazda_luce_1500/top.png    # ссылка на картику для вида сверху
+        z_index: 1                                                          # позиция: -1 или 1
+    side:                                                                   # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_002/01_mazda_luce_1500/side.png   # ссылка на картику для вида сбоку
+        z_index: 1                                                          # позиция: -1 или 1
+
+  - car: reg:///registry/mobiles/cars/middle/cars/01_fiat_croma      # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                             # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_002/01_fiat_croma/top.png  # ссылка на картику для вида сверху
+        z_index: 1                                                   # позиция: -1 или 1
+    side:                                                            # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_002/01_fiat_croma/side.png # ссылка на картику для вида сбоку
+        z_index: 1                                                   # позиция: -1 или 1
+
+  - car: reg:///registry/mobiles/cars/middle/offroad/01_datsun_truck_521     # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                                    # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_002/01_datsun_truck_521/top.png    # ссылка на картику для вида сверху
+        z_index: 1                                                          # позиция: -1 или 1
+    side:                                                                   # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_002/01_datsun_truck_521/side.png   # ссылка на картику для вида сбоку
+        z_index: 1                                                          # позиция: -1 или 1
+
+  - car: reg:///registry/mobiles/cars/cargo/buses/01_bedford_vas                # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                                        # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_002/01_bedford_vas/top.png  # ссылка на картику для вида сверху
+        z_index: 1                                                              # позиция: -1 или 1
+    side:                                                                       # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_002/01_bedford_vas/side.png # ссылка на картику для вида сбоку
+        z_index: 1                                                              # позиция: -1 или 1
+
+   # LVL 02
+
+  - car: reg:///registry/mobiles/cars/middle/cars/02_toyota_corolla         # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                                    # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_002/02_toyota_corolla/top.png    # ссылка на картику для вида сверху
+        z_index: 1                                                          # позиция: -1 или 1
+    side:                                                                   # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_002/02_toyota_corolla/side.png   # ссылка на картику для вида сбоку
+        z_index: 1                                                          # позиция: -1 или 1
+
   - car: reg:///registry/mobiles/cars/middle/cars/02_chevrolet_monte_carlo   # реестровая ссылка на машинку, для которой подходит данный итем
     top:                                                                     # описание вида сверху (картинка и позиция)
         link: static/content/items/slot_item/tuner_item/shnork/00_shnork_002/02_chevrolet_monte_carlo/top.png    # ссылка на картику для вида сверху
@@ -89,6 +144,40 @@ images:
     side:                                                                    # описание вида сбоку (картинка и позиция)
         link: static/content/items/slot_item/tuner_item/shnork/00_shnork_002/02_chevrolet_monte_carlo/side.png   # ссылка на картику для вида сбоку
         z_index: 1                                                           # позиция: -1 или 1
+
+  - car: reg:///registry/mobiles/cars/middle/sports/02_alfa_romeo_75 # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                             # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_002/02_alfa_romeo_75/top.png  # ссылка на картику для вида сверху
+        z_index: 1                                                   # позиция: -1 или 1
+    side:                                                            # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_002/02_alfa_romeo_75/side.png # ссылка на картику для вида сбоку
+        z_index: 1                                                   # позиция: -1 или 1
+
+  - car: reg:///registry/mobiles/cars/middle/offroad/02_ford_bronco         # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                                    # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_002/02_ford_bronco/top.png    # ссылка на картику для вида сверху
+        z_index: 1                                                          # позиция: -1 или 1
+    side:                                                                   # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_002/02_ford_bronco/side.png   # ссылка на картику для вида сбоку
+        z_index: 1                                                          # позиция: -1 или 1
+
+  - car: reg:///registry/mobiles/cars/middle/vans/02_volkswagen_t1_samba        # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                                        # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_002/02_volkswagen_t1_samba/top.png  # ссылка на картику для вида сверху
+        z_index: 1                                                              # позиция: -1 или 1
+    side:                                                                       # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_002/02_volkswagen_t1_samba/side.png # ссылка на картику для вида сбоку
+        z_index: 1                                                              # позиция: -1 или 1
+
+   # LVL 03
+
+  - car: reg:///registry/mobiles/cars/middle/cars/03_honda_accord           # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                                    # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_002/03_honda_accord/top.png    # ссылка на картику для вида сверху
+        z_index: 1                                                          # позиция: -1 или 1
+    side:                                                                   # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_002/03_honda_accord/side.png   # ссылка на картику для вида сбоку
+        z_index: 1                                                          # позиция: -1 или 1
 
   - car: reg:///registry/mobiles/cars/middle/cars/03_chrysler_new_yorker    # реестровая ссылка на машинку, для которой подходит данный итем
     top:                                                                    # описание вида сверху (картинка и позиция)
@@ -98,6 +187,14 @@ images:
         link: static/content/items/slot_item/tuner_item/shnork/00_shnork_002/03_chrysler_new_yorker/side.png   # ссылка на картику для вида сбоку
         z_index: 1                                                          # позиция: -1 или 1
 
+  - car: reg:///registry/mobiles/cars/middle/offroad/03_willys_mb           # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                                    # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_002/03_willys_mb/top.png    # ссылка на картику для вида сверху
+        z_index: 1                                                          # позиция: -1 или 1
+    side:                                                                   # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_002/03_willys_mb/side.png   # ссылка на картику для вида сбоку
+        z_index: 1                                                          # позиция: -1 или 1
+
   - car: reg:///registry/mobiles/cars/middle/vans/03_gmc_savana      # реестровая ссылка на машинку, для которой подходит данный итем
     top:                                                             # описание вида сверху (картинка и позиция)
         link: static/content/items/slot_item/tuner_item/shnork/00_shnork_002/03_gmc_savana/top.png  # ссылка на картику для вида сверху
@@ -105,6 +202,24 @@ images:
     side:                                                            # описание вида сбоку (картинка и позиция)
         link: static/content/items/slot_item/tuner_item/shnork/00_shnork_002/03_gmc_savana/side.png # ссылка на картику для вида сбоку
         z_index: 1                                                   # позиция: -1 или 1
+
+   # LVL 04
+
+  - car: reg:///registry/mobiles/cars/middle/cars/04_bmw_320i_e21           # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                                    # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_002/04_bmw_320i_e21/top.png    # ссылка на картику для вида сверху
+        z_index: 1                                                          # позиция: -1 или 1
+    side:                                                                   # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_002/04_bmw_320i_e21/side.png   # ссылка на картику для вида сбоку
+        z_index: 1                                                          # позиция: -1 или 1
+
+  - car: reg:///registry/mobiles/cars/middle/cars/04_lancia_delta_hf_integrale    # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                                           # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_002/04_lancia_delta_hf_integrale/top.png    # ссылка на картику для вида сверху
+        z_index: 1                                                                 # позиция: -1 или 1
+    side:                                                                          # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_002/04_lancia_delta_hf_integrale/side.png   # ссылка на картику для вида сбоку
+        z_index: 1                                                                 # позиция: -1 или 1
 
   - car: reg:///registry/mobiles/cars/middle/sports/04_delorean_dmc_12      # реестровая ссылка на машинку, для которой подходит данный итем
     top:                                                                    # описание вида сверху (картинка и позиция)

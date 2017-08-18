@@ -244,7 +244,6 @@ quests:
     reward_karma: 1                # Награда за 1 убийство
 
 
-
   - parent: reg:///registry/quests/delivery_quest/delivery_car
     _cls: DeliveryCar
     delivery_car_list:             # Список возможных комплектов для доставки
