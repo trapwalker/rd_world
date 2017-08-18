@@ -171,34 +171,68 @@ images:
 
    # LVL 03
 
+  - car: reg:///registry/mobiles/cars/middle/cars/03_honda_accord           # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                                    # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/empty.png           # ссылка на картику для вида сверху
+        z_index: 1                                                          # позиция: -1 или 1
+    side:                                                                   # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/armor/00_armor_001/03_honda_accord/side.png   # ссылка на картику для вида сбоку
+        z_index: 1                                                          # позиция: -1 или 1
+
   - car: reg:///registry/mobiles/cars/middle/cars/03_chrysler_new_yorker    # реестровая ссылка на машинку, для которой подходит данный итем
-    top:                                                                 # описание вида сверху (картинка и позиция)
-        link: static/content/items/slot_item/tuner_item/empty.png        # ссылка на картику для вида сверху
-        z_index: 1                                                       # позиция: -1 или 1
+    top:                                                                    # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/empty.png           # ссылка на картику для вида сверху
+        z_index: 1                                                          # позиция: -1 или 1
     side:                                                                   # описание вида сбоку (картинка и позиция)
         link: static/content/items/slot_item/tuner_item/armor/00_armor_001/03_chrysler_new_yorker/side.png   # ссылка на картику для вида сбоку
         z_index: 1                                                          # позиция: -1 или 1
 
+  - car: reg:///registry/mobiles/cars/middle/offroad/03_willys_mb           # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                                    # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/empty.png           # ссылка на картику для вида сверху
+        z_index: 1                                                          # позиция: -1 или 1
+    side:                                                                   # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/armor/00_armor_001/03_willys_mb/side.png   # ссылка на картику для вида сбоку
+        z_index: 1                                                          # позиция: -1 или 1
+
   - car: reg:///registry/mobiles/cars/middle/vans/03_gmc_savana      # реестровая ссылка на машинку, для которой подходит данный итем
-    top:                                                                 # описание вида сверху (картинка и позиция)
-        link: static/content/items/slot_item/tuner_item/empty.png        # ссылка на картику для вида сверху
-        z_index: 1                                                       # позиция: -1 или 1
+    top:                                                             # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/empty.png    # ссылка на картику для вида сверху
+        z_index: 1                                                   # позиция: -1 или 1
     side:                                                            # описание вида сбоку (картинка и позиция)
         link: static/content/items/slot_item/tuner_item/armor/00_armor_001/03_gmc_savana/side.png # ссылка на картику для вида сбоку
         z_index: 1                                                   # позиция: -1 или 1
 
+   # LVL 04
+
+  - car: reg:///registry/mobiles/cars/middle/cars/04_bmw_320i_e21           # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                                    # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/empty.png           # ссылка на картику для вида сверху
+        z_index: 1                                                          # позиция: -1 или 1
+    side:                                                                   # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/armor/00_armor_001/04_bmw_320i_e21/side.png   # ссылка на картику для вида сбоку
+        z_index: 1                                                          # позиция: -1 или 1
+
+  - car: reg:///registry/mobiles/cars/middle/cars/04_lancia_delta_hf_integrale    # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                                           # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/empty.png                  # ссылка на картику для вида сверху
+        z_index: 1                                                                 # позиция: -1 или 1
+    side:                                                                          # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/armor/00_armor_001/04_lancia_delta_hf_integrale/side.png   # ссылка на картику для вида сбоку
+        z_index: 1                                                                 # позиция: -1 или 1
+
   - car: reg:///registry/mobiles/cars/middle/sports/04_delorean_dmc_12      # реестровая ссылка на машинку, для которой подходит данный итем
-    top:                                                                 # описание вида сверху (картинка и позиция)
-        link: static/content/items/slot_item/tuner_item/empty.png        # ссылка на картику для вида сверху
-        z_index: 1                                                       # позиция: -1 или 1
+    top:                                                                    # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/empty.png           # ссылка на картику для вида сверху
+        z_index: 1                                                          # позиция: -1 или 1
     side:                                                                   # описание вида сбоку (картинка и позиция)
         link: static/content/items/slot_item/tuner_item/armor/00_armor_001/04_delorean_dmc_12/side.png   # ссылка на картику для вида сбоку
         z_index: 1                                                          # позиция: -1 или 1
 
   - car: reg:///registry/mobiles/cars/cargo/buses/04_gmc_pd_4501_scenicruiser   # реестровая ссылка на машинку, для которой подходит данный итем
-    top:                                                                 # описание вида сверху (картинка и позиция)
-        link: static/content/items/slot_item/tuner_item/empty.png        # ссылка на картику для вида сверху
-        z_index: 1                                                       # позиция: -1 или 1
+    top:                                                                        # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/empty.png               # ссылка на картику для вида сверху
+        z_index: 1                                                              # позиция: -1 или 1
     side:                                                                       # описание вида сбоку (картинка и позиция)
         link: static/content/items/slot_item/tuner_item/armor/00_armor_001/04_gmc_pd_4501_scenicruiser/side.png # ссылка на картику для вида сбоку
         z_index: 1                                                              # позиция: -1 или 1
