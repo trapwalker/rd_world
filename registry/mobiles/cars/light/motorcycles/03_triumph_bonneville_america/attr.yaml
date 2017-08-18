@@ -50,7 +50,6 @@ tuner_car:             static/content/mobiles/cars/light/motorcycles/03_triumph_
 
 # Ссылки на верстку автомобиля у механика
 mechanic_transmission:  static/content/mechanic_systems/transmissions/transmission_1/transmission.html  # трансмиссия
-mechanic_brakes:        static/content/mechanic_systems/brakes/brakes_1/brakes.html                     # тормоза
 mechanic_suspension:    static/content/mechanic_systems/suspensions/suspension_1/suspension.html        # подвеска
 
 

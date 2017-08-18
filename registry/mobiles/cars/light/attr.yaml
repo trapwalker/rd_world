@@ -13,3 +13,4 @@ audio_engine:
 # Ссылки на верстку автомобиля у механика
 mechanic_engine:  static/content/mechanic_systems/engines/light/engine.html     # Двигатель
 mechanic_cooling: static/content/mechanic_systems/coolings/light/cooling.html   # Охлаждение
+mechanic_brakes:  static/content/mechanic_systems/brakes/light/brakes.html      # Тормоза
