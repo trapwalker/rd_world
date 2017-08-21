@@ -8,3 +8,10 @@ r_cc_dirt:                0.80    # Резист к модификатору CC 
 r_cc_wood:                0.80    # Резист к модификатору CC в лесу
 r_cc_slope:               0.80    # Резист к модификатору CC в горах
 r_cc_water:               0.80    # Резист к модификатору CC в воде
+
+# Ссылки на верстку у механика
+mechanic_engine:       static/content/mechanic_systems/engines/engine_1/engine.html                   # Двигатель
+mechanic_transmission: static/content/mechanic_systems/transmissions/transmission_1/transmission.html # Трансмиссия
+mechanic_suspension:   static/content/mechanic_systems/suspensions/suspension_1/suspension.html       # Подвеска
+mechanic_brakes:       static/content/mechanic_systems/brakes/brakes_1/brakes.html                    # Тормоза
+mechanic_cooling:      static/content/mechanic_systems/coolings/cooling_1/cooling.html                # Охлаждение
