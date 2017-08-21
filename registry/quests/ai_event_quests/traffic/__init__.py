@@ -12,7 +12,7 @@ from sublayers_server.model.registry_me.classes.quests import (
 )
 from sublayers_server.model.quest_events import OnTimer
 from sublayers_server.model.vectors import Point
-from sublayers_server.model.base import Observer
+from sublayers_server.model.units import Unit
 
 from sublayers_server.model.registry_me.randomize_examples import RandomizeExamples
 
@@ -106,7 +106,8 @@ class AITrafficQuest(AIEventQuest):
             return main_agent.action_quest.result
 
     def is_observer(self, obj):
-        if not isinstance(obj, Observer):
+        # if not isinstance(obj, Observer):
+        if not isinstance(obj, Unit):
             log.debug('==!!== is_observer: obj not observer: %s  for quest: %r ', obj, self)
             # log.debug(''.join(traceback.format_stack()))
             return False
