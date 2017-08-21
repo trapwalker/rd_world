@@ -48,10 +48,6 @@ armorer_sectors_svg:   static/content/mobiles/cars/armorer_sectors.svg
 # Ссылки на верстку автомобиля у тюнера
 tuner_car:             static/content/mobiles/cars/light/motorcycles/03_triumph_bonneville_america/tuner_car.html
 
-# Ссылки на верстку автомобиля у механика
-mechanic_transmission:  static/content/mechanic_systems/transmissions/transmission_1/transmission.html  # трансмиссия
-mechanic_suspension:    static/content/mechanic_systems/suspensions/suspension_1/suspension.html        # подвеска
-
 
 # Ниже перечислены все слоты доступные на автомобиле. В название содержится расположение слота.
 # Сейчас до 9 слотов на автомобиль: slot_(Front, Center, Back)(Left, Center, Right).
