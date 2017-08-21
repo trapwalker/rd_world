@@ -171,6 +171,22 @@ images:
 
    # LVL 03
 
+  - car: reg:///registry/mobiles/cars/light/motorcycles/03_triumph_bonneville_america      # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                                 # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/f_fender/00_f_fender_002/03_triumph_bonneville_america/top.png    # ссылка на картику для вида сверху
+        z_index: 1                                                       # позиция: -1 или 1
+    side:                                                                # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/f_fender/00_f_fender_002/03_triumph_bonneville_america/side.png   # ссылка на картику для вида сбоку
+        z_index: 1                                                       # позиция: -1 или 1
+
+  - car: reg:///registry/mobiles/cars/light/motorcycles/03_cad_19        # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                                 # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/f_fender/00_f_fender_002/03_cad_19/top.png    # ссылка на картику для вида сверху
+        z_index: 1                                                       # позиция: -1 или 1
+    side:                                                                # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/f_fender/00_f_fender_002/03_cad_19/side.png   # ссылка на картику для вида сбоку
+        z_index: 1                                                       # позиция: -1 или 1
+
   - car: reg:///registry/mobiles/cars/middle/cars/03_honda_accord           # реестровая ссылка на машинку, для которой подходит данный итем
     top:                                                                    # описание вида сверху (картинка и позиция)
         link: static/content/items/slot_item/tuner_item/f_fender/00_f_fender_002/03_honda_accord/top.png    # ссылка на картику для вида сверху
@@ -204,6 +220,14 @@ images:
         z_index: 1                                                   # позиция: -1 или 1
 
    # LVL 04
+
+  - car: reg:///registry/mobiles/cars/light/motorcycles/04_kawasaki_klx250      # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                                 # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/f_fender/00_f_fender_002/04_kawasaki_klx250/top.png    # ссылка на картику для вида сверху
+        z_index: 1                                                       # позиция: -1 или 1
+    side:                                                                # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/f_fender/00_f_fender_002/04_kawasaki_klx250/side.png   # ссылка на картику для вида сбоку
+        z_index: 1                                                       # позиция: -1 или 1
 
   - car: reg:///registry/mobiles/cars/middle/cars/04_bmw_320i_e21           # реестровая ссылка на машинку, для которой подходит данный итем
     top:                                                                    # описание вида сверху (картинка и позиция)
