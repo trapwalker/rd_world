@@ -83,6 +83,7 @@ class DeliveryCar(DeliveryQuest):
         agent_model = self.agent.profile._agent_model
         car_example = RandomizeExamples.get_random_car_level(
             cars=[self.delivery_car],
+            weapons=[],
             level=0,
             car_params=dict(
                 position=agent_model.current_location.example.position,
@@ -126,6 +127,13 @@ class DeliveryCar(DeliveryQuest):
                 money_penalty = round(quest.reward_money / 2)
                 if agent.car and (agent.car.uid == quest.dc.car_uid) and (agent.balance >= money_penalty):
                     agent.set_balance(time=event.time, delta=-money_penalty)
+                    agent.car = None
+                    agent_model = agent._agent_model
+                    agent_model.reload_inventory(time=event.time)
+                    messages.UserExampleCarNPCTemplates(agent=agent_model, time=event.time).post()
+                    messages.UserExampleCarInfo(agent=agent_model, time=event.time).post()
+                    messages.UserExampleCarView(agent=agent_model, time=event.time).post()
+                    messages.UserExampleCarSlots(agent=agent_model, time=event.time).post()
                     quest.log(text=u'Уплачен штраф в размере {}nc.'.format(money_penalty), event=event)
                     go("cancel_fail")
                 else:
