@@ -94,7 +94,7 @@ class DeliveryFromCache(DeliveryQuestSimple):
 
     def init_text(self):
         self.text_short = u"Найти пропавшую посылку."
-        self.text = u"Вернуть пропавшую посылку.{} Награда: {:.0f}nc, {:.0f} кармы и {:.0f}ед. опыта.".format(
+        self.text = u"Вернуть пропавшую посылку.{} Награда: {:.0f}nc, {:.0f} кармы и {:.0f} ед. опыта.".format(
             u"." if not self.deadline else u" за {}.".format(self.deadline_to_str()),
             self.reward_money,
             self.reward_karma,
