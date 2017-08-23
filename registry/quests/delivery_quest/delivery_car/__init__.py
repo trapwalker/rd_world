@@ -115,7 +115,7 @@ class DeliveryCar(DeliveryQuest):
             go = partial(quest.go, event=event)
             agent = quest.agent.profile
             if isinstance(event, OnTimer) and (event.name == 'deadline'):
-                agent.profile.del_note(uid=quest.dc.delivery_note_uid, time=event.time)
+                agent.del_note(uid=quest.dc.delivery_note_uid, time=event.time)
                 go("fail")
 
             if isinstance(event, OnNote) and (event.note_uid == quest.dc.delivery_note_uid) and event.result and \
