@@ -630,7 +630,7 @@ quests:
     chance_of_generation: 1
     delay_time: 7200
     bots_karma: {min: -90, max: -30}
-    count_members: { max: 25, min: 25 }
+    count_members: { max: 10, min: 15 }
     routes:
       - parent: reg:///registry/routes/big_road
       - parent: reg:///registry/routes/big_road
