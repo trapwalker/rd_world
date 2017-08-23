@@ -101,7 +101,7 @@ class KillerQuest(Quest):
         self.text_short = u"Убейте {:.0f} игрока(ов).".format(
             self.count_to_kill
         )
-        self.text = u"Убейте {:.0f} игрока(ов) с минимальным уровнем {:.0f} и кармой хуже {}{}. Награда: {:.0f}nc, {:.0f} кармы и {:.0f}ед. опыта.".format(
+        self.text = u"Убейте {:.0f} игрока(ов) с минимальным уровнем {:.0f} и кармой хуже {}{}. Награда: {:.0f}nc, {:.0f} кармы и {:.0f} ед. опыта.".format(
             self.count_to_kill,
             self.min_level_victims,
             getKarmaName(self.max_karma_victims / 100., 'ru'),
