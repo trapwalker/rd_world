@@ -83,7 +83,7 @@ class AICaravanQuest(AIGangQuest):
 
         targets = self.get_visible_targets()
         guardians_target = None
-        guardians_cc = 0.5
+        guardians_cc = 0.8
         if targets:
             guardians_cc = 1.0  # если мы видим когото то ездим активнее
             guardians_target = self.dc.target
