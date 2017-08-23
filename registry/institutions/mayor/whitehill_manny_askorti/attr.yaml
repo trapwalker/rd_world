@@ -236,20 +236,9 @@ quests:
       max: 4
 
 
-  - parent: reg:///registry/quests/agent_event_quests/kill_boss
+  - parent: reg:///registry/quests/agent_event_quests/kill_boss   # НАЙТИ И УНИЧТОЖИТЬ
     _cls: KillBossQuest
     needed_tags: ['mob_boss', 'whitehill']
     generation_max_count: 3
     reward_money: 400              # Награда за 1 убийство
     reward_karma: 1                # Награда за 1 убийство
-
-
-  - parent: reg:///registry/quests/delivery_quest/delivery_car
-    _cls: DeliveryCar
-    delivery_car_list:             # Список возможных комплектов для доставки
-      - reg:///registry/mobiles/cars/middle/cars/vw_beetle
-      - reg:///registry/mobiles/cars/middle/cars/vw_golf
-    recipient_list:                # Список возможных получателей доставки
-      - reg:///registry/institutions/mayor/prior_donnie_alma
-      - reg:///registry/institutions/trader/prior_hershey_la_palmas
-      - reg:///registry/institutions/trader/paloma_shaun_fisher

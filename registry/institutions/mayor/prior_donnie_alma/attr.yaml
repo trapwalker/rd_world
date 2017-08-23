@@ -235,7 +235,7 @@ quests:
       max: 4
 
 
-  - parent: reg:///registry/quests/agent_event_quests/kill_boss
+  - parent: reg:///registry/quests/agent_event_quests/kill_boss   # НАЙТИ И УНИЧТОЖИТЬ
     _cls: KillBossQuest
     needed_tags: ['mob_boss', 'prior']
     generation_max_count: 3

@@ -113,3 +113,20 @@ car_list:
   # tractors
 #  - reg:///registry/mobiles/cars/cargo/tractors/international_9800
 #  - reg:///registry/mobiles/cars/cargo/tractors/peterbilt_369
+
+quests:
+  - parent: reg:///registry/quests/delivery_quest/delivery_car   # ПЕРЕГНАТЬ ТРАНСПОРТ
+    _cls: DeliveryCar
+    delivery_car_list:             # Список возможных комплектов для доставки
+      - reg:///registry/mobiles/cars/light/motorcycles/honda_cy_50
+      - reg:///registry/mobiles/cars/light/motorcycles/jawa_cz_355
+      - reg:///registry/mobiles/cars/middle/cars/vw_beetle
+      - reg:///registry/mobiles/cars/middle/cars/vw_golf
+      - reg:///registry/mobiles/cars/middle/offroad/ford_econoline
+      - reg:///registry/mobiles/cars/middle/offroad/ford_f_150
+      - reg:///registry/mobiles/cars/middle/vans/barkas_b1000kb
+      - reg:///registry/mobiles/cars/middle/vans/citroen_hy
+    recipient_list:                # Список возможных получателей доставки
+      - reg:///registry/institutions/hangar/whitehill_junior_clarks
+      - reg:///registry/institutions/hangar/prior_clarence_jackson
+      - reg:///registry/institutions/hangar/paloma_george_martell
