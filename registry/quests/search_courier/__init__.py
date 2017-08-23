@@ -62,10 +62,11 @@ class SearchCourier(DeliveryFromCache):
         )
 
     def create_poi_container(self, event):
-        if self.deadline:
-            life_time = self.starttime + self.deadline - event.time
-        else:
-            life_time = event.server.poi_loot_objects_life_time
+        # info: так как фишка выпадает сразу, то трупу машинки не нужно ждать до окончания квеста
+        # if self.deadline:
+        #     life_time = self.starttime + self.deadline - event.time
+        # else:
+        life_time = event.server.poi_loot_objects_life_time
 
         items = []
         for item_example in self.loot_set:
