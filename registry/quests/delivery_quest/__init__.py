@@ -69,7 +69,7 @@ class DeliveryQuest(Quest):
             )
             return
         self.text_short = u"Доставьте груз в гороод {}.".format(self.recipient.hometown.title)
-        self.text = u"Доставьте груз: {} - к {} в гороод {}. Награда: {:.0f}nc и {:.0f}ед. опыта.".format(
+        self.text = u"Доставьте груз: {} - к {} в гороод {}. Награда: {:.0f}nc и {:.0f} ед. опыта.".format(
             ', '.join([item.title for item in self.delivery_set]),
             self.recipient.title,
             self.recipient.hometown.title,
