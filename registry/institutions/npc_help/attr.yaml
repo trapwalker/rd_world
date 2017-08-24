@@ -1,9 +1,8 @@
-﻿__cls__: Institution
-_cls: Institution
-doc: NucoilHelpNPC
-text: NucoilHelpNPC
-title: NucoilHelpNPC
-type: nucoil_help_npc
+﻿_cls  : Institution
+doc   : Помощь
+text  : Помощь
+title : Помощь
+type  : nucoil_help_npc
 
-photo: "static/content/institutions/npc_nucoil_help/help.png"
-abstract: false
+photo    : "static/content/institutions/npc_nucoil_help/help.png"
+abstract : false

@@ -38,8 +38,7 @@ buildings:
     caption: Мэрия
     title: Мэрия
     head: reg:///registry/institutions/mayor/prior_donnie_alma
-    instances:
-        - reg:///registry/institutions/mayor/prior_donnie_alma
+    instances: []
 
   - name: service
     caption: Автосервис
@@ -62,8 +61,7 @@ buildings:
     caption: Радиовышка
     title: Радиовышка
     head: reg:///registry/institutions/radio_dj/prior_billy_bob_phoenix
-    instances:
-        - reg:///registry/institutions/radio_dj/prior_billy_bob_phoenix
+    instances: []
 
 static_image_list:
     - /static/content/locations/map_locations/prior/service.png

@@ -3,5 +3,5 @@ _cls: DeliveryPassengerQuest
 
 list_icon: static/img/quests/icons/transfer.png
 
-caption: Доставка пассжаира
+caption: Доставка пассажира
 total_delivery_money_coef: 1 # Множитель общей стоимости награды за квест от стоимости доставляемого товара
