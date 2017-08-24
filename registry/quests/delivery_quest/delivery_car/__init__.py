@@ -31,8 +31,8 @@ class DeliveryCar(DeliveryQuest):
         return d
 
     def init_text(self, distance=None):
-        self.text_short = u"Доставьте ТС в гороод {}.".format(self.recipient.hometown.title)
-        self.text = u"Доставьте ТС: {} - к {} в гороод {}. Награда: {:.0f}nc и {:.0f} ед. опыта.".format(
+        self.text_short = u"Доставьте ТС в город {}.".format(self.recipient.hometown.title)
+        self.text = u"Доставьте ТС: {} - к {} в город {}. Награда: {:.0f}nc и {:.0f} ед. опыта.".format(
             self.dc.car_title,
             self.recipient.title,
             self.recipient.hometown.title,
