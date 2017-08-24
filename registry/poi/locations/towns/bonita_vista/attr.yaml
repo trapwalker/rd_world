@@ -1,5 +1,4 @@
-﻿__cls__  : Town
-_cls     : Town
+﻿_cls     : Town
 doc      : Бонита Виста
 abstract : false
 
@@ -37,8 +36,7 @@ buildings:
     caption: Мэрия
     title: Мэрия
     head: reg:///registry/institutions/mayor/bonita_vista_jack_lape
-    instances:
-        - reg:///registry/institutions/mayor/bonita_vista_jack_lape
+    instances: []
 
   - name: service
     caption: Автосервис

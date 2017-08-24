@@ -15,8 +15,7 @@ buildings:
     caption: Шахта
     title: Шахта
     head: reg:///registry/institutions/mine_manager/mine_whitehill_bob_mcdowell
-    instances:
-        - reg:///registry/institutions/mine_manager/mine_whitehill_bob_mcdowell
+    instances: []
 
 static_image_list:
     - /static/content/locations/map_locations/mine_whitehill/ground+circle.png
