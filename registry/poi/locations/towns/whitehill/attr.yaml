@@ -1,5 +1,4 @@
-﻿__cls__  : Town
-_cls     : Town
+﻿_cls     : Town
 doc      : Уайтхилл
 abstract : false
 
@@ -23,8 +22,7 @@ buildings:
     caption: Мэрия
     title: Главная Шахта
     head: reg:///registry/institutions/mayor/whitehill_manny_askorti
-    instances:
-        - reg:///registry/institutions/mayor/whitehill_manny_askorti
+    instances: []
 
   - name: bar
     caption: Бар

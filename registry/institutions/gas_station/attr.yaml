@@ -1,9 +1,8 @@
-﻿__cls__: Institution
-_cls: Institution
-doc: Заправка
-text: Заправка
-title: Gas Station
-type: npc_gas_station
+﻿_cls  : Institution
+doc   : Заправка
+text  : Заправка
+title : Заправка
+type  : npc_gas_station
 
-photo: "static/content/institutions/npc_gas_station/fuel.png"
-abstract: false
+photo    : "static/content/institutions/npc_gas_station/fuel.png"
+abstract : false

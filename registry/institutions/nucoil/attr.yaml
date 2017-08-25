@@ -1,12 +1,10 @@
-__cls__: Nukeoil
-_cls: Nukeoil
-doc: Nucoil
-text: Nucoil
-title: Nucoil
-photo: "static/content/institutions/nucoil/nukeoil_logo.png"
-abstract: false
-type: nucoil
-
+_cls     : Nukeoil
+doc      : Нукойл
+text     : Нукойл
+title    : Нукойл
+photo    : "static/content/institutions/nucoil/nukeoil_logo.png"
+abstract : false
+type     : nucoil
 
 insurance_list:
   - reg:///registry/items/quest_item/insurance/base
