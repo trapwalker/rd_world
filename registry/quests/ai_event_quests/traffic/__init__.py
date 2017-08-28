@@ -26,7 +26,6 @@ class AITrafficQuest(AIEventQuest):
     test_end_time = IntField(caption=u'Интервал проверки достижения цели')
     bots_karma = EmbeddedDocumentField(document_type=QuestRange, caption=u"Границы кармы")
     bots_level = EmbeddedDocumentField(document_type=QuestRange, caption=u"Уровни мобов")
-    bots_car_exp = EmbeddedDocumentField(document_type=QuestRange, caption=u"Exp за каждую машинку")
     routes = ListField(
         root_default=list,
         caption=u"Список маршрутов",
@@ -81,7 +80,6 @@ class AITrafficQuest(AIEventQuest):
             car_params=dict(
                 position=car_pos,
                 direction=random.random() * 2 * pi,
-                base_exp_price=self.bots_car_exp.get_random_int(),
             ))
 
         self.init_bot_inventory(car_example=car_example)

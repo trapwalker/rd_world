@@ -162,7 +162,6 @@ class AICaravanQuest(AIGangQuest):
             car_params=dict(
                 position=car_pos,
                 direction=random.random() * 2 * pi,
-                base_exp_price=self.bots_car_exp.get_random_int(),
             )
         )
 
