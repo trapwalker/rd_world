@@ -1,14 +1,14 @@
-﻿__cls__: PerkPartyPassive
-_cls: PerkPartyPassive
+﻿_cls: PerkPartyPassive
 abstract: false
 
 # Общие параметры перка
-title: Шкипер                                                                                # Название перка
-title__en: Skipper
-title__ru: Шкипер
-description: Увеличение опыта, получаемого в пати на 2% # Описание перка
-description__en: Increase the experience gained in the party by 2%
-description__ru: Увеличение опыта, получаемого в пати на 2%
+title:                                                                                       # Название перка
+    en: Skipper
+    ru: Шкипер
+
+description:                                                                                 # Описание перка
+    en: Increase the experience gained in the party by 2%
+    ru: Увеличение опыта, получаемого в пати на 2%
 
 # Условия доступности перка
 driving_req:      0      # Необходимый уровень прокачки Вождения

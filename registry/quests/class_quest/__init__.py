@@ -11,6 +11,7 @@ from functools import partial
 class ClassQuest(Quest):
 
     def init_text(self):
+        # TODO: ##LOCALIZATION
         self.text = u"Приключение начнется скоро."
         if self.current_state == 'first_out':
             self.text = u"Обратиться к тренеру и узнать больше про свою классовую цель.<br> Награда:<br>Exp 300"
@@ -40,7 +41,7 @@ class ClassQuest(Quest):
                         u"Найти наставника по классовой специализации.<br>" \
                         u"Награда: " \
                         u"Exp: 500, классовый артефакт {}.".format(
-                role_class.description__ru,
+                role_class.description,
                 teacher,
                 reward
             )
@@ -60,7 +61,7 @@ class ClassQuest(Quest):
                     note_class=notes.FirstOutNote,
                     time=event.time
                 )
-
+                # TODO: ##LOCALIZATION
                 role_class = quest.agent.profile.role_class
                 if role_class.title == "Chosen One":  quest.caption = u'Основать поселение'
                 elif role_class.title == "Alpha Wolf":  quest.caption = u'Создать клан'
@@ -76,6 +77,7 @@ class ClassQuest(Quest):
     ####################################################################################################################
     class visit_trainer(QuestState_):
         def on_enter_(self, quest, event):
+            # TODO: ##LOCALIZATION
             agent = quest.agent.profile
             agent.del_note(uid=quest.dc.first_out_note_uid, time=event.time)
             quest.dc.visit_trainer_note_uid = agent.add_note(
@@ -98,6 +100,7 @@ class ClassQuest(Quest):
     ####################################################################################################################
     class select_teacher(QuestState_):
         def on_enter_(self, quest, event):
+            # TODO: ##LOCALIZATION
             agent = quest.agent.profile
             quest.dc.select_teacher_note_uid = agent.add_note(
                 quest_uid=quest.uid,
@@ -108,6 +111,7 @@ class ClassQuest(Quest):
             )
 
         def on_event_(self, quest, event):
+            # TODO: ##LOCALIZATION
             go = partial(quest.go, event=event)
             agent = quest.agent.profile
             if isinstance(event, OnNote) and (event.note_uid == quest.dc.select_teacher_note_uid):
@@ -145,4 +149,5 @@ class ClassQuest(Quest):
     ####################################################################################################################
     class win(WinState):
         def on_enter_(self, quest, event):
+            # TODO: ##LOCALIZATION
             quest.log(text=u'Квест выполнен.', event=event)

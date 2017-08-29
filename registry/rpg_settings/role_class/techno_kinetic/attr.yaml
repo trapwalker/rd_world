@@ -1,42 +1,34 @@
-﻿__cls__: RoleClass
-_cls: RoleClass
+﻿_cls: RoleClass
 doc    : Преднастройки классов
 abstract: false
 
 title: Techno Kinetic
-description: Технокинетик
-description__en: Techno Kinetic
-description__ru: Технокинетик
+description:
+    en: Techno Kinetic
+    ru: Технокинетик
 
 description_char_window: |
     Класс: Технокинетик
     <br>Классовый навык: Механика
     <br>Классовый квест: Открыть собственный сервисный центр.
 
-console_description: >
-    Класс: Технокинетик
-    \nКлассовый навык: Механика
-    \nКлассовый квест: Открыть собственный сервисный центр.
-    \nОписание:
-    \nТехнокинетик - бесноватый ученый с всепоглощающей страстью к науке.
-    Общество моторов, реакторов, гаджетов и девайсов ему куда приятнее двуногой органики.
-    Начинает игру с классовым артефактом “Плутоний”. Навык механики качается быстрее.
-console_description__en: >
-    Class: Road Warrior
-    \nClass skill: Shoot
-    \nClass quest: Establish a settlement.
-    \nDescription:
-    \nThe Technokinetic is a mad scientist devoured by his passion for science.
-    He is much more into the company of engines, reactors, gadgets, and devices than that of biped organics.
-    He starts the game with Plutonium class artifact. The mechanics skill is developed faster.
-console_description__ru: >
-    Класс: Технокинетик
-    \nКлассовый навык: Механика
-    \nКлассовый квест: Открыть собственный сервисный центр.
-    \nОписание:
-    \nТехнокинетик - бесноватый ученый с всепоглощающей страстью к науке.
-    Общество моторов, реакторов, гаджетов и девайсов ему куда приятнее двуногой органики.
-    Начинает игру с классовым артефактом “Плутоний”. Навык механики качается быстрее.
+console_description:
+    en: >
+        Class: Road Warrior
+        \nClass skill: Shoot
+        \nClass quest: Establish a settlement.
+        \nDescription:
+        \nThe Technokinetic is a mad scientist devoured by his passion for science.
+        He is much more into the company of engines, reactors, gadgets, and devices than that of biped organics.
+        He starts the game with Plutonium class artifact. The mechanics skill is developed faster.
+    ru: >
+        Класс: Технокинетик
+        \nКлассовый навык: Механика
+        \nКлассовый квест: Открыть собственный сервисный центр.
+        \nОписание:
+        \nТехнокинетик - бесноватый ученый с всепоглощающей страстью к науке.
+        Общество моторов, реакторов, гаджетов и девайсов ему куда приятнее двуногой органики.
+        Начинает игру с классовым артефактом “Плутоний”. Навык механики качается быстрее.
 
 icon: static/content/class-icons/tk.png
 

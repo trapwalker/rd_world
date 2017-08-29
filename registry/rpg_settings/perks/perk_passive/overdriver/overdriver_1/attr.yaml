@@ -1,14 +1,14 @@
-﻿__cls__: PerkPassive
-_cls: PerkPassive
+﻿_cls: PerkPassive
 abstract: false
 
 # Общие параметры перка
-title: Овердрайвер                                                          # Название перка
-title__en: Overdriver
-title__ru: Овердрайвер
-description: Повышение максимального значения прочности транспорта на 2%    # Описание перка
-description__en: Increasing the maximum transport strength 2%
-description__ru: Повышение максимального значения прочности транспорта на 2%
+title:                                                                      # Название перка
+    en: Overdriver
+    ru: Овердрайвер
+
+description:                                                                # Описание перка
+    en: Increasing the maximum transport strength 2%
+    ru: Повышение максимального значения прочности транспорта на 2%
 
 # Условия доступности перка
 driving_req:      0      # Необходимый уровень прокачки Вождения
