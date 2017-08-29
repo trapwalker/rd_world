@@ -1,8 +1,9 @@
-﻿__cls__ : Car
-_cls : Car
-doc     : Грузовой класс (тягачи)
+﻿_cls : Car
+doc  : Грузовой класс (тягачи)
 
 sub_class_car: tractors
+
+base_exp_price: 1.3213
 
 # Резисты эффектов зон
 r_cc_dirt:                0.20    # Резист к модификатору CC на бездорожье

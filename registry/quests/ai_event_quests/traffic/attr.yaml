@@ -4,7 +4,6 @@ doc    : Квесты
 
 bots_karma: {min: -10, max: 10}
 bots_level: {min: 0, max: 2}
-bots_car_exp: {min: 2, max: 4}
 
 max_loot_count: 3
 loot_rec_list:
