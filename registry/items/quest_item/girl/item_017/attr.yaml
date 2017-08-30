@@ -1,17 +1,27 @@
-﻿__cls__  : QuestItem
-_cls     : QuestItem
+﻿_cls     : QuestItem
 doc      : Item_017
 abstract : false
 
-title       : На память
-description : "Бонус: 2 очка в навык Вождение."
+title:
+    en: На память  #TODO: ##LOCALIZATION
+    ru: На память
+
+description:
+    en: "Бонус: 2 очка в навык Вождение."  #TODO: ##LOCALIZATION
+    ru: "Бонус: 2 очка в навык Вождение."
+
 group_id    : ""
 
 base_price : 0
 stack_size : 1
 
-effect_title       : Бонус
-effect_description : 2 очка в навык Вождение
+effect_title:
+    en: Бонус  #TODO: ##LOCALIZATION
+    ru: Бонус
+
+effect_description:
+    en: 2 очка в навык Вождение  #TODO: ##LOCALIZATION
+    ru: 2 очка в навык Вождение
 
 driving  : 2
 deadline : 43200

@@ -1,17 +1,27 @@
-﻿__cls__  : QuestItem
-_cls     : QuestItem
+﻿_cls     : QuestItem
 doc      : Item_015
 abstract : false
 
-title       : На память
-description : "Бонус: 1 очко в навык Торговля."
+title:
+    en: На память  #TODO: ##LOCALIZATION
+    ru: На память
+
+description:
+    en: "Бонус: 1 очко в навык Торговля."  #TODO: ##LOCALIZATION
+    ru: "Бонус: 1 очко в навык Торговля."
+
 group_id    : ""
 
 base_price : 0
 stack_size : 1
 
-effect_title       : Бонус
-effect_description : 1 очко в навык Торговля
+effect_title:
+    en: Бонус  #TODO: ##LOCALIZATION
+    ru: Бонус
+
+effect_description:
+    en: 1 очко в навык Торговля  #TODO: ##LOCALIZATION
+    ru: 1 очко в навык Торговля
 
 trading  : 1
 deadline : 43200

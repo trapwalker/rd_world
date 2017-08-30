@@ -1,17 +1,26 @@
-﻿__cls__ : QuestItem
-_cls    : QuestItem
-doc     : Пассажир (девушка)
+﻿_cls: QuestItem
+doc: Пассажир (девушка)
 
 group_id: "quest_item_1"
 deadline: 180
 
-effect_title: "Труба"
-effect_description: "Улучшает вождение, ухудшает стрельбу, повышает обзор"
+effect_title:
+    en: "Труба"  #TODO: ##LOCALIZATION
+    ru: "Труба"
+
+effect_description:
+    en: "Улучшает вождение, ухудшает стрельбу, повышает обзор"  #TODO: ##LOCALIZATION
+    ru: "Улучшает вождение, ухудшает стрельбу, повышает обзор"
 
 abstract : false
 
-title       : QuestItem Пассажир
-description : QuestItem Пассажир
+title:
+    en: QuestItem Пассажир  #TODO: ##LOCALIZATION
+    ru: QuestItem Пассажир
+
+description:
+    en: QuestItem Пассажир  #TODO: ##LOCALIZATION
+    ru: QuestItem Пассажир
 
 base_price : 0
 stack_size : 1
@@ -20,7 +29,6 @@ inv_icon_big    : static/content/items/passengers/female_1/big.png
 inv_icon_mid    : static/content/items/passengers/female_1/mid.png
 inv_icon_small  : static/content/items/passengers/female_1/mid.png
 inv_icon_xsmall : static/content/items/passengers/female_1/mid.png
-
 
 driving:  5
 shooting: -5

@@ -1,17 +1,27 @@
-﻿__cls__  : QuestItem
-_cls     : QuestItem
+﻿_cls     : QuestItem
 doc      : Item_032
 abstract : false
 
-title       : На память
-description : "Бонус: 20 очков в навык Скрытность."
+title:
+    en: На память  #TODO: ##LOCALIZATION
+    ru: На память
+
+description:
+    en: "Бонус: 20 очков в навык Скрытность."  #TODO: ##LOCALIZATION
+    ru: "Бонус: 20 очков в навык Скрытность."
+
 group_id    : ""
 
 base_price : 0
 stack_size : 1
 
-effect_title       : Бонус
-effect_description : 20 очков в навык Скрытность
+effect_title:
+    en: Бонус  #TODO: ##LOCALIZATION
+    ru: Бонус
+
+effect_description:
+    en: 20 очков в навык Скрытность  #TODO: ##LOCALIZATION
+    ru: 20 очков в навык Скрытность
 
 masking  : 20
 deadline : 43200

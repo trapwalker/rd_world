@@ -1,17 +1,27 @@
-﻿__cls__  : QuestItem
-_cls     : QuestItem
+﻿_cls     : QuestItem
 doc      : Item_025
 abstract : false
 
-title       : На память
-description : "Штраф: 15 очков в навыки Механика и Скрытность."
+title:
+    en: На память  #TODO: ##LOCALIZATION
+    ru: На память
+
+description:
+    en: "Штраф: 15 очков в навыки Механика и Скрытность."  #TODO: ##LOCALIZATION
+    ru: "Штраф: 15 очков в навыки Механика и Скрытность."
+
 group_id    : ""
 
 base_price : 0
 stack_size : 1
 
-effect_title       : Штраф
-effect_description : 15 очков в навыки Механика и Скрытность
+effect_title:
+    en: Штраф  #TODO: ##LOCALIZATION
+    ru: Штраф
+
+effect_description:
+    en: 15 очков в навыки Механика и Скрытность  #TODO: ##LOCALIZATION
+    ru: 15 очков в навыки Механика и Скрытность
 
 engineering : 15
 masking     : 15

@@ -1,17 +1,27 @@
-﻿__cls__  : QuestItem
-_cls     : QuestItem
+﻿_cls     : QuestItem
 doc      : Item_033
 abstract : false
 
-title       : На память
-description : "Бонус: 20 очков в навык Лидерство."
+title:
+    en: На память  #TODO: ##LOCALIZATION
+    ru: На память
+
+description:
+    en: "Бонус: 20 очков в навык Лидерство."  #TODO: ##LOCALIZATION
+    ru: "Бонус: 20 очков в навык Лидерство."
+
 group_id    : ""
 
 base_price : 0
 stack_size : 1
 
-effect_title       : Бонус
-effect_description : 20 очков в навык Лидерство
+effect_title:
+    en: Бонус  #TODO: ##LOCALIZATION
+    ru: Бонус
+
+effect_description:
+    en: 20 очков в навык Лидерство  #TODO: ##LOCALIZATION
+    ru: 20 очков в навык Лидерство
 
 leading  : 20
 deadline : 43200
