@@ -2,7 +2,10 @@
 doc    : Преднастройки классов
 abstract: false
 
-title: Alpha Wolf
+title: 
+    en: Alpha Wolf  #TODO: ##LOCALIZATION
+    ru: Alpha Wolf
+
 description:
     en: Alpha Wolf
     ru: Альфа-волк

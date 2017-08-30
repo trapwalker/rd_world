@@ -3,8 +3,14 @@ _cls        : BuildSet
 doc            : Ремкомплект (малый)
 abstract       : false
 
-title          : Ремкомплект (малый)
-description    : Слегка подлатает машину в пути.
+title: 
+    en: Ремкомплект (малый)  #TODO: ##LOCALIZATION
+    ru: Ремкомплект (малый)
+
+description: 
+    en: Слегка подлатает машину в пути.  #TODO: ##LOCALIZATION
+    ru: Слегка подлатает машину в пути.
+
 
 base_price     : 100
 build_points   : 35

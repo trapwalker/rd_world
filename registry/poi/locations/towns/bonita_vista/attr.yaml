@@ -2,7 +2,10 @@
 doc      : Бонита Виста
 abstract : false
 
-title             : Бонита Виста
+title: 
+    en: Бонита Виста  #TODO: ##LOCALIZATION
+    ru: Бонита Виста
+
 position          : {x: 12507391, y: 27030055}
 p_observing_range : 500
 p_enter_range     : 365

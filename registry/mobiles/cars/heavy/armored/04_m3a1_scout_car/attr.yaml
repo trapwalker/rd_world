@@ -1,5 +1,8 @@
 ﻿_cls : Car
-title:       "M3A1 Scout Car"    # Модель атомобиля
+title:                           # Модель атомобиля
+    en: "M3A1 Scout Car"  #TODO: ##LOCALIZATION
+    ru: "M3A1 Scout Car"
+
 class_car:                       # Класс автомобиля
     en: "Тяжелый"  # TODO: ##LOCALIZATION
     ru: "Тяжелый"

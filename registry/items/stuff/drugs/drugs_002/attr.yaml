@@ -4,8 +4,14 @@ doc     : Каннабис
 
 abstract : false
 
-title       : Каннабис
-description : Упаковка конопли.
+title: 
+    en: Каннабис  #TODO: ##LOCALIZATION
+    ru: Каннабис
+
+description: 
+    en: Упаковка конопли.  #TODO: ##LOCALIZATION
+    ru: Упаковка конопли.
+
 
 base_price : 25
 stack_size : 1

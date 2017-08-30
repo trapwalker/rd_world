@@ -4,8 +4,14 @@ doc     : Металлолом
 
 abstract : false
 
-title       : Металлолом
-description : Всякий хлам.
+title: 
+    en: Металлолом  #TODO: ##LOCALIZATION
+    ru: Металлолом
+
+description: 
+    en: Всякий хлам.  #TODO: ##LOCALIZATION
+    ru: Всякий хлам.
+
 
 base_price : 25
 stack_size : 1

@@ -4,8 +4,14 @@ doc     : Теплая одежда №1
 
 abstract : false
 
-title       : Теплая одежда №1
-description : Небольшой тюк разной теплой одежды.
+title: 
+    en: Теплая одежда №1  #TODO: ##LOCALIZATION
+    ru: Теплая одежда №1
+
+description: 
+    en: Небольшой тюк разной теплой одежды.  #TODO: ##LOCALIZATION
+    ru: Небольшой тюк разной теплой одежды.
+
 
 base_price : 13
 stack_size : 1

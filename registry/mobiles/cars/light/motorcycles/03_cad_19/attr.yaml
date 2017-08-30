@@ -1,5 +1,8 @@
 ﻿_cls : Car
-title:       "CAD 19"            # Модель атомобиля
+title:                           # Модель атомобиля
+    en: "CAD 19"  #TODO: ##LOCALIZATION
+    ru: "CAD 19"
+
 class_car:                       # Класс автомобиля
     en: "Легкий"  # TODO: ##LOCALIZATION
     ru: "Легкий"

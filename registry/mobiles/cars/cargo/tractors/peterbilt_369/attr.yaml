@@ -1,5 +1,8 @@
 ﻿_cls : Car
-title:       "P369"              # Модель атомобиля
+title:                           # Модель атомобиля
+    en: "P369"  #TODO: ##LOCALIZATION
+    ru: "P369"
+
 class_car:                       # Класс автомобиля
     en: "Грузовой"  # TODO: ##LOCALIZATION
     ru: "Грузовой"

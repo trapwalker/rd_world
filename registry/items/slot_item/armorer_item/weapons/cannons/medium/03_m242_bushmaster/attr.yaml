@@ -2,9 +2,15 @@
 doc             : Пушка M242 Bushmaster
 abstract        : false
 
-title           : Пушка<br>M242 Bushmaster                 # Краткое название - отобразится в слоте инвентаря
+title:                                                     # Краткое название - отобразится в слоте инвентаря
+    en: Пушка<br>M242 Bushmaster  #TODO: ##LOCALIZATION
+    ru: Пушка<br>M242 Bushmaster
+
 # Полное описание - отобразится в разделе описания в инвентаре
-description     : '???'
+description: 
+    en: '???'  #TODO: ##LOCALIZATION
+    ru: '???'
+
 
 # Основные балансные настройки
 base_price      : 1900                                     # Цена

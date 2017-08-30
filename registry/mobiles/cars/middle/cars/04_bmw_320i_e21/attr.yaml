@@ -1,5 +1,8 @@
 ﻿_cls : Car
-title:       "320i E21"             # Модель атомобиля
+title:                              # Модель атомобиля
+    en: "320i E21"  #TODO: ##LOCALIZATION
+    ru: "320i E21"
+
 class_car:                          # Класс автомобиля
     en: "Средний"  # TODO: ##LOCALIZATION
     ru: "Средний"

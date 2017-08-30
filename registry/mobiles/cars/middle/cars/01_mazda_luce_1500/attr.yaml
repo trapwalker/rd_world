@@ -1,5 +1,8 @@
 ﻿_cls : Car
-title:       "Luce 1500"            # Модель атомобиля
+title:                              # Модель атомобиля
+    en: "Luce 1500"  #TODO: ##LOCALIZATION
+    ru: "Luce 1500"
+
 class_car:                          # Класс автомобиля
     en: "Средний"  # TODO: ##LOCALIZATION
     ru: "Средний"

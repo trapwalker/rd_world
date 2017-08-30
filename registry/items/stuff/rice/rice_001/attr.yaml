@@ -4,8 +4,14 @@ doc     : Рис (мешок)
 
 abstract : false
 
-title       : Рис (мешок)
-description : Большой мешок риса.
+title: 
+    en: Рис (мешок)  #TODO: ##LOCALIZATION
+    ru: Рис (мешок)
+
+description: 
+    en: Большой мешок риса.  #TODO: ##LOCALIZATION
+    ru: Большой мешок риса.
+
 
 base_price : 25
 stack_size : 1

@@ -2,9 +2,15 @@
 doc             : Пулемет MG 18 TuF
 abstract        : false
 
-title           : Пулемет<br>MG 18 TuF                        # Краткое название - отобразится в слоте инвентаря
+title:                                                        # Краткое название - отобразится в слоте инвентаря
+    en: Пулемет<br>MG 18 TuF  #TODO: ##LOCALIZATION
+    ru: Пулемет<br>MG 18 TuF
+
 # Полное описание - отобразится в разделе описания в инвентаре
-description     : '???'
+description: 
+    en: '???'  #TODO: ##LOCALIZATION
+    ru: '???'
+
 
 # Основные балансные настройки
 base_price      : 3600                                        # Цена

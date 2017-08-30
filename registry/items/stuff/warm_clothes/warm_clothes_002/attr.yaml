@@ -4,8 +4,14 @@ doc     : Теплая одежда №2
 
 abstract : false
 
-title       : Теплая одежда №2
-description : Ящик разной теплой одежды.
+title: 
+    en: Теплая одежда №2  #TODO: ##LOCALIZATION
+    ru: Теплая одежда №2
+
+description: 
+    en: Ящик разной теплой одежды.  #TODO: ##LOCALIZATION
+    ru: Ящик разной теплой одежды.
+
 
 base_price : 25
 stack_size : 1

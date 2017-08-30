@@ -9,8 +9,14 @@ inv_icon_big:   static/content/items/slot_item/tuner_item/visor/visor_003/big.pn
 inv_icon_mid:   static/content/items/slot_item/tuner_item/visor/visor_003/mid.png
 inv_icon_small: static/content/items/slot_item/tuner_item/visor/visor_003/small.png
 
-title: Visor 003   # Краткое название - отобразится в слоте инвентаря
-description: Visor 033   # Полное описание - отобразится в разделе описания в инвентаре
+title:             # Краткое название - отобразится в слоте инвентаря
+    en: Visor 003  #TODO: ##LOCALIZATION
+    ru: Visor 003
+
+description:             # Полное описание - отобразится в разделе описания в инвентаре
+    en: Visor 033  #TODO: ##LOCALIZATION
+    ru: Visor 033
+
 base_price: 100   # Цена
 
 pont_points: 50

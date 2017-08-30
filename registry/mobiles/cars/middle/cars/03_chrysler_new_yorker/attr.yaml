@@ -1,5 +1,8 @@
 ﻿_cls : Car
-title:       "New Yorker"           # Модель атомобиля
+title:                              # Модель атомобиля
+    en: "New Yorker"  #TODO: ##LOCALIZATION
+    ru: "New Yorker"
+
 class_car:                          # Класс автомобиля
     en: "Средний"  # TODO: ##LOCALIZATION
     ru: "Средний"

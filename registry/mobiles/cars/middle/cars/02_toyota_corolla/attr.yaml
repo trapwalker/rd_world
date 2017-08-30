@@ -1,5 +1,8 @@
 ﻿_cls : Car
-title:       "Corolla"              # Модель атомобиля
+title:                              # Модель атомобиля
+    en: "Corolla"  #TODO: ##LOCALIZATION
+    ru: "Corolla"
+
 class_car:                          # Класс автомобиля
     en: "Средний"  # TODO: ##LOCALIZATION
     ru: "Средний"

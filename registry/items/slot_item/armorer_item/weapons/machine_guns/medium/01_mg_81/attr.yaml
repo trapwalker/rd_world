@@ -3,9 +3,15 @@ _cls            : MachineGun
 doc             : Пулемет MG 81
 abstract        : false
 
-title           : Пулемет<br>MG 81                           # Краткое название - отобразится в слоте инвентаря
+title:                                                       # Краткое название - отобразится в слоте инвентаря
+    en: Пулемет<br>MG 81  #TODO: ##LOCALIZATION
+    ru: Пулемет<br>MG 81
+
 # Полное описание - отобразится в разделе описания в инвентаре
-description     : '???'
+description: 
+    en: '???'  #TODO: ##LOCALIZATION
+    ru: '???'
+
 
 # Основные балансные настройки
 base_price      : 950                                        # Цена

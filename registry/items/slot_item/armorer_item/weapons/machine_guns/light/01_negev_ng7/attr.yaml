@@ -3,9 +3,15 @@ _cls            : MachineGun
 doc             : Пулемет Negev NG7
 abstract        : false
 
-title           : Пулемет<br>Negev NG7                       # Краткое название - отобразится в слоте инвентаря
+title:                                                       # Краткое название - отобразится в слоте инвентаря
+    en: Пулемет<br>Negev NG7  #TODO: ##LOCALIZATION
+    ru: Пулемет<br>Negev NG7
+
 # Полное описание - отобразится в разделе описания в инвентаре
-description     : '???'
+description: 
+    en: '???'  #TODO: ##LOCALIZATION
+    ru: '???'
+
 
 # Основные балансные настройки
 base_price      : 350                                        # Цена

@@ -1,5 +1,8 @@
 ﻿_cls : Car
-title:       "Challenger"           # Модель атомобиля
+title:                              # Модель атомобиля
+    en: "Challenger"  #TODO: ##LOCALIZATION
+    ru: "Challenger"
+
 class_car:                          # Класс автомобиля
     en: "Средний"  # TODO: ##LOCALIZATION
     ru: "Средний"

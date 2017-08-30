@@ -1,5 +1,8 @@
 ﻿_cls : Car
-title:       "I9800"             # Модель атомобиля
+title:                           # Модель атомобиля
+    en: "I9800"  #TODO: ##LOCALIZATION
+    ru: "I9800"
+
 class_car:                       # Класс автомобиля
     en: "Грузовой"  # TODO: ##LOCALIZATION
     ru: "Грузовой"

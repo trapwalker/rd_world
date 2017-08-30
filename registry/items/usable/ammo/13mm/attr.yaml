@@ -3,8 +3,14 @@ _cls     : AmmoBullets
 doc      : Патроны 13мм/ББ
 abstract : false
 
-title       : Патроны<br>13мм/ББ
-description : '???'
+title: 
+    en: Патроны<br>13мм/ББ  #TODO: ##LOCALIZATION
+    ru: Патроны<br>13мм/ББ
+
+description: 
+    en: '???'  #TODO: ##LOCALIZATION
+    ru: '???'
+
 
 stack_size : 100
 amount     : 100

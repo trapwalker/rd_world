@@ -1,5 +1,8 @@
 ﻿_cls : Car
-title:       "Truck 521"         # Модель атомобиля
+title:                           # Модель атомобиля
+    en: "Truck 521"  #TODO: ##LOCALIZATION
+    ru: "Truck 521"
+
 class_car:                          # Класс автомобиля
     en: "Средний"  # TODO: ##LOCALIZATION
     ru: "Средний"

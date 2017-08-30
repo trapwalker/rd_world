@@ -1,5 +1,8 @@
 ﻿_cls : Car
-title:       "Monte Carlo"          # Модель атомобиля
+title:                              # Модель атомобиля
+    en: "Monte Carlo"  #TODO: ##LOCALIZATION
+    ru: "Monte Carlo"
+
 class_car:                          # Класс автомобиля
     en: "Средний"  # TODO: ##LOCALIZATION
     ru: "Средний"

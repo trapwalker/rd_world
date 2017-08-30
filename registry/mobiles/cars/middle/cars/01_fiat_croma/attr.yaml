@@ -1,5 +1,8 @@
 ﻿_cls : Car
-title:       "Croma"                # Модель атомобиля
+title:                              # Модель атомобиля
+    en: "Croma"  #TODO: ##LOCALIZATION
+    ru: "Croma"
+
 class_car:                          # Класс автомобиля
     en: "Средний"  # TODO: ##LOCALIZATION
     ru: "Средний"

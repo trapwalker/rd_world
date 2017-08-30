@@ -1,6 +1,9 @@
 ﻿__cls__           : MapWeaponBangMine
 _cls           : MapWeaponBangMine
-title             : mine_ttt   # Название мины
+title:                         # Название мины
+    en: mine_ttt  #TODO: ##LOCALIZATION
+    ru: mine_ttt
+
 
 p_observing_range : 40         # Радиус срабатывания мины
 

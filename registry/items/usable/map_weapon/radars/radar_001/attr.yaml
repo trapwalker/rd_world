@@ -2,8 +2,14 @@
 _cls  : MapRadarItem
 abstract : false
 
-title       : Радар 001
-description : Американский переносной противотанковый ракетный РАДАР.
+title: 
+    en: Радар 001  #TODO: ##LOCALIZATION
+    ru: Радар 001
+
+description: 
+    en: Американский переносной противотанковый ракетный РАДАР.  #TODO: ##LOCALIZATION
+    ru: Американский переносной противотанковый ракетный РАДАР.
+
 activate_time : 2.0
 
 base_price : 300

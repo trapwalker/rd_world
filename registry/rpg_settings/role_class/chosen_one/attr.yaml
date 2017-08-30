@@ -2,7 +2,10 @@
 doc    : Преднастройки классов
 abstract: false
 
-title: Chosen One
+title: 
+    en: Chosen One  #TODO: ##LOCALIZATION
+    ru: Chosen One
+
 description:
     en: Chosen One
     ru: Избранный

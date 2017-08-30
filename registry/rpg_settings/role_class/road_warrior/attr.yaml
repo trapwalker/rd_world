@@ -2,7 +2,10 @@
 doc    : Преднастройки классов
 abstract: false
 
-title: Road Warrior
+title: 
+    en: Road Warrior  #TODO: ##LOCALIZATION
+    ru: Road Warrior
+
 description:
     en: Road Warrior
     ru: Воин дорог

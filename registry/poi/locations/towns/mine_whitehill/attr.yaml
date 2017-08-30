@@ -3,7 +3,10 @@ _cls     : Town
 doc      : Роули Майн   # Шахта возле города Вайтхилл
 abstract : false
 
-title             : Роули Майн
+title: 
+    en: Роули Майн  #TODO: ##LOCALIZATION
+    ru: Роули Майн
+
 position          : {x: 12480179, y: 27046007}
 p_observing_range : 250
 p_enter_range     : 150

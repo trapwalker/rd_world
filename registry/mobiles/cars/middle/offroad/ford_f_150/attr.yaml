@@ -1,5 +1,8 @@
 ﻿_cls : Car
-title:       "F-150"             # Модель атомобиля
+title:                           # Модель атомобиля
+    en: "F-150"  #TODO: ##LOCALIZATION
+    ru: "F-150"
+
 class_car:                          # Класс автомобиля
     en: "Средний"  # TODO: ##LOCALIZATION
     ru: "Средний"

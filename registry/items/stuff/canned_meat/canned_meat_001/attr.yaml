@@ -4,8 +4,14 @@ doc     : Мясные консервы
 
 abstract : false
 
-title       : Мясные консервы
-description : Ящик с мясными консервами.
+title: 
+    en: Мясные консервы  #TODO: ##LOCALIZATION
+    ru: Мясные консервы
+
+description: 
+    en: Ящик с мясными консервами.  #TODO: ##LOCALIZATION
+    ru: Ящик с мясными консервами.
+
 
 base_price : 125
 stack_size : 1

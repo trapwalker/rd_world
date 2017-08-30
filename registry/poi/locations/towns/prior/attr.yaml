@@ -3,7 +3,10 @@ _cls     : Town
 doc      : Прайр
 abstract : false
 
-title             : Прайр
+title: 
+    en: Прайр  #TODO: ##LOCALIZATION
+    ru: Прайр
+
 position          : {x: 12539432, y: 27043853}
 p_observing_range : 500
 p_enter_range     : 365

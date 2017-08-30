@@ -2,7 +2,10 @@
 doc    : Преднастройки классов
 abstract: false
 
-title: Night Rider
+title: 
+    en: Night Rider  #TODO: ##LOCALIZATION
+    ru: Night Rider
+
 description:
     en: Night Rider
     ru: Ночной ездок

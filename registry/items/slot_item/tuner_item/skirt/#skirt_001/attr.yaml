@@ -9,8 +9,14 @@ inv_icon_big: static/content/items/slot_item/tuner_item/skirt/wmg_pkt/big.png
 inv_icon_mid: static/content/items/slot_item/tuner_item/skirt/wmg_pkt/mid.png
 inv_icon_small: static/content/items/slot_item/tuner_item/skirt/wmg_pkt/small.png
 
-title: Skirt 001   # Краткое название - отобразится в слоте инвентаря
-description: Обвес   # Полное описание - отобразится в разделе описания в инвентаре
+title:             # Краткое название - отобразится в слоте инвентаря
+    en: Skirt 001  #TODO: ##LOCALIZATION
+    ru: Skirt 001
+
+description:         # Полное описание - отобразится в разделе описания в инвентаре
+    en: Обвес  #TODO: ##LOCALIZATION
+    ru: Обвес
+
 base_price: 100   # Цена
 
 pont_points: 50

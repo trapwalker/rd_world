@@ -4,8 +4,14 @@ doc     : Кокаин
 
 abstract : false
 
-title       : Кокаин
-description : Несколько упаковок кокаина.
+title: 
+    en: Кокаин  #TODO: ##LOCALIZATION
+    ru: Кокаин
+
+description: 
+    en: Несколько упаковок кокаина.  #TODO: ##LOCALIZATION
+    ru: Несколько упаковок кокаина.
+
 
 base_price : 38
 stack_size : 1

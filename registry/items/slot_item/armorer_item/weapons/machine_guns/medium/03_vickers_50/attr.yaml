@@ -3,9 +3,15 @@ _cls            : MachineGun
 doc             : Пулемет Vickers .50
 abstract        : false
 
-title           : Пулемет<br>Vickers .50                      # Краткое название - отобразится в слоте инвентаря
+title:                                                        # Краткое название - отобразится в слоте инвентаря
+    en: Пулемет<br>Vickers .50  #TODO: ##LOCALIZATION
+    ru: Пулемет<br>Vickers .50
+
 # Полное описание - отобразится в разделе описания в инвентаре
-description     : '???'
+description: 
+    en: '???'  #TODO: ##LOCALIZATION
+    ru: '???'
+
 
 # Основные балансные настройки
 base_price      : 1350                                        # Цена

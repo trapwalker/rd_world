@@ -1,5 +1,8 @@
 ﻿_cls : Car
-title:       "Int. Dimex"     # Модель атомобиля
+title:                        # Модель атомобиля
+    en: "Int. Dimex"  #TODO: ##LOCALIZATION
+    ru: "Int. Dimex"
+
 class_car:                    # Класс автомобиля
     en: "Грузовой"  # TODO: ##LOCALIZATION
     ru: "Грузовой"

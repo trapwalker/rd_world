@@ -1,5 +1,8 @@
 ﻿_cls : Car
-title:       "SL90"              # Модель атомобиля
+title:                           # Модель атомобиля
+    en: "SL90"  #TODO: ##LOCALIZATION
+    ru: "SL90"
+
 class_car:                       # Класс автомобиля
     en: "Тяжелый"  # TODO: ##LOCALIZATION
     ru: "Тяжелый"

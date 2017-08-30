@@ -2,7 +2,10 @@
 _cls: RoleClass
 doc    : Преднастройки классов
 
-title: Абстрактный ролевой класс
+title: 
+    en: Абстрактный ролевой класс  #TODO: ##LOCALIZATION
+    ru: Абстрактный ролевой класс
+
 emblem: ""
 
 start_free_point_skills: 10  # Стартовые очки навыков

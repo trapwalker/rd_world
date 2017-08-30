@@ -4,8 +4,14 @@ doc     : Самогон
 
 abstract : false
 
-title       : Самогон
-description : Самодельный алкоголь.
+title: 
+    en: Самогон  #TODO: ##LOCALIZATION
+    ru: Самогон
+
+description: 
+    en: Самодельный алкоголь.  #TODO: ##LOCALIZATION
+    ru: Самодельный алкоголь.
+
 
 base_price : 63
 stack_size : 1

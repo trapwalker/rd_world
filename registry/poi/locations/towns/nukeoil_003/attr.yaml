@@ -3,7 +3,10 @@ _cls     : Town
 doc      : Nukeoil_003
 abstract : false
 
-title             : Nukeoil_003
+title: 
+    en: Nukeoil_003  #TODO: ##LOCALIZATION
+    ru: Nukeoil_003
+
 position          : {x: 12493500, y: 27048851}   # Заправка между Паломой и Вайтхилом
 p_observing_range : 250
 p_enter_range     : 150

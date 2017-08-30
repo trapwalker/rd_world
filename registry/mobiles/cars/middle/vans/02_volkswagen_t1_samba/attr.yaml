@@ -1,5 +1,8 @@
 ﻿_cls : Car
-title:       "T1 Samba"         # Модель атомобиля
+title:                          # Модель атомобиля
+    en: "T1 Samba"  #TODO: ##LOCALIZATION
+    ru: "T1 Samba"
+
 class_car:                          # Класс автомобиля
     en: "Средний"  # TODO: ##LOCALIZATION
     ru: "Средний"

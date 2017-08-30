@@ -3,7 +3,10 @@ _cls     : Town
 doc      : Nukeoil_001
 abstract : false
 
-title             : Nukeoil_001
+title: 
+    en: Nukeoil_001  #TODO: ##LOCALIZATION
+    ru: Nukeoil_001
+
 position          : {x: 12538825, y: 27043825}   # Заправка возле Прайра
 p_observing_range : 250
 p_enter_range     : 150

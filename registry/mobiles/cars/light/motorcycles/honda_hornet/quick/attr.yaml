@@ -1,5 +1,8 @@
 ﻿_cls : Car
-title:       "Hornet"            # Модель атомобиля
+title:                           # Модель атомобиля
+    en: "Hornet"  #TODO: ##LOCALIZATION
+    ru: "Hornet"
+
 class_car:                       # Класс автомобиля
     en: "Легкий"  # TODO: ##LOCALIZATION
     ru: "Легкий"

@@ -4,8 +4,14 @@ doc     : Консервы мясные
 
 abstract : false
 
-title       : Консервы мясные
-description : Несколько мясных консерв.
+title: 
+    en: Консервы мясные  #TODO: ##LOCALIZATION
+    ru: Консервы мясные
+
+description: 
+    en: Несколько мясных консерв.  #TODO: ##LOCALIZATION
+    ru: Несколько мясных консерв.
+
 
 base_price : 25
 stack_size : 1

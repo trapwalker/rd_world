@@ -1,5 +1,8 @@
 ﻿_cls : Car
-title:       "Delta HF Integrale"   # Модель атомобиля
+title:                              # Модель атомобиля
+    en: "Delta HF Integrale"  #TODO: ##LOCALIZATION
+    ru: "Delta HF Integrale"
+
 class_car:                          # Класс автомобиля
     en: "Средний"  # TODO: ##LOCALIZATION
     ru: "Средний"

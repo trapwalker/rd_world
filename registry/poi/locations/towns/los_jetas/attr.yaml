@@ -2,7 +2,10 @@
 doc      : Лос Хэтас   # База злых мобов
 abstract : false
 
-title             : Лос Хэтас
+title: 
+    en: Лос Хэтас  #TODO: ##LOCALIZATION
+    ru: Лос Хэтас
+
 position          : {x: 12472562, y: 27043861}
 p_observing_range : 250
 p_enter_range     : 150

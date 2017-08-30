@@ -2,7 +2,10 @@
 doc    : Преднастройки классов
 abstract: false
 
-title: Techno Kinetic
+title: 
+    en: Techno Kinetic  #TODO: ##LOCALIZATION
+    ru: Techno Kinetic
+
 description:
     en: Techno Kinetic
     ru: Технокинетик

@@ -1,5 +1,8 @@
 ﻿_cls : Car
-title:       "B1000KB"          # Модель атомобиля
+title:                          # Модель атомобиля
+    en: "B1000KB"  #TODO: ##LOCALIZATION
+    ru: "B1000KB"
+
 class_car:                          # Класс автомобиля
     en: "Средний"  # TODO: ##LOCALIZATION
     ru: "Средний"

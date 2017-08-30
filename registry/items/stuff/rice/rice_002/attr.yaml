@@ -4,8 +4,14 @@ doc     : Рис (мешки)
 
 abstract : false
 
-title       : Рис (мешки)
-description : Несколько мешков риса.
+title: 
+    en: Рис (мешки)  #TODO: ##LOCALIZATION
+    ru: Рис (мешки)
+
+description: 
+    en: Несколько мешков риса.  #TODO: ##LOCALIZATION
+    ru: Несколько мешков риса.
+
 
 base_price : 38
 stack_size : 1

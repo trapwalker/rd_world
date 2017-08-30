@@ -1,6 +1,9 @@
 ﻿__cls__: MapWeaponEffectMine
 _cls: MapWeaponEffectMine
-title:             mine_vs50   # Название атомобиля
+title:                         # Название атомобиля
+    en: mine_vs50  #TODO: ##LOCALIZATION
+    ru: mine_vs50
+
 
 p_observing_range: 25          # Радиус обзора автомобиля (м) (>= 0)
 

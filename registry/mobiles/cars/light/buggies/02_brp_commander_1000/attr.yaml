@@ -1,5 +1,8 @@
 ﻿_cls : Car
-title:       "Commander 1000"   # Модель атомобиля
+title:                          # Модель атомобиля
+    en: "Commander 1000"  #TODO: ##LOCALIZATION
+    ru: "Commander 1000"
+
 class_car:                       # Класс автомобиля
     en: "Тяжелый"  # TODO: ##LOCALIZATION
     ru: "Тяжелый"

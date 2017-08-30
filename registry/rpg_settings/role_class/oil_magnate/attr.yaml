@@ -2,7 +2,10 @@
 doc    : Преднастройки классов
 abstract: false
 
-title: Oil Magnate
+title: 
+    en: Oil Magnate  #TODO: ##LOCALIZATION
+    ru: Oil Magnate
+
 description:
     en: Oil Magnate
     ru: Нефтяной магнат

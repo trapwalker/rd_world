@@ -1,5 +1,8 @@
 ﻿_cls : Car
-title:       "Beetle"               # Модель атомобиля
+title:                              # Модель атомобиля
+    en: "Beetle"  #TODO: ##LOCALIZATION
+    ru: "Beetle"
+
 class_car:                          # Класс автомобиля
     en: "Средний"  # TODO: ##LOCALIZATION
     ru: "Средний"
