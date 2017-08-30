@@ -1,5 +1,4 @@
-﻿__cls__ : Item
-_cls    : Item
+﻿_cls    : Item
 doc     : Бутылки с водой
 
 abstract : false

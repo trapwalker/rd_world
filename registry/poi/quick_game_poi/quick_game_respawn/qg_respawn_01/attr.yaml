@@ -1,5 +1,4 @@
-﻿__cls__: MapRespawn
-_cls: MapRespawn
+﻿_cls: MapRespawn
 doc    : Респавны паверапов быстрой игры
 
 position: {x: 12479076, y: 27010844}  # ничего не значат. Переопределяются на координаты быстрой игры в event_machine.py

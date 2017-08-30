@@ -1,5 +1,4 @@
-﻿__cls__: KillerQuest
-_cls: KillerQuest
+﻿_cls: KillerQuest
 doc    : Примеры квестов
 
 list_icon: static/img/quests/icons/wanted.png

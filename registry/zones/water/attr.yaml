@@ -1,5 +1,4 @@
-﻿__cls__: TilesetZone
-_cls: TilesetZone
+﻿_cls: TilesetZone
 doc    : Вода
 abstract: false
 order_key: a4

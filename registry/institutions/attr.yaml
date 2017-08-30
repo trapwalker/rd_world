@@ -1,5 +1,4 @@
-﻿__cls__: Institution
-_cls: Institution
+﻿_cls: Institution
 doc    : Учреждения (магазины, бары, заправки...)
 
 trading: 0              # Навык торговли NPC

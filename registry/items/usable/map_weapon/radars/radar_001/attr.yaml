@@ -1,5 +1,4 @@
-﻿__cls__  : MapRadarItem
-_cls  : MapRadarItem
+﻿_cls  : MapRadarItem
 abstract : false
 
 title: 

@@ -1,5 +1,4 @@
-﻿__cls__: MapRespawn
-_cls: MapRespawn
+﻿_cls: MapRespawn
 doc    : Респавн
 
 p_observing_range: 1

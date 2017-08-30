@@ -1,5 +1,4 @@
-﻿__cls__  : Town
-_cls     : Town
+﻿_cls     : Town
 abstract : false
 
 position : {x: 12476279, y: 27027277}  # Заправка севернее Вайтхила

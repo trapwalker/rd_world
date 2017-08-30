@@ -1,5 +1,4 @@
-﻿__cls__: Town
-_cls: Town
+﻿_cls: Town
 doc    : Заправочные станции
 p_observing_range: 400
 p_enter_range: 220

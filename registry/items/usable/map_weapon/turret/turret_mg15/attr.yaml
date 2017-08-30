@@ -1,5 +1,4 @@
-﻿__cls__        : MapWeaponTurretItem
-_cls        : MapWeaponTurretItem
+﻿_cls        : MapWeaponTurretItem
 abstract       : false
 
 title: 

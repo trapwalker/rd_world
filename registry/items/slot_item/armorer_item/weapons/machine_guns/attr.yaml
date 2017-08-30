@@ -1,5 +1,4 @@
-﻿__cls__: MachineGun
-_cls: MachineGun
+﻿_cls: MachineGun
 doc    : Пулемёты
 
 animation_tracer_rate : 3

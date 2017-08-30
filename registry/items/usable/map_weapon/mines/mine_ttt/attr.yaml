@@ -1,5 +1,4 @@
-﻿__cls__        : MapWeaponMineItem
-_cls        : MapWeaponMineItem
+﻿_cls        : MapWeaponMineItem
 abstract       : false
 
 title: 

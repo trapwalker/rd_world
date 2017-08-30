@@ -1,5 +1,4 @@
-﻿__cls__ : ArmorerItem
-_cls : ArmorerItem
+﻿_cls : ArmorerItem
 doc     : Предметы, устанавливаемые в слоты оружейника
 
 tags    : [armorer]

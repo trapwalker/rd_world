@@ -1,5 +1,4 @@
-﻿__cls__  : Town
-_cls     : Town
+﻿_cls     : Town
 abstract : false
 
 position : {x: 12522251, y: 27047747}  # Заправка между Прайром и Паломой

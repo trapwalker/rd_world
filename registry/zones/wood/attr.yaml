@@ -1,5 +1,4 @@
-﻿__cls__: TilesetZone
-_cls: TilesetZone
+﻿_cls: TilesetZone
 doc    : Лес
 abstract: false
 order_key: a3

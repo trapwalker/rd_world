@@ -1,5 +1,4 @@
-﻿__cls__  : MapWeaponRocketItem
-_cls  : MapWeaponRocketItem
+﻿_cls  : MapWeaponRocketItem
 abstract : false
 
 title: 

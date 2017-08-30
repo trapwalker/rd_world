@@ -1,5 +1,4 @@
-﻿__cls__     : Car
-_cls        : Car
+﻿_cls        : Car
 doc         : Грузовой класс транспортных средств
 
 image_scale : small   # Масштаб машинки для отрисовки обвеса: small, middle, big

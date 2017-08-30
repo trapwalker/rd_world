@@ -1,5 +1,4 @@
-﻿__cls__: ZoneDirt
-_cls: ZoneDirt
+﻿_cls: ZoneDirt
 doc    : Бездорожье
 abstract: false
 order_key: a0

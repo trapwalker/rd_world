@@ -1,5 +1,4 @@
-﻿__cls__ : MapWeaponRocket
-_cls : MapWeaponRocket
+﻿_cls : MapWeaponRocket
 title: 
     en: Javelin  #TODO: ##LOCALIZATION
     ru: Javelin

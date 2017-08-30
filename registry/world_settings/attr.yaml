@@ -1,6 +1,5 @@
-﻿doc    : Настрйоки системы
-__cls__: WorldSettings
-_cls: WorldSettings
+﻿_cls: WorldSettings
+doc    : Настрйоки системы
 
 avatar_list: # Список аватаров, доступных при регистрации
   - static/content/avatars/default_1.png

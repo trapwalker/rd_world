@@ -1,5 +1,4 @@
-﻿__cls__: SearchCourier
-_cls: SearchCourier
+﻿_cls: SearchCourier
 doc    : Примеры квестов
 
 first_state: begin

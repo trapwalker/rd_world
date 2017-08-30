@@ -1,5 +1,4 @@
-﻿__cls__: Effect
-_cls: Effect
+﻿_cls: Effect
 doc: Эффект уменьшения минимальной заметности при использовании PowerUp
 abstract: false
 

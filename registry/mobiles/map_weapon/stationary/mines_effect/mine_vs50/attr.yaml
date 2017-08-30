@@ -1,5 +1,4 @@
-﻿__cls__: MapWeaponEffectMine
-_cls: MapWeaponEffectMine
+﻿_cls: MapWeaponEffectMine
 title:                         # Название атомобиля
     en: mine_vs50  #TODO: ##LOCALIZATION
     ru: mine_vs50
