@@ -92,7 +92,7 @@ class DeliveryFromCache(DeliveryQuestSimple):
         else:
             self.deadline = 0
 
-    def init_text(self):
+    def init_text(self):  # TODO: ##LOCALIZATION
         self.text_short = u"Найти пропавшую посылку."
         self.text = u"Вернуть пропавшую посылку.{} Награда: {:.0f}nc, {:.0f} кармы и {:.0f} ед. опыта.".format(
             u"." if not self.deadline else u" за {}.".format(self.deadline_to_str()),
@@ -178,9 +178,9 @@ class DeliveryFromCache(DeliveryQuestSimple):
     ####################################################################################################################
     def on_start_(self, event, **kw):
         if self.get_available_lvl() < self.level:
-            self.npc_replica(npc=self.hirer, replica=u"NPC не достаточно хорошо к Вам относится.", event=event)
+            self.npc_replica(npc=self.hirer, replica=u"NPC не достаточно хорошо к Вам относится.", event=event)  # TODO: ##LOCALIZATION
             raise Cancel("QUEST DeliveryFromCache CANCEL: User have not enough relation")
-        self.log(text=u'Начат квест по поиску посылки.', event=event, position=self.hirer.hometown.position)
+        self.log(text=u'Начат квест по поиску посылки.', event=event, position=self.hirer.hometown.position)  # TODO: ##LOCALIZATION
 
     ####################################################################################################################
     ## Перечень состояний ##############################################################################################
@@ -205,7 +205,7 @@ class DeliveryFromCache(DeliveryQuestSimple):
             if isinstance(event, OnCancel):
                 agent.profile.del_note(uid=quest.dc.cache_map_note_uid, time=event.time)
                 agent.profile.set_relationship(time=event.time, npc=quest.hirer, dvalue=-quest.reward_relation_hirer)
-                quest.log(text=u'Испорчены отношения с {}.'.format(quest.hirer.title), event=event,
+                quest.log(text=u'Испорчены отношения с {}.'.format(quest.hirer.title), event=event,  # TODO: ##LOCALIZATION
                           position=quest.hirer.hometown.position)
                 go("cancel_fail")
             if isinstance(event, OnTimer):
@@ -224,7 +224,7 @@ class DeliveryFromCache(DeliveryQuestSimple):
         def on_enter_(self, quest, event):
             # создать лут с временем жизни до окончания дедлайна и с нужными итемами
             quest.create_poi_container(event)
-            quest.log(text=u'Найдена посылка.', event=event, position=quest.cache_point.position)
+            quest.log(text=u'Найдена посылка.', event=event, position=quest.cache_point.position)  # TODO: ##LOCALIZATION
 
             # создать ноту на доставку
             quest.dc.delivery_note_uid = quest.agent.profile.add_note(
@@ -265,18 +265,18 @@ class DeliveryFromCache(DeliveryQuestSimple):
     ####################################################################################################################
     class cancel_fail(FailByCancelState):
         def on_enter_(self, quest, event):
-            quest.log(text=u'Квест провален.', event=event)
+            quest.log(text=u'Квест провален.', event=event)  # TODO: ##LOCALIZATION
 
     ####################################################################################################################
     class win(WinState):
         def on_enter_(self, quest, event):
-            quest.log(text=u'Квест выполнен.', event=event)
+            quest.log(text=u'Квест выполнен.', event=event)  # TODO: ##LOCALIZATION
 
     ####################################################################################################################
     class fail(FailState):
         def on_enter_(self, quest, event):
             quest.agent.profile.set_relationship(time=event.time, npc=quest.hirer, dvalue=-20)  # изменение отношения c нпц
             quest.agent.profile.set_karma(time=event.time, dvalue=-10)  # изменение кармы
-            quest.log(text=u'Квест провален.', event=event)
+            quest.log(text=u'Квест провален.', event=event)  # TODO: ##LOCALIZATION
 
 

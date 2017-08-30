@@ -1,10 +1,18 @@
 ﻿__cls__: QNKills
 _cls: QNKills
-doc    : Квесты
+doc: Квесты
 
-title: Кое-кого убить
+title:
+    en: Кое-кого убить  #TODO: ##LOCALIZATION
+    ru: Кое-кого убить
 
-typename  : заказное
-list_icon : /static/quest/icons/kill.png
+typename:
+    en: заказное  #TODO: ##LOCALIZATION
+    ru: заказное
 
-description: Нужно найти и убить кое-кого
+list_icon: /static/quest/icons/kill.png
+
+description:
+    en: Нужно найти и убить кое-кого  #TODO: ##LOCALIZATION
+    ru: Нужно найти и убить кое-кого
+

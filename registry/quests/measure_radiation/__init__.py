@@ -67,7 +67,7 @@ class MeasureRadiation(Quest):
 
     ####################################################################################################################
     def on_start_(self, event, **kw):
-        self.log(text=u'Начат квест по замеру уровня радиации.', event=event, position=self.hirer.hometown.position)
+        self.log(text=u'Начат квест по замеру уровня радиации.', event=event, position=self.hirer.hometown.position)  # TODO: ##LOCALIZATION
 
 
     ####################################################################################################################
@@ -93,10 +93,10 @@ class MeasureRadiation(Quest):
                 penalty_money = quest.reward_money / 2.
                 if agent.profile.balance >= penalty_money:
                     agent.profile.set_balance(time=event.time, delta=-penalty_money)
-                    quest.log(text=u'Уплачен штраф в размере {}nc.'.format(penalty_money), event=event, position=quest.hirer.hometown.position)
+                    quest.log(text=u'Уплачен штраф в размере {}nc.'.format(penalty_money), event=event, position=quest.hirer.hometown.position)  # TODO: ##LOCALIZATION
                     go("cancel_fail")
                 else:
-                   quest.npc_replica(npc=quest.hirer, replica=u"Для отказа от квеста заплатите штраф {}nc.".format(penalty_money), event=event)
+                   quest.npc_replica(npc=quest.hirer, replica=u"Для отказа от квеста заплатите штраф {}nc.".format(penalty_money), event=event)  # TODO: ##LOCALIZATION
 
             if isinstance(event, OnTimer):
                 if event.name == 'deadline_measuring_quest':
@@ -112,15 +112,15 @@ class MeasureRadiation(Quest):
         def on_enter_(self, quest, event):
             agent = quest.agent
 
-            quest.log(text=u'Измерения завершены. Вернитесь за наградой.', event=event, position=quest.hirer.hometown.position)
+            quest.log(text=u'Измерения завершены. Вернитесь за наградой.', event=event, position=quest.hirer.hometown.position)  # TODO: ##LOCALIZATION
             agent.profile.set_relationship(time=event.time, npc=quest.hirer, dvalue=quest.reward_relation_hirer)
             quest.dc.reward_note_uid = agent.profile.add_note(
                 quest_uid=quest.uid,
                 note_class=notes.QuestRadiationNPCFinish,
                 time=event.time,
                 npc=quest.hirer,
-                page_caption=u'Измерение<br>радиации',
-                btn1_caption=u'<br>Отчитаться',
+                page_caption=u'Измерение<br>радиации',  # TODO: ##LOCALIZATION
+                btn1_caption=u'<br>Отчитаться',  # TODO: ##LOCALIZATION
             )
 
         def on_event_(self, quest, event):
@@ -137,19 +137,19 @@ class MeasureRadiation(Quest):
     class cancel_fail(FailByCancelState):
         def on_enter_(self, quest, event):
             quest.delete_notes(event=event)
-            quest.log(text=u'Квест провален.', event=event)
+            quest.log(text=u'Квест провален.', event=event)  # TODO: ##LOCALIZATION
     ####################################################################################################################
     class win(WinState):
         def on_enter_(self, quest, event):
             quest.delete_notes(event=event)
-            quest.log(text=u'Квест выполнен.', event=event)
+            quest.log(text=u'Квест выполнен.', event=event)  # TODO: ##LOCALIZATION
     ####################################################################################################################
     class fail(FailState):
         def on_enter_(self, quest, event):
             quest.delete_notes(event=event)
             quest.agent.profile.set_relationship(time=event.time, npc=quest.hirer, dvalue=-quest.level * 2)  # изменение отношения c нпц
             quest.agent.profile.set_karma(time=event.time, dvalue=-quest.reward_karma)  # todo: изменение кармы
-            quest.log(text=u'Квест провален.', event=event)
+            quest.log(text=u'Квест провален.', event=event)  # TODO: ##LOCALIZATION
     ####################################################################################################################
     ####################################################################################################################
     def init_measure_points(self):
@@ -164,11 +164,11 @@ class MeasureRadiation(Quest):
             # Время выделенное на квест кратно 5 минутам
             self.deadline = (all_time / 300) * 300 + (300 if (all_time % 300) > 0 else 0)
 
-    def init_text(self):
-        self.text_short = u"Обследуйте {:.0f} точек.".format(self.measure_count)
-        self.text = u"Замерьте уровень радиации в {:.0f} точек{}. Награда: {:.0f}nc, {:.0f} кармы и {:.0f} ед. опыта".format(
+    def init_text(self):  # TODO: ##LOCALIZATION
+        self.text_short = u"Обследуйте {:.0f} точек.".format(self.measure_count)  # TODO: ##LOCALIZATION
+        self.text = u"Замерьте уровень радиации в {:.0f} точек{}. Награда: {:.0f}nc, {:.0f} кармы и {:.0f} ед. опыта".format(  # TODO: ##LOCALIZATION
             self.measure_count,
-            u"" if not self.deadline else u" за {}".format(self.deadline_to_str()),
+            u"" if not self.deadline else u" за {}".format(self.deadline_to_str()),  # TODO: ##LOCALIZATION
             self.reward_money,
             self.reward_karma,
             self.reward_exp * self.measure_count,
@@ -195,7 +195,7 @@ class MeasureRadiation(Quest):
             if note:
                 position = self.agent.profile._agent_model.car.position(time=event.time)
                 if note.is_near(position=position):
-                    self.log(text=u'Произведено измерение.', event=event, position=position)
+                    self.log(text=u'Произведено измерение.', event=event, position=position)  # TODO: ##LOCALIZATION
                     self.agent.profile.set_exp(time=event.time, dvalue=self.reward_exp)
                     self.measure_notes.remove(note_uid)
                     self.agent.profile.del_note(uid=note_uid, time=event.time)

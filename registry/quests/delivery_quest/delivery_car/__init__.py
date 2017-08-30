@@ -31,8 +31,8 @@ class DeliveryCar(DeliveryQuest):
         return d
 
     def init_text(self, distance=None):
-        self.text_short = u"Доставьте ТС в город {}.".format(self.recipient.hometown.title)
-        self.text = u"Доставьте ТС: {} - к {} в город {}. Награда: {:.0f}nc и {:.0f} ед. опыта.".format(
+        self.text_short = u"Доставьте ТС в город {}.".format(self.recipient.hometown.title)  # TODO: ##LOCALIZATION
+        self.text = u"Доставьте ТС: {} - к {} в город {}. Награда: {:.0f}nc и {:.0f} ед. опыта.".format(  # TODO: ##LOCALIZATION
             self.dc.car_title,
             self.recipient.title,
             self.recipient.hometown.title,
@@ -77,7 +77,7 @@ class DeliveryCar(DeliveryQuest):
 
     def on_start_(self, event, **kw):
         if self.agent.profile.car:
-            self.npc_replica(npc=self.hirer, replica=u"Избавься от своей машины.", event=event)
+            self.npc_replica(npc=self.hirer, replica=u"Избавься от своей машины.", event=event)  # TODO: ##LOCALIZATION
             raise Cancel("QUEST CANCEL: User have car")
 
         agent_model = self.agent.profile._agent_model
@@ -97,7 +97,7 @@ class DeliveryCar(DeliveryQuest):
         messages.UserExampleCarInfo(agent=agent_model, time=event.time).post()
         messages.UserExampleCarView(agent=agent_model, time=event.time).post()
         messages.UserExampleCarSlots(agent=agent_model, time=event.time).post()
-        self.log(text=u'Начат квест по доставке ТС.', event=event)
+        self.log(text=u'Начат квест по доставке ТС.', event=event)  # TODO: ##LOCALIZATION
 
     ####################################################################################################################
     class begin(QuestState_):
@@ -134,10 +134,10 @@ class DeliveryCar(DeliveryQuest):
                     messages.UserExampleCarInfo(agent=agent_model, time=event.time).post()
                     messages.UserExampleCarView(agent=agent_model, time=event.time).post()
                     messages.UserExampleCarSlots(agent=agent_model, time=event.time).post()
-                    quest.log(text=u'Уплачен штраф в размере {}nc.'.format(money_penalty), event=event)
+                    quest.log(text=u'Уплачен штраф в размере {}nc.'.format(money_penalty), event=event)  # TODO: ##LOCALIZATION
                     go("cancel_fail")
                 else:
-                    quest.npc_replica(npc=quest.hirer, replica=u"Для отказа от квеста верните ТС и заплатите штраф {}nc.".format(money_penalty), event=event)
+                    quest.npc_replica(npc=quest.hirer, replica=u"Для отказа от квеста верните ТС и заплатите штраф {}nc.".format(money_penalty), event=event)  # TODO: ##LOCALIZATION
 
     ####################################################################################################################
     class reward(QuestState_):
@@ -161,12 +161,12 @@ class DeliveryCar(DeliveryQuest):
     ####################################################################################################################
     class cancel_fail(FailByCancelState):
         def on_enter_(self, quest, event):
-            quest.log(text=u'Квест провален.', event=event)
+            quest.log(text=u'Квест провален.', event=event)  # TODO: ##LOCALIZATION
 
     ####################################################################################################################
     class win(WinState):
         def on_enter_(self, quest, event):
-            quest.log(text=u'Квест выполнен.', event=event)
+            quest.log(text=u'Квест выполнен.', event=event)  # TODO: ##LOCALIZATION
 
     ####################################################################################################################
     class fail(FailState):
@@ -178,4 +178,4 @@ class DeliveryCar(DeliveryQuest):
             agent.set_relationship(time=event.time, npc=quest.hirer, dvalue=-2)  # изменение отношения c нпц
 
             agent.set_karma(time=event.time, dvalue=-quest.reward_karma)
-            quest.log(text=u'Квест провален.', event=event)
+            quest.log(text=u'Квест провален.', event=event)  # TODO: ##LOCALIZATION

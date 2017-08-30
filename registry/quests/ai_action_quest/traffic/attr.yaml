@@ -1,9 +1,16 @@
-﻿__cls__: AIActionTrafficQuest
-_cls: AIActionTrafficQuest
-doc    : Квест AIActionTrafficQuest
+﻿_cls: AIActionTrafficQuest
+doc:
+    en: Квест AIActionTrafficQuest  #TODO: ##LOCALIZATION
+    ru: Квест AIActionTrafficQuest
 
 first_state: wait_car
 current_state: ~
 
-caption: AI Quest
-text: Ai Quest
+caption:
+    en: AI Quest
+    ru: AI Quest  # TODO: ##LOCALIZATION
+
+text:
+    en: Ai Quest
+    ru: Ai Quest  # TODO: ##LOCALIZATION
+

@@ -94,10 +94,10 @@ class DeliveryQuestSimple(DeliveryQuest):
             self.npc_replica(npc=self.hirer, replica=u"Не хватает места в инвентаре.", event=event)
             raise Cancel("QUEST CANCEL: User have not enough empty slot")
 
-        self.log(text=u'Начат квест по доставке.', event=event, position=self.hirer.hometown.position)
+        self.log(text=u'Начат квест по доставке.', event=event, position=self.hirer.hometown.position)  # TODO: ##LOCALIZATION
         temp_log_str = u'От {} получены следующие предметы: {}.'.format(
             self.hirer.title,
-            ', '.join([item.title for item in self.delivery_set])
+            ', '.join([unicode(item.title) for item in self.delivery_set])
         )
         self.log(text=temp_log_str, event=event, position=self.hirer.hometown.position)
 
@@ -128,7 +128,7 @@ class DeliveryQuestSimple(DeliveryQuest):
                         items=quest.delivery_set, event=event):
                     temp_log_str = u'{} забрал следующие предметы: {}.'.format(
                         quest.recipient.title,
-                        ', '.join([item.title for item in quest.delivery_set])
+                        ', '.join([unicode(item.title) for item in quest.delivery_set])
                     )
                     quest.log(text=temp_log_str, event=event, position=quest.recipient.hometown.position)
                     agent.profile.del_note(uid=quest.dc.delivery_note_uid, time=event.time)
@@ -145,10 +145,10 @@ class DeliveryQuestSimple(DeliveryQuest):
 
                     temp_log_str = u'{} забрал следующие предметы: {}.'.format(
                         quest.hirer.title,
-                        ', '.join([item.title for item in quest.delivery_set])
+                        ', '.join([unicode(item.title) for item in quest.delivery_set])
                     )
                     quest.log(text=temp_log_str, event=event, position=quest.hirer.hometown.position)
-                    quest.log(text=u'Уплачен штраф в размере {}nc.'.format(quest.reward_money / 2), event=event,
+                    quest.log(text=u'Уплачен штраф в размере {}nc.'.format(quest.reward_money / 2), event=event,  # TODO: ##LOCALIZATION
                               position=quest.hirer.hometown.position)
 
                     go("cancel_fail")
@@ -163,7 +163,7 @@ class DeliveryQuestSimple(DeliveryQuest):
             go = partial(quest.go, event=event)
             agent_profile = quest.agent.profile
             quest.agent.profile.set_balance(time=event.time, delta=quest.reward_money)
-            quest.log(text=u'Получено вознаграждение в размере {}nc.'.format(quest.reward_money), event=event,
+            quest.log(text=u'Получено вознаграждение в размере {}nc.'.format(quest.reward_money), event=event,  # TODO: ##LOCALIZATION
                       position=quest.recipient.hometown.position)
             quest.agent.profile.set_exp(time=event.time, dvalue=quest.reward_exp)
             quest.agent.profile.set_karma(time=event.time, dvalue=quest.reward_karma)
@@ -175,8 +175,8 @@ class DeliveryQuestSimple(DeliveryQuest):
                     note_class=notes.NPCRewardItemsNote,
                     time=event.time,
                     npc=quest.recipient,
-                    page_caption=u'Награда',
-                    btn1_caption=u'<br>Забрать',
+                    page_caption=u'Награда',  # TODO: ##LOCALIZATION
+                    btn1_caption=u'<br>Забрать',  # TODO: ##LOCALIZATION
                 )
             else:
                 go('win')
@@ -190,17 +190,17 @@ class DeliveryQuestSimple(DeliveryQuest):
                         agent.profile.del_note(uid=quest.dc.reward_note_uid, time=event.time)
                         go('win')
                     else:
-                        quest.npc_replica(npc=quest.hirer, replica=u"Не хватает места в инвентаре.", event=event)
+                        quest.npc_replica(npc=quest.hirer, replica=u"Не хватает места в инвентаре.", event=event)  # TODO: ##LOCALIZATION
 
     ####################################################################################################################
     class cancel_fail(FailByCancelState):
         def on_enter_(self, quest, event):
-            quest.log(text=u'Квест провален.', event=event)
+            quest.log(text=u'Квест провален.', event=event)  # TODO: ##LOCALIZATION
 
     ####################################################################################################################
     class win(WinState):
         def on_enter_(self, quest, event):
-            quest.log(text=u'Квест выполнен.', event=event)
+            quest.log(text=u'Квест выполнен.', event=event)  # TODO: ##LOCALIZATION
 
     ####################################################################################################################
     class fail(FailState):
@@ -211,6 +211,6 @@ class DeliveryQuestSimple(DeliveryQuest):
             agent_profile.set_relationship(time=event.time, npc=quest.hirer,
                                            dvalue=-quest.level * 2)  # изменение отношения c нпц
             agent_profile.set_karma(time=event.time, dvalue=-quest.reward_karma)  # todo: изменение кармы
-            quest.log(text=u'Квест провален.', event=event)
+            quest.log(text=u'Квест провален.', event=event)  # TODO: ##LOCALIZATION
 
 

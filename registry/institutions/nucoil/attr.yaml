@@ -1,7 +1,16 @@
-_cls     : Nukeoil
-doc      : Нукойл
-text     : Нукойл
-title    : Нукойл
+_cls: Nukeoil
+doc:
+    en: Нукойл  #TODO: ##LOCALIZATION
+    ru: Нукойл
+
+text:
+    en: Нукойл  #TODO: ##LOCALIZATION
+    ru: Нукойл
+
+title:
+    en: Нукойл  #TODO: ##LOCALIZATION
+    ru: Нукойл
+
 photo    : "static/content/institutions/nucoil/nukeoil_logo.png"
 abstract : false
 type     : nucoil

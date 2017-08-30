@@ -1,13 +1,17 @@
-﻿__cls__: DeliveryQuest
-_cls: DeliveryQuest
-doc    : Примеры квестов
+﻿_cls: DeliveryQuest
+doc: Примеры квестов
 
 first_state: begin
 current_state: ~
 
-caption: Учебная доставка
-text: |
-    Учебная доставка.
+caption:
+    en: Учебная доставка  #TODO: ##LOCALIZATION
+    ru: Учебная доставка
+
+text:
+    en: Учебная доставка.  #TODO: ##LOCALIZATION
+    ru: Учебная доставка.
+
 
 #    text_short = StringField(tags='client', caption=u'Короткий текст квеста', doc=u'Может строиться и меняться по шаблону')
 #    typename = StringField(tags='client', caption=u'Тип квеста', doc=u'Может быть произвольным')

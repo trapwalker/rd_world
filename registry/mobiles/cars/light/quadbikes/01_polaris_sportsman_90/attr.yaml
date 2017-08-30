@@ -1,7 +1,8 @@
-﻿__cls__ : Car
-_cls : Car
+﻿_cls : Car
 title:       "Sportsman 90"      # Модель атомобиля
-class_car:   "Легкий"            # Класс автомобиля
+class_car:                       # Класс автомобиля
+    en: "Легкий"  # TODO: ##LOCALIZATION
+    ru: "Легкий"
 name_car:    "Sportsman 90"      # Название атомобиля
 
 price:              3300         # Цена у продавца (л) (>= 0)

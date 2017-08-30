@@ -1,6 +1,8 @@
 ﻿_cls : Car
 title:       "Delta HF Integrale"   # Модель атомобиля
-class_car:   "Средний"              # Класс автомобиля
+class_car:                          # Класс автомобиля
+    en: "Средний"  # TODO: ##LOCALIZATION
+    ru: "Средний"
 name_car:    "Delta HF Integrale"   # Название атомобиля
 
 price:              6200            # Цена у продавца (л) (>= 0)

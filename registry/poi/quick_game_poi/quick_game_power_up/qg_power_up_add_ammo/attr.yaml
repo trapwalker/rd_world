@@ -1,11 +1,12 @@
-﻿__cls__: MapPowerUpAddItems
-_cls: MapPowerUpAddItems
-doc    : Респавны быстрой игры
+﻿_cls: MapPowerUpAddItems
+doc: Респавны быстрой игры
 
 parent: reg:///registry/poi/power_up/power_up_add_items
 
 icon_name: "icon-power-up-ammo"
-activate_comment: 'Ящик с патронами'
+activate_comment:
+    en: 'Ящик с патронами'  #TODO: ##LOCALIZATION
+    ru: 'Ящик с патронами'
 
 items:
   - reg:///registry/items/usable/ammo/762x51bb

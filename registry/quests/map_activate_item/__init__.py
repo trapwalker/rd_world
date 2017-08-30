@@ -92,9 +92,9 @@ class MapActivateItemQuest(Quest):
             self.deadline = 0
 
     def init_text(self):
-        self.text_short = u"Активируйте предметы в заданных точках."
-        self.text = u"Активируйте предметы: {} - в заданных точках. Награда: {:.0f}nc.".format(
-            ', '.join([item.title for item in self.activate_items]),
+        self.text_short = u"Активируйте предметы в заданных точках."  # TODO: ##LOCALIZATION
+        self.text = u"Активируйте предметы: {} - в заданных точках. Награда: {:.0f}nc.".format(  # TODO: ##LOCALIZATION
+            ', '.join([unicode(item.title) for item in self.activate_items]),
             self.reward_money
         )
 
@@ -119,7 +119,7 @@ class MapActivateItemQuest(Quest):
             if note:
                 position = self.agent.profile._agent_model.car.position(time=event.time)
                 if note.is_near(position=position):
-                    self.log(text=u'Произведена активация.', event=event, position=position)
+                    self.log(text=u'Произведена активация.', event=event, position=position)  # TODO: ##LOCALIZATION
                     self.agent.profile.set_exp(time=event.time, dvalue=self.reward_exp)
                     self.activate_notes.remove(note_uid)
                     self.agent.profile.del_note(uid=note_uid, time=event.time)
@@ -166,9 +166,9 @@ class MapActivateItemQuest(Quest):
     ####################################################################################################################
     def on_start_(self, event, **kw):
         if not self.give_items(items=self.activate_items, event=event):
-            self.npc_replica(npc=self.hirer, replica=u"Не хватает места в инвентаре.", event=event)
+            self.npc_replica(npc=self.hirer, replica=u"Не хватает места в инвентаре.", event=event)  # TODO: ##LOCALIZATION
             raise Cancel("QUEST CANCEL: User have not enough empty slot")
-        self.log(text=u'Начат квест по активации предметов.', event=event, position=self.hirer.hometown.position)
+        self.log(text=u'Начат квест по активации предметов.', event=event, position=self.hirer.hometown.position)  # TODO: ##LOCALIZATION
     
     ####################################################################################################################
     ## Перечень состояний ##############################################################################################
@@ -186,12 +186,12 @@ class MapActivateItemQuest(Quest):
                 penalty_money = quest.reward_money / 2.
                 if agent.profile.balance >= penalty_money:
                     agent.profile.set_balance(time=event.time, delta=-penalty_money)
-                    quest.log(text=u'Уплачен штраф в размере {}nc.'.format(penalty_money), event=event,
+                    quest.log(text=u'Уплачен штраф в размере {}nc.'.format(penalty_money), event=event,  # TODO: ##LOCALIZATION
                               position=quest.hirer.hometown.position)
                     go("cancel_fail")
                 else:
                     quest.npc_replica(npc=quest.hirer,
-                                      replica=u"Для отказа от квеста заплатите штраф {}nc.".format(penalty_money),
+                                      replica=u"Для отказа от квеста заплатите штраф {}nc.".format(penalty_money),  # TODO: ##LOCALIZATION
                                       event=event)
             if isinstance(event, OnTimer):
                 if event.name == 'deadline_activate_quest':
@@ -211,8 +211,8 @@ class MapActivateItemQuest(Quest):
                 note_class=notes.MapActivationNoteFinish,
                 time=event.time,
                 npc=quest.hirer,
-                page_caption=u'Награда',
-                btn1_caption=u'<br>Отчитаться',
+                page_caption=u'Награда',  # TODO: ##LOCALIZATION
+                btn1_caption=u'<br>Отчитаться',  # TODO: ##LOCALIZATION
             )
     
         def on_event_(self, quest, event):
@@ -228,13 +228,13 @@ class MapActivateItemQuest(Quest):
     class cancel_fail(FailByCancelState):
         def on_enter_(self, quest, event):
             quest.delete_notes(event=event)
-            quest.log(text=u'Квест провален.', event=event)
+            quest.log(text=u'Квест провален.', event=event)  # TODO: ##LOCALIZATION
 
     ####################################################################################################################
     class win(WinState):
         def on_enter_(self, quest, event):
             quest.delete_notes(event=event)
-            quest.log(text=u'Квест выполнен.', event=event)
+            quest.log(text=u'Квест выполнен.', event=event)  # TODO: ##LOCALIZATION
 
     ####################################################################################################################
     class fail(FailState):
@@ -243,5 +243,5 @@ class MapActivateItemQuest(Quest):
             quest.agent.profile.set_relationship(time=event.time, npc=quest.hirer,
                                            dvalue=-quest.level * 2)  # изменение отношения c нпц
             quest.agent.profile.set_karma(time=event.time, dvalue=-quest.reward_karma)  # todo: изменение кармы
-            quest.log(text=u'Квест провален.', event=event)
+            quest.log(text=u'Квест провален.', event=event)  # TODO: ##LOCALIZATION
     ####################################################################################################################

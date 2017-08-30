@@ -1,11 +1,15 @@
-﻿__cls__ : PassengerItem
-_cls    : PassengerItem
+﻿_cls    : PassengerItem
 doc     : Пассажир (девушка)
 
 abstract : false
 
-title       : Пассажир (девушка)
-description : Пассажир (девушка)
+title:
+    en: Пассажир (девушка)  #TODO: ##LOCALIZATION
+    ru: Пассажир (девушка)
+
+description:
+    en: Пассажир (девушка)  #TODO: ##LOCALIZATION
+    ru: Пассажир (девушка)
 
 base_price : 0
 stack_size : 1

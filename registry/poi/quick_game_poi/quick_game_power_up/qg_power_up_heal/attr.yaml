@@ -1,7 +1,8 @@
-﻿__cls__: MapPowerUp
-_cls: MapPowerUp
-doc    : Объекты Power Up на карте
+﻿_cls: MapPowerUp
+doc: Объекты Power Up на карте
 
 model_class_name: QuickGamePowerUpFullHeal
 icon_name: "icon-power-up-build-set"
-activate_comment: 'Ремонт'
+activate_comment:
+    en: 'Ремонт'  #TODO: ##LOCALIZATION
+    ru: 'Ремонт'

@@ -1,5 +1,10 @@
-﻿__cls__ : Institution
-_cls    : Institution
-doc     : Главарь
-text    : Вас приветствует главарь банды!
+﻿_cls: Institution
+doc:
+    en: Главарь  #TODO: ##LOCALIZATION
+    ru: Главарь
+
+text:
+    en: Вас приветствует главарь банды!  #TODO: ##LOCALIZATION
+    ru: Вас приветствует главарь банды!
+
 type    : boss

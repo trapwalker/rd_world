@@ -1,6 +1,12 @@
-﻿_cls   : Trainer
-doc    : Тренер
-text   : Вас приветствует тренер!
-type   : trainer
+﻿_cls: Trainer
+doc:
+    en: Тренер  #TODO: ##LOCALIZATION
+    ru: Тренер
 
-drop_price : 10
+text:
+    en: Вас приветствует тренер!  #TODO: ##LOCALIZATION
+    ru: Вас приветствует тренер!
+
+type: trainer
+
+drop_price: 10

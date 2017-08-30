@@ -1,7 +1,9 @@
-﻿__cls__ : Car
-_cls : Car
+﻿_cls : Car
 title:       "PD-4501 Scenicruiser" # Модель атомобиля
-class_car:   "Грузовой"             # Класс автомобиля
+class_car:                       # Класс автомобиля
+    en: "Грузовой"  # TODO: ##LOCALIZATION
+    ru: "Грузовой"
+
 name_car:    "PD-4501 Scenicruiser" # Название атомобиля
 
 price:              14000        # Цена у продавца (л) (>= 0)

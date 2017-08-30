@@ -1,8 +1,8 @@
-﻿
-__cls__ : QuestState
-_cls : QuestState
-doc     : Стандартное состояние удачного окончания квеста
+﻿_cls: QuestState
+doc: Стандартное состояние удачного окончания квеста
 
 result  : win
 id      : win
-enter_state_message : Задание {quest.caption} выполнено успешно.
+enter_state_message:
+    en: Задание {quest.caption} выполнено успешно.  #TODO: ##LOCALIZATION
+    ru: Задание {quest.caption} выполнено успешно.

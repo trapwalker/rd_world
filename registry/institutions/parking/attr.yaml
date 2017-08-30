@@ -1,7 +1,12 @@
-﻿__cls__ : Parking
-_cls : Parking
-doc     : Парковщик
-text    : Вас приветствует парковщик!
-type    : parking
+﻿_cls: Parking
+doc:
+    en: Парковщик  #TODO: ##LOCALIZATION
+    ru: Парковщик
 
-cost_for_day_parking : 10
+text:
+    en: Вас приветствует парковщик!  #TODO: ##LOCALIZATION
+    ru: Вас приветствует парковщик!
+
+type: parking
+
+cost_for_day_parking: 10

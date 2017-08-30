@@ -16,10 +16,10 @@ class EscortCaravan(AgentEventQuest):
         d.update(start_quest_time=getattr(self.dc, 'start_caravan_time', None))
         return d
 
-    def init_text(self, event, event_quest):
+    def init_text(self, event, event_quest):  # TODO: ##LOCALIZATION
         town = event_quest.town_destination
         town_str = town and town.title or 'N'
-        self.text_short = u"Сопроводите караван.".format()
+        self.text_short = u"Сопроводите караван.".format()  # TODO: ##LOCALIZATION
         self.text = u"Сопроводите караван в город {}. Награда: {:.0f}nc.".format(
             town_str,
             self.reward_money

@@ -97,15 +97,15 @@ class KillerQuest(Quest):
         self.min_level_victims = self.level
         self.count_to_kill = self.count_to_kill_range.get_random_int()  # Выбираем сколько человек нужно убить
 
-    def init_text(self):
-        self.text_short = u"Убейте {:.0f} игрока(ов).".format(
+    def init_text(self):  # TODO: ##LOCALIZATION
+        self.text_short = u"Убейте {:.0f} игрока(ов).".format(  # TODO: ##LOCALIZATION
             self.count_to_kill
         )
-        self.text = u"Убейте {:.0f} игрока(ов) с минимальным уровнем {:.0f} и кармой хуже {}{}. Награда: {:.0f}nc, {:.0f} кармы и {:.0f} ед. опыта.".format(
+        self.text = u"Убейте {:.0f} игрока(ов) с минимальным уровнем {:.0f} и кармой хуже {}{}. Награда: {:.0f}nc, {:.0f} кармы и {:.0f} ед. опыта.".format(  # TODO: ##LOCALIZATION
             self.count_to_kill,
             self.min_level_victims,
             getKarmaName(self.max_karma_victims / 100., 'ru'),
-            u"" if not self.deadline else u" за {}".format(self.deadline_to_str()),
+            u"" if not self.deadline else u" за {}".format(self.deadline_to_str()),  # TODO: ##LOCALIZATION
             self.reward_money,
             self.reward_karma,
             self.reward_exp * self.count_to_kill,
@@ -136,7 +136,7 @@ class KillerQuest(Quest):
     ####################################################################################################################
     def on_start_(self, event, **kw):
         if self.get_available_lvl() < self.level:
-            self.npc_replica(npc=self.hirer, replica=u"NPC не достаточно хорошо к Вам относится.", event=event)
+            self.npc_replica(npc=self.hirer, replica=u"NPC не достаточно хорошо к Вам относится.", event=event)  # TODO: ##LOCALIZATION
             raise Cancel("KillerQuest: User have not enough relation")
         # Создание ноты для квеста
         self.dc.wanted_note_uid = self.agent.profile.add_note(
@@ -144,9 +144,9 @@ class KillerQuest(Quest):
             note_class=notes.NPCWantedNote,
             time=event.time,
             npc=self.hirer,
-            page_caption='Задание на убийство',
+            page_caption='Задание на убийство',  # TODO: ##LOCALIZATION
         )
-        self.log(text=u'Начат квест на убийство. Целей {}.'.format(self.count_to_kill), event=event,
+        self.log(text=u'Начат квест на убийство. Целей {}.'.format(self.count_to_kill), event=event,  # TODO: ##LOCALIZATION
                  position=self.hirer.hometown.position)
     
     ####################################################################################################################
@@ -166,11 +166,11 @@ class KillerQuest(Quest):
                         (not quest.unique_victims or not quest.in_victims(event.agent))):
                     if event.agent and event.agent.profile and event.agent.profile._agent_model:
                         quest.append_victim(event.agent, event)  # todo: Исправить добавление агента
-                        quest.log(text=u'{} убит.'.format(event.agent.profile._agent_model.print_login()), event=event,
+                        quest.log(text=u'{} убит.'.format(event.agent.profile._agent_model.print_login()), event=event,  # TODO: ##LOCALIZATION
                                   position=quest.hirer.hometown.position)  # todo: заменить на позицию машинки убийцы
                         quest.agent.profile.set_exp(time=event.time, dvalue=quest.reward_exp)
                         if len(quest.victims) >= quest.count_to_kill:
-                            quest.log(text=u'Возвращайтесь за наградой.', event=event,
+                            quest.log(text=u'Возвращайтесь за наградой.', event=event,  # TODO: ##LOCALIZATION
                                       position=quest.hirer.hometown.position)
                             go('note_kill_reward')
 
@@ -183,12 +183,12 @@ class KillerQuest(Quest):
                 if agent.profile.balance >= penalty_money:
                     agent.profile.del_note(uid=quest.dc.wanted_note_uid, time=event.time)
                     agent.profile.set_balance(time=event.time, delta=-penalty_money)
-                    quest.log(text=u'Уплачен штраф в размере {}nc.'.format(penalty_money), event=event,
+                    quest.log(text=u'Уплачен штраф в размере {}nc.'.format(penalty_money), event=event,  # TODO: ##LOCALIZATION
                               position=quest.hirer.hometown.position)
                     go("cancel_fail")
                 else:
                     quest.npc_replica(npc=quest.hirer,
-                                      replica=u"Для отказа от квеста заплатите штраф {}nc.".format(penalty_money),
+                                      replica=u"Для отказа от квеста заплатите штраф {}nc.".format(penalty_money),  # TODO: ##LOCALIZATION
                                       event=event)
 
     ####################################################################################################################
@@ -208,7 +208,7 @@ class KillerQuest(Quest):
             agent = quest.agent
             agent.profile.set_balance(time=event.time, delta=quest.reward_money)
             agent.profile.set_karma(time=event.time, dvalue=quest.reward_karma)
-            quest.log(text=u'Получено вознаграждение в размере {:.0f}nc. и {:.0f} кармы'.format(quest.reward_money,
+            quest.log(text=u'Получено вознаграждение в размере {:.0f}nc. и {:.0f} кармы'.format(quest.reward_money,  # TODO: ##LOCALIZATION
                                                                                                 quest.reward_karma),
                       event=event, position=quest.hirer.hometown.position)
             agent.profile.set_relationship(time=event.time, npc=quest.hirer,
@@ -219,8 +219,8 @@ class KillerQuest(Quest):
                     note_class=notes.NPCRewardItemsNote,
                     time=event.time,
                     npc=quest.hirer,
-                    page_caption=u'Награда',
-                    btn1_caption=u'<br>Забрать',
+                    page_caption=u'Награда',  # TODO: ##LOCALIZATION
+                    btn1_caption=u'<br>Забрать',  # TODO: ##LOCALIZATION
                 )
             else:
                 go('win')
@@ -234,22 +234,22 @@ class KillerQuest(Quest):
                         agent.profile.del_note(uid=quest.dc.reward_note_uid, time=event.time)
                         go('win')
                     else:
-                        quest.npc_replica(npc=quest.hirer, replica=u"Не хватает места в инвентаре.", event=event)
+                        quest.npc_replica(npc=quest.hirer, replica=u"Не хватает места в инвентаре.", event=event)  # TODO: ##LOCALIZATION
 
     ####################################################################################################################
     class cancel_fail(FailByCancelState):
         def on_enter_(self, quest, event):
-            quest.log(text=u'Квест провален: отказ от выполнения.', event=event)
+            quest.log(text=u'Квест провален: отказ от выполнения.', event=event)  # TODO: ##LOCALIZATION
 
     ####################################################################################################################
     class win(WinState):
         def on_enter_(self, quest, event):
-           quest.log(text=u'Квест выполнен.', event=event)
+           quest.log(text=u'Квест выполнен.', event=event)  # TODO: ##LOCALIZATION
 
     ####################################################################################################################
     class deadline_fail(FailState):
         def on_enter_(self, quest, event):
             quest.agent.profile.set_relationship(time=event.time, npc=quest.hirer,
                                            dvalue=-quest.level * 2)  # изменение отношения c нпц
-            quest.log(text=u'Квест провален: время вышло.', event=event)
+            quest.log(text=u'Квест провален: время вышло.', event=event)  # TODO: ##LOCALIZATION
     ####################################################################################################################

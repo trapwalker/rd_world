@@ -1,5 +1,10 @@
-﻿__cls__ : Institution
-_cls : Institution
-doc     : Бармен
-text    : Вас приветствует бармен!
+﻿_cls : Institution
+doc:
+    en: Бармен  #TODO: ##LOCALIZATION
+    ru: Бармен
+
+text:
+    en: Вас приветствует бармен!  #TODO: ##LOCALIZATION
+    ru: Вас приветствует бармен!
+
 type    : barman

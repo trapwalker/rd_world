@@ -39,17 +39,17 @@ class KillBossQuest(AgentEventQuest):
         agent = self.agent.profile
         if agent.balance >= money_penalty:
             agent.set_balance(time=event.time, delta=-money_penalty)
-            self.log(text=u'Уплачен штраф в размере {}nc.'.format(money_penalty), event=event)
+            self.log(text=u'Уплачен штраф в размере {}nc.'.format(money_penalty), event=event)  # TODO: ##LOCALIZATION
             return True
         else:
-            self.npc_replica(npc=self.hirer, replica=u"Для отказа от квеста заплатите штраф {}nc.".format(money_penalty), event=event)
+            self.npc_replica(npc=self.hirer, replica=u"Для отказа от квеста заплатите штраф {}nc.".format(money_penalty), event=event)  # TODO: ##LOCALIZATION
             return False
 
     def init_level(self):
         self.level = 1
 
     def init_text(self, event):
-        self.text_short = u"Убейте игрока."
+        self.text_short = u"Убейте игрока."  # TODO: ##LOCALIZATION
         event_quest = self.get_event_quest(event=event)
         if event_quest:
             self.text = u"Убейте игрока с ником {}. Награда: {:.0f}nc.".format(
@@ -71,9 +71,9 @@ class KillBossQuest(AgentEventQuest):
             note_class=NPCWantedBossNote,
             time=event.time,
             npc=self.hirer,
-            page_caption='Найти и уничтожить',
+            page_caption='Найти и уничтожить',  # TODO: ##LOCALIZATION
         )
-        self.log(text=u'Начат квест - Найти и уничтожить.'.format(), event=event)
+        self.log(text=u'Начат квест - Найти и уничтожить.'.format(), event=event)  # TODO: ##LOCALIZATION
 
     ####################################################################################################################
     class begin(AgentEventQuest.begin):
@@ -91,7 +91,7 @@ class KillBossQuest(AgentEventQuest):
 
             if isinstance(event, OnKill) and (event.agent is event_quest.dc._main_agent.example):
                 quest.dc.is_kill = True
-                quest.log(text=u'{} убит.'.format(quest.dc.boss_name), event=event)
+                quest.log(text=u'{} убит.'.format(quest.dc.boss_name), event=event)  # TODO: ##LOCALIZATION
                 go('note_kill_reward')
 
             if isinstance(event, OnQuestSee) and (event.obj is event_quest.dc._main_agent.car):
@@ -138,7 +138,7 @@ class KillBossQuest(AgentEventQuest):
     class fail(FailByCancelState):
         def on_enter_(self, quest, event):
             if not quest.dc.is_kill:
-                quest.log(text=u'Убит не Вами.'.format(quest.dc.boss_name), event=event)
+                quest.log(text=u'Убит не Вами.'.format(quest.dc.boss_name), event=event)  # TODO: ##LOCALIZATION
             quest.agent.profile.del_note(uid=quest.dc.wanted_note_uid, time=event.time)
             quest.agent.profile.del_note(uid=quest.dc.track_note_uid, time=event.time)
 
@@ -146,7 +146,7 @@ class KillBossQuest(AgentEventQuest):
     class win(WinState):
         def on_enter_(self, quest, event):
             if not quest.dc.is_kill:
-                quest.log(text=u'Убит не Вами.'.format(quest.dc.boss_name), event=event)
+                quest.log(text=u'Убит не Вами.'.format(quest.dc.boss_name), event=event)  # TODO: ##LOCALIZATION
             quest.agent.profile.del_note(uid=quest.dc.wanted_note_uid, time=event.time)
             quest.agent.profile.del_note(uid=quest.dc.track_note_uid, time=event.time)
 

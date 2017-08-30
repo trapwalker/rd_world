@@ -1,5 +1,10 @@
-﻿__cls__ : Institution
-_cls : Institution
-doc     : Стилист
-text    : Вас приветствует стилист!
-type    : tuner
+﻿_cls: Institution
+doc:
+    en: Стилист  #TODO: ##LOCALIZATION
+    ru: Стилист
+
+text:
+    en: Вас приветствует стилист!  #TODO: ##LOCALIZATION
+    ru: Вас приветствует стилист!
+
+type: tuner

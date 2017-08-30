@@ -61,16 +61,16 @@ class DeliveryQuest(Quest):
 
     def init_text(self, distance=None):
         if distance == 0:
-            self.text_short = u"Доставьте груз в соседнее здание."
-            self.text = u"Доставьте груз: {} - к {}. Награда: {:.0f}nc.".format(
-                ', '.join([item.title for item in self.delivery_set]),
+            self.text_short = u"Доставьте груз в соседнее здание."  # TODO: ##LOCALIZATION
+            self.text = u"Доставьте груз: {} - к {}. Награда: {:.0f}nc.".format(  # TODO: ##LOCALIZATION
+                ', '.join([unicode(item.title) for item in self.delivery_set]),  # TODO: ##LOCALIZATION
                 self.recipient.title,
                 self.reward_money
             )
             return
-        self.text_short = u"Доставьте груз в город {}.".format(self.recipient.hometown.title)
-        self.text = u"Доставьте груз: {} - к {} в город {}. Награда: {:.0f}nc и {:.0f} ед. опыта.".format(
-            ', '.join([item.title for item in self.delivery_set]),
+        self.text_short = u"Доставьте груз в город {}.".format(self.recipient.hometown.title)  # TODO: ##LOCALIZATION
+        self.text = u"Доставьте груз: {} - к {} в город {}. Награда: {:.0f}nc и {:.0f} ед. опыта.".format(  # TODO: ##LOCALIZATION
+            ', '.join([unicode(item.title) for item in self.delivery_set]),
             self.recipient.title,
             self.recipient.hometown.title,
             self.reward_money,
@@ -121,7 +121,7 @@ class DeliveryQuest(Quest):
     ####################################################################################################################
     def on_start_(self, event, **kw):
         if not self.give_items(items=self.delivery_set, event=event):
-            self.npc_replica(npc=self.hirer, replica=u"Не хватает места в инвентаре.", event=event)
+            self.npc_replica(npc=self.hirer, replica=u"Не хватает места в инвентаре.", event=event)  # TODO: ##LOCALIZATION
             raise Cancel("QUEST CANCEL: User have not enough empty slot")
 
     ####################################################################################################################
@@ -166,8 +166,8 @@ class DeliveryQuest(Quest):
                     note_class=notes.NPCRewardItemsNote,
                     time=event.time,
                     npc=quest.recipient,
-                    page_caption=u'Доставка<br>груза',
-                    btn1_caption=u'<br>Забрать',
+                    page_caption=u'Доставка<br>груза',  # TODO: ##LOCALIZATION
+                    btn1_caption=u'<br>Забрать',  # TODO: ##LOCALIZATION
                 )
             else:
                 go('final')
@@ -186,5 +186,5 @@ class DeliveryQuest(Quest):
     ####################################################################################################################
     class final(WinState):
         def on_enter_(self, quest, event):
-            quest.log(text=u'Квест выполнен.', event=event)
+            quest.log(text=u'Квест выполнен.', event=event)  # TODO: ##LOCALIZATION
 

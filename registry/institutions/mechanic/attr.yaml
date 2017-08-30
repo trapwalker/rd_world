@@ -1,8 +1,13 @@
-﻿__cls__ : Mechanic
-_cls : Mechanic
-doc     : Механик
-text    : Вас приветствует механик!
-type    : mechanic
+﻿_cls: Mechanic
+doc:
+    en: Механик  #TODO: ##LOCALIZATION
+    ru: Механик
+
+text:
+    en: Вас приветствует механик!  #TODO: ##LOCALIZATION
+    ru: Вас приветствует механик!
+
+type: mechanic
 
 margin_repair : 0.2      # Маржа за ремонт
 repair_cost   : 0.5      # Коэффициент стоимости ремонта от стоимости машины
