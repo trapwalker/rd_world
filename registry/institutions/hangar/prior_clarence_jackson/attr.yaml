@@ -1,6 +1,9 @@
 ﻿_cls     : Hangar
 
-title    : Clarence_Jackson
+title: 
+    en: Clarence_Jackson
+    ru: Clarence_Jackson  #TODO: ##LOCALIZATION
+
 photo    : "static/content/institutions/hangar/prior_clarence_jackson.png"
 abstract : false
 

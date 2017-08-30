@@ -1,6 +1,9 @@
 ﻿_cls : SlotWorker
 
-title    : Eric_Davis
+title: 
+    en: Eric_Davis
+    ru: Eric_Davis  #TODO: ##LOCALIZATION
+
 photo    : "static/content/institutions/armorer/paloma_eric_davis.png"
 abstract : false
 

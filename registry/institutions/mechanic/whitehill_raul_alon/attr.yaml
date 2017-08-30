@@ -1,5 +1,8 @@
 ﻿_cls : Mechanic
-title    : Raul_Alon
+title: 
+    en: Raul_Alon
+    ru: Raul_Alon  #TODO: ##LOCALIZATION
+
 photo    : "static/content/institutions/mechanic/whitehill_raul_alon.png"
 abstract : false
 

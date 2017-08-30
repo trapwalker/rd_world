@@ -4,7 +4,10 @@ doc    : Квест обучения
 first_state: before_respawn
 current_state: ~
 
-caption: AI Quest
+caption: 
+    en: AI Quest
+    ru: AI Quest  #TODO: ##LOCALIZATION
+
 text: Ai Quest
 
 on_generate: |

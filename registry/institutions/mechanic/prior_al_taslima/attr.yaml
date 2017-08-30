@@ -1,5 +1,8 @@
 ﻿_cls : Mechanic
-title    : Al_Taslima
+title: 
+    en: Al_Taslima
+    ru: Al_Taslima  #TODO: ##LOCALIZATION
+
 photo    : "static/content/institutions/mechanic/prior_al_taslima.png"
 abstract : false
 

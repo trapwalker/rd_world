@@ -1,6 +1,9 @@
 ﻿_cls     : Hangar
 
-title    : George_Martell
+title: 
+    en: George_Martell
+    ru: George_Martell  #TODO: ##LOCALIZATION
+
 photo    : "static/content/institutions/hangar/paloma_george_martell.png"
 abstract : false
 

@@ -1,6 +1,9 @@
 ﻿_cls     : Hangar
 
-title    : Mike_Barsby
+title: 
+    en: Mike_Barsby
+    ru: Mike_Barsby  #TODO: ##LOCALIZATION
+
 photo    : "static/content/institutions/hangar/bonita_vista_mike_barsby.png"
 abstract : false
 

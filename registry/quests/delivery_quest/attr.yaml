@@ -10,4 +10,7 @@ current_state: ~
 distance_table: reg:///registry/rpg_settings/disttable
 list_icon: static/img/quests/icons/delivery.png
 
-caption: Доставка груза
+caption: 
+    en: Доставка груза  #TODO: ##LOCALIZATION
+    ru: Доставка груза
+

@@ -15,8 +15,14 @@ svg_link: static/content/locations/map_locations/mine_whitehill
 
 buildings:
   - name: mine
-    caption: Шахта
-    title: Шахта
+    caption: 
+        en: Шахта  #TODO: ##LOCALIZATION
+        ru: Шахта
+
+    title: 
+        en: Шахта  #TODO: ##LOCALIZATION
+        ru: Шахта
+
     head: reg:///registry/institutions/mine_manager/mine_whitehill_bob_mcdowell
     instances: []
 

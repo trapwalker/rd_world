@@ -2,7 +2,10 @@
 _cls: Skill
 doc    : Навыки
 
-description: Игрвой навык персонажа
+description: 
+    en: Игрвой навык персонажа  #TODO: ##LOCALIZATION
+    ru: Игрвой навык персонажа
+
 
 value: 0
 limit: 100

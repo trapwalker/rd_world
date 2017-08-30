@@ -1,6 +1,9 @@
 ﻿_cls     : Institution
 
-title    : Tenth
+title: 
+    en: Tenth
+    ru: Tenth  #TODO: ##LOCALIZATION
+
 photo    : "static/content/institutions/radio_dj/paloma_tenth.png"
 abstract : false
 

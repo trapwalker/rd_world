@@ -1,6 +1,9 @@
 ﻿_cls : Mechanic
 
-title    : Bryan
+title: 
+    en: Bryan
+    ru: Bryan  #TODO: ##LOCALIZATION
+
 photo    : "static/content/institutions/mechanic/paloma_bryan.png"
 abstract : false
 

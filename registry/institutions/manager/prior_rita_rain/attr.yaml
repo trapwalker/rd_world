@@ -1,5 +1,8 @@
 ﻿_cls: Institution
-title: Rita_Rain
+title: 
+    en: Rita_Rain
+    ru: Rita_Rain  #TODO: ##LOCALIZATION
+
 photo: "static/content/institutions/manager/prior_rita_rain.png"
 abstract: false
 

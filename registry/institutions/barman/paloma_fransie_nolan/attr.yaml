@@ -1,6 +1,9 @@
 ﻿_cls     : Institution
 
-title    : Fransie_Nolan
+title: 
+    en: Fransie_Nolan
+    ru: Fransie_Nolan  #TODO: ##LOCALIZATION
+
 photo    : "static/content/institutions/barman/paloma_fransie_nolan.png"
 abstract : false
 
@@ -33,8 +36,14 @@ quests:
     courier_medallion:
       parent: reg:///registry/items/quest_item
       _cls: QuestItem
-      title: Платиновая фишка
-      description: Предмет погибшего курьера. Необходимо доставить Fransie_Nolan.
+      title: 
+          en: Платиновая фишка  #TODO: ##LOCALIZATION
+          ru: Платиновая фишка
+
+      description: 
+          en: Предмет погибшего курьера. Необходимо доставить Fransie_Nolan.  #TODO: ##LOCALIZATION
+          ru: Предмет погибшего курьера. Необходимо доставить Fransie_Nolan.
+
       inv_icon_big    : static/content/items/quest_item/courier_medalion/big.png
       inv_icon_mid    : static/content/items/quest_item/courier_medalion/mid.png
       inv_icon_small  : static/content/items/quest_item/courier_medalion/mid.png

@@ -1,6 +1,9 @@
 ﻿_cls    : Girl
 
-title    : Amanda_Fun
+title: 
+    en: Amanda_Fun
+    ru: Amanda_Fun  #TODO: ##LOCALIZATION
+
 photo    : "static/content/institutions/girl/prior_amanda_fun.png"
 abstract : false
 

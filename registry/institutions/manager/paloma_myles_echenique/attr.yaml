@@ -1,6 +1,9 @@
 ﻿_cls     : Institution
 
-title    : Myles_Echenique
+title: 
+    en: Myles_Echenique
+    ru: Myles_Echenique  #TODO: ##LOCALIZATION
+
 photo    : "static/content/institutions/manager/paloma_myles_echenique.png"
 abstract : false
 

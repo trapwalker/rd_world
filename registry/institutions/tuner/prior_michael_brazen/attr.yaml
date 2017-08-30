@@ -1,5 +1,8 @@
 ﻿_cls  : Institution
-title    : Michael_Brazen
+title: 
+    en: Michael_Brazen
+    ru: Michael_Brazen  #TODO: ##LOCALIZATION
+
 photo    : "static/content/institutions/stylist/prior_michael_brazen.png"
 abstract : false
 

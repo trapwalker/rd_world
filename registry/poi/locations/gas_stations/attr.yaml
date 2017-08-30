@@ -11,7 +11,10 @@ svg_link: static/content/locations/map_locations/gas_station
 
 buildings:
     - name: nukeoil
-      caption: Нукойл
+      caption: 
+          en: Нукойл  #TODO: ##LOCALIZATION
+          ru: Нукойл
+
       head: reg:///registry/institutions/nucoil
       instances:
           - reg:///registry/institutions/gas_station

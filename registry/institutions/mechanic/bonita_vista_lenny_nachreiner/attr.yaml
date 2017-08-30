@@ -1,6 +1,9 @@
 ﻿_cls : Mechanic
 
-title    : Lenny_Nachreiner
+title: 
+    en: Lenny_Nachreiner
+    ru: Lenny_Nachreiner  #TODO: ##LOCALIZATION
+
 photo    : "static/content/institutions/mechanic/bonita_vista_lenny_nachreiner.png"
 abstract : false
 

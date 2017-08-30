@@ -1,6 +1,9 @@
 ﻿_cls     : Trainer
 
-title    : Charles_Alamir
+title: 
+    en: Charles_Alamir
+    ru: Charles_Alamir  #TODO: ##LOCALIZATION
+
 photo    : "static/content/institutions/trainer/bonita_vista_charles_alamir.png"
 abstract : false
 

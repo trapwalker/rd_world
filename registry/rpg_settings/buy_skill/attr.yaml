@@ -2,7 +2,10 @@
 _cls: BuySkill
 doc    : Покупной навык
 
-description: Дополнительное очко навыка
+description: 
+    en: Дополнительное очко навыка  #TODO: ##LOCALIZATION
+    ru: Дополнительное очко навыка
+
 
 value: 0
 limit: 3

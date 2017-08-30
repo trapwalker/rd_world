@@ -1,6 +1,9 @@
 ﻿_cls    : Girl
 
-title    : Lynnie_JJ
+title: 
+    en: Lynnie_JJ
+    ru: Lynnie_JJ  #TODO: ##LOCALIZATION
+
 photo    : "static/content/institutions/girl/paloma_lynnie_jj.png"
 abstract : false
 

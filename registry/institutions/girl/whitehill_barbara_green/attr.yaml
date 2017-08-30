@@ -1,6 +1,9 @@
 ﻿_cls    : Girl
 
-title    : Barbara_Green
+title: 
+    en: Barbara_Green
+    ru: Barbara_Green  #TODO: ##LOCALIZATION
+
 photo    : "static/content/institutions/girl/whitehill_barbara_green.png"
 abstract : false
 
