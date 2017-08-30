@@ -1,5 +1,5 @@
 _cls: AIQuickAgentProfile
-doc    : Прототипы пользовательских агентов
+doc: Прототипы пользовательских агентов
 
 
 quest_inventory:
@@ -8,7 +8,6 @@ quest_inventory:
 
 ai_quest:
     parent: reg:///registry/quests/ai_quest
-    __cls__: AIQuickQuest
     _cls: AIQuickQuest
     hirer: ~
     karma_coef: 0.0
