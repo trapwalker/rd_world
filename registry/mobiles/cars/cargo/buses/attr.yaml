@@ -1,7 +1,9 @@
-﻿_cls: Car
+_cls: Car
 doc: Грузовой класс (автобусы)
 
 sub_class_car: buses
+
+base_exp_price: 1.2499
 
 # Резисты эффектов зон
 r_cc_dirt:                0.525   # Резист к модификатору CC на бездорожье
