@@ -240,7 +240,7 @@ class DeliveryFromCache(DeliveryQuestSimple):
             go = partial(quest.go, event=event)
 
             if isinstance(event, OnCancel):
-                quest.npc_replica(npc=quest.hirer, replica=u"Вы нашли посылку и не можете отказаться.", event=event)
+                quest.npc_replica(npc=quest.hirer, replica=u"Вы нашли посылку и не можете отказаться.", event=event)  # TODO: ##LOCALIZATION
 
             if isinstance(event, OnTimer) and event.name == 'deadline_delivery_cache_quest':
                 agent.profile.del_note(uid=quest.dc.delivery_note_uid, time=event.time)
