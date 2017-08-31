@@ -67,7 +67,7 @@ class MeasureRadiation(Quest):
 
     ####################################################################################################################
     def on_start_(self, event, **kw):
-        self.log(text=u'Начат квест по замеру уровня радиации.', event=event, position=self.hirer.hometown.position)  # TODO: ##LOCALIZATION
+        self.log(text=self.locale("q_mr_start_text"), event=event, position=self.hirer.hometown.position)  # ##LOCALIZATION
 
 
     ####################################################################################################################
@@ -93,10 +93,10 @@ class MeasureRadiation(Quest):
                 penalty_money = quest.reward_money / 2.
                 if agent.profile.balance >= penalty_money:
                     agent.profile.set_balance(time=event.time, delta=-penalty_money)
-                    quest.log(text=u'Уплачен штраф в размере {}nc.'.format(penalty_money), event=event, position=quest.hirer.hometown.position)  # TODO: ##LOCALIZATION
+                    quest.log(text=u'{} {}nc.'.format(quest.locale("q_mr_cancel_pen_done"), penalty_money), event=event, position=quest.hirer.hometown.position)  # ##LOCALIZATION
                     go("cancel_fail")
                 else:
-                   quest.npc_replica(npc=quest.hirer, replica=u"Для отказа от квеста заплатите штраф {}nc.".format(penalty_money), event=event)  # TODO: ##LOCALIZATION
+                   quest.npc_replica(npc=quest.hirer, replica=u"{} {}nc.".format(quest.locale("q_mr_cancel_pen_try"), penalty_money), event=event)  # ##LOCALIZATION
 
             if isinstance(event, OnTimer):
                 if event.name == 'deadline_measuring_quest':
@@ -112,15 +112,15 @@ class MeasureRadiation(Quest):
         def on_enter_(self, quest, event):
             agent = quest.agent
 
-            quest.log(text=u'Измерения завершены. Вернитесь за наградой.', event=event, position=quest.hirer.hometown.position)  # TODO: ##LOCALIZATION
+            quest.log(text=quest.locale("q_mr_do_measure_done"), event=event, position=quest.hirer.hometown.position)  # ##LOCALIZATION
             agent.profile.set_relationship(time=event.time, npc=quest.hirer, dvalue=quest.reward_relation_hirer)
             quest.dc.reward_note_uid = agent.profile.add_note(
                 quest_uid=quest.uid,
                 note_class=notes.QuestRadiationNPCFinish,
                 time=event.time,
                 npc=quest.hirer,
-                page_caption=u'Измерение<br>радиации',  # TODO: ##LOCALIZATION
-                btn1_caption=u'<br>Отчитаться',  # TODO: ##LOCALIZATION
+                page_caption=quest.locale("q_mr_note_caption"),  # ##LOCALIZATION
+                btn1_caption=quest.locale("q_mr_note_btn1"),  # ##LOCALIZATION
             )
 
         def on_event_(self, quest, event):
@@ -137,19 +137,19 @@ class MeasureRadiation(Quest):
     class cancel_fail(FailByCancelState):
         def on_enter_(self, quest, event):
             quest.delete_notes(event=event)
-            quest.log(text=u'Квест провален.', event=event)  # TODO: ##LOCALIZATION
+            quest.log(text=quest.locale("q_share_q_fail"), event=event)  # ##LOCALIZATION
     ####################################################################################################################
     class win(WinState):
         def on_enter_(self, quest, event):
             quest.delete_notes(event=event)
-            quest.log(text=u'Квест выполнен.', event=event)  # TODO: ##LOCALIZATION
+            quest.log(text=quest.locale("q_share_q_win"), event=event)  # ##LOCALIZATION
     ####################################################################################################################
     class fail(FailState):
         def on_enter_(self, quest, event):
             quest.delete_notes(event=event)
             quest.agent.profile.set_relationship(time=event.time, npc=quest.hirer, dvalue=-quest.level * 2)  # изменение отношения c нпц
-            quest.agent.profile.set_karma(time=event.time, dvalue=-quest.reward_karma)  # todo: изменение кармы
-            quest.log(text=u'Квест провален.', event=event)  # TODO: ##LOCALIZATION
+            quest.agent.profile.set_karma(time=event.time, dvalue=-quest.reward_karma)  # изменение кармы
+            quest.log(text=quest.locale("q_share_q_fail"), event=event)  # ##LOCALIZATION
     ####################################################################################################################
     ####################################################################################################################
     def init_measure_points(self):
@@ -195,7 +195,7 @@ class MeasureRadiation(Quest):
             if note:
                 position = self.agent.profile._agent_model.car.position(time=event.time)
                 if note.is_near(position=position):
-                    self.log(text=u'Произведено измерение.', event=event, position=position)  # TODO: ##LOCALIZATION
+                    self.log(text=self.locale("q_mr_do_measure"), event=event, position=position)  # ##LOCALIZATION
                     self.agent.profile.set_exp(time=event.time, dvalue=self.reward_exp)
                     self.measure_notes.remove(note_uid)
                     self.agent.profile.del_note(uid=note_uid, time=event.time)
