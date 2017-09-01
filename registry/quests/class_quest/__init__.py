@@ -94,7 +94,7 @@ class ClassQuest(Quest):
                     note_class=notes.FirstOutNote,
                     time=event.time
                 )
-                # TODO: ##LOCALIZATION
+
                 role_class = quest.agent.profile.role_class
                 attributes_of_class = quest.attributes_by_class.get(role_class.name, None)
                 if attributes_of_class is None:
@@ -141,13 +141,13 @@ class ClassQuest(Quest):
                         ru=u'Посещен тренер.',
                     ),
                     event=event,
-                )  # TODO: ##LOCALIZATION
+                )
                 go("select_teacher")
 
     ####################################################################################################################
     class select_teacher(QuestState_):
         def on_enter_(self, quest, event):
-            # TODO: ##LOCALIZATION
+
             agent = quest.agent.profile
             quest.dc.select_teacher_note_uid = agent.add_note(
                 quest_uid=quest.uid,
@@ -155,7 +155,7 @@ class ClassQuest(Quest):
                 time=event.time,
                 page_caption=LocalizedString(
                     en=u'Наставник',  # TODO: ##LOCALIZATION
-                    ru=u'Наставник',  # TODO: ##LOCALIZATION
+                    ru=u'Наставник',
                 ),
                 btn1_caption=LocalizedString(
                     en=u'<br>Принять',  # TODO: ##LOCALIZATION
@@ -164,7 +164,6 @@ class ClassQuest(Quest):
             )
 
         def on_event_(self, quest, event):
-            # TODO: ##LOCALIZATION
             go = partial(quest.go, event=event)
             agent = quest.agent.profile
             if isinstance(event, OnNote) and (event.note_uid == quest.dc.select_teacher_note_uid):
@@ -217,7 +216,6 @@ class ClassQuest(Quest):
     ####################################################################################################################
     class win(WinState):
         def on_enter_(self, quest, event):
-            # TODO: ##LOCALIZATION
             quest.log(
                 text=LocalizedString(
                     en=u'Quest is complete.',  ##LOCALIZATION

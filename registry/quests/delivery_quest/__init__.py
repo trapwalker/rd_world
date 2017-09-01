@@ -4,7 +4,7 @@ import logging
 log = logging.getLogger(__name__)
 
 from sublayers_server.model.registry_me.classes import notes
-from sublayers_server.model.registry_me.tree import FloatField, RegistryLinkField, ListField, EmbeddedNodeField, StringField
+from sublayers_server.model.registry_me.tree import FloatField, RegistryLinkField, ListField, EmbeddedNodeField, StringField, LocalizedString
 from sublayers_server.model.quest_events import OnNote
 from sublayers_server.model.registry_me.classes.quests import (
     Cancel, QuestState_, WinState,
@@ -61,12 +61,25 @@ class DeliveryQuest(Quest):
 
     def init_text(self, distance=None):
         if distance == 0:
-            self.text_short = u"Доставьте груз в соседнее здание."  # TODO: ##LOCALIZATION
-            self.text = u"Доставьте груз: {} - к {}. Награда: {:.0f}nc.".format(  # TODO: ##LOCALIZATION
-                ', '.join([unicode(item.title) for item in self.delivery_set]),  # TODO: ##LOCALIZATION
-                self.recipient.title,
-                self.reward_money
+            self.text_short = LocalizedString(
+                en=u"Доставьте груз в соседнее здание.",  # TODO: ##LOCALIZATION
+                ru=u"Доставьте груз в соседнее здание.",
             )
+
+            self.text = LocalizedString(
+                en=u"Доставьте груз: {} - к {}. Награда: {:.0f}nc.".format(  # TODO: ##LOCALIZATION
+                    ', '.join([item.title.en for item in self.delivery_set]),
+                    self.recipient.title,
+                    self.reward_money
+                ),
+                ru=u"Доставьте груз: {} - к {}. Награда: {:.0f}nc.".format(
+                    ', '.join([item.title.ru for item in self.delivery_set]),
+                    self.recipient.title,
+                    self.reward_money
+                ),
+            ),
+
+
             return
         self.text_short = u"Доставьте груз в город {}.".format(self.recipient.hometown.title)  # TODO: ##LOCALIZATION
         self.text = u"Доставьте груз: {} - к {} в город {}. Награда: {:.0f}nc и {:.0f} ед. опыта.".format(  # TODO: ##LOCALIZATION

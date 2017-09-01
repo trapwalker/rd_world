@@ -17,7 +17,7 @@ class EscortCaravan(AgentEventQuest):
         d.update(start_quest_time=getattr(self.dc, 'start_caravan_time', None))
         return d
 
-    def init_text(self, event, event_quest):  # TODO: ##LOCALIZATION
+    def init_text(self, event, event_quest):
         town = event_quest.town_destination
         town_str = town and town.title or 'N'
         self.text_short = LocalizedString(
@@ -81,7 +81,14 @@ class EscortCaravan(AgentEventQuest):
         if event_quest and self.agent.profile._agent_model:
             res = event_quest.include_to_party(model_agent=self.agent.profile._agent_model, event=event)
             if not res:
-                self.npc_replica(npc=self.hirer, replica=u"Караван сформирован.", event=event)  # TODO: ##LOCALIZATION
+                self.npc_replica(
+                    npc=self.hirer,
+                    replica=LocalizedString(
+                        en=u"Караван сформирован.",  # TODO: ##LOCALIZATION
+                        ru=u"Караван сформирован.",
+                    ),
+                    event=event,
+                )
                 raise Cancel("QUEST CANCEL: Caravan Party is full.")
             self.dc.radius_participation = event_quest.radius_participation
 
@@ -90,7 +97,13 @@ class EscortCaravan(AgentEventQuest):
         def on_enter_(self, quest, event):
             super(EscortCaravan.begin, self).on_enter_(quest=quest, event=event)
             quest.set_timer(event=event, name='participation', delay=30)
-            quest.log(u'Ожидание каравана.', event=event)  # TODO: ##LOCALIZATION
+            quest.log(
+                LocalizedString(
+                    en=u'Ожидание каравана.',  # TODO: ##LOCALIZATION
+                    ru=u'Ожидание каравана.',
+                ),
+                event=event,
+            )
 
 
         def on_event_(self, quest, event):
@@ -103,7 +116,13 @@ class EscortCaravan(AgentEventQuest):
                     if event_quest.current_state == 'run':  # Если караван в пути
                         if not quest.dc.caravan_started:
                             quest.dc.caravan_started = True
-                            quest.log(u'Караван выехал.', event=event)  # TODO: ##LOCALIZATION
+                            quest.log(
+                                LocalizedString(
+                                    en=u'Караван выехал.',  # TODO: ##LOCALIZATION
+                                    ru=u'Караван выехал.',
+                                ),
+                                event=event,
+                            )
                         caravan_point = event_quest.average_caravan_position(time=event.time)
                         if caravan_point:
                             quest.dc.check_participation += 1.0
@@ -124,7 +143,13 @@ class EscortCaravan(AgentEventQuest):
                 quest.dc.check_participation = 1.0
 
             participation = quest.dc.count_participation / quest.dc.check_participation
-            quest.log(u'Участие в караване: {}%'.format(int(100 * participation)), event=event)  # TODO: ##LOCALIZATION
+            quest.log(
+                LocalizedString(
+                    en=u'Участие в караване: {}%'.format(int(100 * participation)),  # TODO: ##LOCALIZATION
+                    ru=u'Участие в караване: {}%'.format(int(100 * participation)),
+                ),
+                event=event,
+            )
             super(EscortCaravan.win, self).on_enter_(quest=quest, event=event)
 
             agent_profile = quest.agent.profile
@@ -143,6 +168,12 @@ class EscortCaravan(AgentEventQuest):
                 event_quest.dc.party.on_exclude(agent=quest.agent.profile._agent_model, time=event.time)
                 event_quest.exclude_from_party(model_agent=quest.agent.profile._agent_model, event=event)
 
-            quest.log(u'Отказ от участия в караване.', event=event)  # TODO: ##LOCALIZATION
+            quest.log(
+                LocalizedString(
+                    en=u'Отказ от участия в караване.',  # TODO: ##LOCALIZATION
+                    ru=u'Отказ от участия в караване.',
+                ),
+                event=event,
+            )
             quest.agent.profile.set_relationship(time=event.time, npc=quest.hirer, dvalue=-5)  # изменение отношения c нпц
             quest.agent.profile.set_karma(time=event.time, dvalue=-5)  # изменение кармы
