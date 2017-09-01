@@ -6,6 +6,7 @@ from sublayers_world.registry.quests.agent_event_quests import AgentEventQuest
 from sublayers_world.registry.quests.ai_event_quests.traffic.gang.caravan_simple import AICaravanQuest
 from sublayers_server.model.quest_events import OnTimer, OnPartyExclude
 from sublayers_server.model.registry_me.classes.quests import Cancel
+from sublayers_server.model.registry_me.tree import LocalizedString
 
 from functools import partial
 
@@ -19,11 +20,15 @@ class EscortCaravan(AgentEventQuest):
     def init_text(self, event, event_quest):  # TODO: ##LOCALIZATION
         town = event_quest.town_destination
         town_str = town and town.title or 'N'
-        self.text_short = u"Сопроводите караван.".format()  # TODO: ##LOCALIZATION
-        self.text = u"Сопроводите караван в город {}. Награда: {:.0f}nc.".format(
-            town_str,
-            self.reward_money
+        self.text_short = LocalizedString(
+            en=u"Сопроводите караван.",  # TODO: ##LOCALIZATION
+            ru=u"Сопроводите караван.",
         )
+        self.text = LocalizedString(
+            en=u"Сопроводите караван в город {}. Награда: {:.0f}nc.".format(town_str, self.reward_money),  # TODO: ##LOCALIZATION
+            ru=u"Сопроводите караван в город {}. Награда: {:.0f}nc.".format(town_str, self.reward_money),
+        )
+
 
     def get_potential_event_quest(self, event, agent):
         event_quests = event.server.ai_dispatcher.get_quest_by_tags(set(self.needed_tags))
