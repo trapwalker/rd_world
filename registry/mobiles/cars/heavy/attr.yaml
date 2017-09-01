@@ -4,6 +4,8 @@ doc         : Тяжелый класс транспортных средств
 
 image_scale : small   # Масштаб машинки для отрисовки обвеса: small, middle, big
 
+p_armor: 12.5   # Бронированность
+
 # audio_engine
 audio_engine:
   audio_name: "engine_heavy_001"

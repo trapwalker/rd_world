@@ -1,0 +1,73 @@
+﻿__cls__         : MachineGun
+_cls            : MachineGun
+doc             : Ржав. пулемет Bren
+abstract        : false
+
+title           : Ржав. пулемет<br>Bren                      # Краткое название - отобразится в слоте инвентаря
+# Полное описание - отобразится в разделе описания в инвентаре
+description     : '???'
+
+# Основные балансные настройки
+base_price      : 510                                        # Цена
+weight_class    : 1                                          # Класс тяжести
+ammo            : reg:///registry/items/usable/ammo/762x51bb # Подходящие патроны
+
+dps             : 2.38                                       # Дамаг в секунду по вражеским целям
+
+radius          : 204                                        # Дальность сектора стрельбы
+width           : 72                                         # Ширина сектора стрельбы
+
+ammo_per_second : 3                                          # [shot/s] ~=650/60 Потребление патронов в секунду
+
+animation_tracer_rate : 3
+
+# Картинки для представления в инвентаре
+inv_icon_big    : static/content/items/slot_item/weapons/mashine_guns/light/03_bren/inventory/big.png
+inv_icon_mid    : static/content/items/slot_item/weapons/mashine_guns/light/03_bren/inventory/mid.png
+inv_icon_small  : static/content/items/slot_item/weapons/mashine_guns/light/03_bren/inventory/small.png
+
+weapon_audio:
+  - auto_r_11
+  - auto_r_12
+  - auto_r_13
+  - auto_r_14
+
+armorer_images:
+  small:
+    # Картинки для представления у оружейника (вид сбоку)
+    armorer_side_F  : "static/content/items/slot_item/weapons/mashine_guns/light/03_bren/small/side_f.png" # вперёд
+    armorer_side_B  : "static/content/items/slot_item/weapons/mashine_guns/light/03_bren/small/side_b.png" # назад
+    armorer_side_R  : "static/content/items/slot_item/weapons/mashine_guns/light/03_bren/small/side_r.png" # вправо
+    armorer_side_L  : "static/content/items/slot_item/weapons/mashine_guns/light/03_bren/small/side_l.png" # влево
+
+    # Картинки для представления у оружейника (вид сверху)
+    armorer_top_F   : "static/content/items/slot_item/weapons/mashine_guns/light/03_bren/small/top_f.png"  # вперёд
+    armorer_top_B   : "static/content/items/slot_item/weapons/mashine_guns/light/03_bren/small/top_b.png"  # назад
+    armorer_top_R   : "static/content/items/slot_item/weapons/mashine_guns/light/03_bren/small/top_r.png"  # вправо
+    armorer_top_L   : "static/content/items/slot_item/weapons/mashine_guns/light/03_bren/small/top_l.png"  # влево
+
+  middle:
+    # Картинки для представления у оружейника (вид сбоку)
+    armorer_side_F  : "static/content/items/slot_item/weapons/mashine_guns/light/03_bren/middle/side_f.png" # вперёд
+    armorer_side_B  : "static/content/items/slot_item/weapons/mashine_guns/light/03_bren/middle/side_b.png" # назад
+    armorer_side_R  : "static/content/items/slot_item/weapons/mashine_guns/light/03_bren/middle/side_r.png" # вправо
+    armorer_side_L  : "static/content/items/slot_item/weapons/mashine_guns/light/03_bren/middle/side_l.png" # влево
+
+    # Картинки для представления у оружейника (вид сверху)
+    armorer_top_F   : "static/content/items/slot_item/weapons/mashine_guns/light/03_bren/middle/top_f.png"  # вперёд
+    armorer_top_B   : "static/content/items/slot_item/weapons/mashine_guns/light/03_bren/middle/top_b.png"  # назад
+    armorer_top_R   : "static/content/items/slot_item/weapons/mashine_guns/light/03_bren/middle/top_r.png"  # вправо
+    armorer_top_L   : "static/content/items/slot_item/weapons/mashine_guns/light/03_bren/middle/top_l.png"  # влево
+
+  big:
+    # Картинки для представления у оружейника (вид сбоку)
+    armorer_side_F  : "static/content/items/slot_item/weapons/mashine_guns/light/03_bren/big/side_f.png" # вперёд
+    armorer_side_B  : "static/content/items/slot_item/weapons/mashine_guns/light/03_bren/big/side_b.png" # назад
+    armorer_side_R  : "static/content/items/slot_item/weapons/mashine_guns/light/03_bren/big/side_r.png" # вправо
+    armorer_side_L  : "static/content/items/slot_item/weapons/mashine_guns/light/03_bren/big/side_l.png" # влево
+
+    # Картинки для представления у оружейника (вид сверху)
+    armorer_top_F   : "static/content/items/slot_item/weapons/mashine_guns/light/03_bren/big/top_f.png"  # вперёд
+    armorer_top_B   : "static/content/items/slot_item/weapons/mashine_guns/light/03_bren/big/top_b.png"  # назад
+    armorer_top_R   : "static/content/items/slot_item/weapons/mashine_guns/light/03_bren/big/top_r.png"  # вправо
+    armorer_top_L   : "static/content/items/slot_item/weapons/mashine_guns/light/03_bren/big/top_l.png"  # влево

@@ -1,0 +1,76 @@
+﻿_cls            : MachineGun
+doc             : Ржав. пулемет MG 18 TuF
+abstract        : false
+
+title           : Ржав. пулемет<br>MG 18 TuF                  # Краткое название - отобразится в слоте инвентаря
+# Полное описание - отобразится в разделе описания в инвентаре
+description     : '???'
+
+# Основные балансные настройки
+base_price      : 3060                                        # Цена
+weight_class    : 3                                           # Класс тяжести
+ammo            : reg:///registry/items/usable/ammo/13mm      # Подходящие патроны
+
+dps             : 3.8                                         # Дамаг в секунду по вражеским целям
+
+radius          : 340                                         # Дальность сектора стрельбы
+width           : 54                                          # Ширина сектора стрельбы
+
+ammo_per_second : 1                                           # [shot/s] ~=650/60 Потребление патронов в секунду
+
+animation_tracer_rate : 1
+
+weapon_animation:
+  - ECanvasPointsTracerAnimation_1
+  - ECanvasPointsTracerAnimation_2
+
+# Картинки для представления в инвентаре
+inv_icon_big    : static/content/items/slot_item/weapons/mashine_guns/heavy/04_mg_18_tuf/inventory/big.png
+inv_icon_mid    : static/content/items/slot_item/weapons/mashine_guns/heavy/04_mg_18_tuf/inventory/mid.png
+inv_icon_small  : static/content/items/slot_item/weapons/mashine_guns/heavy/04_mg_18_tuf/inventory/small.png
+
+weapon_audio:
+  - auto_r_21
+  - auto_r_22
+  - auto_r_23
+  - auto_r_24
+
+armorer_images:
+  small:
+    # Картинки для представления у оружейника (вид сбоку)
+    armorer_side_F  : "static/content/items/slot_item/weapons/mashine_guns/heavy/04_mg_18_tuf/small/side_f.png" # вперёд
+    armorer_side_B  : "static/content/items/slot_item/weapons/mashine_guns/heavy/04_mg_18_tuf/small/side_b.png" # назад
+    armorer_side_R  : "static/content/items/slot_item/weapons/mashine_guns/heavy/04_mg_18_tuf/small/side_r.png" # вправо
+    armorer_side_L  : "static/content/items/slot_item/weapons/mashine_guns/heavy/04_mg_18_tuf/small/side_l.png" # влево
+
+    # Картинки для представления у оружейника (вид сверху)
+    armorer_top_F   : "static/content/items/slot_item/weapons/mashine_guns/heavy/04_mg_18_tuf/small/top_f.png"  # вперёд
+    armorer_top_B   : "static/content/items/slot_item/weapons/mashine_guns/heavy/04_mg_18_tuf/small/top_b.png"  # назад
+    armorer_top_R   : "static/content/items/slot_item/weapons/mashine_guns/heavy/04_mg_18_tuf/small/top_r.png"  # вправо
+    armorer_top_L   : "static/content/items/slot_item/weapons/mashine_guns/heavy/04_mg_18_tuf/small/top_l.png"  # влево
+
+  middle:
+    # Картинки для представления у оружейника (вид сбоку)
+    armorer_side_F  : "static/content/items/slot_item/weapons/mashine_guns/heavy/04_mg_18_tuf/middle/side_f.png" # вперёд
+    armorer_side_B  : "static/content/items/slot_item/weapons/mashine_guns/heavy/04_mg_18_tuf/middle/side_b.png" # назад
+    armorer_side_R  : "static/content/items/slot_item/weapons/mashine_guns/heavy/04_mg_18_tuf/middle/side_r.png" # вправо
+    armorer_side_L  : "static/content/items/slot_item/weapons/mashine_guns/heavy/04_mg_18_tuf/middle/side_l.png" # влево
+
+    # Картинки для представления у оружейника (вид сверху)
+    armorer_top_F   : "static/content/items/slot_item/weapons/mashine_guns/heavy/04_mg_18_tuf/middle/top_f.png"  # вперёд
+    armorer_top_B   : "static/content/items/slot_item/weapons/mashine_guns/heavy/04_mg_18_tuf/middle/top_b.png"  # назад
+    armorer_top_R   : "static/content/items/slot_item/weapons/mashine_guns/heavy/04_mg_18_tuf/middle/top_r.png"  # вправо
+    armorer_top_L   : "static/content/items/slot_item/weapons/mashine_guns/heavy/04_mg_18_tuf/middle/top_l.png"  # влево
+
+  big:
+    # Картинки для представления у оружейника (вид сбоку)
+    armorer_side_F  : "static/content/items/slot_item/weapons/mashine_guns/heavy/04_mg_18_tuf/middle/side_f.png" # вперёд
+    armorer_side_B  : "static/content/items/slot_item/weapons/mashine_guns/heavy/04_mg_18_tuf/middle/side_b.png" # назад
+    armorer_side_R  : "static/content/items/slot_item/weapons/mashine_guns/heavy/04_mg_18_tuf/middle/side_r.png" # вправо
+    armorer_side_L  : "static/content/items/slot_item/weapons/mashine_guns/heavy/04_mg_18_tuf/middle/side_l.png" # влево
+
+    # Картинки для представления у оружейника (вид сверху)
+    armorer_top_F   : "static/content/items/slot_item/weapons/mashine_guns/heavy/04_mg_18_tuf/middle/top_f.png"  # вперёд
+    armorer_top_B   : "static/content/items/slot_item/weapons/mashine_guns/heavy/04_mg_18_tuf/middle/top_b.png"  # назад
+    armorer_top_R   : "static/content/items/slot_item/weapons/mashine_guns/heavy/04_mg_18_tuf/middle/top_r.png"  # вправо
+    armorer_top_L   : "static/content/items/slot_item/weapons/mashine_guns/heavy/04_mg_18_tuf/middle/top_l.png"  # влево

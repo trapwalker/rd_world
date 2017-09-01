@@ -1,0 +1,73 @@
+﻿__cls__         : MachineGun
+_cls            : MachineGun
+doc             : Ржав. пулемет Stoner 63
+abstract        : false
+
+title           : Ржав. пулемет<br>Stoner 63                 # Краткое название - отобразится в слоте инвентаря
+# Полное описание - отобразится в разделе описания в инвентаре
+description     : '???'
+
+# Основные балансные настройки
+base_price      : 383                                        # Цена
+weight_class    : 1                                          # Класс тяжести
+ammo            : reg:///registry/items/usable/ammo/556bb    # Подходящие патроны
+
+dps             : 1.87                                       # Дамаг в секунду по вражеским целям
+
+radius          : 187                                        # Дальность сектора стрельбы
+width           : 66                                         # Ширина сектора стрельбы
+
+ammo_per_second : 2                                          # [shot/s] ~=650/60 Потребление патронов в секунду
+
+animation_tracer_rate : 2
+
+# Картинки для представления в инвентаре
+inv_icon_big    : static/content/items/slot_item/weapons/mashine_guns/light/02_stoner_63/inventory/big.png
+inv_icon_mid    : static/content/items/slot_item/weapons/mashine_guns/light/02_stoner_63/inventory/mid.png
+inv_icon_small  : static/content/items/slot_item/weapons/mashine_guns/light/02_stoner_63/inventory/small.png
+
+weapon_audio:
+  - auto_r_11
+  - auto_r_12
+  - auto_r_13
+  - auto_r_14
+
+armorer_images:
+  small:
+    # Картинки для представления у оружейника (вид сбоку)
+    armorer_side_F  : "static/content/items/slot_item/weapons/mashine_guns/light/02_stoner_63/small/side_f.png" # вперёд
+    armorer_side_B  : "static/content/items/slot_item/weapons/mashine_guns/light/02_stoner_63/small/side_b.png" # назад
+    armorer_side_R  : "static/content/items/slot_item/weapons/mashine_guns/light/02_stoner_63/small/side_r.png" # вправо
+    armorer_side_L  : "static/content/items/slot_item/weapons/mashine_guns/light/02_stoner_63/small/side_l.png" # влево
+
+    # Картинки для представления у оружейника (вид сверху)
+    armorer_top_F   : "static/content/items/slot_item/weapons/mashine_guns/light/02_stoner_63/small/top_f.png"  # вперёд
+    armorer_top_B   : "static/content/items/slot_item/weapons/mashine_guns/light/02_stoner_63/small/top_b.png"  # назад
+    armorer_top_R   : "static/content/items/slot_item/weapons/mashine_guns/light/02_stoner_63/small/top_r.png"  # вправо
+    armorer_top_L   : "static/content/items/slot_item/weapons/mashine_guns/light/02_stoner_63/small/top_l.png"  # влево
+
+  middle:
+    # Картинки для представления у оружейника (вид сбоку)
+    armorer_side_F  : "static/content/items/slot_item/weapons/mashine_guns/light/02_stoner_63/middle/side_f.png" # вперёд
+    armorer_side_B  : "static/content/items/slot_item/weapons/mashine_guns/light/02_stoner_63/middle/side_b.png" # назад
+    armorer_side_R  : "static/content/items/slot_item/weapons/mashine_guns/light/02_stoner_63/middle/side_r.png" # вправо
+    armorer_side_L  : "static/content/items/slot_item/weapons/mashine_guns/light/02_stoner_63/middle/side_l.png" # влево
+
+    # Картинки для представления у оружейника (вид сверху)
+    armorer_top_F   : "static/content/items/slot_item/weapons/mashine_guns/light/02_stoner_63/middle/top_f.png"  # вперёд
+    armorer_top_B   : "static/content/items/slot_item/weapons/mashine_guns/light/02_stoner_63/middle/top_b.png"  # назад
+    armorer_top_R   : "static/content/items/slot_item/weapons/mashine_guns/light/02_stoner_63/middle/top_r.png"  # вправо
+    armorer_top_L   : "static/content/items/slot_item/weapons/mashine_guns/light/02_stoner_63/middle/top_l.png"  # влево
+
+  big:
+    # Картинки для представления у оружейника (вид сбоку)
+    armorer_side_F  : "static/content/items/slot_item/weapons/mashine_guns/light/02_stoner_63/big/side_f.png" # вперёд
+    armorer_side_B  : "static/content/items/slot_item/weapons/mashine_guns/light/02_stoner_63/big/side_b.png" # назад
+    armorer_side_R  : "static/content/items/slot_item/weapons/mashine_guns/light/02_stoner_63/big/side_r.png" # вправо
+    armorer_side_L  : "static/content/items/slot_item/weapons/mashine_guns/light/02_stoner_63/big/side_l.png" # влево
+
+    # Картинки для представления у оружейника (вид сверху)
+    armorer_top_F   : "static/content/items/slot_item/weapons/mashine_guns/light/02_stoner_63/big/top_f.png"  # вперёд
+    armorer_top_B   : "static/content/items/slot_item/weapons/mashine_guns/light/02_stoner_63/big/top_b.png"  # назад
+    armorer_top_R   : "static/content/items/slot_item/weapons/mashine_guns/light/02_stoner_63/big/top_r.png"  # вправо
+    armorer_top_L   : "static/content/items/slot_item/weapons/mashine_guns/light/02_stoner_63/big/top_l.png"  # влево
