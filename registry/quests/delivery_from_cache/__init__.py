@@ -191,9 +191,9 @@ class DeliveryFromCache(DeliveryQuestSimple):
     ####################################################################################################################
     def on_start_(self, event, **kw):
         if self.get_available_lvl() < self.level:
-            self.npc_replica(npc=self.hirer, replica=self.locale("q_dfc_npc_fail"), event=event)  # TODO: ##LOCALIZATION
+            self.npc_replica(npc=self.hirer, replica=self.locale("q_share_no_rel_npc"), event=event)  # ##LOCALIZATION
             raise Cancel("QUEST DeliveryFromCache CANCEL: User have not enough relation")
-        self.log(text=self.locale("q_dfc_started"), event=event, position=self.hirer.hometown.position)  # TODO: ##LOCALIZATION
+        self.log(text=self.locale("q_dfc_started"), event=event, position=self.hirer.hometown.position)  # ##LOCALIZATION
 
     ####################################################################################################################
     ## Перечень состояний ##############################################################################################
@@ -278,18 +278,18 @@ class DeliveryFromCache(DeliveryQuestSimple):
     ####################################################################################################################
     class cancel_fail(FailByCancelState):
         def on_enter_(self, quest, event):
-            quest.log(text=quest.locale("q_dfc_fail"), event=event)  ##LOCALIZATION
+            quest.log(text=quest.locale("q_share_q_fail"), event=event)  ##LOCALIZATION
 
     ####################################################################################################################
     class win(WinState):
         def on_enter_(self, quest, event):
-            quest.log(text=quest.locale("q_dfc_win"), event=event)  ##LOCALIZATION
+            quest.log(text=quest.locale("q_share_q_win"), event=event)  ##LOCALIZATION
 
     ####################################################################################################################
     class fail(FailState):
         def on_enter_(self, quest, event):
             quest.agent.profile.set_relationship(time=event.time, npc=quest.hirer, dvalue=-20)  # изменение отношения c нпц
             quest.agent.profile.set_karma(time=event.time, dvalue=-10)  # изменение кармы
-            quest.log(text=quest.locale("q_dfc_fail"), event=event)  ##LOCALIZATION
+            quest.log(text=quest.locale("q_share_q_fail"), event=event)  ##LOCALIZATION
 
 

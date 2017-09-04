@@ -157,7 +157,7 @@ class KillerQuest(Quest):
             note_class=notes.NPCWantedNote,
             time=event.time,
             npc=self.hirer,
-            page_caption='Задание на убийство',  # TODO: ##LOCALIZATION
+            page_caption=self.locale("q_kt_page_caption"),  # ##LOCALIZATION
         )
         self.log(text=u'{} {}.'.format(self.locale("q_kt_start_text"), self.count_to_kill), event=event,  # ##LOCALIZATION
                  position=self.hirer.hometown.position)
