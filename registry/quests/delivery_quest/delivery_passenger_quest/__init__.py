@@ -141,7 +141,7 @@ class DeliveryPassengerQuest(DeliveryQuestSimple):
             raise Cancel("QUEST CANCEL: User have not enough empty slot")
 
         self.log(text=self.locale("q_dp_started"), event=event, position=self.hirer.hometown.position)  ##LOCALIZATION
-        temp_log_str = '{} {}.'.format(self.locale("q_dp_in_passengers"), ', '.join([self.locale(item.title) for item in self.delivery_set]))  # ##LOCALIZATION
+        temp_log_str = u'{} {}.'.format(self.locale("q_dp_in_passengers"), ', '.join([self.locale(item.title) for item in self.delivery_set]))  # ##LOCALIZATION
         self.log(text=temp_log_str, event=event, position=self.hirer.hometown.position)
 
     ####################################################################################################################
