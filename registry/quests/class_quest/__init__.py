@@ -76,13 +76,7 @@ class ClassQuest(Quest):
     def on_start_(self, event, **kw):
         # Создание ноты для квеста
         self.init_text()
-        self.log(
-            text=LocalizedString(
-                en=u'Начат Классовый квест.',  # TODO: ##LOCALIZATION
-                ru=u'Начат Классовый квест.',
-            ),
-            event=event,
-        )
+        self.log(text=self.locale("q_cq_started"), event=event)  #LOCALIZATION
 
     ####################################################################################################################
     class first_out(QuestState_):
@@ -94,7 +88,7 @@ class ClassQuest(Quest):
                     note_class=notes.FirstOutNote,
                     time=event.time
                 )
-
+                #LOCALIZATION
                 role_class = quest.agent.profile.role_class
                 attributes_of_class = quest.attributes_by_class.get(role_class.name, None)
                 if attributes_of_class is None:
@@ -103,13 +97,7 @@ class ClassQuest(Quest):
                     quest.caption = attributes_of_class.super_task
 
                 quest.init_text()
-                quest.log(
-                    text=LocalizedString(
-                        en=u'Получено новое задание.',  # TODO: ##LOCALIZATION
-                        ru=u'Получено новое задание.',
-                    ),
-                    event=event,
-                )
+                quest.log(text=quest.locale("q_cq_caption_get_new_task"), event=event)  #LOCALIZATION
                 go("visit_trainer")
 
     ####################################################################################################################
@@ -121,10 +109,7 @@ class ClassQuest(Quest):
                 quest_uid=quest.uid,
                 note_class=notes.VisitTrainerNote,
                 time=event.time,
-                page_caption=LocalizedString(
-                    en=u'Классовая цель',  # TODO: ##LOCALIZATION
-                    ru=u'Классовая цель',
-                ),
+                page_caption=quest.locale("q_cq_class_target_note"),  #LOCALIZATION
                 npc_type='trainer'
             )
 
@@ -135,32 +120,19 @@ class ClassQuest(Quest):
                 quest.init_text()
                 # todo: Вынести 300 в атрибуты квеста
                 agent.set_exp(time=event.time, dvalue=300)
-                quest.log(
-                    text=LocalizedString(
-                        en=u'Посещен тренер.',  # TODO: ##LOCALIZATION
-                        ru=u'Посещен тренер.',
-                    ),
-                    event=event,
-                )
+                quest.log(text=quest.locale("q_cq_visit_trainer"), event=event)  #LOCALIZATION
                 go("select_teacher")
 
     ####################################################################################################################
     class select_teacher(QuestState_):
         def on_enter_(self, quest, event):
-
             agent = quest.agent.profile
             quest.dc.select_teacher_note_uid = agent.add_note(
                 quest_uid=quest.uid,
                 note_class=notes.SelectTeacherNote,
                 time=event.time,
-                page_caption=LocalizedString(
-                    en=u'Наставник',  # TODO: ##LOCALIZATION
-                    ru=u'Наставник',
-                ),
-                btn1_caption=LocalizedString(
-                    en=u'<br>Принять',  # TODO: ##LOCALIZATION
-                    ru=u'<br>Принять',
-                ),
+                page_caption=quest.locale("q_cq_select_teacher_note_caption"),  #LOCALIZATION
+                btn1_caption=quest.locale("q_cq_select_teacher_note_btn")  #LOCALIZATION
             )
 
         def on_event_(self, quest, event):
@@ -176,30 +148,15 @@ class ClassQuest(Quest):
                     if relation < 0.5:
                         quest.npc_replica(
                             npc=npc,
-                            replica=LocalizedString(
-                                en=(  # TODO: ##LOCALIZATION
-                                    u"Мы недостаточно хорошо знакомы. Пока уровень отношений не будет на отметке как "
-                                    u"минимум в 75, дальнейшего разговора не будет.</br> Отношение можно повысить "
-                                    u"близостью в карме и выполнением моих заданий."
-                                ),
-                                ru=(
-                                    u"Мы недостаточно хорошо знакомы. Пока уровень отношений не будет на отметке как "
-                                    u"минимум в 75, дальнейшего разговора не будет.</br> Отношение можно повысить "
-                                    u"близостью в карме и выполнением моих заданий."
-                                ),
-                            ),
-                            event=event,
+                            replica=quest.locale("q_cq_phrase_1"),  #LOCALIZATION
+                            event=event
                         )
                         return
                     if (agent.balance < 3000) or (agent.get_real_lvl() < 4):
                         quest.npc_replica(
                             npc=npc,
-                            # todo: Вынести 3000 в атрибуты квеста
-                            replica=LocalizedString(
-                                en=u"Хорошо, вот мои требования к ученикам:</br>- Взнос 3000 NC.</br>- Уровень не менее 4.",  # TODO: ##LOCALIZATION
-                                ru=u"Хорошо, вот мои требования к ученикам:</br>- Взнос 3000 NC.</br>- Уровень не менее 4.",
-                            ),
-                            event=event,
+                            replica=quest.locale("q_cq_phrase_2"),  #LOCALIZATION
+                            event=event
                         )
                         return
                     else:
@@ -216,10 +173,4 @@ class ClassQuest(Quest):
     ####################################################################################################################
     class win(WinState):
         def on_enter_(self, quest, event):
-            quest.log(
-                text=LocalizedString(
-                    en=u'Quest is complete.',  ##LOCALIZATION
-                    ru=u'Квест выполнен.',
-                ),
-                event=event,
-            )
+            quest.log(text=quest.locale("q_cq_final"), event=event)  #LOCALIZATION
