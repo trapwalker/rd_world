@@ -191,7 +191,7 @@ class DeliveryFromCache(DeliveryQuestSimple):
     ####################################################################################################################
     def on_start_(self, event, **kw):
         if self.get_available_lvl() < self.level:
-            self.npc_replica(npc=self.hirer, replica=self.locale("q_dfc_npc_fail"), event=event)  # TODO: ##LOCALIZATION
+            self.npc_replica(npc=self.hirer, replica=self.locale("q_share_no_rel_npc"), event=event)  # ##LOCALIZATION
             raise Cancel("QUEST DeliveryFromCache CANCEL: User have not enough relation")
         self.log(text=self.locale("q_dfc_started"), event=event, position=self.hirer.hometown.position)  # TODO: ##LOCALIZATION
 
@@ -218,7 +218,7 @@ class DeliveryFromCache(DeliveryQuestSimple):
             if isinstance(event, OnCancel):
                 agent.profile.del_note(uid=quest.dc.cache_map_note_uid, time=event.time)
                 agent.profile.set_relationship(time=event.time, npc=quest.hirer, dvalue=-quest.reward_relation_hirer)
-                quest.log(text='{} {}.'.format(quest.locale("q_dfc_relations"), quest.hirer.title), event=event,  #LOCALIZATION
+                quest.log(text='{} {}.'.format(quest.locale("q_dfc_relations"), quest.hirer.title), event=event,  # ##LOCALIZATION
                           position=quest.hirer.hometown.position)
                 go("cancel_fail")
             if isinstance(event, OnTimer):
@@ -237,7 +237,7 @@ class DeliveryFromCache(DeliveryQuestSimple):
         def on_enter_(self, quest, event):
             # создать лут с временем жизни до окончания дедлайна и с нужными итемами
             quest.create_poi_container(event)
-            quest.log(text=quest.locale("q_dfc_find_package"), event=event, position=quest.cache_point.position)  #LOCALIZATION
+            quest.log(text=quest.locale("q_dfc_find_package"), event=event, position=quest.cache_point.position)  # ##LOCALIZATION
 
             # создать ноту на доставку
             quest.dc.delivery_note_uid = quest.agent.profile.add_note(
@@ -253,7 +253,7 @@ class DeliveryFromCache(DeliveryQuestSimple):
             go = partial(quest.go, event=event)
 
             if isinstance(event, OnCancel):
-                quest.npc_replica(npc=quest.hirer, replica=quest.locale("q_dfc_cancel_fail"), event=event)  #LOCALIZATION
+                quest.npc_replica(npc=quest.hirer, replica=quest.locale("q_dfc_cancel_fail"), event=event)  # ##LOCALIZATION
 
             if isinstance(event, OnTimer) and event.name == 'deadline_delivery_cache_quest':
                 agent.profile.del_note(uid=quest.dc.delivery_note_uid, time=event.time)
@@ -278,18 +278,18 @@ class DeliveryFromCache(DeliveryQuestSimple):
     ####################################################################################################################
     class cancel_fail(FailByCancelState):
         def on_enter_(self, quest, event):
-            quest.log(text=quest.locale("q_dfc_fail"), event=event)  #LOCALIZATION
+            quest.log(text=quest.locale("q_share_q_fail"), event=event)  #LOCALIZATION
 
     ####################################################################################################################
     class win(WinState):
         def on_enter_(self, quest, event):
-            quest.log(text=quest.locale("q_dfc_win"), event=event)  #LOCALIZATION
+            quest.log(text=quest.locale("q_share_q_win"), event=event)  #LOCALIZATION
 
     ####################################################################################################################
     class fail(FailState):
         def on_enter_(self, quest, event):
             quest.agent.profile.set_relationship(time=event.time, npc=quest.hirer, dvalue=-20)  # изменение отношения c нпц
             quest.agent.profile.set_karma(time=event.time, dvalue=-10)  # изменение кармы
-            quest.log(text=quest.locale("q_dfc_fail"), event=event)  #LOCALIZATION
+            quest.log(text=quest.locale("q_share_q_fail"), event=event)  #LOCALIZATION
 
 

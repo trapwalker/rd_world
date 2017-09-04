@@ -134,7 +134,7 @@ class DeliveryCar(DeliveryQuest):
                     messages.UserExampleCarInfo(agent=agent_model, time=event.time).post()
                     messages.UserExampleCarView(agent=agent_model, time=event.time).post()
                     messages.UserExampleCarSlots(agent=agent_model, time=event.time).post()
-                    quest.log(text='{} {}nc.'.format(quest.locale("q_dc_cancel"), money_penalty), event=event)  #LOCALIZATION
+                    quest.log(text='{} {}nc.'.format(quest.locale("q_share_cancel_pen_done"), money_penalty), event=event)  #LOCALIZATION
                     go("cancel_fail")
                 else:
                     quest.npc_replica(npc=quest.hirer, replica='{} {}nc.'.format(quest.locale("q_dc_cancel_req"), money_penalty), event=event)  #LOCALIZATION
@@ -161,12 +161,12 @@ class DeliveryCar(DeliveryQuest):
     ####################################################################################################################
     class cancel_fail(FailByCancelState):
         def on_enter_(self, quest, event):
-            quest.log(text=quest.locale("q_dc_fail"), event=event)  #LOCALIZATION
+            quest.log(text=quest.locale("q_share_q_fail"), event=event)  #LOCALIZATION
 
     ####################################################################################################################
     class win(WinState):
         def on_enter_(self, quest, event):
-            quest.log(text=quest.locale("q_dc_win"), event=event)  #LOCALIZATION
+            quest.log(text=quest.locale("q_share_q_win"), event=event)  #LOCALIZATION
 
     ####################################################################################################################
     class fail(FailState):
@@ -178,4 +178,4 @@ class DeliveryCar(DeliveryQuest):
             agent.set_relationship(time=event.time, npc=quest.hirer, dvalue=-2)  # изменение отношения c нпц
 
             agent.set_karma(time=event.time, dvalue=-quest.reward_karma)
-            quest.log(text=quest.locale("q_dc_fail"), event=event)  #LOCALIZATION
+            quest.log(text=quest.locale("q_share_q_fail"), event=event)  #LOCALIZATION

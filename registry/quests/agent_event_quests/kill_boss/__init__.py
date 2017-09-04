@@ -40,7 +40,7 @@ class KillBossQuest(AgentEventQuest):
         agent = self.agent.profile
         if agent.balance >= money_penalty:
             agent.set_balance(time=event.time, delta=-money_penalty)
-            self.log(text=u'{} {}nc.'.format(self.locale("q_kb_cancel_done"), money_penalty), event=event)  #LOCALIZATION
+            self.log(text=u'{} {}nc.'.format(self.locale("q_share_cancel_pen_done"), money_penalty), event=event)  #LOCALIZATION
             return True
         else:
             self.npc_replica(npc=self.hirer, replica=u"{} {}nc.".format(self.locale("q_kb_cancel_try"), money_penalty), event=event)  #LOCALIZATION

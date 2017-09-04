@@ -134,7 +134,7 @@ class DeliveryQuest(Quest):
     ####################################################################################################################
     def on_start_(self, event, **kw):
         if not self.give_items(items=self.delivery_set, event=event):
-            self.npc_replica(npc=self.hirer, replica=u"Не хватает места в инвентаре.", event=event)  # TODO: ##LOCALIZATION
+            self.npc_replica(npc=self.hirer, replica=self.locale("q_share_no_inv_slot"), event=event)  # ##LOCALIZATION
             raise Cancel("QUEST CANCEL: User have not enough empty slot")
 
     ####################################################################################################################
@@ -179,8 +179,8 @@ class DeliveryQuest(Quest):
                     note_class=notes.NPCRewardItemsNote,
                     time=event.time,
                     npc=quest.recipient,
-                    page_caption=u'Доставка<br>груза',  # TODO: ##LOCALIZATION
-                    btn1_caption=u'<br>Забрать',  # TODO: ##LOCALIZATION
+                    page_caption=quest.locale("q_dq_note_btn1"),  # ##LOCALIZATION
+                    btn1_caption=quest.locale("q_share_rewnote_btn1"),  # ##LOCALIZATION
                 )
             else:
                 go('final')
@@ -199,5 +199,5 @@ class DeliveryQuest(Quest):
     ####################################################################################################################
     class final(WinState):
         def on_enter_(self, quest, event):
-            quest.log(text=u'Квест выполнен.', event=event)  # TODO: ##LOCALIZATION
+            quest.log(text=self.locale("q_dq_note_btn1"), event=event)  # ##LOCALIZATION
 
