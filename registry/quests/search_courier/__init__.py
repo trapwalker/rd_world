@@ -6,7 +6,7 @@ log = logging.getLogger(__name__)
 from sublayers_server.model.quest_events import OnCancel, OnTimer, OnNote
 from sublayers_server.model.poi_loot_objects import CreatePOICorpseEvent
 from sublayers_server.model.inventory import ItemState
-from sublayers_server.model.registry_me.tree import RegistryLinkField, ListField, EmbeddedNodeField, StringField
+from sublayers_server.model.registry_me.tree import RegistryLinkField, ListField, EmbeddedNodeField, StringField, LocalizedString
 from sublayers_server.model.registry_me.classes import notes
 from sublayers_server.model.registry_me.classes.quests import (
     Cancel,   QuestState_, FailByCancelState, FailState, WinState,
@@ -53,12 +53,24 @@ class SearchCourier(DeliveryFromCache):
 
 
     def init_text(self):
-        self.text_short = u"Найти пропавшего курьера."  # TODO: ##LOCALIZATION
-        self.text = u"Найти пропавшего курьера и вернуть важный предмет{} Награда: {:.0f}nc, {:.0f} кармы и {:.0f} ед. опыта.".format(  # TODO: ##LOCALIZATION
-            u"." if not self.deadline else u" за {}.".format(self.deadline_to_str()),  # TODO: ##LOCALIZATION
-            self.reward_money,
-            self.reward_karma,
-            self.reward_exp,
+        self.text_short = LocalizedString(
+            en=u"Найти пропавшего курьера.",  # TODO: ##LOCALIZATION
+            ru=u"Найти пропавшего курьера.",
+        )
+
+        self.text = LocalizedString(
+            en=u"Найти пропавшего курьера и вернуть важный предмет{} Награда: {:.0f}nc, {:.0f} кармы и {:.0f} ед. опыта.".format(  # TODO: ##LOCALIZATION
+                u"." if not self.deadline else u" за {}.".format(self.deadline_to_str()),  # TODO: ##LOCALIZATION
+                self.reward_money,
+                self.reward_karma,
+                self.reward_exp,
+            ),
+            ru= u"Найти пропавшего курьера и вернуть важный предмет{} Награда: {:.0f}nc, {:.0f} кармы и {:.0f} ед. опыта.".format(
+                u"." if not self.deadline else u" за {}.".format(self.deadline_to_str()),  # TODO: ##LOCALIZATION
+                self.reward_money,
+                self.reward_karma,
+                self.reward_exp,
+            ),
         )
 
     def create_poi_container(self, event):
