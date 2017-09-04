@@ -71,7 +71,6 @@ class EscortCaravan(AgentEventQuest):
             log.error('!!!!!!!!!!!!!!!!==============   car_pos=%s,   caravan_pos=%s', car_pos, caravan_pos)
             pass
 
-
     ####################################################################################################################
     def on_start_(self, event, **kw):
         self.dc.check_participation = 0.0
@@ -104,7 +103,6 @@ class EscortCaravan(AgentEventQuest):
                 ),
                 event=event,
             )
-
 
         def on_event_(self, quest, event):
             super(EscortCaravan.begin, self).on_event_(quest=quest, event=event)
