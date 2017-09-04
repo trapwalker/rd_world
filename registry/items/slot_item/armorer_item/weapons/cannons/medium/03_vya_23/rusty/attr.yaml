@@ -1,0 +1,66 @@
+﻿_cls            : Cannon
+doc             : Пушка ВЯ-23
+abstract        : false
+
+title           : Пушка<br>ВЯ-23                           # Краткое название - отобразится в слоте инвентаря
+# Полное описание - отобразится в разделе описания в инвентаре
+description     : '???'
+
+# Основные балансные настройки
+base_price      : 1530                                     # Цена
+weight_class    : 2                                        # Класс тяжести
+ammo            : reg:///registry/items/usable/ammo/23bzt  # Подходящие патроны
+
+dmg             : 11.25                                    # Дамаг при залпе по вражеским целям
+area_dmg        : 5.625                                    # Дамаг по невидимым целям
+time_recharge   : 6.6                                      # Время перезарядки орудия (с)
+
+radius          : 675                                      # Дальность сектора стрельбы
+width           : 62                                       # Ширина сектора стрельбы
+
+ammo_per_shot   : -1                                       # Потребление патронов при залпе
+
+# Картинки для представления в инвентаре
+inv_icon_big    : static/content/items/slot_item/weapons/cannons/medium/03_vya_23/inventory/big.png
+inv_icon_mid    : static/content/items/slot_item/weapons/cannons/medium/03_vya_23/inventory/mid.png
+inv_icon_small  : static/content/items/slot_item/weapons/cannons/medium/03_vya_23/inventory/small.png
+
+armorer_images:
+  small:
+    # Картинки для представления у оружейника (вид сбоку)
+    armorer_side_F  : "static/content/items/slot_item/weapons/cannons/medium/03_vya_23/small/side_f.png" # вперёд
+    armorer_side_B  : "static/content/items/slot_item/weapons/cannons/medium/03_vya_23/small/side_b.png" # назад
+    armorer_side_R  : "static/content/items/slot_item/weapons/cannons/medium/03_vya_23/small/side_r.png" # вправо
+    armorer_side_L  : "static/content/items/slot_item/weapons/cannons/medium/03_vya_23/small/side_l.png" # влево
+
+    # Картинки для представления у оружейника (вид сверху)
+    armorer_top_F   : "static/content/items/slot_item/weapons/cannons/medium/03_vya_23/small/top_f.png"  # вперёд
+    armorer_top_B   : "static/content/items/slot_item/weapons/cannons/medium/03_vya_23/small/top_b.png"  # назад
+    armorer_top_R   : "static/content/items/slot_item/weapons/cannons/medium/03_vya_23/small/top_r.png"  # вправо
+    armorer_top_L   : "static/content/items/slot_item/weapons/cannons/medium/03_vya_23/small/top_l.png"  # влево
+
+  middle:
+    # Картинки для представления у оружейника (вид сбоку)
+    armorer_side_F  : "static/content/items/slot_item/weapons/cannons/medium/03_vya_23/middle/side_f.png" # вперёд
+    armorer_side_B  : "static/content/items/slot_item/weapons/cannons/medium/03_vya_23/middle/side_b.png" # назад
+    armorer_side_R  : "static/content/items/slot_item/weapons/cannons/medium/03_vya_23/middle/side_r.png" # вправо
+    armorer_side_L  : "static/content/items/slot_item/weapons/cannons/medium/03_vya_23/middle/side_l.png" # влево
+
+    # Картинки для представления у оружейника (вид сверху)
+    armorer_top_F   : "static/content/items/slot_item/weapons/cannons/medium/03_vya_23/middle/top_f.png"  # вперёд
+    armorer_top_B   : "static/content/items/slot_item/weapons/cannons/medium/03_vya_23/middle/top_b.png"  # назад
+    armorer_top_R   : "static/content/items/slot_item/weapons/cannons/medium/03_vya_23/middle/top_r.png"  # вправо
+    armorer_top_L   : "static/content/items/slot_item/weapons/cannons/medium/03_vya_23/middle/top_l.png"  # влево
+
+  big:
+    # Картинки для представления у оружейника (вид сбоку)
+    armorer_side_F  : "static/content/items/slot_item/weapons/cannons/medium/03_vya_23/middle/side_f.png" # вперёд
+    armorer_side_B  : "static/content/items/slot_item/weapons/cannons/medium/03_vya_23/middle/side_b.png" # назад
+    armorer_side_R  : "static/content/items/slot_item/weapons/cannons/medium/03_vya_23/middle/side_r.png" # вправо
+    armorer_side_L  : "static/content/items/slot_item/weapons/cannons/medium/03_vya_23/middle/side_l.png" # влево
+
+    # Картинки для представления у оружейника (вид сверху)
+    armorer_top_F   : "static/content/items/slot_item/weapons/cannons/medium/03_vya_23/middle/top_f.png"  # вперёд
+    armorer_top_B   : "static/content/items/slot_item/weapons/cannons/medium/03_vya_23/middle/top_b.png"  # назад
+    armorer_top_R   : "static/content/items/slot_item/weapons/cannons/medium/03_vya_23/middle/top_r.png"  # вправо
+    armorer_top_L   : "static/content/items/slot_item/weapons/cannons/medium/03_vya_23/middle/top_l.png"  # влево
