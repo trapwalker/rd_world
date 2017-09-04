@@ -193,7 +193,7 @@ class DeliveryFromCache(DeliveryQuestSimple):
         if self.get_available_lvl() < self.level:
             self.npc_replica(npc=self.hirer, replica=self.locale("q_share_no_rel_npc"), event=event)  # ##LOCALIZATION
             raise Cancel("QUEST DeliveryFromCache CANCEL: User have not enough relation")
-        self.log(text=self.locale("q_dfc_started"), event=event, position=self.hirer.hometown.position)  # TODO: ##LOCALIZATION
+        self.log(text=self.locale("q_dfc_started"), event=event, position=self.hirer.hometown.position)  # ##LOCALIZATION
 
     ####################################################################################################################
     ## Перечень состояний ##############################################################################################

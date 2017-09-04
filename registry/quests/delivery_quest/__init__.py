@@ -194,10 +194,10 @@ class DeliveryQuest(Quest):
                         agent.profile.del_note(uid=quest.dc.reward_note_uid, time=event.time)
                         go('final')
                     else:
-                        quest.npc_replica(npc=quest.hirer, replica=u"Не хватает места в инвентаре.", event=event)
+                        quest.npc_replica(npc=quest.hirer, replica=quest.locale("q_share_no_inv_slot"), event=event)  # ##LOCALIZATION
 
     ####################################################################################################################
     class final(WinState):
         def on_enter_(self, quest, event):
-            quest.log(text=self.locale("q_dq_note_btn1"), event=event)  # ##LOCALIZATION
+            quest.log(text=quest.locale("q_dq_note_btn1"), event=event)  # ##LOCALIZATION
 
