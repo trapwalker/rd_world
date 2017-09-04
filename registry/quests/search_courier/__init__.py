@@ -88,7 +88,7 @@ class SearchCourier(DeliveryFromCache):
         medallion = self.courier_medallion.instantiate()
         self.dc.medallion_uid = medallion.uid
         self.agent.profile.quest_inventory.add_item(agent=self.agent, item=medallion, event=event)
-        self.log(text=self.locale("q_sq_get_fishka_return_town"), event=event, position=self.cache_point.position)  # ##LOCALIZATION
+        self.log(text=self.locale("q_sq_get_fishka_return_town"), event=event, position=self.cache_point.position)  ##LOCALIZATION
 
         # info: Сделано для того, чтобы работали старые квесты, когда в dc хранился courier_car
         courier_car = getattr(self.dc, 'courier_car', None) or event.server.reg.get(self.dc.courier_car_uri)
@@ -141,9 +141,9 @@ class SearchCourier(DeliveryFromCache):
     ####################################################################################################################
     def on_start_(self, event, **kw):
         if self.get_available_lvl() < self.level:
-            self.npc_replica(npc=self.hirer, replica=self.locale("q_share_no_rel_npc"), event=event)  # ##LOCALIZATION
+            self.npc_replica(npc=self.hirer, replica=self.locale("q_share_no_rel_npc"), event=event)  ##LOCALIZATION
             raise Cancel("QUEST SearchCourier CANCEL: User have not enough relation")
-        self.log(text=self.locale("q_sq_started"), event=event, position=self.hirer.hometown.position)  # ##LOCALIZATION
+        self.log(text=self.locale("q_sq_started"), event=event, position=self.hirer.hometown.position)  ##LOCALIZATION
 
     ####################################################################################################################
     ## Перечень состояний ##############################################################################################
@@ -168,7 +168,7 @@ class SearchCourier(DeliveryFromCache):
             if isinstance(event, OnCancel):
                 agent.profile.del_note(uid=quest.dc.cache_map_note_uid, time=event.time)
                 agent.profile.set_relationship(time=event.time, npc=quest.hirer, dvalue=-quest.reward_relation_hirer)
-                quest.log(text=u'{} {}.'.format(quest.locale("q_sq_rel_bad"), quest.hirer.title), event=event,  # ##LOCALIZATION
+                quest.log(text=u'{} {}.'.format(quest.locale("q_sq_rel_bad"), quest.hirer.title), event=event,  ##LOCALIZATION
                           position=quest.hirer.hometown.position)
                 go("cancel_fail")
             if isinstance(event, OnTimer):
@@ -186,7 +186,7 @@ class SearchCourier(DeliveryFromCache):
     class cache(QuestState_):
         def on_enter_(self, quest, event):
             # создать лут с временем жизни до окончания дедлайна и с нужными итемами
-            quest.log(text=quest.locale("q_sq_finded_car"), event=event, position=quest.cache_point.position)  # ##LOCALIZATION
+            quest.log(text=quest.locale("q_sq_finded_car"), event=event, position=quest.cache_point.position)  ##LOCALIZATION
             quest.create_poi_container(event)
 
             # создать ноту на доставку
@@ -203,7 +203,7 @@ class SearchCourier(DeliveryFromCache):
             go = partial(quest.go, event=event)
 
             if isinstance(event, OnCancel):
-                quest.npc_replica(npc=quest.hirer, replica=quest.locale("q_sq_fail_cancel_q"), event=event)  # ##LOCALIZATION
+                quest.npc_replica(npc=quest.hirer, replica=quest.locale("q_sq_fail_cancel_q"), event=event)  ##LOCALIZATION
 
             if isinstance(event, OnTimer) and event.name == 'deadline_delivery_cache_quest':
                 agent.profile.del_note(uid=quest.dc.delivery_note_uid, time=event.time)
@@ -228,17 +228,17 @@ class SearchCourier(DeliveryFromCache):
     ####################################################################################################################
     class cancel_fail(FailByCancelState):
         def on_enter_(self, quest, event):
-            quest.log(text=quest.locale("q_share_q_fail"), event=event)  # ##LOCALIZATION
+            quest.log(text=quest.locale("q_share_q_fail"), event=event)  ##LOCALIZATION
 
     ####################################################################################################################
     class win(WinState):
         def on_enter_(self, quest, event):
-            quest.log(text=quest.locale("q_share_q_win"), event=event)  # ##LOCALIZATION
+            quest.log(text=quest.locale("q_share_q_win"), event=event)  ##LOCALIZATION
 
     ####################################################################################################################
     class fail(FailState):
         def on_enter_(self, quest, event):
             quest.agent.profile.set_relationship(time=event.time, npc=quest.hirer, dvalue=-20)  # изменение отношения c нпц
             quest.agent.profile.set_karma(time=event.time, dvalue=-10)  # изменение кармы
-            quest.log(text=quest.locale("q_share_q_fail"), event=event)  # ##LOCALIZATION
+            quest.log(text=quest.locale("q_share_q_fail"), event=event)  ##LOCALIZATION
 
