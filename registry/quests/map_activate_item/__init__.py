@@ -8,7 +8,7 @@ from sublayers_server.model.registry_me.classes.quests import (
     Cancel, QuestState_, FailByCancelState, FailState, WinState,
 )
 from sublayers_server.model.registry_me.tree import (IntField, FloatField, ListField, EmbeddedDocumentField, UUIDField,
-                                                     EmbeddedNodeField)
+                                                     EmbeddedNodeField, LocalizedString)
 from sublayers_server.model.registry_me.classes.quests import Quest, MarkerMapObject
 
 from functools import partial
@@ -92,10 +92,19 @@ class MapActivateItemQuest(Quest):
             self.deadline = 0
 
     def init_text(self):
-        self.text_short = u"Активируйте предметы в заданных точках."  # TODO: ##LOCALIZATION
-        self.text = u"Активируйте предметы: {} - в заданных точках. Награда: {:.0f}nc.".format(  # TODO: ##LOCALIZATION
-            ', '.join([unicode(item.title) for item in self.activate_items]),
-            self.reward_money
+        self.text_short = LocalizedString(
+            en=u"Активируйте предметы в заданных точках.",  # TODO: ##LOCALIZATION
+            ru=u"Активируйте предметы в заданных точках.",
+        )
+        self.text = LocalizedString(
+            en=u"Активируйте предметы: {} - в заданных точках. Награда: {:.0f}nc.".format(  # TODO: ##LOCALIZATION
+                ', '.join([unicode(item.title) for item in self.activate_items]),
+                self.reward_money,
+            ),
+            ru=u"Активируйте предметы: {} - в заданных точках. Награда: {:.0f}nc.".format(
+                ', '.join([unicode(item.title) for item in self.activate_items]),
+                self.reward_money,
+            ),
         )
 
     def init_notes(self, event):

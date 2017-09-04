@@ -4,7 +4,7 @@ import logging
 log = logging.getLogger(__name__)
 
 from sublayers_server.model.registry_me.classes import notes
-from sublayers_server.model.registry_me.tree import IntField, RegistryLinkField, ListField, StringField
+from sublayers_server.model.registry_me.tree import IntField, RegistryLinkField, ListField, StringField, LocalizedString
 from sublayers_server.model.quest_events import OnCancel, OnTimer, OnNote, OnEnterToLocation
 from sublayers_server.model.registry_me.classes.quests import (
     Cancel, QuestState_, FailByCancelState, FailState, WinState,
@@ -34,12 +34,23 @@ class DeliveryPassengerQuest(DeliveryQuestSimple):
         return self.distance_table.get_distance(town1=town1, town2=town2)
 
     def init_text(self, distance=None):
-        self.text_short = u"Доставьте пассажиров в гороод {}.".format(self.destination.title)  # TODO: ##LOCALIZATION
-        self.text = u"Доставьте пассажиров: {} - в гороод {}. Награда: {:.0f}nc и {:.0f} ед. опыта.".format(  # TODO: ##LOCALIZATION
-            ', '.join([unicode(item.title) for item in self.delivery_set]),
-            self.destination.title,
-            self.reward_money,
-            self.reward_exp,
+        self.text_short = LocalizedString(
+            en=u"Доставьте пассажиров в гороод {}.".format(self.destination.title),  # TODO: ##LOCALIZATION
+            ru=u"Доставьте пассажиров в гороод {}.".format(self.destination.title),
+        )
+        self.text = LocalizedString(
+            en=u"Доставьте пассажиров: {} - в гороод {}. Награда: {:.0f}nc и {:.0f} ед. опыта.".format(  # TODO: ##LOCALIZATION
+                ', '.join([unicode(item.title) for item in self.delivery_set]),
+                self.destination.title,
+                self.reward_money,
+                self.reward_exp,
+            ),
+            ru=u"Доставьте пассажиров: {} - в гороод {}. Награда: {:.0f}nc и {:.0f} ед. опыта.".format(
+                ', '.join([unicode(item.title) for item in self.delivery_set]),
+                self.destination.title,
+                self.reward_money,
+                self.reward_exp,
+            ),
         )
 
     def give_passengers(self, event):

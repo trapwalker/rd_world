@@ -81,13 +81,25 @@ class DeliveryQuest(Quest):
 
 
             return
-        self.text_short = u"Доставьте груз в город {}.".format(self.recipient.hometown.title)  # TODO: ##LOCALIZATION
-        self.text = u"Доставьте груз: {} - к {} в город {}. Награда: {:.0f}nc и {:.0f} ед. опыта.".format(  # TODO: ##LOCALIZATION
-            ', '.join([unicode(item.title) for item in self.delivery_set]),
-            self.recipient.title,
-            self.recipient.hometown.title,
-            self.reward_money,
-            self.reward_exp,
+        self.text_short = LocalizedString(
+            en=u"Доставьте груз в город {}.".format(self.recipient.hometown.title),  # TODO: ##LOCALIZATION
+            ru=u"Доставьте груз в город {}.".format(self.recipient.hometown.title),
+        )
+        self.text = LocalizedString(
+            en=u"Доставьте груз: {} - к {} в город {}. Награда: {:.0f}nc и {:.0f} ед. опыта.".format(  # TODO: ##LOCALIZATION
+                ', '.join([unicode(item.title) for item in self.delivery_set]),
+                self.recipient.title,
+                self.recipient.hometown.title,
+                self.reward_money,
+                self.reward_exp,
+            ),
+            ru=u"Доставьте груз: {} - к {} в город {}. Награда: {:.0f}nc и {:.0f} ед. опыта.".format(  # TODO: ##LOCALIZATION
+                ', '.join([unicode(item.title) for item in self.delivery_set]),
+                self.recipient.title,
+                self.recipient.hometown.title,
+                self.reward_money,
+                self.reward_exp,
+            ),
         )
 
     ####################################################################################################################

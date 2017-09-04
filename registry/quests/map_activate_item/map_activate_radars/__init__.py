@@ -5,6 +5,7 @@ log = logging.getLogger(__name__)
 
 from sublayers_server.model.registry_me.classes import notes
 from sublayers_server.model.quest_events import OnCancel, OnTimer, OnNote, OnActivateItem
+from sublayers_server.model.registry_me.tree import LocalizedString
 from sublayers_server.model.registry_me.classes.quests import (
     Cancel, QuestState_, FailByCancelState, FailState, WinState,
 )
@@ -21,11 +22,21 @@ class MapActivateRadarsQuest(MapActivateItemQuest):
         self.deadline = len(self.activate_points) * 3600  # По часу на точку
 
     def init_text(self):
-        self.text_short = u"Установить наблюдательные зонды."  # TODO: ##LOCALIZATION
-        self.text = u"Установите в заданных точках наблюдательные зонды в количестве: {}. Награда: {:.0f}nc и {:.0f} ед. опыта".format(  # TODO: ##LOCALIZATION
-            len(self.activate_points),
-            self.reward_money,
-            self.reward_exp * len(self.activate_points),
+        self.text_short = LocalizedString(
+            en=u"Установить наблюдательные зонды.",  # TODO: ##LOCALIZATION
+            ru=u"Установить наблюдательные зонды.",
+        )
+        self.text = LocalizedString(
+            en=u"Установите в заданных точках наблюдательные зонды в количестве: {}. Награда: {:.0f}nc и {:.0f} ед. опыта".format(  # TODO: ##LOCALIZATION
+                len(self.activate_points),
+                self.reward_money,
+                self.reward_exp * len(self.activate_points),
+            ),
+            ru=u"Установите в заданных точках наблюдательные зонды в количестве: {}. Награда: {:.0f}nc и {:.0f} ед. опыта".format(  # TODO: ##LOCALIZATION
+                len(self.activate_points),
+                self.reward_money,
+                self.reward_exp * len(self.activate_points),
+            ),
         )
 
     def generate_reward(self):

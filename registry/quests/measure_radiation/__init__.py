@@ -4,7 +4,7 @@ import logging
 log = logging.getLogger(__name__)
 
 from sublayers_server.model.registry_me.classes import notes
-from sublayers_server.model.registry_me.tree import IntField, FloatField, ListField, EmbeddedDocumentField, UUIDField
+from sublayers_server.model.registry_me.tree import IntField, FloatField, ListField, EmbeddedDocumentField, UUIDField, LocalizedString
 from sublayers_server.model.quest_events import OnCancel, OnTimer, OnNote
 from sublayers_server.model.registry_me.classes.quests import (
     Quest, MarkerMapObject, QuestRange, Cancel,
@@ -164,14 +164,26 @@ class MeasureRadiation(Quest):
             # Время выделенное на квест кратно 5 минутам
             self.deadline = (all_time / 300) * 300 + (300 if (all_time % 300) > 0 else 0)
 
-    def init_text(self):  # TODO: ##LOCALIZATION
-        self.text_short = u"Обследуйте {:.0f} точек.".format(self.measure_count)  # TODO: ##LOCALIZATION
-        self.text = u"Замерьте уровень радиации в {:.0f} точек{}. Награда: {:.0f}nc, {:.0f} кармы и {:.0f} ед. опыта".format(  # TODO: ##LOCALIZATION
-            self.measure_count,
-            u"" if not self.deadline else u" за {}".format(self.deadline_to_str()),  # TODO: ##LOCALIZATION
-            self.reward_money,
-            self.reward_karma,
-            self.reward_exp * self.measure_count,
+    def init_text(self):
+        self.text_short = LocalizedString(
+            en=u"Обследуйте {:.0f} точек.".format(self.measure_count),  # TODO: ##LOCALIZATION
+            ru=u"Обследуйте {:.0f} точек.".format(self.measure_count),
+        )
+        self.text = LocalizedString(
+            en=u"Замерьте уровень радиации в {:.0f} точек{}. Награда: {:.0f}nc, {:.0f} кармы и {:.0f} ед. опыта".format(  # TODO: ##LOCALIZATION
+                self.measure_count,
+                u"" if not self.deadline else u" за {}".format(self.deadline_to_str()),  # TODO: ##LOCALIZATION
+                self.reward_money,
+                self.reward_karma,
+                self.reward_exp * self.measure_count,
+            ),
+            ru=u"Замерьте уровень радиации в {:.0f} точек{}. Награда: {:.0f}nc, {:.0f} кармы и {:.0f} ед. опыта".format(
+                self.measure_count,
+                u"" if not self.deadline else u" за {}".format(self.deadline_to_str()),  # TODO: ##LOCALIZATION
+                self.reward_money,
+                self.reward_karma,
+                self.reward_exp * self.measure_count,
+            ),
         )
 
     def init_notes(self, event):

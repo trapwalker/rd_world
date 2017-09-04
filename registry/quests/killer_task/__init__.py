@@ -8,7 +8,7 @@ from sublayers_server.model.registry_me.classes.quests import (
     Cancel, QuestState_, FailByCancelState, FailState, WinState,
 )
 from sublayers_server.model.registry_me.tree import (IntField, FloatField, ListField, EmbeddedDocumentField,
-                                                     BooleanField, Subdoc, StringField)
+                                                     BooleanField, Subdoc, StringField, LocalizedString)
 from sublayers_server.model.registry_me.classes.quests import Quest, QuestRange
 from sublayers_server.model.utils import getKarmaName
 
@@ -97,18 +97,31 @@ class KillerQuest(Quest):
         self.min_level_victims = self.level
         self.count_to_kill = self.count_to_kill_range.get_random_int()  # Выбираем сколько человек нужно убить
 
-    def init_text(self):  # TODO: ##LOCALIZATION
-        self.text_short = u"Убейте {:.0f} игрока(ов).".format(  # TODO: ##LOCALIZATION
-            self.count_to_kill
+    def init_text(self):
+        self.text_short = LocalizedString(
+            en=u"Убейте {:.0f} игрока(ов).".format(self.count_to_kill),  # TODO: ##LOCALIZATION
+            ru=u"Убейте {:.0f} игрока(ов).".format(self.count_to_kill),
         )
-        self.text = u"Убейте {:.0f} игрока(ов) с минимальным уровнем {:.0f} и кармой хуже {}{}. Награда: {:.0f}nc, {:.0f} кармы и {:.0f} ед. опыта.".format(  # TODO: ##LOCALIZATION
-            self.count_to_kill,
-            self.min_level_victims,
-            getKarmaName(self.max_karma_victims / 100., 'ru'),
-            u"" if not self.deadline else u" за {}".format(self.deadline_to_str()),  # TODO: ##LOCALIZATION
-            self.reward_money,
-            self.reward_karma,
-            self.reward_exp * self.count_to_kill,
+
+        self.text = LocalizedString(
+            en=u"Убейте {:.0f} игрока(ов) с минимальным уровнем {:.0f} и кармой хуже {}{}. Награда: {:.0f}nc, {:.0f} кармы и {:.0f} ед. опыта.".format(  # TODO: ##LOCALIZATION
+                self.count_to_kill,
+                self.min_level_victims,
+                getKarmaName(self.max_karma_victims / 100., 'ru'),
+                u"" if not self.deadline else u" за {}".format(self.deadline_to_str()),  # TODO: ##LOCALIZATION
+                self.reward_money,
+                self.reward_karma,
+                self.reward_exp * self.count_to_kill,
+            ),
+            ru=u"Убейте {:.0f} игрока(ов) с минимальным уровнем {:.0f} и кармой хуже {}{}. Награда: {:.0f}nc, {:.0f} кармы и {:.0f} ед. опыта.".format(  # TODO: ##LOCALIZATION
+                self.count_to_kill,
+                self.min_level_victims,
+                getKarmaName(self.max_karma_victims / 100., 'ru'),
+                u"" if not self.deadline else u" за {}".format(self.deadline_to_str()),  # TODO: ##LOCALIZATION
+                self.reward_money,
+                self.reward_karma,
+                self.reward_exp * self.count_to_kill,
+            ),
         )
 
     def init_deadline(self):

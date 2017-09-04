@@ -8,7 +8,7 @@ from sublayers_world.registry.quests.delivery_quest import DeliveryQuest
 from sublayers_server.model.registry_me.randomize_examples import RandomizeExamples
 from sublayers_server.model.quest_events import OnNote, OnTimer, OnCancel
 from sublayers_server.model.registry_me.classes import notes
-from sublayers_server.model.registry_me.tree import RegistryLinkField, ListField
+from sublayers_server.model.registry_me.tree import RegistryLinkField, ListField, LocalizedString
 from sublayers_server.model.registry_me.classes.quests import Cancel, QuestState_, WinState, FailState, FailByCancelState
 
 from functools import partial
@@ -31,13 +31,26 @@ class DeliveryCar(DeliveryQuest):
         return d
 
     def init_text(self, distance=None):
-        self.text_short = u"Доставьте ТС в город {}.".format(self.recipient.hometown.title)  # TODO: ##LOCALIZATION
-        self.text = u"Доставьте ТС: {} - к {} в город {}. Награда: {:.0f}nc и {:.0f} ед. опыта.".format(  # TODO: ##LOCALIZATION
-            self.dc.car_title,
-            self.recipient.title,
-            self.recipient.hometown.title,
-            self.reward_money,
-            self.reward_exp,
+        self.text_short = LocalizedString(
+            en=u"Доставьте ТС в город {}.".format(self.recipient.hometown.title),  # TODO: ##LOCALIZATION
+            ru=u"Доставьте ТС в город {}.".format(self.recipient.hometown.title),
+        )
+
+        self.text = LocalizedString(
+            en=u"Доставьте ТС: {} - к {} в город {}. Награда: {:.0f}nc и {:.0f} ед. опыта.".format(  # TODO: ##LOCALIZATION
+                self.dc.car_title,
+                self.recipient.title,
+                self.recipient.hometown.title,
+                self.reward_money,
+                self.reward_exp,
+            ),
+            ru=u"Доставьте ТС: {} - к {} в город {}. Награда: {:.0f}nc и {:.0f} ед. опыта.".format(
+                self.dc.car_title,
+                self.recipient.title,
+                self.recipient.hometown.title,
+                self.reward_money,
+                self.reward_exp,
+            ),
         )
 
     def on_generate_(self, event, **kw):
