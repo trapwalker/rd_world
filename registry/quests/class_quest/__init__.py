@@ -76,7 +76,7 @@ class ClassQuest(Quest):
     def on_start_(self, event, **kw):
         # Создание ноты для квеста
         self.init_text()
-        self.log(text=self.locale("q_cq_started"), event=event)  #LOCALIZATION
+        self.log(text=self.locale("q_cq_started"), event=event)  ##LOCALIZATION
 
     ####################################################################################################################
     class first_out(QuestState_):
@@ -88,7 +88,6 @@ class ClassQuest(Quest):
                     note_class=notes.FirstOutNote,
                     time=event.time
                 )
-                #LOCALIZATION
                 role_class = quest.agent.profile.role_class
                 attributes_of_class = quest.attributes_by_class.get(role_class.name, None)
                 if attributes_of_class is None:
@@ -97,7 +96,7 @@ class ClassQuest(Quest):
                     quest.caption = attributes_of_class.super_task
 
                 quest.init_text()
-                quest.log(text=quest.locale("q_cq_caption_get_new_task"), event=event)  #LOCALIZATION
+                quest.log(text=quest.locale("q_cq_caption_get_new_task"), event=event)  ##LOCALIZATION
                 go("visit_trainer")
 
     ####################################################################################################################
@@ -109,7 +108,7 @@ class ClassQuest(Quest):
                 quest_uid=quest.uid,
                 note_class=notes.VisitTrainerNote,
                 time=event.time,
-                page_caption=quest.locale("q_cq_class_target_note"),  #LOCALIZATION
+                page_caption=quest.locale("q_cq_class_target_note"),  ##LOCALIZATION
                 npc_type='trainer'
             )
 
@@ -120,7 +119,7 @@ class ClassQuest(Quest):
                 quest.init_text()
                 # todo: Вынести 300 в атрибуты квеста
                 agent.set_exp(time=event.time, dvalue=300)
-                quest.log(text=quest.locale("q_cq_visit_trainer"), event=event)  #LOCALIZATION
+                quest.log(text=quest.locale("q_cq_visit_trainer"), event=event)  ##LOCALIZATION
                 go("select_teacher")
 
     ####################################################################################################################
@@ -131,8 +130,8 @@ class ClassQuest(Quest):
                 quest_uid=quest.uid,
                 note_class=notes.SelectTeacherNote,
                 time=event.time,
-                page_caption=quest.locale("q_cq_select_teacher_note_caption"),  #LOCALIZATION
-                btn1_caption=quest.locale("q_cq_select_teacher_note_btn")  #LOCALIZATION
+                page_caption=quest.locale("q_cq_select_teacher_note_caption"),  ##LOCALIZATION
+                btn1_caption=quest.locale("q_cq_select_teacher_note_btn")  ##LOCALIZATION
             )
 
         def on_event_(self, quest, event):
@@ -148,14 +147,14 @@ class ClassQuest(Quest):
                     if relation < 0.5:
                         quest.npc_replica(
                             npc=npc,
-                            replica=quest.locale("q_cq_phrase_1"),  #LOCALIZATION
+                            replica=quest.locale("q_cq_phrase_1"),  ##LOCALIZATION
                             event=event
                         )
                         return
                     if (agent.balance < 3000) or (agent.get_real_lvl() < 4):
                         quest.npc_replica(
                             npc=npc,
-                            replica=quest.locale("q_cq_phrase_2"),  #LOCALIZATION
+                            replica=quest.locale("q_cq_phrase_2"),  ##LOCALIZATION
                             event=event
                         )
                         return
@@ -173,4 +172,4 @@ class ClassQuest(Quest):
     ####################################################################################################################
     class win(WinState):
         def on_enter_(self, quest, event):
-            quest.log(text=quest.locale("q_cq_final"), event=event)  #LOCALIZATION
+            quest.log(text=quest.locale("q_cq_final"), event=event)  ##LOCALIZATION

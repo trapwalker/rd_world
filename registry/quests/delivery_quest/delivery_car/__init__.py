@@ -90,7 +90,7 @@ class DeliveryCar(DeliveryQuest):
 
     def on_start_(self, event, **kw):
         if self.agent.profile.car:
-            self.npc_replica(npc=self.hirer, replica=self.locale("q_dc_drop_car"), event=event)  #LOCALIZATION
+            self.npc_replica(npc=self.hirer, replica=self.locale("q_dc_drop_car"), event=event)  ##LOCALIZATION
             raise Cancel("QUEST CANCEL: User have car")
 
         agent_model = self.agent.profile._agent_model
@@ -110,7 +110,7 @@ class DeliveryCar(DeliveryQuest):
         messages.UserExampleCarInfo(agent=agent_model, time=event.time).post()
         messages.UserExampleCarView(agent=agent_model, time=event.time).post()
         messages.UserExampleCarSlots(agent=agent_model, time=event.time).post()
-        self.log(text=self.locale("q_dc_started"), event=event)  #LOCALIZATION
+        self.log(text=self.locale("q_dc_started"), event=event)  ##LOCALIZATION
 
     ####################################################################################################################
     class begin(QuestState_):
@@ -147,10 +147,10 @@ class DeliveryCar(DeliveryQuest):
                     messages.UserExampleCarInfo(agent=agent_model, time=event.time).post()
                     messages.UserExampleCarView(agent=agent_model, time=event.time).post()
                     messages.UserExampleCarSlots(agent=agent_model, time=event.time).post()
-                    quest.log(text='{} {}nc.'.format(quest.locale("q_dc_cancel"), money_penalty), event=event)  #LOCALIZATION
+                    quest.log(text='{} {}nc.'.format(quest.locale("q_dc_cancel"), money_penalty), event=event)  ##LOCALIZATION
                     go("cancel_fail")
                 else:
-                    quest.npc_replica(npc=quest.hirer, replica='{} {}nc.'.format(quest.locale("q_dc_cancel_req"), money_penalty), event=event)  #LOCALIZATION
+                    quest.npc_replica(npc=quest.hirer, replica='{} {}nc.'.format(quest.locale("q_dc_cancel_req"), money_penalty), event=event)  ##LOCALIZATION
 
     ####################################################################################################################
     class reward(QuestState_):
@@ -174,12 +174,12 @@ class DeliveryCar(DeliveryQuest):
     ####################################################################################################################
     class cancel_fail(FailByCancelState):
         def on_enter_(self, quest, event):
-            quest.log(text=quest.locale("q_dc_fail"), event=event)  #LOCALIZATION
+            quest.log(text=quest.locale("q_dc_fail"), event=event)  ##LOCALIZATION
 
     ####################################################################################################################
     class win(WinState):
         def on_enter_(self, quest, event):
-            quest.log(text=quest.locale("q_dc_win"), event=event)  #LOCALIZATION
+            quest.log(text=quest.locale("q_dc_win"), event=event)  ##LOCALIZATION
 
     ####################################################################################################################
     class fail(FailState):
@@ -191,4 +191,4 @@ class DeliveryCar(DeliveryQuest):
             agent.set_relationship(time=event.time, npc=quest.hirer, dvalue=-2)  # изменение отношения c нпц
 
             agent.set_karma(time=event.time, dvalue=-quest.reward_karma)
-            quest.log(text=quest.locale("q_dc_fail"), event=event)  #LOCALIZATION
+            quest.log(text=quest.locale("q_dc_fail"), event=event)  ##LOCALIZATION
