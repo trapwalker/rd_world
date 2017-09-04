@@ -96,7 +96,7 @@ class DeliveryQuestSimple(DeliveryQuest):
             self.locale("q_dq_get_items_1"),
             self.locale(self.hirer.title),
             self.locale("q_dq_get_items_2"),
-            ', '.join([unicode(self.locale(item.title)) for item in self.delivery_set])
+            ', '.join([self.locale(item.title) for item in self.delivery_set])
         )
         self.log(text=temp_log_str, event=event, position=self.hirer.hometown.position)
 
@@ -128,7 +128,7 @@ class DeliveryQuestSimple(DeliveryQuest):
                     temp_log_str = u'{} {}: {}.'.format(
                         quest.locale(quest.recipient.title),
                         quest.locale("q_dq_give_items"),
-                        ', '.join([unicode(quest.locale(item.title)) for item in quest.delivery_set])  # ##LOCALIZATION
+                        ', '.join([quest.locale(item.title) for item in quest.delivery_set])  # ##LOCALIZATION
                     )
                     quest.log(text=temp_log_str, event=event, position=quest.recipient.hometown.position)
                     agent.profile.del_note(uid=quest.dc.delivery_note_uid, time=event.time)
@@ -146,7 +146,7 @@ class DeliveryQuestSimple(DeliveryQuest):
                     temp_log_str = u'{} {}: {}.'.format(
                         quest.locale(quest.hirer.title),
                         quest.locale("q_dq_give_items"),
-                        ', '.join([unicode(quest.locale(item.title)) for item in quest.delivery_set])  # ##LOCALIZATION
+                        ', '.join([quest.locale(item.title) for item in quest.delivery_set])  # ##LOCALIZATION
                     )
                     quest.log(text=temp_log_str, event=event, position=quest.hirer.hometown.position)
                     quest.log(text=u'{} {}nc.'.format(quest.locale("q_share_cancel_pen_done"), quest.reward_money / 2), event=event,  # ##LOCALIZATION

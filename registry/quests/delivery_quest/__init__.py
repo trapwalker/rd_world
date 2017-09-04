@@ -87,14 +87,14 @@ class DeliveryQuest(Quest):
         )
         self.text = LocalizedString(
             en=u"Доставьте груз: {} - к {} в город {}. Награда: {:.0f}nc и {:.0f} ед. опыта.".format(  # TODO: ##LOCALIZATION
-                ', '.join([unicode(item.title) for item in self.delivery_set]),
+                ', '.join([item.title.en for item in self.delivery_set]),
                 self.recipient.title,
                 self.recipient.hometown.title,
                 self.reward_money,
                 self.reward_exp,
             ),
             ru=u"Доставьте груз: {} - к {} в город {}. Награда: {:.0f}nc и {:.0f} ед. опыта.".format(  # TODO: ##LOCALIZATION
-                ', '.join([unicode(item.title) for item in self.delivery_set]),
+                ', '.join([item.title.ru for item in self.delivery_set]),
                 self.recipient.title,
                 self.recipient.hometown.title,
                 self.reward_money,

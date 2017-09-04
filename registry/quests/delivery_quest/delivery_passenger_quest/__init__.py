@@ -40,13 +40,13 @@ class DeliveryPassengerQuest(DeliveryQuestSimple):
         )
         self.text = LocalizedString(
             en=u"Доставьте пассажиров: {} - в гороод {}. Награда: {:.0f}nc и {:.0f} ед. опыта.".format(  # TODO: ##LOCALIZATION
-                ', '.join([unicode(item.title) for item in self.delivery_set]),
+                ', '.join([item.title.en for item in self.delivery_set]),
                 self.destination.title,
                 self.reward_money,
                 self.reward_exp,
             ),
             ru=u"Доставьте пассажиров: {} - в гороод {}. Награда: {:.0f}nc и {:.0f} ед. опыта.".format(
-                ', '.join([unicode(item.title) for item in self.delivery_set]),
+                ', '.join([item.title.ru for item in self.delivery_set]),
                 self.destination.title,
                 self.reward_money,
                 self.reward_exp,
@@ -141,7 +141,7 @@ class DeliveryPassengerQuest(DeliveryQuestSimple):
             raise Cancel("QUEST CANCEL: User have not enough empty slot")
 
         self.log(text=self.locale("q_dp_started"), event=event, position=self.hirer.hometown.position)  #LOCALIZATION
-        temp_log_str = '{} {}.'.format(self.locale("q_dp_in_passengers"), ', '.join([unicode(item.title) for item in self.delivery_set]))
+        temp_log_str = '{} {}.'.format(self.locale("q_dp_in_passengers"), ', '.join([self.locale(item.title) for item in self.delivery_set]))  # ##LOCALIZATION
         self.log(text=temp_log_str, event=event, position=self.hirer.hometown.position)
 
     ####################################################################################################################
@@ -166,7 +166,7 @@ class DeliveryPassengerQuest(DeliveryQuestSimple):
                 if quest.take_passengers(event=event):
                     temp_log_str = u'{} {}.'.format(
                         quest.locale("q_dp_out_passengers"),
-                        ', '.join([unicode(item.title) for item in quest.delivery_set]))
+                        ', '.join([quest.locale(item.title) for item in quest.delivery_set]))
                     quest.log(text=temp_log_str, event=event, position=quest.destination.position)
                     go('reward')
 
@@ -175,7 +175,7 @@ class DeliveryPassengerQuest(DeliveryQuestSimple):
                     agent.profile.set_balance(time=event.time, delta=-(quest.reward_money / 2))
                     temp_log_str = u'{} {}.'.format(
                         quest.locale("q_dp_out_passengers"),  #LOCALIZATION
-                        ', '.join([unicode(item.title) for item in quest.delivery_set]))
+                        ', '.join([quest.locale(item.title) for item in quest.delivery_set]))
                     quest.log(text=temp_log_str, event=event, position=quest.hirer.hometown.position)
                     quest.log(text=u'{} {}nc.'.format(quest.locale("q_share_cancel_pen_done"), quest.reward_money / 2), event=event,  #LOCALIZATION
                               position=quest.hirer.hometown.position)
