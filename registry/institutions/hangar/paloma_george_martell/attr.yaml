@@ -2,7 +2,7 @@
 
 title: 
     en: George_Martell
-    ru: George_Martell  #TODO: ##LOCALIZATION
+    ru: Джордж_Мартелл  ##LOCALIZATION
 
 photo    : "static/content/institutions/hangar/paloma_george_martell.png"
 abstract : false

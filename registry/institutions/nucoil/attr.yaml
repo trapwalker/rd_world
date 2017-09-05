@@ -1,14 +1,14 @@
 _cls: Nukeoil
 doc:
-    en: Нукойл  #TODO: ##LOCALIZATION
+    en: Nukeoil ##LOCALIZATION
     ru: Нукойл
 
 text:
-    en: Нукойл  #TODO: ##LOCALIZATION
+    en: Nukeoil ##LOCALIZATION
     ru: Нукойл
 
 title:
-    en: Нукойл  #TODO: ##LOCALIZATION
+    en: Nukeoil ##LOCALIZATION
     ru: Нукойл
 
 photo    : "static/content/institutions/nucoil/nukeoil_logo.png"

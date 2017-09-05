@@ -1,14 +1,14 @@
 ﻿_cls: Institution
 doc:
-    en: Помощь  #TODO: ##LOCALIZATION
+    en: Support  ##LOCALIZATION
     ru: Помощь
 
 text:
-    en: Помощь  #TODO: ##LOCALIZATION
+    en: Support ##LOCALIZATION
     ru: Помощь
 
 title:
-    en: Помощь  #TODO: ##LOCALIZATION
+    en: Support ##LOCALIZATION
     ru: Помощь
 
 type: nucoil_help_npc

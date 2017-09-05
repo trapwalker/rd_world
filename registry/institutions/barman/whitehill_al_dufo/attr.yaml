@@ -2,7 +2,7 @@
 
 title: 
     en: Al_Dufo
-    ru: Al_Dufo  #TODO: ##LOCALIZATION
+    ru: Эл_Дюфо ##LOCALIZATION
 
 photo    : "static/content/institutions/barman/whitehill_al_dufo.png"
 abstract : false
@@ -41,7 +41,7 @@ quests:
           ru: Платиновая фишка
 
       description: 
-          en: Предмет погибшего курьера. Необходимо доставить Al_Dufo.  #TODO: ##LOCALIZATION
+          en: The subject of the deceased courier. It is necessary to deliver Al_Dufo. ##LOCALIZATION
           ru: Предмет погибшего курьера. Необходимо доставить Al_Dufo.
 
       inv_icon_big    : static/content/items/quest_item/courier_medalion/big.png

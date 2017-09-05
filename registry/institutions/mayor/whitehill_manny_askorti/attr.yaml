@@ -1,7 +1,7 @@
 ﻿_cls     : Institution
 title: 
     en: Manny_Ascorti
-    ru: Manny_Ascorti  #TODO: ##LOCALIZATION
+    ru: Мэнн_Аскорти ##LOCALIZATION
 
 photo    : "static/content/institutions/mayor/whitehill_manny_askorti.png"
 abstract : false

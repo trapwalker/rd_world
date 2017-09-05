@@ -1,10 +1,10 @@
 ﻿_cls: Institution
 doc:
-    en: Глава здания  #TODO: ##LOCALIZATION
+    en: Head of a building ##LOCALIZATION
     ru: Глава здания
 
 text:
-    en: Вас приветствует глава здания!  #TODO: ##LOCALIZATION
+    en: Welcome to head of a building! ##LOCALIZATION
     ru: Вас приветствует глава здания!
 
 type: manager

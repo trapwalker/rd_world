@@ -1,7 +1,7 @@
 ﻿_cls: Institution
 title: 
     en: Rita_Rain
-    ru: Rita_Rain  #TODO: ##LOCALIZATION
+    ru: Рита_Рейн ##LOCALIZATION
 
 photo: "static/content/institutions/manager/prior_rita_rain.png"
 abstract: false

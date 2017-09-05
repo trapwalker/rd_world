@@ -2,7 +2,7 @@
 
 title: 
     en: Curt_Goes
-    ru: Curt_Goes  #TODO: ##LOCALIZATION
+    ru: Курт_Гоус  ##LOCALIZATION
 
 photo    : "static/content/institutions/armorer/bonita_vista_curt_goes.png"
 abstract : false

@@ -1,7 +1,7 @@
 ﻿_cls     : Institution
 title: 
     en: Bob_McDowell
-    ru: Bob_McDowell  #TODO: ##LOCALIZATION
+    ru: Боб_Макдауэлл  ##LOCALIZATION
 
 photo    : "static/content/institutions/mine_manager/mine_whitehill_bob_mcdowell.png"
 abstract : false

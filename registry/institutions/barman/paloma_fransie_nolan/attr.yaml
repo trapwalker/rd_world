@@ -2,7 +2,7 @@
 
 title: 
     en: Fransie_Nolan
-    ru: Fransie_Nolan  #TODO: ##LOCALIZATION
+    ru: Фрэнси_Нолан ##LOCALIZATION
 
 photo    : "static/content/institutions/barman/paloma_fransie_nolan.png"
 abstract : false
@@ -37,11 +37,11 @@ quests:
       parent: reg:///registry/items/quest_item
       _cls: QuestItem
       title: 
-          en: Платиновая фишка  #TODO: ##LOCALIZATION
+          en: Platinum chip ##LOCALIZATION
           ru: Платиновая фишка
 
       description: 
-          en: Предмет погибшего курьера. Необходимо доставить Fransie_Nolan.  #TODO: ##LOCALIZATION
+          en: The subject of the deceased courier. It is necessary to deliver Fransie_Nolan. ##LOCALIZATION
           ru: Предмет погибшего курьера. Необходимо доставить Fransie_Nolan.
 
       inv_icon_big    : static/content/items/quest_item/courier_medalion/big.png

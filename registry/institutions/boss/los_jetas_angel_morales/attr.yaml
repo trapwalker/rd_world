@@ -1,7 +1,7 @@
 ﻿_cls     : Institution
 title: 
     en: Angel_Morales
-    ru: Angel_Morales  #TODO: ##LOCALIZATION
+    ru: Анхель_Моралез ##LOCALIZATION
 
 photo    : "static/content/institutions/boss/los_jetas_angel_morales.png"
 abstract : false

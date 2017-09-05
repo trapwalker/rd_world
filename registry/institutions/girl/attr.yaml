@@ -1,11 +1,11 @@
 ﻿_cls: Girl
 
 doc:
-    en: Компаньонка  #TODO: ##LOCALIZATION
+    en: Chaperon ##LOCALIZATION
     ru: Компаньонка
 
-text:
-    en: Вас приветствует компаньонка!  #TODO: ##LOCALIZATION
+text:           ##WTF
+    en: Welcome to chaperon! ##LOCALIZATION
     ru: Вас приветствует компаньонка!
 
 type: girl

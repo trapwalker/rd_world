@@ -1,10 +1,10 @@
 ﻿_cls : Institution
 doc:
-    en: Бармен  #TODO: ##LOCALIZATION
+    en: Bartender  ##LOCALIZATION
     ru: Бармен
 
-text:
-    en: Вас приветствует бармен!  #TODO: ##LOCALIZATION
+text:     ##WTF
+    en: Welcome to bartender! ##LOCALIZATION
     ru: Вас приветствует бармен!
 
 type    : barman

@@ -1,10 +1,10 @@
 ﻿_cls: Parking
 doc:
-    en: Парковщик  #TODO: ##LOCALIZATION
+    en: Parking caretaker  ##LOCALIZATION
     ru: Парковщик
 
 text:
-    en: Вас приветствует парковщик!  #TODO: ##LOCALIZATION
+    en: Welcome to parking caretaker!  ##LOCALIZATION
     ru: Вас приветствует парковщик!
 
 type: parking

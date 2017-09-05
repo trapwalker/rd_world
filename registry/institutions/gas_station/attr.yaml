@@ -1,14 +1,14 @@
 ﻿_cls: Institution
 doc:
-    en: Заправка  #TODO: ##LOCALIZATION
+    en: Gas station  ##LOCALIZATION
     ru: Заправка
 
 text:
-    en: Заправка  #TODO: ##LOCALIZATION
+    en: Gas station ##LOCALIZATION
     ru: Заправка
 
 title:
-    en: Заправка  #TODO: ##LOCALIZATION
+    en: Gas station ##LOCALIZATION
     ru: Заправка
 
 type: npc_gas_station

@@ -1,11 +1,11 @@
 ﻿_cls: Hangar
 
 doc:
-    en: Продавец машин  #TODO: ##LOCALIZATION
+    en: Auto dealer ##LOCALIZATION
     ru: Продавец машин
 
-text:
-    en: Вас приветствует продавец машин!  #TODO: ##LOCALIZATION
+text:   ##WTF
+    en: Welcome to auto dealer! ##LOCALIZATION
     ru: Вас приветствует продавец машин!
 
 type: hangar

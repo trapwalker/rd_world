@@ -1,11 +1,11 @@
 ﻿_cls: SlotWorker
 
 doc:
-    en: Оружейник  #TODO: ##LOCALIZATION
+    en: Armorer ##LOCALIZATION
     ru: Оружейник
 
-text:
-    en: Вас приветствует оружейник!  #TODO: ##LOCALIZATION
+text: ##WTF
+    en: Welcome to armorer!  ##LOCALIZATION
     ru: Вас приветствует оружейник!
 
 type: armorer

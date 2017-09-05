@@ -1,8 +1,8 @@
 ﻿_cls: Parking
 
 title:
-    en: Scott_Huffman  #TODO: ##LOCALIZATION
-    ru: Scott_Huffman
+    en: Scott_Huffman
+    ru: Скотт_Хаффман   ##LOCALIZATION
 
 photo: "static/content/institutions/parking/bonita_vista_scott_huffman.png"
 abstract: false
