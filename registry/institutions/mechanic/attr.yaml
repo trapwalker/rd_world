@@ -1,10 +1,10 @@
 ﻿_cls: Mechanic
 doc:
-    en: Механик  #TODO: ##LOCALIZATION
+    en: Mechanic  ##LOCALIZATION
     ru: Механик
 
 text:
-    en: Вас приветствует механик!  #TODO: ##LOCALIZATION
+    en: Welcome to mechanic! ##LOCALIZATION
     ru: Вас приветствует механик!
 
 type: mechanic

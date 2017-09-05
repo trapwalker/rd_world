@@ -1,7 +1,7 @@
 ﻿_cls     : Institution
 title: 
     en: Jack_Lape
-    ru: Jack_Lape  #TODO: ##LOCALIZATION
+    ru: Джек_Лэйп ##LOCALIZATION
 
 photo    : "static/content/institutions/mayor/bonita_vista_jack_lape.png"
 abstract : false

@@ -1,10 +1,10 @@
 ﻿_cls: Institution
 doc:
-    en: Мэр  #TODO: ##LOCALIZATION
+    en: Major  ##LOCALIZATION
     ru: Мэр
 
 text:
-    en: Вас приветствует мэр!  #TODO: ##LOCALIZATION
+    en: Welcome to major! ##LOCALIZATION
     ru: Вас приветствует мэр!
 
 type: mayor

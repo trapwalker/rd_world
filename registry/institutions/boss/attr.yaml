@@ -1,10 +1,10 @@
 ﻿_cls: Institution
 doc:
-    en: Главарь  #TODO: ##LOCALIZATION
+    en: Ringleader ##LOCALIZATION
     ru: Главарь
 
-text:
-    en: Вас приветствует главарь банды!  #TODO: ##LOCALIZATION
+text:          ##WTF
+    en: Welcome to ringleader! ##LOCALIZATION
     ru: Вас приветствует главарь банды!
 
 type    : boss

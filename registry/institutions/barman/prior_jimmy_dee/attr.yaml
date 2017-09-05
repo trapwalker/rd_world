@@ -2,7 +2,7 @@
 
 title: 
     en: Jimmy_Dee
-    ru: Jimmy_Dee  #TODO: ##LOCALIZATION
+    ru: Джимми_Ди ##LOCALIZATION
 
 photo    : "static/content/institutions/barman/prior_jimmy_dee.png"
 abstract : false
@@ -41,7 +41,7 @@ quests:
           ru: Платиновая фишка
 
       description: 
-          en: Предмет погибшего курьера. Необходимо доставить Jimmy_Dee.  #TODO: ##LOCALIZATION
+          en: The subject of the deceased courier. It is necessary to deliver Jimmy_Dee.  ##LOCALIZATION
           ru: Предмет погибшего курьера. Необходимо доставить Jimmy_Dee.
 
       inv_icon_big    : static/content/items/quest_item/courier_medalion/big.png
