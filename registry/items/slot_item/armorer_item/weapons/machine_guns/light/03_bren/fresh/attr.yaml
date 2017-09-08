@@ -1,9 +1,10 @@
 ﻿__cls__         : MachineGun
 _cls            : MachineGun
-doc             : Свеж. пулемет Bren
+doc             : Пулемет BrenNone
 abstract        : false
 
-title           : Свеж. пулемет<br>Bren                      # Краткое название - отобразится в слоте инвентаря
+title           : Пулемет<br>Bren                            # Краткое название - отобразится в слоте инвентаря
+condition       : 4  # Свеж.
 # Полное описание - отобразится в разделе описания в инвентаре
 description     : '???'
 

@@ -1,9 +1,10 @@
 ﻿__cls__         : MachineGun
 _cls            : MachineGun
-doc             : Ржав. пулемет Negev NG7
+doc             : Пулемет Negev NG7None
 abstract        : false
 
-title           : Ржав. пулемет<br>Negev NG7                 # Краткое название - отобразится в слоте инвентаря
+title           : Пулемет<br>Negev NG7                       # Краткое название - отобразится в слоте инвентаря
+condition       : 1  # Ржав.
 # Полное описание - отобразится в разделе описания в инвентаре
 description     : '???'
 

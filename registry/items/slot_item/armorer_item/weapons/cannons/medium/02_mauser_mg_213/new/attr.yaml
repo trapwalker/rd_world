@@ -1,8 +1,9 @@
 ﻿_cls            : Cannon
-doc             : Свеж. пушка Mauser MG 213
+doc             : Пушка Mauser MG 213None
 abstract        : false
 
-title           : Свеж. пушка<br>Mauser MG 213             # Краткое название - отобразится в слоте инвентаря
+title           : Пушка<br>Mauser MG 213                   # Краткое название - отобразится в слоте инвентаря
+condition       : 4  # Свеж.
 # Полное описание - отобразится в разделе описания в инвентаре
 description     : '???'
 

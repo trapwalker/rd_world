@@ -1,9 +1,10 @@
 ﻿__cls__         : MachineGun
 _cls            : MachineGun
-doc             : Изн. пулемет Stoner 63
+doc             : Пулемет Stoner 63None
 abstract        : false
 
-title           : Изн. пулемет<br>Stoner 63                  # Краткое название - отобразится в слоте инвентаря
+title           : Пулемет<br>Stoner 63                       # Краткое название - отобразится в слоте инвентаря
+condition       : 2  # Изн.
 # Полное описание - отобразится в разделе описания в инвентаре
 description     : '???'
 

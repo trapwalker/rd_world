@@ -1,9 +1,10 @@
 ﻿__cls__         : MachineGun
 _cls            : MachineGun
-doc             : Изн. пулемет LSAT
+doc             : Пулемет LSATNone
 abstract        : false
 
-title           : Изн. пулемет<br>LSAT                       # Краткое название - отобразится в слоте инвентаря
+title           : Пулемет<br>LSAT                            # Краткое название - отобразится в слоте инвентаря
+condition       : 2  # Изн.
 # Полное описание - отобразится в разделе описания в инвентаре
 description     : '???'
 

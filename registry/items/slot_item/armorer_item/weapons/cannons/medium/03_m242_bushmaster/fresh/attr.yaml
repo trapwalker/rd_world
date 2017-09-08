@@ -1,8 +1,9 @@
 ﻿_cls            : Cannon
-doc             : Свеж. пушка M242 Bushmaster
+doc             : Пушка M242 BushmasterNone
 abstract        : false
 
-title           : Свеж. пушка<br>M242 Bushmaster           # Краткое название - отобразится в слоте инвентаря
+title           : Пушка<br>M242 Bushmaster                 # Краткое название - отобразится в слоте инвентаря
+condition       : 4  # Свеж.
 # Полное описание - отобразится в разделе описания в инвентаре
 description     : '???'
 
