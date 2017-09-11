@@ -1,0 +1,4 @@
+﻿_cls : MachineGun
+doc  : Легкие пулеметы
+
+power_penetration: 5   # Мощность оружия (пробитие)

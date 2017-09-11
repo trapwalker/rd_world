@@ -1,0 +1,4 @@
+﻿_cls : MachineGun
+doc  : Тяжелые пулеметы
+
+power_penetration: 10   # Мощность оружия (пробитие)

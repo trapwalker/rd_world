@@ -1,5 +1,5 @@
-﻿_cls            : Cannon
-doc             : Пушка M242 Bushmaster
+_cls            : Cannon
+doc             : Пушка M242 BushmasterNone
 abstract        : false
 
 title:                                                     # Краткое название - отобразится в слоте инвентаря
@@ -70,3 +70,6 @@ armorer_images:
     armorer_top_B   : "static/content/items/slot_item/weapons/cannons/medium/03_m242_bushmaster/big/top_b.png"  # назад
     armorer_top_R   : "static/content/items/slot_item/weapons/cannons/medium/03_m242_bushmaster/big/top_r.png"  # вправо
     armorer_top_L   : "static/content/items/slot_item/weapons/cannons/medium/03_m242_bushmaster/big/top_l.png"  # влево
+
+
+condition       : 3  # Исп.

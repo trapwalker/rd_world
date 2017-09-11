@@ -1,4 +1,6 @@
-﻿_cls        : Car
+_cls        : Car
 doc         : Грузовой класс транспортных средств
 
 image_scale : small   # Масштаб машинки для отрисовки обвеса: small, middle, big
+
+p_armor: 10   # Бронированность

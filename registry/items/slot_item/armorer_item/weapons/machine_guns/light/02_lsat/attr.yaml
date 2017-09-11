@@ -1,5 +1,5 @@
-﻿_cls            : MachineGun
-doc             : Пулемет LSAT
+_cls            : MachineGun
+doc             : Пулемет LSATNone
 abstract        : false
 
 title:                                                       # Краткое название - отобразится в слоте инвентаря
@@ -13,13 +13,13 @@ description:
 
 
 # Основные балансные настройки
-base_price      : 500                                        # Цена
+base_price      : 475                                        # Цена
 weight_class    : 1                                          # Класс тяжести
 ammo            : reg:///registry/items/usable/ammo/556bb    # Подходящие патроны
 
-dps             : 2.5                                        # Дамаг в секунду по вражеским целям
+dps             : 2.375                                      # Дамаг в секунду по вражеским целям
 
-radius          : 230                                        # Дальность сектора стрельбы
+radius          : 219                                        # Дальность сектора стрельбы
 width           : 69                                         # Ширина сектора стрельбы
 
 ammo_per_second : 3                                          # [shot/s] ~=650/60 Потребление патронов в секунду
@@ -76,3 +76,6 @@ armorer_images:
     armorer_top_B   : "static/content/items/slot_item/weapons/mashine_guns/light/02_lsat/big/top_b.png"  # назад
     armorer_top_R   : "static/content/items/slot_item/weapons/mashine_guns/light/02_lsat/big/top_r.png"  # вправо
     armorer_top_L   : "static/content/items/slot_item/weapons/mashine_guns/light/02_lsat/big/top_l.png"  # влево
+
+
+condition       : 3  # Исп.

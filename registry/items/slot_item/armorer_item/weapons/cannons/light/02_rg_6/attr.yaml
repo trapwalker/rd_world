@@ -1,5 +1,5 @@
-﻿_cls            : Cannon
-doc             : Гранатомет РГ-6 Гном
+_cls            : Cannon
+doc             : Гранатомет РГ-6 ГномNone
 abstract        : false
 
 title:
@@ -69,3 +69,6 @@ armorer_images:
     armorer_top_B   : "static/content/items/slot_item/weapons/cannons/light/02_rg_6/big/top_b.png"  # назад
     armorer_top_R   : "static/content/items/slot_item/weapons/cannons/light/02_rg_6/big/top_r.png"  # вправо
     armorer_top_L   : "static/content/items/slot_item/weapons/cannons/light/02_rg_6/big/top_l.png"  # влево
+
+
+condition       : 3  # Исп.

@@ -1,5 +1,5 @@
-﻿_cls            : MachineGun
-doc             : Пулемет Браунинг M2
+_cls            : MachineGun
+doc             : Пулемет Браунинг M2None
 abstract        : false
 
 title:                                                        # Краткое название - отобразится в слоте инвентаря
@@ -13,13 +13,13 @@ description:
 
 
 # Основные балансные настройки
-base_price      : 1450                                        # Цена
+base_price      : 1378                                        # Цена
 weight_class    : 2                                           # Класс тяжести
 ammo            : reg:///registry/items/usable/ammo/127x108bb # Подходящие патроны
 
-dps             : 6.2                                         # Дамаг в секунду по вражеским целям
+dps             : 5.89                                        # Дамаг в секунду по вражеским целям
 
-radius          : 364                                         # Дальность сектора стрельбы
+radius          : 346                                         # Дальность сектора стрельбы
 width           : 84                                          # Ширина сектора стрельбы
 
 ammo_per_second : 4                                           # [shot/s] ~=650/60 Потребление патронов в секунду
@@ -80,3 +80,6 @@ armorer_images:
     armorer_top_B   : "static/content/items/slot_item/weapons/mashine_guns/medium/03_browning_m2/big/top_b.png"  # назад
     armorer_top_R   : "static/content/items/slot_item/weapons/mashine_guns/medium/03_browning_m2/big/top_r.png"  # вправо
     armorer_top_L   : "static/content/items/slot_item/weapons/mashine_guns/medium/03_browning_m2/big/top_l.png"  # влево
+
+
+condition       : 3  # Исп.

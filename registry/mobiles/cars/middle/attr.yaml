@@ -1,4 +1,6 @@
-﻿_cls        : Car
+_cls        : Car
 doc         : Средний класс транспортных средств
 
 image_scale : middle   # Масштаб машинки для отрисовки обвеса: small, middle, big
+
+p_armor: 7.5   # Бронированность

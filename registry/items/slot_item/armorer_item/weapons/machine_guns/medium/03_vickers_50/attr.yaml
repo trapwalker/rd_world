@@ -1,5 +1,5 @@
-﻿_cls            : MachineGun
-doc             : Пулемет Vickers .50
+_cls            : MachineGun
+doc             : Пулемет Vickers .50None
 abstract        : false
 
 title:                                                        # Краткое название - отобразится в слоте инвентаря
@@ -13,13 +13,13 @@ description:
 
 
 # Основные балансные настройки
-base_price      : 1350                                        # Цена
+base_price      : 1283                                        # Цена
 weight_class    : 2                                           # Класс тяжести
 ammo            : reg:///registry/items/usable/ammo/127x108bb # Подходящие патроны
 
-dps             : 5.6                                         # Дамаг в секунду по вражеским целям
+dps             : 5.32                                        # Дамаг в секунду по вражеским целям
 
-radius          : 352                                         # Дальность сектора стрельбы
+radius          : 334                                         # Дальность сектора стрельбы
 width           : 78                                          # Ширина сектора стрельбы
 
 ammo_per_second : 4                                           # [shot/s] ~=650/60 Потребление патронов в секунду
@@ -80,3 +80,6 @@ armorer_images:
     armorer_top_B   : "static/content/items/slot_item/weapons/mashine_guns/medium/03_vickers_50/big/top_b.png"  # назад
     armorer_top_R   : "static/content/items/slot_item/weapons/mashine_guns/medium/03_vickers_50/big/top_r.png"  # вправо
     armorer_top_L   : "static/content/items/slot_item/weapons/mashine_guns/medium/03_vickers_50/big/top_l.png"  # влево
+
+
+condition       : 3  # Исп.

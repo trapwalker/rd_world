@@ -1,0 +1,80 @@
+﻿__cls__         : MachineGun
+_cls            : MachineGun
+doc             : Пулемет КалашниковаNone
+abstract        : false
+tags            : [teaching]
+
+title           : Пулемет<br>Калашникова                     # Краткое название - отобразится в слоте инвентаря
+
+
+
+# Полное описание - отобразится в разделе описания в инвентаре
+description     : 'Советский ручной пулемет, созданный на основе автомата АКМ. Принят на вооружение советской армии в 1961 году. Калибр: 7,62 мм. Класс тяжести: 1.'
+
+# Основные балансные настройки
+base_price      : 320                                        # Цена
+weight_class    : 1                                          # Класс тяжести
+ammo            : reg:///registry/items/usable/ammo/762x51bb # Подходящие патроны
+
+dps             : 1.3                                        # Дамаг в секунду по вражеским целям
+
+radius          : 190                                        # Дальность сектора стрельбы
+width           : 57                                         # Ширина сектора стрельбы
+
+ammo_per_second : 1                                          # [shot/s] ~=650/60 Потребление патронов в секунду
+
+animation_tracer_rate : 1
+
+# Картинки для представления в инвентаре
+inv_icon_big    : static/content/items/slot_item/weapons/mashine_guns/light/00_rpk/inventory/big.png
+inv_icon_mid    : static/content/items/slot_item/weapons/mashine_guns/light/00_rpk/inventory/mid.png
+inv_icon_small  : static/content/items/slot_item/weapons/mashine_guns/light/00_rpk/inventory/small.png
+
+weapon_audio:
+  - auto_r_11
+  - auto_r_12
+  - auto_r_13
+  - auto_r_14
+
+armorer_images:
+  small:
+    # Картинки для представления у оружейника (вид сбоку)
+    armorer_side_F  : "static/content/items/slot_item/weapons/mashine_guns/light/00_rpk/small/side_f.png" # вперёд
+    armorer_side_B  : "static/content/items/slot_item/weapons/mashine_guns/light/00_rpk/small/side_b.png" # назад
+    armorer_side_R  : "static/content/items/slot_item/weapons/mashine_guns/light/00_rpk/small/side_r.png" # вправо
+    armorer_side_L  : "static/content/items/slot_item/weapons/mashine_guns/light/00_rpk/small/side_l.png" # влево
+
+    # Картинки для представления у оружейника (вид сверху)
+    armorer_top_F   : "static/content/items/slot_item/weapons/mashine_guns/light/00_rpk/small/top_f.png"  # вперёд
+    armorer_top_B   : "static/content/items/slot_item/weapons/mashine_guns/light/00_rpk/small/top_b.png"  # назад
+    armorer_top_R   : "static/content/items/slot_item/weapons/mashine_guns/light/00_rpk/small/top_r.png"  # вправо
+    armorer_top_L   : "static/content/items/slot_item/weapons/mashine_guns/light/00_rpk/small/top_l.png"  # влево
+
+  middle:
+    # Картинки для представления у оружейника (вид сбоку)
+    armorer_side_F  : "static/content/items/slot_item/weapons/mashine_guns/light/00_rpk/middle/side_f.png" # вперёд
+    armorer_side_B  : "static/content/items/slot_item/weapons/mashine_guns/light/00_rpk/middle/side_b.png" # назад
+    armorer_side_R  : "static/content/items/slot_item/weapons/mashine_guns/light/00_rpk/middle/side_r.png" # вправо
+    armorer_side_L  : "static/content/items/slot_item/weapons/mashine_guns/light/00_rpk/middle/side_l.png" # влево
+
+    # Картинки для представления у оружейника (вид сверху)
+    armorer_top_F   : "static/content/items/slot_item/weapons/mashine_guns/light/00_rpk/middle/top_f.png"  # вперёд
+    armorer_top_B   : "static/content/items/slot_item/weapons/mashine_guns/light/00_rpk/middle/top_b.png"  # назад
+    armorer_top_R   : "static/content/items/slot_item/weapons/mashine_guns/light/00_rpk/middle/top_r.png"  # вправо
+    armorer_top_L   : "static/content/items/slot_item/weapons/mashine_guns/light/00_rpk/middle/top_l.png"  # влево
+
+  big:
+    # Картинки для представления у оружейника (вид сбоку)
+    armorer_side_F  : "static/content/items/slot_item/weapons/mashine_guns/light/00_rpk/big/side_f.png" # вперёд
+    armorer_side_B  : "static/content/items/slot_item/weapons/mashine_guns/light/00_rpk/big/side_b.png" # назад
+    armorer_side_R  : "static/content/items/slot_item/weapons/mashine_guns/light/00_rpk/big/side_r.png" # вправо
+    armorer_side_L  : "static/content/items/slot_item/weapons/mashine_guns/light/00_rpk/big/side_l.png" # влево
+
+    # Картинки для представления у оружейника (вид сверху)
+    armorer_top_F   : "static/content/items/slot_item/weapons/mashine_guns/light/00_rpk/big/top_f.png"  # вперёд
+    armorer_top_B   : "static/content/items/slot_item/weapons/mashine_guns/light/00_rpk/big/top_b.png"  # назад
+    armorer_top_R   : "static/content/items/slot_item/weapons/mashine_guns/light/00_rpk/big/top_r.png"  # вправо
+    armorer_top_L   : "static/content/items/slot_item/weapons/mashine_guns/light/00_rpk/big/top_l.png"  # влево
+
+
+condition       : 4  # Свеж.

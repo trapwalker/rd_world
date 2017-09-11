@@ -1,5 +1,5 @@
-﻿_cls            : MachineGun
-doc             : Пулемет MG 81
+_cls            : MachineGun
+doc             : Пулемет MG 81None
 abstract        : false
 
 title:                                                       # Краткое название - отобразится в слоте инвентаря
@@ -13,13 +13,13 @@ description:
 
 
 # Основные балансные настройки
-base_price      : 950                                        # Цена
+base_price      : 903                                        # Цена
 weight_class    : 2                                          # Класс тяжести
 ammo            : reg:///registry/items/usable/ammo/792bb    # Подходящие патроны
 
-dps             : 3.8                                        # Дамаг в секунду по вражеским целям
+dps             : 3.61                                       # Дамаг в секунду по вражеским целям
 
-radius          : 316                                        # Дальность сектора стрельбы
+radius          : 300                                        # Дальность сектора стрельбы
 width           : 63                                         # Ширина сектора стрельбы
 
 ammo_per_second : 2                                          # [shot/s] ~=650/60 Потребление патронов в секунду
@@ -76,3 +76,6 @@ armorer_images:
     armorer_top_B   : "static/content/items/slot_item/weapons/mashine_guns/medium/01_mg_81/big/top_b.png"  # назад
     armorer_top_R   : "static/content/items/slot_item/weapons/mashine_guns/medium/01_mg_81/big/top_r.png"  # вправо
     armorer_top_L   : "static/content/items/slot_item/weapons/mashine_guns/medium/01_mg_81/big/top_l.png"  # влево
+
+
+condition       : 3  # Исп.

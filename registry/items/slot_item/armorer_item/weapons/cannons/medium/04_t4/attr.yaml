@@ -1,5 +1,5 @@
-﻿_cls            : Cannon
-doc             : Пушка T4
+_cls            : Cannon
+doc             : Пушка T4None
 abstract        : false
 
 title:                                                     # Краткое название - отобразится в слоте инвентаря
@@ -70,3 +70,6 @@ armorer_images:
     armorer_top_B   : "static/content/items/slot_item/weapons/cannons/medium/04_t4/middle/top_b.png"  # назад
     armorer_top_R   : "static/content/items/slot_item/weapons/cannons/medium/04_t4/middle/top_r.png"  # вправо
     armorer_top_L   : "static/content/items/slot_item/weapons/cannons/medium/04_t4/middle/top_l.png"  # влево
+
+
+condition       : 3  # Исп.

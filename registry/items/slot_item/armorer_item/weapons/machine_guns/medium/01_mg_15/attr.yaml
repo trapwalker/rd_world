@@ -1,5 +1,5 @@
-﻿_cls            : MachineGun
-doc             : Пулемет MG 15
+_cls            : MachineGun
+doc             : Пулемет MG 15None
 abstract        : false
 
 title:                                                       # Краткое название - отобразится в слоте инвентаря
@@ -13,13 +13,13 @@ description:
 
 
 # Основные балансные настройки
-base_price      : 800                                        # Цена
+base_price      : 760                                        # Цена
 weight_class    : 2                                          # Класс тяжести
 ammo            : reg:///registry/items/usable/ammo/792bb    # Подходящие патроны
 
-dps             : 3.2                                        # Дамаг в секунду по вражеским целям
+dps             : 3.04                                       # Дамаг в секунду по вражеским целям
 
-radius          : 304                                        # Дальность сектора стрельбы
+radius          : 289                                        # Дальность сектора стрельбы
 width           : 60                                         # Ширина сектора стрельбы
 
 ammo_per_second : 2                                          # [shot/s] ~=650/60 Потребление патронов в секунду
@@ -79,3 +79,6 @@ armorer_images:
     armorer_top_B   : "static/content/items/slot_item/weapons/mashine_guns/medium/01_mg_15/big/top_b.png"  # назад
     armorer_top_R   : "static/content/items/slot_item/weapons/mashine_guns/medium/01_mg_15/big/top_r.png"  # вправо
     armorer_top_L   : "static/content/items/slot_item/weapons/mashine_guns/medium/01_mg_15/big/top_l.png"  # влево
+
+
+condition       : 3  # Исп.

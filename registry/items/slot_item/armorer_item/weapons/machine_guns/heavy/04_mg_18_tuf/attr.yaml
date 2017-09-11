@@ -1,5 +1,5 @@
-﻿_cls            : MachineGun
-doc             : Пулемет MG 18 TuF
+_cls            : MachineGun
+doc             : Пулемет MG 18 TuFNone
 abstract        : false
 
 title:                                                        # Краткое название - отобразится в слоте инвентаря
@@ -13,13 +13,13 @@ description:
 
 
 # Основные балансные настройки
-base_price      : 3600                                        # Цена
+base_price      : 3420                                        # Цена
 weight_class    : 3                                           # Класс тяжести
 ammo            : reg:///registry/items/usable/ammo/13mm      # Подходящие патроны
 
-dps             : 4                                           # Дамаг в секунду по вражеским целям
+dps             : 4.2                                         # Дамаг в секунду по вражеским целям
 
-radius          : 400                                         # Дальность сектора стрельбы
+radius          : 380                                         # Дальность сектора стрельбы
 width           : 54                                          # Ширина сектора стрельбы
 
 ammo_per_second : 1                                           # [shot/s] ~=650/60 Потребление патронов в секунду
@@ -80,3 +80,6 @@ armorer_images:
     armorer_top_B   : "static/content/items/slot_item/weapons/mashine_guns/heavy/04_mg_18_tuf/middle/top_b.png"  # назад
     armorer_top_R   : "static/content/items/slot_item/weapons/mashine_guns/heavy/04_mg_18_tuf/middle/top_r.png"  # вправо
     armorer_top_L   : "static/content/items/slot_item/weapons/mashine_guns/heavy/04_mg_18_tuf/middle/top_l.png"  # влево
+
+
+condition       : 3  # Исп.

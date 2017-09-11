@@ -1,0 +1,60 @@
+# -*- coding: utf-8 -*-
+
+import logging
+log = logging.getLogger(__name__)
+
+from sublayers_server.model.registry_me.classes import notes
+from sublayers_server.model.registry_me.tree import IntField, FloatField, ListField, EmbeddedDocumentField, UUIDField
+from sublayers_server.model.quest_events import OnCancel, OnTimer, OnNote
+from sublayers_server.model.registry_me.classes.quests import (
+    Quest, MarkerMapObject, QuestRange, Cancel,
+    QuestState_, FailByCancelState, FailState, WinState,
+)
+
+import random
+from functools import partial
+
+
+class __MyQuest__(Quest):
+    ####################################################################################################################
+    def on_generate_(self, event, **kw):
+        # TODO: Clean deprecated root handler and add super call then
+        pass
+
+    ####################################################################################################################
+    def on_start_(self, event, **kw):
+        pass
+
+
+    ####################################################################################################################
+    ## Перечень состояний ##############################################################################################
+    class begin(QuestState_):
+        def on_enter_(self, quest, event):
+            pass
+
+        def on_event_(self, quest, event):
+            agent = quest.agent
+            go = partial(quest.go, event=event)
+            set_timer = partial(quest.set_timer, event=event)
+            pass
+            
+    ####################################################################################################################
+    ####################################################################################################################
+    class cancel_fail(FailByCancelState):
+        def on_enter_(self, quest, event):
+            quest.delete_notes(event=event)
+            quest.log(text=u'Квест провален.', event=event)
+    ####################################################################################################################
+    class win(WinState):
+        def on_enter_(self, quest, event):
+            quest.delete_notes(event=event)
+            quest.log(text=u'Квест выполнен.', event=event)
+    ####################################################################################################################
+    class fail(FailState):
+        def on_enter_(self, quest, event):
+            quest.delete_notes(event=event)
+            quest.agent.profile.set_relationship(time=event.time, npc=quest.hirer, dvalue=-quest.level * 2)  # изменение отношения c нпц
+            quest.agent.profile.set_karma(time=event.time, dvalue=-quest.reward_karma)  # todo: изменение кармы
+            quest.log(text=u'Квест провален.', event=event)
+    ####################################################################################################################
+    ####################################################################################################################

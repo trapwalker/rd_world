@@ -1,5 +1,5 @@
-﻿_cls            : MachineGun
-doc             : Пулемет M134 «Миниган»
+_cls            : MachineGun
+doc             : Пулемет M134 «Миниган»None
 abstract        : false
 
 title:                                                       # Краткое название - отобразится в слоте инвентаря
@@ -13,13 +13,13 @@ description:
 
 
 # Основные балансные настройки
-base_price      : 1200                                       # Цена
+base_price      : 1140                                       # Цена
 weight_class    : 2                                          # Класс тяжести
 ammo            : reg:///registry/items/usable/ammo/762x51bb # Подходящие патроны
 
-dps             : 5                                          # Дамаг в секунду по вражеским целям
+dps             : 4.75                                       # Дамаг в секунду по вражеским целям
 
-radius          : 340                                        # Дальность сектора стрельбы
+radius          : 323                                        # Дальность сектора стрельбы
 width           : 72                                         # Ширина сектора стрельбы
 
 ammo_per_second : 3                                          # [shot/s] ~=650/60 Потребление патронов в секунду
@@ -80,3 +80,6 @@ armorer_images:
     armorer_top_B   : "static/content/items/slot_item/weapons/mashine_guns/medium/02_m134_minigun/big/top_b.png"  # назад
     armorer_top_R   : "static/content/items/slot_item/weapons/mashine_guns/medium/02_m134_minigun/big/top_r.png"  # вправо
     armorer_top_L   : "static/content/items/slot_item/weapons/mashine_guns/medium/02_m134_minigun/big/top_l.png"  # влево
+
+
+condition       : 3  # Исп.

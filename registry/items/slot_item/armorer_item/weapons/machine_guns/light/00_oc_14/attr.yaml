@@ -1,5 +1,5 @@
-﻿_cls            : MachineGun
-doc             : Пулемет ОЦ-14 Гроза
+_cls            : MachineGun
+doc             : Пулемет ОЦ-14 ГрозаNone
 abstract        : false
 tags            : [teaching]
 
@@ -14,13 +14,13 @@ description:
 
 
 # Основные балансные настройки
-base_price      : 250                                        # Цена
+base_price      : 238                                        # Цена
 weight_class    : 1                                          # Класс тяжести
 ammo            : reg:///registry/items/usable/ammo/762x51bb # Подходящие патроны
 
-dps             : 1                                          # Дамаг в секунду по вражеским целям
+dps             : 0.95                                       # Дамаг в секунду по вражеским целям
 
-radius          : 180                                        # Дальность сектора стрельбы
+radius          : 171                                        # Дальность сектора стрельбы
 width           : 54                                         # Ширина сектора стрельбы
 
 ammo_per_second : 1                                          # [shot/s] ~=650/60 Потребление патронов в секунду
@@ -77,3 +77,6 @@ armorer_images:
     armorer_top_B   : "static/content/items/slot_item/weapons/mashine_guns/light/00_oc_14/big/top_b.png"  # назад
     armorer_top_R   : "static/content/items/slot_item/weapons/mashine_guns/light/00_oc_14/big/top_r.png"  # вправо
     armorer_top_L   : "static/content/items/slot_item/weapons/mashine_guns/light/00_oc_14/big/top_l.png"  # влево
+
+
+condition       : 3  # Исп.
