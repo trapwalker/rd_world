@@ -1,7 +1,7 @@
 ﻿_cls : MapWeaponRocket
 title: 
-    en: Javelin  #TODO: ##LOCALIZATION
-    ru: Javelin
+    en: Javelin   ##LOCALIZATION
+    ru: Джавелин
 
 
 radius_damage: 50

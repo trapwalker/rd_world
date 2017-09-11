@@ -1,10 +1,10 @@
 _cls : Car
 title:                              # Модель атомобиля
-    en: "Monte Carlo"  #TODO: ##LOCALIZATION
+    en: "Monte Carlo"   ##LOCALIZATION
     ru: "Monte Carlo"
 
 class_car:                          # Класс автомобиля
-    en: "Средний"  # TODO: ##LOCALIZATION
+    en: "Middle"   ##LOCALIZATION
     ru: "Средний"
 name_car:    "Monte Carlo"          # Название атомобиля
 

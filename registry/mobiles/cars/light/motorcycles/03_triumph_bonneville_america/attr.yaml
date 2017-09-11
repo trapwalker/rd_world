@@ -1,10 +1,10 @@
 _cls : Car
 title:                            # Модель атомобиля
-    en: "Bonneville America"  #TODO: ##LOCALIZATION
+    en: "Bonneville America"   ##LOCALIZATION
     ru: "Bonneville America"
 
 class_car:                       # Класс автомобиля
-    en: "Легкий"  # TODO: ##LOCALIZATION
+    en: "Light"   ##LOCALIZATION
     ru: "Легкий"
 name_car:    "Bonneville America" # Название атомобиля
 

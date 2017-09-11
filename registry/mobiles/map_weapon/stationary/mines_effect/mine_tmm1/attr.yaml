@@ -1,7 +1,7 @@
 ﻿_cls: MapWeaponEffectMine
 title:                         # Название атомобиля
-    en: mine_tmm1  #TODO: ##LOCALIZATION
-    ru: mine_tmm1
+    en: Mine TMM1   ##LOCALIZATION
+    ru: Мина ТММ1
 
 
 p_observing_range: 50          # Радиус обзора автомобиля (м) (>= 0)

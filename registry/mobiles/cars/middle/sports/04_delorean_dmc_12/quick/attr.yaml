@@ -1,10 +1,10 @@
 ﻿_cls   : Car
 title:                              # Модель атомобиля
-    en: "DMC"  #TODO: ##LOCALIZATION
+    en: "DMC"   ##LOCALIZATION
     ru: "DMC"
 
 class_car:                          # Класс автомобиля
-    en: "Средний"  # TODO: ##LOCALIZATION
+    en: "Middle"   ##LOCALIZATION
     ru: "Средний"
 name_car  : "DMC"                   # Название атомобиля
 
