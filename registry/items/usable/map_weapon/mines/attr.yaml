@@ -4,5 +4,5 @@ doc: Предметы, активируя которые, пораждаются
 activate_type: self
 activate_time: 2.0
 activate_disable_comment:
-    en: 'Полная остановка автомобиля'  #TODO: ##LOCALIZATION
+    en: 'Full stop of car'   ##LOCALIZATION
     ru: 'Полная остановка автомобиля'

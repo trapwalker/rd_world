@@ -2,11 +2,11 @@
 abstract       : false
 
 title: 
-    en: Турель (Пулемёт MG 15)  #TODO: ##LOCALIZATION
+    en: Turret (machine gun MG 15)   ##LOCALIZATION
     ru: Турель (Пулемёт MG 15)
 
 description: 
-    en: Стационарная турель на базе пулемёта MG 15  #TODO: ##LOCALIZATION
+    en: ''   ##LOCALIZATION
     ru: Стационарная турель на базе пулемёта MG 15
 
 

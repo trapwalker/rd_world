@@ -3,11 +3,11 @@ doc      : Снаряды 20мм/ББ
 abstract : false
 
 title: 
-    en: Снаряды<br>20мм/ББ  #TODO: ##LOCALIZATION
+    en: Shells<br>20mm   ##LOCALIZATION
     ru: Снаряды<br>20мм/ББ
 
 description: 
-    en: '???'  #TODO: ##LOCALIZATION
+    en: ''   ##LOCALIZATION
     ru: '???'
 
 

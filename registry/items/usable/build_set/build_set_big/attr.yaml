@@ -3,11 +3,11 @@ doc            : Ремкомплект (большой)
 abstract       : false
 
 title: 
-    en: Ремкомплект (большой)  #TODO: ##LOCALIZATION
+    en: Repair kit (large)   ##LOCALIZATION
     ru: Ремкомплект (большой)
 
 description: 
-    en: Восстановит машину из плачевного состояния.  #TODO: ##LOCALIZATION
+    en: ''  #TODO: ##LOCALIZATION
     ru: Восстановит машину из плачевного состояния.
 
 

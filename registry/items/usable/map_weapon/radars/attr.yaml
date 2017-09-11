@@ -2,5 +2,5 @@
 doc: Предметы, активируя которые, пораждаются неподвижные радары на карте
 
 activate_disable_comment:
-    en: 'Полная остановка автомобиля'  #TODO: ##LOCALIZATION
+    en: 'Full stop of car'   ##LOCALIZATION
     ru: 'Полная остановка автомобиля'
