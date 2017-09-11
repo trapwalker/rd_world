@@ -1,7 +1,9 @@
-﻿_cls        : Car
+_cls        : Car
 doc         : Тяжелый класс транспортных средств
 
 image_scale : small   # Масштаб машинки для отрисовки обвеса: small, middle, big
+
+p_armor: 12.5   # Бронированность
 
 # audio_engine
 audio_engine:

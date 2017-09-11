@@ -1,5 +1,5 @@
-﻿_cls            : MachineGun
-doc             : Пулемет Mark 48
+_cls            : MachineGun
+doc             : Пулемет Mark 48None
 abstract        : false
 
 title:                                                       # Краткое название - отобразится в слоте инвентаря
@@ -13,13 +13,13 @@ description:
 
 
 # Основные балансные настройки
-base_price      : 900                                        # Цена
+base_price      : 855                                        # Цена
 weight_class    : 1                                          # Класс тяжести
 ammo            : reg:///registry/items/usable/ammo/762x51bb # Подходящие патроны
 
-dps             : 3.7                                        # Дамаг в секунду по вражеским целям
+dps             : 3.515                                      # Дамаг в секунду по вражеским целям
 
-radius          : 270                                        # Дальность сектора стрельбы
+radius          : 257                                        # Дальность сектора стрельбы
 width           : 81                                         # Ширина сектора стрельбы
 
 ammo_per_second : 4                                          # [shot/s] ~=650/60 Потребление патронов в секунду
@@ -76,3 +76,6 @@ armorer_images:
     armorer_top_B   : "static/content/items/slot_item/weapons/mashine_guns/light/04_mark_48/big/top_b.png"  # назад
     armorer_top_R   : "static/content/items/slot_item/weapons/mashine_guns/light/04_mark_48/big/top_r.png"  # вправо
     armorer_top_L   : "static/content/items/slot_item/weapons/mashine_guns/light/04_mark_48/big/top_l.png"  # влево
+
+
+condition       : 3  # Исп.

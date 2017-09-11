@@ -1,5 +1,5 @@
-﻿_cls            : Cannon
-doc             : Пушка Mauser MG 213
+_cls            : Cannon
+doc             : Пушка Mauser MG 213None
 abstract        : false
 
 title:
@@ -19,6 +19,8 @@ ammo            : reg:///registry/items/usable/ammo/20mm   # Подходящи�
 dmg             : 12                                       # Дамаг при залпе по вражеским целям
 area_dmg        : 6                                        # Дамаг по невидимым целям
 time_recharge   : 5.6                                      # Время перезарядки орудия (с)
+
+
 
 radius          : 740                                      # Дальность сектора стрельбы
 width           : 61                                       # Ширина сектора стрельбы
@@ -69,3 +71,6 @@ armorer_images:
     armorer_top_B   : "static/content/items/slot_item/weapons/cannons/medium/02_mauser_mg_213/big/top_b.png"  # назад
     armorer_top_R   : "static/content/items/slot_item/weapons/cannons/medium/02_mauser_mg_213/big/top_r.png"  # вправо
     armorer_top_L   : "static/content/items/slot_item/weapons/cannons/medium/02_mauser_mg_213/big/top_l.png"  # влево
+
+
+condition       : 2  # Изн.

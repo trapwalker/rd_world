@@ -1,5 +1,5 @@
-﻿_cls            : Cannon
-doc             : Пушка Lvakan m/40
+_cls            : Cannon
+doc             : Пушка Lvakan m/40None
 abstract        : false
 
 title:
@@ -15,6 +15,8 @@ description:
 base_price      : 1300                                     # Цена
 weight_class    : 2                                        # Класс тяжести
 ammo            : reg:///registry/items/usable/ammo/20mm   # Подходящие патроны
+
+
 
 dmg             : 11                                       # Дамаг при залпе по вражеским целям
 area_dmg        : 5.5                                      # Дамаг по невидимым целям
@@ -69,3 +71,6 @@ armorer_images:
     armorer_top_B   : "static/content/items/slot_item/weapons/cannons/medium/01_lvakan_m_40/big/top_b.png"  # назад
     armorer_top_R   : "static/content/items/slot_item/weapons/cannons/medium/01_lvakan_m_40/big/top_r.png"  # вправо
     armorer_top_L   : "static/content/items/slot_item/weapons/cannons/medium/01_lvakan_m_40/big/top_l.png"  # влево
+
+
+condition       : 2  # Изн.

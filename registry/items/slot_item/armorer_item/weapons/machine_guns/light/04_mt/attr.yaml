@@ -1,5 +1,5 @@
-﻿_cls            : MachineGun
-doc             : Пулемет МТ
+_cls            : MachineGun
+doc             : Пулемет МТNone
 abstract        : false
 
 title:                                                       # Краткое название - отобразится в слоте инвентаря
@@ -13,13 +13,13 @@ description:
 
 
 # Основные балансные настройки
-base_price      : 800                                        # Цена
+base_price      : 760                                        # Цена
 weight_class    : 1                                          # Класс тяжести
 ammo            : reg:///registry/items/usable/ammo/762x51bb # Подходящие патроны
 
-dps             : 3.4                                        # Дамаг в секунду по вражеским целям
+dps             : 3.23                                       # Дамаг в секунду по вражеским целям
 
-radius          : 260                                        # Дальность сектора стрельбы
+radius          : 247                                        # Дальность сектора стрельбы
 width           : 78                                         # Ширина сектора стрельбы
 
 ammo_per_second : 3                                          # [shot/s] ~=650/60 Потребление патронов в секунду
@@ -76,3 +76,6 @@ armorer_images:
     armorer_top_B   : "static/content/items/slot_item/weapons/mashine_guns/light/04_mt/big/top_b.png"  # назад
     armorer_top_R   : "static/content/items/slot_item/weapons/mashine_guns/light/04_mt/big/top_r.png"  # вправо
     armorer_top_L   : "static/content/items/slot_item/weapons/mashine_guns/light/04_mt/big/top_l.png"  # влево
+
+
+condition       : 3  # Исп.
