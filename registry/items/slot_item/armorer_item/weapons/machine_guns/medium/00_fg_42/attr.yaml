@@ -4,7 +4,9 @@ doc             : Пулемет FG-42None
 abstract        : false
 
 title           : Пулемет<br>FG-42                           # Краткое название - отобразится в слоте инвентаря
-condition       : 3  # Исп.
+
+
+
 # Полное описание - отобразится в разделе описания в инвентаре
 description     : 'Немецкая автоматическая/снайперская винтовка времен Второй мировой войны. Разрабатывалась специально для десантников люфтваффе. Калибр: 7,92 мм. Класс тяжести: 2.'
 
@@ -72,3 +74,6 @@ armorer_images:
     armorer_top_B   : "static/content/items/slot_item/weapons/mashine_guns/medium/00_fg_42/big/top_b.png"  # назад
     armorer_top_R   : "static/content/items/slot_item/weapons/mashine_guns/medium/00_fg_42/big/top_r.png"  # вправо
     armorer_top_L   : "static/content/items/slot_item/weapons/mashine_guns/medium/00_fg_42/big/top_l.png"  # влево
+
+
+condition       : 3  # Исп.

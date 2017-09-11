@@ -3,7 +3,9 @@ doc             : Пушка HS.404None
 abstract        : false
 
 title           : Пушка<br>HS.404                          # Краткое название - отобразится в слоте инвентаря
-condition       : 4  # Свеж.
+
+
+
 # Полное описание - отобразится в разделе описания в инвентаре
 description     : '20-мм пушка, которая использовалась в качестве авиапушки и в зенитно-артиллерийских установках. Класс тяжести: 2.'
 
@@ -65,3 +67,6 @@ armorer_images:
     armorer_top_B   : "static/content/items/slot_item/weapons/cannons/medium/00_hs_404/big/top_b.png"  # назад
     armorer_top_R   : "static/content/items/slot_item/weapons/cannons/medium/00_hs_404/big/top_r.png"  # вправо
     armorer_top_L   : "static/content/items/slot_item/weapons/cannons/medium/00_hs_404/big/top_l.png"  # влево
+
+
+condition       : 4  # Свеж.

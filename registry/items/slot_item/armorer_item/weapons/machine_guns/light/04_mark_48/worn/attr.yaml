@@ -4,7 +4,9 @@ doc             : Пулемет Mark 48None
 abstract        : false
 
 title           : Пулемет<br>Mark 48                         # Краткое название - отобразится в слоте инвентаря
-condition       : 2  # Изн.
+
+
+
 # Полное описание - отобразится в разделе описания в инвентаре
 description     : '???'
 
@@ -72,3 +74,6 @@ armorer_images:
     armorer_top_B   : "static/content/items/slot_item/weapons/mashine_guns/light/04_mark_48/big/top_b.png"  # назад
     armorer_top_R   : "static/content/items/slot_item/weapons/mashine_guns/light/04_mark_48/big/top_r.png"  # вправо
     armorer_top_L   : "static/content/items/slot_item/weapons/mashine_guns/light/04_mark_48/big/top_l.png"  # влево
+
+
+condition       : 2  # Изн.

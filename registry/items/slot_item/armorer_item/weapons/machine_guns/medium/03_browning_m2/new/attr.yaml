@@ -4,7 +4,9 @@ doc             : Пулемет Браунинг M2None
 abstract        : false
 
 title           : Пулемет<br>Браунинг M2                      # Краткое название - отобразится в слоте инвентаря
-condition       : 5  # Нов.
+
+
+
 # Полное описание - отобразится в разделе описания в инвентаре
 description     : 'Американский крупнокалиберный пулемет системы Джона Браунинга. Калибр: 12,7 мм.'
 
@@ -76,3 +78,6 @@ armorer_images:
     armorer_top_B   : "static/content/items/slot_item/weapons/mashine_guns/medium/03_browning_m2/big/top_b.png"  # назад
     armorer_top_R   : "static/content/items/slot_item/weapons/mashine_guns/medium/03_browning_m2/big/top_r.png"  # вправо
     armorer_top_L   : "static/content/items/slot_item/weapons/mashine_guns/medium/03_browning_m2/big/top_l.png"  # влево
+
+
+condition       : 5  # Нов.

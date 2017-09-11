@@ -4,7 +4,9 @@ doc             : Пулемет M134 «Миниган»None
 abstract        : false
 
 title           : Пулемет<br>M134 «Миниган»                  # Краткое название - отобразится в слоте инвентаря
-condition       : 1  # Ржав.
+
+
+
 # Полное описание - отобразится в разделе описания в инвентаре
 description     : 'Многоствольный скорострельный пулемет, построенный по схеме Гатлинга. Впервые был применен во время Вьетнамской войны. Калибр: 7,62 мм.'
 
@@ -76,3 +78,6 @@ armorer_images:
     armorer_top_B   : "static/content/items/slot_item/weapons/mashine_guns/medium/02_m134_minigun/big/top_b.png"  # назад
     armorer_top_R   : "static/content/items/slot_item/weapons/mashine_guns/medium/02_m134_minigun/big/top_r.png"  # вправо
     armorer_top_L   : "static/content/items/slot_item/weapons/mashine_guns/medium/02_m134_minigun/big/top_l.png"  # влево
+
+
+condition       : 1  # Ржав.

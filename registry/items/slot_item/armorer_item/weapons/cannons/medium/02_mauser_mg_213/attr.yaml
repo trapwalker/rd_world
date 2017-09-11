@@ -16,6 +16,8 @@ dmg             : 12                                       # Дамаг при �
 area_dmg        : 6                                        # Дамаг по невидимым целям
 time_recharge   : 5.6                                      # Время перезарядки орудия (с)
 
+
+
 radius          : 740                                      # Дальность сектора стрельбы
 width           : 61                                       # Ширина сектора стрельбы
 
@@ -65,3 +67,6 @@ armorer_images:
     armorer_top_B   : "static/content/items/slot_item/weapons/cannons/medium/02_mauser_mg_213/big/top_b.png"  # назад
     armorer_top_R   : "static/content/items/slot_item/weapons/cannons/medium/02_mauser_mg_213/big/top_r.png"  # вправо
     armorer_top_L   : "static/content/items/slot_item/weapons/cannons/medium/02_mauser_mg_213/big/top_l.png"  # влево
+
+
+condition       : 2  # Изн.

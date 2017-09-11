@@ -4,7 +4,9 @@ doc             : Пулемет M60None
 abstract        : false
 
 title           : Пулемет<br>M60                             # Краткое название - отобразится в слоте инвентаря
-condition       : 5  # Нов.
+
+
+
 # Полное описание - отобразится в разделе описания в инвентаре
 description     : '???'
 
@@ -72,3 +74,6 @@ armorer_images:
     armorer_top_B   : "static/content/items/slot_item/weapons/mashine_guns/light/03_m60/big/top_b.png"  # назад
     armorer_top_R   : "static/content/items/slot_item/weapons/mashine_guns/light/03_m60/big/top_r.png"  # вправо
     armorer_top_L   : "static/content/items/slot_item/weapons/mashine_guns/light/03_m60/big/top_l.png"  # влево
+
+
+condition       : 5  # Нов.

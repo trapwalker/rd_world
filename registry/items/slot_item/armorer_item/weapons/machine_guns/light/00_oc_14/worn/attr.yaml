@@ -5,7 +5,9 @@ abstract        : false
 tags            : [teaching]
 
 title           : Пулемет<br>ОЦ-14 Гроза                     # Краткое название - отобразится в слоте инвентаря
-condition       : 2  # Изн.
+
+
+
 # Полное описание - отобразится в разделе описания в инвентаре
 description     : 'Российский штурмовой комплекс, разработанный в 1993 году. Представляет собой вариант автомата ОЦ-12 "Тисс", выполненный по схеме булл-пап. Калибр: 7,62 мм. Класс тяжести: 1.'
 
@@ -73,3 +75,6 @@ armorer_images:
     armorer_top_B   : "static/content/items/slot_item/weapons/mashine_guns/light/00_oc_14/big/top_b.png"  # назад
     armorer_top_R   : "static/content/items/slot_item/weapons/mashine_guns/light/00_oc_14/big/top_r.png"  # вправо
     armorer_top_L   : "static/content/items/slot_item/weapons/mashine_guns/light/00_oc_14/big/top_l.png"  # влево
+
+
+condition       : 2  # Изн.
