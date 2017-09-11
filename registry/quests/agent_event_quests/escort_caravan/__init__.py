@@ -7,6 +7,7 @@ from sublayers_world.registry.quests.ai_event_quests.traffic.gang.caravan_simple
 from sublayers_server.model.quest_events import OnTimer, OnPartyExclude
 from sublayers_server.model.registry_me.classes.quests import Cancel
 from sublayers_server.model.registry_me.tree import LocalizedString
+from sublayers_common.site_locale import locale
 
 from functools import partial
 
@@ -18,16 +19,10 @@ class EscortCaravan(AgentEventQuest):
         return d
 
     def init_text(self, event, event_quest):
-        town = event_quest.town_destination
-        town_str = town and town.title or 'N'
-        self.text_short = LocalizedString(
-            en=u"Сопроводите караван.",  # TODO: ##LOCALIZATION
-            ru=u"Сопроводите караван.",
-        )
-        self.text = LocalizedString(
-            en=u"Сопроводите караван в город {}. Награда: {:.0f}nc.".format(town_str, self.reward_money),  # TODO: ##LOCALIZATION
-            ru=u"Сопроводите караван в город {}. Награда: {:.0f}nc.".format(town_str, self.reward_money),
-        )
+        #town = event_quest and event_quest.town_destination
+        #town_str = town and town.title or 'N'
+        self.text_short = LocalizedString(_id='reg__quest__escort__caravan_support_short')
+        self.text = LocalizedString(_id='reg__quest__escort__caravan_support_template').generate(event_quest=event_quest, quest=self)
 
 
     def get_potential_event_quest(self, event, agent):
@@ -82,10 +77,7 @@ class EscortCaravan(AgentEventQuest):
             if not res:
                 self.npc_replica(
                     npc=self.hirer,
-                    replica=LocalizedString(
-                        en=u"Караван сформирован.",  # TODO: ##LOCALIZATION
-                        ru=u"Караван сформирован.",
-                    ),
+                    replica=LocalizedString(_id='reg__quest__escort__caravan_completed'),
                     event=event,
                 )
                 raise Cancel("QUEST CANCEL: Caravan Party is full.")
@@ -97,10 +89,7 @@ class EscortCaravan(AgentEventQuest):
             super(EscortCaravan.begin, self).on_enter_(quest=quest, event=event)
             quest.set_timer(event=event, name='participation', delay=30)
             quest.log(
-                LocalizedString(
-                    en=u'Ожидание каравана.',  # TODO: ##LOCALIZATION
-                    ru=u'Ожидание каравана.',
-                ),
+                LocalizedString(_id='reg__quest__escort__caravan_waiting'),
                 event=event,
             )
 
@@ -115,10 +104,7 @@ class EscortCaravan(AgentEventQuest):
                         if not quest.dc.caravan_started:
                             quest.dc.caravan_started = True
                             quest.log(
-                                LocalizedString(
-                                    en=u'Караван выехал.',  # TODO: ##LOCALIZATION
-                                    ru=u'Караван выехал.',
-                                ),
+                                LocalizedString(_id='reg__quest__escort__caravan_started'),
                                 event=event,
                             )
                         caravan_point = event_quest.average_caravan_position(time=event.time)
@@ -142,10 +128,7 @@ class EscortCaravan(AgentEventQuest):
 
             participation = quest.dc.count_participation / quest.dc.check_participation
             quest.log(
-                LocalizedString(
-                    en=u'Участие в караване: {}%'.format(int(100 * participation)),  # TODO: ##LOCALIZATION
-                    ru=u'Участие в караване: {}%'.format(int(100 * participation)),
-                ),
+                LocalizedString(_id='reg__quest__escort__caravan_participation').generate(state=self, quest=quest, participation=participation),
                 event=event,
             )
             super(EscortCaravan.win, self).on_enter_(quest=quest, event=event)
@@ -167,10 +150,7 @@ class EscortCaravan(AgentEventQuest):
                 event_quest.exclude_from_party(model_agent=quest.agent.profile._agent_model, event=event)
 
             quest.log(
-                LocalizedString(
-                    en=u'Отказ от участия в караване.',  # TODO: ##LOCALIZATION
-                    ru=u'Отказ от участия в караване.',
-                ),
+                LocalizedString(_id='reg__quest__escort__caravan_refusal'),
                 event=event,
             )
             quest.agent.profile.set_relationship(time=event.time, npc=quest.hirer, dvalue=-5)  # изменение отношения c нпц
