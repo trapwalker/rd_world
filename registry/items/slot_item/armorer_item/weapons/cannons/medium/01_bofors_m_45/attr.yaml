@@ -3,12 +3,12 @@ doc             : Пушка Bofors m/45
 abstract        : false
 
 title:
-    en: Пушка<br>Bofors m/45                     # Краткое название - отобразится в слоте инвентаря  #TODO: ##LOCALIZATION
+    en: Gun<br>Bofors m/45                     # Краткое название - отобразится в слоте инвентаря  ##LOCALIZATION
     ru: Пушка<br>Bofors m/45                     # Краткое название - отобразится в слоте инвентаря
 
 # Полное описание - отобразится в разделе описания в инвентаре
 description:
-    en: '???'  #TODO: ##LOCALIZATION
+    en: '???'   ##LOCALIZATION
     ru: '???'
 
 # Основные балансные настройки

@@ -2,7 +2,7 @@
 
 title:
     en: Billy_Pilot  
-    ru: Billy_Pilot  #TODO: ##LOCALIZATION
+    ru: Билли_Пайлат ##LOCALIZATION
 
 photo    : "static/content/institutions/parking/paloma_billy_pilot.png"
 abstract : false
@@ -10,6 +10,6 @@ abstract : false
 hometown : reg:///registry/poi/locations/towns/paloma
 
 text:
-    en: Вы можете оставить тут свой автомобиль. Я присмотрю за ним за небольшую плату.  #TODO: ##LOCALIZATION
+    en: You can park your vehicle here for a fee. ##LOCALIZATION
     ru: Вы можете оставить тут свой автомобиль. Я присмотрю за ним за небольшую плату.
 

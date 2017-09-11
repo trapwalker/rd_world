@@ -3,12 +3,12 @@ doc      : Item_026
 abstract : false
 
 title:
-    en: На память  #TODO: ##LOCALIZATION
+    en: Remembrance ##LOCALIZATION
     ru: На память
 
 description:
-    en: "Штраф: 15 очков в навыки Лидерство и Торговля."  #TODO: ##LOCALIZATION
-    ru: "Штраф: 15 очков в навыки Лидерство и Торговля."
+    en: "Penalty: 15 points to Leadership and Barter skills."  ##LOCALIZATION
+    ru: "Штраф: 15 очков в навыки Лидерства и Торговли."
 
 group_id    : ""
 
@@ -16,12 +16,12 @@ base_price : 0
 stack_size : 1
 
 effect_title:
-    en: Штраф  #TODO: ##LOCALIZATION
+    en: Penalty  ##LOCALIZATION
     ru: Штраф
 
 effect_description:
-    en: 15 очков в навыки Лидерство и Торговля  #TODO: ##LOCALIZATION
-    ru: 15 очков в навыки Лидерство и Торговля
+    en: 15 points to Leadership and Barter skills ##LOCALIZATION
+    ru: 15 очков в навыки Лидерства и Торговли
 
 leading  : 15
 trading  : 15

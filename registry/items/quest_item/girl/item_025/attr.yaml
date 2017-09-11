@@ -3,12 +3,12 @@ doc      : Item_025
 abstract : false
 
 title:
-    en: На память  #TODO: ##LOCALIZATION
+    en: Remembrance ##LOCALIZATION
     ru: На память
 
 description:
-    en: "Штраф: 15 очков в навыки Механика и Скрытность."  #TODO: ##LOCALIZATION
-    ru: "Штраф: 15 очков в навыки Механика и Скрытность."
+    en: "Penalty: 15 points to Mechanic and Hiding skills."  ##LOCALIZATION
+    ru: "Штраф: 15 очков в навыки Механика и Скрытности."
 
 group_id    : ""
 
@@ -16,12 +16,12 @@ base_price : 0
 stack_size : 1
 
 effect_title:
-    en: Штраф  #TODO: ##LOCALIZATION
+    en: Penalty  ##LOCALIZATION
     ru: Штраф
 
 effect_description:
-    en: 15 очков в навыки Механика и Скрытность  #TODO: ##LOCALIZATION
-    ru: 15 очков в навыки Механика и Скрытность
+    en: 15 points to Mechanic and Hiding skills  ##LOCALIZATION
+    ru: 15 очков в навыки Механика и Скрытности
 
 engineering : 15
 masking     : 15

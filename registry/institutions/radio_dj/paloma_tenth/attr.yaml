@@ -2,7 +2,7 @@
 
 title: 
     en: Tenth
-    ru: Tenth  #TODO: ##LOCALIZATION
+    ru: Десятый ##LOCALIZATION
 
 photo    : "static/content/institutions/radio_dj/paloma_tenth.png"
 abstract : false

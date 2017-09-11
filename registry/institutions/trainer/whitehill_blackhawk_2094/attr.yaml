@@ -1,7 +1,7 @@
 ﻿_cls  : Trainer
 title: 
     en: BlackHawk_2094
-    ru: BlackHawk_2094  #TODO: ##LOCALIZATION
+    ru: БлэкХок_2094  ##LOCALIZATION
 
 photo    : "static/content/institutions/trainer/whitehill_blackhawk_2094.png"
 abstract : false

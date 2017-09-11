@@ -2,7 +2,7 @@ _cls     : Trader
 
 title: 
     en: Shaun_Fisher
-    ru: Shaun_Fisher  #TODO: ##LOCALIZATION
+    ru: Шон_Фишер ##LOCALIZATION
 
 photo    : "static/content/institutions/trader/paloma_shaun_fisher.png"
 abstract : true

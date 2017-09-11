@@ -3,12 +3,12 @@ doc      : Item_007
 abstract : false
 
 title:
-    en: На память  #TODO: ##LOCALIZATION
+    en: Remembrance ##LOCALIZATION
     ru: На память
 
 description:
-    en: "Бонус: 2 очка в навык Торговля и 2 очка в навык Лидерство."  #TODO: ##LOCALIZATION
-    ru: "Бонус: 2 очка в навык Торговля и 2 очка в навык Лидерство."
+    en: "Bonus: 2 points to Barter skill and 2 points to Leadership skill." ##LOCALIZATION
+    ru: "Бонус: 2 очка в навык Торговли и 2 очка в навык Лидерства."
 
 group_id    : ""
 
@@ -16,12 +16,12 @@ base_price : 0
 stack_size : 1
 
 effect_title:
-    en: Бонус  #TODO: ##LOCALIZATION
+    en: Bonus ##LOCALIZATION
     ru: Бонус
 
 effect_description:
-    en: 2 очка в навык Торговля и 2 очка в навык Лидерство  #TODO: ##LOCALIZATION
-    ru: 2 очка в навык Торговля и 2 очка в навык Лидерство
+    en: 2 points to Barter skill and 2 points to Leadership skill ##LOCALIZATION
+    ru: 2 очка в навык Торговли и 2 очка в навык Лидерства
 
 trading  : 2
 leading  : 2

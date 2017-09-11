@@ -4,12 +4,12 @@ doc     : Пассажир (девушка)
 abstract : false
 
 title:
-    en: Пассажир (девушка)  #TODO: ##LOCALIZATION
-    ru: Пассажир (девушка)
+    en: Passenger (female)  ##LOCALIZATION
+    ru: Пассажир (жен.)
 
 description:
-    en: Пассажир (девушка)  #TODO: ##LOCALIZATION
-    ru: Пассажир (девушка)
+    en: Passenger (female) ##LOCALIZATION
+    ru: Пассажир (жен.)
 
 base_price : 0
 stack_size : 1

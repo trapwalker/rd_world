@@ -3,12 +3,12 @@ doc      : Item_019
 abstract : false
 
 title:
-    en: На память  #TODO: ##LOCALIZATION
+    en: Remembrance ##LOCALIZATION
     ru: На память
 
 description:
-    en: "Бонус: 1 очко в навыки Стрельба и Скрытность."  #TODO: ##LOCALIZATION
-    ru: "Бонус: 1 очко в навыки Стрельба и Скрытность."
+    en: "Bonus: 1 point to Shooting and Hiding skills." ##LOCALIZATION
+    ru: "Бонус: 1 очко в навыки Стрельбы и Скрытности."
 
 group_id    : ""
 
@@ -16,12 +16,12 @@ base_price : 0
 stack_size : 1
 
 effect_title:
-    en: Бонус  #TODO: ##LOCALIZATION
+    en: Bonus  ##LOCALIZATION
     ru: Бонус
 
 effect_description:
-    en: 1 очко в навыки Стрельба и Скрытность  #TODO: ##LOCALIZATION
-    ru: 1 очко в навыки Стрельба и Скрытность
+    en: 1 point to Shooting and Hiding skills ##LOCALIZATION
+    ru: 1 очко в навыки Стрельбы и Скрытности
 
 shooting : 1
 masking  : 1

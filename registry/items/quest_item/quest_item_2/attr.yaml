@@ -4,23 +4,23 @@ doc: Пассажир (девушка)
 group_id: "quest_item_1"
 deadline: 240
 
-effect_title:
-    en: "Бинокль"  #TODO: ##LOCALIZATION
-    ru: "Бинокль"
+effect_title:      ##WTF
+    en: ""   ##LOCALIZATION
+    ru: ""
 
 effect_description:
-    en: "повышает обзор"  #TODO: ##LOCALIZATION
-    ru: "повышает обзор"
+    en: ""   ##LOCALIZATION
+    ru: ""
 
 abstract : false
 
 title:
-    en: Обзор50  #TODO: ##LOCALIZATION
-    ru: Обзор50
+    en: ""  ##LOCALIZATION
+    ru: ""
 
 description:
-    en: Обзор50  #TODO: ##LOCALIZATION
-    ru: Обзор50
+    en: ""  ##LOCALIZATION
+    ru: ""
 
 base_price : 0
 stack_size : 1

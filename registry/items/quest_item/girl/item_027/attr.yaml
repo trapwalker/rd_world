@@ -3,11 +3,11 @@ doc      : Item_027
 abstract : false
 
 title:
-    en: На память  #TODO: ##LOCALIZATION
+    en: Remembrance ##LOCALIZATION
     ru: На память
 
 description:
-    en: "Штраф: 10 очков во все навыки."  #TODO: ##LOCALIZATION
+    en: "Penalty: 10 points to every skill."  ##LOCALIZATION
     ru: "Штраф: 10 очков во все навыки."
 
 group_id    : ""
@@ -16,11 +16,11 @@ base_price : 0
 stack_size : 1
 
 effect_title:
-    en: Штраф  #TODO: ##LOCALIZATION
+    en: Penalty ##LOCALIZATION
     ru: Штраф
 
 effect_description:
-    en: 10 очков во все навыки  #TODO: ##LOCALIZATION
+    en: 10 points to every skill  ##LOCALIZATION
     ru: 10 очков во все навыки
 
 driving     : 10

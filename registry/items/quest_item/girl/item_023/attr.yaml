@@ -3,11 +3,11 @@ doc      : Item_023
 abstract : false
 
 title:
-    en: На память  #TODO: ##LOCALIZATION
+    en: Remembrance ##LOCALIZATION
     ru: На память
 
 description:
-    en: "Бонус: 1 очко в навыки Торговля, Механика и Скрытность."  #TODO: ##LOCALIZATION
+    en: "Bonus: 1 point to Barter, Mechanic and Hiding skills." ##LOCALIZATION
     ru: "Бонус: 1 очко в навыки Торговля, Механика и Скрытность."
 
 group_id    : ""
@@ -16,11 +16,11 @@ base_price : 0
 stack_size : 1
 
 effect_title:
-    en: Бонус  #TODO: ##LOCALIZATION
+    en: Bonus ##LOCALIZATION
     ru: Бонус
 
 effect_description:
-    en: 1 очко в навыки Торговля, Механика и Скрытность  #TODO: ##LOCALIZATION
+    en: 1 point to Barter, Mechanic and Hiding skills ##LOCALIZATION
     ru: 1 очко в навыки Торговля, Механика и Скрытность
 
 trading     : 1

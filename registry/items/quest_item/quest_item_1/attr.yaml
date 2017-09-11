@@ -4,22 +4,22 @@ doc: Пассажир (девушка)
 group_id: "quest_item_1"
 deadline: 180
 
-effect_title:
-    en: "Труба"  #TODO: ##LOCALIZATION
-    ru: "Труба"
+effect_title:   ##WTF
+    en: ""  ##LOCALIZATION
+    ru: ""
 
 effect_description:
-    en: "Улучшает вождение, ухудшает стрельбу, повышает обзор"  #TODO: ##LOCALIZATION
-    ru: "Улучшает вождение, ухудшает стрельбу, повышает обзор"
+    en: ""  ##LOCALIZATION
+    ru: ""
 
 abstract : false
 
 title:
-    en: QuestItem Пассажир  #TODO: ##LOCALIZATION
-    ru: QuestItem Пассажир
+    en: QuestItem Passenger ##LOCALIZATION
+    ru: QuestItem Passenger
 
 description:
-    en: QuestItem Пассажир  #TODO: ##LOCALIZATION
+    en: QuestItem Passenger  ##LOCALIZATION
     ru: QuestItem Пассажир
 
 base_price : 0
