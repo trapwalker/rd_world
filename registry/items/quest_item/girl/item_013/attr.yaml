@@ -3,12 +3,12 @@ doc      : Item_013
 abstract : false
 
 title:
-    en: На память  #TODO: ##LOCALIZATION
+    en: Remembrance ##LOCALIZATION
     ru: На память
 
 description:
-    en: "Бонус: 1 очко в навыки Механика и Вождение."  #TODO: ##LOCALIZATION
-    ru: "Бонус: 1 очко в навыки Механика и Вождение."
+    en: "Bonus: 1 point to Mechanic and Driving skills." ##LOCALIZATION
+    ru: "Бонус: 1 очко в навыки Механика и Вождения."
 
 group_id    : ""
 
@@ -16,12 +16,12 @@ base_price : 0
 stack_size : 1
 
 effect_title:
-    en: Бонус  #TODO: ##LOCALIZATION
+    en: Bonus ##LOCALIZATION
     ru: Бонус
 
 effect_description:
-    en: 1 очко в навыки Механика и Вождение  #TODO: ##LOCALIZATION
-    ru: 1 очко в навыки Механика и Вождение
+    en: 1 point to Mechanic and Driving skills  ##LOCALIZATION
+    ru: 1 очко в навыки Механика и Вождения
 
 engineering : 1
 driving     : 1

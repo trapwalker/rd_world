@@ -8,7 +8,7 @@ stack_size : 1
 activate_type            : none
 activate_time            : 0.0
 activate_disable_comment :
-    en: '_'  #TODO: ##LOCALIZATION
+    en: '_'  ##LOCALIZATION
     ru: '_'
 
 condition_map:  ##LOCALIZATION

@@ -3,12 +3,12 @@ doc      : Item_016
 abstract : false
 
 title:
-    en: На память  #TODO: ##LOCALIZATION
+    en: Remembrance ##LOCALIZATION
     ru: На память
 
 description:
-    en: "Бонус: 1 очко в навык Лидерство."  #TODO: ##LOCALIZATION
-    ru: "Бонус: 1 очко в навык Лидерство."
+    en: "Bonus: 1 point to Leadship skill." ##LOCALIZATION
+    ru: "Бонус: 1 очко в навык Лидерства."
 
 group_id    : ""
 
@@ -16,11 +16,11 @@ base_price : 0
 stack_size : 1
 
 effect_title:
-    en: Бонус  #TODO: ##LOCALIZATION
+    en: Bonus  ##LOCALIZATION
     ru: Бонус
 
 effect_description:
-    en: 1 очко в навык Лидерство  #TODO: ##LOCALIZATION
+    en: 1 point to Leadship skill ##LOCALIZATION
     ru: 1 очко в навык Лидерство
 
 leading  : 1

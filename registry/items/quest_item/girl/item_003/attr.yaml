@@ -3,12 +3,12 @@ doc      : Item_003
 abstract : false
 
 title:
-    en: На память  #TODO: ##LOCALIZATION
+    en: Remembrance ##LOCALIZATION
     ru: На память
 
 description:
-    en: "Бонус: 5 очков в навык Торговля."  #TODO: ##LOCALIZATION
-    ru: "Бонус: 5 очков в навык Торговля."
+    en: "Bonus: 5 points to Barter skill."  ##LOCALIZATION
+    ru: "Бонус: 5 очков в навык Торговли."
 
 group_id    : ""
 
@@ -20,8 +20,8 @@ effect_title:
     ru: Бонус
 
 effect_description:
-    en: 5 очков в навык Торговля  #TODO: ##LOCALIZATION
-    ru: 5 очков в навык Торговля
+    en: 5 points to Barter skill  ##LOCALIZATION
+    ru: 5 очков в навык Торговли
 
 trading  : 5
 deadline : 43200

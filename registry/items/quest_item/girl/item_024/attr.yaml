@@ -3,12 +3,12 @@ doc      : Item_024
 abstract : false
 
 title:
-    en: На память  #TODO: ##LOCALIZATION
+    en: Remembrance ##LOCALIZATION
     ru: На память
 
 description:
-    en: "Штраф: 15 очков в навыки Стрельба и Вождение."  #TODO: ##LOCALIZATION
-    ru: "Штраф: 15 очков в навыки Стрельба и Вождение."
+    en: "Penalty: 15 points to Shooting and Driving skills."  ##LOCALIZATION
+    ru: "Штраф: 15 очков в навыки Стрельбы и Вождения."
 
 group_id    : ""
 
@@ -16,12 +16,12 @@ base_price : 0
 stack_size : 1
 
 effect_title:
-    en: Штраф  #TODO: ##LOCALIZATION
+    en: Penalty  ##LOCALIZATION
     ru: Штраф
 
 effect_description:
-    en: 15 очков в навыки Стрельба и Вождение  #TODO: ##LOCALIZATION
-    ru: 15 очков в навыки Стрельба и Вождение
+    en: 15 points to Shooting and Driving skills ##LOCALIZATION
+    ru: 15 очков в навыки Стрельбы и Вождения
 
 shooting : 15
 driving  : 15

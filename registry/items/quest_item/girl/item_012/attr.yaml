@@ -3,12 +3,12 @@ doc      : Item_012
 abstract : false
 
 title:
-    en: На память  #TODO: ##LOCALIZATION
+    en: Remembrance ##LOCALIZATION
     ru: На память
 
 description:
-    en: "Бонус: 1 очко в навыки Лидерство и Торговля."  #TODO: ##LOCALIZATION
-    ru: "Бонус: 1 очко в навыки Лидерство и Торговля."
+    en: "Bonus: 1 point to Leadership and Barter skills." ##LOCALIZATION
+    ru: "Бонус: 1 очко в навыки Лидерства и Торговли."
 
 group_id    : ""
 
@@ -20,8 +20,8 @@ effect_title:
     ru: Бонус
 
 effect_description:
-    en: 1 очко в навыки Лидерство и Торговля  #TODO: ##LOCALIZATION
-    ru: 1 очко в навыки Лидерство и Торговля
+    en: 1 point to Leadership and Barter skills ##LOCALIZATION
+    ru: 1 очко в навыки Лидерства и Торговли
 
 leading  : 1
 trading  : 1

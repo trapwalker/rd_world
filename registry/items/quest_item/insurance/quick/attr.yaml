@@ -4,9 +4,9 @@ doc: InsuranceQuick
 group_id: "insurance"
 
 title:
-    en: Быстрая  #TODO: ##LOCALIZATION
-    ru: Быстрая
+    en: Standart  ##LOCALIZATION
+    ru: Стандарт
 
 description:
-    en: Быстрая  #TODO: ##LOCALIZATION
-    ru: Быстрая
+    en: Standart  ##LOCALIZATION
+    ru: Стандарт

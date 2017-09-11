@@ -15,11 +15,11 @@ towns:  # Города, в которых возможен респаун
   - reg:///registry/poi/locations/towns/bonita_vista
 
 title:
-    en: Абстрактная  #TODO: ##LOCALIZATION
+    en: Abstract  ##LOCALIZATION
     ru: Абстрактная
 
 description:
-    en: Страховка (Абстрактная)  #TODO: ##LOCALIZATION
+    en: Insurance (abstract)  ##LOCALIZATION
     ru: Страховка (Абстрактная)
 
 

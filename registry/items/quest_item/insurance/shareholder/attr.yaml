@@ -5,12 +5,12 @@ group_id: "insurance"
 
 
 title:
-    en: Акционерная  #TODO: ##LOCALIZATION
-    ru: Акционерная
+    en: VIP  ##LOCALIZATION
+    ru: VIP
 
 description:
-    en: Акционерная Страховка  #TODO: ##LOCALIZATION
-    ru: Акционерная Страховка
+    en: VIP insurance  ##LOCALIZATION
+    ru: VIP страховка
 
 deadline: 2592000  # 30 суток
 base_price: 15000

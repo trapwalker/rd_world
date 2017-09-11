@@ -3,12 +3,12 @@ doc             : Пушка Lvakan m/40None
 abstract        : false
 
 title:
-    en: Пушка<br>Lvakan m/40                     # Краткое название - отобразится в слоте инвентаря  #TODO: ##LOCALIZATION
+    en: Gun<br>Lvakan m/40                     # Краткое название - отобразится в слоте инвентаря  #TODO: ##LOCALIZATION
     ru: Пушка<br>Lvakan m/40                     # Краткое название - отобразится в слоте инвентаря
 
 # Полное описание - отобразится в разделе описания в инвентаре
 description:
-    en: '???'  #TODO: ##LOCALIZATION
+    en: '???'   ##LOCALIZATION
     ru: '???'
 
 # Основные балансные настройки

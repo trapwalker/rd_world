@@ -4,11 +4,11 @@ doc: InsurancePremium
 group_id: "insurance"
 
 title:
-    en: Премиум  #TODO: ##LOCALIZATION
+    en: Premium  ##LOCALIZATION
     ru: Премиум
 
 description:
-    en: Премиум Страховка  #TODO: ##LOCALIZATION
+    en: Premium insurance  ##LOCALIZATION
     ru: Премиум Страховка
 
 base_price: 1000

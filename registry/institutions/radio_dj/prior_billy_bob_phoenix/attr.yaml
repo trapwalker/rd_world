@@ -1,7 +1,7 @@
 ﻿_cls  : Institution
 title: 
     en: Billy_Bob_Phoenix
-    ru: Billy_Bob_Phoenix  #TODO: ##LOCALIZATION
+    ru: Билли_Боб_Финикс ##LOCALIZATION
 
 photo    : "static/content/institutions/radio_dj/prior_billy_bob_phoenix.png"
 abstract : false
