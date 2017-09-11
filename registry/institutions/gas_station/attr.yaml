@@ -1,8 +1,17 @@
-﻿_cls  : Institution
-doc   : Заправка
-text  : Заправка
-title : Заправка
-type  : npc_gas_station
+﻿_cls: Institution
+doc:
+    en: Gas station  ##LOCALIZATION
+    ru: Заправка
+
+text:
+    en: Gas station ##LOCALIZATION
+    ru: Заправка
+
+title:
+    en: Gas station ##LOCALIZATION
+    ru: Заправка
+
+type: npc_gas_station
 
 photo    : "static/content/institutions/npc_gas_station/fuel.png"
 abstract : false

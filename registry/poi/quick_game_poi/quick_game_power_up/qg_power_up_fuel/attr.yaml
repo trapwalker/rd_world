@@ -1,7 +1,8 @@
-﻿__cls__: MapPowerUp
-_cls: MapPowerUp
-doc    : Объекты Power Up на карте
+﻿_cls: MapPowerUp
+doc: Объекты Power Up на карте
 
 model_class_name: QuickGamePowerUpFullFuel
 icon_name: "icon-power-up-fuel"
-activate_comment: 'Канистра с топливом'
+activate_comment:
+    en: 'Канистра с топливом'  #TODO: ##LOCALIZATION
+    ru: 'Канистра с топливом'

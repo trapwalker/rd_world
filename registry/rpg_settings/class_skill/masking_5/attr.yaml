@@ -1,8 +1,10 @@
-﻿__cls__: ClassSkill
-_cls: ClassSkill
+﻿_cls: ClassSkill
 doc  : Маскировка-5
 
-title: Маскировка-5
+title: 
+    en: Маскировка-5  #TODO: ##LOCALIZATION
+    ru: Маскировка-5
+
 
 target: 'masking'
 bonus_step: 5    # на каждые набранны bonus_step очков навыка, начисляется дополнительное 1 бонусное очко

@@ -1,5 +1,4 @@
-﻿__cls__ : MechanicItem
-_cls : MechanicItem
+﻿_cls : MechanicItem
 doc  : Предметы, устанавливаемые в слоты подвески - передение рычаги
 
 tags : [front_control_arm]

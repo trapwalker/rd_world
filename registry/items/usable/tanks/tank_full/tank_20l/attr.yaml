@@ -1,10 +1,15 @@
-__cls__  : TankFull
 _cls  : TankFull
 doc      : Полная канистра (20л)
 abstract : false
 
-title       : Полная канистра (20л)
-description : Хранит в себе 20 литров какой-то жидкости. Возможно топливо.
+title: 
+    en: Полная канистра (20л)  #TODO: ##LOCALIZATION
+    ru: Полная канистра (20л)
+
+description: 
+    en: Хранит в себе 20 литров какой-то жидкости. Возможно топливо.  #TODO: ##LOCALIZATION
+    ru: Хранит в себе 20 литров какой-то жидкости. Возможно топливо.
+
 
 base_price : 120
 value_fuel : 20

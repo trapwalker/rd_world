@@ -1,11 +1,16 @@
-﻿__cls__ : Item
-_cls    : Item
+﻿_cls    : Item
 doc     : Злаковые консервы
 
 abstract : false
 
-title       : Злаковые консервы
-description : Ящик со злаковыми консервами.
+title: 
+    en: Злаковые консервы  #TODO: ##LOCALIZATION
+    ru: Злаковые консервы
+
+description: 
+    en: Ящик со злаковыми консервами.  #TODO: ##LOCALIZATION
+    ru: Ящик со злаковыми консервами.
+
 
 base_price : 50
 stack_size : 1

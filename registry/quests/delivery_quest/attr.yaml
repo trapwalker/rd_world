@@ -1,5 +1,4 @@
-﻿__cls__: DeliveryQuest
-_cls: DeliveryQuest
+﻿_cls: DeliveryQuest
 doc    : Примеры квестов
 
 design_speed: 14.0
@@ -10,4 +9,7 @@ current_state: ~
 distance_table: reg:///registry/rpg_settings/disttable
 list_icon: static/img/quests/icons/delivery.png
 
-caption: Доставка груза
+caption: 
+    en: Доставка груза  #TODO: ##LOCALIZATION
+    ru: Доставка груза
+

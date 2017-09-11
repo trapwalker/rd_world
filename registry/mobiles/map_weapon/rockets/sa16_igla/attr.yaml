@@ -1,6 +1,8 @@
-﻿__cls__       : MapWeaponRocket
-_cls       : MapWeaponRocket
-title         : SA16 Igla
+﻿_cls       : MapWeaponRocket
+title: 
+    en: SA16 Igla  #TODO: ##LOCALIZATION
+    ru: SA16 Igla
+
 
 radius_damage : 50
 damage        : 40

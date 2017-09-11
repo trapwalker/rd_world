@@ -1,12 +1,15 @@
-﻿__cls__ : InsuranceBase
-_cls    : InsuranceBase
-doc     : InsuranceBase
+﻿_cls: InsuranceBase
+doc: InsuranceBase
 
 group_id: "insurance"
 
+title:
+    en: Базовая  #TODO: ##LOCALIZATION
+    ru: Базовая
 
-title       : Базовая
-description : Базовая Страховка
+description:
+    en: Базовая Страховка  #TODO: ##LOCALIZATION
+    ru: Базовая Страховка
 
 base_price: 0
 

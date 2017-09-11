@@ -1,9 +1,11 @@
-﻿__cls__  : Town
-_cls     : Town
+﻿_cls     : Town
 doc      : Прайр
 abstract : false
 
-title             : Прайр
+title: 
+    en: Прайр  #TODO: ##LOCALIZATION
+    ru: Прайр
+
 position          : {x: 12539432, y: 27043853}
 p_observing_range : 500
 p_enter_range     : 365
@@ -12,22 +14,40 @@ svg_link: static/content/locations/map_locations/prior
 
 buildings:
   - name: market
-    caption: Магазин
-    title: Магазин
+    caption: 
+        en: Магазин  #TODO: ##LOCALIZATION
+        ru: Магазин
+
+    title: 
+        en: Магазин  #TODO: ##LOCALIZATION
+        ru: Магазин
+
     head: reg:///registry/institutions/trader/prior_hershey_la_palmas
     instances:
         - reg:///registry/institutions/trader/prior_hershey_la_palmas
 
   - name: bar
-    caption: Бар
-    title: Бар
+    caption: 
+        en: Бар  #TODO: ##LOCALIZATION
+        ru: Бар
+
+    title: 
+        en: Бар  #TODO: ##LOCALIZATION
+        ru: Бар
+
     head: reg:///registry/institutions/barman/prior_jimmy_dee
     instances:
         - reg:///registry/institutions/barman/prior_jimmy_dee
 
   - name: motel
-    caption: Мотель
-    title: Мотель
+    caption: 
+        en: Мотель  #TODO: ##LOCALIZATION
+        ru: Мотель
+
+    title: 
+        en: Мотель  #TODO: ##LOCALIZATION
+        ru: Мотель
+
     head: reg:///registry/institutions/manager/prior_rita_rain
     instances:
         - reg:///registry/institutions/girl/prior_amanda_fun
@@ -35,14 +55,26 @@ buildings:
         - reg:///registry/institutions/girl/prior_trella_tamale
 
   - name: mayor
-    caption: Мэрия
-    title: Мэрия
+    caption: 
+        en: Мэрия  #TODO: ##LOCALIZATION
+        ru: Мэрия
+
+    title: 
+        en: Мэрия  #TODO: ##LOCALIZATION
+        ru: Мэрия
+
     head: reg:///registry/institutions/mayor/prior_donnie_alma
     instances: []
 
   - name: service
-    caption: Автосервис
-    title: Автосервис
+    caption: 
+        en: Автосервис  #TODO: ##LOCALIZATION
+        ru: Автосервис
+
+    title: 
+        en: Автосервис  #TODO: ##LOCALIZATION
+        ru: Автосервис
+
     head: reg:///registry/institutions/manager/prior_cliff_taslima
     instances:
         - reg:///registry/institutions/armorer/prior_jeff_saigon
@@ -50,16 +82,28 @@ buildings:
         - reg:///registry/institutions/tuner/prior_michael_brazen
 
   - name: parking
-    caption: Паркинг
-    title: Паркинг
+    caption: 
+        en: Паркинг  #TODO: ##LOCALIZATION
+        ru: Паркинг
+
+    title: 
+        en: Паркинг  #TODO: ##LOCALIZATION
+        ru: Паркинг
+
     head: reg:///registry/institutions/hangar/prior_clarence_jackson
     instances:
         - reg:///registry/institutions/hangar/prior_clarence_jackson
         - reg:///registry/institutions/parking/prior_adonis_bracamonte
 
   - name: radio
-    caption: Радиовышка
-    title: Радиовышка
+    caption: 
+        en: Радиовышка  #TODO: ##LOCALIZATION
+        ru: Радиовышка
+
+    title: 
+        en: Радиовышка  #TODO: ##LOCALIZATION
+        ru: Радиовышка
+
     head: reg:///registry/institutions/radio_dj/prior_billy_bob_phoenix
     instances: []
 

@@ -1,7 +1,11 @@
-﻿__cls__ : Car
 _cls : Car
-title:       "Monte Carlo"          # Модель атомобиля
-class_car:   "Средний"              # Класс автомобиля
+title:                              # Модель атомобиля
+    en: "Monte Carlo"  #TODO: ##LOCALIZATION
+    ru: "Monte Carlo"
+
+class_car:                          # Класс автомобиля
+    en: "Средний"  # TODO: ##LOCALIZATION
+    ru: "Средний"
 name_car:    "Monte Carlo"          # Название атомобиля
 
 price:              4100            # Цена у продавца (л) (>= 0)

@@ -1,7 +1,11 @@
-﻿__cls__ : Car
 _cls : Car
-title:       "Bonneville America" # Модель атомобиля
-class_car:   "Легкий"             # Класс автомобиля
+title:                            # Модель атомобиля
+    en: "Bonneville America"  #TODO: ##LOCALIZATION
+    ru: "Bonneville America"
+
+class_car:                       # Класс автомобиля
+    en: "Легкий"  # TODO: ##LOCALIZATION
+    ru: "Легкий"
 name_car:    "Bonneville America" # Название атомобиля
 
 price:              4000          # Цена у продавца (л) (>= 0)

@@ -1,14 +1,16 @@
-﻿__cls__         : MachineGun
 _cls            : MachineGun
 doc             : Пулемет M60None
 abstract        : false
 
-title           : Пулемет<br>M60                             # Краткое название - отобразится в слоте инвентаря
-
-
+title:                                                       # Краткое название - отобразится в слоте инвентаря
+    en: Пулемет<br>M60  #TODO: ##LOCALIZATION
+    ru: Пулемет<br>M60
 
 # Полное описание - отобразится в разделе описания в инвентаре
-description     : '???'
+description: 
+    en: '???'  #TODO: ##LOCALIZATION
+    ru: '???'
+
 
 # Основные балансные настройки
 base_price      : 665                                        # Цена

@@ -1,14 +1,14 @@
-﻿__cls__: PerkActivateItemsPassive
-_cls: PerkActivateItemsPassive
+﻿_cls: PerkActivateItemsPassive
 abstract: false
 
 # Общие параметры перка
-title: Мейкер                                                                            # Название перка
-title__en: Maker
-title__ru: Мейкер
-description: Увеличение эффективности ремонтных комплектов на 2%                         # Описание перка
-description__en: Increasing the efficiency of repair kits to 2%
-description__ru: Увеличение эффективности ремонтных комплектов на 2%
+title:                                                                                   # Название перка
+    en: Maker
+    ru: Мейкер
+
+description:                                                                             # Описание перка
+    en: Increasing the efficiency of repair kits to 2%
+    ru: Увеличение эффективности ремонтных комплектов на 2%
 
 # Условия доступности перка
 driving_req:      0      # Необходимый уровень прокачки Вождения

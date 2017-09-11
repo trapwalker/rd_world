@@ -1,7 +1,9 @@
-﻿__cls__  : Institution
-_cls     : Institution
+﻿_cls     : Institution
 
-title    : Nice_n_Smooth
+title: 
+    en: Nice_n_Smooth
+    ru: Nice_n_Smooth  #TODO: ##LOCALIZATION
+
 photo    : "static/content/institutions/stylist/paloma_nice_n_smooth.png"
 abstract : false
 

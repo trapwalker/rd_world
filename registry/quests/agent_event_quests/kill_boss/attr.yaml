@@ -1,6 +1,9 @@
 ﻿_cls: KillBossQuest
 
-caption: Найти и уничтожить
+caption: 
+    en: Найти и уничтожить  #TODO: ##LOCALIZATION
+    ru: Найти и уничтожить
+
 
 reward_money: 400
 reward_karma: 1

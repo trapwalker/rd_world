@@ -1,14 +1,16 @@
-﻿__cls__         : MachineGun
 _cls            : MachineGun
 doc             : Пулемет МТNone
 abstract        : false
 
-title           : Пулемет<br>МТ                              # Краткое название - отобразится в слоте инвентаря
-
-
+title:                                                       # Краткое название - отобразится в слоте инвентаря
+    en: Пулемет<br>МТ  #TODO: ##LOCALIZATION
+    ru: Пулемет<br>МТ
 
 # Полное описание - отобразится в разделе описания в инвентаре
-description     : '???'
+description: 
+    en: '???'  #TODO: ##LOCALIZATION
+    ru: '???'
+
 
 # Основные балансные настройки
 base_price      : 760                                        # Цена

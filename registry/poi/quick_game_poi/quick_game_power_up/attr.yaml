@@ -1,6 +1,5 @@
-﻿__cls__: MapPowerUp
-_cls: MapPowerUp
-doc    : Респавны быстрой игры
+﻿_cls: MapPowerUp
+doc: Респавны быстрой игры
 
 parent: reg:///registry/poi/power_up
 activate_comment: '_'

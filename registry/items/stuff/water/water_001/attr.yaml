@@ -1,11 +1,16 @@
-﻿__cls__ : Item
-_cls    : Item
+﻿_cls    : Item
 doc     : Бутылки с водой
 
 abstract : false
 
-title       : Бутылки с водой
-description : Несколько небольших бутылок с водой.
+title: 
+    en: Бутылки с водой  #TODO: ##LOCALIZATION
+    ru: Бутылки с водой
+
+description: 
+    en: Несколько небольших бутылок с водой.  #TODO: ##LOCALIZATION
+    ru: Несколько небольших бутылок с водой.
+
 
 base_price : 25
 stack_size : 1

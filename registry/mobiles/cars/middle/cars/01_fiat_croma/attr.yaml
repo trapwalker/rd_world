@@ -1,7 +1,11 @@
-﻿__cls__ : Car
 _cls : Car
-title:       "Croma"                # Модель атомобиля
-class_car:   "Средний"              # Класс автомобиля
+title:                              # Модель атомобиля
+    en: "Croma"  #TODO: ##LOCALIZATION
+    ru: "Croma"
+
+class_car:                          # Класс автомобиля
+    en: "Средний"  # TODO: ##LOCALIZATION
+    ru: "Средний"
 name_car:    "Croma"                # Название атомобиля
 
 price:              3600            # Цена у продавца (л) (>= 0)

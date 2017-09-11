@@ -5,6 +5,7 @@ log = logging.getLogger(__name__)
 
 from sublayers_server.model.registry_me.classes import notes
 from sublayers_server.model.quest_events import OnCancel, OnTimer, OnNote, OnActivateItem
+from sublayers_server.model.registry_me.tree import LocalizedString
 from sublayers_server.model.registry_me.classes.quests import (
     Cancel, QuestState_, FailByCancelState, FailState, WinState,
 )
@@ -21,11 +22,21 @@ class MapActivateRadarsQuest(MapActivateItemQuest):
         self.deadline = len(self.activate_points) * 3600  # По часу на точку
 
     def init_text(self):
-        self.text_short = u"Установить наблюдательные зонды."
-        self.text = u"Установите в заданных точках наблюдательные зонды в количестве: {}. Награда: {:.0f}nc и {:.0f} ед. опыта".format(
-            len(self.activate_points),
-            self.reward_money,
-            self.reward_exp * len(self.activate_points),
+        self.text_short = LocalizedString(
+            en=u"Установить наблюдательные зонды.",  # TODO: ##LOCALIZATION
+            ru=u"Установить наблюдательные зонды.",
+        )
+        self.text = LocalizedString(
+            en=u"Установите в заданных точках наблюдательные зонды в количестве: {}. Награда: {:.0f}nc и {:.0f} ед. опыта".format(  # TODO: ##LOCALIZATION
+                len(self.activate_points),
+                self.reward_money,
+                self.reward_exp * len(self.activate_points),
+            ),
+            ru=u"Установите в заданных точках наблюдательные зонды в количестве: {}. Награда: {:.0f}nc и {:.0f} ед. опыта".format(  # TODO: ##LOCALIZATION
+                len(self.activate_points),
+                self.reward_money,
+                self.reward_exp * len(self.activate_points),
+            ),
         )
 
     def generate_reward(self):
@@ -55,9 +66,9 @@ class MapActivateRadarsQuest(MapActivateItemQuest):
     ####################################################################################################################
     def on_start_(self, event, **kw):
         if not self.give_items(items=self.activate_items, event=event):
-            self.npc_replica(npc=self.hirer, replica=u"Не хватает места в инвентаре.", event=event)
+            self.npc_replica(npc=self.hirer, replica=self.locale("q_share_no_inv_slot"), event=event)  ##LOCALIZATION
             raise Cancel("MapActivateRadarsQuest CANCEL: User have not enough empty slot")
-        self.log(text=u'Начат квест по установке радаров.', event=event, position=self.hirer.hometown.position)
+        self.log(text=self.locale("q_ar_start_text"), event=event, position=self.hirer.hometown.position)  ##LOCALIZATION
 
     ####################################################################################################################
     ## Перечень состояний ##############################################################################################
@@ -73,12 +84,12 @@ class MapActivateRadarsQuest(MapActivateItemQuest):
             if isinstance(event, OnCancel):
                 if quest.can_take_items(items=quest.activate_items, event=event):
                     quest.take_items(items=quest.activate_items, event=event)
-                    quest.log(text=u'Зонды возвращены.', event=event, position=quest.hirer.hometown.position)
+                    quest.log(text=quest.locale("q_ar_cancel_pen_done"), event=event, position=quest.hirer.hometown.position)  ##LOCALIZATION
                     go("cancel_fail")
                 else:
                     quest.npc_replica(npc=quest.hirer,
-                                      replica=u"Для отказа от квеста отдайте зонды в количестве: {}шт.".format(
-                                          len(quest.activate_items)), event=event)
+                                      replica=u"{}: {}{}.".format(  ##LOCALIZATION
+                                          quest.locale("q_ar_cancel_pen_try"), len(quest.activate_items), quest.locale("q_share_piece")), event=event)
             if isinstance(event, OnTimer) and event.name == 'deadline_activate_quest':
                 go("fail")
             if isinstance(event, OnActivateItem) and quest.check_item(item=event.item_example):
@@ -90,15 +101,15 @@ class MapActivateRadarsQuest(MapActivateItemQuest):
     class report(QuestState_):
         def on_enter_(self, quest, event):
             agent = quest.agent
-            quest.log(text=u'Все радары установлены. Вернитесь за наградой.', event=event,
+            quest.log(text=quest.locale("q_ar_set_done_return_town"), event=event,  ##LOCALIZATION
                       position=quest.hirer.hometown.position)
             quest.dc.reward_note_uid = agent.profile.add_note(
                 quest_uid=quest.uid,
                 note_class=notes.MapActivationRadarsNoteFinish,
                 time=event.time,
                 npc=quest.hirer,
-                page_caption=u'Установка<br>радаров',
-                btn1_caption=u'<br>Отчитаться',
+                page_caption=quest.locale("q_mr_note_caption"),  ##LOCALIZATION
+                btn1_caption=quest.locale("q_mr_note_btn1"),  ##LOCALIZATION
             )
 
         def on_event_(self, quest, event):
@@ -115,7 +126,7 @@ class MapActivateRadarsQuest(MapActivateItemQuest):
         def on_enter_(self, quest, event):
             quest.agent.profile.set_relationship(time=event.time, npc=quest.hirer, dvalue=-5)  # изменение отношения c нпц
             quest.delete_notes(event=event)
-            quest.log(text=u'Квест провален.', event=event)
+            quest.log(text=quest.locale("q_share_q_fail"), event=event)  ##LOCALIZATION
     ####################################################################################################################
     # class win(WinState):
     #     def on_enter_(self, quest, event):   # info берём от родителя
@@ -126,5 +137,5 @@ class MapActivateRadarsQuest(MapActivateItemQuest):
         def on_enter_(self, quest, event):
             quest.delete_notes(event=event)
             quest.agent.profile.set_relationship(time=event.time, npc=quest.hirer, dvalue=-20)  # изменение отношения c нпц
-            quest.log(text=u'Квест провален.', event=event)
+            quest.log(text=quest.locale("q_share_q_fail"), event=event)  ##LOCALIZATION
     ####################################################################################################################

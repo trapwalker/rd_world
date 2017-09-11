@@ -1,13 +1,26 @@
-﻿__cls__: QNKills
-_cls: QNKills
+﻿_cls: QNKills
 doc    : Квесты
 
-description: Доставить груз конкретному NPC.
+description:
+    en: Доставить груз конкретному NPC.  #TODO: ##LOCALIZATION
+    ru: Доставить груз конкретному NPC.
 
-caption   : Доставить груз {Степану}
-text      : "<p>Дружище, сделай одно одолжение. Тут степану надо барахлишко отвезти:</p><ul><li>100 патронов 762</li><li>ремкомплект</li></ul>"
-text_short: Отвезти {Степану} барахлишко
-typename  : Доставка
+caption:
+    en: Доставить груз {Степану}  #TODO: ##LOCALIZATION
+    ru: Доставить груз {Степану}
+
+text:
+    en: "<p>Дружище, сделай одно одолжение. Тут степану надо барахлишко отвезти:</p><ul><li>100 патронов 762</li><li>ремкомплект</li></ul>"  #TODO: ##LOCALIZATION
+    ru: "<p>Дружище, сделай одно одолжение. Тут степану надо барахлишко отвезти:</p><ul><li>100 патронов 762</li><li>ремкомплект</li></ul>"
+
+text_short:
+    en: Отвезти {Степану} барахлишко  #TODO: ##LOCALIZATION
+    ru: Отвезти {Степану} барахлишко
+
+typename:
+    en: Доставка  #TODO: ##LOCALIZATION
+    ru: Доставка
+
 list_icon : /static/quest/icons/delivery.png
 level     : 3
 deadline  : 2016-04-01 17:21

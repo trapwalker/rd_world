@@ -1,7 +1,9 @@
-﻿__cls__ : Girl
-_cls    : Girl
+﻿_cls    : Girl
 
-title    : Shelly_Cline
+title: 
+    en: Shelly_Cline
+    ru: Шелли_Клайн  ##LOCALIZATION
+
 photo    : "static/content/institutions/girl/bonita_vista_shelly_cline.png"
 abstract : false
 

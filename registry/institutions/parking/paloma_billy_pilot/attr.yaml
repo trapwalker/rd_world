@@ -1,10 +1,15 @@
-﻿__cls__  : Parking
-_cls     : Parking
+﻿_cls: Parking
 
-title    : Billy_Pilot
+title:
+    en: Billy_Pilot  
+    ru: Billy_Pilot  #TODO: ##LOCALIZATION
+
 photo    : "static/content/institutions/parking/paloma_billy_pilot.png"
 abstract : false
 
 hometown : reg:///registry/poi/locations/towns/paloma
 
-text: Вы можете оставить тут свой автомобиль. Я присмотрю за ним за небольшую плату.
+text:
+    en: Вы можете оставить тут свой автомобиль. Я присмотрю за ним за небольшую плату.  #TODO: ##LOCALIZATION
+    ru: Вы можете оставить тут свой автомобиль. Я присмотрю за ним за небольшую плату.
+

@@ -2,7 +2,10 @@
 doc      : Бонита Виста
 abstract : false
 
-title             : Бонита Виста
+title: 
+    en: Бонита Виста  #TODO: ##LOCALIZATION
+    ru: Бонита Виста
+
 position          : {x: 12507391, y: 27030055}
 p_observing_range : 500
 p_enter_range     : 365
@@ -11,44 +14,80 @@ svg_link : static/content/locations/map_locations/bonita_vista
 
 buildings:
   - name: library
-    caption: Библиотека
-    title: Библиотека
+    caption: 
+        en: Библиотека  #TODO: ##LOCALIZATION
+        ru: Библиотека
+
+    title: 
+        en: Библиотека  #TODO: ##LOCALIZATION
+        ru: Библиотека
+
     head: reg:///registry/institutions/trainer/bonita_vista_charles_alamir
     instances:
         - reg:///registry/institutions/trainer/bonita_vista_charles_alamir
 
   - name: market
-    caption: Магазин
-    title: Магазин
+    caption: 
+        en: Магазин  #TODO: ##LOCALIZATION
+        ru: Магазин
+
+    title: 
+        en: Магазин  #TODO: ##LOCALIZATION
+        ru: Магазин
+
     head: reg:///registry/institutions/trader/bonita_vista_benny_mccurtain
     instances:
         - reg:///registry/institutions/trader/bonita_vista_benny_mccurtain
 
   - name: parking
-    caption: Паркинг
-    title: Паркинг
+    caption: 
+        en: Паркинг  #TODO: ##LOCALIZATION
+        ru: Паркинг
+
+    title: 
+        en: Паркинг  #TODO: ##LOCALIZATION
+        ru: Паркинг
+
     head: reg:///registry/institutions/hangar/bonita_vista_mike_barsby
     instances:
         - reg:///registry/institutions/hangar/bonita_vista_mike_barsby
         - reg:///registry/institutions/parking/bonita_vista_scott_huffman
 
   - name: mayor
-    caption: Мэрия
-    title: Мэрия
+    caption: 
+        en: Мэрия  #TODO: ##LOCALIZATION
+        ru: Мэрия
+
+    title: 
+        en: Мэрия  #TODO: ##LOCALIZATION
+        ru: Мэрия
+
     head: reg:///registry/institutions/mayor/bonita_vista_jack_lape
     instances: []
 
   - name: service
-    caption: Автосервис
-    title: Автосервис
+    caption: 
+        en: Автосервис  #TODO: ##LOCALIZATION
+        ru: Автосервис
+
+    title: 
+        en: Автосервис  #TODO: ##LOCALIZATION
+        ru: Автосервис
+
     head: reg:///registry/institutions/mechanic/bonita_vista_lenny_nachreiner
     instances:
         - reg:///registry/institutions/mechanic/bonita_vista_lenny_nachreiner
         - reg:///registry/institutions/armorer/bonita_vista_curt_goes
 
   - name: bar
-    caption: Бар
-    title: Бар
+    caption: 
+        en: Бар  #TODO: ##LOCALIZATION
+        ru: Бар
+
+    title: 
+        en: Бар  #TODO: ##LOCALIZATION
+        ru: Бар
+
     head: reg:///registry/institutions/barman/bonita_vista_melanie_may
     instances:
         - reg:///registry/institutions/barman/bonita_vista_melanie_may
@@ -56,8 +95,14 @@ buildings:
         - reg:///registry/institutions/girl/bonita_vista_shelly_cline
 
   - name: nukeoil
-    caption: Нукойл
-    title: Нукойл
+    caption: 
+        en: Нукойл  #TODO: ##LOCALIZATION
+        ru: Нукойл
+
+    title: 
+        en: Нукойл  #TODO: ##LOCALIZATION
+        ru: Нукойл
+
     head: reg:///registry/institutions/nucoil
     instances:
         - reg:///registry/institutions/gas_station

@@ -1,10 +1,15 @@
-﻿__cls__: PerkActivateItemsPassive
-_cls: PerkActivateItemsPassive
+﻿_cls: PerkActivateItemsPassive
 abstract: false
 
 # Общие параметры перка
-title: Мегамейкер                                                                        # Название перка
-description: Увеличение эффективности ремонтных комплектов на 5%                         # Описание перка
+title:                                                                                   # Название перка
+    en: Мегамейкер  #TODO: ##LOCALIZATION
+    ru: Мегамейкер
+
+description:                                                                             # Описание перка
+    en: Увеличение эффективности ремонтных комплектов на 5%  #TODO: ##LOCALIZATION
+    ru: Увеличение эффективности ремонтных комплектов на 5%
+
 
 # Условия доступности перка
 driving_req:      0      # Необходимый уровень прокачки Вождения

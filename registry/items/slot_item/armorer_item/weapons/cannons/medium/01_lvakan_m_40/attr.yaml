@@ -1,11 +1,15 @@
-﻿_cls            : Cannon
+_cls            : Cannon
 doc             : Пушка Lvakan m/40None
 abstract        : false
 
-title           : Пушка<br>Lvakan m/40                     # Краткое название - отобразится в слоте инвентаря
-condition       : 3  # Исп.
+title:
+    en: Пушка<br>Lvakan m/40                     # Краткое название - отобразится в слоте инвентаря  #TODO: ##LOCALIZATION
+    ru: Пушка<br>Lvakan m/40                     # Краткое название - отобразится в слоте инвентаря
+
 # Полное описание - отобразится в разделе описания в инвентаре
-description     : '???'
+description:
+    en: '???'  #TODO: ##LOCALIZATION
+    ru: '???'
 
 # Основные балансные настройки
 base_price      : 1300                                     # Цена

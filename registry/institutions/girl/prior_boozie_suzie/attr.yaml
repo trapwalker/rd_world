@@ -1,7 +1,9 @@
-﻿__cls__ : Girl
-_cls    : Girl
+﻿_cls    : Girl
 
-title    : Boozie_Suzie
+title: 
+    en: Boozie_Suzie
+    ru: Бузи_Сьюзи  ##LOCALIZATION
+
 photo    : "static/content/institutions/girl/prior_boozie_suzie.png"
 abstract : false
 

@@ -1,8 +1,17 @@
-﻿_cls  : Institution
-doc   : Помощь
-text  : Помощь
-title : Помощь
-type  : nucoil_help_npc
+﻿_cls: Institution
+doc:
+    en: Support  ##LOCALIZATION
+    ru: Помощь
+
+text:
+    en: Support ##LOCALIZATION
+    ru: Помощь
+
+title:
+    en: Support ##LOCALIZATION
+    ru: Помощь
+
+type: nucoil_help_npc
 
 photo    : "static/content/institutions/npc_nucoil_help/help.png"
 abstract : false

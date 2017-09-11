@@ -1,17 +1,27 @@
-﻿__cls__  : QuestItem
-_cls     : QuestItem
+﻿_cls     : QuestItem
 doc      : Item_021
 abstract : false
 
-title       : На память
-description : "Бонус: 2 очка в навык Стрельба и 2 очка в навык Лидерство."
+title:
+    en: На память  #TODO: ##LOCALIZATION
+    ru: На память
+
+description:
+    en: "Бонус: 2 очка в навык Стрельба и 2 очка в навык Лидерство."  #TODO: ##LOCALIZATION
+    ru: "Бонус: 2 очка в навык Стрельба и 2 очка в навык Лидерство."
+
 group_id    : ""
 
 base_price : 0
 stack_size : 1
 
-effect_title       : Бонус
-effect_description : 2 очка в навык Стрельба и 2 очка в навык Лидерство
+effect_title:
+    en: Бонус  #TODO: ##LOCALIZATION
+    ru: Бонус
+
+effect_description:
+    en: 2 очка в навык Стрельба и 2 очка в навык Лидерство  #TODO: ##LOCALIZATION
+    ru: 2 очка в навык Стрельба и 2 очка в навык Лидерство
 
 shooting : 2
 leading  : 2

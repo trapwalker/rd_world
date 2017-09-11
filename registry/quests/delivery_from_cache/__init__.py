@@ -4,7 +4,7 @@ import logging
 log = logging.getLogger(__name__)
 
 from sublayers_server.model.registry_me.classes import notes
-from sublayers_server.model.registry_me.tree import FloatField, EmbeddedDocumentField, ListField, EmbeddedNodeField
+from sublayers_server.model.registry_me.tree import FloatField, EmbeddedDocumentField, ListField, EmbeddedNodeField, LocalizedString
 from sublayers_server.model.quest_events import OnCancel, OnTimer, OnNote
 from sublayers_server.model.registry_me.classes.quests import (
     MarkerMapObject, Cancel, QuestState_, FailByCancelState, FailState, WinState,
@@ -93,13 +93,26 @@ class DeliveryFromCache(DeliveryQuestSimple):
             self.deadline = 0
 
     def init_text(self):
-        self.text_short = u"Найти пропавшую посылку."
-        self.text = u"Вернуть пропавшую посылку.{} Награда: {:.0f}nc, {:.0f} кармы и {:.0f} ед. опыта.".format(
-            u"." if not self.deadline else u" за {}.".format(self.deadline_to_str()),
-            self.reward_money,
-            self.reward_karma,
-            self.reward_exp,
+        self.text_short = LocalizedString(
+            en=u"Найти пропавшую посылку.",  # TODO: ##LOCALIZATION
+            ru=u"Найти пропавшую посылку.",
         )
+
+        self.text = LocalizedString(
+            en=u"Вернуть пропавшую посылку.{} Награда: {:.0f}nc, {:.0f} кармы и {:.0f} ед. опыта.".format(  # TODO: ##LOCALIZATION
+                u"." if not self.deadline else u" за {}.".format(self.deadline_to_str()),
+                self.reward_money,
+                self.reward_karma,
+                self.reward_exp,
+            ),
+            ru=u"Вернуть пропавшую посылку.{} Награда: {:.0f}nc, {:.0f} кармы и {:.0f} ед. опыта.".format(
+                u"." if not self.deadline else u" за {}.".format(self.deadline_to_str()),
+                self.reward_money,
+                self.reward_karma,
+                self.reward_exp,
+            ),
+        )
+
 
     def create_poi_container(self, event):
         if self.deadline:
@@ -178,9 +191,9 @@ class DeliveryFromCache(DeliveryQuestSimple):
     ####################################################################################################################
     def on_start_(self, event, **kw):
         if self.get_available_lvl() < self.level:
-            self.npc_replica(npc=self.hirer, replica=u"NPC не достаточно хорошо к Вам относится.", event=event)
+            self.npc_replica(npc=self.hirer, replica=self.locale("q_share_no_rel_npc"), event=event)  ##LOCALIZATION
             raise Cancel("QUEST DeliveryFromCache CANCEL: User have not enough relation")
-        self.log(text=u'Начат квест по поиску посылки.', event=event, position=self.hirer.hometown.position)
+        self.log(text=self.locale("q_dfc_started"), event=event, position=self.hirer.hometown.position)  ##LOCALIZATION
 
     ####################################################################################################################
     ## Перечень состояний ##############################################################################################
@@ -205,7 +218,7 @@ class DeliveryFromCache(DeliveryQuestSimple):
             if isinstance(event, OnCancel):
                 agent.profile.del_note(uid=quest.dc.cache_map_note_uid, time=event.time)
                 agent.profile.set_relationship(time=event.time, npc=quest.hirer, dvalue=-quest.reward_relation_hirer)
-                quest.log(text=u'Испорчены отношения с {}.'.format(quest.hirer.title), event=event,
+                quest.log(text='{} {}.'.format(quest.locale("q_dfc_relations"), quest.hirer.title), event=event,  ##LOCALIZATION
                           position=quest.hirer.hometown.position)
                 go("cancel_fail")
             if isinstance(event, OnTimer):
@@ -224,7 +237,7 @@ class DeliveryFromCache(DeliveryQuestSimple):
         def on_enter_(self, quest, event):
             # создать лут с временем жизни до окончания дедлайна и с нужными итемами
             quest.create_poi_container(event)
-            quest.log(text=u'Найдена посылка.', event=event, position=quest.cache_point.position)
+            quest.log(text=quest.locale("q_dfc_find_package"), event=event, position=quest.cache_point.position)  ##LOCALIZATION
 
             # создать ноту на доставку
             quest.dc.delivery_note_uid = quest.agent.profile.add_note(
@@ -240,7 +253,7 @@ class DeliveryFromCache(DeliveryQuestSimple):
             go = partial(quest.go, event=event)
 
             if isinstance(event, OnCancel):
-                quest.npc_replica(npc=quest.hirer, replica=u"Вы нашли посылку и не можете отказаться.", event=event)
+                quest.npc_replica(npc=quest.hirer, replica=quest.locale("q_dfc_cancel_fail"), event=event)  ##LOCALIZATION
 
             if isinstance(event, OnTimer) and event.name == 'deadline_delivery_cache_quest':
                 agent.profile.del_note(uid=quest.dc.delivery_note_uid, time=event.time)
@@ -265,18 +278,18 @@ class DeliveryFromCache(DeliveryQuestSimple):
     ####################################################################################################################
     class cancel_fail(FailByCancelState):
         def on_enter_(self, quest, event):
-            quest.log(text=u'Квест провален.', event=event)
+            quest.log(text=quest.locale("q_share_q_fail"), event=event)  ##LOCALIZATION
 
     ####################################################################################################################
     class win(WinState):
         def on_enter_(self, quest, event):
-            quest.log(text=u'Квест выполнен.', event=event)
+            quest.log(text=quest.locale("q_share_q_win"), event=event)  ##LOCALIZATION
 
     ####################################################################################################################
     class fail(FailState):
         def on_enter_(self, quest, event):
             quest.agent.profile.set_relationship(time=event.time, npc=quest.hirer, dvalue=-20)  # изменение отношения c нпц
             quest.agent.profile.set_karma(time=event.time, dvalue=-10)  # изменение кармы
-            quest.log(text=u'Квест провален.', event=event)
+            quest.log(text=quest.locale("q_share_q_fail"), event=event)  ##LOCALIZATION
 
 

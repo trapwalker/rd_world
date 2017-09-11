@@ -1,11 +1,15 @@
-﻿_cls            : Cannon
+_cls            : Cannon
 doc             : Пушка Mauser MG 213None
 abstract        : false
 
-title           : Пушка<br>Mauser MG 213                   # Краткое название - отобразится в слоте инвентаря
-condition       : 3  # Исп.
+title:
+    en: Пушка<br>Mauser MG 213                   # Краткое название - отобразится в слоте инвентаря  #TODO: ##LOCALIZATION
+    ru: Пушка<br>Mauser MG 213                   # Краткое название - отобразится в слоте инвентаря
+
 # Полное описание - отобразится в разделе описания в инвентаре
-description     : '???'
+description:
+    en: '???'  #TODO: ##LOCALIZATION
+    ru: '???'
 
 # Основные балансные настройки
 base_price      : 1600                                     # Цена

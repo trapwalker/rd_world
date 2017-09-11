@@ -1,7 +1,11 @@
-﻿__cls__ : Car
-_cls : Car
-title:       "Int. Dimex"     # Модель атомобиля
-class_car:   "Грузовой"                # Класс автомобиля
+﻿_cls : Car
+title:                        # Модель атомобиля
+    en: "Int. Dimex"  #TODO: ##LOCALIZATION
+    ru: "Int. Dimex"
+
+class_car:                    # Класс автомобиля
+    en: "Грузовой"  # TODO: ##LOCALIZATION
+    ru: "Грузовой"
 name_car:    "Int. Dimex"     # Название атомобиля
 
 price:              28           # Цена у продавца (л) (>= 0)

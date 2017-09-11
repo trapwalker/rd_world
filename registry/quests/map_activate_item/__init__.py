@@ -8,7 +8,7 @@ from sublayers_server.model.registry_me.classes.quests import (
     Cancel, QuestState_, FailByCancelState, FailState, WinState,
 )
 from sublayers_server.model.registry_me.tree import (IntField, FloatField, ListField, EmbeddedDocumentField, UUIDField,
-                                                     EmbeddedNodeField)
+                                                     EmbeddedNodeField, LocalizedString)
 from sublayers_server.model.registry_me.classes.quests import Quest, MarkerMapObject
 
 from functools import partial
@@ -92,10 +92,19 @@ class MapActivateItemQuest(Quest):
             self.deadline = 0
 
     def init_text(self):
-        self.text_short = u"Активируйте предметы в заданных точках."
-        self.text = u"Активируйте предметы: {} - в заданных точках. Награда: {:.0f}nc.".format(
-            ', '.join([item.title for item in self.activate_items]),
-            self.reward_money
+        self.text_short = LocalizedString(
+            en=u"Активируйте предметы в заданных точках.",  # TODO: ##LOCALIZATION
+            ru=u"Активируйте предметы в заданных точках.",
+        )
+        self.text = LocalizedString(
+            en=u"Активируйте предметы: {} - в заданных точках. Награда: {:.0f}nc.".format(  # TODO: ##LOCALIZATION
+                ', '.join([item.title.en for item in self.activate_items]),
+                self.reward_money,
+            ),
+            ru=u"Активируйте предметы: {} - в заданных точках. Награда: {:.0f}nc.".format(
+                ', '.join([item.title.ru for item in self.activate_items]),
+                self.reward_money,
+            ),
         )
 
     def init_notes(self, event):
@@ -119,7 +128,7 @@ class MapActivateItemQuest(Quest):
             if note:
                 position = self.agent.profile._agent_model.car.position(time=event.time)
                 if note.is_near(position=position):
-                    self.log(text=u'Произведена активация.', event=event, position=position)
+                    self.log(text=self.locale("q_ai_do_activate"), event=event, position=position)  ##LOCALIZATION
                     self.agent.profile.set_exp(time=event.time, dvalue=self.reward_exp)
                     self.activate_notes.remove(note_uid)
                     self.agent.profile.del_note(uid=note_uid, time=event.time)
@@ -166,9 +175,9 @@ class MapActivateItemQuest(Quest):
     ####################################################################################################################
     def on_start_(self, event, **kw):
         if not self.give_items(items=self.activate_items, event=event):
-            self.npc_replica(npc=self.hirer, replica=u"Не хватает места в инвентаре.", event=event)
+            self.npc_replica(npc=self.hirer, replica=self.locale("q_share_no_inv_slot"), event=event)  ##LOCALIZATION
             raise Cancel("QUEST CANCEL: User have not enough empty slot")
-        self.log(text=u'Начат квест по активации предметов.', event=event, position=self.hirer.hometown.position)
+        self.log(text=self.locale("q_ai_start_text"), event=event, position=self.hirer.hometown.position)  ##LOCALIZATION
     
     ####################################################################################################################
     ## Перечень состояний ##############################################################################################
@@ -186,12 +195,12 @@ class MapActivateItemQuest(Quest):
                 penalty_money = quest.reward_money / 2.
                 if agent.profile.balance >= penalty_money:
                     agent.profile.set_balance(time=event.time, delta=-penalty_money)
-                    quest.log(text=u'Уплачен штраф в размере {}nc.'.format(penalty_money), event=event,
+                    quest.log(text=u'{} {}nc.'.format(quest.locale("q_share_cancel_pen_done"), penalty_money), event=event,  ##LOCALIZATION
                               position=quest.hirer.hometown.position)
                     go("cancel_fail")
                 else:
                     quest.npc_replica(npc=quest.hirer,
-                                      replica=u"Для отказа от квеста заплатите штраф {}nc.".format(penalty_money),
+                                      replica=u"{} {}nc.".format(quest.locale("q_share_cancel_pen_try"), penalty_money),  ##LOCALIZATION
                                       event=event)
             if isinstance(event, OnTimer):
                 if event.name == 'deadline_activate_quest':
@@ -211,8 +220,8 @@ class MapActivateItemQuest(Quest):
                 note_class=notes.MapActivationNoteFinish,
                 time=event.time,
                 npc=quest.hirer,
-                page_caption=u'Награда',
-                btn1_caption=u'<br>Отчитаться',
+                page_caption=quest.locale("q_ai_note_caption"),  ##LOCALIZATION
+                btn1_caption=quest.locale("q_ai_note_btn1"),  ##LOCALIZATION
             )
     
         def on_event_(self, quest, event):
@@ -228,13 +237,13 @@ class MapActivateItemQuest(Quest):
     class cancel_fail(FailByCancelState):
         def on_enter_(self, quest, event):
             quest.delete_notes(event=event)
-            quest.log(text=u'Квест провален.', event=event)
+            quest.log(text=quest.locale("q_share_q_fail"), event=event)  ##LOCALIZATION
 
     ####################################################################################################################
     class win(WinState):
         def on_enter_(self, quest, event):
             quest.delete_notes(event=event)
-            quest.log(text=u'Квест выполнен.', event=event)
+            quest.log(text=quest.locale("q_share_q_win"), event=event)  ##LOCALIZATION
 
     ####################################################################################################################
     class fail(FailState):
@@ -242,6 +251,6 @@ class MapActivateItemQuest(Quest):
             quest.delete_notes(event=event)
             quest.agent.profile.set_relationship(time=event.time, npc=quest.hirer,
                                            dvalue=-quest.level * 2)  # изменение отношения c нпц
-            quest.agent.profile.set_karma(time=event.time, dvalue=-quest.reward_karma)  # todo: изменение кармы
-            quest.log(text=u'Квест провален.', event=event)
+            quest.agent.profile.set_karma(time=event.time, dvalue=-quest.reward_karma)  # изменение кармы
+            quest.log(text=quest.locale("q_share_q_fail"), event=event)  ##LOCALIZATION
     ####################################################################################################################

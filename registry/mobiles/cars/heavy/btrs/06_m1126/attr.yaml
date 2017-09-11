@@ -1,6 +1,11 @@
-﻿_cls : Car
-title:       "M1126"             # Модель атомобиля
-class_car:   "Тяжелый"           # Класс автомобиля
+_cls : Car
+title:                           # Модель атомобиля
+    en: "M1126"  #TODO: ##LOCALIZATION
+    ru: "M1126"
+
+class_car:                       # Класс автомобиля
+    en: "Тяжелый"  # TODO: ##LOCALIZATION
+    ru: "Тяжелый"
 name_car:    "M1126"             # Название атомобиля
 
 price:              62000        # Цена у продавца (л) (>= 0)

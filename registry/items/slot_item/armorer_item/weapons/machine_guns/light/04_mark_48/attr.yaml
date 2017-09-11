@@ -1,14 +1,16 @@
-﻿__cls__         : MachineGun
 _cls            : MachineGun
 doc             : Пулемет Mark 48None
 abstract        : false
 
-title           : Пулемет<br>Mark 48                         # Краткое название - отобразится в слоте инвентаря
-
-
+title:                                                       # Краткое название - отобразится в слоте инвентаря
+    en: Пулемет<br>Mark 48  #TODO: ##LOCALIZATION
+    ru: Пулемет<br>Mark 48
 
 # Полное описание - отобразится в разделе описания в инвентаре
-description     : '???'
+description: 
+    en: '???'  #TODO: ##LOCALIZATION
+    ru: '???'
+
 
 # Основные балансные настройки
 base_price      : 855                                        # Цена

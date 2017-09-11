@@ -1,8 +1,88 @@
-__cls__: ClassQuest
 _cls: ClassQuest
 
 first_state: first_out
 
 list_icon: static/img/quests/icons/rpg_dice.png
 
-caption: Классовый квест
+caption: 
+    en: Классовый квест  #TODO: ##LOCALIZATION
+    ru: Классовый квест
+
+attributes_by_class:
+    chosen_one:
+        teacher:
+            en: major
+            ru: мэра
+
+        artefact:
+            en: flask
+            ru: Фляжка
+
+        super_task:
+            en: Основать поселение  # TODO: ##LOCALIZATION
+            ru: Основать поселение
+
+    alpha_wolf:
+        teacher:
+            en: major
+            ru: мэра
+
+        artefact:
+            en: postal bag
+            ru: Почтовая сумка
+
+        super_task:
+            en: Создать клан  # TODO: ##LOCALIZATION
+            ru: Создать клан
+
+    night_rider:
+        teacher:
+            en: бармена  # TODO: ##LOCALIZATION
+            ru: бармена
+
+        artefact:
+            en: Зубочистка  # TODO: ##LOCALIZATION
+            ru: Зубочистка
+
+        super_task:
+            en: Получить стелс-технологию  # TODO: ##LOCALIZATION
+            ru: Получить стелс-технологию
+
+    oil_magnate:
+        teacher: 
+            en: торговца  # TODO: ##LOCALIZATION
+            ru: торговца
+
+        artefact:
+            en: Трость  # TODO: ##LOCALIZATION
+            ru: Трость
+
+        super_task:
+            en: Открыть магазин  # TODO: ##LOCALIZATION
+            ru: Открыть магазин
+
+    road_warrior:
+        teacher:
+            en: автодилера  # TODO: ##LOCALIZATION
+            ru: автодилера
+
+        artefact: 
+            en: Куртка с одним рукавом  # TODO: ##LOCALIZATION
+            ru: Куртка с одним рукавом
+
+        super_task:
+            en: Получить суперкар  # TODO: ##LOCALIZATION
+            ru: Получить суперкар
+
+    techno_kinetic:
+        teacher: 
+            en: механика  # TODO: ##LOCALIZATION
+            ru: механика
+
+        artefact:
+            en: Плутоний  # TODO: ##LOCALIZATION
+            ru: Плутоний
+
+        super_task:
+            en: Открыть сервисный центр  # TODO: ##LOCALIZATION
+            ru: Открыть сервисный центр

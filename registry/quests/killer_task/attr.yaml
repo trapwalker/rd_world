@@ -1,5 +1,4 @@
-﻿__cls__: KillerQuest
-_cls: KillerQuest
+﻿_cls: KillerQuest
 doc    : Примеры квестов
 
 list_icon: static/img/quests/icons/wanted.png
@@ -18,5 +17,8 @@ reward_exp: 0  # Награда за 1 убийство
 first_state: begin
 current_state: ~
 
-caption: Охота за головами
+caption: 
+    en: Охота за головами  #TODO: ##LOCALIZATION
+    ru: Охота за головами
+
 

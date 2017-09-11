@@ -1,7 +1,11 @@
-﻿__cls__ : Car
 _cls : Car
-title:       "Savana"           # Модель атомобиля
-class_car:   "Средний"          # Класс автомобиля
+title:                          # Модель атомобиля
+    en: "Savana"  #TODO: ##LOCALIZATION
+    ru: "Savana"
+
+class_car:                          # Класс автомобиля
+    en: "Средний"  # TODO: ##LOCALIZATION
+    ru: "Средний"
 name_car:    "Savana"           # Название атомобиля
 
 price:              5300        # Цена у продавца (л) (>= 0)

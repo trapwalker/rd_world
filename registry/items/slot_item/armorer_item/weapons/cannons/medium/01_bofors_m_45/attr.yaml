@@ -1,13 +1,15 @@
-﻿_cls            : Cannon
+_cls            : Cannon
 doc             : Пушка Bofors m/45None
 abstract        : false
 
-title           : Пушка<br>Bofors m/45                     # Краткое название - отобразится в слоте инвентаря
-condition       : 3  # Исп.
-# Полное опис
+title:
+    en: Пушка<br>Bofors m/45                     # Краткое название - отобразится в слоте инвентаря  #TODO: ##LOCALIZATION
+    ru: Пушка<br>Bofors m/45                     # Краткое название - отобразится в слоте инвентаря
 
 ание - отобразится в разделе описания в инвентаре
-description     : '???'
+description:
+    en: '???'  #TODO: ##LOCALIZATION
+    ru: '???'
 
 # Основные балансные настройки
 base_price      : 1450                                     # Цена

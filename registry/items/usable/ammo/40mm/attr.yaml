@@ -1,10 +1,15 @@
-﻿__cls__  : AmmoBullets
-_cls     : AmmoBullets
+﻿_cls     : AmmoBullets
 doc      : Гранаты 40мм
 abstract : false
 
-title       : Гранаты<br>40мм
-description : '???'
+title: 
+    en: Гранаты<br>40мм  #TODO: ##LOCALIZATION
+    ru: Гранаты<br>40мм
+
+description: 
+    en: '???'  #TODO: ##LOCALIZATION
+    ru: '???'
+
 
 stack_size : 10
 amount     : 10

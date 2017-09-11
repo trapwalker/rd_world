@@ -1,7 +1,11 @@
-﻿__cls__ : Car
 _cls : Car
-title:       "MB"                # Модель атомобиля
-class_car:   "Средний"           # Класс автомобиля
+title:                           # Модель атомобиля
+    en: "MB"  #TODO: ##LOCALIZATION
+    ru: "MB"
+
+class_car:                          # Класс автомобиля
+    en: "Средний"  # TODO: ##LOCALIZATION
+    ru: "Средний"
 name_car:    "MB"                # Название атомобиля
 
 price:              6200         # Цена у продавца (л) (>= 0)

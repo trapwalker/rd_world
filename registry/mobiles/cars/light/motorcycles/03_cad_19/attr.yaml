@@ -1,7 +1,11 @@
-﻿__cls__ : Car
 _cls : Car
-title:       "CAD 19"            # Модель атомобиля
-class_car:   "Легкий"            # Класс автомобиля
+title:                           # Модель атомобиля
+    en: "CAD 19"  #TODO: ##LOCALIZATION
+    ru: "CAD 19"
+
+class_car:                       # Класс автомобиля
+    en: "Легкий"  # TODO: ##LOCALIZATION
+    ru: "Легкий"
 name_car:    "CAD 19"            # Название атомобиля
 
 price:              4500         # Цена у продавца (л) (>= 0)

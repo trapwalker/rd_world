@@ -1,10 +1,15 @@
-﻿__cls__  : MapWeaponMineItem
-_cls  : MapWeaponMineItem
+﻿_cls  : MapWeaponMineItem
 doc      : Мина ТММ-1
 abstract : false
 
-title       : Мина ТММ-1
-description : Противотанковая металлическая мина фугасного действия. Копия немецкой мины периода ВМВ - Tellermine Pilz 43.
+title: 
+    en: Мина ТММ-1  #TODO: ##LOCALIZATION
+    ru: Мина ТММ-1
+
+description: 
+    en: Противотанковая металлическая мина фугасного действия. Копия немецкой мины периода ВМВ - Tellermine Pilz 43.  #TODO: ##LOCALIZATION
+    ru: Противотанковая металлическая мина фугасного действия. Копия немецкой мины периода ВМВ - Tellermine Pilz 43.
+
 
 base_price : 100
 stack_size : 10

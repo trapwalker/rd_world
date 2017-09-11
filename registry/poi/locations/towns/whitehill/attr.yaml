@@ -2,7 +2,10 @@
 doc      : Уайтхилл
 abstract : false
 
-title             : Уайтхилл
+title: 
+    en: Уайтхилл  #TODO: ##LOCALIZATION
+    ru: Уайтхилл
+
 position          : {x: 12482409, y: 27045819}
 p_observing_range : 500
 p_enter_range     : 315
@@ -11,53 +14,95 @@ svg_link: static/content/locations/map_locations/whitehill
 
 buildings:
   - name: nukeoil
-    caption: Нукойл
-    title: Нукойл
+    caption: 
+        en: Нукойл  #TODO: ##LOCALIZATION
+        ru: Нукойл
+
+    title: 
+        en: Нукойл  #TODO: ##LOCALIZATION
+        ru: Нукойл
+
     head: reg:///registry/institutions/nucoil
     instances:
         - reg:///registry/institutions/gas_station
         - reg:///registry/institutions/npc_help
 
   - name: mayor
-    caption: Мэрия
-    title: Главная Шахта
+    caption: 
+        en: Мэрия  #TODO: ##LOCALIZATION
+        ru: Мэрия
+
+    title: 
+        en: Главная Шахта  #TODO: ##LOCALIZATION
+        ru: Главная Шахта
+
     head: reg:///registry/institutions/mayor/whitehill_manny_askorti
     instances: []
 
   - name: bar
-    caption: Бар
-    title: Ласт Дроп Бар
+    caption: 
+        en: Бар  #TODO: ##LOCALIZATION
+        ru: Бар
+
+    title: 
+        en: Ласт Дроп Бар  #TODO: ##LOCALIZATION
+        ru: Ласт Дроп Бар
+
     head: reg:///registry/institutions/barman/whitehill_al_dufo
     instances:
         - reg:///registry/institutions/barman/whitehill_al_dufo
         - reg:///registry/institutions/girl/whitehill_barbara_green
 
   - name: dealer
-    caption: Автодилер
-    title: Хайрок Карс
+    caption: 
+        en: Автодилер  #TODO: ##LOCALIZATION
+        ru: Автодилер
+
+    title: 
+        en: Хайрок Карс  #TODO: ##LOCALIZATION
+        ru: Хайрок Карс
+
     head: reg:///registry/institutions/hangar/whitehill_junior_clarks
     instances:
         - reg:///registry/institutions/hangar/whitehill_junior_clarks
         - reg:///registry/institutions/parking/whitehill_james_rogers
 
   - name: service
-    caption: Автосервис
-    title: Элон Авто Рипейр
+    caption: 
+        en: Автосервис  #TODO: ##LOCALIZATION
+        ru: Автосервис
+
+    title: 
+        en: Элон Авто Рипейр  #TODO: ##LOCALIZATION
+        ru: Элон Авто Рипейр
+
     head: reg:///registry/institutions/mechanic/whitehill_raul_alon
     instances:
         - reg:///registry/institutions/mechanic/whitehill_raul_alon
         - reg:///registry/institutions/armorer/whitehill_martin_arioso
 
   - name: market
-    caption: Магазин
-    title: Складской капер
+    caption: 
+        en: Магазин  #TODO: ##LOCALIZATION
+        ru: Магазин
+
+    title: 
+        en: Складской капер  #TODO: ##LOCALIZATION
+        ru: Складской капер
+
     head: reg:///registry/institutions/trader/whitehill_bob_ferolito
     instances:
         - reg:///registry/institutions/trader/whitehill_bob_ferolito
 
   - name: library
-    caption: Библиотека
-    title: Матрикс Плэйграунд
+    caption: 
+        en: Библиотека  #TODO: ##LOCALIZATION
+        ru: Библиотека
+
+    title: 
+        en: Матрикс Плэйграунд  #TODO: ##LOCALIZATION
+        ru: Матрикс Плэйграунд
+
     head: reg:///registry/institutions/trainer/whitehill_blackhawk_2094
     instances:
         - reg:///registry/institutions/trainer/whitehill_blackhawk_2094

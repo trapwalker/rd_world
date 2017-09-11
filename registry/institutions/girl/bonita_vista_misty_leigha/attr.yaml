@@ -1,7 +1,9 @@
-﻿__cls__ : Girl
-_cls    : Girl
+﻿_cls    : Girl
 
-title    : Misty_Leigha
+title: 
+    en: Misty_Leigha
+    ru: Мисти_Лея  ##LOCALIZATION
+
 photo    : "static/content/institutions/girl/bonita_vista_misty_leigha.png"
 abstract : false
 

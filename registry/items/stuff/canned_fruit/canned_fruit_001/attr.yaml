@@ -1,11 +1,16 @@
-﻿__cls__ : Item
-_cls    : Item
+﻿_cls    : Item
 doc     : Консерва фруктовая
 
 abstract : false
 
-title       : Консерва фруктовая
-description : Одна фруктовая консерва.
+title: 
+    en: Консерва фруктовая  #TODO: ##LOCALIZATION
+    ru: Консерва фруктовая
+
+description: 
+    en: Одна фруктовая консерва.  #TODO: ##LOCALIZATION
+    ru: Одна фруктовая консерва.
+
 
 base_price : 25
 stack_size : 1

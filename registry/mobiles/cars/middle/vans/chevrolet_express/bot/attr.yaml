@@ -1,5 +1,4 @@
-﻿__cls__ : Car
-_cls : Car
+﻿_cls : Car
 
 inventory:
     size: 20

@@ -1,7 +1,11 @@
-﻿__cls__ : Car
 _cls : Car
-title:       "Romeo 75"          # Модель атомобиля
-class_car:   "Средний"           # Класс автомобиля
+title:                           # Модель атомобиля
+    en: "Romeo 75"  #TODO: ##LOCALIZATION
+    ru: "Romeo 75"
+
+class_car:                          # Класс автомобиля
+    en: "Средний"  # TODO: ##LOCALIZATION
+    ru: "Средний"
 name_car:    "Romeo 75"          # Название атомобиля
 
 price:              8000         # Цена у продавца (л) (>= 0)

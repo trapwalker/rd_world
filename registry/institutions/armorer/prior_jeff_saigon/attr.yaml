@@ -1,6 +1,9 @@
 ﻿_cls : SlotWorker
 
-title    : Jeff_Saigon
+title: 
+    en: Jeff_Saigon
+    ru: Джефф_Сайгон  ##LOCALIZATION
+
 photo    : "static/content/institutions/armorer/prior_jeff_saigon.png"
 abstract : false
 

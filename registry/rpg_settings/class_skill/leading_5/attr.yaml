@@ -1,8 +1,10 @@
-﻿__cls__: ClassSkill
-_cls: ClassSkill
+﻿_cls: ClassSkill
 doc  : Лидерство-5
 
-title: Лидерство-5
+title: 
+    en: Лидерство-5  #TODO: ##LOCALIZATION
+    ru: Лидерство-5
+
 
 target: 'leading'
 bonus_step: 5    # на каждые набранны bonus_step очков навыка, начисляется дополнительное 1 бонусное очко

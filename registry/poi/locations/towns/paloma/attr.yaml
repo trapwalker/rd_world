@@ -2,7 +2,10 @@
 doc      : Палома
 abstract : false
 
-title             : Палома
+title: 
+    en: Палома  #TODO: ##LOCALIZATION
+    ru: Палома
+
 position          : {x: 12507663, y: 27053100}
 p_observing_range : 500
 p_enter_range     : 365
@@ -11,38 +14,68 @@ svg_link : static/content/locations/map_locations/paloma
 
 buildings:
   - name: market
-    caption: Магазин
-    title: Магазин
+    caption: 
+        en: Магазин  #TODO: ##LOCALIZATION
+        ru: Магазин
+
+    title: 
+        en: Магазин  #TODO: ##LOCALIZATION
+        ru: Магазин
+
     head: reg:///registry/institutions/trader/paloma_shaun_fisher
     instances:
         - reg:///registry/institutions/trader/paloma_shaun_fisher
 
   - name: library
-    caption: Библиотека
-    title: Библиотека
+    caption: 
+        en: Библиотека  #TODO: ##LOCALIZATION
+        ru: Библиотека
+
+    title: 
+        en: Библиотека  #TODO: ##LOCALIZATION
+        ru: Библиотека
+
     head: reg:///registry/institutions/trainer/paloma_luke_utz
     instances:
         - reg:///registry/institutions/trainer/paloma_luke_utz
 
   - name: nukeoil
-    caption: Нукойл
-    title: Нукойл
+    caption: 
+        en: Нукойл  #TODO: ##LOCALIZATION
+        ru: Нукойл
+
+    title: 
+        en: Нукойл  #TODO: ##LOCALIZATION
+        ru: Нукойл
+
     head: reg:///registry/institutions/nucoil
     instances:
         - reg:///registry/institutions/gas_station
         - reg:///registry/institutions/npc_help
 
   - name: parking
-    caption: Паркинг
-    title: Паркинг
+    caption: 
+        en: Паркинг  #TODO: ##LOCALIZATION
+        ru: Паркинг
+
+    title: 
+        en: Паркинг  #TODO: ##LOCALIZATION
+        ru: Паркинг
+
     head: reg:///registry/institutions/hangar/paloma_george_martell
     instances:
         - reg:///registry/institutions/hangar/paloma_george_martell
         - reg:///registry/institutions/parking/paloma_billy_pilot
 
   - name: service
-    caption: Автосервис
-    title: Автосервис
+    caption: 
+        en: Автосервис  #TODO: ##LOCALIZATION
+        ru: Автосервис
+
+    title: 
+        en: Автосервис  #TODO: ##LOCALIZATION
+        ru: Автосервис
+
     head: reg:///registry/institutions/manager/paloma_myles_echenique
     instances:
         - reg:///registry/institutions/armorer/paloma_eric_davis
@@ -50,8 +83,14 @@ buildings:
         - reg:///registry/institutions/tuner/paloma_nice_n_smooth
 
   - name: bar
-    caption: Бар
-    title: Бар
+    caption: 
+        en: Бар  #TODO: ##LOCALIZATION
+        ru: Бар
+
+    title: 
+        en: Бар  #TODO: ##LOCALIZATION
+        ru: Бар
+
     head: reg:///registry/institutions/barman/paloma_fransie_nolan
     instances:
         - reg:///registry/institutions/barman/paloma_fransie_nolan
@@ -59,8 +98,14 @@ buildings:
         - reg:///registry/institutions/girl/paloma_lynnie_jj
 
   - name: radio
-    caption: Радиовышка
-    title: Радиовышка
+    caption: 
+        en: Радиовышка  #TODO: ##LOCALIZATION
+        ru: Радиовышка
+
+    title: 
+        en: Радиовышка  #TODO: ##LOCALIZATION
+        ru: Радиовышка
+
     head: reg:///registry/institutions/radio_dj/paloma_tenth
     instances: []
 

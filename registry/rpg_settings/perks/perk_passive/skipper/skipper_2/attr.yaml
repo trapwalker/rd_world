@@ -1,10 +1,15 @@
-﻿__cls__: PerkPartyPassive
-_cls: PerkPartyPassive
+﻿_cls: PerkPartyPassive
 abstract: false
 
 # Общие параметры перка
-title: Мегашкипер                                                                            # Название перка
-description: Увеличение опыта, получаемого в пати на 5% # Описание перка
+title:                                                                                       # Название перка
+    en: Мегашкипер  #TODO: ##LOCALIZATION
+    ru: Мегашкипер
+
+description:                                            # Описание перка
+    en: Увеличение опыта, получаемого в пати на 5%  #TODO: ##LOCALIZATION
+    ru: Увеличение опыта, получаемого в пати на 5%
+
 
 # Условия доступности перка
 driving_req:      0      # Необходимый уровень прокачки Вождения

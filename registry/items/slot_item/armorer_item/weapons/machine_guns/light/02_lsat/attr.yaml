@@ -1,14 +1,16 @@
-﻿__cls__         : MachineGun
 _cls            : MachineGun
 doc             : Пулемет LSATNone
 abstract        : false
 
-title           : Пулемет<br>LSAT                            # Краткое название - отобразится в слоте инвентаря
-
-
+title:                                                       # Краткое название - отобразится в слоте инвентаря
+    en: Пулемет<br>LSAT  #TODO: ##LOCALIZATION
+    ru: Пулемет<br>LSAT
 
 # Полное описание - отобразится в разделе описания в инвентаре
-description     : '???'
+description: 
+    en: '???'  #TODO: ##LOCALIZATION
+    ru: '???'
+
 
 # Основные балансные настройки
 base_price      : 475                                        # Цена

@@ -1,10 +1,15 @@
-__cls__        : BuildSet
 _cls        : BuildSet
 doc            : Ремкомплект (большой)
 abstract       : false
 
-title          : Ремкомплект (большой)
-description    : Восстановит машину из плачевного состояния.
+title: 
+    en: Ремкомплект (большой)  #TODO: ##LOCALIZATION
+    ru: Ремкомплект (большой)
+
+description: 
+    en: Восстановит машину из плачевного состояния.  #TODO: ##LOCALIZATION
+    ru: Восстановит машину из плачевного состояния.
+
 
 base_price     : 600
 build_points   : 80

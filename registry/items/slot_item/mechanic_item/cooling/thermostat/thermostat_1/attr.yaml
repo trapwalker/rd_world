@@ -1,10 +1,15 @@
-__cls__ : MechanicItem
 _cls : MechanicItem
 doc    : Термостат
 abstract : false
 
-title: Термостат
-description: Прибор для поддержания постоянной температуры.
+title: 
+    en: Термостат  #TODO: ##LOCALIZATION
+    ru: Термостат
+
+description: 
+    en: Прибор для поддержания постоянной температуры.  #TODO: ##LOCALIZATION
+    ru: Прибор для поддержания постоянной температуры.
+
 
 base_price: 100
 

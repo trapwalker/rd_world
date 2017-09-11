@@ -1,7 +1,11 @@
-﻿__cls__ : Car
-_cls : Car
-title:       "Hornet (Бот)"      # Модель атомобиля
-class_car:   "Легкий"            # Класс автомобиля
+﻿_cls : Car
+title:                           # Модель атомобиля
+    en: "Hornet (Бот)"  #TODO: ##LOCALIZATION
+    ru: "Hornet (Бот)"
+
+class_car:                       # Класс автомобиля
+    en: "Легкий"  # TODO: ##LOCALIZATION
+    ru: "Легкий"
 name_car:    "Hornet (Бот)"      # Название атомобиля
 
 price:              10           # Цена у продавца (л) (>= 0)

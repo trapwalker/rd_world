@@ -1,5 +1,4 @@
-﻿__cls__: DeliveryCar
-_cls: DeliveryCar
+﻿_cls: DeliveryCar
 
 total_delivery_money_coef: 1.0
 karma_coef: 0.5
@@ -11,4 +10,7 @@ current_state: ~
 distance_table: reg:///registry/rpg_settings/disttable
 list_icon: static/img/quests/icons/transit.png
 
-caption: Перегнать транспорт
+caption: 
+    en: Перегнать транспорт  #TODO: ##LOCALIZATION
+    ru: Перегнать транспорт
+

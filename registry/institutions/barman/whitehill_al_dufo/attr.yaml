@@ -1,7 +1,9 @@
-﻿__cls__  : Institution
-_cls     : Institution
+﻿_cls     : Institution
 
-title    : Al_Dufo
+title: 
+    en: Al_Dufo
+    ru: Эл_Дюфо ##LOCALIZATION
+
 photo    : "static/content/institutions/barman/whitehill_al_dufo.png"
 abstract : false
 
@@ -34,8 +36,14 @@ quests:
     courier_medallion:
       parent: reg:///registry/items/quest_item
       _cls: QuestItem
-      title: Платиновая фишка
-      description: Предмет погибшего курьера. Необходимо доставить Al_Dufo.
+      title: 
+          en: Платиновая фишка  #TODO: ##LOCALIZATION
+          ru: Платиновая фишка
+
+      description: 
+          en: The subject of the deceased courier. It is necessary to deliver Al_Dufo. ##LOCALIZATION
+          ru: Предмет погибшего курьера. Необходимо доставить Al_Dufo.
+
       inv_icon_big    : static/content/items/quest_item/courier_medalion/big.png
       inv_icon_mid    : static/content/items/quest_item/courier_medalion/mid.png
       inv_icon_small  : static/content/items/quest_item/courier_medalion/mid.png

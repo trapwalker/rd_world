@@ -1,5 +1,4 @@
-﻿__cls__: DeliveryFromCache
-_cls: DeliveryFromCache
+﻿_cls: DeliveryFromCache
 doc    : Примеры квестов
 
 first_state: begin
@@ -10,4 +9,7 @@ list_icon: static/img/quests/icons/cache.png
 map_icon_full: static/img/quests/map_icons/cache_full.png
 map_icon_circle: static/img/quests/map_icons/cache_circle.png
 
-caption: Найти посылку
+caption: 
+    en: Найти посылку  #TODO: ##LOCALIZATION
+    ru: Найти посылку
+

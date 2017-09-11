@@ -1,11 +1,16 @@
-﻿__cls__ : Item
-_cls    : Item
+﻿_cls    : Item
 doc     : Консервы фруктовые
 
 abstract : false
 
-title       : Консервы фруктовые
-description : Несколько фруктовых консерв.
+title: 
+    en: Консервы фруктовые  #TODO: ##LOCALIZATION
+    ru: Консервы фруктовые
+
+description: 
+    en: Несколько фруктовых консерв.  #TODO: ##LOCALIZATION
+    ru: Несколько фруктовых консерв.
+
 
 base_price : 38
 stack_size : 1

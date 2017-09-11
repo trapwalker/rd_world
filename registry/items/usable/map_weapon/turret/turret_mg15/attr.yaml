@@ -1,9 +1,14 @@
-﻿__cls__        : MapWeaponTurretItem
-_cls        : MapWeaponTurretItem
+﻿_cls        : MapWeaponTurretItem
 abstract       : false
 
-title          : Турель (Пулемёт MG 15)
-description    : Стационарная турель на базе пулемёта MG 15
+title: 
+    en: Турель (Пулемёт MG 15)  #TODO: ##LOCALIZATION
+    ru: Турель (Пулемёт MG 15)
+
+description: 
+    en: Стационарная турель на базе пулемёта MG 15  #TODO: ##LOCALIZATION
+    ru: Стационарная турель на базе пулемёта MG 15
+
 
 base_price     : 150
 stack_size     : 10

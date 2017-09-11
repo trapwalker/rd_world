@@ -1,11 +1,16 @@
-﻿__cls__ : Item
-_cls    : Item
+﻿_cls    : Item
 doc     : Питьевая вода
 
 abstract : false
 
-title       : Питьевая вода
-description : Несколько больших канистр с водой.
+title: 
+    en: Питьевая вода  #TODO: ##LOCALIZATION
+    ru: Питьевая вода
+
+description: 
+    en: Несколько больших канистр с водой.  #TODO: ##LOCALIZATION
+    ru: Несколько больших канистр с водой.
+
 
 base_price : 50
 stack_size : 1

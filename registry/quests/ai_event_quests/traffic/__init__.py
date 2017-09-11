@@ -107,7 +107,6 @@ class AITrafficQuest(AIEventQuest):
         # if not isinstance(obj, Observer):
         if not isinstance(obj, Unit):
             log.debug('==!!== is_observer: obj not observer: %s  for quest: %r ', obj, self)
-            # log.debug(''.join(traceback.format_stack()))
             return False
         return True
 

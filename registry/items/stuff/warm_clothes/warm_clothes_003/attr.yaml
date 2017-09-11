@@ -1,11 +1,16 @@
-﻿__cls__ : Item
-_cls    : Item
+﻿_cls    : Item
 doc     : Теплая одежда
 
 abstract : false
 
-title       : Теплая одежда
-description : Большая куча разной теплой одежды и обуви.
+title: 
+    en: Теплая одежда  #TODO: ##LOCALIZATION
+    ru: Теплая одежда
+
+description: 
+    en: Большая куча разной теплой одежды и обуви.  #TODO: ##LOCALIZATION
+    ru: Большая куча разной теплой одежды и обуви.
+
 
 base_price : 75
 stack_size : 1

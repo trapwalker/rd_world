@@ -1,10 +1,15 @@
-﻿__cls__: PerkPassive
-_cls: PerkPassive
+﻿_cls: PerkPassive
 abstract: false
 
 # Общие параметры перка
-title: Турбофиксер                                                          # Название перка
-description: Снижение износа транспорта на 10%                              # Описание перка
+title:                                                                      # Название перка
+    en: Турбофиксер  #TODO: ##LOCALIZATION
+    ru: Турбофиксер
+
+description:                                                                # Описание перка
+    en: Снижение износа транспорта на 10%  #TODO: ##LOCALIZATION
+    ru: Снижение износа транспорта на 10%
+
 
 # Условия доступности перка
 driving_req:      40     # Необходимый уровень прокачки Вождения

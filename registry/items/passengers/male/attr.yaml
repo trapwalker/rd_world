@@ -1,11 +1,16 @@
-﻿__cls__ : PassengerItem
-_cls    : PassengerItem
+﻿_cls    : PassengerItem
 doc     : Пассажир (парень)
 
 abstract : false
 
-title       : Пассажир (парень)
-description : Пассажир (парень)
+title:
+    en: Пассажир (парень)  #TODO: ##LOCALIZATION
+    ru: Пассажир (парень)
+
+description:
+    en: Пассажир (парень)  #TODO: ##LOCALIZATION
+    ru: Пассажир (парень)
+
 
 base_price : 0
 stack_size : 1

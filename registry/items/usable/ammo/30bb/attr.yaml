@@ -1,10 +1,15 @@
-﻿__cls__  : AmmoBullets
-_cls     : AmmoBullets
+﻿_cls     : AmmoBullets
 doc      : Снаряды 30мм/ББ
 abstract : false
 
-title       : Снаряды<br>30мм/ББ
-description : Бронебойные снаряды калибра 30 мм для артиллерийских систем.
+title: 
+    en: Снаряды<br>30мм/ББ  #TODO: ##LOCALIZATION
+    ru: Снаряды<br>30мм/ББ
+
+description: 
+    en: Бронебойные снаряды калибра 30 мм для артиллерийских систем.  #TODO: ##LOCALIZATION
+    ru: Бронебойные снаряды калибра 30 мм для артиллерийских систем.
+
 
 stack_size : 10
 amount     : 10

@@ -1,7 +1,11 @@
-﻿__cls__ : Car
 _cls : Car
-title:       "DMC-12"            # Модель атомобиля
-class_car:   "Средний"           # Класс автомобиля
+title:                           # Модель атомобиля
+    en: "DMC-12"  #TODO: ##LOCALIZATION
+    ru: "DMC-12"
+
+class_car:                          # Класс автомобиля
+    en: "Средний"  # TODO: ##LOCALIZATION
+    ru: "Средний"
 name_car:    "DMC-12"            # Название атомобиля
 
 price:              11000        # Цена у продавца (л) (>= 0)

@@ -1,6 +1,8 @@
-﻿__cls__  : Institution
-_cls  : Institution
-title    : Billy_Bob_Phoenix
+﻿_cls  : Institution
+title: 
+    en: Billy_Bob_Phoenix
+    ru: Billy_Bob_Phoenix  #TODO: ##LOCALIZATION
+
 photo    : "static/content/institutions/radio_dj/prior_billy_bob_phoenix.png"
 abstract : false
 

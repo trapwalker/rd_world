@@ -1,5 +1,4 @@
-﻿__cls__ : MapRadar
-_cls : MapRadar
+﻿_cls : MapRadar
 doc     : MapRadar
 
 can_attack: False

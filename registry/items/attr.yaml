@@ -1,6 +1,5 @@
-﻿__cls__ : Item
-_cls    : Item
-doc     : Предметы
+_cls: Item
+doc: Предметы
 
 base_price : 0
 amount     : 1
@@ -8,7 +7,9 @@ stack_size : 1
 
 activate_type            : none
 activate_time            : 0.0
-activate_disable_comment : '_'
+activate_disable_comment :
+    en: '_'  #TODO: ##LOCALIZATION
+    ru: '_'
 
 condition_map:  ##LOCALIZATION
     1:  # Ржавое

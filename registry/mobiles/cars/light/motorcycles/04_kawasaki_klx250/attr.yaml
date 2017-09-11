@@ -1,6 +1,11 @@
-﻿_cls : Car
-title:       "KLX250"            # Модель атомобиля
-class_car:   "Легкий"            # Класс автомобиля
+_cls : Car
+title:                           # Модель атомобиля
+    en: "KLX250"  #TODO: ##LOCALIZATION
+    ru: "KLX250"
+
+class_car:                       # Класс автомобиля
+    en: "Легкий"  # TODO: ##LOCALIZATION
+    ru: "Легкий"
 name_car:    "KLX250"            # Название атомобиля
 
 price:              5000         # Цена у продавца (л) (>= 0)

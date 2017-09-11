@@ -1,7 +1,9 @@
-__cls__  : Trader
 _cls     : Trader
 
-title    : Bob_Ferolito
+title: 
+    en: Bob_Ferolito
+    ru: Bob_Ferolito  #TODO: ##LOCALIZATION
+
 photo    : "static/content/institutions/trader/whitehill_bob_ferolito.png"
 abstract : true
 
@@ -415,7 +417,10 @@ quests:
 
   - parent: reg:///registry/quests/delivery_quest/delivery_quest_simple   # ДОСТАВКА ГРУЗА А
     _cls: DeliveryQuestSimple
-    caption: 'Доставка А'          # Просто изменение заголовка
+    caption:                           # Просто изменение заголовка
+        en: 'Доставка А'  #TODO: ##LOCALIZATION
+        ru: 'Доставка А'
+
     generation_group: 'a'          # Подгруппа генерации (не обязательна для разных типов квестов)
     generation_max_count: 2        # Максимальное количество экземпляров данного квеста
     generation_cooldown: 1800      # Задержка на генерацию после завершения квеста
@@ -438,7 +443,10 @@ quests:
 
   - parent: reg:///registry/quests/delivery_quest/delivery_quest_simple   # ДОСТАВКА ГРУЗА Б
     _cls: DeliveryQuestSimple
-    caption: 'Доставка Б'          # Просто изменение заголовка
+    caption:                           # Просто изменение заголовка
+        en: 'Доставка Б'  #TODO: ##LOCALIZATION
+        ru: 'Доставка Б'
+
     generation_group: 'b'          # Подгруппа генерации (не обязательна для разных типов квестов)
     generation_max_count: 2        # Максимальное количество экземпляров данного квеста
     generation_cooldown: 600       # Задержка на генерацию после завершения квеста

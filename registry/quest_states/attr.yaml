@@ -1,6 +1,4 @@
-﻿
-__cls__ : QuestState
-_cls : QuestState
+﻿_cls : QuestState
 doc     : Шаблоны состоянияний квестов
 
 status  : active  # active/end

@@ -1,7 +1,11 @@
-﻿__cls__ : Car
 _cls : Car
-title:       "New Yorker"           # Модель атомобиля
-class_car:   "Средний"              # Класс автомобиля
+title:                              # Модель атомобиля
+    en: "New Yorker"  #TODO: ##LOCALIZATION
+    ru: "New Yorker"
+
+class_car:                          # Класс автомобиля
+    en: "Средний"  # TODO: ##LOCALIZATION
+    ru: "Средний"
 name_car:    "New Yorker"           # Название атомобиля
 
 price:              5500            # Цена у продавца (л) (>= 0)
