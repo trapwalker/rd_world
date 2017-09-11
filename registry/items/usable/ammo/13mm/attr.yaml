@@ -3,11 +3,11 @@ doc      : Патроны 13мм/ББ
 abstract : false
 
 title: 
-    en: Патроны<br>13мм/ББ  #TODO: ##LOCALIZATION
+    en: Cartridges<br>13mm   ##LOCALIZATION
     ru: Патроны<br>13мм/ББ
 
 description: 
-    en: '???'  #TODO: ##LOCALIZATION
+    en: ''   ##LOCALIZATION
     ru: '???'
 
 

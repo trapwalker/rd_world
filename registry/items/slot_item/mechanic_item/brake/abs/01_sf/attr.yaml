@@ -3,11 +3,11 @@ doc      : АБС SF-M02B02
 abstract : false
 
 title: 
-    en: АБС SF-M02B02  #TODO: ##LOCALIZATION
+    en: ABS SF-M02B02   ##LOCALIZATION
     ru: АБС SF-M02B02
 
 description: 
-    en: 'Система, предотвращающая блокировку колёс транспортного средства при торможении.'  #TODO: ##LOCALIZATION
+    en: ''   ##LOCALIZATION
     ru: 'Система, предотвращающая блокировку колёс транспортного средства при торможении.'
 
 

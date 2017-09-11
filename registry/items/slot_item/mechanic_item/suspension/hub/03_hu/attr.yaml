@@ -3,11 +3,11 @@ doc      : Ступица HU-S01B01
 abstract : false
 
 title: 
-    en: Ступица HU-S01B01  #TODO: ##LOCALIZATION
+    en: Hub HU-S01B01   ##LOCALIZATION
     ru: Ступица HU-S01B01
 
 description: 
-    en: 'Центральная часть детали с отверстием (маховика, шкива, зубчатого колеса и т. д.) для насадки на вал или ось.'  #TODO: ##LOCALIZATION
+    en: ''   ##LOCALIZATION
     ru: 'Центральная часть детали с отверстием (маховика, шкива, зубчатого колеса и т. д.) для насадки на вал или ось.'
 
 

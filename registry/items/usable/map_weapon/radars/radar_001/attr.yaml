@@ -2,11 +2,11 @@
 abstract : false
 
 title: 
-    en: Радар 001  #TODO: ##LOCALIZATION
+    en: Radar 001   ##LOCALIZATION
     ru: Радар 001
 
 description: 
-    en: Американский переносной противотанковый ракетный РАДАР.  #TODO: ##LOCALIZATION
+    en: ''  #TODO: ##LOCALIZATION
     ru: Американский переносной противотанковый ракетный РАДАР.
 
 activate_time : 2.0

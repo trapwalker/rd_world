@@ -4,11 +4,11 @@ doc     : Теплая одежда
 abstract : false
 
 title: 
-    en: Теплая одежда  #TODO: ##LOCALIZATION
+    en: Warm clothes   ##LOCALIZATION
     ru: Теплая одежда
 
 description: 
-    en: Большая куча разной теплой одежды и обуви.  #TODO: ##LOCALIZATION
+    en: Big pile of different warm clothing and footwear.   ##LOCALIZATION
     ru: Большая куча разной теплой одежды и обуви.
 
 

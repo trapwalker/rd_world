@@ -5,11 +5,11 @@ abstract: false
 activate_type: self
 
 title:
-    en: Посылка  #TODO: ##LOCALIZATION
+    en: Parcel   ##LOCALIZATION
     ru: Посылка
 
 description:
-    en: Посылка с неизвестным содержимым.  #TODO: ##LOCALIZATION
+    en: Parcel with unknown content.   ##LOCALIZATION
     ru: Посылка с неизвестным содержимым.
 
 
@@ -19,5 +19,5 @@ inv_icon_small :  static/content/items/usable/package/small.png
 inv_icon_xsmall: static/content/items/usable/package/supersmall.png
 
 activate_disable_comment:
-    en: 'Достаточно места в инвентаре'  #TODO: ##LOCALIZATION
+    en: 'Enough space in inventory'   ##LOCALIZATION
     ru: 'Достаточно места в инвентаре'

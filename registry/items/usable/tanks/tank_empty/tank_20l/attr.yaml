@@ -3,11 +3,11 @@ doc      : Пустая канистра (20л)
 abstract : false
 
 title: 
-    en: Пустая канистра (20л)  #TODO: ##LOCALIZATION
+    en: Empty tank (20l)   ##LOCALIZATION
     ru: Пустая канистра (20л)
 
 description: 
-    en: Наполняется чем-нибудь на 20 литров. Например топливом на заправочной станции.  #TODO: ##LOCALIZATION
+    en: ''  #TODO: ##LOCALIZATION
     ru: Наполняется чем-нибудь на 20 литров. Например топливом на заправочной станции.
 
 

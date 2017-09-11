@@ -3,11 +3,11 @@ doc            : Ремкомплект (средний)
 abstract       : false
 
 title: 
-    en: Ремкомплект (средний)  #TODO: ##LOCALIZATION
+    en: Repair kit (middle)   ##LOCALIZATION
     ru: Ремкомплект (средний)
 
 description: 
-    en: Залатает серьезную пробоину в машине.  #TODO: ##LOCALIZATION
+    en: ''  #TODO: ##LOCALIZATION
     ru: Залатает серьезную пробоину в машине.
 
 

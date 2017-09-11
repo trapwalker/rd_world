@@ -3,11 +3,11 @@ doc      : Снаряды 25мм/ББ
 abstract : false
 
 title: 
-    en: Снаряды<br>25мм/ББ  #TODO: ##LOCALIZATION
+    en: Shells<br>25mm   ##LOCALIZATION
     ru: Снаряды<br>25мм/ББ
 
 description: 
-    en: '???'  #TODO: ##LOCALIZATION
+    en: ''   ##LOCALIZATION
     ru: '???'
 
 

@@ -4,11 +4,11 @@ doc     : Питьевая вода
 abstract : false
 
 title: 
-    en: Питьевая вода  #TODO: ##LOCALIZATION
+    en: Drinking water   ##LOCALIZATION
     ru: Питьевая вода
 
 description: 
-    en: Несколько больших канистр с водой.  #TODO: ##LOCALIZATION
+    en: Several large cans of water.   ##LOCALIZATION
     ru: Несколько больших канистр с водой.
 
 

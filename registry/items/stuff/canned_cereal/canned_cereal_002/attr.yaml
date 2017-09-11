@@ -4,11 +4,11 @@ doc     : Консервы злаковые
 abstract : false
 
 title: 
-    en: Консервы злаковые  #TODO: ##LOCALIZATION
+    en: Canned cereals   ##LOCALIZATION
     ru: Консервы злаковые
 
 description: 
-    en: Несколько злаковых консерв.  #TODO: ##LOCALIZATION
+    en: Several cereals canned.   ##LOCALIZATION
     ru: Несколько злаковых консерв.
 
 

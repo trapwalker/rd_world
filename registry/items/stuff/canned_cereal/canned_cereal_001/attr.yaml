@@ -4,11 +4,11 @@ doc     : Злаковые консервы
 abstract : false
 
 title: 
-    en: Злаковые консервы  #TODO: ##LOCALIZATION
+    en: Canned cereals   ##LOCALIZATION
     ru: Злаковые консервы
 
 description: 
-    en: Ящик со злаковыми консервами.  #TODO: ##LOCALIZATION
+    en: Box of cereals canned.   ##LOCALIZATION
     ru: Ящик со злаковыми консервами.
 
 

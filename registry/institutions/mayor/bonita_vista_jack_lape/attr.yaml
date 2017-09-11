@@ -153,11 +153,11 @@ quests:
       parent: reg:///registry/items/quest_item
       _cls: QuestItem
       title: 
-          en: Платиновая фишка  #TODO: ##LOCALIZATION
+          en: Platinum chip   ##LOCALIZATION
           ru: Платиновая фишка
 
       description: 
-          en: Предмет погибшего курьера. Необходимо доставить Jack_Lape.  #TODO: ##LOCALIZATION
+          en: The subject of the deceased courier. It is necessary to deliver Jack_Lape.   ##LOCALIZATION
           ru: Предмет погибшего курьера. Необходимо доставить Jack_Lape.
 
       inv_icon_big    : static/content/items/quest_item/courier_medalion/big.png

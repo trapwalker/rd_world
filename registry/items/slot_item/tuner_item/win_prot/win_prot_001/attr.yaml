@@ -5,12 +5,12 @@ abstract : false
 tags     : [win_prot]
 
 title:                          # Краткое название - отобразится в слоте инвентаря
-    en: Решетки на окна  #TODO: ##LOCALIZATION
+    en: Window bars   ##LOCALIZATION
     ru: Решетки на окна
 
 # Полное описание - отобразится в разделе описания в инвентаре
 description: 
-    en: Слегка защищают самую хрупкую часть автомобиля - окна.  #TODO: ##LOCALIZATION
+    en: ''   ##LOCALIZATION
     ru: Слегка защищают самую хрупкую часть автомобиля - окна.
 
 

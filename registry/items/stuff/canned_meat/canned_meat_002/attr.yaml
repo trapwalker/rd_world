@@ -4,11 +4,11 @@ doc     : Консервы мясные
 abstract : false
 
 title: 
-    en: Консервы мясные  #TODO: ##LOCALIZATION
+    en: Canned meat   ##LOCALIZATION
     ru: Консервы мясные
 
 description: 
-    en: Несколько мясных консерв.  #TODO: ##LOCALIZATION
+    en: Several meat cans.   ##LOCALIZATION
     ru: Несколько мясных консерв.
 
 

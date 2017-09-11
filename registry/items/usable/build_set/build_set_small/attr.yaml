@@ -3,11 +3,11 @@ doc            : Ремкомплект (малый)
 abstract       : false
 
 title: 
-    en: Ремкомплект (малый)  #TODO: ##LOCALIZATION
+    en: Repair kit (small)   ##LOCALIZATION
     ru: Ремкомплект (малый)
 
 description: 
-    en: Слегка подлатает машину в пути.  #TODO: ##LOCALIZATION
+    en: ''  #TODO: ##LOCALIZATION
     ru: Слегка подлатает машину в пути.
 
 
