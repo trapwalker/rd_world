@@ -4,11 +4,11 @@ doc     : Кокаин
 abstract : false
 
 title: 
-    en: Кокаин  #TODO: ##LOCALIZATION
+    en: Cocaine   ##LOCALIZATION
     ru: Кокаин
 
 description: 
-    en: Несколько упаковок кокаина.  #TODO: ##LOCALIZATION
+    en: Several packs of cocaine.   ##LOCALIZATION
     ru: Несколько упаковок кокаина.
 
 

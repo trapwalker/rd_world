@@ -4,11 +4,11 @@ doc     : Консервы фруктовые
 abstract : false
 
 title: 
-    en: Консервы фруктовые  #TODO: ##LOCALIZATION
+    en: Canned fruits   ##LOCALIZATION
     ru: Консервы фруктовые
 
 description: 
-    en: Несколько фруктовых консерв.  #TODO: ##LOCALIZATION
+    en: Several fruit canned food.   ##LOCALIZATION
     ru: Несколько фруктовых консерв.
 
 

@@ -4,11 +4,11 @@ doc     : Теплая одежда №2
 abstract : false
 
 title: 
-    en: Теплая одежда №2  #TODO: ##LOCALIZATION
+    en: Warm clothes №2   ##LOCALIZATION
     ru: Теплая одежда №2
 
 description: 
-    en: Ящик разной теплой одежды.  #TODO: ##LOCALIZATION
+    en: Box of different warm clothes.   ##LOCALIZATION
     ru: Ящик разной теплой одежды.
 
 

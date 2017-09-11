@@ -4,11 +4,11 @@ doc     : Самогон
 abstract : false
 
 title: 
-    en: Самогон  #TODO: ##LOCALIZATION
+    en: Hooch   ##LOCALIZATION
     ru: Самогон
 
 description: 
-    en: Самодельный алкоголь.  #TODO: ##LOCALIZATION
+    en: Homemade alcohol.   ##LOCALIZATION
     ru: Самодельный алкоголь.
 
 

@@ -4,11 +4,11 @@ doc     : Рис (мешки)
 abstract : false
 
 title: 
-    en: Рис (мешки)  #TODO: ##LOCALIZATION
+    en: Rice (bags)   ##LOCALIZATION
     ru: Рис (мешки)
 
 description: 
-    en: Несколько мешков риса.  #TODO: ##LOCALIZATION
+    en: Several bags of rice.   ##LOCALIZATION
     ru: Несколько мешков риса.
 
 

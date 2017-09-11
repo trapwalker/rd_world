@@ -4,11 +4,11 @@ doc     : Консерва фруктовая
 abstract : false
 
 title: 
-    en: Консерва фруктовая  #TODO: ##LOCALIZATION
+    en: Canned fruit   ##LOCALIZATION
     ru: Консерва фруктовая
 
 description: 
-    en: Одна фруктовая консерва.  #TODO: ##LOCALIZATION
+    en: One of canned fruit.   ##LOCALIZATION
     ru: Одна фруктовая консерва.
 
 

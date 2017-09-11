@@ -3,11 +3,11 @@ doc    : Радиатор
 abstract : false
 
 title: 
-    en: Радиатор  #TODO: ##LOCALIZATION
+    en: Radiator   ##LOCALIZATION
     ru: Радиатор
 
 description: 
-    en: Устройство для рассеивания тепла в воздухе (излучением и конвекцией), воздушный теплообменник.  #TODO: ##LOCALIZATION
+    en: ''   ##LOCALIZATION
     ru: Устройство для рассеивания тепла в воздухе (излучением и конвекцией), воздушный теплообменник.
 
 

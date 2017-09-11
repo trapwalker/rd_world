@@ -4,11 +4,11 @@ doc     : Каннабис
 abstract : false
 
 title: 
-    en: Каннабис  #TODO: ##LOCALIZATION
+    en: Cannabis   ##LOCALIZATION
     ru: Каннабис
 
 description: 
-    en: Упаковка конопли.  #TODO: ##LOCALIZATION
+    en: Packing of hemp.   ##LOCALIZATION
     ru: Упаковка конопли.
 
 

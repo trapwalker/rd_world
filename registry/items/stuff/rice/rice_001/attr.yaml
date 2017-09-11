@@ -4,11 +4,11 @@ doc     : Рис (мешок)
 abstract : false
 
 title: 
-    en: Рис (мешок)  #TODO: ##LOCALIZATION
+    en: Rice (bag)   ##LOCALIZATION
     ru: Рис (мешок)
 
 description: 
-    en: Большой мешок риса.  #TODO: ##LOCALIZATION
+    en: A large bag of rice.   ##LOCALIZATION
     ru: Большой мешок риса.
 
 

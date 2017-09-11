@@ -3,11 +3,11 @@ doc         : Маховик
 abstract : false
 
 title: 
-    en: Маховик  #TODO: ##LOCALIZATION
+    en: Flywheel   ##LOCALIZATION
     ru: Маховик
 
 description: 
-    en: Массивное вращающееся колесо, использующееся в качестве накопителя кинетической энергии.  #TODO: ##LOCALIZATION
+    en: ''   ##LOCALIZATION
     ru: Массивное вращающееся колесо, использующееся в качестве накопителя кинетической энергии.
 
 

@@ -418,7 +418,7 @@ quests:
   - parent: reg:///registry/quests/delivery_quest/delivery_quest_simple   # ДОСТАВКА ГРУЗА А
     _cls: DeliveryQuestSimple
     caption:                           # Просто изменение заголовка
-        en: 'Доставка А'  #TODO: ##LOCALIZATION
+        en: 'Delivery A'   ##LOCALIZATION
         ru: 'Доставка А'
 
     generation_group: 'a'          # Подгруппа генерации (не обязательна для разных типов квестов)
@@ -444,7 +444,7 @@ quests:
   - parent: reg:///registry/quests/delivery_quest/delivery_quest_simple   # ДОСТАВКА ГРУЗА Б
     _cls: DeliveryQuestSimple
     caption:                           # Просто изменение заголовка
-        en: 'Доставка Б'  #TODO: ##LOCALIZATION
+        en: 'Delivery B'   ##LOCALIZATION
         ru: 'Доставка Б'
 
     generation_group: 'b'          # Подгруппа генерации (не обязательна для разных типов квестов)
