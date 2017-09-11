@@ -4,23 +4,23 @@ doc     : Пассажир (девушка)
 group_id: "quest_item_1"
 deadline: 300
 
-effect_title:
-    en: "Супер руль"  #TODO: ##LOCALIZATION
-    ru: "Супер руль"
+effect_title: #WTF
+    en: ""  ##LOCALIZATION
+    ru: ""
 
 effect_description:
-    en: "Супер руль"  #TODO: ##LOCALIZATION
-    ru: "Супер руль"
+    en: ""  ##LOCALIZATION
+    ru: ""
 
 abstract : false
 
 title:
-    en: Супер руль  #TODO: ##LOCALIZATION
-    ru: Супер руль
+    en: ""  ##LOCALIZATION
+    ru: ""
 
 description:
-    en: Супер руль  #TODO: ##LOCALIZATION
-    ru: Супер руль
+    en: "" ##LOCALIZATION
+    ru: ""
 
 base_price : 0
 stack_size : 1

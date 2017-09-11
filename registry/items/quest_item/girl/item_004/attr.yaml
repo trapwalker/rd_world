@@ -3,11 +3,11 @@ doc      : Item_004
 abstract : false
 
 title:
-    en: На память  #TODO: ##LOCALIZATION
+    en: Remembrance ##LOCALIZATION
     ru: На память
 
 description:
-    en: "Бонус: 5 очков в навык Механика."  #TODO: ##LOCALIZATION
+    en: "Bonus: 5 points to Mechanic skill."  ##LOCALIZATION
     ru: "Бонус: 5 очков в навык Механика."
 
 group_id    : ""
@@ -20,7 +20,7 @@ effect_title:
     ru: Бонус
 
 effect_description:
-    en: 5 очков в навык Механика  #TODO: ##LOCALIZATION
+    en: 5 points to Mechanic skill ##LOCALIZATION
     ru: 5 очков в навык Механика
 
 

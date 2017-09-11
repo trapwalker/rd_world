@@ -3,12 +3,12 @@ doc      : Item_018
 abstract : false
 
 title:
-    en: На память  #TODO: ##LOCALIZATION
+    en: Remembrance ##LOCALIZATION
     ru: На память
 
 description:
-    en: "Бонус: 2 очка в навык Стрельба."  #TODO: ##LOCALIZATION
-    ru: "Бонус: 2 очка в навык Стрельба."
+    en: "Bonus: 2 points to Shooting skill." ##LOCALIZATION
+    ru: "Бонус: 2 очка в навык Стрельбы."
 
 group_id    : ""
 
@@ -16,12 +16,12 @@ base_price : 0
 stack_size : 1
 
 effect_title:
-    en: Бонус  #TODO: ##LOCALIZATION
+    en: Bonus ##LOCALIZATION
     ru: Бонус
 
 effect_description:
-    en: 2 очка в навык Стрельба  #TODO: ##LOCALIZATION
-    ru: 2 очка в навык Стрельба
+    en: 2 points to Shooting skill ##LOCALIZATION
+    ru: 2 очка в навык Стрельбы
 
 shooting : 2
 deadline : 43200

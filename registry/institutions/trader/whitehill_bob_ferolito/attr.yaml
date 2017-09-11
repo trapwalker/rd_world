@@ -2,7 +2,7 @@ _cls     : Trader
 
 title: 
     en: Bob_Ferolito
-    ru: Bob_Ferolito  #TODO: ##LOCALIZATION
+    ru: Боб_Феролито ##LOCALIZATION
 
 photo    : "static/content/institutions/trader/whitehill_bob_ferolito.png"
 abstract : true

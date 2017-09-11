@@ -4,12 +4,12 @@ doc     : Пассажир (парень)
 abstract : false
 
 title:
-    en: Пассажир (парень)  #TODO: ##LOCALIZATION
-    ru: Пассажир (парень)
+    en: Passenger (male)  ##LOCALIZATION
+    ru: Пассажир (муж.)
 
 description:
-    en: Пассажир (парень)  #TODO: ##LOCALIZATION
-    ru: Пассажир (парень)
+    en: Passenger (male) ##LOCALIZATION
+    ru: Пассажир (муж.)
 
 
 base_price : 0

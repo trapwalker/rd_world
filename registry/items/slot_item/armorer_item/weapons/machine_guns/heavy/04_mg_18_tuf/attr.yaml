@@ -3,12 +3,12 @@ doc             : Пулемет MG 18 TuF
 abstract        : false
 
 title:                                                        # Краткое название - отобразится в слоте инвентаря
-    en: Пулемет<br>MG 18 TuF  #TODO: ##LOCALIZATION
+    en: Machine gun<br>MG 18 TuF  ##LOCALIZATION
     ru: Пулемет<br>MG 18 TuF
 
 # Полное описание - отобразится в разделе описания в инвентаре
 description: 
-    en: '???'  #TODO: ##LOCALIZATION
+    en: '???'  ##LOCALIZATION
     ru: '???'
 
 

@@ -2,7 +2,7 @@ _cls     : Trader
 
 title: 
     en: Benny_McCurtain
-    ru: Benny_McCurtain  #TODO: ##LOCALIZATION
+    ru: Бенни_Маккертн  ##LOCALIZATION
 
 photo    : "static/content/institutions/trader/bonita_vista_benny_mccurtain.png"
 abstract : true

@@ -1,11 +1,11 @@
 ﻿_cls: Trainer
 doc:
-    en: Тренер  #TODO: ##LOCALIZATION
+    en: Trainer ##LOCALIZATION
     ru: Тренер
 
-text:
-    en: Вас приветствует тренер!  #TODO: ##LOCALIZATION
-    ru: Вас приветствует тренер!
+text: ##WTF
+    en: ""  ##LOCALIZATION
+    ru: ""
 
 type: trainer
 

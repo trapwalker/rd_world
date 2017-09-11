@@ -4,11 +4,11 @@ doc: InsuranceBase
 group_id: "insurance"
 
 title:
-    en: Базовая  #TODO: ##LOCALIZATION
+    en: Standart  ##LOCALIZATION
     ru: Базовая
 
 description:
-    en: Базовая Страховка  #TODO: ##LOCALIZATION
+    en: Standart insurance  ##LOCALIZATION
     ru: Базовая Страховка
 
 base_price: 0

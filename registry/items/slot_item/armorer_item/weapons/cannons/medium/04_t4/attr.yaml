@@ -3,12 +3,12 @@ doc             : Пушка T4
 abstract        : false
 
 title:                                                     # Краткое название - отобразится в слоте инвентаря
-    en: Пушка<br>T4  #TODO: ##LOCALIZATION
+    en: Gun<br>T4  ##LOCALIZATION
     ru: Пушка<br>T4
 
 # Полное описание - отобразится в разделе описания в инвентаре
 description: 
-    en: '???'  #TODO: ##LOCALIZATION
+    en: '???'  ##LOCALIZATION
     ru: '???'
 
 

@@ -1,10 +1,10 @@
 ﻿_cls: Institution
 doc:
-    en: Р-джей  #TODO: ##LOCALIZATION
+    en: RJ ##LOCALIZATION
     ru: Р-джей
 
-text:
-    en: Вас приветствует р-джей!  #TODO: ##LOCALIZATION
-    ru: Вас приветствует р-джей!
+text: ##WTF
+    en: "" ##LOCALIZATION
+    ru: ""
 
 type: radio_dj

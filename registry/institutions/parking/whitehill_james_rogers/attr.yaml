@@ -1,7 +1,7 @@
 ﻿_cls: Parking
 title:
     en: James_Rogers
-    ru: James_Rogers  # TODO: ##LOCALIZATION
+    ru: Джеймс_Роджерс ##LOCALIZATION
 
 photo: "static/content/institutions/parking/whitehill_james_rogers.png"
 abstract: false
@@ -9,6 +9,6 @@ abstract: false
 hometown: reg:///registry/poi/locations/towns/whitehill
 
 text:
-    en: Вы можете оставить тут свой автомобиль. Я присмотрю за ним за небольшую плату.  #TODO: ##LOCALIZATION
+    en: You can park your vehicle here for a fee. ##LOCALIZATION
     ru: Вы можете оставить тут свой автомобиль. Я присмотрю за ним за небольшую плату.
 

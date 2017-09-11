@@ -1,11 +1,11 @@
 _cls: Trader
 doc:
-    en: Торговец  #TODO: ##LOCALIZATION
+    en: Merchant  ##LOCALIZATION
     ru: Торговец
 
 text:
-    en: Вас приветствует торговец!  #TODO: ##LOCALIZATION
-    ru: Вас приветствует торговец!
+    en: "" ##LOCALIZATION
+    ru: ""
 
 type: trader
 

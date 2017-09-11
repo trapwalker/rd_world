@@ -3,12 +3,12 @@ doc             : Пушка M242 Bushmaster
 abstract        : false
 
 title:                                                     # Краткое название - отобразится в слоте инвентаря
-    en: Пушка<br>M242 Bushmaster  #TODO: ##LOCALIZATION
+    en: Gun<br>M242 Bushmaster  ##LOCALIZATION
     ru: Пушка<br>M242 Bushmaster
 
 # Полное описание - отобразится в разделе описания в инвентаре
 description: 
-    en: '???'  #TODO: ##LOCALIZATION
+    en: '???'  ##LOCALIZATION
     ru: '???'
 
 
