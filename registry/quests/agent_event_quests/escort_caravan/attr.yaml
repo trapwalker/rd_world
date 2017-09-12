@@ -7,13 +7,13 @@ first_state: begin
 current_state: ~
 
 caption:
-    en: Сопровождение каравана  #TODO: ##LOCALIZATION
+    en: Escort of caravan   ##LOCALIZATION
     ru: Сопровождение каравана
 
 text_short:
-    en: Сопроводите караван  #TODO: ##LOCALIZATION
+    en: Accompany caravan   ##LOCALIZATION
     ru: Сопроводите караван
 
 text:
-    en: Сопроводите караван  #TODO: ##LOCALIZATION
+    en: Accompany caravan   ##LOCALIZATION
     ru: Сопроводите караван

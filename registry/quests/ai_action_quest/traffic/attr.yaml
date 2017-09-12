@@ -1,6 +1,6 @@
 ﻿_cls: AIActionTrafficQuest
 doc:
-    en: Квест AIActionTrafficQuest  #TODO: ##LOCALIZATION
+    en: Quest AIActionTrafficQuest   ##LOCALIZATION
     ru: Квест AIActionTrafficQuest
 
 first_state: wait_car
@@ -8,9 +8,9 @@ current_state: ~
 
 caption:
     en: AI Quest
-    ru: AI Quest  # TODO: ##LOCALIZATION
+    ru: ИИ Квест   ##LOCALIZATION
 
 text:
     en: Ai Quest
-    ru: Ai Quest  # TODO: ##LOCALIZATION
+    ru: Ии Квест   ##LOCALIZATION
 

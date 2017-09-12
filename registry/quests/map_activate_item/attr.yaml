@@ -1,7 +1,7 @@
 ﻿_cls: MapActivateItemQuest
 
 caption: 
-    en: Активация предметов  #TODO: ##LOCALIZATION
+    en: Activating items   ##LOCALIZATION
     ru: Активация предметов
 
 first_state: begin

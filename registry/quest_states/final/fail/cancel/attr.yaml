@@ -5,5 +5,5 @@ result  : fail
 id      : cancel_fail
 
 enter_state_message:
-    en: Задание {quest.caption} отменено пользователем.  #TODO: ##LOCALIZATION
+    en: Quest {quest.caption} canceled by user.   ##LOCALIZATION
     ru: Задание {quest.caption} отменено пользователем.

@@ -10,7 +10,7 @@ map_icon_full: static/img/quests/map_icons/courier_full.png
 map_icon_circle: static/img/quests/map_icons/courier_circle.png
 
 caption: 
-    en: Найти курьера  #TODO: ##LOCALIZATION
+    en: Find a courier   ##LOCALIZATION
     ru: Найти курьера
 
 

@@ -18,7 +18,7 @@ first_state: begin
 current_state: ~
 
 caption: 
-    en: Охота за головами  #TODO: ##LOCALIZATION
+    en: Bounty hunting   ##LOCALIZATION
     ru: Охота за головами
 
 

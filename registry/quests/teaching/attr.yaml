@@ -1,6 +1,6 @@
 ﻿_cls: TeachingQuest
 doc:
-    en: Квест обучения  #TODO: ##LOCALIZATION
+    en: Training quest   ##LOCALIZATION
     ru: Квест обучения
 
 first_state: hangar
@@ -24,11 +24,11 @@ teaching_delivery_quest:
 #    reward_items_list: []  # todo: Нельзя ставить, так как придётся делать ещё одно состояние, которое не учит ничему!
 
 caption:
-    en: Обучение  #TODO: ##LOCALIZATION
+    en: Training   ##LOCALIZATION
     ru: Обучение
 
 text:
-    en: Обучитесь.  #TODO: ##LOCALIZATION
+    en: Learn.   ##LOCALIZATION
     ru: Обучитесь.
 
 on_generate: |

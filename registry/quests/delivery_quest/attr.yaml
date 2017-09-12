@@ -10,6 +10,6 @@ distance_table: reg:///registry/rpg_settings/disttable
 list_icon: static/img/quests/icons/delivery.png
 
 caption: 
-    en: Доставка груза  #TODO: ##LOCALIZATION
+    en: Cargo delivery   ##LOCALIZATION
     ru: Доставка груза
 

@@ -6,7 +6,7 @@ result  : ~       # win/fail
 id      : begin
 
 enter_state_message:
-    en: Вы взяли квест "{quest.caption}"  #TODO: ##LOCALIZATION
+    en: You took quest "{quest.caption}"   ##LOCALIZATION
     ru: Вы взяли квест "{quest.caption}"
 
 #exit_state_message  :

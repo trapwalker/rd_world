@@ -5,11 +5,11 @@ first_state: begin
 current_state: ~
 
 caption:
-    en: Учебная доставка  #TODO: ##LOCALIZATION
+    en: Training delivery   ##LOCALIZATION
     ru: Учебная доставка
 
 text:
-    en: Учебная доставка.  #TODO: ##LOCALIZATION
+    en: Training delivery.   ##LOCALIZATION
     ru: Учебная доставка.
 
 
