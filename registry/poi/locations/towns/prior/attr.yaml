@@ -3,7 +3,7 @@ doc      : Прайр
 abstract : false
 
 title: 
-    en: Прайр  #TODO: ##LOCALIZATION
+    en: Prior   ##LOCALIZATION
     ru: Прайр
 
 position          : {x: 12539432, y: 27043853}
@@ -15,11 +15,11 @@ svg_link: static/content/locations/map_locations/prior
 buildings:
   - name: market
     caption: 
-        en: Магазин  #TODO: ##LOCALIZATION
+        en: Shop   ##LOCALIZATION
         ru: Магазин
 
     title: 
-        en: Магазин  #TODO: ##LOCALIZATION
+        en: Shop   ##LOCALIZATION
         ru: Магазин
 
     head: reg:///registry/institutions/trader/prior_hershey_la_palmas
@@ -28,11 +28,11 @@ buildings:
 
   - name: bar
     caption: 
-        en: Бар  #TODO: ##LOCALIZATION
+        en: Bar   ##LOCALIZATION
         ru: Бар
 
     title: 
-        en: Бар  #TODO: ##LOCALIZATION
+        en: Bar   ##LOCALIZATION
         ru: Бар
 
     head: reg:///registry/institutions/barman/prior_jimmy_dee
@@ -41,11 +41,11 @@ buildings:
 
   - name: motel
     caption: 
-        en: Мотель  #TODO: ##LOCALIZATION
+        en: Motel   ##LOCALIZATION
         ru: Мотель
 
     title: 
-        en: Мотель  #TODO: ##LOCALIZATION
+        en: Motel   ##LOCALIZATION
         ru: Мотель
 
     head: reg:///registry/institutions/manager/prior_rita_rain
@@ -56,11 +56,11 @@ buildings:
 
   - name: mayor
     caption: 
-        en: Мэрия  #TODO: ##LOCALIZATION
+        en: City Hall   ##LOCALIZATION
         ru: Мэрия
 
     title: 
-        en: Мэрия  #TODO: ##LOCALIZATION
+        en: City Hall   ##LOCALIZATION
         ru: Мэрия
 
     head: reg:///registry/institutions/mayor/prior_donnie_alma
@@ -68,11 +68,11 @@ buildings:
 
   - name: service
     caption: 
-        en: Автосервис  #TODO: ##LOCALIZATION
+        en: Car service   ##LOCALIZATION
         ru: Автосервис
 
     title: 
-        en: Автосервис  #TODO: ##LOCALIZATION
+        en: Car service   ##LOCALIZATION
         ru: Автосервис
 
     head: reg:///registry/institutions/manager/prior_cliff_taslima
@@ -83,11 +83,11 @@ buildings:
 
   - name: parking
     caption: 
-        en: Паркинг  #TODO: ##LOCALIZATION
+        en: Parking   ##LOCALIZATION
         ru: Паркинг
 
     title: 
-        en: Паркинг  #TODO: ##LOCALIZATION
+        en: Parking   ##LOCALIZATION
         ru: Паркинг
 
     head: reg:///registry/institutions/hangar/prior_clarence_jackson
@@ -97,11 +97,11 @@ buildings:
 
   - name: radio
     caption: 
-        en: Радиовышка  #TODO: ##LOCALIZATION
+        en: Radio tower   ##LOCALIZATION
         ru: Радиовышка
 
     title: 
-        en: Радиовышка  #TODO: ##LOCALIZATION
+        en: Radio tower   ##LOCALIZATION
         ru: Радиовышка
 
     head: reg:///registry/institutions/radio_dj/prior_billy_bob_phoenix

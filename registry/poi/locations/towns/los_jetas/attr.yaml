@@ -3,7 +3,7 @@ doc      : Лос Хэтас   # База злых мобов
 abstract : false
 
 title: 
-    en: Лос Хэтас  #TODO: ##LOCALIZATION
+    en: Los Jetas   ##LOCALIZATION
     ru: Лос Хэтас
 
 position          : {x: 12472562, y: 27043861}
@@ -15,11 +15,11 @@ svg_link: static/content/locations/map_locations/los_jetas
 buildings:
   - name: base
     caption: 
-        en: База  #TODO: ##LOCALIZATION
+        en: Base   ##LOCALIZATION
         ru: База
 
     title: 
-        en: База  #TODO: ##LOCALIZATION
+        en: Base   ##LOCALIZATION
         ru: База
 
     head: reg:///registry/institutions/boss/los_jetas_angel_morales
