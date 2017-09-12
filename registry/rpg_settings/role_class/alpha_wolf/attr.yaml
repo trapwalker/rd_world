@@ -3,18 +3,18 @@ doc    : Преднастройки классов
 abstract: false
 
 title: 
-    en: Alpha Wolf  #TODO: ##LOCALIZATION
-    ru: Alpha Wolf
+    en: Alpha Wolf   ##LOCALIZATION
+    ru: Альфа-волк
 
 description:
     en: Alpha Wolf
     ru: Альфа-волк
 
 description_char_window:
-    en: |  # TODO: ##LOCALIZATION
-        Класс: Альфа-волк
-        <br>Классовый навык: Лидерство
-        <br>Классовый квест: Создать собственный клан.
+    en: |   ##LOCALIZATION
+        Класс: Alpha Wolf
+        <br>Классовый навык: Leadership
+        <br>Классовый квест: Create a clan.
     ru: |
         Класс: Альфа-волк
         <br>Классовый навык: Лидерство

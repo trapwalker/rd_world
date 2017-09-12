@@ -3,18 +3,18 @@ doc    : Преднастройки классов
 abstract: false
 
 title: 
-    en: Chosen One  #TODO: ##LOCALIZATION
-    ru: Chosen One
+    en: Chosen One   ##LOCALIZATION
+    ru: Избранный
 
 description:
     en: Chosen One
     ru: Избранный
 
 description_char_window:
-    en: |  # TODO: ##LOCALIZATION
-        Класс: Избранный.
-        <br>Классовый навык: Вождение.
-        <br>Классовый квест: Основать собственное поселение.
+    en: |   ##LOCALIZATION
+        Класс: Chosen One.
+        <br>Классовый навык: Drive.
+        <br>Классовый квест: Establish a settlement.
     ru: |
         Класс: Избранный.
         <br>Классовый навык: Вождение.

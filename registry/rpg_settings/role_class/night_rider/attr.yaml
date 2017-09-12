@@ -3,18 +3,18 @@ doc    : Преднастройки классов
 abstract: false
 
 title: 
-    en: Night Rider  #TODO: ##LOCALIZATION
-    ru: Night Rider
+    en: Night Rider   ##LOCALIZATION
+    ru: Ночной ездок
 
 description:
     en: Night Rider
     ru: Ночной ездок
 
 description_char_window:
-    en: |  # TODO: ##LOCALIZATION
-        Класс: Ночной ездок.
-        <br>Классовый навык: Скрытность.
-        <br>Классовый квест: Овладеть стелс-технологией.
+    en: |   ##LOCALIZATION
+        Класс: Night Rider.
+        <br>Классовый навык: Hide.
+        <br>Классовый квест: Get the stealth technology.
     ru: |
         Класс: Ночной ездок.
         <br>Классовый навык: Скрытность.

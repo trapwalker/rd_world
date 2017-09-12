@@ -3,18 +3,18 @@ doc    : Преднастройки классов
 abstract: false
 
 title: 
-    en: Oil Magnate  #TODO: ##LOCALIZATION
-    ru: Oil Magnate
+    en: Oil Magnate   ##LOCALIZATION
+    ru: Нефтяной магнат
 
 description:
     en: Oil Magnate
     ru: Нефтяной магнат
 
 description_char_window:
-    en: |  # TODO: ##LOCALIZATION
-        Класс: Нефтяной магнат
-        <br>Классовый навык: Торговля
-        <br>Классовый квест: Открыть собственный магазин.
+    en: |   ##LOCALIZATION
+        Класс: Oil Magnate
+        <br>Классовый навык: Barter
+        <br>Классовый квест: Open a shop.
     ru: |
         Класс: Нефтяной магнат
         <br>Классовый навык: Торговля

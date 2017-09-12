@@ -2,7 +2,7 @@
 doc    : Преднастройки классов
 
 title: 
-    en: Абстрактный ролевой класс  #TODO: ##LOCALIZATION
+    en: Abstract role class   ##LOCALIZATION
     ru: Абстрактный ролевой класс
 
 emblem: ""
