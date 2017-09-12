@@ -1,0 +1,12 @@
+"locale": "ru"
+
+reg__quest__escort__caravan_support_short: "Сопроводите караван."
+reg__quest__escort__caravan_support_template: |
+    {% set town=event_quest and event_quest.town_destination %}
+    Сопроводите караван в город {{ town and town.title or 'N' }}. Награда: {{ '{:.0f}'.format(quest.reward_money) }}nc.
+
+reg__quest__escort__caravan_completed: Караван сформирован.
+reg__quest__escort__caravan_waiting: Ожидание каравана.
+reg__quest__escort__caravan_started: Караван выехал.
+reg__quest__escort__caravan_participation: Участие в караване: {{ '{:.0f}'.format(100 * participation) }}%
+reg__quest__escort__caravan_refusal: Отказ от участия в караване.
