@@ -3,11 +3,11 @@ doc      : Патроны 5.56мм/ББ
 abstract : false
 
 title: 
-    en: Патроны<br>5.56мм/ББ  #TODO: ##LOCALIZATION
+    en: Cartridges<br>5.56mm   ##LOCALIZATION
     ru: Патроны<br>5.56мм/ББ
 
 description: 
-    en: Бронебойные патроны калибра 5.56 мм для пулемётов.  #TODO: ##LOCALIZATION
+    en: ''   ##LOCALIZATION
     ru: Бронебойные патроны калибра 5.56 мм для пулемётов.
 
 

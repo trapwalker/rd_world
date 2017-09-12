@@ -4,5 +4,5 @@ doc: Стандартное состояние удачного окончани
 result  : win
 id      : win
 enter_state_message:
-    en: Задание {quest.caption} выполнено успешно.  #TODO: ##LOCALIZATION
+    en: Quest {quest.caption} completed successfully.   ##LOCALIZATION
     ru: Задание {quest.caption} выполнено успешно.

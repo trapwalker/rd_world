@@ -1,10 +1,10 @@
 _cls : Car
 title:                          # Модель атомобиля
-    en: "Savana"  #TODO: ##LOCALIZATION
+    en: "Savana"   ##LOCALIZATION
     ru: "Savana"
 
 class_car:                          # Класс автомобиля
-    en: "Средний"  # TODO: ##LOCALIZATION
+    en: "Middle"   ##LOCALIZATION
     ru: "Средний"
 name_car:    "Savana"           # Название атомобиля
 

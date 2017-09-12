@@ -3,8 +3,8 @@ doc      : Nukeoil_004
 abstract : false
 
 title: 
-    en: Nukeoil_004  #TODO: ##LOCALIZATION
-    ru: Nukeoil_004
+    en: NukeOil_004   ##LOCALIZATION
+    ru: Нукойл_004
 
 position          : {x: 12476279, y: 27027277}   # Заправка севернее Вайтхила
 p_observing_range : 250
@@ -15,11 +15,11 @@ svg_link: static/content/locations/map_locations/nukeoil_001
 buildings:
   - name: nukeoil
     caption: 
-        en: Нукойл  #TODO: ##LOCALIZATION
+        en: NukeOil   ##LOCALIZATION
         ru: Нукойл
 
     title: 
-        en: Нукойл  #TODO: ##LOCALIZATION
+        en: NukeOil   ##LOCALIZATION
         ru: Нукойл
 
     head: reg:///registry/institutions/nucoil

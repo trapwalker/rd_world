@@ -1,10 +1,10 @@
 _cls : Car
 title:                           # Модель атомобиля
-    en: "CZ 355"  #TODO: ##LOCALIZATION
+    en: "CZ 355"   ##LOCALIZATION
     ru: "CZ 355"
 
 class_car:                       # Класс автомобиля
-    en: "Легкий"  # TODO: ##LOCALIZATION
+    en: "Light"   ##LOCALIZATION
     ru: "Легкий"
 name_car:    "CZ 355"            # Название атомобиля
 

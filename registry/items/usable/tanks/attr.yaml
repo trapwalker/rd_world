@@ -3,5 +3,5 @@ doc: Канистра с топливом
 
 tags: [fuel_tank]
 activate_disable_comment:
-    en: 'Полная остановка автомобиля'  #TODO: ##LOCALIZATION
+    en: 'Full stop of car'   ##LOCALIZATION
     ru: 'Полная остановка автомобиля'

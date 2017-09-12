@@ -3,11 +3,11 @@ doc      : Полная канистра (10л)
 abstract : false
 
 title: 
-    en: Полная канистра (10л)  #TODO: ##LOCALIZATION
+    en: Full tank (10l)   ##LOCALIZATION
     ru: Полная канистра (10л)
 
 description: 
-    en: Хранит в себе 10 литров какой-то жидкости. Возможно топливо.  #TODO: ##LOCALIZATION
+    en: ''  #TODO: ##LOCALIZATION
     ru: Хранит в себе 10 литров какой-то жидкости. Возможно топливо.
 
 

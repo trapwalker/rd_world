@@ -4,11 +4,11 @@ doc     : Теплая одежда №1
 abstract : false
 
 title: 
-    en: Теплая одежда №1  #TODO: ##LOCALIZATION
+    en: Warm clothes №1   ##LOCALIZATION
     ru: Теплая одежда №1
 
 description: 
-    en: Небольшой тюк разной теплой одежды.  #TODO: ##LOCALIZATION
+    en: A small bale of various warm clothes.   ##LOCALIZATION
     ru: Небольшой тюк разной теплой одежды.
 
 

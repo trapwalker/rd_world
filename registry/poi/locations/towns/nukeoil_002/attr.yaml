@@ -3,8 +3,8 @@ doc      : Nukeoil_002
 abstract : false
 
 title: 
-    en: Nukeoil_002  #TODO: ##LOCALIZATION
-    ru: Nukeoil_002
+    en: NukeOil_002   ##LOCALIZATION
+    ru: Нукойл_002
 
 position          : {x: 12522251, y: 27047747}   # Заправка между Прайром и Паломой
 p_observing_range : 250
@@ -15,11 +15,11 @@ svg_link: static/content/locations/map_locations/nukeoil_001
 buildings:
   - name: nukeoil
     caption: 
-        en: Нукойл  #TODO: ##LOCALIZATION
+        en: NukeOil   ##LOCALIZATION
         ru: Нукойл
 
     title: 
-        en: Нукойл  #TODO: ##LOCALIZATION
+        en: NukeOil   ##LOCALIZATION
         ru: Нукойл
 
     head: reg:///registry/institutions/nucoil

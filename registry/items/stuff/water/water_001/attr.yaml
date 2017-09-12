@@ -4,11 +4,11 @@ doc     : Бутылки с водой
 abstract : false
 
 title: 
-    en: Бутылки с водой  #TODO: ##LOCALIZATION
+    en: Bottles with water   ##LOCALIZATION
     ru: Бутылки с водой
 
 description: 
-    en: Несколько небольших бутылок с водой.  #TODO: ##LOCALIZATION
+    en: Several small bottles of water.   ##LOCALIZATION
     ru: Несколько небольших бутылок с водой.
 
 

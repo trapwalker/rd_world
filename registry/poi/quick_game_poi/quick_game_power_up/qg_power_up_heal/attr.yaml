@@ -4,5 +4,5 @@ doc: Объекты Power Up на карте
 model_class_name: QuickGamePowerUpFullHeal
 icon_name: "icon-power-up-build-set"
 activate_comment:
-    en: 'Ремонт'  #TODO: ##LOCALIZATION
+    en: 'Repair'   ##LOCALIZATION
     ru: 'Ремонт'

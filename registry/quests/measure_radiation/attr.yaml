@@ -1,7 +1,7 @@
 ﻿_cls: registry.quests.measure_radiation.MeasureRadiation
 
 caption:
-    en: Измерение радиации  #TODO: ##LOCALIZATION
+    en: Measurement of radiation   ##LOCALIZATION
     ru: Измерение радиации
 
 first_state: begin

@@ -3,11 +3,11 @@ doc      : Снаряды 30мм/ББ
 abstract : false
 
 title: 
-    en: Снаряды<br>30мм/ББ  #TODO: ##LOCALIZATION
+    en: Shells<br>30mm   ##LOCALIZATION
     ru: Снаряды<br>30мм/ББ
 
 description: 
-    en: Бронебойные снаряды калибра 30 мм для артиллерийских систем.  #TODO: ##LOCALIZATION
+    en: ''   ##LOCALIZATION
     ru: Бронебойные снаряды калибра 30 мм для артиллерийских систем.
 
 

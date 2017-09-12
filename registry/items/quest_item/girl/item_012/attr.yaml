@@ -16,7 +16,7 @@ base_price : 0
 stack_size : 1
 
 effect_title:
-    en: Бонус  #TODO: ##LOCALIZATION
+    en: Bonus   ##LOCALIZATION
     ru: Бонус
 
 effect_description:

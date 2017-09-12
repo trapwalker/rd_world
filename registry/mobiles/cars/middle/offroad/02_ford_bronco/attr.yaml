@@ -1,10 +1,10 @@
 _cls : Car
 title:                           # Модель атомобиля
-    en: "Bronco"  #TODO: ##LOCALIZATION
+    en: "Bronco"   ##LOCALIZATION
     ru: "Bronco"
 
 class_car:                          # Класс автомобиля
-    en: "Средний"  # TODO: ##LOCALIZATION
+    en: "Middle"   ##LOCALIZATION
     ru: "Средний"
 name_car:    "Bronco"            # Название атомобиля
 

@@ -1,10 +1,10 @@
-_cls : Car
+﻿_cls : Car
 title:                           # Модель атомобиля
-    en: "M1126"  #TODO: ##LOCALIZATION
+    en: "M1126"   ##LOCALIZATION
     ru: "M1126"
 
 class_car:                       # Класс автомобиля
-    en: "Тяжелый"  # TODO: ##LOCALIZATION
+    en: "Heavy"   ##LOCALIZATION
     ru: "Тяжелый"
 name_car:    "M1126"             # Название атомобиля
 

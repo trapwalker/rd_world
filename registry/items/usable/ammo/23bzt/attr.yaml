@@ -3,11 +3,11 @@ doc      : Снаряды 23мм/БЗТ
 abstract : false
 
 title: 
-    en: Снаряды<br>23мм/БЗТ  #TODO: ##LOCALIZATION
+    en: Shells<br>23mm   ##LOCALIZATION
     ru: Снаряды<br>23мм/БЗТ
 
 description: 
-    en: Бронебойные зажигательные трассирующие снаряды калибра 23 мм для артиллерийских систем.  #TODO: ##LOCALIZATION
+    en: ''   ##LOCALIZATION
     ru: Бронебойные зажигательные трассирующие снаряды калибра 23 мм для артиллерийских систем.
 
 

@@ -5,6 +5,6 @@ result  : fail
 id      : fail
 
 enter_state_message:
-    en: Задание {quest.caption} провалено.  #TODO: ##LOCALIZATION
+    en: Quest {quest.caption} failed.   ##LOCALIZATION
     ru: Задание {quest.caption} провалено.
 

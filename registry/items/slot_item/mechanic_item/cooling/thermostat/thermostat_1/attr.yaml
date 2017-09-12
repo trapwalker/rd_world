@@ -3,11 +3,11 @@ doc    : Термостат
 abstract : false
 
 title: 
-    en: Термостат  #TODO: ##LOCALIZATION
+    en: Thermostat   ##LOCALIZATION
     ru: Термостат
 
 description: 
-    en: Прибор для поддержания постоянной температуры.  #TODO: ##LOCALIZATION
+    en: ''   ##LOCALIZATION
     ru: Прибор для поддержания постоянной температуры.
 
 

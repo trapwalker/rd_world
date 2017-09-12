@@ -3,18 +3,18 @@ doc    : Преднастройки классов
 abstract: false
 
 title: 
-    en: Road Warrior  #TODO: ##LOCALIZATION
-    ru: Road Warrior
+    en: Road Warrior   ##LOCALIZATION
+    ru: Воин дорог
 
 description:
     en: Road Warrior
     ru: Воин дорог
 
 description_char_window:
-    en: |  # TODO: ##LOCALIZATION
-        Класс: Воин дорог.
-        <br>Классовый навык: Стрельба.
-        <br>Классовый квест: Получить уникальный суперкар.
+    en: |   ##LOCALIZATION
+        Класс: Road Warrior.
+        <br>Классовый навык: Shoot.
+        <br>Классовый квест: Get a unique supercar.
     ru: |
         Класс: Воин дорог.
         <br>Классовый навык: Стрельба.
@@ -24,7 +24,7 @@ console_description:
     en: >
         Class: Road Warrior
         \nClass skill: Shoot
-        \nClass quest: Establish a settlement.
+        \nClass quest: Get a unique supercar.
         \nDescription:
         \nThe Road Warrior is not afraid of armed conflicts, has no recollection of his past, but knows that he has to get his vehicle back.
         He starts the game with One-Sleeved Jacket class artifact. The shooting skill is developed faster.

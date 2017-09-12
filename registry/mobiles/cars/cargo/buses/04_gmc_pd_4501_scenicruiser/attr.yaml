@@ -1,10 +1,10 @@
-_cls : Car
+﻿_cls : Car
 title:                              # Модель атомобиля
-    en: "PD-4501 Scenicruiser"  #TODO: ##LOCALIZATION
+    en: "PD-4501 Scenicruiser"   ##LOCALIZATION
     ru: "PD-4501 Scenicruiser"
 
 class_car:                       # Класс автомобиля
-    en: "Грузовой"  # TODO: ##LOCALIZATION
+    en: "Cargo"   ##LOCALIZATION
     ru: "Грузовой"
 
 name_car:    "PD-4501 Scenicruiser" # Название атомобиля

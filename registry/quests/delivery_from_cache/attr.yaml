@@ -10,6 +10,6 @@ map_icon_full: static/img/quests/map_icons/cache_full.png
 map_icon_circle: static/img/quests/map_icons/cache_circle.png
 
 caption: 
-    en: Найти посылку  #TODO: ##LOCALIZATION
+    en: Find parcel   ##LOCALIZATION
     ru: Найти посылку
 

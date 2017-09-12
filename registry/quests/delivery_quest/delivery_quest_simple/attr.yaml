@@ -1,6 +1,6 @@
 ﻿_cls: DeliveryQuestSimple
 
 caption: 
-    en: Доставка груза  #TODO: ##LOCALIZATION
+    en: Cargo delivery   ##LOCALIZATION
     ru: Доставка груза
 

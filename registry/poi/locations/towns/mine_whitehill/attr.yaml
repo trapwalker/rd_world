@@ -3,7 +3,7 @@ doc      : Роули Майн   # Шахта возле города Вайтх
 abstract : false
 
 title: 
-    en: Роули Майн  #TODO: ##LOCALIZATION
+    en: Rowley Mine   ##LOCALIZATION
     ru: Роули Майн
 
 position          : {x: 12480179, y: 27046007}
@@ -15,11 +15,11 @@ svg_link: static/content/locations/map_locations/mine_whitehill
 buildings:
   - name: mine
     caption: 
-        en: Шахта  #TODO: ##LOCALIZATION
+        en: Mine   ##LOCALIZATION
         ru: Шахта
 
     title: 
-        en: Шахта  #TODO: ##LOCALIZATION
+        en: Mine   ##LOCALIZATION
         ru: Шахта
 
     head: reg:///registry/institutions/mine_manager/mine_whitehill_bob_mcdowell

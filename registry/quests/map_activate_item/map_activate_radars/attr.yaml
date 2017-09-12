@@ -1,7 +1,7 @@
 ﻿_cls: MapActivateRadarsQuest
 
 caption: 
-    en: Установка радаров  #TODO: ##LOCALIZATION
+    en: Installation of radars   ##LOCALIZATION
     ru: Установка радаров
 
 first_state: begin

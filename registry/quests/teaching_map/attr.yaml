@@ -1,17 +1,17 @@
 ﻿_cls: TeachingMapQuest
 doc:
-    en: Квест обучения на карте  #TODO: ##LOCALIZATION
+    en: Quest training on map   ##LOCALIZATION
     ru: Квест обучения на карте
 
 first_state: cruise_speed
 current_state: ~
 
 caption:
-    en: Обучение на карте  #TODO: ##LOCALIZATION
+    en: Training on map   ##LOCALIZATION
     ru: Обучение на карте
 
 text:
-    en: Обучитесь на карте.  #TODO: ##LOCALIZATION
+    en: Learn on map.   ##LOCALIZATION
     ru: Обучитесь на карте.
 
 on_generate: |

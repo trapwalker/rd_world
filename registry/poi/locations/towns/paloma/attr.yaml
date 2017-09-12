@@ -3,7 +3,7 @@ doc      : Палома
 abstract : false
 
 title: 
-    en: Палома  #TODO: ##LOCALIZATION
+    en: Paloma   ##LOCALIZATION
     ru: Палома
 
 position          : {x: 12507663, y: 27053100}
@@ -15,11 +15,11 @@ svg_link : static/content/locations/map_locations/paloma
 buildings:
   - name: market
     caption: 
-        en: Магазин  #TODO: ##LOCALIZATION
+        en: Shop   ##LOCALIZATION
         ru: Магазин
 
     title: 
-        en: Магазин  #TODO: ##LOCALIZATION
+        en: Shop   ##LOCALIZATION
         ru: Магазин
 
     head: reg:///registry/institutions/trader/paloma_shaun_fisher
@@ -28,11 +28,11 @@ buildings:
 
   - name: library
     caption: 
-        en: Библиотека  #TODO: ##LOCALIZATION
+        en: Library   ##LOCALIZATION
         ru: Библиотека
 
     title: 
-        en: Библиотека  #TODO: ##LOCALIZATION
+        en: Library   ##LOCALIZATION
         ru: Библиотека
 
     head: reg:///registry/institutions/trainer/paloma_luke_utz
@@ -41,11 +41,11 @@ buildings:
 
   - name: nukeoil
     caption: 
-        en: Нукойл  #TODO: ##LOCALIZATION
+        en: NukeOil   ##LOCALIZATION
         ru: Нукойл
 
     title: 
-        en: Нукойл  #TODO: ##LOCALIZATION
+        en: NukeOil   ##LOCALIZATION
         ru: Нукойл
 
     head: reg:///registry/institutions/nucoil
@@ -55,11 +55,11 @@ buildings:
 
   - name: parking
     caption: 
-        en: Паркинг  #TODO: ##LOCALIZATION
+        en: Parking   ##LOCALIZATION
         ru: Паркинг
 
     title: 
-        en: Паркинг  #TODO: ##LOCALIZATION
+        en: Parking   ##LOCALIZATION
         ru: Паркинг
 
     head: reg:///registry/institutions/hangar/paloma_george_martell
@@ -69,11 +69,11 @@ buildings:
 
   - name: service
     caption: 
-        en: Автосервис  #TODO: ##LOCALIZATION
+        en: Car service   ##LOCALIZATION
         ru: Автосервис
 
     title: 
-        en: Автосервис  #TODO: ##LOCALIZATION
+        en: Car service   ##LOCALIZATION
         ru: Автосервис
 
     head: reg:///registry/institutions/manager/paloma_myles_echenique
@@ -84,11 +84,11 @@ buildings:
 
   - name: bar
     caption: 
-        en: Бар  #TODO: ##LOCALIZATION
+        en: Bar   ##LOCALIZATION
         ru: Бар
 
     title: 
-        en: Бар  #TODO: ##LOCALIZATION
+        en: Bar   ##LOCALIZATION
         ru: Бар
 
     head: reg:///registry/institutions/barman/paloma_fransie_nolan
@@ -99,11 +99,11 @@ buildings:
 
   - name: radio
     caption: 
-        en: Радиовышка  #TODO: ##LOCALIZATION
+        en: Radio tower   ##LOCALIZATION
         ru: Радиовышка
 
     title: 
-        en: Радиовышка  #TODO: ##LOCALIZATION
+        en: Radio tower   ##LOCALIZATION
         ru: Радиовышка
 
     head: reg:///registry/institutions/radio_dj/paloma_tenth

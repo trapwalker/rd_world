@@ -3,11 +3,11 @@ doc     : Снаряды 30 мм/ПББ
 abstract: false
 
 title: 
-    en: Снаряды 30 мм/ПББ  #TODO: ##LOCALIZATION
+    en: Shells 30 mm   ##LOCALIZATION
     ru: Снаряды 30 мм/ПББ
 
 description: 
-    en: Полубронебойные снаряды для "Bushmaster" (30 мм).  #TODO: ##LOCALIZATION
+    en: ''   ##LOCALIZATION
     ru: Полубронебойные снаряды для "Bushmaster" (30 мм).
 
 

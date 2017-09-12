@@ -5,7 +5,7 @@ parent: reg:///registry/poi/power_up/power_up_effects
 
 icon_name: "icon-power-up-obs"
 activate_comment:
-    en: 'Зоркость 60 секунд'  #TODO: ##LOCALIZATION
+    en: 'Vision 60 seconds'   ##LOCALIZATION
     ru: 'Зоркость 60 секунд'
 
 effect_time: 60

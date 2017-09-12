@@ -3,11 +3,11 @@ doc      : Свеча зажигания SP-H01
 abstract : false
 
 title: 
-    en: Свеча зажигания SP-H01  #TODO: ##LOCALIZATION
+    en: Spark plug SP-H01   ##LOCALIZATION
     ru: Свеча зажигания SP-H01
 
 description: 
-    en: 'Устройство для воспламенения топливо-воздушной смеси в самых разнообразных тепловых двигателях.'  #TODO: ##LOCALIZATION
+    en: ''   ##LOCALIZATION
     ru: 'Устройство для воспламенения топливо-воздушной смеси в самых разнообразных тепловых двигателях.'
 
 

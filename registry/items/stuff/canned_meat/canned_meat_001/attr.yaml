@@ -4,11 +4,11 @@ doc     : Мясные консервы
 abstract : false
 
 title: 
-    en: Мясные консервы  #TODO: ##LOCALIZATION
+    en: Canned meat   ##LOCALIZATION
     ru: Мясные консервы
 
 description: 
-    en: Ящик с мясными консервами.  #TODO: ##LOCALIZATION
+    en: Box of canned meat.   ##LOCALIZATION
     ru: Ящик с мясными консервами.
 
 

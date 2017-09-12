@@ -1,11 +1,11 @@
 _cls : Car
 title:                           # Модель атомобиля
-    en: "SL90"  #TODO: ##LOCALIZATION
+    en: "SL90"   ##LOCALIZATION
     ru: "SL90"
 
 class_car:                       # Класс автомобиля
-    en: "Тяжелый"  # TODO: ##LOCALIZATION
-    ru: "Тяжелый"
+    en: "Light"   ##LOCALIZATION
+    ru: "Легкий"
 name_car:    "SL90"              # Название атомобиля
 
 price:              2000         # Цена у продавца (л) (>= 0)

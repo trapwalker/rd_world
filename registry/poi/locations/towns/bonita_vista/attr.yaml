@@ -3,7 +3,7 @@ doc      : Бонита Виста
 abstract : false
 
 title: 
-    en: Бонита Виста  #TODO: ##LOCALIZATION
+    en: Bonita Vista   ##LOCALIZATION
     ru: Бонита Виста
 
 position          : {x: 12507391, y: 27030055}
@@ -15,11 +15,11 @@ svg_link : static/content/locations/map_locations/bonita_vista
 buildings:
   - name: library
     caption: 
-        en: Библиотека  #TODO: ##LOCALIZATION
+        en: Library   ##LOCALIZATION
         ru: Библиотека
 
     title: 
-        en: Библиотека  #TODO: ##LOCALIZATION
+        en: Library   ##LOCALIZATION
         ru: Библиотека
 
     head: reg:///registry/institutions/trainer/bonita_vista_charles_alamir
@@ -28,11 +28,11 @@ buildings:
 
   - name: market
     caption: 
-        en: Магазин  #TODO: ##LOCALIZATION
+        en: Shop   ##LOCALIZATION
         ru: Магазин
 
     title: 
-        en: Магазин  #TODO: ##LOCALIZATION
+        en: Shop   ##LOCALIZATION
         ru: Магазин
 
     head: reg:///registry/institutions/trader/bonita_vista_benny_mccurtain
@@ -41,11 +41,11 @@ buildings:
 
   - name: parking
     caption: 
-        en: Паркинг  #TODO: ##LOCALIZATION
+        en: Parking   ##LOCALIZATION
         ru: Паркинг
 
     title: 
-        en: Паркинг  #TODO: ##LOCALIZATION
+        en: Parking   ##LOCALIZATION
         ru: Паркинг
 
     head: reg:///registry/institutions/hangar/bonita_vista_mike_barsby
@@ -55,11 +55,11 @@ buildings:
 
   - name: mayor
     caption: 
-        en: Мэрия  #TODO: ##LOCALIZATION
+        en: City Hall   ##LOCALIZATION
         ru: Мэрия
 
     title: 
-        en: Мэрия  #TODO: ##LOCALIZATION
+        en: City Hall   ##LOCALIZATION
         ru: Мэрия
 
     head: reg:///registry/institutions/mayor/bonita_vista_jack_lape
@@ -67,11 +67,11 @@ buildings:
 
   - name: service
     caption: 
-        en: Автосервис  #TODO: ##LOCALIZATION
+        en: Car service   ##LOCALIZATION
         ru: Автосервис
 
     title: 
-        en: Автосервис  #TODO: ##LOCALIZATION
+        en: Car service   ##LOCALIZATION
         ru: Автосервис
 
     head: reg:///registry/institutions/mechanic/bonita_vista_lenny_nachreiner
@@ -81,11 +81,11 @@ buildings:
 
   - name: bar
     caption: 
-        en: Бар  #TODO: ##LOCALIZATION
+        en: Bar   ##LOCALIZATION
         ru: Бар
 
     title: 
-        en: Бар  #TODO: ##LOCALIZATION
+        en: Bar   ##LOCALIZATION
         ru: Бар
 
     head: reg:///registry/institutions/barman/bonita_vista_melanie_may
@@ -96,11 +96,11 @@ buildings:
 
   - name: nukeoil
     caption: 
-        en: Нукойл  #TODO: ##LOCALIZATION
+        en: NukeOil   ##LOCALIZATION
         ru: Нукойл
 
     title: 
-        en: Нукойл  #TODO: ##LOCALIZATION
+        en: NukeOil   ##LOCALIZATION
         ru: Нукойл
 
     head: reg:///registry/institutions/nucoil

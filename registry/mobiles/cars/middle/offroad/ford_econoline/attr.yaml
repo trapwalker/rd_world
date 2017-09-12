@@ -1,10 +1,10 @@
 _cls : Car
 title:                           # Модель атомобиля
-    en: "Econoline"  #TODO: ##LOCALIZATION
+    en: "Econoline"   ##LOCALIZATION
     ru: "Econoline"
 
 class_car:                          # Класс автомобиля
-    en: "Средний"  # TODO: ##LOCALIZATION
+    en: "Middle"   ##LOCALIZATION
     ru: "Средний"
 name_car:    "Econoline"         # Название атомобиля
 

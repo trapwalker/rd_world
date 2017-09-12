@@ -4,5 +4,5 @@ doc: Объекты Power Up на карте
 model_class_name: QuickGamePowerUpFullFuel
 icon_name: "icon-power-up-fuel"
 activate_comment:
-    en: 'Канистра с топливом'  #TODO: ##LOCALIZATION
+    en: 'Can with fuel'   ##LOCALIZATION
     ru: 'Канистра с топливом'

@@ -3,7 +3,7 @@ doc      : Уайтхилл
 abstract : false
 
 title: 
-    en: Уайтхилл  #TODO: ##LOCALIZATION
+    en: Whitehill   ##LOCALIZATION
     ru: Уайтхилл
 
 position          : {x: 12482409, y: 27045819}
@@ -15,11 +15,11 @@ svg_link: static/content/locations/map_locations/whitehill
 buildings:
   - name: nukeoil
     caption: 
-        en: Нукойл  #TODO: ##LOCALIZATION
+        en: NukeOil   ##LOCALIZATION
         ru: Нукойл
 
     title: 
-        en: Нукойл  #TODO: ##LOCALIZATION
+        en: NukeOil   ##LOCALIZATION
         ru: Нукойл
 
     head: reg:///registry/institutions/nucoil
@@ -29,11 +29,11 @@ buildings:
 
   - name: mayor
     caption: 
-        en: Мэрия  #TODO: ##LOCALIZATION
+        en: City Hall   ##LOCALIZATION
         ru: Мэрия
 
     title: 
-        en: Главная Шахта  #TODO: ##LOCALIZATION
+        en: General Mine   ##LOCALIZATION
         ru: Главная Шахта
 
     head: reg:///registry/institutions/mayor/whitehill_manny_askorti
@@ -41,11 +41,11 @@ buildings:
 
   - name: bar
     caption: 
-        en: Бар  #TODO: ##LOCALIZATION
+        en: Bar   ##LOCALIZATION
         ru: Бар
 
     title: 
-        en: Ласт Дроп Бар  #TODO: ##LOCALIZATION
+        en: Last Drop Bar   ##LOCALIZATION
         ru: Ласт Дроп Бар
 
     head: reg:///registry/institutions/barman/whitehill_al_dufo
@@ -55,11 +55,11 @@ buildings:
 
   - name: dealer
     caption: 
-        en: Автодилер  #TODO: ##LOCALIZATION
+        en: Auto Dealer   ##LOCALIZATION
         ru: Автодилер
 
     title: 
-        en: Хайрок Карс  #TODO: ##LOCALIZATION
+        en: Highrock Cars   ##LOCALIZATION
         ru: Хайрок Карс
 
     head: reg:///registry/institutions/hangar/whitehill_junior_clarks
@@ -69,11 +69,11 @@ buildings:
 
   - name: service
     caption: 
-        en: Автосервис  #TODO: ##LOCALIZATION
+        en: Car service   ##LOCALIZATION
         ru: Автосервис
 
     title: 
-        en: Элон Авто Рипейр  #TODO: ##LOCALIZATION
+        en: Alon Auto Repair   ##LOCALIZATION
         ru: Элон Авто Рипейр
 
     head: reg:///registry/institutions/mechanic/whitehill_raul_alon
@@ -83,11 +83,11 @@ buildings:
 
   - name: market
     caption: 
-        en: Магазин  #TODO: ##LOCALIZATION
+        en: Shop   ##LOCALIZATION
         ru: Магазин
 
     title: 
-        en: Складской капер  #TODO: ##LOCALIZATION
+        en: Warehouse privateer   ##LOCALIZATION
         ru: Складской капер
 
     head: reg:///registry/institutions/trader/whitehill_bob_ferolito
@@ -96,11 +96,11 @@ buildings:
 
   - name: library
     caption: 
-        en: Библиотека  #TODO: ##LOCALIZATION
+        en: Library   ##LOCALIZATION
         ru: Библиотека
 
     title: 
-        en: Матрикс Плэйграунд  #TODO: ##LOCALIZATION
+        en: Matrix Playground   ##LOCALIZATION
         ru: Матрикс Плэйграунд
 
     head: reg:///registry/institutions/trainer/whitehill_blackhawk_2094

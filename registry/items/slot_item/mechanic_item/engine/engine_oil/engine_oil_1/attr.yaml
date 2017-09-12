@@ -3,11 +3,11 @@ doc         : Моторное масло
 abstract : false
 
 title: 
-    en: Моторное масло  #TODO: ##LOCALIZATION
+    en: Engine oil   ##LOCALIZATION
     ru: Моторное масло
 
 description: 
-    en: Масла, применяемое для смазывания поршневых и роторных двигателей внутреннего сгорания.  #TODO: ##LOCALIZATION
+    en: ''   ##LOCALIZATION
     ru: Масла, применяемое для смазывания поршневых и роторных двигателей внутреннего сгорания.
 
 

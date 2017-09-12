@@ -1,7 +1,7 @@
 ﻿_cls       : MapWeaponRocket
 title: 
-    en: Kornet  #TODO: ##LOCALIZATION
-    ru: Kornet
+    en: Kornet   ##LOCALIZATION
+    ru: Корнет
 
 
 radius_damage : 50

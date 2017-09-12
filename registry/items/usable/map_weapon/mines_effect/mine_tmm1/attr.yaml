@@ -3,11 +3,11 @@ doc      : Мина ТММ-1
 abstract : false
 
 title: 
-    en: Мина ТММ-1  #TODO: ##LOCALIZATION
+    en: Mine TMM-1   ##LOCALIZATION
     ru: Мина ТММ-1
 
 description: 
-    en: Противотанковая металлическая мина фугасного действия. Копия немецкой мины периода ВМВ - Tellermine Pilz 43.  #TODO: ##LOCALIZATION
+    en: ''  #TODO: ##LOCALIZATION
     ru: Противотанковая металлическая мина фугасного действия. Копия немецкой мины периода ВМВ - Tellermine Pilz 43.
 
 

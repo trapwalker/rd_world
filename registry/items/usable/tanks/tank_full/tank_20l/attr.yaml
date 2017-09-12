@@ -3,11 +3,11 @@ doc      : Полная канистра (20л)
 abstract : false
 
 title: 
-    en: Полная канистра (20л)  #TODO: ##LOCALIZATION
+    en: Full tank (20l)   ##LOCALIZATION
     ru: Полная канистра (20л)
 
 description: 
-    en: Хранит в себе 20 литров какой-то жидкости. Возможно топливо.  #TODO: ##LOCALIZATION
+    en: ''  #TODO: ##LOCALIZATION
     ru: Хранит в себе 20 литров какой-то жидкости. Возможно топливо.
 
 

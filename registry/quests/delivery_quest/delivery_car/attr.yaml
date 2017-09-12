@@ -11,6 +11,6 @@ distance_table: reg:///registry/rpg_settings/disttable
 list_icon: static/img/quests/icons/transit.png
 
 caption: 
-    en: Перегнать транспорт  #TODO: ##LOCALIZATION
+    en: Overt transport   ##LOCALIZATION
     ru: Перегнать транспорт
 

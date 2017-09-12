@@ -9,12 +9,12 @@ inv_icon_mid:   static/content/items/slot_item/tuner_item/visor/visor_003/mid.pn
 inv_icon_small: static/content/items/slot_item/tuner_item/visor/visor_003/small.png
 
 title:             # Краткое название - отобразится в слоте инвентаря
-    en: Visor 003  #TODO: ##LOCALIZATION
-    ru: Visor 003
+    en: Visor 003   ##LOCALIZATION
+    ru: Забрало 003
 
 description:             # Полное описание - отобразится в разделе описания в инвентаре
-    en: Visor 033  #TODO: ##LOCALIZATION
-    ru: Visor 033
+    en: ''   ##LOCALIZATION
+    ru: Забрало 033
 
 base_price: 100   # Цена
 

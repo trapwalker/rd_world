@@ -4,11 +4,11 @@ doc     : Довоенный виски
 abstract : false
 
 title: 
-    en: Довоенный виски  #TODO: ##LOCALIZATION
+    en: Prewar whiskey   ##LOCALIZATION
     ru: Довоенный виски
 
 description: 
-    en: Ящик довоенного виски с промышленной маркировкой для состоятельной аудитории. Такого уже не сделают.  #TODO: ##LOCALIZATION
+    en: ''  #TODO: ##LOCALIZATION
     ru: Ящик довоенного виски с промышленной маркировкой для состоятельной аудитории. Такого уже не сделают.
 
 

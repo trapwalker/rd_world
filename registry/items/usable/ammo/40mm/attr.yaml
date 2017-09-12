@@ -3,11 +3,11 @@ doc      : Гранаты 40мм
 abstract : false
 
 title: 
-    en: Гранаты<br>40мм  #TODO: ##LOCALIZATION
+    en: Cartridges<br>40mm   ##LOCALIZATION
     ru: Гранаты<br>40мм
 
 description: 
-    en: '???'  #TODO: ##LOCALIZATION
+    en: ''   ##LOCALIZATION
     ru: '???'
 
 

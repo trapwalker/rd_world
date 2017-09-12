@@ -1,10 +1,10 @@
 _cls : Car
 title:                           # Модель атомобиля
-    en: "CY 50"  #TODO: ##LOCALIZATION
+    en: "CY 50"   ##LOCALIZATION
     ru: "CY 50"
 
 class_car:                       # Класс автомобиля
-    en: "Легкий"  # TODO: ##LOCALIZATION
+    en: "Light"   ##LOCALIZATION
     ru: "Легкий"
 name_car:    "CY 50"             # Название атомобиля
 

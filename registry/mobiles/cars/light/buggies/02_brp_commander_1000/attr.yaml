@@ -1,11 +1,11 @@
 _cls : Car
 title:                          # Модель атомобиля
-    en: "Commander 1000"  #TODO: ##LOCALIZATION
+    en: "Commander 1000"   ##LOCALIZATION
     ru: "Commander 1000"
 
 class_car:                       # Класс автомобиля
-    en: "Тяжелый"  # TODO: ##LOCALIZATION
-    ru: "Тяжелый"
+    en: "Light"   ##LOCALIZATION
+    ru: "Легкий"
 name_car:    "Commander 1000"   # Название атомобиля
 
 price:              4000        # Цена у продавца (л) (>= 0)

@@ -5,7 +5,7 @@ first_state: first_out
 list_icon: static/img/quests/icons/rpg_dice.png
 
 caption: 
-    en: Классовый квест  #TODO: ##LOCALIZATION
+    en: Class quest   ##LOCALIZATION
     ru: Классовый квест
 
 attributes_by_class:
@@ -19,7 +19,7 @@ attributes_by_class:
             ru: Фляжка
 
         super_task:
-            en: Основать поселение  # TODO: ##LOCALIZATION
+            en: Establish a settlement   ##LOCALIZATION
             ru: Основать поселение
 
     alpha_wolf:
@@ -32,57 +32,57 @@ attributes_by_class:
             ru: Почтовая сумка
 
         super_task:
-            en: Создать клан  # TODO: ##LOCALIZATION
+            en: Create a clan   ##LOCALIZATION
             ru: Создать клан
 
     night_rider:
         teacher:
-            en: бармена  # TODO: ##LOCALIZATION
+            en: barman   ##LOCALIZATION
             ru: бармена
 
         artefact:
-            en: Зубочистка  # TODO: ##LOCALIZATION
+            en: Toothpick   ##LOCALIZATION
             ru: Зубочистка
 
         super_task:
-            en: Получить стелс-технологию  # TODO: ##LOCALIZATION
+            en: Get stealth technology   ##LOCALIZATION
             ru: Получить стелс-технологию
 
     oil_magnate:
         teacher: 
-            en: торговца  # TODO: ##LOCALIZATION
+            en: trader   ##LOCALIZATION
             ru: торговца
 
         artefact:
-            en: Трость  # TODO: ##LOCALIZATION
+            en: Cane   ##LOCALIZATION
             ru: Трость
 
         super_task:
-            en: Открыть магазин  # TODO: ##LOCALIZATION
+            en: Open shop   ##LOCALIZATION
             ru: Открыть магазин
 
     road_warrior:
         teacher:
-            en: автодилера  # TODO: ##LOCALIZATION
+            en: auto dealer   ##LOCALIZATION
             ru: автодилера
 
         artefact: 
-            en: Куртка с одним рукавом  # TODO: ##LOCALIZATION
+            en: Jacket with one sleeve   ##LOCALIZATION
             ru: Куртка с одним рукавом
 
         super_task:
-            en: Получить суперкар  # TODO: ##LOCALIZATION
+            en: Get supercar   ##LOCALIZATION
             ru: Получить суперкар
 
     techno_kinetic:
         teacher: 
-            en: механика  # TODO: ##LOCALIZATION
+            en: mechanic   ##LOCALIZATION
             ru: механика
 
         artefact:
-            en: Плутоний  # TODO: ##LOCALIZATION
+            en: Plutonium   ##LOCALIZATION
             ru: Плутоний
 
         super_task:
-            en: Открыть сервисный центр  # TODO: ##LOCALIZATION
+            en: Open service center   ##LOCALIZATION
             ru: Открыть сервисный центр

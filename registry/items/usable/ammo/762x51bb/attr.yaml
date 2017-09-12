@@ -4,11 +4,11 @@ abstract : false
 tags     : [teaching]
 
 title: 
-    en: Патроны<br>7.62мм/ББ  #TODO: ##LOCALIZATION
+    en: Cartridges<br>7.62mm   ##LOCALIZATION
     ru: Патроны<br>7.62мм/ББ
 
 description: 
-    en: Бронебойные патроны калибра 7.62 мм для пулемётов.  #TODO: ##LOCALIZATION
+    en: ''   ##LOCALIZATION
     ru: Бронебойные патроны калибра 7.62 мм для пулемётов.
 
 

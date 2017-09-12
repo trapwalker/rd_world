@@ -3,18 +3,18 @@ doc    : Преднастройки классов
 abstract: false
 
 title: 
-    en: Techno Kinetic  #TODO: ##LOCALIZATION
-    ru: Techno Kinetic
+    en: Techno Kinetic   ##LOCALIZATION
+    ru: Технокинетик
 
 description:
     en: Techno Kinetic
     ru: Технокинетик
 
 description_char_window:
-    en: |  # TODO: ##LOCALIZATION
-        Класс: Технокинетик
-        <br>Классовый навык: Механика
-        <br>Классовый квест: Открыть собственный сервисный центр.
+    en: |   ##LOCALIZATION
+        Класс: Techno Kinetic
+        <br>Классовый навык: Engineering
+        <br>Классовый квест: Open your own service center.
     ru: |
         Класс: Технокинетик
         <br>Классовый навык: Механика
@@ -22,9 +22,9 @@ description_char_window:
 
 console_description:
     en: >
-        Class: Road Warrior
-        \nClass skill: Shoot
-        \nClass quest: Establish a settlement.
+        Class: Techno Kinetic
+        \nClass skill: Engineering
+        \nClass quest: Open your own service center.
         \nDescription:
         \nThe Technokinetic is a mad scientist devoured by his passion for science.
         He is much more into the company of engines, reactors, gadgets, and devices than that of biped organics.

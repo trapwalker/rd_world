@@ -1,10 +1,10 @@
 _cls : Car
 title:                           # Модель атомобиля
-    en: "Sportsman 90"  #TODO: ##LOCALIZATION
+    en: "Sportsman 90"   ##LOCALIZATION
     ru: "Sportsman 90"
 
 class_car:                       # Класс автомобиля
-    en: "Легкий"  # TODO: ##LOCALIZATION
+    en: "Light"   ##LOCALIZATION
     ru: "Легкий"
 name_car:    "Sportsman 90"      # Название атомобиля
 

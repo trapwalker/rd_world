@@ -4,11 +4,11 @@ doc     : Металлолом
 abstract : false
 
 title: 
-    en: Металлолом  #TODO: ##LOCALIZATION
+    en: Scrap metal   ##LOCALIZATION
     ru: Металлолом
 
 description: 
-    en: Всякий хлам.  #TODO: ##LOCALIZATION
+    en: Trash.   ##LOCALIZATION
     ru: Всякий хлам.
 
 
