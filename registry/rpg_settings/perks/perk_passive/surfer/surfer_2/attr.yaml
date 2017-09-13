@@ -3,11 +3,11 @@ abstract: false
 
 # Общие параметры перка
 title:                                                                      # Название перка
-    en: Мегасёрфер  #TODO: ##LOCALIZATION
+    en: Megasurfer   ##LOCALIZATION
     ru: Мегасёрфер
 
 description:                                                                # Описание перка
-    en: Вхождение в повороты на скорости улучшены на 5%  #TODO: ##LOCALIZATION
+    en: Cornering at speed improved by 5%   ##LOCALIZATION
     ru: Вхождение в повороты на скорости улучшены на 5%
 
 

@@ -3,11 +3,11 @@ abstract: false
 
 # Общие параметры перка
 title:                                                                                   # Название перка
-    en: Ультрасталкер  #TODO: ##LOCALIZATION
+    en: Ultrastalker   ##LOCALIZATION
     ru: Ультрасталкер
 
 description:                                                                             # Описание перка
-    en: Уменьшение заметности персонажа на 8%  #TODO: ##LOCALIZATION
+    en: Decreasing visibility character by 8%   ##LOCALIZATION
     ru: Уменьшение заметности персонажа на 8%
 
 

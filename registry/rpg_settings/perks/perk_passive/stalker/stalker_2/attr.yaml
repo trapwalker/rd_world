@@ -3,11 +3,11 @@ abstract: false
 
 # Общие параметры перка
 title:                                                                                   # Название перка
-    en: Мегасталкер  #TODO: ##LOCALIZATION
+    en: Megastalker   ##LOCALIZATION
     ru: Мегасталкер
 
 description:                                                                             # Описание перка
-    en: Уменьшение заметности персонажа на 5%  #TODO: ##LOCALIZATION
+    en: Decreasing visibility character by 5%   ##LOCALIZATION
     ru: Уменьшение заметности персонажа на 5%
 
 
