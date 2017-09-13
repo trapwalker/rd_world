@@ -3,11 +3,11 @@ abstract: false
 
 # Общие параметры перка
 title:                                                                      # Название перка
-    en: Суперстингер  #TODO: ##LOCALIZATION
+    en: Superstinger   ##LOCALIZATION
     ru: Суперстингер
 
 description:                                                                # Описание перка
-    en: Максимальная скорость увеличена на 15%  #TODO: ##LOCALIZATION
+    en: Maximum speed is increased by 15%   ##LOCALIZATION
     ru: Максимальная скорость увеличена на 15%
 
 

@@ -3,11 +3,11 @@ abstract: false
 
 # Общие параметры перка
 title:                                                                      # Название перка
-    en: Турбострайкер  #TODO: ##LOCALIZATION
+    en: Turbostryker   ##LOCALIZATION
     ru: Турбострайкер
 
 description:                                                                # Описание перка
-    en: +10% к повреждениям любого залпа персонажа  #TODO: ##LOCALIZATION
+    en: +10% damage every character volley   ##LOCALIZATION
     ru: +10% к повреждениям любого залпа персонажа
 
 

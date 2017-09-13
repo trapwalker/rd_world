@@ -3,11 +3,11 @@ abstract: false
 
 # Общие параметры перка
 title:                                                                      # Название перка
-    en: Мегастингер  #TODO: ##LOCALIZATION
+    en: Megastinger   ##LOCALIZATION
     ru: Мегастингер
 
 description:                                                                # Описание перка
-    en: Максимальная скорость увеличена на 5%  #TODO: ##LOCALIZATION
+    en: Maximum speed is increased by 5%   ##LOCALIZATION
     ru: Максимальная скорость увеличена на 5%
 
 

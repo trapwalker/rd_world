@@ -3,11 +3,11 @@ abstract: false
 
 # Общие параметры перка
 title:                                                                      # Название перка
-    en: Мегастрайкер  #TODO: ##LOCALIZATION
+    en: Megastryker   ##LOCALIZATION
     ru: Мегастрайкер
 
 description:                                                                # Описание перка
-    en: +5% к повреждениям любого залпа персонажа  #TODO: ##LOCALIZATION
+    en: +5% damage every character volley   ##LOCALIZATION
     ru: +5% к повреждениям любого залпа персонажа
 
 

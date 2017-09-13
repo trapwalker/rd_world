@@ -3,11 +3,11 @@ abstract: false
 
 # Общие параметры перка
 title:                                                                      # Название перка
-    en: Супервайзор  #TODO: ##LOCALIZATION
+    en: Supervisor   ##LOCALIZATION
     ru: Супервайзор
 
 description:                                                                # Описание перка
-    en: Увеличение дальности обзора на 15%  #TODO: ##LOCALIZATION
+    en: Increasing a viewing range by 15%   ##LOCALIZATION
     ru: Увеличение дальности обзора на 15%
 
 

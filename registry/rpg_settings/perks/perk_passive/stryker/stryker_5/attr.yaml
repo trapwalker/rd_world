@@ -3,11 +3,11 @@ abstract: false
 
 # Общие параметры перка
 title:                                                                      # Название перка
-    en: Суперстрайкер  #TODO: ##LOCALIZATION
+    en: Superstryker   ##LOCALIZATION
     ru: Суперстрайкер
 
 description:                                                                # Описание перка
-    en: +15% к повреждениям любого залпа персонажа  #TODO: ##LOCALIZATION
+    en: +15% damage every character volley   ##LOCALIZATION
     ru: +15% к повреждениям любого залпа персонажа
 
 

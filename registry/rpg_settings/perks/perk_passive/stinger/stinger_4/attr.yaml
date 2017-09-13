@@ -3,11 +3,11 @@ abstract: false
 
 # Общие параметры перка
 title:                                                                      # Название перка
-    en: Турбостингер  #TODO: ##LOCALIZATION
+    en: Turbostinger   ##LOCALIZATION
     ru: Турбостингер
 
 description:                                                                # Описание перка
-    en: Максимальная скорость увеличена на 10%  #TODO: ##LOCALIZATION
+    en: Maximum speed is increased by 10%   ##LOCALIZATION
     ru: Максимальная скорость увеличена на 10%
 
 

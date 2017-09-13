@@ -3,11 +3,11 @@ abstract: false
 
 # Общие параметры перка
 title:                                                                      # Название перка
-    en: Турбовайзор  #TODO: ##LOCALIZATION
+    en: Turbovisor   ##LOCALIZATION
     ru: Турбовайзор
 
 description:                                                                # Описание перка
-    en: Увеличение дальности обзора на 10%  #TODO: ##LOCALIZATION
+    en: Increasing a viewing range by 10%   ##LOCALIZATION
     ru: Увеличение дальности обзора на 10%
 
 

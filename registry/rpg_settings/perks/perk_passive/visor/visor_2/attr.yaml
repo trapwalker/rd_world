@@ -3,11 +3,11 @@ abstract: false
 
 # Общие параметры перка
 title:                                                                      # Название перка
-    en: Мегавайзор  #TODO: ##LOCALIZATION
+    en: Megavisor   ##LOCALIZATION
     ru: Мегавайзор
 
 description:                                                                # Описание перка
-    en: Увеличение дальности обзора на 5%  #TODO: ##LOCALIZATION
+    en: Increasing a viewing range by 5%   ##LOCALIZATION
     ru: Увеличение дальности обзора на 5%
 
 

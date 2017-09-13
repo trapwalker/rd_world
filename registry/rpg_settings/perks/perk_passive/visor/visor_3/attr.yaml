@@ -3,11 +3,11 @@ abstract: false
 
 # Общие параметры перка
 title:                                                                      # Название перка
-    en: Ультравайзор  #TODO: ##LOCALIZATION
+    en: Ultravisor   ##LOCALIZATION
     ru: Ультравайзор
 
 description:                                                                # Описание перка
-    en: Увеличение дальности обзора на 8%  #TODO: ##LOCALIZATION
+    en: Increasing a viewing range by 8%   ##LOCALIZATION
     ru: Увеличение дальности обзора на 8%
 
 
