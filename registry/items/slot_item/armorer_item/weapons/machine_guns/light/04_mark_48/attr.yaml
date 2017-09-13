@@ -3,12 +3,12 @@ doc             : Пулемет Mark 48None
 abstract        : false
 
 title:                                                       # Краткое название - отобразится в слоте инвентаря
-    en: Пулемет<br>Mark 48  #TODO: ##LOCALIZATION
+    en: Machine gun<br>Mark 48  ##LOCALIZATION
     ru: Пулемет<br>Mark 48
 
 # Полное описание - отобразится в разделе описания в инвентаре
 description: 
-    en: '???'  #TODO: ##LOCALIZATION
+    en: '???'  ##LOCALIZATION
     ru: '???'
 
 

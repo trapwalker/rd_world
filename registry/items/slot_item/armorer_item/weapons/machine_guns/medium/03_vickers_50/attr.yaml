@@ -3,12 +3,12 @@ doc             : Пулемет Vickers .50None
 abstract        : false
 
 title:                                                        # Краткое название - отобразится в слоте инвентаря
-    en: Пулемет<br>Vickers .50  #TODO: ##LOCALIZATION
+    en: Machine gun<br>Vickers .50  ##LOCALIZATION
     ru: Пулемет<br>Vickers .50
 
 # Полное описание - отобразится в разделе описания в инвентаре
 description: 
-    en: '???'  #TODO: ##LOCALIZATION
+    en: '???'  ##LOCALIZATION
     ru: '???'
 
 

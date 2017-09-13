@@ -3,12 +3,12 @@ doc             : Пулемет BrenNone
 abstract        : false
 
 title:                                                       # Краткое название - отобразится в слоте инвентаря
-    en: Пулемет<br>Bren  #TODO: ##LOCALIZATION
+    en: Machine gun<br>Bren  ##LOCALIZATION
     ru: Пулемет<br>Bren
 
 # Полное описание - отобразится в разделе описания в инвентаре
 description: 
-    en: '???'  #TODO: ##LOCALIZATION
+    en: '???'  ##LOCALIZATION
     ru: '???'
 
 

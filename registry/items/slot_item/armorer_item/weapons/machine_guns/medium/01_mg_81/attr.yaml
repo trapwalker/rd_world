@@ -3,12 +3,12 @@ doc             : Пулемет MG 81None
 abstract        : false
 
 title:                                                       # Краткое название - отобразится в слоте инвентаря
-    en: Пулемет<br>MG 81  #TODO: ##LOCALIZATION
+    en: Machine gun<br>MG 81  ##LOCALIZATION
     ru: Пулемет<br>MG 81
 
 # Полное описание - отобразится в разделе описания в инвентаре
 description: 
-    en: '???'  #TODO: ##LOCALIZATION
+    en: '???'  ##LOCALIZATION
     ru: '???'
 
 

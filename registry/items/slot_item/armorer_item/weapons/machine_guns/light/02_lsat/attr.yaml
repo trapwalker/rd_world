@@ -3,12 +3,12 @@ doc             : Пулемет LSATNone
 abstract        : false
 
 title:                                                       # Краткое название - отобразится в слоте инвентаря
-    en: Пулемет<br>LSAT  #TODO: ##LOCALIZATION
+    en: Machine gun<br>LSAT  ##LOCALIZATION
     ru: Пулемет<br>LSAT
 
 # Полное описание - отобразится в разделе описания в инвентаре
 description: 
-    en: '???'  #TODO: ##LOCALIZATION
+    en: '???'  ##LOCALIZATION
     ru: '???'
 
 

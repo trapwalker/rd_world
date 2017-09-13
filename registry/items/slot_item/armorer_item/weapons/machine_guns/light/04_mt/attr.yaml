@@ -3,12 +3,12 @@ doc             : Пулемет МТNone
 abstract        : false
 
 title:                                                       # Краткое название - отобразится в слоте инвентаря
-    en: Пулемет<br>МТ  #TODO: ##LOCALIZATION
+    en: Machine gun<br>МТ  ##LOCALIZATION
     ru: Пулемет<br>МТ
 
 # Полное описание - отобразится в разделе описания в инвентаре
 description: 
-    en: '???'  #TODO: ##LOCALIZATION
+    en: '???'  ##LOCALIZATION
     ru: '???'
 
 

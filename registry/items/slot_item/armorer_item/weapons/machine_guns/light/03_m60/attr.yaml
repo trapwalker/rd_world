@@ -3,12 +3,12 @@ doc             : Пулемет M60None
 abstract        : false
 
 title:                                                       # Краткое название - отобразится в слоте инвентаря
-    en: Пулемет<br>M60  #TODO: ##LOCALIZATION
+    en: Machine gun<br>M60  ##LOCALIZATION
     ru: Пулемет<br>M60
 
 # Полное описание - отобразится в разделе описания в инвентаре
 description: 
-    en: '???'  #TODO: ##LOCALIZATION
+    en: '???'  ##LOCALIZATION
     ru: '???'
 
 

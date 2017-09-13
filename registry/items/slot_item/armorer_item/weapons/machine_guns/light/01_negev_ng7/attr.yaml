@@ -3,12 +3,12 @@ doc             : Пулемет Negev NG7None
 abstract        : false
 
 title:                                                       # Краткое название - отобразится в слоте инвентаря
-    en: Пулемет<br>Negev NG7  #TODO: ##LOCALIZATION
+    en: Machine gun<br>Negev NG7  ##LOCALIZATION
     ru: Пулемет<br>Negev NG7
 
 # Полное описание - отобразится в разделе описания в инвентаре
 description: 
-    en: '???'  #TODO: ##LOCALIZATION
+    en: '???'  ##LOCALIZATION
     ru: '???'
 
 
