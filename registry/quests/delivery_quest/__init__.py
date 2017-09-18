@@ -77,7 +77,7 @@ class DeliveryQuest(Quest):
                     self.recipient.title,
                     self.reward_money
                 ),
-            ),
+            )
 
 
             return
