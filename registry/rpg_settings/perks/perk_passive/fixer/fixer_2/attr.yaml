@@ -3,11 +3,11 @@ abstract: false
 
 # Общие параметры перка
 title:                                                                      # Название перка
-    en: Мегафиксер  #TODO: ##LOCALIZATION
+    en: Megafixer   ##LOCALIZATION
     ru: Мегафиксер
 
 description:                                                                # Описание перка
-    en: Снижение износа транспорта на 5%  #TODO: ##LOCALIZATION
+    en: Reduce vechile wear by 5%   ##LOCALIZATION
     ru: Снижение износа транспорта на 5%
 
 

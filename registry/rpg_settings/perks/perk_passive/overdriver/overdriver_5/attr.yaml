@@ -3,11 +3,11 @@ abstract: false
 
 # Общие параметры перка
 title:                                                                      # Название перка
-    en: Суперовердрайвер  #TODO: ##LOCALIZATION
+    en: Superoverdriver   ##LOCALIZATION
     ru: Суперовердрайвер
 
 description:                                                                # Описание перка
-    en: Повышение максимального значения прочности транспорта на 15%  #TODO: ##LOCALIZATION
+    en: Increasing the maximum transport strength 15%   ##LOCALIZATION
     ru: Повышение максимального значения прочности транспорта на 15%
 
 

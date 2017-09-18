@@ -3,11 +3,11 @@ abstract: false
 
 # Общие параметры перка
 title:                                                                      # Название перка
-    en: Турбопатчер  #TODO: ##LOCALIZATION
+    en: Turbopatcher   ##LOCALIZATION
     ru: Турбопатчер
 
 description:                                                                # Описание перка
-    en: Восстановление 10% прочности транспорта каждую минуту  #TODO: ##LOCALIZATION
+    en: Recover 10% transport strength every minute   ##LOCALIZATION
     ru: Восстановление 10% прочности транспорта каждую минуту
 
 

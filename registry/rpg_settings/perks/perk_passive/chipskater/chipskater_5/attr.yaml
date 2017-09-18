@@ -3,11 +3,11 @@ abstract: false
 
 # Общие параметры перка
 title:                                                                      # Название перка
-    en: Суперчипскейтер  #TODO: ##LOCALIZATION
+    en: Superchipskater   ##LOCALIZATION
     ru: Суперчипскейтер
 
 description:                                                                # Описание перка
-    en: Снижение расхода топлива на 15%  #TODO: ##LOCALIZATION
+    en: Fuel savings of 15%   ##LOCALIZATION
     ru: Снижение расхода топлива на 15%
 
 

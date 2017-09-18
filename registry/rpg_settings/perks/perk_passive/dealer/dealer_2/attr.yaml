@@ -3,11 +3,11 @@ abstract: false
 
 # Общие параметры перка
 title:                                                                                   # Название перка
-    en: Мегадиллер  #TODO: ##LOCALIZATION
+    en: Megadealer   ##LOCALIZATION
     ru: Мегадиллер
 
 description:                                                                             # Описание перка
-    en: Увеличение наценки на товар при продаже игровым торговцам на 5%  #TODO: ##LOCALIZATION
+    en: Increased margins on imported goods when selling gaming merchants on the 5%   ##LOCALIZATION
     ru: Увеличение наценки на товар при продаже игровым торговцам на 5%
 
 

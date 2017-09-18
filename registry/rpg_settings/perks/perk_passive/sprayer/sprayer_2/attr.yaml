@@ -3,11 +3,11 @@ abstract: false
 
 # Общие параметры перка
 title:                                                                      # Название перка
-    en: Мегаспреер  #TODO: ##LOCALIZATION
+    en: Megasprayer   ##LOCALIZATION
     ru: Мегаспреер
 
 description:                                                                # Описание перка
-    en: +5% к повреждениям автоматическим оружием  #TODO: ##LOCALIZATION
+    en: +5% damage with automatic weapons   ##LOCALIZATION
     ru: +5% к повреждениям автоматическим оружием
 
 

@@ -3,11 +3,11 @@ abstract: false
 
 # Общие параметры перка
 title:                                                                                    # Название перка
-    en: Суперраннер  #TODO: ##LOCALIZATION
+    en: Superrunner   ##LOCALIZATION
     ru: Суперраннер
 
 description:                                                                              # Описание перка
-    en: Уменьшение наценки на товар при покупке у игровых торговцев на 15%  #TODO: ##LOCALIZATION
+    en: Increase NPC traders discount on export goods by 15%   ##LOCALIZATION
     ru: Уменьшение наценки на товар при покупке у игровых торговцев на 15%
 
 

@@ -3,11 +3,11 @@ abstract: false
 
 # Общие параметры перка
 title:                                                                                    # Название перка
-    en: Турбораннер  #TODO: ##LOCALIZATION
+    en: Turborunner   ##LOCALIZATION
     ru: Турбораннер
 
 description:                                                                              # Описание перка
-    en: Уменьшение наценки на товар при покупке у игровых торговцев на 10%  #TODO: ##LOCALIZATION
+    en: Increase NPC traders discount on export goods by 10%   ##LOCALIZATION
     ru: Уменьшение наценки на товар при покупке у игровых торговцев на 10%
 
 

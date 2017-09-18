@@ -3,11 +3,11 @@ abstract: false
 
 # Общие параметры перка
 title:                                                                                   # Название перка
-    en: Мегамейкер  #TODO: ##LOCALIZATION
+    en: Megamaker   ##LOCALIZATION
     ru: Мегамейкер
 
 description:                                                                             # Описание перка
-    en: Увеличение эффективности ремонтных комплектов на 5%  #TODO: ##LOCALIZATION
+    en: Increasing the efficiency of repair kits to 5%   ##LOCALIZATION
     ru: Увеличение эффективности ремонтных комплектов на 5%
 
 

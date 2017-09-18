@@ -3,11 +3,11 @@ abstract: false
 
 # Общие параметры перка
 title:                                                                      # Название перка
-    en: Турбоспреер  #TODO: ##LOCALIZATION
+    en: Turbosprayer   ##LOCALIZATION
     ru: Турбоспреер
 
 description:                                                                # Описание перка
-    en: +10% к повреждениям автоматическим оружием  #TODO: ##LOCALIZATION
+    en: +10% damage with automatic weapons   ##LOCALIZATION
     ru: +10% к повреждениям автоматическим оружием
 
 

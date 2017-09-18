@@ -3,11 +3,11 @@ abstract: false
 
 # Общие параметры перка
 title:                                                                                   # Название перка
-    en: Ультрараннер  #TODO: ##LOCALIZATION
+    en: Ultrarunner   ##LOCALIZATION
     ru: Ультрараннер
 
 description:                                                                             # Описание перка
-    en: Уменьшение наценки на товар при покупке у игровых торговцев на 8%  #TODO: ##LOCALIZATION
+    en: Increase NPC traders discount on export goods by 8%   ##LOCALIZATION
     ru: Уменьшение наценки на товар при покупке у игровых торговцев на 8%
 
 

@@ -3,11 +3,11 @@ abstract: false
 
 # Общие параметры перка
 title:                                                                      # Название перка
-    en: Ультрафиксер  #TODO: ##LOCALIZATION
+    en: Ultrafixer   ##LOCALIZATION
     ru: Ультрафиксер
 
 description:                                                                # Описание перка
-    en: Снижение износа транспорта на 8%  #TODO: ##LOCALIZATION
+    en: Reduce vechile wear by 8%   ##LOCALIZATION
     ru: Снижение износа транспорта на 8%
 
 

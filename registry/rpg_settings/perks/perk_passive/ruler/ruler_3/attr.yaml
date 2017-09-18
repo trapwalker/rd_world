@@ -3,11 +3,11 @@ abstract: false
 
 # Общие параметры перка
 title:                                                                                   # Название перка
-    en: Ультрарулер  #TODO: ##LOCALIZATION
+    en: Ultraruler   ##LOCALIZATION
     ru: Ультрарулер
 
 description:                                                                             # Описание перка
-    en: В пати персонажа может вступить больше на 3 игроков  #TODO: ##LOCALIZATION
+    en: In party character can enter more by 3 player   ##LOCALIZATION
     ru: В пати персонажа может вступить больше на 3 игроков
 
 

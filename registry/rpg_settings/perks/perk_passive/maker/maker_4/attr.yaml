@@ -3,11 +3,11 @@ abstract: false
 
 # Общие параметры перка
 title:                                                                                    # Название перка
-    en: Турбомейкер  #TODO: ##LOCALIZATION
+    en: Turbomaker   ##LOCALIZATION
     ru: Турбомейкер
 
 description:                                                                              # Описание перка
-    en: Увеличение эффективности ремонтных комплектов на 10%  #TODO: ##LOCALIZATION
+    en: Increasing the efficiency of repair kits to 10%   ##LOCALIZATION
     ru: Увеличение эффективности ремонтных комплектов на 10%
 
 

@@ -3,11 +3,11 @@ abstract: false
 
 # Общие параметры перка
 title:                                                                                   # Название перка
-    en: Ультрамейкер  #TODO: ##LOCALIZATION
+    en: Ultramaker   ##LOCALIZATION
     ru: Ультрамейкер
 
 description:                                                                             # Описание перка
-    en: Увеличение эффективности ремонтных комплектов на 8%  #TODO: ##LOCALIZATION
+    en: Increasing the efficiency of repair kits to 8%   ##LOCALIZATION
     ru: Увеличение эффективности ремонтных комплектов на 8%
 
 

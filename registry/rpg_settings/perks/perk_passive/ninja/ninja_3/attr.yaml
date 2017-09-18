@@ -3,11 +3,11 @@ abstract: false
 
 # Общие параметры перка
 title:                                                                                   # Название перка
-    en: Ультраниндзя  #TODO: ##LOCALIZATION
+    en: Ultraninja   ##LOCALIZATION
     ru: Ультраниндзя
 
 description:                                                                             # Описание перка
-    en: Заметность персонажа для других игроков от набранной скорости снижена на 8%  #TODO: ##LOCALIZATION
+    en: Visibility of character for other players because acceleration speed has been reduced by 8%   ##LOCALIZATION
     ru: Заметность персонажа для других игроков от набранной скорости снижена на 8%
 
 

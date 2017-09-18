@@ -3,11 +3,11 @@ abstract: false
 
 # Общие параметры перка
 title:                                                                                    # Название перка
-    en: Турбониндзя  #TODO: ##LOCALIZATION
+    en: Turboninja   ##LOCALIZATION
     ru: Турбониндзя
 
 description:                                                                              # Описание перка
-    en: Заметность персонажа для других игроков от набранной скорости снижена на 10%  #TODO: ##LOCALIZATION
+    en: Visibility of character for other players because acceleration speed has been reduced by 10%   ##LOCALIZATION
     ru: Заметность персонажа для других игроков от набранной скорости снижена на 10%
 
 

@@ -3,11 +3,11 @@ abstract: false
 
 # Общие параметры перка
 title:                                                                                   # Название перка
-    en: Мегараннер  #TODO: ##LOCALIZATION
+    en: Megarunner   ##LOCALIZATION
     ru: Мегараннер
 
 description:                                                                             # Описание перка
-    en: Уменьшение наценки на товар при покупке у игровых торговцев на 5%  #TODO: ##LOCALIZATION
+    en: Increase NPC traders discount on export goods by 5%   ##LOCALIZATION
     ru: Уменьшение наценки на товар при покупке у игровых торговцев на 5%
 
 

@@ -3,11 +3,11 @@ abstract: false
 
 # Общие параметры перка
 title:                                                                      # Название перка
-    en: Турбофиксер  #TODO: ##LOCALIZATION
+    en: Turbofixer   ##LOCALIZATION
     ru: Турбофиксер
 
 description:                                                                # Описание перка
-    en: Снижение износа транспорта на 10%  #TODO: ##LOCALIZATION
+    en: Reduce vechile wear by 10%   ##LOCALIZATION
     ru: Снижение износа транспорта на 10%
 
 

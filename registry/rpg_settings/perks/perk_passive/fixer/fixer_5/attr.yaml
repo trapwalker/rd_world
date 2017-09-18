@@ -3,11 +3,11 @@ abstract: false
 
 # Общие параметры перка
 title:                                                                      # Название перка
-    en: Суперфиксер  #TODO: ##LOCALIZATION
+    en: Superfixer   ##LOCALIZATION
     ru: Суперфиксер
 
 description:                                                                # Описание перка
-    en: Снижение износа транспорта на 15%  #TODO: ##LOCALIZATION
+    en: Reduce vechile wear by 15%   ##LOCALIZATION
     ru: Снижение износа транспорта на 15%
 
 

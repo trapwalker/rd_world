@@ -3,11 +3,11 @@ abstract: false
 
 # Общие параметры перка
 title:                                                                                    # Название перка
-    en: Супермейкер  #TODO: ##LOCALIZATION
+    en: Supermaker   ##LOCALIZATION
     ru: Супермейкер
 
 description:                                                                              # Описание перка
-    en: Увеличение эффективности ремонтных комплектов на 15%  #TODO: ##LOCALIZATION
+    en: Increasing the efficiency of repair kits to 15%   ##LOCALIZATION
     ru: Увеличение эффективности ремонтных комплектов на 15%
 
 

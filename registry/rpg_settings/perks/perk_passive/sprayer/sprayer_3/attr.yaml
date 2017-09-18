@@ -3,11 +3,11 @@ abstract: false
 
 # Общие параметры перка
 title:                                                                      # Название перка
-    en: Ультраспреер  #TODO: ##LOCALIZATION
+    en: Ultrasprayer   ##LOCALIZATION
     ru: Ультраспреер
 
 description:                                                                # Описание перка
-    en: +8% к повреждениям автоматическим оружием  #TODO: ##LOCALIZATION
+    en: +8% damage with automatic weapons   ##LOCALIZATION
     ru: +8% к повреждениям автоматическим оружием
 
 
