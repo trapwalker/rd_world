@@ -2,9 +2,9 @@
 doc: Навык скрытности
 
 description:
-    en: |  # TODO: ##LOCALIZATION
-        Уменьшает дистанцию обнаружения транспорта персонажа другими игроками и защитными системами поселений.
-        От навыка скрытности зависит заметность оборудованных персонажем схронов.
+    en: |   ##LOCALIZATION
+        Minimizes the distance required by other players and communities defense systems to detect the character’s vehicle.
+        Stealth determines the conspicuity of the hideouts made up by the character.
     ru: |
         Уменьшает дистанцию обнаружения транспорта персонажа другими игроками и защитными системами поселений.
         От навыка скрытности зависит заметность оборудованных персонажем схронов.

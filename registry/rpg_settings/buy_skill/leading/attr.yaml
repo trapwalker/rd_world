@@ -2,9 +2,9 @@
 doc: Навык лидера
 
 description:
-    en: |  # TODO: ##LOCALIZATION
-        Определяет максимальное количество игроков, которые могут присоединиться к пати персонажа.
-        У игровых персонажей, дающих групповые задания, есть свои требования к навыку лидерства.
+    en: |   ##LOCALIZATION
+        Determines the maximum number of players who can join the character’s party.
+        The characters issuing group missions have set leadership skill requirements.
     ru: |
         Определяет максимальное количество игроков, которые могут присоединиться к пати персонажа.
         У игровых персонажей, дающих групповые задания, есть свои требования к навыку лидерства.

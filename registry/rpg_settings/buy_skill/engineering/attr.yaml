@@ -2,9 +2,9 @@
 doc: Навык механика
 
 description:
-    en: |  # TODO: ##LOCALIZATION
-        Снижает скорость износа транспорта персонажа, увеличивает эффективность полевого ремонта.
-        От навыка механки зависит скорость установки схронов и опасность защитных ловушек.
+    en: |   ##LOCALIZATION
+        Minimizes the wear rate of the character’s vehicle, increases the efficiency of field maintenance.
+        The mechanics skill determines the speed of hideouts construction and the level of danger of the protective traps.
     ru: |
         Снижает скорость износа транспорта персонажа, увеличивает эффективность полевого ремонта.
         От навыка механки зависит скорость установки схронов и опасность защитных ловушек.

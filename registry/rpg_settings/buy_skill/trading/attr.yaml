@@ -2,7 +2,7 @@
 doc: Навык торговли
 
 description:
-    en: |  # TODO: ##LOCALIZATION
-        Уменьшает цену товаров и услуг, оказываемых игровыми персонажами. Увеличивает награды за задания.
+    en: |   ##LOCALIZATION
+        Minimizes the prices for goods and services, provided by the characters. Adds to the mission rewards.
     ru: |
         Уменьшает цену товаров и услуг, оказываемых игровыми персонажами. Увеличивает награды за задания.

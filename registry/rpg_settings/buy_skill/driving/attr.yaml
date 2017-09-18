@@ -2,9 +2,9 @@
 doc: Навык вождения
 
 description:
-    en: |  # TODO: ##LOCALIZATION
-        Увеличивает максимальную скорость и маневренность управляемого транспорта.
-        Сложный в управлении транспорт имеет свои требования к навыку вождения.
+    en: |   ##LOCALIZATION
+        Adds to the maximum speed and cornering ability of the driven transport.
+        Complex vehicles have set requirements to the driving skills level.
     ru: | 
         Увеличивает максимальную скорость и маневренность управляемого транспорта.
         Сложный в управлении транспорт имеет свои требования к навыку вождения.
