@@ -32,12 +32,12 @@ class DeliveryCar(DeliveryQuest):
 
     def init_text(self, distance=None):
         self.text_short = LocalizedString(
-            en=u"Доставьте ТС в город {}.".format(self.recipient.hometown.title),  # TODO: ##LOCALIZATION
+            en=u"Deliver car to city {}.".format(self.recipient.hometown.title),   ##LOCALIZATION
             ru=u"Доставьте ТС в город {}.".format(self.recipient.hometown.title),
         )
 
         self.text = LocalizedString(
-            en=u"Доставьте ТС: {} - к {} в город {}. Награда: {:.0f}nc и {:.0f} ед. опыта.".format(  # TODO: ##LOCALIZATION
+            en=u"Deliver car: {} - to {} to city {}. Reward: {:.0f}nc and {:.0f} exp. points.".format(   ##LOCALIZATION
                 self.dc.car_title,
                 self.recipient.title,
                 self.recipient.hometown.title,

@@ -62,12 +62,12 @@ class DeliveryQuest(Quest):
     def init_text(self, distance=None):
         if distance == 0:
             self.text_short = LocalizedString(
-                en=u"Доставьте груз в соседнее здание.",  # TODO: ##LOCALIZATION
+                en=u"Deliver cargo to neighboring building.",   ##LOCALIZATION
                 ru=u"Доставьте груз в соседнее здание.",
             )
 
             self.text = LocalizedString(
-                en=u"Доставьте груз: {} - к {}. Награда: {:.0f}nc.".format(  # TODO: ##LOCALIZATION
+                en=u"Deliver cargo: {} - to {}. Reward: {:.0f}nc.".format(   ##LOCALIZATION
                     ', '.join([item.title.en for item in self.delivery_set]),
                     self.recipient.title,
                     self.reward_money
@@ -82,18 +82,18 @@ class DeliveryQuest(Quest):
 
             return
         self.text_short = LocalizedString(
-            en=u"Доставьте груз в город {}.".format(self.recipient.hometown.title),  # TODO: ##LOCALIZATION
+            en=u"Deliver cargo to city {}.".format(self.recipient.hometown.title),   ##LOCALIZATION
             ru=u"Доставьте груз в город {}.".format(self.recipient.hometown.title),
         )
         self.text = LocalizedString(
-            en=u"Доставьте груз: {} - к {} в город {}. Награда: {:.0f}nc и {:.0f} ед. опыта.".format(  # TODO: ##LOCALIZATION
+            en=u"Deliver cargo: {} - to {} to city {}. Reward: {:.0f}nc and {:.0f} exp. points.".format(   ##LOCALIZATION
                 ', '.join([item.title.en for item in self.delivery_set]),
                 self.recipient.title,
                 self.recipient.hometown.title,
                 self.reward_money,
                 self.reward_exp,
             ),
-            ru=u"Доставьте груз: {} - к {} в город {}. Награда: {:.0f}nc и {:.0f} ед. опыта.".format(  # TODO: ##LOCALIZATION
+            ru=u"Доставьте груз: {} - к {} в город {}. Награда: {:.0f}nc и {:.0f} ед. опыта.".format(   ##LOCALIZATION
                 ', '.join([item.title.ru for item in self.delivery_set]),
                 self.recipient.title,
                 self.recipient.hometown.title,

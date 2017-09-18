@@ -51,13 +51,13 @@ class KillBossQuest(AgentEventQuest):
 
     def init_text(self, event):
         self.text_short = LocalizedString(
-            en=u"Убейте игрока.",  # TODO: ##LOCALIZATION
+            en=u"Player kill.",   ##LOCALIZATION
             ru=u"Убейте игрока.",
         )
         event_quest = self.get_event_quest(event=event)
         if event_quest:
             self.text = LocalizedString(
-                en=u"Убейте игрока с ником {}. Награда: {:.0f}nc.".format(  # TODO: ##LOCALIZATION
+                en=u"Kill player with a nickname {}. Reward: {:.0f}nc.".format(   ##LOCALIZATION
                     event_quest.dc._main_agent.print_login(),
                     event_quest.dc.kill_reward_money,
                 ),

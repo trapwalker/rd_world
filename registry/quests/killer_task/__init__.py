@@ -99,25 +99,25 @@ class KillerQuest(Quest):
 
     def init_text(self):
         self.text_short = LocalizedString(
-            en=u"Убейте {:.0f} игрока(ов).".format(self.count_to_kill),  # TODO: ##LOCALIZATION
+            en=u"Kill {:.0f} player(s).".format(self.count_to_kill),   ##LOCALIZATION
             ru=u"Убейте {:.0f} игрока(ов).".format(self.count_to_kill),
         )
 
         self.text = LocalizedString(
-            en=u"Убейте {:.0f} игрока(ов) с минимальным уровнем {:.0f} и кармой хуже {}{}. Награда: {:.0f}nc, {:.0f} кармы и {:.0f} ед. опыта.".format(  # TODO: ##LOCALIZATION
+            en=u"Kill {:.0f} player(s) with a minimum level {:.0f} and karma is worse {}{}. Reward: {:.0f}nc, {:.0f} karma and {:.0f} exp. points.".format(   ##LOCALIZATION
                 self.count_to_kill,
                 self.min_level_victims,
                 getKarmaName(self.max_karma_victims / 100., 'ru'),
-                u"" if not self.deadline else u" за {}".format(self.deadline_to_str()),  # TODO: ##LOCALIZATION
+                u"" if not self.deadline else u" for {}".format(self.deadline_to_str()),   ##LOCALIZATION
                 self.reward_money,
                 self.reward_karma,
                 self.reward_exp * self.count_to_kill,
             ),
-            ru=u"Убейте {:.0f} игрока(ов) с минимальным уровнем {:.0f} и кармой хуже {}{}. Награда: {:.0f}nc, {:.0f} кармы и {:.0f} ед. опыта.".format(  # TODO: ##LOCALIZATION
+            ru=u"Убейте {:.0f} игрока(ов) с минимальным уровнем {:.0f} и кармой хуже {}{}. Награда: {:.0f}nc, {:.0f} кармы и {:.0f} ед. опыта.".format(   ##LOCALIZATION
                 self.count_to_kill,
                 self.min_level_victims,
                 getKarmaName(self.max_karma_victims / 100., 'ru'),
-                u"" if not self.deadline else u" за {}".format(self.deadline_to_str()),  # TODO: ##LOCALIZATION
+                u"" if not self.deadline else u" за {}".format(self.deadline_to_str()),   ##LOCALIZATION
                 self.reward_money,
                 self.reward_karma,
                 self.reward_exp * self.count_to_kill,

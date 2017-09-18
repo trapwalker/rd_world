@@ -27,15 +27,15 @@ class ClassQuest(Quest):
     )
 
     def init_text(self):
-        # TODO: ##LOCALIZATION
+         ##LOCALIZATION
         self.text = LocalizedString(
-            en=u"Приключение начнется скоро.",  # TODO: ##LOCALIZATION
+            en=u"Adventure will begin soon.",   ##LOCALIZATION
             ru=u"Приключение начнется скоро.",
         )
         if self.current_state == 'first_out':
             # todo: Вынести 300 в атрибуты квеста
             self.text = LocalizedString(
-                en=u"Обратиться к тренеру и узнать больше про свою классовую цель.<br> Награда:<br>Exp 300",  # TODO: ##LOCALIZATION
+                en=u"Refer to trainer and learn more about purpose of their class.<br> Reward:<br>Exp 300",   ##LOCALIZATION
                 ru=u"Обратиться к тренеру и узнать больше про свою классовую цель.<br> Награда:<br>Exp 300",
             )
 
@@ -51,11 +51,11 @@ class ClassQuest(Quest):
 
             # todo: Вынести 500 в атрибуты квеста
             self.text = LocalizedString(
-                en=(  # TODO: ##LOCALIZATION
-                    u"Чтобы освоить тонкости ролевого класса нужно найти наставника. Для класса {} искать наставника стоит в лице {}.<br>"
-                    u"Найти наставника по классовой специализации.<br>"
-                    u"Награда: "
-                    u"Exp: 500, классовый артефакт {}."
+                en=(   ##LOCALIZATION
+                    u"To learn subtleties of role-playing class, you need to find a mentor. For class {} need such a mentor as {}.<br>"
+                    u"Find a mentor on class specialization.<br>"
+                    u"Reward: "
+                    u"Exp: 500, class artifact {}."
                 ).format(
                     role_class.description.en,
                     teacher.en,

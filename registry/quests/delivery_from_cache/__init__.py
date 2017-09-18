@@ -94,12 +94,12 @@ class DeliveryFromCache(DeliveryQuestSimple):
 
     def init_text(self):
         self.text_short = LocalizedString(
-            en=u"Найти пропавшую посылку.",  # TODO: ##LOCALIZATION
+            en=u"Find missing parcel.",   ##LOCALIZATION
             ru=u"Найти пропавшую посылку.",
         )
 
         self.text = LocalizedString(
-            en=u"Вернуть пропавшую посылку.{} Награда: {:.0f}nc, {:.0f} кармы и {:.0f} ед. опыта.".format(  # TODO: ##LOCALIZATION
+            en=u"Return missing parcel.{} Reward: {:.0f}nc, {:.0f} karma and {:.0f} exp. points.".format(   ##LOCALIZATION
                 u"." if not self.deadline else u" за {}.".format(self.deadline_to_str()),
                 self.reward_money,
                 self.reward_karma,

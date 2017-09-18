@@ -23,16 +23,16 @@ class MapActivateRadarsQuest(MapActivateItemQuest):
 
     def init_text(self):
         self.text_short = LocalizedString(
-            en=u"Установить наблюдательные зонды.",  # TODO: ##LOCALIZATION
+            en=u"Install observation probes.",   ##LOCALIZATION
             ru=u"Установить наблюдательные зонды.",
         )
         self.text = LocalizedString(
-            en=u"Установите в заданных точках наблюдательные зонды в количестве: {}. Награда: {:.0f}nc и {:.0f} ед. опыта".format(  # TODO: ##LOCALIZATION
+            en=u"Set in points observation probes in amount of: {}. Rewaard: {:.0f}nc and {:.0f} exp. points".format(   ##LOCALIZATION
                 len(self.activate_points),
                 self.reward_money,
                 self.reward_exp * len(self.activate_points),
             ),
-            ru=u"Установите в заданных точках наблюдательные зонды в количестве: {}. Награда: {:.0f}nc и {:.0f} ед. опыта".format(  # TODO: ##LOCALIZATION
+            ru=u"Установите в заданных точках наблюдательные зонды в количестве: {}. Награда: {:.0f}nc и {:.0f} ед. опыта".format(   ##LOCALIZATION
                 len(self.activate_points),
                 self.reward_money,
                 self.reward_exp * len(self.activate_points),

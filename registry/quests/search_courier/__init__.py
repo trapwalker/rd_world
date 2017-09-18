@@ -54,19 +54,19 @@ class SearchCourier(DeliveryFromCache):
 
     def init_text(self):
         self.text_short = LocalizedString(
-            en=u"Найти пропавшего курьера.",  # TODO: ##LOCALIZATION
+            en=u"Find missing courier.",   ##LOCALIZATION
             ru=u"Найти пропавшего курьера.",
         )
 
         self.text = LocalizedString(
-            en=u"Найти пропавшего курьера и вернуть важный предмет{} Награда: {:.0f}nc, {:.0f} кармы и {:.0f} ед. опыта.".format(  # TODO: ##LOCALIZATION
-                u"." if not self.deadline else u" за {}.".format(self.deadline_to_str()),  # TODO: ##LOCALIZATION
+            en=u"Find missing courier and return important item {} Reward: {:.0f}nc, {:.0f} karma and {:.0f} exp. points.".format(   ##LOCALIZATION
+                u"." if not self.deadline else u" for {}.".format(self.deadline_to_str()),   ##LOCALIZATION
                 self.reward_money,
                 self.reward_karma,
                 self.reward_exp,
             ),
             ru= u"Найти пропавшего курьера и вернуть важный предмет{} Награда: {:.0f}nc, {:.0f} кармы и {:.0f} ед. опыта.".format(
-                u"." if not self.deadline else u" за {}.".format(self.deadline_to_str()),  # TODO: ##LOCALIZATION
+                u"." if not self.deadline else u" за {}.".format(self.deadline_to_str()),   ##LOCALIZATION
                 self.reward_money,
                 self.reward_karma,
                 self.reward_exp,

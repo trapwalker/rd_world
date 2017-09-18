@@ -93,11 +93,11 @@ class MapActivateItemQuest(Quest):
 
     def init_text(self):
         self.text_short = LocalizedString(
-            en=u"Активируйте предметы в заданных точках.",  # TODO: ##LOCALIZATION
+            en=u"Activate items at given points.",   ##LOCALIZATION
             ru=u"Активируйте предметы в заданных точках.",
         )
         self.text = LocalizedString(
-            en=u"Активируйте предметы: {} - в заданных точках. Награда: {:.0f}nc.".format(  # TODO: ##LOCALIZATION
+            en=u"Activate items: {} - at given points. Reward: {:.0f}nc.".format(   ##LOCALIZATION
                 ', '.join([item.title.en for item in self.activate_items]),
                 self.reward_money,
             ),
