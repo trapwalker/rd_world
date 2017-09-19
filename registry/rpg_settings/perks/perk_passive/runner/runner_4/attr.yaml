@@ -1,10 +1,15 @@
-﻿__cls__: PerkTraderPassive
-_cls: PerkTraderPassive
+﻿_cls: PerkTraderPassive
 abstract: false
 
 # Общие параметры перка
-title: Турбораннер                                                                        # Название перка
-description: Уменьшение наценки на товар при покупке у игровых торговцев на 10%           # Описание перка
+title:                                                                                    # Название перка
+    en: Turborunner   ##LOCALIZATION
+    ru: Турбораннер
+
+description:                                                                              # Описание перка
+    en: Increase NPC traders discount on export goods by 10%   ##LOCALIZATION
+    ru: Уменьшение наценки на товар при покупке у игровых торговцев на 10%
+
 
 # Условия доступности перка
 driving_req:      0      # Необходимый уровень прокачки Вождения

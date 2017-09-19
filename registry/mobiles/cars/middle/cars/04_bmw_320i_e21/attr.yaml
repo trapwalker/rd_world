@@ -1,7 +1,12 @@
-﻿__cls__ : Car
-_cls : Car
-title:       "320i E21"             # Модель атомобиля
-class_car:   "Средний"              # Класс автомобиля
+﻿_cls : Car
+title:                              # Модель атомобиля
+    en: "320i E21"   ##LOCALIZATION
+    ru: "320i E21"
+
+class_car:                          # Класс автомобиля
+    en: "Middle"   ##LOCALIZATION
+    ru: "Средний"
+
 name_car:    "320i E21"             # Название атомобиля
 
 price:              5700            # Цена у продавца (л) (>= 0)

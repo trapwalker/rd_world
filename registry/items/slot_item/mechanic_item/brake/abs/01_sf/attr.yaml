@@ -2,8 +2,14 @@ _cls     : MechanicItem
 doc      : АБС SF-M02B02
 abstract : false
 
-title: АБС SF-M02B02
-description: 'Система, предотвращающая блокировку колёс транспортного средства при торможении.'
+title: 
+    en: ABS SF-M02B02   ##LOCALIZATION
+    ru: АБС SF-M02B02
+
+description: 
+    en: ''   ##LOCALIZATION
+    ru: 'Система, предотвращающая блокировку колёс транспортного средства при торможении.'
+
 
 base_price: 400
 

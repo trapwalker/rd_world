@@ -1,27 +1,34 @@
-﻿__cls__ : QuestItem
-_cls    : QuestItem
+﻿_cls    : QuestItem
 doc     : Пассажир (девушка)
 
 group_id: "quest_item_1"
 deadline: 1800
 
-effect_title: "Глазные линзы"
-effect_description: "Глазные линзы"
+effect_title:  ##WTF
+    en: ""  ##LOCALIZATION
+    ru: ""
 
-abstract : false
+effect_description:
+    en: ""  ##LOCALIZATION
+    ru: ""
 
-title       : Глазные линзы
-description : Глазные линзы
+abstract: false
 
-base_price : 0
-stack_size : 1
+title:
+    en: "" ##LOCALIZATION
+    ru: ""
+
+description:
+    en: "" ##LOCALIZATION
+    ru: ""
+
+base_price: 0
+stack_size: 1
 
 inv_icon_big    : static/content/items/passengers/male_1/big.png
 inv_icon_mid    : static/content/items/passengers/male_1/mid.png
 inv_icon_small  : static/content/items/passengers/male_1/mid.png
 inv_icon_xsmall : static/content/items/passengers/male_1/mid.png
-
-
 
 driving:  2
 shooting: 15

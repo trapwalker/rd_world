@@ -1,11 +1,16 @@
-﻿__cls__         : MachineGun
 _cls            : MachineGun
-doc             : Исп. пулемет MG 08
+doc             : Пулемет MG 08None
 abstract        : false
 
-title           : Исп. пулемет<br>MG 08                      # Краткое название - отобразится в слоте инвентаря
+title:                                                       # Краткое название - отобразится в слоте инвентаря
+    en: Machine gun<br>MG 08  ##LOCALIZATION
+    ru: Пулемет<br>MG 08
+
 # Полное описание - отобразится в разделе описания в инвентаре
-description     : 'Вариант станкового пулемета Максима под немецкий винтовочный патрон. Калибр: 7,92 мм. Класс тяжести: 2.'
+description: 
+    en: 'Вариант станкового пулемета Максима под немецкий винтовочный патрон. Калибр: 7,92 мм. Класс тяжести: 2.'  ##LOCALIZATION
+    ru: 'Вариант станкового пулемета Максима под немецкий винтовочный патрон. Калибр: 7,92 мм. Класс тяжести: 2.'
+
 
 # Основные балансные настройки
 base_price      : 713                                        # Цена
@@ -71,3 +76,6 @@ armorer_images:
     armorer_top_B   : "static/content/items/slot_item/weapons/mashine_guns/medium/00_mg_08/big/top_b.png"  # назад
     armorer_top_R   : "static/content/items/slot_item/weapons/mashine_guns/medium/00_mg_08/big/top_r.png"  # вправо
     armorer_top_L   : "static/content/items/slot_item/weapons/mashine_guns/medium/00_mg_08/big/top_l.png"  # влево
+
+
+condition       : 3  # Исп.

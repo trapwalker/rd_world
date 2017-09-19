@@ -1,6 +1,8 @@
-﻿__cls__: BuySkill
-_cls: BuySkill
-doc    : Навык торговли
+﻿_cls: BuySkill
+doc: Навык торговли
 
-description: |
-    Уменьшает цену товаров и услуг, оказываемых игровыми персонажами. Увеличивает награды за задания.
+description:
+    en: |   ##LOCALIZATION
+        Minimizes the prices for goods and services, provided by the characters. Adds to the mission rewards.
+    ru: |
+        Уменьшает цену товаров и услуг, оказываемых игровыми персонажами. Увеличивает награды за задания.

@@ -1,5 +1,4 @@
-﻿__cls__ : MapWeaponTurret
-_cls : MapWeaponTurret
+﻿_cls : MapWeaponTurret
 doc     : Турель
 
 life_time        : 120

@@ -1,11 +1,16 @@
-﻿__cls__         : MachineGun
 _cls            : MachineGun
-doc             : Исп. пулемет MG 15
+doc             : Пулемет MG 15None
 abstract        : false
 
-title           : Исп. пулемет<br>MG 15                      # Краткое название - отобразится в слоте инвентаря
+title:                                                       # Краткое название - отобразится в слоте инвентаря
+    en: Machine gun<br>MG 15  ##LOCALIZATION
+    ru: Пулемет<br>MG 15
+
 # Полное описание - отобразится в разделе описания в инвентаре
-description     : 'Немецкий авиационный пулемет времен ВМВ. Разработан еще до войны на базе ручного пулемета MG 30. Калибр: 7,92 мм.'
+description: 
+    en: 'Немецкий авиационный пулемет времен ВМВ. Разработан еще до войны на базе ручного пулемета MG 30. Калибр: 7,92 мм.'  ##LOCALIZATION
+    ru: 'Немецкий авиационный пулемет времен ВМВ. Разработан еще до войны на базе ручного пулемета MG 30. Калибр: 7,92 мм.'
+
 
 # Основные балансные настройки
 base_price      : 760                                        # Цена
@@ -74,3 +79,6 @@ armorer_images:
     armorer_top_B   : "static/content/items/slot_item/weapons/mashine_guns/medium/01_mg_15/big/top_b.png"  # назад
     armorer_top_R   : "static/content/items/slot_item/weapons/mashine_guns/medium/01_mg_15/big/top_r.png"  # вправо
     armorer_top_L   : "static/content/items/slot_item/weapons/mashine_guns/medium/01_mg_15/big/top_l.png"  # влево
+
+
+condition       : 3  # Исп.

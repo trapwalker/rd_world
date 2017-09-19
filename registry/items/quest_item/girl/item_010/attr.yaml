@@ -1,17 +1,27 @@
-﻿__cls__  : QuestItem
-_cls     : QuestItem
+﻿_cls     : QuestItem
 doc      : Item_010
 abstract : false
 
-title       : На память
-description : "Бонус: 1 очко в навык Стрельба."
+title:
+    en: Remembrance ##LOCALIZATION
+    ru: На память
+
+description:
+    en: "Bonus: 1 point to Shooting skill." ##LOCALIZATION
+    ru: "Бонус: 1 очко в навык Стрельбы."
+
 group_id    : ""
 
 base_price : 0
 stack_size : 1
 
-effect_title       : Бонус
-effect_description : 1 очко в навык Стрельба
+effect_title:
+    en: Bonus ##LOCALIZATION
+    ru: Бонус
+
+effect_description:
+    en: 1 point to Shooting skill ##LOCALIZATION
+    ru: 1 очко в навык Стрельбы
 
 shooting : 1
 deadline : 43200

@@ -1,5 +1,4 @@
-﻿__cls__ : DistTable
-_cls    : DistTable
+﻿_cls    : DistTable
 doc     : Таблица расстояний между городами #840 = 1 мин
 
 table:

@@ -2,8 +2,14 @@
 abstract: false
 
 # Общие параметры перка
-title: Мегарулер                                                                         # Название перка
-description: В пати персонажа может вступить больше на 2 игроков                         # Описание перка
+title:                                                                                   # Название перка
+    en: Megaruler   ##LOCALIZATION
+    ru: Мегарулер
+
+description:                                                                             # Описание перка
+    en: In party character can enter more by 2 player   ##LOCALIZATION
+    ru: В пати персонажа может вступить больше на 2 игроков
+
 
 # Условия доступности перка
 driving_req:      0      # Необходимый уровень прокачки Вождения

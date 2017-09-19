@@ -1,5 +1,4 @@
-﻿__cls__: MapPowerUpShield
-_cls: MapPowerUpShield
+﻿_cls: MapPowerUpShield
 doc    : Объекты Power Up на карте
 
 model_class_name: QuickGamePowerUpShield

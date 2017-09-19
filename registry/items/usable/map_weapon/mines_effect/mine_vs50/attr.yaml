@@ -1,10 +1,15 @@
-﻿__cls__  : MapWeaponMineItem
-_cls  : MapWeaponMineItem
+﻿_cls  : MapWeaponMineItem
 doc      : Мина VS50
 abstract : false
 
-title       : Мина VS50
-description : Противопехотная мина, фугасная, нажимного действия. Мина устанавливается только вручную. Предназначена для выведения из строя личного состава противника.
+title: 
+    en: Mine VS50   ##LOCALIZATION
+    ru: Мина VS50
+
+description: 
+    en: ''  #TODO: ##LOCALIZATION
+    ru: Противопехотная мина, фугасная, нажимного действия. Мина устанавливается только вручную. Предназначена для выведения из строя личного состава противника.
+
 
 base_price : 50
 stack_size : 10

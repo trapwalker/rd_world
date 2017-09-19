@@ -1,10 +1,15 @@
-﻿__cls__: PerkActivateItemsPassive
-_cls: PerkActivateItemsPassive
+﻿_cls: PerkActivateItemsPassive
 abstract: false
 
 # Общие параметры перка
-title: Ультрамейкер                                                                      # Название перка
-description: Увеличение эффективности ремонтных комплектов на 8%                         # Описание перка
+title:                                                                                   # Название перка
+    en: Ultramaker   ##LOCALIZATION
+    ru: Ультрамейкер
+
+description:                                                                             # Описание перка
+    en: Increasing the efficiency of repair kits to 8%   ##LOCALIZATION
+    ru: Увеличение эффективности ремонтных комплектов на 8%
+
 
 # Условия доступности перка
 driving_req:      0      # Необходимый уровень прокачки Вождения

@@ -1,5 +1,5 @@
-﻿_cls : Car
-doc  : Грузовой класс (автобусы)
+_cls: Car
+doc: Грузовой класс (автобусы)
 
 sub_class_car: buses
 

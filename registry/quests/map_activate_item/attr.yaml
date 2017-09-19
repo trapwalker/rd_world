@@ -1,6 +1,8 @@
-﻿__cls__: MapActivateItemQuest
-_cls: MapActivateItemQuest
+﻿_cls: MapActivateItemQuest
 
-caption: Активация предметов
+caption: 
+    en: Activating items   ##LOCALIZATION
+    ru: Активация предметов
+
 first_state: begin
 list_icon: static/img/quests/icons/rad_ico.png

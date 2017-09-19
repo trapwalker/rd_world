@@ -1,5 +1,4 @@
-﻿__cls__: MapPowerUpEffects
-_cls: MapPowerUpEffects
+﻿_cls: MapPowerUpEffects
 doc    : Объекты Power Up на карте
 
 model_class_name: QuickGamePowerUpEffect

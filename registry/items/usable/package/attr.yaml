@@ -1,16 +1,23 @@
-__cls__: Package
 _cls: Package
-doc    : Посылка
+doc: Посылка
 
-abstract : false
+abstract: false
 activate_type: self
 
-title       : Посылка
-description : Посылка с неизвестным содержимым.
+title:
+    en: Parcel   ##LOCALIZATION
+    ru: Посылка
+
+description:
+    en: Parcel with unknown content.   ##LOCALIZATION
+    ru: Посылка с неизвестным содержимым.
+
 
 inv_icon_big   :  static/content/items/usable/package/big.png
 inv_icon_mid   :  static/content/items/usable/package/mid.png
 inv_icon_small :  static/content/items/usable/package/small.png
-inv_icon_xsmall : static/content/items/usable/package/supersmall.png
+inv_icon_xsmall: static/content/items/usable/package/supersmall.png
 
-activate_disable_comment: 'Достаточно места в инвентаре'
+activate_disable_comment:
+    en: 'Enough space in inventory'   ##LOCALIZATION
+    ru: 'Достаточно места в инвентаре'

@@ -1,8 +1,10 @@
-﻿__cls__: BuySkill
-_cls: BuySkill
-doc    : Навык вождения
+﻿_cls: BuySkill
+doc: Навык вождения
 
-description: | 
-    Увеличивает максимальную скорость и маневренность управляемого транспорта.
-    Сложный в управлении транспорт имеет свои требования к навыку вождения.
-
+description:
+    en: |   ##LOCALIZATION
+        Adds to the maximum speed and cornering ability of the driven transport.
+        Complex vehicles have set requirements to the driving skills level.
+    ru: | 
+        Увеличивает максимальную скорость и маневренность управляемого транспорта.
+        Сложный в управлении транспорт имеет свои требования к навыку вождения.

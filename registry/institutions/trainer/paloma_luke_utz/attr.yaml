@@ -1,7 +1,9 @@
-﻿__cls__  : Trainer
-_cls     : Trainer
+﻿_cls     : Trainer
 
-title    : Luke_Utz
+title: 
+    en: Luke_Utz
+    ru: Люк_Ютс ##LOCALIZATION
+
 photo    : "static/content/institutions/trainer/paloma_luke_utz.png"
 abstract : false
 

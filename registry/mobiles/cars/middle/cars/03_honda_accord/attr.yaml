@@ -1,7 +1,11 @@
-﻿__cls__ : Car
 _cls : Car
-title:       "Accord"               # Модель атомобиля
-class_car:   "Средний"              # Класс автомобиля
+title:                              # Модель атомобиля
+    en: "Accord"   ##LOCALIZATION
+    ru: "Accord"
+
+class_car:                          # Класс автомобиля
+    en: "Middle"   ##LOCALIZATION
+    ru: "Средний"
 name_car:    "Accord"               # Название атомобиля
 
 price:              5000            # Цена у продавца (л) (>= 0)

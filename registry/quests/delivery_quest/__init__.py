@@ -4,7 +4,7 @@ import logging
 log = logging.getLogger(__name__)
 
 from sublayers_server.model.registry_me.classes import notes
-from sublayers_server.model.registry_me.tree import FloatField, RegistryLinkField, ListField, EmbeddedNodeField, StringField
+from sublayers_server.model.registry_me.tree import FloatField, RegistryLinkField, ListField, EmbeddedNodeField, StringField, LocalizedString
 from sublayers_server.model.quest_events import OnNote
 from sublayers_server.model.registry_me.classes.quests import (
     Cancel, QuestState_, WinState,
@@ -61,20 +61,45 @@ class DeliveryQuest(Quest):
 
     def init_text(self, distance=None):
         if distance == 0:
-            self.text_short = u"Доставьте груз в соседнее здание."
-            self.text = u"Доставьте груз: {} - к {}. Награда: {:.0f}nc.".format(
-                ', '.join([item.title for item in self.delivery_set]),
-                self.recipient.title,
-                self.reward_money
+            self.text_short = LocalizedString(
+                en=u"Deliver cargo to neighboring building.",   ##LOCALIZATION
+                ru=u"Доставьте груз в соседнее здание.",
             )
+
+            self.text = LocalizedString(
+                en=u"Deliver cargo: {} - to {}. Reward: {:.0f}nc.".format(   ##LOCALIZATION
+                    ', '.join([item.title.en for item in self.delivery_set]),
+                    self.recipient.title,
+                    self.reward_money
+                ),
+                ru=u"Доставьте груз: {} - к {}. Награда: {:.0f}nc.".format(
+                    ', '.join([item.title.ru for item in self.delivery_set]),
+                    self.recipient.title,
+                    self.reward_money
+                ),
+            )
+
+
             return
-        self.text_short = u"Доставьте груз в город {}.".format(self.recipient.hometown.title)
-        self.text = u"Доставьте груз: {} - к {} в город {}. Награда: {:.0f}nc и {:.0f} ед. опыта.".format(
-            ', '.join([item.title for item in self.delivery_set]),
-            self.recipient.title,
-            self.recipient.hometown.title,
-            self.reward_money,
-            self.reward_exp,
+        self.text_short = LocalizedString(
+            en=u"Deliver cargo to city {}.".format(self.recipient.hometown.title),   ##LOCALIZATION
+            ru=u"Доставьте груз в город {}.".format(self.recipient.hometown.title),
+        )
+        self.text = LocalizedString(
+            en=u"Deliver cargo: {} - to {} to city {}. Reward: {:.0f}nc and {:.0f} exp. points.".format(   ##LOCALIZATION
+                ', '.join([item.title.en for item in self.delivery_set]),
+                self.recipient.title,
+                self.recipient.hometown.title,
+                self.reward_money,
+                self.reward_exp,
+            ),
+            ru=u"Доставьте груз: {} - к {} в город {}. Награда: {:.0f}nc и {:.0f} ед. опыта.".format(   ##LOCALIZATION
+                ', '.join([item.title.ru for item in self.delivery_set]),
+                self.recipient.title,
+                self.recipient.hometown.title,
+                self.reward_money,
+                self.reward_exp,
+            ),
         )
 
     ####################################################################################################################
@@ -121,7 +146,7 @@ class DeliveryQuest(Quest):
     ####################################################################################################################
     def on_start_(self, event, **kw):
         if not self.give_items(items=self.delivery_set, event=event):
-            self.npc_replica(npc=self.hirer, replica=u"Не хватает места в инвентаре.", event=event)
+            self.npc_replica(npc=self.hirer, replica=self.locale("q_share_no_inv_slot"), event=event)  ##LOCALIZATION
             raise Cancel("QUEST CANCEL: User have not enough empty slot")
 
     ####################################################################################################################
@@ -166,8 +191,8 @@ class DeliveryQuest(Quest):
                     note_class=notes.NPCRewardItemsNote,
                     time=event.time,
                     npc=quest.recipient,
-                    page_caption=u'Доставка<br>груза',
-                    btn1_caption=u'<br>Забрать',
+                    page_caption=quest.locale("q_dq_note_btn1"),  ##LOCALIZATION
+                    btn1_caption=quest.locale("q_share_rewnote_btn1"),  ##LOCALIZATION
                 )
             else:
                 go('final')
@@ -181,10 +206,10 @@ class DeliveryQuest(Quest):
                         agent.profile.del_note(uid=quest.dc.reward_note_uid, time=event.time)
                         go('final')
                     else:
-                        quest.npc_replica(npc=quest.hirer, replica=u"Не хватает места в инвентаре.", event=event)
+                        quest.npc_replica(npc=quest.hirer, replica=quest.locale("q_share_no_inv_slot"), event=event)  ##LOCALIZATION
 
     ####################################################################################################################
     class final(WinState):
         def on_enter_(self, quest, event):
-            quest.log(text=u'Квест выполнен.', event=event)
+            quest.log(text=quest.locale("q_dq_note_btn1"), event=event)  ##LOCALIZATION
 

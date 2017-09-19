@@ -1,7 +1,9 @@
-﻿__cls__: MapActivateRadarsQuest
-_cls: MapActivateRadarsQuest
+﻿_cls: MapActivateRadarsQuest
 
-caption: Установка радаров
+caption: 
+    en: Installation of radars   ##LOCALIZATION
+    ru: Установка радаров
+
 first_state: begin
 list_icon: static/img/quests/icons/radar.png
 

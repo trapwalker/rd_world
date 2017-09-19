@@ -1,7 +1,8 @@
-﻿__cls__  : MapWeaponMineItem
-_cls  : MapWeaponMineItem
-doc      : Предметы, активируя которые, пораждаются неподвижные мины на карте
+﻿_cls: MapWeaponMineItem
+doc: Предметы, активируя которые, пораждаются неподвижные мины на карте
 
-activate_type : self
-activate_time : 2.0
-activate_disable_comment: 'Полная остановка автомобиля'
+activate_type: self
+activate_time: 2.0
+activate_disable_comment:
+    en: 'Full stop of car'   ##LOCALIZATION
+    ru: 'Полная остановка автомобиля'

@@ -1,6 +1,7 @@
-﻿__cls__: TeachingQuest
-_cls: TeachingQuest
-doc    : Квест обучения
+﻿_cls: TeachingQuest
+doc:
+    en: Training quest   ##LOCALIZATION
+    ru: Квест обучения
 
 first_state: hangar
 current_state: ~
@@ -8,7 +9,6 @@ current_state: ~
 teaching_delivery_quest:
     parent: reg:///registry/quests/delivery_quest/teaching
     generation_group: 'teaching_delivery'
-#    __cls__: DeliveryQuest
 #    _cls: DeliveryQuest
 #    hirer: reg:///registry/institutions/mayor/whitehill_manny_askorti
 #    karma_coef: 0.5
@@ -23,9 +23,13 @@ teaching_delivery_quest:
 #        - reg:///registry/items/usable/build_set/build_set_big?amount=10
 #    reward_items_list: []  # todo: Нельзя ставить, так как придётся делать ещё одно состояние, которое не учит ничему!
 
-caption: Обучение
-text: |
-    Обучитесь.
+caption:
+    en: Training   ##LOCALIZATION
+    ru: Обучение
+
+text:
+    en: Learn.   ##LOCALIZATION
+    ru: Обучитесь.
 
 on_generate: |
     if not quest.can_generate(event):

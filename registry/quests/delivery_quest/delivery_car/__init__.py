@@ -8,7 +8,7 @@ from sublayers_world.registry.quests.delivery_quest import DeliveryQuest
 from sublayers_server.model.registry_me.randomize_examples import RandomizeExamples
 from sublayers_server.model.quest_events import OnNote, OnTimer, OnCancel
 from sublayers_server.model.registry_me.classes import notes
-from sublayers_server.model.registry_me.tree import RegistryLinkField, ListField
+from sublayers_server.model.registry_me.tree import RegistryLinkField, ListField, LocalizedString
 from sublayers_server.model.registry_me.classes.quests import Cancel, QuestState_, WinState, FailState, FailByCancelState
 
 from functools import partial
@@ -31,13 +31,26 @@ class DeliveryCar(DeliveryQuest):
         return d
 
     def init_text(self, distance=None):
-        self.text_short = u"Доставьте ТС в город {}.".format(self.recipient.hometown.title)
-        self.text = u"Доставьте ТС: {} - к {} в город {}. Награда: {:.0f}nc и {:.0f} ед. опыта.".format(
-            self.dc.car_title,
-            self.recipient.title,
-            self.recipient.hometown.title,
-            self.reward_money,
-            self.reward_exp,
+        self.text_short = LocalizedString(
+            en=u"Deliver car to city {}.".format(self.recipient.hometown.title),   ##LOCALIZATION
+            ru=u"Доставьте ТС в город {}.".format(self.recipient.hometown.title),
+        )
+
+        self.text = LocalizedString(
+            en=u"Deliver car: {} - to {} to city {}. Reward: {:.0f}nc and {:.0f} exp. points.".format(   ##LOCALIZATION
+                self.dc.car_title,
+                self.recipient.title,
+                self.recipient.hometown.title,
+                self.reward_money,
+                self.reward_exp,
+            ),
+            ru=u"Доставьте ТС: {} - к {} в город {}. Награда: {:.0f}nc и {:.0f} ед. опыта.".format(
+                self.dc.car_title,
+                self.recipient.title,
+                self.recipient.hometown.title,
+                self.reward_money,
+                self.reward_exp,
+            ),
         )
 
     def on_generate_(self, event, **kw):
@@ -77,7 +90,7 @@ class DeliveryCar(DeliveryQuest):
 
     def on_start_(self, event, **kw):
         if self.agent.profile.car:
-            self.npc_replica(npc=self.hirer, replica=u"Избавься от своей машины.", event=event)
+            self.npc_replica(npc=self.hirer, replica=self.locale("q_dc_drop_car"), event=event)  ##LOCALIZATION
             raise Cancel("QUEST CANCEL: User have car")
 
         agent_model = self.agent.profile._agent_model
@@ -97,7 +110,7 @@ class DeliveryCar(DeliveryQuest):
         messages.UserExampleCarInfo(agent=agent_model, time=event.time).post()
         messages.UserExampleCarView(agent=agent_model, time=event.time).post()
         messages.UserExampleCarSlots(agent=agent_model, time=event.time).post()
-        self.log(text=u'Начат квест по доставке ТС.', event=event)
+        self.log(text=self.locale("q_dc_started"), event=event)  ##LOCALIZATION
 
     ####################################################################################################################
     class begin(QuestState_):
@@ -134,10 +147,10 @@ class DeliveryCar(DeliveryQuest):
                     messages.UserExampleCarInfo(agent=agent_model, time=event.time).post()
                     messages.UserExampleCarView(agent=agent_model, time=event.time).post()
                     messages.UserExampleCarSlots(agent=agent_model, time=event.time).post()
-                    quest.log(text=u'Уплачен штраф в размере {}nc.'.format(money_penalty), event=event)
+                    quest.log(text='{} {}nc.'.format(quest.locale("q_share_cancel_pen_done"), money_penalty), event=event)  ##LOCALIZATION
                     go("cancel_fail")
                 else:
-                    quest.npc_replica(npc=quest.hirer, replica=u"Для отказа от квеста верните ТС и заплатите штраф {}nc.".format(money_penalty), event=event)
+                    quest.npc_replica(npc=quest.hirer, replica='{} {}nc.'.format(quest.locale("q_dc_cancel_req"), money_penalty), event=event)  ##LOCALIZATION
 
     ####################################################################################################################
     class reward(QuestState_):
@@ -161,12 +174,12 @@ class DeliveryCar(DeliveryQuest):
     ####################################################################################################################
     class cancel_fail(FailByCancelState):
         def on_enter_(self, quest, event):
-            quest.log(text=u'Квест провален.', event=event)
+            quest.log(text=quest.locale("q_share_q_fail"), event=event)  ##LOCALIZATION
 
     ####################################################################################################################
     class win(WinState):
         def on_enter_(self, quest, event):
-            quest.log(text=u'Квест выполнен.', event=event)
+            quest.log(text=quest.locale("q_share_q_win"), event=event)  ##LOCALIZATION
 
     ####################################################################################################################
     class fail(FailState):
@@ -178,4 +191,4 @@ class DeliveryCar(DeliveryQuest):
             agent.set_relationship(time=event.time, npc=quest.hirer, dvalue=-2)  # изменение отношения c нпц
 
             agent.set_karma(time=event.time, dvalue=-quest.reward_karma)
-            quest.log(text=u'Квест провален.', event=event)
+            quest.log(text=quest.locale("q_share_q_fail"), event=event)  ##LOCALIZATION

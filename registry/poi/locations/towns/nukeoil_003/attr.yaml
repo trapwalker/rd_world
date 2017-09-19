@@ -1,9 +1,11 @@
-﻿__cls__  : Town
-_cls     : Town
+﻿_cls     : Town
 doc      : Nukeoil_003
 abstract : false
 
-title             : Nukeoil_003
+title: 
+    en: NukeOil_003   ##LOCALIZATION
+    ru: Нукойл_003
+
 position          : {x: 12493500, y: 27048851}   # Заправка между Паломой и Вайтхилом
 p_observing_range : 250
 p_enter_range     : 150
@@ -12,8 +14,14 @@ svg_link: static/content/locations/map_locations/nukeoil_001
 
 buildings:
   - name: nukeoil
-    caption: Нукойл
-    title: Нукойл
+    caption: 
+        en: NukeOil   ##LOCALIZATION
+        ru: Нукойл
+
+    title: 
+        en: NukeOil   ##LOCALIZATION
+        ru: Нукойл
+
     head: reg:///registry/institutions/nucoil
     instances:
         - reg:///registry/institutions/gas_station

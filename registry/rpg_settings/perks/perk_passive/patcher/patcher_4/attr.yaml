@@ -1,10 +1,15 @@
-﻿__cls__: PerkRepairPassive
-_cls: PerkRepairPassive
+﻿_cls: PerkRepairPassive
 abstract: false
 
 # Общие параметры перка
-title: Турбопатчер                                                          # Название перка
-description: Восстановление 10% прочности транспорта каждую минуту          # Описание перка
+title:                                                                      # Название перка
+    en: Turbopatcher   ##LOCALIZATION
+    ru: Турбопатчер
+
+description:                                                                # Описание перка
+    en: Recover 10% transport strength every minute   ##LOCALIZATION
+    ru: Восстановление 10% прочности транспорта каждую минуту
+
 
 # Условия доступности перка
 driving_req:      0      # Необходимый уровень прокачки Вождения

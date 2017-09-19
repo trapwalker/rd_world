@@ -1,7 +1,9 @@
-﻿__cls__ : Girl
-_cls    : Girl
+﻿_cls    : Girl
 
-title    : Trella_Tamale
+title: 
+    en: Trella_Tamale
+    ru: Трелла_Тамали  ##LOCALIZATION
+
 photo    : "static/content/institutions/girl/prior_trella_tamale.png"
 abstract : false
 

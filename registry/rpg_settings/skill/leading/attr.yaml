@@ -1,7 +1,10 @@
-﻿__cls__: Skill
-_cls: Skill
-doc    : Навык лидера
+﻿_cls: Skill
+doc: Навык лидера
 
-description: |
-    Определяет максимальное количество игроков, которые могут присоединиться к пати персонажа.
-    У игровых персонажей, дающих групповые задания, есть свои требования к навыку лидерства.
+description:
+    en: |   ##LOCALIZATION
+        Determines the maximum number of players who can join the character’s party.
+        The characters issuing group missions have set leadership skill requirements.
+    ru: |
+        Определяет максимальное количество игроков, которые могут присоединиться к пати персонажа.
+        У игровых персонажей, дающих групповые задания, есть свои требования к навыку лидерства.

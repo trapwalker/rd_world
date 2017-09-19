@@ -1,11 +1,16 @@
-﻿__cls__ : Item
-_cls    : Item
+﻿_cls    : Item
 doc     : Рис (мешок)
 
 abstract : false
 
-title       : Рис (мешок)
-description : Большой мешок риса.
+title: 
+    en: Rice (bag)   ##LOCALIZATION
+    ru: Рис (мешок)
+
+description: 
+    en: A large bag of rice.   ##LOCALIZATION
+    ru: Большой мешок риса.
+
 
 base_price : 25
 stack_size : 1

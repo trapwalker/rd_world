@@ -1,12 +1,15 @@
-﻿__cls__ : InsurancePremium
-_cls    : InsurancePremium
-doc     : InsurancePremium
+﻿_cls: InsurancePremium
+doc: InsurancePremium
 
 group_id: "insurance"
 
+title:
+    en: Premium  ##LOCALIZATION
+    ru: Премиум
 
-title       : Премиум
-description : Премиум Страховка
+description:
+    en: Premium insurance  ##LOCALIZATION
+    ru: Премиум Страховка
 
 base_price: 1000
 

@@ -1,41 +1,42 @@
-﻿__cls__: RoleClass
-_cls: RoleClass
+﻿_cls: RoleClass
 doc    : Преднастройки классов
 abstract: false
 
-title: Chosen One
-description: Избранный
-description__en: Chosen One
-description__ru: Избранный
+title: 
+    en: Chosen One   ##LOCALIZATION
+    ru: Избранный
 
-description_char_window: |
-    Класс: Избранный.
-    <br>Классовый навык: Вождение.
-    <br>Классовый квест: Основать собственное поселение.
+description:
+    en: Chosen One
+    ru: Избранный
 
-console_description: >
-    Класс: Избранный.
-    \nКлассовый навык: Вождение.
-    \nКлассовый квест: Основать собственное поселение.
-    \nОписание:
-    \nИзбранный - выходец из родного поселения, жители которого испытывают острую нехватку продовольствия и топлива.
-    Начинает игру с бонусом к стартовой сумме нукойнов и классовым артефактом “Водный чип”. Навык езды прокачивается быстрее.
-console_description__en: >
-    Class: Chosen One
-    \nClass skill: Drive
-    \nClass quest: Establish a settlement.
-    \nDescription:
-    \nThe Chosen One comes from a community suffering a severe shortage of food and fuel.
-    He starts the game with a bonus to the initial nukecoin total and a Flask class artifact.
-    The driving skill is developed faster.
-console_description__ru: >
-    Класс: Избранный.
-    \nКлассовый навык: Вождение.
-    \nКлассовый квест: Основать собственное поселение.
-    \nОписание:
-    \nИзбранный - выходец из родного поселения, жители которого испытывают острую нехватку продовольствия и топлива.
-    Начинает игру с бонусом к стартовой сумме нукойнов и классовым артефактом “Водный чип”. Навык езды прокачивается быстрее.
+description_char_window:
+    en: |   ##LOCALIZATION
+        Класс: Chosen One.
+        <br>Классовый навык: Drive.
+        <br>Классовый квест: Establish a settlement.
+    ru: |
+        Класс: Избранный.
+        <br>Классовый навык: Вождение.
+        <br>Классовый квест: Основать собственное поселение.
 
+console_description:
+    en: >
+        Class: Chosen One
+        \nClass skill: Drive
+        \nClass quest: Establish a settlement.
+        \nDescription:
+        \nThe Chosen One comes from a community suffering a severe shortage of food and fuel.
+        He starts the game with a bonus to the initial nukecoin total and a Flask class artifact.
+        The driving skill is developed faster.
+    ru: >
+        Класс: Избранный.
+        \nКлассовый навык: Вождение.
+        \nКлассовый квест: Основать собственное поселение.
+        \nОписание:
+        \nИзбранный - выходец из родного поселения, жители которого испытывают острую нехватку продовольствия и топлива.
+        Начинает игру с бонусом к стартовой сумме нукойнов и классовым артефактом “Водный чип”. Навык езды прокачивается быстрее.
+    
 icon: static/content/class-icons/co.png
 
 money: 0

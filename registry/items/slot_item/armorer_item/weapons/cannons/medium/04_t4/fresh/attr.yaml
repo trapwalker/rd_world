@@ -1,8 +1,11 @@
 ﻿_cls            : Cannon
-doc             : Свеж. пушка T4
+doc             : Пушка T4None
 abstract        : false
 
-title           : Свеж. пушка<br>T4                        # Краткое название - отобразится в слоте инвентаря
+title           : Пушка<br>T4                              # Краткое название - отобразится в слоте инвентаря
+
+
+
 # Полное описание - отобразится в разделе описания в инвентаре
 description     : '???'
 
@@ -64,3 +67,6 @@ armorer_images:
     armorer_top_B   : "static/content/items/slot_item/weapons/cannons/medium/04_t4/middle/top_b.png"  # назад
     armorer_top_R   : "static/content/items/slot_item/weapons/cannons/medium/04_t4/middle/top_r.png"  # вправо
     armorer_top_L   : "static/content/items/slot_item/weapons/cannons/medium/04_t4/middle/top_l.png"  # влево
+
+
+condition       : 4  # Свеж.

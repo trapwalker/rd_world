@@ -1,5 +1,4 @@
-﻿__cls__  : Town
-_cls     : Town
+﻿_cls     : Town
 abstract : false
 
 position : {x: 12493500, y: 27048851}  # Заправка между Паломой и Вайтхилом

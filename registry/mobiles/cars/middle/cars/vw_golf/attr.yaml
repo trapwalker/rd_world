@@ -1,7 +1,11 @@
-﻿__cls__ : Car
 _cls : Car
-title:       "Golf"                 # Модель атомобиля
-class_car:   "Средний"              # Класс автомобиля
+title:                              # Модель атомобиля
+    en: "Golf"   ##LOCALIZATION
+    ru: "Golf"
+
+class_car:                          # Класс автомобиля
+    en: "Middle"   ##LOCALIZATION
+    ru: "Средний"
 name_car:    "Golf"                 # Название атомобиля
 
 price:              2000            # Цена у продавца (л) (>= 0)

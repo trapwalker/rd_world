@@ -1,5 +1,6 @@
-﻿__cls__: MapRadarItem
-_cls: MapRadarItem
-doc    : Предметы, активируя которые, пораждаются неподвижные радары на карте
+﻿_cls: MapRadarItem
+doc: Предметы, активируя которые, пораждаются неподвижные радары на карте
 
-activate_disable_comment: 'Полная остановка автомобиля'
+activate_disable_comment:
+    en: 'Full stop of car'   ##LOCALIZATION
+    ru: 'Полная остановка автомобиля'

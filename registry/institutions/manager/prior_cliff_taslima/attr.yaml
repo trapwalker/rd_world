@@ -1,6 +1,8 @@
-﻿__cls__: Institution
-_cls: Institution
-title: Cliff_Taslima
+﻿_cls: Institution
+title: 
+    en: Cliff_Taslima
+    ru: Клифф_Таслима ##LOCALIZATION
+
 photo: "static/content/institutions/manager/prior_cliff_taslima.png"
 abstract: false
 

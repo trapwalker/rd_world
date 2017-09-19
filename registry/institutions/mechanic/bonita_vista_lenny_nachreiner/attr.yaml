@@ -1,7 +1,9 @@
-﻿__cls__ : Mechanic
-_cls : Mechanic
+﻿_cls : Mechanic
 
-title    : Lenny_Nachreiner
+title: 
+    en: Lenny_Nachreiner
+    ru: Ленни_Накрайнер ##LOCALIZATION
+
 photo    : "static/content/institutions/mechanic/bonita_vista_lenny_nachreiner.png"
 abstract : false
 

@@ -1,10 +1,15 @@
-﻿__cls__: PerkPassive
-_cls: PerkPassive
+﻿_cls: PerkPassive
 abstract: false
 
 # Общие параметры перка
-title: Ультраниндзя                                                                      # Название перка
-description: Заметность персонажа для других игроков от набранной скорости снижена на 8% # Описание перка
+title:                                                                                   # Название перка
+    en: Ultraninja   ##LOCALIZATION
+    ru: Ультраниндзя
+
+description:                                                                             # Описание перка
+    en: Visibility of character for other players because acceleration speed has been reduced by 8%   ##LOCALIZATION
+    ru: Заметность персонажа для других игроков от набранной скорости снижена на 8%
+
 
 # Условия доступности перка
 driving_req:      0      # Необходимый уровень прокачки Вождения

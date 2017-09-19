@@ -1,12 +1,16 @@
-﻿__cls__ : InsuranceShareholder
-_cls    : InsuranceShareholder
-doc     : InsuranceShareholder
+﻿_cls: InsuranceShareholder
+doc: InsuranceShareholder
 
 group_id: "insurance"
 
 
-title       : Акционерная
-description : Акционерная Страховка
+title:
+    en: VIP  ##LOCALIZATION
+    ru: VIP
+
+description:
+    en: VIP insurance  ##LOCALIZATION
+    ru: VIP страховка
 
 deadline: 2592000  # 30 суток
 base_price: 15000

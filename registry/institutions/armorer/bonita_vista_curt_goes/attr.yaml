@@ -1,6 +1,9 @@
-﻿_cls : SlotWorker
+﻿_cls: SlotWorker
 
-title    : Curt_Goes
+title: 
+    en: Curt_Goes
+    ru: Курт_Гоус  ##LOCALIZATION
+
 photo    : "static/content/institutions/armorer/bonita_vista_curt_goes.png"
 abstract : false
 

@@ -1,10 +1,15 @@
-﻿__cls__: PerkPassive
-_cls: PerkPassive
+﻿_cls: PerkPassive
 abstract: false
 
 # Общие параметры перка
-title: Меганиндзя                                                                        # Название перка
-description: Заметность персонажа для других игроков от набранной скорости снижена на 5% # Описание перка
+title:                                                                                   # Название перка
+    en: Meganinja   ##LOCALIZATION
+    ru: Меганиндзя
+
+description:                                                                             # Описание перка
+    en: Visibility of character for other players because acceleration speed has been reduced by 5%   ##LOCALIZATION
+    ru: Заметность персонажа для других игроков от набранной скорости снижена на 5%
+
 
 # Условия доступности перка
 driving_req:      0      # Необходимый уровень прокачки Вождения

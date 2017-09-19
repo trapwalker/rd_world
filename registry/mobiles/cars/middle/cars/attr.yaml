@@ -1,4 +1,4 @@
-﻿_cls : Car
+_cls : Car
 doc  : Средний класс (легковые)
 
 sub_class_car: cars

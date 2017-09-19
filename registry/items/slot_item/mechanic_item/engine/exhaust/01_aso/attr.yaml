@@ -2,8 +2,14 @@ _cls     : MechanicItem
 doc      : Выпускной коллектор ASO-F02H02
 abstract : false
 
-title: Выпускной коллектор ASO-F02H02
-description: 'Выпускной коллектор предназначен для сбора выхлопных газов с нескольких цилиндров в одну трубу.'
+title: 
+    en: Exhaust manifold ASO-F02H02   ##LOCALIZATION
+    ru: Выпускной коллектор ASO-F02H02
+
+description: 
+    en: ''   ##LOCALIZATION
+    ru: 'Выпускной коллектор предназначен для сбора выхлопных газов с нескольких цилиндров в одну трубу.'
+
 
 base_price: 400
 

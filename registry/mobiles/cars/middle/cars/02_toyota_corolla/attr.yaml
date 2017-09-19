@@ -1,7 +1,11 @@
-﻿__cls__ : Car
 _cls : Car
-title:       "Corolla"              # Модель атомобиля
-class_car:   "Средний"              # Класс автомобиля
+title:                              # Модель атомобиля
+    en: "Corolla"   ##LOCALIZATION
+    ru: "Corolla"
+
+class_car:                          # Класс автомобиля
+    en: "Middle"   ##LOCALIZATION
+    ru: "Средний"
 name_car:    "Corolla"              # Название атомобиля
 
 price:              3900            # Цена у продавца (л) (>= 0)

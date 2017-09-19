@@ -1,5 +1,4 @@
-﻿__cls__: Town
-_cls: Town
+﻿_cls: Town
 doc    : Заправочные станции
 p_observing_range: 400
 p_enter_range: 220
@@ -11,7 +10,10 @@ svg_link: static/content/locations/map_locations/gas_station
 
 buildings:
     - name: nukeoil
-      caption: Нукойл
+      caption: 
+          en: NukeOil   ##LOCALIZATION
+          ru: Нукойл
+
       head: reg:///registry/institutions/nucoil
       instances:
           - reg:///registry/institutions/gas_station

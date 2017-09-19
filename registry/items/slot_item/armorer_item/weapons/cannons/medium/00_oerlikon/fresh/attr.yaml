@@ -1,8 +1,11 @@
 ﻿_cls            : Cannon
-doc             : Свеж. пушка Эрликон
+doc             : Пушка ЭрликонNone
 abstract        : false
 
-title           : Свеж. пушка<br>Эрликон                   # Краткое название - отобразится в слоте инвентаря
+title           : Пушка<br>Эрликон                         # Краткое название - отобразится в слоте инвентаря
+
+
+
 # Полное описание - отобразится в разделе описания в инвентаре
 description     : 'Зенитная малокалиберная пушка. Калибр: 20 мм. Класс тяжести: 2.'
 
@@ -64,3 +67,6 @@ armorer_images:
     armorer_top_B   : "static/content/items/slot_item/weapons/cannons/medium/00_oerlikon/big/top_b.png"  # назад
     armorer_top_R   : "static/content/items/slot_item/weapons/cannons/medium/00_oerlikon/big/top_r.png"  # вправо
     armorer_top_L   : "static/content/items/slot_item/weapons/cannons/medium/00_oerlikon/big/top_l.png"  # влево
+
+
+condition       : 4  # Свеж.

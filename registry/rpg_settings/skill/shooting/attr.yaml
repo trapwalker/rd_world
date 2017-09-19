@@ -1,7 +1,10 @@
-﻿__cls__: Skill
-_cls: Skill
-doc    : Навык стрельбы
+﻿_cls: Skill
+doc: Навык стрельбы
 
-description: |
-    Увеличивает повреждения в секунду, наносимые автоматическими орудиями и повреждения от залповых.
-    Сложные оружейные системы имеют свои требования к навыку стрельбы.
+description:
+    en: |   ##LOCALIZATION
+        Adds to the damage per second caused by automatic weapons, and the damage caused by salvo weapons.
+        Complex weaponry has set requirements to the shooting skills level.
+    ru: |
+        Увеличивает повреждения в секунду, наносимые автоматическими орудиями и повреждения от залповых.
+        Сложные оружейные системы имеют свои требования к навыку стрельбы.

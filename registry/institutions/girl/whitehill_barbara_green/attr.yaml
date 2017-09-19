@@ -1,7 +1,9 @@
-﻿__cls__ : Girl
-_cls    : Girl
+﻿_cls    : Girl
 
-title    : Barbara_Green
+title: 
+    en: Barbara_Green
+    ru: Барбара_Грин  ##LOCALIZATION
+
 photo    : "static/content/institutions/girl/whitehill_barbara_green.png"
 abstract : false
 

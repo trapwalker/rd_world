@@ -12,3 +12,4 @@ tilesets
 state/*
 slope/**.png
 *.pyc
+*.tar

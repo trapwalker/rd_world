@@ -1,17 +1,27 @@
-﻿__cls__  : QuestItem
-_cls     : QuestItem
+﻿_cls     : QuestItem
 doc      : Item_029
 abstract : false
 
-title       : На память
-description : "Бонус: 10 очков в навыки Стрельба и Вождение."
+title:
+    en: Remembrance ##LOCALIZATION
+    ru: На память
+
+description:
+    en: "Bonus: 10 points to Shooting and Driving skills."  ##LOCALIZATION
+    ru: "Бонус: 10 очков в навыки Стрельба и Вождение."
+
 group_id    : ""
 
 base_price : 0
 stack_size : 1
 
-effect_title       : Бонус
-effect_description : 10 очков в навыки Стрельба и Вождение
+effect_title:
+    en: Bonus  ##LOCALIZATION
+    ru: Бонус
+
+effect_description:
+    en: 10 points to Shooting and Driving skills ##LOCALIZATION
+    ru: 10 очков в навыки Стрельба и Вождение
 
 shooting : 10
 driving  : 10

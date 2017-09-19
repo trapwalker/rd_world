@@ -1,8 +1,14 @@
-﻿_cls : SlotWorker
+﻿_cls: SlotWorker
 
-doc     : Оружейник
-text    : Вас приветствует оружейник!
-type    : armorer
+doc:
+    en: Armorer ##LOCALIZATION
+    ru: Оружейник
+
+text: ##WTF
+    en: Welcome to armorer!  ##LOCALIZATION
+    ru: Вас приветствует оружейник!
+
+type: armorer
 
 clear_cost  : 0.025  # Стоимость освобождения слота
 setup_cost  : 0.05   # Стоимость установки в слот

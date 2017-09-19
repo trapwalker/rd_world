@@ -1,17 +1,27 @@
-﻿__cls__  : QuestItem
-_cls     : QuestItem
+﻿_cls     : QuestItem
 doc      : Item_003
 abstract : false
 
-title       : На память
-description : "Бонус: 5 очков в навык Торговля."
+title:
+    en: Remembrance ##LOCALIZATION
+    ru: На память
+
+description:
+    en: "Bonus: 5 points to Barter skill."  ##LOCALIZATION
+    ru: "Бонус: 5 очков в навык Торговли."
+
 group_id    : ""
 
 base_price : 0
 stack_size : 1
 
-effect_title       : Бонус
-effect_description : 5 очков в навык Торговля
+effect_title:
+    en: Bonus
+    ru: Бонус
+
+effect_description:
+    en: 5 points to Barter skill  ##LOCALIZATION
+    ru: 5 очков в навык Торговли
 
 trading  : 5
 deadline : 43200

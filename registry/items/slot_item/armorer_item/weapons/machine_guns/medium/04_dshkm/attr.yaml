@@ -1,11 +1,16 @@
-﻿__cls__         : MachineGun
 _cls            : MachineGun
-doc             : Исп. пулемет ДШКМ
+doc             : Пулемет ДШКМNone
 abstract        : false
 
-title           : Исп. пулемет<br>ДШКМ                        # Краткое название - отобразится в слоте инвентаря
+title:                                                        # Краткое название - отобразится в слоте инвентаря
+    en: Machine gun<br>DShKM  ##LOCALIZATION
+    ru: Пулемет<br>ДШКМ
+
 # Полное описание - отобразится в разделе описания в инвентаре
-description     : 'Модернизация станкового крупнокалиберного пулемета ДШК. Калибр: 12,7 мм.'
+description: 
+    en: 'Модернизация станкового крупнокалиберного пулемета ДШК. Калибр: 12,7 мм.'  ##LOCALIZATION
+    ru: 'Модернизация станкового крупнокалиберного пулемета ДШК. Калибр: 12,7 мм.'
+
 
 # Основные балансные настройки
 base_price      : 1425                                        # Цена
@@ -71,3 +76,6 @@ armorer_images:
     armorer_top_B   : "static/content/items/slot_item/weapons/mashine_guns/medium/04_dshkm/big/top_b.png"  # назад
     armorer_top_R   : "static/content/items/slot_item/weapons/mashine_guns/medium/04_dshkm/big/top_r.png"  # вправо
     armorer_top_L   : "static/content/items/slot_item/weapons/mashine_guns/medium/04_dshkm/big/top_l.png"  # влево
+
+
+condition       : 3  # Исп.

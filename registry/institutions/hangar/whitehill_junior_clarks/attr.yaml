@@ -1,6 +1,9 @@
 ﻿_cls     : Hangar
 
-title    : Junior_Clarks
+title: 
+    en: Junior_Clarks
+    ru: Джуниор_Кларкс ##LOCALIZATION
+
 photo    : "static/content/institutions/hangar/whitehill_junior_clarks.png"
 abstract : false
 

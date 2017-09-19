@@ -1,7 +1,9 @@
-﻿__cls__ : Girl
-_cls    : Girl
+﻿_cls    : Girl
 
-title    : Jett_Doll
+title: 
+    en: Jett_Doll
+    ru: Джетт_Долл  ##LOCALIZATION
+
 photo    : "static/content/institutions/girl/paloma_jett_doll.png"
 abstract : false
 

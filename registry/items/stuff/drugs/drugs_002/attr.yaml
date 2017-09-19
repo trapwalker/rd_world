@@ -1,11 +1,16 @@
-﻿__cls__ : Item
-_cls    : Item
+﻿_cls    : Item
 doc     : Каннабис
 
 abstract : false
 
-title       : Каннабис
-description : Упаковка конопли.
+title: 
+    en: Cannabis   ##LOCALIZATION
+    ru: Каннабис
+
+description: 
+    en: Packing of hemp.   ##LOCALIZATION
+    ru: Упаковка конопли.
+
 
 base_price : 25
 stack_size : 1

@@ -1,6 +1,5 @@
-﻿__cls__ : Item
-_cls    : Item
-doc     : Предметы
+_cls: Item
+doc: Предметы
 
 base_price : 0
 amount     : 1
@@ -8,4 +7,23 @@ stack_size : 1
 
 activate_type            : none
 activate_time            : 0.0
-activate_disable_comment : '_'
+activate_disable_comment :
+    en: '_'  ##LOCALIZATION
+    ru: '_'
+
+condition_map:  ##LOCALIZATION
+    '1':  # Ржавое
+        en: Rusty
+        ru: Ржав.
+    '2':  # Изношенное
+        en: Worn
+        ru: Изн.
+    '3':  # Использованное
+        en: Used
+        ru: Исп.
+    '4':  # Свежее
+        en: Fresh
+        ru: Свеж.
+    '5':  # Новое
+        en: New
+        ru: Нов.

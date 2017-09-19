@@ -1,5 +1,10 @@
-﻿__cls__ : Institution
-_cls : Institution
-doc     : Р-джей
-text    : Вас приветствует р-джей!
-type    : radio_dj
+﻿_cls: Institution
+doc:
+    en: RJ ##LOCALIZATION
+    ru: Р-джей
+
+text: ##WTF
+    en: "" ##LOCALIZATION
+    ru: ""
+
+type: radio_dj

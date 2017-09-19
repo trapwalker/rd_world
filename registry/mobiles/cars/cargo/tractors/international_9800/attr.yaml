@@ -1,7 +1,11 @@
-﻿__cls__ : Car
-_cls : Car
-title:       "I9800"             # Модель атомобиля
-class_car:   "Грузовой"          # Класс автомобиля
+﻿_cls : Car
+title:                           # Модель атомобиля
+    en: "I9800"   ##LOCALIZATION
+    ru: "I9800"
+
+class_car:                       # Класс автомобиля
+    en: "Cargo"   ##LOCALIZATION
+    ru: "Грузовой"
 name_car:    "I9800"             # Название атомобиля
 
 price:              125000       # Цена у продавца (л) (>= 0)

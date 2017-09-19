@@ -1,14 +1,14 @@
-﻿__cls__: PerkPassive
-_cls: PerkPassive
+﻿_cls: PerkPassive
 abstract: false
 
 # Общие параметры перка
-title: Спреер                                                               # Название перка
-title__en: Sprayer
-title__ru: Спреер
-description: +2% к повреждениям автоматическим оружием                      # Описание перка
-description__en: +2% damage with automatic weapons (Shooting >= 10)
-description__ru: +2% к повреждениям автоматическим оружием
+title:                                                                      # Название перка
+    en: Sprayer
+    ru: Спреер
+
+description:                                                                # Описание перка
+    en: +2% damage with automatic weapons (Shooting >= 10)
+    ru: +2% к повреждениям автоматическим оружием
 
 # Условия доступности перка
 driving_req:      0      # Необходимый уровень прокачки Вождения

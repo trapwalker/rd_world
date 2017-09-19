@@ -1,11 +1,16 @@
-﻿__cls__ : Item
-_cls    : Item
+﻿_cls    : Item
 doc     : Теплая одежда №2
 
 abstract : false
 
-title       : Теплая одежда №2
-description : Ящик разной теплой одежды.
+title: 
+    en: Warm clothes №2   ##LOCALIZATION
+    ru: Теплая одежда №2
+
+description: 
+    en: Box of different warm clothes.   ##LOCALIZATION
+    ru: Ящик разной теплой одежды.
+
 
 base_price : 25
 stack_size : 1

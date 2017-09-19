@@ -1,6 +1,9 @@
 ﻿_cls : SlotWorker
 
-title    : Martin_Arioso
+title: 
+    en: Martin_Arioso
+    ru: Мартин_Ариозо  ##LOCALIZATION
+
 photo    : "static/content/institutions/armorer/whitehill_martin_arioso.png"
 abstract : false
 

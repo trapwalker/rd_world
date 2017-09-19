@@ -1,8 +1,10 @@
-﻿__cls__: ClassSkill
-_cls: ClassSkill
+﻿_cls: ClassSkill
 doc  : Пустой-0
 
-title: Пустой-0
+title: 
+    en: Empty-0   ##LOCALIZATION
+    ru: Пустой-0
+
 
 target: ''
 bonus_step: 0

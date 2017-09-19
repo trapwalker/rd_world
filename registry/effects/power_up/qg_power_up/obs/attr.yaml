@@ -1,5 +1,4 @@
-﻿__cls__: Effect
-_cls: Effect
+﻿_cls: Effect
 doc: Эффект увеличения дальности видимости в 2 раза при использовании PowerUp
 abstract: false
 

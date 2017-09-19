@@ -1,6 +1,8 @@
-﻿__cls__       : MapWeaponRocket
-_cls       : MapWeaponRocket
-title         : Kornet
+﻿_cls       : MapWeaponRocket
+title: 
+    en: Kornet   ##LOCALIZATION
+    ru: Корнет
+
 
 radius_damage : 50
 damage        : 75

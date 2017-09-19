@@ -1,5 +1,4 @@
-﻿__cls__: Effect
-_cls: Effect
+﻿_cls: Effect
 doc: Эффект ограничения минимальной видимости в лесу (EffectWoodVisibilityMin)
 abstract: false
 

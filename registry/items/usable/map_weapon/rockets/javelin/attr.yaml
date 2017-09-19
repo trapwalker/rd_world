@@ -1,9 +1,14 @@
-﻿__cls__  : MapWeaponRocketItem
-_cls  : MapWeaponRocketItem
+﻿_cls  : MapWeaponRocketItem
 abstract : false
 
-title       : ПТРК "FGM-148 Джавелин"
-description : Американский переносной противотанковый ракетный комплекс. Предназначен для поражения бронетехники, защищённых объектов и низколетящих малоскоростных целей.
+title: 
+    en: FGM-148 Javelin   ##LOCALIZATION
+    ru: ПТРК "FGM-148 Джавелин"
+
+description: 
+    en: ''   ##LOCALIZATION
+    ru: Американский переносной противотанковый ракетный комплекс. Предназначен для поражения бронетехники, защищённых объектов и низколетящих малоскоростных целей.
+
 
 base_price : 300
 stack_size : 10

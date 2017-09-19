@@ -1,40 +1,41 @@
-﻿__cls__: RoleClass
-_cls: RoleClass
+﻿_cls: RoleClass
 doc    : Преднастройки классов
 abstract: false
 
-title: Night Rider
-description: Ночной ездок
-description__en: Night Rider
-description__ru: Ночной ездок
+title: 
+    en: Night Rider   ##LOCALIZATION
+    ru: Ночной ездок
 
-description_char_window: |
-    Класс: Ночной ездок.
-    <br>Классовый навык: Скрытность.
-    <br>Классовый квест: Овладеть стелс-технологией.
+description:
+    en: Night Rider
+    ru: Ночной ездок
 
-console_description: >
-    Класс: Ночной ездок.
-    \nКлассовый навык: Скрытность.
-    \nКлассовый квест: Овладеть стелс-технологией.
-    \nОписание:
-    \nНочной ездок хладнокровен в погонях, имеет опасных врагов на хвосте и предпочитает проворачивать свои дела тихо и незаметно.
-    Начинает игру с крафтовым артефактом “Зубочистка”. Навык скрытности прокачивается быстрее.
-console_description__en: >
-    Class: Night Rider
-    \nClass skill: Hide
-    \nClass quest: Get the stealth technology.
-    \nDescription:
-    \nThe Night Rider is cool-blooded during chases, is tailed by dangerous enemies and prefers pulling his dealings quietly and inconspicuously.
-    He starts the game with the Toothpick craft artifact. The stealth skill is developed faster.
-console_description__ru: >
-    Класс: Ночной ездок.
-    \nКлассовый навык: Скрытность.
-    \nКлассовый квест: Овладеть стелс-технологией.
-    \nОписание:
-    \nНочной ездок хладнокровен в погонях, имеет опасных врагов на хвосте и предпочитает проворачивать свои дела тихо и незаметно.
-    Начинает игру с крафтовым артефактом “Зубочистка”. Навык скрытности прокачивается быстрее.
+description_char_window:
+    en: |   ##LOCALIZATION
+        Класс: Night Rider.
+        <br>Классовый навык: Hide.
+        <br>Классовый квест: Get the stealth technology.
+    ru: |
+        Класс: Ночной ездок.
+        <br>Классовый навык: Скрытность.
+        <br>Классовый квест: Овладеть стелс-технологией.
 
+console_description:
+    en: >
+        Class: Night Rider
+        \nClass skill: Hide
+        \nClass quest: Get the stealth technology.
+        \nDescription:
+        \nThe Night Rider is cool-blooded during chases, is tailed by dangerous enemies and prefers pulling his dealings quietly and inconspicuously.
+        He starts the game with the Toothpick craft artifact. The stealth skill is developed faster.
+    ru: >
+        Класс: Ночной ездок.
+        \nКлассовый навык: Скрытность.
+        \nКлассовый квест: Овладеть стелс-технологией.
+        \nОписание:
+        \nНочной ездок хладнокровен в погонях, имеет опасных врагов на хвосте и предпочитает проворачивать свои дела тихо и незаметно.
+        Начинает игру с крафтовым артефактом “Зубочистка”. Навык скрытности прокачивается быстрее.
+    
 icon: static/content/class-icons/nr.png
 
 money: 0

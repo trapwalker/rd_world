@@ -1,14 +1,14 @@
-﻿__cls__: PerkTraderPassive
-_cls: PerkTraderPassive
+﻿_cls: PerkTraderPassive
 abstract: false
 
 # Общие параметры перка
-title: Раннер                                                                            # Название перка
-title__en: Runner
-title__ru: Раннер
-description: Уменьшение наценки на товар при покупке у игровых торговцев на 2%           # Описание перка
-description__en: Increase NPC traders discount on export goods by 2% (Trading >= 10)
-description__ru: Увеличение скидки у игровых торговцев на экспортный товар на 2%
+title:                                                                                   # Название перка
+    en: Runner
+    ru: Раннер
+
+description:                                                                             # Описание перка
+    en: Increase NPC traders discount on export goods by 2% (Trading >= 10)
+    ru: Увеличение скидки у игровых торговцев на экспортный товар на 2%
 
 # Условия доступности перка
 driving_req:      0      # Необходимый уровень прокачки Вождения
