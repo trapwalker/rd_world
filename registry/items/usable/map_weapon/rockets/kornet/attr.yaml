@@ -1,9 +1,14 @@
-﻿__cls__  : MapWeaponRocketItem
-_cls  : MapWeaponRocketItem
+﻿_cls  : MapWeaponRocketItem
 abstract : false
 
-title       : ПТРК "Корнет"
-description : Противотанковый ракетный комплекс разработан на базе комплекса танкового управляемого вооружения «Рефлекс». Предназначен для поражения танков и других бронированных целей.
+title: 
+    en: AT-14 Spriggan   ##LOCALIZATION
+    ru: ПТРК "Корнет"
+
+description: 
+    en: ''   ##LOCALIZATION
+    ru: Противотанковый ракетный комплекс разработан на базе комплекса танкового управляемого вооружения «Рефлекс». Предназначен для поражения танков и других бронированных целей.
+
 
 base_price : 200
 stack_size : 10

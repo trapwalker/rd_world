@@ -1,6 +1,5 @@
-﻿doc    : Настрйоки системы
-__cls__: WorldSettings
-_cls: WorldSettings
+﻿_cls: WorldSettings
+doc    : Настрйоки системы
 
 avatar_list: # Список аватаров, доступных при регистрации
   - static/content/avatars/default_1.png
@@ -23,7 +22,18 @@ avatar_list: # Список аватаров, доступных при реги
   - static/content/avatars/default_18.png
   - static/content/avatars/default_19.png
   - static/content/avatars/default_20.png
-
+  - static/content/avatars/default_21.png
+  - static/content/avatars/default_22.png
+  - static/content/avatars/default_23.png
+  - static/content/avatars/default_24.png
+  - static/content/avatars/default_25.png
+  - static/content/avatars/default_26.png
+  - static/content/avatars/default_27.png
+  - static/content/avatars/default_28.png
+  - static/content/avatars/default_29.png
+  - static/content/avatars/default_30.png
+  - static/content/avatars/default_31.png
+  - static/content/avatars/default_32.png
 
 # Боты
 quick_game_bot_count: 10 # Количество ботов в быстрой игре

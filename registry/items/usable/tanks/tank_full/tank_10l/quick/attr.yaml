@@ -1,3 +1,4 @@
-__cls__  : TankFull
 _cls  : TankFull
-title    : Полная канистра (10л)
+title: 
+    en: Full tank (10l)   ##LOCALIZATION
+    ru: Полная канистра (10л)

@@ -1,14 +1,14 @@
-﻿__cls__: PerkTraderPassive
-_cls: PerkTraderPassive
+﻿_cls: PerkTraderPassive
 abstract: false
 
 # Общие параметры перка
-title: Диллер                                                                            # Название перка
-title__en: Dealer
-title__ru: Диллер
-description: Увеличение наценки на товар при продаже игровым торговцам на 2%             # Описание перка
-description__en: Increased margins on imported goods when selling gaming merchants on the 2%
-description__ru: Увеличение наценки на импортный товар при продаже игровым торговцам на 2%
+title:
+    en: Dealer
+    ru: Диллер
+
+description:                                                                        # Описание перка
+    en: Increased margins on imported goods when selling gaming merchants on the 2%
+    ru: Увеличение наценки на импортный товар при продаже игровым торговцам на 2%
 
 # Условия доступности перка
 driving_req:      0      # Необходимый уровень прокачки Вождения

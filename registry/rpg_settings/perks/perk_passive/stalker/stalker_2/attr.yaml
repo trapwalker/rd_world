@@ -1,10 +1,15 @@
-﻿__cls__: PerkPassive
-_cls: PerkPassive
+﻿_cls: PerkPassive
 abstract: false
 
 # Общие параметры перка
-title: Мегасталкер                                                                       # Название перка
-description: Уменьшение заметности персонажа на 5%                                       # Описание перка
+title:                                                                                   # Название перка
+    en: Megastalker   ##LOCALIZATION
+    ru: Мегасталкер
+
+description:                                                                             # Описание перка
+    en: Decreasing visibility character by 5%   ##LOCALIZATION
+    ru: Уменьшение заметности персонажа на 5%
+
 
 # Условия доступности перка
 driving_req:      0      # Необходимый уровень прокачки Вождения

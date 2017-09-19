@@ -1,10 +1,15 @@
-﻿__cls__  : AmmoBullets
-_cls     : AmmoBullets
+﻿_cls     : AmmoBullets
 doc      : Снаряды 20мм/ББ
 abstract : false
 
-title       : Снаряды<br>20мм/ББ
-description : '???'
+title: 
+    en: Shells<br>20mm   ##LOCALIZATION
+    ru: Снаряды<br>20мм/ББ
+
+description: 
+    en: ''   ##LOCALIZATION
+    ru: '???'
+
 
 stack_size : 10
 amount     : 10

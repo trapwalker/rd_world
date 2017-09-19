@@ -1,10 +1,15 @@
-﻿__cls__: PerkTraderPassive
-_cls: PerkTraderPassive
+﻿_cls: PerkTraderPassive
 abstract: false
 
 # Общие параметры перка
-title: Турбодиллер                                                                        # Название перка
-description: Увеличение наценки на товар при продаже игровым торговцам на 10%             # Описание перка
+title:                                                                                    # Название перка
+    en: Turbodealer   ##LOCALIZATION
+    ru: Турбодиллер
+
+description:                                                                              # Описание перка
+    en: Increased margins on imported goods when selling gaming merchants on the 10%   ##LOCALIZATION
+    ru: Увеличение наценки на товар при продаже игровым торговцам на 10%
+
 
 # Условия доступности перка
 driving_req:      0      # Необходимый уровень прокачки Вождения

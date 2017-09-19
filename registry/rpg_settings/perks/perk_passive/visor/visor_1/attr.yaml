@@ -1,14 +1,14 @@
-﻿__cls__: PerkPassive
-_cls: PerkPassive
+﻿_cls: PerkPassive
 abstract: false
 
 # Общие параметры перка
-title: Вайзор                                                               # Название перка
-title__en: Vizor
-title__ru: Вайзор
-description: Увеличение дальности обзора на 2%                              # Описание перка
-description__en: Increasing a viewing range by 2%
-description__ru: Увеличение дальности обзора на 2%
+title:                                                                      # Название перка
+    en: Vizor
+    ru: Вайзор
+
+description:                                                                # Описание перка
+    en: Increasing a viewing range by 2%
+    ru: Увеличение дальности обзора на 2%
 
 # Условия доступности перка
 driving_req:      0      # Необходимый уровень прокачки Вождения

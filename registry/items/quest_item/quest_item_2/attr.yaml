@@ -1,17 +1,26 @@
-﻿__cls__ : QuestItem
-_cls    : QuestItem
-doc     : Пассажир (девушка)
+﻿_cls: QuestItem
+doc: Пассажир (девушка)
 
 group_id: "quest_item_1"
 deadline: 240
 
-effect_title: "Бинокль"
-effect_description: "повышает обзор"
+effect_title:      ##WTF
+    en: ""   ##LOCALIZATION
+    ru: ""
+
+effect_description:
+    en: ""   ##LOCALIZATION
+    ru: ""
 
 abstract : false
 
-title       : Обзор50
-description : Обзор50
+title:
+    en: ""  ##LOCALIZATION
+    ru: ""
+
+description:
+    en: ""  ##LOCALIZATION
+    ru: ""
 
 base_price : 0
 stack_size : 1

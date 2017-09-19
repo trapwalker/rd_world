@@ -1,10 +1,15 @@
-﻿__cls__: PerkPassive
-_cls: PerkPassive
+﻿_cls: PerkPassive
 abstract: false
 
 # Общие параметры перка
-title: Ультрасёрфер                                                         # Название перка
-description: Вхождение в повороты на скорости улучшены на 8%                # Описание перка
+title:                                                                      # Название перка
+    en: Ultrasurfer   ##LOCALIZATION
+    ru: Ультрасёрфер
+
+description:                                                                # Описание перка
+    en: Cornering at speed improved by 8%   ##LOCALIZATION
+    ru: Вхождение в повороты на скорости улучшены на 8%
+
 
 # Условия доступности перка
 driving_req:      30     # Необходимый уровень прокачки Вождения

@@ -1,10 +1,15 @@
-﻿__cls__: PerkPassive
-_cls: PerkPassive
+﻿_cls: PerkPassive
 abstract: false
 
 # Общие параметры перка
-title: Суперстингер                                                         # Название перка
-description: Максимальная скорость увеличена на 15%                         # Описание перка
+title:                                                                      # Название перка
+    en: Superstinger   ##LOCALIZATION
+    ru: Суперстингер
+
+description:                                                                # Описание перка
+    en: Maximum speed is increased by 15%   ##LOCALIZATION
+    ru: Максимальная скорость увеличена на 15%
+
 
 # Условия доступности перка
 driving_req:      50     # Необходимый уровень прокачки Вождения

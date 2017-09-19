@@ -1,6 +1,4 @@
-﻿
-__cls__ : QuestState
-_cls : QuestState
+﻿_cls : QuestState
 doc     : Абстрактное финальное состояние с неопределенным результатом
 
 status  : end

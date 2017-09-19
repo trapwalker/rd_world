@@ -1,5 +1,4 @@
-﻿__cls__ : PartyTables
-_cls    : PartyTables
+﻿_cls    : PartyTables
 doc     : Таблицы влияния навыков на характеристики пати
 
 leading:  # Максимальная вместимость пати в зависимости от leading

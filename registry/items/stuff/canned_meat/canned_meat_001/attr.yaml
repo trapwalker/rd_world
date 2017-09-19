@@ -1,11 +1,16 @@
-﻿__cls__ : Item
-_cls    : Item
+﻿_cls    : Item
 doc     : Мясные консервы
 
 abstract : false
 
-title       : Мясные консервы
-description : Ящик с мясными консервами.
+title: 
+    en: Canned meat   ##LOCALIZATION
+    ru: Мясные консервы
+
+description: 
+    en: Box of canned meat.   ##LOCALIZATION
+    ru: Ящик с мясными консервами.
+
 
 base_price : 125
 stack_size : 1

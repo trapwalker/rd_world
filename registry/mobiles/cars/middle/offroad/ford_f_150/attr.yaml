@@ -1,7 +1,11 @@
-﻿__cls__ : Car
 _cls : Car
-title:       "F-150"             # Модель атомобиля
-class_car:   "Средний"           # Класс автомобиля
+title:                           # Модель атомобиля
+    en: "F-150"   ##LOCALIZATION
+    ru: "F-150"
+
+class_car:                          # Класс автомобиля
+    en: "Middle"   ##LOCALIZATION
+    ru: "Средний"
 name_car:    "F-150"             # Название атомобиля
 
 price:              2400         # Цена у продавца (л) (>= 0)

@@ -1,17 +1,27 @@
-﻿__cls__  : QuestItem
-_cls     : QuestItem
+﻿_cls     : QuestItem
 doc      : Item_027
 abstract : false
 
-title       : На память
-description : "Штраф: 10 очков во все навыки."
+title:
+    en: Remembrance ##LOCALIZATION
+    ru: На память
+
+description:
+    en: "Penalty: 10 points to every skill."  ##LOCALIZATION
+    ru: "Штраф: 10 очков во все навыки."
+
 group_id    : ""
 
 base_price : 0
 stack_size : 1
 
-effect_title       : Штраф
-effect_description : 10 очков во все навыки
+effect_title:
+    en: Penalty ##LOCALIZATION
+    ru: Штраф
+
+effect_description:
+    en: 10 points to every skill  ##LOCALIZATION
+    ru: 10 очков во все навыки
 
 driving     : 10
 shooting    : 10

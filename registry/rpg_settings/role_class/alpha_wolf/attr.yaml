@@ -1,42 +1,42 @@
-﻿__cls__: RoleClass
-_cls: RoleClass
+﻿_cls: RoleClass
 doc    : Преднастройки классов
 abstract: false
 
-title: Alpha Wolf
-description: Альфа-волк
-description__en: Alpha Wolf
-description__ru: Альфа-волк
+title: 
+    en: Alpha Wolf   ##LOCALIZATION
+    ru: Альфа-волк
 
-description_char_window: |
-    Класс: Альфа-волк
-    <br>Классовый навык: Лидерство
-    <br>Классовый квест: Создать собственный клан.
+description:
+    en: Alpha Wolf
+    ru: Альфа-волк
 
-console_description: >
-    Класс: Альфа-волк
-    \nКлассовый навык: Лидерство
-    \nКлассовый квест: Создать собственный клан.
-    \nОписание:
-    \nАльфа-волк знает, куда идти и куда вести других. 
-    Его природное поведение сподвигает людей доверять ему самое дорогое, что у них есть - себя. 
-    Начинает игру с классовым артефактом “Почтовая сумка”. Навык лидерства качается быстрее.
-console_description__en: >        
-    Class: Alpa Wolf
-    \nClass skill: Leadership
-    \nClass quest: Create a clan.
-    \nDescription:
-    \nAlpha Wolf knows where to go and where to lead the others.
-    His natural behavior makes people trust him with the most valuable things they have, their lives.
-    He starts the game with the Mail Bag class artifact. The leadership skill is developed faster.
-console_description__ru: >
-    Класс: Альфа-волк
-    \nКлассовый навык: Лидерство
-    \nКлассовый квест: Создать собственный клан.
-    \nОписание:
-    \nАльфа-волк знает, куда идти и куда вести других.
-    Его природное поведение сподвигает людей доверять ему самое дорогое, что у них есть - себя.
-    Начинает игру с классовым артефактом “Почтовая сумка”. Навык лидерства качается быстрее.
+description_char_window:
+    en: |   ##LOCALIZATION
+        Класс: Alpha Wolf
+        <br>Классовый навык: Leadership
+        <br>Классовый квест: Create a clan.
+    ru: |
+        Класс: Альфа-волк
+        <br>Классовый навык: Лидерство
+        <br>Классовый квест: Создать собственный клан.
+
+console_description:
+    en: >        
+        Class: Alpa Wolf
+        \nClass skill: Leadership
+        \nClass quest: Create a clan.
+        \nDescription:
+        \nAlpha Wolf knows where to go and where to lead the others.
+        His natural behavior makes people trust him with the most valuable things they have, their lives.
+        He starts the game with the Mail Bag class artifact. The leadership skill is developed faster.
+    ru: >
+        Класс: Альфа-волк
+        \nКлассовый навык: Лидерство
+        \nКлассовый квест: Создать собственный клан.
+        \nОписание:
+        \nАльфа-волк знает, куда идти и куда вести других.
+        Его природное поведение сподвигает людей доверять ему самое дорогое, что у них есть - себя.
+        Начинает игру с классовым артефактом “Почтовая сумка”. Навык лидерства качается быстрее.
 
 icon: static/content/class-icons/aw.png
 

@@ -1,6 +1,8 @@
-﻿__cls__: MapWeaponEffectMine
-_cls: MapWeaponEffectMine
-title:             mine_tc6    # Название атомобиля
+﻿_cls: MapWeaponEffectMine
+title:                         # Название атомобиля
+    en: Mine TC6   ##LOCALIZATION
+    ru: Мина ТС6
+
 
 p_observing_range: 100         # Радиус обзора автомобиля (м) (>= 0)
 

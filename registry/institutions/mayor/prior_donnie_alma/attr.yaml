@@ -1,5 +1,8 @@
 ﻿_cls     : Institution
-title    : Donnie_Alma
+title: 
+    en: Donnie_Alma
+    ru: Донни_Альма ##LOCALIZATION
+
 photo    : "static/content/institutions/mayor/prior_donnie_alma.png"
 abstract : false
 
@@ -156,8 +159,14 @@ quests:
     courier_medallion:
       parent: reg:///registry/items/quest_item
       _cls: QuestItem
-      title: Платиновая фишка
-      description: Предмет погибшего курьера. Необходимо доставить Donnie_Alma.
+      title: 
+          en: Platinum chip   ##LOCALIZATION
+          ru: Платиновая фишка
+
+      description: 
+          en: The subject of the deceased courier. It is necessary to deliver Donnie_Alma.   ##LOCALIZATION
+          ru: Предмет погибшего курьера. Необходимо доставить Donnie_Alma.
+
       inv_icon_big    : static/content/items/quest_item/courier_medalion/big.png
       inv_icon_mid    : static/content/items/quest_item/courier_medalion/mid.png
       inv_icon_small  : static/content/items/quest_item/courier_medalion/mid.png

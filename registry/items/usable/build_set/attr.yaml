@@ -1,12 +1,13 @@
-﻿__cls__ : BuildSet
-_cls : BuildSet
-doc     : Ремонтные комплекты
+﻿_cls: BuildSet
+doc: Ремонтные комплекты
 
 stack_size    : 10
 amount        : 5
 activate_type : self
 activate_time : 2.0
 
-activate_disable_comment : 'Полная остановка автомобиля'
+activate_disable_comment:
+    en: 'Full stop of car'   ##LOCALIZATION
+    ru: 'Полная остановка автомобиля'
 
-activate_success_audio : "repair_kit_001"
+activate_success_audio: "repair_kit_001"

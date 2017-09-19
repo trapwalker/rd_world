@@ -1,7 +1,12 @@
-__cls__ : Trader
-_cls : Trader
-doc     : Торговец
-text    : Вас приветствует торговец!
-type    : trader
+_cls: Trader
+doc:
+    en: Merchant  ##LOCALIZATION
+    ru: Торговец
 
-refresh_time : 21600 # время в сек между завозами в секундах (0 или None - никогда) (сейчас = 6часов)
+text:
+    en: "" ##LOCALIZATION
+    ru: ""
+
+type: trader
+
+refresh_time: 21600 # время в сек между завозами в секундах (0 или None - никогда) (сейчас = 6часов)

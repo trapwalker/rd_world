@@ -1,17 +1,26 @@
-﻿__cls__ : QuestItem
-_cls    : QuestItem
+﻿_cls    : QuestItem
 doc     : Пассажир (девушка)
 
 group_id: "quest_item_1"
 deadline: 300
 
-effect_title: "Супер руль"
-effect_description: "Супер руль"
+effect_title: #WTF
+    en: ""  ##LOCALIZATION
+    ru: ""
+
+effect_description:
+    en: ""  ##LOCALIZATION
+    ru: ""
 
 abstract : false
 
-title       : Супер руль
-description : Супер руль
+title:
+    en: ""  ##LOCALIZATION
+    ru: ""
+
+description:
+    en: "" ##LOCALIZATION
+    ru: ""
 
 base_price : 0
 stack_size : 1

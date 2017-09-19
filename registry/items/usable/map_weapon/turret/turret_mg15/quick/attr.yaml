@@ -1,5 +1,4 @@
-﻿__cls__        : MapWeaponTurretItemQuick
-_cls        : MapWeaponTurretItemQuick
+﻿_cls        : MapWeaponTurretItemQuick
 
 activate_time  : 0.0
 

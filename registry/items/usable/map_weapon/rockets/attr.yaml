@@ -1,5 +1,4 @@
-﻿__cls__: MapWeaponRocketItem
-_cls: MapWeaponRocketItem
+﻿_cls: MapWeaponRocketItem
 doc    : Предметы, активируя которые, пораждаются неподвижные мины на карте
 
 starter_obj_list : []

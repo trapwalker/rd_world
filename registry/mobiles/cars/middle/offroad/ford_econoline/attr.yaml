@@ -1,7 +1,11 @@
-﻿__cls__ : Car
 _cls : Car
-title:       "Econoline"         # Модель атомобиля
-class_car:   "Средний"           # Класс автомобиля
+title:                           # Модель атомобиля
+    en: "Econoline"   ##LOCALIZATION
+    ru: "Econoline"
+
+class_car:                          # Класс автомобиля
+    en: "Middle"   ##LOCALIZATION
+    ru: "Средний"
 name_car:    "Econoline"         # Название атомобиля
 
 price:              2150         # Цена у продавца (л) (>= 0)

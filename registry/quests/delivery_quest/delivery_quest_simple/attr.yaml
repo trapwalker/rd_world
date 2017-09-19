@@ -1,4 +1,6 @@
-﻿__cls__: DeliveryQuestSimple
-_cls: DeliveryQuestSimple
+﻿_cls: DeliveryQuestSimple
 
-caption: Доставка груза
+caption: 
+    en: Cargo delivery   ##LOCALIZATION
+    ru: Доставка груза
+

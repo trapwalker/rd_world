@@ -1,6 +1,7 @@
-__cls__: Tank
 _cls: Tank
-doc    : Канистра с топливом
+doc: Канистра с топливом
 
 tags: [fuel_tank]
-activate_disable_comment: 'Полная остановка автомобиля'
+activate_disable_comment:
+    en: 'Full stop of car'   ##LOCALIZATION
+    ru: 'Полная остановка автомобиля'

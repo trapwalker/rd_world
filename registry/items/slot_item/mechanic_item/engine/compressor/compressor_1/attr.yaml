@@ -1,10 +1,15 @@
-__cls__ : MechanicItem
 _cls : MechanicItem
 doc    : Компрессор
 abstract : false
 
-title: Компрессор
-description: Энергетическая машина или устройство для повышения давления (сжатия) и перемещения газообразных веществ.
+title: 
+    en: Compressor   ##LOCALIZATION
+    ru: Компрессор
+
+description: 
+    en: ''   ##LOCALIZATION
+    ru: Энергетическая машина или устройство для повышения давления (сжатия) и перемещения газообразных веществ.
+
 
 base_price: 100
 

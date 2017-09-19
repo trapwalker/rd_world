@@ -1,6 +1,8 @@
-﻿__cls__ : MapWeaponRocket
-_cls : MapWeaponRocket
-title: Javelin
+﻿_cls : MapWeaponRocket
+title: 
+    en: Javelin   ##LOCALIZATION
+    ru: Джавелин
+
 
 radius_damage: 50
 damage: 50

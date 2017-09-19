@@ -2,8 +2,14 @@
 abstract: false
 
 # Общие параметры перка
-title: Суперрулер                                                                         # Название перка
-description: В пати персонажа может вступить больше на 5 игроков                          # Описание перка
+title:                                                                                    # Название перка
+    en: Superruler   ##LOCALIZATION
+    ru: Суперрулер
+
+description:                                                                              # Описание перка
+    en: In party character can enter more by 5 player   ##LOCALIZATION
+    ru: В пати персонажа может вступить больше на 5 игроков
+
 
 # Условия доступности перка
 driving_req:      0      # Необходимый уровень прокачки Вождения

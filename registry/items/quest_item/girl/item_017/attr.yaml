@@ -1,17 +1,27 @@
-﻿__cls__  : QuestItem
-_cls     : QuestItem
+﻿_cls     : QuestItem
 doc      : Item_017
 abstract : false
 
-title       : На память
-description : "Бонус: 2 очка в навык Вождение."
+title:
+    en: Remembrance ##LOCALIZATION
+    ru: На память
+
+description:
+    en: "Bonus: 2 points to Driving skill." ##LOCALIZATION
+    ru: "Бонус: 2 очка в навык Вождения."
+
 group_id    : ""
 
 base_price : 0
 stack_size : 1
 
-effect_title       : Бонус
-effect_description : 2 очка в навык Вождение
+effect_title:
+    en: Bonus  ##LOCALIZATION
+    ru: Бонус
+         
+effect_description:
+    en: 2 points to Driving skill  ##LOCALIZATION
+    ru: 2 очка в навык Вождения
 
 driving  : 2
 deadline : 43200

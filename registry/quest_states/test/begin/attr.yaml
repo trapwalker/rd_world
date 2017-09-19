@@ -1,12 +1,13 @@
-﻿
-__cls__ : QuestState
-_cls : QuestState
-doc     : Шаблоны состоянияний квестов
+﻿_cls: QuestState
+doc: Шаблоны состоянияний квестов
 
 status  : active  # active/end
 result  : ~       # win/fail
+id      : begin
 
-id     : begin
-enter_state_message : Вы взяли квест "{quest.caption}"
+enter_state_message:
+    en: You took quest "{quest.caption}"   ##LOCALIZATION
+    ru: Вы взяли квест "{quest.caption}"
+
 #exit_state_message  :
 

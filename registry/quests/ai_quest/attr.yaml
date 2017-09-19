@@ -1,11 +1,13 @@
-﻿__cls__: AIQuickQuest
-_cls: AIQuickQuest
+﻿_cls: AIQuickQuest
 doc    : Квест обучения
 
 first_state: before_respawn
 current_state: ~
 
-caption: AI Quest
+caption: 
+    en: AI Quest
+    ru: ИИ Квест   ##LOCALIZATION
+
 text: Ai Quest
 
 on_generate: |

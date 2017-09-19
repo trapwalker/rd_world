@@ -1,10 +1,15 @@
-﻿__cls__  : AmmoBullets
-_cls     : AmmoBullets
+﻿_cls     : AmmoBullets
 doc      : Патроны 13мм/ББ
 abstract : false
 
-title       : Патроны<br>13мм/ББ
-description : '???'
+title: 
+    en: Cartridges<br>13mm   ##LOCALIZATION
+    ru: Патроны<br>13мм/ББ
+
+description: 
+    en: ''   ##LOCALIZATION
+    ru: '???'
+
 
 stack_size : 100
 amount     : 100

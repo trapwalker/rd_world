@@ -1,12 +1,17 @@
-﻿__cls__         : MachineGun
 _cls            : MachineGun
-doc             : Исп. пулемет ОЦ-14 Гроза
+doc             : Пулемет ОЦ-14 ГрозаNone
 abstract        : false
 tags            : [teaching]
 
-title           : Исп. пулемет<br>ОЦ-14 Гроза                # Краткое название - отобразится в слоте инвентаря
+title:                                                       # Краткое название - отобразится в слоте инвентаря
+    en: Machine gun<br>OTs-14 Groza ##LOCALIZATION
+    ru: Пулемет<br>ОЦ-14 Гроза
+
 # Полное описание - отобразится в разделе описания в инвентаре
-description     : 'Российский штурмовой комплекс, разработанный в 1993 году. Представляет собой вариант автомата ОЦ-12 "Тисс", выполненный по схеме булл-пап. Калибр: 7,62 мм. Класс тяжести: 1.'
+description: 
+    en: 'Российский штурмовой комплекс, разработанный в 1993 году. Представляет собой вариант автомата ОЦ-12 "Тисс", выполненный по схеме булл-пап. Калибр: 7,62 мм. Класс тяжести: 1.'  ##LOCALIZATION
+    ru: 'Российский штурмовой комплекс, разработанный в 1993 году. Представляет собой вариант автомата ОЦ-12 "Тисс", выполненный по схеме булл-пап. Калибр: 7,62 мм. Класс тяжести: 1.'
+
 
 # Основные балансные настройки
 base_price      : 238                                        # Цена
@@ -72,3 +77,6 @@ armorer_images:
     armorer_top_B   : "static/content/items/slot_item/weapons/mashine_guns/light/00_oc_14/big/top_b.png"  # назад
     armorer_top_R   : "static/content/items/slot_item/weapons/mashine_guns/light/00_oc_14/big/top_r.png"  # вправо
     armorer_top_L   : "static/content/items/slot_item/weapons/mashine_guns/light/00_oc_14/big/top_l.png"  # влево
+
+
+condition       : 3  # Исп.

@@ -1,12 +1,18 @@
-﻿__cls__: TeachingMapQuest
-_cls: TeachingMapQuest
-doc    : Квест обучения на карте
+﻿_cls: TeachingMapQuest
+doc:
+    en: Quest training on map   ##LOCALIZATION
+    ru: Квест обучения на карте
 
 first_state: cruise_speed
 current_state: ~
 
-caption: Обучение на карте
-text: Обучитесь на карте.
+caption:
+    en: Training on map   ##LOCALIZATION
+    ru: Обучение на карте
+
+text:
+    en: Learn on map.   ##LOCALIZATION
+    ru: Обучитесь на карте.
 
 on_generate: |
     if not quest.can_generate(event):

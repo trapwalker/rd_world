@@ -1,8 +1,13 @@
-﻿__cls__ : Girl
-_cls : Girl
+﻿_cls: Girl
 
-doc     : Компаньонка
-text    : Вас приветствует компаньонка!
-type    : girl
+doc:
+    en: Chaperon ##LOCALIZATION
+    ru: Компаньонка
+
+text:           ##WTF
+    en: Welcome to chaperon! ##LOCALIZATION
+    ru: Вас приветствует компаньонка!
+
+type: girl
 
 service_list: []

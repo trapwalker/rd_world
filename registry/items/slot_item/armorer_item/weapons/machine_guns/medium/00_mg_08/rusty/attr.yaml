@@ -1,9 +1,12 @@
 ﻿__cls__         : MachineGun
 _cls            : MachineGun
-doc             : Ржав. пулемет MG 08
+doc             : Пулемет MG 08None
 abstract        : false
 
-title           : Ржав. пулемет<br>MG 08                     # Краткое название - отобразится в слоте инвентаря
+title           : Пулемет<br>MG 08                           # Краткое название - отобразится в слоте инвентаря
+
+
+
 # Полное описание - отобразится в разделе описания в инвентаре
 description     : 'Вариант станкового пулемета Максима под немецкий винтовочный патрон. Калибр: 7,92 мм. Класс тяжести: 2.'
 
@@ -71,3 +74,6 @@ armorer_images:
     armorer_top_B   : "static/content/items/slot_item/weapons/mashine_guns/medium/00_mg_08/big/top_b.png"  # назад
     armorer_top_R   : "static/content/items/slot_item/weapons/mashine_guns/medium/00_mg_08/big/top_r.png"  # вправо
     armorer_top_L   : "static/content/items/slot_item/weapons/mashine_guns/medium/00_mg_08/big/top_l.png"  # влево
+
+
+condition       : 1  # Ржав.

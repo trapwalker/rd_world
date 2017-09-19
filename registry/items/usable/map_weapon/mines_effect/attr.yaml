@@ -1,3 +1,2 @@
-﻿__cls__ : MapWeaponMineItem
-_cls : MapWeaponMineItem
+﻿_cls : MapWeaponMineItem
 doc    : Предметы, активируя которые, пораждаются неподвижные мины на карте

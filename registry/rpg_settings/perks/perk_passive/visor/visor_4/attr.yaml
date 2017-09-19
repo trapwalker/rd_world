@@ -1,10 +1,15 @@
-﻿__cls__: PerkPassive
-_cls: PerkPassive
+﻿_cls: PerkPassive
 abstract: false
 
 # Общие параметры перка
-title: Турбовайзор                                                          # Название перка
-description: Увеличение дальности обзора на 10%                             # Описание перка
+title:                                                                      # Название перка
+    en: Turbovisor   ##LOCALIZATION
+    ru: Турбовайзор
+
+description:                                                                # Описание перка
+    en: Increasing a viewing range by 10%   ##LOCALIZATION
+    ru: Увеличение дальности обзора на 10%
+
 
 # Условия доступности перка
 driving_req:      0      # Необходимый уровень прокачки Вождения

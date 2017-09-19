@@ -1,8 +1,11 @@
 ﻿_cls            : Cannon
-doc             : Свеж. гранатомет РГ-6 Гном
+doc             : Гранатомет РГ-6 ГномNone
 abstract        : false
 
-title           : Свеж. гранатомет<br>РГ-6 Гном            # Краткое название - отобразится в слоте инвентаря
+title           : Гранатомет<br>РГ-6 Гном                  # Краткое название - отобразится в слоте инвентаря
+
+
+
 # Полное описание - отобразится в разделе описания в инвентаре
 description     : '???'
 
@@ -64,3 +67,6 @@ armorer_images:
     armorer_top_B   : "static/content/items/slot_item/weapons/cannons/light/02_rg_6/big/top_b.png"  # назад
     armorer_top_R   : "static/content/items/slot_item/weapons/cannons/light/02_rg_6/big/top_r.png"  # вправо
     armorer_top_L   : "static/content/items/slot_item/weapons/cannons/light/02_rg_6/big/top_l.png"  # влево
+
+
+condition       : 4  # Свеж.

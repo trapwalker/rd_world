@@ -1,6 +1,9 @@
 ﻿_cls: registry.quests.measure_radiation.MeasureRadiation
 
-caption: Измерение радиации
+caption:
+    en: Measurement of radiation   ##LOCALIZATION
+    ru: Измерение радиации
+
 first_state: begin
 list_icon: static/img/quests/icons/rad_ico.png
 

@@ -1,6 +1,8 @@
-﻿__cls__: Institution
-_cls: Institution
-title: Rita_Rain
+﻿_cls: Institution
+title: 
+    en: Rita_Rain
+    ru: Рита_Рейн ##LOCALIZATION
+
 photo: "static/content/institutions/manager/prior_rita_rain.png"
 abstract: false
 

@@ -1,11 +1,16 @@
-﻿__cls__ : Item
-_cls    : Item
+﻿_cls    : Item
 doc     : Металлолом
 
 abstract : false
 
-title       : Металлолом
-description : Всякий хлам.
+title: 
+    en: Scrap metal   ##LOCALIZATION
+    ru: Металлолом
+
+description: 
+    en: Trash.   ##LOCALIZATION
+    ru: Всякий хлам.
+
 
 base_price : 25
 stack_size : 1

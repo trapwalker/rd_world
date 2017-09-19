@@ -1,5 +1,4 @@
-﻿__cls__: SlotLock
-_cls: SlotLock
+﻿_cls: SlotLock
 doc    : Замок, отключающий слот
 
 can_instantiate: False

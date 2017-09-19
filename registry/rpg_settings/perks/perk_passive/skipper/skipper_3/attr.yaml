@@ -1,10 +1,15 @@
-﻿__cls__: PerkPartyPassive
-_cls: PerkPartyPassive
+﻿_cls: PerkPartyPassive
 abstract: false
 
 # Общие параметры перка
-title: Ультрашкипер                                                                          # Название перка
-description: Увеличение опыта, получаемого в пати на 8% # Описание перка
+title:                                                                                       # Название перка
+    en: Ultraskipper   ##LOCALIZATION
+    ru: Ультрашкипер
+
+description:                                            # Описание перка
+    en: Increase experience gained in party for 8%   ##LOCALIZATION
+    ru: Увеличение опыта, получаемого в пати на 8%
+
 
 # Условия доступности перка
 driving_req:      0      # Необходимый уровень прокачки Вождения

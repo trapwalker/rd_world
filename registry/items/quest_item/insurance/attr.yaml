@@ -1,6 +1,5 @@
-﻿__cls__ : Insurance
-_cls    : Insurance
-doc     : Insurance
+﻿_cls: Insurance
+doc: Insurance
 
 group_id: "insurance"
 
@@ -15,8 +14,14 @@ towns:  # Города, в которых возможен респаун
   - reg:///registry/poi/locations/towns/whitehill
   - reg:///registry/poi/locations/towns/bonita_vista
 
-title       : Абстрактная
-description : Страховка (Абстрактная)
+title:
+    en: Abstract  ##LOCALIZATION
+    ru: Абстрактная
+
+description:
+    en: Insurance (abstract)  ##LOCALIZATION
+    ru: Страховка (Абстрактная)
+
 
 
 icon_nukeoil: ''

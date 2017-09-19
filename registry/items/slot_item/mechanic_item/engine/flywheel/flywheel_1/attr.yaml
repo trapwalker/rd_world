@@ -1,10 +1,15 @@
-__cls__ : MechanicItem
 _cls : MechanicItem
 doc         : Маховик
 abstract : false
 
-title       : Маховик
-description : Массивное вращающееся колесо, использующееся в качестве накопителя кинетической энергии.
+title: 
+    en: Flywheel   ##LOCALIZATION
+    ru: Маховик
+
+description: 
+    en: ''   ##LOCALIZATION
+    ru: Массивное вращающееся колесо, использующееся в качестве накопителя кинетической энергии.
+
 
 base_price: 100
 

@@ -1,9 +1,12 @@
-﻿__cls__ : InsuranceQuick
-_cls    : InsuranceQuick
-doc     : InsuranceQuick
+﻿_cls: InsuranceQuick
+doc: InsuranceQuick
 
 group_id: "insurance"
 
+title:
+    en: Standart  ##LOCALIZATION
+    ru: Стандарт
 
-title       : Быстрая
-description : Быстрая
+description:
+    en: Standart  ##LOCALIZATION
+    ru: Стандарт

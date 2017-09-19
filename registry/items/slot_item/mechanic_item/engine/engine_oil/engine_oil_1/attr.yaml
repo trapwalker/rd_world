@@ -1,10 +1,15 @@
-__cls__ : MechanicItem
 _cls : MechanicItem
 doc         : Моторное масло
 abstract : false
 
-title       : Моторное масло
-description : Масла, применяемое для смазывания поршневых и роторных двигателей внутреннего сгорания.
+title: 
+    en: Engine oil   ##LOCALIZATION
+    ru: Моторное масло
+
+description: 
+    en: ''   ##LOCALIZATION
+    ru: Масла, применяемое для смазывания поршневых и роторных двигателей внутреннего сгорания.
+
 
 base_price: 100
 

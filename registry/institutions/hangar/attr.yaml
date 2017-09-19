@@ -1,9 +1,14 @@
-﻿__cls__  : Hangar
-_cls     : Hangar
+﻿_cls: Hangar
 
-doc      : Продавец машин
-text     : Вас приветствует продавец машин!
-type     : hangar
+doc:
+    en: Auto dealer ##LOCALIZATION
+    ru: Продавец машин
+
+text:   ##WTF
+    en: Welcome to auto dealer! ##LOCALIZATION
+    ru: Вас приветствует продавец машин!
+
+type: hangar
 
 car_list : []
 margin   : 0.2 # Маржа с которой торгует NPC

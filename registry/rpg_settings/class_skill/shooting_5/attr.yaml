@@ -1,8 +1,10 @@
-﻿__cls__: ClassSkill
-_cls: ClassSkill
+﻿_cls: ClassSkill
 doc  : Стрельба-5
 
-title: Стрельба-5
+title: 
+    en: Shooting-5   ##LOCALIZATION
+    ru: Стрельба-5
+
 
 target: 'shooting'
 bonus_step: 5    # на каждые набранны bonus_step очков навыка, начисляется дополнительное 1 бонусное очко

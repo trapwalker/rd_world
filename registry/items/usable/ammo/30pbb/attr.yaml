@@ -1,10 +1,15 @@
-﻿__cls__ : AmmoBullets
-_cls : AmmoBullets
+﻿_cls : AmmoBullets
 doc     : Снаряды 30 мм/ПББ
 abstract: false
 
-title       : Снаряды 30 мм/ПББ
-description : Полубронебойные снаряды для "Bushmaster" (30 мм).
+title: 
+    en: Shells 30 mm   ##LOCALIZATION
+    ru: Снаряды 30 мм/ПББ
+
+description: 
+    en: ''   ##LOCALIZATION
+    ru: Полубронебойные снаряды для "Bushmaster" (30 мм).
+
 
 stack_size : 5
 base_price : 100

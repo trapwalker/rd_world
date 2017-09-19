@@ -1,9 +1,14 @@
-﻿__cls__  : MapRadarItem
-_cls  : MapRadarItem
+﻿_cls  : MapRadarItem
 abstract : false
 
-title       : Радар 001
-description : Американский переносной противотанковый ракетный РАДАР.
+title: 
+    en: Radar 001   ##LOCALIZATION
+    ru: Радар 001
+
+description: 
+    en: ''  #TODO: ##LOCALIZATION
+    ru: Американский переносной противотанковый ракетный РАДАР.
+
 activate_time : 2.0
 
 base_price : 300

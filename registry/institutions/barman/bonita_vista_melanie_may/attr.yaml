@@ -1,7 +1,9 @@
-﻿__cls__  : Institution
-_cls     : Institution
+﻿_cls     : Institution
 
-title    : Melanie_May
+title: 
+    en: Melanie_May
+    ru: Мэлани_Мэй  ##LOCALIZATION
+
 photo    : "static/content/institutions/barman/bonita_vista_melanie_may.png"
 abstract : false
 
@@ -34,8 +36,14 @@ quests:
     courier_medallion:
       parent: reg:///registry/items/quest_item
       _cls: QuestItem
-      title: Платиновая фишка
-      description: Предмет погибшего курьера. Необходимо доставить Melanie_May.
+      title: 
+          en: Platinum chip ##LOCALIZATION
+          ru: Платиновая фишка
+
+      description: 
+          en: The subject of the deceased courier. It is necessary to deliver Melanie_May. ##LOCALIZATION
+          ru: Предмет погибшего курьера. Необходимо доставить Melanie_May.
+
       inv_icon_big    : static/content/items/quest_item/courier_medalion/big.png
       inv_icon_mid    : static/content/items/quest_item/courier_medalion/mid.png
       inv_icon_small  : static/content/items/quest_item/courier_medalion/mid.png

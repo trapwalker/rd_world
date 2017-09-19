@@ -1,6 +1,8 @@
-﻿__cls__       : MapWeaponRocket
-_cls       : MapWeaponRocket
-title         : SA16 Igla
+﻿_cls       : MapWeaponRocket
+title: 
+    en: SA-18 Grouse   ##LOCALIZATION
+    ru: 9K38 Игла
+
 
 radius_damage : 50
 damage        : 40

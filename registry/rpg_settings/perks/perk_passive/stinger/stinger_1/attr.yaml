@@ -1,14 +1,14 @@
-﻿__cls__: PerkPassive
-_cls: PerkPassive
+﻿_cls: PerkPassive
 abstract: false
 
 # Общие параметры перка
-title: Стингер                                                              # Название перка
-title__en: Stinger
-title__ru: Стингер
-description: Максимальная скорость увеличена на 2%                          # Описание перка
-description__en: Maximum speed is increased by 2%
-description__ru: Максимальная скорость увеличена на 2%
+title:                                                                      # Название перка
+    en: Stinger
+    ru: Стингер
+
+description:                                                                # Описание перка
+    en: Maximum speed is increased by 2%
+    ru: Максимальная скорость увеличена на 2%
 
 # Условия доступности перка
 driving_req:      10     # Необходимый уровень прокачки Вождения

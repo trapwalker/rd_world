@@ -1,7 +1,10 @@
-﻿__cls__ : QuestState
-_cls : QuestState
+﻿_cls : QuestState
 doc     : Стандартное состояние провала квеста
 
 result  : fail
 id      : fail
-enter_state_message : Задание {quest.caption} провалено.
+
+enter_state_message:
+    en: Quest {quest.caption} failed.   ##LOCALIZATION
+    ru: Задание {quest.caption} провалено.
+

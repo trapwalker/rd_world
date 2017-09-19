@@ -1,10 +1,15 @@
-﻿__cls__: PerkPassive
-_cls: PerkPassive
+﻿_cls: PerkPassive
 abstract: false
 
 # Общие параметры перка
-title: Ультрасталкер                                                                     # Название перка
-description: Уменьшение заметности персонажа на 8%                                       # Описание перка
+title:                                                                                   # Название перка
+    en: Ultrastalker   ##LOCALIZATION
+    ru: Ультрасталкер
+
+description:                                                                             # Описание перка
+    en: Decreasing visibility character by 8%   ##LOCALIZATION
+    ru: Уменьшение заметности персонажа на 8%
+
 
 # Условия доступности перка
 driving_req:      0      # Необходимый уровень прокачки Вождения

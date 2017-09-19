@@ -1,11 +1,16 @@
-﻿__cls__ : Item
-_cls    : Item
+﻿_cls    : Item
 doc     : Теплая одежда №1
 
 abstract : false
 
-title       : Теплая одежда №1
-description : Небольшой тюк разной теплой одежды.
+title: 
+    en: Warm clothes №1   ##LOCALIZATION
+    ru: Теплая одежда №1
+
+description: 
+    en: A small bale of various warm clothes.   ##LOCALIZATION
+    ru: Небольшой тюк разной теплой одежды.
+
 
 base_price : 13
 stack_size : 1

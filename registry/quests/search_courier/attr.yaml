@@ -1,5 +1,4 @@
-﻿__cls__: SearchCourier
-_cls: SearchCourier
+﻿_cls: SearchCourier
 doc    : Примеры квестов
 
 first_state: begin
@@ -10,7 +9,10 @@ list_icon: static/img/quests/icons/courier.png
 map_icon_full: static/img/quests/map_icons/courier_full.png
 map_icon_circle: static/img/quests/map_icons/courier_circle.png
 
-caption: Найти курьера
+caption: 
+    en: Find a courier   ##LOCALIZATION
+    ru: Найти курьера
+
 
 courier_car_list:              # Список машин на которых может оказаться курьер
   - reg:///registry/mobiles/cars/middle/cars/vw_beetle

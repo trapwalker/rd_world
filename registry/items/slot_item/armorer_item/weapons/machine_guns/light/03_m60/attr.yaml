@@ -1,11 +1,16 @@
-﻿__cls__         : MachineGun
 _cls            : MachineGun
-doc             : Исп. пулемет M60
+doc             : Пулемет M60None
 abstract        : false
 
-title           : Исп. пулемет<br>M60                        # Краткое название - отобразится в слоте инвентаря
+title:                                                       # Краткое название - отобразится в слоте инвентаря
+    en: Machine gun<br>M60  ##LOCALIZATION
+    ru: Пулемет<br>M60
+
 # Полное описание - отобразится в разделе описания в инвентаре
-description     : '???'
+description: 
+    en: '???'  ##LOCALIZATION
+    ru: '???'
+
 
 # Основные балансные настройки
 base_price      : 665                                        # Цена
@@ -71,3 +76,6 @@ armorer_images:
     armorer_top_B   : "static/content/items/slot_item/weapons/mashine_guns/light/03_m60/big/top_b.png"  # назад
     armorer_top_R   : "static/content/items/slot_item/weapons/mashine_guns/light/03_m60/big/top_r.png"  # вправо
     armorer_top_L   : "static/content/items/slot_item/weapons/mashine_guns/light/03_m60/big/top_l.png"  # влево
+
+
+condition       : 3  # Исп.

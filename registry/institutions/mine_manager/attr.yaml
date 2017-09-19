@@ -1,5 +1,10 @@
-﻿__cls__ : Institution
-_cls    : Institution
-doc     : Начальник шахты
-text    : Вас приветствует начальник шахты!
-type    : mine_manager
+﻿_cls: Institution
+doc:
+    en: Mine chief  ##LOCALIZATION
+    ru: Начальник шахты
+
+text:
+    en: Welcome to mine chief!  ##LOCALIZATION
+    ru: Вас приветствует начальник шахты!
+
+type: mine_manager

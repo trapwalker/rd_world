@@ -1,10 +1,15 @@
-﻿_cls            : Cannon
-doc             : Исп. гранатомет РГ-6 Гном
+_cls            : Cannon
+doc             : Гранатомет РГ-6 ГномNone
 abstract        : false
 
-title           : Исп. гранатомет<br>РГ-6 Гном             # Краткое название - отобразится в слоте инвентаря
+title:
+    en: Grenade Launcher<br>RG-6 Gnom                  # Краткое название - отобразится в слоте инвентаря  ##LOCALIZATION
+    ru: Гранатомет<br>РГ-6 Гном                  # Краткое название - отобразится в слоте инвентаря
+
 # Полное описание - отобразится в разделе описания в инвентаре
-description     : '???'
+description:
+    en: '???'  ##LOCALIZATION
+    ru: '???'
 
 # Основные балансные настройки
 base_price      : 2500                                     # Цена
@@ -64,3 +69,6 @@ armorer_images:
     armorer_top_B   : "static/content/items/slot_item/weapons/cannons/light/02_rg_6/big/top_b.png"  # назад
     armorer_top_R   : "static/content/items/slot_item/weapons/cannons/light/02_rg_6/big/top_r.png"  # вправо
     armorer_top_L   : "static/content/items/slot_item/weapons/cannons/light/02_rg_6/big/top_l.png"  # влево
+
+
+condition       : 3  # Исп.

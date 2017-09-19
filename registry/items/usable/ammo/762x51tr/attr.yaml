@@ -1,10 +1,15 @@
-﻿__cls__ : AmmoBullets
-_cls : AmmoBullets
+﻿_cls : AmmoBullets
 doc     : Патроны 7.62х51 мм/ТР
 abstract: false
 
-title       : Патроны 7.62х51 мм/ТР
-description : Трассирующие патроны для пулеметов "Миниган" и подобного калибра (7.62x51 мм).
+title: 
+    en: Cartridges 7.62х51 mm   ##LOCALIZATION
+    ru: Патроны 7.62х51 мм/ТР
+
+description: 
+    en: ''   ##LOCALIZATION
+    ru: Трассирующие патроны для пулеметов "Миниган" и подобного калибра (7.62x51 мм).
+
 
 stack_size : 100
 base_price : 100

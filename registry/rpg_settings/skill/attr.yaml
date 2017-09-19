@@ -1,8 +1,10 @@
-﻿__cls__: Skill
-_cls: Skill
+﻿_cls: Skill
 doc    : Навыки
 
-description: Игрвой навык персонажа
+description: 
+    en: Skill gaming character   ##LOCALIZATION
+    ru: Игрвой навык персонажа
+
 
 value: 0
 limit: 100

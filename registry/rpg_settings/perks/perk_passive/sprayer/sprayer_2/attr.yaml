@@ -1,10 +1,15 @@
-﻿__cls__: PerkPassive
-_cls: PerkPassive
+﻿_cls: PerkPassive
 abstract: false
 
 # Общие параметры перка
-title: Мегаспреер                                                           # Название перка
-description: +5% к повреждениям автоматическим оружием                      # Описание перка
+title:                                                                      # Название перка
+    en: Megasprayer   ##LOCALIZATION
+    ru: Мегаспреер
+
+description:                                                                # Описание перка
+    en: +5% damage with automatic weapons   ##LOCALIZATION
+    ru: +5% к повреждениям автоматическим оружием
+
 
 # Условия доступности перка
 driving_req:      0      # Необходимый уровень прокачки Вождения

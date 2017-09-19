@@ -1,10 +1,15 @@
-﻿__cls__: PerkTraderPassive
-_cls: PerkTraderPassive
+﻿_cls: PerkTraderPassive
 abstract: false
 
 # Общие параметры перка
-title: Мегадиллер                                                                        # Название перка
-description: Увеличение наценки на товар при продаже игровым торговцам на 5%             # Описание перка
+title:                                                                                   # Название перка
+    en: Megadealer   ##LOCALIZATION
+    ru: Мегадиллер
+
+description:                                                                             # Описание перка
+    en: Increased margins on imported goods when selling gaming merchants on the 5%   ##LOCALIZATION
+    ru: Увеличение наценки на товар при продаже игровым торговцам на 5%
+
 
 # Условия доступности перка
 driving_req:      0      # Необходимый уровень прокачки Вождения

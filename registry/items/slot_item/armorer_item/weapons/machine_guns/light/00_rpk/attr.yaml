@@ -1,12 +1,17 @@
-﻿__cls__         : MachineGun
 _cls            : MachineGun
-doc             : Исп. пулемет Калашникова
+doc             : Пулемет КалашниковаNone
 abstract        : false
 tags            : [teaching]
 
-title           : Исп. пулемет<br>Калашникова                # Краткое название - отобразится в слоте инвентаря
+title:                                                       # Краткое название - отобразится в слоте инвентаря
+    en: Machine gun<br>PK  ##LOCALIZATION
+    ru: Пулемет<br>ПК
+
 # Полное описание - отобразится в разделе описания в инвентаре
-description     : 'Советский ручной пулемет, созданный на основе автомата АКМ. Принят на вооружение советской армии в 1961 году. Калибр: 7,62 мм. Класс тяжести: 1.'
+description: 
+    en: 'Советский ручной пулемет, созданный на основе автомата АКМ. Принят на вооружение советской армии в 1961 году. Калибр: 7,62 мм. Класс тяжести: 1.'  ##LOCALIZATION
+    ru: 'Советский ручной пулемет, созданный на основе автомата АКМ. Принят на вооружение советской армии в 1961 году. Калибр: 7,62 мм. Класс тяжести: 1.'
+
 
 # Основные балансные настройки
 base_price      : 304                                        # Цена
@@ -72,3 +77,6 @@ armorer_images:
     armorer_top_B   : "static/content/items/slot_item/weapons/mashine_guns/light/00_rpk/big/top_b.png"  # назад
     armorer_top_R   : "static/content/items/slot_item/weapons/mashine_guns/light/00_rpk/big/top_r.png"  # вправо
     armorer_top_L   : "static/content/items/slot_item/weapons/mashine_guns/light/00_rpk/big/top_l.png"  # влево
+
+
+condition       : 3  # Исп.

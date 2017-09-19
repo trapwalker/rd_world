@@ -1,11 +1,9 @@
-﻿__cls__: AIQuickAgentProfile
-_cls: AIQuickAgentProfile
-doc    : Прототипы пользовательских агентов
+﻿_cls: AIQuickAgentProfile
+doc: Прототипы пользовательских агентов
 
 
 ai_quest:
     parent: reg:///registry/quests/ai_quest
-    __cls__: AIQuickQuest
     _cls: AIQuickQuest
     hirer: ~
     karma_coef: 0.0

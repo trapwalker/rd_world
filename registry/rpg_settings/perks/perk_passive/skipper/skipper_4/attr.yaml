@@ -1,10 +1,15 @@
-﻿__cls__: PerkPartyPassive
-_cls: PerkPartyPassive
+﻿_cls: PerkPartyPassive
 abstract: false
 
 # Общие параметры перка
-title: Турбошкипер                                                                           # Название перка
-description: Увеличение опыта, получаемого в пати на 10% # Описание перка
+title:                                                                                       # Название перка
+    en: Turboskipper   ##LOCALIZATION
+    ru: Турбошкипер
+
+description:                                             # Описание перка
+    en: Increase experience gained in party for 10%   ##LOCALIZATION
+    ru: Увеличение опыта, получаемого в пати на 10%
+
 
 # Условия доступности перка
 driving_req:      0      # Необходимый уровень прокачки Вождения

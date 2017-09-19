@@ -1,10 +1,16 @@
-﻿_cls            : MachineGun
-doc             : Исп. пулемет MG 18 TuF
+_cls            : MachineGun
+doc             : Пулемет MG 18 TuFNone
 abstract        : false
 
-title           : Исп. пулемет<br>MG 18 TuF                   # Краткое название - отобразится в слоте инвентаря
+title:                                                        # Краткое название - отобразится в слоте инвентаря
+    en: Machine gun<br>MG 18 TuF  ##LOCALIZATION
+    ru: Пулемет<br>MG 18 TuF
+
 # Полное описание - отобразится в разделе описания в инвентаре
-description     : '???'
+description: 
+    en: '???'  ##LOCALIZATION
+    ru: '???'
+
 
 # Основные балансные настройки
 base_price      : 3420                                        # Цена
@@ -74,3 +80,6 @@ armorer_images:
     armorer_top_B   : "static/content/items/slot_item/weapons/mashine_guns/heavy/04_mg_18_tuf/middle/top_b.png"  # назад
     armorer_top_R   : "static/content/items/slot_item/weapons/mashine_guns/heavy/04_mg_18_tuf/middle/top_r.png"  # вправо
     armorer_top_L   : "static/content/items/slot_item/weapons/mashine_guns/heavy/04_mg_18_tuf/middle/top_l.png"  # влево
+
+
+condition       : 3  # Исп.
