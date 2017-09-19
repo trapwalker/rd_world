@@ -10,139 +10,375 @@ abstract : false
 hometown : reg:///registry/poi/locations/towns/prior
 
 service_list:
-  - title      : Приватный танец
+  - title:
+        en: Private dance
+        ru: Приватный танец
     price      : 20
     image      : static/content/locations/institutions/girl/bar_poledance.png
     bonus_list :
-      - item: {parent: "reg:///registry/items/quest_item/girl/item_010", title: "На память: Boozie_Suzie"}
+      - item:
+            parent: "reg:///registry/items/quest_item/girl/item_010"
+            title:
+                en: "For memory: Boozie_Suzie"
+                ru: "На память: Бузи_Сьюзи"
         chance: 0.125
-      - item: {parent: "reg:///registry/items/quest_item/girl/item_011", title: "На память: Boozie_Suzie"}
+      - item:
+            parent: "reg:///registry/items/quest_item/girl/item_011"
+            title:
+                en: "For memory: Boozie_Suzie"
+                ru: "На память: Бузи_Сьюзи"
         chance: 0.125
-      - item: {parent: "reg:///registry/items/quest_item/girl/item_014", title: "На память: Boozie_Suzie"}
+      - item:
+            parent: "reg:///registry/items/quest_item/girl/item_014"
+            title:
+                en: "For memory: Boozie_Suzie"
+                ru: "На память: Бузи_Сьюзи"
         chance: 0.125
-      - item: {parent: "reg:///registry/items/quest_item/girl/item_015", title: "На память: Boozie_Suzie"}
+      - item:
+            parent: "reg:///registry/items/quest_item/girl/item_015"
+            title:
+                en: "For memory: Boozie_Suzie"
+                ru: "На память: Бузи_Сьюзи"
         chance: 0.125
-      - item: {parent: "reg:///registry/items/quest_item/girl/item_016", title: "На память: Boozie_Suzie"}
+      - item:
+            parent: "reg:///registry/items/quest_item/girl/item_016"
+            title:
+                en: "For memory: Boozie_Suzie"
+                ru: "На память: Бузи_Сьюзи"
         chance: 0.125
-      - item: {parent: "reg:///registry/items/quest_item/girl/item_017", title: "На память: Boozie_Suzie"}
+      - item:
+            parent: "reg:///registry/items/quest_item/girl/item_017"
+            title:
+                en: "For memory: Boozie_Suzie"
+                ru: "На память: Бузи_Сьюзи"
         chance: 0.125
-      - item: {parent: "reg:///registry/items/quest_item/girl/item_018", title: "На память: Boozie_Suzie"}
+      - item:
+            parent: "reg:///registry/items/quest_item/girl/item_018"
+            title:
+                en: "For memory: Boozie_Suzie"
+                ru: "На память: Бузи_Сьюзи"
         chance: 0.125
-      - item: {parent: "reg:///registry/items/quest_item/girl/item_019", title: "На память: Boozie_Suzie"}
+      - item:
+            parent: "reg:///registry/items/quest_item/girl/item_019"
+            title:
+                en: "For memory: Boozie_Suzie"
+                ru: "На память: Бузи_Сьюзи"
         chance: 0.125
-  - title      : Массаж
+  - title:
+        en: Massage
+        ru: Массаж
     price      : 30
     image      : static/content/locations/institutions/girl/bar_massage.png
     bonus_list :
-      - item: {parent: "reg:///registry/items/quest_item/girl/item_010", title: "На память: Boozie_Suzie"}
+      - item:
+            parent: "reg:///registry/items/quest_item/girl/item_010"
+            title:
+                en: "For memory: Boozie_Suzie"
+                ru: "На память: Бузи_Сьюзи"
         chance: 0.143
-      - item: {parent: "reg:///registry/items/quest_item/girl/item_011", title: "На память: Boozie_Suzie"}
+      - item:
+            parent: "reg:///registry/items/quest_item/girl/item_011"
+            title:
+                en: "For memory: Boozie_Suzie"
+                ru: "На память: Бузи_Сьюзи"
         chance: 0.143
-      - item: {parent: "reg:///registry/items/quest_item/girl/item_014", title: "На память: Boozie_Suzie"}
+      - item:
+            parent: "reg:///registry/items/quest_item/girl/item_014"
+            title:
+                en: "For memory: Boozie_Suzie"
+                ru: "На память: Бузи_Сьюзи"
         chance: 0.143
-      - item: {parent: "reg:///registry/items/quest_item/girl/item_015", title: "На память: Boozie_Suzie"}
+      - item:
+            parent: "reg:///registry/items/quest_item/girl/item_015"
+            title:
+                en: "For memory: Boozie_Suzie"
+                ru: "На память: Бузи_Сьюзи"
         chance: 0.143
-      - item: {parent: "reg:///registry/items/quest_item/girl/item_016", title: "На память: Boozie_Suzie"}
+      - item:
+            parent: "reg:///registry/items/quest_item/girl/item_016"
+            title:
+                en: "For memory: Boozie_Suzie"
+                ru: "На память: Бузи_Сьюзи"
         chance: 0.143
-      - item: {parent: "reg:///registry/items/quest_item/girl/item_017", title: "На память: Boozie_Suzie"}
+      - item:
+            parent: "reg:///registry/items/quest_item/girl/item_017"
+            title:
+                en: "For memory: Boozie_Suzie"
+                ru: "На память: Бузи_Сьюзи"
         chance: 0.143
-      - item: {parent: "reg:///registry/items/quest_item/girl/item_018", title: "На память: Boozie_Suzie"}
+      - item:
+            parent: "reg:///registry/items/quest_item/girl/item_018"
+            title:
+                en: "For memory: Boozie_Suzie"
+                ru: "На память: Бузи_Сьюзи"
         chance: 0.143
-  - title      : Хендмейд
+  - title:
+        en: Handmade
+        ru: Хендмейд
     price      : 50
     image      : static/content/locations/institutions/girl/bar_handmade.png
     bonus_list :
-      - item: {parent: "reg:///registry/items/quest_item/girl/item_012", title: "На память: Boozie_Suzie"}
+      - item:
+            parent: "reg:///registry/items/quest_item/girl/item_012"
+            title:
+                en: "For memory: Boozie_Suzie"
+                ru: "На память: Бузи_Сьюзи"
         chance: 0.2
-      - item: {parent: "reg:///registry/items/quest_item/girl/item_013", title: "На память: Boozie_Suzie"}
+      - item:
+            parent: "reg:///registry/items/quest_item/girl/item_013"
+            title:
+                en: "For memory: Boozie_Suzie"
+                ru: "На память: Бузи_Сьюзи"
         chance: 0.2
-      - item: {parent: "reg:///registry/items/quest_item/girl/item_015", title: "На память: Boozie_Suzie"}
+      - item:
+            parent: "reg:///registry/items/quest_item/girl/item_015"
+            title:
+                en: "For memory: Boozie_Suzie"
+                ru: "На память: Бузи_Сьюзи"
         chance: 0.2
-      - item: {parent: "reg:///registry/items/quest_item/girl/item_016", title: "На память: Boozie_Suzie"}
+      - item:
+            parent: "reg:///registry/items/quest_item/girl/item_016"
+            title:
+                en: "For memory: Boozie_Suzie"
+                ru: "На память: Бузи_Сьюзи"
         chance: 0.2
-      - item: {parent: "reg:///registry/items/quest_item/girl/item_017", title: "На память: Boozie_Suzie"}
+      - item:
+            parent: "reg:///registry/items/quest_item/girl/item_017"
+            title:
+                en: "For memory: Boozie_Suzie"
+                ru: "На память: Бузи_Сьюзи"
         chance: 0.2
-  - title      : Интерлюдия
+  - title:
+        en: Interlude
+        ru: Интерлюдия
     price      : 100
     image      : static/content/locations/institutions/girl/bar_interlude.png
     bonus_list :
-      - item: {parent: "reg:///registry/items/quest_item/girl/item_012", title: "На память: Boozie_Suzie"}
+      - item:
+            parent: "reg:///registry/items/quest_item/girl/item_012"
+            title:
+                en: "For memory: Boozie_Suzie"
+                ru: "На память: Бузи_Сьюзи"
         chance: 0.125
-      - item: {parent: "reg:///registry/items/quest_item/girl/item_013", title: "На память: Boozie_Suzie"}
+      - item:
+            parent: "reg:///registry/items/quest_item/girl/item_013"
+            title:
+                en: "For memory: Boozie_Suzie"
+                ru: "На память: Бузи_Сьюзи"
         chance: 0.125
-      - item: {parent: "reg:///registry/items/quest_item/girl/item_014", title: "На память: Boozie_Suzie"}
+      - item:
+            parent: "reg:///registry/items/quest_item/girl/item_014"
+            title:
+                en: "For memory: Boozie_Suzie"
+                ru: "На память: Бузи_Сьюзи"
         chance: 0.125
-      - item: {parent: "reg:///registry/items/quest_item/girl/item_019", title: "На память: Boozie_Suzie"}
+      - item:
+            parent: "reg:///registry/items/quest_item/girl/item_019"
+            title:
+                en: "For memory: Boozie_Suzie"
+                ru: "На память: Бузи_Сьюзи"
         chance: 0.125
-      - item: {parent: "reg:///registry/items/quest_item/girl/item_020", title: "На память: Boozie_Suzie"}
+      - item:
+            parent: "reg:///registry/items/quest_item/girl/item_020"
+            title:
+                en: "For memory: Boozie_Suzie"
+                ru: "На память: Бузи_Сьюзи"
         chance: 0.125
-      - item: {parent: "reg:///registry/items/quest_item/girl/item_021", title: "На память: Boozie_Suzie"}
+      - item:
+            parent: "reg:///registry/items/quest_item/girl/item_021"
+            title:
+                en: "For memory: Boozie_Suzie"
+                ru: "На память: Бузи_Сьюзи"
         chance: 0.125
-      - item: {parent: "reg:///registry/items/quest_item/girl/item_022", title: "На память: Boozie_Suzie"}
+      - item:
+            parent: "reg:///registry/items/quest_item/girl/item_022"
+            title:
+                en: "For memory: Boozie_Suzie"
+                ru: "На память: Бузи_Сьюзи"
         chance: 0.125
-      - item: {parent: "reg:///registry/items/quest_item/girl/item_023", title: "На память: Boozie_Suzie"}
+      - item:
+            parent: "reg:///registry/items/quest_item/girl/item_023"
+            title:
+                en: "For memory: Boozie_Suzie"
+                ru: "На память: Бузи_Сьюзи"
         chance: 0.125
-  - title      : Интерсекция
+  - title:
+        en: Intersection
+        ru: Интерсекция
     price      : 200
     image      : static/content/locations/institutions/girl/bar_intersection.png
     bonus_list :
-      - item: {parent: "reg:///registry/items/quest_item/girl/item_001", title: "На память: Boozie_Suzie"}
+      - item:
+            parent: "reg:///registry/items/quest_item/girl/item_001"
+            title:
+                en: "For memory: Boozie_Suzie"
+                ru: "На память: Бузи_Сьюзи"
         chance: 0.056
-      - item: {parent: "reg:///registry/items/quest_item/girl/item_002", title: "На память: Boozie_Suzie"}
+      - item:
+            parent: "reg:///registry/items/quest_item/girl/item_002"
+            title:
+                en: "For memory: Boozie_Suzie"
+                ru: "На память: Бузи_Сьюзи"
         chance: 0.056
-      - item: {parent: "reg:///registry/items/quest_item/girl/item_003", title: "На память: Boozie_Suzie"}
+      - item:
+            parent: "reg:///registry/items/quest_item/girl/item_003"
+            title:
+                en: "For memory: Boozie_Suzie"
+                ru: "На память: Бузи_Сьюзи"
         chance: 0.056
-      - item: {parent: "reg:///registry/items/quest_item/girl/item_004", title: "На память: Boozie_Suzie"}
+      - item:
+            parent: "reg:///registry/items/quest_item/girl/item_004"
+            title:
+                en: "For memory: Boozie_Suzie"
+                ru: "На память: Бузи_Сьюзи"
         chance: 0.056
-      - item: {parent: "reg:///registry/items/quest_item/girl/item_005", title: "На память: Boozie_Suzie"}
+      - item:
+            parent: "reg:///registry/items/quest_item/girl/item_005"
+            title:
+                en: "For memory: Boozie_Suzie"
+                ru: "На память: Бузи_Сьюзи"
         chance: 0.056
-      - item: {parent: "reg:///registry/items/quest_item/girl/item_006", title: "На память: Boozie_Suzie"}
+      - item:
+            parent: "reg:///registry/items/quest_item/girl/item_006"
+            title:
+                en: "For memory: Boozie_Suzie"
+                ru: "На память: Бузи_Сьюзи"
         chance: 0.056
-      - item: {parent: "reg:///registry/items/quest_item/girl/item_007", title: "На память: Boozie_Suzie"}
+      - item:
+            parent: "reg:///registry/items/quest_item/girl/item_007"
+            title:
+                en: "For memory: Boozie_Suzie"
+                ru: "На память: Бузи_Сьюзи"
         chance: 0.056
-      - item: {parent: "reg:///registry/items/quest_item/girl/item_008", title: "На память: Boozie_Suzie"}
+      - item:
+            parent: "reg:///registry/items/quest_item/girl/item_008"
+            title:
+                en: "For memory: Boozie_Suzie"
+                ru: "На память: Бузи_Сьюзи"
         chance: 0.056
-      - item: {parent: "reg:///registry/items/quest_item/girl/item_009", title: "На память: Boozie_Suzie"}
+      - item:
+            parent: "reg:///registry/items/quest_item/girl/item_009"
+            title:
+                en: "For memory: Boozie_Suzie"
+                ru: "На память: Бузи_Сьюзи"
         chance: 0.056
-      - item: {parent: "reg:///registry/items/quest_item/girl/item_020", title: "На память: Boozie_Suzie"}
+      - item:
+            parent: "reg:///registry/items/quest_item/girl/item_020"
+            title:
+                en: "For memory: Boozie_Suzie"
+                ru: "На память: Бузи_Сьюзи"
         chance: 0.056
-      - item: {parent: "reg:///registry/items/quest_item/girl/item_021", title: "На память: Boozie_Suzie"}
+      - item:
+            parent: "reg:///registry/items/quest_item/girl/item_021"
+            title:
+                en: "For memory: Boozie_Suzie"
+                ru: "На память: Бузи_Сьюзи"
         chance: 0.056
-      - item: {parent: "reg:///registry/items/quest_item/girl/item_022", title: "На память: Boozie_Suzie"}
+      - item:
+            parent: "reg:///registry/items/quest_item/girl/item_022"
+            title:
+                en: "For memory: Boozie_Suzie"
+                ru: "На память: Бузи_Сьюзи"
         chance: 0.056
-      - item: {parent: "reg:///registry/items/quest_item/girl/item_023", title: "На память: Boozie_Suzie"}
+      - item:
+            parent: "reg:///registry/items/quest_item/girl/item_023"
+            title:
+                en: "For memory: Boozie_Suzie"
+                ru: "На память: Бузи_Сьюзи"
         chance: 0.056
-      - item: {parent: "reg:///registry/items/quest_item/girl/item_024", title: "На память: Boozie_Suzie"}
+      - item:
+            parent: "reg:///registry/items/quest_item/girl/item_024"
+            title:
+                en: "For memory: Boozie_Suzie"
+                ru: "На память: Бузи_Сьюзи"
         chance: 0.056
-      - item: {parent: "reg:///registry/items/quest_item/girl/item_025", title: "На память: Boozie_Suzie"}
+      - item:
+            parent: "reg:///registry/items/quest_item/girl/item_025"
+            title:
+                en: "For memory: Boozie_Suzie"
+                ru: "На память: Бузи_Сьюзи"
         chance: 0.056
-      - item: {parent: "reg:///registry/items/quest_item/girl/item_026", title: "На память: Boozie_Suzie"}
+      - item:
+            parent: "reg:///registry/items/quest_item/girl/item_026"
+            title:
+                en: "For memory: Boozie_Suzie"
+                ru: "На память: Бузи_Сьюзи"
         chance: 0.056
-      - item: {parent: "reg:///registry/items/quest_item/girl/item_027", title: "На память: Boozie_Suzie"}
+      - item:
+            parent: "reg:///registry/items/quest_item/girl/item_027"
+            title:
+                en: "For memory: Boozie_Suzie"
+                ru: "На память: Бузи_Сьюзи"
         chance: 0.056
-      - item: {parent: "reg:///registry/items/quest_item/girl/item_028", title: "На память: Boozie_Suzie"}
+      - item:
+            parent: "reg:///registry/items/quest_item/girl/item_028"
+            title:
+                en: "For memory: Boozie_Suzie"
+                ru: "На память: Бузи_Сьюзи"
         chance: 0.056
-  - title      : Позвать подружку
+  - title:
+        en: Call a girlfriend
+        ru: Позвать подружку
     price      : 400
     image      : static/content/locations/institutions/girl/bar_bi.png
     bonus_list :
-      - item: {parent: "reg:///registry/items/quest_item/girl/item_024", title: "На память: Boozie_Suzie"}
+      - item:
+            parent: "reg:///registry/items/quest_item/girl/item_024"
+            title:
+                en: "For memory: Boozie_Suzie"
+                ru: "На память: Бузи_Сьюзи"
         chance: 0.1
-      - item: {parent: "reg:///registry/items/quest_item/girl/item_025", title: "На память: Boozie_Suzie"}
+      - item:
+            parent: "reg:///registry/items/quest_item/girl/item_025"
+            title:
+                en: "For memory: Boozie_Suzie"
+                ru: "На память: Бузи_Сьюзи"
         chance: 0.1
-      - item: {parent: "reg:///registry/items/quest_item/girl/item_026", title: "На память: Boozie_Suzie"}
+      - item:
+            parent: "reg:///registry/items/quest_item/girl/item_026"
+            title:
+                en: "For memory: Boozie_Suzie"
+                ru: "На память: Бузи_Сьюзи"
         chance: 0.1
-      - item: {parent: "reg:///registry/items/quest_item/girl/item_027", title: "На память: Boozie_Suzie"}
+      - item:
+            parent: "reg:///registry/items/quest_item/girl/item_027"
+            title:
+                en: "For memory: Boozie_Suzie"
+                ru: "На память: Бузи_Сьюзи"
         chance: 0.1
-      - item: {parent: "reg:///registry/items/quest_item/girl/item_028", title: "На память: Boozie_Suzie"}
+      - item:
+            parent: "reg:///registry/items/quest_item/girl/item_028"
+            title:
+                en: "For memory: Boozie_Suzie"
+                ru: "На память: Бузи_Сьюзи"
         chance: 0.1
-      - item: {parent: "reg:///registry/items/quest_item/girl/item_029", title: "На память: Boozie_Suzie"}
+      - item:
+            parent: "reg:///registry/items/quest_item/girl/item_029"
+            title:
+                en: "For memory: Boozie_Suzie"
+                ru: "На память: Бузи_Сьюзи"
         chance: 0.1
-      - item: {parent: "reg:///registry/items/quest_item/girl/item_030", title: "На память: Boozie_Suzie"}
+      - item:
+            parent: "reg:///registry/items/quest_item/girl/item_030"
+            title:
+                en: "For memory: Boozie_Suzie"
+                ru: "На память: Бузи_Сьюзи"
         chance: 0.1
-      - item: {parent: "reg:///registry/items/quest_item/girl/item_031", title: "На память: Boozie_Suzie"}
+      - item:
+            parent: "reg:///registry/items/quest_item/girl/item_031"
+            title:
+                en: "For memory: Boozie_Suzie"
+                ru: "На память: Бузи_Сьюзи"
         chance: 0.1
-      - item: {parent: "reg:///registry/items/quest_item/girl/item_032", title: "На память: Boozie_Suzie"}
+      - item:
+            parent: "reg:///registry/items/quest_item/girl/item_032"
+            title:
+                en: "For memory: Boozie_Suzie"
+                ru: "На память: Бузи_Сьюзи"
         chance: 0.1
-      - item: {parent: "reg:///registry/items/quest_item/girl/item_033", title: "На память: Boozie_Suzie"}
+      - item:
+            parent: "reg:///registry/items/quest_item/girl/item_033"
+            title:
+                en: "For memory: Boozie_Suzie"
+                ru: "На память: Бузи_Сьюзи"
         chance: 0.1

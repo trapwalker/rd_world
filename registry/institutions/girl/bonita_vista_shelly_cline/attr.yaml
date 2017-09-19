@@ -20,49 +20,49 @@ service_list:
             parent: "reg:///registry/items/quest_item/girl/item_010"
             title:
                 en: "For memory: Shelly_Cline"   ##LOCALIZATION
-                ru: "На память: Shelly_Cline"
+                ru: "На память: Шелли_Клайн"
         chance: 0.125
       - item:
             parent: "reg:///registry/items/quest_item/girl/item_011"
             title:
                 en: "For memory: Shelly_Cline"   ##LOCALIZATION
-                ru: "На память: Shelly_Cline"
+                ru: "На память: Шелли_Клайн"
         chance: 0.125
       - item:
             parent: "reg:///registry/items/quest_item/girl/item_014"
             title:
                 en: "For memory: Shelly_Cline"   ##LOCALIZATION
-                ru: "На память: Shelly_Cline"
+                ru: "На память: Шелли_Клайн"
         chance: 0.125
       - item:
             parent: "reg:///registry/items/quest_item/girl/item_015"
             title:
                 en: "For memory: Shelly_Cline"   ##LOCALIZATION
-                ru: "На память: Shelly_Cline"
+                ru: "На память: Шелли_Клайн"
         chance: 0.125
       - item:
             parent: "reg:///registry/items/quest_item/girl/item_016"
             title:
                 en: "For memory: Shelly_Cline"   ##LOCALIZATION
-                ru: "На память: Shelly_Cline"
+                ru: "На память: Шелли_Клайн"
         chance: 0.125
       - item:
             parent: "reg:///registry/items/quest_item/girl/item_017"
             title:
                 en: "For memory: Shelly_Cline"   ##LOCALIZATION
-                ru: "На память: Shelly_Cline"
+                ru: "На память: Шелли_Клайн"
         chance: 0.125
       - item:
             parent: "reg:///registry/items/quest_item/girl/item_018"
             title:
                 en: "For memory: Shelly_Cline"   ##LOCALIZATION
-                ru: "На память: Shelly_Cline"
+                ru: "На память: Шелли_Клайн"
         chance: 0.125
       - item:
             parent: "reg:///registry/items/quest_item/girl/item_019"
             title:
                 en: "For memory: Shelly_Cline"   ##LOCALIZATION
-                ru: "На память: Shelly_Cline"
+                ru: "На память: Шелли_Клайн"
         chance: 0.125
 
   - title:
@@ -75,43 +75,43 @@ service_list:
             parent: "reg:///registry/items/quest_item/girl/item_010"
             title:
                 en: "For memory: Shelly_Cline"   ##LOCALIZATION
-                ru: "На память: Shelly_Cline"
+                ru: "На память: Шелли_Клайн"
         chance: 0.143
       - item:
             parent: "reg:///registry/items/quest_item/girl/item_011"
             title:
                 en: "For memory: Shelly_Cline"   ##LOCALIZATION
-                ru: "На память: Shelly_Cline"
+                ru: "На память: Шелли_Клайн"
         chance: 0.143
       - item:
             parent: "reg:///registry/items/quest_item/girl/item_014"
             title:
                 en: "For memory: Shelly_Cline"   ##LOCALIZATION
-                ru: "На память: Shelly_Cline"
+                ru: "На память: Шелли_Клайн"
         chance: 0.143
       - item:
             parent: "reg:///registry/items/quest_item/girl/item_015"
             title:
                 en: "For memory: Shelly_Cline"   ##LOCALIZATION
-                ru: "На память: Shelly_Cline"
+                ru: "На память: Шелли_Клайн"
         chance: 0.143
       - item:
             parent: "reg:///registry/items/quest_item/girl/item_016"
             title:
                 en: "For memory: Shelly_Cline"   ##LOCALIZATION
-                ru: "На память: Shelly_Cline"
+                ru: "На память: Шелли_Клайн"
         chance: 0.143
       - item:
             parent: "reg:///registry/items/quest_item/girl/item_017"
             title:
                 en: "For memory: Shelly_Cline"   ##LOCALIZATION
-                ru: "На память: Shelly_Cline"
+                ru: "На память: Шелли_Клайн"
         chance: 0.143
       - item:
             parent: "reg:///registry/items/quest_item/girl/item_018"
             title:
                 en: "For memory: Shelly_Cline"   ##LOCALIZATION
-                ru: "На память: Shelly_Cline"
+                ru: "На память: Шелли_Клайн"
         chance: 0.143
 
   - title:
@@ -124,31 +124,31 @@ service_list:
             parent: "reg:///registry/items/quest_item/girl/item_012"
             title:
                 en: "For memory: Shelly_Cline"   ##LOCALIZATION
-                ru: "На память: Shelly_Cline"
+                ru: "На память: Шелли_Клайн"
         chance: 0.2
       - item:
             parent: "reg:///registry/items/quest_item/girl/item_013"
             title:
                 en: "For memory: Shelly_Cline"   ##LOCALIZATION
-                ru: "На память: Shelly_Cline"
+                ru: "На память: Шелли_Клайн"
         chance: 0.2
       - item:
             parent: "reg:///registry/items/quest_item/girl/item_015"
             title:
                 en: "For memory: Shelly_Cline"   ##LOCALIZATION
-                ru: "На память: Shelly_Cline"
+                ru: "На память: Шелли_Клайн"
         chance: 0.2
       - item:
             parent: "reg:///registry/items/quest_item/girl/item_016"
             title:
                 en: "For memory: Shelly_Cline"   ##LOCALIZATION
-                ru: "На память: Shelly_Cline"
+                ru: "На память: Шелли_Клайн"
         chance: 0.2
       - item:
             parent: "reg:///registry/items/quest_item/girl/item_017"
             title:
                 en: "For memory: Shelly_Cline"   ##LOCALIZATION
-                ru: "На память: Shelly_Cline"
+                ru: "На память: Шелли_Клайн"
         chance: 0.2
 
   - title:
@@ -161,49 +161,49 @@ service_list:
             parent: "reg:///registry/items/quest_item/girl/item_012"
             title:
                 en: "For memory: Shelly_Cline"   ##LOCALIZATION
-                ru: "На память: Shelly_Cline"
+                ru: "На память: Шелли_Клайн"
         chance: 0.125
       - item:
             parent: "reg:///registry/items/quest_item/girl/item_013"
             title:
                 en: "For memory: Shelly_Cline"   ##LOCALIZATION
-                ru: "На память: Shelly_Cline"
+                ru: "На память: Шелли_Клайн"
         chance: 0.125
       - item:
             parent: "reg:///registry/items/quest_item/girl/item_014"
             title:
                 en: "For memory: Shelly_Cline"   ##LOCALIZATION
-                ru: "На память: Shelly_Cline"
+                ru: "На память: Шелли_Клайн"
         chance: 0.125
       - item:
             parent: "reg:///registry/items/quest_item/girl/item_019"
             title:
                 en: "For memory: Shelly_Cline"   ##LOCALIZATION
-                ru: "На память: Shelly_Cline"
+                ru: "На память: Шелли_Клайн"
         chance: 0.125
       - item:
             parent: "reg:///registry/items/quest_item/girl/item_020"
             title:
                 en: "For memory: Shelly_Cline"   ##LOCALIZATION
-                ru: "На память: Shelly_Cline"
+                ru: "На память: Шелли_Клайн"
         chance: 0.125
       - item:
             parent: "reg:///registry/items/quest_item/girl/item_021"
             title:
                 en: "For memory: Shelly_Cline"   ##LOCALIZATION
-                ru: "На память: Shelly_Cline"
+                ru: "На память: Шелли_Клайн"
         chance: 0.125
       - item:
             parent: "reg:///registry/items/quest_item/girl/item_022"
             title:
                 en: "For memory: Shelly_Cline"   ##LOCALIZATION
-                ru: "На память: Shelly_Cline"
+                ru: "На память: Шелли_Клайн"
         chance: 0.125
       - item:
             parent: "reg:///registry/items/quest_item/girl/item_023"
             title:
                 en: "For memory: Shelly_Cline"   ##LOCALIZATION
-                ru: "На память: Shelly_Cline"
+                ru: "На память: Шелли_Клайн"
         chance: 0.125
 
   - title:
@@ -216,109 +216,109 @@ service_list:
             parent: "reg:///registry/items/quest_item/girl/item_001"
             title:
                 en: "For memory: Shelly_Cline"   ##LOCALIZATION
-                ru: "На память: Shelly_Cline"
+                ru: "На память: Шелли_Клайн"
         chance: 0.056
       - item:
             parent: "reg:///registry/items/quest_item/girl/item_002"
             title:
                 en: "For memory: Shelly_Cline"   ##LOCALIZATION
-                ru: "На память: Shelly_Cline"
+                ru: "На память: Шелли_Клайн"
         chance: 0.056
       - item:
             parent: "reg:///registry/items/quest_item/girl/item_003"
             title:
                 en: "For memory: Shelly_Cline"   ##LOCALIZATION
-                ru: "На память: Shelly_Cline"
+                ru: "На память: Шелли_Клайн"
         chance: 0.056
       - item:
             parent: "reg:///registry/items/quest_item/girl/item_004"
             title:
                 en: "For memory: Shelly_Cline"   ##LOCALIZATION
-                ru: "На память: Shelly_Cline"
+                ru: "На память: Шелли_Клайн"
         chance: 0.056
       - item:
             parent: "reg:///registry/items/quest_item/girl/item_005"
             title:
                 en: "For memory: Shelly_Cline"   ##LOCALIZATION
-                ru: "На память: Shelly_Cline"
+                ru: "На память: Шелли_Клайн"
         chance: 0.056
       - item:
             parent: "reg:///registry/items/quest_item/girl/item_006"
             title:
                 en: "For memory: Shelly_Cline"   ##LOCALIZATION
-                ru: "На память: Shelly_Cline"
+                ru: "На память: Шелли_Клайн"
         chance: 0.056
       - item:
             parent: "reg:///registry/items/quest_item/girl/item_007"
             title:
                 en: "For memory: Shelly_Cline"   ##LOCALIZATION
-                ru: "На память: Shelly_Cline"
+                ru: "На память: Шелли_Клайн"
         chance: 0.056
       - item:
             parent: "reg:///registry/items/quest_item/girl/item_008"
             title:
                 en: "For memory: Shelly_Cline"   ##LOCALIZATION
-                ru: "На память: Shelly_Cline"
+                ru: "На память: Шелли_Клайн"
         chance: 0.056
       - item:
             parent: "reg:///registry/items/quest_item/girl/item_009"
             title:
                 en: "For memory: Shelly_Cline"   ##LOCALIZATION
-                ru: "На память: Shelly_Cline"
+                ru: "На память: Шелли_Клайн"
         chance: 0.056
       - item:
             parent: "reg:///registry/items/quest_item/girl/item_020"
             title:
                 en: "For memory: Shelly_Cline"   ##LOCALIZATION
-                ru: "На память: Shelly_Cline"
+                ru: "На память: Шелли_Клайн"
         chance: 0.056
       - item:
             parent: "reg:///registry/items/quest_item/girl/item_021"
             title:
                 en: "For memory: Shelly_Cline"   ##LOCALIZATION
-                ru: "На память: Shelly_Cline"
+                ru: "На память: Шелли_Клайн"
         chance: 0.056
       - item:
             parent: "reg:///registry/items/quest_item/girl/item_022"
             title:
                 en: "For memory: Shelly_Cline"   ##LOCALIZATION
-                ru: "На память: Shelly_Cline"
+                ru: "На память: Шелли_Клайн"
         chance: 0.056
       - item:
             parent: "reg:///registry/items/quest_item/girl/item_023"
             title:
                 en: "For memory: Shelly_Cline"   ##LOCALIZATION
-                ru: "На память: Shelly_Cline"
+                ru: "На память: Шелли_Клайн"
         chance: 0.056
       - item:
             parent: "reg:///registry/items/quest_item/girl/item_024"
             title:
                 en: "For memory: Shelly_Cline"   ##LOCALIZATION
-                ru: "На память: Shelly_Cline"
+                ru: "На память: Шелли_Клайн"
         chance: 0.056
       - item:
             parent: "reg:///registry/items/quest_item/girl/item_025"
             title:
                 en: "For memory: Shelly_Cline"   ##LOCALIZATION
-                ru: "На память: Shelly_Cline"
+                ru: "На память: Шелли_Клайн"
         chance: 0.056
       - item:
             parent: "reg:///registry/items/quest_item/girl/item_026"
             title:
                 en: "For memory: Shelly_Cline"   ##LOCALIZATION
-                ru: "На память: Shelly_Cline"
+                ru: "На память: Шелли_Клайн"
         chance: 0.056
       - item:
             parent: "reg:///registry/items/quest_item/girl/item_027"
             title:
                 en: "For memory: Shelly_Cline"   ##LOCALIZATION
-                ru: "На память: Shelly_Cline"
+                ru: "На память: Шелли_Клайн"
         chance: 0.056
       - item:
             parent: "reg:///registry/items/quest_item/girl/item_028"
             title:
                 en: "For memory: Shelly_Cline"   ##LOCALIZATION
-                ru: "На память: Shelly_Cline"
+                ru: "На память: Шелли_Клайн"
         chance: 0.056
 
   - title:
@@ -331,59 +331,59 @@ service_list:
             parent: "reg:///registry/items/quest_item/girl/item_024"
             title:
                 en: "For memory: Shelly_Cline"   ##LOCALIZATION
-                ru: "На память: Shelly_Cline"
+                ru: "На память: Шелли_Клайн"
         chance: 0.1
       - item:
             parent: "reg:///registry/items/quest_item/girl/item_025"
             title:
                 en: "For memory: Shelly_Cline"   ##LOCALIZATION
-                ru: "На память: Shelly_Cline"
+                ru: "На память: Шелли_Клайн"
         chance: 0.1
       - item:
             parent: "reg:///registry/items/quest_item/girl/item_026"
             title:
                 en: "For memory: Shelly_Cline"   ##LOCALIZATION
-                ru: "На память: Shelly_Cline"
+                ru: "На память: Шелли_Клайн"
         chance: 0.1
       - item:
             parent: "reg:///registry/items/quest_item/girl/item_027"
             title:
                 en: "For memory: Shelly_Cline"   ##LOCALIZATION
-                ru: "На память: Shelly_Cline"
+                ru: "На память: Шелли_Клайн"
         chance: 0.1
       - item:
             parent: "reg:///registry/items/quest_item/girl/item_028"
             title:
                 en: "For memory: Shelly_Cline"   ##LOCALIZATION
-                ru: "На память: Shelly_Cline"
+                ru: "На память: Шелли_Клайн"
         chance: 0.1
       - item:
             parent: "reg:///registry/items/quest_item/girl/item_029"
             title:
                 en: "For memory: Shelly_Cline"   ##LOCALIZATION
-                ru: "На память: Shelly_Cline"
+                ru: "На память: Шелли_Клайн"
         chance: 0.1
       - item:
             parent: "reg:///registry/items/quest_item/girl/item_030"
             title:
                 en: "For memory: Shelly_Cline"   ##LOCALIZATION
-                ru: "На память: Shelly_Cline"
+                ru: "На память: Шелли_Клайн"
         chance: 0.1
       - item:
             parent: "reg:///registry/items/quest_item/girl/item_031"
             title:
                 en: "For memory: Shelly_Cline"   ##LOCALIZATION
-                ru: "На память: Shelly_Cline"
+                ru: "На память: Шелли_Клайн"
         chance: 0.1
       - item:
             parent: "reg:///registry/items/quest_item/girl/item_032"
             title:
                 en: "For memory: Shelly_Cline"   ##LOCALIZATION
-                ru: "На память: Shelly_Cline"
+                ru: "На память: Шелли_Клайн"
         chance: 0.1
       - item:
             parent: "reg:///registry/items/quest_item/girl/item_033"
             title:
                 en: "For memory: Shelly_Cline"   ##LOCALIZATION
-                ru: "На память: Shelly_Cline"
+                ru: "На память: Шелли_Клайн"
         chance: 0.1
