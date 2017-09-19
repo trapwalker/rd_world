@@ -35,11 +35,11 @@ class DeliveryPassengerQuest(DeliveryQuestSimple):
 
     def init_text(self, distance=None):
         self.text_short = LocalizedString(
-            en=u"Доставьте пассажиров в гороод {}.".format(self.destination.title),  # TODO: ##LOCALIZATION
+            en=u"Deliver passengers to city {}.".format(self.destination.title),   ##LOCALIZATION
             ru=u"Доставьте пассажиров в гороод {}.".format(self.destination.title),
         )
         self.text = LocalizedString(
-            en=u"Доставьте пассажиров: {} - в гороод {}. Награда: {:.0f}nc и {:.0f} ед. опыта.".format(  # TODO: ##LOCALIZATION
+            en=u"Deliver passengers: {} - to city {}. Reward: {:.0f}nc and {:.0f} exp. points.".format(   ##LOCALIZATION
                 ', '.join([item.title.en for item in self.delivery_set]),
                 self.destination.title,
                 self.reward_money,

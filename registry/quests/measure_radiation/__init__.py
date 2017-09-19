@@ -166,20 +166,20 @@ class MeasureRadiation(Quest):
 
     def init_text(self):
         self.text_short = LocalizedString(
-            en=u"Обследуйте {:.0f} точек.".format(self.measure_count),  # TODO: ##LOCALIZATION
+            en=u"Inspect {:.0f} points.".format(self.measure_count),   ##LOCALIZATION
             ru=u"Обследуйте {:.0f} точек.".format(self.measure_count),
         )
         self.text = LocalizedString(
-            en=u"Замерьте уровень радиации в {:.0f} точек{}. Награда: {:.0f}nc, {:.0f} кармы и {:.0f} ед. опыта".format(  # TODO: ##LOCALIZATION
+            en=u"Measure radiation level in {:.0f} points{}. Reward: {:.0f}nc, {:.0f} karma and {:.0f} exp. points".format(   ##LOCALIZATION
                 self.measure_count,
-                u"" if not self.deadline else u" за {}".format(self.deadline_to_str()),  # TODO: ##LOCALIZATION
+                u"" if not self.deadline else u" for {}".format(self.deadline_to_str()),   ##LOCALIZATION
                 self.reward_money,
                 self.reward_karma,
                 self.reward_exp * self.measure_count,
             ),
             ru=u"Замерьте уровень радиации в {:.0f} точек{}. Награда: {:.0f}nc, {:.0f} кармы и {:.0f} ед. опыта".format(
                 self.measure_count,
-                u"" if not self.deadline else u" за {}".format(self.deadline_to_str()),  # TODO: ##LOCALIZATION
+                u"" if not self.deadline else u" за {}".format(self.deadline_to_str()),   ##LOCALIZATION
                 self.reward_money,
                 self.reward_karma,
                 self.reward_exp * self.measure_count,
