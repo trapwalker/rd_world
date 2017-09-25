@@ -1,0 +1,32 @@
+﻿_cls     : QuestItem
+doc      : Jacket
+abstract : false
+
+title:
+    en: Jacket with one sleeve   ##LOCALIZATION
+    ru: Куртка с одним рукавом
+
+#description:
+#    en: "Bonus: 5 points in driving skill."   ##LOCALIZATION
+#    ru: "Бонус: 5 очков в навык Вождение."
+
+group_id    : ""
+
+#base_price : 0
+#stack_size : 1
+
+#effect_title:
+#    en: Bonus
+#    ru: Бонус
+#
+#effect_description:
+#    en: 5 points in driving skill   ##LOCALIZATION
+#    ru: 5 очков в навык Вождение
+#
+#driving  : 5
+#deadline : 43200
+
+inv_icon_big        : static/content/items/quest_item/class_item/jacket/big.png
+inv_icon_mid        : static/content/items/quest_item/class_item/jacket/mid.png
+inv_icon_small      : static/content/items/quest_item/class_item/jacket/small.png
+inv_icon_supersmall : static/content/items/quest_item/class_item/jacket/supersmall.png

@@ -22,6 +22,8 @@ attributes_by_class:
             en: Establish a settlement   ##LOCALIZATION
             ru: Основать поселение
 
+        class_item: reg:///registry/items/quest_item/class_item/flask
+
     alpha_wolf:
         teacher:
             en: major
@@ -34,6 +36,8 @@ attributes_by_class:
         super_task:
             en: Create a clan   ##LOCALIZATION
             ru: Создать клан
+
+        class_item: reg:///registry/items/quest_item/class_item/bag
 
     night_rider:
         teacher:
@@ -48,18 +52,22 @@ attributes_by_class:
             en: Get stealth technology   ##LOCALIZATION
             ru: Получить стелс-технологию
 
+        class_item: reg:///registry/items/quest_item/class_item/toothpick
+
     oil_magnate:
         teacher: 
             en: trader   ##LOCALIZATION
             ru: торговца
 
         artefact:
-            en: Cane   ##LOCALIZATION
-            ru: Трость
+            en: Smoking pipe   ##LOCALIZATION
+            ru: Курительная трубка
 
         super_task:
             en: Open shop   ##LOCALIZATION
             ru: Открыть магазин
+
+        class_item: reg:///registry/items/quest_item/class_item/pipe
 
     road_warrior:
         teacher:
@@ -74,6 +82,8 @@ attributes_by_class:
             en: Get supercar   ##LOCALIZATION
             ru: Получить суперкар
 
+        class_item: reg:///registry/items/quest_item/class_item/jacket
+
     techno_kinetic:
         teacher: 
             en: mechanic   ##LOCALIZATION
@@ -86,3 +96,5 @@ attributes_by_class:
         super_task:
             en: Open service center   ##LOCALIZATION
             ru: Открыть сервисный центр
+
+        class_item: reg:///registry/items/quest_item/class_item/plutonium
