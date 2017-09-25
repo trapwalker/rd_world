@@ -147,8 +147,7 @@ class ClassQuest(Quest):
                 npc = event.server.reg.get(event.npc_node_hash, None)
                 if npc:
                     relation = agent.get_relationship(npc=npc)
-                    # if relation < 0.5:
-                    if relation < 0:
+                    if relation < 0.5:
                         quest.npc_replica(
                             npc=npc,
                             replica=quest.locale("q_cq_phrase_1"),  ##LOCALIZATION
