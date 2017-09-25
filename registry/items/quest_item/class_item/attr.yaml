@@ -1,0 +1,9 @@
+﻿_cls    : QuestItem
+doc     : QuestItem
+
+deadline : 0
+group_id    : ""
+
+effect_title:
+    en: Bonus
+    ru: Бонус

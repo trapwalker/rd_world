@@ -11,7 +11,7 @@ from sublayers_server.model.registry_me.tree import (
     MapField,
     LocalizedStringField,
     EmbeddedDocumentField,
-    StringField,
+    RegistryLinkField,
 )
 
 
@@ -20,6 +20,9 @@ class ClassQuest(Quest):
         teacher = LocalizedStringField(caption=u'Тип NPC-наставника (род. падеж)')
         artefact = LocalizedStringField(caption=u'Классовый артефакт')
         super_task = LocalizedStringField(caption=u'Классовая суперзадача')
+        class_item = RegistryLinkField(
+            document_type='sublayers_server.model.registry_me.classes.quest_item.QuestItem',
+        )
 
     attributes_by_class = MapField(
         caption=u'Словарь атрибутов',
@@ -163,6 +166,16 @@ class ClassQuest(Quest):
                         agent.set_balance(time=event.time, delta=-3000)
                         # todo: Вынести 500 в атрибуты квеста
                         agent.set_exp(time=event.time, dvalue=500)
+
+                        # Выдаем классовый предмет
+                        class_attrs = quest.attributes_by_class.get(agent.role_class.name, None)
+                        if class_attrs:
+                            class_item = class_attrs.class_item.instantiate()
+                            agent.quest_inventory.add_item(agent=quest.agent, item=class_item, event=event)
+                        else:
+                            log.warninig('role class %r is not supported in ClassQuest', agent.role_class)
+                            return
+
                         agent.del_note(uid=quest.dc.visit_trainer_note_uid, time=event.time)
                         agent.del_note(uid=quest.dc.select_teacher_note_uid, time=event.time)
                         go("win")

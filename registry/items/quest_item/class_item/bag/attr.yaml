@@ -1,0 +1,22 @@
+﻿_cls     : QuestItem
+doc      : Bag
+abstract : false
+
+title:
+    en: Postal bag      ##LOCALIZATION
+    ru: Почтовая сумка
+
+description:
+    en: "Bonus: 5 points in leading skill."   ##LOCALIZATION
+    ru: "Бонус: 5 очков в навык Лидерство."
+
+effect_description:
+    en: 5 points in leading skill
+    ru: 5 очков в навык Лидерство
+
+leading  : 5
+
+inv_icon_big        : static/content/items/quest_item/class_item/bag/big.png
+inv_icon_mid        : static/content/items/quest_item/class_item/bag/mid.png
+inv_icon_small      : static/content/items/quest_item/class_item/bag/small.png
+inv_icon_supersmall : static/content/items/quest_item/class_item/bag/supersmall.png

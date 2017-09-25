@@ -1,0 +1,22 @@
+﻿_cls     : QuestItem
+doc      : Jacket
+abstract : false
+
+title:
+    en: Jacket   ##LOCALIZATION
+    ru: Куртка
+
+description:
+    en: "Bonus: 5 points in shooting skill."   ##LOCALIZATION
+    ru: "Бонус: 5 очков в навык Стрельба."
+
+effect_description:
+    en: 5 points in shooting skill   ##LOCALIZATION
+    ru: 5 очков в навык Стрельба
+
+shooting  : 5
+
+inv_icon_big        : static/content/items/quest_item/class_item/jacket/big.png
+inv_icon_mid        : static/content/items/quest_item/class_item/jacket/mid.png
+inv_icon_small      : static/content/items/quest_item/class_item/jacket/small.png
+inv_icon_supersmall : static/content/items/quest_item/class_item/jacket/supersmall.png

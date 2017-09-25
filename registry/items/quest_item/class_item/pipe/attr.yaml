@@ -1,0 +1,22 @@
+﻿_cls     : QuestItem
+doc      : Pipe
+abstract : false
+
+title:
+    en: Smoking pipe        ##LOCALIZATION
+    ru: Курительная трубка
+
+description:
+    en: "Bonus: 5 points in trading skill."   ##LOCALIZATION
+    ru: "Бонус: 5 очков в навык Торговли."
+
+effect_description:
+    en: 5 points in trading skill   ##LOCALIZATION
+    ru: 5 очков в навык Торговли
+
+trading  : 5
+
+inv_icon_big        : static/content/items/quest_item/class_item/pipe/big.png
+inv_icon_mid        : static/content/items/quest_item/class_item/pipe/mid.png
+inv_icon_small      : static/content/items/quest_item/class_item/pipe/small.png
+inv_icon_supersmall : static/content/items/quest_item/class_item/pipe/supersmall.png

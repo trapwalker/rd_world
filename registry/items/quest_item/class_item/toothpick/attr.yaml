@@ -1,0 +1,22 @@
+﻿_cls     : QuestItem
+doc      : Toothpick
+abstract : false
+
+title:
+    en: Toothpick    ##LOCALIZATION
+    ru: Зубочистка
+
+description:
+    en: "Bonus: 5 points in masking skill."   ##LOCALIZATION
+    ru: "Бонус: 5 очков в навык Маскировка."
+
+effect_description:
+    en: 5 points in masking skill   ##LOCALIZATION
+    ru: 5 очков в навык Маскировка
+
+masking  : 5
+
+inv_icon_big        : static/content/items/quest_item/class_item/toothpick/big.png
+inv_icon_mid        : static/content/items/quest_item/class_item/toothpick/mid.png
+inv_icon_small      : static/content/items/quest_item/class_item/toothpick/small.png
+inv_icon_supersmall : static/content/items/quest_item/class_item/toothpick/supersmall.png
