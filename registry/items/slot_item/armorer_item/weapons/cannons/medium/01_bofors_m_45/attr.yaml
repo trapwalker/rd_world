@@ -8,8 +8,8 @@ title:
 
 # Полное описание - отобразится в разделе описания в инвентаре
 description:
-    en: '???'   ##LOCALIZATION
-    ru: '???'
+    en: ''   ##LOCALIZATION
+    ru: ''
 
 # Основные балансные настройки
 base_price      : 1450                                     # Цена

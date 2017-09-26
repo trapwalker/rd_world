@@ -1,14 +1,6 @@
-﻿__cls__         : MachineGun
-_cls            : MachineGun
+﻿_cls            : MachineGun
 doc             : Пулемет MG 42None
 abstract        : false
-
-title           : Пулемет<br>MG 42                           # Краткое название - отобразится в слоте инвентаря
-
-
-
-# Полное описание - отобразится в разделе описания в инвентаре
-description     : '???'
 
 # Основные балансные настройки
 base_price      : 900                                        # Цена
