@@ -218,7 +218,7 @@ class DeliveryFromCache(DeliveryQuestSimple):
             if isinstance(event, OnCancel):
                 agent.profile.del_note(uid=quest.dc.cache_map_note_uid, time=event.time)
                 agent.profile.set_relationship(time=event.time, npc=quest.hirer, dvalue=-quest.reward_relation_hirer)
-                quest.log(text='{} {}.'.format(quest.locale("q_dfc_relations"), quest.hirer.title), event=event,  ##LOCALIZATION
+                quest.log(text=u'{} {}.'.format(quest.locale("q_dfc_relations"), quest.hirer.title), event=event,  ##LOCALIZATION
                           position=quest.hirer.hometown.position)
                 go("cancel_fail")
             if isinstance(event, OnTimer):

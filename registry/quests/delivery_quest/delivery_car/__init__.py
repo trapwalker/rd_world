@@ -147,10 +147,10 @@ class DeliveryCar(DeliveryQuest):
                     messages.UserExampleCarInfo(agent=agent_model, time=event.time).post()
                     messages.UserExampleCarView(agent=agent_model, time=event.time).post()
                     messages.UserExampleCarSlots(agent=agent_model, time=event.time).post()
-                    quest.log(text='{} {}nc.'.format(quest.locale("q_share_cancel_pen_done"), money_penalty), event=event)  ##LOCALIZATION
+                    quest.log(text=u'{} {}nc.'.format(quest.locale("q_share_cancel_pen_done"), money_penalty), event=event)  ##LOCALIZATION
                     go("cancel_fail")
                 else:
-                    quest.npc_replica(npc=quest.hirer, replica='{} {}nc.'.format(quest.locale("q_dc_cancel_req"), money_penalty), event=event)  ##LOCALIZATION
+                    quest.npc_replica(npc=quest.hirer, replica=u'{} {}nc.'.format(quest.locale("q_dc_cancel_req"), money_penalty), event=event)  ##LOCALIZATION
 
     ####################################################################################################################
     class reward(QuestState_):
