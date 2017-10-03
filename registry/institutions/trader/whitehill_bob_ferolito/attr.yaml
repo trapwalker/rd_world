@@ -164,8 +164,13 @@ items:
   - reg:///registry/items/slot_item/tuner_item/shnork/00_shnork_002
   - reg:///registry/items/slot_item/tuner_item/shnork/00_shnork_003
   - reg:///registry/items/slot_item/tuner_item/b_fender/00_b_fender_002
+  - reg:///registry/items/slot_item/tuner_item/b_fender/01_b_fender_004
+  - reg:///registry/items/slot_item/tuner_item/b_fender/01_b_fender_005
   - reg:///registry/items/slot_item/tuner_item/f_fender/00_f_fender_002
+  - reg:///registry/items/slot_item/tuner_item/f_fender/01_f_fender_004
+  - reg:///registry/items/slot_item/tuner_item/f_fender/01_f_fender_005
   - reg:///registry/items/slot_item/tuner_item/armor/00_armor_001
+  - reg:///registry/items/slot_item/tuner_item/armor/01_armor_002
 #  - reg:///registry/items/slot_item/tuner_item/airint/airint_001
 #  - reg:///registry/items/slot_item/tuner_item/b_bumper/b_bumper_001
 #  - reg:///registry/items/slot_item/tuner_item/b_bumper/b_bumper_002
