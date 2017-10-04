@@ -17,7 +17,7 @@ base_price: 400
 a_forward: 0.02
 
 # Минусы
-a_braking: 0.02
+a_braking: -0.02
 
 inv_icon_big: static/content/items/slot_item/mechanic_items/transmission/transfer_case/01_ttc/big.png
 inv_icon_mid: static/content/items/slot_item/mechanic_items/transmission/transfer_case/01_ttc/mid.png
