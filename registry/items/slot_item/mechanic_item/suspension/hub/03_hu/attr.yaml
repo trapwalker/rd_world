@@ -17,7 +17,7 @@ base_price: 200
 v_forward: 0.01
 
 # Минусы
-a_braking: 0.01
+a_braking: -0.01
 
 inv_icon_big: static/content/items/slot_item/mechanic_items/suspension/hub/03_hu/big.png
 inv_icon_mid: static/content/items/slot_item/mechanic_items/suspension/hub/03_hu/mid.png

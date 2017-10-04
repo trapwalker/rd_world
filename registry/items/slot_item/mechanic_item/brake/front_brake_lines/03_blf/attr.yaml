@@ -14,7 +14,7 @@ description:
 base_price: 200
 
 # Плюсы
-a_braking: -0.01
+a_braking: 0.01
 
 # Минусы
 r_cc_dirt: -0.01

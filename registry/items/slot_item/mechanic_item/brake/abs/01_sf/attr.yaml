@@ -18,7 +18,7 @@ r_min: -0.02
 mobility: 0  # ac_max: 0.02
 
 # Минусы
-a_braking: 0.02
+a_braking: -0.02
 
 inv_icon_big: static/content/items/slot_item/mechanic_items/brake/abs/01_sf/big.png
 inv_icon_mid: static/content/items/slot_item/mechanic_items/brake/abs/01_sf/mid.png
