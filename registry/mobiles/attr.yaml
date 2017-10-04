@@ -48,7 +48,7 @@ r_min                 :  10
 mobility: 0  # ac_max                :  14
 max_control_speed     :  28
 v_forward             :  20
-v_backward            : -10
+v_backward            : 10
 a_forward             :   5 
 a_backward            :  3
 a_braking             :  6
