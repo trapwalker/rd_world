@@ -4,7 +4,7 @@ doc     : Турель (Пулемёт)
 inventory:
     size: 1
     items:
-       - reg:///registry/items/usable/ammo/762x51bb?amount=100
+       - reg:///registry/items/usable/ammo/127x108bb?amount=100
 
 p_observing_range : 150
 max_hp          : 135
