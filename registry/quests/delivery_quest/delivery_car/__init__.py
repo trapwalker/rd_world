@@ -103,6 +103,9 @@ class DeliveryCar(DeliveryQuest):
                 last_location=agent_model.current_location.example,
             )
         )
+        # todo: возможно это нужно сделать
+        # car_example.pre_buy_car(example_agent=agent_model.example)
+
         self.dc.car_uid = car_example.uid
         agent_model.example.profile.car = car_example
         agent_model.reload_inventory(time=event.time, make_game_log=False)
