@@ -9,7 +9,7 @@ p_visibility_max: 0
 
 # Маневренность
 r_min: 0
-ac_max: 0
+mobility: 0  # ac_max: 0
 
 # Макс. скорость
 v_forward: 0
