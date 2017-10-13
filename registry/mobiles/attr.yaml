@@ -41,7 +41,6 @@ r_cc_water             : 0
 r_cc_mine              : 0
 r_cc_fuel_empty        : 0
 
-p_defence              : 1
 direction              : 0
 
 r_min                 :  10
