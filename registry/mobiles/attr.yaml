@@ -45,13 +45,13 @@ p_defence              : 1
 direction              : 0
 
 r_min                 :  10
-ac_max                :  14
+mobility: 0  # ac_max                :  14
 max_control_speed     :  28
 v_forward             :  20
-v_backward            : -10
+v_backward            : 10
 a_forward             :   5 
-a_backward            :  -3
-a_braking             :  -6
+a_backward            :  3
+a_braking             :  6
 
 max_fuel              : 100
 fuel                  : 100
@@ -89,7 +89,7 @@ name_car      : ""
 
 # Влияние скилов          
 driving_r_min               : 0
-driving_ac_max              : 0
+driving_mobility            : 0  # ac_max : 0
 driving_max_control_speed   : 0
 driving_v_forward           : 0
 driving_v_backward          : 0

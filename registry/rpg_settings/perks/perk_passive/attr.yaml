@@ -7,7 +7,7 @@ p_visibility_max   : 0
 p_observing_range  : 0
 max_hp             : 0
 r_min              : 0
-ac_max             : 0
+mobility: 0  # ac_max             : 0
 max_control_speed  : 0
 v_forward          : 0
 v_backward         : 0

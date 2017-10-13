@@ -15,7 +15,7 @@ base_price: 200
 
 # Плюсы
 r_min: -0.01
-ac_max: 0.01
+mobility: 0  # ac_max: 0.01
 
 # Минусы
 v_forward: -0.01

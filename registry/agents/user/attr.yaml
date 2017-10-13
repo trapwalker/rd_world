@@ -18,3 +18,5 @@ leading:         reg:///registry/rpg_settings/skill/leading
 trading:         reg:///registry/rpg_settings/skill/trading
 engineering:     reg:///registry/rpg_settings/skill/engineering
 
+sub_discharge_dmg: 0.25
+
