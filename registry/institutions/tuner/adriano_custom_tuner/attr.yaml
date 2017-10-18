@@ -1,0 +1,10 @@
+﻿_cls     : Institution
+
+title:
+    en: Adriano_Grijalva
+    ru: Адриано_Грихалва   ##LOCALIZATION
+
+photo    : "static/content/institutions/stylist/adriano_customs_adriano_grijalva.png"
+abstract : false
+
+hometown : reg:///registry/poi/locations/towns/adriano_custom
