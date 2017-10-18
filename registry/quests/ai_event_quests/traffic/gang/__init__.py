@@ -59,7 +59,7 @@ class AIGangQuest(AITrafficQuest):
                             direction=random.random() * 2 * pi,
                         )
                     )
-
+                    car_example.pre_buy_car(example_agent=example_agent)
                     self.init_bot_inventory(car_example=car_example)
 
                     model_agent.generate_car(time=event.time, car_example=car_example)

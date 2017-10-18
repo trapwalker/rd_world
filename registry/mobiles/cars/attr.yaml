@@ -182,3 +182,11 @@ audio_engine:
 
 # Длительность стартового щита (секунды)
 start_shield_time: 30
+
+# Диапазоны рандомизирования коэффициентов параметров
+rand_range_max_hp: {min: 0.9, max: 1.1}
+rand_range_v_forward : {min: 0.9, max: 1.1}
+rand_range_a_forward : {min: 0.9, max: 1.1}
+rand_range_p_fuel_rate : {min: 0.9, max: 1.1}
+rand_range_p_armor : {min: 0.9, max: 1.1}
+rand_range_mobility: {min: 0.9, max: 1.1}

@@ -164,7 +164,7 @@ class AICaravanQuest(AIGangQuest):
                 direction=random.random() * 2 * pi,
             )
         )
-
+        car_example.pre_buy_car(example_agent=model_agent.example)
         model_agent.example.profile.car = car_example
         self.init_bot_inventory(car_example=car_example, loot_rec_list=loot_rec_list)
 
