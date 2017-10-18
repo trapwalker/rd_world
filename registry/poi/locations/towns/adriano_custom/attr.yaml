@@ -1,0 +1,33 @@
+﻿_cls     : Town
+doc      : Адриано Кастомс   # Установка тюнинг-итемов и систем механика
+abstract : false
+
+title:
+    en: Adriano Custom   ##LOCALIZATION
+    ru: Адриано Кастомс
+
+position          : {x: 12478172, y: 27043450}
+p_observing_range : 250
+p_enter_range     : 150
+
+svg_link: static/content/locations/map_locations/adriano_custom
+
+buildings:
+  - name: adriano
+    caption:
+        en: Adriano   ##LOCALIZATION
+        ru: Адриано
+
+    title:
+        en: Adriano   ##LOCALIZATION
+        ru: Адриано
+
+    head: reg:///registry/institutions/tuner/adriano_custom_tuner
+    instances:
+        - reg:///registry/institutions/tuner/adriano_custom_tuner
+
+static_image_list:
+    - /static/content/locations/map_locations/adriano_custom/ground+circle.png
+    - /static/content/locations/map_locations/adriano_custom/adriano.png
+    - /static/content/locations/map_locations/adriano_custom/adriano_bg.png
+    - /static/content/locations/map_locations/adriano_custom/adriano_hover.png

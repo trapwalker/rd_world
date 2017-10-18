@@ -1,0 +1,33 @@
+﻿_cls     : Town
+doc      : Тартрон Партс   # Разборка автомобилей (торговля итемами стилиста и механика)
+abstract : false
+
+title: 
+    en: Tartron Parts   ##LOCALIZATION
+    ru: Тартрон Партс
+
+position          : {x: 12470889, y: 27058437}
+p_observing_range : 250
+p_enter_range     : 150
+
+svg_link: static/content/locations/map_locations/tartron_parts
+
+buildings:
+  - name: tartron
+    caption: 
+        en: Tartron   ##LOCALIZATION
+        ru: Тартрон
+
+    title: 
+        en: Tartron   ##LOCALIZATION
+        ru: Тартрон
+
+    head: reg:///registry/institutions/trader/tartron_parts_trader
+    instances:
+        - reg:///registry/institutions/trader/tartron_parts_trader
+
+static_image_list:
+    - /static/content/locations/map_locations/tartron_parts/ground+circle.png
+    - /static/content/locations/map_locations/tartron_parts/tartron.png
+    - /static/content/locations/map_locations/tartron_parts/tartron_bg.png
+    - /static/content/locations/map_locations/tartron_parts/tartron_hover.png
