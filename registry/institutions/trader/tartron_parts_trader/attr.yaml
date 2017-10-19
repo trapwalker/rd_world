@@ -10,7 +10,6 @@ abstract : true
 trading      : 20 # навык торговли
 refresh_time : 7200 # 2 часов
 
-ignore_list : [] # то что не будет покупать
 hometown    : reg:///registry/poi/locations/towns/tartron_parts
 
 items:
