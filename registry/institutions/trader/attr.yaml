@@ -9,4 +9,8 @@ text:
 
 type: trader
 
+ignore_list :
+    - reg:///registry/items/passengers
+    - reg:///registry/items/usable/package
+
 refresh_time: 21600 # время в сек между завозами в секундах (0 или None - никогда) (сейчас = 6часов)
