@@ -41,13 +41,14 @@ class AIActionTrafficQuest(AIActionQuest):
                         car.fire_discharge(side=sector.side, time=event.time)
 
     def towns_aggro(self, event):
-        agent = getattr(event, 'obj', None) and event.obj.main_agent
-        if not agent:
-            return
-        from sublayers_server.model.map_location import Town
-        for town in Town.get_towns():
-            if town.example in self.towns_protect:
-                town.on_enemy_candidate(agent=agent, damage=True, time=event.time)
+        pass  # 20-10-17 - отключен агр городов за атаку по городским мобам
+        # agent = getattr(event, 'obj', None) and event.obj.main_agent
+        # if not agent:
+        #     return
+        # from sublayers_server.model.map_location import Town
+        # for town in Town.get_towns():
+        #     if town.example in self.towns_protect:
+        #         town.on_enemy_candidate(agent=agent, damage=True, time=event.time)
 
     def set_motion(self, car, cc, target_point, event):
         if cc != self.dc.last_cc or target_point != self.dc.last_target_point:
