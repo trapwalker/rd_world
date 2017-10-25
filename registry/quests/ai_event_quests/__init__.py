@@ -48,6 +48,7 @@ class AIEventQuest(Quest):
                 item = item_rec.item.instantiate()
                 car_example.inventory.items.append(item)
             count_loot -= 1
+        # todo: Q! ^^^^ как работает count_loot ? а если не сработали шансы, то не выпадет гарантировано count_loot!
 
         # Поставить для агента страховку на дроп итемов из машинки
         if agent_owner and event:
