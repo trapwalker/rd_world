@@ -2,7 +2,7 @@
 doc    : Зона Радиации
 
 can_instantiate: False
-p_observing_range: 1001
+p_observing_range: 1000
 p_vigilance: 1
 p_visibility_min: 1
 p_visibility_max: 1
