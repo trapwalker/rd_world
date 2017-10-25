@@ -7,3 +7,6 @@ weapon_animation:
 weapon_audio:
   - shot_01
   - shot_02
+
+
+rand_range_dmg: {min: 1.0, max: 1.25}
