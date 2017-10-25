@@ -1,0 +1,73 @@
+﻿_cls    : DropTable
+doc     : Таблица дропа из мобов
+
+table:
+  - item: reg:///registry/items/stuff/alcohol/alcohol_001
+    level: 0
+    chance: 0.05
+  - item: reg:///registry/items/stuff/alcohol/alcohol_002
+    level: 0
+    chance: 0.35
+  - item: reg:///registry/items/stuff/canned_cereal/canned_cereal_001
+    level: 0
+    chance: 0.50
+  - item: reg:///registry/items/stuff/canned_meat/canned_meat_001
+    level: 0
+    chance: 0.10
+  - item: reg:///registry/items/stuff/medical_supplies/medical_supplies_001
+    level: 0
+    chance: 0.10
+  - item: reg:///registry/items/stuff/scrap_metal/scrap_metal_001
+    level: 0
+    chance: 0.75
+  - item: reg:///registry/items/stuff/warm_clothes/warm_clothes_003
+    level: 0
+    chance: 0.25
+  - item: reg:///registry/items/stuff/water/water_002
+    level: 0
+    chance: 0.50
+  - item: reg:///registry/items/usable/tanks/tank_empty/tank_10l
+    level: 0
+    chance: 0.50
+  - item: reg:///registry/items/usable/tanks/tank_empty/tank_20l
+    level: 0
+    chance: 0.15
+  - item: reg:///registry/items/usable/tanks/tank_full/tank_10l
+    level: 0
+    chance: 0.40
+  - item: reg:///registry/items/usable/tanks/tank_full/tank_20l
+    level: 0
+    chance: 0.10
+  - item: reg:///registry/items/usable/build_set/build_set_small
+    level: 0
+    chance: 0.15
+  - item: reg:///registry/items/usable/build_set/build_set_mid
+    level: 0
+    chance: 0.05
+  - item: reg:///registry/items/usable/ammo/556bb
+    level: 0
+    chance: 0.15
+  - item: reg:///registry/items/usable/ammo/762x51bb
+    level: 0
+    chance: 0.10
+  - item: reg:///registry/items/usable/ammo/792bb
+    level: 0
+    chance: 0.10
+  - item: reg:///registry/items/usable/ammo/127x108bb
+    level: 0
+    chance: 0.05
+  - item: reg:///registry/items/usable/ammo/13mm
+    level: 0
+    chance: 0.05
+  - item: reg:///registry/items/usable/ammo/40mm
+    level: 0
+    chance: 0.80
+  - item: reg:///registry/items/usable/ammo/20mm
+    level: 0
+    chance: 0.60
+  - item: reg:///registry/items/usable/ammo/23bzt
+    level: 0
+    chance: 0.55
+  - item: reg:///registry/items/usable/ammo/25mm
+    level: 0
+    chance: 0.50
