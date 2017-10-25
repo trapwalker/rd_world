@@ -25,6 +25,7 @@ buildings:
     head: reg:///registry/institutions/tuner/adriano_custom_tuner
     instances:
         - reg:///registry/institutions/tuner/adriano_custom_tuner
+        - reg:///registry/institutions/trader/adriano_custom_jamal_ross
 
 static_image_list:
     - /static/content/locations/map_locations/adriano_custom/ground+circle.png
