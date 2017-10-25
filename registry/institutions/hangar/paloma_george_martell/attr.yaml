@@ -11,7 +11,7 @@ hometown : reg:///registry/poi/locations/towns/paloma
 
 group_list:
   # Группа машин 0 lvl
-  - count : 4  # Количество машин в группе
+  - count : 0  # Количество машин в группе
     car_list:
       # LIGHT
       # motorcycles
@@ -29,7 +29,7 @@ group_list:
       - reg:///registry/mobiles/cars/middle/vans/citroen_hy
 
   # Группа машин 1 lvl
-  - count : 3
+  - count : 2
     car_list:
       # LIGHT
       # motorcycles
@@ -47,7 +47,7 @@ group_list:
       - reg:///registry/mobiles/cars/cargo/buses/01_bedford_vas
 
   # Группа машин 2 lvl
-  - count : 2  # Количество машин в группе
+  - count : 3  # Количество машин в группе
     car_list:
       # LIGHT
       # buggies

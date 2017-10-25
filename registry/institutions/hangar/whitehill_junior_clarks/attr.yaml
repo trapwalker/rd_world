@@ -9,27 +9,55 @@ abstract : false
 
 hometown : reg:///registry/poi/locations/towns/whitehill
 
+
 group_list:
-  # Группа машин 0 lvl
-  - count : 4  # Количество машин в группе
+
+
+  # lvl0 motorcycle
+  - count : 1  # Количество машин в группе
+    car_list:
+      - reg:///registry/mobiles/cars/light/motorcycles/jawa_cz_355
+
+  # lvl0 middle
+  - count : 1  # Количество машин в группе
+    car_list:
+      - reg:///registry/mobiles/cars/middle/cars/vw_beetle
+
+  # lvl0 offroad
+  - count : 1  # Количество машин в группе
+    car_list:
+      - reg:///registry/mobiles/cars/middle/offroad/ford_econoline
+
+  # lvl0 van
+  - count : 1  # Количество машин в группе
+    car_list:
+      - reg:///registry/mobiles/cars/middle/vans/barkas_b1000kb
+
+
+
+
+
+        # Группа машин 0 lvl
+  - count : 0  # Количество машин в группе
     car_list:
       # LIGHT
       # motorcycles
-      - reg:///registry/mobiles/cars/light/motorcycles/honda_cy_50
+      # - reg:///registry/mobiles/cars/light/motorcycles/honda_cy_50
       - reg:///registry/mobiles/cars/light/motorcycles/jawa_cz_355
       # MIDDLE
       # cars
       - reg:///registry/mobiles/cars/middle/cars/vw_beetle
-      - reg:///registry/mobiles/cars/middle/cars/vw_golf
+      # - reg:///registry/mobiles/cars/middle/cars/vw_golf
       # offroad
       - reg:///registry/mobiles/cars/middle/offroad/ford_econoline
-      - reg:///registry/mobiles/cars/middle/offroad/ford_f_150
+      # - reg:///registry/mobiles/cars/middle/offroad/ford_f_150
       # vans
+      # - reg:///registry/mobiles/cars/middle/vans/citroen_hy
       - reg:///registry/mobiles/cars/middle/vans/barkas_b1000kb
-      - reg:///registry/mobiles/cars/middle/vans/citroen_hy
+
 
   # Группа машин 1 lvl
-  - count : 3
+  - count : 1
     car_list:
       # LIGHT
       # motorcycles
@@ -47,7 +75,7 @@ group_list:
       - reg:///registry/mobiles/cars/cargo/buses/01_bedford_vas
 
   # Группа машин 2 lvl
-  - count : 2  # Количество машин в группе
+  - count : 0  # Количество машин в группе
     car_list:
       # LIGHT
       # buggies
@@ -64,7 +92,7 @@ group_list:
       - reg:///registry/mobiles/cars/middle/vans/02_volkswagen_t1_samba
 
   # Группа машин 3 lvl
-  - count : 1  # Количество машин в группе
+  - count : 0  # Количество машин в группе
     car_list:
       # LIGHT
       # motorcycles
@@ -79,6 +107,30 @@ group_list:
       # vans
       - reg:///registry/mobiles/cars/middle/vans/03_gmc_savana
 
+ # Группа машин 4 lvl
+  - count : 0  # Количество машин в группе
+    car_list:
+      # LIGHT
+      # motorcycles
+      - reg:///registry/mobiles/cars/light/motorcycles/04_kawasaki_klx250
+      # MIDDLE
+      # cars
+      - reg:///registry/mobiles/cars/middle/cars/04_bmw_320i_e21
+      - reg:///registry/mobiles/cars/middle/cars/04_lancia_delta_hf_integrale
+      # buses
+      - reg:///registry/mobiles/cars/cargo/buses/04_gmc_pd_4501_scenicruiser
+      # sport
+      - reg:///registry/mobiles/cars/middle/sports/04_delorean_dmc_12
+
+ # Группа бронемашин
+  - count : 0  # Количество машин в группе
+    car_list:
+      #lvl 4
+      - reg:///registry/mobiles/cars/heavy/armored/04_m3a1_scout_car
+      #lvl 5
+      - reg:///registry/mobiles/cars/heavy/btrs/05_m113a1
+      #lvl6
+      - reg:///registry/mobiles/cars/heavy/btrs/06_m1126
 
 quests:
   - parent: reg:///registry/quests/delivery_quest/delivery_car   # ПЕРЕГНАТЬ ТРАНСПОРТ
