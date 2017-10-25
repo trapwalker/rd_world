@@ -166,7 +166,7 @@ class AICaravanQuest(AIGangQuest):
         )
         car_example.pre_buy_car(example_agent=model_agent.example)
         model_agent.example.profile.car = car_example
-        self.init_bot_inventory(car_example=car_example, loot_rec_list=loot_rec_list)
+        self.init_bot_inventory(car_example=car_example, loot_rec_list=loot_rec_list, event=event, agent_owner=model_agent.example)
 
     def deploy_traders(self, event):
         # Метод деплоя агентов на карту. Вызывается на on_start квеста

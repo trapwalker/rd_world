@@ -82,7 +82,7 @@ class AITrafficQuest(AIEventQuest):
                 direction=random.random() * 2 * pi,
             ))
         car_example.pre_buy_car(example_agent=example_agent)
-        self.init_bot_inventory(car_example=car_example)
+        self.init_bot_inventory(car_example=car_example, event=event, agent_owner=example_agent)
         self.dc._main_agent.generate_car(time=event.time, car_example=car_example)
 
         # log.debug('Quest {!r} deploy_bots: {!r}'.format(self, self.dc._main_agent))
