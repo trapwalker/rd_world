@@ -47,3 +47,42 @@ table:
   - town1: reg:///registry/poi/locations/towns/bonita_vista
     town2: reg:///registry/poi/locations/towns/mine_whitehill
     distance: 75600   # 90 мин
+  - town1: reg:///registry/poi/locations/towns/adriano_custom
+    town2: reg:///registry/poi/locations/towns/adriano_custom
+    distance: 12600   # 15 мин
+  - town1: reg:///registry/poi/locations/towns/adriano_custom
+    town2: reg:///registry/poi/locations/towns/prior
+    distance: 75600   # 90 мин
+  - town1: reg:///registry/poi/locations/towns/adriano_custom
+    town2: reg:///registry/poi/locations/towns/paloma
+    distance: 63000   # 75 мин
+  - town1: reg:///registry/poi/locations/towns/adriano_custom
+    town2: reg:///registry/poi/locations/towns/whitehill
+    distance: 12600   # 15 мин
+  - town1: reg:///registry/poi/locations/towns/adriano_custom
+    town2: reg:///registry/poi/locations/towns/bonita_vista
+    distance: 75600   # 90 мин
+  - town1: reg:///registry/poi/locations/towns/adriano_custom
+    town2: reg:///registry/poi/locations/towns/mine_whitehill
+    distance: 12600   # 15 мин
+  - town1: reg:///registry/poi/locations/towns/tartron_parts
+    town2: reg:///registry/poi/locations/towns/tartron_parts
+    distance: 12600   # 15 мин
+  - town1: reg:///registry/poi/locations/towns/tartron_parts
+    town2: reg:///registry/poi/locations/towns/prior
+    distance: 63000   # 75 мин
+  - town1: reg:///registry/poi/locations/towns/tartron_parts
+    town2: reg:///registry/poi/locations/towns/paloma
+    distance: 31500   # 37.5 мин
+  - town1: reg:///registry/poi/locations/towns/tartron_parts
+    town2: reg:///registry/poi/locations/towns/whitehill
+    distance: 31500   # 37.5 мин
+  - town1: reg:///registry/poi/locations/towns/tartron_parts
+    town2: reg:///registry/poi/locations/towns/bonita_vista
+    distance: 63000   # 75 мин
+  - town1: reg:///registry/poi/locations/towns/tartron_parts
+    town2: reg:///registry/poi/locations/towns/mine_whitehill
+    distance: 29400   # 35 мин
+  - town1: reg:///registry/poi/locations/towns/tartron_parts
+    town2: reg:///registry/poi/locations/towns/adriano_custom
+    distance: 25200   # 30 мин
