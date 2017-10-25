@@ -56,7 +56,6 @@ class AIEventQuest(Quest):
             if inventory_drop_insurance:
                 new_insurance = inventory_drop_insurance.instantiate()
                 agent_owner.profile.quest_inventory.add_item(agent=agent_owner, item=new_insurance, event=event)
-                log.info("New insurance {!r} set for {!r} ".format(new_insurance, agent_owner.profile))
             else:
                 log.warn("Not found in registry full drop insurance: /registry/items/quest_item/insurance/quick")
 
