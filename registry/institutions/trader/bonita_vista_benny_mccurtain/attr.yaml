@@ -207,8 +207,8 @@ price_list: # правила завоза
     chance: 0.75      # вероятность в завозе 1 - max
     count_min: 75     # пределы количества в завозе
     count_max: 225    # если 0 - бесконечность
-    price_min: 0.75   # коэф колебаний цены (границы)
-    price_max: 1.05
+    price_min: 1.2   # коэф колебаний цены (границы)
+    price_max: 1.4
     influence: 0.001  # коэф изменения цены при покупке/продаже
 
   - item: reg:///registry/items/stuff/alcohol/alcohol_002
@@ -255,8 +255,8 @@ price_list: # правила завоза
     chance: 0.75
     count_min: 75
     count_max: 225
-    price_min: 1.25
-    price_max: 1.30
+    price_min: 1.4
+    price_max: 1.5
     influence: 0.001
 
   - item: reg:///registry/items/stuff/warm_clothes/warm_clothes_003
