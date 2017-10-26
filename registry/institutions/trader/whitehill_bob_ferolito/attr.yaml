@@ -21,7 +21,7 @@ items:
   # - reg:///registry/items/stuff/medical_supplies/medical_supplies_001
   - reg:///registry/items/stuff/scrap_metal/scrap_metal_001
   # - reg:///registry/items/stuff/warm_clothes/warm_clothes_003
-   - reg:///registry/items/stuff/water/water_002
+  - reg:///registry/items/stuff/water/water_002
 
   # Ёмкости
   - reg:///registry/items/usable/tanks/tank_empty/tank_10l
@@ -263,8 +263,8 @@ price_list: # правила завоза
     chance: 1.00
     count_min: 100
     count_max: 300
-    price_min: 0.50
-    price_max: 0.70
+    price_min: 1.2
+    price_max: 1.3
     influence: 0.001
 
   - item: reg:///registry/items/stuff/water/water_002
