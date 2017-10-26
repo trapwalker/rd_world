@@ -247,8 +247,8 @@ price_list: # правила завоза
     chance: 0
     count_min: 75
     count_max: 225
-    price_min: 2.4
-    price_max: 2.7
+    price_min: 2.8
+    price_max: 3.5
     influence: 0.001
 
   - item: reg:///registry/items/stuff/scrap_metal/scrap_metal_001
