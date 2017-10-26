@@ -271,8 +271,8 @@ price_list: # правила завоза
     chance: 0.75
     count_min: 75
     count_max: 225
-    price_min: 0.75
-    price_max: 1.05
+    price_min: 1.25
+    price_max: 1.30
     influence: 0.001
 
   - item: reg:///registry/items/usable/tanks

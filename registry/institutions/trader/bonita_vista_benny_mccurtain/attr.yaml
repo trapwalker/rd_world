@@ -255,8 +255,8 @@ price_list: # правила завоза
     chance: 0.75
     count_min: 75
     count_max: 225
-    price_min: 1.7
-    price_max: 1.8
+    price_min: 1.25
+    price_max: 1.30
     influence: 0.001
 
   - item: reg:///registry/items/stuff/warm_clothes/warm_clothes_003
