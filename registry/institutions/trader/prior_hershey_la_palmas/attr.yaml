@@ -14,12 +14,12 @@ hometown    : reg:///registry/poi/locations/towns/prior
 
 items:
   # Грузы
-  - reg:///registry/items/stuff/alcohol/alcohol_001
-  - reg:///registry/items/stuff/alcohol/alcohol_002
+ # - reg:///registry/items/stuff/alcohol/alcohol_001
+ # - reg:///registry/items/stuff/alcohol/alcohol_002
   - reg:///registry/items/stuff/canned_cereal/canned_cereal_001
   - reg:///registry/items/stuff/canned_meat/canned_meat_001
   - reg:///registry/items/stuff/medical_supplies/medical_supplies_001
-  - reg:///registry/items/stuff/scrap_metal/scrap_metal_001
+ # - reg:///registry/items/stuff/scrap_metal/scrap_metal_001
   - reg:///registry/items/stuff/warm_clothes/warm_clothes_003
   - reg:///registry/items/stuff/water/water_002
 
