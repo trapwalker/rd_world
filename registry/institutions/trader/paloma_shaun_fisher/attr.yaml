@@ -14,13 +14,13 @@ hometown    : reg:///registry/poi/locations/towns/paloma
 
 items:
   # Грузы
-  - reg:///registry/items/stuff/alcohol/alcohol_001
-  - reg:///registry/items/stuff/alcohol/alcohol_002
-  - reg:///registry/items/stuff/canned_cereal/canned_cereal_001
-  - reg:///registry/items/stuff/canned_meat/canned_meat_001
+ # - reg:///registry/items/stuff/alcohol/alcohol_001
+ # - reg:///registry/items/stuff/alcohol/alcohol_002
+ # - reg:///registry/items/stuff/canned_cereal/canned_cereal_001
+ # - reg:///registry/items/stuff/canned_meat/canned_meat_001
   - reg:///registry/items/stuff/medical_supplies/medical_supplies_001
   - reg:///registry/items/stuff/scrap_metal/scrap_metal_001
-  - reg:///registry/items/stuff/warm_clothes/warm_clothes_003
+ # - reg:///registry/items/stuff/warm_clothes/warm_clothes_003
   - reg:///registry/items/stuff/water/water_002
 
   # Ёмкости
@@ -227,19 +227,27 @@ price_list: # правила завоза
     price_max: 0.70
     influence: 0.001
 
+  - item: reg:///registry/items/stuff/rice/rice_001
+    chance: 0
+    count_min: 75
+    count_max: 225
+    price_min: 1.6
+    price_max: 1.7
+    influence: 0.001
+
   - item: reg:///registry/items/stuff/canned_meat/canned_meat_001
     chance: 0.75
     count_min: 75
     count_max: 225
-    price_min: 0.75
-    price_max: 1.05
+    price_min: 1.4
+    price_max: 1.5
     influence: 0.001
 
   - item: reg:///registry/items/stuff/medical_supplies/medical_supplies_001
     chance: 0.50
     count_min: 50
     count_max: 150
-    price_min: 1.10
+    price_min: 1.30
     price_max: 1.50
     influence: 0.001
 
@@ -247,16 +255,16 @@ price_list: # правила завоза
     chance: 0.75
     count_min: 75
     count_max: 225
-    price_min: 0.75
-    price_max: 1.05
+    price_min: 1.4
+    price_max: 1.55
     influence: 0.001
 
   - item: reg:///registry/items/stuff/warm_clothes/warm_clothes_003
     chance: 0.75
     count_min: 75
     count_max: 225
-    price_min: 0.75
-    price_max: 1.05
+    price_min: 1.10
+    price_max: 1.15
     influence: 0.001
 
   - item: reg:///registry/items/stuff/water/water_002

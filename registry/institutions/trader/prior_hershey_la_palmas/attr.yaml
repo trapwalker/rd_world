@@ -14,7 +14,7 @@ hometown    : reg:///registry/poi/locations/towns/prior
 
 items:
   # Грузы
- # - reg:///registry/items/stuff/alcohol/alcohol_001
+  - reg:///registry/items/stuff/alcohol/alcohol_001
  # - reg:///registry/items/stuff/alcohol/alcohol_002
   - reg:///registry/items/stuff/canned_cereal/canned_cereal_001
   - reg:///registry/items/stuff/canned_meat/canned_meat_001
@@ -22,6 +22,7 @@ items:
  # - reg:///registry/items/stuff/scrap_metal/scrap_metal_001
   - reg:///registry/items/stuff/warm_clothes/warm_clothes_003
   - reg:///registry/items/stuff/water/water_002
+  - reg:///registry/items/stuff/rice/rice_001
 
   # Ёмкости
   - reg:///registry/items/usable/tanks/tank_empty/tank_10l
@@ -205,18 +206,18 @@ price_list: # правила завоза
 
   - item: reg:///registry/items/stuff/alcohol/alcohol_001
     chance: 1.00      # вероятность в завозе 1 - max
-    count_min: 100    # пределы количества в завозе
-    count_max: 300    # если 0 - бесконечность
-    price_min: 0.50   # коэф колебаний цены (границы)
-    price_max: 0.70
+    count_min: 10    # пределы количества в завозе
+    count_max: 30    # если 0 - бесконечность
+    price_min: 0.9   # коэф колебаний цены (границы)
+    price_max: 1.1
     influence: 0.001  # коэф изменения цены при покупке/продаже
 
   - item: reg:///registry/items/stuff/alcohol/alcohol_002
-    chance: 0.50
+    chance: 0
     count_min: 50
     count_max: 150
-    price_min: 1.10
-    price_max: 1.50
+    price_min: 1.80
+    price_max: 2.0
     influence: 0.001
 
   - item: reg:///registry/items/stuff/canned_cereal/canned_cereal_001
@@ -247,16 +248,24 @@ price_list: # правила завоза
     chance: 0.50
     count_min: 50
     count_max: 150
-    price_min: 1.10
-    price_max: 1.50
+    price_min: 1.8
+    price_max: 2.0
     influence: 0.001
 
   - item: reg:///registry/items/stuff/warm_clothes/warm_clothes_003
     chance: 0.50
     count_min: 50
     count_max: 150
-    price_min: 1.10
-    price_max: 1.50
+    price_min: 1.0
+    price_max: 1.05
+    influence: 0.001
+
+  - item: reg:///registry/items/stuff/rice/rice_001
+    chance: 1
+    count_min: 75
+    count_max: 225
+    price_min: 0.9
+    price_max: 1.05
     influence: 0.001
 
   - item: reg:///registry/items/stuff/water/water_002
@@ -266,6 +275,7 @@ price_list: # правила завоза
     price_min: 0.50
     price_max: 0.70
     influence: 0.001
+
 
   - item: reg:///registry/items/usable/tanks
     chance: 0.95      # вероятность в завозе 1 - max
