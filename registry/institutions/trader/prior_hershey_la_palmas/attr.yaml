@@ -206,8 +206,8 @@ price_list: # правила завоза
 
   - item: reg:///registry/items/stuff/alcohol/alcohol_001
     chance: 1.00      # вероятность в завозе 1 - max
-    count_min: 10    # пределы количества в завозе
-    count_max: 30    # если 0 - бесконечность
+    count_min: 50    # пределы количества в завозе
+    count_max: 100    # если 0 - бесконечность
     price_min: 0.9   # коэф колебаний цены (границы)
     price_max: 1.1
     influence: 0.001  # коэф изменения цены при покупке/продаже
