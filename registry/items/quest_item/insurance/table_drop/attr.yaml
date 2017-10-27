@@ -1,0 +1,12 @@
+﻿_cls: InsuranceTableDrop
+doc: InsuranceTableDrop
+
+group_id: "insurance"
+
+title:
+    en: InsuranceTableDrop  ##LOCALIZATION
+    ru: InsuranceTableDrop
+
+description:
+    en: InsuranceTableDrop  ##LOCALIZATION
+    ru: InsuranceTableDrop

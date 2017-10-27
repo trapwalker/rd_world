@@ -79,4 +79,9 @@ armorer_images:
     armorer_top_L   : "static/content/items/slot_item/weapons/mashine_guns/light/00_oc_14/big/top_l.png"  # влево
 
 
-condition       : 3  # Исп.
+condition       : 0  # Исп.
+
+
+rand_modifier_radius: 5
+rand_modifier_width: 5
+rand_modifier_dps: 5

@@ -36,7 +36,7 @@ class AIEventQuest(Quest):
         reinst=True
     )
 
-    def init_bot_inventory(self, car_example, loot_rec_list=None):
+    def init_bot_inventory(self, car_example, loot_rec_list=None, agent_owner=None, event=None):
         loot_rec_list = loot_rec_list or self.loot_rec_list
         if not car_example or not self.max_loot_count or not loot_rec_list:
             return
@@ -48,6 +48,17 @@ class AIEventQuest(Quest):
                 item = item_rec.item.instantiate()
                 car_example.inventory.items.append(item)
             count_loot -= 1
+        # todo: Q! ^^^^ как работает count_loot ? а если не сработали шансы, то не выпадет гарантировано count_loot!
+
+        # Поставить для агента страховку на дроп итемов из машинки
+        if agent_owner and event:
+            inventory_drop_insurance = event.server.reg.get('/registry/items/quest_item/insurance/quick')
+            if inventory_drop_insurance:
+                new_insurance = inventory_drop_insurance.instantiate()
+                agent_owner.profile.quest_inventory.add_item(agent=agent_owner, item=new_insurance, event=event)
+            else:
+                log.warn("Not found in registry full drop insurance: /registry/items/quest_item/insurance/quick")
+
 
     def can_instantiate(self, event, agent, hirer=None):  # info: попытка сделать can_generate до инстанцирования квеста
         # log.debug('can_generate {} {!r}'.format(self.generation_group, self.parent))
