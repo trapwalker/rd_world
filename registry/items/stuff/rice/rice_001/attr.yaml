@@ -12,7 +12,7 @@ description:
     ru: Большой мешок риса.
 
 
-base_price : 25
+base_price : 350
 stack_size : 1
 
 inv_icon_big    : static/content/items/stuff/rice/rice_001/big.png

@@ -45,7 +45,7 @@ items:
 #  - reg:///registry/items/usable/ammo/23bzt
 #  - reg:///registry/items/usable/ammo/25mm
 #  - reg:///registry/items/usable/ammo/30bb
-#  - reg:///registry/items/usable/ammo/88bb
+#  - reg:///rtegistry/items/usable/ammo/88bb
 
   # Автоматическое вооружение
 #  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/00_oc_14

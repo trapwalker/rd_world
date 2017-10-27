@@ -12,7 +12,7 @@ description:
     ru: Несколько небольших бутылок с водой.
 
 
-base_price : 25
+base_price : 50
 stack_size : 1
 
 inv_icon_big    : static/content/items/stuff/water/water_001/big.png
