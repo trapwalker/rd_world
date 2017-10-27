@@ -14,13 +14,13 @@ hometown    : reg:///registry/poi/locations/towns/whitehill
 
 items:
   # Грузы
-  - reg:///registry/items/stuff/alcohol/alcohol_001
-  - reg:///registry/items/stuff/alcohol/alcohol_002
-  - reg:///registry/items/stuff/canned_cereal/canned_cereal_001
-  - reg:///registry/items/stuff/canned_meat/canned_meat_001
-  - reg:///registry/items/stuff/medical_supplies/medical_supplies_001
+  # - reg:///registry/items/stuff/alcohol/alcohol_001
+  # - reg:///registry/items/stuff/alcohol/alcohol_002
+  # - reg:///registry/items/stuff/canned_cereal/canned_cereal_001
+  # - reg:///registry/items/stuff/canned_meat/canned_meat_001
+  # - reg:///registry/items/stuff/medical_supplies/medical_supplies_001
   - reg:///registry/items/stuff/scrap_metal/scrap_metal_001
-  - reg:///registry/items/stuff/warm_clothes/warm_clothes_003
+  # - reg:///registry/items/stuff/warm_clothes/warm_clothes_003
   - reg:///registry/items/stuff/water/water_002
 
   # Ёмкости
@@ -56,19 +56,19 @@ items:
   - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/01_m249_saw
   - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/01_mg_15
   - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/01_mg_81
-  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/02_stoner_63
-  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/02_lsat
-  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/02_mg_42
-  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/02_m134_minigun
-  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/03_bren
-  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/03_m60
-  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/03_vickers_50
-  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/03_browning_m2
-  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/04_mt
-  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/04_mark_48
-  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/04_dshkm
-  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/04_gau_19
-  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/heavy/04_mg_18_tuf
+#  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/02_stoner_63
+#  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/02_lsat
+#  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/02_mg_42
+#  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/02_m134_minigun
+#  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/03_bren
+#  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/03_m60
+#  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/03_vickers_50
+#  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/03_browning_m2
+#  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/04_mt
+#  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/04_mark_48
+#  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/04_dshkm
+#  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/04_gau_19
+#  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/heavy/04_mg_18_tuf
 #  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/dshkm_twin
 #  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/mk_108
 #  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/mk_108_twin
@@ -78,23 +78,23 @@ items:
   - reg:///registry/items/slot_item/armorer_item/weapons/cannons/medium/00_hs_404
   - reg:///registry/items/slot_item/armorer_item/weapons/cannons/medium/01_lvakan_m_40
   - reg:///registry/items/slot_item/armorer_item/weapons/cannons/medium/01_bofors_m_45
-  - reg:///registry/items/slot_item/armorer_item/weapons/cannons/light/02_rg_6
-  - reg:///registry/items/slot_item/armorer_item/weapons/cannons/medium/02_mauser_mg_213
-  - reg:///registry/items/slot_item/armorer_item/weapons/cannons/medium/03_vya_23
-  - reg:///registry/items/slot_item/armorer_item/weapons/cannons/medium/03_m242_bushmaster
-  - reg:///registry/items/slot_item/armorer_item/weapons/cannons/medium/04_t4
+#  - reg:///registry/items/slot_item/armorer_item/weapons/cannons/light/02_rg_6
+#  - reg:///registry/items/slot_item/armorer_item/weapons/cannons/medium/02_mauser_mg_213
+#  - reg:///registry/items/slot_item/armorer_item/weapons/cannons/medium/03_vya_23
+#  - reg:///registry/items/slot_item/armorer_item/weapons/cannons/medium/03_m242_bushmaster
+#  - reg:///registry/items/slot_item/armorer_item/weapons/cannons/medium/04_t4
 #  - reg:///registry/items/slot_item/armorer_item/weapons/cannons/zu23_flak
 #  - reg:///registry/items/slot_item/armorer_item/weapons/cannons/2a42
 #  - reg:///registry/items/slot_item/armorer_item/weapons/cannons/flak_18
 #  - reg:///registry/items/slot_item/armorer_item/weapons/cannons/mk103
 
   # Ракеты
-  - reg:///registry/items/usable/map_weapon/rockets/sa16_igla
+#  - reg:///registry/items/usable/map_weapon/rockets/sa16_igla
 #  - reg:///registry/items/usable/map_weapon/rockets/kornet
 #  - reg:///registry/items/usable/map_weapon/rockets/javelin
 
   # Мины
-  - reg:///registry/items/usable/map_weapon/mines/mine_ttt
+#  - reg:///registry/items/usable/map_weapon/mines/mine_ttt
 
   # ДЛЯ МЕХАНИКА
   # 00 LVL
@@ -114,20 +114,20 @@ items:
   - reg:///registry/items/slot_item/mechanic_item/cooling/fan/01_eg
 
   # 02 LVL
-  - reg:///registry/items/slot_item/mechanic_item/brake/front_brake_pads/02_bpf
-  - reg:///registry/items/slot_item/mechanic_item/brake/rear_brake_pads/02_bpr
-  - reg:///registry/items/slot_item/mechanic_item/engine/sparkplug/02_sp
-  - reg:///registry/items/slot_item/mechanic_item/transmission/primary_shaft/02_ps
-  - reg:///registry/items/slot_item/mechanic_item/transmission/front_differential/02_df
-  - reg:///registry/items/slot_item/mechanic_item/transmission/rear_differential/02_dr
+ # - reg:///registry/items/slot_item/mechanic_item/brake/front_brake_pads/02_bpf
+ # - reg:///registry/items/slot_item/mechanic_item/brake/rear_brake_pads/02_bpr
+ # - reg:///registry/items/slot_item/mechanic_item/engine/sparkplug/02_sp
+ # - reg:///registry/items/slot_item/mechanic_item/transmission/primary_shaft/02_ps
+ # - reg:///registry/items/slot_item/mechanic_item/transmission/front_differential/02_df
+ # - reg:///registry/items/slot_item/mechanic_item/transmission/rear_differential/02_dr
 
   # 03 LVL
-  - reg:///registry/items/slot_item/mechanic_item/transmission/secondary_shaft/03_ss
-  - reg:///registry/items/slot_item/mechanic_item/brake/front_brake_lines/03_blf
-  - reg:///registry/items/slot_item/mechanic_item/brake/rear_brake_lines/03_blr
-  - reg:///registry/items/slot_item/mechanic_item/suspension/front_control_arm/03_caf
-  - reg:///registry/items/slot_item/mechanic_item/suspension/rear_control_arm/03_car
-  - reg:///registry/items/slot_item/mechanic_item/suspension/hub/03_hu
+ # - reg:///registry/items/slot_item/mechanic_item/transmission/secondary_shaft/03_ss
+ # - reg:///registry/items/slot_item/mechanic_item/brake/front_brake_lines/03_blf
+ # - reg:///registry/items/slot_item/mechanic_item/brake/rear_brake_lines/03_blr
+ # - reg:///registry/items/slot_item/mechanic_item/suspension/front_control_arm/03_caf
+ # - reg:///registry/items/slot_item/mechanic_item/suspension/rear_control_arm/03_car
+ # - reg:///registry/items/slot_item/mechanic_item/suspension/hub/03_hu
 
   # Двигатель
 #  - reg:///registry/items/slot_item/mechanic_item/engine/camshaft/camshaft_1
@@ -159,17 +159,17 @@ items:
 #  - reg:///registry/items/slot_item/mechanic_item/cooling/thermostat/thermostat_1
 
   # ДЛЯ СТИЛИСТА
-  - reg:///registry/items/slot_item/tuner_item/shnork/00_shnork_001
-  - reg:///registry/items/slot_item/tuner_item/shnork/00_shnork_002
-  - reg:///registry/items/slot_item/tuner_item/shnork/00_shnork_003
-  - reg:///registry/items/slot_item/tuner_item/b_fender/00_b_fender_002
-  - reg:///registry/items/slot_item/tuner_item/b_fender/01_b_fender_004
-  - reg:///registry/items/slot_item/tuner_item/b_fender/01_b_fender_005
-  - reg:///registry/items/slot_item/tuner_item/f_fender/00_f_fender_002
-  - reg:///registry/items/slot_item/tuner_item/f_fender/01_f_fender_004
-  - reg:///registry/items/slot_item/tuner_item/f_fender/01_f_fender_005
-  - reg:///registry/items/slot_item/tuner_item/armor/00_armor_001
-  - reg:///registry/items/slot_item/tuner_item/armor/01_armor_002
+#  - reg:///registry/items/slot_item/tuner_item/shnork/00_shnork_001
+#  - reg:///registry/items/slot_item/tuner_item/shnork/00_shnork_002
+#  - reg:///registry/items/slot_item/tuner_item/shnork/00_shnork_003
+#  - reg:///registry/items/slot_item/tuner_item/b_fender/00_b_fender_002
+#  - reg:///registry/items/slot_item/tuner_item/b_fender/01_b_fender_004
+#  - reg:///registry/items/slot_item/tuner_item/b_fender/01_b_fender_005
+#  - reg:///registry/items/slot_item/tuner_item/f_fender/00_f_fender_002
+#  - reg:///registry/items/slot_item/tuner_item/f_fender/01_f_fender_004
+#  - reg:///registry/items/slot_item/tuner_item/f_fender/01_f_fender_005
+#  - reg:///registry/items/slot_item/tuner_item/armor/00_armor_001
+#  - reg:///registry/items/slot_item/tuner_item/armor/01_armor_002
 #  - reg:///registry/items/slot_item/tuner_item/airint/airint_001
 #  - reg:///registry/items/slot_item/tuner_item/b_bumper/b_bumper_001
 #  - reg:///registry/items/slot_item/tuner_item/b_bumper/b_bumper_002
@@ -207,8 +207,8 @@ price_list: # правила завоза
     chance: 0.50      # вероятность в завозе 1 - max
     count_min: 50     # пределы количества в завозе
     count_max: 150    # если 0 - бесконечность
-    price_min: 1.10   # коэф колебаний цены (границы)
-    price_max: 1.50
+    price_min: 1.2   # коэф колебаний цены (границы)
+    price_max: 1.5
     influence: 0.001  # коэф изменения цены при покупке/продаже
 
   - item: reg:///registry/items/stuff/alcohol/alcohol_002
@@ -243,10 +243,18 @@ price_list: # правила завоза
     price_max: 0.70
     influence: 0.001
 
+  - item: reg:///registry/items/stuff/rice/rice_001
+    chance: 0
+    count_min: 75
+    count_max: 225
+    price_min: 2.8
+    price_max: 3.5
+    influence: 0.001
+
   - item: reg:///registry/items/stuff/scrap_metal/scrap_metal_001
     chance: 1.00
-    count_min: 100
-    count_max: 300
+    count_min: 500
+    count_max: 1000
     price_min: 0.50
     price_max: 0.70
     influence: 0.001
@@ -255,16 +263,16 @@ price_list: # правила завоза
     chance: 1.00
     count_min: 100
     count_max: 300
-    price_min: 0.50
-    price_max: 0.70
+    price_min: 1.2
+    price_max: 1.3
     influence: 0.001
 
   - item: reg:///registry/items/stuff/water/water_002
     chance: 0.50
     count_min: 50
     count_max: 150
-    price_min: 1.10
-    price_max: 1.50
+    price_min: 1.0
+    price_max: 1.1
     influence: 0.001
 
   - item: reg:///registry/items/usable/tanks

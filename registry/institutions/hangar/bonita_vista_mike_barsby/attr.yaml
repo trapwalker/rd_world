@@ -10,26 +10,10 @@ abstract : false
 hometown : reg:///registry/poi/locations/towns/bonita_vista
 
 group_list:
-  # Группа машин 0 lvl
-  - count : 4  # Количество машин в группе
-    car_list:
-      # LIGHT
-      # motorcycles
-      - reg:///registry/mobiles/cars/light/motorcycles/honda_cy_50
-      - reg:///registry/mobiles/cars/light/motorcycles/jawa_cz_355
-      # MIDDLE
-      # cars
-      - reg:///registry/mobiles/cars/middle/cars/vw_beetle
-      - reg:///registry/mobiles/cars/middle/cars/vw_golf
-      # offroad
-      - reg:///registry/mobiles/cars/middle/offroad/ford_econoline
-      - reg:///registry/mobiles/cars/middle/offroad/ford_f_150
-      # vans
-      - reg:///registry/mobiles/cars/middle/vans/barkas_b1000kb
-      - reg:///registry/mobiles/cars/middle/vans/citroen_hy
+
 
   # Группа машин 1 lvl
-  - count : 3
+  - count : 1
     car_list:
       # LIGHT
       # motorcycles
@@ -64,7 +48,7 @@ group_list:
       - reg:///registry/mobiles/cars/middle/vans/02_volkswagen_t1_samba
 
   # Группа машин 3 lvl
-  - count : 1  # Количество машин в группе
+  - count : 4  # Количество машин в группе
     car_list:
       # LIGHT
       # motorcycles

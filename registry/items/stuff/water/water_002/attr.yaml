@@ -12,7 +12,7 @@ description:
     ru: Несколько больших канистр с водой.
 
 
-base_price : 50
+base_price : 75
 stack_size : 1
 
 inv_icon_big    : static/content/items/stuff/water/water_002/big.png
