@@ -111,6 +111,8 @@ class GetClassCarQuest(Quest):
                     log.warning(u'Unsupported role class by class quest: {}'.format(role_class.name))
                 else:
                     if agent.car:
+
+                        # is_ancestor
                         log.info("Test car for agents!!")
 
                         quest.npc_replica(

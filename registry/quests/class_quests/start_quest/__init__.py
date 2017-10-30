@@ -86,6 +86,7 @@ class StartQuest(Quest):
         # Создание ноты для квеста
         self.init_text()
         self.log(text=self.locale("q_cq_started"), event=event)  ##LOCALIZATION
+        self.dc.teacher = None
 
     ####################################################################################################################
     class first_out(QuestState_):
@@ -184,6 +185,9 @@ class StartQuest(Quest):
 
                         agent.del_note(uid=quest.dc.visit_trainer_note_uid, time=event.time)
                         agent.del_note(uid=quest.dc.select_teacher_note_uid, time=event.time)
+
+                        quest.dc.teacher = npc  # Сохраняем выбранного учителя
+
                         go("win")
                 else:
                     log.warning('ClassQuest get unknown NPC %s', event.npc_node_hash)
@@ -194,6 +198,7 @@ class StartQuest(Quest):
             quest.log(text=quest.locale("q_cq_final"), event=event)  ##LOCALIZATION
             agent_example = quest.agent
             new_quest = quest.next_quest.instantiate(abstract=False)
+            new_quest.hirer = quest.dc.teacher
             if new_quest.generate(event=event, agent=agent_example):
                 agent_example.profile.add_quest(quest=new_quest, time=event.time)
                 new_quest.start(server=event.server, time=event.time + 0.1)
