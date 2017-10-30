@@ -8,93 +8,59 @@ caption:
     en: Class quest   ##LOCALIZATION
     ru: Классовый квест
 
+next_quest: reg:///registry/quests/class_quests/get_class_car_quest
+
 attributes_by_class:
     chosen_one:
         teacher:
             en: major
             ru: мэра
 
-        artefact:
-            en: flask
-            ru: Фляжка
-
         super_task:
             en: Establish a settlement   ##LOCALIZATION
             ru: Основать поселение
-
-        class_item: reg:///registry/items/quest_item/class_item/flask
 
     alpha_wolf:
         teacher:
             en: major
             ru: мэра
 
-        artefact:
-            en: postal bag
-            ru: Почтовая сумка
-
         super_task:
             en: Create a clan   ##LOCALIZATION
             ru: Создать клан
-
-        class_item: reg:///registry/items/quest_item/class_item/bag
 
     night_rider:
         teacher:
             en: barman   ##LOCALIZATION
             ru: бармена
 
-        artefact:
-            en: Toothpick   ##LOCALIZATION
-            ru: Зубочистка
-
         super_task:
             en: Get stealth technology   ##LOCALIZATION
             ru: Получить стелс-технологию
-
-        class_item: reg:///registry/items/quest_item/class_item/toothpick
 
     oil_magnate:
         teacher: 
             en: trader   ##LOCALIZATION
             ru: торговца
 
-        artefact:
-            en: Smoking pipe   ##LOCALIZATION
-            ru: Курительная трубка
-
         super_task:
             en: Open shop   ##LOCALIZATION
             ru: Открыть магазин
-
-        class_item: reg:///registry/items/quest_item/class_item/pipe
 
     road_warrior:
         teacher:
             en: auto dealer   ##LOCALIZATION
             ru: автодилера
 
-        artefact: 
-            en: Jacket with one sleeve   ##LOCALIZATION
-            ru: Куртка с одним рукавом
-
         super_task:
             en: Get supercar   ##LOCALIZATION
             ru: Получить суперкар
-
-        class_item: reg:///registry/items/quest_item/class_item/jacket
 
     techno_kinetic:
         teacher: 
             en: mechanic   ##LOCALIZATION
             ru: механика
 
-        artefact:
-            en: Plutonium   ##LOCALIZATION
-            ru: Плутоний
-
         super_task:
             en: Open service center   ##LOCALIZATION
             ru: Открыть сервисный центр
-
-        class_item: reg:///registry/items/quest_item/class_item/plutonium
