@@ -14,14 +14,10 @@ from sublayers_server.model.registry_me.tree import (
     RegistryLinkField,
 )
 
+from sublayers_world.registry.quests.class_quests import ClassTypeQuest
 
-class StartQuest(Quest):
-    next_quest = RegistryLinkField(
-        caption=u"Продолжение классового квеста",
-        document_type='sublayers_server.model.registry_me.classes.quests.Quest',
-        root_default='reg:///registry/quests/class_quests/get_class_car_quest'
-    )
 
+class StartQuest(ClassTypeQuest):
     class RoleClassQuestAttributes(Subdoc):
         teacher = LocalizedStringField(caption=u'Тип NPC-наставника (род. падеж)')
         artefact = LocalizedStringField(caption=u'Классовый артефакт')

@@ -14,13 +14,10 @@ from sublayers_server.model.registry_me.tree import (
     RegistryLinkField,
 )
 
+from sublayers_world.registry.quests.class_quests import ClassTypeQuest
 
-class GetClassCarQuest(Quest):
-    next_quest = RegistryLinkField(
-        caption=u"Прототип классового квеста",
-        document_type='sublayers_server.model.registry_me.classes.quests.Quest',
-    )
 
+class GetClassCarQuest(ClassTypeQuest):
     class RoleClassQuestAttributes(Subdoc):
         car_list = ListField(
             caption=u"Список классовых машин",
