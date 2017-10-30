@@ -25,8 +25,8 @@ class GetClassCarQuest(Quest):
     class RoleClassQuestAttributes(Subdoc):
         car_list = ListField(
             caption=u"Список классовых машин",
-            field=EmbeddedNodeField(
-                document_type='sublayers_server.model.registry_me.classes.quests.Quest',
+            field=RegistryLinkField(
+                document_type='sublayers_server.model.registry_me.classes.mobiles.Mobile',
             ),
         )
 
@@ -34,6 +34,9 @@ class GetClassCarQuest(Quest):
         caption=u'Словарь атрибутов',
         field=EmbeddedDocumentField(document_type=RoleClassQuestAttributes),
     )
+
+
+
 
 
 
@@ -86,9 +89,13 @@ class GetClassCarQuest(Quest):
             )
 
     def on_start_(self, event, **kw):
-        # Создание ноты для квеста
         self.init_text()
         self.log(text=self.locale("q_cq_started"), event=event)  ##LOCALIZATION
+
+
+
+
+
 
     ####################################################################################################################
     class first_out(QuestState_):
