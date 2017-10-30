@@ -8,3 +8,5 @@ power_penetration: 1  # Мощность оружия (пробитие)
 ammo_per_shot: 0
 ammo_per_second: 0
 
+rand_range_radius: {min: 1.0, max: 1.25}
+rand_range_width: {min: 1.0, max: 1.25}

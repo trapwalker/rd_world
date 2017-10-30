@@ -11,3 +11,6 @@ weapon_audio:
   - auto_test_2
   - auto_test_3
   - auto_test_4
+
+
+rand_range_dps: {min: 1.0, max: 1.25}

@@ -203,85 +203,13 @@ price_list: # правила завоза
     price_max: 1.00
     influence: 0.00   # коэф изменения цены при покупке/продаже
 
-  - item: reg:///registry/items/stuff/alcohol/alcohol_001
-    chance: 0.50      # вероятность в завозе 1 - max
-    count_min: 50     # пределы количества в завозе
-    count_max: 150    # если 0 - бесконечность
-    price_min: 1.10   # коэф колебаний цены (границы)
-    price_max: 1.50
-    influence: 0.001  # коэф изменения цены при покупке/продаже
-
-  - item: reg:///registry/items/stuff/alcohol/alcohol_002
-    chance: 1.00
-    count_min: 100
-    count_max: 300
+  - item: reg:///registry/items/stuff
+    chance: 0.0
+    count_min: 75
+    count_max: 225
     price_min: 0.50
-    price_max: 0.70
+    price_max: 0.60
     influence: 0.001
-
-  - item: reg:///registry/items/stuff/canned_cereal/canned_cereal_001
-    chance: 0.50
-    count_min: 50
-    count_max: 150
-    price_min: 1.10
-    price_max: 1.50
-    influence: 0.001
-
-  - item: reg:///registry/items/stuff/canned_meat/canned_meat_001
-    chance: 0.50
-    count_min: 50
-    count_max: 150
-    price_min: 1.10
-    price_max: 1.50
-    influence: 0.001
-
-  - item: reg:///registry/items/stuff/medical_supplies/medical_supplies_001
-    chance: 1.00
-    count_min: 100
-    count_max: 300
-    price_min: 0.50
-    price_max: 0.70
-    influence: 0.001
-
-  - item: reg:///registry/items/stuff/scrap_metal/scrap_metal_001
-    chance: 1.00
-    count_min: 100
-    count_max: 300
-    price_min: 0.50
-    price_max: 0.70
-    influence: 0.001
-
-  - item: reg:///registry/items/stuff/warm_clothes/warm_clothes_003
-    chance: 1.00
-    count_min: 100
-    count_max: 300
-    price_min: 0.50
-    price_max: 0.70
-    influence: 0.001
-
-  - item: reg:///registry/items/stuff/water/water_002
-    chance: 0.50
-    count_min: 50
-    count_max: 150
-    price_min: 1.10
-    price_max: 1.50
-    influence: 0.001
-
-  - item: reg:///registry/items/usable/tanks
-    chance: 0.95      # вероятность в завозе 1 - max
-    count_min: 175    # пределы количества в завозе
-    count_max: 375    # если 0 - бесконечность
-    price_min: 0.95   # коэф колебаний цены (границы)
-    price_max: 1.15
-    influence: 0.001 # коэф изменения цены при покупке/продаже
-
-  - item: reg:///registry/items/usable/build_set
-    chance: 0.90      # вероятность в завозе 1 - max
-    count_min: 250    # пределы количества в завозе
-    count_max: 450    # если 0 - бесконечность
-    price_min: 1.05   # коэф колебаний цены (границы)
-    price_max: 1.25
-    influence: 0.001  # коэф изменения цены при покупке/продаже
 
   - item: reg:///registry/items/usable/ammo
     chance: 0.95      # вероятность в завозе 1 - max
