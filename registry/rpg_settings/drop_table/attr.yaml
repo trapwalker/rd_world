@@ -57,6 +57,7 @@ table:
   - item: reg:///registry/items/usable/build_set/build_set_mid
     level: 0
     chance: 0.05
+  #разное
 
   - item: reg:///registry/items/usable/ammo/556bb
     level: 0
@@ -85,6 +86,7 @@ table:
   - item: reg:///registry/items/usable/ammo/25mm
     level: 0
     chance: 0.05
+  #боеприпасы
 
 
   - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/00_oc_14/worn
