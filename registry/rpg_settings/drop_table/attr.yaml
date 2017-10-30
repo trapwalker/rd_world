@@ -3,27 +3,24 @@ doc     : Таблица дропа из мобов
 
 table:
   - item: reg:///registry/items/stuff/alcohol/alcohol_001
-    level: 0
-    chance: 0.1
-  - item: reg:///registry/items/stuff/alcohol/alcohol_001
     level: 3
-    chance: 0.15
+    chance: 0.025
   - item: reg:///registry/items/stuff/alcohol/alcohol_001
     level: 4
-    chance: 0.2
+    chance: 0.05
   - item: reg:///registry/items/stuff/alcohol/alcohol_001
     level: 5
-    chance: 0.25
-    #довоенный виски
+    chance: 0.08
+    #prewar whisky
 
   - item: reg:///registry/items/stuff/alcohol/alcohol_002
     level: 0
-    chance: 0.35
-    #самогон
+    chance: 0.3
+    #hooch
 
   - item: reg:///registry/items/stuff/canned_cereal/canned_cereal_001
     level: 0
-    chance: 0.30
+    chance: 0.20
   - item: reg:///registry/items/stuff/canned_meat/canned_meat_001
     level: 0
     chance: 0.10
@@ -32,41 +29,24 @@ table:
     chance: 0.10
   - item: reg:///registry/items/stuff/scrap_metal/scrap_metal_001
     level: 0
-    chance: 0.9
+    chance: 0.80
   - item: reg:///registry/items/stuff/warm_clothes/warm_clothes_003
     level: 0
     chance: 0.25
   - item: reg:///registry/items/stuff/water/water_002
     level: 0
-    chance: 0.40
-  - item: reg:///registry/items/usable/tanks/tank_empty/tank_10l
-    level: 0
     chance: 0.20
-  - item: reg:///registry/items/usable/tanks/tank_empty/tank_20l
-    level: 0
-    chance: 0.15
-  - item: reg:///registry/items/usable/tanks/tank_full/tank_10l
-    level: 0
-    chance: 0.20
-  - item: reg:///registry/items/usable/tanks/tank_full/tank_20l
-    level: 0
-    chance: 0.10
-  - item: reg:///registry/items/usable/build_set/build_set_small
-    level: 0
-    chance: 0.15
-  - item: reg:///registry/items/usable/build_set/build_set_mid
-    level: 0
-    chance: 0.05
+  #stuff
 
   - item: reg:///registry/items/usable/ammo/556bb
     level: 0
-    chance: 0.15
+    chance: 0.05
   - item: reg:///registry/items/usable/ammo/762x51bb
     level: 0
-    chance: 0.10
+    chance: 0.05
   - item: reg:///registry/items/usable/ammo/792bb
     level: 1
-    chance: 0.10
+    chance: 0.05
   - item: reg:///registry/items/usable/ammo/127x108bb
     level: 1
     chance: 0.05
@@ -75,109 +55,113 @@ table:
     chance: 0.05
   - item: reg:///registry/items/usable/ammo/40mm
     level: 1
-    chance: 0.1
+    chance: 0.025
   - item: reg:///registry/items/usable/ammo/20mm
     level: 2
-    chance: 0.10
+    chance: 0.025
   - item: reg:///registry/items/usable/ammo/23bzt
     level: 2
-    chance: 0.05
+    chance: 0.025
   - item: reg:///registry/items/usable/ammo/25mm
     level: 2
-    chance: 0.50
-  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/00_oc_14/worn
-    level: 0
-    chance: 0.70
-  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/00_oc_14/fresh
-    level: 0
-    chance: 0.05
-
+    chance: 0.025
+  #ammo
 
   - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/00_oc_14/worn
     level: 0
-    chance: 0.35
+    chance: 0.01
   - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/00_oc_14/fresh
     level: 0
-    chance: 0.25
+    chance: 0.01
   - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/00_oc_14/new
     level: 0
-    chance: 0.05
-  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/00_oc_14/worn
-    level: 1
-    chance: 0.3
-  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/00_oc_14/fresh
-    level: 1
-    chance: 0.2
-  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/00_oc_14/new
-    level: 1
-    chance: 0.1
-  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/00_oc_14/worn
-    level: 2
-    chance: 0.0
-  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/00_oc_14/fresh
-    level: 2
-    chance: 0.0
-  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/00_oc_14/new
-    level: 2
-    chance: 0.0
+    chance: 0.005
   #00_oc_14
 
   - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/00_rpk/fresh
     level: 0
-    chance: 0.25
+    chance: 0.01
   - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/00_rpk/worn
     level: 0
-    chance: 0.35
+    chance: 0.01
   - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/00_rpk/new
     level: 0
-    chance: 0.05
-  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/00_rpk/fresh
-    level: 2
-    chance: 0
-  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/00_rpk/worn
-    level: 2
-    chance: 0
-  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/00_rpk/new
-    level: 2
-    chance: 0
+    chance: 0.005
   #00_rpk
 
   - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/00_fg_42/worn
     level: 0
-    chance: 0.35
+    chance: 0.01
   - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/00_fg_42/fresh
     level: 0
-    chance: 0.25
+    chance: 0.01
   - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/00_fg_42/new
     level: 0
-    chance: 0.05
-  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/00_fg_42/worn
-    level: 2
-    chance: 0
-  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/00_fg_42/fresh
-    level: 2
-    chance: 0
-  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/00_fg_42/new
-    level: 2
-    chance: 0
+    chance: 0.005
   #00_fg_42
 
   - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/00_mg_08/new
     level: 0
-    chance: 0.05
+    chance: 0.01
   - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/00_mg_08/worn
     level: 0
-    chance: 0.35
+    chance: 0.01
   - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/00_mg_08/fresh
     level: 0
-    chance: 0.25
-  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/00_mg_08/new
-    level: 2
-    chance: 0
-  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/00_mg_08/worn
-    level: 2
-    chance: 0
-  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/00_mg_08/fresh
-    level: 2
-    chance: 0
+    chance: 0.01
   #00_mg_08
+
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/01_m249_saw/fresh
+    level: 1
+    chance: 0.01
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/01_m249_saw/worn
+    level: 1
+    chance: 0.01
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/01_m249_saw/new
+    level: 1
+    chance: 0.005
+   #01_m249_saw
+
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/01_negev_ng7/fresh
+    level: 1
+    chance: 0.01
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/01_negev_ng7/worn
+    level: 1
+    chance: 0.01
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/01_negev_ng7/new
+    level: 1
+    chance: 0.005
+  #01_negev_ng7
+
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/02_lsat/fresh
+    level: 2
+    chance: 0.01
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/02_lsat/worn
+    level: 2
+    chance: 0.01
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/02_lsat/new
+    level: 2
+    chance: 0.01
+  #02_lsat
+
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/02_stoner_63/fresh
+    level: 2
+    chance: 0.01
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/02_stoner_63/worn
+    level: 2
+    chance: 0.01
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/02_stoner_63/new
+    level: 2
+    chance: 0.005
+  #02_stoner_63
+
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/03_bren/fresh
+    level: 3
+    chance: 0.01
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/03_bren/worn
+    level: 3
+    chance: 0.01
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/03_bren/new
+    level: 3
+    chance: 0.01
+  #03_bren
