@@ -171,7 +171,7 @@ table:
   - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/00_mg_08/fresh
     level: 0
     chance: 0.25
-   - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/00_mg_08/new
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/00_mg_08/new
     level: 2
     chance: 0
   - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/00_mg_08/worn
