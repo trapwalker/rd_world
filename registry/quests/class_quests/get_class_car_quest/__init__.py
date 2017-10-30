@@ -33,51 +33,11 @@ class GetClassCarQuest(ClassTypeQuest):
 
 
     def init_text(self):
-         ##LOCALIZATION
+        # todo: ##LOCALIZATION
         self.text = LocalizedString(
-            en=u"Adventure will begin soon.",   ##LOCALIZATION
+            en=u"Adventure will begin soon.",   # todo: ##LOCALIZATION
             ru=u"Приключение начнется скоро.",
         )
-        if self.current_state == 'first_out':
-            # todo: Вынести 300 в атрибуты квеста
-            self.text = LocalizedString(
-                en=u"Refer to trainer and learn more about purpose of their class.<br> Reward:<br>Exp 300",   ##LOCALIZATION
-                ru=u"Обратиться к тренеру и узнать больше про свою классовую цель.<br> Награда:<br>Exp 300",
-            )
-
-        elif self.current_state == 'visit_trainer':
-            role_class = self.agent.profile.role_class
-            class_attrs = self.attributes_by_class.get(role_class.name, None)
-            if class_attrs is None:
-                log.warninig('role class %r is not supported in ClassQuest', role_class)
-                return
-
-            teacher = class_attrs.teacher
-            reward = class_attrs.artefact
-
-            # todo: Вынести 500 в атрибуты квеста
-            self.text = LocalizedString(
-                en=(   ##LOCALIZATION
-                    u"To learn subtleties of role-playing class, you need to find a mentor. For class {} need such a mentor as {}.<br>"
-                    u"Find a mentor on class specialization.<br>"
-                    u"Reward: "
-                    u"Exp: 500, class artifact {}."
-                ).format(
-                    role_class.description.en,
-                    teacher.en,
-                    reward.en,
-                ),
-                ru=(
-                    u"Чтобы освоить тонкости ролевого класса нужно найти наставника. Для класса {} искать наставника стоит в лице {}.<br>"
-                    u"Найти наставника по классовой специализации.<br>"
-                    u"Награда: "
-                    u"Exp: 500, классовый артефакт {}."
-                ).format(
-                    role_class.description.ru,
-                    teacher.ru,
-                    reward.ru,
-                ),
-            )
 
     def on_start_(self, event, **kw):
         self.init_text()
@@ -91,8 +51,8 @@ class GetClassCarQuest(ClassTypeQuest):
                 quest_uid=quest.uid,
                 note_class=notes.GetClassCarQuestNote,
                 time=event.time,
-                page_caption=quest.locale("q_GetClassCarQuestNote Page caption"),
-                btn1_caption=quest.locale("q_GetClassCarQuestNote btn caption"),
+                page_caption=quest.locale("q_GetClassCarQuestNote Page caption"),  # todo: ##LOCALIZATION
+                btn1_caption=quest.locale("q_GetClassCarQuestNote btn caption"),  # todo: ##LOCALIZATION
                 npc=quest.hirer,
             )
 
@@ -111,13 +71,13 @@ class GetClassCarQuest(ClassTypeQuest):
                                 return
                         quest.npc_replica(
                             npc=quest.hirer,
-                            replica=quest.locale("q_GetClassCarQuestNote not good car!"),  ##LOCALIZATION
+                            replica=quest.locale("q_GetClassCarQuestNote not good car!"),  # todo: ##LOCALIZATION
                             event=event
                         )
                     else:
                         quest.npc_replica(
                             npc=quest.hirer,
-                            replica=quest.locale("q_GetClassCarQuestNote where u car?"),  ##LOCALIZATION
+                            replica=quest.locale("q_GetClassCarQuestNote where u car?"),  # todo: ##LOCALIZATION
                             event=event
                         )
 
@@ -125,7 +85,7 @@ class GetClassCarQuest(ClassTypeQuest):
     ####################################################################################################################
     class win(WinState):
         def on_enter_(self, quest, event):
-            quest.log(text=quest.locale("q_cq_final"), event=event)  ##LOCALIZATION
+            quest.log(text=quest.locale("q_cq_final"), event=event)  # todo: ##LOCALIZATION
             agent_example = quest.agent
             new_quest = quest.next_quest.instantiate(abstract=False, hirer=quest.hirer)
             if new_quest.generate(event=event, agent=agent_example):
