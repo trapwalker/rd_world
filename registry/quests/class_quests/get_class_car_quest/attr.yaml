@@ -4,6 +4,8 @@ first_state: begin
 
 list_icon: static/img/quests/icons/rpg_dice.png
 
+next_quest: reg:///registry/quests/class_quests/masking_quest
+
 caption: 
     en: Class quest   ##LOCALIZATION
     ru: Классовый квест
@@ -11,7 +13,8 @@ caption:
 attributes_by_class:
     chosen_one:
       car_list:
-        - reg:///registry/mobiles
+        - reg:///registry/mobiles/cars/middle/cars
+        - reg:///registry/mobiles/cars/light/motorcycles
 
     alpha_wolf:
       car_list:

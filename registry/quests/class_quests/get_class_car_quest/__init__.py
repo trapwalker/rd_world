@@ -19,7 +19,6 @@ class GetClassCarQuest(Quest):
     next_quest = RegistryLinkField(
         caption=u"Прототип классового квеста",
         document_type='sublayers_server.model.registry_me.classes.quests.Quest',
-        root_default='reg:///registry/quests/class_quests/start_quest'
     )
 
     class RoleClassQuestAttributes(Subdoc):
@@ -34,7 +33,6 @@ class GetClassCarQuest(Quest):
         caption=u'Словарь атрибутов',
         field=EmbeddedDocumentField(document_type=RoleClassQuestAttributes),
     )
-
 
 
     def init_text(self):
@@ -102,7 +100,6 @@ class GetClassCarQuest(Quest):
             )
 
         def on_event_(self, quest, event):
-            go = partial(quest.go, event=event)
             agent = quest.agent.profile
             if isinstance(event, OnNote) and (event.note_uid == quest.dc.car_info_note):
                 role_class = quest.agent.profile.role_class
@@ -111,10 +108,10 @@ class GetClassCarQuest(Quest):
                     log.warning(u'Unsupported role class by class quest: {}'.format(role_class.name))
                 else:
                     if agent.car:
-
-                        # is_ancestor
-                        log.info("Test car for agents!!")
-
+                        for candidate in attributes_of_class.car_list:
+                            if agent.car.is_ancestor(candidate):
+                                quest.go(event=event, new_state="win")
+                                return
                         quest.npc_replica(
                             npc=quest.hirer,
                             replica=quest.locale("q_GetClassCarQuestNote not good car!"),  ##LOCALIZATION
@@ -132,3 +129,10 @@ class GetClassCarQuest(Quest):
     class win(WinState):
         def on_enter_(self, quest, event):
             quest.log(text=quest.locale("q_cq_final"), event=event)  ##LOCALIZATION
+            agent_example = quest.agent
+            new_quest = quest.next_quest.instantiate(abstract=False, hirer=quest.hirer)
+            if new_quest.generate(event=event, agent=agent_example):
+                agent_example.profile.add_quest(quest=new_quest, time=event.time)
+                new_quest.start(server=event.server, time=event.time + 0.1)
+            else:
+                del new_quest
