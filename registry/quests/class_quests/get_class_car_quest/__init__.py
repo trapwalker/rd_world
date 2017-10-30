@@ -41,7 +41,7 @@ class GetClassCarQuest(ClassTypeQuest):
 
     def on_start_(self, event, **kw):
         self.init_text()
-        self.log(text=self.locale("q_cq_started"), event=event)  ##LOCALIZATION
+        self.log(text=self.locale("q_cq_get_car_started"), event=event)  ##LOCALIZATION
 
 
     ####################################################################################################################
@@ -51,8 +51,8 @@ class GetClassCarQuest(ClassTypeQuest):
                 quest_uid=quest.uid,
                 note_class=notes.GetClassCarQuestNote,
                 time=event.time,
-                page_caption=quest.locale("q_GetClassCarQuestNote Page caption"),  # todo: ##LOCALIZATION
-                btn1_caption=quest.locale("q_GetClassCarQuestNote btn caption"),  # todo: ##LOCALIZATION
+                page_caption=quest.locale("q_cq_get_car_note_page"),  ##LOCALIZATION
+                btn1_caption=quest.locale("q_cq_get_car_note_btn"),  ##LOCALIZATION
                 npc=quest.hirer,
             )
 
@@ -71,13 +71,13 @@ class GetClassCarQuest(ClassTypeQuest):
                                 return
                         quest.npc_replica(
                             npc=quest.hirer,
-                            replica=quest.locale("q_GetClassCarQuestNote not good car!"),  # todo: ##LOCALIZATION
+                            replica=quest.locale("q_cq_get_car_note_page"),  ##LOCALIZATION
                             event=event
                         )
                     else:
                         quest.npc_replica(
                             npc=quest.hirer,
-                            replica=quest.locale("q_GetClassCarQuestNote where u car?"),  # todo: ##LOCALIZATION
+                            replica=quest.locale("q_cq_get_car_not_car"),  ##LOCALIZATION
                             event=event
                         )
 
@@ -85,7 +85,7 @@ class GetClassCarQuest(ClassTypeQuest):
     ####################################################################################################################
     class win(WinState):
         def on_enter_(self, quest, event):
-            quest.log(text=quest.locale("q_cq_final"), event=event)  # todo: ##LOCALIZATION
+            quest.log(text=quest.locale("q_cq_get_car_finished"), event=event)  # ##LOCALIZATION
             agent_example = quest.agent
             new_quest = quest.next_quest.instantiate(abstract=False, hirer=quest.hirer)
             if new_quest.generate(event=event, agent=agent_example):
