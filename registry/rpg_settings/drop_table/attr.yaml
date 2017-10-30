@@ -154,3 +154,14 @@ table:
     level: 2
     chance: 0.005
   #02_stoner_63
+
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/03_bren/fresh
+    level: 3
+    chance: 0.01
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/03_bren/worn
+    level: 3
+    chance: 0.01
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/03_bren/new
+    level: 3
+    chance: 0.01
+  #03_bren
