@@ -3,7 +3,7 @@ doc     : Таблица дропа из мобов
 
 table:
   - item: reg:///registry/items/stuff/alcohol/alcohol_001
-    level: 2
+    level: 0
     chance: 0.1
   - item: reg:///registry/items/stuff/alcohol/alcohol_001
     level: 3
@@ -32,7 +32,7 @@ table:
     chance: 0.10
   - item: reg:///registry/items/stuff/scrap_metal/scrap_metal_001
     level: 0
-    chance: 0.75
+    chance: 0.9
   - item: reg:///registry/items/stuff/warm_clothes/warm_clothes_003
     level: 0
     chance: 0.25
@@ -65,24 +65,30 @@ table:
     level: 0
     chance: 0.10
   - item: reg:///registry/items/usable/ammo/792bb
-    level: 0
+    level: 1
     chance: 0.10
   - item: reg:///registry/items/usable/ammo/127x108bb
-    level: 0
+    level: 1
     chance: 0.05
   - item: reg:///registry/items/usable/ammo/13mm
-    level: 0
+    level: 1
     chance: 0.05
   - item: reg:///registry/items/usable/ammo/40mm
-    level: 0
+    level: 1
     chance: 0.1
   - item: reg:///registry/items/usable/ammo/20mm
-    level: 0
+    level: 2
     chance: 0.10
   - item: reg:///registry/items/usable/ammo/23bzt
-    level: 0
+    level: 2
     chance: 0.05
   - item: reg:///registry/items/usable/ammo/25mm
+    level: 2
+    chance: 0.50
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/00_oc_14/worn
+    level: 0
+    chance: 0.70
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/00_oc_14/fresh
     level: 0
     chance: 0.05
 
