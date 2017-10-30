@@ -67,11 +67,12 @@ class GetClassCarQuest(ClassTypeQuest):
                     if agent.car:
                         for candidate in attributes_of_class.car_list:
                             if agent.car.is_ancestor(candidate):
+                                agent.del_note(uid=quest.dc.car_info_note, time=event.time)
                                 quest.go(event=event, new_state="win")
                                 return
                         quest.npc_replica(
                             npc=quest.hirer,
-                            replica=quest.locale("q_cq_get_car_note_page"),  ##LOCALIZATION
+                            replica=quest.locale("q_cq_get_car_not_u_cl"),  ##LOCALIZATION
                             event=event
                         )
                     else:
