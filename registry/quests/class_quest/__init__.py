@@ -29,6 +29,12 @@ class ClassQuest(Quest):
         field=EmbeddedDocumentField(document_type=RoleClassQuestAttributes),
     )
 
+    next_quest = RegistryLinkField(
+        caption=u"Продолжение классового квеста",
+        document_type='sublayers_server.model.registry_me.classes.quests.Quest',
+        root_default='reg:///registry/quests/class_quests/get_class_car_quest'
+    )
+
     def init_text(self):
          ##LOCALIZATION
         self.text = LocalizedString(
@@ -186,3 +192,10 @@ class ClassQuest(Quest):
     class win(WinState):
         def on_enter_(self, quest, event):
             quest.log(text=quest.locale("q_cq_final"), event=event)  ##LOCALIZATION
+            agent_example = quest.agent
+            new_quest = quest.next_quest.instantiate(abstract=False)
+            if new_quest.generate(event=event, agent=agent_example):
+                agent_example.profile.add_quest(quest=new_quest, time=event.time)
+                new_quest.start(server=event.server, time=event.time + 0.1)
+            else:
+                del new_quest
