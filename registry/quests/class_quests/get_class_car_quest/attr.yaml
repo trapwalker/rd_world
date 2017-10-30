@@ -1,0 +1,34 @@
+_cls: GetClassCarQuest
+
+first_state: begin
+
+list_icon: static/img/quests/icons/rpg_dice.png
+
+caption: 
+    en: Class quest   ##LOCALIZATION
+    ru: Классовый квест
+
+attributes_by_class:
+    chosen_one:
+      car_list:
+        reg:///registry/mobiles
+
+    alpha_wolf:
+      car_list:
+        reg:///registry/mobiles
+
+    night_rider:
+      car_list:
+        reg:///registry/mobiles
+
+    oil_magnate:
+      car_list:
+        reg:///registry/mobiles
+
+    road_warrior:
+      car_list:
+        reg:///registry/mobiles
+
+    techno_kinetic:
+      car_list:
+        reg:///registry/mobiles

@@ -59,7 +59,6 @@ class AIEventQuest(Quest):
             else:
                 log.warn("Not found in registry full drop insurance: /registry/items/quest_item/insurance/quick")
 
-
     def can_instantiate(self, event, agent, hirer=None):  # info: попытка сделать can_generate до инстанцирования квеста
         # log.debug('can_generate {} {!r}'.format(self.generation_group, self.parent))
         agent_quests_active = agent.profile.quests_active
