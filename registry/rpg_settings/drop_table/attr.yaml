@@ -67,6 +67,8 @@ table:
     chance: 0.025
   #ammo
 
+  #LIGHT MACHINE GUNS
+
   - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/00_oc_14/worn
     level: 0
     chance: 0.01
@@ -88,17 +90,6 @@ table:
     level: 0
     chance: 0.005
   #00_rpk
-
-  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/00_fg_42/worn
-    level: 0
-    chance: 0.01
-  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/00_fg_42/fresh
-    level: 0
-    chance: 0.01
-  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/00_fg_42/new
-    level: 0
-    chance: 0.005
-  #00_fg_42
 
   - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/00_mg_08/new
     level: 0
@@ -165,3 +156,49 @@ table:
     level: 3
     chance: 0.01
   #03_bren
+
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/03_m60/fresh
+    level: 3
+    chance: 0.01
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/03_m60/worn
+    level: 3
+    chance: 0.01
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/03_m60/new
+    level: 3
+    chance: 0.005
+  #03_m60
+
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/04_mark_48/fresh
+    level: 4
+    chance: 0.01
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/04_mark_48/worn
+    level: 4
+    chance: 0.01
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/04_mark_48/new
+    level: 4
+    chance: 0.01
+  #04_mark_48
+
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/04_mt/fresh
+    level: 4
+    chance: 0.01
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/04_mt/worn
+    level: 4
+    chance: 0.01
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/04_mt/fresh
+    level: 4
+    chance: 0.005
+  #04_mt
+
+  #MEDIUM MACHINE GUNS
+
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/00_fg_42/worn
+    level: 0
+    chance: 0.01
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/00_fg_42/fresh
+    level: 0
+    chance: 0.01
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/00_fg_42/new
+    level: 0
+    chance: 0.005
+  #00_fg_42
