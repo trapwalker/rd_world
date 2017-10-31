@@ -29,7 +29,7 @@ class GetCarMaxLevelQuest(ClassTypeQuest):
         def on_enter_(self, quest, event):
             quest.dc.car_info_note = quest.agent.profile.add_note(
                 quest_uid=quest.uid,
-                note_class=notes.GetClassCarQuestNote,
+                note_class=notes.GetMaxCarLvlQuestNote,
                 time=event.time,
                 page_caption=quest.locale("q_cq_get_car_lvl_note_page"),  ##LOCALIZATION
                 btn1_caption=quest.locale("q_cq_get_car_lvl_note_btn"),  ##LOCALIZATION

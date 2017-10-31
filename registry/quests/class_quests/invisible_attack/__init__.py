@@ -44,7 +44,7 @@ class ClassQuestInvisibleAttack(ClassTypeQuest):
         def on_enter_(self, quest, event):
             quest.dc.quest_note = quest.agent.profile.add_note(
                 quest_uid=quest.uid,
-                note_class=notes.NPCPageNote,
+                note_class=notes.InvisibleAttackQuestNote,
                 time=event.time,
                 page_caption=quest.locale("q_cq_inv_attack_finished_page"),  ##LOCALIZATION
                 btn1_caption=quest.locale("q_cq_inv_attack_finished_btn"),  ##LOCALIZATION
