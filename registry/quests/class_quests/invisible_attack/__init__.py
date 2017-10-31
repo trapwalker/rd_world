@@ -27,7 +27,7 @@ class ClassQuestInvisibleAttack(ClassTypeQuest):
         if agent_car is None:
             return
         for target in targets:
-            if target.main_agent and not target.main_agent.check_visible(agent_car):
+            if target.main_agent and not target.main_agent.check_visible(agent_car) and self.attack_count > len(self.dc.uids):
                 if target.uid not in self.dc.uids:
                     self.dc.uids.append(target.uid)
                     left = self.attack_count - len(self.dc.uids)
@@ -35,7 +35,7 @@ class ClassQuestInvisibleAttack(ClassTypeQuest):
                         target_login=target.main_agent.print_login(),
                         left=left)  ##LOCALIZATION
                     self.log(text=text, event=event)
-                    if left == 0:
+                    if left <= 0:
                         self.log(text=self.locale("q_cq_inv_attack_done"), event=event)
 
 
@@ -54,8 +54,7 @@ class ClassQuestInvisibleAttack(ClassTypeQuest):
         def on_event_(self, quest, event):
             if isinstance(event, OnNote) and (event.note_uid == quest.dc.quest_note):
                 if quest.attack_count <= len(quest.dc.uids):
-                    quest.agent.profile.quest_note(uid=quest.dc.visited_note, time=event.time)
-                    quest.go(event=event, new_state="win")
+                    quest.go(event=event, new_state="back_to_teacher")
                 else:
                     quest.npc_replica(
                         npc=quest.hirer,
@@ -65,7 +64,14 @@ class ClassQuestInvisibleAttack(ClassTypeQuest):
 
             if isinstance(event, OnMakeDmg):
                 quest.invisible_attack_check(targets=event.targets, event=event)
+                if quest.attack_count <= len(quest.dc.uids):
+                    quest.go(event=event, new_state="back_to_teacher")
 
+    class back_to_teacher(QuestState_):
+        def on_event_(self, quest, event):
+            if isinstance(event, OnNote) and (event.note_uid == quest.dc.quest_note):
+                quest.agent.profile.del_note(uid=quest.dc.quest_note, time=event.time)
+                quest.go(event=event, new_state="win")
 
     ####################################################################################################################
     class win(WinState):

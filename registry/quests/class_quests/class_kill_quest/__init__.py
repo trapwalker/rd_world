@@ -37,8 +37,7 @@ class ClassQuestKillsQuest(ClassTypeQuest):
         def on_event_(self, quest, event):
             if isinstance(event, OnNote) and (event.note_uid == quest.dc.quest_note):
                 if quest.dc.kills >= quest.kills_count:
-                    quest.agent.profile.quest_note(uid=quest.dc.visited_note, time=event.time)
-                    quest.go(event=event, new_state="win")
+                    quest.go(event=event, new_state="back_to_teacher")
                 else:
                     quest.npc_replica(
                         npc=quest.hirer,
@@ -49,8 +48,16 @@ class ClassQuestKillsQuest(ClassTypeQuest):
             if isinstance(event, OnKill) and event.agent and quest.agent.profile.get_real_lvl() <= event.agent.profile.get_real_lvl():
                 quest.dc.kills += 1  # info: здесь будут засчитываться одни и те же цели.
                 quest.log(text=u'{} {}.'.format(event.agent.profile._agent_model.print_login(),
-                                                quest.locale("q_cq_kills_target_killed")), event=event,  ##LOCALIZATION
-                          position=quest.hirer.hometown.position)  # заменить на позицию машинки убийцы
+                                                quest.locale("q_cq_kills_target_killed")), event=event)  ##LOCALIZATION
+                if quest.dc.kills >= quest.kills_count:
+                    quest.log(text=quest.locale("q_cq_kills_back_to_teacher"), event=event)  ##LOCALIZATION
+                    quest.go(event=event, new_state="back_to_teacher")
+
+    class back_to_teacher(QuestState_):
+        def on_event_(self, quest, event):
+            if isinstance(event, OnNote) and (event.note_uid == quest.dc.quest_note):
+                quest.agent.profile.del_note(uid=quest.dc.quest_note, time=event.time)
+                quest.go(event=event, new_state="win")
 
 
     ####################################################################################################################

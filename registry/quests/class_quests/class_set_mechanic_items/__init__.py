@@ -37,7 +37,7 @@ class ClassQuestSetMechanicItems(ClassTypeQuest):
             if isinstance(event, OnNote) and (event.note_uid == quest.dc.quest_note) and quest.agent.profile.car:
                 mec_items_len = len(quest.agent.profile.car.iter_mechanic_items())
                 if mec_items_len >= quest.count_items:
-                    quest.agent.profile.quest_note(uid=quest.dc.visited_note, time=event.time)
+                    quest.agent.profile.del_note(uid=quest.dc.quest_note, time=event.time)
                     quest.go(event=event, new_state="win")
                 else:
                     quest.npc_replica(

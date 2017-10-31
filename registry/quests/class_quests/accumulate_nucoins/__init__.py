@@ -37,7 +37,7 @@ class ClassQuestAccumulateNucoins(ClassTypeQuest):
         def on_event_(self, quest, event):
             if isinstance(event, OnNote) and (event.note_uid == quest.dc.quest_note):
                 if quest.agent.profile.balance >= quest.accumulate_summ:
-                    quest.agent.profile.quest_note(uid=quest.dc.visited_note, time=event.time)
+                    quest.agent.profile.del_note(uid=quest.dc.quest_note, time=event.time)
                     quest.go(event=event, new_state="win")
                 else:
                     quest.npc_replica(
