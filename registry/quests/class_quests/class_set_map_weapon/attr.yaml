@@ -1,0 +1,18 @@
+_cls: ClassQuestSetMapWeapon
+
+first_state: begin
+
+list_icon: static/img/quests/icons/rpg_dice.png
+
+next_quest: reg:///registry/quests/class_quests/get_class_car_quest
+
+caption: 
+    en: Class quest   ##LOCALIZATION
+    ru: Классовый квест
+
+count: 5
+
+available_activate_items:
+  - reg:///registry/items/usable/map_weapon/mines
+  - reg:///registry/items/usable/map_weapon/turret
+  - reg:///registry/items/usable/map_weapon/mines_effect
