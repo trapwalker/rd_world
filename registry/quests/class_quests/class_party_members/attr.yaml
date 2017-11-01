@@ -1,0 +1,13 @@
+_cls: ClassQuestPartyMembers
+
+first_state: begin
+
+list_icon: static/img/quests/icons/rpg_dice.png
+
+next_quest: reg:///registry/quests/class_quests/get_class_car_quest
+
+caption: 
+    en: Class quest   ##LOCALIZATION
+    ru: Классовый квест
+
+members_count: 2
