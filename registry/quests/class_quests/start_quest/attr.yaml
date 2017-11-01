@@ -8,7 +8,7 @@ caption:
     en: Class quest   ##LOCALIZATION
     ru: Классовый квест
 
-next_quest: reg:///registry/quests/class_quests/get_class_car_quest
+next_quest: reg:///registry/quests/class_quests/masking_quest
 
 attributes_by_class:
     chosen_one:
