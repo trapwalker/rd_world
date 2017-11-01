@@ -15,7 +15,7 @@ class ClassQuestSetMapWeapon(ClassTypeQuest):
 
     available_activate_items = ListField(
         caption=u"Список разрешённых айтемов",
-        field=RegistryLinkField(document_type='sublayers_server.model.registry_me.classes.mobiles.Mobile'),
+        field=RegistryLinkField(document_type='sublayers_server.model.registry_me.classes.item.MapWeaponItem'),
     )
 
     def init_text(self):
