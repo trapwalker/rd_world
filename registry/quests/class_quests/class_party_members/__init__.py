@@ -45,7 +45,7 @@ class ClassQuestPartyMembers(ClassTypeQuest):
                     )
 
             if isinstance(event, OnPartyInclude):
-                q_agent = quest.agent.agent.profile._agent_model
+                q_agent = quest.agent.profile._agent_model
                 in_agent = event.agent
                 if q_agent and q_agent.party and in_agent and in_agent.party is q_agent.party and in_agent.party.owner is q_agent:
                     quest.dc.max_count = max(quest.dc.max_count, len(q_agent.party.members))

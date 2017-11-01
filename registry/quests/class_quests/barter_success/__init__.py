@@ -45,7 +45,7 @@ class ClassQuestBarterCount(ClassTypeQuest):
                     )
 
             if isinstance(event, OnBarterSuccess):
-                q_agent = quest.agent.agent.profile._agent_model
+                q_agent = quest.agent.profile._agent_model
                 second_agent = event.barter.recipient if q_agent is event.barter.initiator else event.barter.initiator
                 if second_agent and second_agent.uid not in quest.dc.barter_agents:
                     quest.dc.barter_agents.append(second_agent.uid)
