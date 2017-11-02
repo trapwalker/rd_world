@@ -347,7 +347,7 @@ price_list: # правила завоза
     price_max: 1
     influence: 0.001
 
-  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/01_mg_15
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/01_mg_15
     chance: 1.00
     count_min: 20
     count_max: 60
@@ -355,7 +355,7 @@ price_list: # правила завоза
     price_max: 1
     influence: 0.001
 
-  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/01_mg_81
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/01_mg_81
     chance: 1.00
     count_min: 20
     count_max: 60
