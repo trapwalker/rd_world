@@ -67,6 +67,109 @@ table:
     chance: 0.025
   #ammo
 
+  - item: reg:///registry/items/slot_item/tuner_item/shnork/00_shnork_001
+    level: 0
+    chance: 0.01
+  - item: reg:///registry/items/slot_item/tuner_item/shnork/00_shnork_002
+    level: 0
+    chance: 0.01
+  - item: reg:///registry/items/slot_item/tuner_item/shnork/00_shnork_003
+    level: 0
+    chance: 0.01
+  - item: reg:///registry/items/slot_item/tuner_item/b_fender/00_b_fender_002
+    level: 0
+    chance: 0.01
+  - item: reg:///registry/items/slot_item/tuner_item/b_fender/01_b_fender_004
+    level: 1
+    chance: 0.01
+  - item: reg:///registry/items/slot_item/tuner_item/b_fender/01_b_fender_005
+    level: 1
+    chance: 0.01
+  - item: reg:///registry/items/slot_item/tuner_item/f_fender/00_f_fender_002
+    level: 0
+    chance: 0.01
+  - item: reg:///registry/items/slot_item/tuner_item/f_fender/01_f_fender_004
+    level: 1
+    chance: 0.01
+  - item: reg:///registry/items/slot_item/tuner_item/f_fender/01_f_fender_005
+    level: 1
+    chance: 0.01
+  - item: reg:///registry/items/slot_item/tuner_item/armor/00_armor_001
+    level: 0
+    chance: 0.01
+  - item: reg:///registry/items/slot_item/tuner_item/armor/01_armor_002
+    level: 1
+    chance: 0.01
+  - item: reg:///registry/items/slot_item/tuner_item/airint/airint_001
+    level: 2
+    chance: 0.01
+  - item: reg:///registry/items/slot_item/tuner_item/b_bumper/b_bumper_001
+    level: 2
+    chance: 0.01
+  - item: reg:///registry/items/slot_item/tuner_item/b_bumper/b_bumper_002
+    level: 2
+    chance: 0.01
+  - item: reg:///registry/items/slot_item/tuner_item/b_bumper/b_bumper_003
+    level: 2
+    chance: 0.01
+  - item: reg:///registry/items/slot_item/tuner_item/b_fender/b_fender_001
+    level: 2
+    chance: 0.01
+  - item: reg:///registry/items/slot_item/tuner_item/b_fender/b_fender_003
+    level: 2
+    chance: 0.01
+  - item: reg:///registry/items/slot_item/tuner_item/bale/bale_001
+    level: 2
+    chance: 0.01
+  - item: reg:///registry/items/slot_item/tuner_item/bale/bale_002
+    level: 2
+    chance: 0.01
+  - item: reg:///registry/items/slot_item/tuner_item/f_bumper/f_bumper_001
+    level: 2
+    chance: 0.005
+  - item: reg:///registry/items/slot_item/tuner_item/f_bumper/f_bumper_002
+    level: 2
+    chance: 0.005
+  - item: reg:///registry/items/slot_item/tuner_item/f_bumper/f_bumper_003
+    level: 2
+    chance: 0.005
+  - item: reg:///registry/items/slot_item/tuner_item/f_fender/f_fender_001
+    level: 3
+    chance: 0.005
+  - item: reg:///registry/items/slot_item/tuner_item/f_fender/f_fender_003
+    level: 3
+    chance: 0.005
+  - item: reg:///registry/items/slot_item/tuner_item/glass/glass_001
+    level: 3
+    chance: 0.005
+  - item: reg:///registry/items/slot_item/tuner_item/roof/roof_002
+    level: 3
+    chance: 0.005
+  - item: reg:///registry/items/slot_item/tuner_item/roof/roof_001
+    level: 3
+    chance: 0.005
+  - item: reg:///registry/items/slot_item/tuner_item/step/step_002
+    level: 3
+    chance: 0.005
+  - item: reg:///registry/items/slot_item/tuner_item/step/step_003
+    level: 3
+    chance: 0.005
+  - item: reg:///registry/items/slot_item/tuner_item/step/step_001
+    level: 3
+    chance: 0.005
+  - item: reg:///registry/items/slot_item/tuner_item/trunk/trunk_002
+    level: 3
+    chance: 0.005
+  - item: reg:///registry/items/slot_item/tuner_item/trunk/trunk_001
+    level: 3
+    chance: 0.005
+  - item: reg:///registry/items/slot_item/tuner_item/win_prot/win_prot_001
+    level: 3
+    chance: 0.005
+  - item: reg:///registry/items/slot_item/tuner_item/win_prot/win_prot_002
+    level: 3
+    chance: 0.005
+
   #LIGHT MACHINE GUNS
 
   - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/00_oc_14/worn
@@ -290,3 +393,15 @@ table:
     level: 4
     chance: 0.005
   #04_gau_19
+
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/heavy/04_mg_18_tuf/worn
+    level: 4
+    chance: 0.01
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/heavy/04_mg_18_tuf/fresh
+    level: 4
+    chance: 0.01
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/heavy/04_mg_18_tuf/new
+    level: 4
+    chance: 0.005
+  #04_mg_18
+
