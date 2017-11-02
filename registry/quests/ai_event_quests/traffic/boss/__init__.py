@@ -43,9 +43,13 @@ class AIBossQuest(AITrafficQuest):
 
         action_quest.dc.target_car = current_target
 
+    def is_see_object(self, obj):
+        return obj in self.dc._main_agent.get_all_visible_objects()
+
     class begin(AITrafficQuest.begin):
         def on_enter_(self, quest, event):
             super(AIBossQuest.begin, self).on_enter_(quest=quest, event=event)
             quest.dc.kill_reward_money = 2000
             if event.server.ai_dispatcher:
                 event.server.ai_dispatcher.on_event_quest(quest=quest, time=event.time)
+
