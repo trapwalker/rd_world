@@ -73,3 +73,5 @@ armorer_images:
 
 weapon_animation:
   - ECanvasDischargeFirePNG_3_dbl
+
+condition       : 3  # Исп.
