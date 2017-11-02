@@ -331,6 +331,70 @@ price_list: # правила завоза
     price_max: 1.10
     influence: 0.0001
 
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/01_negev_ng7
+    chance: 1.00
+    count_min: 20
+    count_max: 60
+    price_min: 1
+    price_max: 1
+    influence: 0.001
+
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/01_m249_saw
+    chance: 1.00
+    count_min: 20
+    count_max: 60
+    price_min: 1
+    price_max: 1
+    influence: 0.001
+
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/01_mg_15
+    chance: 1.00
+    count_min: 20
+    count_max: 60
+    price_min: 1
+    price_max: 1
+    influence: 0.001
+
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/01_mg_81
+    chance: 1.00
+    count_min: 20
+    count_max: 60
+    price_min: 1
+    price_max: 1
+    influence: 0.001
+
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/cannons/medium/00_hs_404
+    chance: 1.00
+    count_min: 20
+    count_max: 60
+    price_min: 1
+    price_max: 1
+    influence: 0.001
+
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/cannons/medium/00_oerlikon
+    chance: 1.00
+    count_min: 20
+    count_max: 60
+    price_min: 1
+    price_max: 1
+    influence: 0.001
+
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/cannons/medium/01_bofors_m_45
+    chance: 1.00
+    count_min: 20
+    count_max: 60
+    price_min: 1
+    price_max: 1
+    influence: 0.001
+
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/cannons/medium/01_lvakan_m_40
+    chance: 1.00
+    count_min: 20
+    count_max: 60
+    price_min: 1
+    price_max: 1
+    influence: 0.001
+
   - item: reg:///registry/items/usable/map_weapon
     chance: 0.90      # вероятность в завозе 1 - max
     count_min: 100    # пределы количества в завозе

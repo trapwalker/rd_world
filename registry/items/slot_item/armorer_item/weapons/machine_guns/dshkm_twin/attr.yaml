@@ -80,3 +80,11 @@ armorer_images:
     armorer_top_B   : "static/content/items/slot_item/weapons/mashine_guns/dshkm_twin/big/top_b.png"  # назад
     armorer_top_R   : "static/content/items/slot_item/weapons/mashine_guns/dshkm_twin/big/top_r.png"  # вправо
     armorer_top_L   : "static/content/items/slot_item/weapons/mashine_guns/dshkm_twin/big/top_l.png"  # влево
+
+
+condition: 3
+
+
+rand_modifier_radius: 1.25
+rand_modifier_width: 1.25
+rand_modifier_dps: 1.25

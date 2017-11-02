@@ -119,3 +119,5 @@ class AIEventQuest(Quest):
 
         return False  # Хорошие никого не атакуют
 
+    def is_see_object(self, obj):
+        return True
