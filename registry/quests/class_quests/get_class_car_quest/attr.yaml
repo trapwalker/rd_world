@@ -13,8 +13,7 @@ caption:
 attributes_by_class:
     chosen_one:
       car_list:
-        - reg:///registry/mobiles/cars/middle/cars
-        - reg:///registry/mobiles/cars/light/motorcycles
+        - reg:///registry/mobiles
 
     alpha_wolf:
       car_list:

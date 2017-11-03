@@ -10,7 +10,7 @@ caption:
     en: Class quest   ##LOCALIZATION
     ru: Классовый квест
 
-count: 5
+count: 20
 
 available_activate_items:
   - reg:///registry/items/usable/map_weapon/mines

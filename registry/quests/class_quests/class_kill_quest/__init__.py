@@ -5,7 +5,7 @@ log = logging.getLogger(__name__)
 from sublayers_server.model.registry_me.classes.quests import QuestState_, WinState
 from sublayers_server.model.quest_events import OnNote, OnKill
 from sublayers_server.model.registry_me.classes import notes
-from sublayers_server.model.registry_me.tree import IntField
+from sublayers_server.model.registry_me.tree import IntField, LocalizedString
 
 from sublayers_world.registry.quests.class_quests import ClassTypeQuest
 
@@ -14,7 +14,8 @@ class ClassQuestKillsQuest(ClassTypeQuest):
     kills_count = IntField(caption=u"Сумма для накопления")
 
     def init_text(self):
-        pass
+        self.text = LocalizedString(_id="q_cq_journal_text").generate(
+            player_name=self.agent.login, task_text=self.locale("q_cq_kills_task_text"))  ##LOCALIZATION
 
     def on_start_(self, event, **kw):
         self.init_text()

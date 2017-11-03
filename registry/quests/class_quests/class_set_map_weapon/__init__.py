@@ -19,7 +19,8 @@ class ClassQuestSetMapWeapon(ClassTypeQuest):
     )
 
     def init_text(self):
-        pass
+        self.text = LocalizedString(_id="q_cq_journal_text").generate(
+            player_name=self.agent.login, task_text=self.locale("q_cq_set_map_weapon_task_text"))  ##LOCALIZATION
 
     def on_start_(self, event, **kw):
         self.init_text()

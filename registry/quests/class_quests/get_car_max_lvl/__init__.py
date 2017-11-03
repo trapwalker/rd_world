@@ -13,11 +13,7 @@ from sublayers_world.registry.quests.class_quests import ClassTypeQuest
 
 class GetCarMaxLevelQuest(ClassTypeQuest):
     def init_text(self):
-        # todo: ##LOCALIZATION
-        self.text = LocalizedString(
-            en=u"Adventure will begin soon.",   # todo: ##LOCALIZATION
-            ru=u"Приключение начнется скоро.",
-        )
+        self.text = LocalizedString(_id="q_cq_get_car_lvl_text")  ##LOCALIZATION
 
     def on_start_(self, event, **kw):
         self.init_text()

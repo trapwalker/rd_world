@@ -14,7 +14,8 @@ class ClassQuestPartyExp(ClassTypeQuest):
     exp_value = IntField(caption=u"Сумма опыта для накопления")
 
     def init_text(self):
-        pass
+        self.text = LocalizedString(_id="q_cq_journal_text").generate(
+            player_name=self.agent.login, task_text=self.locale("q_cq_party_exp_task_text"))  ##LOCALIZATION
 
     def on_start_(self, event, **kw):
         self.init_text()

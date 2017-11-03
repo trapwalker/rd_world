@@ -31,17 +31,13 @@ class GetClassCarQuest(ClassTypeQuest):
         field=EmbeddedDocumentField(document_type=RoleClassQuestAttributes),
     )
 
-
     def init_text(self):
-        # todo: ##LOCALIZATION
-        self.text = LocalizedString(
-            en=u"Adventure will begin soon.",   # todo: ##LOCALIZATION
-            ru=u"Приключение начнется скоро.",
-        )
+        self.text = LocalizedString(_id='q_cq_get_car_text_template').generate(role_class_name=self.agent.profile.role_class.title)  ##LOCALIZATION
 
     def on_start_(self, event, **kw):
         self.init_text()
         self.log(text=self.locale("q_cq_get_car_started"), event=event)  ##LOCALIZATION
+        # todo: как-то сообщить пользователю на каких тачках нужно приезжать.
 
 
     ####################################################################################################################

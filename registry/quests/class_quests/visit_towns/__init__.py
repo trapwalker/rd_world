@@ -17,7 +17,8 @@ class ClassQuestVisitTowns(ClassTypeQuest):
     )
 
     def init_text(self):
-        pass
+        self.text = LocalizedString(_id="q_cq_journal_text").generate(
+            player_name=self.agent.login, task_text=self.locale("q_cq_visit_towns_task_text"))  ##LOCALIZATION
 
     def visit_town(self, event, town):
         town_uri = town.uri

@@ -40,7 +40,7 @@ class MaskingQuest(ClassTypeQuest):
     )
 
     def init_text(self):
-        pass
+        self.text = LocalizedString(_id="q_cq_masking_text")  ##LOCALIZATION
 
     # Тут мы выбираем область в которой будет размещен контейнер с турелью
     def init_container_pos(self):

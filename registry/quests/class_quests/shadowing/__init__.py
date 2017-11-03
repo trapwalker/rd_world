@@ -17,7 +17,8 @@ class ClassQuestShadowing(ClassTypeQuest):
     shadowing_check_interval = IntField(root_default=5, caption=u"Интервал проверки слежки, секунды")
 
     def init_text(self):
-        pass
+        self.text = LocalizedString(_id="q_cq_journal_text").generate(
+            player_name=self.agent.login, task_text=self.locale("q_cq_shadowing_task_text"))  ##LOCALIZATION
 
     def on_start_(self, event, **kw):
         self.init_text()

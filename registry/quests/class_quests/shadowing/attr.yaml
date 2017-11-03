@@ -12,4 +12,4 @@ caption:
 
 count: 3
 
-shadowing_duration: 30  # Сколько секунд нужно следить за мобом
+shadowing_duration: 60  # Сколько секунд нужно следить за мобом

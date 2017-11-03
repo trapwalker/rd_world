@@ -14,7 +14,8 @@ class ClassQuestSetMechanicItems(ClassTypeQuest):
     count_items = IntField(caption=u"Количество айтемов механика")
 
     def init_text(self):
-        pass
+        self.text = LocalizedString(_id="q_cq_journal_text").generate(
+            player_name=self.agent.login, task_text=self.locale("q_cq_mech_items_task_text"))  ##LOCALIZATION
 
     def on_start_(self, event, **kw):
         self.init_text()

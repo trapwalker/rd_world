@@ -18,7 +18,8 @@ class ClassQuestNPCsTasksComplete(ClassTypeQuest):
     )
 
     def init_text(self):
-        pass
+        self.text = LocalizedString(_id="q_cq_journal_text").generate(
+            player_name=self.agent.login, task_text=self.locale("q_cq_npc_tasks_task_text"))  ##LOCALIZATION
 
     def check_tasks(self):
         for npc in self.npcs:
