@@ -149,7 +149,7 @@ class StartQuest(ClassTypeQuest):
                             event=event
                         )
                         return
-                    if (agent.balance < 3000) or (agent.get_real_lvl() < 1):
+                    if agent.balance < 3000 or agent.get_real_lvl() < 2:
                         quest.npc_replica(
                             npc=npc,
                             replica=quest.locale("q_cq_phrase_2"),  ##LOCALIZATION
