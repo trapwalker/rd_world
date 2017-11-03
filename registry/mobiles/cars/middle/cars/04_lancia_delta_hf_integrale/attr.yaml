@@ -87,3 +87,5 @@ slot_t17: ~
 inv_icon_big: static/content/mobiles/cars/middle/cars/04_lancia_delta_hf_integrale/inventory/big.png
 inv_icon_mid: static/content/mobiles/cars/middle/cars/04_lancia_delta_hf_integrale/inventory/mid.png
 inv_icon_small: static/content/mobiles/cars/middle/cars/04_lancia_delta_hf_integrale/inventory/small.png
+
+p_armor: 17
