@@ -6,6 +6,7 @@ from sublayers_server.model.registry_me.classes.quests import QuestState_, WinSt
 from sublayers_server.model.quest_events import OnNote, OnMakeDmg
 from sublayers_server.model.registry_me.classes import notes
 from sublayers_server.model.registry_me.tree import IntField, LocalizedString
+from sublayers_server.model.units import Bot
 
 from sublayers_world.registry.quests.class_quests import ClassTypeQuest
 
@@ -28,7 +29,7 @@ class ClassQuestInvisibleAttack(ClassTypeQuest):
         if agent_car is None:
             return
         for target in targets:
-            if target.main_agent and not target.main_agent.check_visible(agent_car) and self.attack_count > len(self.dc.uids):
+            if isinstance(target, Bot) and target.main_agent and not target.main_agent.check_visible(agent_car) and self.attack_count > len(self.dc.uids):
                 if target.uid not in self.dc.uids:
                     self.dc.uids.append(target.uid)
                     left = self.attack_count - len(self.dc.uids)

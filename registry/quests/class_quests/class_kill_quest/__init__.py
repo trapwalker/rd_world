@@ -46,7 +46,7 @@ class ClassQuestKillsQuest(ClassTypeQuest):
                         event=event
                     )
 
-            if isinstance(event, OnKill) and event.agent and quest.agent.profile.get_real_lvl() <= event.agent.profile.get_real_lvl():
+            if isinstance(event, OnKill) and event.agent:  # todo: вернуть and quest.agent.profile.get_real_lvl() <= event.agent.profile.get_real_lvl():
                 quest.dc.kills += 1  # info: здесь будут засчитываться одни и те же цели.
                 quest.log(text=u'{} {}.'.format(event.agent.profile._agent_model.print_login(),
                                                 quest.locale("q_cq_kills_target_killed")), event=event)  ##LOCALIZATION
