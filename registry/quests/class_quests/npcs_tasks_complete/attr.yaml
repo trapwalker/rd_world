@@ -4,7 +4,7 @@ first_state: begin
 
 list_icon: static/img/quests/icons/rpg_dice.png
 
-next_quest: reg:///registry/quests/class_quests/get_class_car_quest
+next_quest: reg:///registry/quests/class_quests/class_damage_map_weapon/rockets
 
 caption: 
     en: Class quest   ##LOCALIZATION

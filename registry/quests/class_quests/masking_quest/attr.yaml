@@ -17,42 +17,42 @@ map_icon_circle: static/img/quests/map_icons/masking_circle.png
 
 attributes_by_class:
     chosen_one:
-      next_quest: reg:///registry/quests/class_quests/get_class_car_quest
+      next_quest: reg:///registry/quests/class_quests/visit_towns
       class_item: reg:///registry/items/quest_item/class_item/flask
       artefact:
         en: flask
         ru: Фляжка
 
     alpha_wolf:
-      next_quest: reg:///registry/quests/class_quests/get_class_car_quest
+      next_quest: reg:///registry/quests/class_quests/visit_towns
       class_item: reg:///registry/items/quest_item/class_item/bag
       artefact:
         en: postal bag
         ru: Почтовая сумка
 
     night_rider:
-      next_quest: reg:///registry/quests/class_quests/get_class_car_quest
+      next_quest: reg:///registry/quests/class_quests/visit_towns
       class_item: reg:///registry/items/quest_item/class_item/toothpick
       artefact:
         en: Toothpick   ##LOCALIZATION
         ru: Зубочистка
 
     oil_magnate:
-      next_quest: reg:///registry/quests/class_quests/get_class_car_quest
+      next_quest: reg:///registry/quests/class_quests/visit_towns
       class_item: reg:///registry/items/quest_item/class_item/pipe
       artefact:
         en: Smoking pipe   ##LOCALIZATION
         ru: Курительная трубка
 
     road_warrior:
-      next_quest: reg:///registry/quests/class_quests/get_class_car_quest
+      next_quest: reg:///registry/quests/class_quests/visit_towns
       class_item: reg:///registry/items/quest_item/class_item/jacket
       artefact:
         en: Jacket with one sleeve   ##LOCALIZATION
         ru: Куртка с одним рукавом
 
     techno_kinetic:
-      next_quest: reg:///registry/quests/class_quests/get_class_car_quest
+      next_quest: reg:///registry/quests/class_quests/visit_towns
       class_item: reg:///registry/items/quest_item/class_item/plutonium
       artefact:
         en: Plutonium   ##LOCALIZATION

@@ -141,14 +141,15 @@ class StartQuest(ClassTypeQuest):
                     return
                 npc = event.server.reg.get(event.npc_node_hash, None)
                 if npc:
-                    relation = agent.get_relationship(npc=npc)
-                    if relation < 0.5:
-                        quest.npc_replica(
-                            npc=npc,
-                            replica=quest.locale("q_cq_phrase_1"),  ##LOCALIZATION
-                            event=event
-                        )
-                        return
+                    # todo: временно убрано
+                    # relation = agent.get_relationship(npc=npc)
+                    # if relation < 0.5:
+                    #     quest.npc_replica(
+                    #         npc=npc,
+                    #         replica=quest.locale("q_cq_phrase_1"),  ##LOCALIZATION
+                    #         event=event
+                    #     )
+                    #     return
                     if agent.balance < 3000 or agent.get_real_lvl() < 2:
                         quest.npc_replica(
                             npc=npc,
@@ -166,6 +167,7 @@ class StartQuest(ClassTypeQuest):
                         agent.del_note(uid=quest.dc.select_teacher_note_uid, time=event.time)
 
                         quest.dc.teacher = npc  # Сохраняем выбранного учителя
+                        quest.dc.teacher_uri = npc.uri
 
                         go("win")
                 else:

@@ -9,3 +9,5 @@ class ClassTypeQuest(Quest):
         caption=u"Прототип следующего классового квеста",
         document_type='sublayers_server.model.registry_me.classes.quests.Quest',
     )
+
+
