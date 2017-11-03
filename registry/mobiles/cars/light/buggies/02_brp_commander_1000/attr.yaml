@@ -11,8 +11,8 @@ name_car:    "Commander 1000"   # Название атомобиля
 price:              4000        # Цена у продавца (л) (>= 0)
 needed_driving:     15          # Требование к прокачке уровня вождения
 
-max_hp:             50       # Максимальное количество прочности (> 0)
-hp:                 50       # Текущее количество прочности (> 0)
+max_hp:             55       # Максимальное количество прочности (> 0)
+hp:                 55       # Текущее количество прочности (> 0)
 
 inventory:                   # При заполнении инвентаря необходимо учитывать его размер
     size: 12
@@ -85,4 +85,4 @@ inv_icon_big: static/content/mobiles/cars/light/buggies/02_brp_commander_1000/in
 inv_icon_mid: static/content/mobiles/cars/light/buggies/02_brp_commander_1000/inventory/mid.png
 inv_icon_small: static/content/mobiles/cars/light/buggies/02_brp_commander_1000/inventory/small.png
 
-p_armor: 10
+p_armor: 8
