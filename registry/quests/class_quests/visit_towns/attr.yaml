@@ -1,0 +1,17 @@
+_cls: ClassQuestVisitTowns
+
+first_state: begin
+
+list_icon: static/img/quests/icons/rpg_dice.png
+
+next_quest: reg:///registry/quests/class_quests/class_kill_quest
+
+caption: 
+    en: Class quest   ##LOCALIZATION
+    ru: Классовый квест
+
+towns:  # Города, которые нужно посетить
+  - reg:///registry/poi/locations/towns/paloma
+  - reg:///registry/poi/locations/towns/prior
+  - reg:///registry/poi/locations/towns/whitehill
+  - reg:///registry/poi/locations/towns/bonita_vista

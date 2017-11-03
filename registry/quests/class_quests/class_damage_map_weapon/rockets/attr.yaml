@@ -1,0 +1,17 @@
+_cls: ClassQuestDamageMapWeapon
+
+first_state: begin
+
+list_icon: static/img/quests/icons/rpg_dice.png
+
+next_quest: reg:///registry/quests/class_quests/barter_success
+
+caption: 
+    en: Class quest   ##LOCALIZATION
+    ru: Классовый квест
+
+count: 10
+
+available_activate_items:
+  - reg:///registry/mobiles/map_weapon/rockets
+

@@ -1,0 +1,13 @@
+_cls: ClassQuestInvisibleAttack
+
+first_state: begin
+
+list_icon: static/img/quests/icons/rpg_dice.png
+
+next_quest: reg:///registry/quests/class_quests/class_party_members
+
+caption: 
+    en: Class quest   ##LOCALIZATION
+    ru: Классовый квест
+
+attack_count: 10

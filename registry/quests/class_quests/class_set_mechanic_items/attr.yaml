@@ -1,0 +1,13 @@
+_cls: ClassQuestSetMechanicItems
+
+first_state: begin
+
+list_icon: static/img/quests/icons/rpg_dice.png
+
+next_quest: reg:///registry/quests/class_quests/shadowing
+
+caption: 
+    en: Class quest   ##LOCALIZATION
+    ru: Классовый квест
+
+count_items: 6

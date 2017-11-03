@@ -1,0 +1,19 @@
+_cls: ClassQuestSetMapWeapon
+
+first_state: begin
+
+list_icon: static/img/quests/icons/rpg_dice.png
+
+next_quest: reg:///registry/quests/class_quests/invisible_attack
+
+caption: 
+    en: Class quest   ##LOCALIZATION
+    ru: Классовый квест
+
+count: 20
+
+available_activate_items:
+  - reg:///registry/items/usable/map_weapon/mines
+  - reg:///registry/items/usable/map_weapon/turret
+  - reg:///registry/items/usable/map_weapon/mines_effect
+  - reg:///registry/items/usable/map_weapon/radars

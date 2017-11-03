@@ -1,0 +1,11 @@
+_cls: GetCarMaxLevelQuest
+
+first_state: begin
+
+list_icon: static/img/quests/icons/rpg_dice.png
+
+next_quest: reg:///registry/quests/class_quests/npcs_tasks_complete
+
+caption: 
+    en: Class quest   ##LOCALIZATION
+    ru: Классовый квест

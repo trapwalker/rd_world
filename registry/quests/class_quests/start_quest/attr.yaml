@@ -1,0 +1,66 @@
+_cls: StartQuest
+
+first_state: first_out
+
+list_icon: static/img/quests/icons/rpg_dice.png
+
+caption: 
+    en: Class quest   ##LOCALIZATION
+    ru: Классовый квест
+
+next_quest: reg:///registry/quests/class_quests/get_class_car_quest
+
+attributes_by_class:
+    chosen_one:
+        teacher:
+            en: major
+            ru: мэра
+
+        super_task:
+            en: Establish a settlement   ##LOCALIZATION
+            ru: Основать поселение
+
+    alpha_wolf:
+        teacher:
+            en: major
+            ru: мэра
+
+        super_task:
+            en: Create a clan   ##LOCALIZATION
+            ru: Создать клан
+
+    night_rider:
+        teacher:
+            en: barman   ##LOCALIZATION
+            ru: бармена
+
+        super_task:
+            en: Get stealth technology   ##LOCALIZATION
+            ru: Получить стелс-технологию
+
+    oil_magnate:
+        teacher: 
+            en: trader   ##LOCALIZATION
+            ru: торговца
+
+        super_task:
+            en: Open shop   ##LOCALIZATION
+            ru: Открыть магазин
+
+    road_warrior:
+        teacher:
+            en: auto dealer   ##LOCALIZATION
+            ru: автодилера
+
+        super_task:
+            en: Get supercar   ##LOCALIZATION
+            ru: Получить суперкар
+
+    techno_kinetic:
+        teacher: 
+            en: mechanic   ##LOCALIZATION
+            ru: механика
+
+        super_task:
+            en: Open service center   ##LOCALIZATION
+            ru: Открыть сервисный центр
