@@ -84,5 +84,3 @@ slot_t17: ~
 inv_icon_big: static/content/mobiles/cars/light/buggies/02_brp_commander_1000/inventory/big.png
 inv_icon_mid: static/content/mobiles/cars/light/buggies/02_brp_commander_1000/inventory/mid.png
 inv_icon_small: static/content/mobiles/cars/light/buggies/02_brp_commander_1000/inventory/small.png
-
-p_armor: 8
