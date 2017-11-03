@@ -80,4 +80,4 @@ rand_modifier_radius: 1.25
 rand_modifier_dmg : 1.25
 rand_modifier_width: 1.25
 
-power_penetration: 20
+power_penetration: 12
