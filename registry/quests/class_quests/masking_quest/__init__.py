@@ -111,12 +111,13 @@ class MaskingQuest(ClassTypeQuest):
             # Создаем турель
             turret_position = Point.random_point(radius=200, center=quest.container_position.position.as_point())
             turret_example = event.server.reg.get('reg:///registry/mobiles/map_weapon/stationary/turret/masking_quest_turret')
-            quest.dc.turret = MaskingQuestTurret(
+            turret = MaskingQuestTurret(
                 time=event.time,
                 position=turret_position,
                 starter=quest.agent.profile._agent_model.car,
                 example=turret_example
             )
+            quest.dc.turret_uid = turret.uid
 
             # Нота турели
             quest.dc.turret_map_note = quest.agent.profile.add_note(
@@ -137,8 +138,9 @@ class MaskingQuest(ClassTypeQuest):
 
             # Если вышло 8 часов или нас убили, то начать с начала
             if isinstance(event, OnTimer) and (event.name == 'deadline_masking_point'):
-                if quest.dc.turret and quest.dc.turret.is_alive:
-                    quest.dc.turret.delete(time=event.time)
+                turret = event.server.objects.get(quest.dc.turret_uid, None)
+                if turret and turret.is_alive:
+                    turret.delete(time=event.time)
                 agent_profile.del_note(uid=quest.dc.turret_map_note, time=event.time)
                 agent_profile.del_note(uid=quest.dc.container_map_note, time=event.time)
                 go("begin")
@@ -147,8 +149,9 @@ class MaskingQuest(ClassTypeQuest):
             if isinstance(event, OnTimer) and (event.name == 'test_masking_point'):
                 if agent_profile._agent_model and agent_profile._agent_model.car and \
                         quest.container_position.is_near(position=agent_profile._agent_model.car.position(time=event.time)):
-                    if quest.dc.turret and quest.dc.turret.is_alive:
-                        quest.dc.turret.delete(time=event.time)
+                    turret = event.server.objects.get(quest.dc.turret_uid, None)
+                    if turret and turret.is_alive:
+                        turret.delete(time=event.time)
                     agent_profile.del_note(uid=quest.dc.turret_map_note, time=event.time)
                     agent_profile.del_note(uid=quest.dc.container_map_note, time=event.time)
 
