@@ -89,4 +89,4 @@ inv_icon_big: static/content/mobiles/cars/middle/vans/02_volkswagen_t1_samba/inv
 inv_icon_mid: static/content/mobiles/cars/middle/vans/02_volkswagen_t1_samba/inventory/mid.png
 inv_icon_small: static/content/mobiles/cars/middle/vans/02_volkswagen_t1_samba/inventory/small.png
 
-p_armor:
+p_armor: 10
