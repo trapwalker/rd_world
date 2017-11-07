@@ -1,4 +1,4 @@
 ﻿_cls : Cannon
 doc  : Средние пушки
 
-power_penetration: 10   # Мощность оружия (пробитие)
+#power_penetration: 10   # Мощность оружия (пробитие)

@@ -81,7 +81,7 @@ class AgentEventQuest(Quest):
                     go('reward')
                 elif event_quest.status == 'fail':
                     go('fail')
-            if isinstance(event, OnCancel) and quest.can_cancel():
+            if isinstance(event, OnCancel) and quest.can_cancel(event):
                 go('cancel_fail')
 
     ####################################################################################################################
