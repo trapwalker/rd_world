@@ -8,10 +8,15 @@ title:
 
 description: 
     en: ''   ##LOCALIZATION
-    ru: Гидравлическая машина, преобразующая механическую энергию приводного двигателя в энергию потока жидкости, служащую для перемещения жидкости.
+    ru: 'Гидравлическая машина, преобразующая механическую энергию приводного двигателя в энергию потока жидкости, служащую для перемещения жидкости.'
 
+# Плюсы
+a_forward: 0.03
 
-base_price: 100
+# Минусы
+v_forward: -0.03
+
+base_price: 200
 
 inv_icon_big: static/content/items/slot_item/mechanic_items/cooling/pump/pump_1/big.png
 inv_icon_mid: static/content/items/slot_item/mechanic_items/cooling/pump/pump_1/mid.png

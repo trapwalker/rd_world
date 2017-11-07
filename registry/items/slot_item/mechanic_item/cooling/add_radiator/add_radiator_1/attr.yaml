@@ -8,10 +8,15 @@ title:
 
 description: 
     en: ''   ##LOCALIZATION
-    ru: Устройство для рассеивания тепла в воздухе (излучением и конвекцией), воздушный теплообменник.
+    ru: 'Устройство для рассеивания тепла в воздухе (излучением и конвекцией), воздушный теплообменник.'
 
+# Плюсы
+a_forward: 0.01
 
-base_price: 100
+# Минусы
+v_forward: -0.01
+
+base_price: 350
 
 inv_icon_big: static/content/items/slot_item/mechanic_items/cooling/add_radiator/add_radiator_1/big.png
 inv_icon_mid: static/content/items/slot_item/mechanic_items/cooling/add_radiator/add_radiator_1/mid.png

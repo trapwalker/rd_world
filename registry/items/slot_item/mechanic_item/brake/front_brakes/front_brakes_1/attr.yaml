@@ -8,10 +8,16 @@ title:
 
 description: 
     en: ''   ##LOCALIZATION
-    ru: Предназначены для снижения скорости движения и/или остановки транспортного средства или механизма.
+    ru: 'Предназначены для снижения скорости движения и/или остановки транспортного средства или механизма.'
 
+# Плюсы
+a_braking: 0.01
 
-base_price: 100
+# Минусы
+p_visibility_min: 0.01
+p_visibility_max: 0.01
+
+base_price: 200
 
 inv_icon_big: static/content/items/slot_item/mechanic_items/brake/front_brakes/front_brakes_1/big.png
 inv_icon_mid: static/content/items/slot_item/mechanic_items/brake/front_brakes/front_brakes_1/mid.png

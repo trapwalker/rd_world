@@ -10,8 +10,9 @@ description:
     en: ''   ##LOCALIZATION
     ru: Масла, применяемое для смазывания поршневых и роторных двигателей внутреннего сгорания.
 
+v_forward: 0.01
 
-base_price: 100
+base_price: 150
 
 inv_icon_big: static/content/items/slot_item/mechanic_items/engine/engine_oil/engine_oil_1/big.png
 inv_icon_mid: static/content/items/slot_item/mechanic_items/engine/engine_oil/engine_oil_1/mid.png

@@ -8,10 +8,17 @@ title:
 
 description: 
     en: ''   ##LOCALIZATION
-    ru: Специальное устройство в гидравлическом приводе, предназначенное для снижения усилия, прилагаемого водителем на тормозную педаль.
+    ru: 'Специальное устройство в гидравлическом приводе, предназначенное для снижения усилия, прилагаемого водителем на тормозную педаль.'
+
+# Плюсы
+a_braking: 0.02
 
 
-base_price: 100
+# Минусы
+r_min: 0.01
+mobility: 0  # ac_max: 0.02
+
+base_price: 150
 
 inv_icon_big: static/content/items/slot_item/mechanic_items/brake/booster/booster_1/big.png
 inv_icon_mid: static/content/items/slot_item/mechanic_items/brake/booster/booster_1/mid.png
