@@ -32,7 +32,7 @@ class GetClassCarQuest(ClassTypeQuest):
     )
 
     def init_text(self):
-        self.text = LocalizedString(_id='q_cq_get_car_text_template').generate(role_class_name=self.agent.profile.role_class.title)  ##LOCALIZATION
+        self.text = LocalizedString(_id='q_cq_get_car_text_template').generate(role_class_name=self.locale(self.agent.profile.role_class.title))  ##LOCALIZATION
 
     def on_start_(self, event, **kw):
         self.init_text()
