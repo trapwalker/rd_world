@@ -1,10 +1,10 @@
 _cls : MechanicItem
-doc    : Усилитель тормозов
+doc    : Усилитель тормозов BA-M01
 abstract : false
 
 title: 
-    en: Brake amplifier   ##LOCALIZATION
-    ru: Усилитель тормозов
+    en: Brake amplifier BA-M01   ##LOCALIZATION
+    ru: Усилитель тормозов BA-M01
 
 description: 
     en: ''   ##LOCALIZATION
@@ -18,7 +18,7 @@ a_braking: 0.02
 r_min: 0.01
 mobility: 0  # ac_max: 0.02
 
-base_price: 150
+base_price: 550
 
 inv_icon_big: static/content/items/slot_item/mechanic_items/brake/booster/booster_1/big.png
 inv_icon_mid: static/content/items/slot_item/mechanic_items/brake/booster/booster_1/mid.png

@@ -1,18 +1,18 @@
 _cls : MechanicItem
-doc         : Маховик
+doc         : Маховик FWH-M04
 abstract : false
 
 title: 
-    en: Flywheel   ##LOCALIZATION
-    ru: Маховик
+    en: Flywheel FWH-M04   ##LOCALIZATION
+    ru: Маховик FWH-M04
 
 description: 
     en: ''   ##LOCALIZATION
-    ru: Массивное вращающееся колесо, использующееся в качестве накопителя кинетической энергии.
+    ru: 'Массивное вращающееся колесо, использующееся в качестве накопителя кинетической энергии.'
 #+
-p_fuel_rate: 0.02
+p_fuel_rate: -0.04
 #-
-a_forward: -0.02
+a_forward: -0.04
 
 base_price: 400
 

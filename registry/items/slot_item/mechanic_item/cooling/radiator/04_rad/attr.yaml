@@ -1,10 +1,10 @@
 _cls : MechanicItem
-doc    : Радиатор
+doc    : Радиатор CU-01R
 abstract : false
 
 title: 
-    en: Radiator   ##LOCALIZATION
-    ru: Радиатор
+    en: Radiator CU-01R  ##LOCALIZATION
+    ru: Радиатор CU-01R
 
 description: 
     en: ''   ##LOCALIZATION
@@ -17,7 +17,7 @@ a_forward: 0.01
 v_forward: -0.01
 
 
-base_price: 350
+base_price: 600
 
 inv_icon_big: static/content/items/slot_item/mechanic_items/cooling/radiator/radiator_1/big.png
 inv_icon_mid: static/content/items/slot_item/mechanic_items/cooling/radiator/radiator_1/mid.png
