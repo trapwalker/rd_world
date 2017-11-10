@@ -1,21 +1,21 @@
 _cls : MechanicItem
-doc    : Компрессор
+doc    : Компрессор CS-01
 abstract : false
 
 title: 
-    en: Compressor   ##LOCALIZATION
-    ru: Компрессор
+    en: Compressor CS-01   ##LOCALIZATION
+    ru: Компрессор CS-01
 
 description: 
     en: ''   ##LOCALIZATION
-    ru: Энергетическая машина или устройство для повышения давления (сжатия) и перемещения газообразных веществ.
+    ru: 'Энергетическая машина или устройство для повышения давления (сжатия) и перемещения газообразных веществ.'
 
 #+
 v_forward: 0.01
 #-
-a_forward: -0.01
+p_fuel_rate: 0.01
 
-base_price: 350
+base_price: 450
 
 inv_icon_big: static/content/items/slot_item/mechanic_items/engine/compressor/compressor_1/big.png
 inv_icon_mid: static/content/items/slot_item/mechanic_items/engine/compressor/compressor_1/mid.png

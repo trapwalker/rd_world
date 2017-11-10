@@ -1,24 +1,23 @@
 _cls : MechanicItem
-doc    : Тормозные механизмы (зад)
+doc    : Тормозные механизмы BM-R01 (зад)
 abstract : false
 
 title: 
-    en: Brakes (rear)   ##LOCALIZATION
-    ru: Тормозные механизмы (зад)
+    en: Brakes BM-R01 (rear)   ##LOCALIZATION
+    ru: Тормозные механизмы BM-R01 (зад)
 
 description: 
     en: ''   ##LOCALIZATION
     ru: 'Предназначены для снижения скорости движения и/или остановки транспортного средства или механизма.'
 
 # Плюсы
-a_braking: 0.01
+a_braking: 0.02
 
 # Минусы
-p_visibility_min: 0.01
-p_visibility_max: 0.01
+a_forward: -0.01
 
 
-base_price: 200
+base_price: 300
 
 inv_icon_big: static/content/items/slot_item/mechanic_items/brake/rear_brakes/rear_brakes_1/big.png
 inv_icon_mid: static/content/items/slot_item/mechanic_items/brake/rear_brakes/rear_brakes_1/mid.png

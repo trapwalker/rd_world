@@ -256,13 +256,13 @@ table:
   #lvl3 mechanic items
 
 
-  - item: reg:///registry/items/slot_item/mechanic_item/engine/camshaft/camshaft_1
+  - item: reg:///registry/items/slot_item/mechanic_item/engine/camshaft/06_cft
     level: 3
     chance: 0.005
-  - item: reg:///registry/items/slot_item/mechanic_item/engine/compressor/compressor_1
+  - item: reg:///registry/items/slot_item/mechanic_item/engine/compressor/05_cs
     level: 3
     chance: 0.005
-  - item: reg:///registry/items/slot_item/mechanic_item/engine/cylinder_head/cylinder_head_1
+  - item: reg:///registry/items/slot_item/mechanic_item/engine/cylinder_head/05_chb
     level: 3
     chance: 0.005
   - item: reg:///registry/items/slot_item/mechanic_item/engine/cylinder_piston/04_cpg
@@ -301,13 +301,13 @@ table:
   - item: reg:///registry/items/slot_item/mechanic_item/brake/booster/04_ba
     level: 4
     chance: 0.005
-  - item: reg:///registry/items/slot_item/mechanic_item/brake/brake_fluid/brake_fluid_1
+  - item: reg:///registry/items/slot_item/mechanic_item/brake/brake_fluid/05_bf
     level: 4
     chance: 0.005
-  - item: reg:///registry/items/slot_item/mechanic_item/brake/front_brakes/front_brakes_1
+  - item: reg:///registry/items/slot_item/mechanic_item/brake/front_brakes/05_bmf
     level: 4
     chance: 0.005
-  - item: reg:///registry/items/slot_item/mechanic_item/brake/rear_brakes/rear_brakes_1
+  - item: reg:///registry/items/slot_item/mechanic_item/brake/rear_brakes/05_bmr
     level: 4
     chance: 0.005
   #brakes
@@ -316,16 +316,16 @@ table:
   - item: reg:///registry/items/slot_item/mechanic_item/cooling/add_radiator/add_radiator_1
     level: 4
     chance: 0.005
-  - item: reg:///registry/items/slot_item/mechanic_item/cooling/coolant/coolant_1
+  - item: reg:///registry/items/slot_item/mechanic_item/cooling/coolant/06_cl
     level: 4
     chance: 0.005
-  - item: reg:///registry/items/slot_item/mechanic_item/cooling/pump/pump_1
+  - item: reg:///registry/items/slot_item/mechanic_item/cooling/pump/06_cp
     level: 4
     chance: 0.005
   - item: reg:///registry/items/slot_item/mechanic_item/cooling/radiator/04_rad
     level: 4
     chance: 0.005
-  - item: reg:///registry/items/slot_item/mechanic_item/cooling/thermostat/thermostat_1
+  - item: reg:///registry/items/slot_item/mechanic_item/cooling/thermostat/05_tst
     level: 4
     chance: 0.005
   #coolants

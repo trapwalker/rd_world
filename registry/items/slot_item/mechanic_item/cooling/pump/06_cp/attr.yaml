@@ -1,10 +1,10 @@
 _cls  : MechanicItem
-doc      : Помпа
+doc      : Помпа CP-01
 abstract : false
 
 title: 
-    en: Pump   ##LOCALIZATION
-    ru: Помпа
+    en: Pump CP-01   ##LOCALIZATION
+    ru: Помпа CP-01
 
 description: 
     en: ''   ##LOCALIZATION
@@ -16,7 +16,7 @@ a_forward: 0.03
 # Минусы
 v_forward: -0.03
 
-base_price: 200
+base_price: 700
 
 inv_icon_big: static/content/items/slot_item/mechanic_items/cooling/pump/pump_1/big.png
 inv_icon_mid: static/content/items/slot_item/mechanic_items/cooling/pump/pump_1/mid.png

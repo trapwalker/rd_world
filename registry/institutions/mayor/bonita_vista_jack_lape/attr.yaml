@@ -88,7 +88,7 @@ quests:
           base_price: 200          # тут надо указать стоимость посылки для корректного расчета награды
           post_activate_items:
             - reg:///registry/items/slot_item/mechanic_item/cooling/fan/01_eg
-            - reg:///registry/items/slot_item/mechanic_item/cooling/pump/pump_1
+            - reg:///registry/items/slot_item/mechanic_item/cooling/pump/06_cp
         - parent: reg:///registry/items/usable/package
           _cls: Package
           base_price: 250         # тут надо указать стоимость посылки для корректного расчета награды

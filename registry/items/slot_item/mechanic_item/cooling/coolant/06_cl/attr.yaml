@@ -1,10 +1,10 @@
 _cls : MechanicItem
-doc    : Охлаждающая жидкость
+doc    : Охлаждающая жидкость NOO-CL01
 abstract : false
 
 title: 
-    en: Coolant   ##LOCALIZATION
-    ru: Охлаждающая жидкость
+    en: Coolant NOO-CL01   ##LOCALIZATION
+    ru: Охлаждающая жидкость NOO-CL01
 
 description: 
     en: ''   ##LOCALIZATION
@@ -13,11 +13,9 @@ description:
 # Плюсы
 a_forward: 0.01
 
-# Минусы
-v_forward: -0.01
 
 
-base_price: 150
+base_price: 450
 
 inv_icon_big: static/content/items/slot_item/mechanic_items/cooling/coolant/coolant_1/big.png
 inv_icon_mid: static/content/items/slot_item/mechanic_items/cooling/coolant/coolant_1/mid.png
