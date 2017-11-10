@@ -101,6 +101,8 @@ items:
   # Двигатель
   # LVL 0
   - reg:///registry/items/slot_item/mechanic_item/engine/air_filter/00_tsn
+  - reg:///registry/items/slot_item/mechanic_item/engine/air_filter/00b_tsn
+
   # LVL 1
   - reg:///registry/items/slot_item/mechanic_item/engine/inlet/01_asi
   - reg:///registry/items/slot_item/mechanic_item/engine/exhaust/01_aso
