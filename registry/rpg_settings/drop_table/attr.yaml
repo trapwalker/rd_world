@@ -256,10 +256,10 @@ table:
   #lvl3 mechanic items
 
 
-  - item: reg:///registry/items/slot_item/mechanic_item/engine/camshaft/06_cft
+  - item: reg:///registry/items/slot_item/mechanic_item/engine/camshaft/camshaft_1
     level: 3
     chance: 0.005
-  - item: reg:///registry/items/slot_item/mechanic_item/engine/compressor/05_cs
+  - item: reg:///registry/items/slot_item/mechanic_item/engine/compressor/compressor_1
     level: 3
     chance: 0.005
   - item: reg:///registry/items/slot_item/mechanic_item/engine/cylinder_head/05_chb
@@ -304,10 +304,10 @@ table:
   - item: reg:///registry/items/slot_item/mechanic_item/brake/brake_fluid/05_bf
     level: 4
     chance: 0.005
-  - item: reg:///registry/items/slot_item/mechanic_item/brake/front_brakes/05_bmf
+  - item: reg:///registry/items/slot_item/mechanic_item/brake/front_brakes/front_brakes_1
     level: 4
     chance: 0.005
-  - item: reg:///registry/items/slot_item/mechanic_item/brake/rear_brakes/05_bmr
+  - item: reg:///registry/items/slot_item/mechanic_item/brake/rear_brakes/rear_brakes_1
     level: 4
     chance: 0.005
   #brakes
@@ -319,7 +319,7 @@ table:
   - item: reg:///registry/items/slot_item/mechanic_item/cooling/coolant/06_cl
     level: 4
     chance: 0.005
-  - item: reg:///registry/items/slot_item/mechanic_item/cooling/pump/06_cp
+  - item: reg:///registry/items/slot_item/mechanic_item/cooling/pump/pump_1
     level: 4
     chance: 0.005
   - item: reg:///registry/items/slot_item/mechanic_item/cooling/radiator/04_rad

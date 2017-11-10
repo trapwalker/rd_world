@@ -130,8 +130,8 @@ items:
  # - reg:///registry/items/slot_item/mechanic_item/suspension/hub/03_hu
 
   # Двигатель
-  - reg:///registry/items/slot_item/mechanic_item/engine/camshaft/06_cft
-  - reg:///registry/items/slot_item/mechanic_item/engine/compressor/05_cs
+  - reg:///registry/items/slot_item/mechanic_item/engine/camshaft/camshaft_1
+  - reg:///registry/items/slot_item/mechanic_item/engine/compressor/compressor_1
   - reg:///registry/items/slot_item/mechanic_item/engine/cylinder_head/05_chb
   - reg:///registry/items/slot_item/mechanic_item/engine/cylinder_piston/04_cpg
   - reg:///registry/items/slot_item/mechanic_item/engine/engine_oil/04_eo
@@ -148,13 +148,13 @@ items:
   # Тормозная система
   - reg:///registry/items/slot_item/mechanic_item/brake/booster/04_ba
   - reg:///registry/items/slot_item/mechanic_item/brake/brake_fluid/05_bf
-#  - reg:///registry/items/slot_item/mechanic_item/brake/front_brakes/05_bmf
-#  - reg:///registry/items/slot_item/mechanic_item/brake/rear_brakes/05_bmr
+#  - reg:///registry/items/slot_item/mechanic_item/brake/front_brakes/front_brakes_1
+#  - reg:///registry/items/slot_item/mechanic_item/brake/rear_brakes/rear_brakes_1
 
   # Охлаждение
   - reg:///registry/items/slot_item/mechanic_item/cooling/add_radiator/add_radiator_1
   - reg:///registry/items/slot_item/mechanic_item/cooling/coolant/06_cl
-  - reg:///registry/items/slot_item/mechanic_item/cooling/pump/06_cp
+  - reg:///registry/items/slot_item/mechanic_item/cooling/pump/pump_1
 #  - reg:///registry/items/slot_item/mechanic_item/cooling/radiator/04_rad
 #  - reg:///registry/items/slot_item/mechanic_item/cooling/thermostat/05_tst
 
@@ -360,7 +360,7 @@ quests:
           base_price: 200          # тут надо указать стоимость посылки для корректного расчета награды
           post_activate_items:
             - reg:///registry/items/slot_item/mechanic_item/cooling/fan/01_eg
-            - reg:///registry/items/slot_item/mechanic_item/cooling/pump/06_cp
+            - reg:///registry/items/slot_item/mechanic_item/cooling/pump/pump_1
         - parent: reg:///registry/items/usable/package
           _cls: Package
           base_price: 250         # тут надо указать стоимость посылки для корректного расчета награды
