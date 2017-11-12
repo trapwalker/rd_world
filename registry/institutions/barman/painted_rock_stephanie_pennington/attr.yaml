@@ -1,0 +1,10 @@
+﻿_cls     : Institution
+
+title: 
+    en: Stephanie_Pennington
+    ru: Стефани_Пеннингтон ##LOCALIZATION
+
+photo    : "static/content/institutions/barman/painted_rock_stephanie_pennington.png"
+abstract : false
+
+hometown : reg:///registry/poi/locations/towns/painted_rock
