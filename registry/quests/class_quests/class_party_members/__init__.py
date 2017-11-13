@@ -27,7 +27,7 @@ class ClassQuestPartyMembers(ClassTypeQuest):
         def on_enter_(self, quest, event):
             quest.dc.quest_note = quest.agent.profile.add_note(
                 quest_uid=quest.uid,
-                note_class=notes.NPCPageNote,
+                note_class=notes.PartyMembersQuestNote,
                 time=event.time,
                 page_caption=quest.locale("q_cq_party_members_finished_page"),  ##LOCALIZATION
                 btn1_caption=quest.locale("q_cq_party_members_finished_btn"),  ##LOCALIZATION
