@@ -1,0 +1,24 @@
+_cls  : MechanicItem
+doc      : Головка блоков цилиндров CHB-01
+abstract : false
+
+title: 
+    en: Cylinder head CHB-01   ##LOCALIZATION
+    ru: Головка блоков цилиндров CHB-01
+
+description: 
+    en: ''   ##LOCALIZATION
+    ru: 'Блок цилиндров является основой (корпусной) деталью двигателя, к которой так или иначе крепятся остальные его агрегаты и узлы.'
+#+
+v_forward: 0.03
+
+#-
+p_fuel_rate: 0.05
+
+
+base_price: 800
+
+inv_icon_big: static/content/items/slot_item/mechanic_items/engine/cylinder_head/cylinder_head_1/big.png
+inv_icon_mid: static/content/items/slot_item/mechanic_items/engine/cylinder_head/cylinder_head_1/mid.png
+inv_icon_small: static/content/items/slot_item/mechanic_items/engine/cylinder_head/cylinder_head_1/small.png
+inv_icon_supersmall: static/content/items/slot_item/mechanic_items/engine/cylinder_head/cylinder_head_1/supersmall.png

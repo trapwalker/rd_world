@@ -73,3 +73,12 @@ armorer_images:
 
 weapon_animation:
   - ECanvasDischargeFirePNG_3_dbl
+
+
+condition       : 3  # Исп.
+
+rand_modifier_radius: 1.25
+rand_modifier_dmg : 1.25
+rand_modifier_width: 1.25
+
+power_penetration: 10

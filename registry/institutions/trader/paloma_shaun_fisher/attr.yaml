@@ -132,11 +132,11 @@ items:
   # Двигатель
   - reg:///registry/items/slot_item/mechanic_item/engine/camshaft/camshaft_1
   - reg:///registry/items/slot_item/mechanic_item/engine/compressor/compressor_1
-  - reg:///registry/items/slot_item/mechanic_item/engine/cylinder_head/cylinder_head_1
-  - reg:///registry/items/slot_item/mechanic_item/engine/cylinder_piston/cylinder_piston_1
-  - reg:///registry/items/slot_item/mechanic_item/engine/engine_oil/engine_oil_1
-  - reg:///registry/items/slot_item/mechanic_item/engine/flywheel/flywheel_1
-  - reg:///registry/items/slot_item/mechanic_item/engine/ignition/ignition_1
+  - reg:///registry/items/slot_item/mechanic_item/engine/cylinder_head/05_chb
+  - reg:///registry/items/slot_item/mechanic_item/engine/cylinder_piston/04_cpg
+  - reg:///registry/items/slot_item/mechanic_item/engine/engine_oil/04_eo
+  - reg:///registry/items/slot_item/mechanic_item/engine/flywheel/04_fw
+  - reg:///registry/items/slot_item/mechanic_item/engine/ignition/04_is
 
   # Трансмиссия
   - reg:///registry/items/slot_item/mechanic_item/transmission/ATF/ATF_1
@@ -146,17 +146,17 @@ items:
   - reg:///registry/items/slot_item/mechanic_item/transmission/torque_converter/torque_converter_1
 
   # Тормозная система
-  - reg:///registry/items/slot_item/mechanic_item/brake/booster/booster_1
-  - reg:///registry/items/slot_item/mechanic_item/brake/brake_fluid/brake_fluid_1
+  - reg:///registry/items/slot_item/mechanic_item/brake/booster/04_ba
+  - reg:///registry/items/slot_item/mechanic_item/brake/brake_fluid/05_bf
 #  - reg:///registry/items/slot_item/mechanic_item/brake/front_brakes/front_brakes_1
 #  - reg:///registry/items/slot_item/mechanic_item/brake/rear_brakes/rear_brakes_1
 
   # Охлаждение
   - reg:///registry/items/slot_item/mechanic_item/cooling/add_radiator/add_radiator_1
-  - reg:///registry/items/slot_item/mechanic_item/cooling/coolant/coolant_1
+  - reg:///registry/items/slot_item/mechanic_item/cooling/coolant/06_cl
   - reg:///registry/items/slot_item/mechanic_item/cooling/pump/pump_1
-#  - reg:///registry/items/slot_item/mechanic_item/cooling/radiator/radiator_1
-#  - reg:///registry/items/slot_item/mechanic_item/cooling/thermostat/thermostat_1
+#  - reg:///registry/items/slot_item/mechanic_item/cooling/radiator/04_rad
+#  - reg:///registry/items/slot_item/mechanic_item/cooling/thermostat/05_tst
 
   # ДЛЯ СТИЛИСТА
   - reg:///registry/items/slot_item/tuner_item/shnork/00_shnork_001

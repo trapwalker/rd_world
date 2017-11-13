@@ -1,0 +1,21 @@
+_cls : MechanicItem
+doc    : Тормозная жидкость NOO-BF01
+abstract : false
+
+title: 
+    en: Brake fluid NOO-BF01   ##LOCALIZATION
+    ru: Тормозная жидкость NOO-BF01
+
+description: 
+    en: ''   ##LOCALIZATION
+    ru: 'Привод в гидросистеме осуществляется за счёт давления несжимаемой жидкости, создаваемого педалью в главном цилиндре и передаваемого к рабочим цилиндрам по специальным трубопроводам.'
+
+# Плюсы
+a_braking: 0.02
+
+base_price: 550
+
+inv_icon_big: static/content/items/slot_item/mechanic_items/brake/brake_fluid/brake_fluid_1/big.png
+inv_icon_mid: static/content/items/slot_item/mechanic_items/brake/brake_fluid/brake_fluid_1/mid.png
+inv_icon_small: static/content/items/slot_item/mechanic_items/brake/brake_fluid/brake_fluid_1/small.png
+inv_icon_supersmall: static/content/items/slot_item/mechanic_items/brake/brake_fluid/brake_fluid_1/supersmall.png

@@ -1,0 +1,25 @@
+_cls : MechanicItem
+doc    : Радиатор CU-01R
+abstract : false
+
+title: 
+    en: Radiator CU-01R  ##LOCALIZATION
+    ru: Радиатор CU-01R
+
+description: 
+    en: ''   ##LOCALIZATION
+    ru: 'Устройство для рассеивания тепла в воздухе (излучением и конвекцией), воздушный теплообменник.'
+
+# Плюсы
+a_forward: 0.01
+
+# Минусы
+v_forward: -0.01
+
+
+base_price: 600
+
+inv_icon_big: static/content/items/slot_item/mechanic_items/cooling/radiator/radiator_1/big.png
+inv_icon_mid: static/content/items/slot_item/mechanic_items/cooling/radiator/radiator_1/mid.png
+inv_icon_small: static/content/items/slot_item/mechanic_items/cooling/radiator/radiator_1/small.png
+inv_icon_supersmall: static/content/items/slot_item/mechanic_items/cooling/radiator/radiator_1/supersmall.png

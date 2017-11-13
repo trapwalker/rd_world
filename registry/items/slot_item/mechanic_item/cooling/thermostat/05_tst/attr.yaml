@@ -1,0 +1,24 @@
+_cls : MechanicItem
+doc    : Термостат TST-L01
+abstract : false
+
+title: 
+    en: Thermostat TST-L01   ##LOCALIZATION
+    ru: Термостат TST-L01
+
+description: 
+    en: ''   ##LOCALIZATION
+    ru: 'Прибор для поддержания постоянной температуры.'
+
+# Плюсы
+p_fuel_rate: -0.02
+
+# Минусы
+a_forward: -0.01
+
+base_price: 500
+
+inv_icon_big: static/content/items/slot_item/mechanic_items/cooling/thermostat/thermostat_1/big.png
+inv_icon_mid: static/content/items/slot_item/mechanic_items/cooling/thermostat/thermostat_1/mid.png
+inv_icon_small: static/content/items/slot_item/mechanic_items/cooling/thermostat/thermostat_1/small.png
+inv_icon_supersmall: static/content/items/slot_item/mechanic_items/cooling/thermostat/thermostat_1/supersmall.png

@@ -1,17 +1,21 @@
 _cls : MechanicItem
-doc    : Распределительный вал
+doc    : Распределительный вал CM-SFT001
 abstract : false
 
 title: 
-    en: Camshaft   ##LOCALIZATION
-    ru: Распределительный вал
+    en: Camshaft CM-SFT001  ##LOCALIZATION
+    ru: Распределительный вал CM-SFT001
 
 description: 
     en: ''   ##LOCALIZATION
-    ru: Вал двигателя внутреннего сгорания, управляющий открытием и закрытием клапанов двигателя.
+    ru: 'Вал двигателя внутреннего сгорания, управляющий открытием и закрытием клапанов двигателя.'
+#+
+v_forward: 0.03
+#-
+a_forward: -0.03
 
 
-base_price: 100
+base_price: 700
 
 inv_icon_big: static/content/items/slot_item/mechanic_items/engine/camshaft/camshaft_1/big.png
 inv_icon_mid: static/content/items/slot_item/mechanic_items/engine/camshaft/camshaft_1/mid.png

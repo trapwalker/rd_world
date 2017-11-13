@@ -19,8 +19,8 @@ ammo            : reg:///registry/items/usable/ammo/127x108bb # Подходящ
 
 dps             : 6.27                                        # Дамаг в секунду по вражеским целям
 
-radius          : 357                                         # Дальность сектора стрельбы
-width           : 90                                          # Ширина сектора стрельбы
+radius          : 179                                         # Дальность сектора стрельбы
+width           : 45                                          # Ширина сектора стрельбы
 
 ammo_per_second : 5                                           # [shot/s] ~=650/60 Потребление патронов в секунду
 
@@ -79,3 +79,9 @@ armorer_images:
 
 
 condition       : 3  # Исп.
+
+rand_modifier_radius: 1.25
+rand_modifier_width: 1.25
+rand_modifier_dps: 1.25
+
+power_penetration: 10

@@ -4,7 +4,7 @@ doc    : Прототипы квестовых агентов
 
 quest_inventory:
   items:
-    - reg:///registry/items/quest_item/insurance/quick
+    - reg:///registry/items/quest_item/insurance/table_drop
 
 ai_quest: ~
 

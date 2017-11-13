@@ -22,7 +22,7 @@ inventory:                      # При заполнении инвентаря
 p_observing_range:     1300    # Радиус обзора автомобиля (м) (>= 0)
 
 p_vigilance:           0       # Коэффициент зоркости (0..1)
-p_visibility_min:      0.300   # Минимальная заметность автомобиля (0..1) при 0 автомобиль невидим
+p_visibility_min:      0.275   # Минимальная заметность автомобиля (0..1) при 0 автомобиль невидим
 p_visibility_max:      0.600   # Максимальная заметность автомобиля (0..1) при 0 автомобиль невидим
 p_obs_range_rate_min:  0.5     # Коэффициент минимального радиуса обзора автомобиля (0..1)
 p_obs_range_rate_max:  1       # Коэффициент максимального радиуса обзора автомобиля (0..1)
@@ -86,3 +86,6 @@ slot_t17: ~
 inv_icon_big: static/content/mobiles/cars/middle/vans/citroen_hy/inventory/big.png
 inv_icon_mid: static/content/mobiles/cars/middle/vans/citroen_hy/inventory/mid.png
 inv_icon_small: static/content/mobiles/cars/middle/vans/citroen_hy/inventory/small.png
+
+
+p_armor: 10

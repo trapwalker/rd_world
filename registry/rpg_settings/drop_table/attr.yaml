@@ -1,0 +1,542 @@
+﻿_cls    : DropTable
+doc     : Таблица дропа из мобов
+
+table:
+  - item: reg:///registry/items/stuff/alcohol/alcohol_001
+    level: 3
+    chance: 0.025
+  - item: reg:///registry/items/stuff/alcohol/alcohol_001
+    level: 4
+    chance: 0.05
+  - item: reg:///registry/items/stuff/alcohol/alcohol_001
+    level: 5
+    chance: 0.08
+    #prewar whisky
+
+  - item: reg:///registry/items/stuff/alcohol/alcohol_002
+    level: 0
+    chance: 0.3
+    #hooch
+
+  - item: reg:///registry/items/stuff/canned_cereal/canned_cereal_001
+    level: 0
+    chance: 0.20
+  - item: reg:///registry/items/stuff/canned_meat/canned_meat_001
+    level: 0
+    chance: 0.10
+  - item: reg:///registry/items/stuff/medical_supplies/medical_supplies_001
+    level: 0
+    chance: 0.10
+  - item: reg:///registry/items/stuff/scrap_metal/scrap_metal_001
+    level: 0
+    chance: 0.80
+  - item: reg:///registry/items/stuff/warm_clothes/warm_clothes_003
+    level: 0
+    chance: 0.25
+  - item: reg:///registry/items/stuff/water/water_002
+    level: 0
+    chance: 0.20
+  #stuff
+
+  - item: reg:///registry/items/usable/ammo/556bb
+    level: 0
+    chance: 0.05
+  - item: reg:///registry/items/usable/ammo/762x51bb
+    level: 0
+    chance: 0.05
+  - item: reg:///registry/items/usable/ammo/792bb
+    level: 1
+    chance: 0.05
+  - item: reg:///registry/items/usable/ammo/127x108bb
+    level: 1
+    chance: 0.05
+  - item: reg:///registry/items/usable/ammo/13mm
+    level: 1
+    chance: 0.05
+  - item: reg:///registry/items/usable/ammo/40mm
+    level: 1
+    chance: 0.025
+  - item: reg:///registry/items/usable/ammo/20mm
+    level: 2
+    chance: 0.025
+  - item: reg:///registry/items/usable/ammo/23bzt
+    level: 2
+    chance: 0.025
+  - item: reg:///registry/items/usable/ammo/25mm
+    level: 2
+    chance: 0.025
+  #ammo
+
+  - item: reg:///registry/items/slot_item/tuner_item/shnork/00_shnork_001
+    level: 0
+    chance: 0.01
+  - item: reg:///registry/items/slot_item/tuner_item/shnork/00_shnork_002
+    level: 0
+    chance: 0.01
+  - item: reg:///registry/items/slot_item/tuner_item/shnork/00_shnork_003
+    level: 0
+    chance: 0.01
+  - item: reg:///registry/items/slot_item/tuner_item/b_fender/00_b_fender_002
+    level: 0
+    chance: 0.01
+  - item: reg:///registry/items/slot_item/tuner_item/b_fender/01_b_fender_004
+    level: 1
+    chance: 0.01
+  - item: reg:///registry/items/slot_item/tuner_item/b_fender/01_b_fender_005
+    level: 1
+    chance: 0.01
+  - item: reg:///registry/items/slot_item/tuner_item/f_fender/00_f_fender_002
+    level: 0
+    chance: 0.01
+  - item: reg:///registry/items/slot_item/tuner_item/f_fender/01_f_fender_004
+    level: 1
+    chance: 0.01
+  - item: reg:///registry/items/slot_item/tuner_item/f_fender/01_f_fender_005
+    level: 1
+    chance: 0.01
+  - item: reg:///registry/items/slot_item/tuner_item/armor/00_armor_001
+    level: 0
+    chance: 0.01
+  - item: reg:///registry/items/slot_item/tuner_item/armor/01_armor_002
+    level: 1
+    chance: 0.01
+  - item: reg:///registry/items/slot_item/tuner_item/airint/airint_001
+    level: 2
+    chance: 0.01
+  - item: reg:///registry/items/slot_item/tuner_item/b_bumper/b_bumper_001
+    level: 2
+    chance: 0.01
+  - item: reg:///registry/items/slot_item/tuner_item/b_bumper/b_bumper_002
+    level: 2
+    chance: 0.01
+  - item: reg:///registry/items/slot_item/tuner_item/b_bumper/b_bumper_003
+    level: 2
+    chance: 0.01
+  - item: reg:///registry/items/slot_item/tuner_item/b_fender/b_fender_001
+    level: 2
+    chance: 0.01
+  - item: reg:///registry/items/slot_item/tuner_item/b_fender/b_fender_003
+    level: 2
+    chance: 0.01
+  - item: reg:///registry/items/slot_item/tuner_item/bale/bale_001
+    level: 2
+    chance: 0.01
+  - item: reg:///registry/items/slot_item/tuner_item/bale/bale_002
+    level: 2
+    chance: 0.01
+  - item: reg:///registry/items/slot_item/tuner_item/f_bumper/f_bumper_001
+    level: 2
+    chance: 0.005
+  - item: reg:///registry/items/slot_item/tuner_item/f_bumper/f_bumper_002
+    level: 2
+    chance: 0.005
+  - item: reg:///registry/items/slot_item/tuner_item/f_bumper/f_bumper_003
+    level: 2
+    chance: 0.005
+  - item: reg:///registry/items/slot_item/tuner_item/f_fender/f_fender_001
+    level: 3
+    chance: 0.005
+  - item: reg:///registry/items/slot_item/tuner_item/f_fender/f_fender_003
+    level: 3
+    chance: 0.005
+  - item: reg:///registry/items/slot_item/tuner_item/glass/glass_001
+    level: 3
+    chance: 0.005
+  - item: reg:///registry/items/slot_item/tuner_item/roof/roof_002
+    level: 3
+    chance: 0.005
+  - item: reg:///registry/items/slot_item/tuner_item/roof/roof_001
+    level: 3
+    chance: 0.005
+  - item: reg:///registry/items/slot_item/tuner_item/step/step_002
+    level: 3
+    chance: 0.005
+  - item: reg:///registry/items/slot_item/tuner_item/step/step_003
+    level: 3
+    chance: 0.005
+  - item: reg:///registry/items/slot_item/tuner_item/step/step_001
+    level: 3
+    chance: 0.005
+  - item: reg:///registry/items/slot_item/tuner_item/trunk/trunk_002
+    level: 3
+    chance: 0.005
+  - item: reg:///registry/items/slot_item/tuner_item/trunk/trunk_001
+    level: 3
+    chance: 0.005
+  - item: reg:///registry/items/slot_item/tuner_item/win_prot/win_prot_001
+    level: 3
+    chance: 0.005
+  - item: reg:///registry/items/slot_item/tuner_item/win_prot/win_prot_002
+    level: 3
+    chance: 0.005
+  #styler items
+
+
+  - item: reg:///registry/items/slot_item/mechanic_item/engine/air_filter/00_tsn
+    level: 0
+    chance: 0.005
+  - item: reg:///registry/items/slot_item/mechanic_item/suspension/front_coil/00_kyf
+    level: 0
+    chance: 0.005
+  - item: reg:///registry/items/slot_item/mechanic_item/suspension/rear_coil/00_kyb
+    level: 0
+    chance: 0.005
+  - item: reg:///registry/items/slot_item/mechanic_item/suspension/front_shock_absorber/00_kyf
+    level: 0
+    chance: 0.005
+  - item: reg:///registry/items/slot_item/mechanic_item/suspension/rear_shock_absorber/00_kyb
+    level: 0
+    chance: 0.005
+  - item: reg:///registry/items/slot_item/mechanic_item/suspension/wheels/00_gt
+    level: 0
+    chance: 0.005
+ #lvl0 mechanic items
+
+
+  - item: reg:///registry/items/slot_item/mechanic_item/engine/inlet/01_asi
+    level: 1
+    chance: 0.005
+  - item: reg:///registry/items/slot_item/mechanic_item/engine/exhaust/01_aso
+    level: 1
+    chance: 0.005
+  - item: reg:///registry/items/slot_item/mechanic_item/transmission/gearbox/01_jtc
+    level: 1
+    chance: 0.005
+  - item: reg:///registry/items/slot_item/mechanic_item/transmission/transfer_case/01_ttc
+    level: 1
+    chance: 0.005
+  - item: reg:///registry/items/slot_item/mechanic_item/brake/abs/01_sf
+    level: 1
+    chance: 0.005
+  - item: reg:///registry/items/slot_item/mechanic_item/cooling/fan/01_eg
+    level: 1
+    chance: 0.005
+  #lvl1 mechanic items
+
+
+  - item: reg:///registry/items/slot_item/mechanic_item/brake/front_brake_pads/02_bpf
+    level: 2
+    chance: 0.005
+  - item: reg:///registry/items/slot_item/mechanic_item/brake/rear_brake_pads/02_bpr
+    level: 2
+    chance: 0.005
+  - item: reg:///registry/items/slot_item/mechanic_item/engine/sparkplug/02_sp
+    level: 2
+    chance: 0.005
+  - item: reg:///registry/items/slot_item/mechanic_item/transmission/primary_shaft/02_ps
+    level: 2
+    chance: 0.005
+  - item: reg:///registry/items/slot_item/mechanic_item/transmission/front_differential/02_df
+    level: 2
+    chance: 0.005
+  - item: reg:///registry/items/slot_item/mechanic_item/transmission/rear_differential/02_dr
+    level: 2
+    chance: 0.005
+  #lvl2 mechanic items
+
+
+  - item: reg:///registry/items/slot_item/mechanic_item/transmission/secondary_shaft/03_ss
+    level: 3
+    chance: 0.005
+  - item: reg:///registry/items/slot_item/mechanic_item/brake/front_brake_lines/03_blf
+    level: 3
+    chance: 0.005
+  - item: reg:///registry/items/slot_item/mechanic_item/brake/rear_brake_lines/03_blr
+    level: 3
+    chance: 0.005
+  - item: reg:///registry/items/slot_item/mechanic_item/suspension/front_control_arm/03_caf
+    level: 3
+    chance: 0.005
+  - item: reg:///registry/items/slot_item/mechanic_item/suspension/rear_control_arm/03_car
+    level: 3
+    chance: 0.005
+  - item: reg:///registry/items/slot_item/mechanic_item/suspension/hub/03_hu
+    level: 3
+    chance: 0.005
+  #lvl3 mechanic items
+
+
+  - item: reg:///registry/items/slot_item/mechanic_item/engine/camshaft/camshaft_1
+    level: 3
+    chance: 0.005
+  - item: reg:///registry/items/slot_item/mechanic_item/engine/compressor/compressor_1
+    level: 3
+    chance: 0.005
+  - item: reg:///registry/items/slot_item/mechanic_item/engine/cylinder_head/05_chb
+    level: 3
+    chance: 0.005
+  - item: reg:///registry/items/slot_item/mechanic_item/engine/cylinder_piston/04_cpg
+    level: 3
+    chance: 0.005
+  - item: reg:///registry/items/slot_item/mechanic_item/engine/engine_oil/04_eo
+    level: 3
+    chance: 0.005
+  - item: reg:///registry/items/slot_item/mechanic_item/engine/flywheel/04_fw
+    level: 3
+    chance: 0.005
+  - item: reg:///registry/items/slot_item/mechanic_item/engine/ignition/04_is
+    level: 3
+    chance: 0.005
+  #engines
+
+
+  - item: reg:///registry/items/slot_item/mechanic_item/transmission/ATF/ATF_1
+    level: 4
+    chance: 0.005
+  - item: reg:///registry/items/slot_item/mechanic_item/transmission/clutch/clutch_1
+    level: 4
+    chance: 0.005
+  - item: reg:///registry/items/slot_item/mechanic_item/transmission/front_axle/front_axle_1
+    level: 4
+    chance: 0.005
+  - item: reg:///registry/items/slot_item/mechanic_item/transmission/rear_axle/rear_axle_1
+    level: 4
+    chance: 0.005
+  - item: reg:///registry/items/slot_item/mechanic_item/transmission/torque_converter/torque_converter_1
+    level: 4
+    chance: 0.005
+  #clutch
+
+
+  - item: reg:///registry/items/slot_item/mechanic_item/brake/booster/04_ba
+    level: 4
+    chance: 0.005
+  - item: reg:///registry/items/slot_item/mechanic_item/brake/brake_fluid/05_bf
+    level: 4
+    chance: 0.005
+  - item: reg:///registry/items/slot_item/mechanic_item/brake/front_brakes/front_brakes_1
+    level: 4
+    chance: 0.005
+  - item: reg:///registry/items/slot_item/mechanic_item/brake/rear_brakes/rear_brakes_1
+    level: 4
+    chance: 0.005
+  #brakes
+
+
+  - item: reg:///registry/items/slot_item/mechanic_item/cooling/add_radiator/add_radiator_1
+    level: 4
+    chance: 0.005
+  - item: reg:///registry/items/slot_item/mechanic_item/cooling/coolant/06_cl
+    level: 4
+    chance: 0.005
+  - item: reg:///registry/items/slot_item/mechanic_item/cooling/pump/pump_1
+    level: 4
+    chance: 0.005
+  - item: reg:///registry/items/slot_item/mechanic_item/cooling/radiator/04_rad
+    level: 4
+    chance: 0.005
+  - item: reg:///registry/items/slot_item/mechanic_item/cooling/thermostat/05_tst
+    level: 4
+    chance: 0.005
+  #coolants
+
+  #LIGHT MACHINE GUNS
+
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/00_oc_14
+    level: 0
+    chance: 0.01
+  #00_oc_14
+
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/00_rpk
+    level: 0
+    chance: 0.01
+  #00_rpk
+
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/00_mg_08
+    level: 0
+    chance: 0.01
+  #00_mg_08
+
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/01_m249_saw
+    level: 1
+    chance: 0.01
+   #01_m249_saw
+
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/01_negev_ng7
+    level: 1
+    chance: 0.01
+  #01_negev_ng7
+
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/02_lsat
+    level: 2
+    chance: 0.01
+  #02_lsat
+
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/02_stoner_63
+    level: 2
+    chance: 0.01
+  #02_stoner_63
+
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/03_bren
+    level: 3
+    chance: 0.01
+  #03_bren
+
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/03_m60
+    level: 3
+    chance: 0.01
+  #03_m60
+
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/04_mark_48
+    level: 4
+    chance: 0.01
+  #04_mark_48
+
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/04_mt
+    level: 4
+    chance: 0.01
+  #04_mt
+
+  #MEDIUM MACHINE GUNS
+
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/00_fg_42
+    level: 0
+    chance: 0.01
+  #00_fg_42
+
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/00_mg_08
+    level: 0
+    chance: 0.01
+  #00_mg_08
+
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/01_mg_81
+    level: 1
+    chance: 0.01
+  #01_mg_81
+
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/02_m134_minigun
+    level: 2
+    chance: 0.01
+  #02_m134_minigun
+
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/02_mg_42
+    level: 2
+    chance: 0.01
+  #02_mg_42
+
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/03_browning_m2
+    level: 3
+    chance: 0.01
+  #03_browning_m2
+
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/03_vickers_50
+    level: 3
+    chance: 0.01
+  #03_vickers_50
+
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/04_dshkm
+    level: 4
+    chance: 0.01
+  #04_dshkm
+
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/04_gau_19
+    level: 4
+    chance: 0.01
+  #04_gau_19
+
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/heavy/04_mg_18_tuf
+    level: 4
+    chance: 0.01
+  #04_mg_18
+
+
+#CANNONS
+
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/cannons/medium/00_oerlikon
+    level: 0
+    chance: 0.005
+  #00_oerlikon
+
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/cannons/medium/00_hs_404
+    level: 0
+    chance: 0.005
+  #00_hs_404
+
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/cannons/medium/01_lvakan_m_40
+    level: 1
+    chance: 0.005
+  #01_lvakan_m_40
+
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/cannons/medium/01_bofors_m_45
+    level: 1
+    chance: 0.005
+  #01_boforos_m_45
+
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/cannons/light/02_rg_6
+    level: 2
+    chance: 0.005
+  #02_rg_6
+
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/cannons/medium/02_mauser_mg_213
+    level: 2
+    chance: 0.005
+  #02_mauser_mg_213
+
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/cannons/medium/03_vya_23
+    level: 3
+    chance: 0.005
+  #03_vya_23
+
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/cannons/medium/03_m242_bushmaster
+    level: 3
+    chance: 0.005
+  #03_m242_bushmaster
+
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/cannons/medium/04_t4
+    level: 4
+    chance: 0.005
+  #04_t4
+
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/cannons/zu23_flak
+    level: 5
+    chance: 0.005
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/cannons/zu23_flak/quick
+    level: 5
+    chance: 0.0025
+  #zu23_flak
+
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/cannons/2a42
+    level: 5
+    chance: 0.005
+  #2a42
+
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/cannons/flak_18
+    level: 5
+    chance: 0.005
+  #flak 18
+
+  - item: reg:///registry/items/slot_item/armorer_item/weapons/cannons/mk103
+    level: 5
+    chance: 0.005
+    #mk103
+
+#ROCKETS
+
+  - item: reg:///registry/items/usable/map_weapon/rockets/sa16_igla
+    level: 3
+    chance: 0.005
+  - item: reg:///registry/items/usable/map_weapon/rockets/sa16_igla/quick
+    level: 3
+    chance: 0.005
+  #sa16_igla
+
+  - item: reg:///registry/items/usable/map_weapon/rockets/kornet
+    level: 4
+    chance: 0.005
+  - item: reg:///registry/items/usable/map_weapon/rockets/kornet/quick
+    level: 4
+    chance: 0.005
+  #kornet
+
+  - item: reg:///registry/items/usable/map_weapon/rockets/javelin
+    level: 4
+    chance: 0.005
+  - item: reg:///registry/items/usable/map_weapon/rockets/javelin/quick
+    level: 4
+    chance: 0.005
+  #javelin
+
+  - item: reg:///registry/items/slot_item/armorer_item/rocket_launcher/m242
+    level: 5
+    chance: 0.005
+  #m242

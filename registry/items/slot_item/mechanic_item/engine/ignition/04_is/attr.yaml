@@ -1,0 +1,20 @@
+_cls : MechanicItem
+doc    : Система зажигания IS-04
+abstract : false
+
+title: 
+    en: Ignition system IS-04  ##LOCALIZATION
+    ru: Система зажигания IS-04
+
+description: 
+    en: ''   ##LOCALIZATION
+    ru: 'Обеспечивает появление электрической искры, воспламеняющей топливовоздушную смесь вцилиндрах двигателя внутреннего сгорания в нужный момент.'
+
+a_forward: 0.01
+
+base_price: 450
+
+inv_icon_big: static/content/items/slot_item/mechanic_items/engine/ignition/ignition_1/big.png
+inv_icon_mid: static/content/items/slot_item/mechanic_items/engine/ignition/ignition_1/mid.png
+inv_icon_small: static/content/items/slot_item/mechanic_items/engine/ignition/ignition_1/small.png
+inv_icon_supersmall: static/content/items/slot_item/mechanic_items/engine/ignition/ignition_1/supersmall.png

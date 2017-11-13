@@ -11,8 +11,8 @@ name_car:    "M113A1"            # Название атомобиля
 price:              50000        # Цена у продавца (л) (>= 0)
 needed_driving:     40           # Требование к прокачке уровня вождения
 
-max_hp:             525          # Максимальное количество прочности (> 0)
-hp:                 525          # Текущее количество прочности (> 0)
+max_hp:             425          # Максимальное количество прочности (> 0)
+hp:                 425          # Текущее количество прочности (> 0)
 
 inventory:                       # При заполнении инвентаря необходимо учитывать его размер
     size: 36
@@ -91,3 +91,5 @@ slot_t17: ~
 inv_icon_big: static/content/mobiles/cars/heavy/btrs/05_m113a1/inventory/big.png
 inv_icon_mid: static/content/mobiles/cars/heavy/btrs/05_m113a1/inventory/mid.png
 inv_icon_small: static/content/mobiles/cars/heavy/btrs/05_m113a1/inventory/small.png
+
+

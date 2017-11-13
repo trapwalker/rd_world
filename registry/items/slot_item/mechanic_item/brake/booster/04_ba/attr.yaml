@@ -1,0 +1,26 @@
+_cls : MechanicItem
+doc    : Усилитель тормозов BA-M01
+abstract : false
+
+title: 
+    en: Brake amplifier BA-M01   ##LOCALIZATION
+    ru: Усилитель тормозов BA-M01
+
+description: 
+    en: ''   ##LOCALIZATION
+    ru: 'Специальное устройство в гидравлическом приводе, предназначенное для снижения усилия, прилагаемого водителем на тормозную педаль.'
+
+# Плюсы
+a_braking: 0.02
+
+
+# Минусы
+r_min: 0.01
+mobility: 0  # ac_max: 0.02
+
+base_price: 550
+
+inv_icon_big: static/content/items/slot_item/mechanic_items/brake/booster/booster_1/big.png
+inv_icon_mid: static/content/items/slot_item/mechanic_items/brake/booster/booster_1/mid.png
+inv_icon_small: static/content/items/slot_item/mechanic_items/brake/booster/booster_1/small.png
+inv_icon_supersmall: static/content/items/slot_item/mechanic_items/brake/booster/booster_1/supersmall.png
