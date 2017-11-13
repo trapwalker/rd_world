@@ -101,6 +101,7 @@ class DeliveryCar(DeliveryQuest):
             car_params=dict(
                 position=agent_model.current_location.example.position,
                 last_location=agent_model.current_location.example,
+                p_fuel_rate=self.delivery_car.p_fuel_rate,
             )
         )
         # todo: возможно это нужно сделать
