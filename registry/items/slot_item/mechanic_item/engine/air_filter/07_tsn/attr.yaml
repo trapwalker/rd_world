@@ -1,10 +1,10 @@
 _cls     : MechanicItem
-doc      : Модернизированный воздушный фильтр TSN-A02M
+doc      : Воздушный фильтр TSN-A02M
 abstract : false
 
 title: 
-    en: Modernized air filter TSN-A02M   ##LOCALIZATION
-    ru: Модернизированный воздушный фильтр TSN-A02M
+    en: Air filter TSN-A02M   ##LOCALIZATION
+    ru: Воздушный фильтр TSN-A02M
 
 description: 
     en: ''   ##LOCALIZATION
