@@ -19,8 +19,8 @@ buildings:
         ru: Библиотека
 
     title: 
-        en: Library   ##LOCALIZATION
-        ru: Библиотека
+        en: Cahrly's Trailer   ##LOCALIZATION
+        ru: Трейлер Чарли
 
     head: reg:///registry/institutions/trainer/bonita_vista_charles_alamir
     instances:
@@ -32,8 +32,8 @@ buildings:
         ru: Магазин
 
     title: 
-        en: Shop   ##LOCALIZATION
-        ru: Магазин
+        en: Ayrne Kurtn   ##LOCALIZATION
+        ru: Айрн Кертн
 
     head: reg:///registry/institutions/trader/bonita_vista_benny_mccurtain
     instances:
@@ -45,8 +45,8 @@ buildings:
         ru: Паркинг
 
     title: 
-        en: Parking   ##LOCALIZATION
-        ru: Паркинг
+        en: Barsby's Trailer Park   ##LOCALIZATION
+        ru: Барсби Трейлер Парк
 
     head: reg:///registry/institutions/hangar/bonita_vista_mike_barsby
     instances:
@@ -59,8 +59,8 @@ buildings:
         ru: Мэрия
 
     title: 
-        en: City Hall   ##LOCALIZATION
-        ru: Мэрия
+        en: Jack's Trailer   ##LOCALIZATION
+        ru: Трейлер Джека
 
     head: reg:///registry/institutions/mayor/bonita_vista_jack_lape
     instances: []
@@ -71,8 +71,8 @@ buildings:
         ru: Автосервис
 
     title: 
-        en: Car service   ##LOCALIZATION
-        ru: Автосервис
+        en: Lenny's Trailer   ##LOCALIZATION
+        ru: Трейлер Ленни
 
     head: reg:///registry/institutions/mechanic/bonita_vista_lenny_nachreiner
     instances:
@@ -85,8 +85,8 @@ buildings:
         ru: Бар
 
     title: 
-        en: Bar   ##LOCALIZATION
-        ru: Бар
+        en: May Day Bar   ##LOCALIZATION
+        ru: Мэй Дей Бар
 
     head: reg:///registry/institutions/barman/bonita_vista_melanie_may
     instances:
