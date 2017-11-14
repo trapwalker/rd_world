@@ -1,0 +1,50 @@
+﻿_cls     : Town
+doc      : Люк Вар Хаус   # Бывшая военная база (торговля бронетехникой)
+abstract : false
+
+title: 
+    en: Luke War House   ##LOCALIZATION
+    ru: Люк Вар Хаус
+
+position          : {x: 12506990, y: 27066569}
+p_observing_range : 250
+p_enter_range     : 150
+
+svg_link: static/content/locations/map_locations/luke_war_house
+
+buildings:
+  - name: parking
+    caption:
+        en: Parking   ##LOCALIZATION
+        ru: Паркинг
+
+    title:
+        en: Luke War House   ##LOCALIZATION
+        ru: Люк Вар Хаус
+
+    head: reg:///registry/institutions/hangar/luke_war_house_sgt_coleman
+    instances:
+        - reg:///registry/institutions/hangar/luke_war_house_sgt_coleman
+
+  - name: nukeoil
+    caption:
+          en: NukeOil   ##LOCALIZATION
+          ru: Нукойл
+
+    title:
+        en: NukeOil   ##LOCALIZATION
+        ru: Нукойл
+
+    head: reg:///registry/institutions/nucoil
+    instances:
+        - reg:///registry/institutions/gas_station
+        - reg:///registry/institutions/npc_help
+
+static_image_list:
+    - /static/content/locations/map_locations/luke_war_house/ground+circle.png
+    - /static/content/locations/map_locations/luke_war_house/parking.png
+    - /static/content/locations/map_locations/luke_war_house/parking_bg.png
+    - /static/content/locations/map_locations/luke_war_house/parking_hover.png
+    - /static/content/locations/map_locations/luke_war_house/nuukeoil.png
+    - /static/content/locations/map_locations/luke_war_house/nuukeoil_bg.png
+    - /static/content/locations/map_locations/luke_war_house/nuukeoil_hover.png
