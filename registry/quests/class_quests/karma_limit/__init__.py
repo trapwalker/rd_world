@@ -12,11 +12,12 @@ from sublayers_world.registry.quests.class_quests import ClassTypeQuest
 
 
 class ClassQuestKarmaLimit(ClassTypeQuest):
-    needed_karma = FloatField(caption=u"Минимальное значение кармы")
+    needed_karma = FloatField(caption=u"Минимальное значение кармы", tags={'client'})
 
     def init_text(self):
         self.text = LocalizedString(_id="q_cq_karmic_journal_text").generate(
-            player_name=self.agent.login, task_text=self.locale("q_cq_acc_summ_task_text"))  ##LOCALIZATION
+            name_needed=self.locale(getKarmaNameLocalizedString(self.needed_karma)),
+        )  ##LOCALIZATION
 
     def on_start_(self, event, **kw):
         self.init_text()
@@ -28,7 +29,7 @@ class ClassQuestKarmaLimit(ClassTypeQuest):
         def on_enter_(self, quest, event):
             quest.dc.quest_note = quest.agent.profile.add_note(
                 quest_uid=quest.uid,
-                note_class=notes.NPCPageNote,
+                note_class=notes.KarmaLimitQuestNote,
                 time=event.time,
                 page_caption=quest.locale("q_cq_karmic_page"),  ##LOCALIZATION
                 btn1_caption=quest.locale("q_cq_karmic_btn"),  ##LOCALIZATION
