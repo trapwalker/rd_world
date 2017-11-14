@@ -167,6 +167,17 @@ items:
   - reg:///registry/items/slot_item/mechanic_item/suspension/wheels/07_gtw
   - reg:///registry/items/slot_item/mechanic_item/engine/inlet/07_asi
   - reg:///registry/items/slot_item/mechanic_item/engine/exhaust/07_aso
+  - reg:///registry/items/slot_item/mechanic_item/transmission/gearbox/07_jtc
+  - reg:///registry/items/slot_item/mechanic_item/brake/abs/07_sf
+  - reg:///registry/items/slot_item/mechanic_item/cooling/fan/08_eg
+  - reg:///registry/items/slot_item/mechanic_item/brake/front_brake_pads/08_bpf
+  - reg:///registry/items/slot_item/mechanic_item/brake/rear_brake_pads/08_bpr
+  - reg:///registry/items/slot_item/mechanic_item/engine/sparkplug/08_sp
+  - reg:///registry/items/slot_item/mechanic_item/transmission/primary_shaft/08_ps
+  - reg:///registry/items/slot_item/mechanic_item/transmission/secondary_shaft/08_ss
+
+
+
 
 
 
