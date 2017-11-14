@@ -1,0 +1,25 @@
+_cls     : MechanicItem
+doc      : Модернизированный воздушный фильтр TSN-A02M
+abstract : false
+
+title: 
+    en: Modernized air filter TSN-A02M   ##LOCALIZATION
+    ru: Модернизированный воздушный фильтр TSN-A02M
+
+description: 
+    en: ''   ##LOCALIZATION
+    ru: 'Элемент воздухоочистителя, который служит для фильтрования воздуха, подаваемого системами вентиляции и кондиционирования.'
+
+
+base_price: 500
+
+# Плюсы
+a_forward: 0.02
+
+# Минусы
+p_fuel_rate: 0.02
+
+inv_icon_big: static/content/items/slot_item/mechanic_items/engine/air_filter/07_tsn/big.png
+inv_icon_mid: static/content/items/slot_item/mechanic_items/engine/air_filter/07_tsn/mid.png
+inv_icon_small: static/content/items/slot_item/mechanic_items/engine/air_filter/07_tsn/small.png
+#inv_icon_supersmall: static/content/items/slot_item/mechanic_items/engine/air_filter/07_tsn/supersmall.png
