@@ -1,0 +1,10 @@
+﻿_cls     : Institution
+
+title:
+    en: Jesse_Rivas
+    ru: Джесси_Ривас   ##LOCALIZATION
+
+photo    : "static/content/institutions/stylist/painted_rock_jesse_rivas.png"
+abstract : false
+
+hometown : reg:///registry/poi/locations/towns/painted_rock

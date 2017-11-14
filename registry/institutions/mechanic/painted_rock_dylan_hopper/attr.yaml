@@ -1,0 +1,10 @@
+﻿_cls : Mechanic
+
+title: 
+    en: Dylan_Hopper
+    ru: Дилан_Хоппер ##LOCALIZATION
+
+photo    : "static/content/institutions/mechanic/painted_rock_dylan_hopper.png"
+abstract : false
+
+hometown : reg:///registry/poi/locations/towns/painted_rock

@@ -1,17 +1,21 @@
 _cls : MechanicItem
-doc    : Охлаждающая жидкость
+doc    : Охлаждающая жидкость NOO-CL01
 abstract : false
 
 title: 
-    en: Coolant   ##LOCALIZATION
-    ru: Охлаждающая жидкость
+    en: Coolant NOO-CL01   ##LOCALIZATION
+    ru: Охлаждающая жидкость NOO-CL01
 
 description: 
     en: ''   ##LOCALIZATION
-    ru: Состоит из воды, антифриза, специальных присадок, предохраняющих систему охлаждения двигателя внутреннего сгорания от коррозионных процессов и саму жидкость от термохимического разрушения, и смазывающих материалов для насоса системы охлаждения.
+    ru: 'Состоит из воды, антифриза, специальных присадок, предохраняющих систему охлаждения двигателя внутреннего сгорания от коррозионных процессов и саму жидкость от термохимического разрушения, и смазывающих материалов для насоса системы охлаждения.'
+
+# Плюсы
+a_forward: 0.01
 
 
-base_price: 100
+
+base_price: 450
 
 inv_icon_big: static/content/items/slot_item/mechanic_items/cooling/coolant/coolant_1/big.png
 inv_icon_mid: static/content/items/slot_item/mechanic_items/cooling/coolant/coolant_1/mid.png

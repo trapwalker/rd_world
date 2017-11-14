@@ -1,0 +1,9 @@
+﻿_cls     : Institution
+title: 
+    en: Samuel_Fry
+    ru: Сэмюэл_Фрай ##LOCALIZATION
+
+photo    : "static/content/institutions/mayor/painted_rock_samuel_fry.png"
+abstract : false
+
+hometown : reg:///registry/poi/locations/towns/painted_rock

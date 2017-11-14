@@ -1,17 +1,21 @@
 _cls  : MechanicItem
-doc      : Цилиндро-поршневая группа
+doc      : Цилиндро-поршневая группа CPG-AEC001
 abstract : false
 
 title: 
-    en: Cylinder-piston group   ##LOCALIZATION
-    ru: Цилиндро-поршневая группа
+    en: Cylinder-piston group CPG-AEC001  ##LOCALIZATION
+    ru: Цилиндро-поршневая группа CPG-AEC001
 
 description: 
     en: ''   ##LOCALIZATION
-    ru: Поршень с компрессионными и маслосъемными кольцами, которые называются поршневыми кольцами, а также гильза цилиндра.
+    ru: 'Поршень с компрессионными и маслосъемными кольцами, которые называются поршневыми кольцами, а также гильза цилиндра.'
+
+a_forward: 0.02
+
+p_fuel_rate: 0.02
 
 
-base_price: 100
+base_price: 600
 
 inv_icon_big: static/content/items/slot_item/mechanic_items/engine/cylinder_piston/cylinder_piston_1/big.png
 inv_icon_mid: static/content/items/slot_item/mechanic_items/engine/cylinder_piston/cylinder_piston_1/mid.png
