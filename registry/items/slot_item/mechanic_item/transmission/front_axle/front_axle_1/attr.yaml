@@ -1,17 +1,25 @@
 _cls : MechanicItem
-doc      : Полуоси (перед)
+doc      : Полуоси FSA-001 (перед)
 abstract : false
 
 title: 
-    en: Semiaxis (front)   ##LOCALIZATION
-    ru: Полуоси (перед)
+    en: Semiaxis FSA-001 (front)   ##LOCALIZATION
+    ru: Полуоси FSA-001 (перед)
 
 description: 
     en: ''   ##LOCALIZATION
-    ru: Деталь машины, предназначенная для передачи вращающего момента и восприятия действующих сил со стороны расположенных на нём деталей и опор.
+    ru: 'Деталь машины, предназначенная для передачи вращающего момента и восприятия действующих сил со стороны расположенных на нём деталей и опор.'
 
+# Плюсы
+r_cc_dirt: 0.04
+r_cc_wood: 0.04
+r_cc_slope: 0.04
+r_cc_water: 0.04
 
-base_price: 100
+# Минусы
+r_min: 0.04
+
+base_price: 750
 
 inv_icon_big: static/content/items/slot_item/mechanic_items/transmission/front_axle/front_axle_1/big.png
 inv_icon_mid: static/content/items/slot_item/mechanic_items/transmission/front_axle/front_axle_1/mid.png

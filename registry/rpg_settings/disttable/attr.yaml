@@ -86,3 +86,60 @@ table:
   - town1: reg:///registry/poi/locations/towns/tartron_parts
     town2: reg:///registry/poi/locations/towns/adriano_custom
     distance: 25200   # 30 мин
+  - town1: reg:///registry/poi/locations/towns/painted_rock
+    town2: reg:///registry/poi/locations/towns/painted_rock
+    distance: 0   # 30 мин
+  - town1: reg:///registry/poi/locations/towns/painted_rock
+    town2: reg:///registry/poi/locations/towns/whitehill
+    distance: 0   # 30 мин
+  - town1: reg:///registry/poi/locations/towns/painted_rock
+    town2: reg:///registry/poi/locations/towns/prior
+    distance: 0   # 30 мин
+  - town1: reg:///registry/poi/locations/towns/painted_rock
+    town2: reg:///registry/poi/locations/towns/paloma
+    distance: 0   # 30 мин
+  - town1: reg:///registry/poi/locations/towns/painted_rock
+    town2: reg:///registry/poi/locations/towns/bonita_vista
+    distance: 0   # 30 мин
+  - town1: reg:///registry/poi/locations/towns/painted_rock
+    town2: reg:///registry/poi/locations/towns/los_jetas
+    distance: 0   # 30 мин
+  - town1: reg:///registry/poi/locations/towns/painted_rock
+    town2: reg:///registry/poi/locations/towns/mine_whitehill
+    distance: 0   # 30 мин
+  - town1: reg:///registry/poi/locations/towns/painted_rock
+    town2: reg:///registry/poi/locations/towns/tartron_parts
+    distance: 0   # 30 мин
+  - town1: reg:///registry/poi/locations/towns/painted_rock
+    town2: reg:///registry/poi/locations/towns/adriano_custom
+    distance: 0   # 30 мин
+  - town1: reg:///registry/poi/locations/towns/luke_war_house
+    town2: reg:///registry/poi/locations/towns/luke_war_house
+    distance: 0   # 30 мин
+  - town1: reg:///registry/poi/locations/towns/luke_war_house
+    town2: reg:///registry/poi/locations/towns/whitehill
+    distance: 0   # 30 мин
+  - town1: reg:///registry/poi/locations/towns/luke_war_house
+    town2: reg:///registry/poi/locations/towns/prior
+    distance: 0   # 30 мин
+  - town1: reg:///registry/poi/locations/towns/luke_war_house
+    town2: reg:///registry/poi/locations/towns/paloma
+    distance: 0   # 30 мин
+  - town1: reg:///registry/poi/locations/towns/luke_war_house
+    town2: reg:///registry/poi/locations/towns/bonita_vista
+    distance: 0   # 30 мин
+  - town1: reg:///registry/poi/locations/towns/luke_war_house
+    town2: reg:///registry/poi/locations/towns/los_jetas
+    distance: 0   # 30 мин
+  - town1: reg:///registry/poi/locations/towns/luke_war_house
+    town2: reg:///registry/poi/locations/towns/mine_whitehill
+    distance: 0   # 30 мин
+  - town1: reg:///registry/poi/locations/towns/luke_war_house
+    town2: reg:///registry/poi/locations/towns/tartron_parts
+    distance: 0   # 30 мин
+  - town1: reg:///registry/poi/locations/towns/luke_war_house
+    town2: reg:///registry/poi/locations/towns/adriano_custom
+    distance: 0   # 30 мин
+  - town1: reg:///registry/poi/locations/towns/luke_war_house
+    town2: reg:///registry/poi/locations/towns/painted_rock
+    distance: 0   # 30 мин

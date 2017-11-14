@@ -32,7 +32,7 @@ class ClassQuestDamageMapWeapon(ClassTypeQuest):
         def on_enter_(self, quest, event):
             quest.dc.quest_note = quest.agent.profile.add_note(
                 quest_uid=quest.uid,
-                note_class=notes.NPCPageNote,
+                note_class=notes.DamageMapWeaponQuestNote,
                 time=event.time,
                 page_caption=quest.locale("q_cq_dmg_map_weapon_finished_page"),  ##LOCALIZATION
                 btn1_caption=quest.locale("q_cq_dmg_map_weapon_finished_btn"),  ##LOCALIZATION

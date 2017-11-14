@@ -1,17 +1,20 @@
 _cls : MechanicItem
-doc      : Сцепление
+doc      : Сцепление CLT-001
 abstract : false
 
 title: 
-    en: Clutch   ##LOCALIZATION
-    ru: Сцепление
+    en: Clutch CLT-001  ##LOCALIZATION
+    ru: Сцепление CLT-001
 
 description: 
     en: ''   ##LOCALIZATION
-    ru: Предназначено для передачи крутящего момента, плавного переключения передач, гашения крутильных колебаний, кратковременного отсоединения трансмиссии от маховика двигателя.
+    ru: 'Предназначено для передачи крутящего момента, плавного переключения передач, гашения крутильных колебаний, кратковременного отсоединения трансмиссии от маховика двигателя.'
 
+a_forward: 0.02
 
-base_price: 100
+p_fuel_rate: 0.02
+
+base_price: 650
 
 inv_icon_big: static/content/items/slot_item/mechanic_items/transmission/clutch/clutch_1/big.png
 inv_icon_mid: static/content/items/slot_item/mechanic_items/transmission/clutch/clutch_1/mid.png

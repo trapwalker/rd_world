@@ -1,4 +1,4 @@
 ﻿_cls : MachineGun
 doc  : Средние пулеметы
 
-power_penetration: 7.5   # Мощность оружия (пробитие)
+#power_penetration: 7.5   # Мощность оружия (пробитие)

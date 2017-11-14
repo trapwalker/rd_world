@@ -88,3 +88,5 @@ slot_t17: ~
 inv_icon_big: static/content/mobiles/cars/middle/vans/03_gmc_savana/inventory/big.png
 inv_icon_mid: static/content/mobiles/cars/middle/vans/03_gmc_savana/inventory/mid.png
 inv_icon_small: static/content/mobiles/cars/middle/vans/03_gmc_savana/inventory/small.png
+
+p_armor: 10

@@ -86,3 +86,5 @@ slot_t17: ~
 inv_icon_big: static/content/mobiles/cars/middle/vans/barkas_b1000kb/inventory/big.png
 inv_icon_mid: static/content/mobiles/cars/middle/vans/barkas_b1000kb/inventory/mid.png
 inv_icon_small: static/content/mobiles/cars/middle/vans/barkas_b1000kb/inventory/small.png
+
+p_armor: 10

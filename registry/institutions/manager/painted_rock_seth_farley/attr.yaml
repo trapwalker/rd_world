@@ -1,0 +1,9 @@
+﻿_cls     : Institution
+title: 
+    en: Seth_Farley
+    ru: Сет_Фарли ##LOCALIZATION
+
+photo    : "static/content/institutions/manager/painted_rock_seth_farley.png"
+abstract : false
+
+hometown : reg:///registry/poi/locations/towns/painted_rock

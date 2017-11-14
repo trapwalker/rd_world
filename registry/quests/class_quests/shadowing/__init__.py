@@ -40,17 +40,25 @@ class ClassQuestShadowing(ClassTypeQuest):
             else:
                 if obj.main_agent.check_visible(agent_car):  # Если цель нас видит
                     self.dc.shadowings[obj_uid] = 0  # Сбрасываем, так как считаем, что нас заметили
-                    # print(u"Псс! Шухер! Нас заметили!")
+                    text = LocalizedString(_id='q_cq_shadowing_break_target').generate(
+                        target_login=obj.main_agent.print_login())  ##LOCALIZATION
+                    self.log(text=text, event=event, game_log_only=True)
                 elif obj not in agent_car.visible_objects:  # если мы потеряли цель
                     del self.dc.shadowings[obj_uid]  # Удаляем слежку
-                    # print(u"Объект потерян!")
+                    text = LocalizedString(_id='q_cq_shadowing_lost_target').generate(
+                        target_login=obj.main_agent.print_login(), game_log_only=True)  ##LOCALIZATION
+                    self.log(text=text, event=event)
                 else:  # Слежка проходит успешно, прибавляем значение интервала
+                    if self.dc.shadowings[obj_uid] == 0:
+                        # print(u"Начнём следить! для {}".format(target.main_agent.uid))
+                        text = LocalizedString(_id='q_cq_shadowing_start_target').generate(
+                            target_login=obj.main_agent.print_login())  ##LOCALIZATION
+                        self.log(text=text, event=event, game_log_only=True)
                     self.dc.shadowings[obj_uid] += self.shadowing_check_interval
                     # Проверить, а не завершена ли слежка
                     if self.dc.shadowings[obj_uid] > self.shadowing_duration: # Слежка завершена
                         self.dc.uids.append(obj.main_agent.uid)
                         del self.dc.shadowings[obj_uid]
-                        # print(u"Слежка совершена! для {}".format(obj.main_agent.uid))
                         text = LocalizedString(_id='q_cq_shadowing_one_template').generate(
                             target_login=obj.main_agent.print_login())  ##LOCALIZATION
                         self.log(text=text, event=event)
@@ -58,7 +66,6 @@ class ClassQuestShadowing(ClassTypeQuest):
         # пройти по всем видимым машинкам, которых мы раньше не видели добавить и начать слежку за ними
         for target in agent_car.visible_objects:
             if isinstance(target, Bot) and target.main_agent.uid not in self.dc.uids and target.uid not in self.dc.shadowings:
-                # print(u"Начнём следить! для {}".format(target.main_agent.uid))
                 self.dc.shadowings[target.uid] = 0
 
 
@@ -67,7 +74,7 @@ class ClassQuestShadowing(ClassTypeQuest):
         def on_enter_(self, quest, event):
             quest.dc.quest_note = quest.agent.profile.add_note(
                 quest_uid=quest.uid,
-                note_class=notes.NPCPageNote,
+                note_class=notes.ShadowingQuestNote,
                 time=event.time,
                 page_caption=quest.locale("q_cq_shadowing_finished_page"),  ##LOCALIZATION
                 btn1_caption=quest.locale("q_cq_shadowing_finished_btn"),  ##LOCALIZATION

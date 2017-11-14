@@ -1,0 +1,23 @@
+_cls : MechanicItem
+doc    : Мотоциклетный распределительный вал
+abstract : false
+
+title: 
+    en: Motorcycle camshaft   ##LOCALIZATION
+    ru: Мотоциклетный распределительный вал
+
+description: 
+    en: ''   ##LOCALIZATION
+    ru: 'Вал двигателя внутреннего сгорания, управляющий открытием и закрытием клапанов двигателя. Подходит для мотоцикла'
+#+
+v_forward: 0.01
+#-
+a_forward: -0.01
+
+
+base_price: 270
+
+inv_icon_big: static/content/items/slot_item/mechanic_items/engine/camshaft/camshaft_1b/big.png
+inv_icon_mid: static/content/items/slot_item/mechanic_items/engine/camshaft/camshaft_1b/mid.png
+inv_icon_small: static/content/items/slot_item/mechanic_items/engine/camshaft/camshaft_1b/small.png
+#inv_icon_supersmall: static/content/items/slot_item/mechanic_items/engine/camshaft/camshaft_1/supersmall.png
