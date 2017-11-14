@@ -19,8 +19,8 @@ buildings:
         ru: Магазин
 
     title: 
-        en: Shop   ##LOCALIZATION
-        ru: Магазин
+        en: Hila Food   ##LOCALIZATION
+        ru: Хила Фуд
 
     head: reg:///registry/institutions/trader/prior_hershey_la_palmas
     instances:
@@ -32,8 +32,8 @@ buildings:
         ru: Бар
 
     title: 
-        en: Bar   ##LOCALIZATION
-        ru: Бар
+        en: Space Age   ##LOCALIZATION
+        ru: Спейс Эйдж
 
     head: reg:///registry/institutions/barman/prior_jimmy_dee
     instances:
@@ -45,8 +45,8 @@ buildings:
         ru: Мотель
 
     title: 
-        en: Motel   ##LOCALIZATION
-        ru: Мотель
+        en: Yukka Motel   ##LOCALIZATION
+        ru: Юкка Мотель
 
     head: reg:///registry/institutions/manager/prior_rita_rain
     instances:
@@ -72,8 +72,8 @@ buildings:
         ru: Автосервис
 
     title: 
-        en: Car service   ##LOCALIZATION
-        ru: Автосервис
+        en: Cliff Truck Customs   ##LOCALIZATION
+        ru: Клифф Трак Кастомс
 
     head: reg:///registry/institutions/manager/prior_cliff_taslima
     instances:
@@ -87,8 +87,8 @@ buildings:
         ru: Паркинг
 
     title: 
-        en: Parking   ##LOCALIZATION
-        ru: Паркинг
+        en: Olympia Steel   ##LOCALIZATION
+        ru: Олимпия Стил
 
     head: reg:///registry/institutions/hangar/prior_clarence_jackson
     instances:
@@ -101,8 +101,8 @@ buildings:
         ru: Радиовышка
 
     title: 
-        en: Radio tower   ##LOCALIZATION
-        ru: Радиовышка
+        en: Hila Band Radio   ##LOCALIZATION
+        ru: Хила Бэнд Радио
 
     head: reg:///registry/institutions/radio_dj/prior_billy_bob_phoenix
     instances: []

@@ -19,8 +19,8 @@ buildings:
         ru: Магазин
 
     title: 
-        en: Shop   ##LOCALIZATION
-        ru: Магазин
+        en: Warehouse   ##LOCALIZATION
+        ru: Склад
 
     head: reg:///registry/institutions/trader/paloma_shaun_fisher
     instances:
@@ -32,8 +32,8 @@ buildings:
         ru: Библиотека
 
     title: 
-        en: Library   ##LOCALIZATION
-        ru: Библиотека
+        en: Control Tower   ##LOCALIZATION
+        ru: КДП
 
     head: reg:///registry/institutions/trainer/paloma_luke_utz
     instances:
@@ -59,8 +59,8 @@ buildings:
         ru: Паркинг
 
     title: 
-        en: Parking   ##LOCALIZATION
-        ru: Паркинг
+        en: Hangars   ##LOCALIZATION
+        ru: Ангары
 
     head: reg:///registry/institutions/hangar/paloma_george_martell
     instances:
@@ -73,8 +73,8 @@ buildings:
         ru: Автосервис
 
     title: 
-        en: Car service   ##LOCALIZATION
-        ru: Автосервис
+        en: Ironwood Service   ##LOCALIZATION
+        ru: Айронвуд Сервис
 
     head: reg:///registry/institutions/manager/paloma_myles_echenique
     instances:
@@ -88,8 +88,8 @@ buildings:
         ru: Бар
 
     title: 
-        en: Bar   ##LOCALIZATION
-        ru: Бар
+        en: Bar Boeing   ##LOCALIZATION
+        ru: Бар Боинг
 
     head: reg:///registry/institutions/barman/paloma_fransie_nolan
     instances:
@@ -103,7 +103,7 @@ buildings:
         ru: Радиовышка
 
     title: 
-        en: Radio tower   ##LOCALIZATION
+        en: Radiotower   ##LOCALIZATION
         ru: Радиовышка
 
     head: reg:///registry/institutions/radio_dj/paloma_tenth
