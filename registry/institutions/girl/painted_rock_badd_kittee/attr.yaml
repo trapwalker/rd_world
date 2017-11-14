@@ -4,10 +4,10 @@ title:
     en: Badd_Kittee
     ru: Бэд_Китти  ##LOCALIZATION
 
-photo    : "static/content/institutions/girl/bonita_vista_badd_kittee.png"
+photo    : "static/content/institutions/girl/painted_rock_badd_kittee.png"
 abstract : false
 
-hometown : reg:///registry/poi/locations/towns/bonita_vista
+hometown : reg:///registry/poi/locations/towns/painted_rock
 
 service_list:
   - title:

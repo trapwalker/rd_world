@@ -1,0 +1,26 @@
+_cls     : MechanicItem
+doc      : АБС SF-M03
+abstract : false
+
+title: 
+    en: ABS SF-M03   ##LOCALIZATION
+    ru: АБС SF-M03
+
+description: 
+    en: ''   ##LOCALIZATION
+    ru: 'Система, предотвращающая блокировку колёс транспортного средства при торможении.'
+
+
+base_price: 800
+
+# Плюсы
+r_min: -0.05
+mobility: 0  # ac_max: 0.02
+
+# Минусы
+a_braking: -0.05
+
+inv_icon_big: static/content/items/slot_item/mechanic_items/brake/abs/07_sf/big.png
+inv_icon_mid: static/content/items/slot_item/mechanic_items/brake/abs/07_sf/mid.png
+inv_icon_small: static/content/items/slot_item/mechanic_items/brake/abs/07_sf/small.png
+#inv_icon_supersmall: static/content/items/slot_item/mechanic_items/brake/abs/07_sf/supersmall.png

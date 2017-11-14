@@ -1,0 +1,26 @@
+_cls     : MechanicItem
+doc      : Пружина (зад) KYB-H02M01
+abstract : false
+
+title: 
+    en: Spring (rear) KYB-H02M01   ##LOCALIZATION
+    ru: Пружина (зад) KYB-H02M01
+
+description: 
+    en: ''   ##LOCALIZATION
+    ru: 'Упругая часть подвески автомобиля, которая обеспечивает кузову нужную высоту, ограждает автомобиль от неровностей дороги, улучшает комфорт и грузоподъемность машины.'
+
+
+base_price: 550
+
+# Плюсы
+p_visibility_min: -0.02
+p_visibility_max: -0.02
+
+# Минусы
+r_min: 0.01
+
+inv_icon_big: static/content/items/slot_item/mechanic_items/suspension/rear_coil/07_kyb/big.png
+inv_icon_mid: static/content/items/slot_item/mechanic_items/suspension/rear_coil/07_kyb/mid.png
+inv_icon_small: static/content/items/slot_item/mechanic_items/suspension/rear_coil/07_kyb/small.png
+inv_icon_supersmall: static/content/items/slot_item/mechanic_items/suspension/rear_coil/07_kyb/supersmall.png

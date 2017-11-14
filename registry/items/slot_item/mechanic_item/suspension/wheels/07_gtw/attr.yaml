@@ -1,0 +1,25 @@
+_cls     : MechanicItem
+doc      : Колесо GT-S02
+abstract : false
+
+title: 
+    en: Wheel GT-S02   ##LOCALIZATION
+    ru: Колесо GT-S02
+
+description: 
+    en: ''   ##LOCALIZATION
+    ru: 'Неотъемлемая часть автомобиля. Совместно с шиной представляет собой движитель колёсного транспортного средства.'
+
+
+base_price: 600
+
+# Плюсы
+v_forward: 0.03
+
+# Минусы
+a_forward: -0.02
+
+inv_icon_big: static/content/items/slot_item/mechanic_items/suspension/wheels/07_gtw/big.png
+inv_icon_mid: static/content/items/slot_item/mechanic_items/suspension/wheels/07_gtw/mid.png
+inv_icon_small: static/content/items/slot_item/mechanic_items/suspension/wheels/07_gtw/small.png
+#inv_icon_supersmall: static/content/items/slot_item/mechanic_items/suspension/wheels/07_gtw/supersmall.png

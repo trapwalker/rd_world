@@ -1,0 +1,23 @@
+_cls     : MechanicItem
+doc      : Свеча зажигания SP-H02
+abstract : false
+
+title: 
+    en: Spark plug SP-H02   ##LOCALIZATION
+    ru: Свеча зажигания SP-H02
+
+description: 
+    en: ''   ##LOCALIZATION
+    ru: 'Устройство для воспламенения топливо-воздушной смеси в самых разнообразных тепловых двигателях.'
+
+
+base_price: 400
+
+# Плюсы
+p_visibility_min: -0.02
+p_visibility_max: -0.02
+
+inv_icon_big: static/content/items/slot_item/mechanic_items/engine/sparkplug/08_sp/big.png
+inv_icon_mid: static/content/items/slot_item/mechanic_items/engine/sparkplug/08_sp/mid.png
+inv_icon_small: static/content/items/slot_item/mechanic_items/engine/sparkplug/08_sp/small.png
+inv_icon_supersmall: static/content/items/slot_item/mechanic_items/engine/sparkplug/08_sp/supersmall.png

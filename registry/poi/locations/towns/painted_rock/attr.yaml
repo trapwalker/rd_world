@@ -19,8 +19,8 @@ buildings:
         ru: Библиотека
 
     title: 
-        en: Library   ##LOCALIZATION
-        ru: Библиотека
+        en: Vaughan Place   ##LOCALIZATION
+        ru: Воган Плейс
 
     head: reg:///registry/institutions/trainer/painted_rock_aidan_vaughan
     instances:
@@ -32,8 +32,8 @@ buildings:
         ru: Магазин
 
     title: 
-        en: Shop   ##LOCALIZATION
-        ru: Магазин
+        en: Fry's Container   ##LOCALIZATION
+        ru: Контейнер Фрая
 
     head: reg:///registry/institutions/trader/painted_rock_sebastian_fry
     instances:
@@ -45,8 +45,8 @@ buildings:
         ru: Паркинг
 
     title: 
-        en: Parking   ##LOCALIZATION
-        ru: Паркинг
+        en: Rose Wheels   ##LOCALIZATION
+        ru: Роуз Вилс
 
     head: reg:///registry/institutions/hangar/painted_rock_rosa_calderon
     instances:
@@ -59,8 +59,8 @@ buildings:
         ru: Мэрия
 
     title: 
-        en: City Hall   ##LOCALIZATION
-        ru: Мэрия
+        en: Fry's Hole   ##LOCALIZATION
+        ru: Нора Фрая
 
     head: reg:///registry/institutions/mayor/painted_rock_samuel_fry
     instances: []
@@ -71,8 +71,8 @@ buildings:
         ru: Автосервис
 
     title: 
-        en: Car service   ##LOCALIZATION
-        ru: Автосервис
+        en: Paint'n'Rock   ##LOCALIZATION
+        ru: Пэйнт-н-Рок
 
     head: reg:///registry/institutions/manager/painted_rock_seth_farley
     instances:
@@ -86,8 +86,8 @@ buildings:
         ru: Бар
 
     title: 
-        en: Bar   ##LOCALIZATION
-        ru: Бар
+        en: Den   ##LOCALIZATION
+        ru: Дэн
 
     head: reg:///registry/institutions/barman/painted_rock_stephanie_pennington
     instances:

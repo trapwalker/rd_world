@@ -1,0 +1,25 @@
+_cls     : MechanicItem
+doc      : Выпускной коллектор ASO-F03
+abstract : false
+
+title: 
+    en: Exhaust manifold ASO-F03   ##LOCALIZATION
+    ru: Выпускной коллектор ASO-F03
+
+description: 
+    en: ''   ##LOCALIZATION
+    ru: 'Выпускной коллектор предназначен для сбора выхлопных газов с нескольких цилиндров в одну трубу.'
+
+base_price: 900
+
+# Плюсы
+p_fuel_rate: -0.05
+
+# Минусы
+p_visibility_min: 0.03
+p_visibility_max: 0.03
+
+inv_icon_big: static/content/items/slot_item/mechanic_items/engine/exhaust/07_aso/big.png
+inv_icon_mid: static/content/items/slot_item/mechanic_items/engine/exhaust/07_aso/mid.png
+inv_icon_small: static/content/items/slot_item/mechanic_items/engine/exhaust/07_aso/small.png
+#inv_icon_supersmall: static/content/items/slot_item/mechanic_items/engine/exhaust/07_aso/supersmall.png
