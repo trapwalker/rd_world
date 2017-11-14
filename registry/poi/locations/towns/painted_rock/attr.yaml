@@ -1,0 +1,123 @@
+﻿_cls     : Town
+doc      : Пэйнтед Рок
+abstract : false
+
+title: 
+    en: Painted Rock   ##LOCALIZATION
+    ru: Пэйнтед Рок
+
+position          : {x: 12475957, y: 27027290}
+p_observing_range : 500
+p_enter_range     : 365
+
+svg_link : static/content/locations/map_locations/painted_rock
+
+buildings:
+  - name: library
+    caption: 
+        en: Library   ##LOCALIZATION
+        ru: Библиотека
+
+    title: 
+        en: Library   ##LOCALIZATION
+        ru: Библиотека
+
+    head: reg:///registry/institutions/trainer/painted_rock_aidan_vaughan
+    instances:
+        - reg:///registry/institutions/trainer/painted_rock_aidan_vaughan
+
+  - name: market
+    caption: 
+        en: Shop   ##LOCALIZATION
+        ru: Магазин
+
+    title: 
+        en: Shop   ##LOCALIZATION
+        ru: Магазин
+
+    head: reg:///registry/institutions/trader/painted_rock_sebastian_fry
+    instances:
+        - reg:///registry/institutions/trader/painted_rock_sebastian_fry
+
+  - name: parking
+    caption: 
+        en: Parking   ##LOCALIZATION
+        ru: Паркинг
+
+    title: 
+        en: Parking   ##LOCALIZATION
+        ru: Паркинг
+
+    head: reg:///registry/institutions/hangar/painted_rock_rosa_calderon
+    instances:
+        - reg:///registry/institutions/hangar/painted_rock_rosa_calderon
+        - reg:///registry/institutions/parking/painted_rock_austin_calderon
+
+  - name: mayor
+    caption: 
+        en: City Hall   ##LOCALIZATION
+        ru: Мэрия
+
+    title: 
+        en: City Hall   ##LOCALIZATION
+        ru: Мэрия
+
+    head: reg:///registry/institutions/mayor/painted_rock_samuel_fry
+    instances: []
+
+  - name: service
+    caption: 
+        en: Car service   ##LOCALIZATION
+        ru: Автосервис
+
+    title: 
+        en: Car service   ##LOCALIZATION
+        ru: Автосервис
+
+    head: reg:///registry/institutions/manager/painted_rock_seth_farley
+    instances:
+        - reg:///registry/institutions/mechanic/painted_rock_dylan_hopper
+        - reg:///registry/institutions/armorer/painted_rock_matt_horne
+        - reg:///registry/institutions/tuner/painted_rock_jesse_rivas
+
+  - name: bar
+    caption: 
+        en: Bar   ##LOCALIZATION
+        ru: Бар
+
+    title: 
+        en: Bar   ##LOCALIZATION
+        ru: Бар
+
+    head: reg:///registry/institutions/barman/painted_rock_stephanie_pennington
+    instances:
+        - reg:///registry/institutions/barman/painted_rock_stephanie_pennington
+        - reg:///registry/institutions/girl/painted_rock_your_emily
+        - reg:///registry/institutions/girl/painted_rock_shelly_belle
+        - reg:///registry/institutions/girl/painted_rock_badd_kittee
+        - reg:///registry/institutions/girl/painted_rock_ava_giles
+
+
+
+static_image_list:
+    - /static/content/locations/map_locations/painted_rock/bar.png
+    - /static/content/locations/map_locations/painted_rock/bar_bg.png
+    - /static/content/locations/map_locations/painted_rock/bar_hover.png
+    - /static/content/locations/map_locations/painted_rock/city_logo.png
+    - /static/content/locations/map_locations/painted_rock/city_logo_hover.png
+    - /static/content/locations/map_locations/painted_rock/ground+circle.png
+    - /static/content/locations/map_locations/painted_rock/library.png
+    - /static/content/locations/map_locations/painted_rock/library_bg.png
+    - /static/content/locations/map_locations/painted_rock/library_hover.png
+    - /static/content/locations/map_locations/painted_rock/market.png
+    - /static/content/locations/map_locations/painted_rock/market_bg.png
+    - /static/content/locations/map_locations/painted_rock/market_hover.png
+    - /static/content/locations/map_locations/painted_rock/parking.png
+    - /static/content/locations/map_locations/painted_rock/parking_bg.png
+    - /static/content/locations/map_locations/painted_rock/parking_hover.png
+    - /static/content/locations/map_locations/painted_rock/mayor.png
+    - /static/content/locations/map_locations/painted_rock/mayor_bg.png
+    - /static/content/locations/map_locations/painted_rock/mayor_hover.png
+    - /static/content/locations/map_locations/painted_rock/service.png
+    - /static/content/locations/map_locations/painted_rock/service_bg.png
+    - /static/content/locations/map_locations/painted_rock/service_hover.png

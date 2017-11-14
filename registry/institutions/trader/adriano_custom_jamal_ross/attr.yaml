@@ -152,7 +152,7 @@ items:
 #  - reg:///registry/items/slot_item/mechanic_item/brake/rear_brakes/rear_brakes_1
 
   # Охлаждение
-#  - reg:///registry/items/slot_item/mechanic_item/cooling/add_radiator/add_radiator_1
+#  - reg:///registry/items/slot_item/mechanic_item/cooling/add_radiator/add_radiator_1iator
 #  - reg:///registry/items/slot_item/mechanic_item/cooling/coolant/coolant_1
 #  - reg:///registry/items/slot_item/mechanic_item/cooling/pump/pump_1
 #  - reg:///registry/items/slot_item/mechanic_item/cooling/radiator/radiator_1

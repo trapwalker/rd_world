@@ -1,17 +1,22 @@
 _cls : MechanicItem
-doc    : Тормозные механизмы (перед)
+doc    : Тормозные механизмы BM-FB01 (перед)
 abstract : false
 
 title: 
-    en: Brakes (front)   ##LOCALIZATION
-    ru: Тормозные механизмы (перед)
+    en: Brakes BM-FB01 (front)   ##LOCALIZATION
+    ru: Тормозные механизмы BM-FB01 (перед)
 
 description: 
     en: ''   ##LOCALIZATION
-    ru: Предназначены для снижения скорости движения и/или остановки транспортного средства или механизма.
+    ru: 'Предназначены для снижения скорости движения и/или остановки транспортного средства или механизма.'
 
+# Плюсы
+a_braking: 0.02
 
-base_price: 100
+# Минусы
+v_forward: -0.01
+
+base_price: 300
 
 inv_icon_big: static/content/items/slot_item/mechanic_items/brake/front_brakes/front_brakes_1/big.png
 inv_icon_mid: static/content/items/slot_item/mechanic_items/brake/front_brakes/front_brakes_1/mid.png

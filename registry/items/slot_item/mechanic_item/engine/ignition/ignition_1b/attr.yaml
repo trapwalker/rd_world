@@ -1,0 +1,20 @@
+_cls : MechanicItem
+doc    : Система зажигания мотоцикла
+abstract : false
+
+title: 
+    en: Motorcycle ignition system   ##LOCALIZATION
+    ru: Система зажигания мотоцикла
+
+description: 
+    en: ''   ##LOCALIZATION
+    ru: Обеспечивает появление электрической искры, воспламеняющей топливовоздушную смесь вцилиндрах двигателя внутреннего сгорания в нужный момент.
+
+a_forward: 0.01
+
+base_price: 250
+
+inv_icon_big: static/content/items/slot_item/mechanic_items/engine/ignition/ignition_1b/big.png
+inv_icon_mid: static/content/items/slot_item/mechanic_items/engine/ignition/ignition_1b/mid.png
+inv_icon_small: static/content/items/slot_item/mechanic_items/engine/ignition/ignition_1b/small.png
+#inv_icon_supersmall: static/content/items/slot_item/mechanic_items/engine/ignition/ignition_1/supersmall.png

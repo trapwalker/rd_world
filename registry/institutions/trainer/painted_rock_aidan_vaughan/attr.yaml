@@ -1,0 +1,10 @@
+﻿_cls     : Trainer
+
+title: 
+    en: Aidan_Vaughan
+    ru: Эйден_Воган ##LOCALIZATION
+
+photo    : "static/content/institutions/trainer/painted_rock_aidan_vaughan.png"
+abstract : false
+
+hometown : reg:///registry/poi/locations/towns/painted_rock

@@ -1,0 +1,10 @@
+﻿_cls: SlotWorker
+
+title: 
+    en: Matt_Horne
+    ru: Мэтт_Хорн  ##LOCALIZATION
+
+photo    : "static/content/institutions/armorer/painted_rock_matt_horne.png"
+abstract : false
+
+hometown : reg:///registry/poi/locations/towns/painted_rock
