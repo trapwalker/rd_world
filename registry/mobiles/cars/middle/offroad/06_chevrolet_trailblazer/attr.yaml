@@ -88,6 +88,6 @@ slot_t15: ~
 slot_t17: ~
 
 # Ссылки на иконки для инвентаря/ангара
-inv_icon_big: static/content/mobiles/cars/middle/offroad/gelandewagen/inventory/big.png
-inv_icon_mid: static/content/mobiles/cars/middle/offroad/gelandewagen/inventory/mid.png
-inv_icon_small: static/content/mobiles/cars/middle/offroad/gelandewagen/inventory/small.png
+inv_icon_big: static/content/mobiles/cars/middle/offroad/06_chevrolet_trailblazer/inventory/big.png
+inv_icon_mid: static/content/mobiles/cars/middle/offroad/06_chevrolet_trailblazer/inventory/mid.png
+inv_icon_small: static/content/mobiles/cars/middle/offroad/06_chevrolet_trailblazer/inventory/small.png

@@ -82,7 +82,7 @@ slot_t15: ~
 slot_t17: ~
 
 # Ссылки на иконки для инвентаря/ангара
-inv_icon_big: static/content/mobiles/cars/middle/sports/04_delorean_dmc_12/inventory/big.png
-inv_icon_mid: static/content/mobiles/cars/middle/sports/04_delorean_dmc_12/inventory/mid.png
-inv_icon_small: static/content/mobiles/cars/middle/sports/04_delorean_dmc_12/inventory/small.png
+inv_icon_big: static/content/mobiles/cars/middle/sports/06_ford_mustang_shelby_gt500/inventory/big.png
+inv_icon_mid: static/content/mobiles/cars/middle/sports/06_ford_mustang_shelby_gt500/inventory/mid.png
+inv_icon_small: static/content/mobiles/cars/middle/sports/06_ford_mustang_shelby_gt500/inventory/small.png
 
