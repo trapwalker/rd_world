@@ -1,5 +1,8 @@
 # -*- coding: utf-8 -*-
 import logging
+
+from setuptools.command.test import test
+
 log = logging.getLogger(__name__)
 
 from sublayers_server.model.registry_me.classes.quests import Quest, QuestState_, WinState
@@ -64,11 +67,19 @@ class GetClassCarQuest(ClassTypeQuest):
                         for candidate in attributes_of_class.car_list:
                             if agent.car.is_ancestor(candidate):
                                 agent.del_note(uid=quest.dc.car_info_note, time=event.time)
+                                quest.npc_replica(
+                                    npc=quest.hirer,
+                                    replica=quest.locale("q_cq_get_car_note_phrase_success"),  ##LOCALIZATION
+                                    event=event
+                                )
                                 quest.go(event=event, new_state="win")
                                 return
+                        text = LocalizedString(_id="q_cq_get_car_not_u_cl").generate(  ##LOCALIZATION
+                            classname=quest.locale(quest.agent.profile.role_class.title),
+                        )
                         quest.npc_replica(
                             npc=quest.hirer,
-                            replica=quest.locale("q_cq_get_car_not_u_cl"),  ##LOCALIZATION
+                            replica=text,
                             event=event
                         )
                     else:

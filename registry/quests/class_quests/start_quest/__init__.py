@@ -143,7 +143,7 @@ class StartQuest(ClassTypeQuest):
                 if npc:
                     # todo: временно убрано
                     # relation = agent.get_relationship(npc=npc)
-                    # if relation < 0.5:
+                    # if relation < 0.6:
                     #     quest.npc_replica(
                     #         npc=npc,
                     #         replica=quest.locale("q_cq_phrase_1"),  ##LOCALIZATION
@@ -168,6 +168,12 @@ class StartQuest(ClassTypeQuest):
 
                         quest.dc.teacher = npc  # Сохраняем выбранного учителя
                         quest.dc.teacher_uri = npc.uri
+
+                        quest.npc_replica(
+                            npc=npc,
+                            replica=quest.locale("q_cq_phrase_success"),  ##LOCALIZATION
+                            event=event
+                        )
 
                         go("win")
                 else:
