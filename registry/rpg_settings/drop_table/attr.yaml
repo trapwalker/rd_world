@@ -299,36 +299,91 @@ table:
 
 
   - item: reg:///registry/items/slot_item/mechanic_item/brake/booster/booster_1
-    level: 4
+    level: 5
     chance: 0.005
   - item: reg:///registry/items/slot_item/mechanic_item/brake/brake_fluid/brake_fluid_1
-    level: 4
+    level: 5
     chance: 0.005
   - item: reg:///registry/items/slot_item/mechanic_item/brake/front_brakes/front_brakes_1
-    level: 4
+    level: 5
     chance: 0.005
   - item: reg:///registry/items/slot_item/mechanic_item/brake/rear_brakes/rear_brakes_1
-    level: 4
+    level: 5
     chance: 0.005
   #brakes
 
 
   - item: reg:///registry/items/slot_item/mechanic_item/cooling/add_radiator/add_radiator_1
-    level: 4
+    level: 6
     chance: 0.005
   - item: reg:///registry/items/slot_item/mechanic_item/cooling/coolant/coolant_1
-    level: 4
+    level: 6
     chance: 0.005
   - item: reg:///registry/items/slot_item/mechanic_item/cooling/pump/pump_1
-    level: 4
+    level: 6
     chance: 0.005
   - item: reg:///registry/items/slot_item/mechanic_item/cooling/radiator/radiator_1
-    level: 4
+    level: 6
     chance: 0.005
   - item: reg:///registry/items/slot_item/mechanic_item/cooling/thermostat/thermostat_1
-    level: 4
+    level: 6
     chance: 0.005
   #coolants
+
+  - item: reg:///registry/items/slot_item/mechanic_item/suspension/front_coil/07_kyf
+    level: 7
+    chance: 0.005
+  - item: reg:///registry/items/slot_item/mechanic_item/suspension/rear_coil/07_kyb
+    level: 7
+    chance: 0.005
+  - item: reg:///registry/items/slot_item/mechanic_item/engine/air_filter/07_tsn
+    level: 7
+    chance: 0.005
+  - item: reg:///registry/items/slot_item/mechanic_item/suspension/front_shock_absorber/07_fsa
+    level: 7
+    chance: 0.005
+  - item: reg:///registry/items/slot_item/mechanic_item/suspension/rear_shock_absorber/07_rsa
+    level: 7
+    chance: 0.005
+  - item: reg:///registry/items/slot_item/mechanic_item/suspension/wheels/07_gtw
+    level: 7
+    chance: 0.005
+  #Level 7 mechanic items
+
+
+  - item: reg:///registry/items/slot_item/mechanic_item/engine/inlet/07_asi
+    level: 8
+    chance: 0.005
+  - item: reg:///registry/items/slot_item/mechanic_item/engine/exhaust/07_aso
+    level: 8
+    chance: 0.005
+  - item: reg:///registry/items/slot_item/mechanic_item/transmission/gearbox/07_jtc
+    level: 8
+    chance: 0.005
+  - item: reg:///registry/items/slot_item/mechanic_item/brake/abs/07_sf
+    level: 8
+    chance: 0.005
+  #Level 8 mechanic items
+
+  - item: reg:///registry/items/slot_item/mechanic_item/cooling/fan/08_eg
+    level: 9
+    chance: 0.005
+  - item: reg:///registry/items/slot_item/mechanic_item/brake/front_brake_pads/08_bpf
+    level: 9
+    chance: 0.005
+  - item: reg:///registry/items/slot_item/mechanic_item/brake/rear_brake_pads/08_bpr
+    level: 9
+    chance: 0.005
+  - item: reg:///registry/items/slot_item/mechanic_item/engine/sparkplug/08_sp
+    level: 9
+    chance: 0.005
+  - item: reg:///registry/items/slot_item/mechanic_item/transmission/primary_shaft/08_ps
+    level: 9
+    chance: 0.005
+  - item: reg:///registry/items/slot_item/mechanic_item/transmission/secondary_shaft/08_ss
+    level: 9
+    chance: 0.005
+  #Level 9 mechanic items
 
   #LIGHT MACHINE GUNS
 

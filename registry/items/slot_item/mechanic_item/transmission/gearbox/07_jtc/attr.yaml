@@ -1,0 +1,26 @@
+_cls     : MechanicItem
+doc      : Коробка передач JTC-M03
+abstract : false
+
+title: 
+    en: Transmission JTC-M03   ##LOCALIZATION
+    ru: Коробка передач JTC-M03
+
+description: 
+    en: ''   ##LOCALIZATION
+    ru: 'Агрегат различных промышленных механизмов и трансмиссий механических транспортных средств, предназначенный для изменения частоты и крутящего момента на ведущих колесах в более широких пределах, чем это может обеспечить двигатель транспортного средства.'
+
+
+base_price: 1000
+
+# Плюсы
+r_min: -0.05
+mobility: 0  # ac_max: 0.02
+
+# Минусы
+p_fuel_rate: 0.05
+
+inv_icon_big: static/content/items/slot_item/mechanic_items/transmission/gearbox/07_jtc/big.png
+inv_icon_mid: static/content/items/slot_item/mechanic_items/transmission/gearbox/07_jtc/mid.png
+inv_icon_small: static/content/items/slot_item/mechanic_items/transmission/gearbox/07_jtc/small.png
+#inv_icon_supersmall: static/content/items/slot_item/mechanic_items/transmission/gearbox/07_jtc/supersmall.png

@@ -125,7 +125,7 @@ class MaskingQuest(ClassTypeQuest):
                 note_class=notes.MaskingTurretMapMarkerNote,
                 time=event.time,
                 position=turret_position,
-                radius=400
+                radius=turret_example.p_observing_range,
             )
             # Время жизни тайника 8 часов
             quest.set_timer(event=event, name='deadline_masking_point', delay=28800)

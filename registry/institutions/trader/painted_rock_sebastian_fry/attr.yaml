@@ -158,6 +158,41 @@ items:
 #  - reg:///registry/items/slot_item/mechanic_item/cooling/radiator/radiator_1
 #  - reg:///registry/items/slot_item/mechanic_item/cooling/thermostat/thermostat_1
 
+  # НОВЫЙ КОНТЕНТ
+  - reg:///registry/items/slot_item/mechanic_item/suspension/front_coil/07_kyf
+  - reg:///registry/items/slot_item/mechanic_item/suspension/rear_coil/07_kyb
+  - reg:///registry/items/slot_item/mechanic_item/engine/air_filter/07_tsn
+  - reg:///registry/items/slot_item/mechanic_item/suspension/front_shock_absorber/07_fsa
+  - reg:///registry/items/slot_item/mechanic_item/suspension/rear_shock_absorber/07_rsa
+  - reg:///registry/items/slot_item/mechanic_item/suspension/wheels/07_gtw
+  - reg:///registry/items/slot_item/mechanic_item/engine/inlet/07_asi
+  - reg:///registry/items/slot_item/mechanic_item/engine/exhaust/07_aso
+  - reg:///registry/items/slot_item/mechanic_item/transmission/gearbox/07_jtc
+  - reg:///registry/items/slot_item/mechanic_item/brake/abs/07_sf
+  - reg:///registry/items/slot_item/mechanic_item/cooling/fan/08_eg
+  - reg:///registry/items/slot_item/mechanic_item/brake/front_brake_pads/08_bpf
+  - reg:///registry/items/slot_item/mechanic_item/brake/rear_brake_pads/08_bpr
+  - reg:///registry/items/slot_item/mechanic_item/engine/sparkplug/08_sp
+  - reg:///registry/items/slot_item/mechanic_item/transmission/primary_shaft/08_ps
+  - reg:///registry/items/slot_item/mechanic_item/transmission/secondary_shaft/08_ss
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   # ДЛЯ СТИЛИСТА
  # - reg:///registry/items/slot_item/tuner_item/shnork/00_shnork_001
  # - reg:///registry/items/slot_item/tuner_item/shnork/00_shnork_002
