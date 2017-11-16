@@ -97,7 +97,7 @@ class MaskingQuest(ClassTypeQuest):
                 if agent_profile._agent_model and agent_profile._agent_model.car and \
                         quest.container_position.is_near(
                             position=agent_profile._agent_model.car.position(time=event.time),
-                            radius=2000,  # турель поместится на карту когда мы подъедим на расстояние 2км
+                            radius=1500,  # турель поместится на карту когда мы подъедим на расстояние 2км
                         ):
                     go("masking")
                 else:
@@ -106,6 +106,8 @@ class MaskingQuest(ClassTypeQuest):
     ####################################################################################################################
     class masking(QuestState_):
         def on_enter_(self, quest, event):
+            quest.log(text='Вы вьезжаете в опасную область. Снизьте скорость ниже 20 км/ч!', event=event,
+                      game_log_only=True)
             quest.init_container()
 
             # Создаем турель
@@ -135,7 +137,6 @@ class MaskingQuest(ClassTypeQuest):
         def on_event_(self, quest, event):
             go = partial(quest.go, event=event)
             agent_profile = quest.agent.profile
-
             # Если вышло 8 часов или нас убили, то начать с начала
             if isinstance(event, OnTimer) and (event.name == 'deadline_masking_point'):
                 turret = event.server.objects.get(quest.dc.turret_uid, None)
