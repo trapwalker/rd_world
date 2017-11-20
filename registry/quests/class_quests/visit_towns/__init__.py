@@ -56,9 +56,12 @@ class ClassQuestVisitTowns(ClassTypeQuest):
                     quest.agent.profile.del_note(uid=quest.dc.visited_note, time=event.time)
                     quest.go(event=event, new_state="win")  # Все города посещены!
                 else:
+                    text = LocalizedString(_id="q_cq_visit_towns_replica_not_finish").generate(  ##LOCALIZATION
+                        towns_left=len(quest.towns) - len(quest.dc.visited_towns.keys()),
+                    )
                     quest.npc_replica(
                         npc=quest.hirer,
-                        replica=quest.locale("q_cq_visit_towns_replica_not_finish"),  ##LOCALIZATION
+                        replica=text,
                         event=event
                     )
 
@@ -70,6 +73,11 @@ class ClassQuestVisitTowns(ClassTypeQuest):
     ####################################################################################################################
     class win(WinState):
         def on_enter_(self, quest, event):
+            quest.npc_replica(
+                npc=quest.hirer,
+                replica=quest.locale("q_cq_visit_towns_phrase_success"),  ##LOCALIZATION
+                event=event
+            )
             quest.log(text=quest.locale("q_cq_visit_towns_finished"), event=event)  ##LOCALIZATION
             agent_example = quest.agent
             new_quest = quest.next_quest.instantiate(abstract=False, hirer=quest.hirer)

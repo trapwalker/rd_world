@@ -15,3 +15,4 @@ towns:  # Города, которые нужно посетить
   - reg:///registry/poi/locations/towns/prior
   - reg:///registry/poi/locations/towns/whitehill
   - reg:///registry/poi/locations/towns/bonita_vista
+  - reg:///registry/poi/locations/towns/painted_rock

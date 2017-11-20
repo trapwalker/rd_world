@@ -103,6 +103,12 @@ class MaskingQuest(ClassTypeQuest):
                 else:
                     quest.set_timer(event=event, name='test_masking_point_begin', delay=10)
 
+            if isinstance(event, OnNote) and (event.note_uid == quest.dc.masking_npc_note):
+                quest.npc_replica(
+                    npc=quest.hirer,
+                    replica=quest.locale("q_cq_masking_replica_not_finish"),  ##LOCALIZATION
+                    event=event
+                )
     ####################################################################################################################
     class masking(QuestState_):
         def on_enter_(self, quest, event):
@@ -180,6 +186,11 @@ class MaskingQuest(ClassTypeQuest):
     ####################################################################################################################
     class win(WinState):
         def on_enter_(self, quest, event):
+            quest.npc_replica(
+                npc=quest.hirer,
+                replica=quest.locale("q_cq_masking_phrase_success"),  ##LOCALIZATION
+                event=event
+            )
             quest.log(text=quest.locale("q_cq_final"), event=event)  ##LOCALIZATION
             agent_example = quest.agent
             new_quest = quest.next_quest.instantiate(abstract=False, hirer=quest.hirer)
