@@ -106,8 +106,7 @@ class MaskingQuest(ClassTypeQuest):
     ####################################################################################################################
     class masking(QuestState_):
         def on_enter_(self, quest, event):
-            quest.log(text='Вы вьезжаете в опасную область. Снизьте скорость ниже 20 км/ч!', event=event,
-                      game_log_only=True)
+            quest.log(text=quest.locale("q_cq_masking_warning"), event=event, game_log_only=True)
             quest.init_container()
 
             # Создаем турель
