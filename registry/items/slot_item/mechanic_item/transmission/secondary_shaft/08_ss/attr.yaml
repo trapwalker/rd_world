@@ -14,13 +14,11 @@ description:
 base_price: 1300
 
 # Плюсы
-r_cc_dirt: 0.05
-r_cc_wood: 0.05
-r_cc_slope: 0.05
-r_cc_water: 0.05
+r_cc_dirt: 0.02
+r_cc_wood: 0.02
+r_cc_slope: 0.02
+r_cc_water: 0.02
 
-# Минусы
-v_forward: -0.03
 
 inv_icon_big: static/content/items/slot_item/mechanic_items/transmission/secondary_shaft/08_ss/big.png
 inv_icon_mid: static/content/items/slot_item/mechanic_items/transmission/secondary_shaft/08_ss/mid.png

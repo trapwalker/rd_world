@@ -17,7 +17,7 @@ base_price: 400
 p_fuel_rate: -0.02
 
 # Минусы
-a_forward: -0.02
+a_forward: -0.01
 
 inv_icon_big: static/content/items/slot_item/mechanic_items/engine/inlet/01_asi/big.png
 inv_icon_mid: static/content/items/slot_item/mechanic_items/engine/inlet/01_asi/mid.png

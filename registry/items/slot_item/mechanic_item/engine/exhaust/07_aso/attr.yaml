@@ -13,7 +13,7 @@ description:
 base_price: 900
 
 # Плюсы
-p_fuel_rate: -0.05
+a_forward: 0.05
 
 # Минусы
 p_visibility_min: 0.03
