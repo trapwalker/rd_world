@@ -1,0 +1,26 @@
+_cls     : MechanicItem
+doc      : Торм. колодки (перед) BPF-B02
+abstract : false
+
+title: 
+    en: Brake pads (front) BPF-B02   ##LOCALIZATION
+    ru: Торм. колодки (перед) BPF-B02
+
+description: 
+    en: ''   ##LOCALIZATION
+    ru: 'Создают тормозное ускорение, за счёт взаимодействия с поверхностью катания колеса или тормозного диска и преобразования силы нажатия в тормозной момент.'
+
+
+base_price: 500
+
+# Плюсы
+a_braking: 0.03
+
+# Минусы
+p_visibility_min: 0.03
+p_visibility_max: 0.03
+
+inv_icon_big: static/content/items/slot_item/mechanic_items/brake/front_brake_pads/08_bpf/big.png
+inv_icon_mid: static/content/items/slot_item/mechanic_items/brake/front_brake_pads/08_bpf/mid.png
+inv_icon_small: static/content/items/slot_item/mechanic_items/brake/front_brake_pads/08_bpf/small.png
+inv_icon_supersmall: static/content/items/slot_item/mechanic_items/brake/front_brake_pads/08_bpf/supersmall.png

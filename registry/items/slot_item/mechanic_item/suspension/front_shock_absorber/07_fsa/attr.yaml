@@ -1,0 +1,25 @@
+_cls     : MechanicItem
+doc      : Амортизатор (перед) KYF-B02
+abstract : false
+
+title: 
+    en: Shock absorber (front) KYF-B02   ##LOCALIZATION
+    ru: Амортизатор (перед) KYF-B02
+
+description: 
+    en: ''   ##LOCALIZATION
+    ru: 'Устройство для гашения колебаний и поглощения толчков и ударов подвижных элементов, а также корпуса самого транспортного средства, посредством превращения механической энергии движения в тепловую.'
+
+
+base_price: 450
+
+# Плюсы
+a_braking: 0.02
+
+# Минусы
+v_forward: -0.01
+
+inv_icon_big: static/content/items/slot_item/mechanic_items/suspension/front_shock_absorber/07_fsa/big.png
+inv_icon_mid: static/content/items/slot_item/mechanic_items/suspension/front_shock_absorber/07_fsa/mid.png
+inv_icon_small: static/content/items/slot_item/mechanic_items/suspension/front_shock_absorber/07_fsa/small.png
+#inv_icon_supersmall: static/content/items/slot_item/mechanic_items/suspension/front_shock_absorber/07_fsa/supersmall.png

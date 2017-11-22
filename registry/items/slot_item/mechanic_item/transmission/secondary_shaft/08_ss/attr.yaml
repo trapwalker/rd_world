@@ -1,0 +1,26 @@
+_cls     : MechanicItem
+doc      : Вторичный вал SS-Z03
+abstract : false
+
+title: 
+    en: Secondary shaft SS-Z03   ##LOCALIZATION
+    ru: Вторичный вал SS-Z03
+
+description: 
+    en: ''   ##LOCALIZATION
+    ru: 'Коленчатый вал двигателя напрямую соединяется через первичный вал со вторичным валом коробки передач и присоединённым к нему карданным валом.'
+
+
+base_price: 1300
+
+# Плюсы
+r_cc_dirt: 0.02
+r_cc_wood: 0.02
+r_cc_slope: 0.02
+r_cc_water: 0.02
+
+
+inv_icon_big: static/content/items/slot_item/mechanic_items/transmission/secondary_shaft/08_ss/big.png
+inv_icon_mid: static/content/items/slot_item/mechanic_items/transmission/secondary_shaft/08_ss/mid.png
+inv_icon_small: static/content/items/slot_item/mechanic_items/transmission/secondary_shaft/08_ss/small.png
+#inv_icon_supersmall: static/content/items/slot_item/mechanic_items/transmission/secondary_shaft/08_ss/supersmall.png

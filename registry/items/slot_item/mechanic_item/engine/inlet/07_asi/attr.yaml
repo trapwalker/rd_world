@@ -1,0 +1,25 @@
+_cls     : MechanicItem
+doc      : Впускной коллектор ASI-F03
+abstract : false
+
+title: 
+    en: Intake manifold ASI-F03   ##LOCALIZATION
+    ru: Впускной коллектор ASI-F03
+
+description: 
+    en: ''   ##LOCALIZATION
+    ru: 'Обеспечивает равномерное распределение воздуха или рабочей смеси между цилиндрами.'
+
+
+base_price: 900
+
+# Плюсы
+p_fuel_rate: -0.05
+
+# Минусы
+a_forward: -0.02
+
+inv_icon_big: static/content/items/slot_item/mechanic_items/engine/inlet/07_asi/big.png
+inv_icon_mid: static/content/items/slot_item/mechanic_items/engine/inlet/07_asi/mid.png
+inv_icon_small: static/content/items/slot_item/mechanic_items/engine/inlet/07_asi/small.png
+#inv_icon_supersmall: static/content/items/slot_item/mechanic_items/engine/inlet/01_asi/supersmall.png

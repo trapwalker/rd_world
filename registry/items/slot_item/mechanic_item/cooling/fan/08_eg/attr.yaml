@@ -1,0 +1,26 @@
+_cls     : MechanicItem
+doc      : Вентилятор EG-S03
+abstract : false
+
+title: 
+    en: Fan EG-S03   ##LOCALIZATION
+    ru: Вентилятор EG-S03
+
+description: 
+    en: ''   ##LOCALIZATION
+    ru: 'Ротор, на котором определенным образом закреплены лопатки, которые при вращении ротора, сталкиваясь с воздухом, отбрасывают его.'
+
+
+base_price: 1100
+
+# Плюсы
+v_forward: 0.05
+
+# Минусы
+p_visibility_min: 0.03
+p_visibility_max: 0.03
+
+inv_icon_big: static/content/items/slot_item/mechanic_items/cooling/fan/08_eg/big.png
+inv_icon_mid: static/content/items/slot_item/mechanic_items/cooling/fan/08_eg/mid.png
+inv_icon_small: static/content/items/slot_item/mechanic_items/cooling/fan/08_eg/small.png
+#inv_icon_supersmall: static/content/items/slot_item/mechanic_items/cooling/fan/08_eg/supersmall.png

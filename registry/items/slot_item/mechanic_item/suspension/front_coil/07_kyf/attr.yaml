@@ -1,0 +1,26 @@
+_cls     : MechanicItem
+doc      : Пружина (перед) KYF-H02M01
+abstract : false
+
+title: 
+    en: Spring (front) KYF-H02M01   ##LOCALIZATION
+    ru: Пружина (перед) KYF-H02M01
+
+description: 
+    en: ''   ##LOCALIZATION
+    ru: 'Упругая часть подвески автомобиля, которая обеспечивает кузову нужную высоту, ограждает автомобиль от неровностей дороги, улучшает комфорт и грузоподъемность машины.'
+
+
+base_price: 550
+
+#Минусы
+p_visibility_min: 0.01
+p_visibility_max: 0.01
+
+#Плюсы
+r_min: -0.02
+
+inv_icon_big: static/content/items/slot_item/mechanic_items/suspension/front_coil/07_kyf/big.png
+inv_icon_mid: static/content/items/slot_item/mechanic_items/suspension/front_coil/07_kyf/mid.png
+inv_icon_small: static/content/items/slot_item/mechanic_items/suspension/front_coil/07_kyf/small.png
+inv_icon_supersmall: static/content/items/slot_item/mechanic_items/suspension/front_coil/07_kyf/supersmall.png
