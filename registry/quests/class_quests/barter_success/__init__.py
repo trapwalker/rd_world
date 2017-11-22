@@ -39,9 +39,13 @@ class ClassQuestBarterCount(ClassTypeQuest):
                 if quest.barters_count <= len(quest.dc.barter_agents):
                     quest.go(event=event, new_state="back_to_teacher")
                 else:
+                    text = LocalizedString(_id="q_cq_barters_replica_not_finish").generate(  ##LOCALIZATION
+                        complete=len(quest.dc.barter_agents),
+                        count=quest.barters_count
+                    )
                     quest.npc_replica(
                         npc=quest.hirer,
-                        replica=quest.locale("q_cq_barters_replica_not_finish"),  ##LOCALIZATION
+                        replica=text,
                         event=event
                     )
 

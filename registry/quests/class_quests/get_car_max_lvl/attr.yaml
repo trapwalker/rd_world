@@ -26,4 +26,4 @@ attributes_by_class:
       next_quest: reg:///registry/quests/class_quests/class_damage_map_weapon/rockets
 
     techno_kinetic:
-      next_quest: reg:///registry/quests/class_quests/class_damage_map_weapon/mines_turrets
+      next_quest: reg:///registry/quests/class_quests/class_set_map_weapon

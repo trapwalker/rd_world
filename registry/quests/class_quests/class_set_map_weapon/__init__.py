@@ -44,9 +44,13 @@ class ClassQuestSetMapWeapon(ClassTypeQuest):
                 if quest.count <= quest.dc.count_done:
                     quest.go(event=event, new_state="back_to_teacher")
                 else:
+                    text = LocalizedString(_id="q_cq_set_map_weapon_replica_not_finish").generate(  ##LOCALIZATION
+                        complete=quest.dc.count_done,
+                        count=quest.count
+                    )
                     quest.npc_replica(
                         npc=quest.hirer,
-                        replica=quest.locale("q_cq_set_map_weapon_replica_not_finish"),  ##LOCALIZATION
+                        replica=text,
                         event=event
                     )
 

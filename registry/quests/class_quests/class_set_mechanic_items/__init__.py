@@ -41,10 +41,13 @@ class ClassQuestSetMechanicItems(ClassTypeQuest):
                     quest.agent.profile.del_note(uid=quest.dc.quest_note, time=event.time)
                     quest.go(event=event, new_state="win")
                 else:
+                    text = LocalizedString(_id="q_cq_mech_items_replica_not_fin").generate(  ##LOCALIZATION
+                        complete=mec_items_len,
+                        count=quest.count_items
+                    )
                     quest.npc_replica(
                         npc=quest.hirer,
-                        replica=LocalizedString(_id='q_cq_mech_items_replica_not_fin').generate(
-                            left=quest.count_items - mec_items_len),  ##LOCALIZATION
+                        replica=text,
                         event=event
                     )
 

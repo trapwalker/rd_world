@@ -41,9 +41,13 @@ class ClassQuestPartyExp(ClassTypeQuest):
                     quest.agent.profile.del_note(uid=quest.dc.quest_note, time=event.time)
                     quest.go(event=event, new_state="win")
                 else:
+                    text = LocalizedString(_id="q_cq_party_exp_replica_not_finish").generate(##LOCALIZATION
+                        xp=quest.dc.exp_summ,
+                        max_exp=quest.exp_value
+                    )
                     quest.npc_replica(
                         npc=quest.hirer,
-                        replica=quest.locale("q_cq_party_exp_replica_not_finish"),  ##LOCALIZATION
+                        replica=text,
                         event=event
                     )
 

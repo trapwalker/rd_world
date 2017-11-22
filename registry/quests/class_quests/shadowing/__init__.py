@@ -88,9 +88,13 @@ class ClassQuestShadowing(ClassTypeQuest):
                 if quest.count <= len(quest.dc.uids):
                     quest.go(event=event, new_state="back_to_teacher")
                 else:
+                    text = LocalizedString(_id="q_cq_shadowing_replica_not_finish").generate(  ##LOCALIZATION
+                        count=quest.count,
+                        complete=len(quest.dc.uids)
+                    )
                     quest.npc_replica(
                         npc=quest.hirer,
-                        replica=quest.locale("q_cq_shadowing_replica_not_finish"),  ##LOCALIZATION
+                        replica=text,
                         event=event
                     )
 
