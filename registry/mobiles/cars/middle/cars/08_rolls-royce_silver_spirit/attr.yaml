@@ -1,54 +1,54 @@
 ﻿_cls : Car
 title:                              # Модель атомобиля
-    en: "Impala"   ##LOCALIZATION
-    ru: "Impala"
+    en: "Silver spirit"   ##LOCALIZATION
+    ru: "Silver spirit"
 
 class_car:                          # Класс автомобиля
     en: "Middle"   ##LOCALIZATION
     ru: "Средний"
-name_car:    "Impala"           # Название атомобиля
+name_car:    "Silver spirit"           # Название атомобиля
 
-price:              27000           # Цена у продавца (л) (>= 0)
-needed_driving:     45              # Требование к прокачке уровня вождения
+price:              25000           # Цена у продавца (л) (>= 0)
+needed_driving:     60              # Требование к прокачке уровня вождения
 
-max_hp:             130          # Максимальное количество прочности (> 0)
-hp:                 130          # Текущее количество прочности (> 0)
+max_hp:             120          # Максимальное количество прочности (> 0)
+hp:                 120          # Текущее количество прочности (> 0)
 
 inventory:                       # При заполнении инвентаря необходимо учитывать его размер
-    size: 18
+    size: 25
     items: []
 
 p_observing_range:     1350      # Радиус обзора автомобиля (м) (>= 0)
 
 p_vigilance:           0         # Коэффициент зоркости (0..1)
-p_visibility_min:      0.2      # Минимальная заметность автомобиля (0..1) при 0 автомобиль невидим
-p_visibility_max:      0.57      # Максимальная заметность автомобиля (0..1) при 0 автомобиль невидим
+p_visibility_min:      0.120      # Минимальная заметность автомобиля (0..1) при 0 автомобиль невидим
+p_visibility_max:      0.45      # Максимальная заметность автомобиля (0..1) при 0 автомобиль невидим
 p_obs_range_rate_min:  0.5       # Коэффициент минимального радиуса обзора автомобиля (0..1)
 p_obs_range_rate_max:  1         # Коэффициент максимального радиуса обзора автомобиля (0..1)
 
-r_min:              6.5            # Минимальный радиус разворота (м) (> 0)
-mobility: 2  # ac_max:             22.5         # Перегрузка с которой входит в поворот автомобиль (м/c^2) (> 0)
-a_forward:          14           # Ускорение при езде вперед (м/c^2)
-a_backward:         6.8           # Ускорение при езде назад (м/c^2)
-a_braking:          14          # Ускорение при торможении (м/c^2)
+r_min:              6            # Минимальный радиус разворота (м) (> 0)
+mobility: 2.2  # ac_max:             22.5         # Перегрузка с которой входит в поворот автомобиль (м/c^2) (> 0)
+a_forward:          17           # Ускорение при езде вперед (м/c^2)
+a_backward:         9           # Ускорение при езде назад (м/c^2)
+a_braking:          17          # Ускорение при торможении (м/c^2)
 
 max_control_speed:  140      # Абсолютная максимальная скорость, скорость до которой будет размечен спидометр (м/с) (>= 0)
-v_forward:          90           # Максимальная скорость без штрафов местности при движении вперед (м/с) (0 .. max_control_speed)
-v_backward:         62        # Максимальная скорость без штрафов местности при движении назад (м/с) (0 .. max_control_speed)
+v_forward:          95           # Максимальная скорость без штрафов местности при движении вперед (м/с) (0 .. max_control_speed)
+v_backward:         65        # Максимальная скорость без штрафов местности при движении назад (м/с) (0 .. max_control_speed)
 
-max_fuel:           60           # Максимальное количество топлива, объем бака (л) (>= 0)
-fuel:               60           # Текущее количество топлива (0 .. max_fuel)
-p_fuel_rate:        0.0090       # Расход топлива, тратится только в движении (л/с) (>= 0)
+max_fuel:           70           # Максимальное количество топлива, объем бака (л) (>= 0)
+fuel:               70           # Текущее количество топлива (0 .. max_fuel)
+p_fuel_rate:        0.0120       # Расход топлива, тратится только в движении (л/с) (>= 0)
 
 # Ссылка на картинку автомобиля в ангаре
-hangar_car:            "static/content/mobiles/cars/middle/cars/09_chevrolet_impala/side.png"
+hangar_car:            "static/content/mobiles/cars/middle/cars/08_rolls-royce_silver_spirit/side.png"
 
 # Ссылки на верстку автомобиля у оружейника
-armorer_car:           static/content/mobiles/cars/middle/cars/09_chevrolet_impala/armorer_car.html
+armorer_car:           static/content/mobiles/cars/middle/cars/08_rolls-royce_silver_spirit/armorer_car.html
 armorer_sectors_svg:   static/content/mobiles/cars/armorer_sectors.svg
 
 # Ссылки на верстку автомобиля у тюнера
-tuner_car:             static/content/mobiles/cars/middle/cars/dodge_challenger/tuner_car.html
+tuner_car:             static/content/mobiles/cars/middle/cars/08_rolls-royce_silver_spirit/tuner_car.html
 
 # Ссылки на верстку автомобиля у механика
 mechanic_engine:        static/content/mechanic_systems/engines/engine_1/engine.html                    # двигатель
@@ -88,6 +88,6 @@ slot_t11: ~
 slot_t12: ~
 
 # Ссылки на иконки для инвентаря/ангара
-inv_icon_big: static/content/mobiles/cars/middle/cars/09_chevrolet_impala/inventory/big.png
-inv_icon_mid: static/content/mobiles/cars/middle/cars/09_chevrolet_impala/inventory/mid.png
-inv_icon_small: static/content/mobiles/cars/middle/cars/09_chevrolet_impala/inventory/small.png
+inv_icon_big: static/content/mobiles/cars/middle/cars/08_rolls-royce_silver_spirit/inventory/big.png
+inv_icon_mid: static/content/mobiles/cars/middle/cars/08_rolls-royce_silver_spirit/mid.png
+inv_icon_small: static/content/mobiles/cars/middle/cars/08_rolls-royce_silver_spirit/inventory/small.png
