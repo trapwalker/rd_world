@@ -4,7 +4,7 @@ first_state: begin
 
 list_icon: static/img/quests/icons/rpg_dice.png
 
-next_quest: reg:///registry/quests/class_quests/class_party_exp
+next_quest: reg:///registry/quests/class_quests/get_car_max_lvl
 
 caption: 
     en: Class quest   ##LOCALIZATION
