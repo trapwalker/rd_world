@@ -55,6 +55,11 @@ class ClassQuestKarmaLimit(ClassTypeQuest):
     ####################################################################################################################
     class win(WinState):
         def on_enter_(self, quest, event):
+            quest.npc_replica(
+                npc=quest.hirer,
+                replica=quest.locale("q_cq_karmic_phrase_success"),  ##LOCALIZATION
+                event=event
+            )
             quest.log(text=quest.locale("q_cq_karmic_finished"), event=event)  ##LOCALIZATION
             agent_example = quest.agent
             new_quest = quest.next_quest.instantiate(abstract=False, hirer=quest.hirer)

@@ -97,7 +97,7 @@ class MaskingQuest(ClassTypeQuest):
                 if agent_profile._agent_model and agent_profile._agent_model.car and \
                         quest.container_position.is_near(
                             position=agent_profile._agent_model.car.position(time=event.time),
-                            radius=1500,  # турель поместится на карту когда мы подъедим на расстояние 2км
+                            radius=1500,  # турель поместится на карту когда мы подъедим на расстояние 1.5км
                         ):
                     go("masking")
                 else:

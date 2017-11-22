@@ -6,16 +6,34 @@ from sublayers_server.model.registry_me.classes.quests import QuestState_, WinSt
 from sublayers_server.model.quest_events import OnNote
 from sublayers_server.model.registry_me.classes import notes
 from functools import partial
-from sublayers_server.model.registry_me.tree import LocalizedString
+from sublayers_server.model.registry_me.tree import LocalizedString, Subdoc, RegistryLinkField, MapField, EmbeddedDocumentField
 
 from sublayers_world.registry.quests.class_quests import ClassTypeQuest
 
 
+
 class GetCarMaxLevelQuest(ClassTypeQuest):
+
+    class RoleClassQuestAttributes(Subdoc):
+        next_quest = RegistryLinkField(
+            caption=u"Прототип классового квеста",
+            document_type='sublayers_server.model.registry_me.classes.quests.Quest',
+            root_default='reg:///registry/quests/class_quests/start_quest'
+        )
+
+    attributes_by_class = MapField(
+        caption=u'Словарь атрибутов',
+        field=EmbeddedDocumentField(document_type=RoleClassQuestAttributes),
+    )
+    ####################################################################################################################
     def init_text(self):
         self.text = LocalizedString(_id="q_cq_get_car_lvl_text")  ##LOCALIZATION
 
     def on_start_(self, event, **kw):
+        role_class = self.agent.profile.role_class
+        class_attrs = self.attributes_by_class.get(role_class.name, None)
+        self.next_quest = class_attrs.next_quest
+
         self.init_text()
         self.log(text=self.locale("q_cq_get_car_lvl_started"), event=event)  ##LOCALIZATION
 
