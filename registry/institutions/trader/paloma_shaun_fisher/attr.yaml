@@ -163,36 +163,38 @@ items:
   - reg:///registry/items/slot_item/tuner_item/shnork/00_shnork_002
   - reg:///registry/items/slot_item/tuner_item/shnork/00_shnork_003
   - reg:///registry/items/slot_item/tuner_item/b_fender/00_b_fender_002
-# - reg:///registry/items/slot_item/tuner_item/b_fender/01_b_fender_004
-#  - reg:///registry/items/slot_item/tuner_item/b_fender/01_b_fender_005
+  - reg:///registry/items/slot_item/tuner_item/b_fender/01_b_fender_004
+  - reg:///registry/items/slot_item/tuner_item/b_fender/01_b_fender_005
   - reg:///registry/items/slot_item/tuner_item/f_fender/00_f_fender_002
-# - reg:///registry/items/slot_item/tuner_item/f_fender/01_f_fender_004
-# - reg:///registry/items/slot_item/tuner_item/f_fender/01_f_fender_005
+  - reg:///registry/items/slot_item/tuner_item/f_fender/01_f_fender_004
+  - reg:///registry/items/slot_item/tuner_item/f_fender/01_f_fender_005
   - reg:///registry/items/slot_item/tuner_item/armor/00_armor_001
   - reg:///registry/items/slot_item/tuner_item/armor/01_armor_002
-  - reg:///registry/items/slot_item/tuner_item/airint/airint_001
-  - reg:///registry/items/slot_item/tuner_item/b_bumper/b_bumper_001
-  - reg:///registry/items/slot_item/tuner_item/b_bumper/b_bumper_002
-  - reg:///registry/items/slot_item/tuner_item/b_bumper/b_bumper_003
-  - reg:///registry/items/slot_item/tuner_item/b_fender/b_fender_001
-  - reg:///registry/items/slot_item/tuner_item/b_fender/b_fender_003
-  - reg:///registry/items/slot_item/tuner_item/bale/bale_001
-  - reg:///registry/items/slot_item/tuner_item/bale/bale_002
+  - reg:///registry/items/slot_item/tuner_item/airint/02_airint_001
+  - reg:///registry/items/slot_item/tuner_item/b_bumper/02_b_bumper_001
+#  - reg:///registry/items/slot_item/tuner_item/b_bumper/b_bumper_002
+#  - reg:///registry/items/slot_item/tuner_item/b_bumper/b_bumper_003
+#  - reg:///registry/items/slot_item/tuner_item/b_fender/b_fender_001
+#  - reg:///registry/items/slot_item/tuner_item/b_fender/b_fender_003
+# - reg:///registry/items/slot_item/tuner_item/bale/bale_001
+#  - reg:///registry/items/slot_item/tuner_item/bale/bale_002
+  - reg:///registry/items/slot_item/tuner_item/bale/02_bale_003
   - reg:///registry/items/slot_item/tuner_item/f_bumper/f_bumper_001
-  - reg:///registry/items/slot_item/tuner_item/f_bumper/f_bumper_002
-  - reg:///registry/items/slot_item/tuner_item/f_bumper/f_bumper_003
-  - reg:///registry/items/slot_item/tuner_item/f_fender/f_fender_001
-  - reg:///registry/items/slot_item/tuner_item/f_fender/f_fender_003
-  - reg:///registry/items/slot_item/tuner_item/glass/glass_001
-  - reg:///registry/items/slot_item/tuner_item/roof/roof_002
-  - reg:///registry/items/slot_item/tuner_item/roof/roof_001
-  - reg:///registry/items/slot_item/tuner_item/step/step_002
-  - reg:///registry/items/slot_item/tuner_item/step/step_003
-  - reg:///registry/items/slot_item/tuner_item/step/step_001
-  - reg:///registry/items/slot_item/tuner_item/trunk/trunk_002
-  - reg:///registry/items/slot_item/tuner_item/trunk/trunk_001
-  - reg:///registry/items/slot_item/tuner_item/win_prot/win_prot_001
-  - reg:///registry/items/slot_item/tuner_item/win_prot/win_prot_002
+#  - reg:///registry/items/slot_item/tuner_item/f_bumper/f_bumper_002
+#  - reg:///registry/items/slot_item/tuner_item/f_bumper/f_bumper_003
+#  - reg:///registry/items/slot_item/tuner_item/f_fender/f_fender_001
+#  - reg:///registry/items/slot_item/tuner_item/f_fender/f_fender_003
+# - reg:///registry/items/slot_item/tuner_item/glass/glass_001
+#  - reg:///registry/items/slot_item/tuner_item/roof/roof_002
+#  - reg:///registry/items/slot_item/tuner_item/roof/roof_001
+#  - reg:///registry/items/slot_item/tuner_item/step/step_002
+  - reg:///registry/items/slot_item/tuner_item/step/02_step_003
+#  - reg:///registry/items/slot_item/tuner_item/step/step_001
+#  - reg:///registry/items/slot_item/tuner_item/trunk/trunk_002
+#  - reg:///registry/items/slot_item/tuner_item/trunk/trunk_001
+#  - reg:///registry/items/slot_item/tuner_item/win_prot/win_prot_001
+#  - reg:///registry/items/slot_item/tuner_item/win_prot/01_win_prot_002
+  - reg:///registry/items/slot_item/tuner_item/win_prot/02_win_prot_003
 
 price_list: # правила завоза
   - item: reg:///registry/items
