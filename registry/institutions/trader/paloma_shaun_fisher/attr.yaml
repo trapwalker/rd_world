@@ -193,7 +193,7 @@ items:
 #  - reg:///registry/items/slot_item/tuner_item/trunk/trunk_002
 #  - reg:///registry/items/slot_item/tuner_item/trunk/trunk_001
 #  - reg:///registry/items/slot_item/tuner_item/win_prot/win_prot_001
-  - reg:///registry/items/slot_item/tuner_item/win_prot/01_win_prot_002
+#  - reg:///registry/items/slot_item/tuner_item/win_prot/01_win_prot_002
   - reg:///registry/items/slot_item/tuner_item/win_prot/02_win_prot_003
 
 price_list: # правила завоза
