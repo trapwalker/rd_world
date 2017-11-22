@@ -88,6 +88,6 @@ slot_t15: ~
 slot_t17: ~
 
 # Ссылки на иконки для инвентаря/ангара
-inv_icon_big: static/content/mobiles/cars/cargo/trucks/07_M939/inventory/big.png
-inv_icon_mid: static/content/mobiles/cars/cargo/trucks/07_M939/inventory/mid.png
-inv_icon_small: static/content/mobiles/cars/cargo/trucks/07_M939/inventory/small.png
+inv_icon_big: static/content/mobiles/cars/cargo/trucks/07_studebaker_us6/inventory/big.png
+inv_icon_mid: static/content/mobiles/cars/cargo/trucks/07_studebaker_us6/inventory/mid.png
+inv_icon_small: static/content/mobiles/cars/cargo/trucks/07_studebaker_us6/inventory/small.png
