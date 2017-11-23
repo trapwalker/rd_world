@@ -63,6 +63,7 @@ group_list:
       # vans
       - reg:///registry/mobiles/cars/middle/vans/03_gmc_savana
 
+
 quests:
   - parent: reg:///registry/quests/delivery_quest/delivery_car   # ПЕРЕГНАТЬ ТРАНСПОРТ
     _cls: DeliveryCar
