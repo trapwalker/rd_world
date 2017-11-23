@@ -69,7 +69,7 @@ class GetCarMaxLevelQuest(ClassTypeQuest):
         def on_enter_(self, quest, event):
             quest.npc_replica(
                 npc=quest.hirer,
-                replica=quest.locale("q_cq_get_car_lvl_phrase_success"),  ##LOCALIZATION
+                replica=quest.locale("q_cq_get_car_lvl_phrase_to_"+quest.agent.profile.role_class.name),  ##LOCALIZATION
                 event=event
             )
             quest.log(text=quest.locale("q_cq_get_car_lvl_finished"), event=event)  # ##LOCALIZATION
