@@ -14,14 +14,12 @@ description:
 base_price: 1300
 
 # Плюсы
-r_cc_dirt: 0.05
-r_cc_wood: 0.05
-r_cc_slope: 0.05
-r_cc_water: 0.05
+r_cc_dirt: 0.02
+r_cc_wood: 0.02
+r_cc_slope: 0.02
+r_cc_water: 0.02
 
-# Минусы
-p_visibility_min: 0.05
-p_visibility_max: 0.05
+
 
 inv_icon_big: static/content/items/slot_item/mechanic_items/transmission/primary_shaft/08_ps/big.png
 inv_icon_mid: static/content/items/slot_item/mechanic_items/transmission/primary_shaft/08_ps/mid.png

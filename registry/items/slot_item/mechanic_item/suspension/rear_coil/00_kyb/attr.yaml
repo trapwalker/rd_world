@@ -13,12 +13,12 @@ description:
 
 base_price: 200
 
-# Плюсы
-p_visibility_min: -0.01
-p_visibility_max: -0.01
+#Минусы
+p_visibility_min: 0.01
+p_visibility_max: 0.01
 
-# Минусы
-r_min: 0.01
+#Плюсы
+r_min: -0.01
 
 inv_icon_big: static/content/items/slot_item/mechanic_items/suspension/rear_coil/00_kyb/big.png
 inv_icon_mid: static/content/items/slot_item/mechanic_items/suspension/rear_coil/00_kyb/mid.png
