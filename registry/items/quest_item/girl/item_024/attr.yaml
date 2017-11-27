@@ -10,7 +10,7 @@ description:
     en: "Penalty: 15 points to Shooting and Driving skills."  ##LOCALIZATION
     ru: "Штраф: 15 очков в навыки Стрельбы и Вождения."
 
-group_id    : ""
+group_id    : "disease"
 
 base_price : 0
 stack_size : 1

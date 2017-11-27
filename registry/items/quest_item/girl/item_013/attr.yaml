@@ -10,7 +10,7 @@ description:
     en: "Bonus: 1 point to Mechanic and Driving skills." ##LOCALIZATION
     ru: "Бонус: 1 очко в навыки Механика и Вождения."
 
-group_id    : ""
+group_id    : "commodity"
 
 base_price : 0
 stack_size : 1

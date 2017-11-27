@@ -354,5 +354,54 @@ price_list: # правила завоза
     price_max: 1.15
     influence: 0.001  # коэф изменения цены при покупке/продаже
 
+quests:
+  - parent: reg:///registry/quests/delivery_quest/delivery_quest_simple   # ДОСТАВКА ГРУЗА А
+    _cls: DeliveryQuestSimple
+    caption:                           # Просто изменение заголовка
+        en: 'Delivery A'   ##LOCALIZATION
+        ru: 'Доставка A'
 
+    generation_group: 'a'          # Подгруппа генерации (не обязательна для разных типов квестов)
+    generation_max_count: 1        # Максимальное количество экземпляров данного квеста
+    generation_cooldown: 1800      # Задержка на генерацию после завершения квеста
+    reward_relation_hirer: 5.0     # Награда в отношение за выполнение
+    karma_coef: 0.0                # Часть кармы от общей награды
+    money_coef: 1.0                # Часть нуокйнов от общей награды
+    total_delivery_money_coef: 0.5 # Множитель общей стоимости награды за квест от стоимости доставляемого товара
+    reward_exp: 150                # Опыт
+    delivery_set_list:             # Список возможных комплектов для доставки
+      -
+        - reg:///registry/items/stuff/alcohol/alcohol_002
+        - reg:///registry/items/stuff/scrap_metal/scrap_metal_001
+    reward_items_list: []          # Список возможных комплектов для награды
+    recipient_list:                # Список возможных получателей доставки
+      - reg:///registry/institutions/mayor/whitehill_manny_askorti
+      - reg:///registry/institutions/trader/whitehill_bob_ferolito
+
+
+  - parent: reg:///registry/quests/delivery_quest/delivery_quest_simple   # ДОСТАВКА ГРУЗА Б
+    _cls: DeliveryQuestSimple
+    caption:                           # Просто изменение заголовка
+        en: 'Delivery B'   ##LOCALIZATION
+        ru: 'Доставка Б'
+
+    generation_group: 'b'          # Подгруппа генерации (не обязательна для разных типов квестов)
+    generation_max_count: 1        # Максимальное количество экземпляров данного квеста
+    generation_cooldown: 600       # Задержка на генерацию после завершения квеста
+    reward_relation_hirer: 5.0     # Награда в отношение за выполнение
+    karma_coef: 0.0                # Часть кармы от общей награды
+    money_coef: 1.0                # Часть нуокйнов от общей награды
+    total_delivery_money_coef: 0.5 # Множитель общей стоимости награды за квест от стоимости доставляемого товара
+    reward_exp: 150                # Опыт
+    delivery_set_list:             # Список возможных комплектов для доставки
+      -
+        - reg:///registry/items/stuff/alcohol/alcohol_002
+        - reg:///registry/items/stuff/canned_cereal/canned_cereal_001
+        - reg:///registry/items/stuff/canned_meat/canned_meat_001
+        - reg:///registry/items/stuff/water/water_002
+    reward_items_list: []          # Список возможных комплектов для награды
+    recipient_list:                # Список возможных получателей доставки
+      - reg:///registry/institutions/trader/paloma_shaun_fisher
+      - reg:///registry/institutions/mayor/bonita_vista_jack_lape
+      - reg:///registry/institutions/trader/bonita_vista_benny_mccurtain
 
