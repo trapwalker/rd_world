@@ -36,9 +36,6 @@ images:
         z_index: 1                                                       # позиция: -1 или 1
 
   - car: reg:///registry/mobiles/cars/middle/vans/citroen_hy      # реестровая ссылка на машинку, для которой подходит данный итем
-    top:                                                                 # описание вида сверху (картинка и позиция)
-        link: static/content/items/slot_item/tuner_item/win_prot/02_win_prot_003/00_citroen_hy/top.png    # ссылка на картику для вида сверху
-        z_index: 1                                                       # позиция: -1 или 1
     side:                                                                # описание вида сбоку (картинка и позиция)
         link: static/content/items/slot_item/tuner_item/win_prot/02_win_prot_003/00_citroen_hy/side.png   # ссылка на картику для вида сбоку
         z_index: 1                                                       # позиция: -1 или 1
@@ -204,39 +201,36 @@ images:
         z_index: 1                                                          # позиция: -1 или 1
 
   - car: reg:///registry/mobiles/cars/cargo/buses/04_gmc_pd_4501_scenicruiser         # реестровая ссылка на машинку, для которой подходит данный итем
-    top:                                                                    # описание вида сверху (картинка и позиция)
-        link: static/content/items/slot_item/tuner_item/win_prot/02_win_prot_003/04_gmc_pd_4501_scenicruiser/top.png    # ссылка на картику для вида сверху
-        z_index: 1                                                          # позиция: -1 или 1
     side:                                                                   # описание вида сбоку (картинка и позиция)
         link: static/content/items/slot_item/tuner_item/win_prot/02_win_prot_003/04_gmc_pd_4501_scenicruiser/side.png   # ссылка на картику для вида сбоку
         z_index: 1                                                          # позиция: -1 или 1
 
    # LVL 05
 
-#  - car: reg:///registry/mobiles/cars/middle/vans/chevrolet_express           # реестровая ссылка на машинку, для которой подходит данный итем
-#    top:                                                                    # описание вида сверху (картинка и позиция)
-#        link: static/content/items/slot_item/tuner_item/win_prot/02_win_prot_003/05_chevrolet_express/top.png    # ссылка на картику для вида сверху
-#        z_index: 1                                                          # позиция: -1 или 1
-#    side:                                                                   # описание вида сбоку (картинка и позиция)
-#        link: static/content/items/slot_item/tuner_item/win_prot/02_win_prot_003/05_chevrolet_express/side.png   # ссылка на картику для вида сбоку
-#        z_index: 1                                                          # позиция: -1 или 1
-#
-#  - car: reg:///registry/mobiles/cars/middle/offroad/defender           # реестровая ссылка на машинку, для которой подходит данный итем
-#    top:                                                                    # описание вида сверху (картинка и позиция)
-#        link: static/content/items/slot_item/tuner_item/win_prot/02_win_prot_003/05_defender/top.png    # ссылка на картику для вида сверху
-#        z_index: 1                                                          # позиция: -1 или 1
-#    side:                                                                   # описание вида сбоку (картинка и позиция)
-#        link: static/content/items/slot_item/tuner_item/win_prot/02_win_prot_003/05_defender/side.png   # ссылка на картику для вида сбоку
-#        z_index: 1                                                          # позиция: -1 или 1
-#
-#  - car: reg:///registry/mobiles/cars/middle/cars/dodge_challenger           # реестровая ссылка на машинку, для которой подходит данный итем
-#    top:                                                                    # описание вида сверху (картинка и позиция)
-#        link: static/content/items/slot_item/tuner_item/win_prot/02_win_prot_003/05_dodge_challenger/top.png    # ссылка на картику для вида сверху
-#        z_index: 1                                                          # позиция: -1 или 1
-#    side:                                                                   # описание вида сбоку (картинка и позиция)
-#        link: static/content/items/slot_item/tuner_item/win_prot/02_win_prot_003/05_dodge_challenger/side.png   # ссылка на картику для вида сбоку
-#        z_index: 1                                                          # позиция: -1 или 1
-#
+  - car: reg:///registry/mobiles/cars/middle/vans/chevrolet_express           # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                                    # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/win_prot/02_win_prot_003/05_chevrolet_express/top.png    # ссылка на картику для вида сверху
+        z_index: 1                                                          # позиция: -1 или 1
+    side:                                                                   # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/win_prot/02_win_prot_003/05_chevrolet_express/side.png   # ссылка на картику для вида сбоку
+        z_index: 1                                                          # позиция: -1 или 1
+
+  - car: reg:///registry/mobiles/cars/middle/offroad/defender           # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                                    # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/win_prot/02_win_prot_003/05_defender/top.png    # ссылка на картику для вида сверху
+        z_index: 1                                                          # позиция: -1 или 1
+    side:                                                                   # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/win_prot/02_win_prot_003/05_defender/side.png   # ссылка на картику для вида сбоку
+        z_index: 1                                                          # позиция: -1 или 1
+
+  - car: reg:///registry/mobiles/cars/middle/cars/dodge_challenger           # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                                    # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/win_prot/02_win_prot_003/05_dodge_challenger/top.png    # ссылка на картику для вида сверху
+        z_index: 1                                                          # позиция: -1 или 1
+    side:                                                                   # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/win_prot/02_win_prot_003/05_dodge_challenger/side.png   # ссылка на картику для вида сбоку
+        z_index: 1                                                          # позиция: -1 или 1
+
 #  - car: reg:///registry/mobiles/cars/cargo/tractors/05_international_9800           # реестровая ссылка на машинку, для которой подходит данный итем
 #    top:                                                                    # описание вида сверху (картинка и позиция)
 #        link: static/content/items/slot_item/tuner_item/win_prot/02_win_prot_003/05_international_9800/top.png    # ссылка на картику для вида сверху
@@ -262,27 +256,21 @@ images:
 #    side:                                                                   # описание вида сбоку (картинка и позиция)
 #        link: static/content/items/slot_item/tuner_item/win_prot/02_win_prot_003/06_ford_mustang_shelby_gt500/side.png   # ссылка на картику для вида сбоку
 #        z_index: 1                                                          # позиция: -1 или 1
-#
-#  - car: reg:///registry/mobiles/cars/middle/offroads/gelandewagen           # реестровая ссылка на машинку, для которой подходит данный итем
-#    top:                                                                    # описание вида сверху (картинка и позиция)
-#        link: static/content/items/slot_item/tuner_item/win_prot/02_win_prot_003/06_gelandewagen/top.png    # ссылка на картику для вида сверху
-#        z_index: 1                                                          # позиция: -1 или 1
-#    side:                                                                   # описание вида сбоку (картинка и позиция)
-#        link: static/content/items/slot_item/tuner_item/win_prot/02_win_prot_003/06_gelandewagen/side.png   # ссылка на картику для вида сбоку
-#        z_index: 1                                                          # позиция: -1 или 1
-#
+
+  - car: reg:///registry/mobiles/cars/middle/offroads/gelandewagen           # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                                    # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/win_prot/02_win_prot_003/06_gelandewagen/top.png    # ссылка на картику для вида сверху
+        z_index: 1                                                          # позиция: -1 или 1
+    side:                                                                   # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/win_prot/02_win_prot_003/06_gelandewagen/side.png   # ссылка на картику для вида сбоку
+        z_index: 1                                                          # позиция: -1 или 1
+
 #  - car: reg:///registry/mobiles/cars/cargo/trucks/06_m-b_unimog_u6           # реестровая ссылка на машинку, для которой подходит данный итем
-#    top:                                                                    # описание вида сверху (картинка и позиция)
-#        link: static/content/items/slot_item/tuner_item/win_prot/02_win_prot_003/06_m-b_unimog_u6/top.png    # ссылка на картику для вида сверху
-#        z_index: 1                                                          # позиция: -1 или 1
 #    side:                                                                   # описание вида сбоку (картинка и позиция)
 #        link: static/content/items/slot_item/tuner_item/win_prot/02_win_prot_003/06_m-b_unimog_u6/side.png   # ссылка на картику для вида сбоку
 #        z_index: 1                                                          # позиция: -1 или 1
 #
 #  - car: reg:///registry/mobiles/cars/cargo/tractors/peterbilt_369           # реестровая ссылка на машинку, для которой подходит данный итем
-#    top:                                                                    # описание вида сверху (картинка и позиция)
-#        link: static/content/items/slot_item/tuner_item/win_prot/02_win_prot_003/06_peterbilt_369/top.png    # ссылка на картику для вида сверху
-#        z_index: 1                                                          # позиция: -1 или 1
 #    side:                                                                   # описание вида сбоку (картинка и позиция)
 #        link: static/content/items/slot_item/tuner_item/win_prot/02_win_prot_003/06_peterbilt_369/side.png   # ссылка на картику для вида сбоку
 #        z_index: 1                                                          # позиция: -1 или 1
@@ -298,17 +286,11 @@ images:
 #        z_index: 1                                                          # позиция: -1 или 1
 #
 #  - car: reg:///registry/mobiles/cars/cargo/buses/07_ford_b800           # реестровая ссылка на машинку, для которой подходит данный итем
-#    top:                                                                    # описание вида сверху (картинка и позиция)
-#        link: static/content/items/slot_item/tuner_item/win_prot/02_win_prot_003/07_ford_b800/top.png    # ссылка на картику для вида сверху
-#        z_index: 1                                                          # позиция: -1 или 1
 #    side:                                                                   # описание вида сбоку (картинка и позиция)
 #        link: static/content/items/slot_item/tuner_item/win_prot/02_win_prot_003/07_ford_b800/side.png   # ссылка на картику для вида сбоку
 #        z_index: 1                                                          # позиция: -1 или 1
 #
 #  - car: reg:///registry/mobiles/cars/cargo/trucks/07_m_939           # реестровая ссылка на машинку, для которой подходит данный итем
-#    top:                                                                    # описание вида сверху (картинка и позиция)
-#        link: static/content/items/slot_item/tuner_item/win_prot/02_win_prot_003/07_m_939/top.png    # ссылка на картику для вида сверху
-#        z_index: 1                                                          # позиция: -1 или 1
 #    side:                                                                   # описание вида сбоку (картинка и позиция)
 #        link: static/content/items/slot_item/tuner_item/win_prot/02_win_prot_003/07_m_939/side.png   # ссылка на картику для вида сбоку
 #        z_index: 1                                                          # позиция: -1 или 1
@@ -322,9 +304,6 @@ images:
 #        z_index: 1                                                          # позиция: -1 или 1
 #
 #  - car: reg:///registry/mobiles/cars/cargo/trucks/07_studebaker_us6           # реестровая ссылка на машинку, для которой подходит данный итем
-#    top:                                                                    # описание вида сверху (картинка и позиция)
-#        link: static/content/items/slot_item/tuner_item/win_prot/02_win_prot_003/07_studebaker_us6/top.png    # ссылка на картику для вида сверху
-#        z_index: 1                                                          # позиция: -1 или 1
 #    side:                                                                   # описание вида сбоку (картинка и позиция)
 #        link: static/content/items/slot_item/tuner_item/win_prot/02_win_prot_003/07_studebaker_us6/side.png   # ссылка на картику для вида сбоку
 #        z_index: 1                                                          # позиция: -1 или 1

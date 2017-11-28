@@ -213,29 +213,29 @@ images:
 
    # LVL 05
 
-#  - car: reg:///registry/mobiles/cars/middle/vans/chevrolet_express           # реестровая ссылка на машинку, для которой подходит данный итем
-#    top:                                                                    # описание вида сверху (картинка и позиция)
-#        link: static/content/items/slot_item/tuner_item/f_fender/01_f_fender_005/05_chevrolet_express/top.png    # ссылка на картику для вида сверху
-#        z_index: 1                                                          # позиция: -1 или 1
-#    side:                                                                   # описание вида сбоку (картинка и позиция)
-#        link: static/content/items/slot_item/tuner_item/f_fender/01_f_fender_005/05_chevrolet_express/side.png   # ссылка на картику для вида сбоку
-#        z_index: 1                                                          # позиция: -1 или 1
-#
-#  - car: reg:///registry/mobiles/cars/middle/offroad/defender           # реестровая ссылка на машинку, для которой подходит данный итем
-#    top:                                                                    # описание вида сверху (картинка и позиция)
-#        link: static/content/items/slot_item/tuner_item/f_fender/01_f_fender_005/05_defender/top.png    # ссылка на картику для вида сверху
-#        z_index: 1                                                          # позиция: -1 или 1
-#    side:                                                                   # описание вида сбоку (картинка и позиция)
-#        link: static/content/items/slot_item/tuner_item/f_fender/01_f_fender_005/05_defender/side.png   # ссылка на картику для вида сбоку
-#        z_index: 1                                                          # позиция: -1 или 1
-#
-#  - car: reg:///registry/mobiles/cars/middle/cars/dodge_challenger           # реестровая ссылка на машинку, для которой подходит данный итем
-#    top:                                                                    # описание вида сверху (картинка и позиция)
-#        link: static/content/items/slot_item/tuner_item/f_fender/01_f_fender_005/05_dodge_challenger/top.png    # ссылка на картику для вида сверху
-#        z_index: 1                                                          # позиция: -1 или 1
-#    side:                                                                   # описание вида сбоку (картинка и позиция)
-#        link: static/content/items/slot_item/tuner_item/f_fender/01_f_fender_005/05_dodge_challenger/side.png   # ссылка на картику для вида сбоку
-#        z_index: 1                                                          # позиция: -1 или 1
+  - car: reg:///registry/mobiles/cars/middle/vans/chevrolet_express           # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                                    # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/f_fender/01_f_fender_005/05_chevrolet_express/top.png    # ссылка на картику для вида сверху
+        z_index: 1                                                          # позиция: -1 или 1
+    side:                                                                   # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/f_fender/01_f_fender_005/05_chevrolet_express/side.png   # ссылка на картику для вида сбоку
+        z_index: 1                                                          # позиция: -1 или 1
+
+  - car: reg:///registry/mobiles/cars/middle/offroad/defender           # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                                    # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/f_fender/01_f_fender_005/05_defender/top.png    # ссылка на картику для вида сверху
+        z_index: 1                                                          # позиция: -1 или 1
+    side:                                                                   # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/f_fender/01_f_fender_005/05_defender/side.png   # ссылка на картику для вида сбоку
+        z_index: 1                                                          # позиция: -1 или 1
+
+  - car: reg:///registry/mobiles/cars/middle/cars/dodge_challenger           # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                                    # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/f_fender/01_f_fender_005/05_dodge_challenger/top.png    # ссылка на картику для вида сверху
+        z_index: 1                                                          # позиция: -1 или 1
+    side:                                                                   # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/f_fender/01_f_fender_005/05_dodge_challenger/side.png   # ссылка на картику для вида сбоку
+        z_index: 1                                                          # позиция: -1 или 1
 
    # LVL 06
 
@@ -254,14 +254,14 @@ images:
 #    side:                                                                   # описание вида сбоку (картинка и позиция)
 #        link: static/content/items/slot_item/tuner_item/f_fender/01_f_fender_005/06_ford_mustang_shelby_gt500/side.png   # ссылка на картику для вида сбоку
 #        z_index: 1                                                          # позиция: -1 или 1
-#
-#  - car: reg:///registry/mobiles/cars/middle/offroads/gelandewagen           # реестровая ссылка на машинку, для которой подходит данный итем
-#    top:                                                                    # описание вида сверху (картинка и позиция)
-#        link: static/content/items/slot_item/tuner_item/f_fender/01_f_fender_005/06_gelandewagen/top.png    # ссылка на картику для вида сверху
-#        z_index: 1                                                          # позиция: -1 или 1
-#    side:                                                                   # описание вида сбоку (картинка и позиция)
-#        link: static/content/items/slot_item/tuner_item/f_fender/01_f_fender_005/06_gelandewagen/side.png   # ссылка на картику для вида сбоку
-#        z_index: 1                                                          # позиция: -1 или 1
+
+  - car: reg:///registry/mobiles/cars/middle/offroads/gelandewagen           # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                                    # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/f_fender/01_f_fender_005/06_gelandewagen/top.png    # ссылка на картику для вида сверху
+        z_index: 1                                                          # позиция: -1 или 1
+    side:                                                                   # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/f_fender/01_f_fender_005/06_gelandewagen/side.png   # ссылка на картику для вида сбоку
+        z_index: 1                                                          # позиция: -1 или 1
 
    # LVL 07
 
@@ -291,14 +291,14 @@ images:
 
    # LVL 08
 
-#  - car: reg:///registry/mobiles/cars/middle/cars/08_audi_200_avant           # реестровая ссылка на машинку, для которой подходит данный итем
-#    top:                                                                    # описание вида сверху (картинка и позиция)
-#        link: static/content/items/slot_item/tuner_item/f_fender/01_f_fender_005/08_audi_200_avant/top.png    # ссылка на картику для вида сверху
-#        z_index: 1                                                          # позиция: -1 или 1
-#    side:                                                                   # описание вида сбоку (картинка и позиция)
-#        link: static/content/items/slot_item/tuner_item/f_fender/01_f_fender_005/08_audi_200_avant/side.png   # ссылка на картику для вида сбоку
-#        z_index: 1                                                          # позиция: -1 или 1
-#
+  - car: reg:///registry/mobiles/cars/middle/cars/08_audi_200_avant           # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                                    # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/f_fender/01_f_fender_005/08_audi_200_avant/top.png    # ссылка на картику для вида сверху
+        z_index: 1                                                          # позиция: -1 или 1
+    side:                                                                   # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/f_fender/01_f_fender_005/08_audi_200_avant/side.png   # ссылка на картику для вида сбоку
+        z_index: 1                                                          # позиция: -1 или 1
+
 #  - car: reg:///registry/mobiles/cars/middle/offroad/08_jeep_grand_cherokee           # реестровая ссылка на машинку, для которой подходит данный итем
 #    top:                                                                    # описание вида сверху (картинка и позиция)
 #        link: static/content/items/slot_item/tuner_item/f_fender/01_f_fender_005/08_jeep_grand_cherokee/top.png    # ссылка на картику для вида сверху
@@ -332,15 +332,15 @@ images:
 #    side:                                                                   # описание вида сбоку (картинка и позиция)
 #        link: static/content/items/slot_item/tuner_item/f_fender/01_f_fender_005/09_bmw_m1_e26/side.png   # ссылка на картику для вида сбоку
 #        z_index: 1                                                          # позиция: -1 или 1
-#
-#  - car: reg:///registry/mobiles/cars/middle/cars/09_chevrolet_impala           # реестровая ссылка на машинку, для которой подходит данный итем
-#    top:                                                                    # описание вида сверху (картинка и позиция)
-#        link: static/content/items/slot_item/tuner_item/f_fender/01_f_fender_005/09_chevrolet_impala/top.png    # ссылка на картику для вида сверху
-#        z_index: 1                                                          # позиция: -1 или 1
-#    side:                                                                   # описание вида сбоку (картинка и позиция)
-#        link: static/content/items/slot_item/tuner_item/f_fender/01_f_fender_005/09_chevrolet_impala/side.png   # ссылка на картику для вида сбоку
-#        z_index: 1                                                          # позиция: -1 или 1
-#
+
+  - car: reg:///registry/mobiles/cars/middle/cars/09_chevrolet_impala           # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                                    # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/f_fender/01_f_fender_005/09_chevrolet_impala/top.png    # ссылка на картику для вида сверху
+        z_index: 1                                                          # позиция: -1 или 1
+    side:                                                                   # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/f_fender/01_f_fender_005/09_chevrolet_impala/side.png   # ссылка на картику для вида сбоку
+        z_index: 1                                                          # позиция: -1 или 1
+
 #  - car: reg:///registry/mobiles/cars/middle/offroad/09_chevrolet_tahoe           # реестровая ссылка на машинку, для которой подходит данный итем
 #    top:                                                                    # описание вида сверху (картинка и позиция)
 #        link: static/content/items/slot_item/tuner_item/f_fender/01_f_fender_005/09_chevrolet_tahoe/top.png    # ссылка на картику для вида сверху
