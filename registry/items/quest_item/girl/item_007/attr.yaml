@@ -10,7 +10,7 @@ description:
     en: "Bonus: 2 points to Barter skill and 2 points to Leadership skill." ##LOCALIZATION
     ru: "Бонус: 2 очка в навык Торговли и 2 очка в навык Лидерства."
 
-group_id    : ""
+group_id    : "panties"
 
 base_price : 0
 stack_size : 1

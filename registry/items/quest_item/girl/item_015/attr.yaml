@@ -10,7 +10,7 @@ description:
     en: "Bonus: 1 point to Barter skill." ##LOCALIZATION
     ru: "Бонус: 1 очко в навык Торговли."
 
-group_id    : ""
+group_id    : "commodity"
 
 base_price : 0
 stack_size : 1

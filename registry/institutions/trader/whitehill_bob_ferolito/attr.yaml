@@ -426,8 +426,8 @@ price_list: # правила завоза
 
   - item: reg:///registry/items/slot_item/mechanic_item
     chance: 0.95      # вероятность в завозе 1 - max
-    count_min: 100    # пределы количества в завозе
-    count_max: 300    # если 0 - бесконечность
+    count_min: 10    # пределы количества в завозе
+    count_max: 30    # если 0 - бесконечность
     price_min: 0.95   # коэф колебаний цены (границы)
     price_max: 1.15
     influence: 0.001  # коэф изменения цены при покупке/продаже
@@ -528,7 +528,7 @@ quests:
     reward_exp: 150                # Опыт
     delivery_set_list:             # Список возможных комплектов для доставки
       -
-        - reg:///registry/items/stuff/alcohol/alcohol_001
+        - reg:///registry/items/stuff/alcohol/alcohol_002
         - reg:///registry/items/stuff/canned_cereal/canned_cereal_001
         - reg:///registry/items/stuff/canned_meat/canned_meat_001
         - reg:///registry/items/stuff/water/water_002
@@ -554,7 +554,7 @@ quests:
     reward_exp: 150                # Опыт
     delivery_set_list:             # Список возможных комплектов для доставки
       -
-        - reg:///registry/items/stuff/alcohol/alcohol_001
+        - reg:///registry/items/stuff/alcohol/alcohol_002
         - reg:///registry/items/stuff/canned_cereal/canned_cereal_001
         - reg:///registry/items/stuff/canned_meat/canned_meat_001
         - reg:///registry/items/stuff/water/water_002

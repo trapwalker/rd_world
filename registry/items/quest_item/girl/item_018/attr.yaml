@@ -10,7 +10,7 @@ description:
     en: "Bonus: 2 points to Shooting skill." ##LOCALIZATION
     ru: "Бонус: 2 очка в навык Стрельбы."
 
-group_id    : ""
+group_id    : "apparel"
 
 base_price : 0
 stack_size : 1

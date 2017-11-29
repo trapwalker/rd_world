@@ -10,7 +10,7 @@ description:
     en: "Bonus: 2 points to Mechanic skill and 2 points to Hiding skill." ##LOCALIZATION
     ru: "Бонус: 2 очка в навык Механика и 2 очка в навык Скрытности."
 
-group_id    : ""
+group_id    : "panties"
 
 base_price : 0
 stack_size : 1
