@@ -10,7 +10,7 @@ description:
     en: "Bonus: 2 points to Mechanic skill and 3 points to Barter skill." ##LOCALIZATION
     ru: "Бонус: 2 очка в навык Механика и 3 очка в навык Торговли."
 
-group_id    : ""
+group_id    : "apparel"
 
 base_price : 0
 stack_size : 1

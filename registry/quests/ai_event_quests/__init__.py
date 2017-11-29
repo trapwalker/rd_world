@@ -82,8 +82,8 @@ class AIEventQuest(Quest):
                     return False  # Если недавно был выдан хоть один подобный квест, то ждать delay_time обязательно!
         return generation_count < self.generation_max_count and self.chance_of_generation >= random.random()
 
-    def _on_end_quest(self, event):
-        super(AIEventQuest, self)._on_end_quest(event=event)
+    def _on_end_quest(self, event, **kw):
+        super(AIEventQuest, self)._on_end_quest(event=event, save_old_quests=False)
         agent_ended_quests = self.agent and self.agent.profile.quests_ended
         if agent_ended_quests is None:
             return

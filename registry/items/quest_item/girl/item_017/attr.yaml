@@ -10,7 +10,7 @@ description:
     en: "Bonus: 2 points to Driving skill." ##LOCALIZATION
     ru: "Бонус: 2 очка в навык Вождения."
 
-group_id    : ""
+group_id    : "apparel"
 
 base_price : 0
 stack_size : 1
