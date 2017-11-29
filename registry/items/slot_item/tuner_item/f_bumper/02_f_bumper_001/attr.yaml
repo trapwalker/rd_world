@@ -301,21 +301,21 @@ images:
         link: static/content/items/slot_item/tuner_item/f_bumper/02_f_bumper_001/05_dodge_challenger/side.png   # ссылка на картику для вида сбоку
         z_index: 1                                                          # позиция: -1 или 1
 
-#  - car: reg:///registry/mobiles/cars/cargo/tractors/international_9800         # реестровая ссылка на машинку, для которой подходит данный итем
-#    top:                                                                    # описание вида сверху (картинка и позиция)
-#        link: static/content/items/slot_item/tuner_item/f_bumper/02_f_bumper_001/02_international_9800/top.png    # ссылка на картику для вида сверху
-#        z_index: 1                                                          # позиция: -1 или 1
-#    side:                                                                   # описание вида сбоку (картинка и позиция)
-#        link: static/content/items/slot_item/tuner_item/f_bumper/02_f_bumper_001/02_international_9800/side.png   # ссылка на картику для вида сбоку
-#        z_index: 1                                                          # позиция: -1 или 1
-#
-#  - car: reg:///registry/mobiles/cars/heavy/btrs/05_m113a1           # реестровая ссылка на машинку, для которой подходит данный итем
-#    top:                                                                    # описание вида сверху (картинка и позиция)
-#        link: static/content/items/slot_item/tuner_item/f_bumper/02_f_bumper_001/05_m113a1/top.png    # ссылка на картику для вида сверху
-#        z_index: 1                                                          # позиция: -1 или 1
-#    side:                                                                   # описание вида сбоку (картинка и позиция)
-#        link: static/content/items/slot_item/tuner_item/f_bumper/02_f_bumper_001/05_m113a1/side.png   # ссылка на картику для вида сбоку
-#        z_index: 1                                                          # позиция: -1 или 1
+  - car: reg:///registry/mobiles/cars/cargo/tractors/international_9800         # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                                    # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/f_bumper/02_f_bumper_001/02_international_9800/top.png    # ссылка на картику для вида сверху
+        z_index: 1                                                          # позиция: -1 или 1
+    side:                                                                   # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/f_bumper/02_f_bumper_001/02_international_9800/side.png   # ссылка на картику для вида сбоку
+        z_index: 1                                                          # позиция: -1 или 1
+
+  - car: reg:///registry/mobiles/cars/heavy/btrs/05_m113a1           # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                                    # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/f_bumper/02_f_bumper_001/05_m113a1/top.png    # ссылка на картику для вида сверху
+        z_index: 1                                                          # позиция: -1 или 1
+    side:                                                                   # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/f_bumper/02_f_bumper_001/05_m113a1/side.png   # ссылка на картику для вида сбоку
+        z_index: 1                                                          # позиция: -1 или 1
 
    # LVL 06
 
@@ -359,15 +359,15 @@ images:
 #    side:                                                                   # описание вида сбоку (картинка и позиция)
 #        link: static/content/items/slot_item/tuner_item/f_bumper/02_f_bumper_001/06_m-b_unimog_u6/side.png   # ссылка на картику для вида сбоку
 #        z_index: 1                                                          # позиция: -1 или 1
-#
-#  - car: reg:///registry/mobiles/cars/cargo/tractors/peterbilt_369           # реестровая ссылка на машинку, для которой подходит данный итем
-#    top:                                                                    # описание вида сверху (картинка и позиция)
-#        link: static/content/items/slot_item/tuner_item/f_bumper/02_f_bumper_001/06_peterbilt_369/top.png    # ссылка на картику для вида сверху
-#        z_index: 1                                                          # позиция: -1 или 1
-#    side:                                                                   # описание вида сбоку (картинка и позиция)
-#        link: static/content/items/slot_item/tuner_item/f_bumper/02_f_bumper_001/06_peterbilt_369/side.png   # ссылка на картику для вида сбоку
-#        z_index: 1                                                          # позиция: -1 или 1
-#
+
+  - car: reg:///registry/mobiles/cars/cargo/tractors/peterbilt_369           # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                                    # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/f_bumper/02_f_bumper_001/06_peterbilt_369/top.png    # ссылка на картику для вида сверху
+        z_index: 1                                                          # позиция: -1 или 1
+    side:                                                                   # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/f_bumper/02_f_bumper_001/06_peterbilt_369/side.png   # ссылка на картику для вида сбоку
+        z_index: 1                                                          # позиция: -1 или 1
+
 #  - car: reg:///registry/mobiles/cars/heavy/armored/06_ba_64b           # реестровая ссылка на машинку, для которой подходит данный итем
 #    top:                                                                    # описание вида сверху (картинка и позиция)
 #        link: static/content/items/slot_item/tuner_item/f_bumper/02_f_bumper_001/06_ba_64b/top.png    # ссылка на картику для вида сверху
@@ -375,14 +375,14 @@ images:
 #    side:                                                                   # описание вида сбоку (картинка и позиция)
 #        link: static/content/items/slot_item/tuner_item/f_bumper/02_f_bumper_001/06_ba_64b/side.png   # ссылка на картику для вида сбоку
 #        z_index: 1                                                          # позиция: -1 или 1
-#
-#  - car: reg:///registry/mobiles/cars/heavy/btrs/06_m1126           # реестровая ссылка на машинку, для которой подходит данный итем
-#    top:                                                                    # описание вида сверху (картинка и позиция)
-#        link: static/content/items/slot_item/tuner_item/f_bumper/02_f_bumper_001/06_m1126/top.png    # ссылка на картику для вида сверху
-#        z_index: 1                                                          # позиция: -1 или 1
-#    side:                                                                   # описание вида сбоку (картинка и позиция)
-#        link: static/content/items/slot_item/tuner_item/f_bumper/02_f_bumper_001/06_m1126/side.png   # ссылка на картику для вида сбоку
-#        z_index: 1                                                          # позиция: -1 или 1
+
+  - car: reg:///registry/mobiles/cars/heavy/btrs/06_m1126           # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                                    # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/f_bumper/02_f_bumper_001/06_m1126/top.png    # ссылка на картику для вида сверху
+        z_index: 1                                                          # позиция: -1 или 1
+    side:                                                                   # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/f_bumper/02_f_bumper_001/06_m1126/side.png   # ссылка на картику для вида сбоку
+        z_index: 1                                                          # позиция: -1 или 1
 
    # LVL 07
 
@@ -402,12 +402,12 @@ images:
 #        link: static/content/items/slot_item/tuner_item/f_bumper/02_f_bumper_001/07_ford_b800/side.png   # ссылка на картику для вида сбоку
 #        z_index: 1                                                          # позиция: -1 или 1
 #
-#  - car: reg:///registry/mobiles/cars/cargo/trucks/07_m_939           # реестровая ссылка на машинку, для которой подходит данный итем
+#  - car: reg:///registry/mobiles/cars/cargo/trucks/07_m939           # реестровая ссылка на машинку, для которой подходит данный итем
 #    top:                                                                    # описание вида сверху (картинка и позиция)
-#        link: static/content/items/slot_item/tuner_item/f_bumper/02_f_bumper_001/07_m_939/top.png    # ссылка на картику для вида сверху
+#        link: static/content/items/slot_item/tuner_item/f_bumper/02_f_bumper_001/07_m939/top.png    # ссылка на картику для вида сверху
 #        z_index: 1                                                          # позиция: -1 или 1
 #    side:                                                                   # описание вида сбоку (картинка и позиция)
-#        link: static/content/items/slot_item/tuner_item/f_bumper/02_f_bumper_001/07_m_939/side.png   # ссылка на картику для вида сбоку
+#        link: static/content/items/slot_item/tuner_item/f_bumper/02_f_bumper_001/07_m939/side.png   # ссылка на картику для вида сбоку
 #        z_index: 1                                                          # позиция: -1 или 1
 #
 #  - car: reg:///registry/mobiles/cars/middle/sports/07_porsche_928           # реестровая ссылка на машинку, для которой подходит данный итем
