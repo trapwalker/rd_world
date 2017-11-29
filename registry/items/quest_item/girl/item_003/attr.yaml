@@ -10,7 +10,7 @@ description:
     en: "Bonus: 5 points to Barter skill."  ##LOCALIZATION
     ru: "Бонус: 5 очков в навык Торговли."
 
-group_id    : ""
+group_id    : "panties"
 
 base_price : 0
 stack_size : 1

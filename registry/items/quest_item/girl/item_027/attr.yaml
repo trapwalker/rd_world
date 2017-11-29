@@ -10,7 +10,7 @@ description:
     en: "Penalty: 10 points to every skill."  ##LOCALIZATION
     ru: "Штраф: 10 очков во все навыки."
 
-group_id    : ""
+group_id    : "disease"
 
 base_price : 0
 stack_size : 1

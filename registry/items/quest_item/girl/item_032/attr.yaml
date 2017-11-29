@@ -10,7 +10,7 @@ description:
     en: "Bonus: 20 points to Hiding skill."  ##LOCALIZATION
     ru: "Бонус: 20 очков в навык Скрытности."
 
-group_id    : ""
+group_id    : "kinky"
 
 base_price : 0
 stack_size : 1

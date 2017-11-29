@@ -10,7 +10,7 @@ description:
     en: "Bonus: 1 point to Shooting and Hiding skills." ##LOCALIZATION
     ru: "Бонус: 1 очко в навыки Стрельбы и Скрытности."
 
-group_id    : ""
+group_id    : "apparel"
 
 base_price : 0
 stack_size : 1

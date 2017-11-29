@@ -10,7 +10,7 @@ description:
     en: "Penalty: 15 points to Mechanic and Hiding skills."  ##LOCALIZATION
     ru: "Штраф: 15 очков в навыки Механика и Скрытности."
 
-group_id    : ""
+group_id    : "disease"
 
 base_price : 0
 stack_size : 1
