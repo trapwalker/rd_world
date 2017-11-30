@@ -477,7 +477,6 @@ quests:
             - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/00_oc_14
     loot_set_list:                 # Список хлама
       -
-        - reg:///registry/items/stuff/alcohol/alcohol_001
         - reg:///registry/items/stuff/alcohol/alcohol_002
         - reg:///registry/items/stuff/canned_cereal/canned_cereal_001
         - reg:///registry/items/stuff/canned_meat/canned_meat_001
