@@ -222,9 +222,4 @@ quests:
       max: 4
 
 
-  - parent: reg:///registry/quests/agent_event_quests/kill_boss   # НАЙТИ И УНИЧТОЖИТЬ
-    _cls: KillBossQuest
-    needed_tags: ['mob_boss', 'whitehill']
-    generation_max_count: 3
-    reward_money: 600              # Награда за 1 убийство
-    reward_karma: 1                # Награда за 1 убийство
+
