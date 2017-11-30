@@ -205,13 +205,13 @@ images:
 #        link: static/content/items/slot_item/tuner_item/airint/02_airint_001/05_dodge_challenger/side.png   # ссылка на картику для вида сбоку
 #        z_index: 1                                                          # позиция: -1 или 1
 #
-#  - car: reg:///registry/mobiles/cars/cargo/tractors/international_9800           # реестровая ссылка на машинку, для которой подходит данный итем
-#    top:                                                                    # описание вида сверху (картинка и позиция)
-#        link: static/content/items/slot_item/tuner_item/airint/02_airint_001/05_international_9800/top.png    # ссылка на картику для вида сверху
-#        z_index: 1                                                          # позиция: -1 или 1
-#    side:                                                                   # описание вида сбоку (картинка и позиция)
-#        link: static/content/items/slot_item/tuner_item/airint/02_airint_001/05_international_9800/side.png   # ссылка на картику для вида сбоку
-#        z_index: 1                                                          # позиция: -1 или 1
+  - car: reg:///registry/mobiles/cars/cargo/tractors/international_9800           # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                                    # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/airint/02_airint_001/05_international_9800/top.png    # ссылка на картику для вида сверху
+        z_index: 1                                                          # позиция: -1 или 1
+    side:                                                                   # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/airint/02_airint_001/05_international_9800/side.png   # ссылка на картику для вида сбоку
+        z_index: 1                                                          # позиция: -1 или 1
 #
    # LVL 06
 #
@@ -231,7 +231,7 @@ images:
 #        link: static/content/items/slot_item/tuner_item/airint/02_airint_001/06_ford_mustang_shelby_gt500/side.png   # ссылка на картику для вида сбоку
 #        z_index: 1                                                          # позиция: -1 или 1
 #
-#  - car: reg:///registry/mobiles/cars/middle/offroads/gelandewagen           # реестровая ссылка на машинку, для которой подходит данный итем
+#  - car: reg:///registry/mobiles/cars/middle/offroad/gelandewagen           # реестровая ссылка на машинку, для которой подходит данный итем
 #    top:                                                                    # описание вида сверху (картинка и позиция)
 #        link: static/content/items/slot_item/tuner_item/airint/02_airint_001/06_gelandewagen/top.png    # ссылка на картику для вида сверху
 #        z_index: 1                                                          # позиция: -1 или 1
@@ -246,15 +246,15 @@ images:
 #    side:                                                                   # описание вида сбоку (картинка и позиция)
 #        link: static/content/items/slot_item/tuner_item/airint/02_airint_001/06_m-b_unimog_u6/side.png   # ссылка на картику для вида сбоку
 #        z_index: 1                                                          # позиция: -1 или 1
-#
-#  - car: reg:///registry/mobiles/cars/cargo/tractors/06_peterbilt_369           # реестровая ссылка на машинку, для которой подходит данный итем
-#    top:                                                                    # описание вида сверху (картинка и позиция)
-#        link: static/content/items/slot_item/tuner_item/airint/02_airint_001/06_peterbilt_369/top.png    # ссылка на картику для вида сверху
-#        z_index: 1                                                          # позиция: -1 или 1
-#    side:                                                                   # описание вида сбоку (картинка и позиция)
-#        link: static/content/items/slot_item/tuner_item/airint/02_airint_001/06_peterbilt_369/side.png   # ссылка на картику для вида сбоку
-#        z_index: 1                                                          # позиция: -1 или 1
-#
+
+  - car: reg:///registry/mobiles/cars/cargo/tractors/peterbilt_369           # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                                    # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/airint/02_airint_001/06_peterbilt_369/top.png    # ссылка на картику для вида сверху
+        z_index: 1                                                          # позиция: -1 или 1
+    side:                                                                   # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/airint/02_airint_001/06_peterbilt_369/side.png   # ссылка на картику для вида сбоку
+        z_index: 1                                                          # позиция: -1 или 1
+
    # LVL 07
 #
 #  - car: reg:///registry/mobiles/cars/cargo/buses/07_ford_b800           # реестровая ссылка на машинку, для которой подходит данный итем
