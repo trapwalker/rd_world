@@ -53,10 +53,10 @@ images:
 
   - car: reg:///registry/mobiles/cars/middle/offroad/ford_f_150      # реестровая ссылка на машинку, для которой подходит данный итем
     top:                                                                 # описание вида сверху (картинка и позиция)
-        link: static/content/items/slot_item/tuner_item/b_fender/01_b_fender_004/ford_f_150/top.png    # ссылка на картику для вида сверху
+        link: static/content/items/slot_item/tuner_item/b_fender/01_b_fender_004/00_ford_f_150/top.png    # ссылка на картику для вида сверху
         z_index: 1                                                       # позиция: -1 или 1
     side:                                                                # описание вида сбоку (картинка и позиция)
-        link: static/content/items/slot_item/tuner_item/b_fender/01_b_fender_004/ford_f_150/side.png   # ссылка на картику для вида сбоку
+        link: static/content/items/slot_item/tuner_item/b_fender/01_b_fender_004/00_ford_f_150/side.png   # ссылка на картику для вида сбоку
         z_index: 1                                                       # позиция: -1 или 1
 
   - car: reg:///registry/mobiles/cars/middle/cars/vw_beetle          # реестровая ссылка на машинку, для которой подходит данный итем
@@ -113,42 +113,42 @@ images:
 
   - car: reg:///registry/mobiles/cars/middle/cars/02_toyota_corolla         # реестровая ссылка на машинку, для которой подходит данный итем
     top:                                                                    # описание вида сверху (картинка и позиция)
-        link: static/content/items/slot_item/tuner_item/b_fender/01_b_fender_004/toyota_corolla/top.png    # ссылка на картику для вида сверху
+        link: static/content/items/slot_item/tuner_item/b_fender/01_b_fender_004/02_toyota_corolla/top.png    # ссылка на картику для вида сверху
         z_index: 1                                                          # позиция: -1 или 1
     side:                                                                   # описание вида сбоку (картинка и позиция)
-        link: static/content/items/slot_item/tuner_item/b_fender/01_b_fender_004/toyota_corolla/side.png   # ссылка на картику для вида сбоку
+        link: static/content/items/slot_item/tuner_item/b_fender/01_b_fender_004/02_toyota_corolla/side.png   # ссылка на картику для вида сбоку
         z_index: 1                                                          # позиция: -1 или 1
 
   - car: reg:///registry/mobiles/cars/middle/cars/02_chevrolet_monte_carlo   # реестровая ссылка на машинку, для которой подходит данный итем
     top:                                                                     # описание вида сверху (картинка и позиция)
-        link: static/content/items/slot_item/tuner_item/b_fender/01_b_fender_004/chevrolet_monte_carlo/top.png    # ссылка на картику для вида сверху
+        link: static/content/items/slot_item/tuner_item/b_fender/01_b_fender_004/02_chevrolet_monte_carlo/top.png    # ссылка на картику для вида сверху
         z_index: 1                                                           # позиция: -1 или 1
     side:                                                                    # описание вида сбоку (картинка и позиция)
-        link: static/content/items/slot_item/tuner_item/b_fender/01_b_fender_004/chevrolet_monte_carlo/side.png   # ссылка на картику для вида сбоку
+        link: static/content/items/slot_item/tuner_item/b_fender/01_b_fender_004/02_chevrolet_monte_carlo/side.png   # ссылка на картику для вида сбоку
         z_index: 1                                                           # позиция: -1 или 1
 
   - car: reg:///registry/mobiles/cars/middle/sports/02_alfa_romeo_75 # реестровая ссылка на машинку, для которой подходит данный итем
     top:                                                             # описание вида сверху (картинка и позиция)
-        link: static/content/items/slot_item/tuner_item/b_fender/01_b_fender_004/alfa_romeo_75/top.png  # ссылка на картику для вида сверху
+        link: static/content/items/slot_item/tuner_item/b_fender/01_b_fender_004/02_alfa_romeo_75/top.png  # ссылка на картику для вида сверху
         z_index: 1                                                   # позиция: -1 или 1
     side:                                                            # описание вида сбоку (картинка и позиция)
-        link: static/content/items/slot_item/tuner_item/b_fender/01_b_fender_004/alfa_romeo_75/side.png # ссылка на картику для вида сбоку
+        link: static/content/items/slot_item/tuner_item/b_fender/01_b_fender_004/02_alfa_romeo_75/side.png # ссылка на картику для вида сбоку
         z_index: 1                                                   # позиция: -1 или 1
 
   - car: reg:///registry/mobiles/cars/middle/offroad/02_ford_bronco         # реестровая ссылка на машинку, для которой подходит данный итем
     top:                                                                    # описание вида сверху (картинка и позиция)
-        link: static/content/items/slot_item/tuner_item/b_fender/01_b_fender_004/ford_bronco/top.png    # ссылка на картику для вида сверху
+        link: static/content/items/slot_item/tuner_item/b_fender/01_b_fender_004/02_ford_bronco/top.png    # ссылка на картику для вида сверху
         z_index: 1                                                          # позиция: -1 или 1
     side:                                                                   # описание вида сбоку (картинка и позиция)
-        link: static/content/items/slot_item/tuner_item/b_fender/01_b_fender_004/ford_bronco/side.png   # ссылка на картику для вида сбоку
+        link: static/content/items/slot_item/tuner_item/b_fender/01_b_fender_004/02_ford_bronco/side.png   # ссылка на картику для вида сбоку
         z_index: 1                                                          # позиция: -1 или 1
 
   - car: reg:///registry/mobiles/cars/middle/vans/02_volkswagen_t1_samba         # реестровая ссылка на машинку, для которой подходит данный итем
     top:                                                                    # описание вида сверху (картинка и позиция)
-        link: static/content/items/slot_item/tuner_item/b_fender/01_b_fender_004/volkswagen_t1_samba/top.png    # ссылка на картику для вида сверху
+        link: static/content/items/slot_item/tuner_item/b_fender/01_b_fender_004/02_volkswagen_t1_samba/top.png    # ссылка на картику для вида сверху
         z_index: 1                                                          # позиция: -1 или 1
     side:                                                                   # описание вида сбоку (картинка и позиция)
-        link: static/content/items/slot_item/tuner_item/b_fender/01_b_fender_004/volkswagen_t1_samba/side.png   # ссылка на картику для вида сбоку
+        link: static/content/items/slot_item/tuner_item/b_fender/01_b_fender_004/02_volkswagen_t1_samba/side.png   # ссылка на картику для вида сбоку
         z_index: 1                                                          # позиция: -1 или 1
 
    # LVL 03
@@ -315,12 +315,12 @@ images:
 #        link: static/content/items/slot_item/tuner_item/b_fender/01_b_fender_004/08_jeep_grand_cherokee/side.png   # ссылка на картику для вида сбоку
 #        z_index: 1                                                          # позиция: -1 или 1
 #
-#  - car: reg:///registry/mobiles/cars/middle/cars/08_rolls_roys_silver_spirit           # реестровая ссылка на машинку, для которой подходит данный итем
+#  - car: reg:///registry/mobiles/cars/middle/cars/08_rolls-royce_silver_spirit           # реестровая ссылка на машинку, для которой подходит данный итем
 #    top:                                                                    # описание вида сверху (картинка и позиция)
-#        link: static/content/items/slot_item/tuner_item/b_fender/01_b_fender_004/08_rolls_roys_silver_spirit/top.png    # ссылка на картику для вида сверху
+#        link: static/content/items/slot_item/tuner_item/b_fender/01_b_fender_004/08_rolls-royce_silver_spirit/top.png    # ссылка на картику для вида сверху
 #        z_index: 1                                                          # позиция: -1 или 1
 #    side:                                                                   # описание вида сбоку (картинка и позиция)
-#        link: static/content/items/slot_item/tuner_item/b_fender/01_b_fender_004/08_rolls_roys_silver_spirit/side.png   # ссылка на картику для вида сбоку
+#        link: static/content/items/slot_item/tuner_item/b_fender/01_b_fender_004/08_rolls-royce_silver_spirit/side.png   # ссылка на картику для вида сбоку
 #        z_index: 1                                                          # позиция: -1 или 1
 #
 #  - car: reg:///registry/mobiles/cars/middle/vans/08_toyota_town_ace           # реестровая ссылка на машинку, для которой подходит данный итем

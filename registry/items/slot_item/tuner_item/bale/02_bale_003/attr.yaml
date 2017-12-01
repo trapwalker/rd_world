@@ -53,10 +53,10 @@ images:
 
   - car: reg:///registry/mobiles/cars/middle/offroad/ford_f_150      # реестровая ссылка на машинку, для которой подходит данный итем
     top:                                                                 # описание вида сверху (картинка и позиция)
-        link: static/content/items/slot_item/tuner_item/bale/02_bale_003/ford_f_150/top.png    # ссылка на картику для вида сверху
+        link: static/content/items/slot_item/tuner_item/bale/02_bale_003/00_ford_f_150/top.png    # ссылка на картику для вида сверху
         z_index: 1                                                       # позиция: -1 или 1
     side:                                                                # описание вида сбоку (картинка и позиция)
-        link: static/content/items/slot_item/tuner_item/bale/02_bale_003/ford_f_150/side.png   # ссылка на картику для вида сбоку
+        link: static/content/items/slot_item/tuner_item/bale/02_bale_003/00_ford_f_150/side.png   # ссылка на картику для вида сбоку
         z_index: 1                                                       # позиция: -1 или 1
 
   - car: reg:///registry/mobiles/cars/middle/cars/vw_beetle          # реестровая ссылка на машинку, для которой подходит данный итем
@@ -231,10 +231,10 @@ images:
 
   - car: reg:///registry/mobiles/cars/middle/offroad/defender           # реестровая ссылка на машинку, для которой подходит данный итем
     top:                                                                    # описание вида сверху (картинка и позиция)
-        link: static/content/items/slot_item/tuner_item/f_fender/01_f_fender_005/05_defender/top.png    # ссылка на картику для вида сверху
+        link: static/content/items/slot_item/tuner_item/bale/02_bale_003/05_defender/top.png    # ссылка на картику для вида сверху
         z_index: 1                                                          # позиция: -1 или 1
     side:                                                                   # описание вида сбоку (картинка и позиция)
-        link: static/content/items/slot_item/tuner_item/f_fender/01_f_fender_005/05_defender/side.png   # ссылка на картику для вида сбоку
+        link: static/content/items/slot_item/tuner_item/bale/02_bale_003/05_defender/side.png   # ссылка на картику для вида сбоку
         z_index: 1                                                          # позиция: -1 или 1
 
   - car: reg:///registry/mobiles/cars/middle/cars/dodge_challenger           # реестровая ссылка на машинку, для которой подходит данный итем
@@ -279,14 +279,6 @@ images:
 #    side:                                                                   # описание вида сбоку (картинка и позиция)
 #        link: static/content/items/slot_item/tuner_item/bale/02_bale_003/06_ford_mustang_shelby_gt500/side.png   # ссылка на картику для вида сбоку
 #        z_index: 1                                                          # позиция: -1 или 1
-
-  - car: reg:///registry/mobiles/cars/middle/offroad/gelandewagen           # реестровая ссылка на машинку, для которой подходит данный итем
-    top:                                                                    # описание вида сверху (картинка и позиция)
-        link: static/content/items/slot_item/tuner_item/bale/02_bale_003/06_gelandewagen/top.png    # ссылка на картику для вида сверху
-        z_index: 1                                                          # позиция: -1 или 1
-    side:                                                                   # описание вида сбоку (картинка и позиция)
-        link: static/content/items/slot_item/tuner_item/bale/02_bale_003/06_gelandewagen/side.png   # ссылка на картику для вида сбоку
-        z_index: 1                                                          # позиция: -1 или 1
 
 #  - car: reg:///registry/mobiles/cars/cargo/trucks/06_m-b_unimog_u6           # реестровая ссылка на машинку, для которой подходит данный итем
 #    top:                                                                    # описание вида сверху (картинка и позиция)
@@ -364,12 +356,12 @@ images:
 #        link: static/content/items/slot_item/tuner_item/bale/02_bale_003/08_jeep_grand_cherokee/side.png   # ссылка на картику для вида сбоку
 #        z_index: 1                                                          # позиция: -1 или 1
 #
-#  - car: reg:///registry/mobiles/cars/middle/cars/08_rolls_roys_silver_spirit           # реестровая ссылка на машинку, для которой подходит данный итем
+#  - car: reg:///registry/mobiles/cars/middle/cars/08_rolls-royce_silver_spirit           # реестровая ссылка на машинку, для которой подходит данный итем
 #    top:                                                                    # описание вида сверху (картинка и позиция)
-#        link: static/content/items/slot_item/tuner_item/bale/02_bale_003/08_rolls_roys_silver_spirit/top.png    # ссылка на картику для вида сверху
+#        link: static/content/items/slot_item/tuner_item/bale/02_bale_003/08_rolls-royce_silver_spirit/top.png    # ссылка на картику для вида сверху
 #        z_index: 1                                                          # позиция: -1 или 1
 #    side:                                                                   # описание вида сбоку (картинка и позиция)
-#        link: static/content/items/slot_item/tuner_item/bale/02_bale_003/08_rolls_roys_silver_spirit/side.png   # ссылка на картику для вида сбоку
+#        link: static/content/items/slot_item/tuner_item/bale/02_bale_003/08_rolls-royce_silver_spirit/side.png   # ссылка на картику для вида сбоку
 #        z_index: 1                                                          # позиция: -1 или 1
 #
 #  - car: reg:///registry/mobiles/cars/middle/vans/08_toyota_town_ace           # реестровая ссылка на машинку, для которой подходит данный итем

@@ -37,10 +37,10 @@ images:
 
   - car: reg:///registry/mobiles/cars/middle/offroad/ford_f_150      # реестровая ссылка на машинку, для которой подходит данный итем
     top:                                                                 # описание вида сверху (картинка и позиция)
-        link: static/content/items/slot_item/tuner_item/airint/02_airint_001/ford_f_150/top.png    # ссылка на картику для вида сверху
+        link: static/content/items/slot_item/tuner_item/airint/02_airint_001/00_ford_f_150/top.png    # ссылка на картику для вида сверху
         z_index: 1                                                       # позиция: -1 или 1
     side:                                                                # описание вида сбоку (картинка и позиция)
-        link: static/content/items/slot_item/tuner_item/airint/02_airint_001/ford_f_150/side.png   # ссылка на картику для вида сбоку
+        link: static/content/items/slot_item/tuner_item/airint/02_airint_001/00_ford_f_150/side.png   # ссылка на картику для вида сбоку
         z_index: 1                                                       # позиция: -1 или 1
 
   - car: reg:///registry/mobiles/cars/middle/cars/vw_beetle          # реестровая ссылка на машинку, для которой подходит данный итем
@@ -180,31 +180,31 @@ images:
         z_index: 1                                                          # позиция: -1 или 1
 
    # LVL 05
-#
-#  - car: reg:///registry/mobiles/cars/middle/vans/chevrolet_express           # реестровая ссылка на машинку, для которой подходит данный итем
-#    top:                                                                    # описание вида сверху (картинка и позиция)
-#        link: static/content/items/slot_item/tuner_item/airint/02_airint_001/05_chevrolet_express/top.png    # ссылка на картику для вида сверху
-#        z_index: 1                                                          # позиция: -1 или 1
-#    side:                                                                   # описание вида сбоку (картинка и позиция)
-#        link: static/content/items/slot_item/tuner_item/airint/02_airint_001/05_chevrolet_express/side.png   # ссылка на картику для вида сбоку
-#        z_index: 1                                                          # позиция: -1 или 1
-#
-#  - car: reg:///registry/mobiles/cars/middle/offroad/defender           # реестровая ссылка на машинку, для которой подходит данный итем
-#    top:                                                                    # описание вида сверху (картинка и позиция)
-#        link: static/content/items/slot_item/tuner_item/f_fender/01_f_fender_005/05_defender/top.png    # ссылка на картику для вида сверху
-#        z_index: 1                                                          # позиция: -1 или 1
-#    side:                                                                   # описание вида сбоку (картинка и позиция)
-#        link: static/content/items/slot_item/tuner_item/f_fender/01_f_fender_005/05_defender/side.png   # ссылка на картику для вида сбоку
-#        z_index: 1                                                          # позиция: -1 или 1
-#
-#  - car: reg:///registry/mobiles/cars/middle/cars/dodge_challenger           # реестровая ссылка на машинку, для которой подходит данный итем
-#    top:                                                                    # описание вида сверху (картинка и позиция)
-#        link: static/content/items/slot_item/tuner_item/airint/02_airint_001/05_dodge_challenger/top.png    # ссылка на картику для вида сверху
-#        z_index: 1                                                          # позиция: -1 или 1
-#    side:                                                                   # описание вида сбоку (картинка и позиция)
-#        link: static/content/items/slot_item/tuner_item/airint/02_airint_001/05_dodge_challenger/side.png   # ссылка на картику для вида сбоку
-#        z_index: 1                                                          # позиция: -1 или 1
-#
+
+  - car: reg:///registry/mobiles/cars/middle/vans/chevrolet_express           # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                                    # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/airint/02_airint_001/05_chevrolet_express/top.png    # ссылка на картику для вида сверху
+        z_index: 1                                                          # позиция: -1 или 1
+    side:                                                                   # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/airint/02_airint_001/05_chevrolet_express/side.png   # ссылка на картику для вида сбоку
+        z_index: 1                                                          # позиция: -1 или 1
+
+  - car: reg:///registry/mobiles/cars/middle/offroad/defender           # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                                    # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/f_fender/01_f_fender_005/05_defender/top.png    # ссылка на картику для вида сверху
+        z_index: 1                                                          # позиция: -1 или 1
+    side:                                                                   # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/f_fender/01_f_fender_005/05_defender/side.png   # ссылка на картику для вида сбоку
+        z_index: 1                                                          # позиция: -1 или 1
+
+  - car: reg:///registry/mobiles/cars/middle/cars/dodge_challenger           # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                                    # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/airint/02_airint_001/05_dodge_challenger/top.png    # ссылка на картику для вида сверху
+        z_index: 1                                                          # позиция: -1 или 1
+    side:                                                                   # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/airint/02_airint_001/05_dodge_challenger/side.png   # ссылка на картику для вида сбоку
+        z_index: 1                                                          # позиция: -1 или 1
+
   - car: reg:///registry/mobiles/cars/cargo/tractors/international_9800           # реестровая ссылка на машинку, для которой подходит данный итем
     top:                                                                    # описание вида сверху (картинка и позиция)
         link: static/content/items/slot_item/tuner_item/airint/02_airint_001/05_international_9800/top.png    # ссылка на картику для вида сверху
@@ -249,10 +249,10 @@ images:
 
   - car: reg:///registry/mobiles/cars/cargo/tractors/peterbilt_369           # реестровая ссылка на машинку, для которой подходит данный итем
     top:                                                                    # описание вида сверху (картинка и позиция)
-        link: static/content/items/slot_item/tuner_item/airint/02_airint_001/06_peterbilt_369/top.png    # ссылка на картику для вида сверху
+        link: static/content/items/slot_item/tuner_item/airint/02_airint_001/06_p_369/top.png    # ссылка на картику для вида сверху
         z_index: 1                                                          # позиция: -1 или 1
     side:                                                                   # описание вида сбоку (картинка и позиция)
-        link: static/content/items/slot_item/tuner_item/airint/02_airint_001/06_peterbilt_369/side.png   # ссылка на картику для вида сбоку
+        link: static/content/items/slot_item/tuner_item/airint/02_airint_001/06_p_369/side.png   # ссылка на картику для вида сбоку
         z_index: 1                                                          # позиция: -1 или 1
 
    # LVL 07
@@ -307,12 +307,12 @@ images:
 #        link: static/content/items/slot_item/tuner_item/airint/02_airint_001/08_jeep_grand_cherokee/side.png   # ссылка на картику для вида сбоку
 #        z_index: 1                                                          # позиция: -1 или 1
 #
-#  - car: reg:///registry/mobiles/cars/middle/cars/08_rolls_roys_silver_spirit           # реестровая ссылка на машинку, для которой подходит данный итем
+#  - car: reg:///registry/mobiles/cars/middle/cars/08_rolls-royce_silver_spirit           # реестровая ссылка на машинку, для которой подходит данный итем
 #    top:                                                                    # описание вида сверху (картинка и позиция)
-#        link: static/content/items/slot_item/tuner_item/airint/02_airint_001/08_rolls_roys_silver_spirit/top.png    # ссылка на картику для вида сверху
+#        link: static/content/items/slot_item/tuner_item/airint/02_airint_001/08_rolls-royce_silver_spirit/top.png    # ссылка на картику для вида сверху
 #        z_index: 1                                                          # позиция: -1 или 1
 #    side:                                                                   # описание вида сбоку (картинка и позиция)
-#        link: static/content/items/slot_item/tuner_item/airint/02_airint_001/08_rolls_roys_silver_spirit/side.png   # ссылка на картику для вида сбоку
+#        link: static/content/items/slot_item/tuner_item/airint/02_airint_001/08_rolls-royce_silver_spirit/side.png   # ссылка на картику для вида сбоку
 #        z_index: 1                                                          # позиция: -1 или 1
 #
 #  - car: reg:///registry/mobiles/cars/middle/vans/08_toyota_town_ace           # реестровая ссылка на машинку, для которой подходит данный итем
