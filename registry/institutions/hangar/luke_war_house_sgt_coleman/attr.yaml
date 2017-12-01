@@ -17,3 +17,11 @@ group_list:
     car_list:
       # armored
       - reg:///registry/mobiles/cars/heavy/armored/04_m3a1_scout_car
+
+  - count : 1
+    car_list:
+      - reg:///registry/mobiles/cars/heavy/btrs/05_m113a1
+
+  - count : 1
+    car_list:
+      - reg:///registry/mobiles/cars/heavy/btrs/06_m1126
