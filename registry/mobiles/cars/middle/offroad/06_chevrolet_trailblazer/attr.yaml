@@ -41,14 +41,14 @@ fuel:                  95       # Текущее количество топли
 p_fuel_rate:           0.0090   # Расход топлива, тратится только в движении (л/с) (>= 0)
 
 # Ссылка на картинку автомобиля в ангаре
-hangar_car:            "static/content/mobiles/cars/middle/offroad/gelandewagen/side.png"
+hangar_car:            "static/content/mobiles/cars/middle/offroad/06_chevrolet_trailblazer/side.png"
 
 # Ссылки на верстку автомобиля у оружейника
-armorer_car:           static/content/mobiles/cars/middle/offroad/gelandewagen/armorer_car.html
+armorer_car:           static/content/mobiles/cars/middle/offroad/06_chevrolet_trailblazer/armorer_car.html
 armorer_sectors_svg:   static/content/mobiles/cars/armorer_sectors.svg
 
 # Ссылки на верстку автомобиля у тюнера
-tuner_car:             static/content/mobiles/cars/middle/offroad/gelandewagen/tuner_car.html
+tuner_car:             static/content/mobiles/cars/middle/offroad/06_chevrolet_trailblazer/tuner_car.html
 
 # Ссылки на верстку автомобиля у механика
 mechanic_engine:        static/content/mechanic_systems/engines/engine_1/engine.html                    # двигатель
