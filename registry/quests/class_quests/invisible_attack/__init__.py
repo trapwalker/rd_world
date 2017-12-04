@@ -82,16 +82,22 @@ class ClassQuestInvisibleAttack(ClassTypeQuest):
     ####################################################################################################################
     class win(WinState):
         def on_enter_(self, quest, event):
+            agent_example = quest.agent
+            agent_profile = agent_example.profile
+
+            replica = LocalizedString(_id='q_cq_inv_attack_phrase_success').generate(
+                role_class_name=quest.locale(agent_profile.role_class.title)
+            )
             quest.npc_replica(
                 npc=quest.hirer,
-                replica=quest.locale("q_cq_inv_attack_phrase_success"),  ##LOCALIZATION
+                replica=replica,  ##LOCALIZATION
                 event=event
             )
             quest.log(text=quest.locale("q_cq_inv_attack_finished"), event=event)  ##LOCALIZATION
-            agent_example = quest.agent
+
             new_quest = quest.next_quest.instantiate(abstract=False, hirer=quest.hirer)
             if new_quest.generate(event=event, agent=agent_example):
-                agent_example.profile.add_quest(quest=new_quest, time=event.time)
+                agent_profile.add_quest(quest=new_quest, time=event.time)
                 new_quest.start(server=event.server, time=event.time + 0.1)
             else:
                 del new_quest

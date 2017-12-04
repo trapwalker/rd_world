@@ -19,8 +19,11 @@ class ClassQuestDamageMapWeapon(ClassTypeQuest):
     )
 
     def init_text(self):
+        sub_text = LocalizedString(_id="q_cq_dmg_map_weapon_task_text").generate(
+            role_class_name=self.locale(self.agent.profile.role_class.title)
+        )
         self.text = LocalizedString(_id="q_cq_journal_text").generate(
-            player_name=self.agent.login, task_text=self.locale("q_cq_dmg_map_weapon_task_text"))  ##LOCALIZATION
+            player_name=self.agent.login, task_text=self.locale(sub_text))  ##LOCALIZATION
 
     def on_start_(self, event, **kw):
         self.init_text()
