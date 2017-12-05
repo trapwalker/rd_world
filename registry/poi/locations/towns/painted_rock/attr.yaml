@@ -74,7 +74,8 @@ buildings:
         en: Paint'n'Rock   ##LOCALIZATION
         ru: Пэйнт-н-Рок
 
-    head: reg:///registry/institutions/manager/painted_rock_seth_farley
+    head: reg:///registry/institutions/mechanic/painted_rock_dylan_hopper
+    #reg:///registry/institutions/manager/painted_rock_seth_farley
     instances:
         - reg:///registry/institutions/mechanic/painted_rock_dylan_hopper
         - reg:///registry/institutions/armorer/painted_rock_matt_horne

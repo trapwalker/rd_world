@@ -75,7 +75,8 @@ buildings:
         en: Cliff Truck Customs   ##LOCALIZATION
         ru: Клифф Трак Кастомс
 
-    head: reg:///registry/institutions/manager/prior_cliff_taslima
+    head: reg:///registry/institutions/mechanic/prior_al_taslima
+    #reg:///registry/institutions/manager/prior_cliff_taslima
     instances:
         - reg:///registry/institutions/armorer/prior_jeff_saigon
         - reg:///registry/institutions/mechanic/prior_al_taslima
