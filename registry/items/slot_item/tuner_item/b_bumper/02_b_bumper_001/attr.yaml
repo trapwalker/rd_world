@@ -1,12 +1,12 @@
 ﻿_cls  : TunerItem
-doc      : Бампер с цепями (задний)
+doc      : Бампер "Цепь" (задний)
 abstract : false
 
 tags     : [b_bumper]
 
 title:                                   # Краткое название - отобразится в слоте инвентаря
-    en: Bumper with chains (rear)   ##LOCALIZATION
-    ru: Бампер с цепями (задний)
+    en: Bumper "Chain" (rear)   ##LOCALIZATION
+    ru: Бампер "Цепь" (задний)
 
 # Полное описание - отобразится в разделе описания в инвентаре
 description: 

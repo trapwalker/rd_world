@@ -1,12 +1,12 @@
 ﻿_cls     : TunerItem
-doc      : Крылья с трубчатым буфером (задние)
+doc      : Крылья "Сантехник" (задние)
 abstract : false
 
 tags     : [b_fender]
 
 title:                                  # Краткое название - отобразится в слоте инвентаря
-    en: Wings with tubular buffer (rear)   ##LOCALIZATION
-    ru: Крылья с трубчатым буфером (задние)
+    en: Wings "Plumber" (rear)   ##LOCALIZATION
+    ru: Крылья "Сантехник" (задние)
 
 # Полное описание - отобразится в разделе описания в инвентаре
 description: 

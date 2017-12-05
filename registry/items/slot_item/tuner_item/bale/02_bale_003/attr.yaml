@@ -5,8 +5,8 @@ abstract : false
 tags     : [bale]
 
 title:                         # Краткое название - отобразится в слоте инвентаря
-    en: Canister (normal)   ##LOCALIZATION
-    ru: Канистра (обычная)
+    en: Canister "NukeOil"   ##LOCALIZATION
+    ru: Канистра "Нукойл"
 
 # Полное описание - отобразится в разделе описания в инвентаре
 description: 

@@ -1,12 +1,12 @@
 ﻿_cls     : TunerItem
-doc      : Крылья с шипами (задние)
+doc      : Крылья "Дикобраз" (задние)
 abstract : false
 
 tags     : [b_fender]
 
 title:                                  # Краткое название - отобразится в слоте инвентаря
-    en: Wings with spikes (rear)   ##LOCALIZATION
-    ru: Крылья с шипами (задние)
+    en: Wings "Porcupine" (rear)   ##LOCALIZATION
+    ru: Крылья "Дикобраз" (задние)
 
 # Полное описание - отобразится в разделе описания в инвентаре
 description: 

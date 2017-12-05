@@ -1,12 +1,12 @@
 ﻿_cls     : TunerItem
-doc      : Шноркель (фигурный)
+doc      : Шноркель "Showoff"
 abstract : false
 
 tags     : [shnork]
 
 title:                              # Краткое название - отобразится в слоте инвентаря
-    en: Snorkel (figured)   ##LOCALIZATION
-    ru: Шноркель (фигурный)
+    en: Snorkel "Showoff"   ##LOCALIZATION
+    ru: Шноркель "Понторез"
 
 # Полное описание - отобразится в разделе описания в инвентаре
 description: 
