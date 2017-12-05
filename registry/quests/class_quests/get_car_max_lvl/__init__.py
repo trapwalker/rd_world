@@ -11,7 +11,6 @@ from sublayers_server.model.registry_me.tree import LocalizedString, Subdoc, Reg
 from sublayers_world.registry.quests.class_quests import ClassTypeQuest
 
 
-
 class GetCarMaxLevelQuest(ClassTypeQuest):
 
     class RoleClassQuestAttributes(Subdoc):
@@ -36,7 +35,6 @@ class GetCarMaxLevelQuest(ClassTypeQuest):
 
         self.init_text()
         self.log(text=self.locale("q_cq_get_car_lvl_started"), event=event)  ##LOCALIZATION
-
 
     ####################################################################################################################
     class begin(QuestState_):
@@ -63,20 +61,25 @@ class GetCarMaxLevelQuest(ClassTypeQuest):
                         event=event
                     )
 
-
     ####################################################################################################################
     class win(WinState):
         def on_enter_(self, quest, event):
+            agent_example = quest.agent
+            agent_profile = agent_example.profile
+
+            replica = LocalizedString(
+                _id='q_cq_get_car_lvl_phrase_to_{}'.format(agent_profile.role_class.name)
+            ).generate(role_class_name=quest.locale(agent_profile.role_class.title))
             quest.npc_replica(
                 npc=quest.hirer,
-                replica=quest.locale("q_cq_get_car_lvl_phrase_to_"+quest.agent.profile.role_class.name),  ##LOCALIZATION
+                replica=replica,  ##LOCALIZATION
                 event=event
             )
             quest.log(text=quest.locale("q_cq_get_car_lvl_finished"), event=event)  # ##LOCALIZATION
-            agent_example = quest.agent
+
             new_quest = quest.next_quest.instantiate(abstract=False, hirer=quest.hirer)
             if new_quest.generate(event=event, agent=agent_example):
-                agent_example.profile.add_quest(quest=new_quest, time=event.time)
+                agent_profile.add_quest(quest=new_quest, time=event.time)
                 new_quest.start(server=event.server, time=event.time + 0.1)
             else:
                 del new_quest

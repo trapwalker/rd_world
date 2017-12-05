@@ -23,7 +23,6 @@ class ClassQuestKarmaLimit(ClassTypeQuest):
         self.init_text()
         self.log(text=self.locale("q_cq_karmic_started"), event=event)  ##LOCALIZATION
 
-
     ####################################################################################################################
     class begin(QuestState_):
         def on_enter_(self, quest, event):
@@ -57,10 +56,10 @@ class ClassQuestKarmaLimit(ClassTypeQuest):
                         event=event
                     )
 
-
     ####################################################################################################################
     class win(WinState):
         def on_enter_(self, quest, event):
+
             quest.npc_replica(
                 npc=quest.hirer,
                 replica=quest.locale("q_cq_karmic_phrase_success"),  ##LOCALIZATION
