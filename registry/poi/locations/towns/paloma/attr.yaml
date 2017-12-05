@@ -76,7 +76,8 @@ buildings:
         en: Ironwood Service   ##LOCALIZATION
         ru: Айронвуд Сервис
 
-    head: reg:///registry/institutions/manager/paloma_myles_echenique
+    head: reg:///registry/institutions/mechanic/paloma_bryan
+    #reg:///registry/institutions/manager/paloma_myles_echenique
     instances:
         - reg:///registry/institutions/armorer/paloma_eric_davis
         - reg:///registry/institutions/mechanic/paloma_bryan
