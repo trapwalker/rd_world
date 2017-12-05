@@ -327,7 +327,7 @@ images:
         link: static/content/items/slot_item/tuner_item/shnork/00_shnork_002/06_m-b_unimog_u6/side.png   # ссылка на картику для вида сбоку
         z_index: 1                                                          # позиция: -1 или 1
 
-    LVL 07
+    #LVL 07
 
   - car: reg:///registry/mobiles/cars/middle/vans/07_chevrolet_van         # реестровая ссылка на машинку, для которой подходит данный итем
     top:                                                                    # описание вида сверху (картинка и позиция)
