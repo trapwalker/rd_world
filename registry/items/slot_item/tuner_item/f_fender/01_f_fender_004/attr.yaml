@@ -1,12 +1,12 @@
 ﻿_cls     : TunerItem
-doc      : Крылья с рогами (передние)
+doc      : Крылья "Бык" (передние)
 abstract : false
 
 tags     : [f_fender]
 
 title:                                    # Краткое название - отобразится в слоте инвентаря
-    en: Wings with horns (front)   ##LOCALIZATION
-    ru: Крылья с рогами (передние)
+    en: Wings "Bull" (front)   ##LOCALIZATION
+    ru: Крылья "Бык" (передние)
 
 # Полное описание - отобразится в разделе описания в инвентаре
 description: 

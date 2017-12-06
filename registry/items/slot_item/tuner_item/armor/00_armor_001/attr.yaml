@@ -1,12 +1,12 @@
 ﻿_cls     : TunerItem
-doc      : Броня
+doc      : Броня "черепаха"
 abstract : false
 
 tags     : [armor]
 
 title:                            # Краткое название - отобразится в слоте инвентаря
-    en: Armor   ##LOCALIZATION
-    ru: Броня
+    en: Armor "Turtle"   ##LOCALIZATION
+    ru: Броня "Черепаха"
 
 # Полное описание - отобразится в разделе описания в инвентаре
 description: 

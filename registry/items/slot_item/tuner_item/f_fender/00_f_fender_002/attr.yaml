@@ -5,8 +5,8 @@ abstract : false
 tags     : [f_fender]
 
 title:                                    # Краткое название - отобразится в слоте инвентаря
-    en: Wings with spikes (front)   ##LOCALIZATION
-    ru: Крылья с шипами (передние)
+    en: Wings "Porcupine" (front)   ##LOCALIZATION
+    ru: Крылья "Дикобраз" (передние)
 
 # Полное описание - отобразится в разделе описания в инвентаре
 description: 

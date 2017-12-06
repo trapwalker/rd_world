@@ -1,12 +1,12 @@
 ﻿_cls     : TunerItem
-doc      : Бронерешетка
+doc      : Бронерешетка "Чешуя"
 abstract : false
 
 tags     : [armor]
 
 title:                            # Краткое название - отобразится в слоте инвентаря
-    en: Grating armor   ##LOCALIZATION
-    ru: Бронерешетка
+    en: Grating armor "Scale"   ##LOCALIZATION
+    ru: Бронерешетка "Чешуя"
 
 # Полное описание - отобразится в разделе описания в инвентаре
 description: 

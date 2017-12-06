@@ -1,12 +1,12 @@
 ﻿_cls     : TunerItem
-doc      : Воздухозаборник
+doc      : Воздухозаборник "Ингалятор"
 abstract : false
 
 tags     : [airint]
 
 title:                                  # Краткое название - отобразится в слоте инвентаря
-    en: Air Intake   ##LOCALIZATION
-    ru: Воздухозаборник
+    en: Air Intake "Inhaler"   ##LOCALIZATION
+    ru: Воздухозаборник "Ингалятор"
 
 # Полное описание - отобразится в разделе описания в инвентаре
 description: 

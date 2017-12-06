@@ -1,12 +1,12 @@
 ﻿_cls  : TunerItem
-doc      : Бронешторка
+doc      : Бронешторка "Укрытие"
 abstract : false
 
 tags     : [win_prot]
 
 title:                                    # Краткое название - отобразится в слоте инвентаря
-    en: Armored troopers   ##LOCALIZATION
-    ru: Бронированные шторки
+    en: Armored side window "Cover"    ##LOCALIZATION
+    ru: Бронированные шторки "Укрытие"
 
 # Полное описание - отобразится в разделе описания в инвентаре
 description: 
