@@ -493,7 +493,7 @@ images:
 #        link: static/content/items/slot_item/tuner_item/f_bumper/02_f_bumper_001/09_aav7/side.png   # ссылка на картику для вида сбоку
 #        z_index: 1                                                          # позиция: -1 или 1
 #
-#  - car: reg:///registry/mobiles/cars/heavy/btrs/09_puma_4x4           # реестровая ссылка на машинку, для которой подходит данный итем
+#  - car: reg:///registry/mobiles/cars/heavy/armored/09_puma_4x4           # реестровая ссылка на машинку, для которой подходит данный итем
 #    top:                                                                    # описание вида сверху (картинка и позиция)
 #        link: static/content/items/slot_item/tuner_item/f_bumper/02_f_bumper_001/09_puma_4x4/top.png    # ссылка на картику для вида сверху
 #        z_index: 1                                                          # позиция: -1 или 1

@@ -452,7 +452,7 @@ images:
         link: static/content/items/slot_item/tuner_item/b_bumper/02_b_bumper_001/09_aav7/side.png   # ссылка на картику для вида сбоку
         z_index: 1                                                          # позиция: -1 или 1
 
-  - car: reg:///registry/mobiles/cars/heavy/btrs/09_puma_4x4           # реестровая ссылка на машинку, для которой подходит данный итем
+  - car: reg:///registry/mobiles/cars/heavy/armored/09_puma_4x4           # реестровая ссылка на машинку, для которой подходит данный итем
     side:                                                                   # описание вида сбоку (картинка и позиция)
         link: static/content/items/slot_item/tuner_item/b_bumper/02_b_bumper_001/09_puma_4x4/side.png   # ссылка на картику для вида сбоку
         z_index: 1                                                          # позиция: -1 или 1
