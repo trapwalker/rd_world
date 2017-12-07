@@ -98,7 +98,7 @@ class MaskingQuest(ClassTypeQuest):
                 if agent_profile._agent_model and agent_profile._agent_model.car and \
                         quest.container_position.is_near(
                             position=agent_profile._agent_model.car.position(time=event.time),
-                            radius=1500,  # турель поместится на карту когда мы подъедим на расстояние 1.5км
+                            radius=1000,  # турель поместится на карту когда мы подъедим на расстояние 1.5км
                         ):
                     go("masking")
                 else:
@@ -113,6 +113,7 @@ class MaskingQuest(ClassTypeQuest):
     ####################################################################################################################
     class masking(QuestState_):
         def on_enter_(self, quest, event):
+            ArcadeTextMessage(agent=quest.agent.profile._agent_model, time=event.time, arcade_message_type='turret_warning').post()
             ArcadeTextMessage(agent=quest.agent.profile._agent_model, time=event.time, arcade_message_type='turret_warning').post()
             quest.log(text=quest.locale("q_cq_masking_warning"), event=event, game_log_only=True)
             quest.init_container()
@@ -171,6 +172,7 @@ class MaskingQuest(ClassTypeQuest):
                     else:
                         log.warninig('role class %r is not supported in ClassQuest', agent_profile.role_class)
                         return
+                    quest.log(text=quest.locale("q_cq_masking_get_artefact"), event=event)  ##LOCALIZATION
                     go("to_trainer")
                 else:
                     quest.set_timer(event=event, name='test_masking_point', delay=5)
@@ -183,6 +185,7 @@ class MaskingQuest(ClassTypeQuest):
 
             if isinstance(event, OnNote) and (event.note_uid == quest.dc.masking_npc_note):
                 agent_profile.del_note(uid=quest.dc.masking_npc_note, time=event.time)
+                quest.agent.profile.set_exp(time=event.time, dvalue=1000)
                 go("win")
 
     ####################################################################################################################

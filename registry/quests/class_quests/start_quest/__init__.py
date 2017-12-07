@@ -35,8 +35,8 @@ class StartQuest(ClassTypeQuest):
         if self.current_state == 'first_out':
             # todo: Вынести 300 в атрибуты квеста
             self.text = LocalizedString(
-                en=u"Refer to trainer and learn more about purpose of their class.<br> Reward:<br>Exp 300",   ##LOCALIZATION
-                ru=u"Обратиться к тренеру и узнать больше про свою классовую цель.<br> Награда:<br>Exp 300",
+                en=u"Refer to trainer and learn more about purpose of their class.<br> Reward: 300 exp.",   ##LOCALIZATION
+                ru=u"Обратиться к тренеру и узнать больше про свою классовую цель.<br> Награда: 300 exp.",
             )
 
         elif self.current_state == 'visit_trainer':
@@ -53,8 +53,7 @@ class StartQuest(ClassTypeQuest):
                 en=(   ##LOCALIZATION
                     u"To learn subtleties of role-playing class, you need to find a mentor. For class {} need such a mentor as {}.<br>"
                     u"Find a mentor on class specialization.<br>"
-                    u"Reward: "
-                    u"Exp: 500."
+                    u"Reward: 500 exp."
                 ).format(
                     role_class.description.en,
                     teacher.en,
@@ -62,8 +61,7 @@ class StartQuest(ClassTypeQuest):
                 ru=(
                     u"Чтобы освоить тонкости ролевого класса нужно найти наставника. Для класса {} искать наставника стоит в лице {}.<br>"
                     u"Найти наставника по классовой специализации.<br>"
-                    u"Награда: "
-                    u"Exp: 500."
+                    u"Награда: 500 exp."
                 ).format(
                     role_class.description.ru,
                     teacher.ru,
@@ -141,15 +139,14 @@ class StartQuest(ClassTypeQuest):
                     return
                 npc = event.server.reg.get(event.npc_node_hash, None)
                 if npc:
-                    # todo: временно убрано
-                    # relation = agent.get_relationship(npc=npc)
-                    # if relation < 0.6:
-                    #     quest.npc_replica(
-                    #         npc=npc,
-                    #         replica=quest.locale("q_cq_phrase_1"),  ##LOCALIZATION
-                    #         event=event
-                    #     )
-                    #     return
+                    relation = agent.get_relationship(npc=npc)
+                    if relation < 0.08:  # Значение отношения - 55
+                        quest.npc_replica(
+                            npc=npc,
+                            replica=quest.locale("q_cq_phrase_1"),  ##LOCALIZATION
+                            event=event
+                        )
+                        return
                     if agent.balance < 3000 or agent.get_real_lvl() < 2:
                         quest.npc_replica(
                             npc=npc,
