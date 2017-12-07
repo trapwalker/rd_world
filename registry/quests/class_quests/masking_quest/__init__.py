@@ -6,6 +6,7 @@ from sublayers_server.model.registry_me.classes.quests import QuestState_, WinSt
 from sublayers_server.model.quest_events import OnNote, OnTimer, OnDie
 from sublayers_server.model.registry_me.classes import notes
 from sublayers_server.model.slave_objects.turret import MaskingQuestTurret
+from sublayers_server.model.messages import ArcadeTextMessage
 from functools import partial
 from sublayers_server.model.registry_me.tree import (
     Subdoc, LocalizedString,
@@ -112,6 +113,7 @@ class MaskingQuest(ClassTypeQuest):
     ####################################################################################################################
     class masking(QuestState_):
         def on_enter_(self, quest, event):
+            ArcadeTextMessage(agent=quest.agent.profile._agent_model, time=event.time, arcade_message_type='turret_warning').post()
             quest.log(text=quest.locale("q_cq_masking_warning"), event=event, game_log_only=True)
             quest.init_container()
 
