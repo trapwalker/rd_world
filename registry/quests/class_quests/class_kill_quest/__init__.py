@@ -14,14 +14,23 @@ class ClassQuestKillsQuest(ClassTypeQuest):
     kills_count = IntField(caption=u"Сумма для накопления")
 
     def init_text(self):
-        self.text = LocalizedString(_id="q_cq_journal_text").generate(
-            player_name=self.agent.login, task_text=self.locale("q_cq_kills_task_text"))  ##LOCALIZATION
+        self.text = LocalizedString(
+            en=u"{}, {}<br>{}".format(
+                self.agent.login,
+                self.locale(key="q_cq_kills_task_text", loc="en"),
+                self.locale(key="q_cq_journal_reward_1", loc="en"),
+            ),
+            ru=u"{}, {}<br>{}".format(
+                self.agent.login,
+                self.locale(key="q_cq_kills_task_text", loc="ru"),
+                self.locale(key="q_cq_journal_reward_1", loc="ru"),
+            ),
+        )
 
     def on_start_(self, event, **kw):
         self.init_text()
         self.dc.kills = 0
         self.log(text=self.locale("q_cq_kills_started"), event=event)  ##LOCALIZATION
-
 
     ####################################################################################################################
     class begin(QuestState_):
@@ -50,21 +59,23 @@ class ClassQuestKillsQuest(ClassTypeQuest):
                         event=event
                     )
 
-            if isinstance(event, OnKill) and event.agent:  # todo: вернуть and quest.agent.profile.get_real_lvl() <= event.agent.profile.get_real_lvl():
+            if isinstance(event, OnKill) and event.agent \
+                    and quest.agent.profile.get_real_lvl() <= event.agent.profile.get_real_lvl():
+
                 quest.dc.kills += 1  # info: здесь будут засчитываться одни и те же цели.
-                quest.log(text=u'{} {}.'.format(event.agent.profile._agent_model.print_login(),
-                                                quest.locale("q_cq_kills_target_killed")), event=event)  ##LOCALIZATION
+                quest.log(quest.locale("q_cq_kills_target_killed").format(event.agent.profile._agent_model.print_login()),
+                          event=event)  ##LOCALIZATION
+
                 if quest.dc.kills >= quest.kills_count:
                     quest.log(text=quest.locale("q_cq_kills_back_to_teacher"), event=event)  ##LOCALIZATION
                     quest.go(event=event, new_state="back_to_teacher")
-
+    ####################################################################################################################
     class back_to_teacher(QuestState_):
         def on_event_(self, quest, event):
             if isinstance(event, OnNote) and (event.note_uid == quest.dc.quest_note):
                 quest.agent.profile.del_note(uid=quest.dc.quest_note, time=event.time)
+                quest.agent.profile.set_exp(time=event.time, dvalue=3000)
                 quest.go(event=event, new_state="win")
-
-
     ####################################################################################################################
     class win(WinState):
         def on_enter_(self, quest, event):

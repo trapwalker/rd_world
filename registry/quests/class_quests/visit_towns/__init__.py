@@ -17,8 +17,18 @@ class ClassQuestVisitTowns(ClassTypeQuest):
     )
 
     def init_text(self):
-        self.text = LocalizedString(_id="q_cq_journal_text").generate(
-            player_name=self.agent.login, task_text=self.locale("q_cq_visit_towns_task_text"))  ##LOCALIZATION
+        self.text = LocalizedString(
+            en=u"{}, {}<br>{}".format(
+                self.agent.login,
+                self.locale(key="q_cq_visit_towns_task_text", loc="en"),
+                self.locale(key="q_cq_journal_reward_1", loc="en"),
+            ),
+            ru=u"{}, {}<br>{}".format(
+                self.agent.login,
+                self.locale(key="q_cq_visit_towns_task_text", loc="ru"),
+                self.locale(key="q_cq_journal_reward_1", loc="ru"),
+            ),
+        )
 
     def visit_town(self, event, town):
         town_uri = town.uri
@@ -30,11 +40,17 @@ class ClassQuestVisitTowns(ClassTypeQuest):
             if towns_left == 0:
                 self.log(text=self.locale("q_cq_visit_towns_replica_return_to_teacher"), event=event)
 
+    def get_not_visit_towns(self):
+        town_list = []
+        for town in self.towns:
+            if self.dc.visited_towns.get(town.uri, None) is None:
+                town_list.append(self.locale(town.title))
+        return u', '.join(town_list)
+
     def on_start_(self, event, **kw):
         self.init_text()
         self.dc.visited_towns = dict()
         self.log(text=self.locale("q_cq_visit_towns_started"), event=event)  ##LOCALIZATION
-
 
     ####################################################################################################################
     class begin(QuestState_):
@@ -54,10 +70,12 @@ class ClassQuestVisitTowns(ClassTypeQuest):
             if isinstance(event, OnNote) and (event.note_uid == quest.dc.visited_note):
                 if len(quest.towns) == len(quest.dc.visited_towns.keys()):
                     quest.agent.profile.del_note(uid=quest.dc.visited_note, time=event.time)
+                    quest.agent.profile.set_exp(time=event.time, dvalue=3000)
                     quest.go(event=event, new_state="win")  # Все города посещены!
                 else:
-                    text = LocalizedString(_id="q_cq_visit_towns_replica_not_finish").generate(  ##LOCALIZATION
-                        towns_left=len(quest.towns) - len(quest.dc.visited_towns.keys()),
+                    text = u'{} {}.'.format(
+                        quest.locale("q_cq_visit_towns_replica_not_finish"),
+                        quest.get_not_visit_towns(),
                     )
                     quest.npc_replica(
                         npc=quest.hirer,
@@ -68,8 +86,6 @@ class ClassQuestVisitTowns(ClassTypeQuest):
             if isinstance(event, OnEnterToLocation):
                 quest.visit_town(event=event, town=event.location.example)
                 # todo: Возможно проверить, а не посещены ли все города и выдать следующий квест
-
-
     ####################################################################################################################
     class win(WinState):
         def on_enter_(self, quest, event):
