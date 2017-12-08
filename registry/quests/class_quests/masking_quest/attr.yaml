@@ -5,8 +5,8 @@ first_state: begin
 list_icon: static/img/quests/icons/rpg_dice.png
 
 caption: 
-    en: Class quest   ##LOCALIZATION
-    ru: Классовый квест
+    en: Artefact   ##LOCALIZATION
+    ru: Артефакт
 
 radius_range:  # "Бублик" котором будут генерится тайники (в центре город наставника)
   min: 6000

@@ -65,7 +65,6 @@ class MaskingQuest(ClassTypeQuest):
         self.init_text()
         self.log(text=self.locale("q_cq_masking_started"), event=event)  ##LOCALIZATION
 
-
     ####################################################################################################################
     class begin(QuestState_):
         def on_enter_(self, quest, event):
@@ -81,7 +80,7 @@ class MaskingQuest(ClassTypeQuest):
                 )
             quest.dc.container_map_note = quest.agent.profile.add_note(
                 quest_uid=quest.uid,
-                note_class=notes.MaskingMapMarkerNote,
+                note_class=notes.MapMarkerNote,
                 time=event.time,
                 position=quest.container_position.position,
                 radius=quest.container_position.radius
@@ -98,7 +97,7 @@ class MaskingQuest(ClassTypeQuest):
                 if agent_profile._agent_model and agent_profile._agent_model.car and \
                         quest.container_position.is_near(
                             position=agent_profile._agent_model.car.position(time=event.time),
-                            radius=1500,  # турель поместится на карту когда мы подъедим на расстояние 1.5км
+                            radius=1000,  # турель поместится на карту когда мы подъедим на расстояние 1.5км
                         ):
                     go("masking")
                 else:
@@ -113,6 +112,7 @@ class MaskingQuest(ClassTypeQuest):
     ####################################################################################################################
     class masking(QuestState_):
         def on_enter_(self, quest, event):
+            ArcadeTextMessage(agent=quest.agent.profile._agent_model, time=event.time, arcade_message_type='turret_warning').post()
             ArcadeTextMessage(agent=quest.agent.profile._agent_model, time=event.time, arcade_message_type='turret_warning').post()
             quest.log(text=quest.locale("q_cq_masking_warning"), event=event, game_log_only=True)
             quest.init_container()
@@ -171,10 +171,10 @@ class MaskingQuest(ClassTypeQuest):
                     else:
                         log.warninig('role class %r is not supported in ClassQuest', agent_profile.role_class)
                         return
+                    quest.log(text=quest.locale("q_cq_masking_get_artefact"), event=event)  ##LOCALIZATION
                     go("to_trainer")
                 else:
                     quest.set_timer(event=event, name='test_masking_point', delay=5)
-
     ####################################################################################################################
     class to_trainer(QuestState_):
         def on_event_(self, quest, event):
@@ -183,8 +183,8 @@ class MaskingQuest(ClassTypeQuest):
 
             if isinstance(event, OnNote) and (event.note_uid == quest.dc.masking_npc_note):
                 agent_profile.del_note(uid=quest.dc.masking_npc_note, time=event.time)
+                quest.agent.profile.set_exp(time=event.time, dvalue=1000)
                 go("win")
-
     ####################################################################################################################
     class win(WinState):
         def on_enter_(self, quest, event):

@@ -66,6 +66,7 @@ class GetClassCarQuest(ClassTypeQuest):
                     if agent.car:
                         for candidate in attributes_of_class.car_list:
                             if agent.car.is_ancestor(candidate):
+                                agent.set_exp(time=event.time, dvalue=750)
                                 agent.del_note(uid=quest.dc.car_info_note, time=event.time)
                                 quest.npc_replica(
                                     npc=quest.hirer,

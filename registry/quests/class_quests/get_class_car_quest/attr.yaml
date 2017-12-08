@@ -7,30 +7,34 @@ list_icon: static/img/quests/icons/rpg_dice.png
 next_quest: reg:///registry/quests/class_quests/masking_quest
 
 caption: 
-    en: Class quest   ##LOCALIZATION
-    ru: Классовый квест
+    en: Right wheels   ##LOCALIZATION
+    ru: Правильная тачка
 
 attributes_by_class:
     chosen_one:
       car_list:
-        - reg:///registry/mobiles
+        - reg:///registry/mobiles/cars/middle
 
     alpha_wolf:
       car_list:
-        - reg:///registry/mobiles
+        - reg:///registry/mobiles/cars
 
     night_rider:
       car_list:
-        - reg:///registry/mobiles
+        - reg:///registry/mobiles/cars/light
+        - reg:///registry/mobiles/cars/middle/sports
+        - reg:///registry/mobiles/cars/middle/cars
 
     oil_magnate:
       car_list:
-        - reg:///registry/mobiles
+        - reg:///registry/mobiles/cars/cargo
+        - reg:///registry/mobiles/cars/middle/vans
 
     road_warrior:
       car_list:
-        - reg:///registry/mobiles
+        - reg:///registry/mobiles/cars/middle
+        - reg:///registry/mobiles/cars/heavy
 
     techno_kinetic:
       car_list:
-        - reg:///registry/mobiles
+        - reg:///registry/mobiles/cars
