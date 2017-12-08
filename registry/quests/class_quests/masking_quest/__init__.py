@@ -65,7 +65,6 @@ class MaskingQuest(ClassTypeQuest):
         self.init_text()
         self.log(text=self.locale("q_cq_masking_started"), event=event)  ##LOCALIZATION
 
-
     ####################################################################################################################
     class begin(QuestState_):
         def on_enter_(self, quest, event):
@@ -81,7 +80,7 @@ class MaskingQuest(ClassTypeQuest):
                 )
             quest.dc.container_map_note = quest.agent.profile.add_note(
                 quest_uid=quest.uid,
-                note_class=notes.MaskingMapMarkerNote,
+                note_class=notes.MapMarkerNote,
                 time=event.time,
                 position=quest.container_position.position,
                 radius=quest.container_position.radius
@@ -176,7 +175,6 @@ class MaskingQuest(ClassTypeQuest):
                     go("to_trainer")
                 else:
                     quest.set_timer(event=event, name='test_masking_point', delay=5)
-
     ####################################################################################################################
     class to_trainer(QuestState_):
         def on_event_(self, quest, event):
@@ -187,7 +185,6 @@ class MaskingQuest(ClassTypeQuest):
                 agent_profile.del_note(uid=quest.dc.masking_npc_note, time=event.time)
                 quest.agent.profile.set_exp(time=event.time, dvalue=1000)
                 go("win")
-
     ####################################################################################################################
     class win(WinState):
         def on_enter_(self, quest, event):
