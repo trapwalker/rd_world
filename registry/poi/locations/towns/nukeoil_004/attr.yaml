@@ -6,7 +6,7 @@ title:
     en: NukeOil_004   ##LOCALIZATION
     ru: Нукойл_004
 
-position          : {x: 12476279, y: 27027277}   # Заправка севернее Вайтхила
+position          : {x: 12491110, y: 27029918}   # Заправка севернее Вайтхила
 p_observing_range : 250
 p_enter_range     : 150
 
