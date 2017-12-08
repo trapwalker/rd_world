@@ -1,12 +1,12 @@
 ﻿_cls  : TunerItem
-doc      : Усиленный бампер (передний)
+doc      : Усиленный бампер "Инфорсер" (передний)
 abstract : false
 
 tags     : [f_bumper]
 
 title:                                     # Краткое название - отобразится в слоте инвентаря
-    en: Reinforced bumper (front)   ##LOCALIZATION
-    ru: Усиленный бампер (передний)
+    en: Reinforced bumper "Enforcer" (front)   ##LOCALIZATION
+    ru: Усиленный бампер "Инфорсер" (передний)
 
 # Полное описание - отобразится в разделе описания в инвентаре
 description: 
@@ -15,7 +15,7 @@ description:
 
 
 base_price  : 2000   # Цена
-pont_points : 100
+pont_points : 50
 
 # Картинки для представления в инвентаре
 inv_icon_big   : static/content/items/slot_item/tuner_item/f_bumper/f_bumper_002/inventory/big.png

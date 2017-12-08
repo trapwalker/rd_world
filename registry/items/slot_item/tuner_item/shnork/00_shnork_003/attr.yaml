@@ -1,12 +1,12 @@
 ﻿_cls     : TunerItem
-doc      : Шноркель (фигурный)
+doc      : Шноркель "Showoff"
 abstract : false
 
 tags     : [shnork]
 
 title:                              # Краткое название - отобразится в слоте инвентаря
-    en: Snorkel (figured)   ##LOCALIZATION
-    ru: Шноркель (фигурный)
+    en: Snorkel "Showoff"   ##LOCALIZATION
+    ru: Шноркель "Понторез"
 
 # Полное описание - отобразится в разделе описания в инвентаре
 description: 
@@ -69,10 +69,10 @@ images:
 
   - car: reg:///registry/mobiles/cars/middle/offroad/ford_f_150      # реестровая ссылка на машинку, для которой подходит данный итем
     top:                                                                 # описание вида сверху (картинка и позиция)
-        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_003/ford_f_150/top.png    # ссылка на картику для вида сверху
+        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_003/00_ford_f_150/top.png    # ссылка на картику для вида сверху
         z_index: 1                                                       # позиция: -1 или 1
     side:                                                                # описание вида сбоку (картинка и позиция)
-        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_003/ford_f_150/side.png   # ссылка на картику для вида сбоку
+        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_003/00_ford_f_150/side.png   # ссылка на картику для вида сбоку
         z_index: 1                                                       # позиция: -1 или 1
 
   - car: reg:///registry/mobiles/cars/middle/cars/vw_beetle          # реестровая ссылка на машинку, для которой подходит данный итем
@@ -137,42 +137,42 @@ images:
 
   - car: reg:///registry/mobiles/cars/middle/cars/02_toyota_corolla         # реестровая ссылка на машинку, для которой подходит данный итем
     top:                                                                    # описание вида сверху (картинка и позиция)
-        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_003/00_toyota_corolla/top.png    # ссылка на картику для вида сверху
+        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_003/02_toyota_corolla/top.png    # ссылка на картику для вида сверху
         z_index: 1                                                          # позиция: -1 или 1
     side:                                                                   # описание вида сбоку (картинка и позиция)
-        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_003/00_toyota_corolla/side.png   # ссылка на картику для вида сбоку
+        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_003/02_toyota_corolla/side.png   # ссылка на картику для вида сбоку
         z_index: 1                                                          # позиция: -1 или 1
 
   - car: reg:///registry/mobiles/cars/middle/cars/02_chevrolet_monte_carlo   # реестровая ссылка на машинку, для которой подходит данный итем
     top:                                                                     # описание вида сверху (картинка и позиция)
-        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_003/00_chevrolet_monte_carlo/top.png    # ссылка на картику для вида сверху
+        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_003/02_chevrolet_monte_carlo/top.png    # ссылка на картику для вида сверху
         z_index: 1                                                           # позиция: -1 или 1
     side:                                                                    # описание вида сбоку (картинка и позиция)
-        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_003/00_chevrolet_monte_carlo/side.png   # ссылка на картику для вида сбоку
+        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_003/02_chevrolet_monte_carlo/side.png   # ссылка на картику для вида сбоку
         z_index: 1                                                           # позиция: -1 или 1
 
   - car: reg:///registry/mobiles/cars/middle/sports/02_alfa_romeo_75 # реестровая ссылка на машинку, для которой подходит данный итем
     top:                                                             # описание вида сверху (картинка и позиция)
-        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_003/00_alfa_romeo_75/top.png  # ссылка на картику для вида сверху
+        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_003/02_alfa_romeo_75/top.png  # ссылка на картику для вида сверху
         z_index: 1                                                   # позиция: -1 или 1
     side:                                                            # описание вида сбоку (картинка и позиция)
-        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_003/00_alfa_romeo_75/side.png # ссылка на картику для вида сбоку
+        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_003/02_alfa_romeo_75/side.png # ссылка на картику для вида сбоку
         z_index: 1                                                   # позиция: -1 или 1
 
   - car: reg:///registry/mobiles/cars/middle/offroad/02_ford_bronco         # реестровая ссылка на машинку, для которой подходит данный итем
     top:                                                                    # описание вида сверху (картинка и позиция)
-        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_003/00_ford_bronco/top.png    # ссылка на картику для вида сверху
+        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_003/02_ford_bronco/top.png    # ссылка на картику для вида сверху
         z_index: 1                                                          # позиция: -1 или 1
     side:                                                                   # описание вида сбоку (картинка и позиция)
-        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_003/00_ford_bronco/side.png   # ссылка на картику для вида сбоку
+        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_003/02_ford_bronco/side.png   # ссылка на картику для вида сбоку
         z_index: 1                                                          # позиция: -1 или 1
 
   - car: reg:///registry/mobiles/cars/middle/vans/02_volkswagen_t1_samba         # реестровая ссылка на машинку, для которой подходит данный итем
     top:                                                                    # описание вида сверху (картинка и позиция)
-        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_003/00_volkswagen_t1_samba/top.png    # ссылка на картику для вида сверху
+        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_003/02_volkswagen_t1_samba/top.png    # ссылка на картику для вида сверху
         z_index: 1                                                          # позиция: -1 или 1
     side:                                                                   # описание вида сбоку (картинка и позиция)
-        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_003/00_volkswagen_t1_samba/side.png   # ссылка на картику для вида сбоку
+        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_003/02_volkswagen_t1_samba/side.png   # ссылка на картику для вида сбоку
         z_index: 1                                                          # позиция: -1 или 1
 
    # LVL 03
@@ -295,13 +295,13 @@ images:
 
    # LVL 06
 
-#  - car: reg:///registry/mobiles/cars/middle/offroad/06_chevrolet_trailblazer           # реестровая ссылка на машинку, для которой подходит данный итем
-#    top:                                                                    # описание вида сверху (картинка и позиция)
-#        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_003/06_chevrolet_trailblazer/top.png    # ссылка на картику для вида сверху
-#        z_index: 1                                                          # позиция: -1 или 1
-#    side:                                                                   # описание вида сбоку (картинка и позиция)
-#        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_003/06_chevrolet_trailblazer/side.png   # ссылка на картику для вида сбоку
-#        z_index: 1                                                          # позиция: -1 или 1
+  - car: reg:///registry/mobiles/cars/middle/offroad/06_chevrolet_trailblazer           # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                                    # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_003/06_chevrolet_trailblazer/top.png    # ссылка на картику для вида сверху
+        z_index: 1                                                          # позиция: -1 или 1
+    side:                                                                   # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_003/06_chevrolet_trailblazer/side.png   # ссылка на картику для вида сбоку
+        z_index: 1                                                          # позиция: -1 или 1
 
   - car: reg:///registry/mobiles/cars/middle/offroad/gelandewagen           # реестровая ссылка на машинку, для которой подходит данный итем
     top:                                                                    # описание вида сверху (картинка и позиция)
@@ -311,64 +311,64 @@ images:
         link: static/content/items/slot_item/tuner_item/shnork/00_shnork_003/06_gelandewagen/side.png   # ссылка на картику для вида сбоку
         z_index: 1                                                          # позиция: -1 или 1
 
-#
-#  - car: reg:///registry/mobiles/cars/middle/sports/06_ford_mustang_shelby_gt500           # реестровая ссылка на машинку, для которой подходит данный итем
-#    top:                                                                    # описание вида сверху (картинка и позиция)
-#        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_003/06_ford_mustang_shelby_gt500/top.png    # ссылка на картику для вида сверху
-#        z_index: 1                                                          # позиция: -1 или 1
-#    side:                                                                   # описание вида сбоку (картинка и позиция)
-#        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_003/06_ford_mustang_shelby_gt500/side.png   # ссылка на картику для вида сбоку
-#        z_index: 1                                                          # позиция: -1 или 1
 
-#  - car: reg:///registry/mobiles/cars/cargo/trucks/06_m-b_unimog_u6           # реестровая ссылка на машинку, для которой подходит данный итем
-#    top:                                                                    # описание вида сверху (картинка и позиция)
-#        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_003/06_m-b_unimog_u6/top.png    # ссылка на картику для вида сверху
-#        z_index: 1                                                          # позиция: -1 или 1
-#    side:                                                                   # описание вида сбоку (картинка и позиция)
-#        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_003/06_m-b_unimog_u6/side.png   # ссылка на картику для вида сбоку
-#        z_index: 1                                                          # позиция: -1 или 1
+  - car: reg:///registry/mobiles/cars/middle/sports/06_ford_mustang_shelby_gt500           # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                                    # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_003/06_ford_mustang_shelby_gt500/top.png    # ссылка на картику для вида сверху
+        z_index: 1                                                          # позиция: -1 или 1
+    side:                                                                   # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_003/06_ford_mustang_shelby_gt500/side.png   # ссылка на картику для вида сбоку
+        z_index: 1                                                          # позиция: -1 или 1
+
+  - car: reg:///registry/mobiles/cars/cargo/trucks/06_m-b_unimog_u6           # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                                    # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_003/06_m-b_unimog_u6/top.png    # ссылка на картику для вида сверху
+        z_index: 1                                                          # позиция: -1 или 1
+    side:                                                                   # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_003/06_m-b_unimog_u6/side.png   # ссылка на картику для вида сбоку
+        z_index: 1                                                          # позиция: -1 или 1
 
    # LVL 07
 
-#  - car: reg:///registry/mobiles/cars/middle/vans/07_chevrolet_van         # реестровая ссылка на машинку, для которой подходит данный итем
-#    top:                                                                    # описание вида сверху (картинка и позиция)
-#        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_003/07_chevrolet_van/top.png    # ссылка на картику для вида сверху
-#        z_index: 1                                                          # позиция: -1 или 1
-#    side:                                                                   # описание вида сбоку (картинка и позиция)
-#        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_003/07_chevrolet_van/side.png   # ссылка на картику для вида сбоку
-#        z_index: 1                                                          # позиция: -1 или 1
-#
-#  - car: reg:///registry/mobiles/cars/cargo/buses/07_ford_b800           # реестровая ссылка на машинку, для которой подходит данный итем
-#    top:                                                                    # описание вида сверху (картинка и позиция)
-#        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_003/07_ford_b800/top.png    # ссылка на картику для вида сверху
-#        z_index: 1                                                          # позиция: -1 или 1
-#    side:                                                                   # описание вида сбоку (картинка и позиция)
-#        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_003/07_ford_b800/side.png   # ссылка на картику для вида сбоку
-#        z_index: 1                                                          # позиция: -1 или 1
-#
-#  - car: reg:///registry/mobiles/cars/cargo/trucks/07_m_939           # реестровая ссылка на машинку, для которой подходит данный итем
-#    top:                                                                    # описание вида сверху (картинка и позиция)
-#        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_003/07_m_939/top.png    # ссылка на картику для вида сверху
-#        z_index: 1                                                          # позиция: -1 или 1
-#    side:                                                                   # описание вида сбоку (картинка и позиция)
-#        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_003/07_m_939/side.png   # ссылка на картику для вида сбоку
-#        z_index: 1                                                          # позиция: -1 или 1
-#
-#  - car: reg:///registry/mobiles/cars/middle/sports/07_porsche_928           # реестровая ссылка на машинку, для которой подходит данный итем
-#    top:                                                                    # описание вида сверху (картинка и позиция)
-#        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_003/07_porsche_928/top.png    # ссылка на картику для вида сверху
-#        z_index: 1                                                          # позиция: -1 или 1
-#    side:                                                                   # описание вида сбоку (картинка и позиция)
-#        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_003/07_porsche_928/side.png   # ссылка на картику для вида сбоку
-#        z_index: 1                                                          # позиция: -1 или 1
-#
-#  - car: reg:///registry/mobiles/cars/cargo/trucks/07_studebaker_us6           # реестровая ссылка на машинку, для которой подходит данный итем
-#    top:                                                                    # описание вида сверху (картинка и позиция)
-#        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_003/07_studebaker_us6/top.png    # ссылка на картику для вида сверху
-#        z_index: 1                                                          # позиция: -1 или 1
-#    side:                                                                   # описание вида сбоку (картинка и позиция)
-#        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_003/07_studebaker_us6/side.png   # ссылка на картику для вида сбоку
-#        z_index: 1                                                          # позиция: -1 или 1
+  - car: reg:///registry/mobiles/cars/middle/vans/07_chevrolet_van         # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                                    # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_003/07_chevrolet_van/top.png    # ссылка на картику для вида сверху
+        z_index: 1                                                          # позиция: -1 или 1
+    side:                                                                   # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_003/07_chevrolet_van/side.png   # ссылка на картику для вида сбоку
+        z_index: 1                                                          # позиция: -1 или 1
+
+  - car: reg:///registry/mobiles/cars/cargo/buses/07_ford_b800           # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                                    # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_003/07_ford_b800/top.png    # ссылка на картику для вида сверху
+        z_index: 1                                                          # позиция: -1 или 1
+    side:                                                                   # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_003/07_ford_b800/side.png   # ссылка на картику для вида сбоку
+        z_index: 1                                                          # позиция: -1 или 1
+
+  - car: reg:///registry/mobiles/cars/cargo/trucks/07_M939           # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                                    # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_003/07_m939/top.png    # ссылка на картику для вида сверху
+        z_index: 1                                                          # позиция: -1 или 1
+    side:                                                                   # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_003/07_m939/side.png   # ссылка на картику для вида сбоку
+        z_index: 1                                                          # позиция: -1 или 1
+
+  - car: reg:///registry/mobiles/cars/middle/sports/07_porsche_928           # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                                    # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_003/07_porsche_928/top.png    # ссылка на картику для вида сверху
+        z_index: 1                                                          # позиция: -1 или 1
+    side:                                                                   # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_003/07_porsche_928/side.png   # ссылка на картику для вида сбоку
+        z_index: 1                                                          # позиция: -1 или 1
+
+  - car: reg:///registry/mobiles/cars/cargo/trucks/07_studebaker_us6           # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                                    # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_003/07_studebaker_us6/top.png    # ссылка на картику для вида сверху
+        z_index: 1                                                          # позиция: -1 или 1
+    side:                                                                   # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_003/07_studebaker_us6/side.png   # ссылка на картику для вида сбоку
+        z_index: 1                                                          # позиция: -1 или 1
 
    # LVL 08
 
@@ -380,39 +380,39 @@ images:
         link: static/content/items/slot_item/tuner_item/shnork/00_shnork_003/08_audi_200_avant/side.png   # ссылка на картику для вида сбоку
         z_index: 1                                                          # позиция: -1 или 1
 
-#  - car: reg:///registry/mobiles/cars/middle/offroad/08_jeep_grand_cherokee           # реестровая ссылка на машинку, для которой подходит данный итем
-#    top:                                                                    # описание вида сверху (картинка и позиция)
-#        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_003/08_jeep_grand_cherokee/top.png    # ссылка на картику для вида сверху
-#        z_index: 1                                                          # позиция: -1 или 1
-#    side:                                                                   # описание вида сбоку (картинка и позиция)
-#        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_003/08_jeep_grand_cherokee/side.png   # ссылка на картику для вида сбоку
-#        z_index: 1                                                          # позиция: -1 или 1
-#
-#  - car: reg:///registry/mobiles/cars/middle/cars/08_rolls_roys_silver_spirit           # реестровая ссылка на машинку, для которой подходит данный итем
-#    top:                                                                    # описание вида сверху (картинка и позиция)
-#        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_003/08_rolls_roys_silver_spirit/top.png    # ссылка на картику для вида сверху
-#        z_index: 1                                                          # позиция: -1 или 1
-#    side:                                                                   # описание вида сбоку (картинка и позиция)
-#        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_003/08_rolls_roys_silver_spirit/side.png   # ссылка на картику для вида сбоку
-#        z_index: 1                                                          # позиция: -1 или 1
-#
-#  - car: reg:///registry/mobiles/cars/middle/vans/08_toyota_town_ace           # реестровая ссылка на машинку, для которой подходит данный итем
-#    top:                                                                    # описание вида сверху (картинка и позиция)
-#        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_003/08_toyota_town_ace/top.png    # ссылка на картику для вида сверху
-#        z_index: 1                                                          # позиция: -1 или 1
-#    side:                                                                   # описание вида сбоку (картинка и позиция)
-#        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_003/08_toyota_town_ace/side.png   # ссылка на картику для вида сбоку
-#        z_index: 1                                                          # позиция: -1 или 1
+  - car: reg:///registry/mobiles/cars/middle/offroad/08_jeep_grand_cherokee           # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                                    # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_003/08_jeep_grand_cherokee/top.png    # ссылка на картику для вида сверху
+        z_index: 1                                                          # позиция: -1 или 1
+    side:                                                                   # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_003/08_jeep_grand_cherokee/side.png   # ссылка на картику для вида сбоку
+        z_index: 1                                                          # позиция: -1 или 1
+
+  - car: reg:///registry/mobiles/cars/middle/cars/08_rolls-royce_silver_spirit           # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                                    # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_003/08_rolls-royce_silver_spirit/top.png    # ссылка на картику для вида сверху
+        z_index: 1                                                          # позиция: -1 или 1
+    side:                                                                   # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_003/08_rolls-royce_silver_spirit/side.png   # ссылка на картику для вида сбоку
+        z_index: 1                                                          # позиция: -1 или 1
+
+  - car: reg:///registry/mobiles/cars/middle/vans/08_toyota_town_ace           # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                                    # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_003/08_toyota_town_ace/top.png    # ссылка на картику для вида сверху
+        z_index: 1                                                          # позиция: -1 или 1
+    side:                                                                   # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_003/08_toyota_town_ace/side.png   # ссылка на картику для вида сбоку
+        z_index: 1                                                          # позиция: -1 или 1
 
    # LVL 09
 
-#  - car: reg:///registry/mobiles/cars/middle/sports/09_bmw_m1_e26           # реестровая ссылка на машинку, для которой подходит данный итем
-#    top:                                                                    # описание вида сверху (картинка и позиция)
-#        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_003/09_bmw_m1_e26/top.png    # ссылка на картику для вида сверху
-#        z_index: 1                                                          # позиция: -1 или 1
-#    side:                                                                   # описание вида сбоку (картинка и позиция)
-#        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_003/09_bmw_m1_e26/side.png   # ссылка на картику для вида сбоку
-#        z_index: 1                                                          # позиция: -1 или 1
+  - car: reg:///registry/mobiles/cars/middle/sports/09_bmw_m1_e26           # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                                    # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_003/09_bmw_m1_e26/top.png    # ссылка на картику для вида сверху
+        z_index: 1                                                          # позиция: -1 или 1
+    side:                                                                   # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_003/09_bmw_m1_e26/side.png   # ссылка на картику для вида сбоку
+        z_index: 1                                                          # позиция: -1 или 1
 
   - car: reg:///registry/mobiles/cars/middle/cars/09_chevrolet_impala           # реестровая ссылка на машинку, для которой подходит данный итем
     top:                                                                    # описание вида сверху (картинка и позиция)
@@ -422,10 +422,10 @@ images:
         link: static/content/items/slot_item/tuner_item/shnork/00_shnork_003/09_chevrolet_impala/side.png   # ссылка на картику для вида сбоку
         z_index: 1                                                          # позиция: -1 или 1
 
-#  - car: reg:///registry/mobiles/cars/middle/offroad/09_chevrolet_tahoe           # реестровая ссылка на машинку, для которой подходит данный итем
-#    top:                                                                    # описание вида сверху (картинка и позиция)
-#        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_003/09_chevrolet_tahoe/top.png    # ссылка на картику для вида сверху
-#        z_index: 1                                                          # позиция: -1 или 1
-#    side:                                                                   # описание вида сбоку (картинка и позиция)
-#        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_003/09_chevrolet_tahoe/side.png   # ссылка на картику для вида сбоку
-#        z_index: 1                                                          # позиция: -1 или 1
+  - car: reg:///registry/mobiles/cars/middle/offroad/09_chevrolet_tahoe           # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                                    # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_003/09_chevrolet_tahoe/top.png    # ссылка на картику для вида сверху
+        z_index: 1                                                          # позиция: -1 или 1
+    side:                                                                   # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/shnork/00_shnork_003/09_chevrolet_tahoe/side.png   # ссылка на картику для вида сбоку
+        z_index: 1                                                          # позиция: -1 или 1
