@@ -60,18 +60,18 @@ mechanic_suspension:    static/content/mechanic_systems/suspensions/suspension_1
 # Ниже перечислены все слоты доступные на автомобиле. В название содержится расположение слота.
 # Сейчас до 9 слотов на автомобиль: slot_(Front, Center, Back)(Left, Center, Right).
 # Все слоты закоментированы, кроме переднего центрального.
-slot_FL: ~
-slot_FR: ~
-slot_CC: ~
+slot_FC: ~
+slot_CL: ~
+slot_CR: ~
 slot_BC: ~
 
 # Настройка ограничений направления оружия из слота. Значением является строка в котороую включены первые буквы
 # соответствующих направлений (Front, Back, Left, Right)
 # Все слоты закоментированы, кроме переднего центрального.
-slot_FL_f: FRL_4
-slot_FR_f: FRL_4
-slot_CC_f: RL_2
-slot_BC_f: RBL_4
+slot_FC_f: FLR_4
+slot_CL_f: LFB_2
+slot_CR_f: RFB_2
+slot_BC_f: BLR_4
 
 # Настройка слотов для Тюнера
 slot_t1: ~
@@ -86,6 +86,7 @@ slot_t13: ~
 slot_t14: ~
 slot_t15: ~
 slot_t17: ~
+slot_t18: ~
 
 # Ссылки на иконки для инвентаря/ангара
 inv_icon_big: static/content/mobiles/cars/cargo/trucks/07_studebaker_us6/inventory/big.png
