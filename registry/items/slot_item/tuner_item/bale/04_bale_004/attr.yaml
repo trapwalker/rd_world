@@ -1,0 +1,111 @@
+﻿_cls  : TunerItem
+doc      : Баул (обычный)
+abstract : false
+
+tags     : [bale]
+
+title:                         # Краткое название - отобразится в слоте инвентаря
+    en: Canister "NukeOil"   ##LOCALIZATION
+    ru: Канистра "Нукойл"
+
+# Полное описание - отобразится в разделе описания в инвентаре
+description: 
+    en: ''   ##LOCALIZATION
+    ru: Дырявая канистра, в которой когда-то было что-то налито, теперь выполняет эстетическую функцию.
+
+
+base_price  : 1000   # Цена
+pont_points : 50
+
+# Картинки для представления в инвентаре
+inv_icon_big   : static/content/items/slot_item/tuner_item/bale/04_bale_004/inventory/big.png
+inv_icon_mid   : static/content/items/slot_item/tuner_item/bale/04_bale_004/inventory/mid.png
+inv_icon_small : static/content/items/slot_item/tuner_item/bale/04_bale_004/inventory/small.png
+
+# Картинки для представления у тюнера, установленные на машине
+images:
+
+   # LVL 00
+
+  - car: reg:///registry/mobiles/cars/light/motorcycles/honda_cy_50      # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                                 # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/bale/04_bale_004/00_honda_cy_50/top.png    # ссылка на картику для вида сверху
+        z_index: 1                                                       # позиция: -1 или 1
+    side:                                                                # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/bale/04_bale_004/00_honda_cy_50/side.png   # ссылка на картику для вида сбоку
+        z_index: 1                                                       # позиция: -1 или 1
+
+  - car: reg:///registry/mobiles/cars/light/motorcycles/jawa_cz_355      # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                                 # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/bale/04_bale_004/00_jawa_cz_355/top.png    # ссылка на картику для вида сверху
+        z_index: 1                                                       # позиция: -1 или 1
+    side:                                                                # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/bale/04_bale_004/00_jawa_cz_355/side.png   # ссылка на картику для вида сбоку
+        z_index: 1                                                       # позиция: -1 или 1
+
+   # LVL 01
+
+  - car: reg:///registry/mobiles/cars/light/motorcycles/01_honda_sl90        # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                                    # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/bale/04_bale_004/01_honda_sl90/top.png    # ссылка на картику для вида сверху
+        z_index: 1                                                          # позиция: -1 или 1
+    side:                                                                   # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/bale/04_bale_004/01_honda_sl90/side.png   # ссылка на картику для вида сбоку
+        z_index: 1                                                          # позиция: -1 или 1
+
+   # LVL 02
+
+   # LVL 03
+
+  - car: reg:///registry/mobiles/cars/light/motorcycles/03_cad_19           # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                                    # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/bale/04_bale_004/03_cad_19/top.png    # ссылка на картику для вида сверху
+        z_index: 1                                                          # позиция: -1 или 1
+    side:                                                                   # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/bale/04_bale_004/03_cad_19/side.png   # ссылка на картику для вида сбоку
+        z_index: 1                                                          # позиция: -1 или 1
+
+  - car: reg:///registry/mobiles/cars/light/motorcycles/03_triumph_bonneville_america    # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                                    # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/bale/04_bale_004/03_triumph_bonneville_america/top.png    # ссылка на картику для вида сверху
+        z_index: 1                                                          # позиция: -1 или 1
+    side:                                                                   # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/bale/04_bale_004/03_triumph_bonneville_america/side.png   # ссылка на картику для вида сбоку
+        z_index: 1                                                          # позиция: -1 или 1
+
+   # LVL 04
+
+  - car: reg:///registry/mobiles/cars/light/motorcycles/04_kawasaki_klx250           # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                                    # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/bale/04_bale_004/04_kawasaki_klx250/top.png    # ссылка на картику для вида сверху
+        z_index: 1                                                          # позиция: -1 или 1
+    side:                                                                   # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/bale/04_bale_004/04_kawasaki_klx250/side.png   # ссылка на картику для вида сбоку
+        z_index: 1                                                          # позиция: -1 или 1
+
+   # LVL 05
+
+
+  - car: reg:///registry/mobiles/cars/light/motorcycles/honda_hornet           # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                                    # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/bale/04_bale_004/05_honda_hornet/top.png    # ссылка на картику для вида сверху
+        z_index: 1                                                          # позиция: -1 или 1
+    side:                                                                   # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/bale/04_bale_004/05_honda_hornet/side.png   # ссылка на картику для вида сбоку
+        z_index: 1                                                          # позиция: -1 или 1
+
+   # LVL 06
+
+   # LVL 07
+
+   # LVL 08
+
+  - car: reg:///registry/mobiles/cars/light/motorcycles/08_cad_31           # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                                    # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/bale/04_bale_004/08_cad_31/top.png    # ссылка на картику для вида сверху
+        z_index: 1                                                          # позиция: -1 или 1
+    side:                                                                   # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/bale/04_bale_004/08_cad_31/side.png   # ссылка на картику для вида сбоку
+        z_index: 1                                                          # позиция: -1 или 1
+
+   # LVL 09

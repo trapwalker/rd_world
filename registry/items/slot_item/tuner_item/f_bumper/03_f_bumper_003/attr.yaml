@@ -1,0 +1,190 @@
+﻿_cls  : TunerItem
+doc      : Бампер "Цепь" (задний)
+abstract : false
+
+tags     : [b_bumper]
+
+title:                                   # Краткое название - отобразится в слоте инвентаря
+    en: Bumper "003" (rear)   ##LOCALIZATION
+    ru: Бампер "003" (задний)
+
+# Полное описание - отобразится в разделе описания в инвентаре
+description: 
+    en: ''   ##LOCALIZATION
+    ru: Гремит так, что слышно издалека. Поэтому не подходит для трусов, предпочитающих незаметно перемещаться по пустошам.
+
+
+base_price  : 950                       # Цена
+pont_points : 115                         # Очки крутости
+
+# Картинки для представления в инвентаре
+inv_icon_big   : static/content/items/slot_item/tuner_item/f_bumper/03_f_bumper_003/inventory/big.png
+inv_icon_mid   : static/content/items/slot_item/tuner_item/f_bumper/03_f_bumper_003/inventory/mid.png
+inv_icon_small : static/content/items/slot_item/tuner_item/f_bumper/03_f_bumper_003/inventory/small.png
+
+# Картинки для представления у тюнера, установленные на машине
+images:
+
+   # LVL 00
+
+  - car: reg:///registry/mobiles/cars/middle/cars/vw_beetle          # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                             # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/f_bumper/03_f_bumper_003/00_vw_beetle/top.png    # ссылка на картику для вида сверху
+        z_index: 1                                                   # позиция: -1 или 1
+    side:                                                            # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/f_bumper/03_f_bumper_003/00_vw_beetle/side.png   # ссылка на картику для вида сбоку
+        z_index: 1                                                   # позиция: -1 или 1
+
+  - car: reg:///registry/mobiles/cars/middle/cars/vw_golf            # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                             # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/f_bumper/03_f_bumper_003/00_vw_golf/top.png    # ссылка на картику для вида сверху
+        z_index: 1                                                   # позиция: -1 или 1
+    side:                                                            # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/f_bumper/03_f_bumper_003/00_vw_golf/side.png   # ссылка на картику для вида сбоку
+        z_index: 1                                                   # позиция: -1 или 1
+
+   # LVL 01
+
+  - car: reg:///registry/mobiles/cars/middle/cars/01_mazda_luce_1500        # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                                    # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/f_bumper/03_f_bumper_003/01_mazda_luce_1500/top.png    # ссылка на картику для вида сверху
+        z_index: 1                                                          # позиция: -1 или 1
+    side:                                                                   # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/f_bumper/03_f_bumper_003/01_mazda_luce_1500/side.png   # ссылка на картику для вида сбоку
+        z_index: 1                                                          # позиция: -1 или 1
+
+  - car: reg:///registry/mobiles/cars/middle/cars/01_fiat_croma      # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                             # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/f_bumper/03_f_bumper_003/01_fiat_croma/top.png  # ссылка на картику для вида сверху
+        z_index: 1                                                   # позиция: -1 или 1
+    side:                                                            # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/f_bumper/03_f_bumper_003/01_fiat_croma/side.png # ссылка на картику для вида сбоку
+        z_index: 1                                                   # позиция: -1 или 1
+
+   # LVL 02
+
+  - car: reg:///registry/mobiles/cars/middle/cars/02_toyota_corolla         # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                                    # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/f_bumper/03_f_bumper_003/02_toyota_corolla/top.png    # ссылка на картику для вида сверху
+        z_index: 1                                                          # позиция: -1 или 1
+    side:                                                                   # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/f_bumper/03_f_bumper_003/02_toyota_corolla/side.png   # ссылка на картику для вида сбоку
+        z_index: 1                                                          # позиция: -1 или 1
+
+  - car: reg:///registry/mobiles/cars/middle/cars/02_chevrolet_monte_carlo   # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                                     # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/f_bumper/03_f_bumper_003/02_chevrolet_monte_carlo/top.png    # ссылка на картику для вида сверху
+        z_index: 1                                                           # позиция: -1 или 1
+    side:                                                                    # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/f_bumper/03_f_bumper_003/02_chevrolet_monte_carlo/side.png   # ссылка на картику для вида сбоку
+        z_index: 1                                                           # позиция: -1 или 1
+
+  - car: reg:///registry/mobiles/cars/middle/sports/02_alfa_romeo_75 # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                             # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/f_bumper/03_f_bumper_003/02_alfa_romeo_75/top.png  # ссылка на картику для вида сверху
+        z_index: 1                                                   # позиция: -1 или 1
+    side:                                                            # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/f_bumper/03_f_bumper_003/02_alfa_romeo_75/side.png # ссылка на картику для вида сбоку
+        z_index: 1                                                   # позиция: -1 или 1
+
+   # LVL 03
+
+  - car: reg:///registry/mobiles/cars/middle/cars/03_honda_accord           # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                                    # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/f_bumper/03_f_bumper_003/03_honda_accord/top.png    # ссылка на картику для вида сверху
+        z_index: 1                                                          # позиция: -1 или 1
+    side:                                                                   # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/f_bumper/03_f_bumper_003/03_honda_accord/side.png   # ссылка на картику для вида сбоку
+        z_index: 1                                                          # позиция: -1 или 1
+
+  - car: reg:///registry/mobiles/cars/middle/cars/03_chrysler_new_yorker    # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                                    # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/f_bumper/03_f_bumper_003/03_chrysler_new_yorker/top.png    # ссылка на картику для вида сверху
+        z_index: 1                                                          # позиция: -1 или 1
+    side:                                                                   # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/f_bumper/03_f_bumper_003/03_chrysler_new_yorker/side.png   # ссылка на картику для вида сбоку
+        z_index: 1                                                          # позиция: -1 или 1
+
+   # LVL 04
+
+  - car: reg:///registry/mobiles/cars/middle/cars/04_bmw_320i_e21           # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                                    # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/f_bumper/03_f_bumper_003/04_bmw_320i_e21/top.png    # ссылка на картику для вида сверху
+        z_index: 1                                                          # позиция: -1 или 1
+    side:                                                                   # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/f_bumper/03_f_bumper_003/04_bmw_320i_e21/side.png   # ссылка на картику для вида сбоку
+        z_index: 1                                                          # позиция: -1 или 1
+
+  - car: reg:///registry/mobiles/cars/middle/cars/04_lancia_delta_hf_integrale    # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                                           # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/f_bumper/03_f_bumper_003/04_lancia_delta_hf_integrale/top.png    # ссылка на картику для вида сверху
+        z_index: 1                                                                 # позиция: -1 или 1
+    side:                                                                          # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/f_bumper/03_f_bumper_003/04_lancia_delta_hf_integrale/side.png   # ссылка на картику для вида сбоку
+        z_index: 1                                                                 # позиция: -1 или 1
+
+  - car: reg:///registry/mobiles/cars/middle/sports/04_delorean_dmc_12      # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                                    # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/f_bumper/03_f_bumper_003/04_delorean_dmc_12/top.png    # ссылка на картику для вида сверху
+        z_index: 1                                                          # позиция: -1 или 1
+    side:                                                                   # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/f_bumper/03_f_bumper_003/04_delorean_dmc_12/side.png   # ссылка на картику для вида сбоку
+        z_index: 1                                                          # позиция: -1 или 1
+
+   # LVL 05
+
+  - car: reg:///registry/mobiles/cars/middle/cars/dodge_challenger           # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                                    # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/f_bumper/03_f_bumper_003/05_dodge_chellenger/top.png    # ссылка на картику для вида сверху
+        z_index: 1                                                          # позиция: -1 или 1
+    side:                                                                   # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/f_bumper/03_f_bumper_003/05_dodge_chellenger/side.png   # ссылка на картику для вида сбоку
+        z_index: 1                                                          # позиция: -1 или 1
+
+   # LVL 06
+
+  - car: reg:///registry/mobiles/cars/middle/sports/06_ford_mustang_shelby_gt500           # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                                    # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/f_bumper/03_f_bumper_003/06_ford_mustang_shelby_gt500/top.png    # ссылка на картику для вида сверху
+        z_index: 1                                                          # позиция: -1 или 1
+    side:                                                                   # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/f_bumper/03_f_bumper_003/06_ford_mustang_shelby_gt500/side.png   # ссылка на картику для вида сбоку
+        z_index: 1                                                          # позиция: -1 или 1
+
+   # LVL 07
+
+  - car: reg:///registry/mobiles/cars/middle/sports/07_porsche_928           # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                                    # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/f_bumper/03_f_bumper_003/07_porsche_928/top.png    # ссылка на картику для вида сверху
+        z_index: 1                                                          # позиция: -1 или 1
+    side:                                                                   # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/f_bumper/03_f_bumper_003/07_porsche_928/side.png   # ссылка на картику для вида сбоку
+        z_index: 1                                                          # позиция: -1 или 1
+
+   # LVL 08
+
+  - car: reg:///registry/mobiles/cars/middle/cars/08_audi_200_avant           # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                                    # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/f_bumper/03_f_bumper_003/08_audi_200_avant/top.png    # ссылка на картику для вида сверху
+        z_index: 1                                                          # позиция: -1 или 1
+    side:                                                                   # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/f_bumper/03_f_bumper_003/08_audi_200_avant/side.png   # ссылка на картику для вида сбоку
+        z_index: 1                                                          # позиция: -1 или 1
+
+  - car: reg:///registry/mobiles/cars/middle/cars/08_rolls-royce_silver_spirit           # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                                    # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/f_bumper/03_f_bumper_003/08_rolls-royce_silver_spirit/top.png    # ссылка на картику для вида сверху
+        z_index: 1                                                          # позиция: -1 или 1
+    side:                                                                   # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/f_bumper/03_f_bumper_003/08_rolls-royce_silver_spirit/side.png   # ссылка на картику для вида сбоку
+        z_index: 1                                                          # позиция: -1 или 1
+
+   # LVL 09
+
+  - car: reg:///registry/mobiles/cars/middle/cars/09_chevrolet_impala           # реестровая ссылка на машинку, для которой подходит данный итем
+    top:                                                                    # описание вида сверху (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/f_bumper/03_f_bumper_003/09_chevrolet_impala/top.png    # ссылка на картику для вида сверху
+        z_index: 1                                                          # позиция: -1 или 1
+    side:                                                                   # описание вида сбоку (картинка и позиция)
+        link: static/content/items/slot_item/tuner_item/f_bumper/03_f_bumper_003/09_chevrolet_impala/side.png   # ссылка на картику для вида сбоку
+        z_index: 1                                                          # позиция: -1 или 1
