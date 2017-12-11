@@ -18,10 +18,12 @@ class ClassQuestPartyExp(ClassTypeQuest):
             en=u"{}, {}".format(
                 self.agent.login,
                 self.locale(key="q_cq_party_exp_task_text", loc="en"),
+                self.locale(key="q_cq_journal_reward_1", loc="en"),
             ),
             ru=u"{}, {}".format(
                 self.agent.login,
                 self.locale(key="q_cq_party_exp_task_text", loc="ru"),
+                self.locale(key="q_cq_journal_reward_1", loc="ru"),
             ),
         )
 
@@ -47,6 +49,7 @@ class ClassQuestPartyExp(ClassTypeQuest):
             if isinstance(event, OnNote) and (event.note_uid == quest.dc.quest_note):
                 if quest.dc.exp_summ >= quest.exp_value:
                     quest.agent.profile.del_note(uid=quest.dc.quest_note, time=event.time)
+                    quest.agent.profile.set_exp(time=event.time, dvalue=3000)
                     quest.go(event=event, new_state="win")
                 else:
                     text = LocalizedString(_id="q_cq_party_exp_replica_not_finish").generate(##LOCALIZATION

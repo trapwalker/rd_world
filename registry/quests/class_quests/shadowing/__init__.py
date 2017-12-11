@@ -7,7 +7,7 @@ from sublayers_server.model.quest_events import OnNote, OnTimer
 from sublayers_server.model.registry_me.classes import notes
 from sublayers_server.model.registry_me.tree import IntField, LocalizedString
 from sublayers_server.model.units import Bot
-
+from sublayers_server.model.messages import ArcadeTextMessage
 from sublayers_world.registry.quests.class_quests import ClassTypeQuest
 
 
@@ -53,22 +53,30 @@ class ClassQuestShadowing(ClassTypeQuest):
                     text = LocalizedString(_id='q_cq_shadowing_break_target').generate(
                         target_login=obj.main_agent.print_login())  ##LOCALIZATION
                     self.log(text=text, event=event, game_log_only=True)
+                    ArcadeTextMessage(agent=self.agent.profile._agent_model, time=event.time,
+                                      arcade_message_type='spy_failed').post()
                 elif obj not in agent_car.visible_objects:  # если мы потеряли цель
                     del self.dc.shadowings[obj_uid]  # Удаляем слежку
                     text = LocalizedString(_id='q_cq_shadowing_lost_target').generate(
                         target_login=obj.main_agent.print_login(), game_log_only=True)  ##LOCALIZATION
                     self.log(text=text, event=event)
+                    ArcadeTextMessage(agent=self.agent.profile._agent_model, time=event.time,
+                                      arcade_message_type='spy_failed').post()
                 else:  # Слежка проходит успешно, прибавляем значение интервала
                     if self.dc.shadowings[obj_uid] == 0:
                         # print(u"Начнём следить! для {}".format(target.main_agent.uid))
                         text = LocalizedString(_id='q_cq_shadowing_start_target').generate(
                             target_login=obj.main_agent.print_login())  ##LOCALIZATION
                         self.log(text=text, event=event, game_log_only=True)
+                        ArcadeTextMessage(agent=self.agent.profile._agent_model, time=event.time,
+                                          arcade_message_type='spy_start').post()
                     self.dc.shadowings[obj_uid] += self.shadowing_check_interval
                     # Проверить, а не завершена ли слежка
                     if self.dc.shadowings[obj_uid] > self.shadowing_duration: # Слежка завершена
                         self.dc.uids.append(obj.main_agent.uid)
                         del self.dc.shadowings[obj_uid]
+                        ArcadeTextMessage(agent=self.agent.profile._agent_model, time=event.time,
+                                          arcade_message_type='spy_finish').post()
                         text = LocalizedString(_id='q_cq_shadowing_one_template').generate(
                             target_login=obj.main_agent.print_login())  ##LOCALIZATION
                         self.log(text=text, event=event)
@@ -77,7 +85,6 @@ class ClassQuestShadowing(ClassTypeQuest):
         for target in agent_car.visible_objects:
             if isinstance(target, Bot) and target.main_agent.uid not in self.dc.uids and target.uid not in self.dc.shadowings:
                 self.dc.shadowings[target.uid] = 0
-
 
     ####################################################################################################################
     class begin(QuestState_):
@@ -114,13 +121,13 @@ class ClassQuestShadowing(ClassTypeQuest):
                 if quest.count <= len(quest.dc.uids):
                     quest.log(text=quest.locale("q_cq_shadowing_back_to_teacher"), event=event)  ##LOCALIZATION
                     quest.go(event=event, new_state="back_to_teacher")
-
+    ####################################################################################################################
     class back_to_teacher(QuestState_):
         def on_event_(self, quest, event):
             if isinstance(event, OnNote) and (event.note_uid == quest.dc.quest_note):
                 quest.agent.profile.del_note(uid=quest.dc.quest_note, time=event.time)
+                quest.agent.profile.set_exp(time=event.time, dvalue=3000)
                 quest.go(event=event, new_state="win")
-
     ####################################################################################################################
     class win(WinState):
         def on_enter_(self, quest, event):
