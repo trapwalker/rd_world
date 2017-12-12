@@ -26,7 +26,7 @@ class GetCarMaxLevelQuest(ClassTypeQuest):
     )
     ####################################################################################################################
     def init_text(self):
-        self.text = LocalizedString(_id="q_cq_get_car_lvl_text")  ##LOCALIZATION
+        self.text = LocalizedString(_id="q_cq_get_car_lvl_text").generate(reward_exp=2000)  ##LOCALIZATION
 
     def on_start_(self, event, **kw):
         role_class = self.agent.profile.role_class
@@ -53,6 +53,7 @@ class GetCarMaxLevelQuest(ClassTypeQuest):
                 agent = quest.agent.profile
                 if agent.car and agent.car.get_real_lvl() > 4: # info по идее это максимальный уровень машинки
                     agent.del_note(uid=quest.dc.car_info_note, time=event.time)
+                    agent.set_exp(time=event.time, dvalue=2000)
                     quest.go(event=event, new_state="win")
                 else:
                     quest.npc_replica(
@@ -60,7 +61,6 @@ class GetCarMaxLevelQuest(ClassTypeQuest):
                         replica=quest.locale("q_cq_get_car_lvl_bad"),  ##LOCALIZATION
                         event=event
                     )
-
     ####################################################################################################################
     class win(WinState):
         def on_enter_(self, quest, event):

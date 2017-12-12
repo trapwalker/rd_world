@@ -7,7 +7,7 @@ list_icon: static/img/quests/icons/rpg_dice.png
 next_quest: reg:///registry/quests/class_quests/karma_limit
 
 caption: 
-    en: Class quest   ##LOCALIZATION
-    ru: Классовый квест
+    en: 'Get busy! #2'        ##LOCALIZATION
+    ru: 'Займись делом! #2'
 
 attack_count: 10

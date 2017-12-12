@@ -7,11 +7,13 @@ list_icon: static/img/quests/icons/rpg_dice.png
 next_quest: reg:///registry/quests/class_quests/karma_limit
 
 caption: 
-    en: Class quest   ##LOCALIZATION
-    ru: Классовый квест
+    en: 'Get busy! #2'        ##LOCALIZATION
+    ru: 'Займись делом! #2'
 
 tasks_count: 2
 npcs:  # НПЦ,  у которых нужно выполнять задания
   - reg:///registry/institutions/mayor/bonita_vista_jack_lape
   - reg:///registry/institutions/mayor/prior_donnie_alma
   - reg:///registry/institutions/mayor/whitehill_manny_askorti
+  - reg:///registry/institutions/mayor/painted_rock_samuel_fry
+  - reg:///registry/institutions/mine_manager/mine_whitehill_bob_mcdowell
