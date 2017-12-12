@@ -10,7 +10,7 @@ caption:
     en: 'Get busy! #2'        ##LOCALIZATION
     ru: 'Займись делом! #2'
 
-count: 20
+count: 50
 
 available_activate_items:
   - reg:///registry/items/usable/map_weapon/mines
