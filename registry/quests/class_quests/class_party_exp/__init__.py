@@ -14,8 +14,18 @@ class ClassQuestPartyExp(ClassTypeQuest):
     exp_value = IntField(caption=u"Сумма опыта для накопления")
 
     def init_text(self):
-        self.text = LocalizedString(_id="q_cq_journal_text").generate(
-            player_name=self.agent.login, task_text=self.locale("q_cq_party_exp_task_text"))  ##LOCALIZATION
+        self.text = LocalizedString(
+            en=u"{}, {}".format(
+                self.agent.login,
+                self.locale(key="q_cq_party_exp_task_text", loc="en"),
+                self.locale(key="q_cq_journal_reward_1", loc="en"),
+            ),
+            ru=u"{}, {}".format(
+                self.agent.login,
+                self.locale(key="q_cq_party_exp_task_text", loc="ru"),
+                self.locale(key="q_cq_journal_reward_1", loc="ru"),
+            ),
+        )
 
     def on_start_(self, event, **kw):
         self.init_text()
@@ -39,6 +49,7 @@ class ClassQuestPartyExp(ClassTypeQuest):
             if isinstance(event, OnNote) and (event.note_uid == quest.dc.quest_note):
                 if quest.dc.exp_summ >= quest.exp_value:
                     quest.agent.profile.del_note(uid=quest.dc.quest_note, time=event.time)
+                    quest.agent.profile.set_exp(time=event.time, dvalue=3000)
                     quest.go(event=event, new_state="win")
                 else:
                     text = LocalizedString(_id="q_cq_party_exp_replica_not_finish").generate(##LOCALIZATION

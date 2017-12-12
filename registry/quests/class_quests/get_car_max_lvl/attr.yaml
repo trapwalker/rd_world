@@ -5,8 +5,8 @@ first_state: begin
 list_icon: static/img/quests/icons/rpg_dice.png
 
 caption: 
-    en: Class quest   ##LOCALIZATION
-    ru: Классовый квест
+    en: Taming   ##LOCALIZATION
+    ru: Укрощение
 
 
 attributes_by_class:

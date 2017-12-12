@@ -191,10 +191,10 @@ images:
 
   - car: reg:///registry/mobiles/cars/middle/offroad/defender           # реестровая ссылка на машинку, для которой подходит данный итем
     top:                                                                    # описание вида сверху (картинка и позиция)
-        link: static/content/items/slot_item/tuner_item/f_fender/01_f_fender_005/05_defender/top.png    # ссылка на картику для вида сверху
+        link: static/content/items/slot_item/tuner_item/airint/02_airint_001/05_defender/top.png    # ссылка на картику для вида сверху
         z_index: 1                                                          # позиция: -1 или 1
     side:                                                                   # описание вида сбоку (картинка и позиция)
-        link: static/content/items/slot_item/tuner_item/f_fender/01_f_fender_005/05_defender/side.png   # ссылка на картику для вида сбоку
+        link: static/content/items/slot_item/tuner_item/airint/02_airint_001/05_defender/side.png   # ссылка на картику для вида сбоку
         z_index: 1                                                          # позиция: -1 или 1
 
   - car: reg:///registry/mobiles/cars/middle/cars/dodge_challenger           # реестровая ссылка на машинку, для которой подходит данный итем

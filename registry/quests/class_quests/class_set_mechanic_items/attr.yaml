@@ -7,7 +7,7 @@ list_icon: static/img/quests/icons/rpg_dice.png
 next_quest: reg:///registry/quests/class_quests/get_car_max_lvl
 
 caption: 
-    en: Class quest   ##LOCALIZATION
-    ru: Классовый квест
+    en: Get busy!        ##LOCALIZATION
+    ru: Займись делом!
 
-count_items: 6
+count_items: 18

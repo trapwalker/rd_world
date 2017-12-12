@@ -14,8 +14,16 @@ class ClassQuestBarterCount(ClassTypeQuest):
     barters_count = IntField(caption=u"Количество завершённых бартеров")
 
     def init_text(self):
-        self.text = LocalizedString(_id="q_cq_journal_text").generate(
-            player_name=self.agent.login, task_text=self.locale("q_cq_barters_task_text"))  ##LOCALIZATION
+        self.text = LocalizedString(
+            en=u"{}<br>{}".format(
+                self.locale(key="q_cq_barters_task_text", loc="en"),
+                self.locale(key="q_cq_journal_reward_2", loc="en"),
+            ),
+            ru=u"{}<br>{}".format(
+                self.locale(key="q_cq_barters_task_text", loc="ru"),
+                self.locale(key="q_cq_journal_reward_2", loc="ru"),
+            ),
+        )
 
     def on_start_(self, event, **kw):
         self.init_text()
@@ -65,6 +73,7 @@ class ClassQuestBarterCount(ClassTypeQuest):
         def on_event_(self, quest, event):
             if isinstance(event, OnNote) and (event.note_uid == quest.dc.quest_note):
                 quest.agent.profile.del_note(uid=quest.dc.quest_note, time=event.time)
+                quest.agent.profile.set_exp(time=event.time, dvalue=5000)
                 quest.go(event=event, new_state="win")
 
     ####################################################################################################################

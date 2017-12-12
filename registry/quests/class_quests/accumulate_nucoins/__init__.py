@@ -14,8 +14,18 @@ class ClassQuestAccumulateNucoins(ClassTypeQuest):
     accumulate_summ = IntField(caption=u"Сумма для накопления")
 
     def init_text(self):
-        self.text = LocalizedString(_id="q_cq_journal_text").generate(
-            player_name=self.agent.login, task_text=self.locale("q_cq_acc_summ_task_text"))  ##LOCALIZATION
+        self.text = LocalizedString(
+            en=u"{}, {}".format(
+                self.agent.login,
+                self.locale(key="q_cq_acc_summ_task_text", loc="en"),
+                self.locale(key="q_cq_journal_reward_1", loc="en"),
+            ),
+            ru=u"{}, {}".format(
+                self.agent.login,
+                self.locale(key="q_cq_acc_summ_task_text", loc="ru"),
+                self.locale(key="q_cq_journal_reward_1", loc="ru"),
+            ),
+        )
 
     def on_start_(self, event, **kw):
         self.init_text()
@@ -38,6 +48,7 @@ class ClassQuestAccumulateNucoins(ClassTypeQuest):
             if isinstance(event, OnNote) and (event.note_uid == quest.dc.quest_note):
                 if quest.agent.profile.balance >= quest.accumulate_summ:
                     quest.agent.profile.del_note(uid=quest.dc.quest_note, time=event.time)
+                    quest.agent.profile.set_exp(time=event.time, dvalue=3000)
                     quest.go(event=event, new_state="win")
                 else:
                     quest.npc_replica(

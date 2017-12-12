@@ -18,8 +18,16 @@ class ClassQuestNPCsTasksComplete(ClassTypeQuest):
     )
 
     def init_text(self):
-        self.text = LocalizedString(_id="q_cq_journal_text").generate(
-            player_name=self.agent.login, task_text=self.locale("q_cq_npc_tasks_task_text"))  ##LOCALIZATION
+        self.text = LocalizedString(
+            en=u"{}<br>{}".format(
+                self.locale(key="q_cq_npc_tasks_task_text", loc="en"),
+                self.locale(key="q_cq_journal_reward_2", loc="en"),
+            ),
+            ru=u"{}<br>{}".format(
+                self.locale(key="q_cq_npc_tasks_task_text", loc="ru"),
+                self.locale(key="q_cq_journal_reward_2", loc="ru"),
+            ),
+        )
 
     def check_tasks(self):
         for npc in self.npcs:
@@ -28,9 +36,18 @@ class ClassQuestNPCsTasksComplete(ClassTypeQuest):
                 return False
         return True
 
+    def get_not_complete_npc(self):
+        npc_list = []
+        for npc in self.npcs:
+            if self.dc.tasks.get(npc.uri, 0) < self.tasks_count:
+                npc_list.append(self.locale(npc.title))
+        return u', '.join(npc_list)
+
     def on_start_(self, event, **kw):
         self.init_text()
         self.dc.tasks = dict()
+        for npc in self.npcs:
+            self.dc.tasks[npc.uri] = 0
         self.log(text=self.locale("q_cq_npc_tasks_started"), event=event)  ##LOCALIZATION
 
 
@@ -53,7 +70,10 @@ class ClassQuestNPCsTasksComplete(ClassTypeQuest):
                 else:
                     quest.npc_replica(
                         npc=quest.hirer,
-                        replica=quest.locale("q_cq_npc_tasks_replica_not_finish"),  ##LOCALIZATION
+                        replica=u'{}<br>{}.t'.format( ##LOCALIZATION
+                            quest.locale("q_cq_npc_tasks_replica_not_finish"),
+                            quest.get_not_complete_npc(),
+                        ),
                         event=event
                     )
 
@@ -84,6 +104,7 @@ class ClassQuestNPCsTasksComplete(ClassTypeQuest):
     ####################################################################################################################
     class win(WinState):
         def on_enter_(self, quest, event):
+            quest.agent.profile.set_exp(time=event.time, dvalue=5000)
             quest.npc_replica(
                 npc=quest.hirer,
                 replica=quest.locale("q_cq_npc_tasks_phrase_success"),  ##LOCALIZATION
