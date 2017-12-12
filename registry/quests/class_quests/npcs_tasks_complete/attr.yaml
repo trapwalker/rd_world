@@ -10,7 +10,7 @@ caption:
     en: 'Get busy! #2'        ##LOCALIZATION
     ru: 'Займись делом! #2'
 
-tasks_count: 2
+tasks_count: 5
 npcs:  # НПЦ,  у которых нужно выполнять задания
   - reg:///registry/institutions/mayor/bonita_vista_jack_lape
   - reg:///registry/institutions/mayor/prior_donnie_alma
