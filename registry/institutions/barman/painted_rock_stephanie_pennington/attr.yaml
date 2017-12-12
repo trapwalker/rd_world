@@ -8,3 +8,79 @@ photo    : "static/content/institutions/barman/painted_rock_stephanie_pennington
 abstract : false
 
 hometown : reg:///registry/poi/locations/towns/painted_rock
+
+
+
+quests:
+  - parent: reg:///registry/quests/search_courier   # ПОИСК КУРЬЕРА
+    _cls: SearchCourier
+    design_speed: 0.3              # Скорость в px/с с которой должен двигаться игрок чтобы успеть (если = 0, то время не ограничено)
+    cache_radius: 50               # Радиус, в котором можно обнаружить тайник
+    reward_exp: 100                # Опыт
+    loot_set_list:                 # Список хлама
+      -
+        - reg:///registry/items/stuff/alcohol/alcohol_002
+        - reg:///registry/items/stuff/canned_cereal/canned_cereal_001
+        - reg:///registry/items/stuff/canned_meat/canned_meat_001
+        - reg:///registry/items/stuff/medical_supplies/medical_supplies_001
+        - reg:///registry/items/stuff/scrap_metal/scrap_metal_001
+        - reg:///registry/items/stuff/warm_clothes/warm_clothes_003
+        - reg:///registry/items/stuff/water/water_002
+        - reg:///registry/items/usable/ammo/556bb
+        - reg:///registry/items/usable/ammo/762x51bb
+        - reg:///registry/items/usable/ammo/792bb
+        - reg:///registry/items/usable/ammo/127x108bb
+        - reg:///registry/items/usable/ammo/23bzt
+        - reg:///registry/items/usable/ammo/30bb
+        - reg:///registry/items/usable/ammo/88bb
+    courier_medallion:
+      parent: reg:///registry/items/quest_item
+      _cls: QuestItem
+      title:
+          en: Platinum chip   ##LOCALIZATION
+          ru: Платиновая фишка
+
+      description:
+          en: The subject of the deceased courier. It is necessary to deliver Manny_Ascorti.   ##LOCALIZATION
+          ru: Предмет погибшего курьера. Необходимо доставить Manny_Ascorti.
+
+      inv_icon_big    : static/content/items/quest_item/courier_medalion/big.png
+      inv_icon_mid    : static/content/items/quest_item/courier_medalion/mid.png
+      inv_icon_small  : static/content/items/quest_item/courier_medalion/mid.png
+      inv_icon_xsmall : static/content/items/quest_item/courier_medalion/mid.png
+    cache_points_generator:        # Список областей генерации тайников
+      - {position: [12481005, 27027290], radius: 1024}
+      - {position: [12482061, 27025324], radius: 1024}
+      - {position: [12483085, 27026332], radius: 1024}
+      - {position: [12484149, 27028332], radius: 1024}
+      - {position: [12484053, 27021372], radius: 1024}
+      - {position: [12483029, 27023372], radius: 1024}
+      - {position: [12481101, 27020348], radius: 1024}
+      - {position: [12479933, 27029276], radius: 1024}
+      - {position: [12480077, 27024572], radius: 1024}
+      - {position: [12481213, 27026540], radius: 1024}
+      - {position: [12482165, 27028516], radius: 1024}
+      - {position: [12483237, 27026508], radius: 1024}
+      - {position: [12484301, 27024460], radius: 1024}
+      - {position: [12479493, 27025108], radius: 1024}
+      - {position: [12478981, 27026388], radius: 1024}
+      - {position: [12480061, 27027092], radius: 1024}
+      - {position: [12482335, 27028835], radius: 10240}
+
+
+  - parent: reg:///registry/quests/delivery_quest/delivery_passenger_quest   # ДОСТАВКА ПАССАЖИРА
+    _cls: DeliveryPassengerQuest
+    reward_relation_hirer: 5.0     # Награда в отношение за выполнение
+    karma_coef: 0.0                # Часть кармы от общей награды
+    money_coef: 1.0                # Часть нуокйнов от общей награды
+    person_delivery_cost: 250      # Стоимость доставки отдельного пассажира
+    reward_exp: 250                # Опыт
+    delivery_set_list:
+      -
+        - reg:///registry/items/passengers/female
+        - reg:///registry/items/passengers/male
+    destination_list:              # Список возможных пунктов назначения
+      - reg:///registry/poi/locations/towns/prior
+      - reg:///registry/poi/locations/towns/paloma
+      - reg:///registry/poi/locations/towns/whitehill
+      - reg:///registry/poi/locations/towns/bonita_vista

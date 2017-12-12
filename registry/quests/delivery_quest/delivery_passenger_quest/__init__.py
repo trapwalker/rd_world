@@ -124,7 +124,7 @@ class DeliveryPassengerQuest(DeliveryQuestSimple):
         self.init_deadline(distance)
         distance_cost = self.get_distance_cost(distance=distance)
         if distance_cost == 0:
-            log.wiarning('DeliveryPassenger Quest: Warning!!! Distance from hirer<{}> to recipient<{}> = {}. Change recipient'.format(
+            log.warning('DeliveryPassenger Quest: Warning!!! Distance from hirer<{}> to recipient<{}> = {}. Change recipient'.format(
                 self.hirer, self.recipient, distance))
 
         self.total_reward_money = self.total_delivery_money_coef * cost_delivery_items + distance_cost

@@ -1,12 +1,12 @@
 ﻿_cls     : Town
-doc      : Nukeoil_001
+doc      : Nukeoil_006
 abstract : false
 
 title: 
-    en: NukeoOil_001   ##LOCALIZATION
-    ru: Нукойл_001
+    en: NukeOil_006   ##LOCALIZATION
+    ru: Нукойл_006
 
-position          : {x: 12540710, y: 27048200}   # Заправка возле Прайра
+position          : {x: 12479283, y: 27030846}   # Заправка между whitehill и painted rock
 p_observing_range : 250
 p_enter_range     : 150
 
@@ -15,11 +15,11 @@ svg_link: static/content/locations/map_locations/nukeoil_001
 buildings:
   - name: nukeoil
     caption: 
-        en: NukeoOil   ##LOCALIZATION
+        en: NukeOil   ##LOCALIZATION
         ru: Нукойл
 
     title: 
-        en: NukeoOil   ##LOCALIZATION
+        en: NukeOil   ##LOCALIZATION
         ru: Нукойл
 
     head: reg:///registry/institutions/nucoil
