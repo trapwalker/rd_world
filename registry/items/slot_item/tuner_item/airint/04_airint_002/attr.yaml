@@ -1,12 +1,12 @@
 ﻿_cls     : TunerItem
-doc      : Воздухозаборник "Ингалятор"
+doc      : Воздухозаборник "Дракон"
 abstract : false
 
 tags     : [airint]
 
 title:                                  # Краткое название - отобразится в слоте инвентаря
-    en: Air Intake "Inhaler"   ##LOCALIZATION
-    ru: Воздухозаборник "Ингалятор"
+    en: Air Intake "Dragon"   ##LOCALIZATION
+    ru: Воздухозаборник "Дракон"
 
 # Полное описание - отобразится в разделе описания в инвентаре
 description: 
@@ -14,8 +14,8 @@ description:
     ru: Крайне важная и полезная штука в мире, наполненном радиоактивной пылью.
 
 
-base_price  : 850                       # Цена
-pont_points : 105                        # Очки крутости
+base_price  : 1850                       # Цена
+pont_points : 155                        # Очки крутости
 
 # Картинки для представления в инвентаре
 inv_icon_big   : static/content/items/slot_item/tuner_item/airint/04_airint_002/inventory/big.png

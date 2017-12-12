@@ -1,21 +1,21 @@
 ﻿_cls  : TunerItem
-doc      : Баул (обычный)
+doc      : Динамики
 abstract : false
 
 tags     : [bale]
 
 title:                         # Краткое название - отобразится в слоте инвентаря
-    en: Canister "NukeOil"   ##LOCALIZATION
-    ru: Канистра "Нукойл"
+    en: Speakers "Bose"   ##LOCALIZATION
+    ru: Динамики "Bose"
 
 # Полное описание - отобразится в разделе описания в инвентаре
 description: 
     en: ''   ##LOCALIZATION
-    ru: Дырявая канистра, в которой когда-то было что-то налито, теперь выполняет эстетическую функцию.
+    ru: Старые динамики, к сожалению, не рабочие, но все еще выглядят круто
 
 
-base_price  : 1000   # Цена
-pont_points : 50
+base_price  : 1500   # Цена
+pont_points : 150
 
 # Картинки для представления в инвентаре
 inv_icon_big   : static/content/items/slot_item/tuner_item/bale/04_bale_004/inventory/big.png
