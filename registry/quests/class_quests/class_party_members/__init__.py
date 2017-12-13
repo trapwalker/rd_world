@@ -65,15 +65,9 @@ class ClassQuestPartyMembers(ClassTypeQuest):
     class back_to_teacher(QuestState_):
         def on_event_(self, quest, event):
             if isinstance(event, OnNote) and (event.note_uid == quest.dc.quest_note):
-                # todo: убрать потом, когда придумаем другую заглушку
-                quest.npc_replica(
-                    npc=quest.hirer,
-                    replica="Дальше пока не сделано. Нужно подождать.",
-                    event=event
-                )
-                # quest.agent.profile.del_note(uid=quest.dc.quest_note, time=event.time)
-                # quest.agent.profile.set_exp(time=event.time, dvalue=5000)
-                # quest.go(event=event, new_state="win")
+                quest.agent.profile.del_note(uid=quest.dc.quest_note, time=event.time)
+                quest.agent.profile.set_exp(time=event.time, dvalue=5000)
+                quest.go(event=event, new_state="win")
 
     ####################################################################################################################
     class win(WinState):
