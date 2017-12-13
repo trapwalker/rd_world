@@ -38,14 +38,8 @@ class ClassQuestKarmaLimit(ClassTypeQuest):
         def on_event_(self, quest, event):
             if isinstance(event, OnNote) and (event.note_uid == quest.dc.quest_note):
                 if quest.agent.profile.karma_norm >= quest.needed_karma:
-                    # todo: раскоментить когда будет продолжение
-                    # quest.agent.profile.del_note(uid=quest.dc.quest_note, time=event.time)
-                    # quest.go(event=event, new_state="win")
-                    quest.npc_replica(
-                        npc=quest.hirer,
-                        replica=quest.locale("q_cq_karmic_phrase_to_be_continued"),  ##LOCALIZATION
-                        event=event
-                    )
+                    quest.agent.profile.del_note(uid=quest.dc.quest_note, time=event.time)
+                    quest.go(event=event, new_state="win")
                 else:
                     text = LocalizedString(_id="q_cq_karmic_replica_not_finish").generate(  ##LOCALIZATION
                         name_needed=quest.locale(getKarmaNameLocalizedString(quest.needed_karma)),
@@ -59,7 +53,7 @@ class ClassQuestKarmaLimit(ClassTypeQuest):
     ####################################################################################################################
     class win(WinState):
         def on_enter_(self, quest, event):
-
+            quest.agent.profile.set_exp(time=event.time, dvalue=7000)
             quest.npc_replica(
                 npc=quest.hirer,
                 replica=quest.locale("q_cq_karmic_phrase_success"),  ##LOCALIZATION

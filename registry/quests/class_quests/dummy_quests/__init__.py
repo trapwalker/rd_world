@@ -24,7 +24,7 @@ class DummyClassQuest(ClassTypeQuest):
         def on_enter_(self, quest, event):
             quest.dc.quest_note = quest.agent.profile.add_note(
                 quest_uid=quest.uid,
-                note_class=notes.DummyClassQuestNote,
+                note_class=notes.ClassQuestDummyNote,
                 time=event.time,
                 page_caption=quest.locale("q_cq_dummy_1_note_page"),  ##LOCALIZATION
                 btn1_caption=quest.locale("q_cq_dummy_1_note_btn"),  ##LOCALIZATION
