@@ -7,7 +7,7 @@ from sublayers_server.model.quest_events import OnNote, OnMakeDmg
 from sublayers_server.model.registry_me.classes import notes
 from sublayers_server.model.registry_me.tree import IntField, LocalizedString
 from sublayers_server.model.units import Bot
-
+from sublayers_server.model.messages import ArcadeTextMessage
 from sublayers_world.registry.quests.class_quests import ClassTypeQuest
 
 
@@ -44,6 +44,8 @@ class ClassQuestInvisibleAttack(ClassTypeQuest):
                     text = LocalizedString(_id='q_cq_inv_attack_one_template').generate(
                         target_login=target.main_agent.print_login(),
                         left=left)  ##LOCALIZATION
+                    ArcadeTextMessage(agent=self.agent.profile._agent_model, time=event.time,
+                                      arcade_message_type='invisible_attack').post()
                     self.log(text=text, event=event)
                     if left <= 0:
                         self.log(text=self.locale("q_cq_inv_attack_done"), event=event)
