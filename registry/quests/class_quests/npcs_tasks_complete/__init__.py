@@ -36,11 +36,12 @@ class ClassQuestNPCsTasksComplete(ClassTypeQuest):
                 return False
         return True
 
-    def get_not_complete_npc(self):
+    def get_not_complete_npc_info(self):
         npc_list = []
         for npc in self.npcs:
-            if self.dc.tasks.get(npc.uri, 0) < self.tasks_count:
-                npc_list.append(self.locale(npc.title))
+            count = self.dc.tasks.get(npc.uri, 0)
+            if count < self.tasks_count:
+                npc_list.append(u'{} {}'.format(self.locale(npc.title), '{}/{}'.format(count, self.tasks_count)))
         return u', '.join(npc_list)
 
     def on_start_(self, event, **kw):
@@ -72,7 +73,7 @@ class ClassQuestNPCsTasksComplete(ClassTypeQuest):
                         npc=quest.hirer,
                         replica=u'{}<br>{}.t'.format( ##LOCALIZATION
                             quest.locale("q_cq_npc_tasks_replica_not_finish"),
-                            quest.get_not_complete_npc(),
+                            quest.get_not_complete_npc_info(),
                         ),
                         event=event
                     )

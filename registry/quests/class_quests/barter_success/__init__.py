@@ -73,12 +73,12 @@ class ClassQuestBarterCount(ClassTypeQuest):
         def on_event_(self, quest, event):
             if isinstance(event, OnNote) and (event.note_uid == quest.dc.quest_note):
                 quest.agent.profile.del_note(uid=quest.dc.quest_note, time=event.time)
-                quest.agent.profile.set_exp(time=event.time, dvalue=5000)
                 quest.go(event=event, new_state="win")
 
     ####################################################################################################################
     class win(WinState):
         def on_enter_(self, quest, event):
+            quest.agent.profile.set_exp(time=event.time, dvalue=5000)
             quest.npc_replica(
                 npc=quest.hirer,
                 replica=quest.locale("q_cq_barters_phrase_success"),  ##LOCALIZATION

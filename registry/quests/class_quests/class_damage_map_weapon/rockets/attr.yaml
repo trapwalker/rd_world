@@ -10,7 +10,7 @@ caption:
     en: 'Get busy! #2'        ##LOCALIZATION
     ru: 'Займись делом! #2'
 
-count: 10
+count: 30
 
 available_activate_items:
   - reg:///registry/mobiles/map_weapon/rockets

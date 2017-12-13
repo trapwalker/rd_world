@@ -6,7 +6,7 @@ from sublayers_server.model.registry_me.classes.quests import QuestState_, WinSt
 from sublayers_server.model.quest_events import OnNote, OnMakeDmg
 from sublayers_server.model.registry_me.classes import notes
 from sublayers_server.model.registry_me.tree import IntField, RegistryLinkField, ListField, LocalizedString
-
+from sublayers_server.model.messages import ArcadeTextMessage
 from sublayers_world.registry.quests.class_quests import ClassTypeQuest
 
 
@@ -70,6 +70,8 @@ class ClassQuestDamageMapWeapon(ClassTypeQuest):
                 for candidate in quest.available_activate_items:
                     if damager_ex.is_ancestor(candidate):
                         quest.dc.count_done += 1
+                        ArcadeTextMessage(agent=quest.agent.profile._agent_model, time=event.time,
+                                          arcade_message_type='rocket_hit').post()
                         text = LocalizedString(_id='q_cq_dmg_map_weapon_add_one').generate(title=quest.locale(damager_ex.title))  ##LOCALIZATION
                         quest.log(text=text, event=event)
                         break
