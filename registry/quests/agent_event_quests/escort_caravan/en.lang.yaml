@@ -1,1 +1,12 @@
 "locale": "en"
+
+reg__quest__escort__caravan_support_short: "Protection of the caravan."
+reg__quest__escort__caravan_support_template: |
+    {% set town=event_quest and event_quest.town_destination %}
+    Escort the caravan to {{ town and town.title or 'N' }}. Reward: {{ '{:.0f}'.format(quest.reward_money) }}NC.
+
+reg__quest__escort__caravan_completed: "Caravan formed."
+reg__quest__escort__caravan_waiting: "Waiting for departure."
+reg__quest__escort__caravan_started: "Сaravan left."
+reg__quest__escort__caravan_participation: "Participation in the caravan: {{ '{:.0f}'.format(100 * participation) }}%"
+reg__quest__escort__caravan_refusal: "Leaving the caravan."
