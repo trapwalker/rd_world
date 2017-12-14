@@ -24,6 +24,10 @@ class EscortCaravan(AgentEventQuest):
         self.text_short = LocalizedString(_id='reg__quest__escort__caravan_support_short')
         self.text = LocalizedString(_id='reg__quest__escort__caravan_support_template').generate(event_quest=event_quest, quest=self)
 
+    def get_participation(self, event):
+        if self.dc.check_participation > 10:  # Если было произведено более 10 проверок, то имеет сымсл считать участие
+            return self.dc.count_participation / self.dc.check_participation
+        return 0
 
     def get_potential_event_quest(self, event, agent):
         event_quests = event.server.ai_dispatcher.get_quest_by_tags(set(self.needed_tags))
@@ -114,8 +118,11 @@ class EscortCaravan(AgentEventQuest):
                                 quest.calc_participation(car_pos=agent_model.car.position(event.time), caravan_pos=caravan_point)
 
             if isinstance(event, OnPartyExclude) and event.agent and event.agent is quest.agent.profile._agent_model:
-                # Отказ от квеста (будто у нпц отказался)
-                quest.go(new_state='cancel_fail', event=event)
+                # Если процент участия больше 20%, то не считается отказом
+                if quest.get_participation(event) > 0.2:
+                    quest.go(new_state='win', event=event)
+                else:
+                    quest.go(new_state='cancel_fail', event=event)  # Отказ от квеста (будто у нпц отказался)
                 event_quest = quest.get_event_quest(event=event)
                 if event_quest:
                     event_quest.exclude_from_party(model_agent=event.agent, event=event)
@@ -125,8 +132,8 @@ class EscortCaravan(AgentEventQuest):
         def on_enter_(self, quest, event):
             if quest.dc.check_participation == 0:
                 quest.dc.check_participation = 1.0
+            participation = quest.get_participation(event)
 
-            participation = quest.dc.count_participation / quest.dc.check_participation
             quest.log(
                 LocalizedString(_id='reg__quest__escort__caravan_participation').generate(state=self, quest=quest, participation=participation),
                 event=event,
