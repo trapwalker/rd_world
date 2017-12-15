@@ -129,7 +129,7 @@ class AICaravanQuest(AIGangQuest):
         count_members = max(count_members, 1)
         next_point = members_near / count_members
         # print("count_of_target_point = {}".format(next_point))
-        next_point = next_point > 0.49  # Если доехало хотябы 50% юнитов, то ехать дальше
+        next_point = next_point > 0.55  # Если доехало хотябы 55% юнитов, то ехать дальше
 
         if next_point:
             new_target = route.next_point()
