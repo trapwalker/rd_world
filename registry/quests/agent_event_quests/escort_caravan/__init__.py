@@ -141,6 +141,9 @@ class EscortCaravan(AgentEventQuest):
             super(EscortCaravan.win, self).on_enter_(quest=quest, event=event)
 
             agent_profile = quest.agent.profile
+            exp = int(quest.reward_exp * participation)
+            if exp == 0:
+                log.warning("Caravan Exp:: exp = 0, reward_exp = %s, participation = %s", quest.reward_exp, participation)
             agent_profile.set_exp(time=event.time, dvalue=int(quest.reward_exp * participation))
             agent_profile.set_karma(time=event.time, dvalue=quest.reward_karma * participation)
             agent_profile.set_relationship(time=event.time, npc=quest.hirer, dvalue=int(quest.reward_relation_hirer * participation))
