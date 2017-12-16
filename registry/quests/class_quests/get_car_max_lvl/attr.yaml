@@ -1,0 +1,29 @@
+_cls: GetCarMaxLevelQuest
+
+first_state: begin
+
+list_icon: static/img/quests/icons/rpg_dice.png
+
+caption: 
+    en: Taming   ##LOCALIZATION
+    ru: Укрощение
+
+
+attributes_by_class:
+    chosen_one:
+      next_quest: reg:///registry/quests/class_quests/npcs_tasks_complete
+
+    alpha_wolf:
+      next_quest: reg:///registry/quests/class_quests/class_party_members
+
+    night_rider:
+      next_quest: reg:///registry/quests/class_quests/invisible_attack
+
+    oil_magnate:
+      next_quest: reg:///registry/quests/class_quests/barter_success
+
+    road_warrior:
+      next_quest: reg:///registry/quests/class_quests/class_damage_map_weapon/rockets
+
+    techno_kinetic:
+      next_quest: reg:///registry/quests/class_quests/class_set_map_weapon

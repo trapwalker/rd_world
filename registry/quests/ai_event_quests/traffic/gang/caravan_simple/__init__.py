@@ -112,6 +112,38 @@ class AICaravanQuest(AIGangQuest):
             action_quest.dc.target_car = guardians_target
             action_quest.dc.current_cc = guardians_cc
 
+
+    def set_target_point(self, time):
+        route = self.dc.route
+        count_members = 0.0
+        members_near = 0.0
+
+        agent_list = self.dc.traders or self.dc.members
+
+        for agent in agent_list:
+            if agent.car and not agent.car.limbo:
+                count_members += 1
+                if route.need_next_point(agent.car.position(time)):
+                    members_near += 1
+
+        count_members = max(count_members, 1)
+        next_point = members_near / count_members
+        # print("count_of_target_point = {}".format(next_point))
+        next_point = next_point > 0.55  # Если доехало хотябы 55% юнитов, то ехать дальше
+
+        if next_point:
+            new_target = route.next_point()
+        else:
+            new_target = route.get_current_point()
+
+        for agent in self.dc.members:
+            if agent.car and not agent.car.limbo:
+                if new_target:
+                    agent.action_quest.dc.current_target_point = Point.random_gauss(new_target, 100)
+                else:
+                    agent.action_quest.dc.current_target_point = None
+
+
     def test_party(self):
         members = self.dc.members
         if members:
