@@ -33,8 +33,7 @@ quests:
     delivery_set_list:
       -
         - reg:///registry/items/passengers/male
-        - reg:///registry/items/passengers/male
-        - reg:///registry/items/passengers/male
+        - reg:///registry/items/passengers/female
     destination_list:              # Список возможных пунктов назначения
       - reg:///registry/poi/locations/towns/whitehill
       - reg:///registry/poi/locations/towns/painted_rock
