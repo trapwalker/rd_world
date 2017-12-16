@@ -33,10 +33,8 @@ quests:
         - reg:///registry/items/stuff/water/water_002
     reward_items_list: []          # Список возможных комплектов для награды
     recipient_list:                # Список возможных получателей доставки
-      - reg:///registry/institutions/trader/tarton_parts_trader
-      - reg:///registry/institutions/mayor/whitehill_bob_ferolito
+      - reg:///registry/institutions/trader/whitehill_bob_ferolito
       - reg:///registry/institutions/trader/painted_rock_sebastian_fry
-      - reg:///registry/institutions/mine_manager/mine_whitehill_bob_mcdowell
 
 
   - parent: reg:///registry/quests/delivery_quest/delivery_quest_simple   # ДОСТАВКА ГРУЗА Б
@@ -59,6 +57,20 @@ quests:
         - reg:///registry/items/stuff/scrap_metal/scrap_metal_001
     reward_items_list: []          # Список возможных комплектов для награды
     recipient_list:                # Список возможных получателей доставки
-      - reg:///registry/institutions/mayor/whitehill_bob_ferolito
+      - reg:///registry/institutions/trader/whitehill_bob_ferolito
       - reg:///registry/institutions/trader/painted_rock_sebastian_fry
 
+
+  - parent: reg:///registry/quests/delivery_quest/delivery_passenger_quest   # ДОСТАВКА ПАССАЖИРА
+    _cls: DeliveryPassengerQuest
+    reward_relation_hirer: 0.0     # Награда в отношение за выполнение
+    karma_coef: 0.0                # Часть кармы от общей награды
+    money_coef: 1.0                # Часть нуокйнов от общей награды
+    person_delivery_cost: 180      # Стоимость доставки отдельного пассажира
+    reward_exp: 100                # Опыт
+    delivery_set_list:
+      -
+        - reg:///registry/items/passengers/male
+    destination_list:              # Список возможных пунктов назначения
+      - reg:///registry/poi/locations/towns/whitehill
+      - reg:///registry/poi/locations/towns/painted_rock
