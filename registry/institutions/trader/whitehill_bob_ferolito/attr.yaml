@@ -535,6 +535,9 @@ quests:
     recipient_list:                # Список возможных получателей доставки
       - reg:///registry/institutions/mayor/prior_donnie_alma
       - reg:///registry/institutions/trader/prior_hershey_la_palmas
+      - reg:///registry/institutions/trader/paloma_shaun_fisher
+      - reg:///registry/institutions/mayor/bonita_vista_jack_lape
+      - reg:///registry/institutions/trader/bonita_vista_benny_mccurtain
 
 
   - parent: reg:///registry/quests/delivery_quest/delivery_quest_simple   # ДОСТАВКА ГРУЗА Б
