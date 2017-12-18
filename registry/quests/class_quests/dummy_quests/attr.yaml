@@ -1,0 +1,15 @@
+﻿_cls: DummyClassQuest
+doc    : Квест-заглушка
+
+list_icon: static/img/quests/icons/rpg_dice.png
+
+first_state: begin
+current_state: ~
+
+next_quest: ~  # Просто потом прописать правильный новый квест
+
+caption: 
+    en: Coming Soon   ##LOCALIZATION
+    ru: Ожидание новых заданий
+
+

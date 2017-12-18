@@ -113,7 +113,6 @@ class DeliveryFromCache(DeliveryQuestSimple):
             ),
         )
 
-
     def create_poi_container(self, event):
         if self.deadline:
             life_time = self.starttime + self.deadline - event.time

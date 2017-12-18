@@ -1,0 +1,13 @@
+_cls: ClassQuestPartyExp
+
+first_state: begin
+
+list_icon: static/img/quests/icons/rpg_dice.png
+
+next_quest: reg:///registry/quests/class_quests/get_car_max_lvl
+
+caption: 
+    en: Get busy!        ##LOCALIZATION
+    ru: Займись делом!
+
+exp_value: 1000

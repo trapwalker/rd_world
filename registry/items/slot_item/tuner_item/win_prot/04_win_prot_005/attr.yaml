@@ -1,21 +1,21 @@
 ﻿_cls  : TunerItem
-doc      : Бронешторка "Укрытие"
+doc      : Бронешторка "Свалка"
 abstract : false
 
 tags     : [win_prot]
 
 title:                                    # Краткое название - отобразится в слоте инвентаря
-    en: Armored side window "Cover"    ##LOCALIZATION
-    ru: Бронированные шторки "Укрытие"
+    en: Armored side window "Junkyard"    ##LOCALIZATION
+    ru: Бронированные шторки "Свалка"
 
 # Полное описание - отобразится в разделе описания в инвентаре
 description: 
     en: ''   ##LOCALIZATION
-    ru: Сделаны из листового металла, защищают от пуль и осколков, смотровая щель дает ограниченный обзор.
+    ru: Сделано из всего что нашлось под рукой, ужасная обзорность
 
 
-base_price  : 2000                        # Цена
-pont_points : 100                         # Очки крутости
+base_price  : 650                        # Цена
+pont_points : 70                         # Очки крутости
 
 # Картинки для представления в инвентаре
 inv_icon_big   : static/content/items/slot_item/tuner_item/win_prot/04_win_prot_005/inventory/big.png

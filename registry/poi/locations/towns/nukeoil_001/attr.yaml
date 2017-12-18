@@ -6,7 +6,7 @@ title:
     en: NukeoOil_001   ##LOCALIZATION
     ru: Нукойл_001
 
-position          : {x: 12538825, y: 27043825}   # Заправка возле Прайра
+position          : {x: 12540710, y: 27048200}   # Заправка возле Прайра
 p_observing_range : 250
 p_enter_range     : 150
 

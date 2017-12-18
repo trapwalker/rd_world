@@ -1,21 +1,21 @@
 ﻿_cls     : TunerItem
-doc      : Бронерешетка "Чешуя"
+doc      : Броня "Резина"
 abstract : false
 
 tags     : [armor]
 
 title:                            # Краткое название - отобразится в слоте инвентаря
-    en: Grating armor "Scale"   ##LOCALIZATION
-    ru: Бронерешетка "Чешуя"
+    en: Armor "Rubber"   ##LOCALIZATION
+    ru: Броня "Резина"
 
 # Полное описание - отобразится в разделе описания в инвентаре
 description: 
     en: ''   ##LOCALIZATION
-    ru: ''
+    ru: Несколько пуленепробиваемых колес
 
 
-base_price  : 850                 # Цена
-pont_points : 105                 # Очки крутости
+base_price  : 1000                 # Цена
+pont_points : 70                 # Очки крутости
 
 # Картинки для представления в инвентаре
 inv_icon_big   : static/content/items/slot_item/tuner_item/armor/03_armor_003/inventory/big.png

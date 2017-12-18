@@ -1,4 +1,4 @@
-﻿_cls: Institution
+﻿_cls: GasStationNPC
 doc:
     en: Gas station  ##LOCALIZATION
     ru: Заправка
@@ -15,3 +15,5 @@ type: npc_gas_station
 
 photo    : "static/content/institutions/npc_gas_station/fuel.png"
 abstract : false
+
+fuel_cost: 10

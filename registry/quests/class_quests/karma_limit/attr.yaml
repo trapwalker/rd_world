@@ -1,0 +1,13 @@
+_cls: ClassQuestKarmaLimit
+
+first_state: begin
+
+list_icon: static/img/quests/icons/rpg_dice.png
+
+next_quest: reg:///registry/quests/class_quests/dummy_quests/dummy1
+
+caption: 
+    en: Class quest   ##LOCALIZATION
+    ru: Кармический квест
+
+needed_karma: 0.6

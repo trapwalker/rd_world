@@ -1,21 +1,21 @@
 ﻿_cls  : TunerItem
-doc      : Бампер "Цепь" (задний)
+doc      : Бампер "Инфорсер" (задний)
 abstract : false
 
 tags     : [b_bumper]
 
 title:                                   # Краткое название - отобразится в слоте инвентаря
-    en: Bumper "Chain" (rear)   ##LOCALIZATION
-    ru: Бампер "Цепь" (задний)
+    en: Bumper "Enforcer" (rear)   ##LOCALIZATION
+    ru: Бампер "Инфорсер" (задний)
 
 # Полное описание - отобразится в разделе описания в инвентаре
 description: 
     en: ''   ##LOCALIZATION
-    ru: Гремит так, что слышно издалека. Поэтому не подходит для трусов, предпочитающих незаметно перемещаться по пустошам.
+    ru: Усиливает крепление штатного бампера и добавляет угловые наконечники. Прекрасно подойдет желающим пободаться с соперником.
 
 
-base_price  : 950                       # Цена
-pont_points : 115                         # Очки крутости
+base_price  : 2000                       # Цена
+pont_points : 50                         # Очки крутости
 
 # Картинки для представления в инвентаре
 inv_icon_big   : static/content/items/slot_item/tuner_item/b_bumper/03_b_bumper_003/inventory/big.png

@@ -11,57 +11,35 @@ hometown : reg:///registry/poi/locations/towns/painted_rock
 
 group_list:
 
+ #lvl 0 cars
+  - count : 1
+    car_list:
+    - reg:///registry/mobiles/cars/light/motorcycles/honda_cy_50
+
+  - count : 1
+    car_list:
+    - reg:///registry/mobiles/cars/middle/cars/vw_golf
+  - count : 1
+    car_list:
+    - reg:///registry/mobiles/cars/middle/offroad/ford_f_150
+
+  - count : 1
+    car_list:
+    - reg:///registry/mobiles/cars/middle/vans/citroen_hy
+
+
 
   # Группа машин 1 lvl
   - count : 1
     car_list:
-      # LIGHT
-      # motorcycles
-      - reg:///registry/mobiles/cars/light/motorcycles/01_honda_sl90
-      # quadbikes
-      - reg:///registry/mobiles/cars/light/quadbikes/01_polaris_sportsman_90
-      # MIDDLE
-      # cars
-      - reg:///registry/mobiles/cars/middle/cars/01_mazda_luce_1500
       - reg:///registry/mobiles/cars/middle/cars/01_fiat_croma
-      # offroad
+  - count : 1
+    car_list:
       - reg:///registry/mobiles/cars/middle/offroad/01_datsun_truck_521
-      # CARGO
-      # buses
+  - count : 1
+    car_list:
       - reg:///registry/mobiles/cars/cargo/buses/01_bedford_vas
 
-  # Группа машин 2 lvl
-  - count : 2  # Количество машин в группе
-    car_list:
-      # LIGHT
-      # buggies
-      - reg:///registry/mobiles/cars/light/buggies/02_brp_commander_1000
-      # MIDDLE
-      # cars
-      - reg:///registry/mobiles/cars/middle/cars/02_toyota_corolla
-      - reg:///registry/mobiles/cars/middle/cars/02_chevrolet_monte_carlo
-      # sports
-      - reg:///registry/mobiles/cars/middle/sports/02_alfa_romeo_75
-      # offroad
-      - reg:///registry/mobiles/cars/middle/offroad/02_ford_bronco
-      # vans
-      - reg:///registry/mobiles/cars/middle/vans/02_volkswagen_t1_samba
-
-  # Группа машин 3 lvl
-  - count : 4  # Количество машин в группе
-    car_list:
-      # LIGHT
-      # motorcycles
-      - reg:///registry/mobiles/cars/light/motorcycles/03_triumph_bonneville_america
-      - reg:///registry/mobiles/cars/light/motorcycles/03_cad_19
-      # MIDDLE
-      # cars
-      - reg:///registry/mobiles/cars/middle/cars/03_honda_accord
-      - reg:///registry/mobiles/cars/middle/cars/03_chrysler_new_yorker
-      # offroad
-      - reg:///registry/mobiles/cars/middle/offroad/03_willys_mb
-      # vans
-      - reg:///registry/mobiles/cars/middle/vans/03_gmc_savana
 
   - count : 1
     car_list:
@@ -85,6 +63,5 @@ quests:
       - reg:///registry/mobiles/cars/middle/vans/citroen_hy
     recipient_list:                # Список возможных получателей доставки
       - reg:///registry/institutions/hangar/whitehill_junior_clarks
-      - reg:///registry/institutions/hangar/prior_clarence_jackson
       - reg:///registry/institutions/hangar/paloma_george_martell
       - reg:///registry/institutions/hangar/bonita_vista_mike_basbry

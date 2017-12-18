@@ -6,6 +6,8 @@ list_icon: static/img/quests/icons/caravan_guard.png
 first_state: begin
 current_state: ~
 
+reward_exp: 3000  # info: Test reward exp for caravans
+
 caption:
     en: Escort of caravan   ##LOCALIZATION
     ru: Сопровождение каравана

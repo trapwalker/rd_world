@@ -1,21 +1,21 @@
 ﻿_cls     : TunerItem
-doc      : Бронерешетка "Чешуя"
+doc      : Броня "Мусор"
 abstract : false
 
 tags     : [armor]
 
 title:                            # Краткое название - отобразится в слоте инвентаря
-    en: Grating armor "Scale"   ##LOCALIZATION
-    ru: Бронерешетка "Чешуя"
+    en: Armor "Junk"   ##LOCALIZATION
+    ru: Броня "Junk"
 
 # Полное описание - отобразится в разделе описания в инвентаре
 description: 
     en: ''   ##LOCALIZATION
-    ru: ''
+    ru: Местами дырявая, собранная из всего что попалось под руку
 
 
-base_price  : 850                 # Цена
-pont_points : 105                 # Очки крутости
+base_price  : 650                 # Цена
+pont_points : 60                 # Очки крутости
 
 # Картинки для представления в инвентаре
 inv_icon_big   : static/content/items/slot_item/tuner_item/armor/04_armor_004/inventory/big.png
