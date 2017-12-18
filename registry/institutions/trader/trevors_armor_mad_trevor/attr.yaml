@@ -1,0 +1,101 @@
+_cls     : Trader
+
+title: 
+    en: Mad_Trevor
+    ru: Мэд_Тревор ##LOCALIZATION
+
+photo    : "static/content/institutions/trader/trevors_armor_mad_trevor.png"
+abstract : true
+
+trading      : 20 # навык торговли
+refresh_time : 16920 # 4,7 часов
+
+hometown    : reg:///registry/poi/locations/towns/trevors_armor
+
+items:
+
+  # ДЛЯ СТИЛИСТА
+#  - reg:///registry/items/slot_item/tuner_item/shnork/00_shnork_001
+#  - reg:///registry/items/slot_item/tuner_item/shnork/00_shnork_002
+#  - reg:///registry/items/slot_item/tuner_item/shnork/00_shnork_003
+  - reg:///registry/items/slot_item/tuner_item/b_fender/00_b_fender_002
+  - reg:///registry/items/slot_item/tuner_item/f_fender/00_f_fender_002
+  - reg:///registry/items/slot_item/tuner_item/armor/00_armor_001
+
+  - reg:///registry/items/slot_item/tuner_item/armor/01_armor_002
+  - reg:///registry/items/slot_item/tuner_item/b_fender/01_b_fender_004
+  - reg:///registry/items/slot_item/tuner_item/b_fender/01_b_fender_005
+  - reg:///registry/items/slot_item/tuner_item/f_fender/01_f_fender_004
+  - reg:///registry/items/slot_item/tuner_item/f_fender/01_f_fender_005
+  - reg:///registry/items/slot_item/tuner_item/win_prot/win_prot_001
+
+#  - reg:///registry/items/slot_item/tuner_item/airint/02_airint_001
+#  - reg:///registry/items/slot_item/tuner_item/b_bumper/02_b_bumper_001
+#  - reg:///registry/items/slot_item/tuner_item/f_bumper/02_f_bumper_001
+#  - reg:///registry/items/slot_item/tuner_item/step/02_step_003
+#  - reg:///registry/items/slot_item/tuner_item/bale/02_bale_003
+  - reg:///registry/items/slot_item/tuner_item/win_prot/02_win_prot_003
+
+
+#  - reg:///registry/items/slot_item/tuner_item/b_bumper/b_bumper_002
+#  - reg:///registry/items/slot_item/tuner_item/f_bumper/f_bumper_002
+  - reg:///registry/items/slot_item/tuner_item/b_fender/b_fender_001
+  - reg:///registry/items/slot_item/tuner_item/f_fender/f_fender_001
+#  - reg:///registry/items/slot_item/tuner_item/bale/bale_001
+#  - reg:///registry/items/slot_item/tuner_item/bale/bale_002
+
+#  - reg:///registry/items/slot_item/tuner_item/b_bumper/b_bumper_003
+#  - reg:///registry/items/slot_item/tuner_item/f_bumper/f_bumper_003
+  - reg:///registry/items/slot_item/tuner_item/b_fender/b_fender_003
+  - reg:///registry/items/slot_item/tuner_item/f_fender/f_fender_003
+#  - reg:///registry/items/slot_item/tuner_item/glass/glass_001
+#  - reg:///registry/items/slot_item/tuner_item/roof/roof_002
+
+#  - reg:///registry/items/slot_item/tuner_item/roof/roof_001
+#  - reg:///registry/items/slot_item/tuner_item/step/step_002
+#  - reg:///registry/items/slot_item/tuner_item/step/step_001
+#  - reg:///registry/items/slot_item/tuner_item/trunk/trunk_002
+#  - reg:///registry/items/slot_item/tuner_item/trunk/trunk_001
+
+  # Автоматическое вооружение
+  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/04_mt
+  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/04_mark_48
+  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/04_dshkm
+  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/04_gau_19
+  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/heavy/04_mg_18_tuf
+  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/dshkm_twin
+  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/mk_108
+  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/mk_108_twin
+
+  # Залповое вооружение
+  - reg:///registry/items/slot_item/armorer_item/weapons/cannons/medium/04_t4
+  - reg:///registry/items/slot_item/armorer_item/weapons/cannons/zu23_flak
+  - reg:///registry/items/slot_item/armorer_item/weapons/cannons/2a42
+  - reg:///registry/items/slot_item/armorer_item/weapons/cannons/flak_18
+  - reg:///registry/items/slot_item/armorer_item/weapons/cannons/mk103
+
+  # Ракеты
+  - reg:///registry/items/usable/map_weapon/rockets/sa16_igla
+  - reg:///registry/items/usable/map_weapon/rockets/kornet
+  - reg:///registry/items/usable/map_weapon/rockets/javelin
+
+price_list: # правила завоза
+  - item: reg:///registry/items
+    chance: 1.00      # вероятность в завозе 1 - max
+    count_min: 0      # пределы количества в завозе
+    count_max: 0      # если 0 - бесконечность
+    price_min: 1.00   # коэф колебаний цены (границы)
+    price_max: 1.00
+    influence: 0.00   # коэф изменения цены при покупке/продаже
+
+  - item: reg:///registry/items/stuff
+    chance: 0.0
+    count_min: 75
+    count_max: 225
+    price_min: 0.50
+    price_max: 0.60
+    influence: 0.001
+
+
+quests:
+  []
