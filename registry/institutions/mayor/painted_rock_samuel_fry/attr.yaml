@@ -37,8 +37,8 @@ quests:
   - parent: reg:///registry/quests/map_activate_item/map_activate_radars   # УСТАНОВКА РАДАРА
     _cls: MapActivateRadarsQuest
     reward_relation_hirer: 5.0     # Награда в отношение за выполнение
-    reward_exp: 17                 # Награда за 1 замер
-    activate_price: 17             # Награда за активацию предмета
+    reward_exp: 20                 # Награда за 1 замер
+    activate_price: 20             # Награда за активацию предмета
     activate_radius: 50            # Радиус активации итема
     activate_items_generator:
       - reg:///registry/items/usable/map_weapon/radars/radar_001
@@ -69,7 +69,7 @@ quests:
     _cls: SearchCourier
     design_speed: 0.3              # Скорость в px/с с которой должен двигаться игрок чтобы успеть (если = 0, то время не ограничено)
     cache_radius: 50               # Радиус, в котором можно обнаружить тайник
-    reward_exp: 100                # Опыт
+    reward_exp: 125                # Опыт
     loot_set_list:                 # Список хлама
       -
         - reg:///registry/items/stuff/alcohol/alcohol_002
@@ -125,7 +125,7 @@ quests:
     _cls: DeliveryPassengerQuest
     reward_relation_hirer: 5.0     # Награда в отношение за выполнение
     karma_coef: 0.0                # Часть кармы от общей награды
-    money_coef: 1.0                # Часть нуокйнов от общей награды
+    money_coef: 1.2                # Часть нуокйнов от общей награды
     person_delivery_cost: 250      # Стоимость доставки отдельного пассажира
     reward_exp: 250                # Опыт
     delivery_set_list:
@@ -143,9 +143,9 @@ quests:
     _cls: KillerQuest
     reward_relation_hirer: 5.0     # Награда в отношение за выполнение
     karma_coef: 0.3                # Часть кармы от общей награды
-    money_coef: 0.7                # Часть нуокйнов от общей награды
-    price_victim: 200              # Цена одной жертвы на первом уровне квеста
-    reward_exp: 200                # Награда за 1 убийство
+    money_coef: 1.0                # Часть нуокйнов от общей награды
+    price_victim: 250              # Цена одной жертвы на первом уровне квеста
+    reward_exp: 250                # Награда за 1 убийство
     reward_items_list: []          # Список возможных комплектов для награды
     unique_victims: True           # Уникальные жертвы
     count_to_kill_range:           # Диапазон количества целей

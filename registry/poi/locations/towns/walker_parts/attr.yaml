@@ -1,0 +1,33 @@
+﻿_cls     : Town
+doc      : Уокер Партс   # Магазин запчастей (торговля итемами механика)
+abstract : false
+
+title: 
+    en: Walker Parts   ##LOCALIZATION
+    ru: Уокер Партс
+
+position          : {x: 12470944, y: 27025749}
+p_observing_range : 250
+p_enter_range     : 150
+
+svg_link: static/content/locations/map_locations/walker_parts
+
+buildings:
+  - name: market
+    caption: 
+        en: Walker Parts   ##LOCALIZATION
+        ru: Уокер Партс
+
+    title: 
+        en: Walker Parts   ##LOCALIZATION
+        ru: Уокер Партс
+
+    head: reg:///registry/institutions/trader/walker_parts_nathaniel_walker
+    instances:
+        - reg:///registry/institutions/trader/walker_parts_nathaniel_walker
+
+static_image_list:
+    - /static/content/locations/map_locations/walker_parts/ground+circle.png
+    - /static/content/locations/map_locations/walker_parts/market.png
+    - /static/content/locations/map_locations/walker_parts/market_bg.png
+    - /static/content/locations/map_locations/walker_parts/market_hover.png
