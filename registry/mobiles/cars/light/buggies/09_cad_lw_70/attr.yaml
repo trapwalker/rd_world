@@ -1,0 +1,86 @@
+_cls : Car
+title:                          # Модель атомобиля
+    en: "CAD LW 70"   ##LOCALIZATION
+    ru: "CAD LW 70"
+
+class_car:                       # Класс автомобиля
+    en: "Light"   ##LOCALIZATION
+    ru: "Легкий"
+name_car:    "CAD LW 70"   # Название атомобиля
+
+price:              20000        # Цена у продавца (л) (>= 0)
+needed_driving:     50          # Требование к прокачке уровня вождения
+
+max_hp:             80       # Максимальное количество прочности (> 0)
+hp:                 80       # Текущее количество прочности (> 0)
+
+inventory:                   # При заполнении инвентаря необходимо учитывать его размер
+    size: 18
+    items: []
+
+p_observing_range:  1400       # Радиус обзора автомобиля (м) (>= 0)
+
+p_vigilance:           0       # Коэффициент зоркости (0..1)
+p_visibility_min:      0.150   # Минимальная заметность автомобиля (0..1) при 0 автомобиль невидим
+p_visibility_max:      0.350   # Максимальная заметность автомобиля (0..1) при 0 автомобиль невидим
+p_obs_range_rate_min:  0.5     # Коэффициент минимального радиуса обзора автомобиля (0..1)
+p_obs_range_rate_max:  1       # Коэффициент максимального радиуса обзора автомобиля (0..1)
+
+r_min:              2        # Минимальный радиус разворота (м) (> 0)
+mobility:           2.8      # ac_max: 22.1   # Перегрузка с которой входит в поворот автомобиль (м/c^2) (> 0)
+a_forward:          25       # Ускорение при езде вперед (м/c^2)
+a_backward:         10        # Ускорение при езде назад (м/c^2)
+a_braking:          22       # Ускорение при торможении (м/c^2)
+
+max_control_speed:  111.1112 # Абсолютная максимальная скорость, скорость до которой будет размечен спидометр (м/с) (>= 0)
+v_forward:          95  # Максимальная скорость без штрафов местности при движении вперед (м/с) (0 .. max_control_speed)
+v_backward:         45       # Максимальная скорость без штрафов местности при движении назад (м/с) (0 .. max_control_speed)
+
+max_fuel:           45       # Максимальное количество топлива, объем бака (л) (>= 0)
+fuel:               45       # Текущее количество топлива (0 .. max_fuel)
+p_fuel_rate:        0.010   # Расход топлива, тратится только в движении (л/с) (>= 0)
+
+# Ссылка на картинку автомобиля в ангаре
+hangar_car:            "static/content/mobiles/cars/light/buggies/09_cad_lw_70/side.png"
+
+
+# Ссылки на верстку автомобиля у оружейника
+armorer_car:           static/content/mobiles/cars/light/buggies/09_cad_lw_70/armorer_car.html
+armorer_sectors_svg:   static/content/mobiles/cars/armorer_sectors.svg
+
+
+# Ссылки на верстку автомобиля у тюнера
+tuner_car:             static/content/mobiles/cars/light/buggies/09_cad_lw_70/tuner_car.html
+
+
+# Ниже перечислены все слоты доступные на автомобиле. В название содержится расположение слота.
+# Сейчас до 9 слотов на автомобиль: slot_(Front, Center, Back)(Left, Center, Right).
+# Все слоты закоментированы, кроме переднего центрального.
+slot_FC: ~
+
+
+# Настройка ограничений направления оружия из слота. Значением является строка в котороую включены первые буквы
+# соответствующих направлений (Front, Back, Left, Right)
+# Все слоты закоментированы, кроме переднего центрального.
+slot_FC_f: FLR_1
+
+
+# Настройка слотов для Тюнера
+slot_t1: ~
+slot_t2: ~
+slot_t4: ~
+slot_t5: ~
+slot_t7: ~
+slot_t9: ~
+slot_t11: ~
+slot_t12: ~
+slot_t13: ~
+slot_t14: ~
+slot_t15: ~
+slot_t17: ~
+
+
+# Ссылки на иконки для инвентаря/ангара
+inv_icon_big: static/content/mobiles/cars/light/buggies/09_cad_lw_70/inventory/big.png
+inv_icon_mid: static/content/mobiles/cars/light/buggies/09_cad_lw_70/inventory/mid.png
+inv_icon_small: static/content/mobiles/cars/light/buggies/09_cad_lw_70/inventory/small.png

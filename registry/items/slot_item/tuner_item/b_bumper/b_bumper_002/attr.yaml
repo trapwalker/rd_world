@@ -1,12 +1,12 @@
 ﻿_cls  : TunerItem
-doc      : Усиленный бампер (задний)
+doc      : Усиленный бампер "Инфорсер" (задний)
 abstract : false
 
 tags     : [b_bumper]
 
 title:                                    # Краткое название - отобразится в слоте инвентаря
-    en: Reinforced bumper (rear)   ##LOCALIZATION
-    ru: Усиленный бампер (задний)
+    en: Reinforced bumper "Enforcer" (rear)   ##LOCALIZATION
+    ru: Усиленный бампер "Инфорсер" (задний)
 
 # Полное описание - отобразится в разделе описания в инвентаре
 description: 
@@ -15,7 +15,7 @@ description:
 
 
 base_price  : 2000                        # Цена
-pont_points : 100                         # Очки крутости
+pont_points : 50                         # Очки крутости
 
 # Картинки для представления в инвентаре
 inv_icon_big   : static/content/items/slot_item/tuner_item/b_bumper/b_bumper_002/inventory/big.png

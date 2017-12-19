@@ -1,0 +1,13 @@
+_cls: ClassQuestInvisibleAttack
+
+first_state: begin
+
+list_icon: static/img/quests/icons/rpg_dice.png
+
+next_quest: reg:///registry/quests/class_quests/karma_limit
+
+caption: 
+    en: 'Get busy! #2'        ##LOCALIZATION
+    ru: 'Займись делом! #2'
+
+attack_count: 30

@@ -1,12 +1,12 @@
 ﻿_cls  : TunerItem
-doc      : Решетки на окна
+doc      : Решетки на окна "Клетка"
 abstract : false
 
 tags     : [win_prot]
 
 title:                          # Краткое название - отобразится в слоте инвентаря
-    en: Window bars   ##LOCALIZATION
-    ru: Решетки на окна
+    en: Window bars "Cage"   ##LOCALIZATION
+    ru: Решетки на окна "Клетка"
 
 # Полное описание - отобразится в разделе описания в инвентаре
 description: 

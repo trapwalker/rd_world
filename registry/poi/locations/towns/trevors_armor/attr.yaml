@@ -1,0 +1,33 @@
+﻿_cls     : Town
+doc      : Треворз Армор   # Продажа запчастей (торговля итемами стилиста и оружием)
+abstract : false
+
+title: 
+    en: Trevor's Armor   ##LOCALIZATION
+    ru: Треворз Армор
+
+position          : {x: 12472333, y: 27015308}
+p_observing_range : 250
+p_enter_range     : 150
+
+svg_link: static/content/locations/map_locations/trevors_armor
+
+buildings:
+  - name: market
+    caption: 
+        en: Trevor's   ##LOCALIZATION
+        ru: Треворз
+
+    title: 
+        en: Trevor's   ##LOCALIZATION
+        ru: Треворз
+
+    head: reg:///registry/institutions/trader/trevors_armor_mad_trevor
+    instances:
+        - reg:///registry/institutions/trader/trevors_armor_mad_trevor
+
+static_image_list:
+    - /static/content/locations/map_locations/trevors_armor/ground+circle.png
+    - /static/content/locations/map_locations/trevors_armor/market.png
+    - /static/content/locations/map_locations/trevors_armor/market_bg.png
+    - /static/content/locations/map_locations/trevors_armor/market_hover.png

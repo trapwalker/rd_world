@@ -51,7 +51,6 @@ class SearchCourier(DeliveryFromCache):
         #except:
         #    raise Cancel("QUEST CANCEL: uri<{}>  not resolve.".format(uri))
 
-
     def init_text(self):
         self.text_short = LocalizedString(
             en=u"Find missing courier.",   ##LOCALIZATION

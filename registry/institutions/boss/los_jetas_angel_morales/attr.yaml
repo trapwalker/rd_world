@@ -22,3 +22,21 @@ quests:
     count_to_kill_range:           # Диапазон количества целей
       min: 2
       max: 4
+
+  - parent: reg:///registry/quests/delivery_quest/delivery_passenger_quest   # ДОСТАВКА ПАССАЖИРА
+    _cls: DeliveryPassengerQuest
+    reward_relation_hirer: 0.0     # Награда в отношение за выполнение
+    karma_coef: 0.0                # Часть кармы от общей награды
+    money_coef: 2.0                # Часть нуокйнов от общей награды
+    person_delivery_cost: 300      # Стоимость доставки отдельного пассажира
+    reward_exp: 250                # Опыт
+    delivery_set_list:
+      -
+        - reg:///registry/items/passengers/male
+        - reg:///registry/items/passengers/female
+    destination_list:              # Список возможных пунктов назначения
+      - reg:///registry/poi/locations/towns/whitehill
+      - reg:///registry/poi/locations/towns/painted_rock
+      - reg:///registry/poi/locations/towns/paloma
+      - reg:///registry/poi/locations/towns/bonita_vista
+      - reg:///registry/poi/locations/towns/prior

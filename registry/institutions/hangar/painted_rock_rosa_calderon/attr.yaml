@@ -10,6 +10,11 @@ abstract : false
 hometown : reg:///registry/poi/locations/towns/painted_rock
 
 group_list:
+  # Этот набор для того чтобы хоть чтото купить можно было
+  - count : 1  # Количество машин в группе
+    car_list:
+      - reg:///registry/mobiles/cars/light/motorcycles/jawa_cz_355
+      - reg:///registry/mobiles/cars/light/motorcycles/honda_cy_50
 
  #lvl 0 cars
   - count : 1
@@ -40,6 +45,13 @@ group_list:
     car_list:
       - reg:///registry/mobiles/cars/cargo/buses/01_bedford_vas
 
+
+  - count : 1
+    car_list:
+      - reg:///registry/mobiles/cars/middle/cars/08_audi_200_avant
+  - count : 1
+    car_list:
+      - reg:///registry/mobiles/cars/middle/cars/09_chevrolet_impala
 
 
 quests:

@@ -143,3 +143,18 @@ table:
   - town1: reg:///registry/poi/locations/towns/luke_war_house
     town2: reg:///registry/poi/locations/towns/painted_rock
     distance: 63000   # 60 мин
+  - town1: reg:///registry/poi/locations/towns/los_jetas
+    town2: reg:///registry/poi/locations/towns/whitehill
+    distance: 12600
+  - town1: reg:///registry/poi/locations/towns/los_jetas
+    town2: reg:///registry/poi/locations/towns/painted_rock
+    distance: 25200
+  - town1: reg:///registry/poi/locations/towns/los_jetas
+    town2: reg:///registry/poi/locations/towns/paloma
+    distance: 31500
+  - town1: reg:///registry/poi/locations/towns/los_jetas
+    town2: reg:///registry/poi/locations/towns/bonita_vista
+    distance: 50400
+  - town1: reg:///registry/poi/locations/towns/los_jetas
+    town2: reg:///registry/poi/locations/towns/prior
+    distance: 90500

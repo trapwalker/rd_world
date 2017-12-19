@@ -12,7 +12,6 @@ hometown : reg:///registry/poi/locations/towns/whitehill
 
 group_list:
 
-
   # lvl0 motorcycle
   - count : 1  # Количество машин в группе
     car_list:
@@ -63,4 +62,4 @@ quests:
     recipient_list:                # Список возможных получателей доставки
       - reg:///registry/institutions/hangar/paloma_george_martell
       - reg:///registry/institutions/hangar/bonita_vista_mike_barsby
-      - reg:///registry/institutions/hangar/painted_rock_roas_calderon
+      - reg:///registry/institutions/hangar/painted_rock_rosa_calderon

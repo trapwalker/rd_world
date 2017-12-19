@@ -1,0 +1,15 @@
+_cls: ClassQuestShadowing
+
+first_state: begin
+
+list_icon: static/img/quests/icons/rpg_dice.png
+
+next_quest: reg:///registry/quests/class_quests/get_car_max_lvl
+
+caption: 
+    en: Get busy!        ##LOCALIZATION
+    ru: Займись делом!
+
+count: 3
+
+shadowing_duration: 60  # Сколько секунд нужно следить за мобом
