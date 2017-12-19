@@ -12,7 +12,6 @@ hometown : reg:///registry/poi/locations/towns/whitehill
 
 group_list:
 
-
   # lvl0 motorcycle
   - count : 1  # Количество машин в группе
     car_list:
