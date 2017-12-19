@@ -527,27 +527,27 @@ table:
     chance: 0.005
   #04_t4
 
-  - item: reg:///registry/items/slot_item/armorer_item/weapons/cannons/zu23_flak
-    level: 5
-    chance: 0.005
-  - item: reg:///registry/items/slot_item/armorer_item/weapons/cannons/zu23_flak/quick
-    level: 5
-    chance: 0.0025
+#  - item: reg:///registry/items/slot_item/armorer_item/weapons/cannons/zu23_flak
+#    level: 5
+#    chance: 0.005
+#  - item: reg:///registry/items/slot_item/armorer_item/weapons/cannons/zu23_flak/quick
+#    level: 5
+#    chance: 0.0025
   #zu23_flak
 
-  - item: reg:///registry/items/slot_item/armorer_item/weapons/cannons/2a42
-    level: 5
-    chance: 0.005
-  #2a42
+ # - item: reg:///registry/items/slot_item/armorer_item/weapons/cannons/2a42
+ #   level: 5
+ #   chance: 0.005
+ # #2a42
 
-  - item: reg:///registry/items/slot_item/armorer_item/weapons/cannons/flak_18
-    level: 5
-    chance: 0.005
-  #flak 18
+  #- item: reg:///registry/items/slot_item/armorer_item/weapons/cannons/flak_18
+  #  level: 5
+  #  chance: 0.005
+  ##flak 18
 
-  - item: reg:///registry/items/slot_item/armorer_item/weapons/cannons/mk103
-    level: 5
-    chance: 0.005
+ # - item: reg:///registry/items/slot_item/armorer_item/weapons/cannons/mk103
+ #   level: 5
+ #   chance: 0.005
     #mk103
 
 #ROCKETS
@@ -555,28 +555,28 @@ table:
   - item: reg:///registry/items/usable/map_weapon/rockets/sa16_igla
     level: 3
     chance: 0.005
-  - item: reg:///registry/items/usable/map_weapon/rockets/sa16_igla/quick
-    level: 3
-    chance: 0.005
+  #- item: reg:///registry/items/usable/map_weapon/rockets/sa16_igla/quick
+  #  level: 3
+  #  chance: 0.005
   #sa16_igla
 
   - item: reg:///registry/items/usable/map_weapon/rockets/kornet
     level: 4
     chance: 0.005
-  - item: reg:///registry/items/usable/map_weapon/rockets/kornet/quick
-    level: 4
-    chance: 0.005
+ # - item: reg:///registry/items/usable/map_weapon/rockets/kornet/quick
+ #   level: 4
+ #   chance: 0.005
   #kornet
 
   - item: reg:///registry/items/usable/map_weapon/rockets/javelin
     level: 4
     chance: 0.005
-  - item: reg:///registry/items/usable/map_weapon/rockets/javelin/quick
-    level: 4
-    chance: 0.005
+  #- item: reg:///registry/items/usable/map_weapon/rockets/javelin/quick
+  #  level: 4
+  #  chance: 0.005
   #javelin
 
-  - item: reg:///registry/items/slot_item/armorer_item/rocket_launcher/m242
-    level: 5
-    chance: 0.005
+  #- item: reg:///registry/items/slot_item/armorer_item/rocket_launcher/m242
+   # level: 5
+   # chance: 0.005
   #m242

@@ -70,9 +70,9 @@ items:
   - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/04_dshkm
   - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/04_gau_19
   - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/heavy/04_mg_18_tuf
-  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/dshkm_twin
-  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/mk_108
-  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/mk_108_twin
+#  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/dshkm_twin
+#  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/mk_108
+#  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/mk_108_twin
 
   # Залповое вооружение
 #  - reg:///registry/items/slot_item/armorer_item/weapons/cannons/medium/00_oerlikon
