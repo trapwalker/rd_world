@@ -10,6 +10,11 @@ abstract : false
 hometown : reg:///registry/poi/locations/towns/bonita_vista
 
 group_list:
+  # Этот набор для того чтобы хоть чтото купить можно было
+  - count : 1  # Количество машин в группе
+    car_list:
+      - reg:///registry/mobiles/cars/light/motorcycles/jawa_cz_355
+      - reg:///registry/mobiles/cars/light/motorcycles/honda_cy_50
 
   # Группа машин 2 lvl
   - count : 1
