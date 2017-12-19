@@ -63,16 +63,16 @@ items:
   - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/04_dshkm
   - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/04_gau_19
   - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/heavy/04_mg_18_tuf
-  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/dshkm_twin
-  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/mk_108
-  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/mk_108_twin
+  # - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/dshkm_twin
+  # - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/mk_108
+  # - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/mk_108_twin
 
   # Залповое вооружение
   - reg:///registry/items/slot_item/armorer_item/weapons/cannons/medium/04_t4
-  - reg:///registry/items/slot_item/armorer_item/weapons/cannons/zu23_flak
-  - reg:///registry/items/slot_item/armorer_item/weapons/cannons/2a42
-  - reg:///registry/items/slot_item/armorer_item/weapons/cannons/flak_18
-  - reg:///registry/items/slot_item/armorer_item/weapons/cannons/mk103
+ # - reg:///registry/items/slot_item/armorer_item/weapons/cannons/zu23_flak
+ # - reg:///registry/items/slot_item/armorer_item/weapons/cannons/2a42
+ # - reg:///registry/items/slot_item/armorer_item/weapons/cannons/flak_18
+ # - reg:///registry/items/slot_item/armorer_item/weapons/cannons/mk103
 
   # Ракеты
   - reg:///registry/items/usable/map_weapon/rockets/sa16_igla
