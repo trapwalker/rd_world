@@ -301,8 +301,8 @@ quests:
   - parent: reg:///registry/quests/delivery_quest/delivery_quest_simple   # ДОСТАВКА ГРУЗА А
     _cls: DeliveryQuestSimple
     caption:                           # Просто изменение заголовка
-        en: 'Delivery A'   ##LOCALIZATION
-        ru: 'Доставка А'
+        en: 'Spare parts shipment'   ##LOCALIZATION
+        ru: 'Доставка запчастей'
 
     generation_group: 'a'          # Подгруппа генерации (не обязательна для разных типов квестов)
     generation_max_count: 2        # Максимальное количество экземпляров данного квеста
@@ -314,10 +314,9 @@ quests:
     reward_exp: 100                # Опыт
     delivery_set_list:             # Список возможных комплектов для доставки
       -
-        - reg:///registry/items/stuff/alcohol/alcohol_002
-        - reg:///registry/items/stuff/scrap_metal/scrap_metal_001
-        - reg:///registry/items/stuff/canned_meat/canned_meat_001
-        - reg:///registry/items/stuff/water/water_002
+       - reg:///registry/items/slot_item/mechanic_item/brake/rear_brake_pads/02_bpr
+       - reg:///registry/items/slot_item/mechanic_item/engine/sparkplug/02_sp
+       - reg:///registry/items/slot_item/mechanic_item/transmission/primary_shaft/02_ps
     reward_items_list: []          # Список возможных комплектов для награды
     recipient_list:                # Список возможных получателей доставки
       - reg:///registry/institutions/mayor/whitehill_manny_askorti
@@ -327,8 +326,8 @@ quests:
   - parent: reg:///registry/quests/delivery_quest/delivery_quest_simple   # ДОСТАВКА ГРУЗА Б
     _cls: DeliveryQuestSimple
     caption:                           # Просто изменение заголовка
-        en: 'Delivery B'   ##LOCALIZATION
-        ru: 'Доставка Б'
+        en: 'Delivery of goods'   ##LOCALIZATION
+        ru: 'Доставка припасов'
 
     generation_group: 'b'          # Подгруппа генерации (не обязательна для разных типов квестов)
     generation_max_count: 2        # Максимальное количество экземпляров данного квеста
