@@ -910,6 +910,21 @@ quests:
     chance_of_generation: 1
     delay_time: 1
     bots_karma: {min: -90, max: -30}
+    tags: ['mob_boss', 'painted_rock']
+    routes:
+      - _cls: AreaRandomRoute
+        center: {x: 12475968, y: 27027329}
+        dispersion: 300
+    cars:
+      - reg:///registry/mobiles/cars/heavy/armored/04_m3a1_scout_car
+      - reg:///registry/mobiles/cars/heavy/btrs/05_m113a1
+      - reg:///registry/mobiles/cars/heavy/btrs/06_m1126
+
+  - parent: reg:///registry/quests/ai_event_quests/traffic/boss
+    generation_group: 'mob_boss'
+    chance_of_generation: 1
+    delay_time: 1
+    bots_karma: {min: -90, max: -30}
     tags: ['mob_boss', 'prior']
     routes:
       - _cls: AreaRandomRoute

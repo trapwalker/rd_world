@@ -152,5 +152,10 @@ quests:
       min: 2
       max: 4
 
-
+  - parent: reg:///registry/quests/agent_event_quests/kill_boss   # НАЙТИ И УНИЧТОЖИТЬ
+    _cls: KillBossQuest
+    needed_tags: ['mob_boss', 'painted_rock']
+    generation_max_count: 3
+    reward_money: 400              # Награда за 1 убийство
+    reward_karma: 1                # Награда за 1 убийство
 
