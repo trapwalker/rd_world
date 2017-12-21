@@ -523,7 +523,7 @@ quests:
     reward_relation_hirer: 5.0     # Награда в отношение за выполнение
     karma_coef: 0.0                # Часть кармы от общей награды
     money_coef: 1.0                # Часть нуокйнов от общей награды
-    total_delivery_money_coef: 0.5 # Множитель общей стоимости награды за квест от стоимости доставляемого товара
+    total_delivery_money_coef: 1.5 # Множитель общей стоимости награды за квест от стоимости доставляемого товара
     reward_exp: 150                # Опыт
     delivery_set_list:             # Список возможных комплектов для доставки
       -
@@ -533,11 +533,11 @@ quests:
         - reg:///registry/items/stuff/water/water_002
     reward_items_list: []          # Список возможных комплектов для награды
     recipient_list:                # Список возможных получателей доставки
-      - reg:///registry/institutions/mayor/prior_donnie_alma
-      - reg:///registry/institutions/trader/prior_hershey_la_palmas
       - reg:///registry/institutions/trader/paloma_shaun_fisher
       - reg:///registry/institutions/mayor/bonita_vista_jack_lape
       - reg:///registry/institutions/trader/bonita_vista_benny_mccurtain
+      - reg:///registry/institutions/trader/painted_rock_sebastian_fry
+
 
 
   - parent: reg:///registry/quests/delivery_quest/delivery_quest_simple   # ДОСТАВКА ГРУЗА Б
@@ -552,7 +552,7 @@ quests:
     reward_relation_hirer: 5.0     # Награда в отношение за выполнение
     karma_coef: 0.0                # Часть кармы от общей награды
     money_coef: 1.0                # Часть нуокйнов от общей награды
-    total_delivery_money_coef: 0.5 # Множитель общей стоимости награды за квест от стоимости доставляемого товара
+    total_delivery_money_coef: 1.5 # Множитель общей стоимости награды за квест от стоимости доставляемого товара
     reward_exp: 150                # Опыт
     delivery_set_list:             # Список возможных комплектов для доставки
       -
@@ -565,3 +565,5 @@ quests:
       - reg:///registry/institutions/trader/paloma_shaun_fisher
       - reg:///registry/institutions/mayor/bonita_vista_jack_lape
       - reg:///registry/institutions/trader/bonita_vista_benny_mccurtain
+      - reg:///registry/institutions/trader/painted_rock_sebastian_fry
+
