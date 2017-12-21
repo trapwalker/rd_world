@@ -890,6 +890,36 @@ quests:
         dispersion: 2000
         route_deadline: 0
 
+  - parent: reg:///registry/quests/ai_event_quests/traffic/gang/multi_gang
+    generation_group: "central_gang"
+    generation_max_count: 1
+    chance_of_generation: 1
+    delay_time: 180
+    bots_karma: {min: -90, max: -50}
+    bots_level: {min: 0, max: 3}
+    count_members: { max: 8, min: 6 }
+    max_loot_count: 4
+    routes:
+      - _cls: AreaRandomRoute
+        center: {x: 12507173, y: 27039653}
+        dispersion: 2000
+
+ # - parent: reg:///registry/quests/ai_event_quests/traffic/gang/multi_gang
+ #   generation_group: "military_gang"
+ #   generation_max_count: 1
+ #   chance_of_generation: 1
+ #   delay_time: 180
+ #   bots_karma: {min: 0, max: 5}
+ #   bots_level: {min: 3, max: 4}
+ #   count_members: { max: 3, min: 2 }
+ #   max_loot_count: 5
+ #   routes:
+ #     - parent: reg:///registry/routes/paloma_military_gang
+ #   cars:
+ #     - reg:///registry/mobiles/cars/heavy/armored/04_m3a1_scout_car
+ #     - reg:///registry/mobiles/cars/heavy/btrs/05_m113a1
+
+
   - parent: reg:///registry/quests/ai_event_quests/traffic/boss
     generation_group: 'mob_boss'
     chance_of_generation: 1
