@@ -101,8 +101,8 @@ quests:
   - parent: reg:///registry/quests/delivery_quest/delivery_quest_simple   # ДОСТАВКА ГРУЗА А
     _cls: DeliveryQuestSimple
     caption:                           # Просто изменение заголовка
-        en: 'Delivery A'   ##LOCALIZATION
-        ru: 'Доставка А'
+        en: 'Armor shipment'   ##LOCALIZATION
+        ru: 'Поставка брони'
 
     generation_group: 'a'          # Подгруппа генерации (не обязательна для разных типов квестов)
     generation_max_count: 2        # Максимальное количество экземпляров данного квеста
