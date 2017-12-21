@@ -130,8 +130,8 @@ quests:
   - parent: reg:///registry/quests/delivery_quest/delivery_quest_simple   # ДОСТАВКА ГРУЗА Б
     _cls: DeliveryQuestSimple
     caption:                           # Просто изменение заголовка
-        en: 'Delivery B'   ##LOCALIZATION
-        ru: 'Доставка Б'
+        en: 'Personal delivery'   ##LOCALIZATION
+        ru: 'Личная доставка'
 
     generation_group: 'b'          # Подгруппа генерации (не обязательна для разных типов квестов)
     generation_max_count: 2        # Максимальное количество экземпляров данного квеста
