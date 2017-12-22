@@ -69,7 +69,7 @@ quests:
 
   - parent: reg:///registry/quests/delivery_quest/delivery_passenger_quest   # ДОСТАВКА ПАССАЖИРА
     _cls: DeliveryPassengerQuest
-    reward_relation_hirer: 5.0     # Награда в отношение за выполнение
+    reward_relation_hirer: 10.0     # Награда в отношение за выполнение
     karma_coef: 0.0                # Часть кармы от общей награды
     money_coef: 1.0                # Часть нуокйнов от общей награды
     person_delivery_cost: 200      # Стоимость доставки отдельного пассажира
