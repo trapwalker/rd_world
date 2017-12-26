@@ -7,3 +7,66 @@ photo    : "static/content/institutions/mechanic/prior_al_taslima.png"
 abstract : false
 
 hometown : reg:///registry/poi/locations/towns/prior
+
+quests:
+  - parent: reg:///registry/quests/delivery_quest/delivery_quest_simple   # ДОСТАВКА ГРУЗА А
+    _cls: DeliveryQuestSimple
+    caption:                           # Просто изменение заголовка
+        en: 'Spare parts delivery'   ##LOCALIZATION
+        ru: 'Поставка запчастей'
+
+    generation_group: 'a'          # Подгруппа генерации (не обязательна для разных типов квестов)
+    generation_max_count: 1        # Максимальное количество экземпляров данного квеста
+    generation_cooldown: 1800      # Задержка на генерацию после завершения квеста
+    reward_relation_hirer: 6.0     # Награда в отношение за выполнение
+    karma_coef: 0.0                # Часть кармы от общей награды
+    money_coef: 1.0               # Часть нуокйнов от общей награды
+    total_delivery_money_coef: 0.5 # Множитель общей стоимости награды за квест от стоимости доставляемого товара
+    reward_exp: 100                # Опыт
+    delivery_set_list:             # Список возможных комплектов для доставки
+      -
+       - reg:///registry/items/slot_item/mechanic_item/brake/rear_brakes/rear_brakes_1
+       - reg:///registry/items/slot_item/mechanic_item/engine/cylinder_head/cylinder_head_1
+       - reg:///registry/items/slot_item/mechanic_item/cooling/thermostat/thermostat_1
+       - reg:///registry/items/slot_item/mechanic_item/engine/compressor/compressor_1
+    reward_items_list: []          # Список возможных комплектов для награды
+    recipient_list:                # Список возможных получателей доставки
+      - reg:///registry/institutions/mechanic/bonita_vista_lenny_nachreiner
+
+
+  - parent: reg:///registry/quests/delivery_quest/delivery_quest_simple   # ДОСТАВКА ГРУЗА Б
+    _cls: DeliveryQuestSimple
+    caption:                           # Просто изменение заголовка
+        en: 'Personal delivery'   ##LOCALIZATION
+        ru: 'Личная доставка'
+
+    generation_group: 'b'          # Подгруппа генерации (не обязательна для разных типов квестов)
+    generation_max_count: 1        # Максимальное количество экземпляров данного квеста
+    generation_cooldown: 600       # Задержка на генерацию после завершения квеста
+    reward_relation_hirer: 6.0     # Награда в отношение за выполнение
+    karma_coef: 0.0                # Часть кармы от общей награды
+    money_coef: 1.0                # Часть нуокйнов от общей награды
+    total_delivery_money_coef: 0.5 # Множитель общей стоимости награды за квест от стоимости доставляемого товара
+    reward_exp: 75                # Опыт
+    delivery_set_list:             # Список возможных комплектов для доставки
+      -
+        - reg:///registry/items/stuff/alcohol/alcohol_002
+    reward_items_list: []          # Список возможных комплектов для награды
+    recipient_list:                # Список возможных получателей доставки
+      - reg:///registry/institutions/mayor/bonita_vista_jack_lape
+      - reg:///registry/institutions/trader/paloma_shaun_fisher
+
+
+  - parent: reg:///registry/quests/delivery_quest/delivery_passenger_quest   # ДОСТАВКА ПАССАЖИРА
+    _cls: DeliveryPassengerQuest
+    reward_relation_hirer: 5.0     # Награда в отношение за выполнение
+    karma_coef: 0.0                # Часть кармы от общей награды
+    money_coef: 1.0                # Часть нуокйнов от общей награды
+    person_delivery_cost: 100      # Стоимость доставки отдельного пассажира
+    reward_exp: 60                # Опыт
+    delivery_set_list:
+      -
+        - reg:///registry/items/passengers/male
+    destination_list:              # Список возможных пунктов назначения
+      - reg:///registry/poi/locations/towns/bonita_vista
+      - reg:///registry/poi/locations/towns/paloma

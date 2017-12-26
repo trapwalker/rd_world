@@ -46,14 +46,6 @@ group_list:
       - reg:///registry/mobiles/cars/cargo/buses/01_bedford_vas
 
 
-  - count : 1
-    car_list:
-      - reg:///registry/mobiles/cars/middle/cars/08_audi_200_avant
-  - count : 1
-    car_list:
-      - reg:///registry/mobiles/cars/middle/cars/09_chevrolet_impala
-
-
 quests:
   - parent: reg:///registry/quests/delivery_quest/delivery_car   # ПЕРЕГНАТЬ ТРАНСПОРТ
     _cls: DeliveryCar

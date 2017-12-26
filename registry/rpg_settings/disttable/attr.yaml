@@ -154,7 +154,37 @@ table:
     distance: 31500
   - town1: reg:///registry/poi/locations/towns/los_jetas
     town2: reg:///registry/poi/locations/towns/bonita_vista
-    distance: 50400
+    distance: 40000
   - town1: reg:///registry/poi/locations/towns/los_jetas
     town2: reg:///registry/poi/locations/towns/prior
     distance: 90500
+  - town1: reg:///registry/poi/locations/towns/trevors_armor
+    town2: reg:///registry/poi/locations/towns/painted_rock
+    distance: 12600
+  - town1: reg:///registry/poi/locations/towns/trevors_armor
+    town2: reg:///registry/poi/locations/towns/whitehill
+    distance: 31500
+  - town1: reg:///registry/poi/locations/towns/trevors_armor
+    town2: reg:///registry/poi/locations/towns/bonita_vista
+    distance: 31500
+  - town1: reg:///registry/poi/locations/towns/trevors_armor
+    town2: reg:///registry/poi/locations/towns/prior
+    distance: 90000
+  - town1: reg:///registry/poi/locations/towns/trevors_armor
+    town2: reg:///registry/poi/locations/towns/paloma
+    distance: 63000
+  - town1: reg:///registry/poi/locations/towns/walker_parts
+    town2: reg:///registry/poi/locations/towns/paloma
+    distance: 63000
+  - town1: reg:///registry/poi/locations/towns/walker_parts
+    town2: reg:///registry/poi/locations/towns/whitehill
+    distance: 31500
+  - town1: reg:///registry/poi/locations/towns/walker_parts
+    town2: reg:///registry/poi/locations/towns/painted_rock
+    distance: 12600
+  - town1: reg:///registry/poi/locations/towns/walker_parts
+    town2: reg:///registry/poi/locations/towns/bonita_vista
+    distance: 31500
+  - town1: reg:///registry/poi/locations/towns/walker_parts
+    town2: reg:///registry/poi/locations/towns/prior
+    distance: 90000
