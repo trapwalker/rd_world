@@ -26,6 +26,9 @@ class AIActionTrafficQuest(AIActionQuest):
         ),
     )
 
+    def __str__(self):
+        return '{}[{}|{}|({})]'.format(self.__class__.__name__, self.node_hash(), self.current_state, self.dc.current_target_point)
+
     def discharge_shoot_command(self, event):
         agent_model = self.agent.profile._agent_model
         car = agent_model.car if agent_model else None
@@ -51,10 +54,11 @@ class AIActionTrafficQuest(AIActionQuest):
         #         town.on_enemy_candidate(agent=agent, damage=True, time=event.time)
 
     def set_motion(self, car, cc, target_point, event):
-        if cc != self.dc.last_cc or target_point != self.dc.last_target_point:
+        if cc != self.dc.last_cc or target_point != self.dc.last_target_point or event.time - self.dc.last_time_set_motion > 20:
             car.set_motion(time=event.time, cc=cc, target_point=target_point)
             self.dc.last_cc = cc
             self.dc.last_target_point = target_point
+            self.dc.last_time_set_motion = event.time
 
     def get_target_point(self, event):
         target_car = self.dc.target_car
@@ -74,6 +78,7 @@ class AIActionTrafficQuest(AIActionQuest):
         self.dc.current_cc = 0.5  # Переопределяется квестом-событием
         self.dc.last_cc = 0.0
         self.dc.last_target_point = None
+        self.dc.last_time_set_motion = event.time - 5.0
     
     ####################################################################################################################
     ## Перечень состояний ##############################################################################################
