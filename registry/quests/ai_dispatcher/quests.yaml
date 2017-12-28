@@ -1120,3 +1120,22 @@ quests:
         reverse: True
     town_destination: reg:///registry/poi/locations/towns/paloma
     schedule: [5400, 12600, 19800, 27000, 34200, 41400, 48600, 55800, 63000, 70200, 77400, 84600, 91800]
+
+  - parent: reg:///registry/quests/ai_event_quests/traffic/gang/caravan_simple
+    _cls: AICaravanQuest
+    generation_group: "caravan_painted_rock"
+    tags: ["caravan_painted_rock_whitehill"]
+    routes:
+      - parent: reg:///registry/routes/painted_rock_whitehill
+    town_destination: reg:///registry/poi/locations/towns/whitehill
+    schedule: [0, 7200, 14400, 21600, 28800, 36000, 43200, 50400, 57600, 64800, 72000, 79200, 86400]
+
+  - parent: reg:///registry/quests/ai_event_quests/traffic/gang/caravan_simple
+    _cls: AICaravanQuest
+    generation_group: "caravan_painted_rock"
+    tags: ["caravan_whitehill_painted_rock"]
+    routes:
+      - parent: reg:///registry/routes/painted_rock_whitehill
+        reverse: True
+    town_destination: reg:///registry/poi/locations/towns/painted_rock
+    schedule: [0, 7200, 14400, 21600, 28800, 36000, 43200, 50400, 57600, 64800, 72000, 79200, 86400]

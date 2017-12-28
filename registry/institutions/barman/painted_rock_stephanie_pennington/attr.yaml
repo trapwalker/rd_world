@@ -84,3 +84,8 @@ quests:
       - reg:///registry/poi/locations/towns/paloma
       - reg:///registry/poi/locations/towns/whitehill
       - reg:///registry/poi/locations/towns/bonita_vista
+
+  - parent: reg:///registry/quests/agent_event_quests/escort_caravan
+    needed_tags: ["caravan_painted_rock_whitehill"]
+    reward_money: 1000              # Награда
+    reward_karma: 5                # Награда
