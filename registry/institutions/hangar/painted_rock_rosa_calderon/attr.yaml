@@ -14,7 +14,7 @@ group_list:
   - count : 1  # Количество машин в группе
     car_list:
       - reg:///registry/mobiles/cars/light/motorcycles/jawa_cz_355
-      - reg:///registry/mobiles/cars/light/motorcycles/honda_cy_50
+
 
  #lvl 0 cars
   - count : 1

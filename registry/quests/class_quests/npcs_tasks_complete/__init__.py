@@ -71,7 +71,7 @@ class ClassQuestNPCsTasksComplete(ClassTypeQuest):
                 else:
                     quest.npc_replica(
                         npc=quest.hirer,
-                        replica=u'{}<br>{}.t'.format( ##LOCALIZATION
+                        replica=u'{}<br>{}.'.format( ##LOCALIZATION
                             quest.locale("q_cq_npc_tasks_replica_not_finish"),
                             quest.get_not_complete_npc_info(),
                         ),
