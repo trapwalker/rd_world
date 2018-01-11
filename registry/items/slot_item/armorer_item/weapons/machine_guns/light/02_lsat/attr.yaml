@@ -3,8 +3,8 @@ doc             : Пулемет LSATNone
 abstract        : false
 
 title:                                                       # Краткое название - отобразится в слоте инвентаря
-    en: Machine gun<br>LSAT  ##LOCALIZATION
-    ru: Пулемет<br>LSAT
+    en: Light Machine gun<br>LSAT  ##LOCALIZATION
+    ru: Легкий Пулемет<br>LSAT
 
 # Полное описание - отобразится в разделе описания в инвентаре
 description: 

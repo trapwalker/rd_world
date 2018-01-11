@@ -3,8 +3,8 @@ doc             : Пулемет FN MinimiNone
 abstract        : false
 
 title:                                                       # Краткое название - отобразится в слоте инвентаря
-    en: Machine gun<br>Fn minimi ##LOCALIZATION
-    ru: Пулемет<br>Fn minimi
+    en: Light Machine gun<br>Fn minimi ##LOCALIZATION
+    ru: Легкий Пулемет<br>Fn minimi
 
 # Полное описание - отобразится в разделе описания в инвентаре
 description: 

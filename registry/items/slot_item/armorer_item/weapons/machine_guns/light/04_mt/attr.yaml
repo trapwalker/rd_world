@@ -3,8 +3,8 @@ doc             : Пулемет МТNone
 abstract        : false
 
 title:                                                       # Краткое название - отобразится в слоте инвентаря
-    en: Machine gun<br>МТ  ##LOCALIZATION
-    ru: Пулемет<br>МТ
+    en: Light Machine gun<br>МТ  ##LOCALIZATION
+    ru: Легкий Пулемет<br>МТ
 
 # Полное описание - отобразится в разделе описания в инвентаре
 description: 
