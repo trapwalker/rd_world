@@ -3,8 +3,8 @@ doc             : Пулемет UKM 2000None
 abstract        : false
 
 title:                                                       # Краткое название - отобразится в слоте инвентаря
-    en: Machine gun<br>UKM 2000  ##LOCALIZATION
-    ru: Пулемет<br>UKM 2000
+    en: Light Machine gun<br>UKM 2000  ##LOCALIZATION
+    ru: Легкий Пулемет<br>UKM 2000
 
 # Полное описание - отобразится в разделе описания в инвентаре
 description: 

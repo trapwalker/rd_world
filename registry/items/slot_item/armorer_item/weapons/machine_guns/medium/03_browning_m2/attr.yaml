@@ -3,8 +3,8 @@ doc             : Пулемет Браунинг M2None
 abstract        : false
 
 title:                                                        # Краткое название - отобразится в слоте инвентаря
-    en: Machine gun<br>Browning M2  ##LOCALIZATION
-    ru: Пулемет<br>Браунинг M2
+    en: Medium Machine gun<br>Browning M2  ##LOCALIZATION
+    ru: Средний Пулемет<br>Браунинг M2
 
 # Полное описание - отобразится в разделе описания в инвентаре
 description: 
