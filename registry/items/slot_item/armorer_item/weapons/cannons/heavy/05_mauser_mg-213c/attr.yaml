@@ -14,7 +14,7 @@ description:
 
 # Основные балансные настройки
 base_price      : 7000                                     # Цена
-weight_class    : 2                                        # Класс тяжести
+weight_class    : 3                                        # Класс тяжести
 ammo            : reg:///registry/items/usable/ammo/20mm  # Подходящие патроны
 
 dmg             : 10                                     # Дамаг при залпе по вражеским целям

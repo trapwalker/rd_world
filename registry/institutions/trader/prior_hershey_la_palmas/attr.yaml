@@ -91,7 +91,10 @@ items:
   - reg:///registry/items/slot_item/armorer_item/weapons/cannons/medium/03_m242_bushmaster
   - reg:///registry/items/slot_item/armorer_item/weapons/cannons/medium/04_t4
   - reg:///registry/items/slot_item/armorer_item/weapons/cannons/medium/05_am_23
+  - reg:///registry/items/slot_item/armorer_item/weapons/cannons/medium/06_zu23_flak
   - reg:///registry/items/slot_item/armorer_item/weapons/cannons/heavy/05_mauser_mg-213c
+  - reg:///registry/items/slot_item/armorer_item/weapons/cannons/heavy/06_2a42
+
 # - reg:///registry/items/slot_item/armorer_item/weapons/cannons/zu23_flak
 # - reg:///registry/items/slot_item/armorer_item/weapons/cannons/2a42
 # - reg:///registry/items/slot_item/armorer_item/weapons/cannons/flak_18
