@@ -86,10 +86,12 @@ items:
 #  - reg:///registry/items/slot_item/armorer_item/weapons/cannons/medium/01_lvakan_m_40
 #  - reg:///registry/items/slot_item/armorer_item/weapons/cannons/medium/01_bofors_m_45
   - reg:///registry/items/slot_item/armorer_item/weapons/cannons/light/02_rg_6
-  - reg:///registry/items/slot_item/armorer_item/weapons/cannons/medium/02_mauser_mg_213
+  - reg:///registry/items/slot_item/armorer_item/weapons/cannons/light/05_mg_32
   - reg:///registry/items/slot_item/armorer_item/weapons/cannons/medium/03_vya_23
   - reg:///registry/items/slot_item/armorer_item/weapons/cannons/medium/03_m242_bushmaster
   - reg:///registry/items/slot_item/armorer_item/weapons/cannons/medium/04_t4
+  - reg:///registry/items/slot_item/armorer_item/weapons/cannons/medium/05_am_23
+  - reg:///registry/items/slot_item/armorer_item/weapons/cannons/heavy/05_mauser_mg-213c
 # - reg:///registry/items/slot_item/armorer_item/weapons/cannons/zu23_flak
 # - reg:///registry/items/slot_item/armorer_item/weapons/cannons/2a42
 # - reg:///registry/items/slot_item/armorer_item/weapons/cannons/flak_18

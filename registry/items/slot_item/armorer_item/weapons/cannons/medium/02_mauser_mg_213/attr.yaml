@@ -3,8 +3,8 @@ doc             : Пушка Mauser MG 213None
 abstract        : false
 
 title:
-    en: Gun<br>Mauser MG 213                   # Краткое название - отобразится в слоте инвентаря  ##LOCALIZATION
-    ru: Пушка<br>Mauser MG 213                   # Краткое название - отобразится в слоте инвентаря
+    en: Defective gun<br>Mauser MG 213                   # Краткое название - отобразится в слоте инвентаря  ##LOCALIZATION
+    ru: Сломанная пушка<br>Mauser MG 213                   # Краткое название - отобразится в слоте инвентаря
 
 # Полное описание - отобразится в разделе описания в инвентаре
 description:
@@ -16,14 +16,14 @@ base_price      : 1600                                     # Цена
 weight_class    : 2                                        # Класс тяжести
 ammo            : reg:///registry/items/usable/ammo/20mm   # Подходящие патроны
 
-dmg             : 12                                       # Дамаг при залпе по вражеским целям
+dmg             : 9                                       # Дамаг при залпе по вражеским целям
 area_dmg        : 6                                        # Дамаг по невидимым целям
-time_recharge   : 5.6                                      # Время перезарядки орудия (с)
+time_recharge   : 4.8                                      # Время перезарядки орудия (с)
 
 
 
-radius          : 740                                      # Дальность сектора стрельбы
-width           : 61                                       # Ширина сектора стрельбы
+radius          : 600                                      # Дальность сектора стрельбы
+width           : 30                                      # Ширина сектора стрельбы
 
 ammo_per_shot   : -1                                       # Потребление патронов при залпе
 
@@ -76,8 +76,8 @@ armorer_images:
 condition       : 2  # Исп.
 
 
-rand_modifier_radius: 1.25
-rand_modifier_dmg : 1.25
-rand_modifier_width: 1.25
+rand_modifier_radius: 1
+rand_modifier_dmg : 1
+rand_modifier_width: 1
 
 power_penetration: 12
