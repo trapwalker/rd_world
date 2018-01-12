@@ -3,8 +3,8 @@ doc             : Пулемет FG-42None
 abstract        : false
 
 title:                                                       # Краткое название - отобразится в слоте инвентаря
-    en: Machine gun<br>FG-42  ##LOCALIZATION
-    ru: Пулемет<br>FG-42
+    en: Medium Machine gun<br>FG-42  ##LOCALIZATION
+    ru: Средний Пулемет<br>FG-42
 
 # Полное описание - отобразится в разделе описания в инвентаре
 description: 

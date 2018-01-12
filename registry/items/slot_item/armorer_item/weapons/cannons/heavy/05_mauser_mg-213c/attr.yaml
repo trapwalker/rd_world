@@ -1,0 +1,81 @@
+_cls            : Cannon
+doc             : Пушка Mauser MG 213cNone
+abstract        : false
+
+title:                                                     # Краткое название - отобразится в слоте инвентаря
+    en: Heavy cannon<br>Mauser MG 213c  ##LOCALIZATION
+    ru: Тяжелая пушка<br>Mauser MG 213c
+
+# Полное описание - отобразится в разделе описания в инвентаре
+description: 
+    en: ''  ##LOCALIZATION
+    ru: ''
+
+
+# Основные балансные настройки
+base_price      : 7000                                     # Цена
+weight_class    : 3                                        # Класс тяжести
+ammo            : reg:///registry/items/usable/ammo/20mm  # Подходящие патроны
+
+dmg             : 10                                     # Дамаг при залпе по вражеским целям
+area_dmg        : 6.0                                     # Дамаг по невидимым целям
+time_recharge   : 3                                      # Время перезарядки орудия (с)
+
+radius          : 600                                      # Дальность сектора стрельбы
+width           : 35                                       # Ширина сектора стрельбы
+
+ammo_per_shot   : -1                                       # Потребление патронов при залпе
+
+# Картинки для представления в инвентаре
+inv_icon_big    : static/content/items/slot_item/weapons/cannons/heavy/05_mauser_mg-213c/inventory/big.png
+inv_icon_mid    : static/content/items/slot_item/weapons/cannons/heavy/05_mauser_mg-213c/inventory/mid.png
+inv_icon_small  : static/content/items/slot_item/weapons/cannons/heavy/05_mauser_mg-213c/inventory/small.png
+
+armorer_images:
+  small:
+    # Картинки для представления у оружейника (вид сбоку)
+    armorer_side_F  : "static/content/items/slot_item/weapons/cannons/heavy/05_mauser_mg-213c/small/side_f.png" # вперёд
+    armorer_side_B  : "static/content/items/slot_item/weapons/cannons/heavy/05_mauser_mg-213c/small/side_b.png" # назад
+    armorer_side_R  : "static/content/items/slot_item/weapons/cannons/heavy/05_mauser_mg-213c/small/side_r.png" # вправо
+    armorer_side_L  : "static/content/items/slot_item/weapons/cannons/heavy/05_mauser_mg-213c/small/side_l.png" # влево
+
+    # Картинки для представления у оружейника (вид сверху)
+    armorer_top_F   : "static/content/items/slot_item/weapons/cannons/heavy/05_mauser_mg-213c/small/top_f.png"  # вперёд
+    armorer_top_B   : "static/content/items/slot_item/weapons/cannons/heavy/05_mauser_mg-213c/small/top_b.png"  # назад
+    armorer_top_R   : "static/content/items/slot_item/weapons/cannons/heavy/05_mauser_mg-213c/small/top_r.png"  # вправо
+    armorer_top_L   : "static/content/items/slot_item/weapons/cannons/heavy/05_mauser_mg-213c/small/top_l.png"  # влево
+
+  middle:
+    # Картинки для представления у оружейника (вид сбоку)
+    armorer_side_F  : "static/content/items/slot_item/weapons/cannons/heavy/05_mauser_mg-213c/middle/side_f.png" # вперёд
+    armorer_side_B  : "static/content/items/slot_item/weapons/cannons/heavy/05_mauser_mg-213c/middle/side_b.png" # назад
+    armorer_side_R  : "static/content/items/slot_item/weapons/cannons/heavy/05_mauser_mg-213c/middle/side_r.png" # вправо
+    armorer_side_L  : "static/content/items/slot_item/weapons/cannons/heavy/05_mauser_mg-213c/middle/side_l.png" # влево
+
+    # Картинки для представления у оружейника (вид сверху)
+    armorer_top_F   : "static/content/items/slot_item/weapons/cannons/heavy/05_mauser_mg-213c/middle/top_f.png"  # вперёд
+    armorer_top_B   : "static/content/items/slot_item/weapons/cannons/heavy/05_mauser_mg-213c/middle/top_b.png"  # назад
+    armorer_top_R   : "static/content/items/slot_item/weapons/cannons/heavy/05_mauser_mg-213c/middle/top_r.png"  # вправо
+    armorer_top_L   : "static/content/items/slot_item/weapons/cannons/heavy/05_mauser_mg-213c/middle/top_l.png"  # влево
+
+  big:
+    # Картинки для представления у оружейника (вид сбоку)
+    armorer_side_F  : "static/content/items/slot_item/weapons/cannons/heavy/05_mauser_mg-213c/middle/side_f.png" # вперёд
+    armorer_side_B  : "static/content/items/slot_item/weapons/cannons/heavy/05_mauser_mg-213c/middle/side_b.png" # назад
+    armorer_side_R  : "static/content/items/slot_item/weapons/cannons/heavy/05_mauser_mg-213c/middle/side_r.png" # вправо
+    armorer_side_L  : "static/content/items/slot_item/weapons/cannons/heavy/05_mauser_mg-213c/middle/side_l.png" # влево
+
+    # Картинки для представления у оружейника (вид сверху)
+    armorer_top_F   : "static/content/items/slot_item/weapons/cannons/heavy/05_mauser_mg-213c/middle/top_f.png"  # вперёд
+    armorer_top_B   : "static/content/items/slot_item/weapons/cannons/heavy/05_mauser_mg-213c/middle/top_b.png"  # назад
+    armorer_top_R   : "static/content/items/slot_item/weapons/cannons/heavy/05_mauser_mg-213c/middle/top_r.png"  # вправо
+    armorer_top_L   : "static/content/items/slot_item/weapons/cannons/heavy/05_mauser_mg-213c/middle/top_l.png"  # влево
+
+
+condition       : 3  # Исп.
+
+rand_modifier_radius: 1.25
+rand_modifier_dmg : 1.25
+rand_modifier_width: 1.25
+
+power_penetration: 15

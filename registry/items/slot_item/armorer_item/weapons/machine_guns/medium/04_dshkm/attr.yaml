@@ -3,8 +3,8 @@ doc             : Пулемет ДШКМNone
 abstract        : false
 
 title:                                                        # Краткое название - отобразится в слоте инвентаря
-    en: Machine gun<br>DShKM  ##LOCALIZATION
-    ru: Пулемет<br>ДШКМ
+    en: Medium Machine gun<br>DShKM  ##LOCALIZATION
+    ru: Средний Пулемет<br>ДШКМ
 
 # Полное описание - отобразится в разделе описания в инвентаре
 description: 

@@ -3,8 +3,8 @@ doc             : Пулемет M249 SAWNone
 abstract        : false
 
 title:                                                       # Краткое название - отобразится в слоте инвентаря
-    en: Machine gun<br>M249 SAW  ##LOCALIZATION
-    ru: Пулемет<br>M249 SAW
+    en: Light Machine gun<br>M249 SAW  ##LOCALIZATION
+    ru: Легкий Пулемет<br>M249 SAW
 
 # Полное описание - отобразится в разделе описания в инвентаре
 description: 

@@ -4,8 +4,8 @@ abstract        : false
 tags            : [teaching]
 
 title:                                                       # Краткое название - отобразится в слоте инвентаря
-    en: Machine gun<br>PK  ##LOCALIZATION
-    ru: Пулемет<br>ПК
+    en: Light Machine gun<br>PK  ##LOCALIZATION
+    ru: Легкий Пулемет<br>ПК
 
 # Полное описание - отобразится в разделе описания в инвентаре
 description: 

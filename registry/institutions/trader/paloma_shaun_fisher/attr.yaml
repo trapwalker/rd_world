@@ -54,10 +54,10 @@ items:
  # - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/00_mg_08
   - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/01_negev_ng7
   - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/01_m249_saw
-  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/01_mg_15
-  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/01_mg_81
   - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/02_stoner_63
   - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/02_lsat
+  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/01_mg_15
+  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/01_mg_81
   - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/02_mg_42
   - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/02_m134_minigun
  # - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/03_bren

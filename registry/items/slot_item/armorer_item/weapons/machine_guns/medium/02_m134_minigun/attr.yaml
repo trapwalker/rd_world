@@ -3,8 +3,8 @@ doc             : Пулемет M134 «Миниган»None
 abstract        : false
 
 title:                                                       # Краткое название - отобразится в слоте инвентаря
-    en: Machine gun<br>M134 «Minigun»  ##LOCALIZATION
-    ru: Пулемет<br>M134 «Миниган»
+    en: Medium Machine gun<br>M134 «Minigun»  ##LOCALIZATION
+    ru: Средний Пулемет<br>M134 «Миниган»
 
 # Полное описание - отобразится в разделе описания в инвентаре
 description: 

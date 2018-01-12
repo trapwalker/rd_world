@@ -4,8 +4,8 @@ abstract        : false
 tags            : [teaching]
 
 title:                                                       # Краткое название - отобразится в слоте инвентаря
-    en: Machine gun<br>OTs-14 Groza ##LOCALIZATION
-    ru: Пулемет<br>ОЦ-14 Гроза
+    en: Light Machine gun<br>OTs-14 Groza ##LOCALIZATION
+    ru: Легкий Пулемет<br>ОЦ-14 Гроза
 
 # Полное описание - отобразится в разделе описания в инвентаре
 description: 

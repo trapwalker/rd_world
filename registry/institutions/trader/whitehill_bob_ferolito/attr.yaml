@@ -50,10 +50,10 @@ items:
   # Автоматическое вооружение
   - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/00_oc_14
   - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/00_rpk
-  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/00_fg_42
-  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/00_mg_08
   - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/01_negev_ng7
   - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/01_m249_saw
+  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/00_fg_42
+  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/00_mg_08
 #  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/01_mg_15
 #  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/01_mg_81
 #  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/02_stoner_63

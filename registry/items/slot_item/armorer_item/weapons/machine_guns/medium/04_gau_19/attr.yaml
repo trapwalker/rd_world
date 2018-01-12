@@ -3,8 +3,8 @@ doc             : Пулемет GAU-19None
 abstract        : false
 
 title:                                                        # Краткое название - отобразится в слоте инвентаря
-    en: Machine gun<br>GAU-19  ##LOCALIZATION
-    ru: Пулемет<br>GAU-19
+    en: Medium Machine gun<br>GAU-19  ##LOCALIZATION
+    ru: Средний Пулемет<br>GAU-19
 
 # Полное описание - отобразится в разделе описания в инвентаре
 description: 

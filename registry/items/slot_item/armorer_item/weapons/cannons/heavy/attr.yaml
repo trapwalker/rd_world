@@ -1,0 +1,4 @@
+﻿_cls : Cannon
+doc  : Тяжелые пушки
+
+#power_penetration: 10   # Мощность оружия (пробитие)

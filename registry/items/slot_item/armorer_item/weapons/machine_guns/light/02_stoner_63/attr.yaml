@@ -3,8 +3,8 @@ doc             : Пулемет Stoner 63None
 abstract        : false
 
 title:                                                       # Краткое название - отобразится в слоте инвентаря
-    en: Machine gun<br>Stoner 63  ##LOCALIZATION
-    ru: Пулемет<br>Stoner 63
+    en: Light Machine gun<br>Stoner 63  ##LOCALIZATION
+    ru: Легкий Пулемет<br>Stoner 63
 
 # Полное описание - отобразится в разделе описания в инвентаре
 description: 

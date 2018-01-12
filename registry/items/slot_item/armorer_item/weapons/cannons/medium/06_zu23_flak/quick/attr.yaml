@@ -1,0 +1,77 @@
+﻿_cls            : Cannon
+doc             : Пушка ЗУ-23-2
+abstract        : false
+
+title:                                                     # Краткое название - отобразится в слоте инвентаря
+    en: Gun<br>ZU-23-2  ##LOCALIZATION
+    ru: Пушка<br>ЗУ-23-2
+
+# Полное описание - отобразится в разделе описания в инвентаре
+description: 
+    en: Советская 23-мм спаренная зенитная установка, индекс по ГРАУ СССР 2А13. Принята на вооружение 22 марта 1960 года.  ##LOCALIZATION
+    ru: Советская 23-мм спаренная зенитная установка, индекс по ГРАУ СССР 2А13. Принята на вооружение 22 марта 1960 года.
+
+
+# Основные балансные настройки
+base_price      : 5000                                     # Цена
+weight_class    : 4                                        # Класс тяжести
+ammo            : reg:///registry/items/usable/ammo/30bb   # Подходящие патроны
+
+dmg             : 10                                       # Дамаг при залпе по вражеским целям
+area_dmg        : 5                                        # Дамаг по невидимым целям
+time_recharge   : 4                                        # Время перезарядки орудия (с)
+
+radius          : 330                                      # Дальность сектора стрельбы
+width           : 75                                       # Ширина сектора стрельбы
+
+ammo_per_shot   : -2                                       # Потребление патронов при залпе
+
+# Картинки для представления в инвентаре
+inv_icon_big    : static/content/items/slot_item/weapons/cannons/zu23_flak/inventory/big.png
+inv_icon_mid    : static/content/items/slot_item/weapons/cannons/zu23_flak/inventory/mid.png
+inv_icon_small  : static/content/items/slot_item/weapons/cannons/zu23_flak/inventory/small.png
+
+armorer_images:
+  small:
+    # Картинки для представления у оружейника (вид сбоку)
+    armorer_side_F  : "static/content/items/slot_item/weapons/cannons/zu23_flak/small/side_f.png" # вперёд
+    armorer_side_B  : "static/content/items/slot_item/weapons/cannons/zu23_flak/small/side_b.png" # назад
+    armorer_side_R  : "static/content/items/slot_item/weapons/cannons/zu23_flak/small/side_r.png" # вправо
+    armorer_side_L  : "static/content/items/slot_item/weapons/cannons/zu23_flak/small/side_l.png" # влево
+
+    # Картинки для представления у оружейника (вид сверху)
+    armorer_top_F   : "static/content/items/slot_item/weapons/cannons/zu23_flak/small/top_f.png"  # вперёд
+    armorer_top_B   : "static/content/items/slot_item/weapons/cannons/zu23_flak/small/top_b.png"  # назад
+    armorer_top_R   : "static/content/items/slot_item/weapons/cannons/zu23_flak/small/top_r.png"  # вправо
+    armorer_top_L   : "static/content/items/slot_item/weapons/cannons/zu23_flak/small/top_l.png"  # влево
+
+  middle:
+    # Картинки для представления у оружейника (вид сбоку)
+    armorer_side_F  : "static/content/items/slot_item/weapons/cannons/zu23_flak/middle/side_f.png" # вперёд
+    armorer_side_B  : "static/content/items/slot_item/weapons/cannons/zu23_flak/middle/side_b.png" # назад
+    armorer_side_R  : "static/content/items/slot_item/weapons/cannons/zu23_flak/middle/side_r.png" # вправо
+    armorer_side_L  : "static/content/items/slot_item/weapons/cannons/zu23_flak/middle/side_l.png" # влево
+
+    # Картинки для представления у оружейника (вид сверху)
+    armorer_top_F   : "static/content/items/slot_item/weapons/cannons/zu23_flak/middle/top_f.png"  # вперёд
+    armorer_top_B   : "static/content/items/slot_item/weapons/cannons/zu23_flak/middle/top_b.png"  # назад
+    armorer_top_R   : "static/content/items/slot_item/weapons/cannons/zu23_flak/middle/top_r.png"  # вправо
+    armorer_top_L   : "static/content/items/slot_item/weapons/cannons/zu23_flak/middle/top_l.png"  # влево
+
+  big:
+    # Картинки для представления у оружейника (вид сбоку)
+    armorer_side_F  : "static/content/items/slot_item/weapons/cannons/zu23_flak/middle/side_f.png" # вперёд
+    armorer_side_B  : "static/content/items/slot_item/weapons/cannons/zu23_flak/middle/side_b.png" # назад
+    armorer_side_R  : "static/content/items/slot_item/weapons/cannons/zu23_flak/middle/side_r.png" # вправо
+    armorer_side_L  : "static/content/items/slot_item/weapons/cannons/zu23_flak/middle/side_l.png" # влево
+
+    # Картинки для представления у оружейника (вид сверху)
+    armorer_top_F   : "static/content/items/slot_item/weapons/cannons/zu23_flak/middle/top_f.png"  # вперёд
+    armorer_top_B   : "static/content/items/slot_item/weapons/cannons/zu23_flak/middle/top_b.png"  # назад
+    armorer_top_R   : "static/content/items/slot_item/weapons/cannons/zu23_flak/middle/top_r.png"  # вправо
+    armorer_top_L   : "static/content/items/slot_item/weapons/cannons/zu23_flak/middle/top_l.png"  # влево
+
+weapon_animation:
+  - ECanvasDischargeFirePNG_3_dbl
+
+condition       : 3  # Исп.
