@@ -1,0 +1,42 @@
+﻿_cls     : Institution
+title: 
+    en: Felix_Mariano
+    ru: Феликс_Мариано ##LOCALIZATION
+
+photo    : "static/content/institutions/boss/los_perros_felix_mariano.png"
+abstract : false
+
+hometown : reg:///registry/poi/locations/towns/los_perros
+
+
+quests:
+  - parent: reg:///registry/quests/killer_task   # ОХОТА ЗА ГОЛОВАМИ
+    _cls: KillerQuest
+    reward_relation_hirer: 5.0     # Награда в отношение за выполнение
+    karma_coef: 0.3                # Часть кармы от общей награды
+    money_coef: 0.7                # Часть нуокйнов от общей награды
+    price_victim: 125              # Цена одной жертвы на первом уровне квеста
+    reward_exp: 125                # Награда за 1 убийство
+    reward_items_list: []          # Список возможных комплектов для награды
+    unique_victims: True           # Уникальные жертвы
+    count_to_kill_range:           # Диапазон количества целей
+      min: 2
+      max: 4
+
+  - parent: reg:///registry/quests/delivery_quest/delivery_passenger_quest   # ДОСТАВКА ПАССАЖИРА
+    _cls: DeliveryPassengerQuest
+    reward_relation_hirer: 0.0     # Награда в отношение за выполнение
+    karma_coef: 0.0                # Часть кармы от общей награды
+    money_coef: 2.0                # Часть нуокйнов от общей награды
+    person_delivery_cost: 300      # Стоимость доставки отдельного пассажира
+    reward_exp: 250                # Опыт
+    delivery_set_list:
+      -
+        - reg:///registry/items/passengers/male
+        - reg:///registry/items/passengers/female
+    destination_list:              # Список возможных пунктов назначения
+      - reg:///registry/poi/locations/towns/whitehill
+      - reg:///registry/poi/locations/towns/painted_rock
+      - reg:///registry/poi/locations/towns/paloma
+      - reg:///registry/poi/locations/towns/bonita_vista
+      - reg:///registry/poi/locations/towns/prior
