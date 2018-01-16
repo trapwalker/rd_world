@@ -890,19 +890,30 @@ quests:
         dispersion: 2000
         route_deadline: 0
 
- # - parent: reg:///registry/quests/ai_event_quests/traffic/gang/multi_gang
- #   generation_group: "central_gang"
- #   generation_max_count: 1
- #   chance_of_generation: 1
- #   delay_time: 180
- #   bots_karma: {min: -90, max: -50}
- #   bots_level: {min: 0, max: 3}
- #   count_members: { max: 8, min: 6 }
- #   max_loot_count: 4
- #   routes:
- #     - _cls: AreaRandomRoute
- #       center: {x: 12507173, y: 27039653}
- #       dispersion: 2000
+  - parent: reg:///registry/quests/ai_event_quests/traffic/gang/multi_gang
+    generation_group: "los_perros_base"
+    generation_max_count: 1
+    chance_of_generation: 1
+    delay_time: 60
+    bots_karma: {min: -90, max: -50}
+    bots_level: {min: 2, max: 3}
+    count_members: { max: 3, min: 2 }
+    max_loot_count: 4
+    routes:
+      - parent: reg:///registry/routes/los_perros/los_perros_patrol_route
+
+  - parent: reg:///registry/quests/ai_event_quests/traffic/gang/multi_gang
+    generation_group: "los_perros_base"
+    generation_max_count: 1
+    chance_of_generation: 1
+    delay_time: 60
+    bots_karma: {min: -90, max: -50}
+    bots_level: {min: 2, max: 3}
+    count_members: { max: 3, min: 2 }
+    max_loot_count: 4
+    routes:
+      - parent: reg:///registry/routes/los_perros/los_perros_patrol_route
+        reverse: True
 
  # - parent: reg:///registry/quests/ai_event_quests/traffic/gang/multi_gang
  #   generation_group: "military_gang"
