@@ -898,7 +898,7 @@ quests:
     bots_karma: {min: -90, max: -50}
     bots_level: {min: 2, max: 3}
     count_members: { max: 3, min: 2 }
-    max_loot_count: 4
+    max_loot_count: 8
     routes:
       - parent: reg:///registry/routes/los_perros/los_perros_patrol_route
 
@@ -910,10 +910,35 @@ quests:
     bots_karma: {min: -90, max: -50}
     bots_level: {min: 2, max: 3}
     count_members: { max: 3, min: 2 }
-    max_loot_count: 4
+    max_loot_count: 8
     routes:
       - parent: reg:///registry/routes/los_perros/los_perros_patrol_route
         reverse: True
+
+  - parent: reg:///registry/quests/ai_event_quests/traffic/gang/multi_gang
+    generation_group: "los_perros_base_2"
+    generation_max_count: 1
+    chance_of_generation: 1
+    delay_time: 60
+    bots_karma: {min: -90, max: -50}
+    bots_level: {min: 2, max: 3}
+    count_members: { max: 3, min: 2 }
+    max_loot_count: 8
+    routes:
+      - parent: reg:///registry/routes/los_perros/los_perros_patrol_route_big
+        reverse: True
+
+  - parent: reg:///registry/quests/ai_event_quests/traffic/gang/multi_gang
+    generation_group: "los_perros_base_2"
+    generation_max_count: 1
+    chance_of_generation: 1
+    delay_time: 60
+    bots_karma: {min: -90, max: -50}
+    bots_level: {min: 2, max: 3}
+    count_members: { max: 3, min: 2 }
+    max_loot_count: 8
+    routes:
+      - parent: reg:///registry/routes/los_perros/los_perros_patrol_route_big
 
  # - parent: reg:///registry/quests/ai_event_quests/traffic/gang/multi_gang
  #   generation_group: "military_gang"
