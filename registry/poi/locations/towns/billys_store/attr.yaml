@@ -6,28 +6,28 @@ title:
     en: Billy's Store   ##LOCALIZATION
     ru: Биллиз Стор
 
-position          : {x: 12526566, y: 27058344}
+position          : {x: 12519129, y: 27034586}
 p_observing_range : 250
 p_enter_range     : 150
 
 svg_link: static/content/locations/map_locations/billys_store
 
 buildings:
-  - name: tartron
+  - name: billys
     caption: 
-        en: Tartron   ##LOCALIZATION
-        ru: Тартрон
+        en: Billy's store   ##LOCALIZATION
+        ru: Магазин Билли
 
     title: 
-        en: Tartron   ##LOCALIZATION
-        ru: Тартрон
+        en: Billy's store   ##LOCALIZATION
+        ru: Магазин Билли
 
     head: reg:///registry/institutions/trader/billys_store_billy_buhonero
     instances:
         - reg:///registry/institutions/trader/billys_store_billy_buhonero
 
 static_image_list:
-    - /static/content/locations/map_locations/tartron_parts/ground+circle.png
-    - /static/content/locations/map_locations/tartron_parts/market.png
-    - /static/content/locations/map_locations/tartron_parts/market_bg.png
-    - /static/content/locations/map_locations/tartron_parts/market_hover.png
+    - /static/content/locations/map_locations/billys_store/ground+circle.png
+    - /static/content/locations/map_locations/billys_store/market.png
+    - /static/content/locations/map_locations/billys_store/market_bg.png
+    - /static/content/locations/map_locations/billys_store/market_hover.png
