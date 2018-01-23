@@ -13,7 +13,7 @@ p_enter_range     : 150
 svg_link: static/content/locations/map_locations/lucas_artesano
 
 buildings:
-  - name: service
+  - name: lucas
     caption: 
         en: Lucas   ##LOCALIZATION
         ru: Лукас
