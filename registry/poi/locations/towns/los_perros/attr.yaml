@@ -1,0 +1,32 @@
+﻿_cls     : Town
+doc      : Лос Перрос   # База злых мобов
+abstract : false
+
+title: 
+    en: Los Perros   ##LOCALIZATION
+    ru: Лос Перрос
+
+position          : {x: 12498878, y: 27037339}
+p_observing_range : 250
+p_enter_range     : 150
+
+svg_link: static/content/locations/map_locations/los_perros
+
+buildings:
+  - name: base
+    caption: 
+        en: Base   ##LOCALIZATION
+        ru: База
+
+    title: 
+        en: Base   ##LOCALIZATION
+        ru: База
+
+    head: reg:///registry/institutions/boss/los_perros_felix_mariano
+    instances: []
+
+static_image_list:
+    - /static/content/locations/map_locations/los_perros/ground+circle.png
+    - /static/content/locations/map_locations/los_perros/base.png
+    - /static/content/locations/map_locations/los_perros/base_bg.png
+    - /static/content/locations/map_locations/los_perros/base_hover.png

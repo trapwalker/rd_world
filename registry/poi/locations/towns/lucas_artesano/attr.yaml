@@ -1,0 +1,33 @@
+﻿_cls     : Town
+doc      : Лукас Артесано   # Оружейник
+abstract : false
+
+title: 
+    en: Lucas_Artesano   ##LOCALIZATION
+    ru: Лукас_Артесано
+
+position          : {x: 12519526, y: 27050771}
+p_observing_range : 250
+p_enter_range     : 150
+
+svg_link: static/content/locations/map_locations/lucas_artesano
+
+buildings:
+  - name: lucas
+    caption: 
+        en: Lucas   ##LOCALIZATION
+        ru: Лукас
+
+    title: 
+        en: Lucas   ##LOCALIZATION
+        ru: Лукас
+
+    head: reg:///registry/institutions/armorer/lucas_artesano_lucas_tuerto
+    instances:
+        - reg:///registry/institutions/armorer/lucas_artesano_lucas_tuerto
+
+static_image_list:
+    - /static/content/locations/map_locations/lucas_artesano/ground+circle.png
+    - /static/content/locations/map_locations/lucas_artesano/armorer.png
+    - /static/content/locations/map_locations/lucas_artesano/armorer_bg.png
+    - /static/content/locations/map_locations/lucas_artesano/armorer_hover.png

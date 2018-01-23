@@ -891,18 +891,112 @@ quests:
         route_deadline: 0
 
   - parent: reg:///registry/quests/ai_event_quests/traffic/gang/multi_gang
-    generation_group: "central_gang"
-    generation_max_count: 1
+    generation_group: "los_perros_base"
+    generation_max_count: 2
     chance_of_generation: 1
-    delay_time: 180
+    delay_time: 120
     bots_karma: {min: -90, max: -50}
-    bots_level: {min: 0, max: 3}
-    count_members: { max: 8, min: 6 }
-    max_loot_count: 4
+    bots_level: {min: 2, max: 3}
+    count_members: { max: 4, min: 2 }
+    max_loot_count: 12
     routes:
-      - _cls: AreaRandomRoute
-        center: {x: 12507173, y: 27039653}
-        dispersion: 2000
+      - parent: reg:///registry/routes/los_perros/los_perros_patrol_route
+      - parent: reg:///registry/routes/los_perros/los_perros_patrol_route_big
+
+ # - parent: reg:///registry/quests/ai_event_quests/traffic/gang/multi_gang
+ #   generation_group: "los_perros_base"
+ #   generation_max_count: 1
+ #   chance_of_generation: 1
+ #   delay_time: 60
+ #   bots_karma: {min: -45, max: -50}
+ #   bots_level: {min: 2, max: 3}
+ #   count_members: { max: 3, min: 2 }
+ #   max_loot_count: 8
+ #   routes:
+ #     - parent: reg:///registry/routes/los_perros/los_perros_patrol_route
+ #       reverse: True
+#
+ # - parent: reg:///registry/quests/ai_event_quests/traffic/gang/multi_gang
+ #   generation_group: "los_perros_base_2"
+ #   generation_max_count: 1
+ #   chance_of_generation: 1
+ #   delay_time: 120
+ #   bots_karma: {min: -45, max: -50}
+ #   bots_level: {min: 2, max: 3}
+ #   count_members: { max: 3, min: 2 }
+ #   max_loot_count: 8
+ #   routes:
+ #     - parent: reg:///registry/routes/los_perros/los_perros_patrol_route_big
+ #       reverse: True
+#
+ # - parent: reg:///registry/quests/ai_event_quests/traffic/gang/multi_gang
+ #   generation_group: "los_perros_base_2"
+ #   generation_max_count: 1
+ #   chance_of_generation: 1
+ #   delay_time: 120
+ #   bots_karma: {min: -45, max: -50}
+ #   bots_level: {min: 2, max: 3}
+ #   count_members: { max: 3, min: 2 }
+ #   max_loot_count: 8
+ #   routes:
+ #
+
+  - parent: reg:///registry/quests/ai_event_quests/traffic/gang/multi_gang
+    generation_group: "lucas_boyz"
+    generation_max_count: 2
+    chance_of_generation: 1
+    delay_time: 120
+    bots_karma: {min: -90, max: -50}
+    bots_level: {min: 6, max: 8}
+    count_members: { max: 5, min: 4 }
+    max_loot_count: 15
+    routes:
+      - parent: reg:///registry/routes/lucas_patrol
+        reverse: True
+      - parent: reg:///registry/routes/los_perros/los_perros_lucas_route
+        reverse: True
+
+  - parent: reg:///registry/quests/ai_event_quests/traffic/gang/multi_gang
+    generation_group: "lucas_boyz"
+    generation_max_count: 2
+    chance_of_generation: 1
+    delay_time: 120
+    bots_karma: {min: -90, max: -50}
+    bots_level: {min: 6, max: 8}
+    count_members: { max: 5, min: 4 }
+    max_loot_count: 15
+    routes:
+      - parent: reg:///registry/routes/lucas_patrol
+      - parent: reg:///registry/routes/los_perros/los_perros_lucas_route
+
+  - parent: reg:///registry/quests/ai_event_quests/traffic/gang/multi_gang
+    generation_group: "billy_boyz"
+    generation_max_count: 2
+    chance_of_generation: 1
+    delay_time: 120
+    bots_karma: {min: -90, max: -50}
+    bots_level: {min: 4, max: 6}
+    count_members: { max: 5, min: 4 }
+    max_loot_count: 15
+    routes:
+      - parent: reg:///registry/routes/billy_store_patrol
+      - parent: reg:///registry/routes/los_perros/los_perros_billy_route
+
+  - parent: reg:///registry/quests/ai_event_quests/traffic/gang/multi_gang
+    generation_group: "billy_boyz"
+    generation_max_count: 2
+    chance_of_generation: 1
+    delay_time: 120
+    bots_karma: {min: -90, max: -50}
+    bots_level: {min: 4, max: 6}
+    count_members: { max: 5, min: 4 }
+    max_loot_count: 15
+    routes:
+      - parent: reg:///registry/routes/billy_store_patrol
+        reverse: True
+      - parent: reg:///registry/routes/los_perros/los_perros_billy_route
+        reverse: True
+
 
  # - parent: reg:///registry/quests/ai_event_quests/traffic/gang/multi_gang
  #   generation_group: "military_gang"

@@ -86,3 +86,73 @@ randomize_cars_by_lvl:
       - reg:///registry/items/slot_item/armorer_item/weapons/cannons/medium/04_t4
       - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/heavy/04_mg_18_tuf
     tuner_items: []
+
+  - level: 5
+    cars:
+      - reg:///registry/mobiles/cars/light/motorcycles/honda_hornet
+      - reg:///registry/mobiles/cars/middle/cars/dodge_challenger
+      - reg:///registry/mobiles/cars/middle/offroad/defender
+      - reg:///registry/mobiles/cars/middle/vans/chevrolet_express
+      - reg:///registry/mobiles/cars/heavy/armored/04_m3a1_scout_car
+    weapons:
+      - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/05_fn_minimi
+      - reg:///registry/items/slot_item/armorer_item/weapons/cannons/light/05_mg_32
+      - reg:///registry/items/slot_item/armorer_item/weapons/cannons/medium/05_am_23
+      - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/04_gau_19
+      - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/heavy/05_slostin_mg
+    tuner_items: []
+
+  - level: 6
+    cars:
+      - reg:///registry/mobiles/cars/middle/offroad/06_chevrolet_trailblazer
+      - reg:///registry/mobiles/cars/middle/sports/06_ford_mustang_shelby_gt500
+      - reg:///registry/mobiles/cars/middle/offroad/gelandewagen
+      - reg:///registry/mobiles/cars/heavy/armored/04_m3a1_scout_car
+      - reg:///registry/mobiles/cars/cargo/trucks/06_m-b_unimog_u6
+    weapons:
+      - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/05_fn_minimi
+      - reg:///registry/items/slot_item/armorer_item/weapons/cannons/light/05_mg_32
+      - reg:///registry/items/slot_item/armorer_item/weapons/cannons/medium/05_am_23
+      - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/04_gau_19
+      - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/heavy/05_slostin_mg
+      - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/heavy/05_besa_15mm
+      - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/06_ukm_2000
+
+    tuner_items: []
+
+  - level: 7
+    cars:
+      - reg:///registry/mobiles/cars/light/motorcycles/08_cad_31
+      - reg:///registry/mobiles/cars/light/buggies/07_lvs
+      - reg:///registry/mobiles/cars/heavy/armored/04_m3a1_scout_car
+      - reg:///registry/mobiles/cars/cargo/buses/07_ford_b800
+      - reg:///registry/mobiles/cars/cargo/trucks/07_M939
+      - reg:///registry/mobiles/cars/cargo/trucks/07_studebaker_us6
+
+    weapons:
+      - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/05_fn_minimi
+      - reg:///registry/items/slot_item/armorer_item/weapons/cannons/light/05_mg_32
+      - reg:///registry/items/slot_item/armorer_item/weapons/cannons/medium/05_am_23
+      - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/04_gau_19
+      - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/heavy/05_slostin_mg
+      - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/heavy/05_besa_15mm
+      - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/06_ukm_2000
+    tuner_items: []
+
+  - level: 8
+    cars:
+      - reg:///registry/mobiles/cars/heavy/armored/04_m3a1_scout_car
+      - reg:///registry/mobiles/cars/heavy/armored/06_ba_64b
+      - reg:///registry/mobiles/cars/heavy/btrs/05_m113a1
+      - reg:///registry/mobiles/cars/heavy/btrs/06_m1126
+
+    weapons:
+      - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/05_fn_minimi
+      - reg:///registry/items/slot_item/armorer_item/weapons/cannons/light/05_mg_32
+      - reg:///registry/items/slot_item/armorer_item/weapons/cannons/medium/05_am_23
+      - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/04_gau_19
+      - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/heavy/05_slostin_mg
+      - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/heavy/05_besa_15mm
+      - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/06_ukm_2000
+    tuner_items: []
+
