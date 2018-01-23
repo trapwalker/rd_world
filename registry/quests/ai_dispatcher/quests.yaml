@@ -940,6 +940,32 @@ quests:
     routes:
       - parent: reg:///registry/routes/los_perros/los_perros_patrol_route_big
 
+  - parent: reg:///registry/quests/ai_event_quests/traffic/gang/multi_gang
+    generation_group: "lucas_boyz"
+    generation_max_count: 1
+    chance_of_generation: 1
+    delay_time: 100
+    bots_karma: {min: -45, max: -50}
+    bots_level: {min: 4, max: 5}
+    count_members: { max: 3, min: 2 }
+    max_loot_count: 12
+    routes:
+      - parent: reg:///registry/routes/lucas_patrol
+
+  - parent: reg:///registry/quests/ai_event_quests/traffic/gang/multi_gang
+    generation_group: "los_perros_lucas"
+    generation_max_count: 1
+    chance_of_generation: 0.5
+    delay_time: 180
+    bots_karma: {min: -45, max: -50}
+    bots_level: {min: 4, max: 5}
+    count_members: { max: 4, min: 3 }
+    max_loot_count: 15
+    routes:
+      - parent: reg:///registry/routes/los_perros/los_perros_lucas_route
+
+
+
  # - parent: reg:///registry/quests/ai_event_quests/traffic/gang/multi_gang
  #   generation_group: "military_gang"
  #   generation_max_count: 1
