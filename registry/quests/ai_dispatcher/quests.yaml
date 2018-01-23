@@ -943,31 +943,59 @@ quests:
 
   - parent: reg:///registry/quests/ai_event_quests/traffic/gang/multi_gang
     generation_group: "lucas_boyz"
-    generation_max_count: 1
+    generation_max_count: 2
     chance_of_generation: 1
     delay_time: 120
     bots_karma: {min: -90, max: -50}
-    bots_level: {min: 4, max: 5}
-    count_members: { max: 3, min: 2 }
-    max_loot_count: 8
-    routes:
-      - parent: reg:///registry/routes/lucas_patrol
-
-
-  - parent: reg:///registry/quests/ai_event_quests/traffic/gang/multi_gang
-    generation_group: "lucas_boyz_patrol"
-    generation_max_count: 1
-    chance_of_generation: 1
-    delay_time: 180
-    bots_karma: {min: -90, max: -50}
-    bots_level: {min: 4, max: 5}
+    bots_level: {min: 3, max: 4}
     count_members: { max: 5, min: 4 }
     max_loot_count: 15
     routes:
       - parent: reg:///registry/routes/lucas_patrol
+        reverse: True
+      - parent: reg:///registry/routes/los_perros/los_perros_lucas_route
+        reverse: True
 
+  - parent: reg:///registry/quests/ai_event_quests/traffic/gang/multi_gang
+    generation_group: "lucas_boyz"
+    generation_max_count: 2
+    chance_of_generation: 1
+    delay_time: 120
+    bots_karma: {min: -90, max: -50}
+    bots_level: {min: 3, max: 4}
+    count_members: { max: 5, min: 4 }
+    max_loot_count: 15
+    routes:
+      - parent: reg:///registry/routes/lucas_patrol
+      - parent: reg:///registry/routes/los_perros/los_perros_lucas_route
 
+  - parent: reg:///registry/quests/ai_event_quests/traffic/gang/multi_gang
+    generation_group: "billy_boyz"
+    generation_max_count: 2
+    chance_of_generation: 1
+    delay_time: 120
+    bots_karma: {min: -90, max: -50}
+    bots_level: {min: 3, max: 4}
+    count_members: { max: 5, min: 4 }
+    max_loot_count: 15
+    routes:
+      - parent: reg:///registry/routes/billy_store_patrol
+      - parent: reg:///registry/routes/los_perros/los_perros_billy_route
 
+  - parent: reg:///registry/quests/ai_event_quests/traffic/gang/multi_gang
+    generation_group: "billy_boyz"
+    generation_max_count: 2
+    chance_of_generation: 1
+    delay_time: 120
+    bots_karma: {min: -90, max: -50}
+    bots_level: {min: 3, max: 4}
+    count_members: { max: 5, min: 4 }
+    max_loot_count: 15
+    routes:
+      - parent: reg:///registry/routes/billy_store_patrol
+        reverse: True
+      - parent: reg:///registry/routes/los_perros/los_perros_billy_route
+        reverse: True
 
 
  # - parent: reg:///registry/quests/ai_event_quests/traffic/gang/multi_gang
