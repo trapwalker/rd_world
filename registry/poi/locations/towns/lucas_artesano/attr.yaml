@@ -6,7 +6,7 @@ title:
     en: Lucas_Artesano   ##LOCALIZATION
     ru: Лукас_Артесано
 
-position          : {x: 12526030, y: 27037892}
+position          : {x: 12519526, y: 27050771}
 p_observing_range : 250
 p_enter_range     : 150
 
@@ -27,7 +27,7 @@ buildings:
         - reg:///registry/institutions/armorer/lucas_artesano_lucas_tuerto
 
 static_image_list:
-    - /static/content/locations/map_locations/trevors_armor/ground+circle.png
-    - /static/content/locations/map_locations/trevors_armor/armorer.png
-    - /static/content/locations/map_locations/trevors_armor/armorer_bg.png
-    - /static/content/locations/map_locations/trevors_armor/armorer_hover.png
+    - /static/content/locations/map_locations/lucas_artesano/ground+circle.png
+    - /static/content/locations/map_locations/lucas_artesano/armorer.png
+    - /static/content/locations/map_locations/lucas_artesano/armorer_bg.png
+    - /static/content/locations/map_locations/lucas_artesano/armorer_hover.png
