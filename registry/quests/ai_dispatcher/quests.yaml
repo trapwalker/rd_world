@@ -895,7 +895,7 @@ quests:
     generation_max_count: 1
     chance_of_generation: 1
     delay_time: 60
-    bots_karma: {min: -90, max: -50}
+    bots_karma: {min: -45, max: -50}
     bots_level: {min: 2, max: 3}
     count_members: { max: 3, min: 2 }
     max_loot_count: 8
@@ -907,7 +907,7 @@ quests:
     generation_max_count: 1
     chance_of_generation: 1
     delay_time: 60
-    bots_karma: {min: -90, max: -50}
+    bots_karma: {min: -45, max: -50}
     bots_level: {min: 2, max: 3}
     count_members: { max: 3, min: 2 }
     max_loot_count: 8
@@ -920,7 +920,7 @@ quests:
     generation_max_count: 1
     chance_of_generation: 1
     delay_time: 60
-    bots_karma: {min: -90, max: -50}
+    bots_karma: {min: -45, max: -50}
     bots_level: {min: 2, max: 3}
     count_members: { max: 3, min: 2 }
     max_loot_count: 8
@@ -933,7 +933,7 @@ quests:
     generation_max_count: 1
     chance_of_generation: 1
     delay_time: 60
-    bots_karma: {min: -90, max: -50}
+    bots_karma: {min: -45, max: -50}
     bots_level: {min: 2, max: 3}
     count_members: { max: 3, min: 2 }
     max_loot_count: 8
