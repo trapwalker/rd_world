@@ -947,7 +947,7 @@ quests:
     chance_of_generation: 1
     delay_time: 120
     bots_karma: {min: -90, max: -50}
-    bots_level: {min: 3, max: 4}
+    bots_level: {min: 6, max: 8}
     count_members: { max: 5, min: 4 }
     max_loot_count: 15
     routes:
@@ -962,7 +962,7 @@ quests:
     chance_of_generation: 1
     delay_time: 120
     bots_karma: {min: -90, max: -50}
-    bots_level: {min: 3, max: 4}
+    bots_level: {min: 6, max: 8}
     count_members: { max: 5, min: 4 }
     max_loot_count: 15
     routes:
@@ -975,7 +975,7 @@ quests:
     chance_of_generation: 1
     delay_time: 120
     bots_karma: {min: -90, max: -50}
-    bots_level: {min: 3, max: 4}
+    bots_level: {min: 4, max: 6}
     count_members: { max: 5, min: 4 }
     max_loot_count: 15
     routes:
@@ -988,7 +988,7 @@ quests:
     chance_of_generation: 1
     delay_time: 120
     bots_karma: {min: -90, max: -50}
-    bots_level: {min: 3, max: 4}
+    bots_level: {min: 4, max: 6}
     count_members: { max: 5, min: 4 }
     max_loot_count: 15
     routes:
