@@ -72,8 +72,7 @@ items:
   - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/04_dshkm
   - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/medium/04_gau_19
   - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/heavy/04_mg_18_tuf
-  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/heavy/05_besa_15mm
-  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/heavy/05_slostin_mg
+
   #недопилен#- reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/heavy/06_mg_151
 
 #  - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/dshkm_twin
@@ -90,10 +89,7 @@ items:
   - reg:///registry/items/slot_item/armorer_item/weapons/cannons/medium/03_vya_23
   - reg:///registry/items/slot_item/armorer_item/weapons/cannons/medium/03_m242_bushmaster
   - reg:///registry/items/slot_item/armorer_item/weapons/cannons/medium/04_t4
-  - reg:///registry/items/slot_item/armorer_item/weapons/cannons/medium/05_am_23
-  - reg:///registry/items/slot_item/armorer_item/weapons/cannons/medium/06_zu23_flak
-  - reg:///registry/items/slot_item/armorer_item/weapons/cannons/heavy/05_mauser_mg-213c
-  - reg:///registry/items/slot_item/armorer_item/weapons/cannons/heavy/06_2a42
+
 
 # - reg:///registry/items/slot_item/armorer_item/weapons/cannons/zu23_flak
 # - reg:///registry/items/slot_item/armorer_item/weapons/cannons/2a42
