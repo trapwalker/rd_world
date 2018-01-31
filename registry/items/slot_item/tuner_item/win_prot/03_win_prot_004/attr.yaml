@@ -210,10 +210,10 @@ images:
 
   - car: reg:///registry/mobiles/cars/middle/cars/dodge_challenger           # реестровая ссылка на машинку, для которой подходит данный итем
     top:                                                                    # описание вида сверху (картинка и позиция)
-        link: static/content/items/slot_item/tuner_item/win_prot/03_win_prot_004/05_dodge_chellenger/top.png    # ссылка на картику для вида сверху
+        link: static/content/items/slot_item/tuner_item/win_prot/03_win_prot_004/05_dodge_challenger/top.png    # ссылка на картику для вида сверху
         z_index: 1                                                          # позиция: -1 или 1
     side:                                                                   # описание вида сбоку (картинка и позиция)
-        link: static/content/items/slot_item/tuner_item/win_prot/03_win_prot_004/05_dodge_chellenger/side.png   # ссылка на картику для вида сбоку
+        link: static/content/items/slot_item/tuner_item/win_prot/03_win_prot_004/05_dodge_challenger/side.png   # ссылка на картику для вида сбоку
         z_index: 1                                                          # позиция: -1 или 1
 
    # LVL 06
