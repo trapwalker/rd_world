@@ -8,3 +8,48 @@ photo    : "static/content/institutions/armorer/lucas_artesano_lucas_tuerto.png"
 abstract : false
 
 hometown : reg:///registry/poi/locations/towns/lucas_artesano
+
+
+quests:
+
+  - parent: reg:///registry/quests/delivery_quest/delivery_quest_simple   # ДОСТАВКА ГРУЗА А
+    _cls: DeliveryQuestSimple
+    caption:                           # Просто изменение заголовка
+        en: 'Repaired guns delivery'   ##LOCALIZATION
+        ru: 'Вернуть отремонтированное вооружение'
+
+    generation_group: 'a'          # Подгруппа генерации (не обязательна для разных типов квестов)
+    generation_max_count: 1        # Максимальное количество экземпляров данного квеста
+    generation_cooldown: 2700      # Задержка на генерацию после завершения квеста
+    reward_relation_hirer: 5.0     # Награда в отношение за выполнение
+    karma_coef: -2.0                # Часть кармы от общей награды
+    money_coef: 0.4                # Часть нуокйнов от общей награды
+    total_delivery_money_coef: 0.5 # Множитель общей стоимости награды за квест от стоимости доставляемого товара
+    reward_exp: 200                # Опыт
+    delivery_set_list:             # Список возможных комплектов для доставки
+      -
+       - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/05_fn_minimi
+       - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/06_ukm_2000
+    reward_items_list: []          # Список возможных комплектов для награды
+    recipient_list:                # Список возможных получателей доставки
+      - reg:///registry/institutions/trader/billys_store_billy_buhonero
+
+  - parent: reg:///registry/quests/delivery_quest/delivery_passenger_quest   # ДОСТАВКА ПАССАЖИРА
+    _cls: DeliveryPassengerQuest
+    caption:                           # Просто изменение заголовка
+        en: 'Raider regroup'   ##LOCALIZATION
+        ru: 'Перегруппировка рейдеров'
+    reward_relation_hirer: 0.0     # Награда в отношение за выполнение
+    karma_coef: -3.0               # Часть кармы от общей награды
+    money_coef: 1.2                # Часть нуокйнов от общей награды
+    person_delivery_cost: 150      # Стоимость доставки отдельного пассажира
+    reward_exp: 150                # Опыт
+    delivery_set_list:
+      -
+        - reg:///registry/items/passengers/male
+        - reg:///registry/items/passengers/female
+    destination_list:              # Список возможных пунктов назначения
+      - reg:///registry/poi/locations/towns/billys_store
+      - reg:///registry/poi/locations/towns/los_perros
+
+

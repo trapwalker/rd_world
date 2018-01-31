@@ -12,31 +12,55 @@ hometown : reg:///registry/poi/locations/towns/los_perros
 quests:
   - parent: reg:///registry/quests/killer_task   # ОХОТА ЗА ГОЛОВАМИ
     _cls: KillerQuest
+    caption:                           # Просто изменение заголовка
+        en: 'Wild hunt'   ##LOCALIZATION
+        ru: 'Дикая охота'
     reward_relation_hirer: 5.0     # Награда в отношение за выполнение
-    karma_coef: 0.3                # Часть кармы от общей награды
+    karma_coef: -2.0                # Часть кармы от общей награды
     money_coef: 0.7                # Часть нуокйнов от общей награды
-    price_victim: 125              # Цена одной жертвы на первом уровне квеста
-    reward_exp: 125                # Награда за 1 убийство
+    price_victim: 200              # Цена одной жертвы на первом уровне квеста
+    reward_exp: 170                # Награда за 1 убийство
     reward_items_list: []          # Список возможных комплектов для награды
     unique_victims: True           # Уникальные жертвы
     count_to_kill_range:           # Диапазон количества целей
-      min: 2
-      max: 4
+      min: 4
+      max: 6
 
   - parent: reg:///registry/quests/delivery_quest/delivery_passenger_quest   # ДОСТАВКА ПАССАЖИРА
     _cls: DeliveryPassengerQuest
+    caption:                           # Просто изменение заголовка
+        en: 'Human trafficking'   ##LOCALIZATION
+        ru: 'Торговля людьми'
     reward_relation_hirer: 0.0     # Награда в отношение за выполнение
-    karma_coef: 0.0                # Часть кармы от общей награды
+    karma_coef: -8.0                # Часть кармы от общей награды
     money_coef: 2.0                # Часть нуокйнов от общей награды
-    person_delivery_cost: 300      # Стоимость доставки отдельного пассажира
-    reward_exp: 250                # Опыт
+    person_delivery_cost: 180      # Стоимость доставки отдельного пассажира
+    reward_exp: 200                # Опыт
     delivery_set_list:
       -
         - reg:///registry/items/passengers/male
         - reg:///registry/items/passengers/female
     destination_list:              # Список возможных пунктов назначения
-      - reg:///registry/poi/locations/towns/whitehill
+      - reg:///registry/poi/locations/towns/los_jetas
       - reg:///registry/poi/locations/towns/painted_rock
-      - reg:///registry/poi/locations/towns/paloma
-      - reg:///registry/poi/locations/towns/bonita_vista
       - reg:///registry/poi/locations/towns/prior
+
+  - parent: reg:///registry/quests/delivery_quest/delivery_passenger_quest   # ДОСТАВКА ПАССАЖИРА
+    _cls: DeliveryPassengerQuest
+    caption:                           # Просто изменение заголовка
+        en: 'Manpower delivery'   ##LOCALIZATION
+        ru: 'Доставить рабочую силу'
+    reward_relation_hirer: 0.0     # Награда в отношение за выполнение
+    karma_coef: -5.0                # Часть кармы от общей награды
+    money_coef: 1.2                # Часть нуокйнов от общей награды
+    person_delivery_cost: 150      # Стоимость доставки отдельного пассажира
+    reward_exp: 150                # Опыт
+    delivery_set_list:
+      -
+        - reg:///registry/items/passengers/male
+        - reg:///registry/items/passengers/female
+    destination_list:              # Список возможных пунктов назначения
+      - reg:///registry/poi/locations/towns/billys_store
+      - reg:///registry/poi/locations/towns/lucas_artesano
+
+

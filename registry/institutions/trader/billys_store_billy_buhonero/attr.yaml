@@ -268,33 +268,53 @@ price_list: # правила завоза
 
 quests:
 
-#  - parent: reg:///registry/quests/delivery_quest/delivery_quest_simple   # ДОСТАВКА ГРУЗА А
-#    _cls: DeliveryQuestSimple
-#    caption:                           # Просто изменение заголовка
-#        en: 'Spare parts delivery'   ##LOCALIZATION
-#        ru: 'Доставка запчастей'
-#
-#    generation_group: 'a'          # Подгруппа генерации (не обязательна для разных типов квестов)
-#    generation_max_count: 2        # Максимальное количество экземпляров данного квеста
-#    generation_cooldown: 1800      # Задержка на генерацию после завершения квеста
-#    reward_relation_hirer: 5.0     # Награда в отношение за выполнение
-#    karma_coef: 0.0                # Часть кармы от общей награды
-#    money_coef: 1.0                # Часть нуокйнов от общей награды
-#    total_delivery_money_coef: 0.5 # Множитель общей стоимости награды за квест от стоимости доставляемого товара
-#    reward_exp: 150                # Опыт
-#    delivery_set_list:             # Список возможных комплектов для доставки
-#      -
-#       - reg:///registry/items/slot_item/mechanic_item/engine/ignition/ignition_1
-#       - reg:///registry/items/slot_item/mechanic_item/engine/flywheel/flywheel_1
-#       - reg:///registry/items/slot_item/mechanic_item/engine/engine_oil/engine_oil_1
-#       - reg:///registry/items/slot_item/mechanic_item/engine/cylinder_piston/cylinder_piston_1
-#    reward_items_list: []          # Список возможных комплектов для награды
-#    recipient_list:                # Список возможных получателей доставки
-#      - reg:///registry/institutions/mayor/whitehill_manny_askorti
-#      - reg:///registry/institutions/trader/whitehill_bob_ferolito
-#      - reg:///registry/institutions/trader/paloma_shaun_fisher
-#      - reg:///registry/institutions/mayor/bonita_vista_jack_lape
-#      - reg:///registry/institutions/trader/bonita_vista_benny_mccurtain
+  - parent: reg:///registry/quests/delivery_quest/delivery_quest_simple   # ДОСТАВКА ГРУЗА А
+    _cls: DeliveryQuestSimple
+    caption:                           # Просто изменение заголовка
+        en: 'Guns delivery'   ##LOCALIZATION
+        ru: 'Поставка оружия'
+
+    generation_group: 'a'          # Подгруппа генерации (не обязательна для разных типов квестов)
+    generation_max_count: 1        # Максимальное количество экземпляров данного квеста
+    generation_cooldown: 2700      # Задержка на генерацию после завершения квеста
+    reward_relation_hirer: 5.0     # Награда в отношение за выполнение
+    karma_coef: -5.0                # Часть кармы от общей награды
+    money_coef: 0.4                # Часть нуокйнов от общей награды
+    total_delivery_money_coef: 0.8 # Множитель общей стоимости награды за квест от стоимости доставляемого товара
+    reward_exp: 200                # Опыт
+    delivery_set_list:             # Список возможных комплектов для доставки
+      -
+       - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/05_fn_minimi
+       - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/06_ukm_2000
+    reward_items_list: []          # Список возможных комплектов для награды
+    recipient_list:                # Список возможных получателей доставки
+      - reg:///registry/institutions/boss/los_jetas_angel_morales
+      - reg:///registry/institutions/boss/los_perros_felix_mariano
+
+
+  - parent: reg:///registry/quests/delivery_quest/delivery_quest_simple   # ДОСТАВКА ГРУЗА А
+    _cls: DeliveryQuestSimple
+    caption:                           # Просто изменение заголовка
+        en: 'Broken weapons delivery'   ##LOCALIZATION
+        ru: 'Доставка сломанного оружия'
+
+    generation_group: 'b'          # Подгруппа генерации (не обязательна для разных типов квестов)
+    generation_max_count: 1        # Максимальное количество экземпляров данного квеста
+    generation_cooldown: 900      # Задержка на генерацию после завершения квеста
+    reward_relation_hirer: 5.0     # Награда в отношение за выполнение
+    karma_coef: -3.0                # Часть кармы от общей награды
+    money_coef: 1.0                # Часть нуокйнов от общей награды
+    total_delivery_money_coef: 0.8 # Множитель общей стоимости награды за квест от стоимости доставляемого товара
+    reward_exp: 100                # Опыт
+    delivery_set_list:             # Список возможных комплектов для доставки
+      -
+        - reg:///registry/items/stuff/scrap_metal/scrap_metal_001
+    reward_items_list: []          # Список возможных комплектов для награды
+    recipient_list:                # Список возможных получателей доставки
+      - reg:///registry/institutions/armorer/lucas_artesano_lucas_tuerto
+
+
+
 #
 #  - parent: reg:///registry/quests/delivery_quest/delivery_passenger_quest   # ДОСТАВКА ПАССАЖИРА
 #    _cls: DeliveryPassengerQuest
