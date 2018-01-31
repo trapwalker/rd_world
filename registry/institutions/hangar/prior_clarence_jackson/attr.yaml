@@ -47,7 +47,23 @@ group_list:
     car_list:
       - reg:///registry/mobiles/cars/middle/sports/04_delorean_dmc_12
 
-
+      # Группа машин 5 lvl
+  - count : 1
+    car_list:
+      - reg:///registry/mobiles/cars/light/motorcycles/honda_hornet
+#  - count : 1
+#    car_list:
+#      - reg:///registry/mobiles/cars/middle/cars/dodge_challenger
+#  - count : 1
+#    car_list:
+#      - reg:///registry/mobiles/cars/middle/offroad/defender
+#  - count : 1
+#    car_list:
+#      - reg:///registry/mobiles/cars/middle/vans/chevrolet_express
+#  - count : 1
+#    car_list:
+#      - reg:///registry/mobiles/cars/cargo/tractors/international_9800
+#
 quests:
   - parent: reg:///registry/quests/delivery_quest/delivery_car   # ПЕРЕГНАТЬ ТРАНСПОРТ
     _cls: DeliveryCar
