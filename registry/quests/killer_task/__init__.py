@@ -107,7 +107,7 @@ class KillerQuest(Quest):
             en=u"Kill {:.0f} player(s) with a minimum level {:.0f} and karma is worse {}{}. Reward: {:.0f}nc, {:.0f} karma and {:.0f} exp. points.".format(   ##LOCALIZATION
                 self.count_to_kill,
                 self.min_level_victims,
-                getKarmaName(self.max_karma_victims / 100., 'ru'),
+                getKarmaName(self.max_karma_victims / 100., 'en'),
                 u"" if not self.deadline else u" for {}".format(self.deadline_to_str()),   ##LOCALIZATION
                 self.reward_money,
                 self.reward_karma,
