@@ -61,4 +61,4 @@ quests:
     recipient_list:                # Список возможных получателей доставки
       - reg:///registry/institutions/hangar/whitehill_junior_clarks
       - reg:///registry/institutions/hangar/paloma_george_martell
-      - reg:///registry/institutions/hangar/bonita_vista_mike_basbry
+      - reg:///registry/institutions/hangar/bonita_vista_mike_barsby
