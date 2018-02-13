@@ -156,3 +156,34 @@ randomize_cars_by_lvl:
       - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/06_ukm_2000
     tuner_items: []
 
+  - level: 25
+    cars:
+      - reg:///registry/mobiles/cars/heavy/btrs/09_aav7/boss
+
+    weapons:
+      - reg:///registry/items/slot_item/armorer_item/weapons/cannons/heavy/05_mauser_mg-213c
+      - reg:///registry/items/slot_item/armorer_item/weapons/cannons/heavy/06_2a42
+      - reg:///registry/items/slot_item/armorer_item/weapons/cannons/heavy/09_ns_37
+    tuner_items: []
+
+  - level: 20
+    cars:
+      - reg:///registry/mobiles/cars/heavy/btrs/06_m1126/boss
+
+    weapons:
+      - reg:///registry/items/slot_item/armorer_item/weapons/cannons/heavy/05_mauser_mg-213c
+      - reg:///registry/items/slot_item/armorer_item/weapons/cannons/heavy/06_2a42
+      - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/heavy/05_slostin_mg
+      - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/heavy/05_besa_15mm
+    tuner_items: []
+
+  - level: 15
+    cars:
+      - reg:///registry/mobiles/cars/heavy/btrs/05_m113a1/boss
+
+    weapons:
+      - reg:///registry/items/slot_item/armorer_item/weapons/cannons/heavy/05_mauser_mg-213c
+      - reg:///registry/items/slot_item/armorer_item/weapons/cannons/heavy/06_2a42
+      - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/heavy/05_slostin_mg
+      - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/heavy/05_besa_15mm
+    tuner_items: []
