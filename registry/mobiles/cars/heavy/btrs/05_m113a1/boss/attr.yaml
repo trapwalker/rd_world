@@ -16,7 +16,15 @@ hp:                 400          # Текущее количество проч�
 
 inventory:                       # При заполнении инвентаря необходимо учитывать его размер
     size: 25
-    items: []
+    items:
+      - reg:///registry/items/stuff/alcohol/alcohol_002
+      - reg:///registry/items/stuff/canned_cereal/canned_cereal_001
+      - reg:///registry/items/stuff/medical_supplies/medical_supplies_001
+      - reg:///registry/items/stuff/scrap_metal/scrap_metal_001
+      - reg:///registry/items/stuff/warm_clothes/warm_clothes_003
+      - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/heavy/05_besa_15mm
+
+
 
 p_observing_range:     1200      # Радиус обзора автомобиля (м) (>= 0)
 
