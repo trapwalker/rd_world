@@ -1030,6 +1030,42 @@ quests:
       - reg:///registry/mobiles/cars/heavy/btrs/06_m1126
 
   - parent: reg:///registry/quests/ai_event_quests/traffic/boss
+    generation_group: 'mob_boss_strong'
+    chance_of_generation: 1
+    delay_time: 600
+    bots_karma: {min: -90, max: -30}
+    bots_level: {min: 25, max: 25}
+    tags: ['mob_boss', 'raid_strong']
+    routes:
+      - _cls: AreaRandomRoute
+        center: {x: 12518814, y: 27039629}
+        dispersion: 300
+
+  - parent: reg:///registry/quests/ai_event_quests/traffic/boss
+    generation_group: 'mob_boss_medium'
+    chance_of_generation: 1
+    delay_time: 600
+    bots_karma: {min: -90, max: -30}
+    bots_level: {min: 20, max: 20}
+    tags: ['mob_boss', 'raid_medium']
+    routes:
+      - _cls: AreaRandomRoute
+        center: {x: 12505654, y: 27038876}
+        dispersion: 300
+
+  - parent: reg:///registry/quests/ai_event_quests/traffic/boss
+    generation_group: 'mob_boss_low'
+    chance_of_generation: 1
+    delay_time: 600
+    bots_karma: {min: -90, max: -30}
+    bots_level: {min: 15, max: 15}
+    tags: ['mob_boss', 'raid_low']
+    routes:
+      - _cls: AreaRandomRoute
+        center: {x: 12462100, y: 27034602}
+        dispersion: 300
+
+  - parent: reg:///registry/quests/ai_event_quests/traffic/boss
     generation_group: 'mob_boss'
     chance_of_generation: 1
     delay_time: 1

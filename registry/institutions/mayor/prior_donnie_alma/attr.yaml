@@ -250,3 +250,14 @@ quests:
     generation_max_count: 3
     reward_money: 400              # Награда за 1 убийство
     reward_karma: 1                # Награда за 1 убийство
+
+
+  - parent: reg:///registry/quests/agent_event_quests/kill_boss   # НАЙТИ И УНИЧТОЖИТЬ
+    _cls: KillBossQuest
+    caption:
+        en: 'Raid boss'
+        ru: 'Групповой босс'
+    needed_tags: ['mob_boss', 'raid_strong']
+    generation_max_count: 3
+    reward_money: 3500              # Награда за 1 убийство
+    reward_karma: 0                # Награда за 1 убийство
