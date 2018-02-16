@@ -1017,7 +1017,8 @@ quests:
   - parent: reg:///registry/quests/ai_event_quests/traffic/boss
     generation_group: 'mob_boss'
     chance_of_generation: 1
-    delay_time: 1
+    delay_time: 600
+    max_loot_count: 10
     bots_karma: {min: -90, max: -30}
     tags: ['mob_boss', 'whitehill']
     routes:
@@ -1030,40 +1031,50 @@ quests:
       - reg:///registry/mobiles/cars/heavy/btrs/06_m1126
 
   - parent: reg:///registry/quests/ai_event_quests/traffic/boss
-    generation_group: 'mob_boss_strong'
+    generation_group: 'raid_boss_strong'
     chance_of_generation: 1
+    max_loot_count: 20
     delay_time: 600
     bots_karma: {min: -90, max: -30}
     bots_level: {min: 25, max: 25}
-    tags: ['mob_boss', 'raid_strong']
+    tags: ['raid_boss', 'raid_strong']
     routes:
       - _cls: AreaRandomRoute
         center: {x: 12518814, y: 27039629}
         dispersion: 300
+    cars:
+      - reg:///registry/mobiles/cars/heavy/btrs/09_aav7/boss
+
 
   - parent: reg:///registry/quests/ai_event_quests/traffic/boss
-    generation_group: 'mob_boss_medium'
+    generation_group: 'raid_boss_medium'
     chance_of_generation: 1
+    max_loot_count: 10
     delay_time: 600
     bots_karma: {min: -90, max: -30}
     bots_level: {min: 20, max: 20}
-    tags: ['mob_boss', 'raid_medium']
+    tags: ['raid_boss', 'raid_medium']
     routes:
       - _cls: AreaRandomRoute
         center: {x: 12505654, y: 27038876}
         dispersion: 300
+    cars:
+      - reg:///registry/mobiles/cars/heavy/btrs/06_m1126/boss
 
   - parent: reg:///registry/quests/ai_event_quests/traffic/boss
-    generation_group: 'mob_boss_low'
+    generation_group: 'raid_boss_low'
     chance_of_generation: 1
     delay_time: 600
     bots_karma: {min: -90, max: -30}
     bots_level: {min: 15, max: 15}
-    tags: ['mob_boss', 'raid_low']
+    tags: ['raid_boss', 'raid_low']
     routes:
       - _cls: AreaRandomRoute
         center: {x: 12462100, y: 27034602}
         dispersion: 300
+    cars:
+      - reg:///registry/mobiles/cars/heavy/btrs/05_m113a1/boss
+
 
   - parent: reg:///registry/quests/ai_event_quests/traffic/boss
     generation_group: 'mob_boss'

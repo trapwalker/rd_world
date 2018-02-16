@@ -255,7 +255,7 @@ quests:
     caption:
         en: 'Raid boss'
         ru: 'Групповой босс'
-    needed_tags: ['mob_boss', 'raid_low']
+    needed_tags: ['raid_boss', 'raid_low']
     generation_max_count: 3
-    reward_money: 1500              # Награда за 1 убийство
+    reward_money: 1000              # Награда за 1 убийство
     reward_karma: 0                # Награда за 1 убийство

@@ -6,7 +6,7 @@ title:                           # Модель атомобиля
 class_car:                       # Класс автомобиля
     en: "Heavy"   ##LOCALIZATION
     ru: "Тяжелый"
-name_car:    "AAV7"             # Название атомобиля
+name_car:    "Heavily armored AAV7"             # Название атомобиля
 
 price:              90000        # Цена у продавца (л) (>= 0)
 needed_driving:     70           # Требование к прокачке уровня вождения

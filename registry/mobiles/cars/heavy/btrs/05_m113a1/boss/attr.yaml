@@ -6,7 +6,7 @@ title:                           # Модель атомобиля
 class_car:                       # Класс автомобиля
     en: "Heavy"   ##LOCALIZATION
     ru: "Тяжелый"
-name_car:    "M113A1"            # Название атомобиля
+name_car:    "Modernized M113A1"            # Название атомобиля
 
 price:              50000        # Цена у продавца (л) (>= 0)
 needed_driving:     40           # Требование к прокачке уровня вождения
