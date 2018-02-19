@@ -525,6 +525,94 @@ table:
   - item: reg:///registry/items/slot_item/armorer_item/weapons/cannons/medium/04_t4
     level: 4
     chance: 0.005
+
+#BOSS DROP
+
+
+#  - item: reg:///registry/items/slot_item/armorer_item/weapons/cannons/medium/04_t4
+#    level: 15
+#    chance: 0.5
+#  - item: reg:///registry/items/stuff/alcohol/alcohol_001
+#    level: 15
+#    chance: 0.3
+#  - item: reg:///registry/items/slot_item/armorer_item/weapons/cannons/heavy/06_2a42
+#    level: 15
+#    chance: 0.1
+#  - item: reg:///registry/items/slot_item/armorer_item/weapons/cannons/heavy/05_mauser_mg-213c
+#    level: 15
+#    chance: 0.2
+#  - item: reg:///registry/items/slot_item/armorer_item/weapons/cannons/medium/06_zu23_flak
+#    level: 15
+#    chance: 0.2
+#  - item: reg:///registry/items/usable/ammo/20mm
+#    level: 15
+#    chance: 0.2
+#  - item: reg:///registry/items/usable/ammo/23bzt
+#    level: 15
+#    chance: 0.2
+#  - item: reg:///registry/items/usable/ammo/25mm
+#    level: 15
+#    chance: 0.2
+#  - item: reg:///registry/items/usable/build_set/build_set_big
+#    level: 15
+#    chance: 0.2
+
+
+
+
+#  - item: reg:///registry/items/stuff/alcohol/alcohol_001
+#    level: 20
+#    chance: 0.4
+#  - item: reg:///registry/items/slot_item/armorer_item/weapons/cannons/heavy/06_2a42
+#    level: 20
+#    chance: 0.2
+#  - item: reg:///registry/items/slot_item/armorer_item/weapons/cannons/heavy/05_mauser_mg-213c
+#    level: 20
+#    chance: 0.3
+#  - item: reg:///registry/items/slot_item/armorer_item/weapons/cannons/medium/06_zu23_flak
+#    level: 20
+#    chance: 0.3
+#  - item: reg:///registry/items/usable/ammo/20mm
+#    level: 20
+#    chance: 0.2
+#  - item: reg:///registry/items/usable/ammo/23bzt
+#    level: 20
+#    chance: 0.2
+#  - item: reg:///registry/items/usable/ammo/25mm
+#    level: 20
+#    chance: 0.2
+#  - item: reg:///registry/items/usable/build_set/build_set_big
+#    level: 20
+#    chance: 0.3
+
+
+#  - item: reg:///registry/items/stuff/alcohol/alcohol_001
+#    level: 25
+#    chance: 0.5
+#  - item: reg:///registry/items/slot_item/armorer_item/weapons/cannons/heavy/09_ns_37
+#    level: 25
+#    chance: 0.2
+#  - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/heavy/06_mg_151
+#    level: 25
+#    chance: 0.3
+#  - item: reg:///registry/items/slot_item/armorer_item/weapons/cannons/medium/06_zu23_flak
+#    level: 25
+#    chance: 0.4
+#  - item: reg:///registry/items/usable/ammo/20mm
+#    level: 25
+#    chance: 0.3
+#  - item: reg:///registry/items/usable/ammo/23bzt
+#    level: 25
+#    chance: 0.3
+#  - item: reg:///registry/items/usable/ammo/25mm
+#    level: 25
+#    chance: 0.3
+#  - item: reg:///registry/items/usable/build_set/build_set_big
+#    level: 25
+#    chance: 0.5
+
+
+
   #04_t4
 
 #  - item: reg:///registry/items/slot_item/armorer_item/weapons/cannons/zu23_flak
