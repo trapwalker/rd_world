@@ -156,7 +156,7 @@ randomize_cars_by_lvl:
       - reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/light/06_ukm_2000
     tuner_items: []
 
-  - level: 15
+  - level: 12
     cars:
       - reg:///registry/mobiles/cars/heavy/btrs/05_m113a1/boss
 
@@ -169,7 +169,7 @@ randomize_cars_by_lvl:
 
 
 
-  - level: 20
+  - level: 13
     cars:
       - reg:///registry/mobiles/cars/heavy/btrs/06_m1126/boss
 
@@ -181,7 +181,7 @@ randomize_cars_by_lvl:
     tuner_items: []
 
 
-  - level: 25
+  - level: 15
     cars:
       - reg:///registry/mobiles/cars/heavy/btrs/09_aav7/boss
 
