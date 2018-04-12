@@ -1017,7 +1017,7 @@ quests:
   - parent: reg:///registry/quests/ai_event_quests/traffic/boss
     generation_group: 'mob_boss'
     chance_of_generation: 1
-    delay_time: 1
+    delay_time: 600
     bots_karma: {min: -90, max: -30}
     tags: ['mob_boss', 'whitehill']
     routes:
@@ -1030,40 +1030,172 @@ quests:
       - reg:///registry/mobiles/cars/heavy/btrs/06_m1126
 
   - parent: reg:///registry/quests/ai_event_quests/traffic/boss
-    generation_group: 'mob_boss_strong'
-    chance_of_generation: 1
+    generation_group: 'raid_boss'
+    chance_of_generation: 0.3
+    max_loot_count: 15
+    loot_rec_list:
+      - item: reg:///registry/items/usable/build_set/build_set_small
+        chance: 0.15
+      - item: reg:///registry/items/usable/build_set/build_set_mid
+        chance: 0.05
+      - item: reg:///registry/items/usable/ammo/23bzt
+        chance: 0.35
+      - item: reg:///registry/items/usable/ammo/25mm
+        chance: 0.30
+      - item: reg:///registry/items/stuff/alcohol/alcohol_001
+        chance: 0.3
+      - item: reg:///registry/items/slot_item/armorer_item/weapons/cannons/heavy/09_ns_37
+        chance: 0.2
+      - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/heavy/06_mg_151
+        chance: 0.3
+      - item: reg:///registry/items/slot_item/armorer_item/weapons/cannons/medium/06_zu23_flak
+        chance: 0.4
+      - item: reg:///registry/items/usable/ammo/20mm
+        chance: 0.3
+      - item: reg:///registry/items/usable/build_set/build_set_big
+        chance: 0.5
+      - item: reg:///registry/items/slot_item/mechanic_item/engine/inlet/07_asi
+        chance: 0.1
+      - item: reg:///registry/items/slot_item/mechanic_item/engine/exhaust/07_aso
+        chance: 0.1
+      - item: reg:///registry/items/slot_item/mechanic_item/transmission/gearbox/07_jtc
+        chance: 0.1
+      - item: reg:///registry/items/slot_item/mechanic_item/brake/abs/07_sf
+        chance: 0.1
+      - item: reg:///registry/items/slot_item/mechanic_item/cooling/fan/08_eg
+        chance: 0.1
+      - item: reg:///registry/items/slot_item/mechanic_item/brake/front_brake_pads/08_bpf
+        chance: 0.1
+      - item: reg:///registry/items/slot_item/mechanic_item/brake/rear_brake_pads/08_bpr
+        chance: 0.1
+      - item: reg:///registry/items/slot_item/mechanic_item/engine/sparkplug/08_sp
+        chance: 0.1
+      - item: reg:///registry/items/slot_item/mechanic_item/transmission/primary_shaft/08_ps
+        chance: 0.1
+      - item: reg:///registry/items/slot_item/mechanic_item/transmission/secondary_shaft/08_ss
+        chance: 0.1
     delay_time: 600
     bots_karma: {min: -90, max: -30}
-    bots_level: {min: 25, max: 25}
-    tags: ['mob_boss', 'raid_strong']
+    bots_level: {min: 15, max: 15}
+    tags: ['raid_boss', 'raid_strong']
     routes:
       - _cls: AreaRandomRoute
         center: {x: 12518814, y: 27039629}
         dispersion: 300
+    cars:
+      - reg:///registry/mobiles/cars/heavy/btrs/09_aav7/boss
+
 
   - parent: reg:///registry/quests/ai_event_quests/traffic/boss
-    generation_group: 'mob_boss_medium'
-    chance_of_generation: 1
+    generation_group: 'raid_boss'
+    chance_of_generation: 0.3
+    max_loot_count: 12
+    loot_rec_list:
+      - item: reg:///registry/items/usable/build_set/build_set_small
+        chance: 0.15
+      - item: reg:///registry/items/usable/build_set/build_set_mid
+        chance: 0.05
+      - item: reg:///registry/items/usable/ammo/23bzt
+        chance: 0.55
+      - item: reg:///registry/items/usable/ammo/25mm
+        chance: 0.50
+      - item: reg:///registry/items/stuff/alcohol/alcohol_001
+        chance: 0.2
+      - item: reg:///registry/items/slot_item/armorer_item/weapons/cannons/heavy/09_ns_37
+        chance: 0.1
+      - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/heavy/06_mg_151
+        chance: 0.3
+      - item: reg:///registry/items/slot_item/armorer_item/weapons/cannons/medium/06_zu23_flak
+        chance: 0.4
+      - item: reg:///registry/items/usable/ammo/20mm
+        chance: 0.3
+      - item: reg:///registry/items/usable/build_set/build_set_big
+        chance: 0.5
+      - item: reg:///registry/items/slot_item/mechanic_item/engine/inlet/07_asi
+        chance: 0.1
+      - item: reg:///registry/items/slot_item/mechanic_item/engine/exhaust/07_aso
+        chance: 0.1
+      - item: reg:///registry/items/slot_item/mechanic_item/transmission/gearbox/07_jtc
+        chance: 0.1
+      - item: reg:///registry/items/slot_item/mechanic_item/brake/abs/07_sf
+        chance: 0.1
+      - item: reg:///registry/items/slot_item/mechanic_item/cooling/fan/08_eg
+        chance: 0.1
+      - item: reg:///registry/items/slot_item/mechanic_item/brake/front_brake_pads/08_bpf
+        chance: 0.1
+      - item: reg:///registry/items/slot_item/mechanic_item/brake/rear_brake_pads/08_bpr
+        chance: 0.1
+      - item: reg:///registry/items/slot_item/mechanic_item/engine/sparkplug/08_sp
+        chance: 0.1
+      - item: reg:///registry/items/slot_item/mechanic_item/transmission/primary_shaft/08_ps
+        chance: 0.1
+      - item: reg:///registry/items/slot_item/mechanic_item/transmission/secondary_shaft/08_ss
+        chance: 0.1
     delay_time: 600
     bots_karma: {min: -90, max: -30}
-    bots_level: {min: 20, max: 20}
-    tags: ['mob_boss', 'raid_medium']
+    bots_level: {min: 13, max: 13}
+    tags: ['raid_boss', 'raid_medium']
     routes:
       - _cls: AreaRandomRoute
-        center: {x: 12505654, y: 27038876}
+        center: {x: 12517059, y: 27027428}
         dispersion: 300
+    cars:
+      - reg:///registry/mobiles/cars/heavy/btrs/06_m1126/boss
 
   - parent: reg:///registry/quests/ai_event_quests/traffic/boss
-    generation_group: 'mob_boss_low'
-    chance_of_generation: 1
-    delay_time: 600
+    generation_group: 'raid_boss'
+    chance_of_generation: 0.3
+    max_loot_count: 10
+    loot_rec_list:
+      - item: reg:///registry/items/usable/build_set/build_set_small
+        chance: 0.15
+      - item: reg:///registry/items/usable/build_set/build_set_mid
+        chance: 0.05
+      - item: reg:///registry/items/usable/ammo/23bzt
+        chance: 0.55
+      - item: reg:///registry/items/usable/ammo/25mm
+        chance: 0.50
+      - item: reg:///registry/items/stuff/alcohol/alcohol_001
+        chance: 0.1
+      - item: reg:///registry/items/slot_item/armorer_item/weapons/machine_guns/heavy/06_mg_151
+        chance: 0.3
+      - item: reg:///registry/items/slot_item/armorer_item/weapons/cannons/medium/06_zu23_flak
+        chance: 0.4
+      - item: reg:///registry/items/usable/ammo/20mm
+        chance: 0.3
+      - item: reg:///registry/items/usable/build_set/build_set_big
+        chance: 0.5
+      - item: reg:///registry/items/slot_item/mechanic_item/engine/inlet/07_asi
+        chance: 0.1
+      - item: reg:///registry/items/slot_item/mechanic_item/engine/exhaust/07_aso
+        chance: 0.1
+      - item: reg:///registry/items/slot_item/mechanic_item/transmission/gearbox/07_jtc
+        chance: 0.1
+      - item: reg:///registry/items/slot_item/mechanic_item/brake/abs/07_sf
+        chance: 0.1
+      - item: reg:///registry/items/slot_item/mechanic_item/cooling/fan/08_eg
+        chance: 0.1
+      - item: reg:///registry/items/slot_item/mechanic_item/brake/front_brake_pads/08_bpf
+        chance: 0.1
+      - item: reg:///registry/items/slot_item/mechanic_item/brake/rear_brake_pads/08_bpr
+        chance: 0.1
+      - item: reg:///registry/items/slot_item/mechanic_item/engine/sparkplug/08_sp
+        chance: 0.1
+      - item: reg:///registry/items/slot_item/mechanic_item/transmission/primary_shaft/08_ps
+        chance: 0.1
+      - item: reg:///registry/items/slot_item/mechanic_item/transmission/secondary_shaft/08_ss
+        chance: 0.1
+    delay_time: 300
     bots_karma: {min: -90, max: -30}
-    bots_level: {min: 15, max: 15}
-    tags: ['mob_boss', 'raid_low']
+    bots_level: {min: 12, max: 12}
+    tags: ['raid_boss', 'raid_low']
     routes:
       - _cls: AreaRandomRoute
         center: {x: 12462100, y: 27034602}
         dispersion: 300
+    cars:
+      - reg:///registry/mobiles/cars/heavy/btrs/05_m113a1/boss
+
 
   - parent: reg:///registry/quests/ai_event_quests/traffic/boss
     generation_group: 'mob_boss'

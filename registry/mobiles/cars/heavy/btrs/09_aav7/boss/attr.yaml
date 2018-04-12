@@ -6,34 +6,28 @@ title:                           # Модель атомобиля
 class_car:                       # Класс автомобиля
     en: "Heavy"   ##LOCALIZATION
     ru: "Тяжелый"
-name_car:    "AAV7"             # Название атомобиля
+name_car:    "Heavily armored AAV7"             # Название атомобиля
 
 price:              90000        # Цена у продавца (л) (>= 0)
 needed_driving:     70           # Требование к прокачке уровня вождения
 
-max_hp:             800          # Максимальное количество прочности (> 0)
-hp:                 800          # Текущее количество прочности (> 0)
+max_hp:             1200          # Максимальное количество прочности (> 0)
+hp:                 1200          # Текущее количество прочности (> 0)
 
 inventory:                       # При заполнении инвентаря необходимо учитывать его размер
     size: 38
-    items:
-      - reg:///registry/items/stuff/alcohol/alcohol_002
-      - reg:///registry/items/stuff/canned_cereal/canned_cereal_001
-      - reg:///registry/items/stuff/medical_supplies/medical_supplies_001
-      - reg:///registry/items/stuff/scrap_metal/scrap_metal_001
-      - reg:///registry/items/stuff/warm_clothes/warm_clothes_003
-      - reg:///registry/items/slot_item/armorer_item/weapons/cannons/heavy/06_2a42
+    items: []
 
-p_observing_range:     1200      # Радиус обзора автомобиля (м) (>= 0)
+p_observing_range:     1900      # Радиус обзора автомобиля (м) (>= 0)
 
-p_vigilance:           0         # Коэффициент зоркости (0..1)
+p_vigilance:           0.8         # Коэффициент зоркости (0..1)
 p_visibility_min:      0.700     # Минимальная заметность автомобиля (0..1) при 0 автомобиль невидим
 p_visibility_max:      0.950     # Максимальная заметность автомобиля (0..1) при 0 автомобиль невидим
-p_obs_range_rate_min:  0.5       # Коэффициент минимального радиуса обзора автомобиля (0..1)
+p_obs_range_rate_min:  0.8       # Коэффициент минимального радиуса обзора автомобиля (0..1)
 p_obs_range_rate_max:  1         # Коэффициент максимального радиуса обзора автомобиля (0..1)
 
 r_min:              7          # Минимальный радиус разворота (м) (> 0)
-mobility:           0            # ac_max: 15   # Перегрузка с которой входит в поворот автомобиль (м/c^2) (> 0)
+mobility:           1            # ac_max: 15   # Перегрузка с которой входит в поворот автомобиль (м/c^2) (> 0)
 a_forward:          6          # Ускорение при езде вперед (м/c^2)
 a_backward:         6.3          # Ускорение при езде назад (м/c^2)
 a_braking:          6.3          # Ускорение при торможении (м/c^2)

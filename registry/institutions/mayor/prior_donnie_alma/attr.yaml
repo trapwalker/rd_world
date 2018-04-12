@@ -257,7 +257,15 @@ quests:
     caption:
         en: 'Raid boss'
         ru: 'Групповой босс'
-    needed_tags: ['mob_boss', 'raid_strong']
+    needed_tags: ['raid_boss', 'raid_strong']
     generation_max_count: 3
-    reward_money: 3500              # Награда за 1 убийство
+    reward_money: 2500              # Награда за 1 убийство
     reward_karma: 0                # Награда за 1 убийство
+    reward_items_list:
+    -
+       - reg:///registry/items/stuff/alcohol/alcohol_002
+       - reg:///registry/items/stuff/canned_cereal/canned_cereal_001
+       - reg:///registry/items/stuff/medical_supplies/medical_supplies_001
+       - reg:///registry/items/stuff/scrap_metal/scrap_metal_001
+       - reg:///registry/items/stuff/warm_clothes/warm_clothes_003
+       - reg:///registry/items/slot_item/armorer_item/weapons/cannons/heavy/06_2a42
