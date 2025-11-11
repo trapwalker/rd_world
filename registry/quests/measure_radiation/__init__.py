@@ -16,18 +16,18 @@ from functools import partial
 
 
 class MeasureRadiation(Quest):
-    measuring_price = IntField(caption=u'Стоимость одного замера радиации', tags={'client'})
-    measuring_radius = FloatField(caption=u'Максимальный радиус измерения', tags={'client'})
+    measuring_price = IntField(caption='Стоимость одного замера радиации', tags={'client'})
+    measuring_radius = FloatField(caption='Максимальный радиус измерения', tags={'client'})
     measure_points_generator = ListField(
         root_default=list,
-        caption=u"Список областей генерации пунктов замеров",
+        caption="Список областей генерации пунктов замеров",
         field=EmbeddedDocumentField(document_type=MarkerMapObject, reinst=True),
         reinst=True
     )
     measure_points = ListField(
         tags={'client'},
         root_default=list,
-        caption=u"Список выбранных пунктов для замеров",
+        caption="Список выбранных пунктов для замеров",
         field=EmbeddedDocumentField(
             document_type='sublayers_server.model.registry_me.classes.quests2.MarkerMapObject'
         ),
@@ -35,13 +35,13 @@ class MeasureRadiation(Quest):
     )
     measure_count_range = EmbeddedDocumentField(
         document_type=QuestRange,
-        caption=u"Диапазон количетсва измерений",
+        caption="Диапазон количетсва измерений",
         reinst=True,
     )
-    measure_count = IntField(caption=u'Количество замеров', tags={'client'})
+    measure_count = IntField(caption='Количество замеров', tags={'client'})
     measure_notes = ListField(
         root_default=list,
-        caption=u"Список активных нотов маркеров на карте",
+        caption="Список активных нотов маркеров на карте",
         field=UUIDField(),
         reinst=True,
     )
@@ -93,10 +93,10 @@ class MeasureRadiation(Quest):
                 penalty_money = quest.reward_money / 2.
                 if agent.profile.balance >= penalty_money:
                     agent.profile.set_balance(time=event.time, delta=-penalty_money)
-                    quest.log(text=u'{} {}nc.'.format(quest.locale("q_mr_cancel_pen_done"), penalty_money), event=event, position=quest.hirer.hometown.position)  ##LOCALIZATION
+                    quest.log(text='{} {}nc.'.format(quest.locale("q_mr_cancel_pen_done"), penalty_money), event=event, position=quest.hirer.hometown.position)  ##LOCALIZATION
                     go("cancel_fail")
                 else:
-                   quest.npc_replica(npc=quest.hirer, replica=u"{} {}nc.".format(quest.locale("q_mr_cancel_pen_try"), penalty_money), event=event)  ##LOCALIZATION
+                   quest.npc_replica(npc=quest.hirer, replica="{} {}nc.".format(quest.locale("q_mr_cancel_pen_try"), penalty_money), event=event)  ##LOCALIZATION
 
             if isinstance(event, OnTimer):
                 if event.name == 'deadline_measuring_quest':
@@ -166,20 +166,20 @@ class MeasureRadiation(Quest):
 
     def init_text(self):
         self.text_short = LocalizedString(
-            en=u"Inspect {:.0f} points.".format(self.measure_count),   ##LOCALIZATION
-            ru=u"Обследуйте {:.0f} точек.".format(self.measure_count),
+            en="Inspect {:.0f} points.".format(self.measure_count),   ##LOCALIZATION
+            ru="Обследуйте {:.0f} точек.".format(self.measure_count),
         )
         self.text = LocalizedString(
-            en=u"Measure radiation level in {:.0f} points{}. Reward: {:.0f}nc, {:.0f} karma and {:.0f} exp. points".format(   ##LOCALIZATION
+            en="Measure radiation level in {:.0f} points{}. Reward: {:.0f}nc, {:.0f} karma and {:.0f} exp. points".format(   ##LOCALIZATION
                 self.measure_count,
-                u"" if not self.deadline else u" for {}".format(self.deadline_to_str()),   ##LOCALIZATION
+                "" if not self.deadline else " for {}".format(self.deadline_to_str()),   ##LOCALIZATION
                 self.reward_money,
                 self.reward_karma,
                 self.reward_exp * self.measure_count,
             ),
-            ru=u"Замерьте уровень радиации в {:.0f} точек{}. Награда: {:.0f}nc, {:.0f} кармы и {:.0f} ед. опыта".format(
+            ru="Замерьте уровень радиации в {:.0f} точек{}. Награда: {:.0f}nc, {:.0f} кармы и {:.0f} ед. опыта".format(
                 self.measure_count,
-                u"" if not self.deadline else u" за {}".format(self.deadline_to_str()),   ##LOCALIZATION
+                "" if not self.deadline else " за {}".format(self.deadline_to_str()),   ##LOCALIZATION
                 self.reward_money,
                 self.reward_karma,
                 self.reward_exp * self.measure_count,

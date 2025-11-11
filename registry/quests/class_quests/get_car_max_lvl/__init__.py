@@ -15,13 +15,13 @@ class GetCarMaxLevelQuest(ClassTypeQuest):
 
     class RoleClassQuestAttributes(Subdoc):
         next_quest = RegistryLinkField(
-            caption=u"Прототип классового квеста",
+            caption="Прототип классового квеста",
             document_type='sublayers_server.model.registry_me.classes.quests.Quest',
             root_default='reg:///registry/quests/class_quests/start_quest'
         )
 
     attributes_by_class = MapField(
-        caption=u'Словарь атрибутов',
+        caption='Словарь атрибутов',
         field=EmbeddedDocumentField(document_type=RoleClassQuestAttributes),
     )
     ####################################################################################################################

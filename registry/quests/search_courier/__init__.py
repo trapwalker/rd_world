@@ -21,13 +21,13 @@ from ctx_timer import T
 
 class SearchCourier(DeliveryFromCache):
     courier_car_list = ListField(
-        caption=u"Список возможных машин курьера",
+        caption="Список возможных машин курьера",
         field=RegistryLinkField(),
     )
 
     courier_medallion = EmbeddedNodeField(
         document_type='sublayers_server.model.registry_me.classes.quest_item.QuestItem',
-        caption=u"Медальон курьера",
+        caption="Медальон курьера",
         tags={'client'},
     )
 
@@ -53,19 +53,19 @@ class SearchCourier(DeliveryFromCache):
 
     def init_text(self):
         self.text_short = LocalizedString(
-            en=u"Find missing courier.",   ##LOCALIZATION
-            ru=u"Найти пропавшего курьера.",
+            en="Find missing courier.",   ##LOCALIZATION
+            ru="Найти пропавшего курьера.",
         )
 
         self.text = LocalizedString(
-            en=u"Find missing courier and return important item {} Reward: {:.0f}nc, {:.0f} karma and {:.0f} exp. points.".format(   ##LOCALIZATION
-                u"." if not self.deadline else u" for {}.".format(self.deadline_to_str()),   ##LOCALIZATION
+            en="Find missing courier and return important item {} Reward: {:.0f}nc, {:.0f} karma and {:.0f} exp. points.".format(   ##LOCALIZATION
+                "." if not self.deadline else " for {}.".format(self.deadline_to_str()),   ##LOCALIZATION
                 self.reward_money,
                 self.reward_karma,
                 self.reward_exp,
             ),
-            ru= u"Найти пропавшего курьера и вернуть важный предмет{} Награда: {:.0f}nc, {:.0f} кармы и {:.0f} ед. опыта.".format(
-                u"." if not self.deadline else u" за {}.".format(self.deadline_to_str()),   ##LOCALIZATION
+            ru= "Найти пропавшего курьера и вернуть важный предмет{} Награда: {:.0f}nc, {:.0f} кармы и {:.0f} ед. опыта.".format(
+                "." if not self.deadline else " за {}.".format(self.deadline_to_str()),   ##LOCALIZATION
                 self.reward_money,
                 self.reward_karma,
                 self.reward_exp,
@@ -167,7 +167,7 @@ class SearchCourier(DeliveryFromCache):
             if isinstance(event, OnCancel):
                 agent.profile.del_note(uid=quest.dc.cache_map_note_uid, time=event.time)
                 agent.profile.set_relationship(time=event.time, npc=quest.hirer, dvalue=-quest.reward_relation_hirer)
-                quest.log(text=u'{} {}.'.format(quest.locale("q_sq_rel_bad"), quest.hirer.title), event=event,  ##LOCALIZATION
+                quest.log(text='{} {}.'.format(quest.locale("q_sq_rel_bad"), quest.hirer.title), event=event,  ##LOCALIZATION
                           position=quest.hirer.hometown.position)
                 go("cancel_fail")
             if isinstance(event, OnTimer):

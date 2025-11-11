@@ -14,24 +14,24 @@ import random
 class LootGenerateRec(Subdoc):
     item = RegistryLinkField(
         document_type='sublayers_server.model.registry_me.classes.item.Item',
-        caption=u"Итем который может попасть в инвентарь бота",
+        caption="Итем который может попасть в инвентарь бота",
     )
-    chance = FloatField(default=1.0, caption=u"Вероятность выпадения итема")
+    chance = FloatField(default=1.0, caption="Вероятность выпадения итема")
 
 
 class AIEventQuest(Quest):
-    delay_time = IntField(root_default=60, caption=u'Минимальное время, между генерациями одного квеста')
-    chance_of_generation = FloatField(root_default=1.0, caption=u'Шанс генерации квеста')
+    delay_time = IntField(root_default=60, caption='Минимальное время, между генерациями одного квеста')
+    chance_of_generation = FloatField(root_default=1.0, caption='Шанс генерации квеста')
     cars = ListField(
         root_default=list,
-        caption=u'Список машинок',
+        caption='Список машинок',
         field=RegistryLinkField(document_type='sublayers_server.model.registry_me.classes.mobiles.Car'),
     )
 
-    max_loot_count = IntField(root_default=0, caption=u'Максимально возможное количество лута')
+    max_loot_count = IntField(root_default=0, caption='Максимально возможное количество лута')
     loot_rec_list = ListField(
         root_default=list,
-        caption=u"Список для генерации инвентаря бота",
+        caption="Список для генерации инвентаря бота",
         field=EmbeddedDocumentField(document_type=LootGenerateRec),
         reinst=True
     )

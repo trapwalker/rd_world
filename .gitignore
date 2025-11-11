@@ -1,0 +1,15 @@
+syntax: glob
+*.zip
+*.bak
+temp/*
+-/*
+*.old.json
+*.orig
+.hgrc
+map
+altitude/**.jpg
+tilesets
+state/*
+slope/**.png
+*.pyc
+*.tar

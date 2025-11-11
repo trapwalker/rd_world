@@ -18,7 +18,7 @@ import random
 class DeliveryCar(DeliveryQuest):
     delivery_car_list = ListField(
         root_default=list,
-        caption=u'Список машинок',
+        caption='Список машинок',
         field=RegistryLinkField(document_type='sublayers_server.model.registry_me.classes.mobiles.Car'),
     )
     delivery_car = RegistryLinkField(document_type='sublayers_server.model.registry_me.classes.mobiles.Car')
@@ -32,19 +32,19 @@ class DeliveryCar(DeliveryQuest):
 
     def init_text(self, distance=None):
         self.text_short = LocalizedString(
-            en=u"Deliver car to city {}.".format(self.recipient.hometown.title),   ##LOCALIZATION
-            ru=u"Доставьте ТС в город {}.".format(self.recipient.hometown.title),
+            en="Deliver car to city {}.".format(self.recipient.hometown.title),   ##LOCALIZATION
+            ru="Доставьте ТС в город {}.".format(self.recipient.hometown.title),
         )
 
         self.text = LocalizedString(
-            en=u"Deliver car: {} - to {} to city {}. Reward: {:.0f}nc and {:.0f} exp. points.".format(   ##LOCALIZATION
+            en="Deliver car: {} - to {} to city {}. Reward: {:.0f}nc and {:.0f} exp. points.".format(   ##LOCALIZATION
                 self.dc.car_title,
                 self.recipient.title,
                 self.recipient.hometown.title,
                 self.reward_money,
                 self.reward_exp,
             ),
-            ru=u"Доставьте ТС: {} - к {} в город {}. Награда: {:.0f}nc и {:.0f} ед. опыта.".format(
+            ru="Доставьте ТС: {} - к {} в город {}. Награда: {:.0f}nc и {:.0f} ед. опыта.".format(
                 self.dc.car_title,
                 self.recipient.title,
                 self.recipient.hometown.title,
@@ -151,10 +151,10 @@ class DeliveryCar(DeliveryQuest):
                     messages.UserExampleCarInfo(agent=agent_model, time=event.time).post()
                     messages.UserExampleCarView(agent=agent_model, time=event.time).post()
                     messages.UserExampleCarSlots(agent=agent_model, time=event.time).post()
-                    quest.log(text=u'{} {}nc.'.format(quest.locale("q_share_cancel_pen_done"), money_penalty), event=event)  ##LOCALIZATION
+                    quest.log(text='{} {}nc.'.format(quest.locale("q_share_cancel_pen_done"), money_penalty), event=event)  ##LOCALIZATION
                     go("cancel_fail")
                 else:
-                    quest.npc_replica(npc=quest.hirer, replica=u'{} {}nc.'.format(quest.locale("q_dc_cancel_req"), money_penalty), event=event)  ##LOCALIZATION
+                    quest.npc_replica(npc=quest.hirer, replica='{} {}nc.'.format(quest.locale("q_dc_cancel_req"), money_penalty), event=event)  ##LOCALIZATION
 
     ####################################################################################################################
     class reward(QuestState_):

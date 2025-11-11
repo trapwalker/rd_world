@@ -23,16 +23,16 @@ class MapActivateRadarsQuest(MapActivateItemQuest):
 
     def init_text(self):
         self.text_short = LocalizedString(
-            en=u"Install observation probes.",   ##LOCALIZATION
-            ru=u"Установить наблюдательные зонды.",
+            en="Install observation probes.",   ##LOCALIZATION
+            ru="Установить наблюдательные зонды.",
         )
         self.text = LocalizedString(
-            en=u"Set in points observation probes in amount of: {}. Rewaard: {:.0f}nc and {:.0f} exp. points".format(   ##LOCALIZATION
+            en="Set in points observation probes in amount of: {}. Rewaard: {:.0f}nc and {:.0f} exp. points".format(   ##LOCALIZATION
                 len(self.activate_points),
                 self.reward_money,
                 self.reward_exp * len(self.activate_points),
             ),
-            ru=u"Установите в заданных точках наблюдательные зонды в количестве: {}. Награда: {:.0f}nc и {:.0f} ед. опыта".format(   ##LOCALIZATION
+            ru="Установите в заданных точках наблюдательные зонды в количестве: {}. Награда: {:.0f}nc и {:.0f} ед. опыта".format(   ##LOCALIZATION
                 len(self.activate_points),
                 self.reward_money,
                 self.reward_exp * len(self.activate_points),
@@ -88,7 +88,7 @@ class MapActivateRadarsQuest(MapActivateItemQuest):
                     go("cancel_fail")
                 else:
                     quest.npc_replica(npc=quest.hirer,
-                                      replica=u"{}: {}{}.".format(  ##LOCALIZATION
+                                      replica="{}: {}{}.".format(  ##LOCALIZATION
                                           quest.locale("q_ar_cancel_pen_try"), len(quest.activate_items), quest.locale("q_share_piece")), event=event)
             if isinstance(event, OnTimer) and event.name == 'deadline_activate_quest':
                 go("fail")
@@ -131,7 +131,7 @@ class MapActivateRadarsQuest(MapActivateItemQuest):
     # class win(WinState):
     #     def on_enter_(self, quest, event):   # info берём от родителя
     #         quest.delete_notes(event=event)
-    #         quest.log(text=u'Квест выполнен.', event=event)
+    #         quest.log(text='Квест выполнен.', event=event)
     ####################################################################################################################
     class fail(FailState):
         def on_enter_(self, quest, event):

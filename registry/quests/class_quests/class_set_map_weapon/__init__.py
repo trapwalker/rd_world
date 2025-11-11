@@ -11,20 +11,20 @@ from sublayers_world.registry.quests.class_quests import ClassTypeQuest
 
 
 class ClassQuestSetMapWeapon(ClassTypeQuest):
-    count = IntField(caption=u"Количество мин или туррелей, которые нужно установить")
+    count = IntField(caption="Количество мин или туррелей, которые нужно установить")
 
     available_activate_items = ListField(
-        caption=u"Список разрешённых айтемов",
+        caption="Список разрешённых айтемов",
         field=RegistryLinkField(document_type='sublayers_server.model.registry_me.classes.item.MapWeaponItem'),
     )
 
     def init_text(self):
         self.text = LocalizedString(
-            en=u"{}<br>{}".format(
+            en="{}<br>{}".format(
                 self.locale(key="q_cq_set_map_weapon_task_text", loc="en"),
                 self.locale(key="q_cq_journal_reward_2", loc="en"),
             ),
-            ru=u"{}<br>{}".format(
+            ru="{}<br>{}".format(
                 self.locale(key="q_cq_set_map_weapon_task_text", loc="ru"),
                 self.locale(key="q_cq_journal_reward_2", loc="ru"),
             ),

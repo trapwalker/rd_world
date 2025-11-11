@@ -31,8 +31,8 @@ class KillBossQuest(AgentEventQuest):
             self.dc.boss_name = event_quest.dc._main_agent.print_login()
             self.dc.boss_avatar = event_quest.dc._main_agent.avatar_link
         else:
-            self.dc.boss_name = u''
-            self.dc.boss_avatar = u''
+            self.dc.boss_name = ''
+            self.dc.boss_avatar = ''
         return event_quest
 
     def can_cancel(self, event):
@@ -40,10 +40,10 @@ class KillBossQuest(AgentEventQuest):
         agent = self.agent.profile
         if agent.balance >= money_penalty:
             agent.set_balance(time=event.time, delta=-money_penalty)
-            self.log(text=u'{} {}nc.'.format(self.locale("q_share_cancel_pen_done"), money_penalty), event=event)  ##LOCALIZATION
+            self.log(text='{} {}nc.'.format(self.locale("q_share_cancel_pen_done"), money_penalty), event=event)  ##LOCALIZATION
             return True
         else:
-            self.npc_replica(npc=self.hirer, replica=u"{} {}nc.".format(self.locale("q_share_cancel_pen_try"), money_penalty), event=event)  ##LOCALIZATION
+            self.npc_replica(npc=self.hirer, replica="{} {}nc.".format(self.locale("q_share_cancel_pen_try"), money_penalty), event=event)  ##LOCALIZATION
             return False
 
     def init_level(self):
@@ -51,17 +51,17 @@ class KillBossQuest(AgentEventQuest):
 
     def init_text(self, event):
         self.text_short = LocalizedString(
-            en=u"Player kill.",   ##LOCALIZATION
-            ru=u"Убейте игрока.",
+            en="Player kill.",   ##LOCALIZATION
+            ru="Убейте игрока.",
         )
         event_quest = self.get_event_quest(event=event)
         if event_quest:
             self.text = LocalizedString(
-                en=u"Kill player with a nickname {}. Reward: {:.0f}nc.".format(   ##LOCALIZATION
+                en="Kill player with a nickname {}. Reward: {:.0f}nc.".format(   ##LOCALIZATION
                     event_quest.dc._main_agent.print_login(),
                     event_quest.dc.kill_reward_money,
                 ),
-                ru=u"Убейте игрока с ником {}. Награда: {:.0f}nc.".format(
+                ru="Убейте игрока с ником {}. Награда: {:.0f}nc.".format(
                     event_quest.dc._main_agent.print_login(),
                     event_quest.dc.kill_reward_money,
                 ),
@@ -101,7 +101,7 @@ class KillBossQuest(AgentEventQuest):
 
             if isinstance(event, OnKill) and (event.agent is event_quest.dc._main_agent.example):
                 quest.dc.is_kill = True
-                quest.log(text=u'{} {}'.format(quest.dc.boss_name, quest.locale("q_kb_killed")), event=event)  ##LOCALIZATION
+                quest.log(text='{} {}'.format(quest.dc.boss_name, quest.locale("q_kb_killed")), event=event)  ##LOCALIZATION
                 go('note_kill_reward')
 
             if isinstance(event, OnQuestSee) and (event.obj is event_quest.dc._main_agent.car):

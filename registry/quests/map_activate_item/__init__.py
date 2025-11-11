@@ -16,36 +16,36 @@ import random
 
 
 class MapActivateItemQuest(Quest):
-    activate_price = IntField(caption=u'Стоимость одной активации итема', tags={'client'})
-    activate_radius = FloatField(caption=u'Максимальный радиус активации', tags={'client'})
+    activate_price = IntField(caption='Стоимость одной активации итема', tags={'client'})
+    activate_radius = FloatField(caption='Максимальный радиус активации', tags={'client'})
 
     activate_points_generator = ListField(
         root_default=list,
-        caption=u"Список областей генерации пунктов замеров",
+        caption="Список областей генерации пунктов замеров",
         field=EmbeddedDocumentField(document_type=MarkerMapObject),
         reinst=True,
     )
     activate_points = ListField(
         root_default=list,
-        caption=u"Список областей генерации пунктов замеров",
+        caption="Список областей генерации пунктов замеров",
         field=EmbeddedDocumentField(document_type=MarkerMapObject),
         reinst=True,
     )
 
     activate_items_generator = ListField(
-        caption=u"Список возможных итемов для активации",
+        caption="Список возможных итемов для активации",
         field=EmbeddedNodeField(
             document_type='sublayers_server.model.registry_me.classes.item.Item',
-            caption=u"Необходимый итем",
+            caption="Необходимый итем",
             reinst=True,
             tags={'client'},
         )
     )
     activate_items = ListField(
-        caption=u"Список итемов для доставки",
+        caption="Список итемов для доставки",
         field=EmbeddedNodeField(
             document_type='sublayers_server.model.registry_me.classes.item.Item',
-            caption=u"Необходимый итем",
+            caption="Необходимый итем",
             reinst=True,
             tags={'client'},
         ),
@@ -53,7 +53,7 @@ class MapActivateItemQuest(Quest):
 
     activate_notes = ListField(
         root_default=list,
-        caption=u"Список активных нотов маркеров на карте",
+        caption="Список активных нотов маркеров на карте",
         field=UUIDField(),
         reinst=True,
     )
@@ -93,15 +93,15 @@ class MapActivateItemQuest(Quest):
 
     def init_text(self):
         self.text_short = LocalizedString(
-            en=u"Activate items at given points.",   ##LOCALIZATION
-            ru=u"Активируйте предметы в заданных точках.",
+            en="Activate items at given points.",   ##LOCALIZATION
+            ru="Активируйте предметы в заданных точках.",
         )
         self.text = LocalizedString(
-            en=u"Activate items: {} - at given points. Reward: {:.0f}nc.".format(   ##LOCALIZATION
+            en="Activate items: {} - at given points. Reward: {:.0f}nc.".format(   ##LOCALIZATION
                 ', '.join([item.title.en for item in self.activate_items]),
                 self.reward_money,
             ),
-            ru=u"Активируйте предметы: {} - в заданных точках. Награда: {:.0f}nc.".format(
+            ru="Активируйте предметы: {} - в заданных точках. Награда: {:.0f}nc.".format(
                 ', '.join([item.title.ru for item in self.activate_items]),
                 self.reward_money,
             ),
@@ -195,12 +195,12 @@ class MapActivateItemQuest(Quest):
                 penalty_money = quest.reward_money / 2.
                 if agent.profile.balance >= penalty_money:
                     agent.profile.set_balance(time=event.time, delta=-penalty_money)
-                    quest.log(text=u'{} {}nc.'.format(quest.locale("q_share_cancel_pen_done"), penalty_money), event=event,  ##LOCALIZATION
+                    quest.log(text='{} {}nc.'.format(quest.locale("q_share_cancel_pen_done"), penalty_money), event=event,  ##LOCALIZATION
                               position=quest.hirer.hometown.position)
                     go("cancel_fail")
                 else:
                     quest.npc_replica(npc=quest.hirer,
-                                      replica=u"{} {}nc.".format(quest.locale("q_share_cancel_pen_try"), penalty_money),  ##LOCALIZATION
+                                      replica="{} {}nc.".format(quest.locale("q_share_cancel_pen_try"), penalty_money),  ##LOCALIZATION
                                       event=event)
             if isinstance(event, OnTimer):
                 if event.name == 'deadline_activate_quest':

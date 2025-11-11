@@ -11,16 +11,16 @@ from sublayers_world.registry.quests.class_quests import ClassTypeQuest
 
 
 class ClassQuestPartyExp(ClassTypeQuest):
-    exp_value = IntField(caption=u"Сумма опыта для накопления")
+    exp_value = IntField(caption="Сумма опыта для накопления")
 
     def init_text(self):
         self.text = LocalizedString(
-            en=u"{}, {}".format(
+            en="{}, {}".format(
                 self.agent.login,
                 self.locale(key="q_cq_party_exp_task_text", loc="en"),
                 self.locale(key="q_cq_journal_reward_1", loc="en"),
             ),
-            ru=u"{}, {}".format(
+            ru="{}, {}".format(
                 self.agent.login,
                 self.locale(key="q_cq_party_exp_task_text", loc="ru"),
                 self.locale(key="q_cq_journal_reward_1", loc="ru"),

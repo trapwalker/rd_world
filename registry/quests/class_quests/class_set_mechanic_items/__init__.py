@@ -11,16 +11,16 @@ from sublayers_world.registry.quests.class_quests import ClassTypeQuest
 
 
 class ClassQuestSetMechanicItems(ClassTypeQuest):
-    count_items = IntField(caption=u"Количество айтемов механика")
+    count_items = IntField(caption="Количество айтемов механика")
 
     def init_text(self):
         self.text = LocalizedString(
-            en=u"{}, {}".format(
+            en="{}, {}".format(
                 self.agent.login,
                 self.locale(key="q_cq_mech_items_task_text", loc="en"),
                 self.locale(key="q_cq_journal_reward_1", loc="en"),
             ),
-            ru=u"{}, {}".format(
+            ru="{}, {}".format(
                 self.agent.login,
                 self.locale(key="q_cq_mech_items_task_text", loc="ru"),
                 self.locale(key="q_cq_journal_reward_1", loc="ru"),

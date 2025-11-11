@@ -20,33 +20,33 @@ class DeliveryQuest(Quest):
     distance_table = RegistryLinkField(document_type='sublayers_server.model.registry_me.classes.disttable.DistTable')
     recipient_list = ListField(
         root_default=list,
-        caption=u"Список возможных получателей доставки",
+        caption="Список возможных получателей доставки",
         field=StringField(),
     )
     recipient = RegistryLinkField(
-        caption=u'Получатель доставки',
+        caption='Получатель доставки',
         tags={'client'},
         document_type='sublayers_server.model.registry_me.classes.poi.Institution',
     )
     total_delivery_money_coef = FloatField(root_default=0,
-                                           caption=u'Множитель общей стоимости награды за квест от стоимости доставляемого товара')
+                                           caption='Множитель общей стоимости награды за квест от стоимости доставляемого товара')
     delivery_set_list = ListField(
         root_default=list,
-        caption=u"Список возможных комплектов для доставки",
+        caption="Список возможных комплектов для доставки",
         field=ListField(
-            caption=u"Список возможных наборов итемов для доставки",
+            caption="Список возможных наборов итемов для доставки",
             field=EmbeddedNodeField(
                 document_type='sublayers_server.model.registry_me.classes.item.Item',
-                caption=u"Необходимый итем",
+                caption="Необходимый итем",
             ),
         ),
     )
     delivery_set = ListField(
-        caption=u"Список итемов для доставки",
+        caption="Список итемов для доставки",
         tags={'client'},
         field=EmbeddedNodeField(
             document_type='sublayers_server.model.registry_me.classes.item.Item',
-            caption=u"Необходимый итем",
+            caption="Необходимый итем",
         ),
     )
 
@@ -62,17 +62,17 @@ class DeliveryQuest(Quest):
     def init_text(self, distance=None):
         if distance == 0:
             self.text_short = LocalizedString(
-                en=u"Deliver cargo to neighboring building.",   ##LOCALIZATION
-                ru=u"Доставьте груз в соседнее здание.",
+                en="Deliver cargo to neighboring building.",   ##LOCALIZATION
+                ru="Доставьте груз в соседнее здание.",
             )
 
             self.text = LocalizedString(
-                en=u"Deliver cargo: {} - to {}. Reward: {:.0f}nc.".format(   ##LOCALIZATION
+                en="Deliver cargo: {} - to {}. Reward: {:.0f}nc.".format(   ##LOCALIZATION
                     ', '.join([item.title.en for item in self.delivery_set]),
                     self.recipient.title,
                     self.reward_money
                 ),
-                ru=u"Доставьте груз: {} - к {}. Награда: {:.0f}nc.".format(
+                ru="Доставьте груз: {} - к {}. Награда: {:.0f}nc.".format(
                     ', '.join([item.title.ru for item in self.delivery_set]),
                     self.recipient.title,
                     self.reward_money
@@ -82,18 +82,18 @@ class DeliveryQuest(Quest):
 
             return
         self.text_short = LocalizedString(
-            en=u"Deliver cargo to city {}.".format(self.recipient.hometown.title),   ##LOCALIZATION
-            ru=u"Доставьте груз в город {}.".format(self.recipient.hometown.title),
+            en="Deliver cargo to city {}.".format(self.recipient.hometown.title),   ##LOCALIZATION
+            ru="Доставьте груз в город {}.".format(self.recipient.hometown.title),
         )
         self.text = LocalizedString(
-            en=u"Deliver cargo: {} - to {} to city {}. Reward: {:.0f}nc and {:.0f} exp. points.".format(   ##LOCALIZATION
+            en="Deliver cargo: {} - to {} to city {}. Reward: {:.0f}nc and {:.0f} exp. points.".format(   ##LOCALIZATION
                 ', '.join([item.title.en for item in self.delivery_set]),
                 self.recipient.title,
                 self.recipient.hometown.title,
                 self.reward_money,
                 self.reward_exp,
             ),
-            ru=u"Доставьте груз: {} - к {} в город {}. Награда: {:.0f}nc и {:.0f} ед. опыта.".format(   ##LOCALIZATION
+            ru="Доставьте груз: {} - к {} в город {}. Награда: {:.0f}nc и {:.0f} ед. опыта.".format(   ##LOCALIZATION
                 ', '.join([item.title.ru for item in self.delivery_set]),
                 self.recipient.title,
                 self.recipient.hometown.title,

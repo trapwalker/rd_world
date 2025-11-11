@@ -11,10 +11,10 @@ from sublayers_world.registry.quests.class_quests import ClassTypeQuest
 
 
 class ClassQuestDamageMapWeapon(ClassTypeQuest):
-    count = IntField(caption=u"Количество удачных попаданий")
+    count = IntField(caption="Количество удачных попаданий")
 
     available_activate_items = ListField(
-        caption=u"Список разрешённых айтемов",
+        caption="Список разрешённых айтемов",
         field=RegistryLinkField(document_type='sublayers_server.model.registry_me.classes.mobiles.ExtraMobile'),
     )
 
@@ -23,11 +23,11 @@ class ClassQuestDamageMapWeapon(ClassTypeQuest):
             role_class_name=self.locale(self.agent.profile.role_class.title)
         )
         self.text = LocalizedString(
-            en=u"{}<br>{}".format(
+            en="{}<br>{}".format(
                 sub_text.get(lang="en"),
                 self.locale(key="q_cq_journal_reward_2", loc="en"),
             ),
-            ru=u"{}<br>{}".format(
+            ru="{}<br>{}".format(
                 sub_text.get(lang="ru"),
                 self.locale(key="q_cq_journal_reward_2", loc="ru"),
             ),

@@ -12,8 +12,8 @@ from functools import partial
 
 
 class AgentEventQuest(Quest):
-    event_quest_uid = StringField(caption=u'UID квеста-события из диспетчера задач. Как только по этому UID не будет найден квест - переход в состояние победы')
-    needed_tags = ListField(field=StringField(), caption=u"Теги для определения квеста-события")
+    event_quest_uid = StringField(caption='UID квеста-события из диспетчера задач. Как только по этому UID не будет найден квест - переход в состояние победы')
+    needed_tags = ListField(field=StringField(), caption="Теги для определения квеста-события")
 
     def as_unstarted_quest_dict(self):
         d = super(AgentEventQuest, self).as_unstarted_quest_dict()

@@ -10,7 +10,7 @@ import random
 
 
 class AIBossQuest(AITrafficQuest):
-    action_radius = IntField(caption=u'Максимальная дяльность отклонения от маршрута')
+    action_radius = IntField(caption='Максимальная дяльность отклонения от маршрута')
 
     def set_actions(self, time):  # Настройка поведеньческих квестов
         targets = self.get_visible_targets()

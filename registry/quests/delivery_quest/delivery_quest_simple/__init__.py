@@ -92,7 +92,7 @@ class DeliveryQuestSimple(DeliveryQuest):
             raise Cancel("QUEST CANCEL: User have not enough empty slot")
 
         self.log(text=self.locale("q_dq_start_log"), event=event, position=self.hirer.hometown.position)  ##LOCALIZATION
-        temp_log_str = u'{} {} {}: {}.'.format(
+        temp_log_str = '{} {} {}: {}.'.format(
             self.locale("q_dq_get_items_1"),
             self.locale(self.hirer.title),
             self.locale("q_dq_get_items_2"),
@@ -125,7 +125,7 @@ class DeliveryQuestSimple(DeliveryQuest):
             if isinstance(event, OnNote):
                 if (event.note_uid == quest.dc.delivery_note_uid) and (event.result == True) and quest.take_items(
                         items=quest.delivery_set, event=event):
-                    temp_log_str = u'{} {}: {}.'.format(
+                    temp_log_str = '{} {}: {}.'.format(
                         quest.locale(quest.recipient.title),
                         quest.locale("q_dq_give_items"),
                         ', '.join([quest.locale(item.title) for item in quest.delivery_set])  # ##LOCALIZATION
@@ -143,19 +143,19 @@ class DeliveryQuestSimple(DeliveryQuest):
                     quest.take_items(items=quest.delivery_set, event=event)
                     agent.profile.set_balance(time=event.time, delta=-(quest.reward_money / 2))
 
-                    temp_log_str = u'{} {}: {}.'.format(
+                    temp_log_str = '{} {}: {}.'.format(
                         quest.locale(quest.hirer.title),
                         quest.locale("q_dq_give_items"),
                         ', '.join([quest.locale(item.title) for item in quest.delivery_set])  # ##LOCALIZATION
                     )
                     quest.log(text=temp_log_str, event=event, position=quest.hirer.hometown.position)
-                    quest.log(text=u'{} {}nc.'.format(quest.locale("q_share_cancel_pen_done"), quest.reward_money / 2), event=event,  ##LOCALIZATION
+                    quest.log(text='{} {}nc.'.format(quest.locale("q_share_cancel_pen_done"), quest.reward_money / 2), event=event,  ##LOCALIZATION
                               position=quest.hirer.hometown.position)
 
                     go("cancel_fail")
                 else:
                     quest.npc_replica(npc=quest.hirer,
-                                      replica=u"{} {}nc.".format(quest.locale("q_dq_cancel_pen_try"),
+                                      replica="{} {}nc.".format(quest.locale("q_dq_cancel_pen_try"),
                                                                  quest.reward_money / 2), event=event)  ##LOCALIZATION
 
     ####################################################################################################################
@@ -164,7 +164,7 @@ class DeliveryQuestSimple(DeliveryQuest):
             go = partial(quest.go, event=event)
             agent_profile = quest.agent.profile
             quest.agent.profile.set_balance(time=event.time, delta=quest.reward_money)
-            quest.log(text=u'{} {}nc.'.format(quest.locale("q_dq_get_reward"), quest.reward_money), event=event,  ##LOCALIZATION
+            quest.log(text='{} {}nc.'.format(quest.locale("q_dq_get_reward"), quest.reward_money), event=event,  ##LOCALIZATION
                       position=quest.recipient.hometown.position)
             quest.agent.profile.set_exp(time=event.time, dvalue=quest.reward_exp)
             quest.agent.profile.set_karma(time=event.time, dvalue=quest.reward_karma)

@@ -17,7 +17,7 @@ from math import pi
 
 
 class AIGangQuest(AITrafficQuest):
-    count_members = EmbeddedDocumentField(document_type=QuestRange, caption=u"Количество участников")
+    count_members = EmbeddedDocumentField(document_type=QuestRange, caption="Количество участников")
 
     def deploy_bots(self, event):
         # Метод деплоя агентов на карту. Вызывается на on_start квеста

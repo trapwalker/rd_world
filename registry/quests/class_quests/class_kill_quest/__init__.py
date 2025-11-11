@@ -11,16 +11,16 @@ from sublayers_world.registry.quests.class_quests import ClassTypeQuest
 
 
 class ClassQuestKillsQuest(ClassTypeQuest):
-    kills_count = IntField(caption=u"Сумма для накопления")
+    kills_count = IntField(caption="Сумма для накопления")
 
     def init_text(self):
         self.text = LocalizedString(
-            en=u"{}, {}<br>{}".format(
+            en="{}, {}<br>{}".format(
                 self.agent.login,
                 self.locale(key="q_cq_kills_task_text", loc="en"),
                 self.locale(key="q_cq_journal_reward_1", loc="en"),
             ),
-            ru=u"{}, {}<br>{}".format(
+            ru="{}, {}<br>{}".format(
                 self.agent.login,
                 self.locale(key="q_cq_kills_task_text", loc="ru"),
                 self.locale(key="q_cq_journal_reward_1", loc="ru"),

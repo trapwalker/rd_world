@@ -23,12 +23,12 @@ import traceback
 
 
 class AITrafficQuest(AIEventQuest):
-    test_end_time = IntField(caption=u'Интервал проверки достижения цели')
-    bots_karma = EmbeddedDocumentField(document_type=QuestRange, caption=u"Границы кармы")
-    bots_level = EmbeddedDocumentField(document_type=QuestRange, caption=u"Уровни мобов")
+    test_end_time = IntField(caption='Интервал проверки достижения цели')
+    bots_karma = EmbeddedDocumentField(document_type=QuestRange, caption="Границы кармы")
+    bots_level = EmbeddedDocumentField(document_type=QuestRange, caption="Уровни мобов")
     routes = ListField(
         root_default=list,
-        caption=u"Список маршрутов",
+        caption="Список маршрутов",
         field=EmbeddedNodeField(
             document_type='sublayers_server.model.registry_me.classes.routes.AbstractRoute',
         ),
@@ -36,7 +36,7 @@ class AITrafficQuest(AIEventQuest):
 
     towns_protect = ListField(
         root_default=list,
-        caption=u"Список городов покровителей",
+        caption="Список городов покровителей",
         field=RegistryLinkField(
             document_type='sublayers_server.model.registry_me.classes.poi.Town',
         ),

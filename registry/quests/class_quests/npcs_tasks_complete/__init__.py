@@ -13,17 +13,17 @@ from sublayers_world.registry.quests.class_quests import ClassTypeQuest
 class ClassQuestNPCsTasksComplete(ClassTypeQuest):
     tasks_count = IntField(caption="Количество заданий у каждого НПЦ")
     npcs = ListField(
-        caption=u"НПЦ, у которых нужно выполнить задания",
+        caption="НПЦ, у которых нужно выполнить задания",
         field=RegistryLinkField(document_type='sublayers_server.model.registry_me.classes.poi.Institution'),
     )
 
     def init_text(self):
         self.text = LocalizedString(
-            en=u"{}<br>{}".format(
+            en="{}<br>{}".format(
                 self.locale(key="q_cq_npc_tasks_task_text", loc="en"),
                 self.locale(key="q_cq_journal_reward_2", loc="en"),
             ),
-            ru=u"{}<br>{}".format(
+            ru="{}<br>{}".format(
                 self.locale(key="q_cq_npc_tasks_task_text", loc="ru"),
                 self.locale(key="q_cq_journal_reward_2", loc="ru"),
             ),
@@ -41,8 +41,8 @@ class ClassQuestNPCsTasksComplete(ClassTypeQuest):
         for npc in self.npcs:
             count = self.dc.tasks.get(npc.uri, 0)
             if count < self.tasks_count:
-                npc_list.append(u'{} {}'.format(self.locale(npc.title), '{}/{}'.format(count, self.tasks_count)))
-        return u', '.join(npc_list)
+                npc_list.append('{} {}'.format(self.locale(npc.title), '{}/{}'.format(count, self.tasks_count)))
+        return ', '.join(npc_list)
 
     def on_start_(self, event, **kw):
         self.init_text()
@@ -71,7 +71,7 @@ class ClassQuestNPCsTasksComplete(ClassTypeQuest):
                 else:
                     quest.npc_replica(
                         npc=quest.hirer,
-                        replica=u'{}<br>{}.'.format( ##LOCALIZATION
+                        replica='{}<br>{}.'.format( ##LOCALIZATION
                             quest.locale("q_cq_npc_tasks_replica_not_finish"),
                             quest.get_not_complete_npc_info(),
                         ),

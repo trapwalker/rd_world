@@ -19,11 +19,11 @@ if __name__ == '__main__':
     reg = Registry(name='registry', path=os.path.join(world_path, 'registry'))
     
     for fname in files:
-        print u'# {} #'.format(fname)
+        print '# {} #'.format(fname)
         f = shelve.open(fname)
         try:
             for k, v in f.items():
-                print u'  ## {} ##'.format(k)
+                print '  ## {} ##'.format(k)
                 #pp(yaml.dump(v.resume_dict()))
                 print yaml.dump(v.resume_dict(), encoding='utf-8', unicode=True)
         finally:

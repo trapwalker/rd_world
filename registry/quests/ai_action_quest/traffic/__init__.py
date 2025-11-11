@@ -19,7 +19,7 @@ class AIActionTrafficQuest(AIActionQuest):
 
     towns_protect = ListField(
         root_default=list,
-        caption=u"Список городов покровителей (Устанавливается квестом-событием)",
+        caption="Список городов покровителей (Устанавливается квестом-событием)",
         reinst=True,
         field=RegistryLinkField(
             document_type='sublayers_server.model.registry_me.classes.poi.Town',

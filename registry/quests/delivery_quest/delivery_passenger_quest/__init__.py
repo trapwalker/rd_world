@@ -18,15 +18,15 @@ from sublayers_world.registry.quests.delivery_quest.delivery_quest_simple import
 
 
 class DeliveryPassengerQuest(DeliveryQuestSimple):
-    person_delivery_cost = IntField(caption=u'Стоимость достваки одного пассажира', tags={'client'})
+    person_delivery_cost = IntField(caption='Стоимость достваки одного пассажира', tags={'client'})
 
     destination_list = ListField(
         root_default=list,
-        caption=u"Список пунктов назначения доставки",
+        caption="Список пунктов назначения доставки",
         field=RegistryLinkField(),
     )
     destination = RegistryLinkField(
-        caption=u'Пункт назначения', document_type='sublayers_server.model.registry_me.classes.poi.Town')
+        caption='Пункт назначения', document_type='sublayers_server.model.registry_me.classes.poi.Town')
 
     def init_distance(self):
         town1 = self.hirer.hometown
@@ -35,17 +35,17 @@ class DeliveryPassengerQuest(DeliveryQuestSimple):
 
     def init_text(self, distance=None):
         self.text_short = LocalizedString(
-            en=u"Deliver passengers to city {}.".format(self.destination.title),   ##LOCALIZATION
-            ru=u"Доставьте пассажиров в гороод {}.".format(self.destination.title),
+            en="Deliver passengers to city {}.".format(self.destination.title),   ##LOCALIZATION
+            ru="Доставьте пассажиров в гороод {}.".format(self.destination.title),
         )
         self.text = LocalizedString(
-            en=u"Deliver passengers: {} - to city {}. Reward: {:.0f}nc and {:.0f} exp. points.".format(   ##LOCALIZATION
+            en="Deliver passengers: {} - to city {}. Reward: {:.0f}nc and {:.0f} exp. points.".format(   ##LOCALIZATION
                 ', '.join([item.title.en for item in self.delivery_set]),
                 self.destination.title,
                 self.reward_money,
                 self.reward_exp,
             ),
-            ru=u"Доставьте пассажиров: {} - в гороод {}. Награда: {:.0f}nc и {:.0f} ед. опыта.".format(
+            ru="Доставьте пассажиров: {} - в гороод {}. Награда: {:.0f}nc и {:.0f} ед. опыта.".format(
                 ', '.join([item.title.ru for item in self.delivery_set]),
                 self.destination.title,
                 self.reward_money,
@@ -141,7 +141,7 @@ class DeliveryPassengerQuest(DeliveryQuestSimple):
             raise Cancel("QUEST CANCEL: User have not enough empty slot")
 
         self.log(text=self.locale("q_dp_started"), event=event, position=self.hirer.hometown.position)  ##LOCALIZATION
-        temp_log_str = u'{} {}.'.format(self.locale("q_dp_in_passengers"), ', '.join([self.locale(item.title) for item in self.delivery_set]))  # ##LOCALIZATION
+        temp_log_str = '{} {}.'.format(self.locale("q_dp_in_passengers"), ', '.join([self.locale(item.title) for item in self.delivery_set]))  # ##LOCALIZATION
         self.log(text=temp_log_str, event=event, position=self.hirer.hometown.position)
 
     ####################################################################################################################
@@ -164,7 +164,7 @@ class DeliveryPassengerQuest(DeliveryQuestSimple):
 
             if isinstance(event, OnEnterToLocation) and (event.location.example == quest.destination):
                 if quest.take_passengers(event=event):
-                    temp_log_str = u'{} {}.'.format(
+                    temp_log_str = '{} {}.'.format(
                         quest.locale("q_dp_out_passengers"),
                         ', '.join([quest.locale(item.title) for item in quest.delivery_set]))
                     quest.log(text=temp_log_str, event=event, position=quest.destination.position)
@@ -173,15 +173,15 @@ class DeliveryPassengerQuest(DeliveryQuestSimple):
             if isinstance(event, OnCancel):
                 if (agent.profile.balance >= (quest.reward_money / 2)) and quest.take_passengers(event=event):
                     agent.profile.set_balance(time=event.time, delta=-(quest.reward_money / 2))
-                    temp_log_str = u'{} {}.'.format(
+                    temp_log_str = '{} {}.'.format(
                         quest.locale("q_dp_out_passengers"),  ##LOCALIZATION
                         ', '.join([quest.locale(item.title) for item in quest.delivery_set]))
                     quest.log(text=temp_log_str, event=event, position=quest.hirer.hometown.position)
-                    quest.log(text=u'{} {}nc.'.format(quest.locale("q_share_cancel_pen_done"), quest.reward_money / 2), event=event,  ##LOCALIZATION
+                    quest.log(text='{} {}nc.'.format(quest.locale("q_share_cancel_pen_done"), quest.reward_money / 2), event=event,  ##LOCALIZATION
                               position=quest.hirer.hometown.position)
                     go("cancel_fail")
                 else:
-                    quest.npc_replica(npc=quest.hirer, replica=u"{} {}nc.".format(quest.locale("q_share_cancel_pen_done"), quest.reward_money / 2), event=event)
+                    quest.npc_replica(npc=quest.hirer, replica="{} {}nc.".format(quest.locale("q_share_cancel_pen_done"), quest.reward_money / 2), event=event)
 
     ####################################################################################################################
     class reward(QuestState_):
@@ -189,7 +189,7 @@ class DeliveryPassengerQuest(DeliveryQuestSimple):
             go = partial(quest.go, event=event)
             agent_profile = quest.agent.profile
             agent_profile.set_balance(time=event.time, delta=quest.reward_money)
-            quest.log(text=u'{} {}nc.'.format(quest.locale("q_dp_reward"), quest.reward_money), event=event,  ##LOCALIZATION
+            quest.log(text='{} {}nc.'.format(quest.locale("q_dp_reward"), quest.reward_money), event=event,  ##LOCALIZATION
                       position=quest.destination.position)
             agent_profile.set_karma(time=event.time, dvalue=quest.reward_karma)
             agent_profile.set_exp(time=event.time, dvalue=quest.reward_exp)

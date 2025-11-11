@@ -12,15 +12,15 @@ from sublayers_world.registry.quests.class_quests import ClassTypeQuest
 
 
 class ClassQuestInvisibleAttack(ClassTypeQuest):
-    attack_count = IntField(caption=u"Количество атак из невидимости")
+    attack_count = IntField(caption="Количество атак из невидимости")
 
     def init_text(self):
         self.text = LocalizedString(
-            en=u"{}<br>{}".format(
+            en="{}<br>{}".format(
                 self.locale(key="q_cq_inv_attack_task_text", loc="en"),
                 self.locale(key="q_cq_journal_reward_2", loc="en"),
             ),
-            ru=u"{}<br>{}".format(
+            ru="{}<br>{}".format(
                 self.locale(key="q_cq_inv_attack_task_text", loc="ru"),
                 self.locale(key="q_cq_journal_reward_2", loc="ru"),
             ),

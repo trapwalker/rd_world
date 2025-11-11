@@ -12,7 +12,7 @@ from sublayers_world.registry.quests.class_quests import ClassTypeQuest
 
 
 class ClassQuestKarmaLimit(ClassTypeQuest):
-    needed_karma = FloatField(caption=u"Минимальное значение кармы", tags={'client'})
+    needed_karma = FloatField(caption="Минимальное значение кармы", tags={'client'})
 
     def init_text(self):
         self.text = LocalizedString(_id="q_cq_karmic_journal_text").generate(

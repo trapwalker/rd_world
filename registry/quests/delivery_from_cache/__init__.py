@@ -20,11 +20,11 @@ from sublayers_world.registry.quests.delivery_quest.delivery_quest_simple import
 
 
 class DeliveryFromCache(DeliveryQuestSimple):
-    cache_radius = FloatField(caption=u'Радиус, в котором можно обнаружить тайник', root_default=50)
+    cache_radius = FloatField(caption='Радиус, в котором можно обнаружить тайник', root_default=50)
 
     cache_points_generator = ListField(
         root_default=list,
-        caption=u"Список областей генерации мест для тайника",
+        caption="Список областей генерации мест для тайника",
         field=EmbeddedDocumentField(document_type=MarkerMapObject),
         reinst=False,
     )
@@ -32,20 +32,20 @@ class DeliveryFromCache(DeliveryQuestSimple):
 
     loot_set_list = ListField(
         root_default=list,
-        caption=u"Список возможных комплектов ненужных вещей",
+        caption="Список возможных комплектов ненужных вещей",
         field=ListField(
-            caption=u"Комплект ненужных вещей",
+            caption="Комплект ненужных вещей",
             field=EmbeddedNodeField(
                 document_type='sublayers_server.model.registry_me.classes.item.Item',
-                caption=u"Необходимый итем",
+                caption="Необходимый итем",
             ),
         ),
     )
     loot_set = ListField(
-        caption=u"Список ненужных вещей",
+        caption="Список ненужных вещей",
         field=EmbeddedNodeField(
             document_type='sublayers_server.model.registry_me.classes.item.Item',
-            caption=u"Необходимый итем",
+            caption="Необходимый итем",
         ),
     )
 
@@ -94,19 +94,19 @@ class DeliveryFromCache(DeliveryQuestSimple):
 
     def init_text(self):
         self.text_short = LocalizedString(
-            en=u"Find missing parcel.",   ##LOCALIZATION
-            ru=u"Найти пропавшую посылку.",
+            en="Find missing parcel.",   ##LOCALIZATION
+            ru="Найти пропавшую посылку.",
         )
 
         self.text = LocalizedString(
-            en=u"Return missing parcel.{} Reward: {:.0f}nc, {:.0f} karma and {:.0f} exp. points.".format(   ##LOCALIZATION
-                u"." if not self.deadline else u" за {}.".format(self.deadline_to_str()),
+            en="Return missing parcel.{} Reward: {:.0f}nc, {:.0f} karma and {:.0f} exp. points.".format(   ##LOCALIZATION
+                "." if not self.deadline else " за {}.".format(self.deadline_to_str()),
                 self.reward_money,
                 self.reward_karma,
                 self.reward_exp,
             ),
-            ru=u"Вернуть пропавшую посылку.{} Награда: {:.0f}nc, {:.0f} кармы и {:.0f} ед. опыта.".format(
-                u"." if not self.deadline else u" за {}.".format(self.deadline_to_str()),
+            ru="Вернуть пропавшую посылку.{} Награда: {:.0f}nc, {:.0f} кармы и {:.0f} ед. опыта.".format(
+                "." if not self.deadline else " за {}.".format(self.deadline_to_str()),
                 self.reward_money,
                 self.reward_karma,
                 self.reward_exp,
@@ -217,7 +217,7 @@ class DeliveryFromCache(DeliveryQuestSimple):
             if isinstance(event, OnCancel):
                 agent.profile.del_note(uid=quest.dc.cache_map_note_uid, time=event.time)
                 agent.profile.set_relationship(time=event.time, npc=quest.hirer, dvalue=-quest.reward_relation_hirer)
-                quest.log(text=u'{} {}.'.format(quest.locale("q_dfc_relations"), quest.hirer.title), event=event,  ##LOCALIZATION
+                quest.log(text='{} {}.'.format(quest.locale("q_dfc_relations"), quest.hirer.title), event=event,  ##LOCALIZATION
                           position=quest.hirer.hometown.position)
                 go("cancel_fail")
             if isinstance(event, OnTimer):

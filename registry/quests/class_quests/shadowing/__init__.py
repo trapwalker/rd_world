@@ -12,18 +12,18 @@ from sublayers_world.registry.quests.class_quests import ClassTypeQuest
 
 
 class ClassQuestShadowing(ClassTypeQuest):
-    count = IntField(caption=u"Количество удачных слежек")
-    shadowing_duration = IntField(caption=u"Количество удачных слежек")
-    shadowing_check_interval = IntField(root_default=5, caption=u"Интервал проверки слежки, секунды")
+    count = IntField(caption="Количество удачных слежек")
+    shadowing_duration = IntField(caption="Количество удачных слежек")
+    shadowing_check_interval = IntField(root_default=5, caption="Интервал проверки слежки, секунды")
 
     def init_text(self):
         self.text = LocalizedString(
-            en=u"{}, {}<br>{}".format(
+            en="{}, {}<br>{}".format(
                 self.agent.login,
                 self.locale(key="q_cq_shadowing_task_text", loc="en"),
                 self.locale(key="q_cq_journal_reward_1", loc="en"),
             ),
-            ru=u"{}, {}<br>{}".format(
+            ru="{}, {}<br>{}".format(
                 self.agent.login,
                 self.locale(key="q_cq_shadowing_task_text", loc="ru"),
                 self.locale(key="q_cq_journal_reward_1", loc="ru"),
@@ -64,7 +64,7 @@ class ClassQuestShadowing(ClassTypeQuest):
                                       arcade_message_type='spy_failed').post()
                 else:  # Слежка проходит успешно, прибавляем значение интервала
                     if self.dc.shadowings[obj_uid] == 0:
-                        # print(u"Начнём следить! для {}".format(target.main_agent.uid))
+                        # print("Начнём следить! для {}".format(target.main_agent.uid))
                         text = LocalizedString(_id='q_cq_shadowing_start_target').generate(
                             target_login=obj.main_agent.print_login())  ##LOCALIZATION
                         self.log(text=text, event=event, game_log_only=True)

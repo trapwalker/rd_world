@@ -18,25 +18,25 @@ from sublayers_world.registry.quests.class_quests import ClassTypeQuest
 
 class StartQuest(ClassTypeQuest):
     class RoleClassQuestAttributes(Subdoc):
-        teacher = LocalizedStringField(caption=u'Тип NPC-наставника (род. падеж)')
-        super_task = LocalizedStringField(caption=u'Классовая суперзадача')
+        teacher = LocalizedStringField(caption='Тип NPC-наставника (род. падеж)')
+        super_task = LocalizedStringField(caption='Классовая суперзадача')
 
     attributes_by_class = MapField(
-        caption=u'Словарь атрибутов',
+        caption='Словарь атрибутов',
         field=EmbeddedDocumentField(document_type=RoleClassQuestAttributes),
     )
 
     def init_text(self):
          ##LOCALIZATION
         self.text = LocalizedString(
-            en=u"Adventure will begin soon.",   ##LOCALIZATION
-            ru=u"Приключение начнется скоро.",
+            en="Adventure will begin soon.",   ##LOCALIZATION
+            ru="Приключение начнется скоро.",
         )
         if self.current_state == 'first_out':
             # todo: Вынести 300 в атрибуты квеста
             self.text = LocalizedString(
-                en=u"Refer to trainer and learn more about purpose of their class.<br> Reward: 300 exp.",   ##LOCALIZATION
-                ru=u"Обратиться к тренеру и узнать больше про свою классовую цель.<br> Награда: 300 exp.",
+                en="Refer to trainer and learn more about purpose of their class.<br> Reward: 300 exp.",   ##LOCALIZATION
+                ru="Обратиться к тренеру и узнать больше про свою классовую цель.<br> Награда: 300 exp.",
             )
 
         elif self.current_state == 'visit_trainer':
@@ -51,17 +51,17 @@ class StartQuest(ClassTypeQuest):
             # todo: Вынести 500 в атрибуты квеста
             self.text = LocalizedString(
                 en=(   ##LOCALIZATION
-                    u"To learn subtleties of role-playing class, you need to find a mentor. For class {} need such a mentor as {}.<br>"
-                    u"Find a mentor on class specialization.<br>"
-                    u"Reward: 500 exp."
+                    "To learn subtleties of role-playing class, you need to find a mentor. For class {} need such a mentor as {}.<br>"
+                    "Find a mentor on class specialization.<br>"
+                    "Reward: 500 exp."
                 ).format(
                     role_class.description.en,
                     teacher.en,
                 ),
                 ru=(
-                    u"Чтобы освоить тонкости ролевого класса нужно найти наставника. Для класса {} искать наставника стоит в лице {}.<br>"
-                    u"Найти наставника по классовой специализации.<br>"
-                    u"Награда: 500 exp."
+                    "Чтобы освоить тонкости ролевого класса нужно найти наставника. Для класса {} искать наставника стоит в лице {}.<br>"
+                    "Найти наставника по классовой специализации.<br>"
+                    "Награда: 500 exp."
                 ).format(
                     role_class.description.ru,
                     teacher.ru,
@@ -87,7 +87,7 @@ class StartQuest(ClassTypeQuest):
                 role_class = quest.agent.profile.role_class
                 attributes_of_class = quest.attributes_by_class.get(role_class.name, None)
                 if attributes_of_class is None:
-                    log.warning(u'Unsupported role class by class quest: {}'.format(role_class.name))
+                    log.warning('Unsupported role class by class quest: {}'.format(role_class.name))
                 else:
                     quest.caption = attributes_of_class.super_task
 

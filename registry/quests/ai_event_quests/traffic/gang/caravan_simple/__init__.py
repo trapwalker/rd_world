@@ -22,19 +22,19 @@ from datetime import datetime, timedelta
 
 
 class AICaravanQuest(AIGangQuest):
-    caravan_wait_time = IntField(root_default=30, caption=u"Задержка перед стартом каравана")
-    party_capacity = IntField(root_default=10, caption=u"Вместительность пати каравана с учётом НПЦ")
-    radius_participation = IntField(root_default=1000, caption=u"Двойной радиус действия гвардов и одинарный участия игроков")
-    town_destination = RegistryLinkField(caption=u'Город назначения каравана')
+    caravan_wait_time = IntField(root_default=30, caption="Задержка перед стартом каравана")
+    party_capacity = IntField(root_default=10, caption="Вместительность пати каравана с учётом НПЦ")
+    radius_participation = IntField(root_default=1000, caption="Двойной радиус действия гвардов и одинарный участия игроков")
+    town_destination = RegistryLinkField(caption='Город назначения каравана')
 
-    count_guardians = EmbeddedDocumentField(document_type=QuestRange, caption=u"Количество защитников")
+    count_guardians = EmbeddedDocumentField(document_type=QuestRange, caption="Количество защитников")
     cars_guardians = ListField(
         root_default=list,
-        caption=u'Список машинок',
+        caption='Список машинок',
         field=RegistryLinkField(document_type='sublayers_server.model.registry_me.classes.mobiles.Car'),
     )
 
-    schedule = ListField(root_default=list, caption=u'Расписание запуска караванов', field=IntField())
+    schedule = ListField(root_default=list, caption='Расписание запуска караванов', field=IntField())
 
 
     def tags_str(self):

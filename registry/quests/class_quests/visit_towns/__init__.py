@@ -12,18 +12,18 @@ from sublayers_world.registry.quests.class_quests import ClassTypeQuest
 
 class ClassQuestVisitTowns(ClassTypeQuest):
     towns = ListField(
-        caption=u"Города, которые нужно посетить",
+        caption="Города, которые нужно посетить",
         field=RegistryLinkField(document_type='sublayers_server.model.registry_me.classes.poi.Town'),
     )
 
     def init_text(self):
         self.text = LocalizedString(
-            en=u"{}, {}<br>{}".format(
+            en="{}, {}<br>{}".format(
                 self.agent.login,
                 self.locale(key="q_cq_visit_towns_task_text", loc="en"),
                 self.locale(key="q_cq_journal_reward_1", loc="en"),
             ),
-            ru=u"{}, {}<br>{}".format(
+            ru="{}, {}<br>{}".format(
                 self.agent.login,
                 self.locale(key="q_cq_visit_towns_task_text", loc="ru"),
                 self.locale(key="q_cq_journal_reward_1", loc="ru"),
@@ -45,7 +45,7 @@ class ClassQuestVisitTowns(ClassTypeQuest):
         for town in self.towns:
             if self.dc.visited_towns.get(town.uri, None) is None:
                 town_list.append(self.locale(town.title))
-        return u', '.join(town_list)
+        return ', '.join(town_list)
 
     def on_start_(self, event, **kw):
         self.init_text()
@@ -73,7 +73,7 @@ class ClassQuestVisitTowns(ClassTypeQuest):
                     quest.agent.profile.set_exp(time=event.time, dvalue=3000)
                     quest.go(event=event, new_state="win")  # Все города посещены!
                 else:
-                    text = u'{} {}.'.format(
+                    text = '{} {}.'.format(
                         quest.locale("q_cq_visit_towns_replica_not_finish"),
                         quest.get_not_visit_towns(),
                     )

@@ -11,16 +11,16 @@ from sublayers_world.registry.quests.class_quests import ClassTypeQuest
 
 
 class ClassQuestAccumulateNucoins(ClassTypeQuest):
-    accumulate_summ = IntField(caption=u"Сумма для накопления")
+    accumulate_summ = IntField(caption="Сумма для накопления")
 
     def init_text(self):
         self.text = LocalizedString(
-            en=u"{}, {}".format(
+            en="{}, {}".format(
                 self.agent.login,
                 self.locale(key="q_cq_acc_summ_task_text", loc="en"),
                 self.locale(key="q_cq_journal_reward_1", loc="en"),
             ),
-            ru=u"{}, {}".format(
+            ru="{}, {}".format(
                 self.agent.login,
                 self.locale(key="q_cq_acc_summ_task_text", loc="ru"),
                 self.locale(key="q_cq_journal_reward_1", loc="ru"),

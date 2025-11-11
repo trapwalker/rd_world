@@ -17,8 +17,8 @@ import random
 
 
 class KillerQuestVictim(Subdoc):
-    login = StringField(doc=u"Имя жертвы", tags={'client'})
-    photo = StringField(doc=u"Ссылка на аватарку жертвы", tags={'client'})
+    login = StringField(doc="Имя жертвы", tags={'client'})
+    photo = StringField(doc="Ссылка на аватарку жертвы", tags={'client'})
 
     def as_dict(self):
         return dict(
@@ -28,23 +28,23 @@ class KillerQuestVictim(Subdoc):
 
 
 class KillerQuest(Quest):
-    unique_victims = BooleanField(caption=u'Должны ли быть жертвы уникальными')
-    price_victim = IntField(caption=u'Цена одной жертвы на первом уровне квеста в нукойнах')
-    count_to_kill_range = EmbeddedDocumentField(document_type=QuestRange, caption=u"Диапазон количетсва жертв")
-    count_to_kill = IntField(caption=u'Количество убийств (вычислимый параметр)')
-    max_karma_victims = IntField(caption=u'Максимальное значение кармы жертвы (вычислимый параметр)')
-    min_level_victims = IntField(caption=u'Минимальный уровень жертвы')
-    max_karma_victims_start = FloatField(caption=u'Максимальное значение кармы жертвы при 0 уровне квеста')
-    max_karma_victims_by_lvl = FloatField(caption=u'Сколько кармы от стартовой будет отнимать каждый лвл квеста')
-    deadline_koeff_by_lvl = FloatField(caption=u'На сколько больше времени будет выдаваться на каждую жертву в зависимости от уровня квеста')
-    price_victim_koeff_by_lvl = FloatField(caption=u'На сколько больше будет суммарная награда в зависимости от уровня квеста')
+    unique_victims = BooleanField(caption='Должны ли быть жертвы уникальными')
+    price_victim = IntField(caption='Цена одной жертвы на первом уровне квеста в нукойнах')
+    count_to_kill_range = EmbeddedDocumentField(document_type=QuestRange, caption="Диапазон количетсва жертв")
+    count_to_kill = IntField(caption='Количество убийств (вычислимый параметр)')
+    max_karma_victims = IntField(caption='Максимальное значение кармы жертвы (вычислимый параметр)')
+    min_level_victims = IntField(caption='Минимальный уровень жертвы')
+    max_karma_victims_start = FloatField(caption='Максимальное значение кармы жертвы при 0 уровне квеста')
+    max_karma_victims_by_lvl = FloatField(caption='Сколько кармы от стартовой будет отнимать каждый лвл квеста')
+    deadline_koeff_by_lvl = FloatField(caption='На сколько больше времени будет выдаваться на каждую жертву в зависимости от уровня квеста')
+    price_victim_koeff_by_lvl = FloatField(caption='На сколько больше будет суммарная награда в зависимости от уровня квеста')
 
     victims = ListField(
         root_default=list,
         field=EmbeddedDocumentField(
             document_type=KillerQuestVictim,
         ),
-        caption=u"Список жертв (заполняется динамически)",
+        caption="Список жертв (заполняется динамически)",
         reinst=True,  # todo: нужно узнать, нужно ли это здесь
     )
 
@@ -99,25 +99,25 @@ class KillerQuest(Quest):
 
     def init_text(self):
         self.text_short = LocalizedString(
-            en=u"Kill {:.0f} player(s).".format(self.count_to_kill),   ##LOCALIZATION
-            ru=u"Убейте {:.0f} игрока(ов).".format(self.count_to_kill),
+            en="Kill {:.0f} player(s).".format(self.count_to_kill),   ##LOCALIZATION
+            ru="Убейте {:.0f} игрока(ов).".format(self.count_to_kill),
         )
 
         self.text = LocalizedString(
-            en=u"Kill {:.0f} player(s) with a minimum level {:.0f} and karma is worse {}{}. Reward: {:.0f}nc, {:.0f} karma and {:.0f} exp. points.".format(   ##LOCALIZATION
+            en="Kill {:.0f} player(s) with a minimum level {:.0f} and karma is worse {}{}. Reward: {:.0f}nc, {:.0f} karma and {:.0f} exp. points.".format(   ##LOCALIZATION
                 self.count_to_kill,
                 self.min_level_victims,
                 getKarmaName(self.max_karma_victims / 100., 'en'),
-                u"" if not self.deadline else u" for {}".format(self.deadline_to_str()),   ##LOCALIZATION
+                "" if not self.deadline else " for {}".format(self.deadline_to_str()),   ##LOCALIZATION
                 self.reward_money,
                 self.reward_karma,
                 self.reward_exp * self.count_to_kill,
             ),
-            ru=u"Убейте {:.0f} игрока(ов) с минимальным уровнем {:.0f} и кармой хуже {}{}. Награда: {:.0f}nc, {:.0f} кармы и {:.0f} ед. опыта.".format(   ##LOCALIZATION
+            ru="Убейте {:.0f} игрока(ов) с минимальным уровнем {:.0f} и кармой хуже {}{}. Награда: {:.0f}nc, {:.0f} кармы и {:.0f} ед. опыта.".format(   ##LOCALIZATION
                 self.count_to_kill,
                 self.min_level_victims,
                 getKarmaName(self.max_karma_victims / 100., 'ru'),
-                u"" if not self.deadline else u" за {}".format(self.deadline_to_str()),   ##LOCALIZATION
+                "" if not self.deadline else " за {}".format(self.deadline_to_str()),   ##LOCALIZATION
                 self.reward_money,
                 self.reward_karma,
                 self.reward_exp * self.count_to_kill,
@@ -159,7 +159,7 @@ class KillerQuest(Quest):
             npc=self.hirer,
             page_caption=self.locale("q_kt_page_caption"),  ##LOCALIZATION
         )
-        self.log(text=u'{} {}.'.format(self.locale("q_kt_start_text"), self.count_to_kill), event=event,  ##LOCALIZATION
+        self.log(text='{} {}.'.format(self.locale("q_kt_start_text"), self.count_to_kill), event=event,  ##LOCALIZATION
                  position=self.hirer.hometown.position)
     
     ####################################################################################################################
@@ -179,7 +179,7 @@ class KillerQuest(Quest):
                         (not quest.unique_victims or not quest.in_victims(event.agent))):
                     if event.agent and event.agent.profile and event.agent.profile._agent_model:
                         quest.append_victim(event.agent, event)  # todo: Исправить добавление агента
-                        quest.log(text=u'{} {}.'.format(event.agent.profile._agent_model.print_login(), quest.locale("q_kt_target_killed")), event=event,  ##LOCALIZATION
+                        quest.log(text='{} {}.'.format(event.agent.profile._agent_model.print_login(), quest.locale("q_kt_target_killed")), event=event,  ##LOCALIZATION
                                   position=quest.hirer.hometown.position)  # todo: заменить на позицию машинки убийцы
                         quest.agent.profile.set_exp(time=event.time, dvalue=quest.reward_exp)
                         if len(quest.victims) >= quest.count_to_kill:
@@ -196,12 +196,12 @@ class KillerQuest(Quest):
                 if agent.profile.balance >= penalty_money:
                     agent.profile.del_note(uid=quest.dc.wanted_note_uid, time=event.time)
                     agent.profile.set_balance(time=event.time, delta=-penalty_money)
-                    quest.log(text=u'{} {}nc.'.format(quest.locale("q_share_cancel_pen_done"), penalty_money), event=event,  ##LOCALIZATION
+                    quest.log(text='{} {}nc.'.format(quest.locale("q_share_cancel_pen_done"), penalty_money), event=event,  ##LOCALIZATION
                               position=quest.hirer.hometown.position)
                     go("cancel_fail")
                 else:
                     quest.npc_replica(npc=quest.hirer,
-                                      replica=u"{} {}nc.".format(quest.locale("q_share_cancel_pen_try"), penalty_money),  ##LOCALIZATION
+                                      replica="{} {}nc.".format(quest.locale("q_share_cancel_pen_try"), penalty_money),  ##LOCALIZATION
                                       event=event)
 
     ####################################################################################################################
@@ -221,7 +221,7 @@ class KillerQuest(Quest):
             agent = quest.agent
             agent.profile.set_balance(time=event.time, delta=quest.reward_money)
             agent.profile.set_karma(time=event.time, dvalue=quest.reward_karma)
-            quest.log(text=u'{} {:.0f}nc., {:.0f} {}'.format(  ##LOCALIZATION
+            quest.log(text='{} {:.0f}nc., {:.0f} {}'.format(  ##LOCALIZATION
                 quest.locale("q_share_get_reward"),
                 quest.reward_money,
                 quest.reward_karma,

@@ -23,14 +23,14 @@ from sublayers_world.registry.quests.class_quests import ClassTypeQuest
 class GetClassCarQuest(ClassTypeQuest):
     class RoleClassQuestAttributes(Subdoc):
         car_list = ListField(
-            caption=u"Список классовых машин",
+            caption="Список классовых машин",
             field=RegistryLinkField(
                 document_type='sublayers_server.model.registry_me.classes.mobiles.Mobile',
             ),
         )
 
     attributes_by_class = MapField(
-        caption=u'Словарь атрибутов',
+        caption='Словарь атрибутов',
         field=EmbeddedDocumentField(document_type=RoleClassQuestAttributes),
     )
 
@@ -61,7 +61,7 @@ class GetClassCarQuest(ClassTypeQuest):
                 role_class = quest.agent.profile.role_class
                 attributes_of_class = role_class and quest.attributes_by_class.get(role_class.name, None)
                 if attributes_of_class is None:
-                    log.warning(u'Unsupported role class by class quest: {}'.format(role_class.name))
+                    log.warning('Unsupported role class by class quest: {}'.format(role_class.name))
                 else:
                     if agent.car:
                         for candidate in attributes_of_class.car_list:
