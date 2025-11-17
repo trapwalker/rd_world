@@ -13,3 +13,4 @@ state/*
 slope/**.png
 *.pyc
 *.tar
+.DS_Store
