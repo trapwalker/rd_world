@@ -14,3 +14,4 @@ slope/**.png
 *.pyc
 *.tar
 .DS_Store
+tiles/map_zip
