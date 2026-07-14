@@ -31,7 +31,7 @@ class AIGangQuest(AITrafficQuest):
         route = random.choice(self.routes).instantiate(route_accuracy=200)
         self.dc.route = route
         start_point_route = route.nearest_point(route.get_start_point().as_point())
-        level = random.randint(self.bots_level.min, self.bots_level.max)
+        level = random.randint(int(self.bots_level.min), int(self.bots_level.max))
 
         deploy_timer = Timer(name='AIGangQuest::deploy_bots')
         deploy_agent_timer = Timer(name='AIGangQuest::deploy_bots::GenerateAgent')

@@ -41,7 +41,7 @@ class AIEventQuest(Quest):
         if not car_example or not self.max_loot_count or not loot_rec_list:
             return
         free_position = max(car_example.inventory.size - len(car_example.inventory.items), 0)
-        count_loot = min(random.randint(1, self.max_loot_count), free_position)
+        count_loot = min(random.randint(1, int(self.max_loot_count)), free_position)
         while count_loot:
             item_rec = random.choice(loot_rec_list)
             if item_rec.chance >= random.random():

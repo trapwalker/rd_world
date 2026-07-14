@@ -89,7 +89,7 @@ class KillerQuest(Quest):
         # Этот код нужен чтобы всегда генерить хотябы самый слабый квест
         if self.level == 0:
             self.level = 1
-        self.level = random.randint(1, self.level)
+        self.level = random.randint(1, int(self.level))
 
     def init_targets_info(self):
         # чем выше уровень квеста, тем ниже максимальная карма жертвы

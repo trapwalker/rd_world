@@ -32,7 +32,7 @@ class DeliveryQuestSimple(DeliveryQuest):
         if self.level == 0:
             self.level = 1
 
-        self.level = random.randint(1, self.level)
+        self.level = random.randint(1, int(self.level))
 
     def init_delivery_set(self):
         self.delivery_set = []

@@ -54,7 +54,7 @@ class AITrafficQuest(AIEventQuest):
         self.dc.route = route
         action_quest = event.server.reg.get('/registry/quests/ai_action_quest/traffic')
 
-        level = random.randint(self.bots_level.min, self.bots_level.max)
+        level = random.randint(int(self.bots_level.min), int(self.bots_level.max))
         example_profile = RandomizeExamples.get_random_agent(level=level, time=event.time, karma_min=self.bots_karma.min, karma_max=self.bots_karma.max)
 
         example_agent = AgentExample(
